@@ -39,7 +39,7 @@ The props are validated by `src/schema.ts` and can be edited live in the studio.
 ## Layout
 
 - `src/scenes/`: one component per scene
-- `src/fx/`: RGB split, band slicing, grain and scanlines (`Glitch.tsx`); halftone and pixelation on a canvas (`ImageCanvas.tsx`)
+- `src/fx/`: RGB split, band slicing, grain and scanlines (`Glitch.tsx`); halftone and pixelation on a canvas (`ImageCanvas.tsx`); beat punches, handheld sway, shake and whip/zoom cuts over the whole frame (`Camera.tsx`, scheduled by `cameraPlan` in `src/Short.tsx`)
 - `src/lib/timing.ts`: beat grid and deterministic jitter
 - `src/specs/`: one file per short
 
