@@ -3,10 +3,12 @@ import { z } from "zod";
 // Everything a short needs. Durations are in beats so every cut lands on the music.
 export const shortSchema = z.object({
   bpm: z.number().positive(),
-  // Seconds from the start of the music to the first beat.
+  // Seconds from the start of the short to its first beat.
   firstBeat: z.number().min(0),
   // Path under public/, or null for a silent render.
   music: z.string().nullable(),
+  // Seconds into the music file where the short starts.
+  musicStart: z.number().min(0),
   hook: z.string(),
   rivals: z.array(
     z.object({

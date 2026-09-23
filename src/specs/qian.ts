@@ -8,6 +8,7 @@ export const qian: ShortProps = {
   bpm: 129.8,
   firstBeat: 0.42,
   music: "local/music.m4a",
+  musicStart: 0,
   hook: "Best app?",
   rivals: [
     { label: "Doomscroll", glyph: "∞", from: "#ff2d55", to: "#ff9500" },
