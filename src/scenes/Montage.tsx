@@ -115,7 +115,7 @@ export const PatternLine: React.FC<{ text: string; plates: string[] }> = ({ text
         <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, transparent 45%)" }} />
         <AbsoluteFill style={{ padding: "220px 80px 0" }}>
           {[words.slice(0, halfWords), words.slice(halfWords)].map((line, i) => (
-            <div key={i} style={{ fontFamily: fonts.pixel, fontSize: 104, lineHeight: 1.12, color: "#fff", textShadow: fringe(4) }}>
+            <div key={i} style={{ fontFamily: fonts.pixel, fontSize: 132, lineHeight: 1.12, color: "#fff", textShadow: fringe(4) }}>
               {line.join(" ")}
             </div>
           ))}

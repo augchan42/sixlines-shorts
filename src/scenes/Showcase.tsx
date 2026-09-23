@@ -47,7 +47,7 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
           </AbsoluteFill>
           {!punching && (
             <AbsoluteFill style={{ padding: "210px 90px 0" }}>
-              <div style={{ fontFamily: fonts.pixel, fontSize: 92, lineHeight: 1.15, color, textShadow: fringe(3) }}>
+              <div style={{ fontFamily: fonts.pixel, fontSize: 150, lineHeight: 1.15, color, textShadow: fringe(3) }}>
                 {caption.slice(0, typed)}
               </div>
               <div style={{ width: 200, height: 12, marginTop: 28, backgroundColor: color, boxShadow: `0 0 18px ${color}` }} />

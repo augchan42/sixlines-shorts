@@ -78,6 +78,8 @@ export const gotchuSchema = z.object({
   reveal: z.string(),
   credit: z.string(),
   cta: z.string(),
+  // Accents in the music, in beats: each punches the camera and flashes the frame.
+  hits: z.array(z.number()),
 });
 
 export type GotchuProps = z.infer<typeof gotchuSchema>;

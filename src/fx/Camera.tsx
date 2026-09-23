@@ -12,6 +12,9 @@ export type Motion = { beat: number; punch: number; sway: number };
 // A burst of shake starting on `beat`, fading over `beats`.
 export type Shake = { beat: number; strength: number; beats: number };
 
+// An accent: a hard punch-in that decays over a few frames.
+export type Hit = number;
+
 // Frames on each side of a cut that the transition occupies.
 const HALF = 4;
 
@@ -37,12 +40,13 @@ const cutPose = (cut: Cut, u: number, width: number, height: number) => {
 };
 
 // Moves the whole frame: beat punches, sway, shake and cut transitions.
-export const Camera: React.FC<{ cuts: Cut[]; motion: Motion[]; shakes: Shake[]; children: React.ReactNode }> = ({
-  cuts,
-  motion,
-  shakes,
-  children,
-}) => {
+export const Camera: React.FC<{
+  cuts: Cut[];
+  motion: Motion[];
+  shakes: Shake[];
+  hits?: Hit[];
+  children: React.ReactNode;
+}> = ({ cuts, motion, shakes, hits = [], children }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const grid = useGrid();
@@ -73,6 +77,14 @@ export const Camera: React.FC<{ cuts: Cut[]; motion: Motion[]; shakes: Shake[]; 
     y += jitter(`shake-y-${s.beat}`, frame, 1) * s.strength * decay;
     rotate += jitter(`shake-r-${s.beat}`, frame, 1) * s.strength * decay * 0.06;
   }
+
+  hits.forEach((beat, i) => {
+    const age = frame - at(beat);
+    if (age < 0 || age > 8) return;
+    const k = Math.exp(-age / 2.5);
+    scale *= 1 + 0.14 * k;
+    rotate += 2.5 * k * (i % 2 === 0 ? 1 : -1);
+  });
 
   let blurX = 0;
   let blurY = 0;

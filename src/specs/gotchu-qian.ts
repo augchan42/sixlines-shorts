@@ -36,4 +36,7 @@ export const gotchuQian: GotchuProps = {
   reveal: "Reveal the MOMENT..",
   credit: qian.credit,
   cta: qian.cta,
+  // The track's 3-3-2 figure (dotted eighths then an eighth), once around the bass dropout
+  // and again after the drop: the strongest percussive onsets between 13 and 17s.
+  hits: [23, 24.75, 25.5, 26, 27, 28, 28.75, 30],
 };

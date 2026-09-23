@@ -1,8 +1,8 @@
-import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
+import { AbsoluteFill, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
 import { Camera, type Cut, type Motion, type Shake } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
-import { beatFrame, GridContext, type Grid } from "../lib/timing";
+import { beatFrame, GridContext, useGrid, type Grid } from "../lib/timing";
 import type { GotchuProps } from "../schema";
 import { CaptionScreen } from "../scenes/CaptionScreen";
 import { ClockScreen } from "../scenes/ClockScreen";
@@ -48,11 +48,14 @@ const gotchuCamera = (props: GotchuProps) => {
     ...props.screens.map((_, i) => ({ beat: p.screens + i * 4, kind: whip(i + 1) })),
     { beat: p.reveal, kind: "zoom" },
   ];
+  // Beat punches pause while the hits play, so the syncopation reads.
+  const lastHit = Math.max(p.showcase, ...props.hits);
   const motion: Motion[] = [
     { beat: -10, punch: 0, sway: 0.3 },
     { beat: p.clock, punch: 0.03, sway: 0.5 },
     { beat: p.breakdown, punch: 0, sway: 0.2 },
-    { beat: p.showcase, punch: 0.06, sway: 0.6 },
+    { beat: p.showcase, punch: 0, sway: 0.6 },
+    { beat: Math.floor(lastHit) + 1, punch: 0.06, sway: 0.6 },
     { beat: p.run, punch: 0.07, sway: 0.5 },
     { beat: p.reveal, punch: 0, sway: 0.2 },
   ];
@@ -61,7 +64,16 @@ const gotchuCamera = (props: GotchuProps) => {
     // The drop.
     { beat: p.showcase, strength: 45, beats: 1 },
   ];
-  return { cuts, motion, shakes };
+  return { cuts, motion, shakes, hits: props.hits };
+};
+
+// A white flash on each hit, gone within a few frames.
+const HitFlash: React.FC<{ hits: number[] }> = ({ hits }) => {
+  const frame = useCurrentFrame();
+  const grid = useGrid();
+  const age = Math.min(...hits.map((b) => frame - beatFrame(grid, b)).filter((a) => a >= 0), Infinity);
+  const opacity = age < 5 ? 0.45 * Math.exp(-age / 1.5) : 0;
+  return <AbsoluteFill style={{ backgroundColor: "#fff", opacity, mixBlendMode: "screen" }} />;
 };
 
 export const Gotchu: React.FC<GotchuProps> = (props) => {
@@ -115,6 +127,7 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
             <EndCard credit={props.credit} cta={props.cta} icon={props.icon} />
           </Sequence>
         </Camera>
+        <HitFlash hits={props.hits} />
         <Grain />
       </AbsoluteFill>
     </GridContext.Provider>
