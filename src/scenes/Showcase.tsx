@@ -8,7 +8,7 @@ const captionColors = ["#7dff8a", "#ffb23f", "#7dff8a"];
 
 // The icon holds centre while colour-halftone art cycles behind it every two beats, or on
 // `swaps` (frames from the scene start) when given, and terminal captions change every
-// four beats. On `bare` swaps the plate fills the frame alone while it is in full colour.
+// four beats. A `bare` swap shows its plate alone, in full colour, until the next swap.
 // The last two beats punch into the icon.
 export const Showcase: React.FC<{
   icon: string;
@@ -30,12 +30,12 @@ export const Showcase: React.FC<{
   const swapIndex = Math.max(0, swapAt.filter((s) => frame >= s).length - 1);
   const bgIndex = swapIndex % art.length;
   const sinceSwap = frame - swapAt[swapIndex];
-  const hidden = bare.includes(swapAt[swapIndex]) && sinceSwap < 8;
+  const hidden = bare.includes(swapAt[swapIndex]);
   // A few frames of chunky pixels at each swap, the plate in full colour, then halftone.
   const mode: ImageMode =
     sinceSwap < 3
       ? { kind: "pixel", block: 72 - sinceSwap * 20 }
-      : sinceSwap < 8
+      : sinceSwap < 8 || hidden
         ? { kind: "plain" }
         : { kind: "halftone", cell: 13, color: true };
 
