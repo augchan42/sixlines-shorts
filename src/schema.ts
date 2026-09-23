@@ -29,7 +29,17 @@ export const shortSchema = z.object({
     lines: z.array(z.union([z.literal(0), z.literal(1)])).length(6),
   }),
   icon: z.string(),
-  art: z.array(z.string()).min(1),
+  // Stipple Yilin plates by where they appear. Paths under public/.
+  art: z.object({
+    // Colour halftone behind the icon, one every two beats.
+    showcase: z.array(z.string()).min(1),
+    // Full colour under the pattern line, one every half-beat.
+    run: z.array(z.string()).min(1),
+    // Green halftone behind the app screens.
+    screens: z.array(z.string()).min(1),
+    // Full colour, pixel-dissolves into the white flash.
+    finale: z.string(),
+  }),
   screens: z.array(z.string()).min(1),
   credit: z.string(),
   cta: z.string(),

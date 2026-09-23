@@ -22,6 +22,7 @@ Every cut is placed on a beat grid (`bpm`, `firstBeat`), so a new track only nee
 npm install
 npm run assets                                  # icon from ../sixlines-ios; Matrix-skin screens (sixlines.online/tour) and stipple art from the CDN
 npm run assets -- --music path/to/track.m4a     # optional: music to public/local/music.m4a
+npm run assets -- --hexagram 1,2                # stipple plates for these hexagrams (default 1)
 ```
 
 `public/assets/` and `public/local/` are gitignored. Set `SIXLINES_IOS` if the iOS repo is not at `../sixlines-ios`.

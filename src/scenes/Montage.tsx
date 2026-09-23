@@ -5,33 +5,42 @@ import { fonts } from "../lib/fonts";
 import { framesPerBeat, useGrid } from "../lib/timing";
 import type { ShortProps } from "../schema";
 
-// Ten beats of fast cuts: the hexagram builds, the pattern line over ink art,
-// four app screens, then the art pixel-dissolves into a white flash.
+// Where each part of the montage starts, in beats from its start.
+export const montageBeats = (props: Pick<ShortProps, "art">) => {
+  const run = 2;
+  const screens = run + Math.ceil(props.art.run.length / 2);
+  const dissolve = screens + 4;
+  return { run, screens, dissolve, end: dissolve + 2 };
+};
+
+// Fast cuts: the hexagram builds, the pattern line over a run of plates changing every
+// half-beat, four app screens, then the finale plate pixel-dissolves into a white flash.
 export const Montage: React.FC<{
   hexagram: ShortProps["hexagram"];
   pattern: string;
-  art: string[];
+  art: ShortProps["art"];
   screens: string[];
 }> = ({ hexagram, pattern, art, screens }) => {
   const beat = framesPerBeat(useGrid());
   const at = (b: number) => Math.round(b * beat);
   const len = (from: number, to: number) => at(to) - at(from);
+  const m = montageBeats({ art });
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <Sequence from={at(0)} durationInFrames={len(0, 2)}>
+      <Sequence from={at(0)} durationInFrames={len(0, m.run)}>
         <Hexagram hexagram={hexagram} />
       </Sequence>
-      <Sequence from={at(2)} durationInFrames={len(2, 4)}>
-        <PatternLine text={pattern} art={art[1 % art.length]} />
+      <Sequence from={at(m.run)} durationInFrames={len(m.run, m.screens)}>
+        <PatternLine text={pattern} plates={art.run} />
       </Sequence>
       {screens.slice(0, 4).map((screen, i) => (
-        <Sequence key={screen} from={at(4 + i)} durationInFrames={len(4 + i, 5 + i)}>
-          <Screen src={screen} art={art[(i + 2) % art.length]} flip={i % 2 === 1} seed={`screen-${i}`} />
+        <Sequence key={screen} from={at(m.screens + i)} durationInFrames={len(m.screens + i, m.screens + i + 1)}>
+          <Screen src={screen} art={art.screens[i % art.screens.length]} flip={i % 2 === 1} seed={`screen-${i}`} />
         </Sequence>
       ))}
-      <Sequence from={at(8)} durationInFrames={len(8, 10)}>
-        <Dissolve art={art[art.length - 1]} />
+      <Sequence from={at(m.dissolve)} durationInFrames={len(m.dissolve, m.end)}>
+        <Dissolve art={art.finale} />
       </Sequence>
     </AbsoluteFill>
   );
@@ -82,18 +91,30 @@ const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) 
   );
 };
 
-const PatternLine: React.FC<{ text: string; art: string }> = ({ text, art }) => {
+// The pattern line holds while the plates behind it change every half-beat.
+const PatternLine: React.FC<{ text: string; plates: string[] }> = ({ text, plates }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
+  const half = framesPerBeat(useGrid()) / 2;
+  const index = Math.min(Math.floor(frame / half), plates.length - 1);
+  const sinceSwap = frame - Math.round(index * half);
   const words = text.split(" ");
-  const half = Math.ceil(words.length / 2);
+  const halfWords = Math.ceil(words.length / 2);
   return (
-    <Slices amount={frame < 3 ? 120 : 0} seed="pattern">
+    <Slices amount={sinceSwap < 2 ? 120 : 0} seed={`pattern-${index}`}>
       <AbsoluteFill>
-        <ImageCanvas src={art} width={width} height={height} mode={{ kind: "plain" }} zoom={1.15 + (frame / durationInFrames) * 0.2} panY={0.4} />
+        <ImageCanvas
+          key={plates[index]}
+          src={plates[index]}
+          width={width}
+          height={height}
+          mode={{ kind: "plain" }}
+          zoom={1.15 + (frame / durationInFrames) * 0.2}
+          panY={0.4}
+        />
         <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0.75) 0%, transparent 45%)" }} />
         <AbsoluteFill style={{ padding: "220px 80px 0" }}>
-          {[words.slice(0, half), words.slice(half)].map((line, i) => (
+          {[words.slice(0, halfWords), words.slice(halfWords)].map((line, i) => (
             <div key={i} style={{ fontFamily: fonts.pixel, fontSize: 104, lineHeight: 1.12, color: "#fff", textShadow: fringe(4) }}>
               {line.join(" ")}
             </div>

@@ -5,7 +5,7 @@ import { beatFrame, GridContext, type Grid } from "./lib/timing";
 import type { ShortProps } from "./schema";
 import { EndCard } from "./scenes/EndCard";
 import { Hook } from "./scenes/Hook";
-import { Montage } from "./scenes/Montage";
+import { Montage, montageBeats } from "./scenes/Montage";
 import { Rivals } from "./scenes/Rivals";
 import { Showcase } from "./scenes/Showcase";
 import { Turn } from "./scenes/Turn";
@@ -17,7 +17,7 @@ export const plan = (props: ShortProps) => {
   const rivalsEnd = 2 + props.rivals.length * RIVAL_BEATS;
   const turnEnd = rivalsEnd + 4;
   const showcaseEnd = turnEnd + props.captions.length * 4 + 2;
-  const montageEnd = showcaseEnd + 10;
+  const montageEnd = showcaseEnd + montageBeats(props).end;
   const end = montageEnd + 5;
   return { rivalsEnd, turnEnd, showcaseEnd, montageEnd, end };
 };
@@ -25,6 +25,7 @@ export const plan = (props: ShortProps) => {
 // Where the camera cuts, punches and shakes, all in beats.
 export const cameraPlan = (props: ShortProps) => {
   const p = plan(props);
+  const m = montageBeats(props);
   const rivalCuts: Cut[] = props.rivals.slice(1).map((_, i) => ({
     beat: 2 + (i + 1) * RIVAL_BEATS,
     kind: i % 2 === 0 ? "whip-left" : "whip-right",
@@ -35,9 +36,9 @@ export const cameraPlan = (props: ShortProps) => {
     { beat: p.rivalsEnd, kind: "whip-up" },
     { beat: p.turnEnd, kind: "zoom" },
     { beat: p.showcaseEnd, kind: "zoom" },
-    { beat: p.showcaseEnd + 2, kind: "whip-left" },
-    { beat: p.showcaseEnd + 4, kind: "zoom" },
-    { beat: p.showcaseEnd + 8, kind: "whip-right" },
+    { beat: p.showcaseEnd + m.run, kind: "whip-left" },
+    { beat: p.showcaseEnd + m.screens, kind: "zoom" },
+    { beat: p.showcaseEnd + m.dissolve, kind: "whip-right" },
   ];
   const motion: Motion[] = [
     { beat: -10, punch: 0, sway: 0.3 },
@@ -80,7 +81,7 @@ export const Short: React.FC<ShortProps> = (props) => {
             <Turn text={props.turn} icon={props.icon} />
           </Sequence>
           <Sequence {...span(p.turnEnd, p.showcaseEnd)}>
-            <Showcase icon={props.icon} art={props.art} captions={props.captions} />
+            <Showcase icon={props.icon} art={props.art.showcase} captions={props.captions} />
           </Sequence>
           <Sequence {...span(p.showcaseEnd, p.montageEnd)}>
             <Montage hexagram={props.hexagram} pattern={props.pattern} art={props.art} screens={props.screens} />

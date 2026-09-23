@@ -35,12 +35,17 @@ const screens = {
   "matrix-yilin-1-9.png": "yilin-matrix-1-9",
 };
 
-// Yilin art keys are "{hexagram}-{changed hexagram}".
+// Stipple Yilin plates, all 64 for each hexagram given with --hexagram (default 1).
+// Keys are "{hexagram}-{changed hexagram}".
+const hexFlag = process.argv.indexOf("--hexagram");
+const hexagrams = hexFlag === -1 ? [1] : process.argv[hexFlag + 1].split(",").map(Number);
 const downloads = Object.fromEntries(
-  ["1-1", "1-2", "1-3", "1-5", "1-9"].map((k) => [`stipple-${k}.webp`, `yilin-stipple/${k}.webp`]),
+  hexagrams.flatMap((h) =>
+    Array.from({ length: 64 }, (_, i) => [`yilin/stipple-${h}-${i + 1}.webp`, `yilin-stipple/${h}-${i + 1}.webp`]),
+  ),
 );
 
-await mkdir(out, { recursive: true });
+await mkdir(path.join(out, "yilin"), { recursive: true });
 
 for (const [name, rel] of Object.entries(copies)) {
   const src = path.join(ios, rel);

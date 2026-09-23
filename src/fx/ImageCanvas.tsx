@@ -3,8 +3,9 @@ import { cancelRender, continueRender, delayRender, staticFile } from "remotion"
 
 export type ImageMode =
   | { kind: "plain" }
-  // White dots on black, dot size from brightness.
-  | { kind: "halftone"; cell: number; tint?: string }
+  // Dots on black, dot size from brightness. Dots are `tint` (white by default), or with
+  // `color` each dot takes the image's own hue at that cell.
+  | { kind: "halftone"; cell: number; tint?: string; color?: boolean }
   // Nearest-neighbour blocks.
   | { kind: "pixel"; block: number };
 
@@ -96,6 +97,11 @@ export const ImageCanvas: React.FC<Props> = ({ src, width, height, mode, zoom = 
         // Contrast curve so midtones drop out, like a photocopied halftone.
         const r = Math.pow(lum, 1.6) * size * 0.72;
         if (r < 0.6) continue;
+        if (mode.color) {
+          // Full-strength hue; the dot's size already carries the brightness.
+          const k = 255 / Math.max(1, data[i], data[i + 1], data[i + 2]);
+          ctx.fillStyle = `rgb(${data[i] * k}, ${data[i + 1] * k}, ${data[i + 2] * k})`;
+        }
         ctx.beginPath();
         ctx.arc(x * size + size / 2, y * size + size / 2, r, 0, Math.PI * 2);
         ctx.fill();

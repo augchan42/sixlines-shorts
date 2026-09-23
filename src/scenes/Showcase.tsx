@@ -6,7 +6,7 @@ import { framesPerBeat, useGrid } from "../lib/timing";
 
 const captionColors = ["#7dff8a", "#ffb23f", "#7dff8a"];
 
-// The icon holds centre while halftone art cycles behind it every two beats and
+// The icon holds centre while colour-halftone art cycles behind it every two beats and
 // terminal captions change every four. The last two beats punch into the icon.
 export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[] }> = ({ icon, art, captions }) => {
   const frame = useCurrentFrame();
@@ -22,7 +22,7 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
   const sinceSwap = frame - Math.floor(beatIndex / 2) * 2 * beat;
   // A few frames of chunky pixels at each swap, then settle into halftone.
   const mode: ImageMode =
-    sinceSwap < 3 ? { kind: "pixel", block: 72 - sinceSwap * 20 } : { kind: "halftone", cell: 13 };
+    sinceSwap < 3 ? { kind: "pixel", block: 72 - sinceSwap * 20 } : { kind: "halftone", cell: 13, color: true };
 
   const caption = captions[Math.min(Math.floor(beatIndex / 4), captions.length - 1)];
   const captionAge = frame - Math.floor(beatIndex / 4) * 4 * beat;
