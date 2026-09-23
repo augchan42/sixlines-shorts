@@ -1,6 +1,7 @@
-import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useVideoConfig } from "remotion";
+import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
 import { Camera, type Cut, type Motion, type Shake } from "./fx/Camera";
 import { FxDefs, Grain } from "./fx/Glitch";
+import { Soundtrack } from "./fx/Soundtrack";
 import { beatFrame, GridContext, type Grid } from "./lib/timing";
 import type { ShortProps } from "./schema";
 import { EndCard } from "./scenes/EndCard";
@@ -58,7 +59,7 @@ export const cameraPlan = (props: ShortProps) => {
 };
 
 export const Short: React.FC<ShortProps> = (props) => {
-  const { fps, durationInFrames } = useVideoConfig();
+  const { fps } = useVideoConfig();
   const grid: Grid = { fps, bpm: props.bpm, firstBeat: props.firstBeat };
   const p = plan(props);
   const f = (beat: number) => beatFrame(grid, beat);
@@ -69,19 +70,8 @@ export const Short: React.FC<ShortProps> = (props) => {
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
         <FxDefs />
-        {props.music && (
-          <Audio
-            src={staticFile(props.music)}
-            trimBefore={Math.round(props.musicStart * fps)}
-            // Fade out over the last two beats of the end card.
-            volume={(frame) =>
-              interpolate(frame, [f(p.end - 2), durationInFrames], [1, 0], {
-                extrapolateLeft: "clamp",
-                extrapolateRight: "clamp",
-              })
-            }
-          />
-        )}
+        {/* Fade out over the last two beats of the end card. */}
+        <Soundtrack src={props.music} start={props.musicStart} fadeFrom={f(p.end - 2)} />
         <Camera {...camera}>
           <Sequence from={0} durationInFrames={f(2)}>
             <Hook text={props.hook} />

@@ -1,9 +1,11 @@
 import { Composition } from "remotion";
 import { beatFrame } from "./lib/timing";
-import { shortSchema, type ShortProps } from "./schema";
+import { gotchuSchema, shortSchema, type GotchuProps, type ShortProps } from "./schema";
 import { plan, Short } from "./Short";
 import { qian } from "./specs/qian";
+import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
+import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 
 const FPS = 30;
 
@@ -32,5 +34,18 @@ export const Root: React.FC = () => (
         calculateMetadata={calculateMetadata}
       />
     ))}
+    <Composition
+      id="GotchuQian"
+      component={Gotchu}
+      schema={gotchuSchema}
+      defaultProps={gotchuQian}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={1}
+      calculateMetadata={({ props }: { props: GotchuProps }) => ({
+        durationInFrames: beatFrame({ fps: FPS, bpm: props.bpm, firstBeat: props.firstBeat }, gotchuPlan(props).end),
+      })}
+    />
   </>
 );

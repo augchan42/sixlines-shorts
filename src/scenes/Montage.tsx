@@ -52,7 +52,7 @@ const LINE = 50;
 const LINE_GAP = LINE * 0.6;
 const TRIGRAM_GAP = LINE * 1.8;
 
-const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => {
+export const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const perLine = (durationInFrames * 0.6) / 6;
@@ -92,7 +92,7 @@ const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) 
 };
 
 // The pattern line holds while the plates behind it change every half-beat.
-const PatternLine: React.FC<{ text: string; plates: string[] }> = ({ text, plates }) => {
+export const PatternLine: React.FC<{ text: string; plates: string[] }> = ({ text, plates }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
   const half = framesPerBeat(useGrid()) / 2;

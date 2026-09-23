@@ -23,7 +23,11 @@ export const Hook: React.FC<{ text: string }> = ({ text }) => {
             color: "#fff",
             opacity: flicker,
             textShadow: caps ? fringe(5) : glow(),
-            whiteSpace: "pre",
+            // Wraps a long hook onto a second line instead of running off the frame.
+            maxWidth: 940,
+            textAlign: "center",
+            lineHeight: 1.1,
+            whiteSpace: "pre-wrap",
           }}
         >
           {(caps ? text.toUpperCase() : text).slice(0, typed)}
