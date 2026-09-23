@@ -22,6 +22,8 @@ export const gotchuQian: GotchuProps = {
   verses: ["assets/matrix-yilin-1-1.png", "assets/matrix-yilin-1-9.png"],
   hexagram: qian.hexagram,
   breakdown: "LETS CONTINUE..",
+  // Green, grey, then red into the drop.
+  breakdownArt: [plate("1-35"), plate("1-19"), plate("1-34")],
   icon: qian.icon,
   captions: ["SIXTY-FOUR RECORDS", "READ THE STRUCTURE", "ASK · CAST · REFLECT", "THE BOOK OF CHANGES"],
   showcaseArt: [...qian.art.showcase, qian.art.finale],

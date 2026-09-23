@@ -83,6 +83,16 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
   const f = (beat: number) => beatFrame(grid, beat);
   const span = (from: number, to: number) => ({ from: f(from), durationInFrames: f(to) - f(from) });
 
+  // Hits after the breakdown's first beat each cut to the next breakdown plate; the rain
+  // itself holds the first beat.
+  const breakdownCuts = props.hits
+    .filter((h) => h > p.breakdown && h < p.showcase)
+    .map((h, i) => ({ frame: f(h) - f(p.breakdown), src: props.breakdownArt[i % props.breakdownArt.length] }));
+  // The showcase art changes on each hit, then every two beats until the punch-in.
+  const showcaseHits = props.hits.filter((h) => h >= p.showcase && h < p.run);
+  const showcaseSwaps = [p.showcase, ...showcaseHits.filter((h) => h > p.showcase)];
+  for (let b = showcaseSwaps[showcaseSwaps.length - 1] + 2; b < p.run - 2; b += 2) showcaseSwaps.push(b);
+
   return (
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -107,10 +117,10 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
             <Hexagram hexagram={props.hexagram} />
           </Sequence>
           <Sequence {...span(p.breakdown, p.showcase)}>
-            <CodeRain text={props.breakdown} />
+            <CodeRain text={props.breakdown} cuts={breakdownCuts} />
           </Sequence>
           <Sequence {...span(p.showcase, p.run)}>
-            <Showcase icon={props.icon} art={props.showcaseArt} captions={props.captions} />
+            <Showcase icon={props.icon} art={props.showcaseArt} captions={props.captions} swaps={showcaseSwaps.map((b) => f(b) - f(p.showcase))} />
           </Sequence>
           <Sequence {...span(p.run, p.screens)}>
             <PatternLine text={props.pattern} plates={props.run} />

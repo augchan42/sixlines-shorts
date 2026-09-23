@@ -1,14 +1,19 @@
 import { useLayoutEffect, useRef } from "react";
 import { AbsoluteFill, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
-import { glow } from "../fx/Glitch";
+import { glow, RGBSplit, Slices } from "../fx/Glitch";
+import { ImageCanvas } from "../fx/ImageCanvas";
 import { fonts } from "../lib/fonts";
 
 const GLYPHS = "01ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄ乾坤震巽坎離艮兌䷀䷁䷂䷃";
 const CELL = 36;
 const TRAIL = 18;
 
-// Falling green glyphs, then a line of text typed over them.
-export const CodeRain: React.FC<{ text: string }> = ({ text }) => {
+// A plate that cuts in at `frame` (from the scene start) and holds until the next one.
+export type PlateCut = { frame: number; src: string };
+
+// Falling green glyphs, then a line of text typed over them. Each cut slams a full-bleed
+// plate in behind the text, with the rain thinned over it.
+export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[] }> = ({ text, cuts = [] }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -35,10 +40,32 @@ export const CodeRain: React.FC<{ text: string }> = ({ text }) => {
     }
   }, [frame, width, height]);
 
+  const cut = [...cuts].reverse().find((c) => frame >= c.frame);
+  const sinceCut = cut ? frame - cut.frame : 0;
+
   const typed = Math.ceil(interpolate(frame, [4, 16], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <canvas ref={canvas} width={width} height={height} style={{ width, height, opacity: 0.8 }} />
+      {cut && (
+        <Slices amount={sinceCut < 2 ? 160 : 0} seed={`cut-${cut.frame}`}>
+          <RGBSplit amount={sinceCut < 3 ? 24 : 4} seed={`cut-${cut.frame}`}>
+            <ImageCanvas
+              key={cut.src}
+              src={cut.src}
+              width={width}
+              height={height}
+              mode={sinceCut < 2 ? { kind: "pixel", block: 60 - sinceCut * 25 } : { kind: "plain" }}
+              zoom={1.1 + 0.25 * Math.exp(-sinceCut / 3)}
+            />
+          </RGBSplit>
+        </Slices>
+      )}
+      <canvas
+        ref={canvas}
+        width={width}
+        height={height}
+        style={{ position: "absolute", width, height, opacity: cut ? 0.3 : 0.8, mixBlendMode: cut ? "screen" : "normal" }}
+      />
       <AbsoluteFill style={{ justifyContent: "center", padding: "0 70px" }}>
         <div
           style={{

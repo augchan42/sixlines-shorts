@@ -6,9 +6,15 @@ import { framesPerBeat, useGrid } from "../lib/timing";
 
 const captionColors = ["#7dff8a", "#ffb23f", "#7dff8a"];
 
-// The icon holds centre while colour-halftone art cycles behind it every two beats and
-// terminal captions change every four. The last two beats punch into the icon.
-export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[] }> = ({ icon, art, captions }) => {
+// The icon holds centre while colour-halftone art cycles behind it every two beats, or on
+// `swaps` (frames from the scene start) when given, and terminal captions change every
+// four beats. The last two beats punch into the icon.
+export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[]; swaps?: number[] }> = ({
+  icon,
+  art,
+  captions,
+  swaps,
+}) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
   const beat = framesPerBeat(useGrid());
@@ -18,11 +24,17 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
   const punchStart = durationInFrames - beat * 2;
   const punching = frame >= punchStart;
 
-  const bgIndex = Math.floor(beatIndex / 2) % art.length;
-  const sinceSwap = frame - Math.floor(beatIndex / 2) * 2 * beat;
-  // A few frames of chunky pixels at each swap, then settle into halftone.
+  const swapAt = swaps ?? Array.from({ length: Math.ceil(durationInFrames / (beat * 2)) }, (_, i) => Math.floor(i * 2 * beat));
+  const swapIndex = Math.max(0, swapAt.filter((s) => frame >= s).length - 1);
+  const bgIndex = swapIndex % art.length;
+  const sinceSwap = frame - swapAt[swapIndex];
+  // A few frames of chunky pixels at each swap, the plate in full colour, then halftone.
   const mode: ImageMode =
-    sinceSwap < 3 ? { kind: "pixel", block: 72 - sinceSwap * 20 } : { kind: "halftone", cell: 13, color: true };
+    sinceSwap < 3
+      ? { kind: "pixel", block: 72 - sinceSwap * 20 }
+      : sinceSwap < 8
+        ? { kind: "plain" }
+        : { kind: "halftone", cell: 13, color: true };
 
   const caption = captions[Math.min(Math.floor(beatIndex / 4), captions.length - 1)];
   const captionAge = frame - Math.floor(beatIndex / 4) * 4 * beat;

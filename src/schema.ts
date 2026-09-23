@@ -69,6 +69,8 @@ export const gotchuSchema = z.object({
   hexagram: hexagramSchema,
   // Typed over the code rain, which sits on the music's breakdown.
   breakdown: z.string(),
+  // Full-bleed plates that cut in on the hits inside the breakdown, one per hit.
+  breakdownArt: z.array(z.string()).min(1),
   icon: z.string(),
   captions: z.array(z.string()).min(1),
   showcaseArt: z.array(z.string()).min(1),
