@@ -24,8 +24,11 @@ export const qian: ShortProps = {
     lines: [1, 1, 1, 1, 1, 1],
   },
   icon: "assets/icon.png",
-  art: ["assets/stipple-1-1.webp", "assets/ink-1-9.webp", "assets/stipple-1-9.webp", "assets/ink-1-1.webp"],
-  screens: ["assets/screen-reading.png", "assets/screen-verse.png", "assets/screen-ask.png", "assets/screen-records.png"],
+  // Stipple art and Matrix-skin screens, as in the Matrix world of sixlines.online/tour.
+  // The pattern line shows art[1] and the dissolve the last one in full colour, so those
+  // two are the green-lit plates; the rest only appear as halftone.
+  art: ["assets/stipple-1-2.webp", "assets/stipple-1-9.webp", "assets/stipple-1-5.webp", "assets/stipple-1-1.webp"],
+  screens: ["assets/matrix-reading.png", "assets/matrix-yilin-1-1.png", "assets/matrix-ask.png", "assets/matrix-records.png"],
   credit: "~sixlines",
   cta: "Six Lines · on the App Store",
 };

@@ -20,7 +20,7 @@ Every cut is placed on a beat grid (`bpm`, `firstBeat`), so a new track only nee
 
 ```sh
 npm install
-npm run assets                                  # icon + screenshots from ../sixlines-ios, art from the CDN
+npm run assets                                  # icon from ../sixlines-ios; Matrix-skin screens (sixlines.online/tour) and stipple art from the CDN
 npm run assets -- --music path/to/track.m4a     # optional: music to public/local/music.m4a
 ```
 
