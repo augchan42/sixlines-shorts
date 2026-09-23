@@ -1,6 +1,8 @@
 // Copies the app icon from ../sixlines-ios, and downloads the Matrix-skin app
 // screenshots from the sixlines.online/tour gallery and the stipple hexagram art
-// (the Matrix skin's artwork) from the CDN, into public/assets/ (gitignored).
+// (the Matrix skin's artwork) from the CDN, into public/assets/ (gitignored). Also
+// downloads the reference shorts made in CapCut to public/local/shorts/ (gitignored,
+// since their soundtracks are commercial tracks), skipping any already there.
 //
 //   npm run assets
 //   npm run assets -- --music ~/Downloads/some-short.mov   # also extract a music track to public/local/
@@ -34,6 +36,10 @@ const screens = {
   "matrix-yilin-1-1.png": "yilin-matrix-1-1",
   "matrix-yilin-1-9.png": "yilin-matrix-1-9",
 };
+
+// The CapCut shorts the compositions recreate. File names carry the date and time each
+// was first sent.
+const shorts = ["2026-09-23-1944-short.mp4", "2026-09-23-2040-short.mp4"];
 
 // Stipple Yilin plates, all 64 for each hexagram given with --hexagram (default 1).
 // Keys are "{hexagram}-{changed hexagram}".
@@ -74,6 +80,21 @@ for (const [name, stop] of Object.entries(screens)) {
   execFileSync("ffmpeg", ["-v", "error", "-y", "-i", tmp, "-vf", `crop=iw:ih-${TOUR_HEADER}:0:${TOUR_HEADER}`, path.join(out, name)]);
   await rm(tmp);
   console.log(`fetched  ${name}`);
+}
+
+const shortsDir = path.join(root, "public/local/shorts");
+await mkdir(shortsDir, { recursive: true });
+for (const name of shorts) {
+  const dest = path.join(shortsDir, name);
+  try {
+    await access(dest);
+    console.log(`present  local/shorts/${name}`);
+    continue;
+  } catch {}
+  const res = await fetch(`${cdn}/shorts/${name}`);
+  if (!res.ok) throw new Error(`${res.status} fetching ${cdn}/shorts/${name}`);
+  await writeFile(dest, Buffer.from(await res.arrayBuffer()));
+  console.log(`fetched  local/shorts/${name}`);
 }
 
 const musicFlag = process.argv.indexOf("--music");

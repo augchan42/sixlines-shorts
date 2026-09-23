@@ -2,7 +2,7 @@ import type { ShortProps } from "../schema";
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
 
-// Recreates the structure of the 2026-09-23 19:44 short (sixlines-ios docs/videos/shorts)
+// Recreates the structure of the 2026-09-23 19:44 short (public/local/shorts, from npm run assets)
 // for hexagram 1. Beat grid measured from that short's music: 129.8 BPM, first beat 0.42s.
 export const qian: ShortProps = {
   bpm: 129.8,

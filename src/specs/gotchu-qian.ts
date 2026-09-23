@@ -3,7 +3,7 @@ import { qian } from "./qian";
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
 
-// Recreates the structure of the 2026-09-23 20:40 short (sixlines-ios docs/videos/shorts)
+// Recreates the structure of the 2026-09-23 20:40 short (public/local/shorts, from npm run assets)
 // for hexagram 1, cut to Glowline, "Syncopation Heaven" (local only until Glowline agrees).
 //
 // Her track (~107 BPM) dips at 12–14.5s under "LETS CONTINUE.." and rebuilds into the

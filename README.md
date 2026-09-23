@@ -2,8 +2,8 @@
 
 Vertical promo shorts for Six Lines, rendered from code with [Remotion](https://www.remotion.dev).
 
-The first composition, `Qian`, recreates the structure of the 2026-09-23 19:44 short in
-`sixlines-ios/docs/videos/shorts/` for hexagram 1:
+The first composition, `Qian`, recreates the structure of the 2026-09-23 19:44 short
+(downloaded to `public/local/shorts/` by `npm run assets`) for hexagram 1:
 
 | Beats | Scene | What happens |
 |-------|-------|--------------|
@@ -20,12 +20,12 @@ Every cut is placed on a beat grid (`bpm`, `firstBeat`), so a new track only nee
 
 ```sh
 npm install
-npm run assets                                  # icon from ../sixlines-ios; Matrix-skin screens (sixlines.online/tour) and stipple art from the CDN
+npm run assets                                  # icon from ../sixlines-ios; Matrix-skin screens (sixlines.online/tour), stipple art and the reference shorts from the CDN
 npm run assets -- --music path/to/track.m4a     # optional: music to public/local/music.m4a
 npm run assets -- --hexagram 1,2                # stipple plates for these hexagrams (default 1)
 ```
 
-`public/assets/` and `public/local/` are gitignored. Set `SIXLINES_IOS` if the iOS repo is not at `../sixlines-ios`.
+`public/assets/` and `public/local/` are gitignored. The reference shorts stay out of git because their soundtracks are commercial tracks. Set `SIXLINES_IOS` if the iOS repo is not at `../sixlines-ios`.
 
 ## Use
 
