@@ -37,6 +37,12 @@ export const Montage: React.FC<{
   );
 };
 
+// Proportions follow the site's OG image (sixlines-site src/app/api/og/route.tsx):
+// lines within a trigram sit 0.6 line-heights apart, the two trigrams 1.8.
+const LINE = 50;
+const LINE_GAP = LINE * 0.6;
+const TRIGRAM_GAP = LINE * 1.8;
+
 const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -44,12 +50,21 @@ const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) 
   const green = "#6cff7a";
   return (
     <RGBSplit amount={frame < 3 ? 16 : 4} seed="hex">
-      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", gap: 26, paddingBottom: 240 }}>
+      <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", paddingBottom: 240 }}>
         {/* Top line first on screen; lines build from the bottom up, as when casting. */}
         {[5, 4, 3, 2, 1, 0].map((i) => {
           const w = interpolate(frame - i * perLine, [0, 3], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
           return (
-            <div key={i} style={{ display: "flex", gap: 60, width: 620 * w, height: 58 }}>
+            <div
+              key={i}
+              style={{
+                display: "flex",
+                gap: 70,
+                width: 620 * w,
+                height: LINE,
+                marginBottom: i === 3 ? TRIGRAM_GAP : i === 0 ? 0 : LINE_GAP,
+              }}
+            >
               {(hexagram.lines[i] ? [1] : [0, 1]).map((k) => (
                 <div key={k} style={{ flex: 1, backgroundColor: green, boxShadow: `0 0 22px ${green}` }} />
               ))}
