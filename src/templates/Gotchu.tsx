@@ -88,7 +88,8 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
   const breakdownCuts = props.hits
     .filter((h) => h > p.breakdown && h < p.showcase)
     .map((h, i) => ({ frame: f(h) - f(p.breakdown), src: props.breakdownArt[i % props.breakdownArt.length] }));
-  // The showcase art changes on each hit, then every two beats until the punch-in.
+  // The showcase art changes on each hit, then every two beats until the punch-in. The
+  // hits after the drop show the plate alone, without the icon and caption.
   const showcaseHits = props.hits.filter((h) => h >= p.showcase && h < p.run);
   const showcaseSwaps = [p.showcase, ...showcaseHits.filter((h) => h > p.showcase)];
   for (let b = showcaseSwaps[showcaseSwaps.length - 1] + 2; b < p.run - 2; b += 2) showcaseSwaps.push(b);
@@ -120,7 +121,13 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
             <CodeRain text={props.breakdown} cuts={breakdownCuts} />
           </Sequence>
           <Sequence {...span(p.showcase, p.run)}>
-            <Showcase icon={props.icon} art={props.showcaseArt} captions={props.captions} swaps={showcaseSwaps.map((b) => f(b) - f(p.showcase))} />
+            <Showcase
+              icon={props.icon}
+              art={props.showcaseArt}
+              captions={props.captions}
+              swaps={showcaseSwaps.map((b) => f(b) - f(p.showcase))}
+              bare={showcaseHits.filter((h) => h > p.showcase).map((b) => f(b) - f(p.showcase))}
+            />
           </Sequence>
           <Sequence {...span(p.run, p.screens)}>
             <PatternLine text={props.pattern} plates={props.run} />

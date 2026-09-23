@@ -8,13 +8,15 @@ const captionColors = ["#7dff8a", "#ffb23f", "#7dff8a"];
 
 // The icon holds centre while colour-halftone art cycles behind it every two beats, or on
 // `swaps` (frames from the scene start) when given, and terminal captions change every
-// four beats. The last two beats punch into the icon.
-export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[]; swaps?: number[] }> = ({
-  icon,
-  art,
-  captions,
-  swaps,
-}) => {
+// four beats. On `bare` swaps the plate fills the frame alone while it is in full colour.
+// The last two beats punch into the icon.
+export const Showcase: React.FC<{
+  icon: string;
+  art: string[];
+  captions: string[];
+  swaps?: number[];
+  bare?: number[];
+}> = ({ icon, art, captions, swaps, bare = [] }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
   const beat = framesPerBeat(useGrid());
@@ -28,6 +30,7 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
   const swapIndex = Math.max(0, swapAt.filter((s) => frame >= s).length - 1);
   const bgIndex = swapIndex % art.length;
   const sinceSwap = frame - swapAt[swapIndex];
+  const hidden = bare.includes(swapAt[swapIndex]) && sinceSwap < 8;
   // A few frames of chunky pixels at each swap, the plate in full colour, then halftone.
   const mode: ImageMode =
     sinceSwap < 3
@@ -57,7 +60,7 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
               zoom={1.1 + (sinceSwap / (beat * 2)) * 0.12}
             />
           </AbsoluteFill>
-          {!punching && (
+          {!punching && !hidden && (
             <AbsoluteFill style={{ padding: "210px 90px 0" }}>
               <div style={{ fontFamily: fonts.pixel, fontSize: 150, lineHeight: 1.15, color, textShadow: fringe(3) }}>
                 {caption.slice(0, typed)}
@@ -65,7 +68,7 @@ export const Showcase: React.FC<{ icon: string; art: string[]; captions: string[
               <div style={{ width: 200, height: 12, marginTop: 28, backgroundColor: color, boxShadow: `0 0 18px ${color}` }} />
             </AbsoluteFill>
           )}
-          <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
+          <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", opacity: hidden ? 0 : 1 }}>
             <Img
               src={staticFile(icon)}
               style={{
