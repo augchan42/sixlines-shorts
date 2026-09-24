@@ -10,8 +10,8 @@
     "source": "commentary/en/3.json#judgment.synthesis"
    },
    {
-    "text": "Sort the thread\nbefore the rain.",
-    "source": "commentary/en/3.json#image.synthesis"
+    "text": "Boring beats\nbold here.",
+    "source": "commentary/en/3.json#judgment.synthesis"
    }
   ],
   "question": {
@@ -19,7 +19,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The image is thunder with no rain yet. The wise one sorts thread, so there’s something to weave when the rain comes.",
+   "text": "The image is thunder with no rain yet, and the wise one sorts thread. When the rain comes, there’s something to weave.",
    "source": "commentary/en/3.json#image.synthesis"
   }
  },
@@ -121,25 +121,25 @@
  },
  "8": {
   "hook": {
-   "text": "Waiting too long to join?",
+   "text": "Keep saying you’ll join later?",
    "source": "commentary/en/8.json#judgment.synthesis"
   },
   "meaning": [
    {
-    "text": "Holding Together:\njoin now.",
+    "text": "Holding Together\nsays: join now.",
     "source": "commentary/en/8.json#judgment.synthesis"
    },
    {
-    "text": "The window to\njoin closes.",
+    "text": "Late arrivals\nmiss out.",
     "source": "commentary/en/8.json#judgment.synthesis"
    }
   ],
   "question": {
-   "text": "Whose group\nwill you join?",
+   "text": "Who’s waiting\nfor your yes?",
    "source": "written"
   },
   "caption": {
-   "text": "Water on the earth runs to the low ground and fills it evenly. The old kings didn’t force alliances; they made a place worth coming to.",
+   "text": "The image is water on the earth, running to the low ground and filling it. People who need to belong come on their own; the ones who come late do badly.",
    "source": "commentary/en/8.json#image.synthesis"
   }
  },
@@ -169,25 +169,25 @@
  },
  "10": {
   "hook": {
-   "text": "Stepping on a tiger’s tail?",
+   "text": "Working for someone with a temper?",
    "source": "commentary/en/10.json#judgment.synthesis"
   },
   "meaning": [
    {
-    "text": "Treading says:\nmind your steps.",
+    "text": "Treading says:\nmind how you step.",
     "source": "commentary/en/10.json#judgment.synthesis"
    },
    {
-    "text": "Good conduct\nkeeps you safe.",
+    "text": "Act well and\nit won’t flare.",
     "source": "commentary/en/10.json#judgment.synthesis"
    }
   ],
   "question": {
-   "text": "Where to tread\nlightly today?",
+   "text": "Who do you tread\ncarefully around?",
    "source": "written"
   },
   "caption": {
-   "text": "The old text: you step on the tiger’s tail and it doesn’t bite. Conduct yourself well inside the danger and it stays asleep.",
+   "text": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep.",
    "source": "commentary/en/10.json#judgment.synthesis"
   }
  },
@@ -241,7 +241,7 @@
  },
  "13": {
   "hook": {
-   "text": "Building a group behind closed doors?",
+   "text": "Same five friends for years?",
    "source": "commentary/en/13.json#judgment.synthesis"
   },
   "meaning": [
@@ -250,7 +250,7 @@
     "source": "commentary/en/13.json#judgment.synthesis"
    },
    {
-    "text": "Anyone can\nwalk up.",
+    "text": "Let new people\nwalk up.",
     "source": "commentary/en/13.json#judgment.synthesis"
    }
   ],
@@ -259,8 +259,8 @@
    "source": "written"
   },
   "caption": {
-   "text": "Fire rises with heaven: they travel together without being the same. Real fellowship knows the differences and keeps the door open.",
-   "source": "commentary/en/13.json#image.synthesis"
+   "text": "The old text puts fellowship out in the open, where anyone can walk up. Once you close the door and pick who’s in, you’ve left it.",
+   "source": "commentary/en/13.json#judgment.synthesis"
   }
  },
  "14": {
@@ -270,11 +270,11 @@
   },
   "meaning": [
    {
-    "text": "Great Possession:\nyes.",
-    "source": "commentary/en/14.json#judgment.synthesis"
+    "text": "Great Possession\nsays: you’re seen.",
+    "source": "commentary/en/14.json#image.synthesis"
    },
    {
-    "text": "Use it to do\nsome good.",
+    "text": "Stop the wrong,\nback the right.",
     "source": "commentary/en/14.json#image.synthesis"
    }
   ],
@@ -283,7 +283,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The image is fire high in the sky, lighting everything below. With plenty comes visibility: stop what’s wrong, back what’s right.",
+   "text": "The image is fire high in the sky, lighting everything below. When you have a lot, people see what you do with it.",
    "source": "commentary/en/14.json#image.synthesis"
   }
  },
@@ -337,16 +337,16 @@
  },
  "17": {
   "hook": {
-   "text": "Pushing on past dark?",
+   "text": "Still at your desk after dark?",
    "source": "commentary/en/17.json#image.synthesis"
   },
   "meaning": [
    {
-    "text": "Following says:\ngo with it.",
-    "source": "commentary/en/17.json#judgment.synthesis"
+    "text": "Following says:\ngo with the day.",
+    "source": "commentary/en/17.json#image.synthesis"
    },
    {
-    "text": "When day ends,\ngo inside.",
+    "text": "Day’s done.\nGo in, rest.",
     "source": "commentary/en/17.json#image.synthesis"
    }
   ],
@@ -355,7 +355,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The image is thunder resting inside the lake: at nightfall you go in and rest. Following that rhythm is what makes tomorrow’s energy.",
+   "text": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy.",
    "source": "commentary/en/17.json#image.synthesis"
   }
  },
@@ -366,11 +366,11 @@
   },
   "meaning": [
    {
-    "text": "Decay says:\nfix it slowly.",
+    "text": "Decay says:\nit can be fixed.",
     "source": "commentary/en/18.json#judgment.synthesis"
    },
    {
-    "text": "Think three days\nbefore and after.",
+    "text": "Rushed repairs\ndon’t hold.",
     "source": "commentary/en/18.json#judgment.synthesis"
    }
   ],
@@ -379,13 +379,13 @@
    "source": "written"
   },
   "caption": {
-   "text": "Wind at the foot of the mountain: rot starts below, where you can’t see it. Surface repairs don’t reach it, but care for the people does.",
-   "source": "commentary/en/18.json#image.synthesis"
+   "text": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t.",
+   "source": "commentary/en/18.json#judgment.synthesis"
   }
  },
  "19": {
   "hook": {
-   "text": "Everything opening up?",
+   "text": "Things finally taking off?",
    "source": "commentary/en/19.json#judgment.synthesis"
   },
   "meaning": [
@@ -457,16 +457,16 @@
  },
  "22": {
   "hook": {
-   "text": "Trying to make it look nice?",
+   "text": "Polishing the slides instead of deciding?",
    "source": "commentary/en/22.json#judgment.synthesis"
   },
   "meaning": [
    {
-    "text": "Grace says:\nkeep it small.",
+    "text": "Grace says:\nsmall things only.",
     "source": "commentary/en/22.json#judgment.synthesis"
    },
    {
-    "text": "Looks help small\nthings, not big.",
+    "text": "Polish can’t make\nbig decisions.",
     "source": "commentary/en/22.json#image.synthesis"
    }
   ],
@@ -475,7 +475,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "Fire at the foot of the mountain is beautiful, but it only lights so far. Use grace for small things; big decisions need substance.",
+   "text": "Fire at the foot of the mountain is beautiful, but its light only reaches so far. Use grace for small things and substance for the hard ones.",
    "source": "commentary/en/22.json#image.synthesis"
   }
  },
@@ -486,11 +486,11 @@
   },
   "meaning": [
    {
-    "text": "Splitting Apart:\ndon’t move.",
+    "text": "Splitting Apart\nsays: don’t run.",
     "source": "commentary/en/23.json#judgment.synthesis"
    },
    {
-    "text": "Give to those\nbelow you.",
+    "text": "Stay and help\nthose below you.",
     "source": "commentary/en/23.json#image.synthesis"
    }
   ],
@@ -499,7 +499,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The mountain sits on eroding earth. The old text tells those on top to give to those below: the summit rests on the base.",
+   "text": "The mountain sits on eroding earth, and the old text tells those on top to give to those below. The summit rests on the base.",
    "source": "commentary/en/23.json#image.synthesis"
   }
  },
@@ -510,16 +510,16 @@
   },
   "meaning": [
    {
-    "text": "Return says:\nit comes back.",
-    "source": "commentary/en/24.json#judgment.synthesis"
+    "text": "Return says:\nenergy returns.",
+    "source": "commentary/en/24.json#image.synthesis"
    },
    {
-    "text": "Rest while\nit returns.",
+    "text": "Rest. Only rushing\nstops it.",
     "source": "commentary/en/24.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "What’s coming\nback to you?",
+   "text": "What are you\nrushing back to?",
    "source": "written"
   },
   "caption": {
@@ -577,8 +577,8 @@
  },
  "27": {
   "hook": {
-   "text": "Eating and saying too much?",
-   "source": "commentary/en/27.json#image.synthesis"
+   "text": "Said something you regret at dinner?",
+   "source": "commentary/en/27.json#judgment.synthesis"
   },
   "meaning": [
    {
@@ -591,11 +591,11 @@
    }
   ],
   "question": {
-   "text": "What are you\nfeeding on?",
+   "text": "Which do you\nwatch less?",
    "source": "written"
   },
   "caption": {
-   "text": "Thunder under a mountain, and the advice is: careful with words, moderate with food. Easy to say, hard to do.",
+   "text": "Thunder under a mountain, and the advice is: careful with words, moderate with food. Both sound easy and trip up almost everyone.",
    "source": "commentary/en/27.json#image.synthesis"
   }
  },
@@ -625,7 +625,7 @@
  },
  "31": {
   "hook": {
-   "text": "Can’t be moved by anyone?",
+   "text": "Listening, but already decided?",
    "source": "commentary/en/31.json#image.synthesis"
   },
   "meaning": [
@@ -639,7 +639,7 @@
    }
   ],
   "question": {
-   "text": "Where could you\nbe more open?",
+   "text": "What have you\nalready decided?",
    "source": "written"
   },
   "caption": {
@@ -697,7 +697,7 @@
  },
  "34": {
   "hook": {
-   "text": "Suddenly have a lot of power?",
+   "text": "Finally in charge?",
    "source": "commentary/en/34.json#judgment.synthesis"
   },
   "meaning": [
@@ -706,16 +706,16 @@
     "source": "commentary/en/34.json#judgment.synthesis"
    },
    {
-    "text": "Know where\nnot to go.",
+    "text": "Mostly, know what\nnot to do.",
     "source": "commentary/en/34.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "Where won’t\nyou go?",
+   "text": "What won’t you\ndo with it?",
    "source": "written"
   },
   "caption": {
-   "text": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. Restraint is the best use of power.",
+   "text": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. The power goes into staying off wrong paths.",
    "source": "commentary/en/34.json#image.synthesis"
   }
  },
@@ -726,16 +726,16 @@
   },
   "meaning": [
    {
-    "text": "Progress says:\nkeep shining.",
+    "text": "Progress says:\ncharacter first.",
     "source": "commentary/en/35.json#image.synthesis"
    },
    {
-    "text": "Brighten who\nyou are.",
+    "text": "Not strategy.\nNot network.",
     "source": "commentary/en/35.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "Who are you\nserving?",
+   "text": "What are you\nlike up close?",
    "source": "written"
   },
   "caption": {
@@ -774,7 +774,7 @@
   },
   "meaning": [
    {
-    "text": "The Family says:\nmean your words.",
+    "text": "The Family says:\nskip the rules.",
     "source": "commentary/en/37.json#image.synthesis"
    },
    {
@@ -787,7 +787,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "Wind born from fire: warmth makes the movement. Family comes down to words with substance and actions that last.",
+   "text": "Wind born from fire: warmth makes the movement. A family whose words mean something and whose actions last doesn’t need the rules.",
    "source": "commentary/en/37.json#image.synthesis"
   }
  },
@@ -870,7 +870,7 @@
   },
   "meaning": [
    {
-    "text": "Decrease says:\ngive what fits.",
+    "text": "Decrease says:\ngive what you can.",
     "source": "commentary/en/41.json#judgment.synthesis"
    },
    {
@@ -883,7 +883,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The old text asks for two small bowls, not a grand offering: when you have less, bring less. Anger and wanting cost the most.",
+   "text": "The old text asks for two small baskets, not a grand offering: when you have less, bring less. Anger and wanting cost the most.",
    "source": "commentary/en/41.json#judgment.synthesis"
   }
  },
@@ -903,11 +903,11 @@
    }
   ],
   "question": {
-   "text": "What will you\nfix today?",
+   "text": "What will you\nmove toward?",
    "source": "written"
   },
   "caption": {
-   "text": "Wind and thunder feed each other. The method of increase: see good, move toward it; see a fault, fix it.",
+   "text": "Wind and thunder feed each other. The method of increase: see something good and move toward it.",
    "source": "commentary/en/42.json#image.synthesis"
   }
  },
@@ -961,8 +961,8 @@
  },
  "45": {
   "hook": {
-   "text": "Bringing people together?",
-   "source": "commentary/en/45.json#judgment.synthesis"
+   "text": "Hosting family, bracing for arguments?",
+   "source": "commentary/en/45.json#image.synthesis"
   },
   "meaning": [
    {
@@ -979,7 +979,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The king goes to the temple first, because a gathering without a shared center is just a crowd. Where people collect, friction follows.",
+   "text": "The king goes to the temple first: without a shared center, a gathering is just a crowd. And where people collect, friction follows.",
    "source": "commentary/en/45.json#judgment.synthesis"
   }
  },
@@ -1090,16 +1090,16 @@
     "source": "commentary/en/50.json#image.synthesis"
    },
    {
-    "text": "In goes raw,\nout comes food.",
-    "source": "commentary/en/50.json#judgment.synthesis"
+    "text": "Get set up\nbefore you start.",
+    "source": "commentary/en/50.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "What are you\ncooking up?",
+   "text": "What’s out of\nplace right now?",
    "source": "written"
   },
   "caption": {
-   "text": "Wood feeds fire under the caldron, and it only works if it stands level. Get your position right before you start.",
+   "text": "Wood feeds the fire under the caldron, and it only works if it stands level. Tilted, it spills and the fire misses.",
    "source": "commentary/en/50.json#image.synthesis"
   }
  },
@@ -1134,7 +1134,7 @@
   },
   "meaning": [
    {
-    "text": "Marrying Maiden:\nsee the end.",
+    "text": "Marrying Maiden\nsays: see the end.",
     "source": "commentary/en/54.json#image.synthesis"
    },
    {
@@ -1143,11 +1143,11 @@
    }
   ],
   "question": {
-   "text": "How does this\nend well?",
+   "text": "What does the\nend look like?",
    "source": "written"
   },
   "caption": {
-   "text": "The harshest judgment in the book: nothing is supported. The image is thunder stirring the lake’s surface while the depths stay still, so look past the middle to the end.",
+   "text": "Thunder stirs the lake’s surface while the depths stay still. The text says to look past the middle to how it ends.",
    "source": "commentary/en/54.json#image.synthesis"
   }
  },
@@ -1206,7 +1206,7 @@
   },
   "meaning": [
    {
-    "text": "Dispersion says:\nmelt the ice.",
+    "text": "Dispersion says:\ndon’t argue.",
     "source": "commentary/en/59.json#judgment.synthesis"
    },
    {
@@ -1219,7 +1219,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "Wind over water scatters the surface, and the old kings built temples. When people fly apart, a shared center pulls them back; force only exhausts you.",
+   "text": "Wind over water scatters the surface, and the old kings built temples. A shared center pulls people back; force only wears you out.",
    "source": "commentary/en/59.json#image.synthesis"
   }
  },
@@ -1273,16 +1273,16 @@
  },
  "62": {
   "hook": {
-   "text": "Aiming too high right now?",
+   "text": "Big plan stuck for months?",
    "source": "commentary/en/62.json#judgment.synthesis"
   },
   "meaning": [
    {
-    "text": "Small things: yes.\nBig things: no.",
+    "text": "The Small says:\nno big moves.",
     "source": "commentary/en/62.json#judgment.synthesis"
    },
    {
-    "text": "Fly low,\nnot high.",
+    "text": "Small done well\nends well.",
     "source": "commentary/en/62.json#judgment.synthesis"
    }
   ],
@@ -1291,7 +1291,7 @@
    "source": "written"
   },
   "caption": {
-   "text": "The bird’s message comes from below: descend, don’t climb. The only excess allowed is more humble, more careful, more frugal.",
+   "text": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal.",
    "source": "commentary/en/62.json#image.synthesis"
   }
  },
