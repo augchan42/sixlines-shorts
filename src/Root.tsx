@@ -1,6 +1,7 @@
 import { Composition } from "remotion";
 import { beatFrame } from "./lib/timing";
 import { gotchuSchema, shortSchema, type GotchuProps, type ShortProps } from "./schema";
+import { CodeRain } from "./scenes/CodeRain";
 import { plan, Short } from "./Short";
 import { qian } from "./specs/qian";
 import { gotchuQian } from "./specs/gotchu-qian";
@@ -34,6 +35,15 @@ export const Root: React.FC = () => (
         calculateMetadata={calculateMetadata}
       />
     ))}
+    {/* The glyph rain alone, as the backdrop texture for blender/hexagram.py. */}
+    <Composition
+      id="RainPlate"
+      component={() => <CodeRain text="" showText={false} />}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={120}
+    />
     <Composition
       id="GotchuQian"
       component={Gotchu}
