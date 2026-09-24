@@ -21,11 +21,13 @@ test("clip jobs skip clips that exist and never repeat one", () => {
   ]);
 });
 
-test("each hexagram takes its reading, verse and today screens from the Matrix galleries", () => {
+test("each hexagram takes its reading, verse, today, painting and text screens from the Matrix galleries", () => {
   assert.deepEqual(screenFiles(29, "/ios"), [
     { from: "/ios/gallery/matrix/reading-matrix-29-29.png", to: "public/assets/screens/29/reading.png" },
     { from: "/ios/gallery/matrix/yilin-matrix-29-29.png", to: "public/assets/screens/29/verse.png" },
     { from: "/ios/gallery-today/matrix/today-matrix-29.png", to: "public/assets/screens/29/today.png" },
+    { from: "/ios/gallery-library/matrix/library-art-matrix-29.png", to: "public/assets/screens/29/painting.png" },
+    { from: "/ios/gallery-library/matrix/library-study-matrix-29.png", to: "public/assets/screens/29/text.png" },
   ]);
 });
 

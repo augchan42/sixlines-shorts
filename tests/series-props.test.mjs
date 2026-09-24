@@ -17,9 +17,7 @@ test("a row becomes the template's props", () => {
   assert.equal(p.musicStart, 91.223);
   assert.equal(p.hexagramClip, "assets/3d/hexagram-010010-100bpm-8b.mp4");
   assert.deepEqual(p.plates, ["assets/yilin/stipple-29-31.webp", "assets/yilin/stipple-29-60.webp"]);
-  assert.deepEqual(p.screens.map((s) => s.src), [
-    "assets/screens/29/reading.png", "assets/screens/29/verse.png", "assets/screens/29/today.png", "assets/matrix-ask.png",
-  ]);
+  assert.equal(p.screens.length, 3);
   assert.deepEqual(p.endcard, { clip: "assets/3d/endcard-snap-010010-100bpm-9b.mp4", mode: "snap" });
 });
 
@@ -31,12 +29,25 @@ test("the end card's transition follows the energy of the upper trigram's track"
   assert.deepEqual(modes, { kun: "join", gen: "join", qian: "flip", li: "flip", zhen: "snap", kan: "snap", xun: "snap", dui: "snap" });
 });
 
-test("the third screen is the hexagram's own day on the Almanac, and ask closes", () => {
-  for (const n of [27, 28, 29]) {
+test("each short shows two of its hexagram's own screens, then one of the app's shared screens", () => {
+  const own = ["reading", "verse", "today", "painting", "text"];
+  for (let n = 1; n <= 64; n++) {
     const s = seriesProps({ ...row, number: n }).screens;
-    assert.deepEqual(s[2], { src: `assets/screens/${n}/today.png`, caption: "YOUR DAY, READ" });
-    assert.equal(s[3].src, "assets/matrix-ask.png");
+    assert.equal(s.length, 3);
+    for (const x of s.slice(0, 2)) assert.match(x.src, new RegExp(`^assets/screens/${n}/(${own.join("|")})\\.png$`));
+    assert.notEqual(s[0].src, s[1].src);
+    assert.match(s[2].src, /^assets\/screens\/tour\/(ask|dates|prove|archive)\.png$/);
   }
+});
+
+test("neighbouring shorts never show the same screens, and every screen is used", () => {
+  const key = (n) => seriesProps({ ...row, number: n }).screens.map((s) => s.src.replace(/\/\d+\//, "/N/")).join();
+  const used = new Set();
+  for (let n = 1; n <= 64; n++) {
+    if (n > 1) assert.notEqual(key(n), key(n - 1));
+    for (const s of seriesProps({ ...row, number: n }).screens) used.add(s.src.replace(/\/\d+\//, "/N/"));
+  }
+  assert.equal(used.size, 9);
 });
 
 test("an override that changes the tempo changes the clip too", () => {

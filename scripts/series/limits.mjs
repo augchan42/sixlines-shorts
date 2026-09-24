@@ -6,6 +6,8 @@ import { seriesPlan } from "../../src/lib/seriesPlan.ts";
 
 export const MAX_SECONDS = 38;
 const MIN_SECONDS = 2;
+// App screens per short (screensFor in src/series/props.ts).
+const SCREENS = 3;
 
 export const sectionProblems = (bpm, drop) => {
   const p = seriesPlan(bpm, drop);
@@ -15,7 +17,7 @@ export const sectionProblems = (bpm, drop) => {
   if (sec(p.hexagram) < MIN_SECONDS) problems.push("hook under 2 s");
   if (p.hexagram + p.hexagramBeats !== Math.min(p.meaning, p.drop)) problems.push("gap or overlap after the hexagram");
   if (sec(p.questionLength) < MIN_SECONDS || sec(p.meaningLength / 2) < MIN_SECONDS) problems.push("text under 2 s");
-  if (sec((p.cta - p.showcase) / 4) < MIN_SECONDS) problems.push("screens under 2 s");
+  if (sec((p.cta - p.showcase) / SCREENS) < MIN_SECONDS) problems.push("screens under 2 s");
   return problems;
 };
 
