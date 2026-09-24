@@ -148,3 +148,10 @@ Visual checks are manual: stills of each part for the first short of each trigra
 - Uploading or scheduling posts.
 - Music for hexagram 1's Gotchu version (it keeps the Glowline track, local only).
 - Tracks beyond the 8 chosen sections.
+
+## Notes to keep in mind
+
+From the user's review of the prototypes (2026-09-24), not requirements yet:
+
+- **The "Seinfeldification" of the lines.** The active lines (the 8bitoracle-next `practicalIntegration` texts) have an observational-comedy voice that would suit the shorts, but those lines run too long for 2 s on screen. Worth trying where a short, funny observation fits the hook or line 2.
+- **Calmer music.** Most of the chosen tracks are driving, which was assumed to be the preferred mode, but Kun's slower, spacious track (Analog Dreams) stood out. Too early to change the other trigrams' music; revisit once a few shorts are out.
