@@ -1,0 +1,73 @@
+{
+ "hexagram": 30,
+ "rendered": "2026-09-24T06:41:14.776Z",
+ "commit": "211d8cca4f73203bdf66c9f22ac22f7d4dafbd1b",
+ "clean": true,
+ "seconds": 30.656,
+ "shareKbps": 5874,
+ "props": {
+  "hexagram": {
+   "number": 30,
+   "zh": "離",
+   "pinyin": "Lí",
+   "name": "Clinging Fire",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick10-retrowave.mp3",
+  "musicStart": 48.023,
+  "drop": 14.4,
+  "hook": "Brilliant once,\nthen burnt out?",
+  "meaning": [
+   "Fire’s answer:\nkeep it fed.",
+   "Steady care,\nnot big gestures."
+  ],
+  "question": "What needs\ntending today?",
+  "plates": [
+   "assets/yilin/stipple-30-20.webp",
+   "assets/yilin/stipple-30-47.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/30/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/30/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/matrix-today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "cta": "Reveal the moment.",
+  "url": "sixlines.day",
+  "hexagramClip": "assets/3d/hexagram-101101-100bpm-8b.mp4"
+ },
+ "files": {
+  "local/music/pick10-retrowave.mp3": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+  "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+  "assets/3d/hexagram-101101-100bpm-8b.mp4": "e9699603c44729a502556d34efee2da6870395eeb723ac92f333db483816a3c3",
+  "assets/screens/30/reading.png": "1e8efe371da4473fb98e83a0c916f534f784037752dc34457a83079da2244024",
+  "assets/screens/30/verse.png": "b9d1a7e5e0973dc30083c5f7b22b507a22b423cf96a06d006c305aa876cab7fb",
+  "assets/matrix-today.png": "bbe16cb8e607c2edaef5db605945900a55a7295d4e02b43297b70fc5b1cad947",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-30-20.webp": "e0fc907ed512617d3d61cbc8456370c895acfd58f81d6347ce2926e1c5992644",
+  "assets/yilin/stipple-30-47.webp": "97b43815f638b4c3d9ff645e806669ed645fa91599509001af457b44da6dc5f3",
+  "out/series/30-li/short.mp4": "949aef1bccccb2f0d30724fe57f23b1c5d4ec5d858c6777d93b405e7b1c0a1ab",
+  "out/series/30-li/share.mp4": "bf66c508d6d4d0f039024bde871bc077255cbb87c1066324b45ba20e2ee41c4c"
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "hexagram": 51,
+ "rendered": "2026-09-24T06:43:09.572Z",
+ "commit": "211d8cca4f73203bdf66c9f22ac22f7d4dafbd1b",
+ "clean": true,
+ "seconds": 30.656,
+ "shareKbps": 5874,
+ "props": {
+  "hexagram": {
+   "number": 51,
+   "zh": "震",
+   "pinyin": "Zhèn",
+   "name": "The Arousing",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick07-interstellar-retrowave.mp3",
+  "musicStart": 158.426,
+  "drop": 14.4,
+  "hook": "Did something just\nshake you?",
+  "meaning": [
+   "The Arousing says:\nuse the fear.",
+   "Let it show\nwhat to fix."
+  ],
+  "question": "What did the\nscare show you?",
+  "plates": [
+   "assets/yilin/stipple-51-2.webp",
+   "assets/yilin/stipple-51-38.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/51/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/51/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/matrix-today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "cta": "Reveal the moment.",
+  "url": "sixlines.day",
+  "hexagramClip": "assets/3d/hexagram-100100-100bpm-8b.mp4"
+ },
+ "files": {
+  "local/music/pick07-interstellar-retrowave.mp3": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+  "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+  "assets/3d/hexagram-100100-100bpm-8b.mp4": "7cfa54bdd9c4033de0baa2fff86315ef4d1b06ace02b55ea0e428bca7b951819",
+  "assets/screens/51/reading.png": "4b1232a026c32519bb2ebcae5ee63bcc484ad7f2780d871daddd93989ba0e7fa",
+  "assets/screens/51/verse.png": "40a920b591112dc9a99fddb3208aae111fab6590ffed1dc8dfab1119e4b7931a",
+  "assets/matrix-today.png": "bbe16cb8e607c2edaef5db605945900a55a7295d4e02b43297b70fc5b1cad947",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-51-2.webp": "06f3663add76b12efeb3b4a0a4b129b99371e7ec8ef321bac001c57f7b50a540",
+  "assets/yilin/stipple-51-38.webp": "bf76cce6dbb9194c975c2f8ed8eda2a2b603fe97683edffb867b8baed62f1f8a",
+  "out/series/51-zhen/short.mp4": "8661872c9ff712185772b97821139c83fdeb250f6f4fb4bd73a9a3998202eaf1",
+  "out/series/51-zhen/share.mp4": "cd12416140b11fbafdb9fea069c64dfe5d67ab9945bb197db04055175edffd32"
+ }
+}
