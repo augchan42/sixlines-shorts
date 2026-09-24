@@ -20,3 +20,9 @@ export const clipJobs = (propsList, exists) => {
   }
   return jobs;
 };
+
+// scripts/capture_gallery.sh in sixlines-ios writes gallery/<appearance>/<snapshot>.png.
+export const screenFiles = (n, gallery) => [
+  { from: `${gallery}/matrix/reading-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/reading.png` },
+  { from: `${gallery}/matrix/yilin-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/verse.png` },
+];

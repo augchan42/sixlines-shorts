@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { clipJobs, parseNumbers } from "../scripts/series/render-lib.mjs";
+import { clipJobs, parseNumbers, screenFiles } from "../scripts/series/render-lib.mjs";
 
 test("hexagram arguments are a number, a list, or all", () => {
   assert.deepEqual(parseNumbers("29"), [29]);
@@ -16,4 +16,11 @@ test("clip jobs skip clips that exist and never repeat one", () => {
     (clip) => clip === "b.mp4",
   );
   assert.deepEqual(jobs, [{ clip: "a.mp4", lines: "010010", bpm: 100, beats: 8 }]);
+});
+
+test("each hexagram takes its reading and verse screens from the Matrix gallery", () => {
+  assert.deepEqual(screenFiles(29, "/g"), [
+    { from: "/g/matrix/reading-matrix-29-29.png", to: "public/assets/screens/29/reading.png" },
+    { from: "/g/matrix/yilin-matrix-29-29.png", to: "public/assets/screens/29/verse.png" },
+  ]);
 });
