@@ -1,7 +1,7 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-24T15:50:06.431Z",
- "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
+ "rendered": "2026-09-24T23:52:42.077Z",
+ "commit": "9aa6a36eeb6368464b2bda217148bf2d1dfa12d0",
  "clean": true,
  "seconds": 29.290667,
  "shareKbps": 6153,
@@ -37,20 +37,16 @@
   ],
   "screens": [
    {
-    "src": "assets/screens/8/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/8/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
     "src": "assets/screens/8/today.png",
     "caption": "YOUR DAY, READ"
    },
    {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+    "src": "assets/screens/8/painting.png",
+    "caption": "THE PAINTING"
+   },
+   {
+    "src": "assets/screens/tour/archive.png",
+    "caption": "THE ARCHIVE"
    }
   ],
   "hexagramClip": "assets/3d/hexagram-000010-115bpm-8b.mp4",
@@ -64,13 +60,12 @@
   "local/music/certificates/christmas-christmas-synthwave-442829-license.txt": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
   "assets/3d/hexagram-000010-115bpm-8b.mp4": "24a13c93517de55db6c88aee6d4a005ca9d49b3c957f63ac9bfe51990977035c",
   "assets/3d/endcard-snap-000010-115bpm-9b.mp4": "4e7cd95a4043154b737826e6143b90be36edb589bad5a3809041de40e4894581",
-  "assets/screens/8/reading.png": "edd35e3234482e155ec5509cffc7dfe2d32114706f2788ea53353ad9e281946e",
-  "assets/screens/8/verse.png": "5463e815d12909574e064fac98925c7cf90d69feee05732ef1ff8b42c6dbcefd",
   "assets/screens/8/today.png": "43d1e7528c6d5fb2dd65d896a990de474617c471102e663f5016d79d57bba45c",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/screens/8/painting.png": "e77a09e8e9cbc7c1cc5189ce7028b582de2aef0d4c57bf7f841bb0874db69aa6",
+  "assets/screens/tour/archive.png": "8de500688f307c91958b0b7027a3b97d397aea84576c096c5efcb90e2baca3ca",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "6e251f96229d66066773f0e398232f77b1685caf1b4299edaa6eaa73ece7d532",
-  "out/series/08-bi/share.mp4": "60e194ad4b6d081a7bc50bf00013d87ce7c8f5ad509fbcb7365bea15c3c97cf2"
+  "out/series/08-bi/short.mp4": "ae01b857ed859b98a660da04a894496e9df341717a16b446ed76dc6696f77f9b",
+  "out/series/08-bi/share.mp4": "32f4111f9e103171a79e549b815cc58f5627d173bbc9805a66de77fa3dc20e7d"
  }
 }
