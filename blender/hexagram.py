@@ -71,7 +71,8 @@ def add_slab(i, x, z, w, black, colour):
     o = bpy.context.object
     o.name = f"line{i}"
     o.scale = (w, DEPTH, LINE_H)
-    bpy.ops.object.transform_apply(scale=True)
+    # Scale only: the operator bakes location in too by default, which would count it twice.
+    bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
     o.data.materials.append(black)
     glow, strength = edge(colour, f"edge-{o.name}")
     o.data.materials.append(glow)
@@ -143,9 +144,9 @@ def camera(scene, frames, bpm):
     # sits below the hexagram's centre so it frames above the names, as the 2D version does.
     for frame, deg, dist, cz, tz in (
         (0, 25, 7.0, -2.6, -2.3),
-        (round(2.75 * beat), 0, 13.0, -1.0, -1.0),
-        (round(3 * beat), 0, 13.0, -1.0, -1.0),
-        (frames - 1, 0, 9.0, -1.0, -1.0),
+        (round(2.75 * beat), 0, 15.0, -0.9, -0.9),
+        (round(3 * beat), 0, 15.0, -0.9, -0.9),
+        (frames - 1, 0, 13.0, -0.9, -0.9),
     ):
         a = math.radians(deg)
         cam.location = (dist * math.sin(a), -dist * math.cos(a), cz)
@@ -176,8 +177,8 @@ def bloom(scene):
     glare = tree.nodes.new("CompositorNodeGlare")
     glare.inputs["Type"].default_value = "Bloom"
     glare.inputs["Threshold"].default_value = 1.0
-    glare.inputs["Strength"].default_value = 0.6
-    glare.inputs["Size"].default_value = 0.6
+    glare.inputs["Strength"].default_value = 0.4
+    glare.inputs["Size"].default_value = 0.4
     out = tree.nodes.new("NodeGroupOutput")
     tree.links.new(layers.outputs["Image"], glare.inputs["Image"])
     tree.links.new(glare.outputs["Image"], out.inputs[0])
