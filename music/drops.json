@@ -1,6 +1,6 @@
 {
  "script": "music/drops.py",
- "commit": "586dca08fe737c41630006d6ebca8dd01783e575",
+ "commit": "7dd851dd3e5584733f986f78f43a0bbd3138a1fd",
  "rule": {
   "lift": 2.0,
   "pre": 6,
@@ -173,6 +173,408 @@
      "usable": true,
      "seconds": 112.02,
      "chosen": true
+    }
+   ]
+  }
+ ],
+ "candidates": [
+  {
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "bpm": 102.0,
+   "seconds": 95.0,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 9.44
+    }
+   ]
+  },
+  {
+   "file": "pick02-neon-odyssey-medium-3.mp3",
+   "title": "Neon Odyssey_Medium 3 by Grand_Project",
+   "bpm": 129.99,
+   "seconds": 77.6,
+   "usable": 0,
+   "drops": []
+  },
+  {
+   "file": "pick03-the-consumate-professional-intro-outro.mp3",
+   "title": "The Consumate Professional - Intro / Outro by NaturesEye",
+   "bpm": 150.0,
+   "seconds": 80.4,
+   "usable": 0,
+   "drops": []
+  },
+  {
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "bpm": 90.0,
+   "seconds": 64.1,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.72
+    }
+   ]
+  },
+  {
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "bpm": 82.5,
+   "seconds": 146.9,
+   "usable": 0,
+   "drops": []
+  },
+  {
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "bpm": 120.0,
+   "seconds": 186.2,
+   "usable": 2,
+   "drops": [
+    {
+     "bar": 7,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 14.02
+    },
+    {
+     "bar": 23,
+     "lift": 2.25,
+     "usable": true,
+     "seconds": 46.02
+    },
+    {
+     "bar": 56,
+     "lift": 3.5,
+     "usable": true,
+     "seconds": 112.02
+    }
+   ]
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "bpm": 100.0,
+   "seconds": 264.1,
+   "usable": 2,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 9.63
+    },
+    {
+     "bar": 8,
+     "lift": 3.5,
+     "usable": false,
+     "seconds": 19.23
+    },
+    {
+     "bar": 16,
+     "lift": 2.25,
+     "usable": true,
+     "seconds": 38.43
+    },
+    {
+     "bar": 72,
+     "lift": 4.25,
+     "usable": true,
+     "seconds": 172.83
+    }
+   ]
+  },
+  {
+   "file": "pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+   "title": "Synthwave Pop - Retro 80s Fashion Nostalgic Vintage Happy by SoundGalleryBy",
+   "bpm": 97.0,
+   "seconds": 106.5,
+   "usable": 1,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 3.5,
+     "usable": false,
+     "seconds": 10.23
+    },
+    {
+     "bar": 24,
+     "lift": 2.5,
+     "usable": true,
+     "seconds": 59.71
+    }
+   ]
+  },
+  {
+   "file": "pick09-synthwave.mp3",
+   "title": "Synthwave by EvgeniaCh",
+   "bpm": 100.0,
+   "seconds": 165.6,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 4.0,
+     "usable": false,
+     "seconds": 9.62
+    },
+    {
+     "bar": 43,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 103.22
+    }
+   ]
+  },
+  {
+   "file": "pick10-retrowave.mp3",
+   "title": "Retrowave by NverAvetyanMusic",
+   "bpm": 100.0,
+   "seconds": 120.0,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 9.62
+    }
+   ]
+  },
+  {
+   "file": "pick11-retro-synth-pop.mp3",
+   "title": "Retro Synth Pop by AliveTunes",
+   "bpm": 95.0,
+   "seconds": 138.5,
+   "usable": 2,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.37
+    },
+    {
+     "bar": 8,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 20.47
+    },
+    {
+     "bar": 32,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 81.1
+    }
+   ]
+  },
+  {
+   "file": "pick12-neon-drive-horizon.mp3",
+   "title": "Synthwave Music Neon Drive Horizon by alex-morgan",
+   "bpm": 100.58,
+   "seconds": 213.2,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 86,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 205.21
+    }
+   ]
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "title": "Synthwave by The_Mountain",
+   "bpm": 90.0,
+   "seconds": 197.5,
+   "usable": 1,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 10.69
+    },
+    {
+     "bar": 8,
+     "lift": 2.0,
+     "usable": true,
+     "seconds": 21.36
+    },
+    {
+     "bar": 29,
+     "lift": 3.5,
+     "usable": false,
+     "seconds": 77.37
+    }
+   ]
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "title": "Lofi Synthwave by ZephiraMusic",
+   "bpm": 91.99,
+   "seconds": 146.1,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 46,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 120.25
+    }
+   ]
+  },
+  {
+   "file": "pick15-arcade-retro-nights.mp3",
+   "title": "Synthwave Arcade Retro Nights by alex-morgan",
+   "bpm": 126.01,
+   "seconds": 137.3,
+   "usable": 1,
+   "drops": [
+    {
+     "bar": 10,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 19.31
+    },
+    {
+     "bar": 53,
+     "lift": 2.5,
+     "usable": true,
+     "seconds": 101.23
+    }
+   ]
+  },
+  {
+   "file": "pick16-synthwave-mondamusic.mp3",
+   "title": "Synthwave by MondaMusic",
+   "bpm": 136.76,
+   "seconds": 119.4,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 7.05
+    }
+   ]
+  },
+  {
+   "file": "pick17-midnight-synthwave.mp3",
+   "title": "Midnight Synthwave by The_Mountain",
+   "bpm": 90.0,
+   "seconds": 139.6,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.86
+    }
+   ]
+  },
+  {
+   "file": "pick18-dreamy-synthwave.mp3",
+   "title": "Dreamy Synthwave Music by Tunetank",
+   "bpm": 100.0,
+   "seconds": 127.4,
+   "usable": 0,
+   "drops": []
+  },
+  {
+   "file": "pick19-christmas-synthwave.mp3",
+   "title": "Christmas Synthwave by DELOSound",
+   "bpm": 115.0,
+   "seconds": 120.3,
+   "usable": 0,
+   "drops": []
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "title": "Synthwave 80s Retro Background Music by Tunetank",
+   "bpm": 120.0,
+   "seconds": 152.0,
+   "usable": 2,
+   "drops": [
+    {
+     "bar": 8,
+     "lift": 4.0,
+     "usable": true,
+     "seconds": 16.02
+    },
+    {
+     "bar": 48,
+     "lift": 4.0,
+     "usable": true,
+     "seconds": 96.02
+    }
+   ]
+  },
+  {
+   "file": "pick21-neon-mirage.mp3",
+   "title": "Neon Mirage - synthwave music by lofidreams",
+   "bpm": 112.0,
+   "seconds": 244.3,
+   "usable": 1,
+   "drops": [
+    {
+     "bar": 79,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 169.33
+    },
+    {
+     "bar": 88,
+     "lift": 2.0,
+     "usable": true,
+     "seconds": 188.62
+    }
+   ]
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "title": "Cinematic Dark Synthwave \u2013 Cyberpunk Atmosphere by SenorMusica81",
+   "bpm": 100.05,
+   "seconds": 266.0,
+   "usable": 1,
+   "drops": [
+    {
+     "bar": 92,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 221.01
+    }
+   ]
+  },
+  {
+   "file": "pick23-bot-factory.mp3",
+   "title": "Bot Factory by JonasBlakewood",
+   "bpm": 147.01,
+   "seconds": 115.4,
+   "usable": 0,
+   "drops": [
+    {
+     "bar": 8,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 13.33
+    },
+    {
+     "bar": 12,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 19.87
     }
    ]
   }
