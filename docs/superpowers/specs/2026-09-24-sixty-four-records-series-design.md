@@ -21,7 +21,7 @@ Success means:
 | Hooks | One per hexagram. I draft all 63 new ones and the user approves them as one list. |
 | Hashtags | 3–5 in the post caption only, never in the video. |
 | Spelling | "I-Ching", hyphenated, everywhere. |
-| CTA | It can say free. End card (user's review, 2026-09-24): the tagline "Reveal the moment.", then "sixlines.day". The brand is already on the card (credit and icon), so the line does not repeat "Six Lines". "Free" goes in the post caption: "Explore the I-Ching for free: sixlines.day". |
+| CTA | It can say free. End card (user's review, 2026-09-24): the tagline "Reveal the moment.", then "sixlines.day". The brand is already on the card (credit and icon), so the line does not repeat "Six Lines". The post caption ends with "Reveal the moment. sixlines.day" (the user found "Explore the I-Ching for free" cheesy, 2026-09-24). |
 | Jung and McKenna | Named in the post caption as lineage, not in the video. |
 | Provenance | Nothing is thrown away. Code, data, prototypes and result files are committed. Media stays out of git (the repo is public), and its SHA-256 hashes are committed. |
 
@@ -90,7 +90,7 @@ The copy lives in `series/copy.json`, one entry per hexagram, with the source ea
 - Length limits, checked by a test: hook 3–7 words, meaning lines 3–6 words each, question at most 6 words. A test also checks that each line fits the frame at its font size, with explicit line breaks allowed.
 - The user approves all 64 entries as one list before the batch render.
 
-The post caption for each short (`caption.txt`) holds the hexagram's name, one line from the commentary, a lineage line where it fits (e.g. Jung's 1949 foreword, synchronicity), "sixlines.day" and 3–5 hashtags.
+The post caption for each short (`caption.txt`) holds the hexagram's name; a written caption of 20–70 words from `series/copy.json` (`caption`, with its source, checked by the same tone rules) that continues the short's thought and explains the image the video leaves out; a lineage line where it fits (e.g. Jung's 1949 foreword, synchronicity); "Reveal the moment. sixlines.day"; and 3–5 hashtags. The user approves the captions with the copy.
 
 ## Data
 

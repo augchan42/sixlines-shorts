@@ -54,7 +54,11 @@
    "plates": [
     "1-11",
     "1-27"
-   ]
+   ],
+   "caption": {
+    "text": "Waiting for a sign to start? The Creative is six unbroken lines, a picture of beginning with nothing held back. It asks for no conditions, only that you mean it. Start where you are.",
+    "source": "commentary/en/1.json#judgment.synthesis"
+   }
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -115,7 +119,11 @@
    "plates": [
     "2-57",
     "2-32"
-   ]
+   ],
+   "caption": {
+    "text": "Tired of always having to lead? The Receptive is six broken lines, the earth that carries everything. Its old image is a mare: strong, and at her best when she follows well. Backing someone is its own kind of strength.",
+    "source": "commentary/en/2.json#judgment.synthesis"
+   }
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -1164,7 +1172,11 @@
    "plates": [
     "29-31",
     "29-60"
-   ]
+   ],
+   "caption": {
+    "text": "One problem after another? The I-Ching's image for this is water. It doesn't stop at a hole in the ground. It fills it, then flows on. Keep moving, one small step at a time.",
+    "source": "commentary/en/29.json#image.synthesis"
+   }
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -2061,7 +2073,11 @@
    "plates": [
     "52-12",
     "52-1"
-   ]
+   ],
+   "caption": {
+    "text": "Can't stop overthinking? Keeping Still is a mountain doubled. The old text says to keep your back still, so you stop chasing whatever is in front of you. Stay with where you are now. Most things can wait.",
+    "source": "commentary/en/52.json#judgment.synthesis"
+   }
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -2312,7 +2328,11 @@
    "plates": [
     "58-19",
     "58-24"
-   ]
+   ],
+   "caption": {
+    "text": "Good news, no one to tell? The Joyous is a lake doubled: two lakes that keep each other full. Joy kept to yourself dries up. Shared, it lasts. Who could you call today?",
+    "source": "commentary/en/58.json#image.synthesis"
+   }
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"

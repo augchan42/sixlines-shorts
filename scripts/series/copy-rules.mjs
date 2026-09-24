@@ -26,6 +26,9 @@ export const copyProblems = (n, e) => {
     ["meaning 1", e.meaning?.[0], 3, 6, true],
     ["meaning 2", e.meaning?.[1], 3, 6, true],
     ["question", e.question, 1, 6, true],
+    // The post caption: the short's thought in a few sentences, with the image the video
+    // leaves out.
+    ["caption", e.caption, 20, 70, false],
   ];
   for (const [name, part, min, max, onRain] of parts) {
     if (!part?.text) {

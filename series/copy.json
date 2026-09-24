@@ -1,47 +1,142 @@
 {
  "1": {
-  "hook": { "text": "Waiting for a sign to start?", "source": "commentary/en/1.json#judgment.synthesis" },
+  "hook": {
+   "text": "Waiting for a sign to start?",
+   "source": "commentary/en/1.json#judgment.synthesis"
+  },
   "meaning": [
-   { "text": "The Creative\nsays: begin.", "source": "commentary/en/1.json#judgment.synthesis" },
-   { "text": "No conditions.\nJust mean it.", "source": "commentary/en/1.json#judgment.synthesis" }
+   {
+    "text": "The Creative\nsays: begin.",
+    "source": "commentary/en/1.json#judgment.synthesis"
+   },
+   {
+    "text": "No conditions.\nJust mean it.",
+    "source": "commentary/en/1.json#judgment.synthesis"
+   }
   ],
-  "question": { "text": "What would you\nstart today?", "source": "written" },
-  "plates": ["1-11", "1-27"]
+  "question": {
+   "text": "What would you\nstart today?",
+   "source": "written"
+  },
+  "plates": [
+   "1-11",
+   "1-27"
+  ],
+  "caption": {
+   "text": "Waiting for a sign to start? The Creative is six unbroken lines, a picture of beginning with nothing held back. It asks for no conditions, only that you mean it. Start where you are.",
+   "source": "commentary/en/1.json#judgment.synthesis"
+  }
  },
  "2": {
-  "hook": { "text": "Tired of always having to lead?", "source": "commentary/en/2.json#judgment.synthesis" },
+  "hook": {
+   "text": "Tired of always having to lead?",
+   "source": "commentary/en/2.json#judgment.synthesis"
+  },
   "meaning": [
-   { "text": "The Receptive\nsays: follow well.", "source": "commentary/en/2.json#judgment.synthesis" },
-   { "text": "Supporting is its\nown strength.", "source": "commentary/en/2.json#image.synthesis" }
+   {
+    "text": "The Receptive\nsays: follow well.",
+    "source": "commentary/en/2.json#judgment.synthesis"
+   },
+   {
+    "text": "Supporting is its\nown strength.",
+    "source": "commentary/en/2.json#image.synthesis"
+   }
   ],
-  "question": { "text": "Who could\nyou back?", "source": "written" },
-  "plates": ["2-57", "2-32"]
+  "question": {
+   "text": "Who could\nyou back?",
+   "source": "written"
+  },
+  "plates": [
+   "2-57",
+   "2-32"
+  ],
+  "caption": {
+   "text": "Tired of always having to lead? The Receptive is six broken lines, the earth that carries everything. Its old image is a mare: strong, and at her best when she follows well. Backing someone is its own kind of strength.",
+   "source": "commentary/en/2.json#judgment.synthesis"
+  }
  },
  "29": {
-  "hook": { "text": "One problem after another?", "source": "commentary/en/29.json#judgment.synthesis" },
+  "hook": {
+   "text": "One problem after another?",
+   "source": "commentary/en/29.json#judgment.synthesis"
+  },
   "meaning": [
-   { "text": "The Abyss says:\nkeep moving.", "source": "commentary/en/29.json#judgment.synthesis" },
-   { "text": "Like water: fill\nit, flow on.", "source": "commentary/en/29.json#image.synthesis" }
+   {
+    "text": "The Abyss says:\nkeep moving.",
+    "source": "commentary/en/29.json#judgment.synthesis"
+   },
+   {
+    "text": "Like water: fill\nit, flow on.",
+    "source": "commentary/en/29.json#image.synthesis"
+   }
   ],
-  "question": { "text": "What's the next\nsmall step?", "source": "written" },
-  "plates": ["29-31", "29-60"]
+  "question": {
+   "text": "What's the next\nsmall step?",
+   "source": "written"
+  },
+  "plates": [
+   "29-31",
+   "29-60"
+  ],
+  "caption": {
+   "text": "One problem after another? The I-Ching's image for this is water. It doesn't stop at a hole in the ground. It fills it, then flows on. Keep moving, one small step at a time.",
+   "source": "commentary/en/29.json#image.synthesis"
+  }
  },
  "52": {
-  "hook": { "text": "Can't stop overthinking?", "source": "commentary/en/52.json#judgment.synthesis" },
+  "hook": {
+   "text": "Can't stop overthinking?",
+   "source": "commentary/en/52.json#judgment.synthesis"
+  },
   "meaning": [
-   { "text": "Keeping Still\nsays: pause.", "source": "commentary/en/52.json#judgment.synthesis" },
-   { "text": "Stay with where\nyou are now.", "source": "commentary/en/52.json#image.synthesis" }
+   {
+    "text": "Keeping Still\nsays: pause.",
+    "source": "commentary/en/52.json#judgment.synthesis"
+   },
+   {
+    "text": "Stay with where\nyou are now.",
+    "source": "commentary/en/52.json#image.synthesis"
+   }
   ],
-  "question": { "text": "What can wait?", "source": "written" },
-  "plates": ["52-12", "52-1"]
+  "question": {
+   "text": "What can wait?",
+   "source": "written"
+  },
+  "plates": [
+   "52-12",
+   "52-1"
+  ],
+  "caption": {
+   "text": "Can't stop overthinking? Keeping Still is a mountain doubled. The old text says to keep your back still, so you stop chasing whatever is in front of you. Stay with where you are now. Most things can wait.",
+   "source": "commentary/en/52.json#judgment.synthesis"
+  }
  },
  "58": {
-  "hook": { "text": "Good news, no one to tell?", "source": "commentary/en/58.json#image.synthesis" },
+  "hook": {
+   "text": "Good news, no one to tell?",
+   "source": "commentary/en/58.json#image.synthesis"
+  },
   "meaning": [
-   { "text": "The Joyous says:\nshare it.", "source": "commentary/en/58.json#image.synthesis" },
-   { "text": "Joy kept alone\ndries up.", "source": "commentary/en/58.json#image.synthesis" }
+   {
+    "text": "The Joyous says:\nshare it.",
+    "source": "commentary/en/58.json#image.synthesis"
+   },
+   {
+    "text": "Joy kept alone\ndries up.",
+    "source": "commentary/en/58.json#image.synthesis"
+   }
   ],
-  "question": { "text": "Who could you\ncall today?", "source": "written" },
-  "plates": ["58-19", "58-24"]
+  "question": {
+   "text": "Who could you\ncall today?",
+   "source": "written"
+  },
+  "plates": [
+   "58-19",
+   "58-24"
+  ],
+  "caption": {
+   "text": "Good news, no one to tell? The Joyous is a lake doubled: two lakes that keep each other full. Joy kept to yourself dries up. Shared, it lasts. Who could you call today?",
+   "source": "commentary/en/58.json#image.synthesis"
+  }
  }
 }

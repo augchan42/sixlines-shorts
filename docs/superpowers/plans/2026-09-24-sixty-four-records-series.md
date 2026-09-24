@@ -15,7 +15,7 @@
 - 1080×1920, 30 fps. Total length ≤ 35 s. Text groups and app screens on screen ≥ 2 s.
 - All text between y = 220 and y = 1500 (Instagram top 220 px and bottom 420 px clear).
 - Badge: "N / 64 · SIXTY-FOUR RECORDS", shown until the drop.
-- End card: the tagline "Reveal the moment.", then "sixlines.day". The post caption says "Explore the I-Ching for free: sixlines.day".
+- End card: the tagline "Reveal the moment.", then "sixlines.day". The post caption is written per hexagram in `series/copy.json` (`caption`, 20–70 words) and ends "Reveal the moment. sixlines.day".
 - Copy: hook 3–7 words, meaning lines 3–6 words each, question ≤ 6 words; every line has a `source` (file#field, or `written`).
 - Tone: no "AI", "should", "!", "fortune", "predict", "magic", "supernatural", "horoscope"; "I-Ching" hyphenated; 吉 is "favorable", 凶 is "adverse".
 - Hashtags: 3–5, in the post caption only, never in the video.
