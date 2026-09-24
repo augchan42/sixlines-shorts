@@ -98,7 +98,7 @@ export const SeriesProto: React.FC<ProtoProps> = (props) => {
             </Sequence>
           ))}
           <Sequence {...span(s.cta, s.end)}>
-            <EndCard credit="~sixlines" cta="Cast yours free · Six Lines" url="sixlines.day" icon="assets/icon.png" />
+            <EndCard credit="~sixlines" cta="Explore the I-Ching for free · Six Lines" url="sixlines.day" icon="assets/icon.png" />
           </Sequence>
         </Camera>
         <Sequence from={0} durationInFrames={f(Math.min(s.drop, s.showcase))}>

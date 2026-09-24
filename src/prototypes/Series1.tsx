@@ -30,7 +30,7 @@ export const spike1 = {
     { src: "assets/matrix-records.png", caption: "SIXTY-FOUR RECORDS" },
     { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
   ],
-  cta: "Cast yours free · Six Lines",
+  cta: "Explore the I-Ching for free · Six Lines",
   url: "sixlines.day",
 };
 

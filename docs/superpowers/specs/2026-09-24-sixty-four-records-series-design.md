@@ -21,7 +21,7 @@ Success means:
 | Hooks | One per hexagram. I draft all 63 new ones and the user approves them as one list. |
 | Hashtags | 3–5 in the post caption only, never in the video. |
 | Spelling | "I-Ching", hyphenated, everywhere. |
-| CTA | It can say free. End card: "Cast yours free · Six Lines", then "sixlines.day". |
+| CTA | It can say free. End card (changed from "Cast yours free" after the user's review on 2026-09-24): "Explore the I-Ching for free · Six Lines", then "sixlines.day". |
 | Jung and McKenna | Named in the post caption as lineage, not in the video. |
 | Provenance | Nothing is thrown away. Code, data, prototypes and result files are committed. Media stays out of git (the repo is public), and its SHA-256 hashes are committed. |
 
@@ -36,7 +36,7 @@ Timing is in beats and counted from the drop `D`, the beat where the music's bas
 | Meaning | 4+H → D−4 | Two text groups of 3–6 words, each held at least 2 s, over a Yilin plate and code rain. |
 | Question | D−4 → D | One open question over code rain, on the breakdown. |
 | Showcase | D → D+20 | Four app screens with captions, 5 beats each (at least 2 s each at every chosen tempo). |
-| End card | D+20 → D+27 | Credit, icon, "Cast yours free · Six Lines", "sixlines.day", fade to black. |
+| End card | D+20 → D+27 | Credit, icon, "Explore the I-Ching for free · Six Lines", "sixlines.day", fade to black. |
 
 The hexagram part is `H` beats long, 8 by default, and the meaning runs from 4 + H to D−4. It needs at least 4 s (two groups of at least 2 s), so the timing is chosen in this order:
 
