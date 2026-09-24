@@ -106,7 +106,7 @@ export const seriesSchema = z.object({
   plates: z.tuple([z.string(), z.string()]),
   screens: z.array(z.object({ src: z.string(), caption: z.string() })).length(4),
   // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
-  endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap", "fill"]) }),
+  endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]) }),
 });
 
 export type SeriesProps = z.infer<typeof seriesSchema>;

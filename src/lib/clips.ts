@@ -12,8 +12,9 @@ export const clipFrames = (beats: number, bpm: number) => Math.ceil((beats * 60 
 export const hexagramClip = (lines: readonly number[], bpm: number, beats: number, preview = false) =>
   `assets/3d/hexagram-${lines.join("")}-${bpm}bpm-${beats}b${preview ? "-preview" : ""}.mp4`;
 
-// How the end card turns the hexagram into six yang lines (blender/endcard.py --mode).
-export type EndcardMode = "join" | "flip" | "snap" | "fill";
+// How the end card turns the hexagram into six yang lines (blender/endcard.py --mode). The
+// script's fourth treatment, fill, is left out: the user found it underwhelming (2026-09-24).
+export type EndcardMode = "join" | "flip" | "snap";
 
 // public/-relative path of an end card: the hexagram it starts from, its tempo, length and treatment.
 export const endcardClip = (lines: readonly number[], bpm: number, beats: number, mode: EndcardMode) =>
