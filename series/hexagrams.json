@@ -1,0 +1,2434 @@
+[
+ {
+  "number": 1,
+  "zh": "乾",
+  "pinyin": "Qián",
+  "name": "The Creative",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "Four words for the first hexagram.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 2,
+  "zh": "坤",
+  "pinyin": "Kūn",
+  "name": "The Receptive",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "The longest judgment in the book and it's for the one who follows.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 3,
+  "zh": "屯",
+  "pinyin": "Zhūn",
+  "name": "Difficulty at the Beginning",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "Everything's available — fulfillment, support, the works.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 4,
+  "zh": "蒙",
+  "pinyin": "Méng",
+  "name": "Youthful Folly",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "The teacher doesn't chase the student.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 5,
+  "zh": "需",
+  "pinyin": "Xū",
+  "name": "Waiting",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "You're waiting and it's not stuck — you're carrying something real.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 6,
+  "zh": "訟",
+  "pinyin": "Sòng",
+  "name": "Conflict",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "You're right, and it's going to cost you.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 7,
+  "zh": "師",
+  "pinyin": "Shī",
+  "name": "The Army",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "The army needs a grown-up.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 8,
+  "zh": "比",
+  "pinyin": "Bǐ",
+  "name": "Holding Together",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "Joining together resolves well — but check again.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 9,
+  "zh": "小畜",
+  "pinyin": "Xiǎo Chù",
+  "name": "Small Taming",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "The clouds are thick.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 10,
+  "zh": "履",
+  "pinyin": "Lǚ",
+  "name": "Treading",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "You're stepping on a tiger's tail.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 11,
+  "zh": "泰",
+  "pinyin": "Tài",
+  "name": "Peace",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "Smallness leaving, greatness arriving.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 12,
+  "zh": "否",
+  "pinyin": "Pǐ",
+  "name": "Standstill",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "Peace in reverse.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 13,
+  "zh": "同人",
+  "pinyin": "Tóng Rén",
+  "name": "Fellowship",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "Fellowship in the open — not in the back room, not in the club.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 14,
+  "zh": "大有",
+  "pinyin": "Dà Yǒu",
+  "name": "Great Possession",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Two words.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 15,
+  "zh": "謙",
+  "pinyin": "Qiān",
+  "name": "Modesty",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "The only hexagram where every single line is favorable.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 16,
+  "zh": "豫",
+  "pinyin": "Yù",
+  "name": "Enthusiasm",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Enthusiasm that has somewhere to go.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 17,
+  "zh": "隨",
+  "pinyin": "Suí",
+  "name": "Following",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Following.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 18,
+  "zh": "蠱",
+  "pinyin": "Gǔ",
+  "name": "Work on the Decayed",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Decay.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 19,
+  "zh": "臨",
+  "pinyin": "Lín",
+  "name": "Approach",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "Approach.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 20,
+  "zh": "觀",
+  "pinyin": "Guān",
+  "name": "Contemplation",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "The hands are clean.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 21,
+  "zh": "噬嗑",
+  "pinyin": "Shì Kè",
+  "name": "Biting Through",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Something is stuck between the teeth and the instruction is: bite through it.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 22,
+  "zh": "賁",
+  "pinyin": "Bì",
+  "name": "Grace",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Grace.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 23,
+  "zh": "剝",
+  "pinyin": "Bō",
+  "name": "Splitting Apart",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Three words and a closed door.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 24,
+  "zh": "復",
+  "pinyin": "Fù",
+  "name": "Return",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "The turning point.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 25,
+  "zh": "无妄",
+  "pinyin": "Wú Wàng",
+  "name": "Innocence",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "Without pretense.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 26,
+  "zh": "大畜",
+  "pinyin": "Dà Chù",
+  "name": "Great Accumulation",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "The configuration says: don't eat at home.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 27,
+  "zh": "頤",
+  "pinyin": "Yí",
+  "name": "Nourishment",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Watch what people eat.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 28,
+  "zh": "大過",
+  "pinyin": "Dà Guò",
+  "name": "Greatness in Excess",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "The structure is bending.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 29,
+  "zh": "坎",
+  "pinyin": "Kǎn",
+  "name": "The Abyss",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "Danger doubled.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 30,
+  "zh": "離",
+  "pinyin": "Lí",
+  "name": "Clinging Fire",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Fire needs something to burn.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 31,
+  "zh": "咸",
+  "pinyin": "Xián",
+  "name": "Influence",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Mutual influence.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 32,
+  "zh": "恆",
+  "pinyin": "Héng",
+  "name": "Duration",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Duration.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 33,
+  "zh": "遯",
+  "pinyin": "Dùn",
+  "name": "Retreat",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "Retreat.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 34,
+  "zh": "大壯",
+  "pinyin": "Dà Zhuàng",
+  "name": "Great Power",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Great power.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 35,
+  "zh": "晉",
+  "pinyin": "Jìn",
+  "name": "Progress",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Horses pouring in, three audiences in one day.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 36,
+  "zh": "明夷",
+  "pinyin": "Míng Yí",
+  "name": "Darkening of the Light",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "The light goes underground.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 37,
+  "zh": "家人",
+  "pinyin": "Jiā Rén",
+  "name": "The Family",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "The family.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 38,
+  "zh": "睽",
+  "pinyin": "Kuí",
+  "name": "Opposition",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Opposition.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 39,
+  "zh": "蹇",
+  "pinyin": "Jiǎn",
+  "name": "Obstruction",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "Two directions, two verdicts.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 40,
+  "zh": "解",
+  "pinyin": "Xiè",
+  "name": "Deliverance",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Two situations, two instructions.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 41,
+  "zh": "損",
+  "pinyin": "Sǔn",
+  "name": "Decrease",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Decrease with sincerity.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 42,
+  "zh": "益",
+  "pinyin": "Yì",
+  "name": "Increase",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "Everything opens.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 43,
+  "zh": "夬",
+  "pinyin": "Guài",
+  "name": "Breakthrough",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Announce it publicly.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 44,
+  "zh": "姤",
+  "pinyin": "Gòu",
+  "name": "Coming to Meet",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "upper": "qian",
+  "commentary": "The maiden is strong — and the instruction is: don't marry her.",
+  "music": {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "sha256": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+   "title": "Retrowave - Synthwave 80s 90s Retro Pop Future Fashion by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889/",
+   "bpm": 102,
+   "start": 37.671,
+   "firstBeat": 0,
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 45,
+  "zh": "萃",
+  "pinyin": "Cuì",
+  "name": "Gathering Together",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "The king goes to the temple.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 46,
+  "zh": "升",
+  "pinyin": "Shēng",
+  "name": "Pushing Upward",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "upper": "kun",
+  "commentary": "Supreme fulfillment.",
+  "music": {
+   "trigram": "kun",
+   "symbol": "☷",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "sha256": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+   "title": "Analog Dreams (Synthwave) by 23843807",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-analog-dreams-synthwave-9497/",
+   "bpm": 90,
+   "start": 0,
+   "firstBeat": 0.049,
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 47,
+  "zh": "困",
+  "pinyin": "Kùn",
+  "name": "Oppression",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Oppression.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 48,
+  "zh": "井",
+  "pinyin": "Jǐng",
+  "name": "The Well",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "The town changes.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 49,
+  "zh": "革",
+  "pinyin": "Gé",
+  "name": "Revolution",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Not yet.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 50,
+  "zh": "鼎",
+  "pinyin": "Dǐng",
+  "name": "The Caldron",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "The caldron.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 51,
+  "zh": "震",
+  "pinyin": "Zhèn",
+  "name": "The Arousing",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Thunder hits and you scream.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 52,
+  "zh": "艮",
+  "pinyin": "Gèn",
+  "name": "Keeping Still",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "upper": "gen",
+  "commentary": "Still the back — not the front.",
+  "music": {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "sha256": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+   "title": "80s Retro Inspiring Synth Pop by DIMMYSAD",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-80s-retro-inspiring-synth-pop-570162/",
+   "bpm": 82.5,
+   "start": 34.934,
+   "firstBeat": 0,
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 53,
+  "zh": "漸",
+  "pinyin": "Jiàn",
+  "name": "Development",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "Gradual development.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 54,
+  "zh": "歸妹",
+  "pinyin": "Guī Mèi",
+  "name": "The Marrying Maiden",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Nothing works.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 55,
+  "zh": "豐",
+  "pinyin": "Fēng",
+  "name": "Abundance",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "The king reaches abundance.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 56,
+  "zh": "旅",
+  "pinyin": "Lǚ",
+  "name": "The Wanderer",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "Small fulfillment.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 57,
+  "zh": "巽",
+  "pinyin": "Xùn",
+  "name": "The Gentle",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "Small fulfillment again — the gentle force doesn't produce dramatic results.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 58,
+  "zh": "兌",
+  "pinyin": "Duì",
+  "name": "The Joyous",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "upper": "dui",
+  "commentary": "Joy.",
+  "music": {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 98.023,
+   "firstBeat": 0,
+   "drop": 14,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 59,
+  "zh": "渙",
+  "pinyin": "Huàn",
+  "name": "Dispersion",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "The king goes to the temple.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 60,
+  "zh": "節",
+  "pinyin": "Jié",
+  "name": "Limitation",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "Limitation brings fulfillment — but bitter limitation breaks.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 61,
+  "zh": "中孚",
+  "pinyin": "Zhōng Fú",
+  "name": "Inner Truth",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   1,
+   1
+  ],
+  "upper": "xun",
+  "commentary": "Piglets and fish — the least spiritual, least intelligent creatures available.",
+  "music": {
+   "trigram": "xun",
+   "symbol": "☴",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95,
+   "start": 65.943,
+   "firstBeat": 0,
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 62,
+  "zh": "小過",
+  "pinyin": "Xiǎo Guò",
+  "name": "Preponderance of the Small",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "upper": "zhen",
+  "commentary": "Small things: yes.",
+  "music": {
+   "trigram": "zhen",
+   "symbol": "☳",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100,
+   "start": 158.426,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 63,
+  "zh": "既濟",
+  "pinyin": "Jì Jì",
+  "name": "After Completion",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "upper": "kan",
+  "commentary": "It's done.",
+  "music": {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick09-synthwave.mp3",
+   "sha256": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+   "title": "Synthwave by EvgeniaCh",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/upbeat-synthwave-353881/",
+   "bpm": 100,
+   "start": 91.223,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ },
+ {
+  "number": 64,
+  "zh": "未濟",
+  "pinyin": "Wèi Jì",
+  "name": "Before Completion",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "upper": "li",
+  "commentary": "The last hexagram in the book.",
+  "music": {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
+   "firstBeat": 0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
+  },
+  "copy": null,
+  "source": {
+   "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
+  }
+ }
+]
