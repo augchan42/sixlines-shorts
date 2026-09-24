@@ -41,7 +41,7 @@ npm run blender -- --lines 111111 --bpm 110 --preview    # half size, low sample
 ```sh
 npm run studio                                  # preview and scrub in the browser
 npm run render -- Qian out/qian.mp4             # 1080×1920, 30 fps, H.264
-npm test                                        # clip naming (Node) and slab layout (Python) tests
+npm test                                        # clip naming (Node), slab layout and music analysis (Python) tests
 ```
 
 A new short is a new spec in `src/specs/` (text, hexagram, art keys, screens, beat grid) registered in `src/Root.tsx`.
@@ -58,6 +58,15 @@ The props are validated by `src/schema.ts` and can be edited live in the studio.
 
 The reference track in `public/local/` is taken from a CapCut export and is only for comparing timing locally.
 Published shorts need a track licensed for commercial use.
+
+Candidate tracks go in `public/local/music/` (not committed) with a `LICENCES.tsv` of file, title, licence and source URL.
+`music/analyse.py` measures each track's tempo, first beat and per-bar energy and bass, and marks where the bass drops out and comes back:
+
+```sh
+python3 music/analyse.py public/local/music/*.mp3 > music/analysis.json
+```
+
+`music/analysis.json` is committed. It records each track's SHA-256, source and licence, and the commit of the script that produced it (`modified: true` if the script had uncommitted changes), so a short's beat grid can be traced to the exact audio file and code.
 
 ## License
 
