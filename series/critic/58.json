@@ -1,0 +1,70 @@
+{
+ "hexagram": 58,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/58-dui/share.mp4",
+   "sha256": "6c404b9f992b40f1293afd6acaefd695b09573b4e627bbc6757e69c04c7c2fc5"
+  },
+  "files": {
+   "out/critic/58-dui/01.png": "59bcf284982c8c88ba75fc1bf8adbb354bade084a2ca5d6faa2f6500b6da631f",
+   "out/critic/58-dui/02.png": "3a0b8dd0b8ad9a4df424372e890394273d80e4bbc94d00e027d0f05ec6011a82",
+   "out/critic/58-dui/03.png": "2d307a5b96005e64ba7ee72e4d8f82d8db94638b7aeddff93bf5c776ec57f07a",
+   "out/critic/58-dui/04.png": "0f3429207fa63cb3822ee89c74377fc042fcf15d51e7fe5d35a7871757834b2a",
+   "out/critic/58-dui/05.png": "17a999056fea45041ce08dfeeec4f3d49e212f13f81b48646ad27c4bb1495c90",
+   "out/critic/58-dui/06.png": "6729e7ae1013cc86f521c86c3f6d155ce6b7def692909c21463d0838df727ab8",
+   "out/critic/58-dui/07.png": "aada8fba6e77d12eed3888203372c3d31cb8132aa332b9c8423a8b8831d0d6a1",
+   "out/critic/58-dui/08.png": "813ac477e20f3d455c77d2f9fb0a5b746d76f271392b8a0306a23ad3b5bbf73a",
+   "out/critic/58-dui/09.png": "2f607b4ca38a6030b2a5847bb7da20746e678476db1a5807a91ad3be8121f053",
+   "out/critic/58-dui/10.png": "c600a29ca2472f79b8ecf67edfb756df39f149b3c817036af71628f2019cb84b",
+   "out/critic/58-dui/11.png": "94ddbfdf5cacb637bf415f693abcd792c05f8e17068b700da41a8c51540d36d6",
+   "out/critic/58-dui/12.png": "6c86201dc14b68bbd953c3abfaedc08e80e7ce6a8dcd106064c6aea21c73c73d",
+   "out/critic/58-dui/13.png": "9b41a2f0c6bdaee065fa43ac390f83e5400bc56cedeff6d8ea1b049a3d2c6a6b",
+   "out/critic/58-dui/14.png": "cbcd824a1a6af11306a0bb19cf8c146f1251d5659d2113955d41d817072eb88a",
+   "out/critic/58-dui/15.png": "f574a53167eda5eaa4fb6f704ac4a1c350f281a6a2c7f911ff7199487abc2429",
+   "out/critic/58-dui/16.png": "2162ad1f364bfbe5b6623b5843669955841838999dabff446c6c9ebf4bb08988",
+   "out/critic/58-dui/sheet.png": "a224bfccf36e4b07c66e6ca2d33b47aa1f5ffff9daa27a298affb1e0cfebcc5c",
+   "out/critic/58-dui/brief.md": "e57d251d258ae7685393a5f9a21ecb89f1b726c572e717cdb4d550abcfe6d83a"
+  }
+ },
+ "review": {
+  "hexagram": 58,
+  "overall": 8,
+  "criteria": {
+   "hook": 8,
+   "copy": 8,
+   "legibility": 7,
+   "visuals": 8,
+   "music fit": 8,
+   "showcase": 7,
+   "ending": 8
+  },
+  "strengths": [
+   "Hook is a real, recognizable moment (\"Good news, no one to tell?\") readable at a glance and it sets up the whole thought.",
+   "Hook -> meaning -> question reads as one connected idea: no one to tell -> share it -> joy alone dries up -> who could you call.",
+   "Plate choices fit the lines: the banquet toast for \"share it,\" the lone swan on still water for \"dries up\" -- both read as lake/joy imagery true to dui.",
+   "Drop lands cleanly: the question goes quiet (energy 1.0) right before the 14 s drop, then screen 1 hits on the jump to energy 8 with the planned zoom + shake.",
+   "End card and credit follow the series' held-card pattern and are legible and unhurried."
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "Give screen 3 (YOUR DAY, READ) a beat longer, or simplify what's on it -- it's carrying a hexagram-change readout (\"58 becoming 47\") plus \"Study this line\" plus the day header in 2.5 s, which is more than a viewer can read once.",
+    "why": "showcase needs the viewer to register what each screen does in the time it gets; screen 3 has the densest text of the four and the shortest look."
+   },
+   {
+    "part": "screens",
+    "change": "Hold on the fully-typed \"READ THE STRUCTURE\" title a touch longer before the whip cut, or start the reveal earlier so the mid-word state (\"READ THE STRUC\") doesn't land on a cut frame.",
+    "why": "legibility -- the drop-frame catches the title mid-type; even if it's just an animation in-between, it reads as clipped text at a glance."
+   }
+  ],
+  "notes": "Can't hear the track, so can't confirm the whip-cuts on meaning/question actually land on-beat as described, only that the drop and the energy dip before it line up with the stills. Also can't confirm on-device contrast/legibility of the small green hexagram caption (\"58 - Dui - The Joyous\") against the rain background -- worth a quick look on a phone screen."
+ }
+}

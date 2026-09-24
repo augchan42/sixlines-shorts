@@ -1,0 +1,74 @@
+{
+ "hexagram": 1,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/01-qian/share.mp4",
+   "sha256": "332c0a2fd5e23f4baabe9e46ed0ca30d852a2b585aeb33ab756219e1bd6992a3"
+  },
+  "files": {
+   "out/critic/01-qian/01.png": "ee306e7baf6707b082d72c3b7b47d185b7cead0393619c3f7cc7db4434e9b589",
+   "out/critic/01-qian/02.png": "95bf4cc38e4bbea8e32a6a66c738d0a1e416ca5b25251d7cef009bd9cfabd175",
+   "out/critic/01-qian/03.png": "7eabea1712b339d645fe4930404c5d05f56310941f193098488ef1741a97d63f",
+   "out/critic/01-qian/04.png": "9c6b4da9e82e2e58d74c4dfb976adf55418a8891962505febc89d34f98b61cc7",
+   "out/critic/01-qian/05.png": "e911c3c543b8c2d8bea32d77f4d93ab33700026e19834cfbb3eab717a3e6d049",
+   "out/critic/01-qian/06.png": "6364d9fe505d49a489be668b9313c8863918f129483ca1ff379d63e389567a90",
+   "out/critic/01-qian/07.png": "7fa812dbd4bb2e2f93bac1984c2b70e72fdbd7e36d9efb4bbd737b61ef209620",
+   "out/critic/01-qian/08.png": "c5b656380bc642ba94d84874f3e4cd334769bf175d7b9c6ca9e0647d80b047be",
+   "out/critic/01-qian/09.png": "5481377c16972212caa3e6217373543c8dc49a3b96bdbd5199e9b6ab32b70bea",
+   "out/critic/01-qian/10.png": "165416e49ad2d8c26053dacebd751bbb629d2ada8facb8b43cd52e1282df1613",
+   "out/critic/01-qian/11.png": "111bf5d51e2beebed49aa0b20a11f0392f4a044ec8b6616cf8e672ebf4dbe884",
+   "out/critic/01-qian/12.png": "79ec9b7d53f965803bdcdcf0d24cbb58a5c48a0746ca1032347e2f4c766bad48",
+   "out/critic/01-qian/13.png": "1f094df5c178d92b8676e9c11d8f8655fac787a64c6859c33f6391907f0997e1",
+   "out/critic/01-qian/14.png": "3583acce19906bc7c97a91cf3125cfc181628f5bb4a02b38d7a4d771b0c5eca9",
+   "out/critic/01-qian/15.png": "69d7c4370497336bbe23eb169db5066589a40591d3587572eded4e4dfb872303",
+   "out/critic/01-qian/16.png": "04e4acf01d40f701174f4220590ab558867985ec5d7cdd42e474438b761ee1c0",
+   "out/critic/01-qian/sheet.png": "b8776cb0ed209b60b61699b7e39af17de8dbcaf00c8b392bc0b35d9182b9f75e",
+   "out/critic/01-qian/brief.md": "9c436a7600e29c4622ed422d53d07f5f35e3d1d989b430da2d366977bf7f4a98"
+  }
+ },
+ "review": {
+  "hexagram": 1,
+  "overall": 7,
+  "criteria": {
+   "hook": 7,
+   "copy": 8,
+   "legibility": 6,
+   "visuals": 7,
+   "music fit": 7,
+   "showcase": 6,
+   "ending": 7
+  },
+  "strengths": [
+   "Hook is a real, recognizable question in plain white text on black, no clutter, reads instantly.",
+   "Hook-meaning-question reads as one thought: waiting for a sign -> begin, no conditions -> what would you start.",
+   "Hexagram build and plates (rider on the road, monk descending temple stairs) carry a steady, purposeful mood that fits qian.",
+   "End card at 95% and credit are both clean, high-contrast, and hold long enough to read."
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "Screen 4 (ASK · CAST · REFLECT) title has heavy chromatic-aberration/glitch styling that overlaps the app's own UI text behind it. Drop the glitch effect or add a solid dark bar behind the title like screens 1-3 use.",
+    "why": "In its 3 s window the title fights the background copy for legibility, so a viewer can't read either cleanly."
+   },
+   {
+    "part": "ending",
+    "change": "At the END 40% frame the hexagram bars cross directly through the second line of \"SIX LINES,\" blanking out \"LINES.\" Offset the bars or fade them out before the wordmark reveals, so the two never overlap mid-transition.",
+    "why": "Even though it clears by 95%, a viewer watching in real time sees the logo cut off for a beat."
+   },
+   {
+    "part": "cuts",
+    "change": "The drop only takes the bar energy from 6 to 7 (steady class), but the timeline gives it a zoom + 1-beat shake like a real hit. Either soften that accent to a plain zoom or route the shake to bar 18/26 where energy actually peaks at 7.",
+    "why": "A shake sized for a bigger jump reads as slightly oversold against a track that barely moves at that point."
+   }
+  ],
+  "notes": "Can't hear the track, so check on playback whether the whip-cuts between screens 1-4 actually land on the beat as described, and whether screen 4's glitch effect is animated (may read better in motion than in the still)."
+ }
+}

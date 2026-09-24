@@ -1,0 +1,74 @@
+{
+ "hexagram": 52,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/52-gen/share.mp4",
+   "sha256": "a2982f6a382a499abbb0a43c89aa477d30f972902008016b7a691dc1133d9d42"
+  },
+  "files": {
+   "out/critic/52-gen/01.png": "ea30bf91f67c77a006c1222677e2fef10ef69d99a49e3a2a26f0aa77c2f29ecc",
+   "out/critic/52-gen/02.png": "06443a0a237b3479ad20d623c9a01def5e2ca306452b8a03cea464a5973242f0",
+   "out/critic/52-gen/03.png": "ff3203f5136fc0a337d64325f5f33ddc405a5bf23faf042f5ca858aa3e0a926e",
+   "out/critic/52-gen/04.png": "59a04d918119494b9962e1300141173605689caa8b25154b2515f7a5806b4d6d",
+   "out/critic/52-gen/05.png": "cdb996dd636210ea84fd85cbc248562ae8e03d8dd20fcf9338835dcd3a6991a8",
+   "out/critic/52-gen/06.png": "7e85632bce2d8a042d7e82c295523dac46ead493468f32283bd9b230decc7f9b",
+   "out/critic/52-gen/07.png": "01242ee64696f1da82636594267cb9968135bcd7916faa66f2d08b27e1abb8bb",
+   "out/critic/52-gen/08.png": "78527c24127e0f6f460f983e04484333530120add3b86eb6ef98a8b12ae7b6eb",
+   "out/critic/52-gen/09.png": "d628dd3fc1ad2634581c188f1bf5869f1328475aaf715c9c91c72c99b31a41a0",
+   "out/critic/52-gen/10.png": "34c793e44481d7aede28c868aa607cb561276d0a26b51010283c369012162e2b",
+   "out/critic/52-gen/11.png": "d1f3f4e27bba4a488d264d44ad6e034de10a34c56f1423bbdd7f1e76e5a9fccd",
+   "out/critic/52-gen/12.png": "c1e28d5fa5bbce35aa225ae1bb10fd127481eb3b674fb3b072fa7a89d110e50a",
+   "out/critic/52-gen/13.png": "eb990a64303b3a68eb08aa1f8e765a235d939c7d29f2e37069ca64f50f502312",
+   "out/critic/52-gen/14.png": "f63bc586b5fbe8e675d61f84688d27fa77c7c61f65115c1d5d534b05ddc09547",
+   "out/critic/52-gen/15.png": "0f35145e3f258ce5e1be404fe8006abeadf49ad2940454f6435bbf700dd3086b",
+   "out/critic/52-gen/16.png": "f0e17b92a30f8b662c3c3b5c7495cdcda241eabd3dbb6d7d3ea54807f77bd5ba",
+   "out/critic/52-gen/sheet.png": "445731a36be28a4c5ee2c116265c47d2e3a013ba291803bb11c472c7e2bd079b",
+   "out/critic/52-gen/brief.md": "7aaaca75596e87c2ef838e23ab9d2562c150969b568e4299d6afb02a129d0c21"
+  }
+ },
+ "review": {
+  "hexagram": 52,
+  "overall": 7,
+  "criteria": {
+   "hook": 8,
+   "copy": 8,
+   "legibility": 6,
+   "visuals": 8,
+   "music fit": 6,
+   "showcase": 7,
+   "ending": 8
+  },
+  "strengths": [
+   "Hook \"Can't stop overthinking?\" is a real, instantly-readable situation, and it pays off cleanly through meaning into the question — one connected thought.",
+   "Meaning lines are plain and true to Gen: \"Keeping Still says: pause\" / \"Stay with where you are now\" earns the hexagram without fortune-telling language.",
+   "Plates suit their lines: a seated monk in a courtyard for pause, a lone figure on a mountain trail for staying where you are.",
+   "The drop lands exactly on the cut into screen 1, and the end card holds long enough (6.5 s) with a clearly legible credit after it."
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "On screen 3 (YOUR DAY, READ) and screen 4 (ASK · CAST · REFLECT), the faint app body-copy sitting behind the orange/green headline runs edge to edge and gets clipped left and right (\"che...\", \"freeform\", \"broken or unbroken\"), and it overlaps directly under the bold headline letters. Crop or blur that background layer further, or drop its opacity another notch, so it reads as texture, not as half-legible clipped text competing with the headline.",
+    "why": "rubric legibility: nothing should be clipped or fighting the foreground text for attention"
+   },
+   {
+    "part": "cuts",
+    "change": "The track's energy class is calm, but the cut list is whip-up/whip-left/whip-right on every beat through the meaning and question, then alternating whips between all four screens. Swap most of these for slower push-ins or straight cuts, reserving a whip for the drop only.",
+    "why": "rubric music fit: cut style should suit the track's energy class, and constant whip pans read as driving-class editing on a calm track"
+   },
+   {
+    "part": "screens",
+    "change": "Screen 2 (THE BOOK OF CHANGES) shows a seated-figure illustration and a Jiao Yanshou lore paragraph rather than any app UI, so a viewer can't tell what tapping into that section does. Replace it with an actual in-app screen (even blurred at the edges) the way screens 1, 3, and 4 do.",
+    "why": "rubric showcase: a viewer should be able to tell what the app does from the screens in the time each gets"
+   }
+  ],
+  "notes": "Confirm on the actual render (not just stills) that the whip cuts read as intended over the synth pop track — the contact sheet stills can't show motion, so the music-fit score here is a guess from the cut list and energy table, not from hearing the cut."
+ }
+}

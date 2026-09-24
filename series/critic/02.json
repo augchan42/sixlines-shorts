@@ -1,0 +1,73 @@
+{
+ "hexagram": 2,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/02-kun/share.mp4",
+   "sha256": "5f2055626de8eff6bdd44a7b7bf9bd15050392fa34eb616aceb0ab601bb7cc82"
+  },
+  "files": {
+   "out/critic/02-kun/01.png": "1745a977bf7bb6088a70ec4c135811850148caa45e4e561103c86143ef20578f",
+   "out/critic/02-kun/02.png": "6c1834ad5e4b113a3241a7be956755559c1e245c740c1f24bdf015f9d70374f0",
+   "out/critic/02-kun/03.png": "d2d332a404c7024ecef41845a95189ae2f9b60a01514ae4ffc5c452e033c9a55",
+   "out/critic/02-kun/04.png": "29375feae8f0640c7ff49bf952f858c68e1320b0409fe3c405693dec888a2dcc",
+   "out/critic/02-kun/05.png": "8b3844c198e98962aadd035e13f9493ed05c7a2bdcb9c2bdd2f08ef449f8aac5",
+   "out/critic/02-kun/06.png": "c50d7137ac19898b237e94586bf710d350e6df42c375bec175d47d6d3a64770a",
+   "out/critic/02-kun/07.png": "a85a69902cac23d5c74d7870beb13cadf31b25ede6deee2325d720639fcee791",
+   "out/critic/02-kun/08.png": "2c0cc9cb3290404947e9a1009fce33f52e388070396a3f1e9062105f7d65eb7a",
+   "out/critic/02-kun/09.png": "c3f84cf0e68274fb70410931dc1bb3be9646454059326f62498b06dba1f8a0de",
+   "out/critic/02-kun/10.png": "75edadb4a1faaab0808c5c28f330421c47068223d6d8bbbbb2c0a4430f5ae634",
+   "out/critic/02-kun/11.png": "fd3a18cacc258eaef932f77c2415d9d97c45607648df5d15d5805dbbb9ac66b5",
+   "out/critic/02-kun/12.png": "0a823ac122be9b9603a759b996469324886e95fc77be23769b6a87e7ec7bcd34",
+   "out/critic/02-kun/13.png": "5e418b9806babc0fdb4dfc9e6d73811e58fface470be3632accf9d48ddf8ee16",
+   "out/critic/02-kun/14.png": "6f9107c763fca96734881c83dbfb3ccb68feb1a4aa5eb33595e8accea4cc0410",
+   "out/critic/02-kun/15.png": "88d80a632c3b9f5e7f719cf0dabd7bb26f0bba0d741bcfa844f7eb29075b1c39",
+   "out/critic/02-kun/16.png": "d0a30a31f002acc22c60898d40e1f6e9ef5f7314b9608ef83332e27ea087b9d7",
+   "out/critic/02-kun/sheet.png": "5d0a899ba1af17c710095e5f2e214a97a89adc96f6f555e92f4a212ee4ebe96b",
+   "out/critic/02-kun/brief.md": "5e2648615f87626a92648cb88e54ff67099c38cba6d713cf697fd24db24e872c"
+  }
+ },
+ "review": {
+  "hexagram": 2,
+  "overall": 6,
+  "criteria": {
+   "hook": 7,
+   "copy": 8,
+   "legibility": 6,
+   "visuals": 8,
+   "music fit": 5,
+   "showcase": 6,
+   "ending": 8
+  },
+  "strengths": [
+   "Hook to meaning to question reads as one thought: leading vs. following, then who you could back.",
+   "Horse and threshing-farmer plates are period-appropriate readings of Kun (the Receptive) and of \"supporting is its own strength.\"",
+   "Hexagram build and end card are clean, on-brand, and hold long enough to read."
+  ],
+  "changes": [
+   {
+    "part": "cuts",
+    "change": "Drop the whip-up/whip-left/whip-right pattern on the meaning, question, and screen cuts; use straight cuts or soft zooms instead, saving any whip for the drop only.",
+    "why": "The track is tagged energy class calm at a flat 4-7 throughout; whipping on every beat reads as a driving-track cut style and fights the music instead of following it."
+   },
+   {
+    "part": "screens",
+    "change": "Replace or crop the Jiao Yanshou verse block under \"THE BOOK OF CHANGES\" with a single short line (e.g. the hexagram pairing name), or hold the screen longer than 3.3 s if the quote stays.",
+    "why": "Five lines of caption-sized text, some in a second script, can't be read in the time given, so the screen shows without teaching anything."
+   },
+   {
+    "part": "screens",
+    "change": "Drop the chromatic-aberration/glitch treatment on the \"THE BOOK OF CHANGES\" headline or reduce it to a subtler version used elsewhere in the series.",
+    "why": "The red/green fringing makes the headline harder to read than the clean type used on the other three screens."
+   }
+  ],
+  "notes": "Check in motion whether the mid-whip frame at the drop (the \"The Rece\" clip in still 09) ever lands as a held frame instead of blur — the still suggests it's transitional, but worth confirming at playback speed. Also confirm the audio drop itself is felt as a lift, since the energy table only shows a jump from 4 to 6 rather than a hard hit."
+ }
+}

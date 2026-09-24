@@ -1,0 +1,74 @@
+{
+ "hexagram": 57,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/57-xun/share.mp4",
+   "sha256": "4fcc59ba2bab3a527e221d5861e30cd1c2f1b272408bb2832c5c3dc26015a2cb"
+  },
+  "files": {
+   "out/critic/57-xun/01.png": "10e6fbf1e646c63a1e14f8838fc21cdb0f957f34035937cb0211ea0000425121",
+   "out/critic/57-xun/02.png": "42843459de199d33989eaf1b84206e12769c434a8230bd1917b494ba93849f24",
+   "out/critic/57-xun/03.png": "0736125dbf40d02be405672bb7e8019b037ea9c7ad14907ef18d6ed3db84abf0",
+   "out/critic/57-xun/04.png": "b78fc0744379e24bff7b4c94dbf1816f30b6ffa19c904fa96bbb4d019b4e2b52",
+   "out/critic/57-xun/05.png": "2ffc57fdbde5971eddc37cee7caa4f72dcca444a7aa2ae94396e55fbef010e41",
+   "out/critic/57-xun/06.png": "dbbdb1e01ca14667604d569edf4275ddc6c18efebdcdd8b6566d784cdb00fbd9",
+   "out/critic/57-xun/07.png": "c40c586bb28ee5854bfcbf8bceb11f9fa800f5392c7950b8094e545a0311000a",
+   "out/critic/57-xun/08.png": "564aaefb3bd1a3d41f78878e7f95894f8ff073d7a6b7e00cce748acc8d13a458",
+   "out/critic/57-xun/09.png": "80ae9f4c289a12456437cc9a6ab7547a1b56ed7d96ea0300c129d1175e2c3d79",
+   "out/critic/57-xun/10.png": "32f3b1ccaa9bbe0166005bc9ce3f0ca2004ac19b57dd3786972c3b25c23e998a",
+   "out/critic/57-xun/11.png": "1236ee86ed27ad756495a1238340e20128ef98c56ed809fbfb723ccde185d43d",
+   "out/critic/57-xun/12.png": "d6f14410f533128fe5953b3f3e662afccb5d4efb163dc7257abd5eddf669d787",
+   "out/critic/57-xun/13.png": "5a17675b36c925d05dafad38bc4fbcd1ebc73c7e06895bc7cc7614221e545687",
+   "out/critic/57-xun/14.png": "4ed78e7b30c73a8af928c5fc3beb8040ddc3f27cd04a9e47507a5e32816f311f",
+   "out/critic/57-xun/15.png": "042bff5345a54cdfb18f68599ea6c2597b95b1a745e599d5f604305c247555af",
+   "out/critic/57-xun/16.png": "45fca9badc20aa5196883ca034a4ffd893f3d49672d6d7938639c923a66716ec",
+   "out/critic/57-xun/sheet.png": "352d71a92ccfa2ce9f794e1ad96ec692f33a52740b256195e43e19774be249a2",
+   "out/critic/57-xun/brief.md": "22e010ede92b62330fbcdd609f11de549506d1edde7e24c8ac127d90d7f778bc"
+  }
+ },
+ "review": {
+  "hexagram": 57,
+  "overall": 7,
+  "criteria": {
+   "hook": 6,
+   "copy": 8,
+   "legibility": 8,
+   "visuals": 6,
+   "music fit": 8,
+   "showcase": 6,
+   "ending": 8
+  },
+  "strengths": [
+   "Hook to question reads as one clean thought: said it once, say it again, quiet and steady gets through, what's worth repeating.",
+   "Drop at 15.16s lands exactly on the question-to-screen-1 cut, and the energy climb through the screens (3 to 6 to 7) matches the whip-cut pace.",
+   "Screen 3 (YOUR DAY, READ) is the strongest showcase beat: it shows the actual hexagram-becoming-hexagram reading with 'Study line 1 · day 1 of 6', which is specific and legible, not generic app chrome.",
+   "End card holds long enough (5.7 s) with a clean snap transition and the credit is fully readable for nearly 2 s."
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "Replace the plate behind SCREEN 2 (THE BOOK OF CHANGES) with a different image; it currently reuses the same bonsai-mountain art as SCREEN 1, so two of the four screens look identical and the showcase reads as one screen twice.",
+    "why": "Visual repetition across half the showcase makes the app look like it has fewer distinct views than it does, weakening the showcase criterion."
+   },
+   {
+    "part": "hook",
+    "change": "Give the hook a plate or moving background behind 'Said it once, nothing changed?' instead of plain white text on black.",
+    "why": "The line is relatable and legible, but a bare text card is the flattest visual in the short and does the least to stop a scroll compared to the hexagram build and plates that follow."
+   },
+   {
+    "part": "screens",
+    "change": "On SCREEN 1, hold past the title-reveal animation frame (the still at 16.74s catches 'READ THE STRUC' mid-type) or start the screen's on-screen window a few frames later so the full title is visible for more of its 3.16 s.",
+    "why": "A viewer landing on that exact moment via scrub or a slow phone would see clipped-looking text even though it resolves quickly."
+   }
+  ],
+  "notes": "Can't hear the track, so can't confirm the whip/zoom cut style actually feels tight against a 95 bpm building synth-pop track rather than just landing on the beat grid; worth a sound-on pass to check the 1-beat shake on the drop doesn't feel abrupt against the retro-pop character of the track."
+ }
+}

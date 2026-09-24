@@ -1,0 +1,79 @@
+{
+ "hexagram": 29,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/29-kan/share.mp4",
+   "sha256": "eed31bfd40f8c6afe8b77f9587f187a0bcd27ee5bc98c27ecae376470c507d34"
+  },
+  "files": {
+   "out/critic/29-kan/01.png": "b19baeb0cea344b044f3343578b7037ba0d45be21770c50eab5c9a4e1091f638",
+   "out/critic/29-kan/02.png": "fec719d1ffa7677d4d327f3849b64a470371ffeb8473c168c42430104fdc3a88",
+   "out/critic/29-kan/03.png": "2095c2fa99a6654fdb378cd749624b698ad8a722bebeacbadad932d2a3bdf926",
+   "out/critic/29-kan/04.png": "fd1ad55d4c08006c2264d975925f18fd48c58512d84d9f028d0d2153bfb78dd4",
+   "out/critic/29-kan/05.png": "2149e410af39136a9cfd578cf2089442d36081054417c23ce3805eae0741b829",
+   "out/critic/29-kan/06.png": "c4def92088b17274d2091e53d781bd042c07f8f2a0c5a3aa80cc70c43e89828d",
+   "out/critic/29-kan/07.png": "02c63baf88a5c2af645b884eee7ca85ed280068443e0d9975443403a49050469",
+   "out/critic/29-kan/08.png": "dcbbda772dffb181999c4fd063c9268fb2ceac7a90bf5d9433c52936985fa07f",
+   "out/critic/29-kan/09.png": "42a852a6b4a7a7b007d1cc038928215dae587a162841bdf8d53f51fdb0a29f41",
+   "out/critic/29-kan/10.png": "11adcda154dcdb4d1a7618df672035b05fc51adf6bc877561ca46069254a0ccd",
+   "out/critic/29-kan/11.png": "144ade81f4f3e1f97670f0fa2887df50875c2a51bb4a147af5bc9c8fae9da486",
+   "out/critic/29-kan/12.png": "4dce4ac900e6abc3999232627424cbabc3d8e036d3ef1924016704e2cf3948be",
+   "out/critic/29-kan/13.png": "99d9b7624d9046d3e37efb55784ff9babf49fc6b88a61131e2656f52fe783c5c",
+   "out/critic/29-kan/14.png": "e78e3be77aca40fd19a8f4c2ef2753b05051d7018603fdb56ea36d4f381fcc1b",
+   "out/critic/29-kan/15.png": "d092061a9e4c72854176c87962fa709399f392ecb1851cc26607c89bf23c93a1",
+   "out/critic/29-kan/16.png": "ebd8f167696f1c943940ea27082af1dab821e40e4980436e410c333be6e62aa3",
+   "out/critic/29-kan/sheet.png": "f4f6057965b26825c33a5f068dccd5b89300e4dd49a06a95710f8ce897653669",
+   "out/critic/29-kan/brief.md": "c34c2515ebf0217d073dfc45e9cdc0006baf8d89b37f50a457364ab912db2e75"
+  }
+ },
+ "review": {
+  "hexagram": 29,
+  "overall": 7,
+  "criteria": {
+   "hook": 7,
+   "copy": 8,
+   "legibility": 6,
+   "visuals": 7,
+   "music fit": 8,
+   "showcase": 6,
+   "ending": 8
+  },
+  "strengths": [
+   "Meaning 2's plate (a waterfall carving through rock) is a literal, well-chosen match for \"Like water: fill it, flow on.\"",
+   "The drop at 14.4 s lands exactly on the question-to-screen-1 cut, where the energy table jumps from 4 to 7 — the biggest visual move (zoom + shake) sits on the biggest music move.",
+   "Hook is plain, recognizable, and readable in one glance, with hard white-on-black contrast.",
+   "End card holds long enough (5.4 s, typing on then full text + URL) and the credit reads clearly at 1.8 s, matching the series' held-card convention."
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "On screens 3 and 4 (YOUR DAY, READ / ASK · CAST · REFLECT), the glitch-styled title text sits directly on top of live app copy (\"Good evening, 蕴斋\", \"THE HEXAGRAM\", \"each position means. These rules guide...\") instead of a clear background band. Give the titles a solid or gradient scrim, or crop the capture so the title has empty app-chrome behind it, the way screens 1-2 sit cleanly over the bird/castle art.",
+    "why": "The RGB-split title glyphs overlapping live sentence text make both unreadable at a glance, which is the one thing the showcase section needs to prove — that a viewer can tell what the app does."
+   },
+   {
+    "part": "question",
+    "change": "Put the question line on a dark scrim or box like meaning 1 and meaning 2 use, instead of leaving it bare over the matrix code-rain background.",
+    "why": "Right after two plate-backed meaning lines, dropping to bare code-rain for the question is a legibility and continuity step down — the white text is readable but the frame reads thinner than the two before it."
+   },
+   {
+    "part": "plates",
+    "change": "Swap meaning 1's plate (a figure walking through a dust/sand storm) for something water- or abyss-themed, matching meaning 2's waterfall and the hexagram's actual image.",
+    "why": "The current plate fits \"keep moving\" but not \"The Abyss\" — a viewer sees a desert scene under a water hexagram, which weakens the visual read of the hexagram itself."
+   },
+   {
+    "part": "screens",
+    "change": "Give screen 4 a clear visual anchor (art or a UI element) instead of leaving it text-only against the same input-box screenshot; it is the last screen before the end card and currently reads as the weakest of the four.",
+    "why": "Screens 1-2 pair the app name with strong art (bird, castle); screen 4 ends the showcase on plain UI chrome, which is a weaker note to hand off into the end card."
+   }
+  ],
+  "notes": "Cannot hear the track, so whip-cut placement against actual beat transients (not just per-bar energy) is unverified — worth a sound-on check that the whip-up/whip-left/whip-right sequence through meaning 1 -> meaning 2 -> question actually lands on beats and not just within the right bar. Also worth checking on a phone screen whether the code-rain characters behind the question text (visible in still 07) read as noise at small size."
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "hexagram": 30,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/30-li/share.mp4",
+   "sha256": "d96f818f5adbe2aa81535a316060d38c170da1e0cc06e858cdda871609ab2234"
+  },
+  "files": {
+   "out/critic/30-li/01.png": "4e4694895ae7b9828223d2ba0a78b73121c278605bc686a5f9cc7cc742990412",
+   "out/critic/30-li/02.png": "69341fafded1759092d57f18a283888af6873fa77eb5594dc27ef3e9a951c4b9",
+   "out/critic/30-li/03.png": "e731769c9c5ef41fd53a7bdfd6737398bbf717c2a05431a382752dd3f2c68d1d",
+   "out/critic/30-li/04.png": "823dbb9dd9482782b7e2f4a0e2ab6951399b9714b21a786fe97e1dcd1aa12842",
+   "out/critic/30-li/05.png": "66b00eeb2562f338fb394b10686a18a4ac778ec817e2d35ce0370a0b3bffe5e8",
+   "out/critic/30-li/06.png": "484f7d5e5a8cf46f88366610f50772ee87ecf05c1aa2418608d7924c67936d66",
+   "out/critic/30-li/07.png": "6f45960b0884b6461f471f40e9de7a68d66b754af8a319895c0c6e57f08261a6",
+   "out/critic/30-li/08.png": "7963bd02d87b4ce81bd1733379c235b245e19dcd55cb328ee2f46cf6c93b7a33",
+   "out/critic/30-li/09.png": "334590ad654b04acb6b7abfa52217e67390612201be8a30232270a04b3c4db2a",
+   "out/critic/30-li/10.png": "a8864d3666a1375dfc1551a687efbe440e04c875331f66d5490f2b49399a096c",
+   "out/critic/30-li/11.png": "28b7487449573667cc5c80245538ad745647f77cce16a2598d435152146462ea",
+   "out/critic/30-li/12.png": "f349c295606fff15561bae3763efaba802210eed52929995b408e723624c9173",
+   "out/critic/30-li/13.png": "9ef8853f76e2b59a0a29426792eeabbe324130bf0913888ae2e3c77388ae29fd",
+   "out/critic/30-li/14.png": "e3b6535d856c3985cb26c780a0ac29c007d760c12e56102fa07608dd8eb58e50",
+   "out/critic/30-li/15.png": "496a7b0178c18741a88f7dafae5c07190483d755db891b2085a7e940f4150280",
+   "out/critic/30-li/16.png": "1fd148d01472fce72c51854e66d72df3699bef5ab026bf2ae037c501a520db54",
+   "out/critic/30-li/sheet.png": "0220296dd3b9e0ba67ef0337a1fb1917bb1e6df4bb3b30caf408fb490d524f02",
+   "out/critic/30-li/brief.md": "9dfc5ce4eaf6d786c163119486f7112e59fcbb7e8cd96ffa2ec7811d8f7e73bb"
+  }
+ },
+ "review": {
+  "hexagram": 30,
+  "overall": 7,
+  "criteria": {
+   "hook": 6,
+   "copy": 8,
+   "legibility": 8,
+   "visuals": 8,
+   "music fit": 7,
+   "showcase": 7,
+   "ending": 8
+  },
+  "strengths": [
+   "Meaning lines land as one thought: burnt out -> keep it fed -> steady care -> what needs tending, all true to Li's fire-needs-fuel sense.",
+   "Plates suit their lines: the ox at a lit doorway for 'keep it fed', the sun over a walked path for 'steady care, not big gestures'.",
+   "End card and credit hold long enough and read clean against the black."
+  ],
+  "changes": [
+   {
+    "part": "hook",
+    "change": "Put the hook line over a plate or a scene (a dimmed lamp, a spent match, a screen glowing then fading) instead of plain white text on black.",
+    "why": "Rubric asks for a real situation readable at a glance in the first 2 s; text alone on black is the weakest visual beat in the short and doesn't stop the scroll as hard as a recognizable scene would."
+   },
+   {
+    "part": "cuts",
+    "change": "Drop the whip-left/whip-right pair during hook and hexagram (bars 20-23, energy flat at 5-6) and hold a slower push-in instead; keep the whips for the screens section where energy sits at 7.",
+    "why": "Rubric asks the cut style to suit the energy class; whipping through a steady, low-energy stretch reads busier than the music, and saving the sharper cuts for the higher-energy screens section would make the drop and screens hit harder by contrast."
+   },
+   {
+    "part": "screens",
+    "change": "Hold on screen 3 (YOUR DAY, READ) an extra half second or add a short caption naming the changing-line feature ('30 becoming 56'), since that's the most distinct capability shown.",
+    "why": "The four screens are even in length but not even in how much a first-time viewer can parse; the changing-line/hexagram-to-hexagram idea is the app's most unusual feature and gets the same 3 s as the simpler screens."
+   }
+  ],
+  "notes": "Confirm the drop actually lands audibly at 14.4 s under the zoom+shake, and that the typewriter reveals on screen 1 and the end card ('READ THE STRUC...', 'REVEAL THE MOME...') read as intentional builds rather than clipped text when watched at speed."
+ }
+}

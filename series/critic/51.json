@@ -1,0 +1,74 @@
+{
+ "hexagram": 51,
+ "model": "sonnet",
+ "rubric": {
+  "path": "series/critic/rubric.md",
+  "sha256": "4c56b65aa342f10f3b8d47065704679d8a4835897d682cb51ecbabae03814c7c"
+ },
+ "sheet": {
+  "script": "scripts/series-sheet.mjs",
+  "commit": "49f7930e7f729c659820edc1c7244bd97ad8fd2e",
+  "clean": true,
+  "short": {
+   "path": "out/series/51-zhen/share.mp4",
+   "sha256": "acb482f88fe7fe0acdd8056dd289d9a19f8592e51d2cfc7f52ea687995e21be3"
+  },
+  "files": {
+   "out/critic/51-zhen/01.png": "61bf1c1dfd6e0fe8a56bfad73069bdae926d147dc6c930ef2ffe25b204be8073",
+   "out/critic/51-zhen/02.png": "250e31f0fd1877c4a550e90ec9018ea28b8822a0be77c5b39f58a16318b68657",
+   "out/critic/51-zhen/03.png": "d5eb1be7b3ef5d240b40ae92d94450811864681829b683279f98384df91648a0",
+   "out/critic/51-zhen/04.png": "9922ebfaf5b6d1085a2a1726573a993da9d3632ee9244aa660e8d0f324fc601b",
+   "out/critic/51-zhen/05.png": "8917305973ab62bc443005d84b154b1f76f39c66053a2cf6da85d674643d2f9f",
+   "out/critic/51-zhen/06.png": "2ee38e9fd52f5d9e9cfcbed33cee38660e8b899c44e4607d344cc403d92764f5",
+   "out/critic/51-zhen/07.png": "3a85729930633a960a1c1780b69816d6d644ef86cc401b303f59af310ca80fea",
+   "out/critic/51-zhen/08.png": "145c0a4e7fe22e019100c72619b8f4ab9b1ecc20a381188446530991c9af42c2",
+   "out/critic/51-zhen/09.png": "24e3606f2609ffeefb404ca9c3cac6d50ee6306faeca7e58ec143c4ebf55efdd",
+   "out/critic/51-zhen/10.png": "4e13ed57e35c5382249a51ca7a537baf2bba34cd97fec5893137e04f371c0f16",
+   "out/critic/51-zhen/11.png": "8620c2d64ed4eae9c9274509b8df224aad7641e3dcfa1d06b22891a01255dda6",
+   "out/critic/51-zhen/12.png": "ea275c4657b44e0423f975e195cc08c1719444d712dda57828f23f0e9490bfc4",
+   "out/critic/51-zhen/13.png": "c6a0cbc9d650c5fa2508a2d5faaddc4d5fe5168ce94c168aa1e19921db7bdb73",
+   "out/critic/51-zhen/14.png": "b630596ba921e77d2b9e1ac67a6d176c2c5d08223e09c6a44a91ca1da75fcbf2",
+   "out/critic/51-zhen/15.png": "ea75142a00426cd2cb38a4ae9730454b12399ac1b85984c2c82d7ad2861860e7",
+   "out/critic/51-zhen/16.png": "356994042eac3ac952745079b1021d1b37acbfc49409e55b9f1848c1c9f58e42",
+   "out/critic/51-zhen/sheet.png": "95801c7c997eb1577568fa1eae33056aea7e4aff4765c4a170ecf9384a87e744",
+   "out/critic/51-zhen/brief.md": "3c251a128db6f0822b22941e5b4429f6b36ead60b94737b84da0ce7e76bb80de"
+  }
+ },
+ "review": {
+  "hexagram": 51,
+  "overall": 6,
+  "criteria": {
+   "hook": 5,
+   "copy": 7,
+   "legibility": 5,
+   "visuals": 7,
+   "music fit": 8,
+   "showcase": 6,
+   "ending": 8
+  },
+  "strengths": [
+   "Hook, meaning, and question stay on one thought (shock/fear as a signal), which the rubric asks for",
+   "Meaning 1's cracked-earth-and-lightning plate is a strong, literal match for Zhen (thunder/shock)",
+   "The drop at 14.40s lands exactly on the cut into screen 1, and the energy jump (2 to 7) is felt through the zoom-and-shake",
+   "End card holds long, credit is clean and legible"
+  ],
+  "changes": [
+   {
+    "part": "screens",
+    "change": "On screen 3 (YOUR DAY, READ) and screen 4 (ASK - CAST - REFLECT), the headline sits directly on top of the app's own body copy (\"Good evening, ...\", \"...The I-Ching isn't freeform: structural rules govern...\") with no scrim, so both layers fight for the eye. Add a solid or gradient scrim behind the headline, or crop/reposition the screenshot so the headline falls over empty space, the way screen 1 does over its card.",
+    "why": "legibility: two stacked text layers on a busy background are unreadable at a glance, and this is the one thing the stills show clearly is broken"
+   },
+   {
+    "part": "hook",
+    "change": "Give the hook a background image instead of plain text on black, ideally the storm/cracked-earth plate used later at meaning 1, or a similar Arousing-coded image behind \"Did something just shake you?\"",
+    "why": "hook: rubric asks for a real situation readable at a glance; typographic-only on black doesn't show a situation, it just asks a question with no visual hook"
+   },
+   {
+    "part": "screens",
+    "change": "On screen 4, either drop the orange underline (it visually collides with the paragraph text behind it) or move it to align under the app's own \"Abundant\" chip row where there's clear space",
+    "why": "legibility: the underline currently crosses through the paragraph text rather than underlining anything"
+   }
+  ],
+  "notes": "Can't hear the track, so can't confirm whether the whip cuts through meaning/question actually land on-beat as claimed, or whether the 1-beat shake on the drop reads as intentional vs. jarring at speed. Screen 2 (THE BOOK OF CHANGES) is the cleanest of the four screens and could be the model for fixing 3 and 4."
+ }
+}
