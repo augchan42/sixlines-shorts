@@ -1,0 +1,76 @@
+{
+ "hexagram": 41,
+ "rendered": "2026-09-24T18:57:37.374Z",
+ "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "clean": true,
+ "seconds": 36.586667,
+ "shareKbps": 4901,
+ "props": {
+  "hexagram": {
+   "number": 41,
+   "zh": "損",
+   "pinyin": "Sǔn",
+   "name": "Decrease",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "bpm": 91.99,
+  "firstBeat": 0,
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 8.059,
+  "drop": 15.654,
+  "hook": "Having less than before?",
+  "meaning": [
+   "Decrease says:\ngive what you can.",
+   "Cut the anger,\ncut the wants."
+  ],
+  "question": "What can you\nlet go of?",
+  "plates": [
+   "assets/yilin/stipple-41-5.webp",
+   "assets/yilin/stipple-41-24.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/41/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/41/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/41/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-110001-91.99bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-110001-91.99bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "local/music/certificates/synthwave-lofi-synthwave-588188-license.txt": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+  "assets/3d/hexagram-110001-91.99bpm-8b.mp4": "7a3a18b4a2bf7aa53d7ba37be04305e7c33491e02f6c88c09b2b4f6635575d9e",
+  "assets/3d/endcard-join-110001-91.99bpm-9b.mp4": "0bd14fd54f594b74a6df3c0fd9847a27beaca0ea2390b2b2fcb128b906d02ec3",
+  "assets/screens/41/reading.png": "d55df207c668c5910a628ea94d077ee9f5f88ce9ce409b2324cefa74de635593",
+  "assets/screens/41/verse.png": "91eb2e4ee96b8ac3ab6f91bbfb14e89fa04308dbb8f3e0ca8e0f4dfb3f298a43",
+  "assets/screens/41/today.png": "90775052e25091debe57d6a28d237f941af8ad0fc707eb37203240805bd0332e",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-41-5.webp": "f0d0fdda4d86304fb3a9166883cfa628c86191733f1602814684f58e0aa19836",
+  "assets/yilin/stipple-41-24.webp": "b21d2b763d1bd6ad5e76a6c838da1a60a9841f9003fbbc54dca828c2d101b0f5",
+  "out/series/41-sun/short.mp4": "11a4980c86ff4a8c58b962e159877bb43fa7abefb430c2eecf9fdf6af13b71f4",
+  "out/series/41-sun/share.mp4": "6b77614d5deada10ac50a34ccbd1a42935816d3484d3b2cb52f4c1e3aa544b7b"
+ }
+}

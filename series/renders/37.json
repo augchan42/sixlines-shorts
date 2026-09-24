@@ -1,0 +1,76 @@
+{
+ "hexagram": 37,
+ "rendered": "2026-09-24T18:41:46.259Z",
+ "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 37,
+   "zh": "家人",
+   "pinyin": "Jiā Rén",
+   "name": "The Family",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick18-dreamy-synthwave.mp3",
+  "musicStart": 52.977,
+  "drop": 14.4,
+  "hook": "Too many rules at home?",
+  "meaning": [
+   "The Family says:\nskip the rules.",
+   "Say real things.\nDo them daily."
+  ],
+  "question": "What will you\nfollow through on?",
+  "plates": [
+   "assets/yilin/stipple-37-41.webp",
+   "assets/yilin/stipple-37-57.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/37/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/37/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/37/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-101011-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-101011-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+  "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+  "assets/3d/hexagram-101011-100bpm-8b.mp4": "ff04a1f39bbc31071359cea45c4da6cdf25aea7b3ac592215916ff5871f92efc",
+  "assets/3d/endcard-snap-101011-100bpm-9b.mp4": "4906bab4abb284d9f8b5ee65aa07b09467c1d226e4341d054dc095a2be93ab23",
+  "assets/screens/37/reading.png": "daf0a6b998552221ad0a06a5120af1fe9343451e75b024720aa35fc6e54fae5d",
+  "assets/screens/37/verse.png": "b240989dc05336b40adc911161832c1432c854a091c10233ef114900b615a105",
+  "assets/screens/37/today.png": "c63032a5860654f809cd73f2080315063bd19aeeb0c7b4541114aa0a4f6944aa",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-37-41.webp": "e3ab8349022d9f91b42a8da5f6a467c7eafe199f0476701e4501873766a9adf8",
+  "assets/yilin/stipple-37-57.webp": "75b07548c1e5fb786cae1e3ea118e7a70a8649996f59d0360b22101d7ebf4429",
+  "out/series/37-jia-ren/short.mp4": "33a5b5b9dbf36ec90848fae1ec5ea9984ef06b893e5201a2bc78ddea3852ab1c",
+  "out/series/37-jia-ren/share.mp4": "5d733045e607cce539d2fb2a397a4df78fd52b657926828e24549b117e35b379"
+ }
+}

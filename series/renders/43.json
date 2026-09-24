@@ -1,0 +1,76 @@
+{
+ "hexagram": 43,
+ "rendered": "2026-09-24T19:03:50.314Z",
+ "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "clean": true,
+ "seconds": 28.053333,
+ "shareKbps": 6430,
+ "props": {
+  "hexagram": {
+   "number": 43,
+   "zh": "夬",
+   "pinyin": "Guài",
+   "name": "Breakthrough",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 4.023,
+  "drop": 12,
+  "hook": "Ready to call something out?",
+  "meaning": [
+   "Breakthrough:\nsay it openly.",
+   "Speak up, but\nno force."
+  ],
+  "question": "What needs\nsaying out loud?",
+  "plates": [
+   "assets/yilin/stipple-43-3.webp",
+   "assets/yilin/stipple-43-1.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/43/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/43/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/43/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-111110-120bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-111110-120bpm-8b.mp4": "31793fbb6e7a118efd18cd657539b6367b245b981640425cc8f5c4c24d1c4b03",
+  "assets/3d/endcard-snap-111110-120bpm-9b.mp4": "a108b7ec20d3087f97555916000f8dd1808dee0cdc1abbb018f673530f1c47bf",
+  "assets/screens/43/reading.png": "6b0223e861e41cc048be5ec69d7ad81801a0a500ad4174f7d02ec6a7e8c69cdd",
+  "assets/screens/43/verse.png": "f0d3cadef509bb407377066c4603aa1be2c6ecf56e76c2762a8f9b0bfb550c0c",
+  "assets/screens/43/today.png": "41be2dfbde8a88f4ad73653dd945f9de9c0d503568f3506f94a317472f447206",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-43-3.webp": "a8085ed30d027a645d2e0af2d9c1f95fde8ecf4fce70879fcf3ea7caab3701a4",
+  "assets/yilin/stipple-43-1.webp": "5fbaf0c8c833addc70cdc8884b4ee35fa2923c83c575eb9fb9254e2c634a8fe5",
+  "out/series/43-guai/short.mp4": "3ce10459d3131c85811dab3d2f528d04249ae10f50b98d3cec0123a91bb3391b",
+  "out/series/43-guai/share.mp4": "20c8ee4c6e80860974d3fa20758bee21d56ea5061adb417567431d4f4aa8e196"
+ }
+}

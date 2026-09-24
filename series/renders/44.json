@@ -1,0 +1,76 @@
+{
+ "hexagram": 44,
+ "rendered": "2026-09-24T19:07:27.334Z",
+ "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "clean": true,
+ "seconds": 35.861333,
+ "shareKbps": 5002,
+ "props": {
+  "hexagram": {
+   "number": 44,
+   "zh": "姤",
+   "pinyin": "Gòu",
+   "name": "Coming to Meet",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  "bpm": 100.58,
+  "firstBeat": 0.015,
+  "music": "local/music/pick12-neon-drive-horizon.mp3",
+  "musicStart": 0,
+  "drop": 9.559,
+  "hook": "Something shiny just showed up?",
+  "meaning": [
+   "Coming to Meet\nsays: be wary.",
+   "Charm can be\nthe warning."
+  ],
+  "question": "What’s too good\nto be true?",
+  "plates": [
+   "assets/yilin/stipple-44-8.webp",
+   "assets/yilin/stipple-44-25.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/44/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/44/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/44/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-011111-100.58bpm-12b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-011111-100.58bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick12-neon-drive-horizon.mp3": "fabd518629ca7749ea5b88d5c9a668c2d7a161a3507d6071f732d364319f62a5",
+  "local/music/certificates/synthwave-synthwave-music-neon-drive-horizon-578508-license.txt": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
+  "assets/3d/hexagram-011111-100.58bpm-12b.mp4": "241a30931e4d4bd4cedb4a79bf22c07827376e2362453cd0a3b00e5d419a9f4c",
+  "assets/3d/endcard-flip-011111-100.58bpm-9b.mp4": "1d7cad995b88ba2cad029316f34c5db1352cbed3f5ce5a09a48c5c9c05ad04db",
+  "assets/screens/44/reading.png": "975d335ffbdcf8a3501e4c96c32197e390d7566f9fb5a80b7eb775321659a44a",
+  "assets/screens/44/verse.png": "083b012d027334bded7db1d3ea064e7a3e6355a80e227e8e5b6f6a33124bbd9b",
+  "assets/screens/44/today.png": "4cd6231a6fab225968cbcbd22b3711fc36ce3baa354dd33060a67a6b6ababfaa",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-44-8.webp": "deac551371eaccd47ecf7e95746c19fc0d16abb3963acc3f617bd134990e15ae",
+  "assets/yilin/stipple-44-25.webp": "bb243fcca4ee9c0857db300d2a2d53928365ccacc49c09cc7d6375470dfdad85",
+  "out/series/44-gou/short.mp4": "427c679ec050fded510d546cfc68bf32af06cb277754ccca8530ad74d84e4fd2",
+  "out/series/44-gou/share.mp4": "b733036a6034a99c5ada778c7eaaed1e824a9c9709d52d7e57f6e67b0671afe5"
+ }
+}

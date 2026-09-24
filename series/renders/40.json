@@ -1,0 +1,76 @@
+{
+ "hexagram": 40,
+ "rendered": "2026-09-24T18:53:10.583Z",
+ "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 40,
+   "zh": "解",
+   "pinyin": "Xiè",
+   "name": "Deliverance",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick07-interstellar-retrowave.mp3",
+  "musicStart": 158.426,
+  "drop": 14.4,
+  "hook": "The pressure’s finally off?",
+  "meaning": [
+   "Deliverance says:\nact or rest.",
+   "Then let the\ngrudges go."
+  ],
+  "question": "What can you\nforgive?",
+  "plates": [
+   "assets/yilin/stipple-40-50.webp",
+   "assets/yilin/stipple-40-17.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/40/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/40/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/40/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-010100-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-010100-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick07-interstellar-retrowave.mp3": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+  "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+  "assets/3d/hexagram-010100-100bpm-8b.mp4": "5ba26fc75c9c604d9d6be80a94bfe2679189ebeda5043fff0c58dadd4c350ec1",
+  "assets/3d/endcard-snap-010100-100bpm-9b.mp4": "f1a99a839803ac6024a3f773079f43c63cad9f2d234b55fd51982e36bafd2d12",
+  "assets/screens/40/reading.png": "3a5d5dead9db190db654a6ab99ab485b9cc085486039a6d696ee8bc6ed65f096",
+  "assets/screens/40/verse.png": "5dc7b4e67f2aa55c5fe608e3248e9a38fe7d84955e6adde16d8ffdc60bcda228",
+  "assets/screens/40/today.png": "8d622334226c8e02f61084532dcf97b5439f73d34b51930c9e362a71ef807f7d",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-40-50.webp": "26d259ecda9eb7e0b6213c185d2883bcec7a23b4f3f927c4dfd8ba20bd0b34c8",
+  "assets/yilin/stipple-40-17.webp": "c8acf261ed546ced84ce8a675f38129c9c6397413cb1be79a81eff3673c93ee6",
+  "out/series/40-xie/short.mp4": "ec247928d2d0fbc6fcb9ded14ffd042037bd48e012225cb34d1e9760f5396ffe",
+  "out/series/40-xie/share.mp4": "19934054168a1483c34114b8d103c82271cc81188baff914e21966846a0ab8e8"
+ }
+}
