@@ -9,6 +9,8 @@ import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Series1, spike1Frames } from "./prototypes/Series1";
+import { protoFrames, SeriesProto } from "./prototypes/SeriesProto";
+import { protos } from "./prototypes/protos";
 
 const FPS = 30;
 
@@ -72,5 +74,8 @@ export const Root: React.FC = () => (
       }}
     />
     <Composition id="Spike1" component={Series1} width={1080} height={1920} fps={FPS} durationInFrames={spike1Frames(FPS)} />
+    {protos.map(({ id, props }) => (
+      <Composition key={id} id={id} component={SeriesProto} defaultProps={props} width={1080} height={1920} fps={FPS} durationInFrames={protoFrames(props, FPS)} />
+    ))}
   </>
 );
