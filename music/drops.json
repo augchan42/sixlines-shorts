@@ -1,6 +1,6 @@
 {
  "script": "music/drops.py",
- "commit": "7dd851dd3e5584733f986f78f43a0bbd3138a1fd",
+ "commit": "45a0668caa7d7bd436594d4ea47e1c7680e88992",
  "rule": {
   "lift": 2.0,
   "pre": 6,
@@ -172,6 +172,212 @@
      "lift": 3.5,
      "usable": true,
      "seconds": 112.02,
+     "chosen": true
+    }
+   ]
+  },
+  {
+   "trigram": "kun",
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "chosenBar": 6,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 10.69,
+     "chosen": false
+    },
+    {
+     "bar": 8,
+     "lift": 2.0,
+     "usable": true,
+     "seconds": 21.36,
+     "chosen": false
+    },
+    {
+     "bar": 29,
+     "lift": 3.5,
+     "usable": false,
+     "seconds": 77.37,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "kun",
+   "file": "pick17-midnight-synthwave.mp3",
+   "bpm": 90.0,
+   "chosenBar": 5,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.86,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "gen",
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "chosenBar": 9,
+   "drops": [
+    {
+     "bar": 46,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 120.25,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "qian",
+   "file": "pick12-neon-drive-horizon.mp3",
+   "bpm": 100.58,
+   "chosenBar": 4,
+   "drops": [
+    {
+     "bar": 86,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 205.21,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "qian",
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "chosenBar": 8,
+   "drops": [
+    {
+     "bar": 8,
+     "lift": 4.0,
+     "usable": true,
+     "seconds": 16.02,
+     "chosen": true
+    },
+    {
+     "bar": 48,
+     "lift": 4.0,
+     "usable": true,
+     "seconds": 96.02,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "li",
+   "file": "pick18-dreamy-synthwave.mp3",
+   "bpm": 100.0,
+   "chosenBar": 28,
+   "drops": []
+  },
+  {
+   "trigram": "li",
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "chosenBar": 92,
+   "drops": [
+    {
+     "bar": 92,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 221.01,
+     "chosen": true
+    }
+   ]
+  },
+  {
+   "trigram": "zhen",
+   "file": "pick21-neon-mirage.mp3",
+   "bpm": 112.0,
+   "chosenBar": 80,
+   "drops": [
+    {
+     "bar": 79,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 169.33,
+     "chosen": false
+    },
+    {
+     "bar": 88,
+     "lift": 2.0,
+     "usable": true,
+     "seconds": 188.62,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "kan",
+   "file": "pick19-christmas-synthwave.mp3",
+   "bpm": 115.0,
+   "chosenBar": 16,
+   "drops": []
+  },
+  {
+   "trigram": "xun",
+   "file": "pick15-arcade-retro-nights.mp3",
+   "bpm": 126.01,
+   "chosenBar": 4,
+   "drops": [
+    {
+     "bar": 10,
+     "lift": 2.0,
+     "usable": false,
+     "seconds": 19.31,
+     "chosen": false
+    },
+    {
+     "bar": 53,
+     "lift": 2.5,
+     "usable": true,
+     "seconds": 101.23,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "dui",
+   "file": "pick16-synthwave-mondamusic.mp3",
+   "bpm": 136.76,
+   "chosenBar": 4,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 7.05,
+     "chosen": true
+    }
+   ]
+  },
+  {
+   "trigram": "dui",
+   "file": "pick23-bot-factory.mp3",
+   "bpm": 147.01,
+   "chosenBar": 12,
+   "drops": [
+    {
+     "bar": 8,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 13.33,
+     "chosen": false
+    },
+    {
+     "bar": 12,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 19.87,
      "chosen": true
     }
    ]

@@ -1,6 +1,7 @@
-"""Cuts a 35 s listening preview of each track around its biggest energy rise, the part a
-short would use (the drop about 12 s in), into out/music-previews/ (gitignored), plus one
-file of all of them in a row with 1 s of silence between, and prints where each starts.
+"""Cuts a 35 s listening preview of each track into out/music-previews/ (gitignored), plus
+one file of all of them in a row with 1 s of silence between, and prints where each starts.
+A track with a section in sections.json is cut from that section's start; any other from 12 s
+before its biggest energy rise, the part a short would use.
 
   python3 music/preview.py pick12 pick13 ...    # file-name prefixes in music/analysis.json
 
@@ -30,6 +31,7 @@ def main():
     here = os.path.dirname(os.path.abspath(__file__))
     root = os.path.dirname(here)
     analysis = json.load(open(os.path.join(here, "analysis.json")))
+    sections = {s["file"]: s for s in json.load(open(os.path.join(here, "sections.json")))["sections"]}
     out = os.path.join(root, "out", "music-previews")
     os.makedirs(out, exist_ok=True)
     parts = []
@@ -39,6 +41,9 @@ def main():
         rise, bar = biggest_rise(track["energy"])
         drop = track["firstBeat"] + bar * track["barSeconds"]
         start = max(0.0, min(drop - BEFORE, track["duration"] - LENGTH))
+        if track["file"] in sections:
+            s = sections[track["file"]]
+            start, drop = s["start"], s["start"] + s["drop"]
         name = os.path.join(out, f"{prefix}.mp3")
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", "-ss", f"{start:.2f}", "-t", str(LENGTH), "-i", os.path.join(root, "public/local/music", track["file"]),
@@ -46,7 +51,7 @@ def main():
             check=True,
         )
         parts.append(name)
-        print(f"{t:6.1f} s  {prefix}: {track['title']}, {track['bpm']} bpm, from {start:.1f} s, rise +{rise:.2f} at {drop:.1f} s")
+        print(f"{t:6.1f} s  {prefix}: {track['title']}, {track['bpm']} bpm, from {start:.1f} s, drop at {drop:.1f} s")
         t += LENGTH + 1
     silence = os.path.join(out, "silence.mp3")
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", "1", "-b:a", "160k", silence], check=True)
