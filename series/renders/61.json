@@ -1,0 +1,76 @@
+{
+ "hexagram": 61,
+ "rendered": "2026-09-24T20:01:58.646Z",
+ "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 61,
+   "zh": "中孚",
+   "pinyin": "Zhōng Fú",
+   "name": "Inner Truth",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick18-dreamy-synthwave.mp3",
+  "musicStart": 52.977,
+  "drop": 14.4,
+  "hook": "Can’t get through to someone?",
+  "meaning": [
+   "Inner Truth says:\nunderstand first.",
+   "Hold off judging\nuntil you do."
+  ],
+  "question": "What haven’t you\nasked them yet?",
+  "plates": [
+   "assets/yilin/stipple-61-10.webp",
+   "assets/yilin/stipple-61-8.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/61/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/61/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/61/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-110011-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-110011-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+  "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+  "assets/3d/hexagram-110011-100bpm-8b.mp4": "4f88a4c1a567d871b465b91e822e4390d0fe6677bf4767724e0d2acad3269c88",
+  "assets/3d/endcard-snap-110011-100bpm-9b.mp4": "cc0faf907ed7bff9e13a1c3ff0bc6e8f1c0abf57899418bb86856d2d5e22ae79",
+  "assets/screens/61/reading.png": "79ad9facff41431aca15b0f38ddb68fa11216ff4af1cebeb17e83e98b2e4f501",
+  "assets/screens/61/verse.png": "7b9ec62e77874d8aee7a2f246de314457b1903fa7e71713467c8794b95c1cc54",
+  "assets/screens/61/today.png": "3531b73388420e4b99828155030c89f6ab713fac8b4b2344544421a8213a512e",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-61-10.webp": "9baaaa609d6e1d6a6e7f1435952dc5872141380af532405642c31ec0138f5a95",
+  "assets/yilin/stipple-61-8.webp": "97ba4b5b20391715206fc623c2a3866ffbdb7f15117038cf5f04755a6539a2eb",
+  "out/series/61-zhong-fu/short.mp4": "744ba0efce4515ca2a1e23c0f1b878fae5e2ca7a889ef4ab71a49a9801550918",
+  "out/series/61-zhong-fu/share.mp4": "14801fa22b66117ee25ba90c5369eac60caa83a76f1c24d6f6963eaa790cef0d"
+ }
+}

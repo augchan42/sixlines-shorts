@@ -1,0 +1,76 @@
+{
+ "hexagram": 60,
+ "rendered": "2026-09-24T19:59:53.651Z",
+ "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 60,
+   "zh": "節",
+   "pinyin": "Jié",
+   "name": "Limitation",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick09-synthwave.mp3",
+  "musicStart": 91.223,
+  "drop": 14.4,
+  "hook": "Saying yes to everything?",
+  "meaning": [
+   "Limitation says:\nset limits.",
+   "Firm, but\nnot bitter."
+  ],
+  "question": "Where’s your\nlimit?",
+  "plates": [
+   "assets/yilin/stipple-60-42.webp",
+   "assets/yilin/stipple-60-62.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/60/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/60/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/60/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-110010-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-110010-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+  "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+  "assets/3d/hexagram-110010-100bpm-8b.mp4": "e1a29d924898091881ece06b7443a5712ebc149391753938c38ede8cc4c9af6b",
+  "assets/3d/endcard-snap-110010-100bpm-9b.mp4": "5a5aa5ebdbb452894a6760dc398031accb1dcf47c6bea43e30455365774b90e7",
+  "assets/screens/60/reading.png": "420e905ead43611b3e3b1ad09b138db5e34f55c6b33168a52eabc4aed99628a7",
+  "assets/screens/60/verse.png": "3d7d2791b6c90567938d051aa557031fd7ab84aad73cc1d96de734e3ac57afbc",
+  "assets/screens/60/today.png": "e74eef6be226656d8b108b666dfeafd9b6c62b9713be266df2f4de34678b6431",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-60-42.webp": "55bcb1cdeab8ecd9a4a694e30286f9cb64172e802ba08f04458d452c140fff8a",
+  "assets/yilin/stipple-60-62.webp": "868872ee0c56ccc867061a76a11fdabbd60fd95b3db49cb9b4a0d5e9b1522f14",
+  "out/series/60-jie/short.mp4": "8fdcb37af7045d8d0559e978d701dd8e0d5e3968c8404e78d9efdee0deec7f57",
+  "out/series/60-jie/share.mp4": "e783483aaa247547987e4b438d4cc48c390b1ca1602d20c6634167c552ca99a1"
+ }
+}

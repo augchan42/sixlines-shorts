@@ -1,0 +1,76 @@
+{
+ "hexagram": 56,
+ "rendered": "2026-09-24T19:55:37.458Z",
+ "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 56,
+   "zh": "旅",
+   "pinyin": "Lǚ",
+   "name": "The Wanderer",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick10-retrowave.mp3",
+  "musicStart": 48.023,
+  "drop": 14.4,
+  "hook": "Somewhere new, feeling out of place?",
+  "meaning": [
+   "The Wanderer says:\nkeep it brief.",
+   "You’re a guest.\nAct like one."
+  ],
+  "question": "Where are you\na guest?",
+  "plates": [
+   "assets/yilin/stipple-56-17.webp",
+   "assets/yilin/stipple-56-55.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/56/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/56/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/56/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-001101-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-001101-100bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick10-retrowave.mp3": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+  "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+  "assets/3d/hexagram-001101-100bpm-8b.mp4": "73c4cfe043680ef1930bd11804cde4f90c704990c6cab3e7bc6888b3bac311df",
+  "assets/3d/endcard-flip-001101-100bpm-9b.mp4": "170471eb4b9eee824bf9e7823aba36ad45c5a74d6b90a3b0718bd070cbee40b6",
+  "assets/screens/56/reading.png": "20b74504740f02b7965ec79cdb2eeacc1af98ba873c09cfd3716de18f65c189a",
+  "assets/screens/56/verse.png": "9bdca145c38115e088fddba7ae307d2f9a8977be529064a0cb6c1c17ddd38386",
+  "assets/screens/56/today.png": "aa92ca8a8325d5aff2c1b2d9d3109a81ac1fcfbf859516d4f4c6940e49b6fbcf",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-56-17.webp": "5b7b19e5011cba312bec22a34458c82353456b0e155d8af75187ee4225dab477",
+  "assets/yilin/stipple-56-55.webp": "36880f84e8aad51dabbc0a1e06ae6aa878dfaf9f864641a779a0e14bed1fe260",
+  "out/series/56-lu/short.mp4": "53a0b024e08171d7bab9762b833c36eec5ecb003ae30a63a82be8b4ff26e14eb",
+  "out/series/56-lu/share.mp4": "5e5ad6f113f2da7a47cd8cc970ad053e7a54731881361908271ca659d1c0d47e"
+ }
+}
