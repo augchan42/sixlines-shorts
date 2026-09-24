@@ -1,7 +1,7 @@
 {
  "hexagram": 52,
- "rendered": "2026-09-24T06:25:28.155Z",
- "commit": "48f5646ed186c296648e6218a169557b99efa612",
+ "rendered": "2026-09-24T07:19:30.980Z",
+ "commit": "0db5e7200d66d763579dee0a66512ae3651a92b7",
  "clean": true,
  "seconds": 34.218667,
  "shareKbps": 5249,
@@ -45,8 +45,8 @@
     "caption": "THE BOOK OF CHANGES"
    },
    {
-    "src": "assets/matrix-journal.png",
-    "caption": "KEEP YOUR RECORDS"
+    "src": "assets/screens/52/today.png",
+    "caption": "YOUR DAY, READ"
    },
    {
     "src": "assets/matrix-ask.png",
@@ -63,15 +63,11 @@
   "assets/3d/hexagram-001001-82.5bpm-6b.mp4": "8a8d7081fc73bd6f5e8a1b487e8ce4e4d618891de46dc64f762c89562d1a825a",
   "assets/screens/52/reading.png": "2c1bf7742637d38ecc539c0d9a052b29e42b4c41fd8fa463e8176cdeebf86a2e",
   "assets/screens/52/verse.png": "022bc664bc0d4c81d2f97aadaf80960cabf8fbb8c6b5a6411a2b775d74f847de",
-  "assets/matrix-journal.png": "72b60570e12815cefffe203cb498e8eef125782f040d85c113bd12ebf430ee50",
+  "assets/screens/52/today.png": "7e9ed6fcc40f9f37bfac9c454efc1bd0b18cb68874e94410b93f3a8eac2a0879",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-52-12.webp": "344f6de1d8dabd9865f85be8d6fc3af87097b7cb01fd12d37522ac677a3c0171",
   "assets/yilin/stipple-52-1.webp": "98666d29c175f4c3f2f1e639cbaa49d6054e3c612ec1d9e2d8e25be7df0e9abf",
-  "out/series/52-gen/short.mp4": "3bc5d2a40369f27ea97db35b28e5a0ba4628efbcdbf51ace7bc0b3502cbe5284",
-  "out/series/52-gen/share.mp4": "8f361f552e82b9412a6f877194b996d6fd8a19fa7a4687f7b02c6b0c7ffb3a10"
- },
- "caption": {
-  "commit": "4500af8293aef5302a732ddb9133be8ad8a2807a",
-  "clean": true
+  "out/series/52-gen/short.mp4": "2e656be17753f4b487932cd82e0343ed0003308923045af6423439913acb042c",
+  "out/series/52-gen/share.mp4": "0f16a28b69f95e60e583ba29f651d95f4d3017387d2beee38f7d9ae679ca648e"
  }
 }
