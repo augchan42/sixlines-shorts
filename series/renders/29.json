@@ -1,7 +1,7 @@
 {
  "hexagram": 29,
- "rendered": "2026-09-24T07:13:46.649Z",
- "commit": "0db5e7200d66d763579dee0a66512ae3651a92b7",
+ "rendered": "2026-09-24T09:19:18.778Z",
+ "commit": "9c357a3a34acbfdccca4c72c30d0614c96ec8211",
  "clean": true,
  "seconds": 30.656,
  "shareKbps": 5874,
@@ -53,21 +53,24 @@
     "caption": "ASK · CAST · REFLECT"
    }
   ],
-  "cta": "Reveal the moment.",
-  "url": "sixlines.day",
-  "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4"
+  "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-010010-100bpm-7b.mp4",
+   "mode": "snap"
+  }
  },
  "files": {
   "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
   "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
   "assets/3d/hexagram-010010-100bpm-8b.mp4": "6c449974e3e0aff5a483254a7190ce7b2822b180153ed1c288a140286789f63a",
+  "assets/3d/endcard-snap-010010-100bpm-7b.mp4": "26b685e8a98bab289264d42e974e21aa10162f5cd5b6c6d2bda16992aa0d81a9",
   "assets/screens/29/reading.png": "e42822b675af7ef95fdd517efea70f3e49060b8710bf5acdea2462c8a49cbacf",
   "assets/screens/29/verse.png": "f544b123a8619b42524d1fce6cafc390fe35ef4f3043cc6351053490f46c086b",
   "assets/screens/29/today.png": "e19daa3c808bf4f78dfbc6940ec8eeb2b79b25a8bbbad37c9b38c2fd672ac7df",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
-  "out/series/29-kan/short.mp4": "3e6019f3d914b5bf85ccf06ea29047d23796e2ea9c60a1ff5078c2ff7ca3d9ec",
-  "out/series/29-kan/share.mp4": "9a90871f91897b35fd0a2cc5eab7cd4141567ec95592564869bd881be58af245"
+  "out/series/29-kan/short.mp4": "55a57501105b8cd7dd89889cc325c01e3894395c8cceeb82c69118e8f8146745",
+  "out/series/29-kan/share.mp4": "d8509ad7cbeaa06ef76b8eb6939aea6a69b97422e96b395503444f4fabf789f4"
  }
 }
