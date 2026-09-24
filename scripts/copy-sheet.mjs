@@ -1,11 +1,11 @@
 // Writes out/copy-sheet.md for reading the copy draft: each short's text as it appears on
 // screen, in order, then the caption. Rewritten entries also show the version at REF, and
 // the timeline rater's score and note on it when series/critic/copy/ratings-before.json exists.
-// Every entry shows its score from ratings-after.json when that exists.
+// Every entry shows its score from the newest ratings-after*.json.
 //
 //   node scripts/copy-sheet.mjs [REF]    (default REF: the last commit that changed the draft)
 import { execFileSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -16,7 +16,8 @@ const old = JSON.parse(git("show", `${ref}:series/copy-draft.json`));
 const names = Object.fromEntries(JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8")).map((r) => [r.number, r]));
 const ratingsFile = path.join(root, "series/critic/copy/ratings-before.json");
 const load = (f) => (existsSync(f) ? Object.fromEntries(JSON.parse(readFileSync(f, "utf8")).map((r) => [r.number, r])) : {});
-const after = load(path.join(root, "series/critic/copy/ratings-after.json"));
+const newest = readdirSync(path.join(root, "series/critic/copy")).filter((f) => /^ratings-after\d*\.json$/.test(f)).sort((a, b) => a.length - b.length || a.localeCompare(b)).at(-1);
+const after = newest ? load(path.join(root, "series/critic/copy", newest)) : {};
 const ratings = existsSync(ratingsFile) ? Object.fromEntries(JSON.parse(readFileSync(ratingsFile, "utf8")).map((r) => [r.number, r])) : {};
 
 const screen = (t) => t.split("\n").join("  \n");

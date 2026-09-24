@@ -73,7 +73,7 @@
  },
  "6": {
   "hook": {
-   "text": "Right, but it’s costing you?",
+   "text": "Fighting over something you’re right about?",
    "source": "commentary/en/6.json#judgment.synthesis"
   },
   "meaning": [
@@ -82,16 +82,16 @@
     "source": "commentary/en/6.json#judgment.synthesis"
    },
    {
-    "text": "Settle midway,\nnot at the end.",
+    "text": "Pushing to the end\ncosts you.",
     "source": "commentary/en/6.json#judgment.synthesis"
    }
   ],
   "question": {
-   "text": "Where could\nyou settle?",
+   "text": "What fight could\nyou leave now?",
    "source": "written"
   },
   "caption": {
-   "text": "Heaven moves up and water moves down: both right, never meeting. Think hard at the start, before you’re halfway in.",
+   "text": "Heaven moves up and water moves down: both right, never meeting. The middle of a fight is the last good place to walk away.",
    "source": "commentary/en/6.json#image.synthesis"
   }
  },
@@ -265,21 +265,21 @@
  },
  "14": {
   "hook": {
-   "text": "Things going really well?",
-   "source": "commentary/en/14.json#judgment.synthesis"
+   "text": "Doing better than everyone around you?",
+   "source": "commentary/en/14.json#image.synthesis"
   },
   "meaning": [
    {
-    "text": "Great Possession\nsays: you’re seen.",
+    "text": "Great Possession\nsays: people see.",
     "source": "commentary/en/14.json#image.synthesis"
    },
    {
-    "text": "Stop the wrong,\nback the right.",
+    "text": "Use it to put\nthings right.",
     "source": "commentary/en/14.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "Who could your\nsuccess help?",
+   "text": "What would you\nfix first?",
    "source": "written"
   },
   "caption": {
@@ -495,7 +495,7 @@
    }
   ],
   "question": {
-   "text": "Who’s holding\nyou up?",
+   "text": "Who depends\non you?",
    "source": "written"
   },
   "caption": {
@@ -601,7 +601,7 @@
  },
  "28": {
   "hook": {
-   "text": "Everything bending under the weight?",
+   "text": "Under too much weight?",
    "source": "commentary/en/28.json#judgment.synthesis"
   },
   "meaning": [
@@ -1254,20 +1254,20 @@
   },
   "meaning": [
    {
-    "text": "Inner Truth says:\nbe sincere.",
-    "source": "commentary/en/61.json#judgment.synthesis"
+    "text": "Inner Truth says:\nunderstand first.",
+    "source": "commentary/en/61.json#image.synthesis"
    },
    {
-    "text": "Real sincerity\nreaches anyone.",
-    "source": "commentary/en/61.json#judgment.synthesis"
+    "text": "Hold off judging\nuntil you do.",
+    "source": "commentary/en/61.json#image.synthesis"
    }
   ],
   "question": {
-   "text": "Who needs the\nreal you?",
+   "text": "What haven’t you\nasked them yet?",
    "source": "written"
   },
   "caption": {
-   "text": "The old text says inner truth reaches even pigs and fishes. If your sincerity only convinces the convinced, it hasn’t been tested.",
+   "text": "The old text says inner truth reaches even pigs and fishes. The way in is to understand someone before you judge them.",
    "source": "commentary/en/61.json#judgment.synthesis"
   }
  },
