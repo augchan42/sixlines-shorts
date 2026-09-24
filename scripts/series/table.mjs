@@ -12,9 +12,26 @@ export const trigram = (lines) => TRIGRAMS[lines.slice(3, 6).join("")];
 
 const firstSentence = (text) => text.match(/^.*?[.?!](\s|$)/)?.[0].trim() ?? text;
 
+// Each upper trigram has one or more tracks, in music/sections.json order. The first goes to
+// the doubled hexagram (lower trigram the same as the upper); the others, in number order,
+// take the tracks in turn from the second, so the first track is not heard twice in a row.
+const trackFor = (sections, lines) => {
+  const turn = {};
+  return (n) => {
+    const upper = trigram(lines[n]);
+    const tracks = sections.filter((s) => s.trigram === upper);
+    if (!tracks.length) return undefined;
+    if (lines[n].slice(0, 3).join("") === lines[n].slice(3).join("")) return tracks[0];
+    turn[upper] = (turn[upper] ?? 0) + 1;
+    return tracks[turn[upper] % tracks.length];
+  };
+};
+
 export const buildTable = ({ commentary, harvard, sections, copy, contentCommit }) => {
   const lines = Object.fromEntries(harvard.map((h) => [h.number, linesFromLabels(h.lines)]));
-  const music = Object.fromEntries(sections.map((s) => [s.trigram, s]));
+  const music = trackFor(sections, lines);
+  const numbers = harvard.map((h) => h.number).sort((a, b) => a - b);
+  const byNumber = Object.fromEntries(numbers.filter((n) => commentary[n]).map((n) => [n, music(n)]));
   return harvard
     .map((h) => h.number)
     .filter((n) => commentary[n])
@@ -29,7 +46,7 @@ export const buildTable = ({ commentary, harvard, sections, copy, contentCommit 
         lines: lines[n],
         upper,
         commentary: firstSentence(c.judgment.synthesis),
-        music: music[upper],
+        music: byNumber[n],
         copy: copy[n] ?? null,
         source: { sixlinesContent: contentCommit },
       };

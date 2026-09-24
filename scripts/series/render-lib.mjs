@@ -55,8 +55,10 @@ export const missingAssets = (props, row, { exists, sha256 }) => {
   if (exists(props.music) && row.music.sha256 && sha256(props.music) !== row.music.sha256) {
     problems.push(`${props.music} is not the analysed file (sha256 differs from music/sections.json)`);
   }
-  const cert = row.music.certificate && `local/music/certificates/${row.music.certificate.file}`;
-  if (cert) {
+  if (!row.music.certificate) {
+    problems.push(`${row.music.file} has no licence certificate in music/sections.json. Download it signed in from ${row.music.source}`);
+  } else {
+    const cert = `local/music/certificates/${row.music.certificate.file}`;
     need(cert, "download the Pixabay licence certificate (music/sections.json)");
     if (exists(cert) && sha256(cert) !== row.music.certificate.sha256) problems.push(`${cert} is not the recorded certificate`);
   }

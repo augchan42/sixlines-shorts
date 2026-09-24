@@ -49,7 +49,17 @@ test("a music file that is not the analysed one stops the render", () => {
 test("a missing end card names the command that renders it", () => {
   const props = { music: "m.mp3", hexagramClip: "c.mp4", endcard: { clip: "e.mp4", mode: "snap" }, screens: [], plates: [], hexagram: { number: 29 } };
   const io = { exists: (f) => f !== "e.mp4", sha256: () => "" };
-  assert.deepEqual(missingAssets(props, { music: {} }, io), ["e.mp4 is missing. Run: npm run series:clips -- 29"]);
+  const row = { music: { certificate: { file: "a.txt", sha256: "" } } };
+  assert.deepEqual(missingAssets(props, row, io), ["e.mp4 is missing. Run: npm run series:clips -- 29"]);
+});
+
+test("a track with no licence certificate recorded stops the render", () => {
+  const props = { music: "m.mp3", hexagramClip: "c.mp4", endcard: { clip: "e.mp4", mode: "snap" }, screens: [], plates: [], hexagram: { number: 29 } };
+  const io = { exists: () => true, sha256: () => "" };
+  const row = { music: { file: "pick19-christmas-synthwave.mp3", source: "https://pixabay.com/music/x-442829/" } };
+  assert.deepEqual(missingAssets(props, row, io), [
+    "pick19-christmas-synthwave.mp3 has no licence certificate in music/sections.json. Download it signed in from https://pixabay.com/music/x-442829/",
+  ]);
 });
 
 test("all mode renders the rest and lists the failures", async () => {

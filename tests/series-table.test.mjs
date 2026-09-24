@@ -36,6 +36,21 @@ test("a row joins the sources", () => {
   );
 });
 
+test("a trigram's first track goes to its doubled hexagram, and the rest take turns", () => {
+  // The hexagrams with kan above, by their lower trigram.
+  const labels = (lines) => lines.map((l, i) => `${l ? "九" : "六"}${i} x`);
+  const kan = [0, 1, 0];
+  const lowers = { 3: [1, 0, 0], 5: [1, 1, 1], 8: [0, 0, 0], 29: kan, 39: [0, 0, 1], 48: [0, 1, 1], 60: [1, 1, 0], 63: [1, 0, 1] };
+  const harvard = Object.entries(lowers).map(([n, low]) => ({ number: Number(n), lines: labels([...low, ...kan]) }));
+  const commentary = Object.fromEntries(harvard.map((h) => [h.number, { name_chinese: "", name_pinyin: "", name_english: "", judgment: { synthesis: "x." } }]));
+  const sections = [{ trigram: "kan", file: "a" }, { trigram: "li", file: "z" }, { trigram: "kan", file: "b" }, { trigram: "kan", file: "c" }];
+  const rows = buildTable({ commentary, harvard, sections, copy: {}, contentCommit: "" });
+  assert.deepEqual(
+    Object.fromEntries(rows.map((r) => [r.number, r.music.file])),
+    { 3: "b", 5: "c", 8: "a", 29: "a", 39: "b", 48: "c", 60: "a", 63: "b" },
+  );
+});
+
 test("the committed table has all 64 hexagrams with the right lines", { skip: !existsSync("series/hexagrams.json") }, () => {
   const rows = JSON.parse(readFileSync("series/hexagrams.json", "utf8"));
   assert.equal(rows.length, 64);
