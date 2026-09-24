@@ -12,7 +12,8 @@
     "assets": "node scripts/fetch-assets.mjs",
     "series:table": "node scripts/series-table.mjs",
     "series:clips": "node scripts/series-clips.mjs",
-    "series:screens": "node scripts/series-screens.mjs"
+    "series:screens": "node scripts/series-screens.mjs",
+    "series": "node scripts/series.mjs"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.527",

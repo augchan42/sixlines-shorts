@@ -26,3 +26,45 @@ export const screenFiles = (n, gallery) => [
   { from: `${gallery}/matrix/reading-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/reading.png` },
   { from: `${gallery}/matrix/yilin-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/verse.png` },
 ];
+
+export const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+// Video kbps for a two-pass encode that lands near 23 MB with 128k audio, capped at 8000.
+export const shareBitrate = (seconds) => Math.min(8000, Math.floor((23e6 * 8) / 1000 / seconds) - 128);
+
+// Everything the render needs that is missing or not the recorded file, each with the
+// command that makes it. Paths are under public/.
+export const missingAssets = (props, row, { exists, sha256 }) => {
+  const n = props.hexagram.number;
+  const problems = [];
+  const need = (file, fix) => {
+    if (!exists(file)) problems.push(`${file} is missing. Run: ${fix}`);
+  };
+  need(props.music, "copy the track into public/local/music/ (see music/sections.json)");
+  if (exists(props.music) && row.music.sha256 && sha256(props.music) !== row.music.sha256) {
+    problems.push(`${props.music} is not the analysed file (sha256 differs from music/sections.json)`);
+  }
+  const cert = row.music.certificate && `local/music/certificates/${row.music.certificate.file}`;
+  if (cert) {
+    need(cert, "download the Pixabay licence certificate (music/sections.json)");
+    if (exists(cert) && sha256(cert) !== row.music.certificate.sha256) problems.push(`${cert} is not the recorded certificate`);
+  }
+  need(props.hexagramClip, `npm run series:clips -- ${n}`);
+  for (const s of props.screens) need(s.src, "npm run series:screens");
+  for (const p of props.plates) need(p, `npm run assets -- --hexagram ${n}`);
+  return problems;
+};
+
+export const renderAll = async (numbers, renderOne) => {
+  const done = [];
+  const failures = [];
+  for (const n of numbers) {
+    try {
+      await renderOne(n);
+      done.push(n);
+    } catch (e) {
+      failures.push({ n, message: e.message });
+    }
+  }
+  return { done, failures };
+};

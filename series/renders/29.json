@@ -1,0 +1,73 @@
+{
+ "hexagram": 29,
+ "rendered": "2026-09-24T06:08:59.470Z",
+ "commit": "1532895e68bc65aa1f5ee8a79b48b46b777040ac",
+ "clean": false,
+ "seconds": 30.656,
+ "shareKbps": 5874,
+ "props": {
+  "hexagram": {
+   "number": 29,
+   "zh": "坎",
+   "pinyin": "Kǎn",
+   "name": "The Abyss",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick09-synthwave.mp3",
+  "musicStart": 91.223,
+  "drop": 14.4,
+  "hook": "One problem after another?",
+  "meaning": [
+   "The Abyss says:\nkeep moving.",
+   "Like water: fill\nit, flow on."
+  ],
+  "question": "What's the next\nsmall step?",
+  "plates": [
+   "assets/yilin/stipple-29-31.webp",
+   "assets/yilin/stipple-29-60.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/29/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/29/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/matrix-records.png",
+    "caption": "SIXTY-FOUR RECORDS"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "cta": "Reveal the moment.",
+  "url": "sixlines.day",
+  "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4"
+ },
+ "files": {
+  "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+  "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+  "assets/3d/hexagram-010010-100bpm-8b.mp4": "6c449974e3e0aff5a483254a7190ce7b2822b180153ed1c288a140286789f63a",
+  "assets/screens/29/reading.png": "e42822b675af7ef95fdd517efea70f3e49060b8710bf5acdea2462c8a49cbacf",
+  "assets/screens/29/verse.png": "f544b123a8619b42524d1fce6cafc390fe35ef4f3043cc6351053490f46c086b",
+  "assets/matrix-records.png": "8de500688f307c91958b0b7027a3b97d397aea84576c096c5efcb90e2baca3ca",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
+  "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
+  "out/series/29-kan/short.mp4": "5e7dc7e07ab47f1806a4c357cf996627e0272d762c7c732548230ae35d0947a9",
+  "out/series/29-kan/share.mp4": "1f1dc28fb3f3970ee94055ad0f5355c5ad45c6941985f47b2e8cebd81c198a79"
+ }
+}

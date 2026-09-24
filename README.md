@@ -42,6 +42,10 @@ npm run blender -- --lines 111111 --bpm 110 --preview    # half size, low sample
 npm run studio                                  # preview and scrub in the browser
 npm run render -- Qian out/qian.mp4             # 1080×1920, 30 fps, H.264
 npm test                                        # clip naming (Node), slab layout and music analysis (Python) tests
+npm run series:table                            # rebuild series/hexagrams.json after editing series/copy.json
+npm run series:clips -- all                     # Blender clips the series needs (hours; skips existing)
+npm run series:screens                          # app screens from the sixlines-ios gallery
+npm run series -- 29                            # one short → out/series/29-kan/, record in series/renders/
 ```
 
 A new short is a new spec in `src/specs/` (text, hexagram, art keys, screens, beat grid) registered in `src/Root.tsx`.
