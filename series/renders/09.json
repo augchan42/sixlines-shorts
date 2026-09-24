@@ -1,0 +1,76 @@
+{
+ "hexagram": 9,
+ "rendered": "2026-09-24T15:54:18.796Z",
+ "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
+ "clean": true,
+ "seconds": 35.093333,
+ "shareKbps": 5115,
+ "props": {
+  "hexagram": {
+   "number": 9,
+   "zh": "小畜",
+   "pinyin": "Xiǎo Chù",
+   "name": "Small Taming",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 126.01,
+  "firstBeat": 0.264,
+  "music": "local/music/pick15-arcade-retro-nights.mp3",
+  "musicStart": 0,
+  "drop": 7.884,
+  "hook": "Everything’s ready, nothing happens?",
+  "meaning": [
+   "Small Taming\nsays: not yet.",
+   "Work on yourself\nmeanwhile."
+  ],
+  "question": "What can you\nwork on now?",
+  "plates": [
+   "assets/yilin/stipple-9-40.webp",
+   "assets/yilin/stipple-9-47.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/9/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/9/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/9/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111011-126.01bpm-9b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-111011-126.01bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick15-arcade-retro-nights.mp3": "e37769d8e2d76d331dc049d00da0d7ce62a79394f4e7ec875c9f220168ea1ecf",
+  "local/music/certificates/synthwave-synthwave-arcade-retro-nights-573647-license.txt": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
+  "assets/3d/hexagram-111011-126.01bpm-9b.mp4": "dc50ec7b9f26f76f699d8e09739ce6cae9107c65ecf9ec4b701a96245457dbef",
+  "assets/3d/endcard-snap-111011-126.01bpm-9b.mp4": "ea98b7bc45e84840746f100c26e4b1b94ba13d06ffcc75da3a1194a034151b6a",
+  "assets/screens/9/reading.png": "589c8abc018dcc1335d6327b3d99d67c2ba6aa05e362d629270193c15a9a3831",
+  "assets/screens/9/verse.png": "c4bf656c576f8afdcb20f312ea856c8da62d1568034fcec6d4aeb49889dddbcc",
+  "assets/screens/9/today.png": "8362bfced3530516326a681ab51535c75ec9406d0062b5775d2a2a440c428878",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-9-40.webp": "0c3e7f9ab23871a6196b03c8b532ef462c06dcc5b9cd5f39d5c38d4a32cb082a",
+  "assets/yilin/stipple-9-47.webp": "0b671ebe587c5ce56c7359c91602094123ab1d669c557688fe9d7e86a7340784",
+  "out/series/09-xiao-chu/short.mp4": "456cbb4ce7392d9b25f37b7073d0f2c89ba511451dcfe07655a595b7d9b5eee1",
+  "out/series/09-xiao-chu/share.mp4": "8a597f3343a9996e4958146deb6e8171d11c22d9e596ce3cbe87185fae5681c2"
+ }
+}

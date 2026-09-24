@@ -1,0 +1,76 @@
+{
+ "hexagram": 5,
+ "rendered": "2026-09-24T15:39:17.955Z",
+ "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 5,
+   "zh": "需",
+   "pinyin": "Xū",
+   "name": "Waiting",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick09-synthwave.mp3",
+  "musicStart": 91.223,
+  "drop": 14.4,
+  "hook": "Stuck waiting for your moment?",
+  "meaning": [
+   "Waiting says:\nwait well.",
+   "Eat, rest,\nstay ready."
+  ],
+  "question": "How can you\nwait well today?",
+  "plates": [
+   "assets/yilin/stipple-5-41.webp",
+   "assets/yilin/stipple-5-34.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/5/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/5/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/5/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111010-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-111010-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+  "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+  "assets/3d/hexagram-111010-100bpm-8b.mp4": "75eb628fa1696f38c83a0c395d73d147111e0f9ef1e836c279e81cdaf350aaef",
+  "assets/3d/endcard-snap-111010-100bpm-9b.mp4": "53ca3276993e84d513e501d715756feca05d4e2150dcd461e6e430c69820f11d",
+  "assets/screens/5/reading.png": "7326c30046a47c496f042650c7bb0ef1d6073ef919168ea4c88f879e38dcec34",
+  "assets/screens/5/verse.png": "37ba19f1af2dbe6a0475548001230e0754cb5ad63347735224e61f97afc83e3f",
+  "assets/screens/5/today.png": "c2d9e81cff8826d697bf33370b4f543ebcf5d15d1340f526836352a594a88c60",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-5-41.webp": "a5267dd9b8da456822b834a0efcf96ea843c8b4c810dd638ce6f67ca0cc5746b",
+  "assets/yilin/stipple-5-34.webp": "c3aaa1314f79ef6d31322d609a09ebb1b9625d5509b25e27a4c99f76bd068c18",
+  "out/series/05-xu/short.mp4": "e6b4749d2af50593b312cd411c855c6633267260d76578862d78680aa544b3e1",
+  "out/series/05-xu/share.mp4": "33cbc55a64f88104bb7f23fbfdf66c243165e61bdf0a9dc63ea3df6451aa4492"
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "hexagram": 10,
+ "rendered": "2026-09-24T15:57:08.374Z",
+ "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
+ "clean": true,
+ "seconds": 28.053333,
+ "shareKbps": 6430,
+ "props": {
+  "hexagram": {
+   "number": 10,
+   "zh": "履",
+   "pinyin": "Lǚ",
+   "name": "Treading",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick20-80s-retro-background.mp3",
+  "musicStart": 4.023,
+  "drop": 12,
+  "hook": "Working for someone with a temper?",
+  "meaning": [
+   "Treading says:\nmind how you step.",
+   "Act well and\nit won’t flare."
+  ],
+  "question": "Who do you tread\ncarefully around?",
+  "plates": [
+   "assets/yilin/stipple-10-62.webp",
+   "assets/yilin/stipple-10-34.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/10/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/10/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/10/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-110111-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-110111-120bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick20-80s-retro-background.mp3": "325443b62d8d9e674ada17eb4706c5efda7ac398035d217cbfc1f08c4fbb0f73",
+  "local/music/certificates/synthwave-synthwave-80s-retro-background-music-347701-license.txt": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
+  "assets/3d/hexagram-110111-120bpm-8b.mp4": "4fe1f498d15ee1fe0ca6cefe061bf0b3bcf7f5203d8a690b436b8502f81ba239",
+  "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
+  "assets/screens/10/reading.png": "1743eb8e3b7a67fc51f325ead274b4d6312c4b82cdd6cde1352ac0cf72c4320d",
+  "assets/screens/10/verse.png": "8b588a6e3bc4f2c9d5987cee9d0d37e64974b959f511916b4025cd74e15ce177",
+  "assets/screens/10/today.png": "ba8dca7bb04452478523913fd338c66cc76a612b81d42b1728c5869ff1233d18",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
+  "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
+  "out/series/10-lu/short.mp4": "e206ec219713f86afa6b13ed4c6f5f763c401392b5e474903f9e76f4e74ff1ea",
+  "out/series/10-lu/share.mp4": "549862b6de3d8ab41355e4fefd7888141074580d665f8dd7667b30e068b4c8a0"
+ }
+}

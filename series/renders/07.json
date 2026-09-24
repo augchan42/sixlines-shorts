@@ -1,0 +1,76 @@
+{
+ "hexagram": 7,
+ "rendered": "2026-09-24T15:46:40.122Z",
+ "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
+ "clean": true,
+ "seconds": 37.376,
+ "shareKbps": 4794,
+ "props": {
+  "hexagram": {
+   "number": 7,
+   "zh": "師",
+   "pinyin": "Shī",
+   "name": "The Army",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "bpm": 90,
+  "firstBeat": 0,
+  "music": "local/music/pick13-synthwave-the-mountain.mp3",
+  "musicStart": 0.023,
+  "drop": 16.002,
+  "hook": "Leading a team through something hard?",
+  "meaning": [
+   "The Army needs\na grown-up.",
+   "Feed people\nbefore you ask."
+  ],
+  "question": "Who’s counting\non you?",
+  "plates": [
+   "assets/yilin/stipple-7-50.webp",
+   "assets/yilin/stipple-7-22.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/7/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/7/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/7/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-010000-90bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-010000-90bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
+  "local/music/certificates/synthwave-synthwave-593074-license.txt": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+  "assets/3d/hexagram-010000-90bpm-8b.mp4": "ea8b0ec275f0766aa351787a355ee5e4c932d7a4c0084b9a1bbde76c9552d16e",
+  "assets/3d/endcard-join-010000-90bpm-9b.mp4": "7a759273fb0da9e3b10de9b2fec9abf7557d96483abed8853a5822fcfacad46d",
+  "assets/screens/7/reading.png": "842204dd6b8e42acbb1ec37e0a705ac0a12a528b9132087d217d2449d47c6a42",
+  "assets/screens/7/verse.png": "fe1520353b47535fa8e02b0331d2416cbb2cd837218a88af2bf3551f4d6d3b09",
+  "assets/screens/7/today.png": "24e97f91abf849b3249c296a639151159d2071d60c7dc768957b64fbb9996456",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-7-50.webp": "241edc92d9e37dcc22741138a0d5bad405e54356f24a262e262ffdb9e4ba7821",
+  "assets/yilin/stipple-7-22.webp": "87b43c5e1d4157f0458b50a16fa74cd3e6ec8ae9aa1a2b61899cd79725ad4f81",
+  "out/series/07-shi/short.mp4": "692aba0289fab00490da405a7d8ce91f388a2fd73e92c6355c2ec6ffe2274a11",
+  "out/series/07-shi/share.mp4": "33701c899d75728adfdcda77e4eecea36a539002dc10456fe53a7f1cc3cee5e1"
+ }
+}
