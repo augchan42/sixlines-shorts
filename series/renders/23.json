@@ -1,0 +1,76 @@
+{
+ "hexagram": 23,
+ "rendered": "2026-09-24T17:47:43.382Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "clean": true,
+ "seconds": 37.888,
+ "shareKbps": 4728,
+ "props": {
+  "hexagram": {
+   "number": 23,
+   "zh": "剝",
+   "pinyin": "Bō",
+   "name": "Splitting Apart",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "bpm": 82.5,
+  "firstBeat": 0,
+  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+  "musicStart": 34.934,
+  "drop": 14.54,
+  "hook": "Everything falling apart?",
+  "meaning": [
+   "Splitting Apart\nsays: don’t run.",
+   "Stay and help\nthose below you."
+  ],
+  "question": "Who depends\non you?",
+  "plates": [
+   "assets/yilin/stipple-23-36.webp",
+   "assets/yilin/stipple-23-57.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/23/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/23/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/23/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-000001-82.5bpm-6b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-000001-82.5bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+  "local/music/certificates/synthwave-80s-retro-inspiring-synth-pop-570162-license.txt": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+  "assets/3d/hexagram-000001-82.5bpm-6b.mp4": "607ad9e851f9d04a49553e0c2710cf86adc4e2c68bcdb85a4ffc6a6bcd21552d",
+  "assets/3d/endcard-join-000001-82.5bpm-9b.mp4": "57abe36a965ad0fa6d93acada22aa2b4c4a1abd903948a50e25b262ace336194",
+  "assets/screens/23/reading.png": "cb5109e2b697294544513825866d48e27c130d21d352bff74dc4db2f56aeefa5",
+  "assets/screens/23/verse.png": "f0928488723e7c6464844d55de7f447e386eae9edadac66e45f9adcb94544d53",
+  "assets/screens/23/today.png": "e1eec1902d1b36e41d4a9f34a4110433a840c2d12cfbe72bca9e96f5fd6854dd",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-23-36.webp": "7bc478b925bdd4fc5de49707372a26dc9b7170b2b7efb82e4cd80de1c6c218a8",
+  "assets/yilin/stipple-23-57.webp": "106cd66de37a2be6324515dbc22f546b2caaea89e08fa0b44acce08492f8950d",
+  "out/series/23-bo/short.mp4": "3dedeaded4ae3f716f5661523d727e9f5cc3520e45821381f522f582d9422106",
+  "out/series/23-bo/share.mp4": "d0b8e99f7a5006c6e0d754d26ae1b96d0b82b84ca520b1abd50f2e24c90ceecf"
+ }
+}

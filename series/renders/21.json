@@ -1,0 +1,76 @@
+{
+ "hexagram": 21,
+ "rendered": "2026-09-24T17:40:19.417Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 21,
+   "zh": "噬嗑",
+   "pinyin": "Shì Kè",
+   "name": "Biting Through",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick10-retrowave.mp3",
+  "musicStart": 48.023,
+  "drop": 14.4,
+  "hook": "Something blocking you for weeks?",
+  "meaning": [
+   "Biting Through\nsays: bite down.",
+   "It won’t clear\nby itself."
+  ],
+  "question": "What will you\ndeal with now?",
+  "plates": [
+   "assets/yilin/stipple-21-42.webp",
+   "assets/yilin/stipple-21-53.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/21/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/21/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/21/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-100101-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-100101-100bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick10-retrowave.mp3": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+  "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+  "assets/3d/hexagram-100101-100bpm-8b.mp4": "46dcff31943fc4f9f64193b6bbc9145daa9502e6a424a7b7e6b1adc661f85db4",
+  "assets/3d/endcard-flip-100101-100bpm-9b.mp4": "a488043daa1b689d7e4a67b06d66a8ccc669c0990faa37d6cd905baf5236452a",
+  "assets/screens/21/reading.png": "13780895dcd6f35aa58fc78305167cb0db2588904fce2d0b93f80ec41cfca177",
+  "assets/screens/21/verse.png": "ef8e3e479855bcaac4d2629f18722b7567b691b808ed0645a842add146ed6788",
+  "assets/screens/21/today.png": "c3ac1d54a62fc9c8971410db05226af9aa8869411ba1d338dbc2884ae531692d",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-21-42.webp": "1304bffba57d927907344c213612fba3bf19068aaef374ea293c75d6262c5de5",
+  "assets/yilin/stipple-21-53.webp": "69f0dee6875dcbada462ddb7e1e972abd80fb38fe4b5947ab6763a12d4667583",
+  "out/series/21-shi-ke/short.mp4": "c3867a0aeb1ea7fc3b615158610c846bedeb4ffecac7ae52e9abaf7bb62b07bb",
+  "out/series/21-shi-ke/share.mp4": "ec489a5f161fbf2fd69d59625336b14787cda795e24d81d9745dd67c9268e15d"
+ }
+}

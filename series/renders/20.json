@@ -1,0 +1,76 @@
+{
+ "hexagram": 20,
+ "rendered": "2026-09-24T17:36:57.286Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "clean": true,
+ "seconds": 35.413333,
+ "shareKbps": 5067,
+ "props": {
+  "hexagram": {
+   "number": 20,
+   "zh": "觀",
+   "pinyin": "Guān",
+   "name": "Contemplation",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 95,
+  "firstBeat": 0,
+  "music": "local/music/pick11-retro-synth-pop.mp3",
+  "musicStart": 65.943,
+  "drop": 15.16,
+  "hook": "Deciding from behind a desk?",
+  "meaning": [
+   "Contemplation:\ngo and look.",
+   "See by going,\nnot by sitting."
+  ],
+  "question": "What could you\ngo see?",
+  "plates": [
+   "assets/yilin/stipple-20-19.webp",
+   "assets/yilin/stipple-20-51.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/20/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/20/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/20/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-000011-95bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-000011-95bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick11-retro-synth-pop.mp3": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+  "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+  "assets/3d/hexagram-000011-95bpm-8b.mp4": "04d08c11482dece5ec9582f18b17f6b109e6c990c358ee6d6bf67624d5a3b8bf",
+  "assets/3d/endcard-snap-000011-95bpm-9b.mp4": "008b080fd9ecc2e8fe8507b4358f348117ed6fbd18e27bfd9b253ad8e9041f2b",
+  "assets/screens/20/reading.png": "91b9bf1d4911ee6ed8a714dac9e9d639c1f22f4a4c0549b50644fc6b54b6db6c",
+  "assets/screens/20/verse.png": "46f5eba3fc737523d5e95e6dcc8e6f24285541e1a8bf82255091f02107af6173",
+  "assets/screens/20/today.png": "060ca93551ca2b6aa16173154457bf3a07dc49cf7e0532d03cc96b084c94f220",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
+  "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
+  "out/series/20-guan/short.mp4": "965974fcba3debd8f60a7e90e6419a0b3ebbd25449847fc8686396f3e01ef5f7",
+  "out/series/20-guan/share.mp4": "9718c12a9619f7d3eb4ee0e253202e47c1d5544ef637adcf878c3f3bf216a325"
+ }
+}

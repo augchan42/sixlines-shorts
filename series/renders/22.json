@@ -1,0 +1,76 @@
+{
+ "hexagram": 22,
+ "rendered": "2026-09-24T17:44:02.201Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "clean": true,
+ "seconds": 36.586667,
+ "shareKbps": 4901,
+ "props": {
+  "hexagram": {
+   "number": 22,
+   "zh": "賁",
+   "pinyin": "Bì",
+   "name": "Grace",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  "bpm": 91.99,
+  "firstBeat": 0,
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 8.059,
+  "drop": 15.654,
+  "hook": "Polishing the slides instead of deciding?",
+  "meaning": [
+   "Grace says:\nsmall things only.",
+   "Polish can’t make\nbig decisions."
+  ],
+  "question": "What needs more\nthan polish?",
+  "plates": [
+   "assets/yilin/stipple-22-34.webp",
+   "assets/yilin/stipple-22-37.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/22/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/22/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/22/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-101001-91.99bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "local/music/certificates/synthwave-lofi-synthwave-588188-license.txt": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+  "assets/3d/hexagram-101001-91.99bpm-8b.mp4": "e352cd1e3544eb1ae1c021eba53e9d817a7364d6c7e321d43e96d8de5cdfe38c",
+  "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
+  "assets/screens/22/reading.png": "74e285d2de40690ae7b0e2c0fa24770e1be9ce1d15d176769a53f192ff0e6b02",
+  "assets/screens/22/verse.png": "718afbd7a565b63f49e8e7e44c8ee1fa790789e1a1143b1d5f9f6ec7157b160f",
+  "assets/screens/22/today.png": "feac32987d2a5a87c1da376f8d34a4796e706ae0b938587a8970194b44f318f1",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-22-34.webp": "6551b4737f169a64b1be447fc87dd7d9b7415ac1d04c82a5f51a9e07ac87af07",
+  "assets/yilin/stipple-22-37.webp": "5317712cd0693512a1acd880422b5e59edd428d1d511963d0ee7a87e4b42d01e",
+  "out/series/22-bi/short.mp4": "a32c719ae2ee78ab812212ebebf15ddd428b02fe41a9dde8604982d27df94bd2",
+  "out/series/22-bi/share.mp4": "c18a0b57105133fcba28734abdd0244ec9f39c515b7ca51220862cc4c08b03b2"
+ }
+}

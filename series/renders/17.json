@@ -1,10 +1,10 @@
 {
  "hexagram": 17,
- "rendered": "2026-09-24T16:37:24.102Z",
- "commit": "dd91c638563b793a66a5b213da343896403820cb",
+ "rendered": "2026-09-24T17:29:14.922Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
  "clean": true,
- "seconds": 31.658667,
- "shareKbps": 5683,
+ "seconds": 28.053333,
+ "shareKbps": 6430,
  "props": {
   "hexagram": {
    "number": 17,
@@ -20,11 +20,11 @@
     0
    ]
   },
-  "bpm": 136.76,
-  "firstBeat": 0.026,
-  "music": "local/music/pick16-synthwave-mondamusic.mp3",
-  "musicStart": 0,
-  "drop": 7.046,
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 4.023,
+  "drop": 12,
   "hook": "Still at your desk after dark?",
   "meaning": [
    "Following says:\ngo with the day.",
@@ -53,24 +53,24 @@
     "caption": "ASK · CAST · REFLECT"
    }
   ],
-  "hexagramClip": "assets/3d/hexagram-100110-136.76bpm-8b.mp4",
+  "hexagramClip": "assets/3d/hexagram-100110-120bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-100110-136.76bpm-9b.mp4",
+   "clip": "assets/3d/endcard-snap-100110-120bpm-9b.mp4",
    "mode": "snap"
   }
  },
  "files": {
-  "local/music/pick16-synthwave-mondamusic.mp3": "18288e5b7aaa59da690b512a32cf2642110570b5192214c6e561507ce25d85c2",
-  "local/music/certificates/synthwave-synthwave-572999-license.txt": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
-  "assets/3d/hexagram-100110-136.76bpm-8b.mp4": "05e5a43aa41116db452bc0574e70282ba477e2593fa1eb68c794a24907823b76",
-  "assets/3d/endcard-snap-100110-136.76bpm-9b.mp4": "e92b4190c263aeeec872c00579670bdf3115c8b01be16c995ae9bc5e39015038",
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-100110-120bpm-8b.mp4": "a70e8f97635a464700d0a2354bcf40158b1af2f587150d4f4f2e0b1afddddd97",
+  "assets/3d/endcard-snap-100110-120bpm-9b.mp4": "e6eb24eb0d2feecbd4eb6546dc7ffc546e27c25aeea9031fc77405dd2cb88f2f",
   "assets/screens/17/reading.png": "2765a40eeedfea265683cbddcec233a30a4d8103f7e9c2e51c888595ba760c35",
   "assets/screens/17/verse.png": "e04172232ede755326c9f54febef1ceca6bf518403bcc35f35d427a561f33f5c",
   "assets/screens/17/today.png": "b31060326cab94dd69eeb65b524fe495510af6e0cebf72d8888fda86fde30728",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-17-60.webp": "64877f416186103e7a0c119b6ca4e947b736923deadb2f4f5900d3ddb880b733",
   "assets/yilin/stipple-17-63.webp": "8b47b493bb7d3dad96244450a4fa526538d467a62a02056536790473da000e24",
-  "out/series/17-sui/short.mp4": "33b3ea56f06691609254a2df76e23b3b641ff2251455bae1fd2cdf3dabebce0f",
-  "out/series/17-sui/share.mp4": "325fd079d80458aa551711452ffaf6f3e7f4c25b5557d06f081ef0ecb3f59b60"
+  "out/series/17-sui/short.mp4": "91365a4ccb89fd30b3d0e119b8802871e8c0d191ae0136eb5738158bf48bbe7b",
+  "out/series/17-sui/share.mp4": "5911f309e4e6937e0ef740e42d5fc34ed03e39d61cf9b85d3a6ef16a4ccfacd4"
  }
 }

@@ -1,0 +1,76 @@
+{
+ "hexagram": 26,
+ "rendered": "2026-09-24T17:57:51.110Z",
+ "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "clean": true,
+ "seconds": 36.586667,
+ "shareKbps": 4901,
+ "props": {
+  "hexagram": {
+   "number": 26,
+   "zh": "大畜",
+   "pinyin": "Dà Chù",
+   "name": "Great Accumulation",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  "bpm": 91.99,
+  "firstBeat": 0,
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 8.059,
+  "drop": 15.654,
+  "hook": "Years of practice, nobody’s seen it?",
+  "meaning": [
+   "Great Accumulation\nsays: go public.",
+   "Don’t eat\nat home."
+  ],
+  "question": "What have you\nbeen keeping in?",
+  "plates": [
+   "assets/yilin/stipple-26-37.webp",
+   "assets/yilin/stipple-26-59.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/26/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/26/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/26/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111001-91.99bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-111001-91.99bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "local/music/certificates/synthwave-lofi-synthwave-588188-license.txt": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+  "assets/3d/hexagram-111001-91.99bpm-8b.mp4": "d3e84ccd3153d8045333c81b04bf69882746e1dcecf9d43597acb8c36af97b1d",
+  "assets/3d/endcard-join-111001-91.99bpm-9b.mp4": "ecb20449262fdde7ddcf56f527cda89211c1b3a8d6258612854664559c90f8e9",
+  "assets/screens/26/reading.png": "1d67f87544ddf936e049bcd9be6433e2faab6396c561ebc430d9dd5527f8e7e2",
+  "assets/screens/26/verse.png": "9e91cbb92a0dc8b6dee8f4a864c324313a6d458efaf0ce6890b0ee119e2c9a86",
+  "assets/screens/26/today.png": "205fdf572f7d6c7a9429b76c3f163c39bda3c1557af54e89b1c89dfe1693547c",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-26-37.webp": "176c1a5d781f56ff50b606673e6b3b1e2e2772be92b7055271b8f3c70f2ad976",
+  "assets/yilin/stipple-26-59.webp": "92569c84693651c98592f53787113d15a959670ff8afd022464036e1232c8361",
+  "out/series/26-da-chu/short.mp4": "0c9a121aa1d832ae2682db29dd32ac25509047b8b5388c98f0da0c4bf997e7c3",
+  "out/series/26-da-chu/share.mp4": "738b57fe9da5509a94be52a4225590461a5393fdb7744109e1a2992101476ba4"
+ }
+}
