@@ -4,6 +4,7 @@ import { ImageCanvas } from "../fx/ImageCanvas";
 import { fonts } from "../lib/fonts";
 import { framesPerBeat, useGrid } from "../lib/timing";
 import type { ShortProps } from "../schema";
+import { TITLE_BOTTOM } from "./titleLayout";
 
 // Where each part of the montage starts, in beats from its start.
 export const montageBeats = (props: Pick<ShortProps, "art">) => {
@@ -89,7 +90,7 @@ export const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexag
 
 // The hexagram's Chinese name and "1 · Qián · The Creative" under it.
 export const HexagramTitle: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => (
-  <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 330 }}>
+  <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: TITLE_BOTTOM }}>
     <div style={{ fontFamily: fonts.serif, fontSize: 150, color: "#fff", textShadow: glow() }}>{hexagram.zh}</div>
     <div style={{ fontFamily: fonts.serif, fontSize: 58, color: green, marginTop: 10 }}>
       {hexagram.number} · {hexagram.pinyin} · {hexagram.name}
