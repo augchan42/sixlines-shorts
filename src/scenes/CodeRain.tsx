@@ -12,8 +12,13 @@ const TRAIL = 18;
 export type PlateCut = { frame: number; src: string };
 
 // Falling green glyphs, then a line of text typed over them. Each cut slams a full-bleed
-// plate in behind the text, with the rain thinned over it.
-export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[] }> = ({ text, cuts = [] }) => {
+// plate in behind the text, with the rain thinned over it. With `showText` off it is
+// just the rain, as the backdrop for the Blender hexagram.
+export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: boolean }> = ({
+  text,
+  cuts = [],
+  showText = true,
+}) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const canvas = useRef<HTMLCanvasElement>(null);
@@ -66,23 +71,25 @@ export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[] }> = ({ text, 
         height={height}
         style={{ position: "absolute", width, height, opacity: cut ? 0.3 : 0.8, mixBlendMode: cut ? "screen" : "normal" }}
       />
-      <AbsoluteFill style={{ justifyContent: "center", padding: "0 70px" }}>
-        <div
-          style={{
-            alignSelf: "flex-start",
-            padding: "14px 28px",
-            background: "rgba(0,0,0,0.6)",
-            fontFamily: fonts.punch,
-            fontSize: 110,
-            letterSpacing: 2,
-            color: "#fff",
-            textShadow: glow(),
-            whiteSpace: "pre",
-          }}
-        >
-          {text.slice(0, typed)}
-        </div>
-      </AbsoluteFill>
+      {showText && (
+        <AbsoluteFill style={{ justifyContent: "center", padding: "0 70px" }}>
+          <div
+            style={{
+              alignSelf: "flex-start",
+              padding: "14px 28px",
+              background: "rgba(0,0,0,0.6)",
+              fontFamily: fonts.punch,
+              fontSize: 110,
+              letterSpacing: 2,
+              color: "#fff",
+              textShadow: glow(),
+              whiteSpace: "pre",
+            }}
+          >
+            {text.slice(0, typed)}
+          </div>
+        </AbsoluteFill>
+      )}
     </AbsoluteFill>
   );
 };

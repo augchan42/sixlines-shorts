@@ -9,6 +9,7 @@ import { ClockScreen } from "../scenes/ClockScreen";
 import { CodeRain } from "../scenes/CodeRain";
 import { EndCard } from "../scenes/EndCard";
 import { Hook } from "../scenes/Hook";
+import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hexagram, PatternLine } from "../scenes/Montage";
 import { Reveal } from "../scenes/Reveal";
 import { Showcase } from "../scenes/Showcase";
@@ -115,7 +116,11 @@ export const Gotchu: React.FC<GotchuProps> = (props) => {
             </Sequence>
           ))}
           <Sequence {...span(p.hexagram, p.breakdown)}>
-            <Hexagram hexagram={props.hexagram} />
+            {props.hexagramClip ? (
+              <Hexagram3D hexagram={props.hexagram} clip={props.hexagramClip} />
+            ) : (
+              <Hexagram hexagram={props.hexagram} />
+            )}
           </Sequence>
           <Sequence {...span(p.breakdown, p.showcase)}>
             <CodeRain text={props.breakdown} cuts={breakdownCuts} />

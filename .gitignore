@@ -3,3 +3,4 @@ out/
 public/assets/
 public/local/
 .DS_Store
+__pycache__/

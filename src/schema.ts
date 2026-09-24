@@ -67,6 +67,8 @@ export const gotchuSchema = z.object({
   // Full-bleed Yilin verse screens, four beats each.
   verses: z.array(z.string()).min(1),
   hexagram: hexagramSchema,
+  // The Blender hexagram build (npm run blender), under public/. Without it the 2D build plays.
+  hexagramClip: z.string().optional(),
   // Typed over the code rain, which sits on the music's breakdown.
   breakdown: z.string(),
   // Full-bleed plates that cut in on the hits inside the breakdown, one per hit.
