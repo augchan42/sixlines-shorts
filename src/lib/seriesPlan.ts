@@ -24,20 +24,24 @@ const ending = (cta: number) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_
 // The two meaning lines together need at least this long.
 const MEANING_SECONDS = 4;
 
+// Above this tempo 4 beats is under 2 s, so the question and each meaning line hold 8.
+const FAST_BPM = 120;
+
 export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
   const d = Math.round((drop * bpm) / 60);
   const seconds = (beats: number) => (beats * 60) / bpm;
+  const q = bpm > FAST_BPM ? 8 : 4;
   for (const [mode, h] of [["before", 8], ["short-hexagram", 6]] as const) {
     const meaning = 4 + h;
-    if (seconds(d - 4 - meaning) >= MEANING_SECONDS) {
+    if (seconds(d - q - meaning) >= MEANING_SECONDS) {
       return {
         mode,
         hexagram: 4,
         hexagramBeats: h,
         meaning,
-        meaningLength: d - 4 - meaning,
-        question: d - 4,
-        questionLength: 4,
+        meaningLength: d - q - meaning,
+        question: d - q,
+        questionLength: q,
         drop: d,
         showcase: d,
         ...ending(d + 20),
@@ -49,11 +53,11 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
     hexagram: 4,
     hexagramBeats: 8,
     meaning: d,
-    meaningLength: 8,
-    question: d + 8,
-    questionLength: 4,
+    meaningLength: 2 * q,
+    question: d + 2 * q,
+    questionLength: q,
     drop: d,
-    showcase: d + 12,
-    ...ending(d + 32),
+    showcase: d + 3 * q,
+    ...ending(d + 3 * q + 20),
   };
 };

@@ -3,9 +3,11 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import { seriesPlan } from "../src/lib/seriesPlan.ts";
 import { TITLE_BOTTOM } from "../src/scenes/titleLayout.ts";
+import { sectionProblems } from "../scripts/series/limits.mjs";
 
 const sections = JSON.parse(readFileSync("music/sections.json", "utf8")).sections;
-const byName = Object.fromEntries(sections.map((s) => [s.trigram, s]));
+// Each trigram's first track, the one its doubled hexagram uses.
+const byName = Object.fromEntries(sections.toReversed().map((s) => [s.trigram, s]));
 
 test("the meaning goes before the drop with an 8-beat hexagram when it fits", () => {
   const p = seriesPlan(102, 14.12);
@@ -25,17 +27,28 @@ test("Kun's meaning and question follow the drop", () => {
   assert.deepEqual([p.hexagram, p.drop, p.meaning, p.question, p.showcase, p.cta, p.credit, p.end], [4, 12, 12, 20, 24, 44, 53, 56]);
 });
 
+test("above 120 bpm the text holds twice as many beats, so it still lasts 2 s", () => {
+  const p = seriesPlan(147.01, 9.798);
+  assert.equal(p.mode, "after");
+  assert.deepEqual([p.drop, p.meaning, p.meaningLength, p.question, p.questionLength, p.showcase, p.cta, p.end], [24, 24, 16, 40, 8, 48, 68, 80]);
+  const q = seriesPlan(126.01, 11.43);
+  assert.equal(q.questionLength, 8);
+  assert.equal(q.mode, "after");
+});
+
 test("every chosen section keeps the minimums and stays within 38 s", () => {
   for (const s of sections) {
+    assert.deepEqual(sectionProblems(s.bpm, s.drop), [], s.file);
     const p = seriesPlan(s.bpm, s.drop);
-    const sec = (beats) => (beats * 60) / s.bpm;
-    assert.ok(sec(p.end) <= 38, `${s.trigram}: ${sec(p.end)} s`);
-    assert.ok(sec(p.questionLength) >= 2 && sec(p.meaningLength / 2) >= 2, `${s.trigram}: text under 2 s`);
-    assert.ok(sec((p.cta - p.showcase) / 4) >= 2, `${s.trigram}: screens under 2 s`);
     // The end card holds about 2 s once its last line is lit, and the credit gets a bar's end.
-    assert.equal(p.credit - p.cta, 9, s.trigram);
-    assert.equal(p.end - p.credit, 3, s.trigram);
+    assert.equal(p.credit - p.cta, 9, s.file);
+    assert.equal(p.end - p.credit, 3, s.file);
   }
+});
+
+test("a section too long or too quick to read has problems", () => {
+  assert.deepEqual(sectionProblems(90, 10.862), ["40.00 s long"]);
+  assert.deepEqual(sectionProblems(90, 8.05), []);
 });
 
 test("the hexagram part is 8 beats, or 6 when the meaning needs the room", () => {
