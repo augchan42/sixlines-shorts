@@ -32,7 +32,30 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Waiting for a sign to start?",
+    "source": "commentary/en/1.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Creative\nsays: begin.",
+     "source": "commentary/en/1.json#judgment.synthesis"
+    },
+    {
+     "text": "No conditions.\nJust mean it.",
+     "source": "commentary/en/1.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What would you\nstart today?",
+    "source": "written"
+   },
+   "plates": [
+    "1-11",
+    "1-27"
+   ]
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -70,7 +93,30 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Tired of always having to lead?",
+    "source": "commentary/en/2.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Receptive\nsays: follow well.",
+     "source": "commentary/en/2.json#judgment.synthesis"
+    },
+    {
+     "text": "Supporting is its\nown strength.",
+     "source": "commentary/en/2.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who could\nyou back?",
+    "source": "written"
+   },
+   "plates": [
+    "2-57",
+    "2-32"
+   ]
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1096,7 +1142,30 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "One problem after another?",
+    "source": "commentary/en/29.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Abyss says:\nkeep moving.",
+     "source": "commentary/en/29.json#judgment.synthesis"
+    },
+    {
+     "text": "Like water: fill\nit, flow on.",
+     "source": "commentary/en/29.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What's the next\nsmall step?",
+    "source": "written"
+   },
+   "plates": [
+    "29-31",
+    "29-60"
+   ]
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1970,7 +2039,30 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Can't stop overthinking?",
+    "source": "commentary/en/52.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Keeping Still\nsays: pause.",
+     "source": "commentary/en/52.json#judgment.synthesis"
+    },
+    {
+     "text": "Stay with where\nyou are now.",
+     "source": "commentary/en/52.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What can wait?",
+    "source": "written"
+   },
+   "plates": [
+    "52-12",
+    "52-1"
+   ]
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2198,7 +2290,30 @@
     "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Good news, no one to tell?",
+    "source": "commentary/en/58.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Joyous says:\nshare it.",
+     "source": "commentary/en/58.json#image.synthesis"
+    },
+    {
+     "text": "Joy kept alone\ndries up.",
+     "source": "commentary/en/58.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who could you\ncall today?",
+    "source": "written"
+   },
+   "plates": [
+    "58-19",
+    "58-24"
+   ]
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
