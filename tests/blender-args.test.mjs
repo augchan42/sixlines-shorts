@@ -13,9 +13,9 @@ test("reads lines bottom first, with defaults", () => {
 });
 
 test("reads beats, edge and preview", () => {
-  const a = parseBlenderArgs(["--lines", "111111", "--bpm", "107.4", "--beats", "2", "--edge", "#ffb23f", "--preview"]);
+  const a = parseBlenderArgs(["--lines", "111111", "--bpm", "107.4", "--beats", "5", "--edge", "#ffb23f", "--preview"]);
   assert.equal(a.bpm, 107.4);
-  assert.equal(a.beats, 2);
+  assert.equal(a.beats, 5);
   assert.equal(a.edge, "#ffb23f");
   assert.equal(a.preview, true);
 });
@@ -35,4 +35,9 @@ test("rejects a missing or non-positive tempo or length", () => {
 
 test("rejects an edge colour that is not #rrggbb", () => {
   assert.throws(() => parseBlenderArgs(["--lines", "111111", "--bpm", "110", "--edge", "green"]), /--edge/);
+});
+
+test("rejects fewer than 3 beats, which the camera and landings need", () => {
+  assert.throws(() => parseBlenderArgs(["--lines", "111111", "--bpm", "110", "--beats", "2"]), /--beats/);
+  assert.equal(parseBlenderArgs(["--lines", "111111", "--bpm", "110", "--beats", "3"]).beats, 3);
 });

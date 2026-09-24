@@ -10,6 +10,7 @@ import { existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { clipFrames, hexagramClip } from "../src/lib/clips.ts";
 import { parseBlenderArgs } from "./blender-args.mjs";
+import { keepIfComplete } from "./blender-output.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const blender = process.env.BLENDER ?? "/Applications/Blender.app/Contents/MacOS/Blender";
@@ -36,9 +37,12 @@ if (!existsSync(rain)) {
 const lines = args.lines.join("");
 const out = path.join(root, "public", hexagramClip(args.lines, args.bpm, args.beats, args.preview));
 const log = path.join(root, "out", `blender-${lines}.log`);
+// Blender writes to out/ first; the clip only takes its real name once every frame is there.
+const partial = path.join(root, "out", path.basename(out));
 mkdirSync(path.dirname(log), { recursive: true });
 // A clip left from an earlier run must not pass for this one.
 rmSync(out, { force: true });
+rmSync(partial, { force: true });
 
 console.log(`rendering ${path.relative(root, out)}`);
 const run = spawnSync(
@@ -46,12 +50,12 @@ const run = spawnSync(
   [
     "-b", "--factory-startup", "--python-exit-code", "1", "-P", path.join(root, "blender/hexagram.py"), "--",
     "--lines", lines, "--bpm", String(args.bpm), "--beats", String(args.beats),
-    "--rain", rain, "--out", out, "--edge", args.edge, ...(args.preview ? ["--preview"] : []),
+    "--rain", rain, "--out", partial, "--edge", args.edge, ...(args.preview ? ["--preview"] : []),
   ],
   { encoding: "utf8", maxBuffer: 1 << 28 },
 );
 writeFileSync(log, `${run.stdout ?? ""}\n${run.stderr ?? ""}`);
-if (run.status !== 0 || !existsSync(out)) {
+if (run.status !== 0 || !existsSync(partial)) {
   console.error(`Blender failed (exit ${run.status}). Log: ${path.relative(root, log)}`);
   process.exit(1);
 }
@@ -59,13 +63,13 @@ if (run.status !== 0 || !existsSync(out)) {
 const frames = Number(
   execFileSync(
     "ffprobe",
-    ["-v", "error", "-count_frames", "-select_streams", "v:0", "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", out],
+    ["-v", "error", "-count_frames", "-select_streams", "v:0", "-show_entries", "stream=nb_read_frames", "-of", "csv=p=0", partial],
     { encoding: "utf8" },
   ).trim(),
 );
 const expected = clipFrames(args.beats, args.bpm);
-if (frames < expected) {
-  console.error(`${path.relative(root, out)} has ${frames} frames; expected ${expected}. Log: ${path.relative(root, log)}`);
+if (!keepIfComplete({ partial, out, frames, expected })) {
+  console.error(`The render had ${frames} frames; expected ${expected}. Log: ${path.relative(root, log)}`);
   process.exit(1);
 }
 console.log(`wrote ${path.relative(root, out)} (${frames} frames)`);
