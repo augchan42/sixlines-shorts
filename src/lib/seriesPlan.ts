@@ -11,8 +11,15 @@ export type SeriesPlan = {
   drop: number;
   showcase: number;
   cta: number;
+  // Her credit ("Original edit by ~DISNEYFAN"), after the end card has held.
+  credit: number;
   end: number;
 };
+
+// The end card's 9 beats let it hold about 2 s once its last line is lit; the credit takes 3.
+const CTA_BEATS = 9;
+const CREDIT_BEATS = 3;
+const ending = (cta: number) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_BEATS + CREDIT_BEATS });
 
 // The two meaning lines together need at least this long.
 const MEANING_SECONDS = 4;
@@ -33,8 +40,7 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
         questionLength: 4,
         drop: d,
         showcase: d,
-        cta: d + 20,
-        end: d + 27,
+        ...ending(d + 16),
       };
     }
   }
@@ -48,7 +54,6 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
     questionLength: 4,
     drop: d,
     showcase: d + 12,
-    cta: d + 32,
-    end: d + 39,
+    ...ending(d + 28),
   };
 };

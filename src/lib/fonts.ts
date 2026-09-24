@@ -2,6 +2,7 @@ import { loadFont } from "@remotion/fonts";
 import { loadFont as loadAnton } from "@remotion/google-fonts/Anton";
 import { loadFont as loadBungee } from "@remotion/google-fonts/Bungee";
 import { loadFont as loadGaramond } from "@remotion/google-fonts/EBGaramond";
+import { loadFont as loadMontserrat } from "@remotion/google-fonts/Montserrat";
 import { loadFont as loadSpecialElite } from "@remotion/google-fonts/SpecialElite";
 import { staticFile } from "remotion";
 
@@ -20,6 +21,8 @@ export const fonts = {
   punch: loadAnton("normal", { weights: ["400"], ...latin }).fontFamily,
   // Creator credit.
   credit: loadBungee("normal", { weights: ["400"], ...latin }).fontFamily,
+  // Her signature, "~DISNEYFAN": heavy, wide capitals.
+  signature: loadMontserrat("normal", { weights: ["900"], ...latin }).fontFamily,
   // Hexagram names. CJK falls through to the system serif.
   serif: `${loadGaramond("normal", { weights: ["500"], ...latin }).fontFamily}, "Songti SC", "Noto Serif CJK SC", serif`,
 };

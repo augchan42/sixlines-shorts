@@ -8,6 +8,7 @@ import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
 import { CaptionScreen } from "../scenes/CaptionScreen";
 import { CodeRain } from "../scenes/CodeRain";
+import { Credit } from "../scenes/Credit";
 import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
@@ -41,6 +42,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
     { beat: s.drop, kind: "zoom" },
     ...props.screens.slice(1).map((_, i) => ({ beat: s.showcase + (i + 1) * screenBeats, kind: (i % 2 ? "whip-right" : "whip-left") as Cut["kind"] })),
     { beat: s.cta, kind: "zoom" },
+    { beat: s.credit, kind: "whip-up" },
   ];
   return (
     <GridContext.Provider value={grid}>
@@ -83,8 +85,11 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <CaptionScreen src={sc.src} caption={sc.caption} color={i % 2 ? "#ffb23f" : "#7dff8a"} seed={`cap-${i}`} />
             </Sequence>
           ))}
-          <Sequence {...span(s.cta, s.end)}>
+          <Sequence {...span(s.cta, s.credit)}>
             <EndCard3D clip={props.endcard.clip} />
+          </Sequence>
+          <Sequence {...span(s.credit, s.end)}>
+            <Credit name="~DISNEYFAN" />
           </Sequence>
         </Camera>
         <Sequence from={0} durationInFrames={f(s.drop)}>

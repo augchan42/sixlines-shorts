@@ -56,6 +56,6 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
   return {
     ...merged,
     hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
-    endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.end - plan.cta, mode), mode },
+    endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.credit - plan.cta, mode), mode },
   };
 };

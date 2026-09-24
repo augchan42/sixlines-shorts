@@ -18,7 +18,7 @@ export const clipJobs = (propsList, exists) => {
     const lines = p.hexagram.lines.join("");
     const wanted = [
       { kind: "hexagram", clip: p.hexagramClip, lines, bpm: p.bpm, beats: plan.hexagramBeats },
-      { kind: "endcard", clip: p.endcard.clip, lines, bpm: p.bpm, beats: plan.end - plan.cta, mode: p.endcard.mode },
+      { kind: "endcard", clip: p.endcard.clip, lines, bpm: p.bpm, beats: plan.credit - plan.cta, mode: p.endcard.mode },
     ];
     for (const job of wanted) {
       if (seen.has(job.clip) || exists(job.clip)) continue;

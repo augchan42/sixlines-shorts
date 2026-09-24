@@ -20,7 +20,7 @@ test("a row becomes the template's props", () => {
   assert.deepEqual(p.screens.map((s) => s.src), [
     "assets/screens/29/reading.png", "assets/screens/29/verse.png", "assets/screens/29/today.png", "assets/matrix-ask.png",
   ]);
-  assert.deepEqual(p.endcard, { clip: "assets/3d/endcard-snap-010010-100bpm-7b.mp4", mode: "snap" });
+  assert.deepEqual(p.endcard, { clip: "assets/3d/endcard-snap-010010-100bpm-9b.mp4", mode: "snap" });
 });
 
 test("the end card's transition follows the energy of the upper trigram's track", () => {
@@ -42,7 +42,7 @@ test("the third screen is the hexagram's own day on the Almanac, and ask closes"
 test("an override that changes the tempo changes the clip too", () => {
   const p = seriesProps(row, { bpm: 82.5, drop: 14.54 });
   assert.equal(p.hexagramClip, "assets/3d/hexagram-010010-82.5bpm-6b.mp4");
-  assert.equal(p.endcard.clip, "assets/3d/endcard-snap-010010-82.5bpm-7b.mp4");
+  assert.equal(p.endcard.clip, "assets/3d/endcard-snap-010010-82.5bpm-9b.mp4");
 });
 
 test("a row without copy cannot become a short", () => {

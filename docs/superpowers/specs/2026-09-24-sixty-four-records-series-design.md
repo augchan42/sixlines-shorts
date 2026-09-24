@@ -35,14 +35,15 @@ Timing is in beats and counted from the drop `D`, the beat where the music's bas
 | Hexagram | 4 → 4+H | The Blender clip for this hexagram and tempo, then 卦 · N · Pinyin · English. |
 | Meaning | 4+H → D−4 | Two text groups of 3–6 words, each held at least 2 s, over a Yilin plate and code rain. |
 | Question | D−4 → D | One open question over code rain, on the breakdown. |
-| Showcase | D → D+20 | Four app screens with captions, 5 beats each (at least 2 s each at every chosen tempo). |
-| End card | D+20 → D+27 | Rendered in Blender (blender/endcard.py, user's review 2026-09-24): the short's hexagram turns into six yang lines, SIX LINES in Goudy outline rises above them, "REVEAL THE MOMENT." types on in Goudy caps with a cursor, then "sixlines.day" in green pixel type; haze, a sweeping searchlight and an amber backlight (Blade Runner). The transition follows the upper trigram's track: join for the calm tracks (kun, gen), flip for the steady ones (qian, li), snap for the ones that jump at the drop or drive (zhen, kan, xun, dui). Fade to black. It replaces the "~sixlines" credit from the first short. |
+| Showcase | D → D+16 | Four app screens with captions, 4 beats each (at least 2 s each at every chosen tempo; 5 until the end card needed the room). |
+| End card | D+16 → D+25 | Rendered in Blender (blender/endcard.py, user's review 2026-09-24): the short's hexagram turns into six yang lines, SIX LINES in Goudy outline rises above them, "REVEAL THE MOMENT." types on in Goudy caps with a cursor, then "sixlines.day" in green pixel type; haze, a sweeping searchlight and an amber backlight (Blade Runner). The transition follows the upper trigram's track: join for the calm tracks (kun, gen), flip for the steady ones (qian, li), snap for the ones that jump at the drop or drive (zhen, kan, xun, dui). It holds about 2 s once the site is lit (user, 2026-09-24: give the end time to breathe). It replaces the "~sixlines" credit from the first short. |
+| Credit | D+25 → D+28 | Whips in: "ORIGINAL EDIT BY" over her signature, a crown outline and "~DISNEYFAN" in glowing heavy capitals tilted up to the right, recreated sharp in Remotion from the end of her shorts (user, 2026-09-24). Fade to black. |
 
 The hexagram part is `H` beats long, 8 by default, and the meaning runs from 4 + H to D−4. It needs at least 4 s (two groups of at least 2 s), so the timing is chosen in this order:
 
 1. `H` = 8, if 12 → D−4 lasts at least 4 s. This applies to Qian, Zhen, Kan, Xun, Li and Dui.
 2. `H` = 6, if 10 → D−4 lasts at least 4 s. This applies to Gen (D = 20 at 82.5 BPM): meaning 10 → 16 is 4.4 s and the short is 34.2 s.
-3. Otherwise the meaning and question move after the drop: hook 0 → 4, hexagram 4 → 12, then meaning D → D+8, question D+8 → D+12, showcase D+12 → D+32 and end card D+32 → D+39. Where the hexagram ends before the drop, the gap holds the hexagram's last frame over code rain. This applies to Kun (D = 12 at 90 BPM, so the hexagram ends on the drop): 34.0 s.
+3. Otherwise the meaning and question move after the drop: hook 0 → 4, hexagram 4 → 12, then meaning D → D+8, question D+8 → D+12, showcase D+12 → D+28, end card D+28 → D+37 and credit D+37 → D+40. Where the hexagram ends before the drop, the gap holds the hexagram's last frame over code rain. This applies to Kun (D = 12 at 90 BPM, so the hexagram ends on the drop): 34.7 s.
 
 Every part keeps its minimum (text groups and screens at least 2 s) and the total never exceeds 35 s. The timing test checks both for all 8 sections.
 

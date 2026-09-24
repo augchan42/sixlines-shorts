@@ -17,7 +17,7 @@ test("clip jobs skip clips that exist and never repeat one", () => {
   );
   assert.deepEqual(jobs, [
     { kind: "hexagram", clip: "a.mp4", lines: "010010", bpm: 100, beats: 8 },
-    { kind: "endcard", clip: "eb.mp4", lines: "111111", bpm: 100, beats: 7, mode: "snap" },
+    { kind: "endcard", clip: "eb.mp4", lines: "111111", bpm: 100, beats: 9, mode: "snap" },
   ]);
 });
 
