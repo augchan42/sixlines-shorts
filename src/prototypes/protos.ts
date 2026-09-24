@@ -9,8 +9,8 @@ const screens = [
   { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
 ];
 
-// Music: music/sections.json. Copy: sixlines-content commentary/en/N.json (judgment and
-// image synthesis), fd827b1.
+// Music: music/sections.json. Copy follows the spec's copy rules: hook (the viewer's
+// situation), "<Name> says: …", why in everyday terms, then a question back to the viewer.
 export const protos: { id: string; props: ProtoProps }[] = [
   {
     // Kun over Kun: the drop comes on beat 12, so the meaning follows it.
@@ -21,9 +21,9 @@ export const protos: { id: string; props: ProtoProps }[] = [
       music: "local/music/pick04-analog-dreams-synthwave.mp3",
       musicStart: 0,
       drop: 8.05,
-      hook: "What if following is the hard part?",
-      meaning: ["The mare covers\nmore ground.", "She just doesn't\npick where."],
-      question: "What are you\nholding?",
+      hook: "Tired of always having to lead?",
+      meaning: ["The Receptive\nsays: follow well.", "Supporting is its\nown strength."],
+      question: "Who could\nyou back?",
       plates: ["2-57", "2-2"],
       screens,
     },
@@ -37,9 +37,9 @@ export const protos: { id: string; props: ProtoProps }[] = [
       music: "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
       musicStart: 34.934,
       drop: 14.54,
-      hook: "Is stopping ever the right move?",
-      meaning: ["Still the back,\nnot the front.", "Think no further\nthan here."],
-      question: "Where would\nyou stop?",
+      hook: "Can't stop overthinking?",
+      meaning: ["Keeping Still\nsays: pause.", "Stay with where\nyou are now."],
+      question: "What can wait?",
       plates: ["52-51", "52-52"],
       screens,
     },

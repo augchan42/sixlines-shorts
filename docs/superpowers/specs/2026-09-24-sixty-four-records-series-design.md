@@ -31,7 +31,7 @@ Timing is in beats and counted from the drop `D`, the beat where the music's bas
 
 | Part | Beats | Content |
 |---|---|---|
-| Hook | 0 → 4 | 4–7 words, a question or open statement, typed on black. The badge is on. |
+| Hook | 0 → 4 | 3–7 words: the viewer's situation, as a question, typed on black. The badge is on. |
 | Hexagram | 4 → 4+H | The Blender clip for this hexagram and tempo, then 卦 · N · Pinyin · English. |
 | Meaning | 4+H → D−4 | Two text groups of 3–6 words, each held at least 2 s, over a Yilin plate and code rain. |
 | Question | D−4 → D | One open question over code rain, on the breakdown. |
@@ -50,24 +50,44 @@ Text sizes: at least 52 px, bold, and 3–6 words per group. All text sits betwe
 
 ## Copy
 
-Each hexagram has a hook, two meaning lines and a question, in `series/copy.json`:
+Each short reads as one connected thought in plain words. Read aloud in order, the hook, the two lines and the question make sense as one short paragraph to someone who has never heard of the I-Ching.
+
+| Part | Job |
+|---|---|
+| Hook | A real situation the viewer is in, as a question. |
+| Line 1 | The hexagram's answer to the hook, usually "*Name* says: …". Variants such as "*Name*: …" or "The answer: …" keep the formula from going stale. |
+| Line 2 | Why, or how, in everyday terms, continuing line 1. |
+| Question | Turns it back to the viewer: something they could answer today. |
+
+Imagery from the commentary (the mare, water, the back) that needs the source to make sense stays out of the video and goes in the post caption, where there is room to explain it.
+
+Examples, as prototyped for hexagrams 2 and 52:
+
+| # | Hook | Line 1 | Line 2 | Question |
+|---|---|---|---|---|
+| 1 | Waiting for a sign to start? | The Creative says: begin. | No conditions. Just mean it. | What would you start today? |
+| 2 | Tired of always having to lead? | The Receptive says: follow well. | Supporting is its own strength. | Who could you back? |
+| 29 | One problem after another? | The Abyss says: keep moving. | Like water: fill it, flow on. | What's the next small step? |
+| 52 | Can't stop overthinking? | Keeping Still says: pause. | Stay with where you are now. | What can wait? |
+
+The copy lives in `series/copy.json`, one entry per hexagram, with the source each line draws on:
 
 ```json
 {
   "29": {
-    "hook": { "text": "Danger inside danger. Now what?", "source": "commentary/en/29.json#judgment.synthesis" },
+    "hook": { "text": "One problem after another?", "source": "commentary/en/29.json#judgment.synthesis" },
     "meaning": [
-      { "text": "Not danger, then more danger.", "source": "commentary/en/29.json#judgment.synthesis" },
-      { "text": "Water fills the hollow, flows on.", "source": "commentary/en/29.json#image.synthesis" }
+      { "text": "The Abyss says: keep moving.", "source": "commentary/en/29.json#judgment.synthesis" },
+      { "text": "Like water: fill it, flow on.", "source": "commentary/en/29.json#image.synthesis" }
     ],
-    "question": { "text": "What is yours asking?", "source": "written" }
+    "question": { "text": "What's the next small step?", "source": "written" }
   }
 }
 ```
 
-- Sources (in the sixlines-content repo): commentary `judgment.synthesis` and `image.synthesis`, the 8bitoracle-next `practicalIntegration` lines, and the road beats for hook ideas. `source` names the file and field, or says `written` when the line is new.
+- Sources (in the sixlines-content repo): commentary `judgment.synthesis` and `image.synthesis`, the 8bitoracle-next `practicalIntegration` lines (which already speak to everyday situations), and the road beats for hook ideas. `source` names the file and field the line draws on, or says `written` when there is none.
 - Tone rules, checked by a test: no "AI", "should", exclamation marks, "fortune", "predict", "magic", "supernatural" or "horoscope"; "I-Ching" is hyphenated; 吉 is "favorable" and 凶 is "adverse".
-- Length limits, checked by a test: hook 4–7 words, meaning lines 3–6 words each, question at most 6 words. A test also checks that each line fits the frame at its font size, with explicit line breaks allowed.
+- Length limits, checked by a test: hook 3–7 words, meaning lines 3–6 words each, question at most 6 words. A test also checks that each line fits the frame at its font size, with explicit line breaks allowed.
 - The user approves all 64 entries as one list before the batch render.
 
 The post caption for each short (`caption.txt`) holds the hexagram's name, one line from the commentary, a lineage line where it fits (e.g. Jung's 1949 foreword, synchronicity), "sixlines.day" and 3–5 hashtags.
