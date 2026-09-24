@@ -40,7 +40,7 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
         questionLength: 4,
         drop: d,
         showcase: d,
-        ...ending(d + 16),
+        ...ending(d + 20),
       };
     }
   }
@@ -54,6 +54,6 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
     questionLength: 4,
     drop: d,
     showcase: d + 12,
-    ...ending(d + 28),
+    ...ending(d + 32),
   };
 };
