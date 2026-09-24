@@ -3,6 +3,9 @@ energy per bar in analysis.json, to judge whether a track has more than one usab
 
   python3 music/drops.py > music/drops.json
 
+`tracks` covers the chosen section of each upper trigram's track; `candidates` lists the
+drops of every analysed track, to judge new tracks.
+
 A drop is a bar where the energy of it and the next bar is at least LIFT above the four
 bars before. It is usable when the track has PRE bars before it (the hook and the hexagram
 build) and POST bars from it on (meaning, screens, end card and credit) that stay at least
@@ -55,8 +58,21 @@ def main():
                 "drops": [dict(d, seconds=round(t["firstBeat"] + d["bar"] * bar, 2), chosen=d["bar"] == chosen) for d in drops(t["energy"])],
             }
         )
+    candidates = []
+    for t in analysis["tracks"]:
+        found = drops(t["energy"])
+        candidates.append(
+            {
+                "file": t["file"],
+                "title": t["title"],
+                "bpm": t["bpm"],
+                "seconds": round(t["duration"], 1),
+                "usable": sum(d["usable"] for d in found),
+                "drops": [dict(d, seconds=round(t["firstBeat"] + d["bar"] * t["barSeconds"], 2)) for d in found],
+            }
+        )
     json.dump(
-        {"script": "music/drops.py", "commit": commit, "rule": {"lift": LIFT, "pre": PRE, "post": POST, "hold": HOLD}, "tracks": out},
+        {"script": "music/drops.py", "commit": commit, "rule": {"lift": LIFT, "pre": PRE, "post": POST, "hold": HOLD}, "tracks": out, "candidates": candidates},
         sys.stdout,
         indent=1,
     )
