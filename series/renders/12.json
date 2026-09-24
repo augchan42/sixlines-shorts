@@ -1,0 +1,76 @@
+{
+ "hexagram": 12,
+ "rendered": "2026-09-24T16:15:04.477Z",
+ "commit": "dd91c638563b793a66a5b213da343896403820cb",
+ "clean": true,
+ "seconds": 32.981333,
+ "shareKbps": 5450,
+ "props": {
+  "hexagram": {
+   "number": 12,
+   "zh": "否",
+   "pinyin": "Pǐ",
+   "name": "Standstill",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "bpm": 102,
+  "firstBeat": 0,
+  "music": "local/music/pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+  "musicStart": 37.671,
+  "drop": 14.12,
+  "hook": "Everything stuck and no one’s talking?",
+  "meaning": [
+   "Standstill says:\nhold back.",
+   "Don’t take\nthe bad deal."
+  ],
+  "question": "What will you\nturn down?",
+  "plates": [
+   "assets/yilin/stipple-12-11.webp",
+   "assets/yilin/stipple-12-10.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/12/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/12/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/12/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-000111-102bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-000111-102bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
+  "local/music/certificates/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+  "assets/3d/hexagram-000111-102bpm-8b.mp4": "12bcfb526cc81bfa2b40526b9ba3b852fb5435230f1f4cb67e8e534620e278d1",
+  "assets/3d/endcard-flip-000111-102bpm-9b.mp4": "a4aef2551cab70ddf11ec96f24ba8799125696853625a3ed010376bcc39237ec",
+  "assets/screens/12/reading.png": "0ffbe90f81d4cba7416835ae38588edf6e002dbe76f86f07c9e6147ee39255f1",
+  "assets/screens/12/verse.png": "c0bfde3d9380ac35a6a9b2a2c4f570089cc0950871b1472cbac7b39138a256bc",
+  "assets/screens/12/today.png": "742a0358910dbd2a624fc6956b4466a42d0f892a220abdb92ba9fbf31554fd72",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-12-11.webp": "812d0d69446a0b18580ee311edaf2e82de32693dd0b2d0d1f26daf25e7f3f90b",
+  "assets/yilin/stipple-12-10.webp": "26e05f7d1202373fce1fe291a48c023425b38e16d196d84e808658057b8237d8",
+  "out/series/12-pi/short.mp4": "6219ea8f332b934a6f4f6148b69aa4f3509ffba416155d0dc3a8463fc9b59c07",
+  "out/series/12-pi/share.mp4": "5cb14b30ac05fcf7207d0e558b90657bd3660cc1781cf4079e86387bb5ee15d7"
+ }
+}

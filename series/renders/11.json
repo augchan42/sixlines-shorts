@@ -1,0 +1,76 @@
+{
+ "hexagram": 11,
+ "rendered": "2026-09-24T16:10:45.514Z",
+ "commit": "dd91c638563b793a66a5b213da343896403820cb",
+ "clean": true,
+ "seconds": 34.922667,
+ "shareKbps": 5140,
+ "props": {
+  "hexagram": {
+   "number": 11,
+   "zh": "泰",
+   "pinyin": "Tài",
+   "name": "Peace",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  "bpm": 90,
+  "firstBeat": 0.194,
+  "music": "local/music/pick17-midnight-synthwave.mp3",
+  "musicStart": 0,
+  "drop": 13.529,
+  "hook": "Good times, now what?",
+  "meaning": [
+   "Peace says:\nkeep it moving.",
+   "Peace is contact,\nnot a vacation."
+  ],
+  "question": "Who haven’t you\nreached lately?",
+  "plates": [
+   "assets/yilin/stipple-11-37.webp",
+   "assets/yilin/stipple-11-61.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/11/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/11/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/11/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111000-90bpm-6b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-111000-90bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick17-midnight-synthwave.mp3": "6f8f4ec9915bc0eeba91aede1421cab678aa8aea2f0415f9a79435fcd72e0e37",
+  "local/music/certificates/synthwave-midnight-synthwave-317752-license.txt": "47aa1fb0cbb3774ecac4e86144cadd7ad4368361c2128d5d7f991fd527b394a4",
+  "assets/3d/hexagram-111000-90bpm-6b.mp4": "bf7e7c18a52522d5c4bac8ff55ba7aee89649d1d1f22500b121bb9b2efc59ebb",
+  "assets/3d/endcard-join-111000-90bpm-9b.mp4": "bcb20c033bae9192535ef6fe158d4ced2daf3efb89c3484efd24d415e3fdb71c",
+  "assets/screens/11/reading.png": "9a44cab11fcaaac9b0ce3756cd5651a9ff5748d4fdcd21c894b096b2b8104d30",
+  "assets/screens/11/verse.png": "9d1828212537fa3fbdf5abbe84c1ff6d3f6556771d9ee19c6b14e23fe6cbe928",
+  "assets/screens/11/today.png": "ac4c70b6145c32c3f45543df54c60e5a0a9c79c09ee540c367c1bf7eaba29182",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-11-37.webp": "949b51430080c0c4ce2532b9d8a330e0cb676e5ad8b4b24efbf3423e7a939cf5",
+  "assets/yilin/stipple-11-61.webp": "254ffcd95b0eefd4bf6fed02e7ecde3aaabd83b5fe31508a78d13b830574f64a",
+  "out/series/11-tai/short.mp4": "3faa21b7aa2d5523bf4b28e44d5890880a8f20bc7f76c145e8539281983a3de4",
+  "out/series/11-tai/share.mp4": "eef1f8673f7e36dc2a624b35e75d1e1c8422601cea4a59b6f7100d18cd3258be"
+ }
+}

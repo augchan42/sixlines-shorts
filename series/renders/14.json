@@ -1,0 +1,76 @@
+{
+ "hexagram": 14,
+ "rendered": "2026-09-24T16:24:38.262Z",
+ "commit": "dd91c638563b793a66a5b213da343896403820cb",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 14,
+   "zh": "大有",
+   "pinyin": "Dà Yǒu",
+   "name": "Great Possession",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick18-dreamy-synthwave.mp3",
+  "musicStart": 52.977,
+  "drop": 14.4,
+  "hook": "Doing better than everyone around you?",
+  "meaning": [
+   "Great Possession\nsays: people see.",
+   "Use it to put\nthings right."
+  ],
+  "question": "What would you\nfix first?",
+  "plates": [
+   "assets/yilin/stipple-14-41.webp",
+   "assets/yilin/stipple-14-36.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/14/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/14/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/14/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111101-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-111101-100bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+  "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+  "assets/3d/hexagram-111101-100bpm-8b.mp4": "dfa4dc529e987861ae31b4302067509207de2cb3a5b47e3ae375e00e0902e5a7",
+  "assets/3d/endcard-flip-111101-100bpm-9b.mp4": "8d1feeac9ec112b7a6440ee243553770e9b2f46e2e0ae53349ab6cf5b8ae35ee",
+  "assets/screens/14/reading.png": "c1495ae1c4abe9f9bf5889e9c4445f187e2c5cd09921a42cda75122c3c623e27",
+  "assets/screens/14/verse.png": "a34f2780e097dbfa3311fb5e19e2254ae5303feb5680fef77bcf64ad287844b2",
+  "assets/screens/14/today.png": "f856a3d69b4391277e3286c33832240bf31e7b23c06d98d2386c71e0ba72783f",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-14-41.webp": "684f8cd71ae0bcd97d9b2dea31d399ab3ce21a4c6c72db00dff79d9777195403",
+  "assets/yilin/stipple-14-36.webp": "2550cdce2580de748693334edf3583a14de67961cebec2a0c5e86bd8c7de8726",
+  "out/series/14-da-you/short.mp4": "f76b2bd4409bcc54872929d54058833afabdb5e64a1d5eb91fa18390d4c87ce3",
+  "out/series/14-da-you/share.mp4": "1e08f20d6a1073b72f9d6dc597059a864a39cd42967f3a8de8b739e328224cf6"
+ }
+}
