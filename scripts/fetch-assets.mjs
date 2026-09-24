@@ -8,7 +8,7 @@
 //   npm run assets -- --music ~/Downloads/some-short.mov   # also extract a music track to public/local/
 
 import { execFileSync } from "node:child_process";
-import { access, copyFile, mkdir, rm, writeFile } from "node:fs/promises";
+import { access, copyFile, mkdir, rename, rm, writeFile } from "node:fs/promises";
 import { homedir } from "node:os";
 import path from "node:path";
 
@@ -64,17 +64,24 @@ for (const [name, rel] of Object.entries(copies)) {
   console.log(`copied   ${name}`);
 }
 
-for (const [name, key] of Object.entries(downloads)) {
+// 16 at a time: one by one, the 64 plates of a hexagram take about 3 minutes. Each is
+// written to a .part file and renamed once whole, so a stopped run leaves no torn plate.
+const fetchOne = async ([name, key]) => {
   try {
     await access(path.join(out, name));
     console.log(`present  ${name}`);
-    continue;
+    return;
   } catch {}
   const res = await fetch(`${cdn}/${key}`);
   if (!res.ok) throw new Error(`${res.status} fetching ${cdn}/${key}`);
-  await writeFile(path.join(out, name), Buffer.from(await res.arrayBuffer()));
+  await writeFile(path.join(out, `${name}.part`), Buffer.from(await res.arrayBuffer()));
+  await rename(path.join(out, `${name}.part`), path.join(out, name));
   console.log(`fetched  ${name}`);
-}
+};
+const queue = Object.entries(downloads);
+await Promise.all(Array.from({ length: 16 }, async () => {
+  while (queue.length) await fetchOne(queue.shift());
+}));
 
 for (const [name, stop] of Object.entries(screens)) {
   try {
