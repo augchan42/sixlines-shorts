@@ -1,0 +1,180 @@
+{
+ "script": "music/drops.py",
+ "commit": "586dca08fe737c41630006d6ebca8dd01783e575",
+ "rule": {
+  "lift": 2.0,
+  "pre": 6,
+  "post": 12,
+  "hold": 5
+ },
+ "tracks": [
+  {
+   "trigram": "qian",
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "bpm": 102.0,
+   "chosenBar": 22,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 9.44,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "kun",
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "bpm": 90.0,
+   "chosenBar": 3,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.72,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "zhen",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "chosenBar": 72,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.25,
+     "usable": false,
+     "seconds": 9.63,
+     "chosen": false
+    },
+    {
+     "bar": 8,
+     "lift": 3.5,
+     "usable": false,
+     "seconds": 19.23,
+     "chosen": false
+    },
+    {
+     "bar": 16,
+     "lift": 2.25,
+     "usable": true,
+     "seconds": 38.43,
+     "chosen": false
+    },
+    {
+     "bar": 72,
+     "lift": 4.25,
+     "usable": true,
+     "seconds": 172.83,
+     "chosen": true
+    }
+   ]
+  },
+  {
+   "trigram": "kan",
+   "file": "pick09-synthwave.mp3",
+   "bpm": 100.0,
+   "chosenBar": 44,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 4.0,
+     "usable": false,
+     "seconds": 9.62,
+     "chosen": false
+    },
+    {
+     "bar": 43,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 103.22,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "gen",
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "bpm": 82.5,
+   "chosenBar": 17,
+   "drops": []
+  },
+  {
+   "trigram": "xun",
+   "file": "pick11-retro-synth-pop.mp3",
+   "bpm": 95.0,
+   "chosenBar": 32,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 10.37,
+     "chosen": false
+    },
+    {
+     "bar": 8,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 20.47,
+     "chosen": false
+    },
+    {
+     "bar": 32,
+     "lift": 2.75,
+     "usable": true,
+     "seconds": 81.1,
+     "chosen": true
+    }
+   ]
+  },
+  {
+   "trigram": "li",
+   "file": "pick10-retrowave.mp3",
+   "bpm": 100.0,
+   "chosenBar": 26,
+   "drops": [
+    {
+     "bar": 4,
+     "lift": 2.5,
+     "usable": false,
+     "seconds": 9.62,
+     "chosen": false
+    }
+   ]
+  },
+  {
+   "trigram": "dui",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "bpm": 120.0,
+   "chosenBar": 56,
+   "drops": [
+    {
+     "bar": 7,
+     "lift": 3.0,
+     "usable": false,
+     "seconds": 14.02,
+     "chosen": false
+    },
+    {
+     "bar": 23,
+     "lift": 2.25,
+     "usable": true,
+     "seconds": 46.02,
+     "chosen": false
+    },
+    {
+     "bar": 56,
+     "lift": 3.5,
+     "usable": true,
+     "seconds": 112.02,
+     "chosen": true
+    }
+   ]
+  }
+ ]
+}
