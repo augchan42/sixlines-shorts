@@ -18,6 +18,10 @@ const run = (cmd, args) => execFileSync(cmd, args, { cwd: root, encoding: "utf8"
 const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
 const wanted = parseNumbers(process.argv[2]);
 const numbers = wanted === "all" ? rows.filter((r) => r.copy).map((r) => r.number) : wanted;
+// Read once, before any render writes series/renders/, so every hexagram in this run
+// records the commit and cleanliness of the tree it was actually rendered from.
+const commit = run("git", ["rev-parse", "HEAD"]).trim();
+const clean = run("git", ["status", "--porcelain"]).trim() === "";
 
 const renderOne = async (n) => {
   const row = rows.find((r) => r.number === n);
@@ -47,8 +51,6 @@ const renderOne = async (n) => {
 
   const caption = postCaption(row);
   writeFileSync(path.join(dir, "caption.txt"), caption);
-  const commit = run("git", ["rev-parse", "HEAD"]).trim();
-  const clean = run("git", ["status", "--porcelain"]).trim() === "";
   const files = Object.fromEntries(
     [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, ...props.screens.map((s) => s.src), ...props.plates].map((f) => [f, sha256(f)]),
   );
