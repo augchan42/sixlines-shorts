@@ -2,8 +2,8 @@ import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, us
 import { glow } from "../fx/Glitch";
 import { fonts } from "../lib/fonts";
 
-// Creator credit, then the icon and call to action.
-export const EndCard: React.FC<{ credit: string; cta: string; icon: string }> = ({ credit, cta, icon }) => {
+// Creator credit, then the icon, call to action and, if given, the website.
+export const EndCard: React.FC<{ credit: string; cta: string; icon: string; url?: string }> = ({ credit, cta, icon, url }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const whiteOut = interpolate(frame, [0, 6], [1, 0], { extrapolateRight: "clamp" });
@@ -27,6 +27,9 @@ export const EndCard: React.FC<{ credit: string; cta: string; icon: string }> = 
       <div style={{ marginTop: 160, display: "flex", flexDirection: "column", alignItems: "center", opacity: ctaIn }}>
         <Img src={staticFile(icon)} style={{ width: 200 }} />
         <div style={{ marginTop: 36, fontFamily: fonts.serif, fontSize: 52, color: "#f4efe4" }}>{cta}</div>
+        {url && (
+          <div style={{ marginTop: 28, fontFamily: fonts.pixel, fontSize: 60, color: "#6cff7a", textShadow: "0 0 14px #6cff7a" }}>{url}</div>
+        )}
       </div>
       <AbsoluteFill style={{ backgroundColor: "#fff", opacity: whiteOut }} />
     </AbsoluteFill>

@@ -31,6 +31,7 @@ export const spike1 = {
     { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
   ],
   cta: "Cast yours free · Six Lines",
+  url: "sixlines.day",
 };
 
 // Beats: hook 0, hexagram 4, meaning 12 and 16, question 20, drop 24, screens every 5, CTA 44, end 51.
@@ -92,7 +93,7 @@ export const Series1: React.FC = () => {
             </Sequence>
           ))}
           <Sequence {...span(P.cta, P.end)}>
-            <EndCard credit="~sixlines" cta={spike1.cta} icon={qian.icon} />
+            <EndCard credit="~sixlines" cta={spike1.cta} url={spike1.url} icon={qian.icon} />
           </Sequence>
         </Camera>
         <Sequence from={0} durationInFrames={f(P.drop)}>
