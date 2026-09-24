@@ -36,7 +36,7 @@ Timing is in beats and counted from the drop `D`, the beat where the music's bas
 | Meaning | 4+H → D−4 | Two text groups of 3–6 words, each held at least 2 s, over a Yilin plate and code rain. |
 | Question | D−4 → D | One open question over code rain, on the breakdown. |
 | Showcase | D → D+20 | Four app screens with captions, 5 beats each (at least 2 s each at every chosen tempo). |
-| End card | D+20 → D+27 | Rendered in Blender (blender/endcard.py, user's review 2026-09-24): the short's hexagram turns into six yang lines, SIX LINES in Goudy outline rises above them, "REVEAL THE MOMENT." types on in Goudy caps with a cursor, then "sixlines.day" in green pixel type; haze, a sweeping searchlight and an amber backlight (Blade Runner). The transition follows the upper trigram's track: join for the calm tracks (kun, gen), flip for the steady ones (qian, li), snap for the ones that jump at the drop or drive (zhen, kan, xun, dui). Fade to black. It replaces the "~sixlines" credit from the first short. |
+| End card | D+20 → D+27 | Rendered in Blender (blender/endcard.py, user's review 2026-09-24): the short's hexagram turns into six yang lines, SIX LINES in Goudy outline rises above them, "REVEAL THE MOMENT." types on in Goudy caps with a cursor, then "sixlines.day" in green pixel type; haze, a sweeping searchlight and an amber backlight (Blade Runner). Every short uses the same transition: each yin line's halves slide together and fuse, in turn (the user's pick of join, flip, snap and fill). Fade to black. It replaces the "~sixlines" credit from the first short. |
 
 The hexagram part is `H` beats long, 8 by default, and the meaning runs from 4 + H to D−4. It needs at least 4 s (two groups of at least 2 s), so the timing is chosen in this order:
 

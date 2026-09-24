@@ -20,12 +20,8 @@ export type SeriesRow = {
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
 
-// The end card's transition, by the energy of the upper trigram's track
-// (docs/research/2026-09-24-transitions.md): the calm tracks join, the steady ones flip,
-// and the ones that jump at the drop, or drive, snap every line shut on the downbeat.
-const ENDCARD_MODE: Record<string, EndcardMode> = {
-  kun: "join", gen: "join", qian: "flip", li: "flip", zhen: "snap", kan: "snap", xun: "snap", dui: "snap",
-};
+// The end card's transition: each yin line's halves fuse in turn (the user's pick, 2026-09-24).
+const ENDCARD_MODE: EndcardMode = "join";
 
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
   if (!row.copy) throw new Error(`hexagram ${row.number} has no copy in series/copy.json`);
@@ -52,7 +48,7 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
   };
   // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.
   const plan = seriesPlan(merged.bpm, merged.drop);
-  const mode = ENDCARD_MODE[row.upper];
+  const mode = ENDCARD_MODE;
   return {
     ...merged,
     hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
