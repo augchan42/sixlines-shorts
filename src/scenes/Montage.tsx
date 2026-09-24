@@ -52,11 +52,12 @@ const LINE = 50;
 const LINE_GAP = LINE * 0.6;
 const TRIGRAM_GAP = LINE * 1.8;
 
+const green = "#6cff7a";
+
 export const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const perLine = (durationInFrames * 0.6) / 6;
-  const green = "#6cff7a";
   return (
     <RGBSplit amount={frame < 3 ? 16 : 4} seed="hex">
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", paddingBottom: 240 }}>
@@ -81,15 +82,20 @@ export const Hexagram: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexag
           );
         })}
       </AbsoluteFill>
-      <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 330 }}>
-        <div style={{ fontFamily: fonts.serif, fontSize: 150, color: "#fff", textShadow: glow() }}>{hexagram.zh}</div>
-        <div style={{ fontFamily: fonts.serif, fontSize: 58, color: green, marginTop: 10 }}>
-          {hexagram.number} · {hexagram.pinyin} · {hexagram.name}
-        </div>
-      </AbsoluteFill>
+      <HexagramTitle hexagram={hexagram} />
     </RGBSplit>
   );
 };
+
+// The hexagram's Chinese name and "1 · Qián · The Creative" under it.
+export const HexagramTitle: React.FC<{ hexagram: ShortProps["hexagram"] }> = ({ hexagram }) => (
+  <AbsoluteFill style={{ justifyContent: "flex-end", alignItems: "center", paddingBottom: 330 }}>
+    <div style={{ fontFamily: fonts.serif, fontSize: 150, color: "#fff", textShadow: glow() }}>{hexagram.zh}</div>
+    <div style={{ fontFamily: fonts.serif, fontSize: 58, color: green, marginTop: 10 }}>
+      {hexagram.number} · {hexagram.pinyin} · {hexagram.name}
+    </div>
+  </AbsoluteFill>
+);
 
 // The pattern line holds while the plates behind it change every half-beat.
 export const PatternLine: React.FC<{ text: string; plates: string[] }> = ({ text, plates }) => {

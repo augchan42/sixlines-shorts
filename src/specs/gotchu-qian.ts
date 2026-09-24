@@ -1,3 +1,4 @@
+import { hexagramClip } from "../lib/clips";
 import type { GotchuProps } from "../schema";
 import { qian } from "./qian";
 
@@ -21,6 +22,7 @@ export const gotchuQian: GotchuProps = {
   clock: { screen: "assets/matrix-verse.png", backdrop: plate("1-60") },
   verses: ["assets/matrix-yilin-1-1.png", "assets/matrix-yilin-1-9.png"],
   hexagram: qian.hexagram,
+  hexagramClip: hexagramClip(qian.hexagram.lines, 110, 4),
   breakdown: "LETS CONTINUE..",
   // Green, grey, then red into the drop.
   breakdownArt: [plate("1-35"), plate("1-19"), plate("1-34")],

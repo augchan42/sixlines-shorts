@@ -1,4 +1,5 @@
-import { Composition } from "remotion";
+import { Composition, staticFile } from "remotion";
+import { hexagramClip } from "./lib/clips";
 import { beatFrame } from "./lib/timing";
 import { gotchuSchema, shortSchema, type GotchuProps, type ShortProps } from "./schema";
 import { CodeRain } from "./scenes/CodeRain";
@@ -53,9 +54,21 @@ export const Root: React.FC = () => (
       height={1920}
       fps={FPS}
       durationInFrames={1}
-      calculateMetadata={({ props }: { props: GotchuProps }) => ({
-        durationInFrames: beatFrame({ fps: FPS, bpm: props.bpm, firstBeat: props.firstBeat }, gotchuPlan(props).end),
-      })}
+      calculateMetadata={async ({ props }: { props: GotchuProps }) => {
+        const p = gotchuPlan(props);
+        if (props.hexagramClip) {
+          const beats = p.breakdown - p.hexagram;
+          const expected = hexagramClip(props.hexagram.lines, props.bpm, beats);
+          const make = `npm run blender -- --lines ${props.hexagram.lines.join("")} --bpm ${props.bpm} --beats ${beats}`;
+          if (props.hexagramClip !== expected) {
+            throw new Error(`hexagramClip is ${props.hexagramClip}, but this hexagram and tempo need ${expected}. Make it with: ${make}`);
+          }
+          const res = await fetch(staticFile(props.hexagramClip));
+          await res.body?.cancel();
+          if (!res.ok) throw new Error(`${props.hexagramClip} is missing. Make it with: ${make}`);
+        }
+        return { durationInFrames: beatFrame({ fps: FPS, bpm: props.bpm, firstBeat: props.firstBeat }, p.end) };
+      }}
     />
   </>
 );
