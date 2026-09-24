@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "blender": "node scripts/blender.mjs",
     "studio": "remotion studio",
     "render": "remotion render src/index.ts",
     "typecheck": "tsc --noEmit",

@@ -27,11 +27,21 @@ npm run assets -- --hexagram 1,2                # stipple plates for these hexag
 
 `public/assets/` and `public/local/` are gitignored. The reference shorts stay out of git because their soundtracks are commercial tracks. Set `SIXLINES_IOS` if the iOS repo is not at `../sixlines-ios`.
 
+3D pieces are rendered in Blender (5.2 or later), headless:
+
+```sh
+npm run blender -- --lines 111111 --bpm 110              # public/assets/3d/hexagram-111111-110bpm-4b.mp4
+npm run blender -- --lines 111111 --bpm 110 --preview    # half size, low samples, for a quick look
+```
+
+`--lines` is bottom line first, 1 = yang. Set `BLENDER` if Blender is not in `/Applications`. Logs go to `out/`.
+
 ## Use
 
 ```sh
 npm run studio                                  # preview and scrub in the browser
 npm run render -- Qian out/qian.mp4             # 1080×1920, 30 fps, H.264
+npm test                                        # clip naming (Node) and slab layout (Python) tests
 ```
 
 A new short is a new spec in `src/specs/` (text, hexagram, art keys, screens, beat grid) registered in `src/Root.tsx`.

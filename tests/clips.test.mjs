@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import test from "node:test";
 import { clipFrames, hexagramClip } from "../src/lib/clips.ts";
 import { beatFrame } from "../src/lib/timing.ts";
@@ -23,5 +24,9 @@ test("a clip covers its section wherever the section starts", () => {
 });
 
 test("frame count matches blender/layout.py", () => {
-  assert.equal(clipFrames(4, 110), 67);
+  const cases = [];
+  for (const bpm of [80, 107.4, 110, 129.8, 174]) for (const beats of [1, 2, 4, 8]) cases.push([beats, bpm]);
+  const py = `import json, sys; sys.path.insert(0, "blender"); from layout import frame_count; print(json.dumps([frame_count(b, t) for b, t in ${JSON.stringify(cases)}]))`;
+  const counts = JSON.parse(execFileSync("python3", ["-c", py], { encoding: "utf8" }));
+  assert.deepEqual(counts, cases.map(([beats, bpm]) => clipFrames(beats, bpm)));
 });
