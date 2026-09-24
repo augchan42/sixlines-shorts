@@ -69,5 +69,9 @@
   "assets/yilin/stipple-58-24.webp": "8e6fad91c2f0ebd3c25efda6f07f1c4e88d4f1ceb4d8d23ef2d86f9ce6bbd572",
   "out/series/58-dui/short.mp4": "6b768d923fd89f316020c4900d791a4f5004567e09655205efce823e547e8183",
   "out/series/58-dui/share.mp4": "de2358a93419d7fbdb95801728bdadd2b0b859326b4a54cf4c71a227e67d1e96"
+ },
+ "caption": {
+  "commit": "4500af8293aef5302a732ddb9133be8ad8a2807a",
+  "clean": true
  }
 }

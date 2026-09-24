@@ -69,5 +69,9 @@
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
   "out/series/29-kan/short.mp4": "5e7dc7e07ab47f1806a4c357cf996627e0272d762c7c732548230ae35d0947a9",
   "out/series/29-kan/share.mp4": "1f1dc28fb3f3970ee94055ad0f5355c5ad45c6941985f47b2e8cebd81c198a79"
+ },
+ "caption": {
+  "commit": "4500af8293aef5302a732ddb9133be8ad8a2807a",
+  "clean": true
  }
 }

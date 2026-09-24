@@ -69,5 +69,9 @@
   "assets/yilin/stipple-2-32.webp": "e9d8fc07b3a0b76bdb1e70056f9c9386c74137c12c6c9f189a53757c3af66a77",
   "out/series/02-kun/short.mp4": "d44c44e651404edf86d1bb0806699aeb302a5d3cac0506a43b626775ae36b99f",
   "out/series/02-kun/share.mp4": "3b285f7423e5a3ebf1ca4a80dd4566c305266d40af3ae2b0f0902d5cb97b2e0f"
+ },
+ "caption": {
+  "commit": "4500af8293aef5302a732ddb9133be8ad8a2807a",
+  "clean": true
  }
 }
