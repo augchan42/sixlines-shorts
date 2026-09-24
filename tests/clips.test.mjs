@@ -1,12 +1,17 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import test from "node:test";
-import { clipFrames, hexagramClip } from "../src/lib/clips.ts";
+import { clipFrames, endcardClip, hexagramClip } from "../src/lib/clips.ts";
 import { beatFrame } from "../src/lib/timing.ts";
 
 test("clip names carry the lines, tempo and length", () => {
   assert.equal(hexagramClip([1, 1, 1, 1, 1, 1], 110, 4), "assets/3d/hexagram-111111-110bpm-4b.mp4");
   assert.equal(hexagramClip([1, 0, 1, 0, 1, 0], 107.4, 4), "assets/3d/hexagram-101010-107.4bpm-4b.mp4");
+});
+
+test("end-card names carry the treatment as well", () => {
+  assert.equal(endcardClip([0, 1, 0, 0, 1, 0], 100, 7, "snap"), "assets/3d/endcard-snap-010010-100bpm-7b.mp4");
+  assert.equal(endcardClip([0, 1, 0, 0, 1, 0], 82.5, 7, "join"), "assets/3d/endcard-join-010010-82.5bpm-7b.mp4");
 });
 
 test("preview clips never share a name with full renders", () => {

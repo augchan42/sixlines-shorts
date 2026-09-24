@@ -1,4 +1,4 @@
-import { hexagramClip } from "../lib/clips.ts";
+import { endcardClip, type EndcardMode, hexagramClip } from "../lib/clips.ts";
 import { seriesPlan } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
@@ -19,6 +19,13 @@ export type SeriesRow = {
 };
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
+
+// The end card's transition, by the energy of the upper trigram's track
+// (docs/research/2026-09-24-transitions.md): the calm tracks join, the steady ones flip,
+// and the ones that jump at the drop, or drive, snap every line shut on the downbeat.
+const ENDCARD_MODE: Record<string, EndcardMode> = {
+  kun: "join", gen: "join", qian: "flip", li: "flip", zhen: "snap", kan: "snap", xun: "snap", dui: "snap",
+};
 
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
   if (!row.copy) throw new Error(`hexagram ${row.number} has no copy in series/copy.json`);
@@ -41,11 +48,14 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
       { src: `assets/screens/${n}/today.png`, caption: "YOUR DAY, READ" },
       { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
     ],
-    cta: "Reveal the moment.",
-    url: "sixlines.day",
     ...override,
   };
-  // The clip follows the merged tempo and drop, so an override that moves either gets its own clip.
-  const beats = seriesPlan(merged.bpm, merged.drop).hexagramBeats;
-  return { ...merged, hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, beats) };
+  // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.
+  const plan = seriesPlan(merged.bpm, merged.drop);
+  const mode = ENDCARD_MODE[row.upper];
+  return {
+    ...merged,
+    hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
+    endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.end - plan.cta, mode), mode },
+  };
 };

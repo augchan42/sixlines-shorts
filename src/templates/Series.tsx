@@ -8,7 +8,7 @@ import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
 import { CaptionScreen } from "../scenes/CaptionScreen";
 import { CodeRain } from "../scenes/CodeRain";
-import { EndCard } from "../scenes/EndCard";
+import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
 
@@ -84,7 +84,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
             </Sequence>
           ))}
           <Sequence {...span(s.cta, s.end)}>
-            <EndCard credit="~sixlines" cta={props.cta} url={props.url} icon="assets/icon.png" />
+            <EndCard3D clip={props.endcard.clip} />
           </Sequence>
         </Camera>
         <Sequence from={0} durationInFrames={f(s.drop)}>

@@ -105,8 +105,8 @@ export const seriesSchema = z.object({
   // Paths under public/ of the plates behind the two meaning lines.
   plates: z.tuple([z.string(), z.string()]),
   screens: z.array(z.object({ src: z.string(), caption: z.string() })).length(4),
-  cta: z.string(),
-  url: z.string(),
+  // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
+  endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap", "fill"]) }),
 });
 
 export type SeriesProps = z.infer<typeof seriesSchema>;

@@ -1,4 +1,4 @@
-// Renders the Blender clips the series needs, skipping any already in public/.
+// Renders the Blender clips the series needs (hexagram builds and end cards), skipping any already in public/.
 //   npm run series:clips -- 29 | 2,52 | all
 import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
@@ -19,10 +19,14 @@ console.log(`${jobs.length} clip(s) to render`);
 let failed = 0;
 for (const [i, j] of jobs.entries()) {
   console.log(`[${i + 1}/${jobs.length}] ${j.clip}`);
-  const run = spawnSync("node", ["scripts/blender.mjs", "--lines", j.lines, "--bpm", String(j.bpm), "--beats", String(j.beats)], { cwd: root, stdio: "inherit" });
+  const args =
+    j.kind === "endcard"
+      ? ["scripts/endcard.mjs", "--lines", j.lines, "--bpm", String(j.bpm), "--beats", String(j.beats), "--mode", j.mode, "--clip", j.clip]
+      : ["scripts/blender.mjs", "--lines", j.lines, "--bpm", String(j.bpm), "--beats", String(j.beats)];
+  const run = spawnSync("node", args, { cwd: root, stdio: "inherit" });
   if (run.status !== 0) failed++;
 }
 if (failed) {
-  console.error(`${failed} clip(s) failed; see out/blender-*.log`);
+  console.error(`${failed} clip(s) failed; see out/blender-*.log and out/endcards/*.log`);
   process.exit(1);
 }

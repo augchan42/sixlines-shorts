@@ -14,9 +14,17 @@ export const clipJobs = (propsList, exists) => {
   const seen = new Set();
   const jobs = [];
   for (const p of propsList) {
-    if (seen.has(p.hexagramClip) || exists(p.hexagramClip)) continue;
-    seen.add(p.hexagramClip);
-    jobs.push({ clip: p.hexagramClip, lines: p.hexagram.lines.join(""), bpm: p.bpm, beats: seriesPlan(p.bpm, p.drop).hexagramBeats });
+    const plan = seriesPlan(p.bpm, p.drop);
+    const lines = p.hexagram.lines.join("");
+    const wanted = [
+      { kind: "hexagram", clip: p.hexagramClip, lines, bpm: p.bpm, beats: plan.hexagramBeats },
+      { kind: "endcard", clip: p.endcard.clip, lines, bpm: p.bpm, beats: plan.end - plan.cta, mode: p.endcard.mode },
+    ];
+    for (const job of wanted) {
+      if (seen.has(job.clip) || exists(job.clip)) continue;
+      seen.add(job.clip);
+      jobs.push(job);
+    }
   }
   return jobs;
 };
@@ -53,6 +61,7 @@ export const missingAssets = (props, row, { exists, sha256 }) => {
     if (exists(cert) && sha256(cert) !== row.music.certificate.sha256) problems.push(`${cert} is not the recorded certificate`);
   }
   need(props.hexagramClip, `npm run series:clips -- ${n}`);
+  need(props.endcard.clip, `npm run series:clips -- ${n}`);
   for (const s of props.screens) need(s.src, "npm run series:screens");
   for (const p of props.plates) need(p, `npm run assets -- --hexagram ${n}`);
   return problems;
