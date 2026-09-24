@@ -65,6 +65,11 @@ for (const [name, rel] of Object.entries(copies)) {
 }
 
 for (const [name, key] of Object.entries(downloads)) {
+  try {
+    await access(path.join(out, name));
+    console.log(`present  ${name}`);
+    continue;
+  } catch {}
   const res = await fetch(`${cdn}/${key}`);
   if (!res.ok) throw new Error(`${res.status} fetching ${cdn}/${key}`);
   await writeFile(path.join(out, name), Buffer.from(await res.arrayBuffer()));
@@ -72,6 +77,11 @@ for (const [name, key] of Object.entries(downloads)) {
 }
 
 for (const [name, stop] of Object.entries(screens)) {
+  try {
+    await access(path.join(out, name));
+    console.log(`present  ${name}`);
+    continue;
+  } catch {}
   const url = `${cdn}/${tour}/${stop}.webp`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`${res.status} fetching ${url}`);
