@@ -36,6 +36,11 @@ class SectionTest(unittest.TestCase):
         s = section(track([3] * 10 + [9] * 4 + [6] * 30), refuse_12)
         self.assertNotEqual(s["drop"], 12.0)
 
+    def test_shortens_the_lead_in_when_six_bars_make_the_short_too_long(self):
+        refuse_12 = lambda bpm, drops: [["too long"] if d == 12.0 else [] for d in drops]
+        s = section(track([3] * 10 + [9] * 30), refuse_12)
+        self.assertEqual(s, {"start": 0.1 + 5 * 2.0, "firstBeat": 0.0, "drop": 10.0})
+
     def test_asks_the_plan_in_node(self):
         self.assertEqual(add_sections.plan_problems(90, [10.862, 8.05]), [["40.00 s long"], []])
 

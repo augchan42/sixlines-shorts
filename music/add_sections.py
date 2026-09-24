@@ -1,8 +1,8 @@
 """Adds a section of each named track to music/sections.json under a trigram, at the
 biggest energy rise that leaves room for the rest of the short and that the short's plan
 accepts (scripts/series/limits.mjs: at most 38 s, text and screens at least 2 s), starting
-six bars before it (the hook and the hexagram build) or at the top of the track when the
-rise is earlier.
+six bars before it (the hook and the hexagram build), or five or four when six make the
+short too long, or at the top of the track when the rise is earlier.
 
   python3 music/add_sections.py pick13:kun pick17:kun ...   # file-name prefix:trigram
 
@@ -15,16 +15,17 @@ import os
 import subprocess
 import sys
 
-PRE = 6
+# Bars before the rise, longest first.
+LEAD_INS = (6, 5, 4)
 # The longest a short runs after its drop (seriesPlan's "after" mode), in beats, and a margin.
 AFTER_BEATS = 44
 MARGIN = 1.0
 
 
-def at(track, i):
+def at(track, i, pre):
     bar = track["barSeconds"]
-    if i >= PRE:
-        return {"start": round(track["firstBeat"] + (i - PRE) * bar, 3), "firstBeat": 0.0, "drop": round(PRE * bar, 3)}
+    if i >= pre:
+        return {"start": round(track["firstBeat"] + (i - pre) * bar, 3), "firstBeat": 0.0, "drop": round(pre * bar, 3)}
     return {"start": 0.0, "firstBeat": track["firstBeat"], "drop": round(track["firstBeat"] + i * bar, 3)}
 
 
@@ -37,9 +38,9 @@ def plan_problems(bpm, drops):
     return json.loads(out)
 
 
-def section(track, problems=plan_problems):
-    """The section at the biggest rise whose short fits; problems(bpm, drops) lists what is
-    wrong with each drop's short."""
+def candidates(track, problems=plan_problems):
+    """A section for every rise whose short fits, with the longest lead-in that fits,
+    biggest rise first, each with its rise."""
     bar = track["barSeconds"]
     energy = track["energy"]
     rises = []
@@ -48,11 +49,25 @@ def section(track, problems=plan_problems):
             break
         rises.append(((energy[i] + energy[i + 1]) / 2 - sum(energy[i - 4 : i]) / 4, i))
     rises.sort(key=lambda r: -r[0])
-    candidates = [at(track, i) for _, i in rises]
-    for c, p in zip(candidates, problems(track["bpm"], [c["drop"] for c in candidates])):
-        if not p:
-            return c
-    raise ValueError("no rise in the track makes a short that fits")
+    tries = [[dict(at(track, i, pre), rise=round(r, 2)) for pre in LEAD_INS] for r, i in rises]
+    flat = [o for t in tries for o in t]
+    ok = [not p for p in problems(track["bpm"], [o["drop"] for o in flat])]
+    fits = iter(ok)
+    options = []
+    for t in tries:
+        good = [o for o in t if next(fits)]
+        if good:
+            options.append(good[0])
+    return options
+
+
+def section(track, problems=plan_problems):
+    """The section at the biggest rise whose short fits; problems(bpm, drops) lists what is
+    wrong with each drop's short."""
+    options = candidates(track, problems)
+    if not options:
+        raise ValueError("no rise in the track makes a short that fits")
+    return {k: v for k, v in options[0].items() if k != "rise"}
 
 
 def main():
