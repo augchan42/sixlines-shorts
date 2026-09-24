@@ -1,7 +1,7 @@
 {
  "hexagram": 57,
- "rendered": "2026-09-24T13:12:17.732Z",
- "commit": "733a88915b3d9b901926204d9da5256d45bc1a59",
+ "rendered": "2026-09-24T11:44:15.119Z",
+ "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
  "clean": true,
  "seconds": 35.413333,
  "shareKbps": 5067,
@@ -54,7 +54,6 @@
    }
   ],
   "hexagramClip": "assets/3d/hexagram-011011-95bpm-8b.mp4",
-  "style": "building",
   "endcard": {
    "clip": "assets/3d/endcard-snap-011011-95bpm-9b.mp4",
    "mode": "snap"
@@ -71,7 +70,7 @@
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-57-48.webp": "d725503d82b36cbd3708a29533391f2ef9a6e02348fef1cf7aa57a9d7c766a9b",
   "assets/yilin/stipple-57-64.webp": "f2f25217c450f64648954b4dfae25c48208119440d5d7618565d5c1d750e0745",
-  "out/series/57-xun/short.mp4": "e4608c37e1d4fce2ba667bb1a0a545a5aa5788f7efb3a353333d7ae39099f3c8",
-  "out/series/57-xun/share.mp4": "01bc9ae79d20b5a488cf06a44a0ba23dba6cbf620314c0784d36f750e62a20a3"
+  "out/series/57-xun/short.mp4": "15e09747e9e71ef1e770005dc4fbad83d2fe9287cdae4e14a336f322291539ef",
+  "out/series/57-xun/share.mp4": "4fcc59ba2bab3a527e221d5861e30cd1c2f1b272408bb2832c5c3dc26015a2cb"
  }
 }

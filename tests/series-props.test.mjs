@@ -48,8 +48,3 @@ test("an override that changes the tempo changes the clip too", () => {
 test("a row without copy cannot become a short", () => {
   assert.throws(() => seriesProps({ ...row, copy: null }), /hexagram 29 has no copy/);
 });
-
-test("the cut style follows the energy of the upper trigram's track", () => {
-  const styles = Object.fromEntries(["kun", "qian", "kan", "dui"].map((t) => [t, seriesProps({ ...row, upper: t }).style]));
-  assert.deepEqual(styles, { kun: "calm", qian: "steady", kan: "building", dui: "driving" });
-});

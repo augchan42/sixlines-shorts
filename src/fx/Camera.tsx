@@ -1,13 +1,9 @@
 import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remotion";
-import { beatFrame, framesPerBeat, jitter, useGrid } from "../lib/timing";
-import { RGBSplit } from "./Glitch";
+import { beatFrame, jitter, useGrid } from "../lib/timing";
 
 // A cut between two shots. Whips smear the frame sideways (or up) across the cut;
-// a zoom pushes into the outgoing shot and lands the incoming one from zoomed in; a dip
-// fades through black; a line wipe sweeps a glowing green line down the frame, covering the
-// outgoing shot and uncovering the incoming one; a plain cut has no transition.
-// `beats` is how long each side of a dip or line wipe takes (default 4 frames).
-export type Cut = { beat: number; kind: "whip-left" | "whip-right" | "whip-up" | "zoom" | "dip" | "line" | "cut"; beats?: number };
+// a zoom pushes into the outgoing shot and lands the incoming one from zoomed in.
+export type Cut = { beat: number; kind: "whip-left" | "whip-right" | "whip-up" | "zoom" };
 
 // From `beat` until the next segment: how hard the frame punches on each beat,
 // and how much it drifts like a handheld camera.
@@ -26,12 +22,10 @@ const easeIn = (t: number) => t * t * t;
 
 // Offset, scale and blur for a frame near a cut. `u` is frames from the cut; negative
 // means the outgoing shot. Returns null outside the transition window.
-const cutPose = (cut: Cut, u: number, h: number, width: number, height: number) => {
-  if (cut.kind === "cut" || cut.kind === "line" || u < -h || u >= h) return null;
+const cutPose = (cut: Cut, u: number, width: number, height: number) => {
+  if (u < -HALF || u >= HALF) return null;
   // 0 far from the cut, 1 on it.
-  const q = u < 0 ? (u + h) / h : 1 - u / h;
-  if (cut.kind === "dip") return { x: 0, y: 0, scale: 1, blurX: 0, blurY: 0, bright: 1 - Math.sin((q * Math.PI) / 2) };
-  const p = easeIn(q);
+  const p = easeIn(u < 0 ? (u + HALF) / HALF : 1 - u / HALF);
   if (cut.kind === "zoom") {
     const scale = u < 0 ? 1 + p * 0.9 : 1 + p * 0.6;
     return { x: 0, y: 0, scale, blurX: p * 18, blurY: p * 18, bright: 1 + p * 0.6 };
@@ -51,11 +45,8 @@ export const Camera: React.FC<{
   motion: Motion[];
   shakes: Shake[];
   hits?: Hit[];
-  // Beats with a white flash, and beats with an RGB-split burst, each fading over 6 frames.
-  flashes?: number[];
-  glitches?: number[];
   children: React.ReactNode;
-}> = ({ cuts, motion, shakes, hits = [], flashes = [], glitches = [], children }) => {
+}> = ({ cuts, motion, shakes, hits = [], children }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
   const grid = useGrid();
@@ -98,25 +89,8 @@ export const Camera: React.FC<{
   let blurX = 0;
   let blurY = 0;
   let bright = 1;
-  const half = (cut: Cut) => (cut.beats ? cut.beats * framesPerBeat(grid) : HALF);
-  // Fading bursts: 1 on the beat, 0 six frames later.
-  const burst = (beats: number[]) =>
-    Math.max(0, ...beats.map((b) => frame - at(b)).filter((age) => age >= 0 && age < 6).map((age) => 1 - age / 6));
-  const flash = burst(flashes);
-  const glitch = burst(glitches);
-
-  // The line wipe: black above the line on the outgoing shot, below it on the incoming one.
-  let wipe: { top: number; bottom: number; line: number } | null = null;
-  for (const cut of cuts.filter((c) => c.kind === "line")) {
-    const u = frame - at(cut.beat);
-    const h = half(cut);
-    if (u < -h || u >= h) continue;
-    const y = u < 0 ? ((u + h) / h) * height : (u / h) * height;
-    wipe = u < 0 ? { top: 0, bottom: height - y, line: y } : { top: y, bottom: 0, line: y };
-  }
-
   for (const cut of cuts) {
-    const pose = cutPose(cut, frame - at(cut.beat), half(cut), width, height);
+    const pose = cutPose(cut, frame - at(cut.beat), width, height);
     if (!pose) continue;
     x += pose.x;
     y += pose.y;
@@ -144,22 +118,8 @@ export const Camera: React.FC<{
             undefined,
         }}
       >
-        <RGBSplit amount={glitch * 22} seed="camera-glitch">
-          {children}
-        </RGBSplit>
+        {children}
       </AbsoluteFill>
-      {wipe && (
-        <>
-          <div style={{ position: "absolute", left: 0, right: 0, top: wipe.top, bottom: wipe.bottom, backgroundColor: "#000" }} />
-          <div
-            style={{
-              position: "absolute", left: 0, right: 0, top: wipe.line - 7, height: 14,
-              backgroundColor: "#b8ffc0", boxShadow: "0 0 24px 6px #6cff7a, 0 0 80px 20px rgba(108,255,122,0.5)",
-            }}
-          />
-        </>
-      )}
-      {flash > 0 && <AbsoluteFill style={{ backgroundColor: "#fff", opacity: flash * 0.85 }} />}
     </AbsoluteFill>
   );
 };

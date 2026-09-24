@@ -1,9 +1,8 @@
 import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
-import { Camera } from "../fx/Camera";
+import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
-import { seriesCuts } from "../lib/seriesCuts";
 import { seriesPlan } from "../lib/seriesPlan";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
@@ -35,13 +34,32 @@ export const Series: React.FC<SeriesProps> = (props) => {
   const half = s.meaningLength / 2;
   const hexEnd = s.hexagram + s.hexagramBeats;
   const screenBeats = (s.cta - s.showcase) / props.screens.length;
-  const camera = seriesCuts(props.style, s, props.screens.length);
+  const cuts: Cut[] = [
+    { beat: s.hexagram, kind: "zoom" },
+    { beat: s.meaning, kind: "whip-up" },
+    { beat: s.meaning + half, kind: "whip-left" },
+    { beat: s.question, kind: "whip-right" },
+    { beat: s.drop, kind: "zoom" },
+    ...props.screens.slice(1).map((_, i) => ({ beat: s.showcase + (i + 1) * screenBeats, kind: (i % 2 ? "whip-right" : "whip-left") as Cut["kind"] })),
+    { beat: s.cta, kind: "zoom" },
+    { beat: s.credit, kind: "whip-up" },
+  ];
   return (
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
         <FxDefs />
         <Soundtrack src={props.music} start={props.musicStart} fadeFrom={f(s.end - 2)} />
-        <Camera {...camera}>
+        <Camera
+          cuts={cuts}
+          motion={[
+            { beat: -10, punch: 0, sway: 0.3 },
+            { beat: s.meaning, punch: 0.03, sway: 0.4 },
+            { beat: s.question, punch: 0, sway: 0.2 },
+            { beat: s.drop, punch: 0.07, sway: 0.6 },
+            { beat: s.cta, punch: 0, sway: 0.2 },
+          ]}
+          shakes={[{ beat: s.drop, strength: 45, beats: 1 }]}
+        >
           <Sequence {...span(0, s.hexagram)}>
             <Hook text={props.hook} />
           </Sequence>
@@ -64,7 +82,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
           </Sequence>
           {props.screens.map((sc, i) => (
             <Sequence key={sc.src} {...span(s.showcase + i * screenBeats, s.showcase + (i + 1) * screenBeats)}>
-              <CaptionScreen src={sc.src} caption={sc.caption} color={i % 2 ? "#ffb23f" : "#7dff8a"} seed={`cap-${i}`} boxed />
+              <CaptionScreen src={sc.src} caption={sc.caption} color={i % 2 ? "#ffb23f" : "#7dff8a"} seed={`cap-${i}`} />
             </Sequence>
           ))}
           <Sequence {...span(s.cta, s.credit)}>
