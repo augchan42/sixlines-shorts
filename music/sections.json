@@ -7,7 +7,7 @@
   "sampleRate": 22050,
   "hop": 256
  },
- "note": "30 s from start. firstBeat and drop are seconds from start. Chosen by listening on 2026-09-24.",
+ "note": "30 s from start. firstBeat and drop are seconds from start. Chosen by listening on 2026-09-24. Certificates (Pixabay licence certificates, kept locally in public/local/music/certificates/) were fetched signed in; the audio was re-downloaded then and matched sha256.",
  "sections": [
   {
    "trigram": "qian",
@@ -20,7 +20,12 @@
    "bpm": 102.0,
    "start": 37.671,
    "firstBeat": 0.0,
-   "drop": 14.12
+   "drop": 14.12,
+   "certificate": {
+    "file": "synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt",
+    "sha256": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
   },
   {
    "trigram": "kun",
@@ -33,7 +38,12 @@
    "bpm": 90.0,
    "start": 0.0,
    "firstBeat": 0.049,
-   "drop": 8.05
+   "drop": 8.05,
+   "certificate": {
+    "file": "synthwave-analog-dreams-synthwave-9497-license.txt",
+    "sha256": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+    "downloaded": "2026-09-24 02:36:46 UTC"
+   }
   },
   {
    "trigram": "zhen",
@@ -46,7 +56,12 @@
    "bpm": 100.0,
    "start": 158.426,
    "firstBeat": 0.0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
   },
   {
    "trigram": "kan",
@@ -59,7 +74,12 @@
    "bpm": 100.0,
    "start": 91.223,
    "firstBeat": 0.0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "upbeat-synthwave-353881-license.txt",
+    "sha256": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
   },
   {
    "trigram": "gen",
@@ -72,7 +92,12 @@
    "bpm": 82.5,
    "start": 34.934,
    "firstBeat": 0.0,
-   "drop": 14.54
+   "drop": 14.54,
+   "certificate": {
+    "file": "synthwave-80s-retro-inspiring-synth-pop-570162-license.txt",
+    "sha256": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   }
   },
   {
    "trigram": "xun",
@@ -85,7 +110,12 @@
    "bpm": 95.0,
    "start": 65.943,
    "firstBeat": 0.0,
-   "drop": 15.16
+   "drop": 15.16,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
   },
   {
    "trigram": "li",
@@ -98,7 +128,12 @@
    "bpm": 100.0,
    "start": 48.023,
    "firstBeat": 0.0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   }
   },
   {
    "trigram": "dui",
@@ -111,7 +146,12 @@
    "bpm": 120.0,
    "start": 98.023,
    "firstBeat": 0.0,
-   "drop": 14.0
+   "drop": 14.0,
+   "certificate": {
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
+   }
   }
  ]
 }
