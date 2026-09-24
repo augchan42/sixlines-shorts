@@ -244,8 +244,8 @@
    }
   },
   {
-   "trigram": "li",
-   "symbol": "☲",
+   "trigram": "xun",
+   "symbol": "☴",
    "file": "pick18-dreamy-synthwave.mp3",
    "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
    "title": "Dreamy Synthwave Music by Tunetank",
@@ -318,37 +318,37 @@
   {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick16-synthwave-mondamusic.mp3",
-   "sha256": "18288e5b7aaa59da690b512a32cf2642110570b5192214c6e561507ce25d85c2",
-   "title": "Synthwave by MondaMusic",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-synthwave-572999/",
-   "bpm": 136.76,
-   "start": 0.0,
-   "firstBeat": 0.026,
-   "drop": 7.046,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120.0,
+   "start": 4.023,
+   "firstBeat": 0.0,
+   "drop": 12.0,
    "certificate": {
-    "file": "synthwave-synthwave-572999-license.txt",
-    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick23-bot-factory.mp3",
-   "sha256": "d4807b0edf516eb91de01224fba97c82ce4c26734106bfb7981e6666a208f992",
-   "title": "Bot Factory by JonasBlakewood",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-bot-factory-458322/",
-   "bpm": 147.01,
-   "start": 10.068,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120.0,
+   "start": 34.023,
    "firstBeat": 0.0,
-   "drop": 9.798,
+   "drop": 12.0,
    "certificate": {
-    "file": "synthwave-bot-factory-458322-license.txt",
-    "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   }
  ],
@@ -359,6 +359,20 @@
    "trigram": "xun",
    "date": "2026-09-25",
    "reason": "The user found it far too fast on hexagram 9 (126 bpm) and took it out of rotation."
+  },
+  {
+   "file": "pick16-synthwave-mondamusic.mp3",
+   "title": "Synthwave by MondaMusic",
+   "trigram": "dui",
+   "date": "2026-09-25",
+   "reason": "136.76 bpm, faster than pick15, which the user found too fast; dropped with it."
+  },
+  {
+   "file": "pick23-bot-factory.mp3",
+   "title": "Bot Factory by JonasBlakewood",
+   "trigram": "dui",
+   "date": "2026-09-25",
+   "reason": "147.01 bpm, faster than pick15, which the user found too fast; dropped with it."
   }
  ]
 }

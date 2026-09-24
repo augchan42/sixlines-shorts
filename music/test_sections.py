@@ -41,6 +41,12 @@ class SectionTest(unittest.TestCase):
         s = section(track([3] * 10 + [9] * 30), refuse_12)
         self.assertEqual(s, {"start": 0.1 + 5 * 2.0, "firstBeat": 0.0, "drop": 10.0})
 
+    def test_another_part_starts_away_from_the_parts_taken(self):
+        t = track([3] * 10 + [9] * 10 + [2] * 10 + [8] * 30)
+        first = section(t)
+        second = add_sections.section(t, fits, taken=[first["start"]])
+        self.assertGreaterEqual(abs(second["start"] - first["start"]), add_sections.SPREAD)
+
     def test_asks_the_plan_in_node(self):
         self.assertEqual(add_sections.plan_problems(90, [10.862, 8.05]), [["40.00 s long"], []])
 

@@ -537,19 +537,19 @@
   "music": {
    "trigram": "xun",
    "symbol": "☴",
-   "file": "pick11-retro-synth-pop.mp3",
-   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
-   "title": "Retro Synth Pop by AliveTunes",
+   "file": "pick18-dreamy-synthwave.mp3",
+   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+   "title": "Dreamy Synthwave Music by Tunetank",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
-   "bpm": 95,
-   "start": 65.943,
+   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
+   "bpm": 100,
+   "start": 52.977,
    "firstBeat": 0,
-   "drop": 15.16,
+   "drop": 14.4,
    "certificate": {
-    "file": "synthwave-retro-synth-pop-415983-license.txt",
-    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
-    "downloaded": "2026-09-24 02:36:48 UTC"
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
   "copy": {
@@ -862,18 +862,18 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick18-dreamy-synthwave.mp3",
-   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
-   "title": "Dreamy Synthwave Music by Tunetank",
-   "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
-   "bpm": 100,
-   "start": 52.977,
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
+   "bpm": 100.05,
+   "start": 206.613,
    "firstBeat": 0,
-   "drop": 14.4,
+   "drop": 14.394,
    "certificate": {
-    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
-    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
@@ -1057,19 +1057,19 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick16-synthwave-mondamusic.mp3",
-   "sha256": "18288e5b7aaa59da690b512a32cf2642110570b5192214c6e561507ce25d85c2",
-   "title": "Synthwave by MondaMusic",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-synthwave-572999/",
-   "bpm": 136.76,
-   "start": 0,
-   "firstBeat": 0.026,
-   "drop": 7.046,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 4.023,
+   "firstBeat": 0,
+   "drop": 12,
    "certificate": {
-    "file": "synthwave-synthwave-572999-license.txt",
-    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   "copy": {
@@ -1317,19 +1317,19 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
-   "licence": "Pixabay Content License",
-   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
-   "bpm": 100.05,
-   "start": 206.613,
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100,
+   "start": 48.023,
    "firstBeat": 0,
-   "drop": 14.394,
+   "drop": 14.4,
    "certificate": {
-    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
-    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
   "copy": {
@@ -1772,19 +1772,19 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick23-bot-factory.mp3",
-   "sha256": "d4807b0edf516eb91de01224fba97c82ce4c26734106bfb7981e6666a208f992",
-   "title": "Bot Factory by JonasBlakewood",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-bot-factory-458322/",
-   "bpm": 147.01,
-   "start": 10.068,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 34.023,
    "firstBeat": 0,
-   "drop": 9.798,
+   "drop": 12,
    "certificate": {
-    "file": "synthwave-bot-factory-458322-license.txt",
-    "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   "copy": {
@@ -2227,19 +2227,19 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick10-retrowave.mp3",
-   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
-   "title": "Retrowave by NverAvetyanMusic",
-   "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
-   "bpm": 100,
-   "start": 48.023,
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
+   "bpm": 100.05,
+   "start": 206.613,
    "firstBeat": 0,
-   "drop": 14.4,
+   "drop": 14.394,
    "certificate": {
-    "file": "synthwave-retrowave-149307-license.txt",
-    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
-    "downloaded": "2026-09-24 02:36:48 UTC"
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
   "copy": {
@@ -2357,19 +2357,19 @@
   "music": {
    "trigram": "xun",
    "symbol": "☴",
-   "file": "pick11-retro-synth-pop.mp3",
-   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
-   "title": "Retro Synth Pop by AliveTunes",
+   "file": "pick18-dreamy-synthwave.mp3",
+   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+   "title": "Dreamy Synthwave Music by Tunetank",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
-   "bpm": 95,
-   "start": 65.943,
+   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
+   "bpm": 100,
+   "start": 52.977,
    "firstBeat": 0,
-   "drop": 15.16,
+   "drop": 14.4,
    "certificate": {
-    "file": "synthwave-retro-synth-pop-415983-license.txt",
-    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
-    "downloaded": "2026-09-24 02:36:48 UTC"
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
   "copy": {
@@ -2422,19 +2422,19 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick18-dreamy-synthwave.mp3",
-   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
-   "title": "Dreamy Synthwave Music by Tunetank",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
    "bpm": 100,
-   "start": 52.977,
+   "start": 48.023,
    "firstBeat": 0,
    "drop": 14.4,
    "certificate": {
-    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
-    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
   "copy": {
@@ -2747,19 +2747,19 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick16-synthwave-mondamusic.mp3",
-   "sha256": "18288e5b7aaa59da690b512a32cf2642110570b5192214c6e561507ce25d85c2",
-   "title": "Synthwave by MondaMusic",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-synthwave-572999/",
-   "bpm": 136.76,
-   "start": 0,
-   "firstBeat": 0.026,
-   "drop": 7.046,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 4.023,
+   "firstBeat": 0,
+   "drop": 12,
    "certificate": {
-    "file": "synthwave-synthwave-572999-license.txt",
-    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   "copy": {
@@ -2877,19 +2877,19 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick23-bot-factory.mp3",
-   "sha256": "d4807b0edf516eb91de01224fba97c82ce4c26734106bfb7981e6666a208f992",
-   "title": "Bot Factory by JonasBlakewood",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-bot-factory-458322/",
-   "bpm": 147.01,
-   "start": 10.068,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 34.023,
    "firstBeat": 0,
-   "drop": 9.798,
+   "drop": 12,
    "certificate": {
-    "file": "synthwave-bot-factory-458322-license.txt",
-    "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   "copy": {
@@ -3137,19 +3137,19 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick16-synthwave-mondamusic.mp3",
-   "sha256": "18288e5b7aaa59da690b512a32cf2642110570b5192214c6e561507ce25d85c2",
-   "title": "Synthwave by MondaMusic",
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "sha256": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+   "title": "Orbit ( retrowaver, synthwave, vaporwave, retro, 80s ) by Artur_Aravidi_Music",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-synthwave-572999/",
-   "bpm": 136.76,
-   "start": 0,
-   "firstBeat": 0.026,
-   "drop": 7.046,
+   "source": "https://pixabay.com/music/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243/",
+   "bpm": 120,
+   "start": 4.023,
+   "firstBeat": 0,
+   "drop": 12,
    "certificate": {
-    "file": "synthwave-synthwave-572999-license.txt",
-    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
-    "downloaded": "2026-09-24 14:01:40 UTC"
+    "file": "beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt",
+    "sha256": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+    "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
   "copy": {
@@ -3397,19 +3397,19 @@
   "music": {
    "trigram": "xun",
    "symbol": "☴",
-   "file": "pick11-retro-synth-pop.mp3",
-   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
-   "title": "Retro Synth Pop by AliveTunes",
+   "file": "pick18-dreamy-synthwave.mp3",
+   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+   "title": "Dreamy Synthwave Music by Tunetank",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
-   "bpm": 95,
-   "start": 65.943,
+   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
+   "bpm": 100,
+   "start": 52.977,
    "firstBeat": 0,
-   "drop": 15.16,
+   "drop": 14.4,
    "certificate": {
-    "file": "synthwave-retro-synth-pop-415983-license.txt",
-    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
-    "downloaded": "2026-09-24 02:36:48 UTC"
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
   "copy": {
@@ -3917,19 +3917,19 @@
   "music": {
    "trigram": "xun",
    "symbol": "☴",
-   "file": "pick11-retro-synth-pop.mp3",
-   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
-   "title": "Retro Synth Pop by AliveTunes",
+   "file": "pick18-dreamy-synthwave.mp3",
+   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+   "title": "Dreamy Synthwave Music by Tunetank",
    "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
-   "bpm": 95,
-   "start": 65.943,
+   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
+   "bpm": 100,
+   "start": 52.977,
    "firstBeat": 0,
-   "drop": 15.16,
+   "drop": 14.4,
    "certificate": {
-    "file": "synthwave-retro-synth-pop-415983-license.txt",
-    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
-    "downloaded": "2026-09-24 02:36:48 UTC"
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
   "copy": {
@@ -4112,18 +4112,18 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick18-dreamy-synthwave.mp3",
-   "sha256": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
-   "title": "Dreamy Synthwave Music by Tunetank",
-   "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/video-games-dreamy-synthwave-music-347512/",
-   "bpm": 100,
-   "start": 52.977,
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
+   "bpm": 100.05,
+   "start": 206.613,
    "firstBeat": 0,
-   "drop": 14.4,
+   "drop": 14.394,
    "certificate": {
-    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
-    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },

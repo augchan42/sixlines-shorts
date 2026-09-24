@@ -50,11 +50,11 @@ def join(out, parts, name):
 def options(root, out, track):
     """Every section that fits a short, dropping any that starts within half a preview of
     a bigger one, since neighbouring bars sound the same."""
-    from add_sections import candidates
+    from add_sections import SPREAD, candidates
 
     picked = []
     for o in candidates(track):
-        if all(abs(o["start"] - p["start"]) >= LENGTH / 2 for p in picked):
+        if all(abs(o["start"] - p["start"]) >= SPREAD for p in picked):
             picked.append(o)
     picked.sort(key=lambda o: o["start"])
     prefix = track["file"].split("-")[0]

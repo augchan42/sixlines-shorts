@@ -6,6 +6,9 @@ short too long, or at the top of the track when the rise is earlier.
 
   python3 music/add_sections.py pick13:kun pick17:kun ...   # file-name prefix:trigram
 
+A track that already has a section gets another part of it, starting at least SPREAD
+seconds from its other parts, so one song can serve a trigram more than once.
+
 The rise is the same measure as preview.py. A new section has no licence certificate until
 the user downloads it signed in; the render refuses it until then.
 """
@@ -20,6 +23,8 @@ LEAD_INS = (6, 5, 4)
 # The longest a short runs after its drop (seriesPlan's "after" mode), in beats, and a margin.
 AFTER_BEATS = 44
 MARGIN = 1.0
+# How far apart two parts of one song start: half a 35 s preview.
+SPREAD = 17.5
 
 
 def at(track, i, pre):
@@ -61,10 +66,10 @@ def candidates(track, problems=plan_problems):
     return options
 
 
-def section(track, problems=plan_problems):
-    """The section at the biggest rise whose short fits; problems(bpm, drops) lists what is
-    wrong with each drop's short."""
-    options = candidates(track, problems)
+def section(track, problems=plan_problems, taken=()):
+    """The section at the biggest rise whose short fits and that starts SPREAD from every
+    start in taken; problems(bpm, drops) lists what is wrong with each drop's short."""
+    options = [o for o in candidates(track, problems) if all(abs(o["start"] - t) >= SPREAD for t in taken)]
     if not options:
         raise ValueError("no rise in the track makes a short that fits")
     return {k: v for k, v in options[0].items() if k != "rise"}
@@ -79,9 +84,12 @@ def main():
     for arg in sys.argv[1:]:
         prefix, trigram = arg.split(":")
         t = next(x for x in tracks if x["file"].startswith(prefix))
-        if any(s["file"] == t["file"] for s in doc["sections"]):
-            raise SystemExit(f"{t['file']} already has a section")
-        s = section(t)
+        same = [s for s in doc["sections"] if s["file"] == t["file"]]
+        if any(s["trigram"] != trigram for s in same):
+            raise SystemExit(f"{t['file']} is under another trigram")
+        s = section(t, taken=[x["start"] for x in same])
+        if same:
+            s["certificate"] = same[0]["certificate"]
         doc["sections"].append(
             {"trigram": trigram, "symbol": symbols[trigram], "file": t["file"], "sha256": t["sha256"], "title": t["title"],
              "licence": t["licence"], "source": t["source"], "bpm": t["bpm"], **s}
