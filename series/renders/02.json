@@ -1,0 +1,73 @@
+{
+ "hexagram": 2,
+ "rendered": "2026-09-24T06:21:30.266Z",
+ "commit": "48f5646ed186c296648e6218a169557b99efa612",
+ "clean": true,
+ "seconds": 34.090667,
+ "shareKbps": 5269,
+ "props": {
+  "hexagram": {
+   "number": 2,
+   "zh": "坤",
+   "pinyin": "Kūn",
+   "name": "The Receptive",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "bpm": 90,
+  "firstBeat": 0.049,
+  "music": "local/music/pick04-analog-dreams-synthwave.mp3",
+  "musicStart": 0,
+  "drop": 8.05,
+  "hook": "Tired of always having to lead?",
+  "meaning": [
+   "The Receptive\nsays: follow well.",
+   "Supporting is its\nown strength."
+  ],
+  "question": "Who could\nyou back?",
+  "plates": [
+   "assets/yilin/stipple-2-57.webp",
+   "assets/yilin/stipple-2-32.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/2/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/2/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/matrix-records.png",
+    "caption": "SIXTY-FOUR RECORDS"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "cta": "Reveal the moment.",
+  "url": "sixlines.day",
+  "hexagramClip": "assets/3d/hexagram-000000-90bpm-8b.mp4"
+ },
+ "files": {
+  "local/music/pick04-analog-dreams-synthwave.mp3": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+  "local/music/certificates/synthwave-analog-dreams-synthwave-9497-license.txt": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+  "assets/3d/hexagram-000000-90bpm-8b.mp4": "996da8f5ddb7af8923c2ebe3ad06ef5425b44e2be8c22ea1f2dd6881127600a5",
+  "assets/screens/2/reading.png": "d93f29cb0ee32a119739ac3c225a866d59d0b984372335f2462c3688844495c9",
+  "assets/screens/2/verse.png": "902ea0329a86c01e4ddbded6437942dd08d0e20c904ed3807d03cfc09a43453f",
+  "assets/matrix-records.png": "8de500688f307c91958b0b7027a3b97d397aea84576c096c5efcb90e2baca3ca",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-2-57.webp": "076581bfd3a780cfc92f6630bab1ebd3264035ed5df069e0862f3ea689c45d81",
+  "assets/yilin/stipple-2-32.webp": "e9d8fc07b3a0b76bdb1e70056f9c9386c74137c12c6c9f189a53757c3af66a77",
+  "out/series/02-kun/short.mp4": "d44c44e651404edf86d1bb0806699aeb302a5d3cac0506a43b626775ae36b99f",
+  "out/series/02-kun/share.mp4": "3b285f7423e5a3ebf1ca4a80dd4566c305266d40af3ae2b0f0902d5cb97b2e0f"
+ }
+}
