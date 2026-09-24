@@ -8,6 +8,7 @@ import { qian } from "./specs/qian";
 import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
+import { Series1, spike1Frames } from "./prototypes/Series1";
 
 const FPS = 30;
 
@@ -70,5 +71,6 @@ export const Root: React.FC = () => (
         return { durationInFrames: beatFrame({ fps: FPS, bpm: props.bpm, firstBeat: props.firstBeat }, p.end) };
       }}
     />
+    <Composition id="Spike1" component={Series1} width={1080} height={1920} fps={FPS} durationInFrames={spike1Frames(FPS)} />
   </>
 );
