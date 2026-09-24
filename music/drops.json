@@ -1,6 +1,6 @@
 {
  "script": "music/drops.py",
- "commit": "45a0668caa7d7bd436594d4ea47e1c7680e88992",
+ "commit": "dd91c638563b793a66a5b213da343896403820cb",
  "rule": {
   "lift": 2.0,
   "pre": 6,
@@ -322,28 +322,6 @@
    "bpm": 115.0,
    "chosenBar": 16,
    "drops": []
-  },
-  {
-   "trigram": "xun",
-   "file": "pick15-arcade-retro-nights.mp3",
-   "bpm": 126.01,
-   "chosenBar": 4,
-   "drops": [
-    {
-     "bar": 10,
-     "lift": 2.0,
-     "usable": false,
-     "seconds": 19.31,
-     "chosen": false
-    },
-    {
-     "bar": 53,
-     "lift": 2.5,
-     "usable": true,
-     "seconds": 101.23,
-     "chosen": false
-    }
-   ]
   },
   {
    "trigram": "dui",

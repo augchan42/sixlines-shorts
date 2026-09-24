@@ -316,24 +316,6 @@
    }
   },
   {
-   "trigram": "xun",
-   "symbol": "☴",
-   "file": "pick15-arcade-retro-nights.mp3",
-   "sha256": "e37769d8e2d76d331dc049d00da0d7ce62a79394f4e7ec875c9f220168ea1ecf",
-   "title": "Synthwave Arcade Retro Nights by alex-morgan",
-   "licence": "Pixabay Content License, Content ID registered",
-   "source": "https://pixabay.com/music/synthwave-synthwave-arcade-retro-nights-573647/",
-   "bpm": 126.01,
-   "start": 0.0,
-   "firstBeat": 0.264,
-   "drop": 7.884,
-   "certificate": {
-    "file": "synthwave-synthwave-arcade-retro-nights-573647-license.txt",
-    "sha256": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
-    "downloaded": "2026-09-24 14:01:40 UTC"
-   }
-  },
-  {
    "trigram": "dui",
    "symbol": "☱",
    "file": "pick16-synthwave-mondamusic.mp3",
@@ -368,6 +350,15 @@
     "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
+  }
+ ],
+ "dropped": [
+  {
+   "file": "pick15-arcade-retro-nights.mp3",
+   "title": "Synthwave Arcade Retro Nights by alex-morgan",
+   "trigram": "xun",
+   "date": "2026-09-25",
+   "reason": "The user found it far too fast on hexagram 9 (126 bpm) and took it out of rotation."
   }
  ]
 }
