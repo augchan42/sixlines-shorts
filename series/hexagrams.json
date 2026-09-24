@@ -155,7 +155,12 @@
    "bpm": 115,
    "start": 21.157,
    "firstBeat": 0,
-   "drop": 12.522
+   "drop": 12.522,
+   "certificate": {
+    "file": "christmas-christmas-synthwave-442829-license.txt",
+    "sha256": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -188,7 +193,12 @@
    "bpm": 91.99,
    "start": 8.059,
    "firstBeat": 0,
-   "drop": 15.654
+   "drop": 15.654,
+   "certificate": {
+    "file": "synthwave-lofi-synthwave-588188-license.txt",
+    "sha256": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -259,7 +269,12 @@
    "bpm": 100.58,
    "start": 0,
    "firstBeat": 0.015,
-   "drop": 9.559
+   "drop": 9.559,
+   "certificate": {
+    "file": "synthwave-synthwave-music-neon-drive-horizon-578508-license.txt",
+    "sha256": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -292,7 +307,12 @@
    "bpm": 90,
    "start": 0.023,
    "firstBeat": 0,
-   "drop": 16.002
+   "drop": 16.002,
+   "certificate": {
+    "file": "synthwave-synthwave-593074-license.txt",
+    "sha256": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -325,7 +345,12 @@
    "bpm": 115,
    "start": 21.157,
    "firstBeat": 0,
-   "drop": 12.522
+   "drop": 12.522,
+   "certificate": {
+    "file": "christmas-christmas-synthwave-442829-license.txt",
+    "sha256": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -358,7 +383,12 @@
    "bpm": 126.01,
    "start": 0,
    "firstBeat": 0.264,
-   "drop": 7.884
+   "drop": 7.884,
+   "certificate": {
+    "file": "synthwave-synthwave-arcade-retro-nights-573647-license.txt",
+    "sha256": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -391,7 +421,12 @@
    "bpm": 120,
    "start": 4.023,
    "firstBeat": 0,
-   "drop": 12
+   "drop": 12,
+   "certificate": {
+    "file": "synthwave-synthwave-80s-retro-background-music-347701-license.txt",
+    "sha256": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -424,7 +459,12 @@
    "bpm": 90,
    "start": 0,
    "firstBeat": 0.194,
-   "drop": 13.529
+   "drop": 13.529,
+   "certificate": {
+    "file": "synthwave-midnight-synthwave-317752-license.txt",
+    "sha256": "47aa1fb0cbb3774ecac4e86144cadd7ad4368361c2128d5d7f991fd527b394a4",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -495,7 +535,12 @@
    "bpm": 100.58,
    "start": 0,
    "firstBeat": 0.015,
-   "drop": 9.559
+   "drop": 9.559,
+   "certificate": {
+    "file": "synthwave-synthwave-music-neon-drive-horizon-578508-license.txt",
+    "sha256": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -528,7 +573,12 @@
    "bpm": 100,
    "start": 52.977,
    "firstBeat": 0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -599,7 +649,12 @@
    "bpm": 112,
    "start": 158.617,
    "firstBeat": 0,
-   "drop": 12.858
+   "drop": 12.858,
+   "certificate": {
+    "file": "synthwave-neon-mirage-synthwave-music-384112-license.txt",
+    "sha256": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -632,7 +687,12 @@
    "bpm": 136.76,
    "start": 0,
    "firstBeat": 0.026,
-   "drop": 7.046
+   "drop": 7.046,
+   "certificate": {
+    "file": "synthwave-synthwave-572999-license.txt",
+    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -703,7 +763,12 @@
    "bpm": 90,
    "start": 0.023,
    "firstBeat": 0,
-   "drop": 16.002
+   "drop": 16.002,
+   "certificate": {
+    "file": "synthwave-synthwave-593074-license.txt",
+    "sha256": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -774,7 +839,12 @@
    "bpm": 100.05,
    "start": 206.613,
    "firstBeat": 0,
-   "drop": 14.394
+   "drop": 14.394,
+   "certificate": {
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -807,7 +877,12 @@
    "bpm": 91.99,
    "start": 8.059,
    "firstBeat": 0,
-   "drop": 15.654
+   "drop": 15.654,
+   "certificate": {
+    "file": "synthwave-lofi-synthwave-588188-license.txt",
+    "sha256": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -878,7 +953,12 @@
    "bpm": 90,
    "start": 0,
    "firstBeat": 0.194,
-   "drop": 13.529
+   "drop": 13.529,
+   "certificate": {
+    "file": "synthwave-midnight-synthwave-317752-license.txt",
+    "sha256": "47aa1fb0cbb3774ecac4e86144cadd7ad4368361c2128d5d7f991fd527b394a4",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -911,7 +991,12 @@
    "bpm": 120,
    "start": 4.023,
    "firstBeat": 0,
-   "drop": 12
+   "drop": 12,
+   "certificate": {
+    "file": "synthwave-synthwave-80s-retro-background-music-347701-license.txt",
+    "sha256": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -944,7 +1029,12 @@
    "bpm": 91.99,
    "start": 8.059,
    "firstBeat": 0,
-   "drop": 15.654
+   "drop": 15.654,
+   "certificate": {
+    "file": "synthwave-lofi-synthwave-588188-license.txt",
+    "sha256": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1015,7 +1105,12 @@
    "bpm": 147.01,
    "start": 10.068,
    "firstBeat": 0,
-   "drop": 9.798
+   "drop": 9.798,
+   "certificate": {
+    "file": "synthwave-bot-factory-458322-license.txt",
+    "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1292,7 +1387,12 @@
    "bpm": 112,
    "start": 158.617,
    "firstBeat": 0,
-   "drop": 12.858
+   "drop": 12.858,
+   "certificate": {
+    "file": "synthwave-neon-mirage-synthwave-music-384112-license.txt",
+    "sha256": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1401,7 +1501,12 @@
    "bpm": 126.01,
    "start": 0,
    "firstBeat": 0.264,
-   "drop": 7.884
+   "drop": 7.884,
+   "certificate": {
+    "file": "synthwave-synthwave-arcade-retro-nights-573647-license.txt",
+    "sha256": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1434,7 +1539,12 @@
    "bpm": 100,
    "start": 52.977,
    "firstBeat": 0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1543,7 +1653,12 @@
    "bpm": 91.99,
    "start": 8.059,
    "firstBeat": 0,
-   "drop": 15.654
+   "drop": 15.654,
+   "certificate": {
+    "file": "synthwave-lofi-synthwave-588188-license.txt",
+    "sha256": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1614,7 +1729,12 @@
    "bpm": 136.76,
    "start": 0,
    "firstBeat": 0.026,
-   "drop": 7.046
+   "drop": 7.046,
+   "certificate": {
+    "file": "synthwave-synthwave-572999-license.txt",
+    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1647,7 +1767,12 @@
    "bpm": 100.58,
    "start": 0,
    "firstBeat": 0.015,
-   "drop": 9.559
+   "drop": 9.559,
+   "certificate": {
+    "file": "synthwave-synthwave-music-neon-drive-horizon-578508-license.txt",
+    "sha256": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1680,7 +1805,12 @@
    "bpm": 147.01,
    "start": 10.068,
    "firstBeat": 0,
-   "drop": 9.798
+   "drop": 9.798,
+   "certificate": {
+    "file": "synthwave-bot-factory-458322-license.txt",
+    "sha256": "88dabe0011ec0b22a0a2b4e660fbd2804b09c464433d5fc73301a0445ef0c9a4",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1713,7 +1843,12 @@
    "bpm": 90,
    "start": 0.023,
    "firstBeat": 0,
-   "drop": 16.002
+   "drop": 16.002,
+   "certificate": {
+    "file": "synthwave-synthwave-593074-license.txt",
+    "sha256": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1784,7 +1919,12 @@
    "bpm": 115,
    "start": 21.157,
    "firstBeat": 0,
-   "drop": 12.522
+   "drop": 12.522,
+   "certificate": {
+    "file": "christmas-christmas-synthwave-442829-license.txt",
+    "sha256": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1817,7 +1957,12 @@
    "bpm": 136.76,
    "start": 0,
    "firstBeat": 0.026,
-   "drop": 7.046
+   "drop": 7.046,
+   "certificate": {
+    "file": "synthwave-synthwave-572999-license.txt",
+    "sha256": "7b289beae55226f0ff95a1d904cda1ea486504e67752c7c315443d38b159062c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -1850,7 +1995,12 @@
    "bpm": 100.05,
    "start": 206.613,
    "firstBeat": 0,
-   "drop": 14.394
+   "drop": 14.394,
+   "certificate": {
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2013,7 +2163,12 @@
    "bpm": 126.01,
    "start": 0,
    "firstBeat": 0.264,
-   "drop": 7.884
+   "drop": 7.884,
+   "certificate": {
+    "file": "synthwave-synthwave-arcade-retro-nights-573647-license.txt",
+    "sha256": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2046,7 +2201,12 @@
    "bpm": 112,
    "start": 158.617,
    "firstBeat": 0,
-   "drop": 12.858
+   "drop": 12.858,
+   "certificate": {
+    "file": "synthwave-neon-mirage-synthwave-music-384112-license.txt",
+    "sha256": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2361,7 +2521,12 @@
    "bpm": 126.01,
    "start": 0,
    "firstBeat": 0.264,
-   "drop": 7.884
+   "drop": 7.884,
+   "certificate": {
+    "file": "synthwave-synthwave-arcade-retro-nights-573647-license.txt",
+    "sha256": "fd58d3f4804814372d92957462affcbc21f1f6800cc5820d973546def6716e67",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2394,7 +2559,12 @@
    "bpm": 112,
    "start": 158.617,
    "firstBeat": 0,
-   "drop": 12.858
+   "drop": 12.858,
+   "certificate": {
+    "file": "synthwave-neon-mirage-synthwave-music-384112-license.txt",
+    "sha256": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2427,7 +2597,12 @@
    "bpm": 115,
    "start": 21.157,
    "firstBeat": 0,
-   "drop": 12.522
+   "drop": 12.522,
+   "certificate": {
+    "file": "christmas-christmas-synthwave-442829-license.txt",
+    "sha256": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
@@ -2460,7 +2635,12 @@
    "bpm": 100,
    "start": 52.977,
    "firstBeat": 0,
-   "drop": 14.4
+   "drop": 14.4,
+   "certificate": {
+    "file": "video-games-dreamy-synthwave-music-347512-license.txt",
+    "sha256": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   }
   },
   "copy": null,
   "source": {
