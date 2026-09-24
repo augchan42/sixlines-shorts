@@ -83,6 +83,62 @@
    "source": "commentary/en/29.json#image.synthesis"
   }
  },
+ "30": {
+  "hook": {
+   "text": "Brilliant once,\nthen burnt out?",
+   "source": "commentary/en/30.json#image.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Fire’s answer:\nkeep it fed.",
+    "source": "commentary/en/30.json#judgment.synthesis"
+   },
+   {
+    "text": "Steady care,\nnot big gestures.",
+    "source": "commentary/en/30.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What needs\ntending today?",
+   "source": "written"
+  },
+  "plates": [
+   "30-20",
+   "30-47"
+  ],
+  "caption": {
+   "text": "Fire needs something to burn. The old text says to tend a cow: patient, dull, daily care. That’s what keeps the light going.",
+   "source": "commentary/en/30.json#judgment.synthesis"
+  }
+ },
+ "51": {
+  "hook": {
+   "text": "Did something just\nshake you?",
+   "source": "commentary/en/51.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "The Arousing says:\nuse the fear.",
+    "source": "commentary/en/51.json#image.synthesis"
+   },
+   {
+    "text": "Let it show\nwhat to fix.",
+    "source": "commentary/en/51.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What did the\nscare show you?",
+   "source": "written"
+  },
+  "plates": [
+   "51-2",
+   "51-38"
+  ],
+  "caption": {
+   "text": "The image is thunder, twice. You scream, then you laugh, and your hands still don’t drop the cup. A good scare is a chance to put things in order.",
+   "source": "commentary/en/51.json#judgment.synthesis"
+  }
+ },
  "52": {
   "hook": {
    "text": "Can't stop overthinking?",
@@ -109,6 +165,34 @@
   "caption": {
    "text": "The old text says to keep your back still, so you stop chasing what’s in front of you.",
    "source": "commentary/en/52.json#judgment.synthesis"
+  }
+ },
+ "57": {
+  "hook": {
+   "text": "Said it once,\nnothing changed?",
+   "source": "commentary/en/57.json#image.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "The Gentle says:\nsay it again.",
+    "source": "commentary/en/57.json#image.synthesis"
+   },
+   {
+    "text": "Quiet and steady\ngets through.",
+    "source": "commentary/en/57.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What’s worth\nrepeating today?",
+   "source": "written"
+  },
+  "plates": [
+   "57-48",
+   "57-64"
+  ],
+  "caption": {
+   "text": "The image is wind following wind. One gust changes nothing; a wind that keeps blowing reshapes the land. Say the important thing more than once.",
+   "source": "commentary/en/57.json#image.synthesis"
   }
  },
  "58": {
