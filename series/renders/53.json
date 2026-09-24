@@ -1,0 +1,76 @@
+{
+ "hexagram": 53,
+ "rendered": "2026-09-24T19:36:11.705Z",
+ "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "clean": true,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
+ "props": {
+  "hexagram": {
+   "number": 53,
+   "zh": "漸",
+   "pinyin": "Jiàn",
+   "name": "Development",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick18-dreamy-synthwave.mp3",
+  "musicStart": 52.977,
+  "drop": 14.4,
+  "hook": "Tempted to skip steps?",
+  "meaning": [
+   "Development says:\ngo step by step.",
+   "Slow growth\nlasts."
+  ],
+  "question": "Which step are\nyou skipping?",
+  "plates": [
+   "assets/yilin/stipple-53-23.webp",
+   "assets/yilin/stipple-53-56.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/53/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/53/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/53/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-001011-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-001011-100bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+  "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
+  "assets/3d/hexagram-001011-100bpm-8b.mp4": "8776df5b0de3b1889e921a620b75c48fb23ae691d519d14521142af72cc30d51",
+  "assets/3d/endcard-snap-001011-100bpm-9b.mp4": "042b88866b89a3f3108703be549903950e5d8a185e6afbd83f5fa8de5d506139",
+  "assets/screens/53/reading.png": "58634643fb278bc86373e79fb77624eba221dbf6a83cce1cd8501c4a3c5df19d",
+  "assets/screens/53/verse.png": "00ac8f521aaa04f30457108da795a3871e0815b69169361ee0ea0749699bf801",
+  "assets/screens/53/today.png": "25b2796399cb0e71669d856c2f7b329618d682038c1103d39be74ab48b58806b",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-53-23.webp": "c1ad1ad31fbbd7b2aa0edd12ccd6ae997fe3cb15aa591e81c4b60e38a4ad5b8d",
+  "assets/yilin/stipple-53-56.webp": "491334b6417c0ae3f4b1857337c8d9ea0ea67fd990ce3b79c47dbdaddaa2cefd",
+  "out/series/53-jian/short.mp4": "c4570f274ca5fed46aad49d4c8871b65389d400b5007e2a45f5875a4fbeeb2db",
+  "out/series/53-jian/share.mp4": "e24c7b1a715ff80e0c175bc7ecf7c9946d43f0b22546f38666404dd99d2f0cbd"
+ }
+}

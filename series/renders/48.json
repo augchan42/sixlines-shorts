@@ -1,0 +1,76 @@
+{
+ "hexagram": 48,
+ "rendered": "2026-09-24T19:26:25.513Z",
+ "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "clean": true,
+ "seconds": 29.290667,
+ "shareKbps": 6153,
+ "props": {
+  "hexagram": {
+   "number": 48,
+   "zh": "井",
+   "pinyin": "Jǐng",
+   "name": "The Well",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  "bpm": 115,
+  "firstBeat": 0,
+  "music": "local/music/pick19-christmas-synthwave.mp3",
+  "musicStart": 21.157,
+  "drop": 12.522,
+  "hook": "Good things just out of reach?",
+  "meaning": [
+   "The Well says:\nlengthen the rope.",
+   "The water is\nalways there."
+  ],
+  "question": "What’s cutting\nyour rope short?",
+  "plates": [
+   "assets/yilin/stipple-48-10.webp",
+   "assets/yilin/stipple-48-57.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/48/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/48/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/48/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-011010-115bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-011010-115bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick19-christmas-synthwave.mp3": "bdcd0d1798ff0a49264e794150bd553d8cc46ab62ea72a83c1f2f26ec0fc9981",
+  "local/music/certificates/christmas-christmas-synthwave-442829-license.txt": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
+  "assets/3d/hexagram-011010-115bpm-8b.mp4": "8bf6d74319b86bce381e3ede5027a475e822e735b14cc0f9c8e00789833a2a37",
+  "assets/3d/endcard-snap-011010-115bpm-9b.mp4": "65689075ddb45440354be2433f54208203a6aa9019ef018bdcfe518e26012b0b",
+  "assets/screens/48/reading.png": "6b57a9fda20fb41795b9bb92546dceac1926d000435da36b8b8c3aee5891c9f0",
+  "assets/screens/48/verse.png": "aa25ac690461cf445cdd0e945d21f4f990b7ab10cf9726ae3ede6d7b5dc40e19",
+  "assets/screens/48/today.png": "22e653cc3c22e053675226c3e8ef471ca05465e2400ee14218e0e76c270266e0",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-48-10.webp": "f432087bf5511242d6465bc6368842373c08773bcc8400411b3bb526aa63959d",
+  "assets/yilin/stipple-48-57.webp": "d2bc448a0ccd620988479852921def8ee91b8cf09808b5d2320ab5e82b225b60",
+  "out/series/48-jing/short.mp4": "9e3663f825f88b3b94d6b7fd6e52493d566d899e1ab5f0b0d466e8e5a36f07e0",
+  "out/series/48-jing/share.mp4": "67bab92eccb9c3ce9d097f958c9284d5385607982006ad69fdf20fd17a2652b5"
+ }
+}

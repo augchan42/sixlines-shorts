@@ -1,0 +1,76 @@
+{
+ "hexagram": 45,
+ "rendered": "2026-09-24T19:16:48.643Z",
+ "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "clean": true,
+ "seconds": 28.053333,
+ "shareKbps": 6430,
+ "props": {
+  "hexagram": {
+   "number": 45,
+   "zh": "萃",
+   "pinyin": "Cuì",
+   "name": "Gathering Together",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 34.023,
+  "drop": 12,
+  "hook": "Hosting family, bracing for arguments?",
+  "meaning": [
+   "Gathering says:\nshare a purpose.",
+   "And plan for\nthe friction."
+  ],
+  "question": "What holds your\ngroup together?",
+  "plates": [
+   "assets/yilin/stipple-45-48.webp",
+   "assets/yilin/stipple-45-58.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/45/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/45/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/45/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-000110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-000110-120bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-000110-120bpm-8b.mp4": "db33e46d731c954d59ad49c3e8a08d307c856b0ec1b97138ff9c9f77875c6381",
+  "assets/3d/endcard-snap-000110-120bpm-9b.mp4": "bef7d181d5688c25ba244fc25b05ae7d839a1081f58056061a53579516edfdf8",
+  "assets/screens/45/reading.png": "9f1630befdf0a123eea989aa36617ac4665cebb2b87f1628b118eb24386e1506",
+  "assets/screens/45/verse.png": "26902ba2d965aba4f81bcbc6993335980688c82e94a652833cb16912fc4ec855",
+  "assets/screens/45/today.png": "f4b85cfb8b4c250fdd96df7e60fcd7db5864a66aaa50f853eb5bc7552db4827e",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-45-48.webp": "4d52abb914d1e28eec4432af8dfc083d90f727be9f9eaaafe4a4e5e32cdab44d",
+  "assets/yilin/stipple-45-58.webp": "cc71fe98f490252381f8850d1c143d4d492a1db372e2db1aad5fa28d6c136bce",
+  "out/series/45-cui/short.mp4": "8219d41c7f69c98b2b22caf864416ca32523a92ac3f69fecaa0ffa1c71a70ef7",
+  "out/series/45-cui/share.mp4": "fc912fbc27b994ab85433bf737385bcebf9c1e3e6cac539c3c9a5da4054c9490"
+ }
+}

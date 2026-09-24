@@ -1,0 +1,76 @@
+{
+ "hexagram": 46,
+ "rendered": "2026-09-24T19:20:25.086Z",
+ "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "clean": true,
+ "seconds": 37.376,
+ "shareKbps": 4794,
+ "props": {
+  "hexagram": {
+   "number": 46,
+   "zh": "升",
+   "pinyin": "Shēng",
+   "name": "Pushing Upward",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  "bpm": 90,
+  "firstBeat": 0,
+  "music": "local/music/pick13-synthwave-the-mountain.mp3",
+  "musicStart": 0.023,
+  "drop": 16.002,
+  "hook": "Growing slower than you want?",
+  "meaning": [
+   "Pushing Upward:\ndon’t worry.",
+   "Small steps,\npiled up."
+  ],
+  "question": "What can you add\ntoday?",
+  "plates": [
+   "assets/yilin/stipple-46-2.webp",
+   "assets/yilin/stipple-46-54.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/46/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/46/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/46/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-011000-90bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-011000-90bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
+  "local/music/certificates/synthwave-synthwave-593074-license.txt": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+  "assets/3d/hexagram-011000-90bpm-8b.mp4": "1a0ee3217bed8d6f5cb90f9cc845344aac5c9abb0bbbe8b46a5a09b1cff75553",
+  "assets/3d/endcard-join-011000-90bpm-9b.mp4": "24e50e64d25c2a535b0482d46012b439f288af1c8804853c93368a6bcc3c850b",
+  "assets/screens/46/reading.png": "94400c9fb659314579cb5e52ebbf110c22d1642d0b4d6358e44442d963ac9b00",
+  "assets/screens/46/verse.png": "d329585a20b2209a92ba4d860e214746bd3f172c4e272be9d924fbc549525aaf",
+  "assets/screens/46/today.png": "00ec2e7b57493e7e149799038f4702b2b4f98bfc53e538a3f2b832eb24cf2307",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-46-2.webp": "5102518631bafea2f0578a17bef7285052372ec92af0c5a2edd0d60945eb2537",
+  "assets/yilin/stipple-46-54.webp": "9e21adbb070262a7ae0db1dbcfe18ef21191ea37a7b7e9364aa569716ab8ea82",
+  "out/series/46-sheng/short.mp4": "465226f57b01dee778d8d98f9c055afefcf3a2054dac56ffec636f9e96609ea2",
+  "out/series/46-sheng/share.mp4": "a793788c1e64def3127c83fcc77531732b613725ad79c4c9bd630d51e51101d2"
+ }
+}
