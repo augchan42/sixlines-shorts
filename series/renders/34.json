@@ -1,0 +1,76 @@
+{
+ "hexagram": 34,
+ "rendered": "2026-09-24T18:18:37.635Z",
+ "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
+ "clean": true,
+ "seconds": 30.058667,
+ "shareKbps": 5993,
+ "props": {
+  "hexagram": {
+   "number": 34,
+   "zh": "大壯",
+   "pinyin": "Dà Zhuàng",
+   "name": "Great Power",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  "bpm": 112,
+  "firstBeat": 0,
+  "music": "local/music/pick21-neon-mirage.mp3",
+  "musicStart": 158.617,
+  "drop": 12.858,
+  "hook": "Finally in charge?",
+  "meaning": [
+   "Great Power says:\ncheck your aim.",
+   "Mostly, know what\nnot to do."
+  ],
+  "question": "What won’t you\ndo with it?",
+  "plates": [
+   "assets/yilin/stipple-34-36.webp",
+   "assets/yilin/stipple-34-38.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/34/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/34/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/34/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-111100-112bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-111100-112bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick21-neon-mirage.mp3": "10ae649056b7ce3de8ebf1015bbb32219e2fcd0740bac3a16a2a812f04825618",
+  "local/music/certificates/synthwave-neon-mirage-synthwave-music-384112-license.txt": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+  "assets/3d/hexagram-111100-112bpm-8b.mp4": "f52cb33ae97aa4a3126c74705c772c052e331c2872892e0ed3279750d77e39b6",
+  "assets/3d/endcard-snap-111100-112bpm-9b.mp4": "8e043ad25284228891345a54c2ee3bc49850fe5e2ad68d97d7cc420a47b3d7d0",
+  "assets/screens/34/reading.png": "410b0ddfd921be77d29331fe5023e6511eb4c775356322a6c3ac2badbd496990",
+  "assets/screens/34/verse.png": "54328516c19ab77d134c96c0eb9b49f85a1599821b867262c997eed88124452c",
+  "assets/screens/34/today.png": "decd3a08a918a362db9248f44aea4ce5b8ca61b8075bdb2ed244a89ae5b70d70",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-34-36.webp": "c37b5851c61e1976ccc3e6f0e5d73c921867135ad987543c55ec7735f7d5a276",
+  "assets/yilin/stipple-34-38.webp": "9e424a4a94d04f1d62cc4680c93bc1992cff35fbc1a2b413e40f78a6cc69d6e9",
+  "out/series/34-da-zhuang/short.mp4": "73736cbc6f5fba966293c6dc2d3cdca471c7b241e7c9898234e4ab6ebff1ce74",
+  "out/series/34-da-zhuang/share.mp4": "6a960e86ba1768d6f310f147b031aab364c73afac644a0483157723363fbe99c"
+ }
+}

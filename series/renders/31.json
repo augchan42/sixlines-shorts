@@ -1,0 +1,76 @@
+{
+ "hexagram": 31,
+ "rendered": "2026-09-24T18:07:55.056Z",
+ "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
+ "clean": true,
+ "seconds": 30.058667,
+ "shareKbps": 5993,
+ "props": {
+  "hexagram": {
+   "number": 31,
+   "zh": "咸",
+   "pinyin": "Xián",
+   "name": "Influence",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 98.023,
+  "drop": 14,
+  "hook": "Listening, but already decided?",
+  "meaning": [
+   "Influence says:\nmake room.",
+   "The full can’t\ntake anything in."
+  ],
+  "question": "What have you\nalready decided?",
+  "plates": [
+   "assets/yilin/stipple-31-37.webp",
+   "assets/yilin/stipple-31-10.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/31/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/31/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/31/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-001110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-001110-120bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-001110-120bpm-8b.mp4": "d504680525481af2ef55859fe664b09ef5562dd9fd32d42b681069fcdab0a45e",
+  "assets/3d/endcard-snap-001110-120bpm-9b.mp4": "74f799e5eef8cb55081ec5d41d2e64b67a5ca618d2909bac202d5fc26641b364",
+  "assets/screens/31/reading.png": "d6c9c25e3d99731ca17a8e36827ef27f0abfa33c5793f94f0fc71687b20ec6ad",
+  "assets/screens/31/verse.png": "a8890a1a1522ee3d1157d61520413b85298fd1ed0e03301ab81a83a1d2b0b934",
+  "assets/screens/31/today.png": "32fe1cde9fa9fa26eaaf47f0fb132067f38e461c04e785574fe997d83f5e6981",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-31-37.webp": "93292b042348336629447d01409150a31702c1cfcedebac544c9f4925444efaf",
+  "assets/yilin/stipple-31-10.webp": "2f6039d99bd50983122c765cb85d578a99aa595d06235b3f8f2831d0cc8d6c00",
+  "out/series/31-xian/short.mp4": "0f2e3696a4ba85696a67c83dac4d514f82b296a40f1c2a6515970149f9e403fe",
+  "out/series/31-xian/share.mp4": "c457676a68c4e3601ad77e300393e9f024f987f2d4c1c76cd3727634e4dd4526"
+ }
+}

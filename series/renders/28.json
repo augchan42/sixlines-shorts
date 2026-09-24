@@ -1,0 +1,76 @@
+{
+ "hexagram": 28,
+ "rendered": "2026-09-24T18:04:08.150Z",
+ "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
+ "clean": true,
+ "seconds": 28.053333,
+ "shareKbps": 6430,
+ "props": {
+  "hexagram": {
+   "number": 28,
+   "zh": "大過",
+   "pinyin": "Dà Guò",
+   "name": "Greatness in Excess",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 34.023,
+  "drop": 12,
+  "hook": "Under too much weight?",
+  "meaning": [
+   "Great Excess\nsays: move now.",
+   "Waiting under it\nisn’t caution."
+  ],
+  "question": "What’s bending\nright now?",
+  "plates": [
+   "assets/yilin/stipple-28-33.webp",
+   "assets/yilin/stipple-28-18.webp"
+  ],
+  "screens": [
+   {
+    "src": "assets/screens/28/reading.png",
+    "caption": "READ THE STRUCTURE"
+   },
+   {
+    "src": "assets/screens/28/verse.png",
+    "caption": "THE BOOK OF CHANGES"
+   },
+   {
+    "src": "assets/screens/28/today.png",
+    "caption": "YOUR DAY, READ"
+   },
+   {
+    "src": "assets/matrix-ask.png",
+    "caption": "ASK · CAST · REFLECT"
+   }
+  ],
+  "hexagramClip": "assets/3d/hexagram-011110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-011110-120bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-011110-120bpm-8b.mp4": "fea8d5a75c711e7ac0c358e5324bf81c84beec0f4fa3fde3bd7d05af150d3420",
+  "assets/3d/endcard-snap-011110-120bpm-9b.mp4": "f43d540990b7ff24b0eb0d590a2325e4d31d831279e4b4644b80e50098617767",
+  "assets/screens/28/reading.png": "0aa8c974853c9c3cbd9d8e8d6f8cce4e67767d9393f3e5e605ff2d92c7f118af",
+  "assets/screens/28/verse.png": "4f8152f33255b68aaaee00e668c997a39e85ca44a64f0540ab47df57c17ab4f6",
+  "assets/screens/28/today.png": "514b03bbf95a4f0dfd2ee1382632fa3624f444fb1daf07e6eb975363482f7fdb",
+  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/yilin/stipple-28-33.webp": "8ac21b7b985ba08b65719de3da8cf7b4dad37a91d21e51b21cbfced87d64c01d",
+  "assets/yilin/stipple-28-18.webp": "d608678db3684229537645351060df4d358cb5596954a4e3f57c7e081ba60568",
+  "out/series/28-da-guo/short.mp4": "be1a0cb75aaac07d10144ab04056b08277ab143f644d067d98ec37adc88cd975",
+  "out/series/28-da-guo/share.mp4": "a18a61b2dd8f0086690f1dbc69072433941c134049b86e3907e00a6c042d75b4"
+ }
+}
