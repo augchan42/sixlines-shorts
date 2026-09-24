@@ -13,7 +13,7 @@ import { CodeRain } from "../scenes/CodeRain";
 import { EndCard } from "../scenes/EndCard";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
-import { seriesPlan } from "./seriesPlan";
+import { seriesPlan } from "../lib/seriesPlan";
 
 export type ProtoProps = {
   hexagram: ShortProps["hexagram"];
@@ -32,10 +32,7 @@ const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
 
 export const protoFrames = (p: ProtoProps, fps: number) => beatFrame({ fps, bpm: p.bpm, firstBeat: 0 }, seriesPlan(p.bpm, p.drop).end);
 
-export const protoClip = (p: ProtoProps) => {
-  const s = seriesPlan(p.bpm, p.drop);
-  return hexagramClip(p.hexagram.lines, p.bpm, Math.min(s.meaning, s.drop) - s.hexagram);
-};
+export const protoClip = (p: ProtoProps) => hexagramClip(p.hexagram.lines, p.bpm, seriesPlan(p.bpm, p.drop).hexagramBeats);
 
 const Badge: React.FC<{ n: number }> = ({ n }) => (
   <AbsoluteFill style={{ padding: "240px 70px 0", pointerEvents: "none" }}>

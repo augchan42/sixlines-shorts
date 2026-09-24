@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { seriesPlan } from "../src/prototypes/seriesPlan.ts";
+import { seriesPlan } from "../src/lib/seriesPlan.ts";
 
 const sections = JSON.parse(readFileSync("music/sections.json", "utf8")).sections;
 const byName = Object.fromEntries(sections.map((s) => [s.trigram, s]));
@@ -32,4 +32,10 @@ test("every chosen section keeps the minimums and stays within 35 s", () => {
     assert.ok(sec(p.questionLength) >= 2 && sec(p.meaningLength / 2) >= 2, `${s.trigram}: text under 2 s`);
     assert.ok(sec(5) >= 2, `${s.trigram}: screens under 2 s`);
   }
+});
+
+test("the hexagram part is 8 beats, or 6 when the meaning needs the room", () => {
+  assert.equal(seriesPlan(102, 14.12).hexagramBeats, 8);
+  assert.equal(seriesPlan(82.5, byName.gen.drop).hexagramBeats, 6);
+  assert.equal(seriesPlan(90, byName.kun.drop).hexagramBeats, 8);
 });

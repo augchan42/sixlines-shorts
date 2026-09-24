@@ -3,6 +3,7 @@
 export type SeriesPlan = {
   mode: "before" | "short-hexagram" | "after";
   hexagram: number;
+  hexagramBeats: number;
   meaning: number;
   meaningLength: number;
   question: number;
@@ -25,6 +26,7 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
       return {
         mode,
         hexagram: 4,
+        hexagramBeats: h,
         meaning,
         meaningLength: d - 4 - meaning,
         question: d - 4,
@@ -39,6 +41,7 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
   return {
     mode: "after",
     hexagram: 4,
+    hexagramBeats: 8,
     meaning: d,
     meaningLength: 8,
     question: d + 8,
