@@ -111,7 +111,7 @@ An optional `series/overrides/N.ts` replaces any field for one hexagram. The tem
 Each kind of asset has its own script. Every script skips files that already exist, writes to gitignored folders, and records the SHA-256 of what it wrote.
 
 - **Blender clips:** `npm run blender` with each hexagram's lines, the trigram track's BPM, and `beats = H` (8, or 6 for Gen). Hexagrams sharing an upper trigram share a tempo, so there are 64 clips. At an estimated 5–10 min each, a full run takes about 5–10 hours in the background.
-- **App screens:** for each hexagram, the reading screen and the Yilin verse screen, captured by extending `SixLinesUITests/YilinGalleryScreenshotTests.swift` in sixlines-ios on the simulator and copied into `public/assets/screens/N/`. The records and ask screens are shared by all hexagrams.
+- **App screens:** for each hexagram, the reading screen, the Yilin verse screen and the Almanac (Today) screen, captured by `SixLinesUITests/YilinGalleryScreenshotTests.swift` in sixlines-ios on the simulator and copied into `public/assets/screens/N/`. The Almanac is pinned with `--screenshot-date-YYYY-MM-DD` to the day that hexagram rules (`series/today-days.txt`: the day its 六日七分 tenure opens, on or after 2024-12-21). 坎離震兌 rule the seasons rather than days, so 29, 51, 30 and 58 use the winter solstice, spring equinox, summer solstice and autumn equinox, with `--screenshot-hexagram-N` (user, 2026-09-24). The ask screen is shared by all hexagrams.
 - **Plates:** `npm run assets` is extended from hexagram 1 to all 64 (`yilin-stipple/N-k.webp` on cdn.sixlines.online).
 
 ## Rendering

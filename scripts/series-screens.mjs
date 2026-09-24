@@ -1,16 +1,18 @@
-// Copies each hexagram's reading and verse screens from the sixlines-ios gallery, skipping
-// any already present. Capture them first, all 64 in one run (the script clears its output):
+// Copies each hexagram's reading, verse and today screens from the sixlines-ios galleries,
+// skipping any already present. Capture them first, each set in one run (the script clears its output):
 //   cd ../sixlines-ios && APPEARANCES=matrix PAIRS="1-1,2-2,…,64-64" scripts/capture_gallery.sh yilin
+//   DAYS="$(grep -v '^#' ../sixlines-shorts/series/today-days.txt | paste -sd, -)" \
+//     APPEARANCES=matrix OUT=gallery-today scripts/capture_gallery.sh today
 //   npm run series:screens
 import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { screenFiles } from "./series/render-lib.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
-const gallery = path.join(process.env.SIXLINES_IOS ?? path.resolve(root, "../sixlines-ios"), "gallery");
+const ios = process.env.SIXLINES_IOS ?? path.resolve(root, "../sixlines-ios");
 const missing = [];
 for (let n = 1; n <= 64; n++) {
-  for (const { from, to } of screenFiles(n, gallery)) {
+  for (const { from, to } of screenFiles(n, ios)) {
     const dest = path.join(root, to);
     if (existsSync(dest)) continue;
     if (!existsSync(from)) {

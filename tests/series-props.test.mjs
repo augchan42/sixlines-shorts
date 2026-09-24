@@ -18,15 +18,17 @@ test("a row becomes the template's props", () => {
   assert.equal(p.hexagramClip, "assets/3d/hexagram-010010-100bpm-8b.mp4");
   assert.deepEqual(p.plates, ["assets/yilin/stipple-29-31.webp", "assets/yilin/stipple-29-60.webp"]);
   assert.deepEqual(p.screens.map((s) => s.src), [
-    "assets/screens/29/reading.png", "assets/screens/29/verse.png", "assets/matrix-records.png", "assets/matrix-ask.png",
+    "assets/screens/29/reading.png", "assets/screens/29/verse.png", "assets/screens/29/today.png", "assets/matrix-ask.png",
   ]);
   assert.equal(p.url, "sixlines.day");
 });
 
-test("the third screen rotates so neighbouring shorts differ", () => {
-  const third = (n) => seriesProps({ ...row, number: n }).screens[2].src;
-  assert.deepEqual([third(27), third(28), third(29)], ["assets/matrix-today.png", "assets/matrix-journal.png", "assets/matrix-records.png"]);
-  for (const n of [27, 28, 29]) assert.equal(seriesProps({ ...row, number: n }).screens[3].src, "assets/matrix-ask.png");
+test("the third screen is the hexagram's own day on the Almanac, and ask closes", () => {
+  for (const n of [27, 28, 29]) {
+    const s = seriesProps({ ...row, number: n }).screens;
+    assert.deepEqual(s[2], { src: `assets/screens/${n}/today.png`, caption: "YOUR DAY, READ" });
+    assert.equal(s[3].src, "assets/matrix-ask.png");
+  }
 });
 
 test("an override that changes the tempo changes the clip too", () => {

@@ -22,9 +22,12 @@ export const clipJobs = (propsList, exists) => {
 };
 
 // scripts/capture_gallery.sh in sixlines-ios writes gallery/<appearance>/<snapshot>.png.
-export const screenFiles = (n, gallery) => [
-  { from: `${gallery}/matrix/reading-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/reading.png` },
-  { from: `${gallery}/matrix/yilin-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/verse.png` },
+// `ios` is the sixlines-ios checkout. The Today captures go to their own gallery-today/, since
+// capture_gallery.sh clears its output folder and they are captured in a separate run.
+export const screenFiles = (n, ios) => [
+  { from: `${ios}/gallery/matrix/reading-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/reading.png` },
+  { from: `${ios}/gallery/matrix/yilin-matrix-${n}-${n}.png`, to: `public/assets/screens/${n}/verse.png` },
+  { from: `${ios}/gallery-today/matrix/today-matrix-${n}.png`, to: `public/assets/screens/${n}/today.png` },
 ];
 
 export const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-");

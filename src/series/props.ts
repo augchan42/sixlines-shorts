@@ -20,13 +20,6 @@ export type SeriesRow = {
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
 
-// Screen 3 rotates by hexagram number so neighbouring shorts differ; ask always closes.
-const THIRD = [
-  { src: "assets/matrix-today.png", caption: "YOUR DAY, READ" },
-  { src: "assets/matrix-journal.png", caption: "KEEP YOUR RECORDS" },
-  { src: "assets/matrix-records.png", caption: "SIXTY-FOUR RECORDS" },
-];
-
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
   if (!row.copy) throw new Error(`hexagram ${row.number} has no copy in series/copy.json`);
   const n = row.number;
@@ -44,7 +37,8 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     screens: [
       { src: `assets/screens/${n}/reading.png`, caption: "READ THE STRUCTURE" },
       { src: `assets/screens/${n}/verse.png`, caption: "THE BOOK OF CHANGES" },
-      THIRD[n % THIRD.length],
+      // The Almanac on the day this hexagram rules (series/today-days.txt), so each short shows its own day.
+      { src: `assets/screens/${n}/today.png`, caption: "YOUR DAY, READ" },
       { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
     ],
     cta: "Reveal the moment.",

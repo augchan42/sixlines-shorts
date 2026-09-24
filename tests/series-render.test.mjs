@@ -18,10 +18,11 @@ test("clip jobs skip clips that exist and never repeat one", () => {
   assert.deepEqual(jobs, [{ clip: "a.mp4", lines: "010010", bpm: 100, beats: 8 }]);
 });
 
-test("each hexagram takes its reading and verse screens from the Matrix gallery", () => {
-  assert.deepEqual(screenFiles(29, "/g"), [
-    { from: "/g/matrix/reading-matrix-29-29.png", to: "public/assets/screens/29/reading.png" },
-    { from: "/g/matrix/yilin-matrix-29-29.png", to: "public/assets/screens/29/verse.png" },
+test("each hexagram takes its reading, verse and today screens from the Matrix galleries", () => {
+  assert.deepEqual(screenFiles(29, "/ios"), [
+    { from: "/ios/gallery/matrix/reading-matrix-29-29.png", to: "public/assets/screens/29/reading.png" },
+    { from: "/ios/gallery/matrix/yilin-matrix-29-29.png", to: "public/assets/screens/29/verse.png" },
+    { from: "/ios/gallery-today/matrix/today-matrix-29.png", to: "public/assets/screens/29/today.png" },
   ]);
 });
 
