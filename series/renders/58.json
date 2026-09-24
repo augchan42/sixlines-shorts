@@ -1,7 +1,7 @@
 {
  "hexagram": 58,
- "rendered": "2026-09-24T07:23:28.484Z",
- "commit": "0db5e7200d66d763579dee0a66512ae3651a92b7",
+ "rendered": "2026-09-24T09:53:30.847Z",
+ "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
  "clean": true,
  "seconds": 27.562667,
  "shareKbps": 6547,
@@ -53,21 +53,24 @@
     "caption": "ASK · CAST · REFLECT"
    }
   ],
-  "cta": "Reveal the moment.",
-  "url": "sixlines.day",
-  "hexagramClip": "assets/3d/hexagram-110110-120bpm-8b.mp4"
+  "hexagramClip": "assets/3d/hexagram-110110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-110110-120bpm-7b.mp4",
+   "mode": "snap"
+  }
  },
  "files": {
   "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
   "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
   "assets/3d/hexagram-110110-120bpm-8b.mp4": "ce65b27beb9206aabf9591f49952c94ffd31524b1c18c0a1584d770c08872a4a",
+  "assets/3d/endcard-snap-110110-120bpm-7b.mp4": "ed7bd48a2c96b0130deb3c2c0c19c204c09527c6b83f4ee94ffe324613e8fd83",
   "assets/screens/58/reading.png": "ff8c04629489685890a194665112c5da9d04686ffa668e328699fe4b01f7d93c",
   "assets/screens/58/verse.png": "8ddcc194ef5227eed54d6df7f610a87df68f9b637e63cffb11291f8eb9c0ad29",
   "assets/screens/58/today.png": "c8fb72789f0c57c1060db10e284fe2cce16bac3fe4d083e5da65e2d2332364ce",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-58-19.webp": "bd65935c580b3c8625cf13dde5f5621fa9b969aeaa0a1ee31cb569fdee4278d5",
   "assets/yilin/stipple-58-24.webp": "8e6fad91c2f0ebd3c25efda6f07f1c4e88d4f1ceb4d8d23ef2d86f9ce6bbd572",
-  "out/series/58-dui/short.mp4": "0573eecd1f126237ecb00571553f12ba9929c103d88fca4eea6e5062f84415f6",
-  "out/series/58-dui/share.mp4": "a965d92068e05392e90967161d5706910e6894e227c7ef5fc6983b7d539f7798"
+  "out/series/58-dui/short.mp4": "4bd9288bbab622c3ae1fcf0ef664a0a14a4df1949ec09f1ccabb26f60d827e99",
+  "out/series/58-dui/share.mp4": "997dd851895d04aed85e1482f7640bf9c25c3bc7d28ad334f229ab3457ad8e61"
  }
 }

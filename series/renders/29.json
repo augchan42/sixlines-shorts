@@ -1,7 +1,7 @@
 {
  "hexagram": 29,
- "rendered": "2026-09-24T09:23:27.236Z",
- "commit": "fe89c73b2762c16814df56bf6a98b5125dce2fe4",
+ "rendered": "2026-09-24T09:43:27.802Z",
+ "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
  "clean": true,
  "seconds": 30.656,
  "shareKbps": 5874,
@@ -55,22 +55,22 @@
   ],
   "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-join-010010-100bpm-7b.mp4",
-   "mode": "join"
+   "clip": "assets/3d/endcard-snap-010010-100bpm-7b.mp4",
+   "mode": "snap"
   }
  },
  "files": {
   "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
   "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
   "assets/3d/hexagram-010010-100bpm-8b.mp4": "6c449974e3e0aff5a483254a7190ce7b2822b180153ed1c288a140286789f63a",
-  "assets/3d/endcard-join-010010-100bpm-7b.mp4": "03eaf93a356e2666acd1d75e066f7df444fbdaa31d52fe17be1eca5f82af46b5",
+  "assets/3d/endcard-snap-010010-100bpm-7b.mp4": "26b685e8a98bab289264d42e974e21aa10162f5cd5b6c6d2bda16992aa0d81a9",
   "assets/screens/29/reading.png": "e42822b675af7ef95fdd517efea70f3e49060b8710bf5acdea2462c8a49cbacf",
   "assets/screens/29/verse.png": "f544b123a8619b42524d1fce6cafc390fe35ef4f3043cc6351053490f46c086b",
   "assets/screens/29/today.png": "e19daa3c808bf4f78dfbc6940ec8eeb2b79b25a8bbbad37c9b38c2fd672ac7df",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
-  "out/series/29-kan/short.mp4": "5767f4b7a50ab33091db50096a9ab4156e4bf0ba2d0f90df10c08fd02ca96e26",
-  "out/series/29-kan/share.mp4": "d9a7baebcca82dfa25d4585a039532ac28789f7a803d8c6d899637a4a257bf37"
+  "out/series/29-kan/short.mp4": "55a57501105b8cd7dd89889cc325c01e3894395c8cceeb82c69118e8f8146745",
+  "out/series/29-kan/share.mp4": "d8509ad7cbeaa06ef76b8eb6939aea6a69b97422e96b395503444f4fabf789f4"
  }
 }

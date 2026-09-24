@@ -1,7 +1,7 @@
 {
  "hexagram": 51,
- "rendered": "2026-09-24T07:17:34.956Z",
- "commit": "0db5e7200d66d763579dee0a66512ae3651a92b7",
+ "rendered": "2026-09-24T09:47:23.621Z",
+ "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
  "clean": true,
  "seconds": 30.656,
  "shareKbps": 5874,
@@ -53,21 +53,24 @@
     "caption": "ASK · CAST · REFLECT"
    }
   ],
-  "cta": "Reveal the moment.",
-  "url": "sixlines.day",
-  "hexagramClip": "assets/3d/hexagram-100100-100bpm-8b.mp4"
+  "hexagramClip": "assets/3d/hexagram-100100-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-100100-100bpm-7b.mp4",
+   "mode": "snap"
+  }
  },
  "files": {
   "local/music/pick07-interstellar-retrowave.mp3": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
   "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
   "assets/3d/hexagram-100100-100bpm-8b.mp4": "7cfa54bdd9c4033de0baa2fff86315ef4d1b06ace02b55ea0e428bca7b951819",
+  "assets/3d/endcard-snap-100100-100bpm-7b.mp4": "d52dbff91959d21c026dac68857efd45b3cb2348a17a2e1ee325f62276ea58bd",
   "assets/screens/51/reading.png": "4b1232a026c32519bb2ebcae5ee63bcc484ad7f2780d871daddd93989ba0e7fa",
   "assets/screens/51/verse.png": "40a920b591112dc9a99fddb3208aae111fab6590ffed1dc8dfab1119e4b7931a",
   "assets/screens/51/today.png": "30979e696f04748d7cae97b692759cf5130ea86d05216a8771525189357ba767",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-51-2.webp": "06f3663add76b12efeb3b4a0a4b129b99371e7ec8ef321bac001c57f7b50a540",
   "assets/yilin/stipple-51-38.webp": "bf76cce6dbb9194c975c2f8ed8eda2a2b603fe97683edffb867b8baed62f1f8a",
-  "out/series/51-zhen/short.mp4": "7eec0c7ce8cbc0660efd4cb7cff57e78e85cae40a6c55cfae008143ee8ca1568",
-  "out/series/51-zhen/share.mp4": "bd59a7ba0ec0236213cdb817a06ba4b10a160f2b68c49a0f2c35c64717096276"
+  "out/series/51-zhen/short.mp4": "485f9430605ab41ac58080d1b16e2cd6d3791645de350fe4bcadc702f2bfbd45",
+  "out/series/51-zhen/share.mp4": "96c81a2a8f651fb239c957282b30463926ecb4bd8275beb2527198092936c9b3"
  }
 }
