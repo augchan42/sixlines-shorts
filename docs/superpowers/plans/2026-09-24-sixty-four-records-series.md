@@ -35,7 +35,8 @@
 ## Deviations from the spec (for review)
 
 - **Overrides live in one file, `src/series/overrides.ts`**, not `series/overrides/N.ts`: the Remotion bundle cannot import a directory of files by number, and `tsconfig.json` only includes `src/`. One map keyed by hexagram number does the same job.
-- **Default plates**: the spec leaves the choice open. The table picks `N-N` (the hexagram's own plate) and `N-M`, where M is the hexagram with every line flipped. The prototype hand-picks for 2 and 52 become overrides.
+- **Plates are chosen with the copy**: each `series/copy.json` entry has `plates`, two Yilin plate keys picked to match the two meaning lines (e.g. 29: a figure walking into a storm for "keep moving", rushing water for "like water"). Never `N-N`: the verse screen already shows that plate.
+- **The app screens vary** (user review, 2026-09-24: "you don't have to always use the same screenshots"): screen 1 is this hexagram's reading, screen 2 its verse, screen 3 rotates by hexagram number through today, records and journal, and screen 4 is always ask ("ASK · CAST · REFLECT").
 
 ## File structure
 
@@ -125,7 +126,7 @@ git commit -m "Move seriesPlan to src/lib and give it the hexagram part's length
 
 **Interfaces:**
 - Produces: `linesFromLabels(lines: string[]): (0|1)[]`, `trigram(lines): "qian"|"dui"|"li"|"zhen"|"xun"|"kan"|"gen"|"kun"`, `buildTable({ commentary, harvard, sections, copy, contentCommit }): Row[]`.
-- `Row = { number, zh, pinyin, name, lines, upper, commentary, music, copy, plates: [string, string], source: { sixlinesContent } }` where `music` is the trigram's entry from `music/sections.json` and `copy` is the entry from `series/copy.json` or `null`.
+- `Row = { number, zh, pinyin, name, lines, upper, commentary, music, copy, source: { sixlinesContent } }` where `music` is the trigram's entry from `music/sections.json` and `copy` is the entry from `series/copy.json` (including its `plates`) or `null`.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -148,7 +149,7 @@ test("the upper trigram comes from lines 4 to 6", () => {
   assert.equal(trigram([0, 0, 0, 1, 1, 0]), "dui");
 });
 
-test("a row joins the sources and picks the self and flipped plates", () => {
+test("a row joins the sources", () => {
   const harvard = [
     { number: 29, lines: ["初六 a", "九二 b", "六三 c", "六四 d", "九五 e", "上六 f"] },
     { number: 30, lines: ["初九 a", "六二 b", "九三 c", "九四 d", "六五 e", "上九 f"] },
@@ -163,7 +164,7 @@ test("a row joins the sources and picks the self and flipped plates", () => {
     { ...row, music: row.music.trigram },
     {
       number: 29, zh: "坎", pinyin: "Kǎn", name: "The Abyss", lines: [0, 1, 0, 0, 1, 0], upper: "kan",
-      commentary: "Danger doubled.", music: "kan", copy: null, plates: ["29-29", "29-30"],
+      commentary: "Danger doubled.", music: "kan", copy: null,
       source: { sixlinesContent: "abc123" },
     },
   );
@@ -204,14 +205,12 @@ const firstSentence = (text) => text.match(/^.*?[.?!](\s|$)/)?.[0].trim() ?? tex
 
 export const buildTable = ({ commentary, harvard, sections, copy, contentCommit }) => {
   const lines = Object.fromEntries(harvard.map((h) => [h.number, linesFromLabels(h.lines)]));
-  const byLines = Object.fromEntries(Object.entries(lines).map(([n, l]) => [l.join(""), Number(n)]));
   const music = Object.fromEntries(sections.map((s) => [s.trigram, s]));
   return harvard
     .map((h) => h.number)
     .filter((n) => commentary[n])
     .map((n) => {
       const c = commentary[n];
-      const flipped = byLines[lines[n].map((x) => 1 - x).join("")];
       const upper = trigram(lines[n]);
       return {
         number: n,
@@ -223,7 +222,6 @@ export const buildTable = ({ commentary, harvard, sections, copy, contentCommit 
         commentary: firstSentence(c.judgment.synthesis),
         music: music[upper],
         copy: copy[n] ?? null,
-        plates: [`${n}-${n}`, `${n}-${flipped}`],
         source: { sixlinesContent: contentCommit },
       };
     });
@@ -283,7 +281,7 @@ git commit -m "Generate the series table from sixlines-content and the music sec
 - Create: `scripts/series/copy-rules.mjs`, `tests/copy.test.mjs`, `series/copy.json`
 
 **Interfaces:**
-- Produces: `copyProblems(entry): string[]` (empty when the entry passes). Entry shape: `{ hook: {text, source}, meaning: [{text, source}, {text, source}], question: {text, source}, lineage?: string }`. `\n` in a text is a line break on screen.
+- Produces: `copyProblems(n: number, entry): string[]` (empty when the entry passes). Entry shape: `{ hook: {text, source}, meaning: [{text, source}, {text, source}], question: {text, source}, plates: [string, string], lineage?: string }`. `\n` in a text is a line break on screen; `plates` are Yilin keys `"N-k"` picked to match the two meaning lines.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -299,35 +297,42 @@ const entry = (over = {}) => ({
   hook: line("Can't stop overthinking?"),
   meaning: [line("Keeping Still\nsays: pause."), line("Stay with where\nyou are now.")],
   question: line("What can wait?"),
+  plates: ["52-51", "52-40"],
   ...over,
 });
 
 test("a good entry has no problems", () => {
-  assert.deepEqual(copyProblems(entry()), []);
+  assert.deepEqual(copyProblems(52, entry()), []);
 });
 
 test("word counts are enforced", () => {
-  assert.match(copyProblems(entry({ hook: line("Stuck?") })).join(), /hook: 1 words/);
-  assert.match(copyProblems(entry({ question: line("What could you honestly let wait today?") })).join(), /question: 7 words/);
+  assert.match(copyProblems(52, entry({ hook: line("Stuck?") })).join(), /hook: 1 words/);
+  assert.match(copyProblems(52, entry({ question: line("What could you honestly let wait today?") })).join(), /question: 7 words/);
 });
 
 test("a screen line over 18 characters is too wide for the frame", () => {
-  assert.match(copyProblems(entry({ meaning: [line("Keeping Still says: pause."), line("Stay with where\nyou are now.")] })).join(), /too wide/);
+  assert.match(copyProblems(52, entry({ meaning: [line("Keeping Still says: pause."), line("Stay with where\nyou are now.")] })).join(), /too wide/);
 });
 
 test("the tone rules catch banned words, exclamation marks and I Ching without a hyphen", () => {
   for (const bad of ["You should rest.", "Rest now!", "The AI says so.", "Your fortune awaits.", "Ask the I Ching."]) {
-    assert.notDeepEqual(copyProblems(entry({ question: line(bad) })), [], bad);
+    assert.notDeepEqual(copyProblems(52, entry({ question: line(bad) })), [], bad);
   }
 });
 
+test("plates are two of this hexagram's, never the one the verse screen shows", () => {
+  assert.match(copyProblems(52, entry({ plates: ["52-52", "52-40"] })).join(), /52-52 is the verse screen's plate/);
+  assert.match(copyProblems(52, entry({ plates: ["29-31", "52-40"] })).join(), /29-31 is not a plate of 52/);
+  assert.match(copyProblems(52, entry({ plates: ["52-51"] })).join(), /plates: need two/);
+});
+
 test("every line names a source", () => {
-  assert.match(copyProblems(entry({ hook: { text: "Can't stop overthinking?", source: "" } })).join(), /hook: no source/);
+  assert.match(copyProblems(52, entry({ hook: { text: "Can't stop overthinking?", source: "" } })).join(), /hook: no source/);
 });
 
 test("every entry in series/copy.json passes", () => {
   const copy = JSON.parse(readFileSync("series/copy.json", "utf8"));
-  for (const [n, e] of Object.entries(copy)) assert.deepEqual(copyProblems(e), [], `hexagram ${n}`);
+  for (const [n, e] of Object.entries(copy)) assert.deepEqual(copyProblems(Number(n), e), [], `hexagram ${n}`);
 });
 ```
 
@@ -354,8 +359,14 @@ const TONE = [
 
 const words = (text) => text.split(/\s+/).filter(Boolean).length;
 
-export const copyProblems = (e) => {
+export const copyProblems = (n, e) => {
   const problems = [];
+  if (e.plates?.length !== 2) problems.push("plates: need two");
+  for (const key of e.plates ?? []) {
+    const [h, k] = key.split("-").map(Number);
+    if (h !== n || !(k >= 1 && k <= 64)) problems.push(`plates: ${key} is not a plate of ${n}`);
+    else if (k === n) problems.push(`plates: ${key} is the verse screen's plate`);
+  }
   const parts = [
     ["hook", e.hook, 3, 7, false],
     ["meaning 1", e.meaning?.[0], 3, 6, true],
@@ -379,7 +390,7 @@ export const copyProblems = (e) => {
 };
 ```
 
-- [ ] **Step 4: Write `series/copy.json`** with the four approved examples
+- [ ] **Step 4: Write `series/copy.json`** with the prototyped entries (1, 2, 29, 52, 58). Plates are picked from each hexagram's 64 Yilin plates (one per transition N→k) to match the line: 1 a rider setting off (1-11), a figure walking through a gate into light (1-27); 2 a white horse (2-57), people bringing in a harvest together (2-32); 29 a figure walking into a storm (29-31), rushing water (29-60); 52 a figure sitting still by a wall (52-12), a figure sitting in a forest clearing (52-1); 58 friends at a feast (58-19), a lone swan on a dark lake (58-24)
 
 ```json
 {
@@ -389,7 +400,8 @@ export const copyProblems = (e) => {
    { "text": "The Creative\nsays: begin.", "source": "commentary/en/1.json#judgment.synthesis" },
    { "text": "No conditions.\nJust mean it.", "source": "commentary/en/1.json#judgment.synthesis" }
   ],
-  "question": { "text": "What would you\nstart today?", "source": "written" }
+  "question": { "text": "What would you\nstart today?", "source": "written" },
+  "plates": ["1-11", "1-27"]
  },
  "2": {
   "hook": { "text": "Tired of always having to lead?", "source": "commentary/en/2.json#judgment.synthesis" },
@@ -397,7 +409,8 @@ export const copyProblems = (e) => {
    { "text": "The Receptive\nsays: follow well.", "source": "commentary/en/2.json#judgment.synthesis" },
    { "text": "Supporting is its\nown strength.", "source": "commentary/en/2.json#image.synthesis" }
   ],
-  "question": { "text": "Who could\nyou back?", "source": "written" }
+  "question": { "text": "Who could\nyou back?", "source": "written" },
+  "plates": ["2-57", "2-32"]
  },
  "29": {
   "hook": { "text": "One problem after another?", "source": "commentary/en/29.json#judgment.synthesis" },
@@ -405,7 +418,8 @@ export const copyProblems = (e) => {
    { "text": "The Abyss says:\nkeep moving.", "source": "commentary/en/29.json#judgment.synthesis" },
    { "text": "Like water: fill\nit, flow on.", "source": "commentary/en/29.json#image.synthesis" }
   ],
-  "question": { "text": "What's the next\nsmall step?", "source": "written" }
+  "question": { "text": "What's the next\nsmall step?", "source": "written" },
+  "plates": ["29-31", "29-60"]
  },
  "52": {
   "hook": { "text": "Can't stop overthinking?", "source": "commentary/en/52.json#judgment.synthesis" },
@@ -413,7 +427,17 @@ export const copyProblems = (e) => {
    { "text": "Keeping Still\nsays: pause.", "source": "commentary/en/52.json#judgment.synthesis" },
    { "text": "Stay with where\nyou are now.", "source": "commentary/en/52.json#image.synthesis" }
   ],
-  "question": { "text": "What can wait?", "source": "written" }
+  "question": { "text": "What can wait?", "source": "written" },
+  "plates": ["52-12", "52-1"]
+ },
+ "58": {
+  "hook": { "text": "Good news, no one to tell?", "source": "commentary/en/58.json#image.synthesis" },
+  "meaning": [
+   { "text": "The Joyous says:\nshare it.", "source": "commentary/en/58.json#image.synthesis" },
+   { "text": "Joy kept alone\ndries up.", "source": "commentary/en/58.json#image.synthesis" }
+  ],
+  "question": { "text": "Who could you\ncall today?", "source": "written" },
+  "plates": ["58-19", "58-24"]
  }
 }
 ```
@@ -421,7 +445,7 @@ export const copyProblems = (e) => {
 - [ ] **Step 5: Run, regenerate the table, run the suite**
 
 Run: `node --test tests/copy.test.mjs && npm run series:table && npm test`
-Expected: 6 pass; `wrote series/hexagrams.json (64 rows, 4 with copy)`; suite passes.
+Expected: 7 pass; `wrote series/hexagrams.json (64 rows, 5 with copy)`; suite passes.
 
 - [ ] **Step 6: Commit**
 
@@ -482,8 +506,7 @@ const row = {
   number: 29, zh: "坎", pinyin: "Kǎn", name: "The Abyss", lines: [0, 1, 0, 0, 1, 0], upper: "kan",
   commentary: "Danger doubled.",
   music: { trigram: "kan", file: "pick09-synthwave.mp3", bpm: 100, start: 91.223, firstBeat: 0, drop: 14.4 },
-  copy: { hook: line("One problem after another?"), meaning: [line("a b c"), line("d e f")], question: line("Next?") },
-  plates: ["29-29", "29-30"],
+  copy: { hook: line("One problem after another?"), meaning: [line("a b c"), line("d e f")], question: line("Next?"), plates: ["29-31", "29-60"] },
   source: { sixlinesContent: "abc" },
 };
 
@@ -492,11 +515,17 @@ test("a row becomes the template's props", () => {
   assert.equal(p.music, "local/music/pick09-synthwave.mp3");
   assert.equal(p.musicStart, 91.223);
   assert.equal(p.hexagramClip, "assets/3d/hexagram-010010-100bpm-8b.mp4");
-  assert.deepEqual(p.plates, ["assets/yilin/stipple-29-29.webp", "assets/yilin/stipple-29-30.webp"]);
+  assert.deepEqual(p.plates, ["assets/yilin/stipple-29-31.webp", "assets/yilin/stipple-29-60.webp"]);
   assert.deepEqual(p.screens.map((s) => s.src), [
     "assets/screens/29/reading.png", "assets/screens/29/verse.png", "assets/matrix-records.png", "assets/matrix-ask.png",
   ]);
   assert.equal(p.url, "sixlines.day");
+});
+
+test("the third screen rotates so neighbouring shorts differ", () => {
+  const third = (n) => seriesProps({ ...row, number: n }).screens[2].src;
+  assert.deepEqual([third(27), third(28), third(29)], ["assets/matrix-today.png", "assets/matrix-journal.png", "assets/matrix-records.png"]);
+  for (const n of [27, 28, 29]) assert.equal(seriesProps({ ...row, number: n }).screens[3].src, "assets/matrix-ask.png");
 });
 
 test("an override that changes the tempo changes the clip too", () => {
@@ -533,12 +562,18 @@ export type SeriesRow = {
   upper: string;
   commentary: string;
   music: { trigram: string; file: string; bpm: number; start: number; firstBeat: number; drop: number; sha256?: string; certificate?: { file: string; sha256: string } };
-  copy: { hook: Line; meaning: [Line, Line]; question: Line; lineage?: string } | null;
-  plates: [string, string];
+  copy: { hook: Line; meaning: [Line, Line]; question: Line; plates: [string, string]; lineage?: string } | null;
   source: { sixlinesContent: string };
 };
 
 const plate = (key: string) => `assets/yilin/stipple-${key}.webp`;
+
+// Screen 3 rotates by hexagram number so neighbouring shorts differ; ask always closes.
+const THIRD = [
+  { src: "assets/matrix-today.png", caption: "YOUR DAY, READ" },
+  { src: "assets/matrix-journal.png", caption: "KEEP YOUR RECORDS" },
+  { src: "assets/matrix-records.png", caption: "SIXTY-FOUR RECORDS" },
+];
 
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
   if (!row.copy) throw new Error(`hexagram ${row.number} has no copy in series/copy.json`);
@@ -553,11 +588,11 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     hook: row.copy.hook.text,
     meaning: [row.copy.meaning[0].text, row.copy.meaning[1].text] as [string, string],
     question: row.copy.question.text,
-    plates: [plate(row.plates[0]), plate(row.plates[1])] as [string, string],
+    plates: [plate(row.copy.plates[0]), plate(row.copy.plates[1])] as [string, string],
     screens: [
       { src: `assets/screens/${n}/reading.png`, caption: "READ THE STRUCTURE" },
       { src: `assets/screens/${n}/verse.png`, caption: "THE BOOK OF CHANGES" },
-      { src: "assets/matrix-records.png", caption: "SIXTY-FOUR RECORDS" },
+      THIRD[n % THIRD.length],
       { src: "assets/matrix-ask.png", caption: "ASK · CAST · REFLECT" },
     ],
     cta: "Cast yours free · Six Lines",
@@ -572,24 +607,20 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
 
 If `node --test` rejects the `.ts` extensions in imports, check `src/lib/clips.ts` imports in `tests/clips.test.mjs` for the working form and match it; if `tsc` rejects them, add `"allowImportingTsExtensions": true` to `tsconfig.json` (`noEmit` is already on).
 
-- [ ] **Step 5: Implement `src/series/overrides.ts`** with the prototype's hand-picked plates
+- [ ] **Step 5: Implement `src/series/overrides.ts`** (empty to start: plates now live in `series/copy.json`)
 
 ```ts
 import type { SeriesProps } from "../schema";
 
-// Per-hexagram changes to the props seriesProps builds from series/hexagrams.json.
-export const overrides: Record<number, Partial<SeriesProps>> = {
-  // A white horse for "follow well", a road through a field for line 2.
-  2: { plates: ["assets/yilin/stipple-2-57.webp", "assets/yilin/stipple-2-2.webp"] },
-  // A figure seen from behind, then a figure sitting still in a shaft of light.
-  52: { plates: ["assets/yilin/stipple-52-51.webp", "assets/yilin/stipple-52-52.webp"] },
-};
+// Per-hexagram changes to the props seriesProps builds from series/hexagrams.json,
+// e.g. a different music section or screen for one hexagram.
+export const overrides: Record<number, Partial<SeriesProps>> = {};
 ```
 
 - [ ] **Step 6: Run the tests and typecheck**
 
 Run: `node --test tests/series-props.test.mjs && npm run typecheck`
-Expected: 3 pass; typecheck clean.
+Expected: 4 pass; typecheck clean.
 
 - [ ] **Step 7: Commit**
 
@@ -1265,7 +1296,7 @@ git commit -m "Render series shorts with a share copy, post caption and manifest
 - Modify: `series/copy.json`, `series/hexagrams.json` (regenerated)
 - Create (committed): `series/renders/NN.json`, `NN.txt` for the rendered hexagrams
 
-- [ ] **Step 1: Draft copy for one hexagram per trigram not yet covered**: 58 (Dui), 51 (Zhen), 57 (Xun), 30 (Li), following the spec's copy rules and the notes (plain words, one connected thought; a short observation from `practicalIntegration` where it fits). Add them to `series/copy.json`.
+- [ ] **Step 1: Draft copy for one hexagram per trigram not yet covered**: 51 (Zhen), 57 (Xun), 30 (Li), following the spec's copy rules and the notes (plain words, one connected thought; a short observation from `practicalIntegration` where it fits). Pick each entry's two plates from its contact sheet. Add them to `series/copy.json`.
 
 - [ ] **Step 2: Check and regenerate**
 
@@ -1290,7 +1321,7 @@ git commit -m "Render and record one series short per trigram"
 
 ### Task 10: All 64
 
-- [ ] **Step 1: Draft the copy for the remaining 56 hexagrams** in `series/copy.json`, run `npm test`, and send the full list (hexagram, hook, line 1, line 2, question) to the user as one table. Stop until the user approves it; apply their edits.
+- [ ] **Step 1: Draft the copy and plates for the remaining 56 hexagrams** in `series/copy.json`, run `npm test`, and send the full list (hexagram, hook, line 1, line 2, question) to the user as one table. Stop until the user approves it; apply their edits.
 
 - [ ] **Step 2: Regenerate, make the assets, render**
 
