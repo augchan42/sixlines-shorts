@@ -87,3 +87,26 @@ export const gotchuSchema = z.object({
 });
 
 export type GotchuProps = z.infer<typeof gotchuSchema>;
+
+// One short of the Sixty-Four Records series (src/templates/Series.tsx), built from a row of
+// series/hexagrams.json by src/series/props.ts.
+export const seriesSchema = z.object({
+  hexagram: hexagramSchema,
+  bpm: z.number().positive(),
+  firstBeat: z.number().min(0),
+  music: z.string(),
+  musicStart: z.number().min(0),
+  // Seconds from musicStart to the drop.
+  drop: z.number().positive(),
+  hexagramClip: z.string(),
+  hook: z.string(),
+  meaning: z.tuple([z.string(), z.string()]),
+  question: z.string(),
+  // Paths under public/ of the plates behind the two meaning lines.
+  plates: z.tuple([z.string(), z.string()]),
+  screens: z.array(z.object({ src: z.string(), caption: z.string() })).length(4),
+  cta: z.string(),
+  url: z.string(),
+});
+
+export type SeriesProps = z.infer<typeof seriesSchema>;
