@@ -107,6 +107,8 @@ export const seriesSchema = z.object({
   screens: z.array(z.object({ src: z.string(), caption: z.string() })).length(4),
   // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
   endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]) }),
+  // How the short cuts, by its track's energy (src/lib/seriesCuts.ts).
+  style: z.enum(["calm", "steady", "building", "driving"]),
 });
 
 export type SeriesProps = z.infer<typeof seriesSchema>;

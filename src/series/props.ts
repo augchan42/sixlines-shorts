@@ -1,4 +1,5 @@
 import { endcardClip, type EndcardMode, hexagramClip } from "../lib/clips.ts";
+import { CUT_STYLE } from "../lib/seriesCuts.ts";
 import { seriesPlan } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
@@ -56,6 +57,7 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
   return {
     ...merged,
     hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
+    style: override.style ?? CUT_STYLE[row.upper],
     endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.credit - plan.cta, mode), mode },
   };
 };
