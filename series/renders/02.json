@@ -1,10 +1,10 @@
 {
  "hexagram": 2,
- "rendered": "2026-09-24T09:41:28.001Z",
- "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
+ "rendered": "2026-09-24T11:35:53.709Z",
+ "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
  "clean": true,
- "seconds": 34.090667,
- "shareKbps": 5269,
+ "seconds": 37.418667,
+ "shareKbps": 4789,
  "props": {
   "hexagram": {
    "number": 2,
@@ -55,7 +55,7 @@
   ],
   "hexagramClip": "assets/3d/hexagram-000000-90bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-join-000000-90bpm-7b.mp4",
+   "clip": "assets/3d/endcard-join-000000-90bpm-9b.mp4",
    "mode": "join"
   }
  },
@@ -63,14 +63,14 @@
   "local/music/pick04-analog-dreams-synthwave.mp3": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
   "local/music/certificates/synthwave-analog-dreams-synthwave-9497-license.txt": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
   "assets/3d/hexagram-000000-90bpm-8b.mp4": "996da8f5ddb7af8923c2ebe3ad06ef5425b44e2be8c22ea1f2dd6881127600a5",
-  "assets/3d/endcard-join-000000-90bpm-7b.mp4": "a1259659ea27f0925d2af4cf550c09919874a9251344d265763f2414ddd5fa0e",
+  "assets/3d/endcard-join-000000-90bpm-9b.mp4": "7c9b70373dbebbe1ae3ee7237dfd50d31d553f1793537c3309692ed0d2b28544",
   "assets/screens/2/reading.png": "d93f29cb0ee32a119739ac3c225a866d59d0b984372335f2462c3688844495c9",
   "assets/screens/2/verse.png": "902ea0329a86c01e4ddbded6437942dd08d0e20c904ed3807d03cfc09a43453f",
   "assets/screens/2/today.png": "3f214c4be6f918b880d69b97a6c7307d32c393ba0efede5be45683e9073a1064",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-2-57.webp": "076581bfd3a780cfc92f6630bab1ebd3264035ed5df069e0862f3ea689c45d81",
   "assets/yilin/stipple-2-32.webp": "e9d8fc07b3a0b76bdb1e70056f9c9386c74137c12c6c9f189a53757c3af66a77",
-  "out/series/02-kun/short.mp4": "49fda8e39c2c3bc81241db6cb76b36146da7ff6233c267dcf70539874225d012",
-  "out/series/02-kun/share.mp4": "ba95eec144b84c9c12cdb96ac41d6107c32139ccca20ba3a2873f903900655b0"
+  "out/series/02-kun/short.mp4": "93c3ce316e0ab6fa4ca0f4cea58fe2c6a90da97c7baec6b6df9143a79ae931ea",
+  "out/series/02-kun/share.mp4": "5f2055626de8eff6bdd44a7b7bf9bd15050392fa34eb616aceb0ab601bb7cc82"
  }
 }

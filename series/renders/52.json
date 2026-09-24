@@ -1,10 +1,10 @@
 {
  "hexagram": 52,
- "rendered": "2026-09-24T09:49:26.413Z",
- "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
+ "rendered": "2026-09-24T11:42:06.586Z",
+ "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
  "clean": true,
- "seconds": 34.218667,
- "shareKbps": 5249,
+ "seconds": 37.888,
+ "shareKbps": 4728,
  "props": {
   "hexagram": {
    "number": 52,
@@ -55,7 +55,7 @@
   ],
   "hexagramClip": "assets/3d/hexagram-001001-82.5bpm-6b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-join-001001-82.5bpm-7b.mp4",
+   "clip": "assets/3d/endcard-join-001001-82.5bpm-9b.mp4",
    "mode": "join"
   }
  },
@@ -63,14 +63,14 @@
   "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
   "local/music/certificates/synthwave-80s-retro-inspiring-synth-pop-570162-license.txt": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
   "assets/3d/hexagram-001001-82.5bpm-6b.mp4": "8a8d7081fc73bd6f5e8a1b487e8ce4e4d618891de46dc64f762c89562d1a825a",
-  "assets/3d/endcard-join-001001-82.5bpm-7b.mp4": "30433560589b75b60401547849c0a63c9bff619c935eb2d448daf42df61416a7",
+  "assets/3d/endcard-join-001001-82.5bpm-9b.mp4": "2334c44fd8ef65252cd1c735f083c2b41c217677eb6349b013e7a4c1f98ac8a8",
   "assets/screens/52/reading.png": "2c1bf7742637d38ecc539c0d9a052b29e42b4c41fd8fa463e8176cdeebf86a2e",
   "assets/screens/52/verse.png": "022bc664bc0d4c81d2f97aadaf80960cabf8fbb8c6b5a6411a2b775d74f847de",
   "assets/screens/52/today.png": "7e9ed6fcc40f9f37bfac9c454efc1bd0b18cb68874e94410b93f3a8eac2a0879",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-52-12.webp": "344f6de1d8dabd9865f85be8d6fc3af87097b7cb01fd12d37522ac677a3c0171",
   "assets/yilin/stipple-52-1.webp": "98666d29c175f4c3f2f1e639cbaa49d6054e3c612ec1d9e2d8e25be7df0e9abf",
-  "out/series/52-gen/short.mp4": "41edc7c835865d076e983d8cf86fda260a62d94c0ac52d838e16fb523ca6c0cd",
-  "out/series/52-gen/share.mp4": "c301977a2bcb430f90730f4a17e8af958a76eb8fb1dbb81836de2947fff2d83e"
+  "out/series/52-gen/short.mp4": "3690d22da264730b0ca4ce29b9946d372599e4412fe4c0cee097287d568c0df0",
+  "out/series/52-gen/share.mp4": "a2982f6a382a499abbb0a43c89aa477d30f972902008016b7a691dc1133d9d42"
  }
 }

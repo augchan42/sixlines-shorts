@@ -1,10 +1,10 @@
 {
  "hexagram": 30,
- "rendered": "2026-09-24T10:06:03.259Z",
- "commit": "bc9c2567c73c216b451bd6ea1972202a215f9c5a",
+ "rendered": "2026-09-24T11:37:55.552Z",
+ "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
  "clean": true,
- "seconds": 30.656,
- "shareKbps": 5874,
+ "seconds": 33.642667,
+ "shareKbps": 5341,
  "props": {
   "hexagram": {
    "number": 30,
@@ -55,7 +55,7 @@
   ],
   "hexagramClip": "assets/3d/hexagram-101101-100bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-flip-101101-100bpm-7b.mp4",
+   "clip": "assets/3d/endcard-flip-101101-100bpm-9b.mp4",
    "mode": "flip"
   }
  },
@@ -63,14 +63,14 @@
   "local/music/pick10-retrowave.mp3": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
   "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
   "assets/3d/hexagram-101101-100bpm-8b.mp4": "e9699603c44729a502556d34efee2da6870395eeb723ac92f333db483816a3c3",
-  "assets/3d/endcard-flip-101101-100bpm-7b.mp4": "8857a11997252d8d1355ca92292ac86e7b66c1fd72b5e21c852bc14c3f29c2a0",
+  "assets/3d/endcard-flip-101101-100bpm-9b.mp4": "afe33a2e0ad1ff6e883456ca7364c97453b463f8e9c063971488c6af55ad7d19",
   "assets/screens/30/reading.png": "1e8efe371da4473fb98e83a0c916f534f784037752dc34457a83079da2244024",
   "assets/screens/30/verse.png": "b9d1a7e5e0973dc30083c5f7b22b507a22b423cf96a06d006c305aa876cab7fb",
   "assets/screens/30/today.png": "a6d3d91d4d0d6c6111f05fc7990674f947ef0bce146c24639d8d1741905fe87f",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-30-20.webp": "e0fc907ed512617d3d61cbc8456370c895acfd58f81d6347ce2926e1c5992644",
   "assets/yilin/stipple-30-47.webp": "97b43815f638b4c3d9ff645e806669ed645fa91599509001af457b44da6dc5f3",
-  "out/series/30-li/short.mp4": "b41b7a368988fc69839285cdaaf933739c6641d1b82d5793461eb11b9ff384c5",
-  "out/series/30-li/share.mp4": "29fc96db8fb4fc82e0e84ff6ef5b770d682a2adf3de1ae102bc9103af90bb8c7"
+  "out/series/30-li/short.mp4": "158d1efe3b649fc3f3b782bf79266ba0f46eec1c870dbe1128d5af17c8d78f84",
+  "out/series/30-li/share.mp4": "d96f818f5adbe2aa81535a316060d38c170da1e0cc06e858cdda871609ab2234"
  }
 }

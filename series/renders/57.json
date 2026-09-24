@@ -1,10 +1,10 @@
 {
  "hexagram": 57,
- "rendered": "2026-09-24T09:51:29.548Z",
- "commit": "07139e038835abbb84bda1f883ef7416fed7de4b",
+ "rendered": "2026-09-24T11:44:15.119Z",
+ "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
  "clean": true,
- "seconds": 32.256,
- "shareKbps": 5576,
+ "seconds": 35.413333,
+ "shareKbps": 5067,
  "props": {
   "hexagram": {
    "number": 57,
@@ -55,7 +55,7 @@
   ],
   "hexagramClip": "assets/3d/hexagram-011011-95bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-011011-95bpm-7b.mp4",
+   "clip": "assets/3d/endcard-snap-011011-95bpm-9b.mp4",
    "mode": "snap"
   }
  },
@@ -63,14 +63,14 @@
   "local/music/pick11-retro-synth-pop.mp3": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
   "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
   "assets/3d/hexagram-011011-95bpm-8b.mp4": "f2d873495638480c9954f2c533fa3974d33f097365838148ed66d7dfe9e1179d",
-  "assets/3d/endcard-snap-011011-95bpm-7b.mp4": "8024fc694d5b07346c36acdf9cd8c6960e5c0d5f9b0cb7b6b57439c96654be73",
+  "assets/3d/endcard-snap-011011-95bpm-9b.mp4": "35fbe5619e25d68df7595f5ed20f0eac5feea5b62720fc74c79e3c4e0c01f89c",
   "assets/screens/57/reading.png": "e421a44dbcf101b9dab7239963deb9bf7071e4fa29bb98923528480313d852e8",
   "assets/screens/57/verse.png": "0357a35247eeb5b3470b2eadb03175b7abb42d1445f25a3ffd79aeda299d7b9c",
   "assets/screens/57/today.png": "a1ea492aa624c3c13aa27e847c5c567a5b5d2b3ad432aad9733528e669e341f9",
   "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-57-48.webp": "d725503d82b36cbd3708a29533391f2ef9a6e02348fef1cf7aa57a9d7c766a9b",
   "assets/yilin/stipple-57-64.webp": "f2f25217c450f64648954b4dfae25c48208119440d5d7618565d5c1d750e0745",
-  "out/series/57-xun/short.mp4": "a88dce004847149eedcf247cdfe9f7ad1c262dc17d210ba6f08e87e45a4e9151",
-  "out/series/57-xun/share.mp4": "7a39cc5cc96ba164cb97d366efe9876318bcb75a349f8aedfd36aec0cb17b1cb"
+  "out/series/57-xun/short.mp4": "15e09747e9e71ef1e770005dc4fbad83d2fe9287cdae4e14a336f322291539ef",
+  "out/series/57-xun/share.mp4": "4fcc59ba2bab3a527e221d5861e30cd1c2f1b272408bb2832c5c3dc26015a2cb"
  }
 }
