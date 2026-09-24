@@ -162,7 +162,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Big start, total chaos?",
+    "source": "commentary/en/3.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Difficulty says:\nget organized.",
+     "source": "commentary/en/3.json#judgment.synthesis"
+    },
+    {
+     "text": "Boring beats\nbold here.",
+     "source": "commentary/en/3.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What needs\nsorting first?",
+    "source": "written"
+   },
+   "plates": [
+    "3-53",
+    "3-54"
+   ],
+   "caption": {
+    "text": "The image is thunder with no rain yet, and the wise one sorts thread. When the rain comes, there’s something to weave.",
+    "source": "commentary/en/3.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -200,7 +227,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Asking again for a better answer?",
+    "source": "commentary/en/4.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Youthful Folly\nsays: ask once.",
+     "source": "commentary/en/4.json#judgment.synthesis"
+    },
+    {
+     "text": "Asking twice is\njust shopping.",
+     "source": "commentary/en/4.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s your\nreal question?",
+    "source": "written"
+   },
+   "plates": [
+    "4-26",
+    "4-13"
+   ],
+   "caption": {
+    "text": "The image is a spring at the foot of a mountain. It doesn’t know where the sea is, and it moves on anyway.",
+    "source": "commentary/en/4.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -238,7 +292,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Stuck waiting for your moment?",
+    "source": "commentary/en/5.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Waiting says:\nwait well.",
+     "source": "commentary/en/5.json#judgment.synthesis"
+    },
+    {
+     "text": "Eat, rest,\nstay ready.",
+     "source": "commentary/en/5.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "How can you\nwait well today?",
+    "source": "written"
+   },
+   "plates": [
+    "5-41",
+    "5-34"
+   ],
+   "caption": {
+    "text": "The clouds are up and the rain hasn’t come, so the old text says: eat and drink. Waiting well takes energy.",
+    "source": "commentary/en/5.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -276,7 +357,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Fighting over something you’re right about?",
+    "source": "commentary/en/6.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Conflict says:\nstop halfway.",
+     "source": "commentary/en/6.json#judgment.synthesis"
+    },
+    {
+     "text": "Pushing to the end\ncosts you.",
+     "source": "commentary/en/6.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What fight could\nyou leave now?",
+    "source": "written"
+   },
+   "plates": [
+    "6-41",
+    "6-24"
+   ],
+   "caption": {
+    "text": "Heaven moves up and water moves down: both right, never meeting. The middle of a fight is the last good place to walk away.",
+    "source": "commentary/en/6.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -314,7 +422,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Leading a team through something hard?",
+    "source": "commentary/en/7.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Army needs\na grown-up.",
+     "source": "commentary/en/7.json#judgment.synthesis"
+    },
+    {
+     "text": "Feed people\nbefore you ask.",
+     "source": "commentary/en/7.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who’s counting\non you?",
+    "source": "written"
+   },
+   "plates": [
+    "7-50",
+    "7-22"
+   ],
+   "caption": {
+    "text": "The image is water under the earth, unseen but everywhere. An army is ordinary people, and they’re there when needed if you look after them.",
+    "source": "commentary/en/7.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -352,7 +487,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Keep saying you’ll join later?",
+    "source": "commentary/en/8.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Holding Together\nsays: join now.",
+     "source": "commentary/en/8.json#judgment.synthesis"
+    },
+    {
+     "text": "Late arrivals\nmiss out.",
+     "source": "commentary/en/8.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who’s waiting\nfor your yes?",
+    "source": "written"
+   },
+   "plates": [
+    "8-35",
+    "8-50"
+   ],
+   "caption": {
+    "text": "The image is water on the earth, running to the low ground and filling it. People who need to belong come on their own; the ones who come late do badly.",
+    "source": "commentary/en/8.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -390,7 +552,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Everything’s ready, nothing happens?",
+    "source": "commentary/en/9.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Small Taming\nsays: not yet.",
+     "source": "commentary/en/9.json#judgment.synthesis"
+    },
+    {
+     "text": "Work on yourself\nmeanwhile.",
+     "source": "commentary/en/9.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What can you\nwork on now?",
+    "source": "written"
+   },
+   "plates": [
+    "9-40",
+    "9-47"
+   ],
+   "caption": {
+    "text": "Dense clouds, no rain, and wind across the sky with nothing to hold. When the outside won’t move, the inside is the work.",
+    "source": "commentary/en/9.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -428,7 +617,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Working for someone with a temper?",
+    "source": "commentary/en/10.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Treading says:\nmind how you step.",
+     "source": "commentary/en/10.json#judgment.synthesis"
+    },
+    {
+     "text": "Act well and\nit won’t flare.",
+     "source": "commentary/en/10.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who do you tread\ncarefully around?",
+    "source": "written"
+   },
+   "plates": [
+    "10-62",
+    "10-34"
+   ],
+   "caption": {
+    "text": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep.",
+    "source": "commentary/en/10.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -466,7 +682,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Good times, now what?",
+    "source": "commentary/en/11.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Peace says:\nkeep it moving.",
+     "source": "commentary/en/11.json#judgment.synthesis"
+    },
+    {
+     "text": "Peace is contact,\nnot a vacation.",
+     "source": "commentary/en/11.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who haven’t you\nreached lately?",
+    "source": "written"
+   },
+   "plates": [
+    "11-37",
+    "11-61"
+   ],
+   "caption": {
+    "text": "The image is heaven and earth meeting. In good times the job isn’t to relax but to make sure the good reaches everyone.",
+    "source": "commentary/en/11.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -504,7 +747,34 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Everything stuck and no one’s talking?",
+    "source": "commentary/en/12.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Standstill says:\nhold back.",
+     "source": "commentary/en/12.json#judgment.synthesis"
+    },
+    {
+     "text": "Don’t take\nthe bad deal.",
+     "source": "commentary/en/12.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\nturn down?",
+    "source": "written"
+   },
+   "plates": [
+    "12-11",
+    "12-10"
+   ],
+   "caption": {
+    "text": "Heaven and earth have stopped talking. When a system is broken, taking its rewards endorses it, so pull back.",
+    "source": "commentary/en/12.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -542,7 +812,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Same five friends for years?",
+    "source": "commentary/en/13.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Fellowship says:\nkeep it open.",
+     "source": "commentary/en/13.json#judgment.synthesis"
+    },
+    {
+     "text": "Let new people\nwalk up.",
+     "source": "commentary/en/13.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who could you\ninvite in?",
+    "source": "written"
+   },
+   "plates": [
+    "13-43",
+    "13-47"
+   ],
+   "caption": {
+    "text": "The old text puts fellowship out in the open, where anyone can walk up. Once you close the door and pick who’s in, you’ve left it.",
+    "source": "commentary/en/13.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -580,7 +877,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Doing better than everyone around you?",
+    "source": "commentary/en/14.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Great Possession\nsays: people see.",
+     "source": "commentary/en/14.json#image.synthesis"
+    },
+    {
+     "text": "Use it to put\nthings right.",
+     "source": "commentary/en/14.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What would you\nfix first?",
+    "source": "written"
+   },
+   "plates": [
+    "14-41",
+    "14-36"
+   ],
+   "caption": {
+    "text": "The image is fire high in the sky, lighting everything below. When you have a lot, people see what you do with it.",
+    "source": "commentary/en/14.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -618,7 +942,34 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Always needing credit?",
+    "source": "written"
+   },
+   "meaning": [
+    {
+     "text": "Modesty says:\nfinish quietly.",
+     "source": "commentary/en/15.json#judgment.synthesis"
+    },
+    {
+     "text": "No one stops\nthe quiet ones.",
+     "source": "commentary/en/15.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What could you\ndo without credit?",
+    "source": "written"
+   },
+   "plates": [
+    "15-6",
+    "15-25"
+   ],
+   "caption": {
+    "text": "The image is a mountain inside the earth: the biggest thing around, and hidden. It’s the one hexagram where every line is favorable.",
+    "source": "commentary/en/15.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -656,7 +1007,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "All fired up, nowhere to go?",
+    "source": "commentary/en/16.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Enthusiasm says:\ngive it a shape.",
+     "source": "commentary/en/16.json#image.synthesis"
+    },
+    {
+     "text": "Organize,\nthen move.",
+     "source": "commentary/en/16.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Where will you\naim it?",
+    "source": "written"
+   },
+   "plates": [
+    "16-40",
+    "16-33"
+   ],
+   "caption": {
+    "text": "Thunder breaks out of the ground, and the first thing the old kings did with that energy was make music. Give it form, then direction.",
+    "source": "commentary/en/16.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -694,7 +1072,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Still at your desk after dark?",
+    "source": "commentary/en/17.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Following says:\ngo with the day.",
+     "source": "commentary/en/17.json#image.synthesis"
+    },
+    {
+     "text": "Day’s done.\nGo in, rest.",
+     "source": "commentary/en/17.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "When will you\nstop today?",
+    "source": "written"
+   },
+   "plates": [
+    "17-60",
+    "17-63"
+   ],
+   "caption": {
+    "text": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy.",
+    "source": "commentary/en/17.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -732,7 +1137,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Something rotting under the surface?",
+    "source": "commentary/en/18.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Decay says:\nit can be fixed.",
+     "source": "commentary/en/18.json#judgment.synthesis"
+    },
+    {
+     "text": "Rushed repairs\ndon’t hold.",
+     "source": "commentary/en/18.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s overdue\nfor repair?",
+    "source": "written"
+   },
+   "plates": [
+    "18-31",
+    "18-52"
+   ],
+   "caption": {
+    "text": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t.",
+    "source": "commentary/en/18.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -770,7 +1202,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Things finally taking off?",
+    "source": "commentary/en/19.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Approach says:\ngo, but plan.",
+     "source": "commentary/en/19.json#judgment.synthesis"
+    },
+    {
+     "text": "Every spring has\nan autumn.",
+     "source": "commentary/en/19.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\nprepare now?",
+    "source": "written"
+   },
+   "plates": [
+    "19-11",
+    "19-32"
+   ],
+   "caption": {
+    "text": "The judgment opens every door, then names a date: by the eighth month, trouble. Growth comes with the date it turns, so plan for it.",
+    "source": "commentary/en/19.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -808,7 +1267,34 @@
     "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Deciding from behind a desk?",
+    "source": "commentary/en/20.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Contemplation:\ngo and look.",
+     "source": "commentary/en/20.json#image.synthesis"
+    },
+    {
+     "text": "See by going,\nnot by sitting.",
+     "source": "commentary/en/20.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What could you\ngo see?",
+    "source": "written"
+   },
+   "plates": [
+    "20-19",
+    "20-51"
+   ],
+   "caption": {
+    "text": "The image is wind moving over everything. The old kings traveled and looked before they taught.",
+    "source": "commentary/en/20.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -846,7 +1332,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Something blocking you for weeks?",
+    "source": "commentary/en/21.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Biting Through\nsays: bite down.",
+     "source": "commentary/en/21.json#judgment.synthesis"
+    },
+    {
+     "text": "It won’t clear\nby itself.",
+     "source": "commentary/en/21.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\ndeal with now?",
+    "source": "written"
+   },
+   "plates": [
+    "21-42",
+    "21-53"
+   ],
+   "caption": {
+    "text": "Lightning, then thunder: first you see it, then you feel it. The old kings made the rules clear before they enforced them.",
+    "source": "commentary/en/21.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -884,7 +1397,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Polishing the slides instead of deciding?",
+    "source": "commentary/en/22.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Grace says:\nsmall things only.",
+     "source": "commentary/en/22.json#judgment.synthesis"
+    },
+    {
+     "text": "Polish can’t make\nbig decisions.",
+     "source": "commentary/en/22.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What needs more\nthan polish?",
+    "source": "written"
+   },
+   "plates": [
+    "22-34",
+    "22-37"
+   ],
+   "caption": {
+    "text": "Fire at the foot of the mountain is beautiful, but its light only reaches so far. Use grace for small things and substance for the hard ones.",
+    "source": "commentary/en/22.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -922,7 +1462,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Everything falling apart?",
+    "source": "commentary/en/23.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Splitting Apart\nsays: don’t run.",
+     "source": "commentary/en/23.json#judgment.synthesis"
+    },
+    {
+     "text": "Stay and help\nthose below you.",
+     "source": "commentary/en/23.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who depends\non you?",
+    "source": "written"
+   },
+   "plates": [
+    "23-36",
+    "23-57"
+   ],
+   "caption": {
+    "text": "The mountain sits on eroding earth, and the old text tells those on top to give to those below. The summit rests on the base.",
+    "source": "commentary/en/23.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -960,7 +1527,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Coming back after a bad stretch?",
+    "source": "commentary/en/24.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Return says:\nenergy returns.",
+     "source": "commentary/en/24.json#image.synthesis"
+    },
+    {
+     "text": "Rest. Only rushing\nstops it.",
+     "source": "commentary/en/24.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What are you\nrushing back to?",
+    "source": "written"
+   },
+   "plates": [
+    "24-5",
+    "24-42"
+   ],
+   "caption": {
+    "text": "Thunder underground is energy returning before it shows, and the old kings stayed still to let it come. Only impatience stops a return.",
+    "source": "commentary/en/24.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -998,7 +1592,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Hiding your real reasons?",
+    "source": "commentary/en/25.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Innocence says:\nbe straight.",
+     "source": "commentary/en/25.json#judgment.synthesis"
+    },
+    {
+     "text": "Stop faking,\nand it works.",
+     "source": "commentary/en/25.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Where are you\nperforming?",
+    "source": "written"
+   },
+   "plates": [
+    "25-27",
+    "25-62"
+   ],
+   "caption": {
+    "text": "The image is thunder under the sky, everything just being what it is. You don’t make things real; you stop making them fake.",
+    "source": "commentary/en/25.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1036,7 +1657,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Years of practice, nobody’s seen it?",
+    "source": "commentary/en/26.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Great Accumulation\nsays: go public.",
+     "source": "commentary/en/26.json#judgment.synthesis"
+    },
+    {
+     "text": "Don’t eat\nat home.",
+     "source": "commentary/en/26.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What have you\nbeen keeping in?",
+    "source": "written"
+   },
+   "plates": [
+    "26-37",
+    "26-59"
+   ],
+   "caption": {
+    "text": "The image is heaven held inside a mountain. The old text says don’t eat at home: take what you’ve stored up out into the world.",
+    "source": "commentary/en/26.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1074,7 +1722,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Said something you regret at dinner?",
+    "source": "commentary/en/27.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Nourishment says:\nwatch your mouth.",
+     "source": "commentary/en/27.json#image.synthesis"
+    },
+    {
+     "text": "What goes in,\nwhat comes out.",
+     "source": "commentary/en/27.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Which do you\nwatch less?",
+    "source": "written"
+   },
+   "plates": [
+    "27-31",
+    "27-51"
+   ],
+   "caption": {
+    "text": "Thunder under a mountain, and the advice is: careful with words, moderate with food. Both sound easy and trip up almost everyone.",
+    "source": "commentary/en/27.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1112,7 +1787,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Under too much weight?",
+    "source": "commentary/en/28.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Great Excess\nsays: move now.",
+     "source": "commentary/en/28.json#judgment.synthesis"
+    },
+    {
+     "text": "Waiting under it\nisn’t caution.",
+     "source": "commentary/en/28.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s bending\nright now?",
+    "source": "written"
+   },
+   "plates": [
+    "28-33",
+    "28-18"
+   ],
+   "caption": {
+    "text": "Water above the trees: the normal rules are off. It asks for one thing, the will to stand alone without making a fuss.",
+    "source": "commentary/en/28.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1280,7 +1982,34 @@
     "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Listening, but already decided?",
+    "source": "commentary/en/31.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Influence says:\nmake room.",
+     "source": "commentary/en/31.json#image.synthesis"
+    },
+    {
+     "text": "The full can’t\ntake anything in.",
+     "source": "commentary/en/31.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What have you\nalready decided?",
+    "source": "written"
+   },
+   "plates": [
+    "31-37",
+    "31-10"
+   ],
+   "caption": {
+    "text": "A lake sits on top of a mountain because the mountain made room. If you’re already certain, nothing can move you.",
+    "source": "commentary/en/31.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1318,7 +2047,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Starting over again and again?",
+    "source": "commentary/en/32.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Duration says:\nshow up again.",
+     "source": "commentary/en/32.json#judgment.synthesis"
+    },
+    {
+     "text": "Keep moving, same\ndirection.",
+     "source": "commentary/en/32.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\nkeep doing?",
+    "source": "written"
+   },
+   "plates": [
+    "32-4",
+    "32-24"
+   ],
+   "caption": {
+    "text": "Thunder and wind never stop moving, and together they make duration. Stand firm: keep moving, but don’t change direction.",
+    "source": "commentary/en/32.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1356,7 +2112,34 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Time to walk away?",
+    "source": "commentary/en/33.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Retreat says:\nleave well.",
+     "source": "commentary/en/33.json#judgment.synthesis"
+    },
+    {
+     "text": "No anger,\njust distance.",
+     "source": "commentary/en/33.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What are you\nready to leave?",
+    "source": "written"
+   },
+   "plates": [
+    "33-20",
+    "33-24"
+   ],
+   "caption": {
+    "text": "A mountain under heaven: heaven stays out of reach. Keep your distance from petty people, but without hate, because hate keeps you attached.",
+    "source": "commentary/en/33.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1394,7 +2177,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Finally in charge?",
+    "source": "commentary/en/34.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Great Power says:\ncheck your aim.",
+     "source": "commentary/en/34.json#judgment.synthesis"
+    },
+    {
+     "text": "Mostly, know what\nnot to do.",
+     "source": "commentary/en/34.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What won’t you\ndo with it?",
+    "source": "written"
+   },
+   "plates": [
+    "34-36",
+    "34-38"
+   ],
+   "caption": {
+    "text": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. The power goes into staying off wrong paths.",
+    "source": "commentary/en/34.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1432,7 +2242,34 @@
     "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Finally getting recognized?",
+    "source": "commentary/en/35.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Progress says:\ncharacter first.",
+     "source": "commentary/en/35.json#image.synthesis"
+    },
+    {
+     "text": "Not strategy.\nNot network.",
+     "source": "commentary/en/35.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What are you\nlike up close?",
+    "source": "written"
+   },
+   "plates": [
+    "35-19",
+    "35-56"
+   ],
+   "caption": {
+    "text": "The sun rises over the earth, and progress comes with the light. The text says brighten your character, not your strategy.",
+    "source": "commentary/en/35.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1470,7 +2307,34 @@
     "downloaded": "2026-09-24 02:36:46 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Your good ideas getting shut down?",
+    "source": "commentary/en/36.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Dark times say:\nlie low.",
+     "source": "commentary/en/36.json#judgment.synthesis"
+    },
+    {
+     "text": "Keep your light\ninside.",
+     "source": "commentary/en/36.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What light are\nyou protecting?",
+    "source": "written"
+   },
+   "plates": [
+    "36-44",
+    "36-5"
+   ],
+   "caption": {
+    "text": "The light has sunk into the earth. In a dark time, dim the outside to keep the inside bright.",
+    "source": "commentary/en/36.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1508,7 +2372,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Too many rules at home?",
+    "source": "commentary/en/37.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Family says:\nskip the rules.",
+     "source": "commentary/en/37.json#image.synthesis"
+    },
+    {
+     "text": "Say real things.\nDo them daily.",
+     "source": "commentary/en/37.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\nfollow through on?",
+    "source": "written"
+   },
+   "plates": [
+    "37-41",
+    "37-57"
+   ],
+   "caption": {
+    "text": "Wind born from fire: warmth makes the movement. A family whose words mean something and whose actions last doesn’t need the rules.",
+    "source": "commentary/en/37.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1546,7 +2437,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Can’t agree on anything?",
+    "source": "commentary/en/38.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Opposition says:\nstart small.",
+     "source": "commentary/en/38.json#judgment.synthesis"
+    },
+    {
+     "text": "Share something,\nstay different.",
+     "source": "commentary/en/38.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What do you\nboth want?",
+    "source": "written"
+   },
+   "plates": [
+    "38-17",
+    "38-44"
+   ],
+   "caption": {
+    "text": "Fire rises and water sinks; they’ll never meet. Fix small things first, and find what you share while staying different.",
+    "source": "commentary/en/38.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1584,7 +2502,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Hit a wall?",
+    "source": "commentary/en/39.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Obstruction says:\nask for help.",
+     "source": "commentary/en/39.json#judgment.synthesis"
+    },
+    {
+     "text": "The wall is\nthe lesson.",
+     "source": "commentary/en/39.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Who could you\nask?",
+    "source": "written"
+   },
+   "plates": [
+    "39-28",
+    "39-29"
+   ],
+   "caption": {
+    "text": "Water on a mountain can’t flow. The old text says turn inward and find the great person: the obstacle tests whether you’ll ask.",
+    "source": "commentary/en/39.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1622,7 +2567,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "The pressure’s finally off?",
+    "source": "commentary/en/40.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Deliverance says:\nact or rest.",
+     "source": "commentary/en/40.json#judgment.synthesis"
+    },
+    {
+     "text": "Then let the\ngrudges go.",
+     "source": "commentary/en/40.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What can you\nforgive?",
+    "source": "written"
+   },
+   "plates": [
+    "40-50",
+    "40-17"
+   ],
+   "caption": {
+    "text": "Thunder and rain clear the air: if there’s work, do it now; if not, go home. Don’t carry grudges into the next round.",
+    "source": "commentary/en/40.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1660,7 +2632,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Having less than before?",
+    "source": "commentary/en/41.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Decrease says:\ngive what you can.",
+     "source": "commentary/en/41.json#judgment.synthesis"
+    },
+    {
+     "text": "Cut the anger,\ncut the wants.",
+     "source": "commentary/en/41.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What can you\nlet go of?",
+    "source": "written"
+   },
+   "plates": [
+    "41-5",
+    "41-24"
+   ],
+   "caption": {
+    "text": "The old text asks for two small baskets, not a grand offering: when you have less, bring less. Anger and wanting cost the most.",
+    "source": "commentary/en/41.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1698,7 +2697,34 @@
     "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Door’s open, still hesitating?",
+    "source": "commentary/en/42.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Increase says:\ngo now.",
+     "source": "commentary/en/42.json#judgment.synthesis"
+    },
+    {
+     "text": "See good, move\ntoward it.",
+     "source": "commentary/en/42.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\nmove toward?",
+    "source": "written"
+   },
+   "plates": [
+    "42-33",
+    "42-1"
+   ],
+   "caption": {
+    "text": "Wind and thunder feed each other. The method of increase: see something good and move toward it.",
+    "source": "commentary/en/42.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1736,7 +2762,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Ready to call something out?",
+    "source": "commentary/en/43.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Breakthrough:\nsay it openly.",
+     "source": "commentary/en/43.json#judgment.synthesis"
+    },
+    {
+     "text": "Speak up, but\nno force.",
+     "source": "commentary/en/43.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What needs\nsaying out loud?",
+    "source": "written"
+   },
+   "plates": [
+    "43-3",
+    "43-1"
+   ],
+   "caption": {
+    "text": "The rules in the text: announce it publicly, warn your own people first, and don’t use force. Fight darkness with a sword and you join it.",
+    "source": "commentary/en/43.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1774,7 +2827,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Something shiny just showed up?",
+    "source": "commentary/en/44.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Coming to Meet\nsays: be wary.",
+     "source": "commentary/en/44.json#judgment.synthesis"
+    },
+    {
+     "text": "Charm can be\nthe warning.",
+     "source": "commentary/en/44.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s too good\nto be true?",
+    "source": "written"
+   },
+   "plates": [
+    "44-8",
+    "44-25"
+   ],
+   "caption": {
+    "text": "Wind under heaven reaches everywhere. When something slips in looking wonderful, don’t chase it; send your own message just as far.",
+    "source": "commentary/en/44.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1812,7 +2892,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Hosting family, bracing for arguments?",
+    "source": "commentary/en/45.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Gathering says:\nshare a purpose.",
+     "source": "commentary/en/45.json#judgment.synthesis"
+    },
+    {
+     "text": "And plan for\nthe friction.",
+     "source": "commentary/en/45.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What holds your\ngroup together?",
+    "source": "written"
+   },
+   "plates": [
+    "45-48",
+    "45-58"
+   ],
+   "caption": {
+    "text": "The king goes to the temple first: without a shared center, a gathering is just a crowd. And where people collect, friction follows.",
+    "source": "commentary/en/45.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1850,7 +2957,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Growing slower than you want?",
+    "source": "commentary/en/46.json#image.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Pushing Upward:\ndon’t worry.",
+     "source": "commentary/en/46.json#judgment.synthesis"
+    },
+    {
+     "text": "Small steps,\npiled up.",
+     "source": "commentary/en/46.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What can you add\ntoday?",
+    "source": "written"
+   },
+   "plates": [
+    "46-2",
+    "46-54"
+   ],
+   "caption": {
+    "text": "A tree pushes up through the earth, going around the rock instead of jumping. It’s already growing, so stop braking.",
+    "source": "commentary/en/46.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1888,7 +3022,34 @@
     "downloaded": "2026-09-24 02:36:49 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Speaking up and nobody listens?",
+    "source": "commentary/en/47.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Oppression says:\nhold your purpose.",
+     "source": "commentary/en/47.json#image.synthesis"
+    },
+    {
+     "text": "Words fail here.\nActions don’t.",
+     "source": "commentary/en/47.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s worth\neverything?",
+    "source": "written"
+   },
+   "plates": [
+    "47-11",
+    "47-42"
+   ],
+   "caption": {
+    "text": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose.",
+    "source": "commentary/en/47.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1926,7 +3087,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Good things just out of reach?",
+    "source": "commentary/en/48.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Well says:\nlengthen the rope.",
+     "source": "commentary/en/48.json#judgment.synthesis"
+    },
+    {
+     "text": "The water is\nalways there.",
+     "source": "commentary/en/48.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s cutting\nyour rope short?",
+    "source": "written"
+   },
+   "plates": [
+    "48-10",
+    "48-57"
+   ],
+   "caption": {
+    "text": "The town changes; the well doesn’t, and the water is always there. What fails is a rope that’s too short or a bucket that breaks.",
+    "source": "commentary/en/48.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -1964,7 +3152,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Making a big change nobody believes in?",
+    "source": "commentary/en/49.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Revolution says:\nfinish first.",
+     "source": "commentary/en/49.json#judgment.synthesis"
+    },
+    {
+     "text": "Trust comes on\nthe last day.",
+     "source": "commentary/en/49.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What change are\nyou making?",
+    "source": "written"
+   },
+   "plates": [
+    "49-15",
+    "49-36"
+   ],
+   "caption": {
+    "text": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. People believe it once it’s done.",
+    "source": "commentary/en/49.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2002,7 +3217,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Got the ingredients, not the result?",
+    "source": "commentary/en/50.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Caldron says:\nset it right.",
+     "source": "commentary/en/50.json#image.synthesis"
+    },
+    {
+     "text": "Get set up\nbefore you start.",
+     "source": "commentary/en/50.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What’s out of\nplace right now?",
+    "source": "written"
+   },
+   "plates": [
+    "50-6",
+    "50-8"
+   ],
+   "caption": {
+    "text": "Wood feeds the fire under the caldron, and it only works if it stands level. Tilted, it spills and the fire misses.",
+    "source": "commentary/en/50.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2170,7 +3412,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Tempted to skip steps?",
+    "source": "commentary/en/53.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Development says:\ngo step by step.",
+     "source": "commentary/en/53.json#judgment.synthesis"
+    },
+    {
+     "text": "Slow growth\nlasts.",
+     "source": "commentary/en/53.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Which step are\nyou skipping?",
+    "source": "written"
+   },
+   "plates": [
+    "53-23",
+    "53-56"
+   ],
+   "caption": {
+    "text": "A tree on a mountain grows slowly where everyone can see it. Every shortcut here goes the wrong way.",
+    "source": "commentary/en/53.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2208,7 +3477,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "No power, no way out?",
+    "source": "commentary/en/54.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Marrying Maiden\nsays: see the end.",
+     "source": "commentary/en/54.json#image.synthesis"
+    },
+    {
+     "text": "This part\nwon’t last.",
+     "source": "commentary/en/54.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What does the\nend look like?",
+    "source": "written"
+   },
+   "plates": [
+    "54-18",
+    "54-55"
+   ],
+   "caption": {
+    "text": "Thunder stirs the lake’s surface while the depths stay still. The text says to look past the middle to how it ends.",
+    "source": "commentary/en/54.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2246,7 +3542,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "At your peak and worried?",
+    "source": "commentary/en/55.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Abundance says:\ndon’t worry.",
+     "source": "commentary/en/55.json#judgment.synthesis"
+    },
+    {
+     "text": "Be the sun\nat noon.",
+     "source": "commentary/en/55.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What will you\ndecide now?",
+    "source": "written"
+   },
+   "plates": [
+    "55-45",
+    "55-44"
+   ],
+   "caption": {
+    "text": "The sun at noon is about to set, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon.",
+    "source": "commentary/en/55.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2284,7 +3607,34 @@
     "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Somewhere new, feeling out of place?",
+    "source": "commentary/en/56.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Wanderer says:\nkeep it brief.",
+     "source": "commentary/en/56.json#image.synthesis"
+    },
+    {
+     "text": "You’re a guest.\nAct like one.",
+     "source": "commentary/en/56.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Where are you\na guest?",
+    "source": "written"
+   },
+   "plates": [
+    "56-17",
+    "56-55"
+   ],
+   "caption": {
+    "text": "Fire on a mountain is bright, seen, and moving on. The traveler gets small wins, so be clear, careful, brief.",
+    "source": "commentary/en/56.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2452,7 +3802,34 @@
     "downloaded": "2026-09-24 02:36:48 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "People drifting apart?",
+    "source": "commentary/en/59.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Dispersion says:\ndon’t argue.",
+     "source": "commentary/en/59.json#judgment.synthesis"
+    },
+    {
+     "text": "Remind them where\nthey come from.",
+     "source": "commentary/en/59.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What do you\nall share?",
+    "source": "written"
+   },
+   "plates": [
+    "59-3",
+    "59-17"
+   ],
+   "caption": {
+    "text": "Wind over water scatters the surface, and the old kings built temples. A shared center pulls people back; force only wears you out.",
+    "source": "commentary/en/59.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2490,7 +3867,34 @@
     "downloaded": "2026-09-24 02:36:47 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Saying yes to everything?",
+    "source": "written"
+   },
+   "meaning": [
+    {
+     "text": "Limitation says:\nset limits.",
+     "source": "commentary/en/60.json#judgment.synthesis"
+    },
+    {
+     "text": "Firm, but\nnot bitter.",
+     "source": "commentary/en/60.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "Where’s your\nlimit?",
+    "source": "written"
+   },
+   "plates": [
+    "60-42",
+    "60-62"
+   ],
+   "caption": {
+    "text": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break.",
+    "source": "commentary/en/60.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2528,7 +3932,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Can’t get through to someone?",
+    "source": "commentary/en/61.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Inner Truth says:\nunderstand first.",
+     "source": "commentary/en/61.json#image.synthesis"
+    },
+    {
+     "text": "Hold off judging\nuntil you do.",
+     "source": "commentary/en/61.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What haven’t you\nasked them yet?",
+    "source": "written"
+   },
+   "plates": [
+    "61-10",
+    "61-8"
+   ],
+   "caption": {
+    "text": "The old text says inner truth reaches even pigs and fishes. The way in is to understand someone before you judge them.",
+    "source": "commentary/en/61.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2566,7 +3997,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Big plan stuck for months?",
+    "source": "commentary/en/62.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "The Small says:\nno big moves.",
+     "source": "commentary/en/62.json#judgment.synthesis"
+    },
+    {
+     "text": "Small done well\nends well.",
+     "source": "commentary/en/62.json#judgment.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What small thing\ncan you do?",
+    "source": "written"
+   },
+   "plates": [
+    "62-26",
+    "62-59"
+   ],
+   "caption": {
+    "text": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal.",
+    "source": "commentary/en/62.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2604,7 +4062,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "Just finished something big?",
+    "source": "commentary/en/63.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Completion says:\nstay alert.",
+     "source": "commentary/en/63.json#judgment.synthesis"
+    },
+    {
+     "text": "Prepare now,\nwhile it works.",
+     "source": "commentary/en/63.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What could\ngo wrong?",
+    "source": "written"
+   },
+   "plates": [
+    "63-11",
+    "63-24"
+   ],
+   "caption": {
+    "text": "Water over fire, in balance for now, and the text warns: good start, messy end. Think about what can go wrong while it still works.",
+    "source": "commentary/en/63.json#image.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
@@ -2642,7 +4127,34 @@
     "downloaded": "2026-09-24 14:01:40 UTC"
    }
   },
-  "copy": null,
+  "copy": {
+   "hook": {
+    "text": "So close to done?",
+    "source": "commentary/en/64.json#judgment.synthesis"
+   },
+   "meaning": [
+    {
+     "text": "Before Completion:\nnot yet.",
+     "source": "commentary/en/64.json#judgment.synthesis"
+    },
+    {
+     "text": "Sort things out\nbefore you move.",
+     "source": "commentary/en/64.json#image.synthesis"
+    }
+   ],
+   "question": {
+    "text": "What goes\nwhere?",
+    "source": "written"
+   },
+   "plates": [
+    "64-3",
+    "64-36"
+   ],
+   "caption": {
+    "text": "The book’s last hexagram is a little fox that gets its tail wet just before the far bank. Sixty-four hexagrams, and the last word is: not yet.",
+    "source": "commentary/en/64.json#judgment.synthesis"
+   }
+  },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
   }
