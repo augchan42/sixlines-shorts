@@ -36,6 +36,18 @@ test("above 120 bpm the text holds twice as many beats, so it still lasts 2 s", 
   assert.equal(q.mode, "after");
 });
 
+test("above 120 bpm the hook holds 8 beats, so it lasts 2 s", () => {
+  const p = seriesPlan(147.01, 9.798);
+  assert.deepEqual([p.hexagram, p.hexagramBeats, p.drop], [8, 16, 24]);
+  assert.equal(seriesPlan(120, 14).hexagram, 4);
+});
+
+test("when the meaning follows the drop, the hexagram holds until the drop", () => {
+  const p = seriesPlan(100, 8.4);
+  assert.equal(p.mode, "after");
+  assert.deepEqual([p.hexagram, p.hexagramBeats, p.drop, p.meaning], [4, 10, 14, 14]);
+});
+
 test("every chosen section keeps the minimums and stays within 38 s", () => {
   for (const s of sections) {
     assert.deepEqual(sectionProblems(s.bpm, s.drop), [], s.file);

@@ -66,12 +66,6 @@ export const Series: React.FC<SeriesProps> = (props) => {
           <Sequence {...span(s.hexagram, hexEnd)}>
             <Hexagram3D hexagram={props.hexagram} clip={props.hexagramClip} />
           </Sequence>
-          {/* After-drop timing with a drop later than the hexagram: rain until the drop. */}
-          {s.mode === "after" && s.drop > hexEnd && (
-            <Sequence {...span(hexEnd, s.drop)}>
-              <CodeRain text="" showText={false} />
-            </Sequence>
-          )}
           {props.meaning.map((text, i) => (
             <Sequence key={text} {...span(s.meaning + i * half, s.meaning + (i + 1) * half)}>
               <CodeRain text={text} cuts={[{ frame: 0, src: props.plates[i] }]} />

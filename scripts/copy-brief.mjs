@@ -30,7 +30,6 @@ const timeline = (n, c) => {
   const events = [
     [0, `${at(0, p.hexagram)}  Hook, large, typed on in ${TYPE_ON} s over black:\n${text(c.hook.text)}`],
     [p.hexagram, `${at(p.hexagram, hexEnd)}  A 3D hexagram builds line by line. As the last line lands, its names fade in:\n    ${r.zh}  ${r.pinyin}\n    ${r.name}`],
-    ...(p.mode === "after" && p.drop > hexEnd ? [[hexEnd, `${at(hexEnd, p.drop)}  Falling green code, no text.`]] : []),
     ...c.meaning.map((m, i) => [p.meaning + i * half, `${at(p.meaning + i * half, p.meaning + (i + 1) * half)}  Over an old woodcut plate and falling code, typed on:\n${text(m.text)}`]),
     [p.question, `${at(p.question, p.question + p.questionLength)}  Over falling code, typed on:\n${text(c.question.text)}`],
     [p.drop - 0.001, `${t(p.drop).toFixed(1)} s  The music drops.`],
