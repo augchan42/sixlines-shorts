@@ -126,10 +126,10 @@
    ],
    "kind": "live",
    "take": "take1",
-   "from": 90.3,
+   "from": 186.2,
    "rate": 1,
    "zoom": 1,
-   "focus": 0.6,
+   "focus": 0,
    "text": "The reading applies it\nto your project."
   },
   {
