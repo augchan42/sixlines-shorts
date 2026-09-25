@@ -126,6 +126,15 @@
       "bpm": 95,
       "beats": 12,
       "args": { "order": [2, 0, 1, 3, 4, 5, 6, 7, 8, 9], "stand": true, "lieStep": 0.4, "march": 10, "camera": "low", "zoom": 1.8, "edge": "#ffb347", "water": "#5ee7ff" }
+    },
+    {
+      "number": 58,
+      "char": "兌",
+      "story": "A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter.",
+      "sentence": "Joy is better\nshared out loud",
+      "bpm": 95,
+      "beats": 11,
+      "args": { "order": [5, 6, 0, 1, 2, 3, 4], "walls": [2, 3, 4], "wallStep": 0.6, "lift": [0, 1], "wallHeight": 0.8, "glassWalls": true, "camera": "high", "zoom": 1.6, "edge": "#ff5ec8", "water": "#fff15e" }
     }
   ]
 }
