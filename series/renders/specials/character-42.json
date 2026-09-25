@@ -1,0 +1,65 @@
+{
+ "hexagram": 42,
+ "special": "character-42",
+ "rendered": "2026-09-25T08:54:19.657Z",
+ "commit": "510dab61a6d8afc37e5a3ffce0d6ef0a2c8da405",
+ "clean": true,
+ "seconds": 31.616,
+ "shareKbps": 5691,
+ "props": {
+  "hexagram": {
+   "number": 42,
+   "zh": "益",
+   "pinyin": "Yì",
+   "name": "Increase",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 95,
+  "firstBeat": 0,
+  "music": "local/music/pick11-retro-synth-pop.mp3",
+  "musicStart": 65.943,
+  "drop": 15.16,
+  "hook": "Door’s open, still hesitating?",
+  "meaning": [
+   "Increase says:\ngo now.",
+   "See good, move\ntoward it."
+  ],
+  "question": "What will you\nmove toward?",
+  "plates": [
+   "assets/yilin/stipple-42-33.webp",
+   "assets/yilin/stipple-42-1.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Let your gain\nspill over",
+   "beats": 14,
+   "clip": "assets/3d/character-42-95bpm-14b-1gs0k97.mp4"
+  },
+  "pace": "even",
+  "credit": true,
+  "hexagramClip": "assets/3d/hexagram-100011-95bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-100011-95bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick11-retro-synth-pop.mp3": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+  "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+  "assets/3d/hexagram-100011-95bpm-8b.mp4": "241fdd2fb5e9579a56d3a0e03778adff79d8d0466c01732229b1b329fb7a3525",
+  "assets/3d/endcard-snap-100011-95bpm-9b.mp4": "82e8ac980208476dd296e9e9547388b8c29d9141d84d7d22e8215abdf1430e8d",
+  "assets/3d/character-42-95bpm-14b-1gs0k97.mp4": "ef550886d7d4ad2c442783fa5b1072e4b6c45bbbc8f2ccecd9b63bc3bbc9b29c",
+  "assets/yilin/stipple-42-33.webp": "5526d5774d920fda50f3efe7a1b567651b12e67a91ed86d31976ced85029c95a",
+  "assets/yilin/stipple-42-1.webp": "25e57ec0c1a8d0e3df893bff4dd8540a4fdf9bc8aa519d2f90a40b3e6eb7643f",
+  "out/specials/character-42/short.mp4": "08f714983859a130d6eae61585d276a437cf155c07ccaacb830aeaf0c92ba21b",
+  "out/specials/character-42/share.mp4": "43d7f2d6371e6fb1b9b312cef6560118dc43eb732f357f4c3d4b90120c9d2e18"
+ }
+}
