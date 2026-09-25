@@ -2,7 +2,9 @@
 Kong neon sign: each stroke's real outline (a brush-style kaishu font) traced by a hollow,
 faceted neon tube over a dark glass body. Some strokes lie on the ground; others rise as
 obsidian walls in the stroke's own shape, with the neon along their top edge. The lying strokes first stand up as a thing (for 困, a tree), the walls rise
-around it, then it is pressed down flat inside them. The camera starts low, where the
+around it, then it is pressed down flat inside them. Strokes named by --spill (for 益, the
+water) are traced small inside the walls, rise past the rim and spill over it to their place
+in the character. The camera starts low, where the
 strokes read as things, and cranes up to look straight down, where they read as the
 character.
 
@@ -12,6 +14,9 @@ Public License), fetched to public/local/hanzi/ by scripts/character.mjs.
   Blender -b --factory-startup --python-exit-code 1 -P blender/character.py -- \
     --data public/local/hanzi/困.json --order 3,2,4,5,0,1,6 --walls 0,1,6 \
     --bpm 95 --beats 10 --out out/characters/kun.mp4 [--still N] [--preview]
+
+  益: --data public/local/hanzi/益.json --walls 5,6,7,8,9 --spill 0,1,2,3,4 \
+    --wall-step 0.8 --camera high --bpm 95 --beats 11 --edge #ff5ec8 --water #5ee7ff
 """
 
 import argparse
@@ -40,6 +45,10 @@ def parse():
     p.add_argument("--order", help="stroke indices in drawing order, comma separated")
     p.add_argument("--walls", default="", help="stroke indices that rise as walls")
     p.add_argument("--stand", action="store_true", help="the lying strokes stand up first, and are pressed flat once the walls close")
+    p.add_argument("--spill", default="", help="stroke indices that fill the walls and spill over them")
+    p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
+    p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
+    p.add_argument("--camera", choices=("low", "high"), default="low", help="high looks down into the walls from the start")
     p.add_argument("--bpm", type=float, required=True)
     p.add_argument("--beats", type=float, required=True)
     p.add_argument("--edge", default="#6cff7a")
@@ -144,15 +153,15 @@ def body(name, d, height, z, material, parent=None):
     return o
 
 
-def glass():
-    """Dark smoked glass with a faint green glow, the body under the neon."""
-    m = bpy.data.materials.new("glass")
+def glass(colour="#6cff7a"):
+    """Dark smoked glass with a faint glow, the body under the neon."""
+    m = bpy.data.materials.new(f"glass{colour}")
     m.use_nodes = True
     b = m.node_tree.nodes["Principled BSDF"]
     b.inputs["Base Color"].default_value = (0.01, 0.03, 0.015, 1)
     b.inputs["Roughness"].default_value = 0.15
     b.inputs["Coat Weight"].default_value = 1.0
-    b.inputs["Emission Color"].default_value = linear("#6cff7a")
+    b.inputs["Emission Color"].default_value = linear(colour)
     b.inputs["Emission Strength"].default_value = 0.08
     return m
 
@@ -171,8 +180,22 @@ def show(o, at):
         key(o, "hide_render", f)
 
 
-def camera(scene, frames, beat):
-    """Low beside the strokes, then craning up to look straight down on the character."""
+def centre(points):
+    """The middle of the points' bounding box, in hanzi units."""
+    xs, ys = [p[0] for p in points], [p[1] for p in points]
+    return (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2, max(xs) - min(xs), max(ys) - min(ys)
+
+
+# Camera keys (location, target) at the start and where the crane begins, by --camera.
+VIEWS = {
+    "low": (((0, -11, 2.4), (0, 0, 2.4)), ((0, -9.5, 4.5), (0, 0.2, 0.8))),
+    "high": (((0, -9, 7.5), (0, -0.8, 0.4)), ((0, -8, 8.5), (0, 0.4, 0.6))),
+}
+
+
+def camera(scene, frames, beat, view):
+    """Beside the strokes (low, or high enough to see into the walls), then craning up to look
+    straight down on the character."""
     target = bpy.data.objects.new("target", None)
     scene.collection.objects.link(target)
     data = bpy.data.cameras.new("camera")
@@ -183,11 +206,52 @@ def camera(scene, frames, beat):
     track = cam.constraints.new("TRACK_TO")
     track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
     rise = frames - round(3 * beat)
-    for f, loc, t in ((0, (0, -11, 2.4), (0, 0, 2.4)), (rise, (0, -9.5, 4.5), (0, 0.2, 0.8)), (frames - 1, (0, -0.6, 15.5), (0, 0.4, 0))):
+    (start, start_t), (mid, mid_t) = VIEWS[view]
+    for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (frames - 1, (0, -0.6, 15.5), (0, 0.4, 0))):
         cam.location = loc
         key(cam, "location", f)
         target.location = t
         key(target, "location", f)
+
+
+def water(spill, medians, paths, walls, args, t, beat):
+    """The --spill strokes on a parent that fills the walls and spills over them from frame
+    `t`; returns their glow strengths."""
+    scene = bpy.context.scene
+    wx, wy, ww, wh = centre([p for i in walls for p in medians[i]])
+    sx, sy, sw, sh = centre([p for i in spill for p in medians[i]])
+    fit = 0.7 * min(ww / sw, wh / sh)
+    home = ((sx - CENTRE[0]) * SCALE, (sy - CENTRE[1]) * SCALE, 0)
+    inside = ((wx - CENTRE[0]) * SCALE, (wy - CENTRE[1]) * SCALE)
+    parent = bpy.data.objects.new("water", None)
+    scene.collection.objects.link(parent)
+    parent.location = home
+    colour, glass_ = linear(args.water), glass(args.water)
+    trace = round(0.9 * beat)
+    strengths = []
+    for i in spill:
+        glow, strength = edge(colour, f"water{i}")
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, parent), t, trace)
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, glass_, parent), t + trace)
+        strengths.append(strength)
+    b = lambda n: t + round(n * beat)
+    rim = WALL_H + 0.25
+    for f, (x, y, z), s in (
+        (0, (*inside, 0.15), fit),
+        (b(1.0), (*inside, 0.15), fit),
+        (b(2.4), (*inside, rim), fit * 1.25),  # fills up past the rim
+        (b(2.9), (home[0], (inside[1] + home[1]) / 2, rim + 0.4), 0.8),  # over the far rim
+        (b(3.4), home, 1.0),  # lands, spread out
+    ):
+        parent.location = (x, y, z)
+        key(parent, "location", f)
+        parent.scale = (s, s, 1)
+        key(parent, "scale", f)
+    for strength in strengths:
+        for f, v in ((t - 1, REST), (t + trace, PULSE * 0.4), (b(1.4), REST), (b(2.4), PULSE * 0.5), (b(2.9), REST * 1.5)):
+            strength.default_value = v
+            strength.keyframe_insert("default_value", frame=f + 1)
+    return strengths
 
 
 def main():
@@ -199,15 +263,16 @@ def main():
     medians, paths = data["medians"], data["strokes"]
     order = [int(i) for i in args.order.split(",")] if args.order else list(range(len(medians)))
     walls = {int(i) for i in args.walls.split(",") if i}
+    spill = [int(i) for i in args.spill.split(",") if i]
     frames = frame_count(args.beats, args.bpm)
     beat = 60 * FPS / args.bpm
     colour = linear(args.edge)
 
-    black, smoke = obsidian(), glass()
+    black, smoke = obsidian(), glass(args.edge)
 
     # The lying strokes a beat apart from beat 0.5, then the walls a beat apart.
     t = round(0.5 * beat)
-    lying = [i for i in order if i not in walls]
+    lying = [i for i in order if i not in walls and i not in spill]
     rising = [i for i in order if i in walls]
     # Standing, the lying strokes turn up about the lowest point of the first one (a trunk's foot).
     pivot = None
@@ -237,7 +302,11 @@ def main():
         for f, z in ((t + length, -WALL_H / 2), (t + length + round(0.5 * beat), WALL_H / 2)):
             wall.location.z = z
             key(wall, "location", f, index=2)
-        t += round(1.0 * beat)
+        t += round(args.wall_step * beat)
+    # Water: traced small inside the walls, it rises past the rim and spills over the far side.
+    if spill:
+        glows += water(spill, medians, paths, walls, args, t, beat)
+        t += round(3.6 * beat)
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
         for f, a in ((0, 90), (t, 90), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
@@ -264,7 +333,7 @@ def main():
     bpy.ops.mesh.primitive_plane_add(size=60, location=(0, 0, 0))
     bpy.context.object.data.materials.append(black)
 
-    camera(scene, frames, beat)
+    camera(scene, frames, beat, args.camera)
     bloom(scene)
     render_settings(scene, frames, args.out, args.preview)
     if args.still is not None:
