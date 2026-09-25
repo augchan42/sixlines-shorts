@@ -17,6 +17,14 @@ Public License), fetched to public/local/hanzi/ by scripts/character.mjs.
 
   益: --data public/local/hanzi/益.json --walls 5,6,7,8,9 --spill 0,1,2,3,4 \
     --wall-step 0.8 --camera high --bpm 95 --beats 11 --edge #ff5ec8 --water #5ee7ff
+
+  蠱: --data public/local/hanzi/蠱.json --order 22,20,21,18,19,0,...,17 --walls 18,19 \
+    --spill 0,...,17 --stagger 0.1 --camera high --bpm 95 --beats 13 --edge #ff5ec8 --water #c6ff3a
+    (only the rim rises, so the worms show breeding inside)
+
+  井: --data public/local/hanzi/井.json --walls 0,1,2,3 --pool 470,472 --wall-height 0.6 --glass-walls \
+    --camera high --zoom 1.5 \
+    --bpm 95 --beats 10 --edge #ff5ec8 --water #5ee7ff
 """
 
 import argparse
@@ -46,9 +54,14 @@ def parse():
     p.add_argument("--walls", default="", help="stroke indices that rise as walls")
     p.add_argument("--stand", action="store_true", help="the lying strokes stand up first, and are pressed flat once the walls close")
     p.add_argument("--spill", default="", help="stroke indices that fill the walls and spill over them")
+    p.add_argument("--stagger", type=float, default=0.0, help="beats between the spilling strokes' starts")
+    p.add_argument("--pool", help="x,y (hanzi units): a pool of water that glows there once the walls stand")
+    p.add_argument("--wall-height", type=float, default=WALL_H)
+    p.add_argument("--glass-walls", action="store_true", help="walls of smoked glass, not obsidian")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
-    p.add_argument("--camera", choices=("low", "high"), default="low", help="high looks down into the walls from the start")
+    p.add_argument("--camera", choices=("low", "high", "over"), default="low", help="high looks down into the walls from the start; over, steeper, into a deep bowl")
+    p.add_argument("--zoom", type=float, default=1.0, help="the camera's distance before the crane, times this")
     p.add_argument("--bpm", type=float, required=True)
     p.add_argument("--beats", type=float, required=True)
     p.add_argument("--edge", default="#6cff7a")
@@ -190,10 +203,11 @@ def centre(points):
 VIEWS = {
     "low": (((0, -11, 2.4), (0, 0, 2.4)), ((0, -9.5, 4.5), (0, 0.2, 0.8))),
     "high": (((0, -9, 7.5), (0, -0.8, 0.4)), ((0, -8, 8.5), (0, 0.4, 0.6))),
+    "over": (((0, -6, 10), (0, -1.2, 0)), ((0, -7, 9.5), (0, 0.4, 0.6))),
 }
 
 
-def camera(scene, frames, beat, view):
+def camera(scene, frames, beat, view, zoom=1.0):
     """Beside the strokes (low, or high enough to see into the walls), then craning up to look
     straight down on the character."""
     target = bpy.data.objects.new("target", None)
@@ -206,12 +220,63 @@ def camera(scene, frames, beat, view):
     track = cam.constraints.new("TRACK_TO")
     track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
     rise = frames - round(3 * beat)
+    away = lambda loc, t: tuple(t[k] + (loc[k] - t[k]) * zoom for k in range(3))
     (start, start_t), (mid, mid_t) = VIEWS[view]
+    start, mid = away(start, start_t), away(mid, mid_t)
     for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (frames - 1, (0, -0.6, 15.5), (0, 0.4, 0))):
         cam.location = loc
         key(cam, "location", f)
         target.location = t
         key(target, "location", f)
+
+
+def circle(x, y, r):
+    """A circle as an SVG path of four cubic arcs, in hanzi units."""
+    k = 0.5523 * r
+    return (f"M {x + r} {y} C {x + r} {y + k} {x + k} {y + r} {x} {y + r} "
+            f"C {x - k} {y + r} {x - r} {y + k} {x - r} {y} "
+            f"C {x - r} {y - k} {x - k} {y - r} {x} {y - r} "
+            f"C {x + k} {y - r} {x + r} {y - k} {x + r} {y} Z")
+
+
+def pool(at, args, t, beat, frames):
+    """For 井: a round pool of water traced at `at` from frame `t`; it glows and ripples on
+    every beat to the end."""
+    x, y = (float(v) for v in at.split(","))
+    d = circle(x, y, 75)
+    rim, rim_glow = edge(linear(args.water), "pool rim")
+    draw(neon("pool rim", d, BODY + NEON, rim), t, round(0.8 * beat))
+    water_, glow = edge(linear(args.water), "pool")
+    show(body("pool", d, BODY, BODY / 2, water_, None), t + round(0.8 * beat))
+    # On every beat the water brightens and a ring spreads from its centre to the rim.
+    f, n = t + round(0.8 * beat), 0
+    while f < frames:
+        for g, v in ((f, 3.0 if n else 0.5), (f + round(0.5 * beat), 1.2)):
+            glow.default_value = v
+            glow.keyframe_insert("default_value", frame=g + 1)
+        if n:
+            ripple(x, y, args, f, beat)
+        f, n = f + round(beat), n + 1
+    return rim_glow
+
+
+def ripple(x, y, args, f, beat):
+    """A thin ring of light spreading out from (x, y) over a beat from frame `f`."""
+    centre_ = bpy.data.objects.new(f"ripple{f}", None)
+    bpy.context.scene.collection.objects.link(centre_)
+    centre_.location = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, 0)
+    ring, glow = edge(linear(args.water), f"ripple{f}")
+    c = outline(f"ripple{f}", circle(x, y, 70))
+    c.dimensions, c.bevel_depth, c.bevel_resolution = "3D", NEON, 1
+    o = place(bpy.data.objects.new(f"ripple{f}", c), BODY + NEON, centre_)
+    o.data.materials.append(ring)
+    show(o, f)
+    end = f + round(beat)
+    for g, sc, v in ((f, 0.1, PULSE * 0.8), (end, 1.0, 0.0)):
+        centre_.scale = (sc, sc, 1)
+        key(centre_, "scale", g)
+        glow.default_value = v
+        glow.keyframe_insert("default_value", frame=g + 1)
 
 
 def water(spill, medians, paths, walls, args, t, beat):
@@ -229,13 +294,20 @@ def water(spill, medians, paths, walls, args, t, beat):
     colour, glass_ = linear(args.water), glass(args.water)
     trace = round(0.9 * beat)
     strengths = []
-    for i in spill:
+    # One after another if staggered (for 蠱, worms breeding), then all rise together.
+    for k, i in enumerate(spill):
+        start = t + round(k * args.stagger * beat)
         glow, strength = edge(colour, f"water{i}")
-        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, parent), t, trace)
-        show(body(f"body{i}", paths[i], BODY, BODY / 2, glass_, parent), t + trace)
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, parent), start, trace)
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, glass_, parent), start + trace)
+        strength.default_value = REST
+        strength.keyframe_insert("default_value", frame=start)
+        strength.default_value = PULSE * 0.4
+        strength.keyframe_insert("default_value", frame=start + trace + 1)
         strengths.append(strength)
+    t += round((len(spill) - 1) * args.stagger * beat)
     b = lambda n: t + round(n * beat)
-    rim = WALL_H + 0.25
+    rim = args.wall_height + 0.25
     for f, (x, y, z), s in (
         (0, (*inside, 0.15), fit),
         (b(1.0), (*inside, 0.15), fit),
@@ -248,7 +320,7 @@ def water(spill, medians, paths, walls, args, t, beat):
         parent.scale = (s, s, 1)
         key(parent, "scale", f)
     for strength in strengths:
-        for f, v in ((t - 1, REST), (t + trace, PULSE * 0.4), (b(1.4), REST), (b(2.4), PULSE * 0.5), (b(2.9), REST * 1.5)):
+        for f, v in ((b(1.4), REST), (b(2.4), PULSE * 0.5), (b(2.9), REST * 1.5)):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
     return strengths
@@ -296,17 +368,21 @@ def main():
     for i in rising:
         top, _ = edge(colour, f"crest{i}")
         length = round(0.9 * beat)
-        draw(neon(f"crest{i}", paths[i], WALL_H + NEON, top), t, length)
+        h = args.wall_height
+        draw(neon(f"crest{i}", paths[i], h + NEON, top), t, length)
         # The wall rises out of the floor to meet its crest's finished outline.
-        wall = body(f"wall{i}", paths[i], WALL_H, WALL_H / 2, black)
-        for f, z in ((t + length, -WALL_H / 2), (t + length + round(0.5 * beat), WALL_H / 2)):
+        wall = body(f"wall{i}", paths[i], h, h / 2, smoke if args.glass_walls else black)
+        for f, z in ((t + length, -h / 2), (t + length + round(0.5 * beat), h / 2)):
             wall.location.z = z
             key(wall, "location", f, index=2)
         t += round(args.wall_step * beat)
+    if args.pool:
+        glows.append(pool(args.pool, args, t, beat, frames))
+        t += round(1.0 * beat)
     # Water: traced small inside the walls, it rises past the rim and spills over the far side.
     if spill:
         glows += water(spill, medians, paths, walls, args, t, beat)
-        t += round(3.6 * beat)
+        t += round((3.6 + (len(spill) - 1) * args.stagger) * beat)
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
         for f, a in ((0, 90), (t, 90), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
@@ -326,6 +402,7 @@ def main():
     # A sun, low from behind, so the floor shows no light's reflection toward the camera.
     light = bpy.data.lights.new("key", "SUN")
     light.energy, light.angle, light.color = 2.0, math.radians(8), (0.85, 1.0, 0.9)
+    light.specular_factor = 0  # its highlight showed as a white sliver at the frame's edge
     lo = bpy.data.objects.new("key", light)
     lo.rotation_euler = (math.radians(-55), 0, math.radians(25))
     scene.collection.objects.link(lo)
@@ -333,7 +410,7 @@ def main():
     bpy.ops.mesh.primitive_plane_add(size=60, location=(0, 0, 0))
     bpy.context.object.data.materials.append(black)
 
-    camera(scene, frames, beat, args.camera)
+    camera(scene, frames, beat, args.camera, args.zoom)
     bloom(scene)
     render_settings(scene, frames, args.out, args.preview)
     if args.still is not None:
