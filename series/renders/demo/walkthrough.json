@@ -1,7 +1,7 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T15:49:22.162Z",
- "commit": "cdc2013a6598c68ac93b530db3196c53b23acfc7",
+ "rendered": "2026-09-25T15:51:55.412Z",
+ "commit": "44526e3468d427fd645ff2434032bdffd5824adf",
  "clean": true,
  "seconds": 53.888,
  "shareKbps": 3286,
@@ -105,7 +105,7 @@
     ],
     "kind": "hexagram",
     "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
-    "text": "Six lines.\nOne of 64 situations."
+    "text": "Six lines. 64 situations."
    },
    {
     "beats": [
@@ -208,7 +208,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "1e51b913b0bbff70604a0db6a54a67e94438d03dedd00195b559204f848c794e",
-  "out/demo/walkthrough/share.mp4": "8e7a25363e844ec7bfaa792ffed7e4b9effd99458841d09b16d78fb67688d438"
+  "out/demo/walkthrough/short.mp4": "a9c644a269fdb21c760bb260aa9e12d6e9cd0de736e5c4903583f0b9d3039eb8",
+  "out/demo/walkthrough/share.mp4": "578b3e4c6dbb7d08c76701bbfd812fe9a7f0efc8e5f814d13197214db746b74e"
  }
 }
