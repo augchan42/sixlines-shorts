@@ -74,26 +74,34 @@ export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: bo
         height={height}
         style={{ position: "absolute", width, height, opacity: cut ? 0.3 : 0.8, mixBlendMode: cut ? "screen" : "normal" }}
       />
-      {showText && (
-        <AbsoluteFill style={{ justifyContent: "center", padding: "0 70px" }}>
-          <div
-            style={{
-              alignSelf: "flex-start",
-              padding: "14px 28px",
-              background: "rgba(0,0,0,0.6)",
-              fontFamily: fonts.punch,
-              fontSize: 110,
-              letterSpacing: 2,
-              color: "#fff",
-              textShadow: glow(),
-              whiteSpace: "pre",
-            }}
-          >
-            {text.slice(0, typed)}
-            {then && more > 0 ? `\n\n${then.text.slice(0, more)}` : ""}
-          </div>
-        </AbsoluteFill>
-      )}
+      {showText && <TypedBox text={`${text.slice(0, typed)}${then && more > 0 ? `\n\n${then.text.slice(0, more)}` : ""}`} />}
     </AbsoluteFill>
   );
+};
+
+const TypedBox: React.FC<{ text: string }> = ({ text }) => (
+  <AbsoluteFill style={{ justifyContent: "center", padding: "0 70px" }}>
+    <div
+      style={{
+        alignSelf: "flex-start",
+        padding: "14px 28px",
+        background: "rgba(0,0,0,0.6)",
+        fontFamily: fonts.punch,
+        fontSize: 110,
+        letterSpacing: 2,
+        color: "#fff",
+        textShadow: glow(),
+        whiteSpace: "pre",
+      }}
+    >
+      {text}
+    </div>
+  </AbsoluteFill>
+);
+
+// The same sentence box, typed on over whatever is behind it (a moon lesson's clip).
+export const TypedText: React.FC<{ text: string }> = ({ text }) => {
+  const frame = useCurrentFrame();
+  const typed = Math.ceil(interpolate(frame, [4, 16], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  return <TypedBox text={text.slice(0, typed)} />;
 };

@@ -77,3 +77,10 @@ test("an earlier render is kept under versions/, named by when and from which co
   const m = { rendered: "2026-09-24T23:52:42.077Z", commit: "9aa6a36eeb6368464b2bda217148bf2d1dfa12d0" };
   assert.equal(versionDir("out/series", "08-bi", m), "out/series/versions/08-bi/2026-09-24T23-52-42Z-9aa6a36");
 });
+
+test("a missing moon clip names the command that renders it", () => {
+  const props = { music: "m.mp3", hexagramClip: "c.mp4", endcard: { clip: "e.mp4", mode: "snap" }, screens: [], plates: [], hexagram: { number: 20 }, lesson: { kind: "moon", text: "t", clip: "moon.mp4" } };
+  const io = { exists: (f) => f !== "moon.mp4", sha256: () => "" };
+  const row = { music: { certificate: { file: "a.txt", sha256: "" } } };
+  assert.deepEqual(missingAssets(props, row, io), ["moon.mp4 is missing. Run: node scripts/moon.mjs --special NAME (the special's name)"]);
+});

@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { moonClip } from "../src/lib/clips.ts";
 import { seriesProps } from "../src/series/props.ts";
 
 const line = (text) => ({ text, source: "written" });
@@ -90,4 +91,14 @@ test("a painting the app does not pair with the hexagram opens by its own key, w
   const p = seriesProps({ ...row, copy: { ...row.copy, lesson } }).lesson;
   assert.deepEqual(p.painting, { src: "assets/paintings/mid-autumn-2026.jpg", credit: "YOSHITOSHI · 1885" });
   assert.equal(p.screen, undefined);
+});
+
+test("a moon lesson plays its Blender clip for the whole lesson, with the labels it was rendered with", () => {
+  const labels = ["A", "B", "C", "D", "E", "F"];
+  const lesson = { kind: "moon", text: "t", labels, source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson, pace: "held", credit: false } });
+  assert.equal(p.lesson.clip, moonClip(row.lines, 100, 16, labels));
+  assert.deepEqual(p.lesson.labels, labels);
+  assert.equal(p.credit, false);
+  assert.equal(seriesProps(row).credit, true);
 });

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { LESSON_BEATS, planOf, seriesPlan } from "../src/lib/seriesPlan.ts";
+import { HELD_LESSON_BEATS, LESSON_BEATS, planOf, seriesPlan } from "../src/lib/seriesPlan.ts";
 import { TITLE_BOTTOM } from "../src/scenes/titleLayout.ts";
 import { sectionProblems } from "../scripts/series/limits.mjs";
 
@@ -88,4 +88,11 @@ test("a held pace shows the meaning as one card and gives the question 6 beats a
     [4, 8, 12, 6, 18, 6, 24, 40, 49, 52],
   );
   assert.equal(planOf({ bpm: 115, drop: (24 * 60) / 115, pace: "held", lesson: { kind: "painting", text: "x" } }).cta, 40);
+});
+
+test("a short without the credit ends when the end card has held", () => {
+  const p = seriesPlan(95, 15.16, HELD_LESSON_BEATS, "held", false);
+  assert.equal(p.end, p.credit);
+  assert.equal(p.credit - p.cta, 9);
+  assert.equal(seriesPlan(95, 15.16, HELD_LESSON_BEATS, "held").end, p.credit + 3);
 });

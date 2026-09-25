@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import test from "node:test";
-import { clipFrames, endcardClip, hexagramClip } from "../src/lib/clips.ts";
+import { clipFrames, endcardClip, hexagramClip, moonClip } from "../src/lib/clips.ts";
 import { beatFrame } from "../src/lib/timing.ts";
 
 test("clip names carry the lines, tempo and length", () => {
@@ -34,4 +34,12 @@ test("frame count matches blender/layout.py", () => {
   const py = `import json, sys; sys.path.insert(0, "blender"); from layout import frame_count; print(json.dumps([frame_count(b, t) for b, t in ${JSON.stringify(cases)}]))`;
   const counts = JSON.parse(execFileSync("python3", ["-c", py], { encoding: "utf8" }));
   assert.deepEqual(counts, cases.map(([beats, bpm]) => clipFrames(beats, bpm)));
+});
+
+test("a moon clip is named by its lines, tempo and length, and by its labels when it has them", () => {
+  assert.equal(moonClip([0, 0, 0, 0, 1, 1], 95, 16), "assets/3d/moon-000011-95bpm-16b.mp4");
+  const a = moonClip([0, 0, 0, 0, 1, 1], 95, 16, ["A", "B", "C", "D", "E", "F"]);
+  const b = moonClip([0, 0, 0, 0, 1, 1], 95, 16, ["A", "B", "C", "D", "E", "G"]);
+  assert.match(a, /^assets\/3d\/moon-000011-95bpm-16b-labels-[0-9a-z]+\.mp4$/);
+  assert.notEqual(a, b);
 });

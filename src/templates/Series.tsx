@@ -7,7 +7,7 @@ import { planOf } from "../lib/seriesPlan";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
 import { CaptionScreen } from "../scenes/CaptionScreen";
-import { CodeRain } from "../scenes/CodeRain";
+import { CodeRain, TypedText } from "../scenes/CodeRain";
 import { Credit } from "../scenes/Credit";
 import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
@@ -15,7 +15,7 @@ import { Hook } from "../scenes/Hook";
 import { Painting } from "../scenes/Painting";
 import { Trigrams } from "../scenes/Trigrams";
 
-export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson">, fps: number) =>
+export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson" | "pace" | "credit">, fps: number) =>
   beatFrame({ fps, bpm: p.bpm, firstBeat: p.firstBeat }, planOf(p).end);
 
 const Badge: React.FC<{ n: number }> = ({ n }) => (
@@ -39,16 +39,18 @@ export const Series: React.FC<SeriesProps> = (props) => {
   // A lesson shows its picture for the first half, then its sentence.
   const lessonHalf = s.showcase + (s.cta - s.showcase) / 2;
   const lesson = props.lesson;
+  // A moon lesson plays its clip throughout and types its sentence over the last 5 beats.
+  const moonText = s.cta - 5;
   const cuts: Cut[] = [
     { beat: s.hexagram, kind: "zoom" },
     { beat: s.meaning, kind: "whip-up" },
     ...(props.pace === "held" ? [] : [{ beat: s.meaning + half, kind: "whip-left" as const }]),
     { beat: s.question, kind: "whip-right" },
     { beat: s.drop, kind: "zoom" },
-    ...(lesson ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
+    ...(lesson && !lesson.clip ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
     ...props.screens.slice(1).map((_, i) => ({ beat: s.showcase + (i + 1) * screenBeats, kind: (i % 2 ? "whip-right" : "whip-left") as Cut["kind"] })),
     { beat: s.cta, kind: "zoom" },
-    { beat: s.credit, kind: "whip-up" },
+    ...(props.credit ? [{ beat: s.credit, kind: "whip-up" as const }] : []),
   ];
   return (
     <GridContext.Provider value={grid}>
@@ -99,7 +101,17 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <CaptionScreen src={sc.src} caption={sc.caption} color={i % 2 ? "#ffb23f" : "#7dff8a"} seed={`cap-${i}`} />
             </Sequence>
           ))}
-          {lesson && (
+          {lesson?.clip && (
+            <>
+              <Sequence {...span(s.showcase, s.cta)}>
+                <EndCard3D clip={lesson.clip} />
+              </Sequence>
+              <Sequence {...span(moonText, s.cta)}>
+                <TypedText text={lesson.text} />
+              </Sequence>
+            </>
+          )}
+          {lesson && !lesson.clip && (
             <>
               <Sequence {...span(s.showcase, lessonHalf)}>
                 {lesson.trigrams ? (
@@ -118,9 +130,11 @@ export const Series: React.FC<SeriesProps> = (props) => {
           <Sequence {...span(s.cta, s.credit)}>
             <EndCard3D clip={props.endcard.clip} />
           </Sequence>
-          <Sequence {...span(s.credit, s.end)}>
-            <Credit name="~DISNEYFAN" />
-          </Sequence>
+          {props.credit && (
+            <Sequence {...span(s.credit, s.end)}>
+              <Credit name="~DISNEYFAN" />
+            </Sequence>
+          )}
         </Camera>
         <Sequence from={0} durationInFrames={f(s.drop)}>
           <Badge n={props.hexagram.number} />

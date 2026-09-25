@@ -1,6 +1,6 @@
 {
  "hexagram": 20,
- "occasion": "Mid-Autumn Festival, 2026-09-25. 20 觀 is the ruling hexagram of the 秋分 month in the app's qi calendar, and 觀 is to look, as at the moon. Version A: the six line texts light up as the moon rises.",
+ "occasion": "Mid-Autumn Festival, 2026-09-25. 20 觀 is the ruling hexagram of the 秋分 month in the app's qi calendar, and 觀 is to look, as at the moon. Version B: the moon rises behind the lines, no labels.",
  "copy": {
   "hook": {
    "text": "Looking at the moon tonight?",
@@ -30,16 +30,8 @@
   },
   "lesson": {
    "kind": "moon",
-   "text": "Six ways to look.\nWhich is yours?",
-   "labels": [
-    "LIKE A KID",
-    "THROUGH A CRACK",
-    "AT YOUR OWN LIFE",
-    "AS A GUEST",
-    "NO FAULT",
-    "AT EVERYONE"
-   ],
-   "source": "commentary/en/20.json#lines (1: childlike contemplation; 2: peeping through the crack; 3: contemplating my own life; 4: being a guest; 5: no fault; 6: contemplating their life)"
+   "text": "Its shape:\na watchtower.",
+   "source": "Wilhelm, hexagram 20: the hexagram's form is like a tower; 觀 also means a watchtower"
   },
   "pace": "held",
   "tags": [

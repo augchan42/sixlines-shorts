@@ -19,3 +19,15 @@ export type EndcardMode = "join" | "flip" | "snap";
 // public/-relative path of an end card: the hexagram it starts from, its tempo, length and treatment.
 export const endcardClip = (lines: readonly number[], bpm: number, beats: number, mode: EndcardMode) =>
   `assets/3d/endcard-${mode}-${lines.join("")}-${bpm}bpm-${beats}b.mp4`;
+
+// A short hash of a clip's labels, so clips with different labels never share a name.
+const labelHash = (labels: readonly string[]) => {
+  let h = 5381;
+  for (const ch of labels.join("|")) h = ((h * 33) ^ ch.codePointAt(0)!) >>> 0;
+  return h.toString(36);
+};
+
+// public/-relative path of a moon (blender/moon.py): the hexagram it stands in front of, its
+// tempo and length, and the labels its lines light up with, if any.
+export const moonClip = (lines: readonly number[], bpm: number, beats: number, labels?: readonly string[]) =>
+  `assets/3d/moon-${lines.join("")}-${bpm}bpm-${beats}b${labels ? `-labels-${labelHash(labels)}` : ""}.mp4`;

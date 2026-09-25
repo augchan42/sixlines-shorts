@@ -1,4 +1,4 @@
-import { endcardClip, type EndcardMode, hexagramClip } from "../lib/clips.ts";
+import { endcardClip, type EndcardMode, hexagramClip, moonClip } from "../lib/clips.ts";
 import { planOf } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
@@ -20,7 +20,9 @@ export type SeriesRow = {
     question: Line;
     plates: [string, string];
     lineage?: string;
-    lesson?: Line & { kind: "lines" | "judgment" | "painting"; credit?: string; painting?: string };
+    lesson?: Line & { kind: "lines" | "judgment" | "painting" | "moon"; credit?: string; painting?: string; labels?: string[] };
+    // false leaves out the ~DISNEYFAN credit (a special).
+    credit?: boolean;
     tags?: string[];
     pace?: "even" | "held";
   } | null;
@@ -83,6 +85,8 @@ const LESSON_SCREENS = {
 const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
   const l = row.copy?.lesson;
   if (!l) return undefined;
+  // The moon is its own Blender clip (blender/moon.py), rendered once the plan is known.
+  if (l.kind === "moon") return { kind: l.kind, text: l.text, ...(l.labels ? { labels: l.labels } : {}) };
   if (l.kind === "lines") {
     const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
     return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
@@ -114,13 +118,16 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     screens: row.copy.lesson ? [] : screensFor(n),
     lesson: lessonFor(row),
     pace: row.copy.pace ?? "even",
+    credit: row.copy.credit ?? true,
     ...override,
   };
   // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.
   const plan = planOf(merged);
   const mode = ENDCARD_MODE[row.upper];
+  const lesson = merged.lesson?.kind === "moon" ? { ...merged.lesson, clip: moonClip(merged.hexagram.lines, merged.bpm, plan.cta - plan.showcase, merged.lesson.labels) } : merged.lesson;
   return {
     ...merged,
+    lesson,
     hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
     endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.credit - plan.cta, mode), mode },
   };
