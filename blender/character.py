@@ -18,6 +18,8 @@ in the stroke's own shape, with the neon along their top edge.
   walls stand, until only the rest is left standing (剝, peeled by the knife).
 - --march: with --stand, the standing thing is drawn this far back and walks toward the
   camera in four hops (旅, travellers under a flag).
+- --join: with --stand, these strokes stand apart, behind the rest, and walk up to stand
+  beside them (比).
 - --turn: with --stand, the standing thing turns round to look back, holds still and turns
   forward again (艮).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
@@ -55,6 +57,7 @@ CENTRE = (512, 388)
 NEON = 0.03  # the neon tube's radius
 BODY = 0.06  # a lying stroke's glass body, thickness
 WALL_H = 1.5
+JOIN = 6.0  # how far behind the rest joining strokes stand before they walk up
 CLOUD = 5.5  # the height a cloud forms at, above a standing figure, and rain falls from
 
 
@@ -80,6 +83,7 @@ def parse():
     p.add_argument("--lean", type=float, help="with --stand: degrees the standing thing leans to (90 upright) before the --last strokes")
     p.add_argument("--shed", default="", help="with --stand: standing strokes that fall flat one by one once the walls stand")
     p.add_argument("--march", type=float, help="with --stand: how far back the standing thing is drawn before it walks forward in four hops")
+    p.add_argument("--join", default="", help="with --stand: standing strokes that walk up from behind to stand beside the rest")
     p.add_argument("--turn", type=float, help="with --stand: degrees the standing thing turns round, holds, and turns back")
     p.add_argument("--last-water", action="store_true", help="the --last strokes in the --water colour")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
@@ -307,6 +311,23 @@ def ripple(x, y, args, f, beat):
         glow.keyframe_insert("default_value", frame=g + 1)
 
 
+def hop(o, axis, far, hops, t, beat):
+    """`o` starts `far` along `axis` from where it is and comes home in `hops` hops from frame
+    `t`; returns the frame after them."""
+    home = o.location[axis]
+    for f in (0, t):
+        o.location[axis], o.location.z = home + far, 0
+        key(o, "location", f)
+    for k in range(1, hops + 1):
+        at = home + far * (1 - k / hops)
+        for f, z in ((t + round(0.25 * beat), 0.4), (t + round(0.5 * beat), 0)):
+            o.location[axis] = (at + o.location[axis]) / 2 if z else at
+            o.location.z = z
+            key(o, "location", f)
+        t += round(0.75 * beat)
+    return t + round(0.3 * beat)
+
+
 def lie(ids, paths, t, beat, colour, smoke, pivot, step=0.9, pivots={}):
     """Draws strokes lying on the floor (or on the pivot, or a stroke's own pivot in `pivots`)
     `step` beats apart from frame `t`; returns the frame after them and their glow strengths."""
@@ -526,7 +547,14 @@ def main():
         shed[i] = bpy.data.objects.new(f"shed{i}", None)
         scene.collection.objects.link(shed[i])
         shed[i].location = pivot.location
-    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot, step=args.lie_step, pivots=shed)
+    # Joining strokes stand on a pivot of their own, behind the rest, until they walk up.
+    joiner = None
+    if args.join:
+        joiner = bpy.data.objects.new("join", None)
+        scene.collection.objects.link(joiner)
+        joiner.location = pivot.location
+    joined = {int(i): joiner for i in args.join.split(",") if i}
+    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot, step=args.lie_step, pivots={**shed, **joined})
     if lift:
         freed = bpy.data.objects.new("lift", None)
         scene.collection.objects.link(freed)
@@ -604,18 +632,10 @@ def main():
             t += round(0.7 * beat)
     # A standing thing drawn far back walks forward in four hops (for 旅).
     if pivot and args.march:
-        home = pivot.location.y
-        for f, y, z in ((0, home + args.march, 0), (t, home + args.march, 0)):
-            pivot.location.y, pivot.location.z = y, z
-            key(pivot, "location", f)
-        for k in range(1, 5):
-            y = home + args.march * (1 - k / 4)
-            for f, z in ((t + round(0.25 * beat), 0.4), (t + round(0.5 * beat), 0)):
-                pivot.location.y = (y + pivot.location.y) / 2 if z else y
-                pivot.location.z = z
-                key(pivot, "location", f)
-            t += round(0.75 * beat)
-        t += round(0.3 * beat)
+        t = hop(pivot, 1, args.march, 4, t, beat)
+    # Once the rest stand, the joining strokes walk up from behind to stand beside them (比).
+    if joiner:
+        t = hop(joiner, 1, JOIN, 3, t, beat)
     # A standing thing leans over (for 臨, to look down at what is small).
     upright = 90
     if pivot and args.lean is not None:
@@ -637,8 +657,9 @@ def main():
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
         for f, a in ((0, 90), (t, upright), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
-            pivot.rotation_euler.x = math.radians(a)
-            key(pivot, "rotation_euler", f, index=0)
+            for pv in (pivot, joiner) if joiner else (pivot,):
+                pv.rotation_euler.x = math.radians(a)
+                key(pv, "rotation_euler", f, index=0)
         t += round(0.5 * beat)
     # When the last wall closes, the lying strokes flare once, pressing against it.
     for strength in glows:

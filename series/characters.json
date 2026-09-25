@@ -135,6 +135,15 @@
       "bpm": 95,
       "beats": 11,
       "args": { "order": [5, 6, 0, 1, 2, 3, 4], "walls": [2, 3, 4], "wallStep": 0.6, "lift": [0, 1], "wallHeight": 0.8, "glassWalls": true, "camera": "high", "zoom": 1.6, "edge": "#ff5ec8", "water": "#fff15e" }
+    },
+    {
+      "number": 8,
+      "char": "比",
+      "story": "One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character.",
+      "sentence": "Choose who you\nstand beside",
+      "bpm": 95,
+      "beats": 11,
+      "args": { "order": [0, 1, 2, 3], "stand": true, "lieStep": 0.7, "join": [2, 3], "camera": "low", "zoom": 1.5, "edge": "#6cff7a", "water": "#5ee7ff" }
     }
   ]
 }
