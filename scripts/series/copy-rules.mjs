@@ -32,18 +32,22 @@ export const copyProblems = (n, e) => {
     // The sentence after a lesson's picture, typed over code rain like the meaning.
     ...(e.lesson ? [["lesson", e.lesson, 3, 7, true]] : []),
   ];
-  for (const [name, part, min, max, onRain] of parts) {
-    if (!part?.text) {
-      problems.push(`${name}: missing`);
-      continue;
-    }
-    if (!part.source) problems.push(`${name}: no source`);
-    const n = words(part.text);
-    if (n < min || n > max) problems.push(`${name}: ${n} words (${min}–${max})`);
-    if (onRain) {
-      for (const l of part.text.split("\n")) if (l.length > MAX_LINE) problems.push(`${name}: "${l}" is too wide (over ${MAX_LINE} characters)`);
-    }
-    for (const [re, why] of TONE) if (re.test(part.text)) problems.push(`${name}: ${why}`);
+  for (const part of parts) problems.push(...partProblems(...part));
+  return problems;
+};
+
+// One part's problems: missing, unsourced, word count, width on the rain, tone.
+export const partProblems = (name, part, min, max, onRain) => {
+  if (!part?.text) return [`${name}: missing`];
+  const problems = [];
+  if (!part.source) problems.push(`${name}: no source`);
+  const n = words(part.text);
+  if (n < min || n > max) problems.push(`${name}: ${n} words (${min}–${max})`);
+  if (onRain) {
+    const lines = part.text.split("\n");
+    if (lines.length > 2) problems.push(`${name}: ${lines.length} screen lines (2 at most)`);
+    for (const l of lines) if (l.length > MAX_LINE) problems.push(`${name}: "${l}" is too wide (over ${MAX_LINE} characters)`);
   }
+  for (const [re, why] of TONE) if (re.test(part.text)) problems.push(`${name}: ${why}`);
   return problems;
 };
