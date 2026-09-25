@@ -1,0 +1,932 @@
+{
+ "approvedTitles": [
+  "The Ancient of Days, William Blake",
+  "Wanderer above the Sea of Fog, Caspar David Friedrich",
+  "Napoleon Crossing the Alps, Jacques-Louis David",
+  "Luncheon of the Boating Party, Renoir",
+  "The Hunters in the Snow, Pieter Bruegel the Elder",
+  "Adele Bloch Bauer I, Klimt",
+  "The Milkmaid, Johannes Vermeer",
+  "Dance at Moulin de la Galette, Renoir",
+  "The Return of the Prodigal Son, Rembrandt",
+  "Young Hare, Albrecht Dürer",
+  "The Potato Eaters, Vincent van Gogh",
+  "Great Wave, Hokusai",
+  "The Burning of the Houses of Parliament, J.M.W. Turner",
+  "Saying Grace, Chardin",
+  "The Tower of Babel, Pieter Bruegel the Elder",
+  "Peasant Wedding, Bruegel",
+  "The Avenue at Middelharnis, Meindert Hobbema",
+  "Woman Holding a Balance, Vermeer"
+ ],
+ "hexagrams": [
+  {
+   "number": 2,
+   "name": "The Receptive (坤 Kūn)",
+   "image": "The earth's capacity: acceptance. The realized person accordingly sustains all things with generous character.",
+   "copy": {
+    "hook": "Tired of always having to lead?",
+    "meaning": [
+     "The Receptive says: follow well.",
+     "Supporting is its own strength."
+    ],
+    "question": "Who could you back?"
+   },
+   "current": {
+    "title": "A Thousand Li of Rivers and Mountains",
+    "artist": "Wang Ximeng (王希孟)",
+    "lands": 2,
+    "risk": "none",
+    "why": "The screen shows mostly calligraphy colophon with a sliver of blue-green mountains, so earth and receptivity do not come through at a glance."
+   }
+  },
+  {
+   "number": 3,
+   "name": "Difficulty at the Beginning (屯 Zhūn)",
+   "image": "Clouds and thunder: difficulty at the beginning. The realized person accordingly sorts the threads.",
+   "copy": {
+    "hook": "Big start, total chaos?",
+    "meaning": [
+     "Difficulty says: get organized.",
+     "Boring beats bold here."
+    ],
+    "question": "What needs sorting first?"
+   },
+   "current": {
+    "title": "The Five Points",
+    "artist": "Unknown Artist",
+    "lands": 2,
+    "risk": "The crowded street brawl of mostly Black figures includes period caricature that could read as racial mockery next to 'get organized'.",
+    "why": "Chaos in a street fits difficulty loosely, but nothing says beginning or sorting the threads."
+   }
+  },
+  {
+   "number": 4,
+   "name": "Youthful Folly (蒙 Méng)",
+   "image": "A spring emerges beneath the mountain: inexperience. The realized person accordingly proceeds with thoroughness, developing character.",
+   "copy": {
+    "hook": "Asking again for a better answer?",
+    "meaning": [
+     "Youthful Folly says: ask once.",
+     "Asking twice is just shopping."
+    ],
+    "question": "What’s your real question?"
+   },
+   "current": {
+    "title": "The Astronomer",
+    "artist": "Vermeer",
+    "lands": 2,
+    "risk": "none",
+    "why": "A grown scholar studying a globe suggests learning, not youthful folly or asking once."
+   }
+  },
+  {
+   "number": 6,
+   "name": "Conflict (訟 Sòng)",
+   "image": "Heaven and water move in opposition: conflict. The realized person accordingly plans carefully at the start of any undertaking.",
+   "copy": {
+    "hook": "Fighting over something you’re right about?",
+    "meaning": [
+     "Conflict says: stop halfway.",
+     "Pushing to the end costs you."
+    ],
+    "question": "What fight could you leave now?"
+   },
+   "current": {
+    "title": "Night Attack on the Sanjō Palace",
+    "artist": "Unknown",
+    "lands": 3,
+    "risk": "Mild: samurai with bows and a burning palace, violence next to 'stop halfway'.",
+    "why": "Warriors riding into an attack reads as conflict, though the screen crop shows mostly scroll text and a small procession."
+   }
+  },
+  {
+   "number": 9,
+   "name": "Small Taming (小畜 Xiǎo Chù)",
+   "image": "Wind moves across heaven: small taming. The realized person accordingly refines and cultivates character.",
+   "copy": {
+    "hook": "Everything’s ready, nothing happens?",
+    "meaning": [
+     "Small Taming says: not yet.",
+     "Work on yourself meanwhile."
+    ],
+    "question": "What can you work on now?"
+   },
+   "current": {
+    "title": "The Card Players",
+    "artist": "Paul Cezanne",
+    "lands": 2,
+    "risk": "none",
+    "why": "Men concentrating over cards suggests patience, but not small taming or working on yourself."
+   }
+  },
+  {
+   "number": 10,
+   "name": "Treading (履 Lǚ)",
+   "image": "Heaven above, the lake below: treading. The realized person accordingly distinguishes high and low, and steadies the people's resolve.",
+   "copy": {
+    "hook": "Working for someone with a temper?",
+    "meaning": [
+     "Treading says: mind how you step.",
+     "Act well and it won’t flare."
+    ],
+    "question": "Who do you tread carefully around?"
+   },
+   "current": {
+    "title": "Dante and Virgil Edge of Abyss",
+    "artist": "Gustave Dore",
+    "lands": 3,
+    "risk": "none",
+    "why": "Two figures edging along a cliff over an abyss fits 'mind how you step' once you see it."
+   }
+  },
+  {
+   "number": 11,
+   "name": "Peace (泰 Tài)",
+   "image": "Heaven and earth interact: peace. The ruler accordingly completes heaven and earth's way, assists their proper order, and thereby serves the people.",
+   "copy": {
+    "hook": "Good times, now what?",
+    "meaning": [
+     "Peace says: keep it moving.",
+     "Peace is contact, not a vacation."
+    ],
+    "question": "Who haven’t you reached lately?"
+   },
+   "current": {
+    "title": "Pilgrimage to Cythera",
+    "artist": "Watteau",
+    "lands": 2,
+    "risk": "Mild: cupids and a nude statue in a love-pilgrimage scene.",
+    "why": "An aristocratic garden party reads as leisure, which the line 'not a vacation' argues against."
+   }
+  },
+  {
+   "number": 13,
+   "name": "Fellowship (同人 Tóng Rén)",
+   "image": "Heaven together with fire: fellowship. The realized person accordingly organizes by kind and distinguishes between things.",
+   "copy": {
+    "hook": "Same five friends for years?",
+    "meaning": [
+     "Fellowship says: keep it open.",
+     "Let new people walk up."
+    ],
+    "question": "Who could you invite in?"
+   },
+   "current": {
+    "title": "The Syndics",
+    "artist": "Rembrandt",
+    "lands": 2,
+    "risk": "none",
+    "why": "A closed board of men in black looks at the viewer, which reads as a club more than open fellowship."
+   }
+  },
+  {
+   "number": 17,
+   "name": "Following (隨 Suí)",
+   "image": "Thunder within the lake: following. The realized person accordingly, at nightfall, goes indoors for rest.",
+   "copy": {
+    "hook": "Still at your desk after dark?",
+    "meaning": [
+     "Following says: go with the day.",
+     "Day’s done. Go in, rest."
+    ],
+    "question": "When will you stop today?"
+   },
+   "current": {
+    "title": "The Dance Class",
+    "artist": "Edgar Degas",
+    "lands": 2,
+    "risk": "none",
+    "why": "Dancers following a ballet master fits 'following' by name only, and nothing shows day's end or rest."
+   }
+  },
+  {
+   "number": 18,
+   "name": "Work on the Decayed (蠱 Gǔ)",
+   "image": "Wind beneath the mountain: decay. The realized person accordingly stirs the people and nourishes character.",
+   "copy": {
+    "hook": "Something rotting under the surface?",
+    "meaning": [
+     "Decay says: it can be fixed.",
+     "Rushed repairs don’t hold."
+    ],
+    "question": "What’s overdue for repair?"
+   },
+   "current": {
+    "title": "The Third-Class Carriage",
+    "artist": "Honore Daumier",
+    "lands": 2,
+    "risk": "Mild: poverty shown next to 'decay' could read as calling the poor decayed.",
+    "why": "A dim carriage of poor passengers suggests hardship, but not repair."
+   }
+  },
+  {
+   "number": 19,
+   "name": "Approach (臨 Lín)",
+   "image": "The lake with earth above: approach. The realized person accordingly teaches with inexhaustible thought and protects the people without limit.",
+   "copy": {
+    "hook": "Things finally taking off?",
+    "meaning": [
+     "Approach says: go, but plan.",
+     "Every spring has an autumn."
+    ],
+    "question": "What will you prepare now?"
+   },
+   "current": {
+    "title": "Bellini Procession in St Marks Square",
+    "artist": "Gentile",
+    "lands": 2,
+    "risk": "Mild: a Catholic religious procession.",
+    "why": "A wide procession in a square does not suggest approach or planning for autumn."
+   }
+  },
+  {
+   "number": 20,
+   "name": "Contemplation (觀 Guān)",
+   "image": "Wind moves over the earth: contemplation. The ancient kings accordingly visited the regions, observed the people, and established teaching.",
+   "copy": {
+    "hook": "Deciding from behind a desk?",
+    "meaning": [
+     "Contemplation: go and look.",
+     "See by going, not by sitting."
+    ],
+    "question": "What could you go see?"
+   },
+   "current": {
+    "title": "View from Mount Holyoke (The Oxbow)",
+    "artist": "Thomas Cole",
+    "lands": 3,
+    "risk": "none",
+    "why": "A vantage point over a wide valley fits 'go and look', though the storm and river pull attention."
+   }
+  },
+  {
+   "number": 21,
+   "name": "Biting Through (噬嗑 Shì Kè)",
+   "image": "Lightning and thunder: biting through. The ancient kings accordingly made penalties clear and established the law.",
+   "copy": {
+    "hook": "Something blocking you for weeks?",
+    "meaning": [
+     "Biting Through says: bite down.",
+     "It won’t clear by itself."
+    ],
+    "question": "What will you deal with now?"
+   },
+   "current": {
+    "title": "Judith Beheading Holofernes",
+    "artist": "Artemisia Gentileschi",
+    "lands": 3,
+    "risk": "Graphic beheading with blood, next to 'bite down' reads as endorsing violence.",
+    "why": "Forceful action cutting through is visible at once, but the gore overwhelms the idea."
+   }
+  },
+  {
+   "number": 22,
+   "name": "Grace (賁 Bì)",
+   "image": "Fire at the foot of the mountain: grace. The realized person accordingly clarifies everyday affairs but does not dare decide disputes this way.",
+   "copy": {
+    "hook": "Polishing the slides instead of deciding?",
+    "meaning": [
+     "Grace says: small things only.",
+     "Polish can’t make big decisions."
+    ],
+    "question": "What needs more than polish?"
+   },
+   "current": {
+    "title": "The Kiss",
+    "artist": "Klimt",
+    "lands": 2,
+    "risk": "Mild: a romantic embrace next to 'small things only' can read as belittling love.",
+    "why": "Gold ornament fits grace as decoration, but most viewers read the painting only as love."
+   }
+  },
+  {
+   "number": 23,
+   "name": "Splitting Apart (剝 Bō)",
+   "image": "The mountain rests upon the earth: splitting apart. Those above accordingly strengthen those below to secure their position.",
+   "copy": {
+    "hook": "Everything falling apart?",
+    "meaning": [
+     "Splitting Apart says: don’t run.",
+     "Stay and help those below you."
+    ],
+    "question": "Who depends on you?"
+   },
+   "current": {
+    "title": "Nebuchadnezzar",
+    "artist": "William Blake",
+    "lands": 2,
+    "risk": "A naked, maddened king on all fours next to 'stay and help those below' is a confusing match.",
+    "why": "Collapse and degradation read, but the helping message does not."
+   }
+  },
+  {
+   "number": 26,
+   "name": "Great Accumulation (大畜 Dà Chù)",
+   "image": "Heaven within the mountain: great accumulation. The realized person accordingly studies the words and deeds of the past to cultivate character.",
+   "copy": {
+    "hook": "Years of practice, nobody’s seen it?",
+    "meaning": [
+     "Great Accumulation says: go public.",
+     "Don’t eat at home."
+    ],
+    "question": "What have you been keeping in?"
+   },
+   "current": {
+    "title": "The Horse Fair",
+    "artist": "Rosa Bonheur",
+    "lands": 3,
+    "risk": "none",
+    "why": "Men holding back powerful horses reads as taming great force, but not 'go public'."
+   }
+  },
+  {
+   "number": 29,
+   "name": "The Abyss (坎 Kǎn)",
+   "image": "Water flows upon water: the repeated abyss. The realized person accordingly maintains consistent character and practices teaching.",
+   "copy": {
+    "hook": "One problem after another?",
+    "meaning": [
+     "The Abyss says: keep moving.",
+     "Like water: fill it, flow on."
+    ],
+    "question": "What's the next small step?"
+   },
+   "current": {
+    "title": "Snow Storm Steam Boat",
+    "artist": "Turner",
+    "lands": 3,
+    "risk": "none",
+    "why": "A boat swallowed in swirling storm reads as danger in water, though 'keep moving' is only implied."
+   }
+  },
+  {
+   "number": 31,
+   "name": "Influence (咸 Xián)",
+   "image": "A lake atop the mountain: influence. The realized person accordingly receives others through emptiness.",
+   "copy": {
+    "hook": "Listening, but already decided?",
+    "meaning": [
+     "Influence says: make room.",
+     "The full can’t take anything in."
+    ],
+    "question": "What have you already decided?"
+   },
+   "current": {
+    "title": "The Kiss",
+    "artist": "Francesco Hayez",
+    "lands": 3,
+    "risk": "Mild: a passionate kiss next to 'influence' and 'make room'.",
+    "why": "A kiss reads as attraction between two people, which is one meaning of influence, but not emptiness."
+   }
+  },
+  {
+   "number": 32,
+   "name": "Duration (恆 Héng)",
+   "image": "Thunder and wind: duration. The realized person accordingly stands firm without changing direction.",
+   "copy": {
+    "hook": "Starting over again and again?",
+    "meaning": [
+     "Duration says: show up again.",
+     "Keep moving, same direction."
+    ],
+    "question": "What will you keep doing?"
+   },
+   "current": {
+    "title": "Mont Sainte-Victoire and the Viaduct of the Arc River Valley",
+    "artist": "Paul Cezanne",
+    "lands": 2,
+    "risk": "none",
+    "why": "A steady mountain view suggests permanence, but nothing says 'show up again'."
+   }
+  },
+  {
+   "number": 33,
+   "name": "Retreat (遯 Dùn)",
+   "image": "Beneath heaven there is a mountain: retreat. The realized person accordingly distances from the petty — not with hostility but with dignity.",
+   "copy": {
+    "hook": "Time to walk away?",
+    "meaning": [
+     "Retreat says: leave well.",
+     "No anger, just distance."
+    ],
+    "question": "What are you ready to leave?"
+   },
+   "current": {
+    "title": "Over Eternal Peace",
+    "artist": "Isaac Levitan",
+    "lands": 3,
+    "risk": "none",
+    "why": "A small church on a far bluff above a vast river reads as withdrawal and distance, though few will know it."
+   }
+  },
+  {
+   "number": 34,
+   "name": "Great Power (大壯 Dà Zhuàng)",
+   "image": "Thunder above heaven: great power. The realized person accordingly does not tread where it does not accord with propriety.",
+   "copy": {
+    "hook": "Finally in charge?",
+    "meaning": [
+     "Great Power says: check your aim.",
+     "Mostly, know what not to do."
+    ],
+    "question": "What won’t you do with it?"
+   },
+   "current": {
+    "title": "Lion Hunt",
+    "artist": "Peter Paul Rubens",
+    "lands": 3,
+    "risk": "Violent: men mauled and killed by lions.",
+    "why": "Raw force is obvious, but the lesson of restraint is the opposite of the picture."
+   }
+  },
+  {
+   "number": 35,
+   "name": "Progress (晉 Jìn)",
+   "image": "Brightness emerges above the earth: progress. The realized person accordingly brightens their own character.",
+   "copy": {
+    "hook": "Finally getting recognized?",
+    "meaning": [
+     "Progress says: character first.",
+     "Not strategy. Not network."
+    ],
+    "question": "What are you like up close?"
+   },
+   "current": {
+    "title": "The Fighting Temeraire",
+    "artist": "J.M.W. Turner",
+    "lands": 2,
+    "risk": "none",
+    "why": "An old warship towed to the breakers at sunset reads as decline, not progress."
+   }
+  },
+  {
+   "number": 36,
+   "name": "Darkening of the Light (明夷 Míng Yí)",
+   "image": "Brightness enters the earth: darkening of the light. The realized person accordingly governs the multitude — using dimness to remain bright.",
+   "copy": {
+    "hook": "Your good ideas getting shut down?",
+    "meaning": [
+     "Dark times say: lie low.",
+     "Keep your light inside."
+    ],
+    "question": "What light are you protecting?"
+   },
+   "current": {
+    "title": "The Ghost of a Flea",
+    "artist": "William Blake",
+    "lands": 2,
+    "risk": "A monstrous figure next to 'dark times' could read as grotesque.",
+    "why": "A dark, starry scene fits darkness, but the creature does not suggest keeping your light inside."
+   }
+  },
+  {
+   "number": 38,
+   "name": "Opposition (睽 Kuí)",
+   "image": "Fire above, lake below: opposition. The realized person accordingly finds commonality while preserving difference.",
+   "copy": {
+    "hook": "Can’t agree on anything?",
+    "meaning": [
+     "Opposition says: start small.",
+     "Share something, stay different."
+    ],
+    "question": "What do you both want?"
+   },
+   "current": {
+    "title": "David Goliath",
+    "artist": "Caravaggio",
+    "lands": 2,
+    "risk": "A boy holding a severed head next to 'share something, stay different' reads badly.",
+    "why": "Opposition as combat shows, but the lesson of common ground is contradicted."
+   }
+  },
+  {
+   "number": 40,
+   "name": "Deliverance (解 Xiè)",
+   "image": "Thunder and rain arise: deliverance. The realized person accordingly pardons transgressions and forgives offenses.",
+   "copy": {
+    "hook": "The pressure’s finally off?",
+    "meaning": [
+     "Deliverance says: act or rest.",
+     "Then let the grudges go."
+    ],
+    "question": "What can you forgive?"
+   },
+   "current": {
+    "title": "The Hay Wain",
+    "artist": "John Constable",
+    "lands": 2,
+    "risk": "none",
+    "why": "A calm rural scene gives release in mood only, with nothing about forgiveness."
+   }
+  },
+  {
+   "number": 41,
+   "name": "Decrease (損 Sǔn)",
+   "image": "A lake at the foot of the mountain: decrease. The realized person accordingly curbs resentment and restrains desire.",
+   "copy": {
+    "hook": "Having less than before?",
+    "meaning": [
+     "Decrease says: give what you can.",
+     "Cut the anger, cut the wants."
+    ],
+    "question": "What can you let go of?"
+   },
+   "current": {
+    "title": "Winter Landscape",
+    "artist": "Sesshū Tōyō (雪舟等楊)",
+    "lands": 2,
+    "risk": "none",
+    "why": "A sparse ink winter landscape suggests reduction, but the link is not visible to a scrolling viewer."
+   }
+  },
+  {
+   "number": 42,
+   "name": "Increase (益 Yì)",
+   "image": "Wind and thunder: increase. The realized person accordingly moves toward the good upon seeing it, and corrects faults upon having them.",
+   "copy": {
+    "hook": "Door’s open, still hesitating?",
+    "meaning": [
+     "Increase says: go now.",
+     "See good, move toward it."
+    ],
+    "question": "What will you move toward?"
+   },
+   "current": {
+    "title": "A Sunday Afternoon",
+    "artist": "Seurat",
+    "lands": 2,
+    "risk": "none",
+    "why": "A still Sunday crowd in a park says leisure, not increase or moving toward good."
+   }
+  },
+  {
+   "number": 43,
+   "name": "Breakthrough (夬 Guài)",
+   "image": "The lake rises above heaven: breakthrough. The realized person accordingly distributes rewards downward, and resting in character avoids accumulation.",
+   "copy": {
+    "hook": "Ready to call something out?",
+    "meaning": [
+     "Breakthrough: say it openly.",
+     "Speak up, but no force."
+    ],
+    "question": "What needs saying out loud?"
+   },
+   "current": {
+    "title": "Liberty Leading People",
+    "artist": "Delacroix",
+    "lands": 4,
+    "risk": "Bare breasts, corpses and revolution next to 'no force' can read as political and contradictory.",
+    "why": "A figure breaking through at the front of a crowd says breakthrough at a glance."
+   }
+  },
+  {
+   "number": 44,
+   "name": "Coming to Meet (姤 Gòu)",
+   "image": "Beneath heaven there is wind: coming to meet. The ruler accordingly issues commands and proclamations to the four directions.",
+   "copy": {
+    "hook": "Something shiny just showed up?",
+    "meaning": [
+     "Coming to Meet says: be wary.",
+     "Charm can be the warning."
+    ],
+    "question": "What’s too good to be true?"
+   },
+   "current": {
+    "title": "Supper at Emmaus",
+    "artist": "Caravaggio",
+    "lands": 2,
+    "risk": "Christ as the charming stranger next to 'be wary' could offend religious viewers.",
+    "why": "A sudden meeting at supper fits 'coming to meet' only for those who know the story."
+   }
+  },
+  {
+   "number": 46,
+   "name": "Pushing Upward (升 Shēng)",
+   "image": "Within the earth, wood grows: pushing upward. The realized person accordingly cultivates a yielding character, accumulating small things to reach the high and great.",
+   "copy": {
+    "hook": "Growing slower than you want?",
+    "meaning": [
+     "Pushing Upward: don’t worry.",
+     "Small steps, piled up."
+    ],
+    "question": "What can you add today?"
+   },
+   "current": {
+    "title": "Among the Sierra Nevada Mountains",
+    "artist": "Albert Bierstadt",
+    "lands": 3,
+    "risk": "none",
+    "why": "Tall peaks and trees suggest rising, but not small steps piled up."
+   }
+  },
+  {
+   "number": 47,
+   "name": "Oppression (困 Kùn)",
+   "image": "The lake without water: oppression. The realized person accordingly stakes their life on following their purpose.",
+   "copy": {
+    "hook": "Speaking up and nobody listens?",
+    "meaning": [
+     "Oppression says: hold your purpose.",
+     "Words fail here. Actions don’t."
+    ],
+    "question": "What’s worth everything?"
+   },
+   "current": null
+  },
+  {
+   "number": 48,
+   "name": "The Well (井 Jǐng)",
+   "image": "Water above wood: the well. The realized person accordingly encourages the people in their work and urges mutual assistance.",
+   "copy": {
+    "hook": "Good things just out of reach?",
+    "meaning": [
+     "The Well says: lengthen the rope.",
+     "The water is always there."
+    ],
+    "question": "What’s cutting your rope short?"
+   },
+   "current": {
+    "title": "Aqueduct of Nero",
+    "artist": "Giovanni Battista Piranesi",
+    "lands": 2,
+    "risk": "none",
+    "why": "A ruined aqueduct is water infrastructure, but reads as ruin rather than a well that never runs dry."
+   }
+  },
+  {
+   "number": 49,
+   "name": "Revolution (革 Gé)",
+   "image": "Fire within the lake: revolution. The realized person accordingly organizes the calendar and clarifies the seasons.",
+   "copy": {
+    "hook": "Making a big change nobody believes in?",
+    "meaning": [
+     "Revolution says: finish first.",
+     "Trust comes on the last day."
+    ],
+    "question": "What change are you making?"
+   },
+   "current": {
+    "title": "The Death of Marat",
+    "artist": "Jacques-Louis David",
+    "lands": 3,
+    "risk": "A murdered man in a bath next to 'trust comes on the last day' is grim.",
+    "why": "Viewers who know it tie it to revolution, but the image itself shows death."
+   }
+  },
+  {
+   "number": 50,
+   "name": "The Caldron (鼎 Dǐng)",
+   "image": "Fire above wood: the caldron. The realized person accordingly rectifies position and solidifies purpose.",
+   "copy": {
+    "hook": "Got the ingredients, not the result?",
+    "meaning": [
+     "The Caldron says: set it right.",
+     "Get set up before you start."
+    ],
+    "question": "What’s out of place right now?"
+   },
+   "current": {
+    "title": "Soap Bubbles",
+    "artist": "Chardin",
+    "lands": 1,
+    "risk": "none",
+    "why": "A boy blowing a bubble has no visible link to a cauldron or setting up."
+   }
+  },
+  {
+   "number": 51,
+   "name": "The Arousing (震 Zhèn)",
+   "image": "Repeated thunder: the arousing. The realized person accordingly uses fear and trembling to set their life in order and examine themselves.",
+   "copy": {
+    "hook": "Did something just shake you?",
+    "meaning": [
+     "The Arousing says: use the fear.",
+     "Let it show what to fix."
+    ],
+    "question": "What did the scare show you?"
+   },
+   "current": {
+    "title": "The Ninth Wave",
+    "artist": "Ivan Aivazovsky",
+    "lands": 3,
+    "risk": "Mild: shipwreck survivors.",
+    "why": "Survivors clinging on in a storm read as shock and fear, though it is sea, not thunder."
+   }
+  },
+  {
+   "number": 52,
+   "name": "Keeping Still (艮 Gèn)",
+   "image": "Connected mountains: keeping still. The realized person accordingly thinks of nothing beyond their present situation.",
+   "copy": {
+    "hook": "Can't stop overthinking?",
+    "meaning": [
+     "Keeping Still says: pause.",
+     "Stay with where you are now."
+    ],
+    "question": "What can wait?"
+   },
+   "current": null
+  },
+  {
+   "number": 54,
+   "name": "The Marrying Maiden (歸妹 Guī Mèi)",
+   "image": "Thunder above the lake: the marrying maiden. The realized person accordingly understands the transitory through the permanence of the end.",
+   "copy": {
+    "hook": "No power, no way out?",
+    "meaning": [
+     "Marrying Maiden says: see the end.",
+     "This part won’t last."
+    ],
+    "question": "What does the end look like?"
+   },
+   "current": {
+    "title": "Olympia",
+    "artist": "Édouard Manet",
+    "lands": 2,
+    "risk": "A nude courtesan with a Black maid next to 'marrying maiden' is sexual and racially loaded.",
+    "why": "The painting reads as a sex worker, which belittles the hexagram about a secondary bride."
+   }
+  },
+  {
+   "number": 55,
+   "name": "Abundance (豐 Fēng)",
+   "image": "Thunder and lightning both arrive: abundance. The realized person accordingly decides disputes and carries out punishments.",
+   "copy": {
+    "hook": "At your peak and worried?",
+    "meaning": [
+     "Abundance says: don’t worry.",
+     "Be the sun at noon."
+    ],
+    "question": "What will you decide now?"
+   },
+   "current": {
+    "title": "Rooster and Hen with Hydrangeas",
+    "artist": "Itō Jakuchū (伊藤若冲)",
+    "lands": 3,
+    "risk": "none",
+    "why": "Dense flowers and bright birds read as abundance, though 'be the sun at noon' is not shown."
+   }
+  },
+  {
+   "number": 56,
+   "name": "The Wanderer (旅 Lǚ)",
+   "image": "Fire on the mountain: the wanderer. The realized person accordingly is clear and careful in applying penalties, and does not prolong disputes.",
+   "copy": {
+    "hook": "Somewhere new, feeling out of place?",
+    "meaning": [
+     "The Wanderer says: keep it brief.",
+     "You’re a guest. Act like one."
+    ],
+    "question": "Where are you a guest?"
+   },
+   "current": {
+    "title": "The Gulf Stream",
+    "artist": "Winslow Homer",
+    "lands": 2,
+    "risk": "A lone Black sailor surrounded by sharks next to 'you're a guest, act like one' reads badly.",
+    "why": "A man adrift is alone and in danger, not a guest passing through."
+   }
+  },
+  {
+   "number": 57,
+   "name": "The Gentle (巽 Xùn)",
+   "image": "Following winds: the gentle. The realized person accordingly reiterates commands and carries out undertakings.",
+   "copy": {
+    "hook": "Said it once, nothing changed?",
+    "meaning": [
+     "The Gentle says: say it again.",
+     "Quiet and steady gets through."
+    ],
+    "question": "What’s worth repeating today?"
+   },
+   "current": {
+    "title": "Cloud Study, Hampstead, Tree at Right",
+    "artist": "John Constable",
+    "lands": 3,
+    "risk": "none",
+    "why": "Wind-driven clouds read as wind, but not as 'say it again'."
+   }
+  },
+  {
+   "number": 58,
+   "name": "The Joyous (兌 Duì)",
+   "image": "Joined lakes: the joyous. The realized person accordingly joins with friends for discussion and practice.",
+   "copy": {
+    "hook": "Good news, no one to tell?",
+    "meaning": [
+     "The Joyous says: share it.",
+     "Joy kept alone dries up."
+    ],
+    "question": "Who could you call today?"
+   },
+   "current": {
+    "title": "The Lacemaker",
+    "artist": "Johannes Vermeer",
+    "lands": 1,
+    "risk": "none",
+    "why": "A woman absorbed alone in lacework is the opposite of shared joy."
+   }
+  },
+  {
+   "number": 59,
+   "name": "Dispersion (渙 Huàn)",
+   "image": "Wind moves over water: dispersion. The ancient kings accordingly made offerings to heaven and established temples.",
+   "copy": {
+    "hook": "People drifting apart?",
+    "meaning": [
+     "Dispersion says: don’t argue.",
+     "Remind them where they come from."
+    ],
+    "question": "What do you all share?"
+   },
+   "current": {
+    "title": "Nocturne in Black and Gold",
+    "artist": "Whistler",
+    "lands": 3,
+    "risk": "none",
+    "why": "Sparks scattering in the dark suggest dispersal, but not reminding people where they come from."
+   }
+  },
+  {
+   "number": 60,
+   "name": "Limitation (節 Jié)",
+   "image": "Water above the lake: limitation. The realized person accordingly creates measures and standards, and examines the nature of character and conduct.",
+   "copy": {
+    "hook": "Saying yes to everything?",
+    "meaning": [
+     "Limitation says: set limits.",
+     "Firm, but not bitter."
+    ],
+    "question": "Where’s your limit?"
+   },
+   "current": {
+    "title": "Newton",
+    "artist": "William Blake",
+    "lands": 3,
+    "risk": "Mild: male nudity.",
+    "why": "A man measuring with a compass suggests limits and standards, once you look."
+   }
+  },
+  {
+   "number": 62,
+   "name": "Preponderance of the Small (小過 Xiǎo Guò)",
+   "image": "Thunder on the mountain: preponderance of the small. The realized person accordingly exceeds in reverence in conduct, exceeds in grief in mourning, exceeds in frugality in spending.",
+   "copy": {
+    "hook": "Big plan stuck for months?",
+    "meaning": [
+     "The Small says: no big moves.",
+     "Small done well ends well."
+    ],
+    "question": "What small thing can you do?"
+   },
+   "current": {
+    "title": "At the Moulin Rouge",
+    "artist": "Toulouse-Lautrec",
+    "lands": 1,
+    "risk": "none",
+    "why": "A night club scene has no visible link to small, careful conduct."
+   }
+  },
+  {
+   "number": 63,
+   "name": "After Completion (既濟 Jì Jì)",
+   "image": "Water above fire: after completion. The realized person accordingly contemplates misfortune and prepares against it in advance.",
+   "copy": {
+    "hook": "Just finished something big?",
+    "meaning": [
+     "Completion says: stay alert.",
+     "Prepare now, while it works."
+    ],
+    "question": "What could go wrong?"
+   },
+   "current": {
+    "title": "The Apotheosis of Homer",
+    "artist": "Jean-Auguste-Dominique Ingres",
+    "lands": 2,
+    "risk": "none",
+    "why": "A crowned figure among admirers reads as achievement, but not 'stay alert'."
+   }
+  },
+  {
+   "number": 64,
+   "name": "Before Completion (未濟 Wèi Jì)",
+   "image": "Fire above water: before completion. The realized person accordingly carefully distinguishes things and places them in their proper position.",
+   "copy": {
+    "hook": "So close to done?",
+    "meaning": [
+     "Before Completion: not yet.",
+     "Sort things out before you move."
+    ],
+    "question": "What goes where?"
+   },
+   "current": {
+    "title": "The Veteran in a New Field",
+    "artist": "Winslow Homer",
+    "lands": 2,
+    "risk": "none",
+    "why": "A man mowing a field shows work under way, but not 'sort things out before you move'."
+   }
+  }
+ ]
+}
