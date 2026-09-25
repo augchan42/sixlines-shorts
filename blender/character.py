@@ -14,6 +14,8 @@ in the stroke's own shape, with the neon along their top edge.
 - --lift: lying strokes lift free once the walls stand and hover (解's horn, cut loose).
 - --rain: before the --drop strokes fall, neon rain falls for this many beats (需).
 - --lean: with --stand, the standing thing leans over before the --last strokes (臨).
+- --shed: with --stand, these strokes stand on their own and fall flat one by one once the
+  walls stand, until only the rest is left standing (剝, peeled by the knife).
 - --turn: with --stand, the standing thing turns round to look back, holds still and turns
   forward again (艮).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
@@ -74,6 +76,7 @@ def parse():
     p.add_argument("--lie-step", type=float, default=0.9, help="beats between lying strokes")
     p.add_argument("--drop-step", type=float, default=0.5, help="beats between the --drop strokes as they are traced")
     p.add_argument("--lean", type=float, help="with --stand: degrees the standing thing leans to (90 upright) before the --last strokes")
+    p.add_argument("--shed", default="", help="with --stand: standing strokes that fall flat one by one once the walls stand")
     p.add_argument("--turn", type=float, help="with --stand: degrees the standing thing turns round, holds, and turns back")
     p.add_argument("--last-water", action="store_true", help="the --last strokes in the --water colour")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
@@ -301,15 +304,16 @@ def ripple(x, y, args, f, beat):
         glow.keyframe_insert("default_value", frame=g + 1)
 
 
-def lie(ids, paths, t, beat, colour, smoke, pivot, step=0.9):
-    """Draws strokes lying on the floor (or on the pivot) `step` beats apart from frame `t`;
-    returns the frame after them and their glow strengths."""
+def lie(ids, paths, t, beat, colour, smoke, pivot, step=0.9, pivots={}):
+    """Draws strokes lying on the floor (or on the pivot, or a stroke's own pivot in `pivots`)
+    `step` beats apart from frame `t`; returns the frame after them and their glow strengths."""
     glows = []
     for i in ids:
+        pivot_ = pivots.get(i, pivot)
         glow, strength = edge(colour, f"glow{i}")
         length = round(0.8 * beat)
-        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, pivot), t, length)
-        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke, pivot), t + length)
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, pivot_), t, length)
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke, pivot_), t + length)
         for f, v in ((t - 1, REST), (t + round(0.8 * beat), PULSE * 0.4), (t + round(1.4 * beat), REST)):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
@@ -513,7 +517,13 @@ def main():
         pivot = bpy.data.objects.new("pivot", None)
         scene.collection.objects.link(pivot)
         pivot.location = (0, (foot[1] - CENTRE[1]) * SCALE, 0)
-    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot, step=args.lie_step)
+    # Shed strokes stand on their own pivots on the same line, so each falls to its place.
+    shed = {}
+    for i in (int(i) for i in args.shed.split(",") if i):
+        shed[i] = bpy.data.objects.new(f"shed{i}", None)
+        scene.collection.objects.link(shed[i])
+        shed[i].location = pivot.location
+    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot, step=args.lie_step, pivots=shed)
     if lift:
         freed = bpy.data.objects.new("lift", None)
         scene.collection.objects.link(freed)
@@ -582,6 +592,13 @@ def main():
     if moon:
         t, wet = phases(moon, medians, paths, t, beat, args, smoke)
         glows += wet
+    # Once the walls stand, the shed strokes fall flat one by one, peeled off (for 剝).
+    for i in order:
+        if i in shed:
+            for f, a in ((0, 90), (t, 90), (t + round(0.4 * beat), -4), (t + round(0.55 * beat), 0)):
+                shed[i].rotation_euler.x = math.radians(a)
+                key(shed[i], "rotation_euler", f, index=0)
+            t += round(0.7 * beat)
     # A standing thing leans over (for 臨, to look down at what is small).
     upright = 90
     if pivot and args.lean is not None:
