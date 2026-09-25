@@ -26,12 +26,7 @@
       "sentence": "What you leave\nshut goes bad",
       "bpm": 95,
       "beats": 13,
-      "args": {
-        "order": [22, 20, 21, 18, 19, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
-        "walls": [18, 19],
-        "spill": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
-        "stagger": 0.1, "camera": "high", "edge": "#ff5ec8", "water": "#c6ff3a"
-      }
+      "args": { "order": [22, 20, 21, 18, 19, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "walls": [18, 19], "spill": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "stagger": 0.1, "camera": "high", "edge": "#ff5ec8", "water": "#c6ff3a" }
     },
     {
       "number": 48,
@@ -41,6 +36,15 @@
       "bpm": 95,
       "beats": 10,
       "args": { "walls": [0, 1, 2, 3], "pool": [470, 472], "wallHeight": 0.6, "glassWalls": true, "camera": "high", "zoom": 1.5, "edge": "#ff5ec8", "water": "#5ee7ff" }
+    },
+    {
+      "number": 3,
+      "char": "屯",
+      "story": "A sprout stands buried to its tip; it pushes up through the ground in three strains, then lies down as the character.",
+      "sentence": "Starts are\nalways hard.",
+      "bpm": 95,
+      "beats": 11,
+      "args": { "order": [0, 3, 1, 2], "stand": true, "grow": 2.0, "zoom": 1.2, "edge": "#6cff7a" }
     }
   ]
 }

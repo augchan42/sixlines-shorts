@@ -15,7 +15,7 @@ test("leaves out a false switch and joins a pool's position", () => {
 test("reads every character in series/characters.json", async () => {
   const { readFileSync } = await import("node:fs");
   const { characters } = JSON.parse(readFileSync(new URL("../series/characters.json", import.meta.url), "utf8"));
-  const known = /^--(order|walls|spill|stand|stagger|wall-step|wall-height|glass-walls|pool|camera|zoom|edge|water)$/;
+  const known = /^--(order|walls|spill|stand|grow|stagger|wall-step|wall-height|glass-walls|pool|camera|zoom|edge|water)$/;
   for (const c of characters) {
     for (const f of characterFlags(c.args).filter((f) => f.startsWith("--"))) assert.match(f, known, `${c.char}: ${f}`);
   }

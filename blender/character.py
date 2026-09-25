@@ -7,6 +7,8 @@ in the stroke's own shape, with the neon along their top edge.
   it, then it is pressed flat inside them.
 - --spill: these strokes (for 益, water; for 蠱, worms) are traced small inside the walls,
   rise past the rim and spill over it to their place in the character.
+- --grow: with --stand, the standing thing starts under the floor and pushes up through it
+  in three strains (for 屯, a sprout) before it lies down.
 - --pool: a pool of water (for 井) that ripples on every beat.
 
 The camera starts beside the strokes, where they read as things, and cranes up to look
@@ -57,7 +59,8 @@ def parse():
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
     p.add_argument("--camera", choices=("low", "high", "over"), default="low", help="high looks down into the walls from the start; over, steeper, into a deep bowl")
-    p.add_argument("--zoom", type=float, default=1.0, help="the camera's distance before the crane, times this")
+    p.add_argument("--zoom", type=float, default=1.0, help="the camera's distance, times this")
+    p.add_argument("--grow", type=float, default=0.0, help="with --stand: metres the standing thing starts under the floor; it pushes up in three strains")
     p.add_argument("--bpm", type=float, required=True)
     p.add_argument("--beats", type=float, required=True)
     p.add_argument("--edge", default="#6cff7a")
@@ -219,7 +222,8 @@ def camera(scene, frames, beat, view, zoom=1.0):
     away = lambda loc, t: tuple(t[k] + (loc[k] - t[k]) * zoom for k in range(3))
     (start, start_t), (mid, mid_t) = VIEWS[view]
     start, mid = away(start, start_t), away(mid, mid_t)
-    for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (frames - 1, (0, -0.6, 15.5), (0, 0.4, 0))):
+    top = away((0, -0.6, 15.5), (0, 0.4, 0))
+    for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (frames - 1, top, (0, 0.4, 0))):
         cam.location = loc
         key(cam, "location", f)
         target.location = t
@@ -379,6 +383,22 @@ def main():
     if spill:
         glows += water(spill, medians, paths, walls, args, t, beat)
         t += round((3.6 + (len(spill) - 1) * args.stagger) * beat)
+    # A thing standing under the floor pushes up through it in three strains.
+    if pivot and args.grow:
+        z = -args.grow
+        pivot.location.z = z
+        key(pivot, "location", 0, index=2)
+        key(pivot, "location", t, index=2)
+        for k in range(3):
+            z += args.grow / 3
+            pivot.location.z = z
+            key(pivot, "location", t + round(0.35 * beat), index=2)
+            for strength in glows:
+                for f, v in ((t, REST), (t + round(0.35 * beat), PULSE * (0.3 + 0.2 * k)), (t + round(0.9 * beat), REST)):
+                    strength.default_value = v
+                    strength.keyframe_insert("default_value", frame=f + 1)
+            t += round(beat)
+            key(pivot, "location", t, index=2)
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
         for f, a in ((0, 90), (t, 90), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
