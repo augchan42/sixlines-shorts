@@ -451,7 +451,7 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Water under the earth:\nunseen, but everywhere.",
+    "text": "Unseen water\nunder the earth.",
     "source": "commentary/en/7.json#image.synthesis"
    }
   },
@@ -521,7 +521,7 @@
    },
    "lesson": {
     "kind": "painting",
-    "text": "Renoir, 1881:\nfriends holding together.",
+    "text": "Renoir, 1881:\nfriends together.",
     "source": "masterpieces/artwork_index.json#8 (Luncheon of the Boating Party)"
    }
   },
@@ -656,7 +656,7 @@
    },
    "lesson": {
     "kind": "judgment",
-    "text": "Tread on the tiger’s tail.\nIt does not bite.",
+    "text": "The tiger’s tail:\nit does not bite.",
     "source": "commentary/en/10.json#judgment.transliteration"
    }
   },

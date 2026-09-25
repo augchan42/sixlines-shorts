@@ -53,3 +53,9 @@ test("every entry in series/copy.json passes", () => {
   const copy = JSON.parse(readFileSync("series/copy.json", "utf8"));
   for (const [n, e] of Object.entries(copy)) assert.deepEqual(copyProblems(Number(n), e), [], `hexagram ${n}`);
 });
+
+test("a lesson's sentence follows the same rules as the meaning lines, when there is one", () => {
+  const lesson = (text) => ({ kind: "lines", text, source: "written" });
+  assert.match(copyProblems(52, entry({ lesson: lesson("Water under the earth:\nunseen, but everywhere.") })).join(), /lesson: "Water under the earth:" is too wide/);
+  assert.deepEqual(copyProblems(52, entry({ lesson: lesson("Unseen water\nunder the earth.") })), []);
+});
