@@ -13,6 +13,7 @@ in the stroke's own shape, with the neon along their top edge.
   into these strokes; --last draws lying strokes at the end (恆's heart).
 - --lift: lying strokes lift free once the walls stand and hover (解's horn, cut loose).
 - --rain: before the --drop strokes fall, neon rain falls for this many beats (需).
+- --lean: with --stand, the standing thing leans over before the --last strokes (臨).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
@@ -70,10 +71,12 @@ def parse():
     p.add_argument("--rain", type=float, default=0.0, help="beats of neon rain before the --drop strokes fall (for 需)")
     p.add_argument("--lie-step", type=float, default=0.9, help="beats between lying strokes")
     p.add_argument("--drop-step", type=float, default=0.5, help="beats between the --drop strokes as they are traced")
+    p.add_argument("--lean", type=float, help="with --stand: degrees the standing thing leans to (90 upright) before the --last strokes")
+    p.add_argument("--last-water", action="store_true", help="the --last strokes in the --water colour")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
-    p.add_argument("--camera", choices=("low", "high", "over"), default="low", help="high looks down into the walls from the start; over, steeper, into a deep bowl")
+    p.add_argument("--camera", choices=("low", "high", "over", "side"), default="low", help="high looks down into the walls from the start; over, steeper, into a deep bowl")
     p.add_argument("--zoom", type=float, default=1.0, help="the camera's distance, times this")
     p.add_argument("--grow", type=float, default=0.0, help="with --stand: metres the standing thing starts under the floor; it pushes up in three strains")
     p.add_argument("--bpm", type=float, required=True)
@@ -218,6 +221,7 @@ VIEWS = {
     "low": (((0, -11, 2.4), (0, 0, 2.4)), ((0, -9.5, 4.5), (0, 0.2, 0.8))),
     "high": (((0, -9, 7.5), (0, -0.8, 0.4)), ((0, -8, 8.5), (0, 0.4, 0.6))),
     "over": (((0, -6, 10), (0, -1.2, 0)), ((0, -7, 9.5), (0, 0.4, 0.6))),
+    "side": (((9, -5, 3.5), (0, 0.5, 1.5)), ((7, -7, 6), (0, 0.4, 0.8))),
 }
 
 
@@ -575,12 +579,21 @@ def main():
     if moon:
         t, wet = phases(moon, medians, paths, t, beat, args, smoke)
         glows += wet
+    # A standing thing leans over (for 臨, to look down at what is small).
+    upright = 90
+    if pivot and args.lean is not None:
+        for f, a in ((t, 90), (t + round(0.6 * beat), args.lean)):
+            pivot.rotation_euler.x = math.radians(a)
+            key(pivot, "rotation_euler", f, index=0)
+        upright = args.lean
+        t += round(0.8 * beat)
     if last:
-        t, more = lie(last, paths, t, beat, colour, smoke, None)
+        tint = (linear(args.water), glass(args.water)) if args.last_water else (colour, smoke)
+        t, more = lie(last, paths, t, beat, *tint, None, step=args.lie_step)
         glows += more
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
-        for f, a in ((0, 90), (t, 90), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
+        for f, a in ((0, 90), (t, upright), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
             pivot.rotation_euler.x = math.radians(a)
             key(pivot, "rotation_euler", f, index=0)
         t += round(0.5 * beat)
