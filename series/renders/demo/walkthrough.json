@@ -1,7 +1,7 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T17:00:35.997Z",
- "commit": "ea07c6ace36ff73f901c1d60b0121e10e0e35e5b",
+ "rendered": "2026-09-25T17:02:58.538Z",
+ "commit": "8e3a06b305b9104d28ba7f5b18c280fe9acbcfba",
  "clean": true,
  "seconds": 50.218667,
  "shareKbps": 3535,
@@ -149,7 +149,7 @@
     "zoom": 1,
     "focus": 0.3,
     "text": "The reading lists\nwhat would prove it wrong.",
-    "place": "top"
+    "place": "bottom"
    },
    {
     "beats": [
@@ -189,7 +189,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "4623869c0b1ad71e7fefd4ecf5033170086d94ee031adf4e3c06b5989ef84ece",
-  "out/demo/walkthrough/share.mp4": "8697e20cb6e5b09e76f12f326ae46295f499ef20ed909d211b6ee9bfec19a3ee"
+  "out/demo/walkthrough/short.mp4": "de703db94d18588d23c6901ed4e444362e5b6e9ea3cca7d8d119fd59216a0ab3",
+  "out/demo/walkthrough/share.mp4": "fd3959964d8b8aae0b033c57791885b49f658e499b2c0fb0b03c07f038f6f022"
  }
 }
