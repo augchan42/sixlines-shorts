@@ -1,7 +1,7 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-25T02:10:13.589Z",
- "commit": "2921b0a12a17e7c9681405693ce43dba751ef8aa",
+ "rendered": "2026-09-25T04:20:16.398Z",
+ "commit": "7912a3fc11e2c312e8cae6f5444518c280d8b6de",
  "clean": true,
  "seconds": 27.178667,
  "shareKbps": 6642,
@@ -49,6 +49,7 @@
    }
   },
   "pace": "held",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-000010-115bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-000010-115bpm-9b.mp4",
@@ -64,7 +65,7 @@
   "assets/paintings/8.jpg": "2484c15d83d2f2c07a13adc64fbda9d5f37a3eb47e8a381b5ebb98aaa25b4e38",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "4e227b2a8a401af2f2ecef49b9e0ef127ead693726a38924f4d5bd7a6bbc0629",
-  "out/series/08-bi/share.mp4": "6c2adc38724953bc7ee0e484ee3f274e53cb0476f52eefe5c977478741439278"
+  "out/series/08-bi/short.mp4": "63486128b9498289aab92538c4586d608121328aaa160119700ebad9b4221c34",
+  "out/series/08-bi/share.mp4": "546d2c3014c03649fefa7f88aa1adf6f8826a5d3a6e3b133efc178d96b57ddc1"
  }
 }

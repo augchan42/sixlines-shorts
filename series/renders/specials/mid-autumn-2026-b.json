@@ -1,9 +1,9 @@
 {
  "hexagram": 20,
  "special": "mid-autumn-2026-b",
- "rendered": "2026-09-25T03:18:39.697Z",
- "commit": "135cda5bc48ce3236ece5d3630a55b4cb364b05f",
- "clean": true,
+ "rendered": "2026-09-25T04:22:15.523Z",
+ "commit": "7912a3fc11e2c312e8cae6f5444518c280d8b6de",
+ "clean": false,
  "seconds": 30.976,
  "shareKbps": 5812,
  "props": {
@@ -57,11 +57,7 @@
   "assets/3d/endcard-snap-000011-95bpm-9b.mp4": "008b080fd9ecc2e8fe8507b4358f348117ed6fbd18e27bfd9b253ad8e9041f2b",
   "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
   "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
-  "out/specials/mid-autumn-2026-b/short.mp4": "31ee650d46ee6c34eadfb8c8c5b276367030b635b51bc34a56b06a0e9f2f5842",
-  "out/specials/mid-autumn-2026-b/share.mp4": "46e092445817ef70bab6f78ca95ae0fef1fc4ae1d4c11828073ac63407b2eae6"
- },
- "caption": {
-  "commit": "c433cd35040c2e75857c3515f74e335bee6885fa",
-  "clean": true
+  "out/specials/mid-autumn-2026-b/short.mp4": "389eb3b529b32b106fc2e04a6e9e197bc99a0dc6ad17d78822df0f2c092d2954",
+  "out/specials/mid-autumn-2026-b/share.mp4": "e7a4bf69686dd9e82ee5e3683b46cf937358b4db883730b8c9236e378532d40b"
  }
 }
