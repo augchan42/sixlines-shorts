@@ -1,7 +1,7 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-24T23:54:40.321Z",
- "commit": "9aa6a36eeb6368464b2bda217148bf2d1dfa12d0",
+ "rendered": "2026-09-25T00:24:34.121Z",
+ "commit": "5445bf29b8268b176bc60720209347ab9160a1b4",
  "clean": true,
  "seconds": 28.053333,
  "shareKbps": 6430,
@@ -37,11 +37,11 @@
   ],
   "screens": [
    {
-    "src": "assets/screens/10/painting.png",
+    "src": "assets/screens/10/painting-scrolled.png",
     "caption": "THE PAINTING"
    },
    {
-    "src": "assets/screens/10/text.png",
+    "src": "assets/screens/10/text-scrolled.png",
     "caption": "THE TEXT, WORD BY WORD"
    },
    {
@@ -60,12 +60,12 @@
   "local/music/certificates/synthwave-synthwave-80s-retro-background-music-347701-license.txt": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
   "assets/3d/hexagram-110111-120bpm-8b.mp4": "4fe1f498d15ee1fe0ca6cefe061bf0b3bcf7f5203d8a690b436b8502f81ba239",
   "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
-  "assets/screens/10/painting.png": "3ad8e138db22bc3df20ff4416496727cf74dacd04e8ef11e408c03d515a5caf6",
-  "assets/screens/10/text.png": "b2399dfd8cd16d895290eb70ab3e64f1e9c648c8e0c059db45368372223b0a90",
+  "assets/screens/10/painting-scrolled.png": "b0df9fda35c8417fc21aa5cd61f8910551eaa780e043101559820db87d8d83ef",
+  "assets/screens/10/text-scrolled.png": "6e34ca24f568d15cab3fd6b163535655ef87f6787b030a106358a198ca5ae96b",
   "assets/screens/tour/dates.png": "a4c557dca33af0ccf6cafe4e091ea9f455cebfe183e32f591518589f87960b99",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "c57ffca97f72280027d7a13383946c55c8fdee20879f6c59301b0840ed4b9f98",
-  "out/series/10-lu/share.mp4": "e22927f80f7941bb3802f6603f865cf2129ccee42d2d2cce5edd053a40b7af4a"
+  "out/series/10-lu/short.mp4": "c78fbb0c694c609579a1db863d8d82dc0c1a190682c38ba919997370b419bd93",
+  "out/series/10-lu/share.mp4": "88be06df84acc26d725f619caccea94777802108ded3c72c192a122bf7358bc5"
  }
 }

@@ -1,7 +1,7 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-24T23:52:42.077Z",
- "commit": "9aa6a36eeb6368464b2bda217148bf2d1dfa12d0",
+ "rendered": "2026-09-25T00:22:36.474Z",
+ "commit": "5445bf29b8268b176bc60720209347ab9160a1b4",
  "clean": true,
  "seconds": 29.290667,
  "shareKbps": 6153,
@@ -41,7 +41,7 @@
     "caption": "YOUR DAY, READ"
    },
    {
-    "src": "assets/screens/8/painting.png",
+    "src": "assets/screens/8/painting-scrolled.png",
     "caption": "THE PAINTING"
    },
    {
@@ -61,11 +61,11 @@
   "assets/3d/hexagram-000010-115bpm-8b.mp4": "24a13c93517de55db6c88aee6d4a005ca9d49b3c957f63ac9bfe51990977035c",
   "assets/3d/endcard-snap-000010-115bpm-9b.mp4": "4e7cd95a4043154b737826e6143b90be36edb589bad5a3809041de40e4894581",
   "assets/screens/8/today.png": "43d1e7528c6d5fb2dd65d896a990de474617c471102e663f5016d79d57bba45c",
-  "assets/screens/8/painting.png": "e77a09e8e9cbc7c1cc5189ce7028b582de2aef0d4c57bf7f841bb0874db69aa6",
+  "assets/screens/8/painting-scrolled.png": "0a22e0b794ce2040d14672faf14332fdb82f97302b733cbf096d9f1dd91455d1",
   "assets/screens/tour/archive.png": "8de500688f307c91958b0b7027a3b97d397aea84576c096c5efcb90e2baca3ca",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "ae01b857ed859b98a660da04a894496e9df341717a16b446ed76dc6696f77f9b",
-  "out/series/08-bi/share.mp4": "32f4111f9e103171a79e549b815cc58f5627d173bbc9805a66de77fa3dc20e7d"
+  "out/series/08-bi/short.mp4": "a75ae25fb1ac81513def8e5381a89edc0d80629b23a6c0bfed2555df50cd04f5",
+  "out/series/08-bi/share.mp4": "da49bab5cd1085c24592b7205b8719ab5673b5e75c001097ec42dda037041c0d"
  }
 }
