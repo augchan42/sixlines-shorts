@@ -30,8 +30,8 @@
   },
   "lesson": {
    "kind": "moon",
-   "text": "Its shape:\na watchtower.",
-   "source": "Wilhelm, hexagram 20: the hexagram's form is like a tower; 觀 also means a watchtower"
+   "text": "Look like a guest,\nnot an inspector.",
+   "source": "commentary/en/20.json#lines[3].synthesis: the person who observes with the courtesy of a visitor learns more than the one who observes with the authority of an inspector"
   },
   "pace": "held",
   "tags": [
