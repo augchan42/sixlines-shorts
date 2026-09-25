@@ -1,11 +1,11 @@
 {
  "hexagram": 42,
  "special": "character-42",
- "rendered": "2026-09-25T08:54:19.657Z",
- "commit": "510dab61a6d8afc37e5a3ffce0d6ef0a2c8da405",
+ "rendered": "2026-09-25T11:13:11.131Z",
+ "commit": "66dd045017f38033ec537b8ce775f41f16e02b14",
  "clean": true,
- "seconds": 31.616,
- "shareKbps": 5691,
+ "seconds": 32.256,
+ "shareKbps": 5576,
  "props": {
   "hexagram": {
    "number": 42,
@@ -40,8 +40,8 @@
   "lesson": {
    "kind": "character",
    "text": "Let your gain\nspill over",
-   "beats": 14,
-   "clip": "assets/3d/character-42-95bpm-14b-1gs0k97.mp4"
+   "beats": 15,
+   "clip": "assets/3d/character-42-95bpm-15b-1gs0k97.mp4"
   },
   "pace": "even",
   "credit": true,
@@ -56,10 +56,10 @@
   "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
   "assets/3d/hexagram-100011-95bpm-8b.mp4": "241fdd2fb5e9579a56d3a0e03778adff79d8d0466c01732229b1b329fb7a3525",
   "assets/3d/endcard-snap-100011-95bpm-9b.mp4": "82e8ac980208476dd296e9e9547388b8c29d9141d84d7d22e8215abdf1430e8d",
-  "assets/3d/character-42-95bpm-14b-1gs0k97.mp4": "ef550886d7d4ad2c442783fa5b1072e4b6c45bbbc8f2ccecd9b63bc3bbc9b29c",
+  "assets/3d/character-42-95bpm-15b-1gs0k97.mp4": "c9e4f290a09b32a037b6c169251478a751fd69f4216f0a597ee0761eaff13a13",
   "assets/yilin/stipple-42-33.webp": "5526d5774d920fda50f3efe7a1b567651b12e67a91ed86d31976ced85029c95a",
   "assets/yilin/stipple-42-1.webp": "25e57ec0c1a8d0e3df893bff4dd8540a4fdf9bc8aa519d2f90a40b3e6eb7643f",
-  "out/specials/character-42/short.mp4": "08f714983859a130d6eae61585d276a437cf155c07ccaacb830aeaf0c92ba21b",
-  "out/specials/character-42/share.mp4": "43d7f2d6371e6fb1b9b312cef6560118dc43eb732f357f4c3d4b90120c9d2e18"
+  "out/specials/character-42/short.mp4": "1d327e50b331efd5a0637cb7eafbf68b417a894c2daaed91d654915434236933",
+  "out/specials/character-42/share.mp4": "2953f58a5e525b55e31e4c471b6761a5f4b254330156c6cef9a99e65222293a6"
  }
 }
