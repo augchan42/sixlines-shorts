@@ -16,6 +16,8 @@ in the stroke's own shape, with the neon along their top edge.
 - --lean: with --stand, the standing thing leans over before the --last strokes (臨).
 - --shed: with --stand, these strokes stand on their own and fall flat one by one once the
   walls stand, until only the rest is left standing (剝, peeled by the knife).
+- --march: with --stand, the standing thing is drawn this far back and walks toward the
+  camera in four hops (旅, travellers under a flag).
 - --turn: with --stand, the standing thing turns round to look back, holds still and turns
   forward again (艮).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
@@ -77,6 +79,7 @@ def parse():
     p.add_argument("--drop-step", type=float, default=0.5, help="beats between the --drop strokes as they are traced")
     p.add_argument("--lean", type=float, help="with --stand: degrees the standing thing leans to (90 upright) before the --last strokes")
     p.add_argument("--shed", default="", help="with --stand: standing strokes that fall flat one by one once the walls stand")
+    p.add_argument("--march", type=float, help="with --stand: how far back the standing thing is drawn before it walks forward in four hops")
     p.add_argument("--turn", type=float, help="with --stand: degrees the standing thing turns round, holds, and turns back")
     p.add_argument("--last-water", action="store_true", help="the --last strokes in the --water colour")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
@@ -599,6 +602,20 @@ def main():
                 shed[i].rotation_euler.x = math.radians(a)
                 key(shed[i], "rotation_euler", f, index=0)
             t += round(0.7 * beat)
+    # A standing thing drawn far back walks forward in four hops (for 旅).
+    if pivot and args.march:
+        home = pivot.location.y
+        for f, y, z in ((0, home + args.march, 0), (t, home + args.march, 0)):
+            pivot.location.y, pivot.location.z = y, z
+            key(pivot, "location", f)
+        for k in range(1, 5):
+            y = home + args.march * (1 - k / 4)
+            for f, z in ((t + round(0.25 * beat), 0.4), (t + round(0.5 * beat), 0)):
+                pivot.location.y = (y + pivot.location.y) / 2 if z else y
+                pivot.location.z = z
+                key(pivot, "location", f)
+            t += round(0.75 * beat)
+        t += round(0.3 * beat)
     # A standing thing leans over (for 臨, to look down at what is small).
     upright = 90
     if pivot and args.lean is not None:
