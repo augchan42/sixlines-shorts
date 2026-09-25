@@ -3,6 +3,7 @@ import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
+import { seriesMotion } from "../lib/seriesMotion";
 import { planOf } from "../lib/seriesPlan";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
@@ -41,6 +42,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
   const lesson = props.lesson;
   // A moon lesson plays its clip throughout and types its sentence over the last 5 beats.
   const moonText = s.cta - 5;
+  const motion = seriesMotion(s, lesson);
   const cuts: Cut[] = [
     { beat: s.hexagram, kind: "zoom" },
     { beat: s.meaning, kind: "whip-up" },
@@ -59,14 +61,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
         <Soundtrack src={props.music} start={props.musicStart} fadeFrom={f(s.end - 2)} />
         <Camera
           cuts={cuts}
-          motion={[
-            { beat: -10, punch: 0, sway: 0.3 },
-            { beat: s.meaning, punch: 0.03, sway: 0.4 },
-            { beat: s.question, punch: 0, sway: 0.2 },
-            { beat: s.drop, punch: 0.07, sway: 0.6 },
-            { beat: s.cta, punch: 0, sway: 0.2 },
-          ]}
-          shakes={[{ beat: s.drop, strength: 45, beats: 1 }]}
+          motion={motion.motion}
+          shakes={motion.shakes}
         >
           <Sequence {...span(0, s.hexagram)}>
             <Hook text={props.hook} />
