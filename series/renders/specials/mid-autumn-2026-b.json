@@ -59,5 +59,9 @@
   "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
   "out/specials/mid-autumn-2026-b/short.mp4": "31ee650d46ee6c34eadfb8c8c5b276367030b635b51bc34a56b06a0e9f2f5842",
   "out/specials/mid-autumn-2026-b/share.mp4": "46e092445817ef70bab6f78ca95ae0fef1fc4ae1d4c11828073ac63407b2eae6"
+ },
+ "caption": {
+  "commit": "c433cd35040c2e75857c3515f74e335bee6885fa",
+  "clean": true
  }
 }
