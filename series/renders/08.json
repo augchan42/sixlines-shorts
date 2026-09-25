@@ -1,7 +1,7 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-25T00:53:53.159Z",
- "commit": "33fcb3c88e2bfd763f057ecc5a1109d38b8a01e1",
+ "rendered": "2026-09-25T01:01:26.933Z",
+ "commit": "dd6e34864a6d6e68e64f1e3b3af100ea4f108e4a",
  "clean": true,
  "seconds": 25.088,
  "shareKbps": 7206,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "painting",
-   "text": "Renoir, 1881:\nfriends holding together.",
+   "text": "Renoir, 1881:\nfriends together.",
    "screen": {
     "src": "assets/screens/8/painting-scrolled.png",
     "caption": "THE PAINTING"
@@ -58,7 +58,7 @@
   "assets/screens/8/painting-scrolled.png": "0a22e0b794ce2040d14672faf14332fdb82f97302b733cbf096d9f1dd91455d1",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "5783f43c249a7c094f9fad0e66c05c48cc1fcbee65b6817f966146a4a8f85cf0",
-  "out/series/08-bi/share.mp4": "ea9d89ecfc7f1d5329068344807e8399c6056ee3b8a8986bc6ac5aefb310e65f"
+  "out/series/08-bi/short.mp4": "0d0d1defb360e8b19c8384db69e8b97716d7a0482117f50f067206b849f80682",
+  "out/series/08-bi/share.mp4": "51dfbd1c1b9c8d839d57eb15a092485c6554a19593c0bf815ed42bf5597dc007"
  }
 }

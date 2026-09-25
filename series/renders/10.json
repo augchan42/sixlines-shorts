@@ -1,7 +1,7 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-25T00:55:38.770Z",
- "commit": "33fcb3c88e2bfd763f057ecc5a1109d38b8a01e1",
+ "rendered": "2026-09-25T01:03:19.270Z",
+ "commit": "dd6e34864a6d6e68e64f1e3b3af100ea4f108e4a",
  "clean": true,
  "seconds": 24.042667,
  "shareKbps": 7525,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "judgment",
-   "text": "Tread on the tiger’s tail.\nIt does not bite.",
+   "text": "The tiger’s tail:\nit does not bite.",
    "screen": {
     "src": "assets/screens/10/text-scrolled.png",
     "caption": "THE JUDGMENT"
@@ -58,7 +58,7 @@
   "assets/screens/10/text-scrolled.png": "6e34ca24f568d15cab3fd6b163535655ef87f6787b030a106358a198ca5ae96b",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "aae9b859efacf8cffca5353f566e357d905b684901ac028cba423f13263db98e",
-  "out/series/10-lu/share.mp4": "ddb3779d36821adfc5123a7727c6fb97bcf8154891b2a735bef82fe197871e9e"
+  "out/series/10-lu/short.mp4": "3c38aaa72315cd3088d96c7071260b3faf6692a019ad643dd93700b34c495d01",
+  "out/series/10-lu/share.mp4": "d0f5a6038a7253fd0316e40355d40d2cd7314514ef00e3a3ef2332a04772da3f"
  }
 }

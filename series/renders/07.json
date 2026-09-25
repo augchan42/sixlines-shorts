@@ -1,7 +1,7 @@
 {
  "hexagram": 7,
- "rendered": "2026-09-25T00:51:42.881Z",
- "commit": "33fcb3c88e2bfd763f057ecc5a1109d38b8a01e1",
+ "rendered": "2026-09-25T00:59:15.451Z",
+ "commit": "dd6e34864a6d6e68e64f1e3b3af100ea4f108e4a",
  "clean": true,
  "seconds": 32.042667,
  "shareKbps": 5614,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Water under the earth:\nunseen, but everywhere.",
+   "text": "Unseen water\nunder the earth.",
    "trigrams": [
     {
      "zh": "地",
@@ -63,7 +63,7 @@
   "assets/3d/endcard-join-010000-90bpm-9b.mp4": "7a759273fb0da9e3b10de9b2fec9abf7557d96483abed8853a5822fcfacad46d",
   "assets/yilin/stipple-7-50.webp": "241edc92d9e37dcc22741138a0d5bad405e54356f24a262e262ffdb9e4ba7821",
   "assets/yilin/stipple-7-22.webp": "87b43c5e1d4157f0458b50a16fa74cd3e6ec8ae9aa1a2b61899cd79725ad4f81",
-  "out/series/07-shi/short.mp4": "bf6a22ac2936dda66641a5a4b9536179596971737d602a7d9673beba37e6db62",
-  "out/series/07-shi/share.mp4": "1915054342f10c67d8189bd265c346d7d122cc0a5903c980cbf1f82df6df900d"
+  "out/series/07-shi/short.mp4": "930dc6f384353571e65d59ca47a98364a7b5e348bc0cd6038764aed48f1b2057",
+  "out/series/07-shi/share.mp4": "83e94813cd81e50898efcf402f1a4d9e2897b4da675087de5f3e96ef111f3ad1"
  }
 }
