@@ -1,0 +1,1104 @@
+[
+  {
+    "number": 1,
+    "name": "乾",
+    "picture_char": "乾",
+    "early_form": "No oracle-bone or early bronze form; first seen in Warring States script and the Shuowen seal. Left: 倝, a sun (日) under a banner pole with a streaming flag (㫃), sprouting lines above and below; right: 乙, a single bent stroke.",
+    "depicts": "Phono-semantic compound: phonetic 倝 (sun rising, light spreading) + 乙. Shuowen glosses it 'going up and out'. The sun-and-banner component is taken to show the sun coming up, but 倝 is chosen mainly for sound.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/乾",
+      "https://en.wiktionary.org/wiki/倝",
+      "https://zdic.net/hans/%E4%B9%BE",
+      "https://www.hancibao.com/shuowen/4e7e"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:乾-bigseal.svg",
+    "our_reading": "Ours: the sun clears the horizon beside a flagpole and a stroke pushes upward. The shape shows steady rising that does not stop, which is the Creative: heaven keeps moving.",
+    "lesson_idea": "A low-poly sun rises beside a pole, a flag unfurls, and a single bent stroke keeps climbing past the top of the frame.",
+    "sentence": "Keep going,\nlike the sun.",
+    "fit": 3
+  },
+  {
+    "number": 2,
+    "name": "坤",
+    "picture_char": "坤",
+    "early_form": "No oracle or bronze form of 坤. The Mawangdui silk texts, Haihunhou slips and Han Stone Classics write the hexagram name as 川: three vertical broken strokes, possibly the Kun trigram (three broken lines) turned upright. The later form is 土 (a mound of earth on a ground line) + 申 (a lightning flash).",
+    "depicts": "坤 is a late compound, earth 土 + 申 (sound). The early 川 spelling may be the ☷ trigram rotated 90 degrees; this is a proposal, not settled.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/坤"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: three lines, each broken in the middle, stand side by side. Every line has a gap in it; the shape is all openings. That is the Receptive: it makes room and takes things in.",
+    "lesson_idea": "Three lines draw themselves as the Kun trigram, each split open in the middle, then turn upright into a field where seeds drop into the gaps and sprout.",
+    "sentence": "Make room\nand things grow.",
+    "fit": 3
+  },
+  {
+    "number": 3,
+    "name": "屯",
+    "picture_char": "屯",
+    "early_form": "Oracle bone: a horizontal ground line with a stem pushing up through it, a swollen bud or knot at the top, a curved root below.",
+    "depicts": "Pictogram of a sprout or bud just breaking out of the ground; original form of 芚.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/屯"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:屯-oracle.svg",
+    "our_reading": "Ours: a shoot bent under the weight of the soil, forcing its way through a line it has not yet crossed. That is difficulty at the beginning: the start is the hardest push.",
+    "lesson_idea": "A seed cracks under a glowing ground line, a shoot bends and strains against it, then breaks through with a swollen bud.",
+    "sentence": "Starts are\nalways hard.",
+    "fit": 5
+  },
+  {
+    "number": 4,
+    "name": "蒙",
+    "picture_char": "蒙",
+    "early_form": "Bronze and seal: grass (艹) on top of 冡, which is a cover or hood (冖-shape) over a pig (豕). Oracle bone has 冡 without the grass: a roof or hat shape over an animal.",
+    "depicts": "Phono-semantic: grass 艹 + phonetic 冡. 冡 itself is read as 'to cover' (a cover over a pig) and is the early form of 'covered, obscured'.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/蒙",
+      "https://en.wiktionary.org/wiki/冡",
+      "https://www.sinoss.net/upload/resources/file/2023/02/10/31325.pdf"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:蒙-bigseal.svg",
+    "our_reading": "Ours: something with a cover over its head, under grass. It cannot see. Youthful folly is not stupidity, it is being covered; the teacher lifts the cover once, and you have to look.",
+    "lesson_idea": "A cover drops over a small animal, grass grows over the cover, then one hand lifts the cover and light falls in.",
+    "sentence": "Ask once,\nthen listen.",
+    "fit": 3
+  },
+  {
+    "number": 5,
+    "name": "需",
+    "picture_char": "需",
+    "early_form": "Bronze: rain (雨, a sky line with falling drops) over a frontal standing person (天/大). Later the person corrupted into 而.",
+    "depicts": "Ideogrammic compound: a person standing in the rain getting wet; original form of 濡 'to wet'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/需"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:需-bronze.svg",
+    "our_reading": "Ours: a person stands still while rain falls on them. They do not run. Waiting is staying put in weather you cannot change until it passes.",
+    "lesson_idea": "A standing figure draws itself, a cloud line forms above, rain falls on the figure, and it stays still until the rain stops.",
+    "sentence": "Wait in the rain;\nit will pass.",
+    "fit": 4
+  },
+  {
+    "number": 6,
+    "name": "訟",
+    "picture_char": "訟",
+    "early_form": "Bronze and seal: 言 (speech: a mouth with a line coming out of it) beside 公 (two strokes parting above a mouth or opening).",
+    "depicts": "Phono-semantic compound: 言 'speak' + phonetic 公. The picture says only 'something to do with speech'.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/訟"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: a speaking mouth next to two strokes splitting apart over another mouth. Words go out and the sides part. Conflict: fine to stop midway, bad to push to the end.",
+    "lesson_idea": "Two mouths draw themselves, lines of speech shoot between them, the two strokes above split apart, and the drawing stops halfway before the lines cross.",
+    "sentence": "Stop the fight\nbefore the end.",
+    "fit": 2
+  },
+  {
+    "number": 7,
+    "name": "師",
+    "picture_char": "師",
+    "early_form": "Oracle bone writes 'army' with 𠂤 alone: two stacked bumps, like two mounds. Bronze adds 帀 on the right, a vertical with a crossbar and branching strokes.",
+    "depicts": "𠂤 is read as hills (an army's camp on high ground) or as provisions; 帀 is unclear. Used for 'army, troops' from the oracle bones on.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/師",
+      "https://en.wiktionary.org/wiki/𠂤"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:師-bronze.svg",
+    "our_reading": "Ours: two mounds stacked, a standard beside them. A camp and a pole to rally around. An army is a crowd that holds together because someone plants the pole.",
+    "lesson_idea": "Two mounds rise, a pole with a crossbar is planted beside them, and small figures gather at its foot.",
+    "sentence": "A crowd needs\na leader.",
+    "fit": 2
+  },
+  {
+    "number": 8,
+    "name": "比",
+    "picture_char": "比",
+    "early_form": "Oracle bone: two identical profile figures, bent forward, standing one right behind the other, facing the same way.",
+    "depicts": "Commonly read as two people side by side, 'close, alongside'. Chu Wan-li instead takes it as a doubled phonetic 匕. Shuowen: 'close together'.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/比"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:比-oracle.svg",
+    "our_reading": "Ours: two people facing the same way, one close behind the other. Holding together means choosing who you stand next to, and joining early.",
+    "lesson_idea": "One bent figure draws itself, a second one draws in right behind it facing the same way, and a third arrives late at a gap.",
+    "sentence": "Stand close\nto your people.",
+    "fit": 4
+  },
+  {
+    "number": 9,
+    "name": "小畜",
+    "picture_char": "畜",
+    "early_form": "畜 oracle bone: a twisted cord (玄/幺, two linked loops) above a square with a cross inside (田: a field, pen, or feed bag). 小 is three small dots.",
+    "depicts": "Rope + 田: either a tied bag of feed or animals tied and kept in a pen; hence livestock, to raise, to restrain. 小 is three small grains.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/畜",
+      "https://en.wiktionary.org/wiki/小"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:畜-oracle.svg",
+    "our_reading": "Ours: a thin cord tied around a field. The cord is small and the field is big; it holds only for now. Small taming: dense clouds, no rain yet.",
+    "lesson_idea": "Three small dots fall, become a thin twisted cord, and the cord loops around a glowing square field and holds it.",
+    "sentence": "Small ties\nhold for now.",
+    "fit": 3
+  },
+  {
+    "number": 10,
+    "name": "履",
+    "picture_char": "履",
+    "early_form": "Bronze: a standing person with a large head or eye (眉-like), a foot (止) below, and a boat-shaped shoe (舟) beside. Later reduced to 尸 + 復.",
+    "depicts": "Ideogrammic compound of a person, a foot and a shoe: 'to tread, shoe'. 眉 may be phonetic.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/履"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:履-oracle.svg",
+    "our_reading": "Ours: a person with a big watching eye and a foot in a shoe. Treading is walking with your eyes open, placing each step. The tiger does not bite.",
+    "lesson_idea": "A figure with a large eye draws itself, a foot and shoe lower slowly onto a striped tiger's tail, and the tail stays still.",
+    "sentence": "Step carefully\nand keep going.",
+    "fit": 4
+  },
+  {
+    "number": 11,
+    "name": "泰",
+    "picture_char": "泰",
+    "early_form": "Seal: 大 (a frontal person) above two hands (廾), with water (水) running down below the hands.",
+    "depicts": "Shuowen: phonetic 大 + two hands + water; original sense 'slippery', water slipping through hands. Later 'great, too much, peaceful'.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/泰",
+      "http://zdic.net/hans/%E6%B3%B0",
+      "https://zhuanlan.zhihu.com/p/564325736"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:泰-bigseal.svg",
+    "our_reading": "Ours: a person with open hands and water running through them. Nothing is held back, so things flow. Peace: heaven and earth pass through each other.",
+    "lesson_idea": "A figure raises two open hands, water pours down from above and flows through the fingers and away.",
+    "sentence": "Let it flow\nboth ways.",
+    "fit": 3
+  },
+  {
+    "number": 12,
+    "name": "否",
+    "picture_char": "否",
+    "early_form": "Not in oracle bones; Western Zhou onward. 不 on top (a stem with drooping lines under a horizontal, read as a flower calyx or roots) over 口 (a mouth or opening).",
+    "depicts": "不 'not' + 口: a spoken 'no'. 不 is phonetic and semantic; what 不 itself depicts (calyx vs roots) is disputed.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/否",
+      "http://zdic.net/hant/%E5%90%A6",
+      "https://zh.wiktionary.org/zh-hant/%E4%B8%8D"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:否-seal.svg",
+    "our_reading": "Ours: a bar with a stem pressing down on a mouth. The opening is sealed from above. Standstill: top and bottom stop meeting; keep quiet and wait.",
+    "lesson_idea": "A mouth-shaped opening draws itself, a heavy bar with drooping lines lowers onto it, and the glow inside dims.",
+    "sentence": "When it's blocked,\nwait it out.",
+    "fit": 3
+  },
+  {
+    "number": 13,
+    "name": "同人",
+    "picture_char": "同",
+    "early_form": "同 oracle bone: a tall frame or board (凡, a long rectangle with a line inside) above a mouth (口). 人 is a single person in profile, bent slightly.",
+    "depicts": "Wiktionary: a pipe, original form of 筒. Others read 凡 + 口 as people carrying a board together while calling out (the middle of 興 'raise'). The meaning 'together, same' is certain; the picture is not.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/同",
+      "https://www.sohu.com/a/540961725_121141210",
+      "https://en.wiktionary.org/wiki/人"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:同-oracle.svg",
+    "our_reading": "Ours: one frame above one mouth, and a person. Many people, one load, one call. Fellowship is lifting the same thing at the same time.",
+    "lesson_idea": "A long board draws itself, several figures come in underneath, a mouth shape flashes as they call together, and the board lifts.",
+    "sentence": "Lift it\ntogether.",
+    "fit": 4
+  },
+  {
+    "number": 14,
+    "name": "大有",
+    "picture_char": "有",
+    "early_form": "有 oracle bone: a right hand (又, three fingers and an arm). Bronze adds meat (肉, a slab with marks) under the hand. 大 is a frontal standing person with legs apart.",
+    "depicts": "Hand + meat: 'to have'. Wiktionary treats 又 as phonetic and notes the oracle form has no meat, so 'a hand holding meat' is a later reading of the bronze form.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/有",
+      "https://en.wiktionary.org/wiki/大"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:有-bronze.svg",
+    "our_reading": "Ours: a big figure with arms wide and a hand full. Great possession: you hold a lot, and it sits in the open under the sun, where everyone can see what you do with it.",
+    "lesson_idea": "A wide standing figure draws itself, then a hand draws below and closes on a glowing slab of meat that lights up in a sun.",
+    "sentence": "Hold much,\nuse it well.",
+    "fit": 3
+  },
+  {
+    "number": 15,
+    "name": "謙",
+    "picture_char": "謙",
+    "early_form": "Seal: 言 (speech) on the left, 兼 on the right; 兼 is a hand holding two grain stalks (two 禾) together.",
+    "depicts": "Phono-semantic compound: 言 + phonetic 兼. 兼 itself shows a hand holding two stalks at once.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/謙",
+      "https://en.wiktionary.org/wiki/兼"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:謙-bigseal.svg",
+    "our_reading": "Ours: one hand holding two stalks level, and speech. Modesty: take from the tall one, give to the short one, and say less than you could.",
+    "lesson_idea": "Two grain stalks of unequal height draw themselves, a hand grips both and they settle level, then a small speech mark beside them stays short.",
+    "sentence": "Take from much,\ngive to little.",
+    "fit": 3
+  },
+  {
+    "number": 16,
+    "name": "豫",
+    "picture_char": "豫",
+    "early_form": "Seal: 予 (a shuttle-like shape) on the left, 象 (an elephant: trunk, head, body, legs, tail) on the right. The Mawangdui silk text writes the hexagram name 餘.",
+    "depicts": "Phono-semantic compound: 象 'elephant' + phonetic 予. Shuowen: 'a large elephant'. Senses 'at ease, pleased, prepared' are not from the picture.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/豫"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:豫-seal.svg",
+    "our_reading": "Ours: an elephant, the biggest animal, moving at ease. When the big thing moves gladly, everyone moves with it. Enthusiasm spreads.",
+    "lesson_idea": "An elephant draws itself stroke by stroke, lifts its trunk, and small figures around it start to move to a beat.",
+    "sentence": "Enthusiasm\nmoves people.",
+    "fit": 2
+  },
+  {
+    "number": 17,
+    "name": "隨",
+    "picture_char": "隨",
+    "early_form": "Attested from seal script: the walking radical 辵 (a crossroads sign 彳 over a foot 止) on the left and bottom, with the phonetic 隋 (a mound 阜 with a torn-meat element) on the right.",
+    "depicts": "Phono-semantic compound: 辵 'walking' gives the meaning, an abbreviated 隋/𡐦 gives the sound. Only the foot on the road carries a picture.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/隨",
+      "https://www.dong-chinese.com/wiki/隨"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:隨-seal.svg",
+    "our_reading": "Ours: a foot on a road. Draw one footprint, then a second one landing in it: following is stepping where another has stepped, and stopping when they stop.",
+    "lesson_idea": "A road is drawn, a glowing footprint lands on it, a second footprint drops exactly into the first, then both stop as the light dims to night.",
+    "sentence": "To lead, first\nlearn to follow",
+    "fit": 2
+  },
+  {
+    "number": 18,
+    "name": "蠱",
+    "picture_char": "蠱",
+    "early_form": "Oracle bone: a footed bowl (皿) with one or two wriggling insects or worms (虫) inside it; seal script has three insects above the bowl.",
+    "depicts": "Ideogrammic compound: worms or poisonous insects kept in a vessel. In Shang divinations it names a sickness sent by ancestors; later the 'gu poison' bred by sealing insects in a jar until one survives.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/蠱",
+      "https://www.dong-chinese.com/wiki/蠱",
+      "https://en.wikipedia.org/wiki/Gu_(poison)"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:蠱-oracle.svg",
+    "our_reading": "Ours: a closed bowl that breeds worms. What is left shut and untended rots from inside; the work is to open it and clean it out.",
+    "lesson_idea": "A bowl is drawn and covered; worms appear inside and multiply; the bowl tips and they pour out, leaving it clean and bright.",
+    "sentence": "What you leave\nshut goes bad",
+    "fit": 5
+  },
+  {
+    "number": 19,
+    "name": "臨",
+    "picture_char": "臨",
+    "early_form": "Bronze: a person bending over from the upper left, a large upright eye (臣) at the top, and three small objects (品) below the gaze.",
+    "depicts": "A person looking down at a pile of objects: 'to look down on, oversee'; later 'to come near'. 品 is also the phonetic.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/臨",
+      "https://www.dong-chinese.com/wiki/臨"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:臨-seal.svg",
+    "our_reading": "Ours: the one above bends down to look closely at the small things below. Approach means the strong coming near to care for and teach the weak.",
+    "lesson_idea": "A tall figure is drawn, it bends forward, a large eye opens over three small squares and they light up one by one.",
+    "sentence": "Lean down to\nsee what is small",
+    "fit": 4
+  },
+  {
+    "number": 20,
+    "name": "觀",
+    "picture_char": "觀",
+    "early_form": "Oracle bone forms write the word with 雚 alone: a crested bird (heron or stork) with two round eyes 吅 on its head; seal script adds 見, an eye on top of a kneeling person.",
+    "depicts": "Phono-semantic compound: 見 'see' gives the meaning, 雚 (a stork, 鸛) gives the sound. The idea that the big-eyed bird itself means 'watching' is a popular gloss, not the scholarly reading.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/觀",
+      "https://en.wiktionary.org/wiki/雚"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:觀-seal.svg",
+    "our_reading": "Ours: a tall bird standing still with two large eyes, and beside it an eye on a person. The watcher is also watched: people look at the one they look up to.",
+    "lesson_idea": "A heron is drawn standing still with two glowing eyes; beside it an eye on a kneeling figure opens, and the view turns to show the heron being looked at.",
+    "sentence": "Look closely.\nYou are seen too.",
+    "fit": 3
+  },
+  {
+    "number": 21,
+    "name": "噬嗑",
+    "picture_char": "嗑",
+    "early_form": "嗑 is attested only in seal script: a mouth 口 beside 盍, whose oracle and bronze forms are a vessel 皿 with a lid on top. 噬 is 口 + 筮 (hands, bamboo and a shaman: yarrow divination).",
+    "depicts": "Both are phono-semantic compounds with 口 'mouth'. 盍 is a pictogram of a container and its lid (original form of 蓋); whether its sense of 'closing' also carries meaning in 嗑 is not settled.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/噬",
+      "https://en.wiktionary.org/wiki/嗑",
+      "https://en.wiktionary.org/wiki/盍",
+      "https://en.wiktionary.org/wiki/筮"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:嗑-seal.svg",
+    "our_reading": "Ours: a mouth and a lid slamming shut on a pot. Something is stuck between the jaws; the jaws close hard and bite through it.",
+    "lesson_idea": "A mouth opens, a bar is drawn across it, the lid-shaped jaw comes down and the bar snaps in two.",
+    "sentence": "Bite through\nwhat blocks you",
+    "fit": 3
+  },
+  {
+    "number": 22,
+    "name": "賁",
+    "picture_char": "賁",
+    "early_form": "Warring States and seal script: three small plant sprouts (卉) above a cowrie shell (貝).",
+    "depicts": "Wiktionary: phono-semantic, 卉 phonetic + 貝 'cowrie' (valuables). Dong Chinese gives the original meaning as 'adornment'. The picture of 'flowers laid on a shell' is a common reading but not established.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/賁",
+      "https://www.dong-chinese.com/wiki/賁"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:賁-bigseal.svg",
+    "our_reading": "Ours: flowers set on top of a shell. Decoration sits on the surface of something of value; it does not change what is underneath.",
+    "lesson_idea": "A shell is drawn plain, three sprouts grow on top of it and bloom, then the flowers fade and the shell stays as it was.",
+    "sentence": "Looks help with\nsmall things",
+    "fit": 3
+  },
+  {
+    "number": 23,
+    "name": "剝",
+    "picture_char": "剝",
+    "early_form": "Knife 刀/刂 on the right; on the left 彔, whose oracle form shows a windlass or bucket at a well with drops falling (Shuowen reads it as wood being carved, with chips falling).",
+    "depicts": "Phono-semantic compound: 刀 'knife' gives the meaning 'to peel, cut'; 彔 gives the sound. What 彔 depicts is disputed (well windlass per Wiktionary; carved wood per Shuowen).",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/剝",
+      "https://en.wiktionary.org/wiki/彔"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: a knife beside a block with small pieces dropping off. Layer after layer is peeled away until only the base is left.",
+    "lesson_idea": "A block is drawn, a knife stroke appears beside it, chips fall off the top one at a time until only the bottom line remains, and it glows.",
+    "sentence": "When it peels,\nguard the base",
+    "fit": 4
+  },
+  {
+    "number": 24,
+    "name": "復",
+    "picture_char": "復",
+    "early_form": "Oracle bone 复: a building or corridor with openings at both ends (like 良), with a foot 夊 pointing down beneath it; a street element 彳 was added later.",
+    "depicts": "A foot going back through a passage: 'to go back, return'. 复 is the phonetic core, 彳 'walk' was added as a semantic marker.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/復",
+      "https://en.wiktionary.org/wiki/复",
+      "https://www.dong-chinese.com/wiki/復"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:復-oracle.svg",
+    "our_reading": "Ours: a passage open at both ends and a foot inside it turning back. The road that leads out is the road that brings you back.",
+    "lesson_idea": "A corridor is drawn, a foot walks out through one end, turns, and walks back into the lit center.",
+    "sentence": "The way out is\nthe way back",
+    "fit": 4
+  },
+  {
+    "number": 25,
+    "name": "无妄",
+    "picture_char": "无",
+    "early_form": "无 appears from the Warring States: a person-like shape (like 元 or 天) with a hooked stroke. Its equivalent 無 is, in oracle bone script, a dancer holding tassels in both hands. 妄 is 女 'woman' + 亡 phonetic.",
+    "depicts": "The origin of 无 is unknown (possibly from 元, 天 or 堯). 無 was originally 'to dance' (舞) and borrowed for 'without'. 妄 is phono-semantic; the picture says nothing about 'reckless'.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/无",
+      "https://en.wiktionary.org/wiki/妄"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:无-bronze.svg",
+    "our_reading": "Ours: a plain standing figure with empty hands. Nothing held, nothing hidden: act without a scheme and without pretending.",
+    "lesson_idea": "A figure is drawn standing, its hands open and empty, and a second, crooked stroke that tries to join it fades away.",
+    "sentence": "Act without\nhidden motives",
+    "fit": 2
+  },
+  {
+    "number": 26,
+    "name": "大畜",
+    "picture_char": "畜",
+    "early_form": "Oracle bone 畜: a twisted cord (玄/幺) on top of a rounded or squared shape (田). 大 is a person standing frontally with arms and legs apart.",
+    "depicts": "Wiktionary: a bag of feed (田) tied with a cord (玄), hence livestock and keeping. Other readings take 田 as a field or the lower part as a stomach; the details are disputed.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/畜",
+      "https://en.wiktionary.org/wiki/大"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:畜-oracle.svg",
+    "our_reading": "Ours: a full sack tied shut with a cord, held by a large figure. Strength is gathered and held back until it is needed.",
+    "lesson_idea": "A standing figure is drawn, a sack fills with light at its feet, a cord twists and ties it shut, then the figure lifts it and steps forward.",
+    "sentence": "Store up, then\ncross the river",
+    "fit": 3
+  },
+  {
+    "number": 27,
+    "name": "頤",
+    "picture_char": "頤",
+    "early_form": "Seal script: the jaw pictogram 𦣞 (like 臣 turned, a lower jaw with a line of teeth) on the left, and 頁 (a head on a kneeling body) on the right.",
+    "depicts": "𦣞 is a pictogram of the chin or jaw, 'cheek, jaw', later 'nourish'. 頁 'head' was added; 𦣞 is also the phonetic.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/頤"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:頤-bigseal.svg",
+    "our_reading": "Ours: an open jaw. What goes into the mouth feeds you and what comes out of it is speech; both should be chosen with care.",
+    "lesson_idea": "A jaw is drawn in profile, it opens, a small glowing piece of food goes in, a short line of words comes out, and it closes.",
+    "sentence": "Watch what goes\nin and comes out",
+    "fit": 4
+  },
+  {
+    "number": 28,
+    "name": "大過",
+    "picture_char": "大",
+    "early_form": "大 in oracle bone script: a person standing frontally with arms and legs spread. 過 appears from bronze script: the walking radical 辵 with phonetic 咼 (冎 'bone joint' + 口).",
+    "depicts": "大 is a pictogram of a standing adult, 'big'. 過 is phono-semantic, 'walk' + sound; 冎 is the original form of 骨 'bone' but only gives the sound.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/大",
+      "https://en.wiktionary.org/wiki/過",
+      "https://en.wiktionary.org/wiki/咼",
+      "https://en.wiktionary.org/wiki/冎"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:大-oracle.svg",
+    "our_reading": "Ours: a large figure with arms out, carrying a beam across its shoulders. Too much weight in the middle and the beam bends.",
+    "lesson_idea": "The figure 大 is drawn, a long beam lands across its arms, weight is stacked in the middle and the beam sags until the figure steps out from under it.",
+    "sentence": "Too much weight\nbends the beam",
+    "fit": 2
+  },
+  {
+    "number": 29,
+    "name": "坎",
+    "picture_char": "坎",
+    "early_form": "Seal script: earth 土 beside 欠 (a kneeling person with open mouth). The variant 埳 has 臽, whose oracle form is a person inside a pit.",
+    "depicts": "坎 is phono-semantic: 土 'earth' + 欠 phonetic, 'pit'. In the variant 埳, 臽 is an established picture of a person fallen into a pit.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/坎",
+      "https://www.dong-chinese.com/wiki/坎"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:坎-seal.svg",
+    "our_reading": "Ours: a pit in the ground, then another. Water does not stop at a pit: it fills it and flows on to the next.",
+    "lesson_idea": "A pit is drawn in the ground, glowing water fills it to the brim, spills over into a second pit, fills that and runs on.",
+    "sentence": "Fill the pit,\nthen flow on",
+    "fit": 3
+  },
+  {
+    "number": 30,
+    "name": "離",
+    "picture_char": "離",
+    "early_form": "Seal script: 离 (in bronze script a net on a long handle among trees, 林 + 𠦒) beside 隹 'bird'.",
+    "depicts": "Wiktionary: phono-semantic, 离 phonetic + 隹 'bird', originally the oriole, borrowed for 'depart'. 离 itself pictures a hunting net set in a forest. The popular reading 'a bird caught in a net', giving 'attach, cling', is not the mainstream analysis.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/離",
+      "https://en.wiktionary.org/wiki/离"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:離-seal.svg",
+    "our_reading": "Ours: a bird held in a net. Fire is like this: it has no body of its own and burns only by holding on to something.",
+    "lesson_idea": "A net on a handle is drawn, a bird flies into it and stays; the net lights up and burns bright only where the bird is held.",
+    "sentence": "Fire needs\nsomething to hold",
+    "fit": 3
+  },
+  {
+    "number": 31,
+    "name": "咸",
+    "picture_char": "咸",
+    "early_form": "Oracle bone: a broad axe 戌 with a mouth or opening 口 beneath the blade.",
+    "depicts": "Axe + mouth; readings differ: 'kill, finish off' (hence 'all'), shouting together with weapons, or breaking a pot. The sense 'to affect, feel' is written 感 with a heart added later.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/咸",
+      "https://www.dong-chinese.com/wiki/咸"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:咸-oracle.svg",
+    "our_reading": "Ours: take the axe away and put a heart under it, and 咸 becomes 感 'to feel, be moved'. Influence works through feeling, not force.",
+    "lesson_idea": "咸 is drawn with its axe; the axe blade fades, a heart 心 is drawn under it and the character becomes 感.",
+    "sentence": "Move others by\nbeing open",
+    "fit": 2
+  },
+  {
+    "number": 32,
+    "name": "恆",
+    "picture_char": "恆",
+    "early_form": "Oracle bone 亙: a crescent moon between two horizontal lines; bronze adds a heart 心 on the left. Seal script misdraws the moon as a boat 舟.",
+    "depicts": "The moon between two lines, 'constant, lasting'; 亙 is also the phonetic, 心 was added later. Shuowen's boat is a late misreading.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/恆",
+      "https://www.dong-chinese.com/wiki/恒",
+      "https://www.dong-chinese.com/wiki/亘"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:恆-seal.svg",
+    "our_reading": "Ours: the moon changes shape every night but stays between the same two lines. Lasting means changing form while keeping the same course.",
+    "lesson_idea": "Two horizontal lines are drawn; between them a moon grows from crescent to full and back, never leaving the space, and a heart is drawn beside it.",
+    "sentence": "Change shape,\nkeep your course",
+    "fit": 5
+  },
+  {
+    "number": 33,
+    "name": "遯",
+    "picture_char": "遯",
+    "early_form": "Not in oracle bone script. Seal and later forms: the walking radical 辵 (a road sign 彳 over a foot 止) on the left and 豚 (a pig with a piece of meat 肉 beside it) on the right.",
+    "depicts": "A phonetic compound: 辵 'walk, move' gives the meaning, 豚 'piglet' gives the sound. The popular story of 'a piglet running away' reads the sound part as meaning.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/遯",
+      "https://en.wiktionary.org/wiki/豚"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: a small animal walking off down a road, away from where it was. It does not fight, it leaves. That is the hexagram: step away from the petty with dignity, not hostility.",
+    "lesson_idea": "a small pig is drawn, then a road and a foot stroke by stroke beside it, and the pig walks out of frame along the road",
+    "sentence": "Walk away\nwithout a fight",
+    "fit": 2
+  },
+  {
+    "number": 34,
+    "name": "大壯",
+    "picture_char": "大",
+    "early_form": "大 in oracle bone script: a person seen from the front, head, two arms held out to the sides, two legs apart. 壯 is later: 爿 (a bed or board, phonetic) beside 士.",
+    "depicts": "大: a grown man standing full front, hence 'big'. Well established. 壯 is a phonetic compound (爿 sound, 士 'man' meaning) and has no picture.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/大",
+      "https://en.wiktionary.org/wiki/壯"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:大-oracle.svg",
+    "our_reading": "Ours: a person standing at full size, feet planted, arms out, taking up space but not moving. The strength is in standing, not charging. The hexagram warns that great power should not step where it is not right.",
+    "lesson_idea": "a figure is drawn head, arms, legs, growing to fill the frame, then its feet stay planted as a line it could cross glows in front of it",
+    "sentence": "Strong enough\nto hold back",
+    "fit": 3
+  },
+  {
+    "number": 35,
+    "name": "晉",
+    "picture_char": "晉",
+    "early_form": "Oracle bone and bronze: two arrows pointing down above a round or rectangular shape (later written 日 'sun').",
+    "depicts": "Disputed. Yang Shuda: two arrows stuck into a container (a quiver), meaning 'insert', the original of 搢. Others: two arrows hitting a target; recent work links it with 至 'arrive' (one arrow reaching the ground). The 'sun rising' reading follows the later 日 shape.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/晉",
+      "https://jas.hkbu.edu.hk/content/dam/jas-assets/publications/bulletin-of-the-jao-tsung-i-academy-of-sinology/issue-6-august-2019/14.pdf",
+      "https://baike.baidu.com/item/%E6%99%8B/1723",
+      "https://www.zdic.net/zd/zx/xz/%E6%99%89"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:晉-oracle.svg",
+    "our_reading": "Ours: two arrows flying to a bright round target and landing in it. Moving forward means going straight at something clear, in the open. The hexagram is advance by day, seen by all.",
+    "lesson_idea": "a glowing disc rises like a sun, two arrows are drawn in flight and land in it one after the other",
+    "sentence": "Move forward\nin plain sight",
+    "fit": 3
+  },
+  {
+    "number": 36,
+    "name": "明夷",
+    "picture_char": "明",
+    "early_form": "明 in oracle bone script: a sun beside a crescent moon (日+月); another common form has a window 囧 beside a moon (朙). 夷 in oracle bone and bronze: an arrow with a cord wound around its shaft, later a person 大 with a bow 弓.",
+    "depicts": "明: sun and moon together, or the moon shining through a window, 'bright'. Both forms are attested; which came first is argued. 夷: an arrow with a cord (a tethered hunting arrow), 'to shoot' (Chen Bingxin); later used for foreign peoples.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/明",
+      "https://en.wiktionary.org/wiki/夷",
+      "https://case.ntu.edu.tw/blog/?p=46261",
+      "https://zhuanlan.zhihu.com/p/428419842"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:明-oracle.svg",
+    "our_reading": "Ours: take the window form. A moon seen through a small window: light kept inside while it is dark outside. Then an arrow crosses it. When the light is under attack you keep it on, but low, behind the window.",
+    "lesson_idea": "a window frame is drawn, a bright moon appears in it, an arrow streaks past outside, and the moon dims but stays lit",
+    "sentence": "Keep your light\nlow and on",
+    "fit": 4
+  },
+  {
+    "number": 37,
+    "name": "家人",
+    "picture_char": "家",
+    "early_form": "Oracle bone: a roof 宀 over an animal, a pig with the male genitals marked (𢑓). Bronze forms keep the roof over the pig. 人 is a person in side view.",
+    "depicts": "Traditionally 'a pig under a roof' (Shuowen, many popular sources). Recent work (Yao Xuan 2016, followed by Wiktionary) takes the animal as a sound part 𢑓 (boar), so the pig story is a folk etymology; the roof is the meaning part.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/家",
+      "https://en.wiktionary.org/wiki/人"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:家-oracle.svg",
+    "our_reading": "Ours: a roof, and under it a living thing that has to be fed each day. A household is kept from the inside, by what the people under the roof do and say every day.",
+    "lesson_idea": "a roof line is drawn, then a small animal under it, then a person beside the house; a warm light comes on inside",
+    "sentence": "Home is kept\nfrom the inside",
+    "fit": 3
+  },
+  {
+    "number": 38,
+    "name": "睽",
+    "picture_char": "睽",
+    "early_form": "Not in oracle bone script; attested from seal script on. The meaning part was originally 䀠, two eyes side by side, later reduced to one eye 目; the right side is 癸 (a crossed-sticks shape), used for sound.",
+    "depicts": "A phonetic compound: eyes for the meaning ('to look askance, stare apart'), 癸 for the sound.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/睽",
+      "https://en.wiktionary.org/wiki/䀠"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: two eyes drawn side by side, each turning to look a different way. They are still on one face. People can see things differently and still share the small work in front of them.",
+    "lesson_idea": "two eyes are drawn next to each other, their pupils slide apart to look opposite ways, then both glance down at the same small point",
+    "sentence": "Two views,\none small step",
+    "fit": 3
+  },
+  {
+    "number": 39,
+    "name": "蹇",
+    "picture_char": "蹇",
+    "early_form": "Seal script: 寒 'cold' (abbreviated, a house with straw and ice) on top of 足 'foot' below.",
+    "depicts": "A phonetic compound: 足 'foot' gives the meaning 'lame, walk with difficulty', abbreviated 寒 gives the sound.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/蹇"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:蹇-seal.svg",
+    "our_reading": "Ours: a foot under a heavy cold roof, not able to walk on. When the road is blocked, the foot stops and the work turns inward.",
+    "lesson_idea": "a foot is drawn stepping forward, a heavy frozen block settles on top of it and it stops; a small light glows in the chest area above it",
+    "sentence": "When stuck,\nwork on yourself",
+    "fit": 2
+  },
+  {
+    "number": 40,
+    "name": "解",
+    "picture_char": "解",
+    "early_form": "Oracle bone: two hands pulling a horn 角 off an ox 牛; later forms replace the hands with a knife 刀, giving horn + knife + ox.",
+    "depicts": "Cutting up an ox: a knife (or hands) separating the horn from the ox, 'to untie, take apart, release'. Well established.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/解"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:解-oracle.svg",
+    "our_reading": "Ours: something stuck fast is cut free with one clean stroke. Release is a cut, not a slow pull: forgive, let go, move on quickly.",
+    "lesson_idea": "an ox head with a horn is drawn, a knife is drawn beside it, and one stroke lifts the horn free",
+    "sentence": "Cut it loose\nand move on",
+    "fit": 4
+  },
+  {
+    "number": 41,
+    "name": "損",
+    "picture_char": "損",
+    "early_form": "No oracle bone or bronze form known; appears in Warring States and seal script as 手 'hand' on the left and 員 (a round vessel over a cowrie, here for sound) on the right.",
+    "depicts": "A phonetic compound: 手 'hand' for the meaning 'reduce, take away', 員 for the sound.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/損",
+      "https://en.wiktionary.org/wiki/員"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: a hand beside a round vessel, taking a little out of it. Giving up some of what you have, on purpose, so the rest stays sound.",
+    "lesson_idea": "a round pot is drawn, a hand reaches in and lifts out a small part, and the pot stands steadier",
+    "sentence": "Give up a little,\nkeep what matters",
+    "fit": 1
+  },
+  {
+    "number": 42,
+    "name": "益",
+    "picture_char": "益",
+    "early_form": "Oracle bone and bronze: a vessel 皿 (a bowl on a foot) with water drawn above it, sideways, spilling over the rim.",
+    "depicts": "Water overflowing a vessel, 'to overflow', the original form of 溢; 'increase, benefit' comes from this. Well established.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/益",
+      "https://en.wiktionary.org/wiki/溢"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:益-oracle.svg",
+    "our_reading": "Ours: a bowl fills and runs over. Gain that is real does not stay in the bowl; it spills to what is around it.",
+    "lesson_idea": "a bowl is drawn, glowing water rises in it, reaches the rim and spills down its sides",
+    "sentence": "Let your gain\nspill over",
+    "fit": 5
+  },
+  {
+    "number": 43,
+    "name": "夬",
+    "picture_char": "夬",
+    "early_form": "Oracle bone and bronze: a hand 又 with a ring drawn at the thumb or finger; in seal script the ring moves above the hand and is broken open.",
+    "depicts": "A hand wearing an archer's thumb ring, used to draw and release the bowstring (Li Xueqing 2012; the reading behind 玦 'ring'). Shuowen instead read it as 'to divide, split'. The thumb-ring reading is now common but not universal.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/夬",
+      "https://zh.wiktionary.org/wiki/%E5%A4%AC",
+      "https://www.sohu.com/a/616895390_121107011",
+      "https://www.zdic.net/hant/%E5%A4%AC"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:夬-oracle.svg",
+    "our_reading": "Ours: the ring that holds the bowstring and then lets it go. A breakthrough is one clean release after the decision, not a long struggle.",
+    "lesson_idea": "a hand is drawn, a ring slides onto the thumb, a string is pulled back and then released with a flash",
+    "sentence": "Decide once,\nthen let go",
+    "fit": 3
+  },
+  {
+    "number": 44,
+    "name": "姤",
+    "picture_char": "姤",
+    "early_form": "Late character: 女 'woman' on the left, 后 on the right for sound. The Mawangdui silk Zhouyi writes the name 狗, and other texts 遘 'to meet'.",
+    "depicts": "A phonetic compound: 女 'woman' for the meaning, 后 for the sound. No picture beyond 'a woman'.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/姤",
+      "https://en.wiktionary.org/wiki/遘"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: a woman drawn beside a second figure, meeting it. The meeting happens; the text says do not take her. Some encounters are to be met, not kept.",
+    "lesson_idea": "a kneeling woman figure is drawn, a second shape comes in from the side, they touch once, and it passes on",
+    "sentence": "Not every meeting\nis yours to keep",
+    "fit": 1
+  },
+  {
+    "number": 45,
+    "name": "萃",
+    "picture_char": "萃",
+    "early_form": "Bronze and seal: grass 艸 on top, 卒 (a garment with a mark, here for sound) below.",
+    "depicts": "A phonetic compound: 艸 'grass' for the meaning 'thick growth, gather', 卒 for the sound.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/萃",
+      "https://en.wiktionary.org/wiki/卒"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:萃-bronze.svg",
+    "our_reading": "Ours: blades of grass growing close together on one patch. A gathering; the lower mark can be read as a guard kept in place under it.",
+    "lesson_idea": "single blades of grass are drawn one by one until they crowd together, and a firm line is drawn under them",
+    "sentence": "Gather people,\nbut stay ready",
+    "fit": 2
+  },
+  {
+    "number": 46,
+    "name": "升",
+    "picture_char": "升",
+    "early_form": "Oracle bone: a ladle or dipper with a long handle, like 斗, with small dots of grain or liquid beside the scoop.",
+    "depicts": "A measuring dipper, the unit of volume 'sheng'. 'To rise' comes from lifting the scoop, and by loan (昇). The picture is established; the link to 'rise' is a later use.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/升",
+      "https://baike.baidu.com/item/%E5%8D%87/34373",
+      "https://zhuanlan.zhihu.com/p/668980125",
+      "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/oraclePiece.php?piece=%E6%96%97"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:升-oracle.svg",
+    "our_reading": "Ours: a dipper lifts one scoop of grain up, then another. Going up by small measured amounts, one scoop at a time, the way the image says small things add up to the high and great.",
+    "lesson_idea": "a ladle is drawn, it dips and lifts a scoop of glowing grains, and the grains stack higher with each lift",
+    "sentence": "Rise one scoop\nat a time",
+    "fit": 3
+  },
+  {
+    "number": 47,
+    "name": "困",
+    "picture_char": "困",
+    "early_form": "Oracle bone: a tree 木 inside a closed square 囗, the branches and roots touching the walls.",
+    "depicts": "A tree inside an enclosure. Readings differ: Shuowen 'an old house', others a doorsill or door post (the original of 梱/閫), and the plain 'a tree boxed in'. The shape is certain; what it stood for is argued.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/困",
+      "http://zdic.net/hant/%E5%9B%B0",
+      "https://zhuanlan.zhihu.com/p/645687617"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:困-oracle.svg",
+    "our_reading": "Ours: a tree that keeps growing inside four walls. It is pressed on every side, and it does not stop being a tree. The hexagram says hold to your purpose even when no one believes you.",
+    "lesson_idea": "a tree grows, walls rise around it, it presses against them",
+    "sentence": "Pressed in,\nkeep growing",
+    "fit": 5
+  },
+  {
+    "number": 48,
+    "name": "井",
+    "picture_char": "井",
+    "early_form": "Oracle bone: two vertical and two horizontal lines crossing, a square frame; some forms have a dot in the middle.",
+    "depicts": "The square wooden frame around the mouth of a well, the dot being water or a bucket. Well established. A minority view (Zhang Fuhai 2021) takes it as a mould, the original of 刑/型.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/井",
+      "https://en.wiktionary.org/wiki/丼"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:井-oracle.svg",
+    "our_reading": "Ours: a square frame with water in the middle. Houses can be drawn and erased around it; the frame and the water stay. Also: the rope must reach the water, or the well gives nothing.",
+    "lesson_idea": "four beams are drawn into a square frame, a point of water glows in the center, houses appear and vanish around it while it stays",
+    "sentence": "The town changes;\nthe well stays",
+    "fit": 4
+  },
+  {
+    "number": 49,
+    "name": "革",
+    "picture_char": "革",
+    "early_form": "Oracle bone and bronze: a flayed animal hide seen flat and from above; a head with horns at the top, a round body in the middle, two splayed hind legs and a tail at the bottom, often with hands at the sides pulling it taut.",
+    "depicts": "A stretched, flayed animal hide (pictogram); meaning 'leather, hide', extended to 'strip off, change'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/革"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:革-oracle.svg",
+    "our_reading": "Ours: a hide is the whole outer skin taken off in one piece. The picture shows change that removes the entire old surface, not a patch. The animal outline is kept, but the skin is now something new (leather).",
+    "lesson_idea": "An animal outline glows, its skin peels off in one sheet and stretches flat on a frame, head at top, legs splayed.",
+    "sentence": "Change the whole\nskin, not a patch",
+    "fit": 3
+  },
+  {
+    "number": 50,
+    "name": "鼎",
+    "picture_char": "鼎",
+    "early_form": "Oracle bone: a round-bellied bronze vessel with two upright handles (ears) on the rim and legs below (two legs shown in profile, standing for three); bronze forms are more detailed, sometimes a near-picture of the tripod.",
+    "depicts": "A ritual bronze tripod cauldron used for cooking and offerings (pictogram).",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/鼎"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:鼎-oracle.svg",
+    "our_reading": "Ours: three legs never wobble; on a stable stand, raw things over a fire turn into food. The shape shows that a steady, well-set base is what makes transformation possible.",
+    "lesson_idea": "Three legs rise from the ground, a round bowl sets on them, two handles lift from the rim, and fire glows underneath.",
+    "sentence": "A steady base\nlets things cook",
+    "fit": 4
+  },
+  {
+    "number": 51,
+    "name": "震",
+    "picture_char": "震",
+    "early_form": "Earliest form is small seal: 雨 (rain: a sky stroke with drops beneath) on top of 辰. In oracle bones, thunder/lightning is written 申, a zigzag lightning line. 辰 in oracle bones is a tool shape, read as a shell or stone hoe held by a hand.",
+    "depicts": "Phono-semantic compound: 雨 'rain, weather' + phonetic 辰. 辰 itself is disputed: a clam-shell farm tool, or a person grasping a cliff (original of 振 'shake').",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/震",
+      "https://en.wiktionary.org/wiki/辰"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:辰-oracle.svg",
+    "our_reading": "Ours: rain and noise come down from above onto a clam (辰) that snaps shut, then opens again. The picture shows a shock hitting from outside, a flinch, and recovery. Weak as a glance picture: the semantic part only says 'weather'.",
+    "lesson_idea": "Rain strokes fall from a sky bar with a flash, a shell below jolts shut, then slowly opens again.",
+    "sentence": "Get the fright,\nkeep your grip",
+    "fit": 2
+  },
+  {
+    "number": 52,
+    "name": "艮",
+    "picture_char": "艮",
+    "early_form": "Oracle bone and bronze: a standing person (人) with a large eye (目) on top; in bronze the eye sits behind the head, facing backward, so the person has stopped and turned to look back.",
+    "depicts": "Ideogrammic compound of 目 'eye' + 人 'person': a person turning to look back (glaring back), giving 'defy, stop, limit'; also read as the original of 眼 'eye'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/艮",
+      "https://zh.wiktionary.org/zh-hant/%E8%89%AE",
+      "https://www.sohu.com/a/591648682_121107011"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:艮-oracle.svg",
+    "our_reading": "Ours: a walking person halts and the eye turns around. Stop moving, and look at where you are instead of where you're going. This matches 'think of nothing beyond your present situation'.",
+    "lesson_idea": "A figure strides forward, freezes mid-step, and a large eye on its head swivels around to face back.",
+    "sentence": "Stop moving.\nLook where you are",
+    "fit": 4
+  },
+  {
+    "number": 53,
+    "name": "漸",
+    "picture_char": "漸",
+    "early_form": "Seal script: water (水/氵, a flowing line with drops) on the left; 斬 on the right, which is 車 'cart' beside 斤 'axe'.",
+    "depicts": "Phono-semantic compound: 水 'water' + phonetic 斬. The basic sense is 'soak, seep in', hence 'gradually'. 斬 (axe + cart) carries sound only.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/漸",
+      "https://en.wiktionary.org/wiki/斬"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:漸-bigseal.svg",
+    "our_reading": "Ours: water soaks into a thing slowly; you do not see it happen, then it is wet through. The water component shows progress that comes by steady seeping, not by jumps. The right side adds nothing.",
+    "lesson_idea": "Drops fall one at a time onto a block of wood, and with each drop one more stroke of the character soaks in and lights up.",
+    "sentence": "One step,\nthen the next",
+    "fit": 2
+  },
+  {
+    "number": 54,
+    "name": "歸妹",
+    "picture_char": "歸",
+    "early_form": "Oracle bone: 𠂤 (a stack of two mounds, read as a troop camp or sacrificial meat) on one side, 帚 (an upturned broom) on the other; bronze adds 止 (a foot) or 辵 (walking).",
+    "depicts": "Disputed. Shuowen: a woman going to marry, with 帚 'broom' standing for 婦 'wife' and 止 'foot' for going. Modern alternative: troops (𠂤) + sweep, 'sweep away the enemy and return', or peripheral tribes submitting. 妹 is a phonetic compound (女 + phonetic 未).",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/歸",
+      "https://en.wiktionary.org/wiki/妹"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:歸-oracle.svg",
+    "our_reading": "Ours: a broom and a walking foot. A woman carries the tool of household work into a house that is not hers. She enters as the junior member, with no power to set terms. The picture shows starting at the bottom of someone else's order.",
+    "lesson_idea": "A broom draws itself, a foot steps up beside it, and together they walk through a doorway into a larger house.",
+    "sentence": "Joining late?\nThink of the end",
+    "fit": 3
+  },
+  {
+    "number": 55,
+    "name": "豐",
+    "picture_char": "豐",
+    "early_form": "Oracle bone: a tall stand or drum (壴/豆, a vessel on a foot) with two sprigs (丰丰), read as plants or strings of jade, rising out of the top.",
+    "depicts": "Disputed. Wiktionary: a pot heaped with plants over a second pot, 'abundant'. Other paleographers: a drum (壴) decorated with two strings of jade, a ritual object; 豐 and 豊 are kept separate by most, though some treat them as one origin.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/豐",
+      "https://zh.wiktionary.org/zh-hant/%E8%B1%8A",
+      "https://case.ntu.edu.tw/blog/?p=41860"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:豐-oracle.svg",
+    "our_reading": "Ours: a vessel filled so high that its contents stand above the rim. It is at its fullest and can't hold more. The shape shows the midday point: full now, so use it now, because from here it only goes down.",
+    "lesson_idea": "A footed bowl forms, sprigs grow up out of it past the rim, and a sun rises to the top of the frame and stops at noon.",
+    "sentence": "Full like noon.\nUse it now",
+    "fit": 3
+  },
+  {
+    "number": 56,
+    "name": "旅",
+    "picture_char": "旅",
+    "early_form": "Oracle bone: a flagpole with a banner streaming from the top (㫃), and two (sometimes three) people walking one behind the other under it.",
+    "depicts": "Ideogrammic compound: flag + people gathered under it, 'a troop, brigade'; later 'to travel, a traveller'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/旅"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:旅-oracle.svg",
+    "our_reading": "Ours: people on the move under a banner, far from home, carrying only what they can carry. The picture shows passing through: travel light, keep your bearing, don't settle into quarrels on the way.",
+    "lesson_idea": "A flagpole plants itself, the banner snaps out in the wind, and two figures walk beneath it and keep walking out of frame.",
+    "sentence": "Travel light,\nkeep moving",
+    "fit": 4
+  },
+  {
+    "number": 57,
+    "name": "巽",
+    "picture_char": "巽",
+    "early_form": "Earliest clear form is seal script: two kneeling figures (𠨎, two 卩 side by side) above 丌, a low table or stand.",
+    "depicts": "Disputed. Shuowen: 'to set out, provide' (具), things laid out on a stand; Wiktionary: people kneeling to prepare and present food (original of 饌). The meaning 'gentle, yielding' is a phonetic loan.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/巽",
+      "https://www.shuowen.org/view/3010",
+      "https://zdic.net/hant/%E5%B7%BD"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:巽-seal.svg",
+    "our_reading": "Ours: two people kneel low, side by side. They make themselves small and come in low, and they do it again and again, like wind through grass. The picture shows getting in by yielding and repeating.",
+    "lesson_idea": "Two figures kneel side by side on a low stand, a breeze passes over them twice, and grass bends the same way.",
+    "sentence": "Go in gently,\nand keep at it",
+    "fit": 3
+  },
+  {
+    "number": 58,
+    "name": "兌",
+    "picture_char": "兌",
+    "early_form": "Oracle bone: a standing person (人) with a mouth (口) for a head, and two short strokes (八) above the mouth.",
+    "depicts": "Ideogrammic compound 八 + 口 + 人. Read as speech with breath coming out (original of 說 'speak'), or as smile lines around the mouth (Gao Hongjin), original of 悅 'pleased'.",
+    "confidence": "disputed",
+    "sources": [
+      "https://en.wiktionary.org/wiki/兌"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:兌-oracle.svg",
+    "our_reading": "Ours: a person whose mouth opens with lines rising from it: laughing or talking out loud. The picture shows joy that comes through the open mouth, in company, as talk with friends.",
+    "lesson_idea": "A figure stands, a square mouth opens where the head should be, and two short strokes lift from it like a laugh; a second figure appears and does the same.",
+    "sentence": "Talk and laugh\nwith friends",
+    "fit": 4
+  },
+  {
+    "number": 59,
+    "name": "渙",
+    "picture_char": "渙",
+    "early_form": "Seal script: water (水/氵) on the left; 奐 on the right, whose lower part is two hands (廾) raised under a top element.",
+    "depicts": "Phono-semantic compound: 水 'water' + phonetic 奐. 奐 itself is disputed: phonetic 夐 + two hands, or hands opening a tent door to let light in. Only the water part carries meaning.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/渙",
+      "https://en.wiktionary.org/wiki/奐"
+    ],
+    "commons_svg": null,
+    "our_reading": "Ours: water running out between two open hands. What was held together spreads and flows away, like ice breaking up in spring. Useful only in part: the hexagram is also about gathering people again, and the shape does not show that.",
+    "lesson_idea": "A block of ice glows in two cupped hands, the hands open, and the ice melts into streams that run outward.",
+    "sentence": "Melt what\nkeeps you apart",
+    "fit": 2
+  },
+  {
+    "number": 60,
+    "name": "節",
+    "picture_char": "節",
+    "early_form": "Warring States and seal: bamboo (two sprigs of leaves, ⺮) on top of 即, a kneeling person facing a round food vessel.",
+    "depicts": "Phono-semantic compound: ⺮ 'bamboo' + phonetic 即. The word means the node (joint) of a bamboo stem, hence segment, measure, limit. 即 (kneeling at a food bowl, 'approach to eat') carries sound.",
+    "confidence": "folk",
+    "sources": [
+      "https://en.wiktionary.org/wiki/節",
+      "https://en.wiktionary.org/wiki/即"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:節-seal.svg",
+    "our_reading": "Ours: a bamboo stem grows in sections, and each node is a limit that makes the stem stronger. Below it a person kneels at a bowl and eats a measured meal. Limits that give strength work; limits that starve you don't.",
+    "lesson_idea": "A bamboo stalk rises, a glowing ring forms at each node, and it climbs one segment at a time while a small figure below eats from one bowl.",
+    "sentence": "Set limits you\ncan live with",
+    "fit": 3
+  },
+  {
+    "number": 61,
+    "name": "中孚",
+    "picture_char": "中",
+    "early_form": "Oracle bone 中: a vertical pole through a box or circle at its middle, with streamers flying from the top (and often the bottom). 孚: a hand (爪) above a child (子).",
+    "depicts": "中: a flagpole with pennants planted at the center of a camp, the box perhaps a drum (建鼓); the flagpole reading is well accepted, the drum detail less so. 孚: a hand seizing a child, original of 俘 'captive'; the Shuowen reading 'a bird's claw turning eggs, hatching' is not supported.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/中",
+      "https://en.wiktionary.org/wiki/孚"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:中-oracle.svg",
+    "our_reading": "Ours: a pole planted in the middle while its flags blow in every direction. The wind moves the edges, the center stays put, and people gather around it. Inner truth is the part that stays still when everything around it moves.",
+    "lesson_idea": "A pole drives into the ground, a box forms at its center, streamers flutter hard at the top, and the pole does not move.",
+    "sentence": "Stay true\nat the center",
+    "fit": 3
+  },
+  {
+    "number": 62,
+    "name": "小過",
+    "picture_char": "小",
+    "early_form": "Oracle bone 小: three short dots or strokes, one center and two sides. 過: bronze onward, 辵 (walking) + 咼, whose top 冎 is a bone joint.",
+    "depicts": "小: three small dots (or grains of sand) for 'small'. 過: phono-semantic, 辵 'walk' + phonetic 咼, 'to pass, go beyond'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/小",
+      "https://en.wiktionary.org/wiki/過",
+      "https://en.wiktionary.org/wiki/冎"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:小-oracle.svg",
+    "our_reading": "Ours: three small grains, low and close together. Nothing big, nothing high. The shape itself says: now is a time for small things, done carefully, staying near the ground.",
+    "lesson_idea": "Three small grains of light drop one by one and settle low, while a bird crosses above and its call trails behind.",
+    "sentence": "Do small things.\nStay low",
+    "fit": 3
+  },
+  {
+    "number": 63,
+    "name": "既濟",
+    "picture_char": "既",
+    "early_form": "Oracle bone 既: a kneeling person on the right with the head turned back and mouth open, facing away from a round food vessel (皀) on the left. 濟 is later: water + 齊.",
+    "depicts": "既: a person who has finished eating and turns away from the food bowl, 'already, finished'; the mirror image of 即, kneeling toward the bowl, 'about to eat'. 濟 is phono-semantic (水 + phonetic 齊, 'to cross a river').",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/既",
+      "https://en.wiktionary.org/wiki/即",
+      "https://en.wiktionary.org/wiki/濟"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:既-oracle.svg",
+    "our_reading": "Ours: the meal is done and the person turns their back on the bowl. Completion, and at the same moment the loss of attention. The judgment says it: good at the start, disorder at the end.",
+    "lesson_idea": "A food bowl forms, a kneeling figure beside it finishes and turns its head away, and behind its back the bowl tips.",
+    "sentence": "Once it's done,\nstay alert",
+    "fit": 4
+  },
+  {
+    "number": 64,
+    "name": "未濟",
+    "picture_char": "未",
+    "early_form": "Oracle bone 未: a tree (木) with an extra layer of branches on top, doubled branches above the trunk. 濟: water + 齊 (three neat grain ears or fruits).",
+    "depicts": "未: a tree with lush, layered branches (possibly original of 枚 'stem'); the meaning 'not yet' is a phonetic loan. 濟 is phono-semantic, 'cross a river'.",
+    "confidence": "established",
+    "sources": [
+      "https://en.wiktionary.org/wiki/未",
+      "https://en.wiktionary.org/wiki/濟",
+      "https://en.wiktionary.org/wiki/齊"
+    ],
+    "commons_svg": "https://commons.wikimedia.org/wiki/File:未-oracle.svg",
+    "our_reading": "Ours: a tree still putting out new branches on top: not finished growing. The picture shows 'not yet'. It does not show the fox nearly across the river, so it teaches the state, not the warning to be careful at the end.",
+    "lesson_idea": "A trunk rises, one layer of branches grows, then a second layer pushes out above it and keeps sprouting, never closing.",
+    "sentence": "Almost across.\nGo carefully",
+    "fit": 2
+  }
+]

@@ -1,11 +1,12 @@
-"""Draws a hexagram's character in 3D, stroke by stroke, as a lesson picture: some strokes
-as glowing low-poly tubes lying on the ground, others rising as obsidian walls with a neon
-crest. The lying strokes first stand up as a thing (for 困, a tree), the walls rise
+"""Draws a hexagram's character in 3D, stroke by stroke, as a lesson picture, like a Hong
+Kong neon sign: each stroke's real outline (a brush-style kaishu font) traced by a hollow,
+faceted neon tube over a dark glass body. Some strokes lie on the ground; others rise as
+obsidian walls in the stroke's own shape, with the neon along their top edge. The lying strokes first stand up as a thing (for 困, a tree), the walls rise
 around it, then it is pressed down flat inside them. The camera starts low, where the
 strokes read as things, and cranes up to look straight down, where they read as the
 character.
 
-Stroke paths are the character's medians from Make Me a Hanzi (hanzi-writer-data, Arphic
+Stroke outlines are from Make Me a Hanzi (hanzi-writer-data, Arphic
 Public License), fetched to public/local/hanzi/ by scripts/character.mjs.
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/character.py -- \
@@ -27,8 +28,9 @@ from layout import FPS, frame_count  # noqa: E402
 
 SCALE = 1 / 100  # hanzi units (a 1024 box, y up) to metres
 CENTRE = (512, 388)
-TUBE = 0.16  # a lying stroke's square section
-WALL_W, WALL_H = 0.2, 1.5
+NEON = 0.03  # the neon tube's radius
+BODY = 0.06  # a lying stroke's glass body, thickness
+WALL_H = 1.5
 
 
 def parse():
@@ -47,47 +49,126 @@ def parse():
     return p.parse_args(argv)
 
 
-def profile(name, w, h):
-    """A closed rectangle, w wide and h tall, swept along a stroke as its section."""
+def subpaths(d):
+    """An SVG path (M, L, Q, C, Z, absolute) as closed lists of cubic segments
+    (p0, c1, c2, p1), in hanzi units."""
+    toks = d.replace(",", " ").split()
+    out, cur, pos, i = [], [], None, 0
+    num = lambda k: (float(toks[k]), float(toks[k + 1]))
+    while i < len(toks):
+        op = toks[i]
+        if op == "M":
+            if cur:
+                out.append(cur)
+            cur, pos, i = [], num(i + 1), i + 3
+        elif op == "L":
+            p1 = num(i + 1)
+            cur.append((pos, lerp(pos, p1, 1 / 3), lerp(pos, p1, 2 / 3), p1))
+            pos, i = p1, i + 3
+        elif op == "Q":
+            q, p1 = num(i + 1), num(i + 3)
+            cur.append((pos, lerp(pos, q, 2 / 3), lerp(p1, q, 2 / 3), p1))
+            pos, i = p1, i + 5
+        elif op == "C":
+            c1, c2, p1 = num(i + 1), num(i + 3), num(i + 5)
+            cur.append((pos, c1, c2, p1))
+            pos, i = p1, i + 7
+        elif op == "Z":
+            i += 1
+        else:
+            raise ValueError(f"path command {op}")
+    if cur:
+        out.append(cur)
+    return out
+
+
+def lerp(a, b, t):
+    return (a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t)
+
+
+def world(p):
+    return ((p[0] - CENTRE[0]) * SCALE, (p[1] - CENTRE[1]) * SCALE, 0)
+
+
+def outline(name, d):
+    """A stroke's outline as a closed Bezier curve; returns the curve data."""
     c = bpy.data.curves.new(name, "CURVE")
-    s = c.splines.new("POLY")
-    s.points.add(3)
-    for p, (x, y) in zip(s.points, ((-w / 2, -h / 2), (w / 2, -h / 2), (w / 2, h / 2), (-w / 2, h / 2))):
-        p.co = (x, y, 0, 1)
-    s.use_cyclic_u = True
-    o = bpy.data.objects.new(name, c)
-    bpy.context.scene.collection.objects.link(o)
-    o.hide_render = o.hide_viewport = True
-    return o
-
-
-def stroke(i, points, section, z, material, parent=None):
-    """A stroke as a curve swept with `section`, `z` above the ground; returns the curve."""
-    c = bpy.data.curves.new(f"stroke{i}", "CURVE")
-    c.dimensions = "3D"
-    s = c.splines.new("POLY")
-    s.points.add(len(points) - 1)
-    for p, (x, y) in zip(s.points, points):
-        p.co = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, 0, 1)
-    c.bevel_mode = "OBJECT"
-    c.bevel_object = section
-    c.use_fill_caps = True
-    c.twist_mode = "Z_UP"
-    o = bpy.data.objects.new(f"stroke{i}", c)
-    bpy.context.scene.collection.objects.link(o)
-    o.location.z = z
-    o.data.materials.append(material)
-    if parent:
-        o.parent = parent
-        o.location = (o.location.x - parent.location.x, o.location.y - parent.location.y, z)
+    for segs in subpaths(d):
+        if segs[-1][3] != segs[0][0]:
+            p0, p1 = segs[-1][3], segs[0][0]
+            segs.append((p0, lerp(p0, p1, 1 / 3), lerp(p0, p1, 2 / 3), p1))
+        # Open, ending where it starts: Blender ignores a bevel's end factor on a cyclic
+        # curve, and the neon has to trace itself in.
+        s = c.splines.new("BEZIER")
+        s.bezier_points.add(len(segs))
+        for k, bp in enumerate(s.bezier_points):
+            prev, seg = segs[k - 1], segs[k % len(segs)]
+            bp.co = world(seg[0])
+            bp.handle_left = world(prev[2])
+            bp.handle_right = world(seg[1])
+        # Few segments per curve: the neon reads as bent glass in facets, low-poly.
+        s.resolution_u = 4
     return c
 
 
+def place(o, z, parent):
+    bpy.context.scene.collection.objects.link(o)
+    o.location.z = z
+    if parent:
+        o.parent = parent
+        o.location = (-parent.location.x, -parent.location.y, z)
+    return o
+
+
+def neon(name, d, z, material, parent=None):
+    """The hollow tube tracing a stroke's outline, `z` above the ground; returns its curve."""
+    c = outline(name, d)
+    c.dimensions = "3D"
+    c.bevel_depth = NEON
+    c.bevel_resolution = 1
+    c.use_fill_caps = True
+    place(bpy.data.objects.new(name, c), z, parent).data.materials.append(material)
+    return c
+
+
+def body(name, d, height, z, material, parent=None):
+    """The stroke's own shape, filled and extruded `height` (centred on `z`); returns the object."""
+    c = outline(name, d)
+    for sp in c.splines:
+        sp.use_cyclic_u = True  # a fill needs a closed curve
+    c.dimensions = "2D"
+    c.fill_mode = "BOTH"
+    c.extrude = height / 2
+    o = place(bpy.data.objects.new(name, c), z, parent)
+    o.data.materials.append(material)
+    return o
+
+
+def glass():
+    """Dark smoked glass with a faint green glow, the body under the neon."""
+    m = bpy.data.materials.new("glass")
+    m.use_nodes = True
+    b = m.node_tree.nodes["Principled BSDF"]
+    b.inputs["Base Color"].default_value = (0.01, 0.03, 0.015, 1)
+    b.inputs["Roughness"].default_value = 0.15
+    b.inputs["Coat Weight"].default_value = 1.0
+    b.inputs["Emission Color"].default_value = linear("#6cff7a")
+    b.inputs["Emission Strength"].default_value = 0.08
+    return m
+
+
 def draw(c, start, length):
-    """Grows the stroke along its path from `start` over `length` frames."""
+    """Traces the curve from `start` over `length` frames."""
     for f, v in ((start, 0.0), (start + length, 1.0)):
         c.bevel_factor_end = v
         c.keyframe_insert("bevel_factor_end", frame=f + 1)
+
+
+def show(o, at):
+    """Hidden until clip frame `at`."""
+    for f, hidden in ((0, True), (at, False)):
+        o.hide_render = hidden
+        key(o, "hide_render", f)
 
 
 def camera(scene, frames, beat):
@@ -115,17 +196,14 @@ def main():
     for o in list(bpy.data.objects):
         bpy.data.objects.remove(o)
     data = json.load(open(args.data))
-    medians = data["medians"]
+    medians, paths = data["medians"], data["strokes"]
     order = [int(i) for i in args.order.split(",")] if args.order else list(range(len(medians)))
     walls = {int(i) for i in args.walls.split(",") if i}
     frames = frame_count(args.beats, args.bpm)
     beat = 60 * FPS / args.bpm
     colour = linear(args.edge)
 
-    tube = profile("tube", TUBE, TUBE)
-    wall = profile("wall", WALL_W, WALL_H)
-    crest = profile("crest", WALL_W * 1.1, 0.06)
-    black = obsidian()
+    black, smoke = obsidian(), glass()
 
     # The lying strokes a beat apart from beat 0.5, then the walls a beat apart.
     t = round(0.5 * beat)
@@ -141,7 +219,9 @@ def main():
     glows = []
     for i in lying:
         glow, strength = edge(colour, f"glow{i}")
-        draw(stroke(i, medians[i], tube, TUBE / 2, glow, pivot), t, round(0.8 * beat))
+        length = round(0.8 * beat)
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, pivot), t, length)
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke, pivot), t + length)
         for f, v in ((t - 1, REST), (t + round(0.8 * beat), PULSE * 0.4), (t + round(1.4 * beat), REST)):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
@@ -149,9 +229,14 @@ def main():
         t += round(0.9 * beat)
     t += round(0.4 * beat)
     for i in rising:
-        draw(stroke(i, medians[i], wall, WALL_H / 2, black), t, round(0.9 * beat))
         top, _ = edge(colour, f"crest{i}")
-        draw(stroke(f"{i}c", medians[i], crest, WALL_H, top), t, round(0.9 * beat))
+        length = round(0.9 * beat)
+        draw(neon(f"crest{i}", paths[i], WALL_H + NEON, top), t, length)
+        # The wall rises out of the floor to meet its crest's finished outline.
+        wall = body(f"wall{i}", paths[i], WALL_H, WALL_H / 2, black)
+        for f, z in ((t + length, -WALL_H / 2), (t + length + round(0.5 * beat), WALL_H / 2)):
+            wall.location.z = z
+            key(wall, "location", f, index=2)
         t += round(1.0 * beat)
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
