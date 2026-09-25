@@ -67,7 +67,8 @@ export const Demo: React.FC<DemoProps> = (props) => {
     beat: s.beats[0],
     kind: s.kind === "hexagram" || s.kind === "endcard" ? "zoom" : kinds[i % kinds.length],
   }));
-  const typed = (text: string, place: "centre" | "bottom" | "top") => <TypedText text={text} place={place} size={sizeFor(text)} />;
+  // Each card is typed in full within 0.3 s of its cut, so it can be read before the next.
+  const typed = (text: string, place: "centre" | "bottom" | "top") => <TypedText text={text} place={place} size={sizeFor(text)} typing={[0, 9]} />;
   return (
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -93,7 +94,7 @@ export const Demo: React.FC<DemoProps> = (props) => {
                 {s.kind === "hexagram" && (
                   <>
                     <Hexagram3D hexagram={props.hexagram} clip={s.clip} />
-                    {typed(s.text, "top")}
+                    {typed(s.text, "bottom")}
                   </>
                 )}
                 {s.kind === "clip" && (

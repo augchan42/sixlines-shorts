@@ -107,9 +107,10 @@ const TypedBox: React.FC<{ text: string; place?: Place; size?: number }> = ({ te
   </AbsoluteFill>
 );
 
-// The same sentence box, typed on over whatever is behind it (a moon lesson's clip).
-export const TypedText: React.FC<{ text: string; place?: Place; size?: number }> = ({ text, place, size }) => {
+// The same sentence box, typed on over whatever is behind it (a moon lesson's clip), between
+// the `typing` frames.
+export const TypedText: React.FC<{ text: string; place?: Place; size?: number; typing?: [number, number] }> = ({ text, place, size, typing = [4, 16] }) => {
   const frame = useCurrentFrame();
-  const typed = Math.ceil(interpolate(frame, [4, 16], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const typed = Math.ceil(interpolate(frame, typing, [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
   return <TypedBox text={text.slice(0, typed)} place={place} size={size} />;
 };

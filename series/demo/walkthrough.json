@@ -38,7 +38,8 @@
     "Wang Bi": "218.2",
     "journal": "243.5",
     "note typed": "420-428",
-    "note saved": "482.4"
+    "note saved": "482.4",
+    "hexagram picked": "55.5-60"
    }
   },
   "take2": {
@@ -85,8 +86,8 @@
    ],
    "kind": "live",
    "take": "take1",
-   "from": 169.3,
-   "rate": 1.2,
+   "from": 55.5,
+   "rate": 1.4,
    "text": "It trains\nyour judgment.",
    "zoom": 1
   },
@@ -112,11 +113,11 @@
      "text": "18 · Work on\nthe Decayed"
     },
     {
-     "beat": 24,
+     "beat": 25,
      "text": "The name is a picture:\nbugs in a bowl."
     },
     {
-     "beat": 29,
+     "beat": 31,
      "text": "Found rot?\nClean it out."
     }
    ]
@@ -143,7 +144,7 @@
    "take": "take1",
    "from": 218.3,
    "rate": 1,
-   "text": "Commentary: Wang Bi\nand the Ten Wings.",
+   "text": "Confucian commentary:\nWang Bi, the Ten Wings.",
    "zoom": 1,
    "focus": 0.3
   },
@@ -154,8 +155,8 @@
    ],
    "kind": "live",
    "take": "take2",
-   "from": 9.4,
-   "rate": 0.6,
+   "from": 10.3,
+   "rate": 0.5,
    "zoom": 1,
    "focus": 0.3,
    "text": "The reading lists\nwhat would prove it wrong.",
