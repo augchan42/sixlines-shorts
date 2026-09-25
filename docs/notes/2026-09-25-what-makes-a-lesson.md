@@ -1,0 +1,81 @@
+# What makes a good lesson
+
+What three runs of drafting and critique taught us about the one-sentence lesson after
+the drop (ADR-SHORTS-002). The data:
+
+- `series/critic/lessons/result.json`: run 1, 170 scored drafts (`scripts/workflows/lesson-drafts.js`)
+- `series/critic/lessons/result-run2.json`: run 2, 81 scored drafts (`scripts/workflows/lesson-redo.js`)
+- `series/critic/lessons/result-run3.json`: run 3, 45 candidates, each scored by two critics (`scripts/workflows/lesson-candidates.js`)
+
+Every draft keeps its text, kind, source, round, score and the critic's feedback. The
+scores come from a model critic, so they filter; the author's calls are the standard.
+
+## The author's calls
+
+- Liked: "Look like a guest, / not an inspector." (20, line 4). Concrete, a little funny,
+  true to the line.
+- Rejected as too cryptic: "Its shape: / a watchtower." (20).
+- Approved: "Unseen water / under the earth." (7), "The tiger's tail: / it does not bite." (10),
+  "Friends at lunch, / holding together." (8, painting).
+
+## What scored well
+
+**Line lessons.** The line texts are the book's most concrete, specific material.
+
+| Kind | Drafts, runs 1-2 | Average | 8+ | Candidates, run 3 | Average | 8+ |
+|---|---|---|---|---|---|---|
+| line | 98 | 7.1 | 34 | 29 | 7.2 | 12 |
+| judgment | 68 | 6.1 | 10 | 8 | 6.8 | 2 |
+| painting | 12 | 6.6 | 4 | - | - | - |
+| lines (trigrams) | 73 | 5.9 | 8 | 8 | 5.9 | 0 |
+
+**An object or an act, with its point.** What rose from 4-5 to 8-9 went from a principle
+to a thing happening:
+
+| Before | Score | After | Score |
+|---|---|---|---|
+| Study the past, / build character. | 4 | Cap the calf's / horns early. | 8 |
+| The best use of / power: restraint. | 4 | Power in the toes: / don't kick yet. | 9 |
+| Time to settle / disputes. | 4 | A huge house, / and no one home. | 9 |
+| If not upright, / don't go ahead. | 4 | Did nothing wrong, / still lost the ox. | 9 |
+| Make the penalties / clear to all. | 5 | Warn clearly, / then bite. | 8 |
+| Three days before, / three days after. | 5 | Plan three days, / check three days. | 8 |
+| The great departs, / the small arrives. | 5 | The good leave, / the petty move in. | 8 |
+
+**Something the short didn't already say.** A lesson that turns the short's point
+(a cost, a limit, a surprise) scored higher than one that agrees with it.
+
+## What scored badly
+
+- **Repeating the short.** The most common complaint: 53 of the drafts under 8. The critic
+  compares with the hook, meaning and question; so should the writer.
+- **Abstract or a slogan.** "Following always costs something." "Great power keeps off
+  wrong paths." True, and forgettable. No draft at 8+ was called cryptic, and only one
+  was called abstract.
+- **An image with no point.** "Wine and rice through a window." "A tree grows inside the
+  earth." "A lake sits up on a mountain." The watchtower problem: the viewer gets a
+  picture and no idea what it means. Trigram lessons fall into this most, since the
+  picture already shows the two images.
+- **The book's own jargon.** "The great departs", "verdict", "cross the great river",
+  "Southwest, yes. Northeast, no." Meaningless without the book.
+- **Advice that reads badly out of context.** "Didn't cause it? Don't medicate." (medical
+  advice); "A good time to take a wife." (a horoscope).
+- **A vague "it".** "You caught it. Don't cling to it." What was caught?
+
+## The critic
+
+- In run 3, two critics disagreed on 18 of 45 candidates, never by more than 1. The same
+  text scored 6 in one round and 7 in another. Treat 7.5 and 8 as the same.
+- A loop that keeps each lesson's latest draft can make it worse (34 went from 8 to 4 when
+  it was redone only for variety). A loop that keeps each lesson's best draft can undo a
+  neighbour's change of kind. Asking for several different candidates at once, scored
+  by two critics, worked better than rewording one draft round after round.
+- The critic judges each lesson alone. It cannot see what watching 64 back to back is
+  like, which is what the variety rule is for.
+
+## The open question
+
+The best-scoring lesson for each hexagram (`series/critic/lessons/best-table.md`) makes
+40 of 64 line lessons, with runs of up to 7 in a row, which breaks the rule of no three
+of a kind in a row. Holding the rule means taking weaker lessons for some hexagrams
+(for example 25 at 5.5 instead of the ox at 9). That is the author's decision.

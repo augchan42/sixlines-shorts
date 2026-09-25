@@ -1,0 +1,843 @@
+{
+  "candidates": [
+    {
+      "number": 17,
+      "kind": "line",
+      "line": 4,
+      "text": "You caught it.\nDon't cling to it.",
+      "source": "series/critic/lessons/input.json#hexagrams[16].lines[3].transliteration",
+      "why": "Line 4: following gains a catch, but holding on to it is adverse; after 'when will you stop today?' it says the day's gain is not to be gripped.",
+      "id": 1,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True: line 4 gains a catch, then 'sustained orientation: adverse', and the synthesis reads that as attachment to the gain. It follows the 'stop today' question well. But 'it' is vague: the viewer can't tell what was caught. Name the thing, e.g. 'A good day's catch:\ndon't grip it.'",
+        "True to line 4 (a catch, then holding on is adverse). Plain, but 'it' is vague: the viewer doesn't know what was caught. Name the thing, e.g. 'Got the win?\nDon't grip it.'"
+      ]
+    },
+    {
+      "number": 17,
+      "kind": "line",
+      "line": 2,
+      "text": "Following always\ncosts something.",
+      "source": "series/critic/lessons/input.json#hexagrams[16].lines[1].synthesis",
+      "why": "Line 2's synthesis: 'In following, you always lose something.' It states the trade that the child/adult versions left to the viewer.",
+      "id": 2,
+      "scores": [
+        7,
+        6
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "The synthesis says this almost word for word, and it is plain. But it drops the line's concrete picture (the child and the adult) and becomes a general saying. 'Grab the child,\nlose the adult.' would be more striking, though that one needs the viewer to work it out.",
+        "True to the synthesis, but abstract. The line itself is the concrete part: 'Kept the child,\nlost the adult.' or 'Hold the kid,\nlose the grown-up.' shows the trade."
+      ]
+    },
+    {
+      "number": 17,
+      "kind": "line",
+      "line": 1,
+      "text": "Rules changing?\nGo out and mix.",
+      "source": "series/critic/lessons/input.json#hexagrams[16].lines[0].transliteration",
+      "why": "Line 1: the standards are changing, and going out to interact has merit. Concrete advice the short does not give.",
+      "id": 3,
+      "scores": [
+        6,
+        6
+      ],
+      "score": 6,
+      "true": true,
+      "feedback": [
+        "True and concrete. But 'go out' contradicts the short's 'Go in, rest', and after 'When will you stop today?' it confuses more than it adds. Better to use line 4 or the Image here.",
+        "True to line 1, but 'go out' works against the short's 'go in, rest', and the viewer gets two opposite instructions. Line 4 or the Judgment fits this short better."
+      ]
+    },
+    {
+      "number": 17,
+      "kind": "judgment",
+      "text": "Following gets\nthe best verdict.",
+      "source": "series/critic/lessons/input.json#hexagrams[16].judgment.synthesis",
+      "why": "The Judgment gives Following all three favourable verdicts, which most leading hexagrams don't get; a surprise about following, not leading.",
+      "id": 4,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True (three favourable verdicts, per the synthesis), and following beating leading is a good surprise. But 'verdict' is the book's jargon, so a new viewer won't know what the best verdict is. Plainer: 'Following, not\nleading, wins.' Check that it fits the length rule.",
+        "True and a little surprising (the follower gets the top marks). 'Verdict' is jargon to a newcomer. Plainer: 'Following gets\nfull marks.'"
+      ]
+    },
+    {
+      "number": 17,
+      "kind": "lines",
+      "text": "Even thunder\nrests in the lake.",
+      "source": "series/critic/lessons/input.json#hexagrams[16].image",
+      "why": "LAKE over THUNDER: 'Thunder within the lake', energy resting in stillness. The picture itself backs the short's 'go in, rest', like 'Unseen water under the earth'.",
+      "id": 5,
+      "scores": [
+        8,
+        7
+      ],
+      "score": 7.5,
+      "true": true,
+      "feedback": [
+        "Thunder within the lake is exactly the Image, and the two labelled trigrams carry it in the same way as 'Unseen water under the earth'. 'Even' adds a small surprise. It backs up 'go in, rest' without repeating it.",
+        "Fits the trigram picture well and is true to the Image. It mostly restates the short's 'Day's done. Go in, rest', so it adds the picture but no new idea."
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "line",
+      "line": 3,
+      "text": "Did nothing wrong,\nstill lost the ox.",
+      "source": "series/critic/lessons/input.json#hexagrams[24].lines[2].transliteration",
+      "why": "Line 3: the tethered ox is taken by a traveller; innocence does not protect you from loss. The critic's own wording. Needs 26 or 27 off 'line'.",
+      "id": 6,
+      "scores": [
+        9,
+        9
+      ],
+      "score": 9,
+      "true": true,
+      "feedback": [
+        "Concrete, a little shocking, and true to line 3. It is also a good counterweight to 'Stop faking, and it works'. The first screen line is exactly 18 characters, so it passes. Post it.",
+        "True, concrete, surprising, and a good counterweight to 'stop faking, and it works'. Glad to post."
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "line",
+      "line": 5,
+      "text": "Didn't cause it?\nDon't medicate.",
+      "source": "series/critic/lessons/input.json#hexagrams[24].lines[4].transliteration",
+      "why": "Line 5: an illness without pretense; do not medicate; there will be happiness. The book's most counterintuitive line. Needs 26 or 27 off 'line'.",
+      "id": 7,
+      "scores": [
+        5,
+        6
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "True to line 5, but on Instagram 'Don't medicate' reads as medical advice, which could do harm and invites pushback. 'it' is also unclear. Use line 3 (the ox) or line 2 (the plow) instead.",
+        "True to line 5, but 'Don't medicate' on screen reads as medical advice and could be shared out of context. 'Not your doing?\nLet it pass.' keeps the point without the risk."
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "line",
+      "line": 2,
+      "text": "Plow, but don't\neye the harvest.",
+      "source": "series/critic/lessons/input.json#hexagrams[24].lines[1].transliteration",
+      "why": "Line 2: not plowing for the harvest; work without the projection. The critic's suggestion. Needs 26 or 27 off 'line'.",
+      "id": 8,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 2 and concrete, and it adds something new: work without counting the payoff. 'eye the harvest' is a little idiomatic, but it is clear. Good.",
+        "True to line 2 and a concrete picture of acting without an agenda. It connects to 'hiding your real reasons'. 'Eye' is slightly literary but fine."
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "judgment",
+      "text": "Faked motives\nclose every road.",
+      "source": "series/critic/lessons/input.json#hexagrams[24].judgment.transliteration",
+      "why": "'If not upright, there is calamity. Going forward is not supported': the cost of a false motive is that no direction works.",
+      "id": 9,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "This mostly flips the short's 'Stop faking, and it works', so it adds little. 'close every road' is a metaphor the book doesn't use; it says 'going forward is not supported'. Use a line lesson (the ox) instead.",
+        "Repeats the copy ('Stop faking, and it works'), and 'close every road' is an added metaphor. Use line 3 (the ox) or line 2 instead."
+      ]
+    },
+    {
+      "number": 25,
+      "kind": "lines",
+      "text": "Thunder wakes all,\neach in season.",
+      "source": "series/critic/lessons/input.json#hexagrams[24].image.transliteration",
+      "why": "HEAVEN over THUNDER: thunder moves beneath heaven and the kings nourish all beings with the seasons; ties the picture to its instruction.",
+      "id": 10,
+      "scores": [
+        5,
+        4
+      ],
+      "score": 4.5,
+      "true": false,
+      "feedback": [
+        "The Image says thunder moves beneath heaven and the kings nourish beings in line with the seasons. 'Thunder wakes all' is not in the text. It reads as cryptic and poetic. If you keep the trigrams, try 'Feed things\nin their season.'",
+        "The Image doesn't say thunder wakes anything. It says the kings nourished beings according to the seasons. The line is also cryptic. Drop it, or use 'Feed things\nin their season.'"
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "line",
+      "line": 4,
+      "text": "Wine and rice\nare enough.",
+      "source": "series/critic/lessons/input.json#hexagrams[28].lines[3].synthesis",
+      "why": "Line 4: wine and rice through the window, 'in the end, no fault'. Keeps the objects and puts the point on screen, as the critic asked.",
+      "id": 11,
+      "scores": [
+        6,
+        7
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "The objects are good, but 'are enough' leaves the viewer asking: enough for what? The text's point is the small offering handed through a window, which ends 'no fault'. Try 'Wine and rice\nthrough a window.' or name the act: 'In the pit, pass\nsome food through.'",
+        "True objects, and it answers 'next small step?' nicely. 'Are enough' is a gloss, since the text says 'no fault'. Without the window the picture feels incomplete. 'Wine and rice\nthrough a window.' is more vivid but needs the point. Close."
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "line",
+      "line": 3,
+      "text": "Pit ahead, pit\nbehind: stay put.",
+      "source": "series/critic/lessons/input.json#hexagrams[28].lines[2].transliteration",
+      "why": "Line 3: abyss coming and going, a resting place, do not act. The critic's suggestion; it pushes back on 'keep moving'.",
+      "id": 12,
+      "scores": [
+        7,
+        8
+      ],
+      "score": 7.5,
+      "true": true,
+      "feedback": [
+        "True to line 3 and concrete. It pushes back on 'keep moving' and 'next small step', which may read as the short contradicting itself. It works if you want that turn. The phrasing is a bit clipped.",
+        "True, concrete, and it pushes back on 'keep moving' with the book's own counterpoint. The line break 'pit\\nbehind' is a little awkward. 'Pit ahead, pit\nbehind. Stay put.' reads the same, so this is fine."
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "line",
+      "line": 1,
+      "text": "Don't get used\nto the pit.",
+      "source": "series/critic/lessons/input.json#hexagrams[28].lines[0].synthesis",
+      "why": "Line 1: entering the pit within the pit, adverse; the synthesis names people who settle into their crisis.",
+      "id": 13,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 1's synthesis (people who normalise their crisis). Plain, and it answers the hook 'One problem after another?' with something new. Good.",
+        "True to line 1's synthesis, plain, and relatable. Adds a warning that the short doesn't give."
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "line",
+      "line": 5,
+      "text": "Filled to the rim,\nnot over.",
+      "source": "series/critic/lessons/input.json#hexagrams[28].lines[4].transliteration",
+      "why": "Line 5: the abyss does not overflow, it reaches the level. No fault. Getting even is enough.",
+      "id": 14,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "'not over' can be read as 'not finished' instead of 'not overflowing', so it misfires in two seconds. It also repeats the copy's 'fill it'. Line 13 is better.",
+        "True, but a newcomer can't tell what is filled or why it matters. Line 1 or 3 carries a clearer takeaway."
+      ]
+    },
+    {
+      "number": 29,
+      "kind": "lines",
+      "text": "Water on water:\nkeep teaching.",
+      "source": "series/critic/lessons/input.json#hexagrams[28].image.transliteration",
+      "why": "WATER over WATER: the Image's instruction is consistent character and practising teaching, the half the copy leaves out.",
+      "id": 15,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "True to the Image, but 'keep teaching' comes out of nowhere for someone with a problem after problem, so it reads as cryptic. It needs the link to be clear, e.g. 'Water on water:\nsame lesson again.'",
+        "'Keep teaching' confuses viewers who don't teach. The Image means consistent practice. Better: 'Water on water:\nsame, every time.' or use a line instead."
+      ]
+    },
+    {
+      "number": 31,
+      "kind": "judgment",
+      "text": "The book skips\nto the wedding.",
+      "source": "series/critic/lessons/input.json#hexagrams[30].judgment.synthesis",
+      "why": "The Judgment's only verdict is 'Taking a wife resolves well'; the synthesis notes it skips past falling in love straight to commitment. Plain, a little funny, not a forecast.",
+      "id": 16,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to the Judgment's only verdict and to the synthesis. Plain and a little funny, and the Judgment page on screen shows 'Taking a wife'. Good ending.",
+        "True to the Judgment, plain, and a little funny. It fits the Judgment page, which shows 'Taking a wife'. Glad to post."
+      ]
+    },
+    {
+      "number": 31,
+      "kind": "lines",
+      "text": "A hollow on top\nholds the lake.",
+      "source": "series/critic/lessons/input.json#hexagrams[30].image.synthesis",
+      "why": "LAKE over MOUNTAIN: the lake sits on the mountain because it made room; the picture shows why the full can't take anything in.",
+      "id": 17,
+      "scores": [
+        5,
+        5
+      ],
+      "score": 5,
+      "true": true,
+      "feedback": [
+        "This repeats the copy's 'make room' / 'The full can't take anything in'. 'Hollow' is not in the text, and the line is cryptic. Use line 1 (toes) or line 4 instead.",
+        "Repeats the copy's 'make room / the full can't take anything in'. 'A hollow on top' is also cryptic. Use a line instead: toes (1), line 4 or line 6."
+      ]
+    },
+    {
+      "number": 31,
+      "kind": "line",
+      "line": 1,
+      "text": "It starts in\nthe big toes.",
+      "source": "series/critic/lessons/input.json#hexagrams[30].lines[0].transliteration",
+      "why": "Line 1: 'Influence in the big toes.' The critic's repeated suggestion. Needs 30 or 32 off 'line'.",
+      "id": 18,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True, concrete, and a little funny. Lighting line 1, the bottom line, matches 'toes'. It would be even better with where it ends in view, but it stands on its own.",
+        "True, concrete, and funny, with the lit bottom line matching the toes. 'It' is a bit vague, but the context carries it."
+      ]
+    },
+    {
+      "number": 31,
+      "kind": "line",
+      "line": 4,
+      "text": "Waver, and friends\nwaver with you.",
+      "source": "series/critic/lessons/input.json#hexagrams[30].lines[3].transliteration",
+      "why": "Line 4: restlessly going and coming, companions follow your thinking; answers 'already decided?'. Needs 30 or 32 off 'line'.",
+      "id": 19,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 4 ('companions follow your thinking'), and it answers the hook about already deciding: your wavering spreads. Plain. Good.",
+        "True to line 4 ('companions follow your thinking'), plain, and it adds something to the short. At 18 characters the first line is at the limit."
+      ]
+    },
+    {
+      "number": 31,
+      "kind": "line",
+      "line": 6,
+      "text": "All talk: jaw,\ncheeks, tongue.",
+      "source": "series/critic/lessons/input.json#hexagrams[30].lines[5].transliteration",
+      "why": "Line 6: influence in the jaws, cheeks and tongue, the shallowest place; fits 'listening, but already decided'. Needs 30 or 32 off 'line'.",
+      "id": 20,
+      "scores": [
+        7,
+        8
+      ],
+      "score": 7.5,
+      "true": true,
+      "feedback": [
+        "True to line 6 and fits 'Listening, but already decided'. But a list of body parts is choppy, and 'All talk' comes from the synthesis rather than the line. Try 'Toes to tongue:\nit ends in talk.'",
+        "True (jaws, cheeks, tongue), concrete and wry, and it lands on 'listening, but already decided'. It lights the top line, which fits."
+      ]
+    },
+    {
+      "number": 34,
+      "kind": "judgment",
+      "text": "Great power gets\none rule: hold on.",
+      "source": "series/critic/lessons/input.json#hexagrams[33].judgment.transliteration",
+      "why": "The whole Judgment is 'Sustained orientation is supported': for great power, the book's only instruction is to keep going the same way.",
+      "id": 21,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "'hold on' can mean 'wait' or 'cling'. The Judgment means 'keep your direction', which the copy's 'check your aim' already covers. Use line 1 (toes) or line 6 (the ram in the hedge) instead.",
+        "'Hold on' can read as 'wait' or 'cling', which misreads sustained orientation. It also repeats 'check your aim'. Use line 1 or 6 instead."
+      ]
+    },
+    {
+      "number": 34,
+      "kind": "lines",
+      "text": "Loud as thunder,\nand it holds back.",
+      "source": "series/critic/lessons/input.json#hexagrams[33].image",
+      "why": "THUNDER over HEAVEN: maximum force, used to avoid wrong paths, 'restraint that looks like nothing'.",
+      "id": 22,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "This repeats 'Mostly, know what not to do'. 'Loud' and the phrasing are a bit mannered. It adds little.",
+        "Repeats the copy's 'know what not to do', so it adds little. Line 1 (toes) is stronger."
+      ]
+    },
+    {
+      "number": 34,
+      "kind": "line",
+      "line": 1,
+      "text": "Power in the toes:\ndon't kick yet.",
+      "source": "series/critic/lessons/input.json#hexagrams[33].lines[0].transliteration",
+      "why": "Line 1: power in the toes, advancing is adverse though the wish is sincere. Concrete and a little funny. Needs 33 or 35 off 'line'.",
+      "id": 23,
+      "scores": [
+        9,
+        9
+      ],
+      "score": 9,
+      "true": true,
+      "feedback": [
+        "True to line 1, concrete and funny. It fits 'Finally in charge?': new power, don't advance yet. The first screen line is 18 characters, so it passes. Post it.",
+        "True, concrete, funny, and a perfect answer to 'Finally in charge?'. Glad to post."
+      ]
+    },
+    {
+      "number": 34,
+      "kind": "line",
+      "line": 6,
+      "text": "Horns in a hedge?\nStop charging.",
+      "source": "series/critic/lessons/input.json#hexagrams[33].lines[5].synthesis",
+      "why": "Line 6: the ram in the hedge can't go back or on; difficulty, then it resolves once the charging stops. Needs 33 or 35 off 'line'.",
+      "id": 24,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 6 and its synthesis ('the charging was the problem'). Concrete and funny. Good.",
+        "True to line 6 and its synthesis. Concrete picture, and the advice fits a person newly in power."
+      ]
+    },
+    {
+      "number": 34,
+      "kind": "line",
+      "line": 5,
+      "text": "Lose the ram,\nno regret.",
+      "source": "series/critic/lessons/input.json#hexagrams[33].lines[4].transliteration",
+      "why": "Line 5: 'Loses the ram with ease. No deviation.' Dropping the battering-ram way is no loss. Needs 33 or 35 off 'line'.",
+      "id": 25,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "Without line 3 before it, 'the ram' means nothing to a new viewer, so it reads as cryptic. Use 23 or 24.",
+        "Cryptic: a newcomer has no idea what 'the ram' is. Use line 1 or line 6."
+      ]
+    },
+    {
+      "number": 39,
+      "kind": "lines",
+      "text": "Water on a peak\ncan't get down.",
+      "source": "series/critic/lessons/input.json#hexagrams[38].image.synthesis",
+      "why": "WATER over MOUNTAIN: 'it can't flow, it just sits there'. Names the obstruction in the picture without the 'work on yourself' line.",
+      "id": 26,
+      "scores": [
+        6,
+        6
+      ],
+      "score": 6,
+      "true": true,
+      "feedback": [
+        "True to the synthesis ('can't flow, it just sits there'). But water on a peak would normally run down, so 'can't get down' is confusing. It also stops short of the Image's instruction (turn inward), which the copy already covers as 'the wall is the lesson'. It is weak.",
+        "True to the synthesis and fits the trigram picture, but it restates the hook 'Hit a wall?' as an image and adds no idea. Line 1 or 2 adds more."
+      ]
+    },
+    {
+      "number": 39,
+      "kind": "judgment",
+      "text": "Blocked? Pushing\nharder won't work.",
+      "source": "series/critic/lessons/input.json#hexagrams[38].judgment.synthesis",
+      "why": "The Judgment's synthesis: 'the solution isn't to push harder'; individual effort fails here.",
+      "id": 27,
+      "scores": [
+        6,
+        6
+      ],
+      "score": 6,
+      "true": true,
+      "feedback": [
+        "True to the synthesis, but it is generic advice and close to the copy's 'ask for help'. The Judgment's concrete material is southwest yes, northeast no, which is hard to use. Better as a line lesson (28 or 29).",
+        "True, but abstract, and close to the short's 'ask for help'. A line gives something more concrete."
+      ]
+    },
+    {
+      "number": 39,
+      "kind": "line",
+      "line": 1,
+      "text": "Go on: blocked.\nCome back: praise.",
+      "source": "series/critic/lessons/input.json#hexagrams[38].lines[0].transliteration",
+      "why": "Line 1: 'Going forward: obstruction. Coming back: praise.' The critic's repeated suggestion. Needs 38 or 40 off 'line'.",
+      "id": 28,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "The text word for word, and a surprising reversal: turning back gets praise. It adds to 'ask for help'. Good.",
+        "True almost word for word, surprising (turning back earns praise), and plain. It fits the lit bottom line."
+      ]
+    },
+    {
+      "number": 39,
+      "kind": "line",
+      "line": 2,
+      "text": "Blocked again?\nIt's not personal.",
+      "source": "series/critic/lessons/input.json#hexagrams[38].lines[1].transliteration",
+      "why": "Line 2: obstruction upon obstruction, 'It is not a personal matter.' Needs 38 or 40 off 'line'.",
+      "id": 29,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 2, plain, and comforting. It is new to the short. Good.",
+        "True to line 2 and relatable, with a slight twist. The text means 'not your own affair' rather than 'not aimed at you', but that is close enough."
+      ]
+    },
+    {
+      "number": 39,
+      "kind": "line",
+      "line": 3,
+      "text": "Can't go on?\nGo home.",
+      "source": "series/critic/lessons/input.json#hexagrams[38].lines[2].synthesis",
+      "why": "Line 3: forward is blocked, coming back is return; 'Forward is blocked. Come home.' Needs 38 or 40 off 'line'.",
+      "id": 30,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True to line 3 and plain, but it is the same idea as 28 with a weaker payoff. If you use a 'come back' line, 28 is the better one.",
+        "True and plain, but a bit generic, and 'home' comes from the synthesis (the text says 'return'). Line 1 (praise) or 2 is more surprising."
+      ]
+    },
+    {
+      "number": 42,
+      "kind": "line",
+      "line": 2,
+      "text": "A gift of shells\nyou can't refuse.",
+      "source": "series/critic/lessons/input.json#hexagrams[41].lines[1].transliteration",
+      "why": "Line 2: someone increases you by ten pairs of tortoise shells, one cannot refuse. Concrete; the critic's suggestion.",
+      "id": 31,
+      "scores": [
+        6,
+        7
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "True, but 'shells' reads as seashells. The viewer won't know tortoise shells were treasure, so the surprise is lost. Try 'A gift too big\nto turn down.' or pick another line.",
+        "True and concrete, and it fits 'still hesitating?'. 'Shells' will read as seashells. The viewer doesn't know they were treasure, so the surprise is lost."
+      ]
+    },
+    {
+      "number": 42,
+      "kind": "line",
+      "line": 6,
+      "text": "Unsteady heart:\nno help, a blow.",
+      "source": "series/critic/lessons/input.json#hexagrams[41].lines[5].transliteration",
+      "why": "Line 6: no one increases him, someone strikes, the heart is not constant. The only failing line, and it answers 'still hesitating?'.",
+      "id": 32,
+      "scores": [
+        6,
+        7
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "True to line 6 and it answers 'still hesitating?'. But 'no help, a blow' is telegraphic. Plainer: 'Waver, and no one\nhelps you.' Check the length.",
+        "True, and it answers the hesitation hook. The clipped 'no help, a blow' reads like telegraphese. Plainer: 'Unsteady heart?\nNo one helps.'"
+      ]
+    },
+    {
+      "number": 42,
+      "kind": "line",
+      "line": 5,
+      "text": "Be kind.\nDon't keep score.",
+      "source": "series/critic/lessons/input.json#hexagrams[41].lines[4].transliteration",
+      "why": "Line 5: sincerity and a kind heart, 'Do not ask', supremely resolves well. The critic's wording.",
+      "id": 33,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True to line 5 ('Do not ask'). Plain and easy to send, but a bit of a greeting-card line, and 'keep score' is a gloss. OK.",
+        "True to line 5 ('Do not ask'), plain, but generic and close to a fortune cookie. 'Kind, and\ndon't ask back.' stays closer to the text."
+      ]
+    },
+    {
+      "number": 42,
+      "kind": "line",
+      "line": 4,
+      "text": "Steady enough to\nmove the capital.",
+      "source": "series/critic/lessons/input.json#hexagrams[41].lines[3].transliteration",
+      "why": "Line 4: walking the middle way, the prince follows and it is supported to relocate the capital; steadiness earns the biggest trust.",
+      "id": 34,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True and concrete, and 'move the capital' is surprising. But what steadiness earns is not clear at a glance, and it doesn't connect to 'Door's open, still hesitating?'.",
+        "True and has a surprising specific (the capital). 'Steady' is a loose gloss of 'walking the middle', and the takeaway for a viewer is abstract."
+      ]
+    },
+    {
+      "number": 42,
+      "kind": "lines",
+      "text": "Wind and thunder:\nfix faults fast.",
+      "source": "series/critic/lessons/input.json#hexagrams[41].image.transliteration",
+      "why": "WIND over THUNDER: the Image's other half, 'corrects faults upon having them', which the copy ('see good, move toward it') leaves out.",
+      "id": 35,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "It adds the Image's other half, which the copy leaves out, and is true ('fast' fairly renders 'upon having them'). The trigrams don't illustrate fixing faults, though, so the picture link is weak. Plain.",
+        "True, and it adds the half of the Image the copy leaves out. 'Fix faults' is a bit stiff. 'Wind and thunder:\nfix mistakes fast.' is plainer."
+      ]
+    },
+    {
+      "number": 52,
+      "kind": "judgment",
+      "text": "Stillness starts\nin the back.",
+      "source": "series/critic/lessons/input.json#hexagrams[51].judgment.transliteration",
+      "why": "The Judgment opens with 'Stilling the back', the part you can't see, not the face or the mind. A specific, surprising detail.",
+      "id": 36,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to the Judgment's first words and a surprising detail against 'Can't stop overthinking?'. Plain. Good.",
+        "True and surprising (the back, not the mind). It suits the Judgment page and the overthinking hook."
+      ]
+    },
+    {
+      "number": 52,
+      "kind": "judgment",
+      "text": "Still inside,\neven in a crowd.",
+      "source": "series/critic/lessons/input.json#hexagrams[51].judgment.synthesis",
+      "why": "'Walking through the courtyard, not seeing the people': you are there and walking, you just stopped grasping. The critic's framing, keeping the people in.",
+      "id": 37,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True to the Judgment's courtyard, but 'still inside' is abstract and sounds like general mindfulness copy. Keeping the courtyard would help: 'Walk through a crowd,\nstill inside.' Check the length.",
+        "True to the synthesis, but generic and close to the copy's 'pause'. #36 on the same Judgment is stronger."
+      ]
+    },
+    {
+      "number": 52,
+      "kind": "line",
+      "line": 5,
+      "text": "Still your jaw,\nand words line up.",
+      "source": "series/critic/lessons/input.json#hexagrams[51].lines[4].transliteration",
+      "why": "Line 5: 'Stilling the jaws. Words have order.' The critic's wording. Needs 53 or 54 off 'line'.",
+      "id": 38,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 5, concrete, and it adds something: words come out in order. Good for overthinking.",
+        "True to line 5, concrete, and a useful twist for an overthinker."
+      ]
+    },
+    {
+      "number": 52,
+      "kind": "line",
+      "line": 3,
+      "text": "Clench to be calm?\nThe heart chokes.",
+      "source": "series/critic/lessons/input.json#hexagrams[51].lines[2].synthesis",
+      "why": "Line 3: stilling at the waist, danger, the heart smothers; forced stillness 'by clenching'. Fits the overthinking hook. Needs 53 or 54 off 'line'.",
+      "id": 39,
+      "scores": [
+        8,
+        8
+      ],
+      "score": 8,
+      "true": true,
+      "feedback": [
+        "True to line 3 and its synthesis ('clenching', 'the heart smothers'). It speaks directly to someone who can't stop overthinking. 'chokes' is close to 'smothers'. Good.",
+        "True to line 3 and its synthesis. It lands on 'can't stop overthinking' with a real warning."
+      ]
+    },
+    {
+      "number": 52,
+      "kind": "line",
+      "line": 1,
+      "text": "Stop it at\nthe toes.",
+      "source": "series/critic/lessons/input.json#hexagrams[51].lines[0].synthesis",
+      "why": "Line 1: stilling the toes, catching the impulse before it moves. Needs 53 or 54 off 'line'.",
+      "id": 40,
+      "scores": [
+        6,
+        6
+      ],
+      "score": 6,
+      "true": true,
+      "feedback": [
+        "Stop what? It is cryptic without the impulse in it. Try 'Catch the urge\nat the toes.'",
+        "True, but 'it' is unexplained, so it reads as cryptic. #38 or #39 is better for 52."
+      ]
+    },
+    {
+      "number": 55,
+      "kind": "judgment",
+      "text": "Noon won't last.\nDon't worry.",
+      "source": "series/critic/lessons/input.json#hexagrams[54].judgment.synthesis",
+      "why": "The Judgment's 'do not worry, like the sun at midday' comes knowing the sun is about to descend; adds the decline the copy leaves out.",
+      "id": 41,
+      "scores": [
+        7,
+        7
+      ],
+      "score": 7,
+      "true": true,
+      "feedback": [
+        "True to the synthesis, and it adds the decline. But 'Don't worry' repeats the copy's 'Abundance says: don't worry'. Maybe 'Noon won't last.\nEnjoy it anyway.' Keep it plain.",
+        "True and it adds the decline, but 'Don't worry' repeats the copy. 'Noon ends.\nEnjoy it anyway.' adds more."
+      ]
+    },
+    {
+      "number": 55,
+      "kind": "lines",
+      "text": "Fire and thunder:\nsettle old fights.",
+      "source": "series/critic/lessons/input.json#hexagrams[54].image.transliteration",
+      "why": "THUNDER over FIRE, named as labelled: the Image's action is deciding disputes while clarity and force coincide.",
+      "id": 42,
+      "scores": [
+        6,
+        7
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "'old' is not in the text, and 'Fire and thunder' reverses the labels on screen (THUNDER over FIRE). It overlaps the question 'What will you decide now?'. Weak.",
+        "True to the Image (decide disputes), and it ties to 'decide now'. 'Old' isn't in the text. 'Thunder and fire:\nsettle disputes.' is exact."
+      ]
+    },
+    {
+      "number": 55,
+      "kind": "line",
+      "line": 6,
+      "text": "A huge house,\nand no one home.",
+      "source": "series/critic/lessons/input.json#hexagrams[54].lines[5].transliteration",
+      "why": "Line 6: so abundant his dwelling, peering through the gate, no one there for three years. The critic's suggestion. Needs 54 or 56 off 'line'.",
+      "id": 43,
+      "scores": [
+        9,
+        9
+      ],
+      "score": 9,
+      "true": true,
+      "feedback": [
+        "True to line 6, concrete and striking, and it sits well after 'At your peak'. Post it.",
+        "True, concrete and striking, and a sharp counterweight to 'at your peak'. Glad to post."
+      ]
+    },
+    {
+      "number": 55,
+      "kind": "line",
+      "line": 2,
+      "text": "So many screens,\nstars at noon.",
+      "source": "series/critic/lessons/input.json#hexagrams[54].lines[1].transliteration",
+      "why": "Line 2: screens so thick the Big Dipper shows at midday. The critic's suggestion. Needs 54 or 56 off 'line'.",
+      "id": 44,
+      "scores": [
+        7,
+        6
+      ],
+      "score": 6.5,
+      "true": true,
+      "feedback": [
+        "True to line 2 and a vivid picture. But today 'screens' reads as phone screens, not curtains. That is a funny misreading, but a misreading. Keep it only if you accept that double reading.",
+        "True, but 'screens' will read as phones, which may be a fun misreading but isn't the book's meaning. It is also cryptic. Prefer #43."
+      ]
+    },
+    {
+      "number": 55,
+      "kind": "line",
+      "line": 4,
+      "text": "Stars at noon,\na hidden master.",
+      "source": "series/critic/lessons/input.json#hexagrams[54].lines[3].transliteration",
+      "why": "Line 4: same midday stars, but meeting the hidden master; resolves well. Needs 54 or 56 off 'line'.",
+      "id": 45,
+      "scores": [
+        6,
+        5
+      ],
+      "score": 5.5,
+      "true": true,
+      "feedback": [
+        "Two fragments with no link a viewer can grasp in two seconds, so it is cryptic. Use 43.",
+        "Cryptic. A newcomer won't get 'stars at noon' or who the master is. Prefer #43."
+      ]
+    }
+  ]
+}
