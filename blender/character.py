@@ -59,6 +59,7 @@ def parse():
     p.add_argument("--wall-height", type=float, default=WALL_H)
     p.add_argument("--glass-walls", action="store_true", help="walls of smoked glass, not obsidian")
     p.add_argument("--moon", default="", help="stroke indices a phasing moon sets into, between the walls")
+    p.add_argument("--phases", default="180,0,-180", help="the moon's turns, 1.5 beats apart: 180 is new, 0 full")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
@@ -325,24 +326,28 @@ def moonlight(colour):
 
 
 def phases(ids, medians, paths, t, beat, args, smoke):
-    """For 恆: a moon between the walls, over the strokes `ids`, goes from new to full and back
-    to new over three beats from frame `t`, then sets into those strokes as they are drawn.
-    Returns the frame after and the strokes' glow strengths."""
+    """A moon between the walls, over the strokes `ids`, turns through --phases from frame `t`
+    (for 恆 new, full and new again; for 明 full, then a thin crescent that stays lit), then
+    sets into those strokes as they are drawn. Returns the frame after and their glows."""
     x, y, w, h = centre([p for i in ids for p in medians[i]])
-    r = 0.4 * min(w, h) * SCALE
+    r = min(0.4 * min(w, h) * SCALE, 1.1)
     bpy.ops.mesh.primitive_uv_sphere_add(segments=20, ring_count=10, radius=r)
     ball = bpy.context.object
     ball.data.materials.append(moonlight(linear(args.water)))
     home = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, args.wall_height + r + 0.15)
     ball.location = home
-    b = lambda n: t + round(n * beat)
-    for f, sc, turn in ((0, 0.0, 180), (t, 0.0, 180), (b(0.4), 1.0, 180), (b(1.9), 1.0, 0), (b(3.4), 1.0, -180)):
+    turns = [float(a) for a in args.phases.split(",")]
+    keys = [(0, 0.0, turns[0]), (t, 0.0, turns[0])]
+    keys += [(t + round((0.4 + 1.5 * k) * beat), 1.0, a) for k, a in enumerate(turns)]
+    for f, sc, turn in keys:
         ball.scale = (sc, sc, sc)
         key(ball, "scale", f)
         ball.rotation_euler.z = math.radians(turn)
         key(ball, "rotation_euler", f, index=2)
+    t += round(1.5 * (len(turns) - 1) * beat)  # the rest is timed from the last phase
+    b = lambda n: t + round(n * beat)
     # It sets: sinks and shrinks into the strokes, which are drawn under it.
-    for f, z, sc in ((b(3.4), home[2], 1.0), (b(4.1), 0.0, 0.0)):
+    for f, z, sc in ((b(0.4), home[2], 1.0), (b(1.1), 0.0, 0.0)):
         ball.location.z = z
         key(ball, "location", f, index=2)
         ball.scale = (sc, sc, sc)
@@ -350,13 +355,13 @@ def phases(ids, medians, paths, t, beat, args, smoke):
     glows = []
     for i in ids:
         glow, strength = edge(linear(args.water), f"moon{i}")
-        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow), b(3.5), round(0.8 * beat))
-        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke), b(4.3))
-        for f, v in ((b(3.5), REST), (b(4.3), PULSE * 0.5), (b(5.0), REST)):
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow), b(0.5), round(0.8 * beat))
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke), b(1.3))
+        for f, v in ((b(0.5), REST), (b(1.3), PULSE * 0.5), (b(2.0), REST)):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
         glows.append(strength)
-    return b(4.6), glows
+    return b(1.6), glows
 
 
 def water(spill, medians, paths, walls, args, t, beat):

@@ -54,6 +54,15 @@
       "bpm": 95,
       "beats": 12,
       "args": { "walls": [3, 8], "moon": [4, 5, 6, 7], "last": [0, 1, 2], "wallHeight": 0.8, "glassWalls": true, "camera": "high", "zoom": 1.7, "edge": "#ff5ec8", "water": "#fff1c4" }
+    },
+    {
+      "number": 36,
+      "char": "明",
+      "story": "A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes.",
+      "sentence": "Keep your light\nlow and on",
+      "bpm": 95,
+      "beats": 12,
+      "args": { "walls": [0, 1, 2, 3], "moon": [4, 5, 6, 7], "phases": [0, 0, 130], "wallHeight": 0.8, "glassWalls": true, "camera": "high", "zoom": 1.4, "edge": "#ff5ec8", "water": "#fff1c4" }
     }
   ]
 }
