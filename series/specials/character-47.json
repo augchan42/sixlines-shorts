@@ -30,7 +30,7 @@
   },
   "lesson": {
    "kind": "character",
-   "text": "Pressed in,\nkeep growing",
+   "text": "Boxed in?\nHold to your aim.",
    "source": "series/characters.json#47: A tree stands; walls rise round it; it is pressed flat inside them.",
    "character": {
     "char": "困",

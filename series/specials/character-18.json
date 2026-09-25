@@ -1,0 +1,96 @@
+{
+ "hexagram": 18,
+ "occasion": "A try of the character lesson on 18 蠱: the series short's copy, with the lesson replaced by the character.",
+ "copy": {
+  "hook": {
+   "text": "Something rotting under the surface?",
+   "source": "commentary/en/18.json#image.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Decay says:\nit can be fixed.",
+    "source": "commentary/en/18.json#judgment.synthesis"
+   },
+   {
+    "text": "Rushed repairs\ndon’t hold.",
+    "source": "commentary/en/18.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What’s overdue\nfor repair?",
+   "source": "written"
+  },
+  "plates": [
+   "18-31",
+   "18-52"
+  ],
+  "caption": {
+   "text": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t.",
+   "source": "commentary/en/18.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Found rot?\nClean it out.",
+   "source": "series/characters.json#18: Worms breed in a shut bowl, swarm up and pour out.",
+   "character": {
+    "char": "蠱",
+    "beats": 13,
+    "args": {
+     "order": [
+      22,
+      20,
+      21,
+      18,
+      19,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ],
+     "walls": [
+      18,
+      19
+     ],
+     "spill": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ],
+     "stagger": 0.1,
+     "camera": "high",
+     "edge": "#ff5ec8",
+     "water": "#c6ff3a"
+    }
+   }
+  }
+ }
+}

@@ -30,7 +30,7 @@
   },
   "lesson": {
    "kind": "character",
-   "text": "Wait in the rain;\nit will pass.",
+   "text": "In the rain?\nEat, rest, wait.",
    "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
    "character": {
     "char": "需",

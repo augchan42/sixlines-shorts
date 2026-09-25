@@ -1,0 +1,68 @@
+{
+ "hexagram": 58,
+ "occasion": "A try of the character lesson on 58 兌: the series short's copy, with the lesson replaced by the character.",
+ "copy": {
+  "hook": {
+   "text": "Good news, no one to tell?",
+   "source": "commentary/en/58.json#image.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "The Joyous says:\nshare it.",
+    "source": "commentary/en/58.json#image.synthesis"
+   },
+   {
+    "text": "Joy kept alone\ndries up.",
+    "source": "commentary/en/58.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Who could you\ncall today?",
+   "source": "written"
+  },
+  "plates": [
+   "58-19",
+   "58-24"
+  ],
+  "caption": {
+   "text": "The Joyous is two lakes that keep each other full. Joy kept to yourself dries up.",
+   "source": "commentary/en/58.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Laugh and learn\nwith friends.",
+   "source": "series/characters.json#58: A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter.",
+   "character": {
+    "char": "兌",
+    "beats": 11,
+    "args": {
+     "order": [
+      5,
+      6,
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "walls": [
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.6,
+     "lift": [
+      0,
+      1
+     ],
+     "wallHeight": 0.8,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.6,
+     "edge": "#ff5ec8",
+     "water": "#fff15e"
+    }
+   }
+  }
+ }
+}
