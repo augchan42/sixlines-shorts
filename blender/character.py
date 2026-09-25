@@ -1,30 +1,26 @@
 """Draws a hexagram's character in 3D, stroke by stroke, as a lesson picture, like a Hong
 Kong neon sign: each stroke's real outline (a brush-style kaishu font) traced by a hollow,
-faceted neon tube over a dark glass body. Some strokes lie on the ground; others rise as
-obsidian walls in the stroke's own shape, with the neon along their top edge. The lying strokes first stand up as a thing (for 困, a tree), the walls rise
-around it, then it is pressed down flat inside them. Strokes named by --spill (for 益, the
-water) are traced small inside the walls, rise past the rim and spill over it to their place
-in the character. The camera starts low, where the
-strokes read as things, and cranes up to look straight down, where they read as the
-character.
+faceted neon tube over a dark glass body. Some strokes lie on the ground; others rise as walls
+in the stroke's own shape, with the neon along their top edge.
+
+- --stand: the lying strokes first stand up as a thing (for 困, a tree), the walls rise round
+  it, then it is pressed flat inside them.
+- --spill: these strokes (for 益, water; for 蠱, worms) are traced small inside the walls,
+  rise past the rim and spill over it to their place in the character.
+- --pool: a pool of water (for 井) that ripples on every beat.
+
+The camera starts beside the strokes, where they read as things, and cranes up to look
+straight down, where they read as the character.
 
 Stroke outlines are from Make Me a Hanzi (hanzi-writer-data, Arphic
 Public License), fetched to public/local/hanzi/ by scripts/character.mjs.
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/character.py -- \
-    --data public/local/hanzi/困.json --order 3,2,4,5,0,1,6 --walls 0,1,6 \
+    --data public/local/hanzi/困.json --order 3,2,4,5,0,1,6 --walls 0,1,6 --stand \
     --bpm 95 --beats 10 --out out/characters/kun.mp4 [--still N] [--preview]
 
-  益: --data public/local/hanzi/益.json --walls 5,6,7,8,9 --spill 0,1,2,3,4 \
-    --wall-step 0.8 --camera high --bpm 95 --beats 11 --edge #ff5ec8 --water #5ee7ff
-
-  蠱: --data public/local/hanzi/蠱.json --order 22,20,21,18,19,0,...,17 --walls 18,19 \
-    --spill 0,...,17 --stagger 0.1 --camera high --bpm 95 --beats 13 --edge #ff5ec8 --water #c6ff3a
-    (only the rim rises, so the worms show breeding inside)
-
-  井: --data public/local/hanzi/井.json --walls 0,1,2,3 --pool 470,472 --wall-height 0.6 --glass-walls \
-    --camera high --zoom 1.5 \
-    --bpm 95 --beats 10 --edge #ff5ec8 --water #5ee7ff
+Each character's options are kept in series/characters.json; `node scripts/character.mjs
+--render NUMBER` renders from there.
 """
 
 import argparse
