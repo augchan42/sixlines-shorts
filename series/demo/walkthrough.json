@@ -19,41 +19,26 @@
   ]
  },
  "takes": {
-  "take1": {
-   "file": "local/demo/take1-30fps.mp4",
-   "sha256": "38168a99a03e804471bc0123a7c05a2fe92caea1f6996b9ea89e243614c39acd",
+  "take3": {
+   "file": "local/demo/take3-30fps.mp4",
+   "sha256": "7e0ae2bd7b1062d6f880205fe2a51628925e3a88df120e6d35405a951962985b",
    "from": {
-    "file": "local/demo/take1-ask.mp4",
-    "sha256": "25b73690da7bce3a844e355c6812c275a28424bd63737428a5560066212ba6da",
-    "how": "mobile-mcp screen recording (simctl recordVideo failed with SimRenderServer error 2); variable frame rate, so converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+    "file": "local/demo/take3-team.mp4",
+    "sha256": "6e5016110e454ece94731e3aa5742cd0a25aaab20f49a9cca153ac8b5669036a",
+    "how": "mobile-mcp screen recording; variable frame rate, converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
    },
-   "recorded": "2026-09-25, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios b459a31f, Matrix skin, English (-appLanguage en). Question typed, 18 entered by hand with no changing lines, one real Gua interpretation, Wang Bi, What Would Prove This Wrong, a note saved.",
+   "recorded": "2026-09-26, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios b459a31f, Matrix skin, English (-appLanguage en), Gua on 8bitoracle-next d0cd886c (falsification ends \"the reading was wrong\"). Question typed, 18 entered by hand with no changing lines, one real Gua interpretation, a note saved from the Journal. Takes 1 and 2 (the old-project question) are in the earlier render records. 210-219 s shows the Journal list with the owner's other readings: never use it.",
    "moments": {
-    "question typed": "0.6-8",
-    "18 entered": "56-90",
-    "reading": "90.3",
-    "Gua rain": "169-178",
-    "interpretation": "186",
-    "what would prove this wrong": "206.8-218",
-    "Wang Bi": "218.2",
-    "journal": "243.5",
-    "note typed": "420-428",
-    "note saved": "482.4",
-    "hexagram picked": "55.5-60"
-   }
-  },
-  "take2": {
-   "file": "local/demo/take2-30fps.mp4",
-   "sha256": "03000f3a56f4877956c423eb8b2947bdcb8eee684b52ce6901b0a952dc63f367",
-   "from": {
-    "file": "local/demo/take2-proof.mp4",
-    "sha256": "fdd66d4e3d5bf65948e1f27f6282231afd95088330459ec1e87ac43ec7c8f71d",
-    "how": "as take1"
-   },
-   "recorded": "2026-09-25, same session as take1: the saved reading opened from the Journal and scrolled so What Would Prove This Wrong sits in the upper half. In take1 it only reached the bottom edge.",
-   "moments": {
-    "section settles": "10.3",
-    "ends": "13.2"
+    "question typed": "2-5",
+    "18 entered": "24-58",
+    "reading": "60",
+    "Gua rain": "93-110",
+    "interpretation": "111-156",
+    "Wang Bi": "158-161",
+    "what would prove this wrong": "199-208",
+    "journal list (do not use)": "210-219",
+    "note typed": "250-253",
+    "note saved": "265"
    }
   }
  },
@@ -64,7 +49,7 @@
     4
    ],
    "kind": "rain",
-   "text": "What should I do\nabout the old project?"
+   "text": "I inherited a failing team.\nWhere do I start?"
   },
   {
    "beats": [
@@ -72,8 +57,8 @@
     12
    ],
    "kind": "live",
-   "take": "take1",
-   "from": 0.6,
+   "take": "take3",
+   "from": 2.0,
    "rate": 1.25,
    "zoom": 1,
    "focus": 0,
@@ -125,12 +110,12 @@
     39
    ],
    "kind": "live",
-   "take": "take1",
-   "from": 186.2,
+   "take": "take3",
+   "from": 112,
    "rate": 1,
    "zoom": 1,
    "focus": 0,
-   "text": "The reading applies this\nto your project."
+   "text": "The reading applies this\nto your team."
   },
   {
    "beats": [
@@ -138,8 +123,8 @@
     44
    ],
    "kind": "live",
-   "take": "take1",
-   "from": 219.3,
+   "take": "take3",
+   "from": 158.3,
    "rate": 1,
    "text": "Commentary by Wang Bi,\n3rd century.",
    "zoom": 1,
@@ -151,9 +136,9 @@
     50
    ],
    "kind": "live",
-   "take": "take2",
-   "from": 10.3,
-   "rate": 0.6,
+   "take": "take3",
+   "from": 199.5,
+   "rate": 1,
    "zoom": 1,
    "focus": 0.3,
    "text": "The reading lists\nwhat would prove it wrong.",
@@ -165,11 +150,11 @@
     56
    ],
    "kind": "live",
-   "take": "take1",
-   "from": 423,
-   "rate": 2.2,
+   "take": "take3",
+   "from": 249,
+   "rate": 1.2,
    "zoom": 1,
-   "focus": 0.8,
+   "focus": 1,
    "text": "You decide.\nThen write down\nwhat happened.",
    "place": "top"
   },
