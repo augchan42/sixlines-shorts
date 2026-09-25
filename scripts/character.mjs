@@ -3,8 +3,8 @@
 // hexagram's character lesson from its settings in series/characters.json.
 //
 //   node scripts/character.mjs 困 [井 ...]
-//   node scripts/character.mjs --render 42 [--still FRAME] [--preview]
-//       writes out/characters/42-益.mp4 (or 42-益-FRAME.png)
+//   node scripts/character.mjs --render 42[,18,...] [--still FRAME] [--preview]
+//       writes out/characters/42-益.mp4 (or 42-益-FRAME.png), one after another
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -29,10 +29,10 @@ const { values: a, positionals } = parseArgs({
   options: { render: { type: "string" }, still: { type: "string" }, preview: { type: "boolean", default: false } },
 });
 
-if (a.render) {
+async function render(number) {
   const { characters } = JSON.parse(readFileSync(path.join(root, "series/characters.json"), "utf8"));
-  const c = characters.find((x) => x.number === Number(a.render));
-  if (!c) (console.error(`no character for hexagram ${a.render} in series/characters.json`), process.exit(1));
+  const c = characters.find((x) => x.number === number);
+  if (!c) (console.error(`no character for hexagram ${number} in series/characters.json`), process.exit(1));
   const data = path.join(dir, `${c.char}.json`);
   if (!existsSync(data)) await fetchStrokes(c.char);
   const name = `${c.number}-${c.char}${a.still ? `-${a.still}` : ""}${a.preview ? "-preview" : ""}`;
@@ -50,7 +50,11 @@ if (a.render) {
     ],
     { stdio: ["ignore", "ignore", "inherit"] },
   );
-  process.exit(run.status ?? 1);
+  if (run.status !== 0) process.exit(run.status ?? 1);
+}
+
+if (a.render) {
+  for (const n of a.render.split(",")) await render(Number(n));
 } else {
   for (const ch of positionals) await fetchStrokes(ch);
 }
