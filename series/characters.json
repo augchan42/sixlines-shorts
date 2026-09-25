@@ -99,6 +99,15 @@
       "bpm": 95,
       "beats": 12,
       "args": { "order": [5, 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], "stand": true, "lieStep": 0.35, "lean": 40, "last": [8, 9, 10, 11, 12, 13, 14, 15, 16], "lastWater": true, "camera": "side", "zoom": 1.6, "edge": "#ff5ec8", "water": "#5ee7ff" }
+    },
+    {
+      "number": 52,
+      "char": "艮",
+      "story": "A figure with a big eye stands, turns round to look back, holds still, turns forward again and lies down as the character.",
+      "sentence": "Stop, and look\nat where you are",
+      "bpm": 95,
+      "beats": 12,
+      "args": { "order": [3, 0, 1, 2, 4, 5], "stand": true, "lieStep": 0.6, "turn": 150, "camera": "low", "zoom": 1.4, "edge": "#b28cff", "water": "#5ee7ff" }
     }
   ]
 }

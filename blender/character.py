@@ -14,6 +14,8 @@ in the stroke's own shape, with the neon along their top edge.
 - --lift: lying strokes lift free once the walls stand and hover (解's horn, cut loose).
 - --rain: before the --drop strokes fall, neon rain falls for this many beats (需).
 - --lean: with --stand, the standing thing leans over before the --last strokes (臨).
+- --turn: with --stand, the standing thing turns round to look back, holds still and turns
+  forward again (艮).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
@@ -72,6 +74,7 @@ def parse():
     p.add_argument("--lie-step", type=float, default=0.9, help="beats between lying strokes")
     p.add_argument("--drop-step", type=float, default=0.5, help="beats between the --drop strokes as they are traced")
     p.add_argument("--lean", type=float, help="with --stand: degrees the standing thing leans to (90 upright) before the --last strokes")
+    p.add_argument("--turn", type=float, help="with --stand: degrees the standing thing turns round, holds, and turns back")
     p.add_argument("--last-water", action="store_true", help="the --last strokes in the --water colour")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
@@ -587,6 +590,12 @@ def main():
             key(pivot, "rotation_euler", f, index=0)
         upright = args.lean
         t += round(0.8 * beat)
+    # A standing thing turns round to look back, holds still, and turns forward (for 艮).
+    if pivot and args.turn:
+        for f, a in ((0, 0), (t, 0), (t + round(0.8 * beat), args.turn), (t + round(2.6 * beat), args.turn), (t + round(3.4 * beat), 0)):
+            pivot.rotation_euler.z = math.radians(a)
+            key(pivot, "rotation_euler", f, index=2)
+        t += round(3.6 * beat)
     if last:
         tint = (linear(args.water), glass(args.water)) if args.last_water else (colour, smoke)
         t, more = lie(last, paths, t, beat, *tint, None, step=args.lie_step)
