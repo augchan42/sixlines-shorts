@@ -130,7 +130,7 @@
    "rate": 1,
    "zoom": 1,
    "focus": 0.6,
-   "text": "Decay is not the end.\nIt is work to do."
+   "text": "The reading applies it\nto your project."
   },
   {
    "beats": [
@@ -141,7 +141,7 @@
    "take": "take1",
    "from": 219.3,
    "rate": 1,
-   "text": "Classical commentary:\nWang Bi.",
+   "text": "Commentary by Wang Bi,\n3rd century.",
    "zoom": 1,
    "focus": 0.3
   },
@@ -157,7 +157,7 @@
    "zoom": 1,
    "focus": 0.3,
    "text": "The reading lists\nwhat would prove it wrong.",
-   "place": "bottom"
+   "place": "top"
   },
   {
    "beats": [
@@ -166,7 +166,7 @@
    ],
    "kind": "live",
    "take": "take1",
-   "from": 421,
+   "from": 423,
    "rate": 2.2,
    "zoom": 1,
    "focus": 0.8,
