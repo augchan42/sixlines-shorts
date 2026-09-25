@@ -1,0 +1,1162 @@
+{
+  "readers": [
+    [
+      {
+        "number": 1,
+        "meaning": "Something called Heaven works nonstop, every day. The picture shows a stack of lines split into two halves, both labelled heaven, so heaven on top of heaven. The point seems to be: keep going steadily, like the sky does.",
+        "clear": 4,
+        "guessed": "That the doubled 'heaven' labels are meant to explain the sentence; that it is advice to be persistent."
+      },
+      {
+        "number": 2,
+        "meaning": "If you feel frost under your feet, hard ice will follow. A small early sign warns of something bigger. The 'line 1' label (bottom line) seems to fit 'first sign'.",
+        "clear": 5,
+        "guessed": "That the bottom line means 'the beginning'."
+      },
+      {
+        "number": 3,
+        "meaning": "If you are hunting a deer and have no guide, stop chasing it and let it go, or you will get lost. Don't push into unknown ground without help.",
+        "clear": 4,
+        "guessed": "That it is a hunting scene and 'guide' means a person who knows the forest."
+      },
+      {
+        "number": 4,
+        "meaning": "A good teacher does not run after students; the student has to come and ask. The app page title 'Youthful Folly' supports it: the young fool must seek the teacher.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 5,
+        "meaning": "When people you did not invite show up, treat them well. It will probably turn out fine for you.",
+        "clear": 4,
+        "guessed": "What follows from receiving them well; the sentence does not say."
+      },
+      {
+        "number": 6,
+        "meaning": "Someone wins a prize (a belt, like a championship or a rank) and has it taken back the same day. Winning through a fight doesn't last.",
+        "clear": 3,
+        "guessed": "What kind of belt (boxing belt? official sash?) and that the loss comes from the conflict itself. 'By noon' I read as 'very quickly'."
+      },
+      {
+        "number": 7,
+        "meaning": "Water hidden under the ground. The picture labels earth on top and water below. I think it means a hidden reserve or force, maybe troops held in reserve, but I only get the image, not the lesson.",
+        "clear": 2,
+        "guessed": "The lesson. I would not connect it to an army unless I saw the title."
+      },
+      {
+        "number": 8,
+        "meaning": "A Renoir painting of friends eating together, and the sentence just describes it: friends at lunch, holding together. The message is that sharing meals keeps people close.",
+        "clear": 4,
+        "guessed": "That there is a lesson beyond the description; it reads more like a caption than a teaching."
+      },
+      {
+        "number": 9,
+        "meaning": "A cart's wheels come off and a husband and wife glare at each other. A breakdown causes a fight between partners.",
+        "clear": 3,
+        "guessed": "Whether the couple are the cause or just the victims; what I am supposed to take from it."
+      },
+      {
+        "number": 10,
+        "meaning": "There is a tiger's tail and it does not bite. I don't know what is happening: is someone stepping on it, holding it, following it? A tail can't bite anyway, so it reads oddly. Maybe: something that looks dangerous is harmless. I would not get that someone steps on the tail and the tiger still doesn't bite them.",
+        "clear": 2,
+        "guessed": "Who does what to the tail; that the tiger (not the tail) is what might bite; the idea of careful stepping."
+      },
+      {
+        "number": 11,
+        "meaning": "Every flat stretch of ground ends in a slope somewhere. Good times don't stay level forever; expect a downturn.",
+        "clear": 4,
+        "guessed": "That 'flat ground' means peace or good times."
+      },
+      {
+        "number": 12,
+        "meaning": "Good people leave and petty people take their place. A group or place goes downhill. The title Standstill on the app page fits a stuck, declining state.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 13,
+        "meaning": "People cry first and laugh later: a hard start that ends happily.",
+        "clear": 4,
+        "guessed": "Who is weeping and why; the picture gives no hint that it is about people reuniting."
+      },
+      {
+        "number": 14,
+        "meaning": "A big cart full of goods has a destination. When you have a lot, put it to use and move it somewhere.",
+        "clear": 3,
+        "guessed": "Whether it's advice (use your wealth) or just a good omen."
+      },
+      {
+        "number": 15,
+        "meaning": "Flatten the piles and fill in the holes: take from where there is too much and give to where there is too little. The picture has earth over mountain, which fits the idea of lowering what is high.",
+        "clear": 4,
+        "guessed": "That this means modesty or fairness; I read it as evening things out."
+      },
+      {
+        "number": 16,
+        "meaning": "If you brag or make a lot of noise about something, it fails. Keep quiet about your plans or success.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 17,
+        "meaning": "Even thunder goes quiet and rests inside the lake. The picture labels lake on top, thunder below. Even something powerful has to rest sometimes.",
+        "clear": 3,
+        "guessed": "The lesson: rest? go along with things? I picked rest."
+      },
+      {
+        "number": 18,
+        "meaning": "Spend three days planning before you act and three days checking after. Take care on both ends of a job.",
+        "clear": 4,
+        "guessed": "That the three days before and after are around starting the work; the title on the app page (decay) suggests fixing something broken."
+      },
+      {
+        "number": 19,
+        "meaning": "If you feel too comfortable, worry a bit. Being a little anxious keeps you out of trouble.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 20,
+        "meaning": "When you visit somewhere, look around like a guest, not like an inspector checking for faults. Observe with respect.",
+        "clear": 4,
+        "guessed": "The setting (visiting a court? a home?)."
+      },
+      {
+        "number": 21,
+        "meaning": "Give a clear warning first, and then act hard (punish) if they don't listen.",
+        "clear": 4,
+        "guessed": "That 'bite' means punishment or decisive action."
+      },
+      {
+        "number": 22,
+        "meaning": "Someone sees a white horse coming and fears it; actually it's a man coming to court, not an attacker. Don't mistake a suitor for a threat.",
+        "clear": 2,
+        "guessed": "Why a white horse would mean a suitor; I had to guess there was a fear being corrected. Without that it's just puzzling."
+      },
+      {
+        "number": 23,
+        "meaning": "When a bed collapses, the legs go first. Decay starts at the base, the lowest and least noticed part. The bottom line lit matches 'first, at the bottom'.",
+        "clear": 4,
+        "guessed": "That the lesson is 'watch the foundation'."
+      },
+      {
+        "number": 24,
+        "meaning": "On the winter solstice, kings stayed home and did not travel. Rest at the turning point of the year. The picture labels earth over thunder, which I can't connect.",
+        "clear": 3,
+        "guessed": "Why they stayed home and what I should do with this history fact; the thunder/earth link."
+      },
+      {
+        "number": 25,
+        "meaning": "Someone did nothing wrong and still lost their ox. Bad luck can hit innocent people.",
+        "clear": 4,
+        "guessed": "Whether the ox was stolen and someone else blamed; just 'bad things happen anyway'."
+      },
+      {
+        "number": 26,
+        "meaning": "Put a cap on a young calf's horns early, before they grow and it can hurt someone. Deal with a problem while it is still small.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 27,
+        "meaning": "Quit looking enviously at what someone else is eating. Stop envying others and look after your own food.",
+        "clear": 4,
+        "guessed": "That 'staring at the plate' means envy."
+      },
+      {
+        "number": 28,
+        "meaning": "Hokusai's Great Wave; you are in over your head, but it's not your fault. The situation is too big for anyone, so don't blame yourself.",
+        "clear": 4,
+        "guessed": "Whether it's comfort or a warning; I read it as comfort."
+      },
+      {
+        "number": 29,
+        "meaning": "You are down in a pit; don't settle in and get comfortable there. Don't accept a bad situation as normal.",
+        "clear": 4,
+        "guessed": "What the pit stands for."
+      },
+      {
+        "number": 30,
+        "meaning": "At the end of the day (or of life), don't party wildly and don't wail either. Face endings calmly.",
+        "clear": 3,
+        "guessed": "That sunset means old age or an ending; 'party or wail' as two extremes."
+      },
+      {
+        "number": 31,
+        "meaning": "Something starts in the big toes. I don't know what 'it' is: a feeling? an attraction? a movement? The bottom line lit suggests the start of something, felt first in the feet.",
+        "clear": 2,
+        "guessed": "What 'it' is. I'd guess attraction or influence starting small, but I'd be guessing."
+      },
+      {
+        "number": 32,
+        "meaning": "There is no game (animals to hunt) in this field, so move to another one. Stop persisting where nothing is happening.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 33,
+        "meaning": "If you are leaving, bring your people along. Don't abandon those who depend on you when you retreat.",
+        "clear": 4,
+        "guessed": "Whether 'your people' means staff, family or servants."
+      },
+      {
+        "number": 34,
+        "meaning": "You feel strength building in your toes, but don't kick yet. Don't use your power too early.",
+        "clear": 4,
+        "guessed": "That the toes mean 'at the lowest, earliest stage'."
+      },
+      {
+        "number": 35,
+        "meaning": "Don't advance the way a squirrel does. I'm not sure what a squirrel does wrong: grabbing, hoarding, darting forward nervously?",
+        "clear": 2,
+        "guessed": "What squirrel behaviour is meant; I'd guess greedy or jittery climbing."
+      },
+      {
+        "number": 36,
+        "meaning": "A prince pretended to be insane so he would not be killed. In dangerous times, hide what you are to survive.",
+        "clear": 4,
+        "guessed": "Which prince; the general lesson (hide your light) I inferred."
+      },
+      {
+        "number": 37,
+        "meaning": "A painting of a mother serving a meal and a child saying grace. The person who feeds the family is the one who holds it together.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 38,
+        "meaning": "Someone you took for an attacker is actually a suitor. You misread the stranger; they come to court, not to fight.",
+        "clear": 3,
+        "guessed": "The setting and who is misreading whom."
+      },
+      {
+        "number": 39,
+        "meaning": "If you go forward you hit a block; if you come back you get praised. When stuck, turning back is the right move.",
+        "clear": 4,
+        "guessed": "nothing much; format is terse but clear."
+      },
+      {
+        "number": 40,
+        "meaning": "If you ride along with a heavy load showing, thieves will come after you. Showing off wealth, or carrying more than your station, draws trouble.",
+        "clear": 4,
+        "guessed": "Whether 'riding with a load' means showing off or just carrying too much."
+      },
+      {
+        "number": 41,
+        "meaning": "Two small baskets are enough. You don't need a big offering; a modest amount will do.",
+        "clear": 3,
+        "guessed": "Baskets of what and for whom; I guessed an offering or gift."
+      },
+      {
+        "number": 42,
+        "meaning": "Be kind and don't keep track of what others owe you.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 43,
+        "meaning": "Before you act, tell the people in your own town first. Get your own side on board.",
+        "clear": 3,
+        "guessed": "Tell them what, and before what action."
+      },
+      {
+        "number": 44,
+        "meaning": "A thin pig will kick and cause trouble, so tie it up early. Restrain a small troublemaker before it grows.",
+        "clear": 4,
+        "guessed": "Why a lean pig specifically."
+      },
+      {
+        "number": 45,
+        "meaning": "After some trouble, one handshake and people are laughing together again. Reconciliation can be quick.",
+        "clear": 4,
+        "guessed": "That there was a falling out before; 'again' implies it."
+      },
+      {
+        "number": 46,
+        "meaning": "Go and visit someone higher up than you. Seek out a superior or mentor to rise.",
+        "clear": 4,
+        "guessed": "Why; the title 'Pushing Upward' filled it in."
+      },
+      {
+        "number": 47,
+        "meaning": "A lake that has no water in it. The picture labels lake over water, so the water is below, drained out. It's an image of being exhausted or stuck.",
+        "clear": 3,
+        "guessed": "The lesson; I only get the picture of emptiness."
+      },
+      {
+        "number": 48,
+        "meaning": "The well has been cleaned but no one drinks from it. Something good is ready and ignored; a talent going unused.",
+        "clear": 4,
+        "guessed": "That it's about unused talent."
+      },
+      {
+        "number": 49,
+        "meaning": "When you have a revolution, you set up a new calendar. A real change of order resets how time is counted.",
+        "clear": 3,
+        "guessed": "Whether it's advice or a historical fact."
+      },
+      {
+        "number": 50,
+        "meaning": "A cooking pot's legs break and the duke's dinner spills all over him. Someone failed at their job and it landed on their boss.",
+        "clear": 4,
+        "guessed": "That there is a pot at all ('legs' with 'dinner' made me guess a cauldron)."
+      },
+      {
+        "number": 51,
+        "meaning": "You're scared first, and laugh afterward. A shock that turns out fine.",
+        "clear": 4,
+        "guessed": "What causes the fear; the title 'Arousing' suggests a jolt, maybe thunder."
+      },
+      {
+        "number": 52,
+        "meaning": "Stillness begins in the back. Keep your back still and the rest follows? I'm not sure what it is asking.",
+        "clear": 2,
+        "guessed": "Why the back; whether it's meditation posture advice."
+      },
+      {
+        "number": 53,
+        "meaning": "A goose ends up in a tree, where it can't grip. Find somewhere flat to stand. When you're out of place, find stable footing.",
+        "clear": 3,
+        "guessed": "That geese can't perch; that the goose is 'you'."
+      },
+      {
+        "number": 54,
+        "meaning": "A princess was married off wearing a plainer dress than her companion (or bride's maid). Modesty from someone high-ranking.",
+        "clear": 3,
+        "guessed": "Plainer than whom; the wedding context comes only from the name, not the sentence."
+      },
+      {
+        "number": 55,
+        "meaning": "A huge house with no one living in it. Great wealth or size, but empty and lonely.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 56,
+        "meaning": "A traveller sets fire to the inn he's staying in. He ruins his own shelter through carelessness or arrogance.",
+        "clear": 4,
+        "guessed": "Accident or bad behaviour."
+      },
+      {
+        "number": 57,
+        "meaning": "If you say something too many times, it gets annoying. Repeating yourself backfires.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 58,
+        "meaning": "A painting of artists at a party raising glasses. They toast, then start talking about work. Joy among people who share a craft.",
+        "clear": 3,
+        "guessed": "The lesson: joy in shared talk? It reads as a caption."
+      },
+      {
+        "number": 59,
+        "meaning": "If you give up your small group or clique, more people will come together around you.",
+        "clear": 4,
+        "guessed": "nothing much."
+      },
+      {
+        "number": 60,
+        "meaning": "A lake can hold only so much water. Everything has limits; know yours.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 61,
+        "meaning": "Sincerity is so strong it reaches even pigs and fish. Honest feeling gets through to anyone.",
+        "clear": 4,
+        "guessed": "Why pigs and fish; I read them as 'the least likely creatures'."
+      },
+      {
+        "number": 62,
+        "meaning": "If you can't get to the king, go to the minister instead. Take the lesser route when the top is out of reach.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 63,
+        "meaning": "Fine silk wears down into rags. Even finished, good things decay; stay alert after success.",
+        "clear": 4,
+        "guessed": "The 'stay alert' part is my inference."
+      },
+      {
+        "number": 64,
+        "meaning": "A fox is almost across the river and gets its tail wet. Failing right at the end; don't relax before you've finished.",
+        "clear": 4,
+        "guessed": "That it's crossing water."
+      }
+    ],
+    [
+      {
+        "number": 1,
+        "meaning": "The sky, or whatever runs the world, keeps working every day without a break. Maybe that means I should keep at it too. The picture shows the same word, HEAVEN, twice, so I take it as 'all heaven, all the time'.",
+        "clear": 4,
+        "guessed": "that 'heaven' means the sky or nature and not God; that I am meant to copy it"
+      },
+      {
+        "number": 2,
+        "meaning": "If you feel frost under your feet, hard ice will follow. A small early sign tells you something bigger is coming, so notice it. I don't know what 'LINE 1' on the picture means.",
+        "clear": 4,
+        "guessed": "that it is a warning about small signs; what the lit 'line 1' has to do with it"
+      },
+      {
+        "number": 3,
+        "meaning": "If you are hunting without someone who knows the woods, let the deer get away instead of chasing it. Don't go into unknown ground without help.",
+        "clear": 3,
+        "guessed": "that it is about hunting and a guide who knows the forest; took a second read to see it as advice not to chase"
+      },
+      {
+        "number": 4,
+        "meaning": "A teacher doesn't run after pupils. The student has to come and ask. The picture shows an app page called 'Youthful Folly', so it is about the young learner making the first move.",
+        "clear": 4,
+        "guessed": "that the lesson is 'the learner must ask'; could also read as a complaint about teachers"
+      },
+      {
+        "number": 5,
+        "meaning": "When people turn up that you didn't invite, treat them well. It works out better than turning them away.",
+        "clear": 4,
+        "guessed": "what 'line 6' means; whether the guests are literal or a metaphor for trouble"
+      },
+      {
+        "number": 6,
+        "meaning": "Someone won a prize belt, maybe in a fight or an argument, and had it taken away the same day. A win you fought for doesn't last.",
+        "clear": 3,
+        "guessed": "what 'the belt' is (a boxing or wrestling belt?); who takes it back; that it is about conflict"
+      },
+      {
+        "number": 7,
+        "meaning": "There is water under the ground that no one can see. The picture shows earth on top, water below. I don't get what it tells me to do. Maybe hidden strength or hidden resources.",
+        "clear": 2,
+        "guessed": "the whole point; it reads as a description, not a lesson"
+      },
+      {
+        "number": 8,
+        "meaning": "The Renoir painting of friends eating together on a terrace, and the sentence just says what it shows: friends at lunch, sticking together. Nice, but it tells me nothing new.",
+        "clear": 4,
+        "guessed": "nothing; the sentence is plain, only unsure if there is a lesson beyond 'friends stick together'"
+      },
+      {
+        "number": 9,
+        "meaning": "A cart loses its wheels and a husband and wife glare at each other. A breakdown leads to a fight at home.",
+        "clear": 3,
+        "guessed": "that the cart is theirs and the breakdown causes the glaring; what the lesson is"
+      },
+      {
+        "number": 10,
+        "meaning": "There is a tiger's tail and it doesn't bite. I read it as: the tail is harmless, the danger is at the other end. Or maybe: the thing you fear is less dangerous than it looks. Nothing says that someone steps on the tail and the tiger still doesn't bite. I would not get that.",
+        "clear": 2,
+        "guessed": "who is near the tail and what they do to it (nobody is said to step on it); whether 'it' is the tail or the tiger; whether the point is 'harmless' or 'you got lucky'"
+      },
+      {
+        "number": 11,
+        "meaning": "Every flat stretch of ground ends in a slope somewhere. Good times don't stay level; a downturn always comes.",
+        "clear": 4,
+        "guessed": "that it means good times end; could also mean 'no success without effort'"
+      },
+      {
+        "number": 12,
+        "meaning": "Good people leave and petty, small-minded people take their place. Things are going bad in a group or a place.",
+        "clear": 4,
+        "guessed": "where this happens (office, government?)"
+      },
+      {
+        "number": 13,
+        "meaning": "People cry first and laugh later. A sad or hard start ends in happiness.",
+        "clear": 4,
+        "guessed": "who is crying and why; the title 'Fellowship' isn't shown so I don't link it to friends meeting again"
+      },
+      {
+        "number": 14,
+        "meaning": "You have a large cart full of goods and a place to take it. You have plenty and a purpose for it.",
+        "clear": 3,
+        "guessed": "that the cart stands for wealth or resources; the lesson is soft"
+      },
+      {
+        "number": 15,
+        "meaning": "Flatten the piles and fill the holes: take from where there is too much and give to where there is too little. Evening things out.",
+        "clear": 3,
+        "guessed": "that it is about fairness or modesty, not road work"
+      },
+      {
+        "number": 16,
+        "meaning": "If you boast about something, it goes wrong. Keep quiet about your plans or your luck.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 17,
+        "meaning": "Even thunder goes quiet inside a lake. Something loud and strong knows when to rest. The picture shows lake on top, thunder underneath, which I'd only half connect.",
+        "clear": 2,
+        "guessed": "what 'thunder rests in the lake' means physically; that the lesson is 'even strong things rest'"
+      },
+      {
+        "number": 18,
+        "meaning": "Spend three days planning and three days checking afterwards. Be careful before and after you act.",
+        "clear": 4,
+        "guessed": "what the job is; the 'decayed' in the app page title suggests fixing something old"
+      },
+      {
+        "number": 19,
+        "meaning": "If you feel too comfortable, worry a bit. Being a little anxious keeps you from getting careless.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 20,
+        "meaning": "When you look around somewhere, act like a visitor, not someone checking for faults. Observe politely.",
+        "clear": 4,
+        "guessed": "where you are looking (a country, a workplace, someone's home?)"
+      },
+      {
+        "number": 21,
+        "meaning": "Give a clear warning first, then act hard (bite). Punish only after warning.",
+        "clear": 4,
+        "guessed": "that 'bite' means punish or act firmly"
+      },
+      {
+        "number": 22,
+        "meaning": "A white horse is coming, and it is not a threat but someone come to court you. Don't mistake a visitor for danger.",
+        "clear": 2,
+        "guessed": "why a white horse would look like a threat; who owns it; the 'suitor' reveal only makes sense if I assume a rider"
+      },
+      {
+        "number": 23,
+        "meaning": "When a bed falls apart, the legs go first. Collapse starts at the bottom, in small places.",
+        "clear": 4,
+        "guessed": "that the bed stands for anything that decays; that the lesson is to watch the base"
+      },
+      {
+        "number": 24,
+        "meaning": "In old times kings stayed home at the winter solstice. At the turning point of the year, rest instead of travel.",
+        "clear": 2,
+        "guessed": "why they stayed home; what I should do with that; which kings"
+      },
+      {
+        "number": 25,
+        "meaning": "Someone did nothing wrong and still lost their ox. Bad luck hits innocent people too.",
+        "clear": 4,
+        "guessed": "who lost it and how (stolen?)"
+      },
+      {
+        "number": 26,
+        "meaning": "Put a cap on a young calf's horns before they grow. Stop a problem while it is still small.",
+        "clear": 4,
+        "guessed": "that 'cap' means a guard on the horn tips"
+      },
+      {
+        "number": 27,
+        "meaning": "Stop looking at what other people are eating. Mind your own food, don't envy others.",
+        "clear": 4,
+        "guessed": "that 'plate' stands for what others have"
+      },
+      {
+        "number": 28,
+        "meaning": "Over the Hokusai wave: you are in over your head, and it isn't your fault. The situation is simply too big.",
+        "clear": 4,
+        "guessed": "whether it is comforting me or telling me to act"
+      },
+      {
+        "number": 29,
+        "meaning": "Don't get comfortable at the bottom of a hole. If you are in a bad place, don't accept it as normal.",
+        "clear": 4,
+        "guessed": "that the pit is a bad situation"
+      },
+      {
+        "number": 30,
+        "meaning": "When the sun goes down, don't celebrate wildly and don't cry either. At an ending, stay calm.",
+        "clear": 3,
+        "guessed": "that sunset means old age or an ending; 'party or wail' took a second read"
+      },
+      {
+        "number": 31,
+        "meaning": "Something begins in the big toes. I'd guess a feeling or attraction starts small, from the ground up. I don't really know what 'it' is.",
+        "clear": 2,
+        "guessed": "what 'it' is (a movement, an attraction, a shiver?)"
+      },
+      {
+        "number": 32,
+        "meaning": "There is nothing to hunt in this field, so go somewhere else. Stop sticking with something that isn't paying off.",
+        "clear": 4,
+        "guessed": "that 'game' means animals to hunt, not a game"
+      },
+      {
+        "number": 33,
+        "meaning": "If you are leaving, take the people who depend on you with you. Don't abandon your team.",
+        "clear": 4,
+        "guessed": "who 'your people' are"
+      },
+      {
+        "number": 34,
+        "meaning": "You feel strength in your toes, but don't kick yet. Power at the start should be held back.",
+        "clear": 3,
+        "guessed": "that toes stand for the very beginning; odd image"
+      },
+      {
+        "number": 35,
+        "meaning": "Don't push ahead the way a squirrel does. I'm not sure what squirrel behaviour is meant: darting, hoarding, being greedy?",
+        "clear": 2,
+        "guessed": "what 'like a squirrel' means"
+      },
+      {
+        "number": 36,
+        "meaning": "A prince pretended to be insane so he wouldn't be killed. Sometimes you have to hide yourself to survive a bad ruler.",
+        "clear": 4,
+        "guessed": "who the prince is; the lesson behind the story"
+      },
+      {
+        "number": 37,
+        "meaning": "Over a painting of a mother and children at a meal: the person who feeds the family holds it together.",
+        "clear": 4,
+        "guessed": "nothing much"
+      },
+      {
+        "number": 38,
+        "meaning": "The person you thought was attacking you is actually courting you. You misread someone.",
+        "clear": 3,
+        "guessed": "who is coming and why I thought they were an attacker"
+      },
+      {
+        "number": 39,
+        "meaning": "If you push forward, you get stuck; if you turn back, people praise you. Sometimes going back is the right move.",
+        "clear": 4,
+        "guessed": "nothing much"
+      },
+      {
+        "number": 40,
+        "meaning": "If you travel showing off a load of goods, thieves will come for you. Showing wealth draws trouble.",
+        "clear": 4,
+        "guessed": "that 'load' means valuables on display"
+      },
+      {
+        "number": 41,
+        "meaning": "Two small baskets are enough. You don't need a lot; a modest offering will do.",
+        "clear": 3,
+        "guessed": "what the baskets are for (food, an offering?)"
+      },
+      {
+        "number": 42,
+        "meaning": "Be kind to people and don't count what you get back.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 43,
+        "meaning": "Tell your own town first. Before announcing something widely, start with the people at home.",
+        "clear": 2,
+        "guessed": "what I am telling them (news, a warning, an accusation?)"
+      },
+      {
+        "number": 44,
+        "meaning": "A thin pig will kick and cause trouble, so tie it up early. Control a small nuisance before it gets bigger.",
+        "clear": 3,
+        "guessed": "why a lean pig specifically"
+      },
+      {
+        "number": 45,
+        "meaning": "After a falling-out, one handshake and people are laughing together again. Making up can be quick.",
+        "clear": 3,
+        "guessed": "that there was a quarrel before"
+      },
+      {
+        "number": 46,
+        "meaning": "Go and visit someone higher up than you, like a boss or mentor. Seek out people above you.",
+        "clear": 4,
+        "guessed": "why; the 'Pushing Upward' title helps"
+      },
+      {
+        "number": 47,
+        "meaning": "A lake with no water in it. The picture shows lake above, water below, so maybe the water has drained out. A picture of being empty or exhausted, but no lesson.",
+        "clear": 2,
+        "guessed": "what it means for me; it's just an image"
+      },
+      {
+        "number": 48,
+        "meaning": "The well has clean water but nobody drinks from it. Something good goes unused or unnoticed.",
+        "clear": 4,
+        "guessed": "that the well stands for a person or talent"
+      },
+      {
+        "number": 49,
+        "meaning": "When you make a revolution, you start a new calendar. Big change means resetting how you count time, starting fresh.",
+        "clear": 3,
+        "guessed": "whether it's history (French revolution?) or advice"
+      },
+      {
+        "number": 50,
+        "meaning": "The cooking pot's legs break and the food spills on the duke. You fail at an important job and it lands on your boss.",
+        "clear": 3,
+        "guessed": "that it's a pot with legs; 'wears dinner' is funny but it took a second"
+      },
+      {
+        "number": 51,
+        "meaning": "Something scares you first, and afterwards you laugh. A shock turns into relief.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 52,
+        "meaning": "To be still, start by relaxing or holding your back. Stillness begins in the body.",
+        "clear": 2,
+        "guessed": "why the back; is it meditation posture?"
+      },
+      {
+        "number": 53,
+        "meaning": "A goose ends up in a tree, where it doesn't belong; it should find a flat branch to stand on. When you're out of place, find somewhere steady.",
+        "clear": 2,
+        "guessed": "why a goose is in a tree; what it stands for"
+      },
+      {
+        "number": 54,
+        "meaning": "A princess wore a simpler dress than someone else, maybe her maid. High rank doesn't need showing off.",
+        "clear": 3,
+        "guessed": "plainer than whose dress"
+      },
+      {
+        "number": 55,
+        "meaning": "A big house with nobody in it. Wealth or size without people is empty.",
+        "clear": 4,
+        "guessed": "nothing much"
+      },
+      {
+        "number": 56,
+        "meaning": "A traveller sets fire to the inn he's staying at. When you're a guest, you can ruin your own shelter by being careless.",
+        "clear": 3,
+        "guessed": "whether it's an accident or anger; the lesson"
+      },
+      {
+        "number": 57,
+        "meaning": "If you say something too many times, it gets annoying. Repeating yourself backfires.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 58,
+        "meaning": "Over the Krøyer party painting: artists raise a toast and then talk about work. Joy among people who share work.",
+        "clear": 3,
+        "guessed": "the lesson; it mostly describes the painting"
+      },
+      {
+        "number": 59,
+        "meaning": "If you leave your little group or clique, more people will come to you. Dropping sides makes you more welcome.",
+        "clear": 3,
+        "guessed": "what 'faction' means here; took a second to see the cause and effect"
+      },
+      {
+        "number": 60,
+        "meaning": "A lake can only hold so much water. Everything has limits; know yours.",
+        "clear": 5,
+        "guessed": "nothing"
+      },
+      {
+        "number": 61,
+        "meaning": "Honesty reaches even pigs and fish. Sincerity works on everyone, even the least likely.",
+        "clear": 3,
+        "guessed": "why pigs and fish"
+      },
+      {
+        "number": 62,
+        "meaning": "If you can't get to the king, go to his minister. Take the smaller route when the big one is closed.",
+        "clear": 4,
+        "guessed": "nothing much"
+      },
+      {
+        "number": 63,
+        "meaning": "Fine silk wears out into rags. Good things decay once they are finished.",
+        "clear": 4,
+        "guessed": "that it's about decline after success"
+      },
+      {
+        "number": 64,
+        "meaning": "A fox crossing a river gets wet just before reaching the other side. You can fail right at the end.",
+        "clear": 4,
+        "guessed": "that the fox is crossing water; 'almost across' implies it"
+      }
+    ]
+  ],
+  "verdicts": [
+    {
+      "number": 1,
+      "verdict": "clear",
+      "why": "Both read it as heaven working without a break and themselves meant to keep going, which is the Image.",
+      "rewrite": ""
+    },
+    {
+      "number": 2,
+      "verdict": "clear",
+      "why": "Both got that a small early sign warns of something bigger coming.",
+      "rewrite": ""
+    },
+    {
+      "number": 3,
+      "verdict": "clear",
+      "why": "Both got that without a guide you let the deer go rather than chase it into the forest.",
+      "rewrite": ""
+    },
+    {
+      "number": 4,
+      "verdict": "clear",
+      "why": "Both got that the learner has to seek the teacher, as the Judgment says.",
+      "rewrite": ""
+    },
+    {
+      "number": 5,
+      "verdict": "clear",
+      "why": "Both got that you treat uninvited guests well and it ends well.",
+      "rewrite": ""
+    },
+    {
+      "number": 6,
+      "verdict": "clear",
+      "why": "Both got that a win taken by fighting is taken back fast; the kind of belt does not matter to the point.",
+      "rewrite": ""
+    },
+    {
+      "number": 7,
+      "verdict": "unclear",
+      "why": "Both saw hidden water and no lesson; the Image says the water in the earth is the army, so the leader cares for the people.",
+      "rewrite": "Look after people.\nThey're your army."
+    },
+    {
+      "number": 8,
+      "verdict": "clear",
+      "why": "Both got friends holding together at a shared table; it reads as a caption, but the point lands.",
+      "rewrite": ""
+    },
+    {
+      "number": 9,
+      "verdict": "clear",
+      "why": "Both got that when the cart breaks, husband and wife turn on each other.",
+      "rewrite": ""
+    },
+    {
+      "number": 10,
+      "verdict": "misread",
+      "why": "Both read a harmless tail or a danger that is less than it looks; nothing says someone steps on the tail and the tiger still does not bite them.",
+      "rewrite": "Stood on a tiger's\ntail. Not bitten."
+    },
+    {
+      "number": 11,
+      "verdict": "clear",
+      "why": "Both got that level times always tilt somewhere.",
+      "rewrite": ""
+    },
+    {
+      "number": 12,
+      "verdict": "clear",
+      "why": "Both got the good leaving and the petty taking their place.",
+      "rewrite": ""
+    },
+    {
+      "number": 13,
+      "verdict": "unclear",
+      "why": "Both got a sad start with a happy end, but not that the tears come from being apart and the laughter from meeting again.",
+      "rewrite": "Parted, they weep.\nMet, they laugh."
+    },
+    {
+      "number": 14,
+      "verdict": "clear",
+      "why": "Both got plenty plus a place to take it; the point is soft but matches the source.",
+      "rewrite": ""
+    },
+    {
+      "number": 15,
+      "verdict": "clear",
+      "why": "Both got taking from excess and adding to lack, which is the Image.",
+      "rewrite": ""
+    },
+    {
+      "number": 16,
+      "verdict": "clear",
+      "why": "Both got that shouting about it makes it go wrong.",
+      "rewrite": ""
+    },
+    {
+      "number": 17,
+      "verdict": "clear",
+      "why": "Both took it as even strong things rest, which is the stated point (energy resting in stillness).",
+      "rewrite": ""
+    },
+    {
+      "number": 18,
+      "verdict": "clear",
+      "why": "Both got time before and time after the work.",
+      "rewrite": ""
+    },
+    {
+      "number": 19,
+      "verdict": "clear",
+      "why": "Both got that a little worry stops comfort from turning careless.",
+      "rewrite": ""
+    },
+    {
+      "number": 20,
+      "verdict": "clear",
+      "why": "Both got observing like a courteous visitor, not a fault-finder.",
+      "rewrite": ""
+    },
+    {
+      "number": 21,
+      "verdict": "clear",
+      "why": "Both got clear warning first, then firm action.",
+      "rewrite": ""
+    },
+    {
+      "number": 22,
+      "verdict": "unclear",
+      "why": "Both had to guess that the white horse was feared as an attack; the sentence gives the answer without the fear.",
+      "rewrite": "White horse? Not a\nraider. A suitor."
+    },
+    {
+      "number": 23,
+      "verdict": "clear",
+      "why": "Both got that collapse starts at the base.",
+      "rewrite": ""
+    },
+    {
+      "number": 24,
+      "verdict": "unclear",
+      "why": "Both got 'rest at the turn of the year' but asked why; the Image stills everything so the returning energy can come back.",
+      "rewrite": "Midwinter: rest.\nThe light returns."
+    },
+    {
+      "number": 25,
+      "verdict": "clear",
+      "why": "Both got that innocence does not protect you from loss.",
+      "rewrite": ""
+    },
+    {
+      "number": 26,
+      "verdict": "clear",
+      "why": "Both got restraining a problem before it can do harm.",
+      "rewrite": ""
+    },
+    {
+      "number": 27,
+      "verdict": "clear",
+      "why": "Both got stop envying what others have and mind your own.",
+      "rewrite": ""
+    },
+    {
+      "number": 28,
+      "verdict": "clear",
+      "why": "Both got in over your head, not your fault.",
+      "rewrite": ""
+    },
+    {
+      "number": 29,
+      "verdict": "clear",
+      "why": "Both got don't settle into a bad situation.",
+      "rewrite": ""
+    },
+    {
+      "number": 30,
+      "verdict": "clear",
+      "why": "Both got meeting an ending with neither wild celebration nor wailing.",
+      "rewrite": ""
+    },
+    {
+      "number": 31,
+      "verdict": "unclear",
+      "why": "Neither could tell what 'it' is; the line is influence or attraction first stirring at the lowest point.",
+      "rewrite": "Attraction starts\nin the big toes."
+    },
+    {
+      "number": 32,
+      "verdict": "clear",
+      "why": "Both got stop persisting where nothing pays off.",
+      "rewrite": ""
+    },
+    {
+      "number": 33,
+      "verdict": "clear",
+      "why": "Both got keep your dependents with you when you retreat.",
+      "rewrite": ""
+    },
+    {
+      "number": 34,
+      "verdict": "clear",
+      "why": "Both got power at the start, but don't advance yet.",
+      "rewrite": ""
+    },
+    {
+      "number": 35,
+      "verdict": "unclear",
+      "why": "Neither could tell what the squirrel does wrong; the line means sneaky, grabbing progress that everyone sees for what it is.",
+      "rewrite": "Sneak like a\nsquirrel? Seen."
+    },
+    {
+      "number": 36,
+      "verdict": "clear",
+      "why": "Both got hiding yourself to survive a dangerous ruler.",
+      "rewrite": ""
+    },
+    {
+      "number": 37,
+      "verdict": "clear",
+      "why": "Both got the one who feeds the family holds it together.",
+      "rewrite": ""
+    },
+    {
+      "number": 38,
+      "verdict": "clear",
+      "why": "Both got that the feared attacker was someone coming to propose; the setting was a guess but the point landed. (Near-duplicate of 22's point.)",
+      "rewrite": ""
+    },
+    {
+      "number": 39,
+      "verdict": "clear",
+      "why": "Both got that pushing on is blocked and turning back is praised.",
+      "rewrite": ""
+    },
+    {
+      "number": 40,
+      "verdict": "clear",
+      "why": "Both got that riding with a visible load draws thieves.",
+      "rewrite": ""
+    },
+    {
+      "number": 41,
+      "verdict": "clear",
+      "why": "Both got that a modest offering is enough.",
+      "rewrite": ""
+    },
+    {
+      "number": 42,
+      "verdict": "clear",
+      "why": "Both got be kind and don't count the return.",
+      "rewrite": ""
+    },
+    {
+      "number": 43,
+      "verdict": "unclear",
+      "why": "Both asked tell them what, before what; the Judgment says warn your own city and don't take up arms.",
+      "rewrite": "Warn your town.\nLeave the weapons."
+    },
+    {
+      "number": 44,
+      "verdict": "clear",
+      "why": "Both got restrain the small troublemaker early.",
+      "rewrite": ""
+    },
+    {
+      "number": 45,
+      "verdict": "clear",
+      "why": "Both got quick reconciliation after a falling-out.",
+      "rewrite": ""
+    },
+    {
+      "number": 46,
+      "verdict": "clear",
+      "why": "Both got go see someone above you.",
+      "rewrite": ""
+    },
+    {
+      "number": 47,
+      "verdict": "unclear",
+      "why": "Both got only an empty lake; the Image says that under oppression the realized person stakes their life on their purpose.",
+      "rewrite": "Lake gone dry?\nHold to your aim."
+    },
+    {
+      "number": 48,
+      "verdict": "clear",
+      "why": "Both got something good ready and unused.",
+      "rewrite": ""
+    },
+    {
+      "number": 49,
+      "verdict": "clear",
+      "why": "Both got that a real change resets the calendar.",
+      "rewrite": ""
+    },
+    {
+      "number": 50,
+      "verdict": "clear",
+      "why": "Both got the broken setup spilling onto the duke.",
+      "rewrite": ""
+    },
+    {
+      "number": 51,
+      "verdict": "clear",
+      "why": "Both got fear first, then laughter.",
+      "rewrite": ""
+    },
+    {
+      "number": 52,
+      "verdict": "unclear",
+      "why": "Both asked why the back; the point is stilling the part you can't see, not only what shows.",
+      "rewrite": "Still the back,\nnot just the face."
+    },
+    {
+      "number": 53,
+      "verdict": "clear",
+      "why": "Both got that when out of place you find steady footing.",
+      "rewrite": ""
+    },
+    {
+      "number": 54,
+      "verdict": "clear",
+      "why": "Both got high rank dressing plainer; plainer than whom was a guess but not the point.",
+      "rewrite": ""
+    },
+    {
+      "number": 55,
+      "verdict": "clear",
+      "why": "Both got a huge house that is empty.",
+      "rewrite": ""
+    },
+    {
+      "number": 56,
+      "verdict": "clear",
+      "why": "Both got a guest wrecking his own shelter.",
+      "rewrite": ""
+    },
+    {
+      "number": 57,
+      "verdict": "clear",
+      "why": "Both got that repeating yourself backfires.",
+      "rewrite": ""
+    },
+    {
+      "number": 58,
+      "verdict": "clear",
+      "why": "Both got joy among people who share work, which is the Image's point; it reads as a caption.",
+      "rewrite": ""
+    },
+    {
+      "number": 59,
+      "verdict": "clear",
+      "why": "Both got dropping your faction draws more people.",
+      "rewrite": ""
+    },
+    {
+      "number": 60,
+      "verdict": "clear",
+      "why": "Both got limits and knowing yours.",
+      "rewrite": ""
+    },
+    {
+      "number": 61,
+      "verdict": "clear",
+      "why": "Both got sincerity reaching even the least likely.",
+      "rewrite": ""
+    },
+    {
+      "number": 62,
+      "verdict": "clear",
+      "why": "Both got taking the tier below when the top is out of reach.",
+      "rewrite": ""
+    },
+    {
+      "number": 63,
+      "verdict": "clear",
+      "why": "Both got good things decaying after completion.",
+      "rewrite": ""
+    },
+    {
+      "number": 64,
+      "verdict": "clear",
+      "why": "Both got failing at the last step.",
+      "rewrite": ""
+    }
+  ]
+}
