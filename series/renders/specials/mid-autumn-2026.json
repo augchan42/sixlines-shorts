@@ -1,0 +1,66 @@
+{
+ "hexagram": 20,
+ "special": "mid-autumn-2026",
+ "rendered": "2026-09-25T02:42:48.767Z",
+ "commit": "25242497dfc957869acd35d808c1468225603431",
+ "clean": true,
+ "seconds": 32.896,
+ "shareKbps": 5465,
+ "props": {
+  "hexagram": {
+   "number": 20,
+   "zh": "觀",
+   "pinyin": "Guān",
+   "name": "Contemplation",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ]
+  },
+  "bpm": 95,
+  "firstBeat": 0,
+  "music": "local/music/pick11-retro-synth-pop.mp3",
+  "musicStart": 65.943,
+  "drop": 15.16,
+  "hook": "Looking at the moon tonight?",
+  "meaning": [
+   "Contemplation:\nlook up, slowly.",
+   "The pause before\nthe offering."
+  ],
+  "question": "Who are you\nwatching it with?",
+  "plates": [
+   "assets/yilin/stipple-20-19.webp",
+   "assets/yilin/stipple-20-51.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "painting",
+   "text": "Chang’e, flying\nto the moon.",
+   "painting": {
+    "src": "assets/paintings/mid-autumn-2026.jpg",
+    "credit": "YOSHITOSHI · 1885"
+   }
+  },
+  "pace": "held",
+  "hexagramClip": "assets/3d/hexagram-000011-95bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-000011-95bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick11-retro-synth-pop.mp3": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+  "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+  "assets/3d/hexagram-000011-95bpm-8b.mp4": "04d08c11482dece5ec9582f18b17f6b109e6c990c358ee6d6bf67624d5a3b8bf",
+  "assets/3d/endcard-snap-000011-95bpm-9b.mp4": "008b080fd9ecc2e8fe8507b4358f348117ed6fbd18e27bfd9b253ad8e9041f2b",
+  "assets/paintings/mid-autumn-2026.jpg": "26acbaf8dde5d2c91cb7bc49f4777ef30bcf038c8e7d1ef4d107fe506c79a9e2",
+  "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
+  "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
+  "out/specials/mid-autumn-2026/short.mp4": "52a556177965dd29297f5c8db24d8c82dd807f474e3367bc33bae13ae7eb40cf",
+  "out/specials/mid-autumn-2026/share.mp4": "686e07cbd5d741f3feab9d0fe700b4d081d4f2aea3438ebd4b83e6b2c50d6a28"
+ }
+}
