@@ -85,3 +85,8 @@ export const renderAll = async (numbers, renderOne) => {
   }
   return { done, failures };
 };
+
+// Where an earlier render of a short is kept before a new one replaces it: under versions/,
+// named by its manifest's render time and the commit it was rendered from.
+export const versionDir = (series, name, manifest) =>
+  `${series}/versions/${name}/${manifest.rendered.replace(/\.\d+Z$/, "Z").replaceAll(":", "-")}-${manifest.commit.slice(0, 7)}`;

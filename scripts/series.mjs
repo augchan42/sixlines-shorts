@@ -1,14 +1,15 @@
 // Renders series shorts: npm run series -- 29 | 2,52 | all
 // Per short, out/series/NN-pinyin/ gets short.mp4, share.mp4, caption.txt, props.json and
 // manifest.json; the manifest and caption are also copied to series/renders/ for committing.
+// An earlier render there moves to out/series/versions/NN-pinyin/<time>-<commit>/ first.
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { overrides } from "../src/series/overrides.ts";
 import { seriesProps } from "../src/series/props.ts";
 import { postCaption } from "./series/caption.mjs";
-import { missingAssets, parseNumbers, renderAll, shareBitrate, slug } from "./series/render-lib.mjs";
+import { missingAssets, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const pub = (f) => path.join(root, "public", f);
@@ -30,7 +31,15 @@ const renderOne = async (n) => {
   if (problems.length) throw new Error(problems.join("\n  "));
 
   const nn = String(n).padStart(2, "0");
-  const dir = path.join(root, "out/series", `${nn}-${slug(row.pinyin)}`);
+  const name = `${nn}-${slug(row.pinyin)}`;
+  const dir = path.join(root, "out/series", name);
+  // Keep the earlier render rather than overwrite it.
+  if (existsSync(path.join(dir, "manifest.json"))) {
+    const kept = path.join(root, versionDir("out/series", name, JSON.parse(readFileSync(path.join(dir, "manifest.json"), "utf8"))));
+    mkdirSync(path.dirname(kept), { recursive: true });
+    renameSync(dir, kept);
+    console.log(`[${n}] kept the earlier render in ${path.relative(root, kept)}`);
+  }
   mkdirSync(dir, { recursive: true });
   const propsFile = path.join(dir, "props.json");
   writeFileSync(propsFile, JSON.stringify(props, null, 1));

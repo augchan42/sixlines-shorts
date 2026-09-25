@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { clipJobs, missingAssets, parseNumbers, renderAll, screenFiles, shareBitrate, slug } from "../scripts/series/render-lib.mjs";
+import { clipJobs, missingAssets, parseNumbers, renderAll, screenFiles, shareBitrate, slug, versionDir } from "../scripts/series/render-lib.mjs";
 
 test("hexagram arguments are a number, a list, or all", () => {
   assert.deepEqual(parseNumbers("29"), [29]);
@@ -69,4 +69,9 @@ test("all mode renders the rest and lists the failures", async () => {
     if (n === 2) throw new Error("no clip");
   });
   assert.deepEqual(r, { done: [1, 3], failures: [{ n: 2, message: "no clip" }] });
+});
+
+test("an earlier render is kept under versions/, named by when and from which commit it was rendered", () => {
+  const m = { rendered: "2026-09-24T23:52:42.077Z", commit: "9aa6a36eeb6368464b2bda217148bf2d1dfa12d0" };
+  assert.equal(versionDir("out/series", "08-bi", m), "out/series/versions/08-bi/2026-09-24T23-52-42Z-9aa6a36");
 });
