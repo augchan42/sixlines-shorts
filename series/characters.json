@@ -63,6 +63,15 @@
       "bpm": 95,
       "beats": 12,
       "args": { "walls": [0, 1, 2, 3], "moon": [4, 5, 6, 7], "phases": [0, 0, 130], "wallHeight": 0.8, "glassWalls": true, "camera": "high", "zoom": 1.4, "edge": "#ff5ec8", "water": "#fff1c4" }
+    },
+    {
+      "number": 50,
+      "char": "鼎",
+      "story": "The legs rise; a fire is lit among them; the bowl, drawn high above, drops onto them.",
+      "sentence": "A steady base\nlets things cook",
+      "bpm": 95,
+      "beats": 12,
+      "args": { "walls": [5, 6, 7, 8, 9, 10, 11], "pool": [476, 150], "drop": [0, 1, 2, 3, 4], "wallStep": 0.5, "wallHeight": 0.9, "glassWalls": true, "camera": "high", "zoom": 1.8, "edge": "#ff5ec8", "water": "#ff8a3d" }
     }
   ]
 }

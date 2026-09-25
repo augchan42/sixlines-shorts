@@ -11,6 +11,7 @@ in the stroke's own shape, with the neon along their top edge.
   in three strains (for 屯, a sprout) before it lies down.
 - --moon: a moon between the walls goes from new to full and back (for 恆), then sets
   into these strokes; --last draws lying strokes at the end (恆's heart).
+- --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
 The camera starts beside the strokes, where they read as things, and cranes up to look
@@ -60,6 +61,7 @@ def parse():
     p.add_argument("--glass-walls", action="store_true", help="walls of smoked glass, not obsidian")
     p.add_argument("--moon", default="", help="stroke indices a phasing moon sets into, between the walls")
     p.add_argument("--phases", default="180,0,-180", help="the moon's turns, 1.5 beats apart: 180 is new, 0 full")
+    p.add_argument("--drop", default="", help="strokes traced high above, which then fall to their place")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
@@ -284,8 +286,8 @@ def ripple(x, y, args, f, beat):
         glow.keyframe_insert("default_value", frame=g + 1)
 
 
-def lie(ids, paths, t, beat, colour, smoke, pivot):
-    """Draws strokes lying on the floor (or on the pivot) 0.9 beat apart from frame `t`;
+def lie(ids, paths, t, beat, colour, smoke, pivot, step=0.9):
+    """Draws strokes lying on the floor (or on the pivot) `step` beats apart from frame `t`;
     returns the frame after them and their glow strengths."""
     glows = []
     for i in ids:
@@ -297,7 +299,7 @@ def lie(ids, paths, t, beat, colour, smoke, pivot):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
         glows.append(strength)
-        t += round(0.9 * beat)
+        t += round(step * beat)
     return t, glows
 
 
@@ -362,6 +364,30 @@ def phases(ids, medians, paths, t, beat, args, smoke):
             strength.keyframe_insert("default_value", frame=f + 1)
         glows.append(strength)
     return b(1.6), glows
+
+
+def fall(ids, medians, paths, t, beat, colour, smoke):
+    """For 鼎: strokes traced 3.5 m up, one after another from frame `t`, fall together to
+    their place, land with a small bounce and flare. Returns the frame after and their glows."""
+    x, y, _, _ = centre([p for i in ids for p in medians[i]])
+    parent = bpy.data.objects.new("drop", None)
+    bpy.context.scene.collection.objects.link(parent)
+    parent.location = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, 0)
+    high = 3.5
+    t, glows = lie(ids, paths, t, beat, colour, smoke, parent, step=0.5)
+    # Falling: height goes as 1 - (time/fall)^2, sampled so the curve accelerates.
+    fall_ = 0.6 * beat
+    keys = [(0, high), (t, high)] + [(t + round(fall_ * k / 4), high * (1 - (k / 4) ** 2)) for k in range(1, 5)]
+    land = t + round(fall_)
+    keys += [(land + round(0.15 * beat), 0.12), (land + round(0.3 * beat), 0.0)]
+    for f, z in keys:
+        parent.location.z = z
+        key(parent, "location", f, index=2)
+    for strength in glows:
+        for f, v in ((land - 1, REST), (land + 2, PULSE), (land + round(beat), REST * 1.5)):
+            strength.default_value = v
+            strength.keyframe_insert("default_value", frame=f + 1)
+    return land + round(0.6 * beat), glows
 
 
 def water(spill, medians, paths, walls, args, t, beat):
@@ -431,7 +457,8 @@ def main():
     t = round(0.5 * beat)
     moon = [int(i) for i in args.moon.split(",") if i]
     last = [i for i in order if i in {int(i) for i in args.last.split(",") if i}]
-    lying = [i for i in order if i not in walls and i not in spill and i not in moon and i not in last]
+    drop = [i for i in order if i in {int(i) for i in args.drop.split(",") if i}]
+    lying = [i for i in order if i not in walls and i not in spill and i not in moon and i not in last and i not in drop]
     rising = [i for i in order if i in walls]
     # Standing, the lying strokes turn up about the lowest point of the first one (a trunk's foot).
     pivot = None
@@ -476,6 +503,9 @@ def main():
                     strength.keyframe_insert("default_value", frame=f + 1)
             t += round(beat)
             key(pivot, "location", t, index=2)
+    if drop:
+        t, fallen = fall(drop, medians, paths, t, beat, colour, smoke)
+        glows += fallen
     if moon:
         t, wet = phases(moon, medians, paths, t, beat, args, smoke)
         glows += wet
