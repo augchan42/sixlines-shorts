@@ -16,7 +16,7 @@ test("a lesson keeps the copy rules", () => {
   assert.match(lessonProblems([lesson(7, "lines", "One\ntwo\nthree four")], input).join(), /3 screen lines/);
 });
 
-test("a kind is one of four, a line lesson names its line, and a painting must be on offer", () => {
+test("a kind is one of five, a line lesson names its line, and a painting must be on offer", () => {
   assert.match(lessonProblems([lesson(7, "tarot", "a b c")], input).join(), /7: kind "tarot"/);
   assert.match(lessonProblems([lesson(7, "line", "a b c")], input).join(), /7: a line lesson needs its line, 1 to 6/);
   assert.match(lessonProblems([lesson(7, "painting", "a b c")], input).join(), /7: no painting is on offer/);
@@ -30,4 +30,11 @@ test("neighbouring shorts may have the same kind", () => {
 
 test("a lesson does not repeat the short's own copy", () => {
   assert.match(lessonProblems([lesson(7, "judgment", "Meaning one")], input).join(), /7: repeats the short's own copy/);
+});
+
+test("a character lesson needs its character's drawing in series/characters.json", () => {
+  const input = { hexagrams: [hex(42), hex(43)] };
+  const drawn = [{ number: 42 }];
+  assert.deepEqual(lessonProblems([lesson(42, "character", "Let your gain\nspill over.")], input, drawn), []);
+  assert.match(lessonProblems([lesson(43, "character", "Break through\nthe dam.")], input, drawn).join(), /43: no character drawing/);
 });
