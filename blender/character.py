@@ -11,6 +11,7 @@ in the stroke's own shape, with the neon along their top edge.
   in three strains (for 屯, a sprout) before it lies down.
 - --moon: a moon between the walls goes from new to full and back (for 恆), then sets
   into these strokes; --last draws lying strokes at the end (恆's heart).
+- --lift: lying strokes lift free once the walls stand and hover (解's horn, cut loose).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
@@ -62,6 +63,7 @@ def parse():
     p.add_argument("--moon", default="", help="stroke indices a phasing moon sets into, between the walls")
     p.add_argument("--phases", default="180,0,-180", help="the moon's turns, 1.5 beats apart: 180 is new, 0 full")
     p.add_argument("--drop", default="", help="strokes traced high above, which then fall to their place")
+    p.add_argument("--lift", default="", help="lying strokes that lift free and hover once the walls stand")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
@@ -458,7 +460,8 @@ def main():
     moon = [int(i) for i in args.moon.split(",") if i]
     last = [i for i in order if i in {int(i) for i in args.last.split(",") if i}]
     drop = [i for i in order if i in {int(i) for i in args.drop.split(",") if i}]
-    lying = [i for i in order if i not in walls and i not in spill and i not in moon and i not in last and i not in drop]
+    lift = [i for i in order if i in {int(i) for i in args.lift.split(",") if i}]
+    lying = [i for i in order if i not in walls and i not in spill and i not in moon and i not in last and i not in drop and i not in lift]
     rising = [i for i in order if i in walls]
     # Standing, the lying strokes turn up about the lowest point of the first one (a trunk's foot).
     pivot = None
@@ -468,6 +471,13 @@ def main():
         scene.collection.objects.link(pivot)
         pivot.location = (0, (foot[1] - CENTRE[1]) * SCALE, 0)
     t, glows = lie(lying, paths, t, beat, colour, smoke, pivot)
+    if lift:
+        freed = bpy.data.objects.new("lift", None)
+        scene.collection.objects.link(freed)
+        x, y, _, _ = centre([p for i in lift for p in medians[i]])
+        freed.location = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, 0)
+        t, more = lie(lift, paths, t, beat, linear(args.water), glass(args.water), freed, step=0.4)
+        glows += more
     t += round(0.4 * beat)
     for i in rising:
         top, _ = edge(colour, f"crest{i}")
@@ -503,6 +513,22 @@ def main():
                     strength.keyframe_insert("default_value", frame=f + 1)
             t += round(beat)
             key(pivot, "location", t, index=2)
+    # Cut free once the walls stand, the lifted strokes rise and hover, bobbing, to the end.
+    if lift:
+        keys = [(0, 0.0), (t, 0.0), (t + round(0.6 * beat), 3.0)]
+        f, up = t + round(0.6 * beat), True
+        while f < frames:
+            f += round(beat)
+            keys.append((f, 2.8 if up else 3.0))
+            up = not up
+        for f, z in keys:
+            freed.location.z = z
+            key(freed, "location", f, index=2)
+        for strength in more:
+            for f, v in ((t - 1, REST), (t + 2, PULSE), (t + round(beat), REST * 1.5)):
+                strength.default_value = v
+                strength.keyframe_insert("default_value", frame=f + 1)
+        t += round(0.8 * beat)
     if drop:
         t, fallen = fall(drop, medians, paths, t, beat, colour, smoke)
         glows += fallen

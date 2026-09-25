@@ -72,6 +72,15 @@
       "bpm": 95,
       "beats": 12,
       "args": { "walls": [5, 6, 7, 8, 9, 10, 11], "pool": [476, 150], "drop": [0, 1, 2, 3, 4], "wallStep": 0.5, "wallHeight": 0.9, "glassWalls": true, "camera": "high", "zoom": 1.8, "edge": "#ff5ec8", "water": "#ff8a3d" }
+    },
+    {
+      "number": 40,
+      "char": "解",
+      "story": "The ox and its horn are drawn; a knife rises beside them; the horn lifts free and hovers.",
+      "sentence": "Cut it loose\nand move on",
+      "bpm": 95,
+      "beats": 12,
+      "args": { "order": [9, 10, 11, 12, 0, 1, 2, 3, 4, 5, 6, 7, 8], "walls": [7, 8], "wallStep": 0.7, "lift": [0, 1, 2, 3, 4, 5, 6], "wallHeight": 1.2, "glassWalls": true, "camera": "high", "zoom": 1.6, "edge": "#ff5ec8", "water": "#5ee7ff" }
     }
   ]
 }
