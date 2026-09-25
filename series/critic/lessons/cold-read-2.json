@@ -1,0 +1,15 @@
+{
+  "note": "Two Sonnet readers, sentence and picture only (out/lessons/cold-brief-2.json), on the judge's rewrites in cold-rewrites.json. clear is 1-5.",
+  "readings": [
+    { "number": 7, "clear": [4, 2], "guessed": "what \"army\" has to do with earth and water" },
+    { "number": 10, "clear": [5, 3], "guessed": "why it didn't bite" },
+    { "number": 13, "clear": [5, 4], "guessed": "why line 5" },
+    { "number": 22, "clear": [3, 2], "guessed": "why a white horse means a suitor" },
+    { "number": 24, "clear": [5, 4], "guessed": "how thunder connects to the light" },
+    { "number": 31, "clear": [2, 3], "guessed": "why toes, what happens next" },
+    { "number": 35, "clear": [4, 4], "guessed": "why a squirrel" },
+    { "number": 43, "clear": [3, 3], "guessed": "why leave the weapons" },
+    { "number": 47, "clear": [4, 4], "guessed": "why the lake going dry is the test" },
+    { "number": 52, "clear": [2, 2], "guessed": "what it means, why the back" }
+  ]
+}

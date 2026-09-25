@@ -1,0 +1,10 @@
+{
+  "note": "One critic (the criticPrompt of scripts/workflows/lesson-drafts.js, with the tiger example replaced by the author's rejection of it) on the five rewrites taken on 2026-09-25.",
+  "scores": [
+    { "number": 10, "text": "Stood on a tiger's\ntail. Not bitten.", "score": 8, "true": true, "feedback": "The Judgment says exactly this, the tiger picture is concrete, and it adds to the short's \"mind how you step\". The only weak spot is the line break: \"tiger's / tail\" splits across the two screen lines. \"On a tiger's tail.\\nIt does not bite.\" breaks cleanly." },
+    { "number": 13, "text": "Parted, they weep.\nMet, they laugh.", "score": 7, "true": true, "feedback": "Concrete, human and true to line 5, but \"Parted\" is an inference (the text says weeping, then laughter when the armies meet) and \"Met, they laugh.\" reads clipped. Plainer: \"Apart, they weep.\\nThey meet: laughter.\"" },
+    { "number": 24, "text": "Midwinter: rest.\nThe light returns.", "score": 5, "true": true, "feedback": "\"The light returns\" is a metaphor the book doesn't use (the Image has thunder under the earth, not light), and \"Rest\" repeats the meaning line \"Rest. Only rushing stops it.\" Use the Image's detail, \"Midwinter: gates\\nshut, no travel.\", or line 1, \"Best return: from\\nnot far away.\"" },
+    { "number": 35, "text": "Sneak like a\nsquirrel? Seen.", "score": 6, "true": true, "feedback": "The squirrel is a good concrete image, but \"Seen.\" is terse enough to read as cryptic. Try \"Sneak ahead like\\na squirrel: seen.\"" },
+    { "number": 47, "text": "Lake gone dry?\nHold to your aim.", "score": 4, "true": true, "feedback": "\"Hold to your aim\" nearly repeats the short's meaning line \"hold your purpose\", and is weaker than the text's \"stake your life\". Switch to line 4, \"Stuck in a gold\\ncarriage. It ends.\", or line 6." }
+  ]
+}
