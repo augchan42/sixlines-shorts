@@ -1,5 +1,6 @@
 import { Composition, staticFile } from "remotion";
 import table from "../series/hexagrams.json";
+import walkthrough from "../series/demo/walkthrough.json";
 import { hexagramClip } from "./lib/clips";
 import { beatFrame } from "./lib/timing";
 import { gotchuSchema, seriesSchema, shortSchema, type GotchuProps, type SeriesProps, type ShortProps } from "./schema";
@@ -8,6 +9,7 @@ import { plan, Short } from "./Short";
 import { qian } from "./specs/qian";
 import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
+import { Demo, demoFrames, type DemoProps } from "./templates/Demo";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Series, seriesFrames } from "./templates/Series";
 import { overrides } from "./series/overrides";
@@ -97,6 +99,17 @@ export const Root: React.FC = () => (
         }
         return { durationInFrames: seriesFrames(props, FPS) };
       }}
+    />
+    {/* The app demo walkthrough (series/demo/walkthrough.json), rendered by scripts/demo.mjs. */}
+    <Composition
+      id="Demo"
+      component={Demo}
+      defaultProps={walkthrough as unknown as DemoProps}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={1}
+      calculateMetadata={({ props }: { props: DemoProps }) => ({ durationInFrames: demoFrames(props, FPS) })}
     />
     <Composition id="Spike1" component={Series1} width={1080} height={1920} fps={FPS} durationInFrames={spike1Frames(FPS)} />
     {protos.map(({ id, props }) => (

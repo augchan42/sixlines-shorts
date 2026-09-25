@@ -1,0 +1,195 @@
+{
+ "note": "The Six Lines demo walkthrough: music and burned-in text, no voice. The plan is series/critic/demo/review-2.md (changed timeline, 8/10). Rendered by `node scripts/demo.mjs`. Beats are at the music's tempo. A live shot plays a take under public/ from `from` seconds at `rate`; `zoom` and `focus` (0 top, 1 bottom) crop into the phone screen, and `place` puts the text at the top or bottom.",
+ "bpm": 82.5,
+ "firstBeat": 0,
+ "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+ "musicStart": 34.934,
+ "hexagram": {
+  "number": 18,
+  "zh": "蠱",
+  "pinyin": "Gǔ",
+  "name": "Work on the Decayed",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   1
+  ]
+ },
+ "takes": {
+  "take1": {
+   "file": "local/demo/take1-30fps.mp4",
+   "sha256": "38168a99a03e804471bc0123a7c05a2fe92caea1f6996b9ea89e243614c39acd",
+   "from": {
+    "file": "local/demo/take1-ask.mp4",
+    "sha256": "25b73690da7bce3a844e355c6812c275a28424bd63737428a5560066212ba6da",
+    "how": "mobile-mcp screen recording (simctl recordVideo failed with SimRenderServer error 2); variable frame rate, so converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+   },
+   "recorded": "2026-09-25, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios b459a31f, Matrix skin, English (-appLanguage en). Question typed, 18 entered by hand with no changing lines, one real Gua interpretation, Wang Bi, What Would Prove This Wrong, a note saved.",
+   "moments": {
+    "question typed": "0.6-8",
+    "18 entered": "56-90",
+    "reading": "90.3",
+    "Gua rain": "169-178",
+    "interpretation": "186",
+    "what would prove this wrong": "206.8-218",
+    "Wang Bi": "218.2",
+    "journal": "243.5",
+    "note typed": "420-428",
+    "note saved": "482.4"
+   }
+  },
+  "take2": {
+   "file": "local/demo/take2-30fps.mp4",
+   "sha256": "03000f3a56f4877956c423eb8b2947bdcb8eee684b52ce6901b0a952dc63f367",
+   "from": {
+    "file": "local/demo/take2-proof.mp4",
+    "sha256": "fdd66d4e3d5bf65948e1f27f6282231afd95088330459ec1e87ac43ec7c8f71d",
+    "how": "as take1"
+   },
+   "recorded": "2026-09-25, same session as take1: the saved reading opened from the Journal and scrolled so What Would Prove This Wrong sits in the upper half. In take1 it only reached the bottom edge.",
+   "moments": {
+    "section settles": "10.3",
+    "ends": "13.2"
+   }
+  }
+ },
+ "shots": [
+  {
+   "beats": [
+    0,
+    6
+   ],
+   "kind": "rain",
+   "text": "What should I do\nabout the old project?"
+  },
+  {
+   "beats": [
+    6,
+    10
+   ],
+   "kind": "live",
+   "take": "take1",
+   "from": 0.6,
+   "rate": 2.8,
+   "zoom": 1,
+   "focus": 0,
+   "text": "The app won't answer\nyes or no."
+  },
+  {
+   "beats": [
+    10,
+    14
+   ],
+   "kind": "live",
+   "take": "take1",
+   "from": 169.3,
+   "rate": 1.2,
+   "text": "It trains\nyour judgment.",
+   "zoom": 1
+  },
+  {
+   "beats": [
+    14,
+    20
+   ],
+   "kind": "hexagram",
+   "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
+   "text": "Six lines.\nOne of 64 situations."
+  },
+  {
+   "beats": [
+    20,
+    37
+   ],
+   "kind": "clip",
+   "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
+   "texts": [
+    {
+     "beat": 20,
+     "text": "18 · Work on\nthe Decayed"
+    },
+    {
+     "beat": 24,
+     "text": "The name is a picture:\nbugs in a bowl."
+    },
+    {
+     "beat": 29,
+     "text": "Found rot?\nClean it out."
+    }
+   ]
+  },
+  {
+   "beats": [
+    37,
+    42
+   ],
+   "kind": "live",
+   "take": "take1",
+   "from": 90.3,
+   "rate": 1,
+   "zoom": 1,
+   "focus": 0.3,
+   "text": "Decay is not the end.\nIt is work to do."
+  },
+  {
+   "beats": [
+    42,
+    47
+   ],
+   "kind": "live",
+   "take": "take1",
+   "from": 218.3,
+   "rate": 1,
+   "text": "Commentary: Wang Bi\nand the Ten Wings.",
+   "zoom": 1,
+   "focus": 0.3
+  },
+  {
+   "beats": [
+    47,
+    55
+   ],
+   "kind": "live",
+   "take": "take2",
+   "from": 9.4,
+   "rate": 0.6,
+   "zoom": 1,
+   "focus": 0.3,
+   "text": "The reading lists\nwhat would prove it wrong.",
+   "place": "bottom"
+  },
+  {
+   "beats": [
+    55,
+    61
+   ],
+   "kind": "live",
+   "take": "take1",
+   "from": 421,
+   "rate": 2.2,
+   "zoom": 1,
+   "focus": 0.5,
+   "text": "You decide.\nThen write down\nwhat happened.",
+   "place": "top"
+  },
+  {
+   "beats": [
+    61,
+    70
+   ],
+   "kind": "endcard",
+   "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
+  },
+  {
+   "beats": [
+    70,
+    74
+   ],
+   "kind": "credit",
+   "name": "~DISNEYFAN"
+  }
+ ]
+}

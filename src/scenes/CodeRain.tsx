@@ -80,15 +80,22 @@ export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: bo
 };
 
 // "bottom" keeps the sentence under a character drawn in the middle of the frame.
-const TypedBox: React.FC<{ text: string; place?: "centre" | "bottom" }> = ({ text, place = "centre" }) => (
-  <AbsoluteFill style={place === "bottom" ? { justifyContent: "flex-end", padding: "0 70px 300px" } : { justifyContent: "center", padding: "0 70px" }}>
+type Place = "centre" | "bottom" | "top";
+const PLACES: Record<Place, React.CSSProperties> = {
+  centre: { justifyContent: "center", padding: "0 70px" },
+  bottom: { justifyContent: "flex-end", padding: "0 70px 300px" },
+  top: { justifyContent: "flex-start", padding: "300px 70px 0" },
+};
+
+const TypedBox: React.FC<{ text: string; place?: Place; size?: number }> = ({ text, place = "centre", size = 110 }) => (
+  <AbsoluteFill style={PLACES[place]}>
     <div
       style={{
         alignSelf: "flex-start",
         padding: "14px 28px",
         background: "rgba(0,0,0,0.6)",
         fontFamily: fonts.punch,
-        fontSize: 110,
+        fontSize: size,
         letterSpacing: 2,
         color: "#fff",
         textShadow: glow(),
@@ -101,8 +108,8 @@ const TypedBox: React.FC<{ text: string; place?: "centre" | "bottom" }> = ({ tex
 );
 
 // The same sentence box, typed on over whatever is behind it (a moon lesson's clip).
-export const TypedText: React.FC<{ text: string; place?: "centre" | "bottom" }> = ({ text, place }) => {
+export const TypedText: React.FC<{ text: string; place?: Place; size?: number }> = ({ text, place, size }) => {
   const frame = useCurrentFrame();
   const typed = Math.ceil(interpolate(frame, [4, 16], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-  return <TypedBox text={text.slice(0, typed)} place={place} />;
+  return <TypedBox text={text.slice(0, typed)} place={place} size={size} />;
 };
