@@ -9,6 +9,8 @@ in the stroke's own shape, with the neon along their top edge.
   rise past the rim and spill over it to their place in the character.
 - --grow: with --stand, the standing thing starts under the floor and pushes up through it
   in three strains (for 屯, a sprout) before it lies down.
+- --moon: a moon between the walls goes from new to full and back (for 恆), then sets
+  into these strokes; --last draws lying strokes at the end (恆's heart).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
 The camera starts beside the strokes, where they read as things, and cranes up to look
@@ -56,6 +58,8 @@ def parse():
     p.add_argument("--pool", help="x,y (hanzi units): a pool of water that glows there once the walls stand")
     p.add_argument("--wall-height", type=float, default=WALL_H)
     p.add_argument("--glass-walls", action="store_true", help="walls of smoked glass, not obsidian")
+    p.add_argument("--moon", default="", help="stroke indices a phasing moon sets into, between the walls")
+    p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
     p.add_argument("--camera", choices=("low", "high", "over"), default="low", help="high looks down into the walls from the start; over, steeper, into a deep bowl")
@@ -279,6 +283,82 @@ def ripple(x, y, args, f, beat):
         glow.keyframe_insert("default_value", frame=g + 1)
 
 
+def lie(ids, paths, t, beat, colour, smoke, pivot):
+    """Draws strokes lying on the floor (or on the pivot) 0.9 beat apart from frame `t`;
+    returns the frame after them and their glow strengths."""
+    glows = []
+    for i in ids:
+        glow, strength = edge(colour, f"glow{i}")
+        length = round(0.8 * beat)
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, pivot), t, length)
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke, pivot), t + length)
+        for f, v in ((t - 1, REST), (t + round(0.8 * beat), PULSE * 0.4), (t + round(1.4 * beat), REST)):
+            strength.default_value = v
+            strength.keyframe_insert("default_value", frame=f + 1)
+        glows.append(strength)
+        t += round(0.9 * beat)
+    return t, glows
+
+
+def moonlight(colour):
+    """A faceted moon lit on one side: the half facing -y (in its own space) glows, the rest is
+    dark glass. Turning the moon about z shows its phases."""
+    m = bpy.data.materials.new("moon")
+    m.use_nodes = True
+    nodes, links = m.node_tree.nodes, m.node_tree.links
+    b = nodes["Principled BSDF"]
+    b.inputs["Base Color"].default_value = (0.01, 0.01, 0.015, 1)
+    b.inputs["Roughness"].default_value = 0.3
+    b.inputs["Emission Color"].default_value = colour
+    coords = nodes.new("ShaderNodeTexCoord")
+    xyz = nodes.new("ShaderNodeSeparateXYZ")
+    lit = nodes.new("ShaderNodeMapRange")
+    lit.inputs["From Min"].default_value, lit.inputs["From Max"].default_value = 0.08, -0.08
+    strength = nodes.new("ShaderNodeMath")
+    strength.operation = "MULTIPLY"
+    strength.inputs[1].default_value = 4.0
+    links.new(coords.outputs["Normal"], xyz.inputs[0])
+    links.new(xyz.outputs["Y"], lit.inputs["Value"])
+    links.new(lit.outputs["Result"], strength.inputs[0])
+    links.new(strength.outputs[0], b.inputs["Emission Strength"])
+    return m
+
+
+def phases(ids, medians, paths, t, beat, args, smoke):
+    """For 恆: a moon between the walls, over the strokes `ids`, goes from new to full and back
+    to new over three beats from frame `t`, then sets into those strokes as they are drawn.
+    Returns the frame after and the strokes' glow strengths."""
+    x, y, w, h = centre([p for i in ids for p in medians[i]])
+    r = 0.4 * min(w, h) * SCALE
+    bpy.ops.mesh.primitive_uv_sphere_add(segments=20, ring_count=10, radius=r)
+    ball = bpy.context.object
+    ball.data.materials.append(moonlight(linear(args.water)))
+    home = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, args.wall_height + r + 0.15)
+    ball.location = home
+    b = lambda n: t + round(n * beat)
+    for f, sc, turn in ((0, 0.0, 180), (t, 0.0, 180), (b(0.4), 1.0, 180), (b(1.9), 1.0, 0), (b(3.4), 1.0, -180)):
+        ball.scale = (sc, sc, sc)
+        key(ball, "scale", f)
+        ball.rotation_euler.z = math.radians(turn)
+        key(ball, "rotation_euler", f, index=2)
+    # It sets: sinks and shrinks into the strokes, which are drawn under it.
+    for f, z, sc in ((b(3.4), home[2], 1.0), (b(4.1), 0.0, 0.0)):
+        ball.location.z = z
+        key(ball, "location", f, index=2)
+        ball.scale = (sc, sc, sc)
+        key(ball, "scale", f)
+    glows = []
+    for i in ids:
+        glow, strength = edge(linear(args.water), f"moon{i}")
+        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow), b(3.5), round(0.8 * beat))
+        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke), b(4.3))
+        for f, v in ((b(3.5), REST), (b(4.3), PULSE * 0.5), (b(5.0), REST)):
+            strength.default_value = v
+            strength.keyframe_insert("default_value", frame=f + 1)
+        glows.append(strength)
+    return b(4.6), glows
+
+
 def water(spill, medians, paths, walls, args, t, beat):
     """The --spill strokes on a parent that fills the walls and spills over them from frame
     `t`; returns their glow strengths."""
@@ -344,7 +424,9 @@ def main():
 
     # The lying strokes a beat apart from beat 0.5, then the walls a beat apart.
     t = round(0.5 * beat)
-    lying = [i for i in order if i not in walls and i not in spill]
+    moon = [int(i) for i in args.moon.split(",") if i]
+    last = [i for i in order if i in {int(i) for i in args.last.split(",") if i}]
+    lying = [i for i in order if i not in walls and i not in spill and i not in moon and i not in last]
     rising = [i for i in order if i in walls]
     # Standing, the lying strokes turn up about the lowest point of the first one (a trunk's foot).
     pivot = None
@@ -353,17 +435,7 @@ def main():
         pivot = bpy.data.objects.new("pivot", None)
         scene.collection.objects.link(pivot)
         pivot.location = (0, (foot[1] - CENTRE[1]) * SCALE, 0)
-    glows = []
-    for i in lying:
-        glow, strength = edge(colour, f"glow{i}")
-        length = round(0.8 * beat)
-        draw(neon(f"neon{i}", paths[i], BODY + NEON, glow, pivot), t, length)
-        show(body(f"body{i}", paths[i], BODY, BODY / 2, smoke, pivot), t + length)
-        for f, v in ((t - 1, REST), (t + round(0.8 * beat), PULSE * 0.4), (t + round(1.4 * beat), REST)):
-            strength.default_value = v
-            strength.keyframe_insert("default_value", frame=f + 1)
-        glows.append(strength)
-        t += round(0.9 * beat)
+    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot)
     t += round(0.4 * beat)
     for i in rising:
         top, _ = edge(colour, f"crest{i}")
@@ -399,6 +471,12 @@ def main():
                     strength.keyframe_insert("default_value", frame=f + 1)
             t += round(beat)
             key(pivot, "location", t, index=2)
+    if moon:
+        t, wet = phases(moon, medians, paths, t, beat, args, smoke)
+        glows += wet
+    if last:
+        t, more = lie(last, paths, t, beat, colour, smoke, None)
+        glows += more
     # Once the walls close, a standing thing is pressed flat inside them.
     if pivot:
         for f, a in ((0, 90), (t, 90), (t + round(0.5 * beat), -4), (t + round(0.7 * beat), 0)):
