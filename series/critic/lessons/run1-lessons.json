@@ -1,0 +1,488 @@
+[
+  {
+    "number": 1,
+    "kind": "lines",
+    "text": "Heaven never\ntakes a day off.",
+    "source": "series/critic/lessons/input.json#hexagrams[0].image.transliteration",
+    "why": "The Image: heaven moves with inexhaustible vigor, and the realized person strengthens without ceasing. (Not a line lesson: 1-2-3 would be three line lessons in a row. The critic's 'Heaven never stops.' is 19 characters.)"
+  },
+  {
+    "number": 2,
+    "kind": "line",
+    "line": 1,
+    "text": "Frost underfoot:\nice is coming.",
+    "source": "series/critic/lessons/input.json#hexagrams[1].lines[0].transliteration",
+    "why": "Line 1: small signs now tell you what is coming later."
+  },
+  {
+    "number": 3,
+    "kind": "line",
+    "line": 3,
+    "text": "Without a guide,\nlet the deer go.",
+    "source": "series/critic/lessons/input.json#hexagrams[2].lines[2].transliteration",
+    "why": "Line 3: chasing deer into the forest without a forester goes wrong, so let it go."
+  },
+  {
+    "number": 4,
+    "kind": "judgment",
+    "text": "Teachers don't\nchase students.",
+    "source": "series/critic/lessons/input.json#hexagrams[3].judgment.transliteration",
+    "why": "The Judgment: it is not I who seek the youth, the youth seeks me. (Not the suggested line 2: 3, 4 and 5 would be three line lessons in a row.)"
+  },
+  {
+    "number": 5,
+    "kind": "line",
+    "line": 6,
+    "text": "Uninvited guests?\nReceive them well.",
+    "source": "series/critic/lessons/input.json#hexagrams[4].lines[5].transliteration",
+    "why": "Line 6: three uninvited guests arrive; treat them with respect and it ends well."
+  },
+  {
+    "number": 6,
+    "kind": "line",
+    "line": 6,
+    "text": "Won the belt,\nlost it by noon.",
+    "source": "series/critic/lessons/input.json#hexagrams[5].lines[5].transliteration",
+    "why": "Line 6: a win taken by fighting is stripped away before the morning is out."
+  },
+  {
+    "number": 7,
+    "kind": "lines",
+    "text": "Unseen water\nunder the earth.",
+    "source": "series/critic/lessons/input.json#hexagrams[6].image.transliteration",
+    "why": "Accepted: water within the earth is the army, the people held in reserve."
+  },
+  {
+    "number": 8,
+    "kind": "painting",
+    "text": "Friends at lunch,\nholding together.",
+    "source": "series/critic/lessons/input.json#hexagrams[7].painting",
+    "why": "Accepted: Renoir's crowded table shows holding together at a glance."
+  },
+  {
+    "number": 9,
+    "kind": "line",
+    "line": 3,
+    "text": "Wheels come off,\nthe couple glares.",
+    "source": "series/critic/lessons/input.json#hexagrams[8].lines[2].transliteration",
+    "why": "Line 3: the cart throws its spokes and husband and wife glare at each other; when something structural breaks, people on the same side turn on each other."
+  },
+  {
+    "number": 10,
+    "kind": "judgment",
+    "text": "The tiger's tail:\nit does not bite.",
+    "source": "series/critic/lessons/input.json#hexagrams[9].judgment.transliteration",
+    "why": "Accepted: tread carefully and even the tiger does not bite."
+  },
+  {
+    "number": 11,
+    "kind": "line",
+    "line": 3,
+    "text": "No flat ground\nwithout a slope.",
+    "source": "series/critic/lessons/input.json#hexagrams[10].lines[2].transliteration",
+    "why": "Line 3: no level plain without slopes. Good times tilt, and that is normal."
+  },
+  {
+    "number": 12,
+    "kind": "judgment",
+    "text": "The great leaves,\nthe small arrives.",
+    "source": "series/critic/lessons/input.json#hexagrams[11].judgment.transliteration",
+    "why": "The Judgment's own words, 'The great departs, the small arrives': the viewer can check it against the page on screen, and it says why things stall. (Judgment, not line 5, so 11-12-13 are not three line lessons in a row.)"
+  },
+  {
+    "number": 13,
+    "kind": "line",
+    "line": 5,
+    "text": "First weeping,\nthen laughter.",
+    "source": "series/critic/lessons/input.json#hexagrams[12].lines[4].transliteration",
+    "why": "Line 5: fellowship can start in tears and end in laughing together."
+  },
+  {
+    "number": 14,
+    "kind": "line",
+    "line": 2,
+    "text": "A full cart,\na place to go.",
+    "source": "series/critic/lessons/input.json#hexagrams[13].lines[1].transliteration",
+    "why": "Line 2: a great cart for loading and somewhere to go; you have the capacity and the destination."
+  },
+  {
+    "number": 15,
+    "kind": "lines",
+    "text": "Level the heaps,\nfill the holes.",
+    "source": "series/critic/lessons/input.json#hexagrams[14].image.transliteration",
+    "why": "The Image: the mountain within the earth reduces what is excessive and increases what is lacking."
+  },
+  {
+    "number": 16,
+    "kind": "line",
+    "line": 1,
+    "text": "Shout about it\nand it goes wrong.",
+    "source": "series/critic/lessons/input.json#hexagrams[15].lines[0].transliteration",
+    "why": "Line 1: proclaiming your enthusiasm is adverse."
+  },
+  {
+    "number": 17,
+    "kind": "line",
+    "line": 2,
+    "text": "Grabbed the kid,\nlost the adult.",
+    "source": "commentary/en/17.json#lines[1].synthesis",
+    "why": "Line 2: attached to the small child, losing the mature one. No verdict, only the trade: following one thing means letting go of another."
+  },
+  {
+    "number": 18,
+    "kind": "judgment",
+    "text": "Plan three days,\ncheck three days.",
+    "source": "commentary/en/18.json#judgment.transliteration",
+    "why": "The Judgment's 'three days before, three days after' gives the repair a concrete measure: think before and after."
+  },
+  {
+    "number": 19,
+    "kind": "line",
+    "line": 3,
+    "text": "Too comfortable?\nWorry a little.",
+    "source": "commentary/en/19.json#lines[2].transliteration",
+    "why": "Line 3: a comfortable approach supports nothing, but once you worry about it there is no fault."
+  },
+  {
+    "number": 20,
+    "kind": "line",
+    "line": 4,
+    "text": "Look like a guest,\nnot an inspector.",
+    "source": "commentary/en/20.json#lines[3].synthesis",
+    "why": "Approved: at line 4 the supported move is to be the sovereign's guest, observing with a visitor's courtesy."
+  },
+  {
+    "number": 21,
+    "kind": "lines",
+    "text": "Lightning shows,\nthunder hits.",
+    "source": "commentary/en/21.json#image.synthesis",
+    "why": "Fire over thunder: first see the problem clearly, then bite down with force."
+  },
+  {
+    "number": 22,
+    "kind": "line",
+    "line": 4,
+    "text": "A white horse?\nIt's a suitor.",
+    "source": "commentary/en/22.json#lines[3].transliteration",
+    "why": "Line 4: the white horse that looks like an attacker is a suitor. Something striking arriving is not always a threat."
+  },
+  {
+    "number": 23,
+    "kind": "line",
+    "line": 1,
+    "text": "The bed breaks at\nthe legs first.",
+    "source": "commentary/en/23.json#lines[0].synthesis",
+    "why": "Collapse starts at the base, the part nobody looks at."
+  },
+  {
+    "number": 24,
+    "kind": "lines",
+    "text": "Solstice:\nkings stayed home.",
+    "source": "commentary/en/24.json#image.transliteration",
+    "why": "Thunder within the earth: at the solstice the ancient kings closed the passes and the ruler did not tour the regions."
+  },
+  {
+    "number": 25,
+    "kind": "line",
+    "line": 3,
+    "text": "Innocent, yet\nthe ox is taken.",
+    "source": "commentary/en/25.json#lines[2].synthesis",
+    "why": "Innocence does not protect you from misfortune; it only means the misfortune is not your fault."
+  },
+  {
+    "number": 26,
+    "kind": "line",
+    "line": 4,
+    "text": "Cap the calf's\nhorns early.",
+    "source": "commentary/en/26.json#lines[3].transliteration",
+    "why": "Line 4: a board on the young bull's horns, supremely good, is restraint put in place before there is harm."
+  },
+  {
+    "number": 27,
+    "kind": "line",
+    "line": 1,
+    "text": "Stop staring at\nsomeone's plate.",
+    "source": "commentary/en/27.json#lines[0].synthesis",
+    "why": "Line 1 sets down its own spirit tortoise to gape at someone else's meal: envy traded for self-sufficiency."
+  },
+  {
+    "number": 28,
+    "kind": "painting",
+    "text": "In over your head.\nNot your fault.",
+    "source": "commentary/en/28.json#lines[5].transliteration",
+    "why": "Line 6, over Hokusai's wave: wading too deep, the water covers the head. Adverse, but no fault."
+  },
+  {
+    "number": 29,
+    "kind": "line",
+    "line": 4,
+    "text": "Food through\na window: no fault",
+    "source": "commentary/en/29.json#lines[3].transliteration",
+    "why": "Line 4: wine and rice handed through the window, and in the end no fault. In the abyss, a small plain offering is enough."
+  },
+  {
+    "number": 30,
+    "kind": "line",
+    "line": 3,
+    "text": "At sunset, don't\nparty or wail.",
+    "source": "commentary/en/30.json#lines[2].transliteration",
+    "why": "Drumming and singing and lamenting old age are both adverse responses to the setting sun."
+  },
+  {
+    "number": 31,
+    "kind": "judgment",
+    "text": "This one ends\nin a wedding.",
+    "source": "commentary/en/31.json#judgment.transliteration",
+    "why": "The Judgment: taking a wife resolves well. The book cares whether influence becomes a commitment."
+  },
+  {
+    "number": 32,
+    "kind": "line",
+    "line": 4,
+    "text": "No game in this\nfield. Move.",
+    "source": "commentary/en/32.json#lines[3].synthesis",
+    "why": "Persistence in the wrong place is wasted: a field with no game."
+  },
+  {
+    "number": 33,
+    "kind": "line",
+    "line": 3,
+    "text": "Leaving? Take your\npeople with you.",
+    "source": "commentary/en/33.json#lines[2].transliteration",
+    "why": "Line 3: a tangled retreat goes well if you keep your dependents with you instead of cutting them loose."
+  },
+  {
+    "number": 34,
+    "kind": "line",
+    "line": 3,
+    "text": "Ram hits hedge.\nHorns get stuck.",
+    "source": "commentary/en/34.json#lines[2].transliteration",
+    "why": "Line 3's ram shows that force alone gets power stuck."
+  },
+  {
+    "number": 35,
+    "kind": "judgment",
+    "text": "Three audiences\nin one day.",
+    "source": "commentary/en/35.json#judgment.transliteration",
+    "why": "The Judgment shows what progress looks like when it comes: horses given in abundance and three audiences with the king in a single day."
+  },
+  {
+    "number": 36,
+    "kind": "line",
+    "line": 5,
+    "text": "A prince acted mad\nto stay alive.",
+    "source": "commentary/en/36.json#lines[4].synthesis",
+    "why": "Line 5: Prince Ji hid his sanity at the tyrant's court, the book's own example of hiding your light to survive."
+  },
+  {
+    "number": 37,
+    "kind": "painting",
+    "text": "Whoever feeds them\nholds the family.",
+    "source": "commentary/en/37.json#lines[1].synthesis",
+    "why": "Line 2: the one who stays in and feeds everyone is the center of the family, which Chardin's mother at the table shows at a glance."
+  },
+  {
+    "number": 38,
+    "kind": "line",
+    "line": 6,
+    "text": "Not an attacker,\na suitor.",
+    "source": "commentary/en/38.json#lines[5].transliteration",
+    "why": "Line 6: what looked like a threat was someone coming to propose."
+  },
+  {
+    "number": 39,
+    "kind": "lines",
+    "text": "Water stuck\non a mountain.",
+    "source": "commentary/en/39.json#image.transliteration",
+    "why": "WATER over MOUNTAIN: water on top of a mountain can't flow and just sits there, the book's picture of obstruction."
+  },
+  {
+    "number": 40,
+    "kind": "line",
+    "line": 3,
+    "text": "Riding with a load\ninvites thieves.",
+    "source": "commentary/en/40.json#lines[2].transliteration",
+    "why": "Line 3: carrying the old burden into freedom makes you a target."
+  },
+  {
+    "number": 41,
+    "kind": "judgment",
+    "text": "Two small baskets\nwill do.",
+    "source": "commentary/en/41.json#judgment.transliteration",
+    "why": "The Judgment says two small baskets may be used for the offering: when you have less, a small offering is enough."
+  },
+  {
+    "number": 42,
+    "kind": "line",
+    "line": 3,
+    "text": "Even bad events\ncan increase you.",
+    "source": "commentary/en/42.json#lines[2].transliteration",
+    "why": "Line 3, the surprising line of Increase: 'Increased through unfortunate events. No fault.'"
+  },
+  {
+    "number": 43,
+    "kind": "judgment",
+    "text": "Tell your own\ntown first.",
+    "source": "commentary/en/43.json#judgment.transliteration",
+    "why": "Before a breakthrough, the Judgment says notify your own city."
+  },
+  {
+    "number": 44,
+    "kind": "line",
+    "line": 1,
+    "text": "A lean pig kicks.\nTie it early.",
+    "source": "commentary/en/44.json#lines[0].transliteration",
+    "why": "Line 1: the small thing that looks harmless still struggles, so restrain it at the first sign."
+  },
+  {
+    "number": 45,
+    "kind": "line",
+    "line": 1,
+    "text": "One handshake,\nlaughter again.",
+    "source": "commentary/en/45.json#lines[0].transliteration",
+    "why": "Line 1: after confusion, one handclasp restores laughter, so don't worry about the arguments."
+  },
+  {
+    "number": 46,
+    "kind": "lines",
+    "text": "A tree grows\ninside the earth.",
+    "source": "commentary/en/46.json#image.transliteration",
+    "why": "EARTH over WIND (wind is also wood): the Image's wood growing within the earth, pushing up through soil before anyone sees it, which answers the hook about slow growth."
+  },
+  {
+    "number": 47,
+    "kind": "lines",
+    "text": "A lake with\nno water.",
+    "source": "commentary/en/47.json#image.transliteration",
+    "why": "The two trigrams, LAKE over WATER, show the water drained out below the lake: the empty lake is the book's picture of oppression."
+  },
+  {
+    "number": 48,
+    "kind": "line",
+    "line": 3,
+    "text": "The well is clean.\nNo one drinks.",
+    "source": "commentary/en/48.json#lines[2].transliteration",
+    "why": "Line 3, the only sad line in the book: the well is cleaned and no one drinks, 'my heart's sorrow'."
+  },
+  {
+    "number": 49,
+    "kind": "line",
+    "line": 6,
+    "text": "Some change only\ntheir faces.",
+    "source": "commentary/en/49.json#lines[5].transliteration",
+    "why": "The realized person changes like a leopard; the petty change only their faces, so surface change is not the real thing."
+  },
+  {
+    "number": 50,
+    "kind": "line",
+    "line": 4,
+    "text": "The legs break.\nDuke wears dinner.",
+    "source": "commentary/en/50.json#lines[3].transliteration",
+    "why": "The caldron's legs break, the duke's meal spills over him: what happens when the setup isn't right."
+  },
+  {
+    "number": 51,
+    "kind": "judgment",
+    "text": "First fear,\nthen laughter.",
+    "source": "commentary/en/51.json#judgment.transliteration",
+    "why": "The Judgment puts terror and laughter in sequence: the shock comes, then the laugh."
+  },
+  {
+    "number": 52,
+    "kind": "judgment",
+    "text": "Still inside,\nwhile you walk.",
+    "source": "commentary/en/52.json#judgment.synthesis",
+    "why": "The Judgment walks through the courtyard: stillness is not freezing in place, it is keeping still inside while you keep moving."
+  },
+  {
+    "number": 53,
+    "kind": "line",
+    "line": 4,
+    "text": "Goose in a tree?\nFind flat footing.",
+    "source": "commentary/en/53.json#lines[3].transliteration",
+    "why": "A goose can't grip a branch; in the wrong place it looks for a flat perch, and there is no fault."
+  },
+  {
+    "number": 54,
+    "kind": "line",
+    "line": 5,
+    "text": "The princess wore\nthe plainer dress.",
+    "source": "commentary/en/54.json#lines[4].transliteration",
+    "why": "The emperor's daughter dressed plainer than her attendant, and it resolves well."
+  },
+  {
+    "number": 55,
+    "kind": "lines",
+    "text": "Lightning to see,\nthunder to act.",
+    "source": "commentary/en/55.json#image.synthesis",
+    "why": "Thunder over fire: abundance gives clear sight and the force to act at the same time, and that window does not last."
+  },
+  {
+    "number": 56,
+    "kind": "line",
+    "line": 3,
+    "text": "The wanderer burns\nhis own inn.",
+    "source": "commentary/en/56.json#lines[2].transliteration",
+    "why": "A guest who wrecks the shelter he was given loses his helper too."
+  },
+  {
+    "number": 57,
+    "kind": "line",
+    "line": 3,
+    "text": "Say it too often,\nit grates.",
+    "source": "commentary/en/57.json#lines[2].transliteration",
+    "why": "Line 3, repeated penetration brings friction: repeating has a limit, past which the listener pushes back."
+  },
+  {
+    "number": 58,
+    "kind": "painting",
+    "text": "Painters toast,\nthen talk shop.",
+    "source": "commentary/en/58.json#image.transliteration",
+    "why": "Krøyer's artists at their party: the Image joins friends for discussion and practice, not only celebration."
+  },
+  {
+    "number": 59,
+    "kind": "line",
+    "line": 4,
+    "text": "Drop your faction,\nmore will gather.",
+    "source": "commentary/en/59.json#lines[3].transliteration",
+    "why": "Dissolving your own group supremely resolves well: dispersion creates accumulation, more than any faction could hold."
+  },
+  {
+    "number": 60,
+    "kind": "lines",
+    "text": "A lake holds only\nso much water.",
+    "source": "commentary/en/60.json#image.synthesis",
+    "why": "Water over the lake: knowing your capacity is what keeps you from flooding."
+  },
+  {
+    "number": 61,
+    "kind": "judgment",
+    "text": "Truth even reaches\npigs and fish.",
+    "source": "commentary/en/61.json#judgment.transliteration",
+    "why": "The Judgment opens with piglets and fish: real sincerity reaches even them."
+  },
+  {
+    "number": 62,
+    "kind": "line",
+    "line": 2,
+    "text": "Missed the king?\nSee the minister.",
+    "source": "commentary/en/62.json#lines[1].transliteration",
+    "why": "Not reaching the ruler, meeting the minister: in a small time the tier below is the right channel, no fault."
+  },
+  {
+    "number": 63,
+    "kind": "line",
+    "line": 4,
+    "text": "Fine silk turns\nto rags.",
+    "source": "commentary/en/63.json#lines[3].transliteration",
+    "why": "After completion, decay is slow and quiet, so the line says to stay watchful all day."
+  },
+  {
+    "number": 64,
+    "kind": "judgment",
+    "text": "Almost across,\nthe fox gets wet.",
+    "source": "commentary/en/64.json#judgment.transliteration",
+    "why": "The little fox has almost crossed and wets its tail: the last step is where it goes wrong."
+  }
+]
