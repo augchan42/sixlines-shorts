@@ -1,9 +1,9 @@
 {
  "hexagram": 20,
- "special": "mid-autumn-2026",
- "rendered": "2026-09-25T03:07:34.499Z",
+ "special": "mid-autumn-2026-b",
+ "rendered": "2026-09-25T03:09:32.419Z",
  "commit": "e6ce1d0098c472bbc8f0f6b07fd2a9c42b011098",
- "clean": true,
+ "clean": false,
  "seconds": 30.976,
  "shareKbps": 5812,
  "props": {
@@ -39,16 +39,8 @@
   "screens": [],
   "lesson": {
    "kind": "moon",
-   "text": "Six ways to look.\nWhich is yours?",
-   "labels": [
-    "LIKE A KID",
-    "THROUGH A CRACK",
-    "AT YOUR OWN LIFE",
-    "AS A GUEST",
-    "NO FAULT",
-    "AT EVERYONE"
-   ],
-   "clip": "assets/3d/moon-000011-95bpm-16b-labels-1jwj9ev.mp4"
+   "text": "Its shape:\na watchtower.",
+   "clip": "assets/3d/moon-000011-95bpm-16b.mp4"
   },
   "pace": "held",
   "credit": false,
@@ -65,7 +57,7 @@
   "assets/3d/endcard-snap-000011-95bpm-9b.mp4": "008b080fd9ecc2e8fe8507b4358f348117ed6fbd18e27bfd9b253ad8e9041f2b",
   "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
   "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
-  "out/specials/mid-autumn-2026/short.mp4": "ce654cf773844aa82fd252401e81ab09ad02c5200b768fddbe579dd2bf5df0d7",
-  "out/specials/mid-autumn-2026/share.mp4": "01a1cea004c3fe6e3203f908685fe6270a60ca9dc23653ac7c2c95addb87995a"
+  "out/specials/mid-autumn-2026-b/short.mp4": "5c8dc7e0b8aae8e6ce361e9c91896840507365116de9d9f6feba0f8e8203edb6",
+  "out/specials/mid-autumn-2026-b/share.mp4": "5b16611d381219a723c0da71ed692cfde82a6d27337ae6c11adbc728c30b41cb"
  }
 }
