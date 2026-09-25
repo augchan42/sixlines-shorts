@@ -1,0 +1,61 @@
+{
+ "hexagram": 42,
+ "occasion": "A try of the character lesson on 42 益: the series short's copy, with the lesson replaced by the character.",
+ "copy": {
+  "hook": {
+   "text": "Door’s open, still hesitating?",
+   "source": "commentary/en/42.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Increase says:\ngo now.",
+    "source": "commentary/en/42.json#judgment.synthesis"
+   },
+   {
+    "text": "See good, move\ntoward it.",
+    "source": "commentary/en/42.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What will you\nmove toward?",
+   "source": "written"
+  },
+  "plates": [
+   "42-33",
+   "42-1"
+  ],
+  "caption": {
+   "text": "Wind and thunder feed each other. The method of increase: see something good and move toward it.",
+   "source": "commentary/en/42.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Let your gain\nspill over",
+   "source": "series/characters.json#42: A bowl rises; water fills it and spills over the far rim.",
+   "character": {
+    "char": "益",
+    "beats": 11,
+    "args": {
+     "walls": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "spill": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.8,
+     "camera": "high",
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
+  }
+ }
+}

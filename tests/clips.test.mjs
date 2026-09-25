@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
 import test from "node:test";
-import { clipFrames, endcardClip, hexagramClip, moonClip } from "../src/lib/clips.ts";
+import { characterClip, clipFrames, endcardClip, hexagramClip, moonClip } from "../src/lib/clips.ts";
 import { beatFrame } from "../src/lib/timing.ts";
 
 test("clip names carry the lines, tempo and length", () => {
@@ -42,4 +42,12 @@ test("a moon clip is named by its lines, tempo and length, and by its labels whe
   const b = moonClip([0, 0, 0, 0, 1, 1], 95, 16, ["A", "B", "C", "D", "E", "G"]);
   assert.match(a, /^assets\/3d\/moon-000011-95bpm-16b-labels-[0-9a-z]+\.mp4$/);
   assert.notEqual(a, b);
+});
+
+test("a character clip is named by its hexagram, tempo and length, and by its settings", () => {
+  const args = { walls: [0, 1, 6], stand: true };
+  const a = characterClip(47, 120, 13, args);
+  assert.match(a, /^assets\/3d\/character-47-120bpm-13b-[0-9a-z]+\.mp4$/);
+  assert.notEqual(a, characterClip(47, 120, 13, { ...args, zoom: 1.5 }));
+  assert.equal(a, characterClip(47, 120, 13, { walls: [0, 1, 6], stand: true }));
 });

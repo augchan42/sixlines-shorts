@@ -72,7 +72,7 @@ const renderOne = async (n) => {
   writeFileSync(path.join(dir, "caption.txt"), caption);
   writeFileSync(path.join(dir, "linkedin.txt"), linkedinCaption(row));
   const files = Object.fromEntries(
-    [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...(props.lesson?.painting ? [props.lesson.painting.src] : []), ...props.plates].map((f) => [f, sha256(f)]),
+    [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...(props.lesson?.painting ? [props.lesson.painting.src] : []), ...(props.lesson?.clip ? [props.lesson.clip] : []), ...props.plates].map((f) => [f, sha256(f)]),
   );
   files[`${outBase}/${name}/short.mp4`] = shaAbs(short);
   files[`${outBase}/${name}/share.mp4`] = shaAbs(share);

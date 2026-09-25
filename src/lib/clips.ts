@@ -20,14 +20,20 @@ export type EndcardMode = "join" | "flip" | "snap";
 export const endcardClip = (lines: readonly number[], bpm: number, beats: number, mode: EndcardMode) =>
   `assets/3d/endcard-${mode}-${lines.join("")}-${bpm}bpm-${beats}b.mp4`;
 
-// A short hash of a clip's labels, so clips with different labels never share a name.
-const labelHash = (labels: readonly string[]) => {
+// A short hash of a clip's labels or settings, so clips that differ never share a name.
+const hash = (text: string) => {
   let h = 5381;
-  for (const ch of labels.join("|")) h = ((h * 33) ^ ch.codePointAt(0)!) >>> 0;
+  for (const ch of text) h = ((h * 33) ^ ch.codePointAt(0)!) >>> 0;
   return h.toString(36);
 };
+const labelHash = (labels: readonly string[]) => hash(labels.join("|"));
 
 // public/-relative path of a moon (blender/moon.py): the hexagram it stands in front of, its
 // tempo and length, and the labels its lines light up with, if any.
 export const moonClip = (lines: readonly number[], bpm: number, beats: number, labels?: readonly string[]) =>
   `assets/3d/moon-${lines.join("")}-${bpm}bpm-${beats}b${labels ? `-labels-${labelHash(labels)}` : ""}.mp4`;
+
+// public/-relative path of a character lesson (blender/character.py): the hexagram, its
+// tempo and length, and a hash of its settings in series/characters.json.
+export const characterClip = (number: number, bpm: number, beats: number, args: Record<string, unknown>) =>
+  `assets/3d/character-${number}-${bpm}bpm-${beats}b-${hash(JSON.stringify(args))}.mp4`;

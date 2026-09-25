@@ -84,3 +84,10 @@ test("a missing moon clip names the command that renders it", () => {
   const row = { music: { certificate: { file: "a.txt", sha256: "" } } };
   assert.deepEqual(missingAssets(props, row, io), ["moon.mp4 is missing. Run: node scripts/moon.mjs --special NAME (the special's name)"]);
 });
+
+test("a missing character clip names the command that renders it", () => {
+  const props = { music: "m.mp3", hexagramClip: "c.mp4", endcard: { clip: "e.mp4", mode: "snap" }, screens: [], plates: [], hexagram: { number: 47 }, lesson: { kind: "character", text: "t", clip: "char.mp4" } };
+  const io = { exists: (f) => f !== "char.mp4", sha256: () => "" };
+  const row = { music: { certificate: { file: "a.txt", sha256: "" } } };
+  assert.deepEqual(missingAssets(props, row, io), ["char.mp4 is missing. Run: node scripts/character.mjs --special NAME (the special's name)"]);
+});

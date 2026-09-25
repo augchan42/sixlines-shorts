@@ -110,7 +110,7 @@ export const seriesSchema = z.object({
   // Library's Study page, or the painting on its Art page, then one plain sentence.
   lesson: z
     .object({
-      kind: z.enum(["lines", "judgment", "painting", "moon"]),
+      kind: z.enum(["lines", "judgment", "painting", "moon", "character"]),
       text: z.string(),
       trigrams: z.tuple([z.object({ zh: z.string(), name: z.string() }), z.object({ zh: z.string(), name: z.string() })]).optional(),
       screen: z.object({ src: z.string(), caption: z.string() }).optional(),
@@ -120,6 +120,9 @@ export const seriesSchema = z.object({
       // sentence typed over its end; the labels light up on the hexagram's lines.
       clip: z.string().optional(),
       labels: z.array(z.string()).length(6).optional(),
+      // A character lesson (blender/character.py) sets its own length: its drawing, then 3
+      // beats for the sentence under the finished character.
+      beats: z.number().int().positive().optional(),
     })
     .optional(),
   // "held": both meaning lines on one card and a longer question (src/lib/seriesPlan.ts).

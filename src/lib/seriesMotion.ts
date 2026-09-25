@@ -5,9 +5,13 @@ import type { SeriesPlan } from "./seriesPlan";
 // the accents: the drop's burst of shake, the beat punches over a lesson's picture or the
 // showcase, and the cuts. Shake on whole sections is distracting and hard on people with
 // motion sensitivity (docs/adr/ADR-SHORTS-001-camera-still-over-text.md).
-export const seriesMotion = (s: SeriesPlan, lesson?: { clip?: string }) => {
-  // Where a lesson's sentence comes on: over the last 5 beats of a moon clip, else halfway.
-  const sentence = lesson ? (lesson.clip ? s.cta - 5 : s.showcase + (s.cta - s.showcase) / 2) : null;
+// Where a lesson's sentence comes on: over the last 3 beats of a character, the last 5 of
+// a moon, else halfway.
+export const sentenceBeat = (s: SeriesPlan, lesson: { kind?: string; clip?: string }) =>
+  lesson.kind === "character" ? s.cta - 3 : lesson.clip ? s.cta - 5 : s.showcase + (s.cta - s.showcase) / 2;
+
+export const seriesMotion = (s: SeriesPlan, lesson?: { kind?: string; clip?: string }) => {
+  const sentence = lesson ? sentenceBeat(s, lesson) : null;
   return {
     motion: [
       { beat: -10, punch: 0, sway: 0.15 },

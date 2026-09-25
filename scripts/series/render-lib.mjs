@@ -72,7 +72,7 @@ export const missingAssets = (props, row, { exists, sha256 }) => {
   need(props.endcard.clip, `npm run series:clips -- ${n}`);
   for (const s of props.screens) need(s.src, "npm run series:screens");
   if (props.lesson?.screen) need(props.lesson.screen.src, "npm run series:screens");
-  if (props.lesson?.clip) need(props.lesson.clip, "node scripts/moon.mjs --special NAME (the special's name)");
+  if (props.lesson?.clip) need(props.lesson.clip, `node scripts/${props.lesson.kind === "character" ? "character" : "moon"}.mjs --special NAME (the special's name)`);
   if (props.lesson?.painting) need(props.lesson.painting.src, "node scripts/series-paintings.mjs");
   for (const p of props.plates) need(p, `npm run assets -- --hexagram ${n}`);
   return problems;

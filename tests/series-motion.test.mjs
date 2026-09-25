@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { planOf } from "../src/lib/seriesPlan.ts";
-import { seriesMotion } from "../src/lib/seriesMotion.ts";
+import { seriesMotion, sentenceBeat } from "../src/lib/seriesMotion.ts";
 
 const base = { bpm: 95, drop: 15.16, pace: "held", credit: true };
 const at = (motion, beat) => [...motion].reverse().find((m) => beat >= m.beat);
@@ -23,4 +23,13 @@ test("the frame does not punch while there is text to read", () => {
 test("the drop gets one short, lighter burst of shake", () => {
   const s = planOf(base);
   assert.deepEqual(seriesMotion(s, undefined).shakes, [{ beat: s.drop, strength: 30, beats: 0.5 }]);
+});
+
+test("a lesson's sentence comes on halfway, over a moon's last 5 beats, or a character's last 3", () => {
+  const s = planOf({ ...base, lesson: {} });
+  assert.equal(sentenceBeat(s, { kind: "lines" }), s.showcase + (s.cta - s.showcase) / 2);
+  assert.equal(sentenceBeat(s, { kind: "moon", clip: "c.mp4" }), s.cta - 5);
+  assert.equal(sentenceBeat(s, { kind: "character", clip: "c.mp4" }), s.cta - 3);
+  const { motion } = seriesMotion(s, { kind: "character", clip: "c.mp4" });
+  assert.equal(at(motion, s.cta - 2.5).punch, 0);
 });

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { moonClip } from "../src/lib/clips.ts";
+import { characterClip, moonClip } from "../src/lib/clips.ts";
+import { planOf } from "../src/lib/seriesPlan.ts";
 import { seriesProps } from "../src/series/props.ts";
 
 const line = (text) => ({ text, source: "written" });
@@ -101,4 +102,14 @@ test("a moon lesson plays its Blender clip for the whole lesson, with the labels
   assert.deepEqual(p.lesson.labels, labels);
   assert.equal(p.credit, false);
   assert.equal(seriesProps(row).credit, true);
+});
+
+test("a character lesson plays the character's clip, 3 beats longer than its drawing so the sentence can be read", () => {
+  const character = { char: "坎", beats: 12, args: { stand: true } };
+  const lesson = { kind: "character", text: "t", character, source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
+  const plan = planOf(p);
+  assert.equal(plan.cta - plan.showcase, 15);
+  assert.equal(p.lesson.clip, characterClip(29, 100, 15, character.args));
+  assert.equal(p.lesson.beats, 15);
 });

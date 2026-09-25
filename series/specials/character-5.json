@@ -1,0 +1,77 @@
+{
+ "hexagram": 5,
+ "occasion": "A try of the character lesson on 5 需: the series short's copy, with the lesson replaced by the character.",
+ "copy": {
+  "hook": {
+   "text": "Stuck waiting for your moment?",
+   "source": "commentary/en/5.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Waiting says:\nwait well.",
+    "source": "commentary/en/5.json#judgment.synthesis"
+   },
+   {
+    "text": "Eat, rest,\nstay ready.",
+    "source": "commentary/en/5.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "How can you\nwait well today?",
+   "source": "written"
+  },
+  "plates": [
+   "5-41",
+   "5-34"
+  ],
+  "caption": {
+   "text": "The clouds are up and the rain hasn’t come, so the old text says: eat and drink. Waiting well takes energy.",
+   "source": "commentary/en/5.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Wait in the rain;\nit will pass.",
+   "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
+   "character": {
+    "char": "需",
+    "beats": 12,
+    "args": {
+     "order": [
+      10,
+      8,
+      9,
+      11,
+      12,
+      13,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "stand": true,
+     "lieStep": 0.6,
+     "drop": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "dropStep": 0.3,
+     "rain": 3,
+     "camera": "low",
+     "zoom": 1.8,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
+  }
+ }
+}

@@ -3,7 +3,7 @@ import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
-import { seriesMotion } from "../lib/seriesMotion";
+import { sentenceBeat, seriesMotion } from "../lib/seriesMotion";
 import { planOf } from "../lib/seriesPlan";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
@@ -40,8 +40,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
   // A lesson shows its picture for the first half, then its sentence.
   const lessonHalf = s.showcase + (s.cta - s.showcase) / 2;
   const lesson = props.lesson;
-  // A moon lesson plays its clip throughout and types its sentence over the last 5 beats.
-  const moonText = s.cta - 5;
+  // A moon or character lesson plays its clip throughout and types its sentence over its end.
+  const clipText = lesson ? sentenceBeat(s, lesson) : s.cta;
   const motion = seriesMotion(s, lesson);
   const cuts: Cut[] = [
     { beat: s.hexagram, kind: "zoom" },
@@ -102,8 +102,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <Sequence {...span(s.showcase, s.cta)}>
                 <EndCard3D clip={lesson.clip} />
               </Sequence>
-              <Sequence {...span(moonText, s.cta)}>
-                <TypedText text={lesson.text} />
+              <Sequence {...span(clipText, s.cta)}>
+                <TypedText text={lesson.text} place={lesson.kind === "character" ? "bottom" : "centre"} />
               </Sequence>
             </>
           )}

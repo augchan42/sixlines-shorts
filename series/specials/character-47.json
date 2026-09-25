@@ -1,0 +1,58 @@
+{
+ "hexagram": 47,
+ "occasion": "A try of the character lesson on 47 困: the series short's copy, with the lesson replaced by the character.",
+ "copy": {
+  "hook": {
+   "text": "Speaking up and nobody listens?",
+   "source": "commentary/en/47.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Oppression says:\nhold your purpose.",
+    "source": "commentary/en/47.json#image.synthesis"
+   },
+   {
+    "text": "Words fail here.\nActions don’t.",
+    "source": "commentary/en/47.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What’s worth\neverything?",
+   "source": "written"
+  },
+  "plates": [
+   "47-11",
+   "47-42"
+  ],
+  "caption": {
+   "text": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose.",
+   "source": "commentary/en/47.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Pressed in,\nkeep growing",
+   "source": "series/characters.json#47: A tree stands; walls rise round it; it is pressed flat inside them.",
+   "character": {
+    "char": "困",
+    "beats": 10,
+    "args": {
+     "order": [
+      3,
+      2,
+      4,
+      5,
+      0,
+      1,
+      6
+     ],
+     "walls": [
+      0,
+      1,
+      6
+     ],
+     "stand": true
+    }
+   }
+  }
+ }
+}

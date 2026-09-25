@@ -82,6 +82,7 @@ export const seriesPlan = (bpm: number, drop: number, after = SHOWCASE_BEATS, pa
   };
 };
 
-// The plan for a short's props: a lesson, when it has one, replaces the showcase.
-export const planOf = (p: { bpm: number; drop: number; lesson?: unknown; pace?: Pace; credit?: boolean }) =>
-  seriesPlan(p.bpm, p.drop, p.lesson ? (p.pace === "held" ? HELD_LESSON_BEATS : LESSON_BEATS) : SHOWCASE_BEATS, p.pace, p.credit !== false);
+// The plan for a short's props: a lesson, when it has one, replaces the showcase. A lesson
+// with its own length (a character's drawing) keeps it.
+export const planOf = (p: { bpm: number; drop: number; lesson?: { beats?: number }; pace?: Pace; credit?: boolean }) =>
+  seriesPlan(p.bpm, p.drop, p.lesson ? (p.lesson.beats ?? (p.pace === "held" ? HELD_LESSON_BEATS : LESSON_BEATS)) : SHOWCASE_BEATS, p.pace, p.credit !== false);
