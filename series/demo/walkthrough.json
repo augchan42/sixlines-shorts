@@ -61,40 +61,37 @@
   {
    "beats": [
     0,
-    6
+    4
    ],
    "kind": "rain",
    "text": "What should I do\nabout the old project?"
   },
   {
    "beats": [
-    6,
-    10
+    4,
+    12
    ],
    "kind": "live",
    "take": "take1",
    "from": 0.6,
-   "rate": 2.8,
+   "rate": 1.25,
    "zoom": 1,
    "focus": 0,
-   "text": "The app won't answer\nyes or no."
+   "texts": [
+    {
+     "beat": 4,
+     "text": "The app won't answer\nyes or no."
+    },
+    {
+     "beat": 8,
+     "text": "It trains\nyour judgment."
+    }
+   ]
   },
   {
    "beats": [
-    10,
-    14
-   ],
-   "kind": "live",
-   "take": "take1",
-   "from": 55.5,
-   "rate": 1.4,
-   "text": "It trains\nyour judgment.",
-   "zoom": 1
-  },
-  {
-   "beats": [
-    14,
-    20
+    12,
+    18
    ],
    "kind": "hexagram",
    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
@@ -102,30 +99,26 @@
   },
   {
    "beats": [
-    20,
-    37
+    18,
+    35
    ],
    "kind": "clip",
    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
    "texts": [
     {
      "beat": 20,
-     "text": "18 · Work on\nthe Decayed"
-    },
-    {
-     "beat": 25,
      "text": "The name is a picture:\nbugs in a bowl."
     },
     {
-     "beat": 31,
+     "beat": 29,
      "text": "Found rot?\nClean it out."
     }
    ]
   },
   {
    "beats": [
-    37,
-    42
+    35,
+    40
    ],
    "kind": "live",
    "take": "take1",
@@ -137,8 +130,8 @@
   },
   {
    "beats": [
-    42,
-    47
+    40,
+    45
    ],
    "kind": "live",
    "take": "take1",
@@ -150,13 +143,13 @@
   },
   {
    "beats": [
-    47,
-    55
+    45,
+    51
    ],
    "kind": "live",
    "take": "take2",
    "from": 10.3,
-   "rate": 0.5,
+   "rate": 0.6,
    "zoom": 1,
    "focus": 0.3,
    "text": "The reading lists\nwhat would prove it wrong.",
@@ -164,30 +157,30 @@
   },
   {
    "beats": [
-    55,
-    61
+    51,
+    57
    ],
    "kind": "live",
    "take": "take1",
    "from": 421,
    "rate": 2.2,
    "zoom": 1,
-   "focus": 0.5,
+   "focus": 0.8,
    "text": "You decide.\nThen write down\nwhat happened.",
    "place": "top"
   },
   {
    "beats": [
-    61,
-    70
+    57,
+    66
    ],
    "kind": "endcard",
    "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
   },
   {
    "beats": [
-    70,
-    74
+    66,
+    70
    ],
    "kind": "credit",
    "name": "~DISNEYFAN"

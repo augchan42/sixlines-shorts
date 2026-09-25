@@ -10,11 +10,13 @@ import { Hexagram3D } from "../scenes/Hexagram3D";
 import type { ShortProps } from "../schema";
 
 type Take = { file: string };
+// One card for the whole shot, or several, each from its beat to the next.
+type Cards = { text: string } | { texts: { beat: number; text: string }[] };
 type Shot =
   | { beats: [number, number]; kind: "rain"; text: string }
-  | { beats: [number, number]; kind: "live"; take: string; from: number; rate: number; zoom?: number; focus?: number; place?: "top" | "bottom"; text: string }
+  | ({ beats: [number, number]; kind: "live"; take: string; from: number; rate: number; zoom?: number; focus?: number; place?: "top" | "bottom" } & Cards)
   | { beats: [number, number]; kind: "hexagram"; clip: string; text: string }
-  | { beats: [number, number]; kind: "clip"; clip: string; texts: { beat: number; text: string }[] }
+  | ({ beats: [number, number]; kind: "clip"; clip: string } & Cards)
   | { beats: [number, number]; kind: "endcard"; clip: string }
   | { beats: [number, number]; kind: "credit"; name: string };
 
@@ -69,6 +71,15 @@ export const Demo: React.FC<DemoProps> = (props) => {
   }));
   // Each card is typed in full within 0.3 s of its cut, so it can be read before the next.
   const typed = (text: string, place: "centre" | "bottom" | "top") => <TypedText text={text} place={place} size={sizeFor(text)} typing={[0, 9]} />;
+  const cards = (s: Cards & { beats: [number, number] }, place: "bottom" | "top") => {
+    if ("text" in s) return typed(s.text, place);
+    const [a, b] = s.beats;
+    return s.texts.map((t, k) => (
+      <Sequence key={k} {...span(t.beat - a, (s.texts[k + 1]?.beat ?? b) - a)}>
+        {typed(t.text, place)}
+      </Sequence>
+    ));
+  };
   return (
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
@@ -88,7 +99,7 @@ export const Demo: React.FC<DemoProps> = (props) => {
                 {s.kind === "live" && (
                   <>
                     <Live src={props.takes[s.take].file} from={s.from} rate={s.rate} zoom={s.zoom ?? 1} focus={s.focus ?? 0.5} />
-                    {typed(s.text, s.place ?? "bottom")}
+                    {cards(s, s.place ?? "bottom")}
                   </>
                 )}
                 {s.kind === "hexagram" && (
@@ -102,11 +113,7 @@ export const Demo: React.FC<DemoProps> = (props) => {
                     <AbsoluteFill style={{ backgroundColor: "#000" }}>
                       <OffthreadVideo src={staticFile(s.clip)} muted style={{ width: "100%", height: "100%" }} />
                     </AbsoluteFill>
-                    {s.texts.map((t, k) => (
-                      <Sequence key={k} {...span(t.beat - a, (s.texts[k + 1]?.beat ?? b) - a)}>
-                        {typed(t.text, "bottom")}
-                      </Sequence>
-                    ))}
+                    {cards(s, "bottom")}
                   </>
                 )}
                 {s.kind === "endcard" && <EndCard3D clip={s.clip} />}
