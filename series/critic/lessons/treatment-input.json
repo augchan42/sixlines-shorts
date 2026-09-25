@@ -1,0 +1,398 @@
+{
+  "note": "Which lesson each hexagram with a character drawing gets: its current lesson (series/lessons.json) or the character (series/characters.json). 42 is decided by the author: the character. Scored by scripts/workflows/lesson-treatment.js.",
+  "decisions": [
+    {
+      "number": 47,
+      "char": "困",
+      "strip": "out/characters/strips/47.jpg",
+      "current": {
+        "kind": "lines",
+        "text": "Lake gone dry?\nHold to your aim.",
+        "why": "The Image: the lake without water is oppression, and the realized person stakes their life on following their purpose. Both readers got the empty lake but no lesson."
+      },
+      "character": {
+        "story": "A tree stands; walls rise round it; it is pressed flat inside them.",
+        "sentence": "Pressed in,\nkeep growing"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Pressed in,\nkeep growing",
+        "why": "The walls pressing the tree flat show 困 (oppression) directly; the lake image needs explaining."
+      }
+    },
+    {
+      "number": 18,
+      "char": "蠱",
+      "strip": "out/characters/strips/18.jpg",
+      "current": {
+        "kind": "judgment",
+        "text": "Plan three days,\ncheck three days.",
+        "why": "The Judgment puts three days before a new start and three days after it, so a repair gets time on both sides."
+      },
+      "character": {
+        "story": "Worms breed in a shut bowl, swarm up and pour out.",
+        "sentence": "What you leave\nshut goes bad"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "What you leave\nshut goes bad",
+        "why": "Worms swarming out of a shut bowl is the character and the hexagram (decay you must fix) at once."
+      }
+    },
+    {
+      "number": 48,
+      "char": "井",
+      "strip": "out/characters/strips/48.jpg",
+      "current": {
+        "kind": "line",
+        "line": 3,
+        "text": "The well is clean.\nNo one drinks.",
+        "why": "Line 3, the only sad line in the book: the well is cleaned and no one drinks, 'my heart's sorrow'."
+      },
+      "character": {
+        "story": "Four beams rise as the well's frame; the water in the middle ripples on every beat.",
+        "sentence": "The town changes;\nthe well stays"
+      },
+      "decision": {
+        "choice": "keep",
+        "text": "The well is clean.\nNo one drinks.",
+        "why": "The well clip is the weakest: four beams and a ripple. \"The well is clean. No one drinks.\" is a clear, odd image."
+      }
+    },
+    {
+      "number": 3,
+      "char": "屯",
+      "strip": "out/characters/strips/3.jpg",
+      "current": {
+        "kind": "line",
+        "line": 3,
+        "text": "Without a guide,\nlet the deer go.",
+        "why": "Line 3: chasing deer into the forest without a forester goes wrong, so let it go."
+      },
+      "character": {
+        "story": "A sprout stands buried to its tip; it pushes up through the ground in three strains, then lies down as the character.",
+        "sentence": "Starts are\nalways hard."
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Starts are\nalways hard.",
+        "why": "The sprout straining up through the ground is 屯 (difficult beginnings) exactly."
+      }
+    },
+    {
+      "number": 32,
+      "char": "恆",
+      "strip": "out/characters/strips/32.jpg",
+      "current": {
+        "kind": "line",
+        "line": 4,
+        "text": "No game in this\nfield. Move.",
+        "why": "Persistence in the wrong place is wasted: a field with no game."
+      },
+      "character": {
+        "story": "Two lines rise; between them a moon goes from new to full and back, then sets into them; a heart is drawn beside it.",
+        "sentence": "Change shape,\nkeep your course"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Change shape,\nkeep your course",
+        "why": "The moon changing shape between two steady lines shows constancy through change; the current line needs context."
+      }
+    },
+    {
+      "number": 36,
+      "char": "明",
+      "strip": "out/characters/strips/36.jpg",
+      "current": {
+        "kind": "line",
+        "line": 5,
+        "text": "A prince acted mad\nto stay alive.",
+        "why": "Line 5: Prince Ji hid his sanity at the tyrant's court, the book's own example of hiding your light to survive."
+      },
+      "character": {
+        "story": "A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes.",
+        "sentence": "Keep your light\nlow and on"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Keep your light\nlow and on",
+        "why": "Keeping a light low but on is the hexagram (light hidden in dark times); the prince story needs history. The waning moon is our own story of 明, not its etymology."
+      }
+    },
+    {
+      "number": 50,
+      "char": "鼎",
+      "strip": "out/characters/strips/50.jpg",
+      "current": {
+        "kind": "line",
+        "line": 4,
+        "text": "The legs break.\nDuke wears dinner.",
+        "why": "The caldron's legs break, the duke's meal spills over him: what happens when the setup isn't right."
+      },
+      "character": {
+        "story": "The legs rise; a fire is lit among them; the bowl, drawn high above, drops onto them.",
+        "sentence": "A steady base\nlets things cook"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "A steady base\nlets things cook",
+        "why": "The cauldron set on its legs over a fire shows 鼎 plainly; the duke joke is funny but is about one line."
+      }
+    },
+    {
+      "number": 40,
+      "char": "解",
+      "strip": "out/characters/strips/40.jpg",
+      "current": {
+        "kind": "line",
+        "line": 3,
+        "text": "Riding with a load\ninvites thieves.",
+        "why": "Line 3: carrying the old burden into freedom makes you a target."
+      },
+      "character": {
+        "story": "The ox and its horn are drawn; a knife rises beside them; the horn lifts free and hovers.",
+        "sentence": "Cut it loose\nand move on"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Cut it loose\nand move on",
+        "why": "The horn cut free is 解 (release) in the character itself."
+      }
+    },
+    {
+      "number": 5,
+      "char": "需",
+      "strip": "out/characters/strips/5.jpg",
+      "current": {
+        "kind": "line",
+        "line": 6,
+        "text": "Uninvited guests?\nReceive them well.",
+        "why": "Line 6: three uninvited guests arrive; treat them with respect and it ends well."
+      },
+      "character": {
+        "story": "A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
+        "sentence": "Wait in the rain;\nit will pass."
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Wait in the rain;\nit will pass.",
+        "why": "Waiting out the rain is 需 (waiting); the guests line is one line flavour. The example short showed it works."
+      }
+    },
+    {
+      "number": 19,
+      "char": "臨",
+      "strip": "out/characters/strips/19.jpg",
+      "current": {
+        "kind": "line",
+        "line": 3,
+        "text": "Too comfortable?\nWorry a little.",
+        "why": "Line 3: a comfortable approach supports nothing, but once you worry about it there is no fault."
+      },
+      "character": {
+        "story": "A figure with a big eye stands, leans down, and three small squares light up under it one by one; then it lies down as the character.",
+        "sentence": "Lean down to\nsee what is small"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Lean down to\nsee what is small",
+        "why": "The big eye leaning down to look at small things is 臨 (overseeing, drawing near)."
+      }
+    },
+    {
+      "number": 52,
+      "char": "艮",
+      "strip": "out/characters/strips/52.jpg",
+      "current": {
+        "kind": "judgment",
+        "text": "Stillness starts\nin the back.",
+        "why": "The Judgment opens with 'Stilling the back', the part you can't see, not the face or the mind. A specific, surprising detail."
+      },
+      "character": {
+        "story": "A figure with a big eye stands, turns round to look back, holds still, turns forward again and lies down as the character.",
+        "sentence": "Stop, and look\nat where you are"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Stop, and look\nat where you are",
+        "why": "The figure turning round to look and holding still teaches stopping; \"Stillness starts in the back\" is harder to picture."
+      }
+    },
+    {
+      "number": 23,
+      "char": "剝",
+      "strip": "out/characters/strips/23.jpg",
+      "current": {
+        "kind": "line",
+        "line": 1,
+        "text": "The bed breaks at\nthe legs first.",
+        "why": "Collapse starts at the base, the part nobody looks at."
+      },
+      "character": {
+        "story": "A knife stands beside a block; pieces fall off the block one by one until only its base stands; then both lie down as the character.",
+        "sentence": "Stripped back\nto the base"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Stripped back\nto the base",
+        "why": "Pieces falling off the block until only the base stands is 剝 (stripping away)."
+      }
+    },
+    {
+      "number": 56,
+      "char": "旅",
+      "strip": "out/characters/strips/56.jpg",
+      "current": {
+        "kind": "line",
+        "line": 3,
+        "text": "The wanderer burns\nhis own inn.",
+        "why": "A guest who wrecks the shelter he was given loses his helper too."
+      },
+      "character": {
+        "story": "People under a flag are drawn standing far off; they walk toward you in four hops, then lie down as the character.",
+        "sentence": "Travel light;\nkeep moving"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Travel light;\nkeep moving",
+        "why": "People walking toward you with a flag is 旅 (travelling); the burnt inn is one line."
+      }
+    },
+    {
+      "number": 58,
+      "char": "兌",
+      "strip": "out/characters/strips/58.jpg",
+      "current": {
+        "kind": "painting",
+        "text": "Painters toast,\nthen talk shop.",
+        "why": "Krøyer's artists at their party: the Image joins friends for discussion and practice, not only celebration."
+      },
+      "character": {
+        "story": "A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter.",
+        "sentence": "Joy is better\nshared out loud"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Joy is better\nshared out loud",
+        "why": "The lines lifting out of an open mouth like laughter is 兌 (joy); the painting lesson is about one painting."
+      }
+    },
+    {
+      "number": 8,
+      "char": "比",
+      "strip": "out/characters/strips/8.jpg",
+      "current": {
+        "kind": "painting",
+        "text": "Friends at lunch,\nholding together.",
+        "why": "Accepted: Renoir's crowded table shows holding together at a glance."
+      },
+      "character": {
+        "story": "One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character.",
+        "sentence": "Choose who you\nstand beside"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Choose who you\nstand beside",
+        "why": "A second figure walking up to stand beside the first is 比 (holding together)."
+      }
+    },
+    {
+      "number": 13,
+      "char": "同",
+      "strip": "out/characters/strips/13.jpg",
+      "current": {
+        "kind": "line",
+        "line": 5,
+        "text": "Parted, they weep.\nMet, they laugh.",
+        "why": "Line 5: fellowship first weeps and wails, then laughs when the armies manage to meet. Both readers got sad-then-happy but not that the tears come from being apart and the laughter from meeting."
+      },
+      "character": {
+        "story": "A frame rises; inside it a board and a mouth are drawn, and all of it inside lifts at once, together, and hovers.",
+        "sentence": "Lift it\ntogether"
+      },
+      "decision": {
+        "choice": "keep",
+        "text": "Parted, they weep.\nMet, they laugh.",
+        "why": "The 同 clip (a frame, the inside lifting) reads weakly as \"together\"; the line \"Parted, they weep. Met, they laugh.\" is strong."
+      }
+    },
+    {
+      "number": 63,
+      "char": "既",
+      "strip": "out/characters/strips/63.jpg",
+      "current": {
+        "kind": "line",
+        "line": 4,
+        "text": "Fine silk turns\nto rags.",
+        "why": "After completion, decay is slow and quiet, so the line says to stay watchful all day."
+      },
+      "character": {
+        "story": "A figure stands; a bowl rises beside it; the meal done, the figure turns its back on the bowl, holds, turns again and lies down as the character.",
+        "sentence": "When it is done,\nstay awake"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "When it is done,\nstay awake",
+        "why": "Turning away from the finished meal and staying awake is 既濟 (after completion, stay careful)."
+      }
+    },
+    {
+      "number": 24,
+      "char": "復",
+      "strip": "out/characters/strips/24.jpg",
+      "current": {
+        "kind": "lines",
+        "text": "Midwinter: rest.\nThe light returns.",
+        "why": "The Image: thunder within the earth is return, so the kings closed the passes at the solstice and no one travelled. Both readers asked why they stayed home: the stillness lets what is coming back return."
+      },
+      "character": {
+        "story": "A passage rises; a foot stands out in front of it, then walks back toward it in four hops; the road it walks is drawn after it.",
+        "sentence": "The way out is\nthe way back"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "The way out is\nthe way back",
+        "why": "The foot walking back into the passage is 復 (return)."
+      }
+    },
+    {
+      "number": 10,
+      "char": "履",
+      "strip": "out/characters/strips/10.jpg",
+      "current": {
+        "kind": "judgment",
+        "text": "Stood on a tiger's\ntail. Not bitten.",
+        "why": "The Judgment: treading on the tiger's tail, it does not bite the person. Both readers read the old text as a harmless tail; it has to say someone stands on the tail and the tiger still does not bite."
+      },
+      "character": {
+        "story": "A figure with a big eye stands; its foot comes down in front of it one stroke at a time, a beat apart, each placed with care; then it lies down as the character.",
+        "sentence": "Watch where\nyou step"
+      },
+      "decision": {
+        "choice": "keep",
+        "text": "Stood on a tiger's\ntail. Not bitten.",
+        "why": "The foot coming down is subtle in the clip; the tiger tail judgment is the best known image of 履."
+      }
+    },
+    {
+      "number": 27,
+      "char": "頤",
+      "strip": "out/characters/strips/27.jpg",
+      "current": {
+        "kind": "line",
+        "line": 1,
+        "text": "Stop staring at\nsomeone's plate.",
+        "why": "Line 1 sets down its own spirit tortoise to gape at someone else's meal: envy traded for self-sufficiency."
+      },
+      "character": {
+        "story": "A head is drawn; beside it an open jaw rises; what is inside the jaw rises and spills out over its rim.",
+        "sentence": "Mind what goes in\nand what comes out"
+      },
+      "decision": {
+        "choice": "character",
+        "text": "Mind what goes in\nand what comes out",
+        "why": "The open jaw with things spilling out teaches minding what goes in and comes out, which is 頤 (nourishment)."
+      }
+    }
+  ]
+}

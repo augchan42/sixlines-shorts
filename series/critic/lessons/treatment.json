@@ -1,0 +1,922 @@
+{
+  "note": "Rounds 1-3 of scripts/workflows/lesson-treatment.js (run wf_30890166-cd3) on series/critic/lessons/treatment-input.json: two critics per round, the average kept, choices under 8 redone.",
+  "rounds": [
+    {
+      "round": 1,
+      "scored": [
+        {
+          "number": 3,
+          "score": 7,
+          "feedback": [
+            "'Starts are always hard.' is plain, true to 屯 and much closer to the intent than the deer line. The drawing is thin: a small comma-shaped bud rises in the dark with no visible ground, so 'pushing up through the earth in three strains' is not seen. The sentence carries this one. A visible ground line for the sprout to break through would make it an 8 or more.",
+            "A sprout pushing up is 屯 (difficult birth), and the choice teaches the intent where the deer line is only flavour. In the strip the sprout is a tiny comma until the last frames, so it reads weakly on first sight. 'Always' goes beyond the text: the Judgment promises great success and says to set up helpers. 'Starts are hard. / Get help.' is just as plain and closer to 利建侯."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Starts are\nalways hard.",
+            "why": "The sprout straining up through the ground is 屯 (difficult beginnings) exactly."
+          }
+        },
+        {
+          "number": 5,
+          "score": 7.5,
+          "feedback": [
+            "Clear and fun: cyan rain falls on the figure, it stops, and the figure settles. 'Wait in the rain; / it will pass.' says what is shown and is the hexagram's intent, and the example short proved it works. The guests line is one line's flavour. Only small gains are left, such as the rain being a little heavier or longer so the waiting registers.",
+            "The rain falling on the waiting figure is clear, and the example short already works. The text is about waiting for rain to come (clouds rise to heaven; eat, drink and be at ease while waiting), not waiting out rain. So 'it will pass' reverses the picture slightly. It still teaches patience, which is the intent. 'Wait. / Eat, rest; it comes.' is truer to the text, but the current sentence is acceptable."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Wait in the rain;\nit will pass.",
+            "why": "Waiting out the rain is 需 (waiting); the guests line is one line flavour. The example short showed it works."
+          }
+        },
+        {
+          "number": 8,
+          "score": 8,
+          "feedback": [
+            "Clear: one figure, a second walks up and stands beside it, and they settle together. 'Choose who you / stand beside' names the action and teaches 比: whom you join, and joining in time. The Renoir lunch was fine, but this is simpler and more active.",
+            "Two figures coming to stand together is clear at a glance. 'Choose who you stand beside' matches the Judgment (examine yourself before joining; latecomers fare badly) and line 3 (joining the wrong people). Plain and short. Ship it."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Choose who you\nstand beside",
+            "why": "A second figure walking up to stand beside the first is 比 (holding together)."
+          }
+        },
+        {
+          "number": 10,
+          "score": 9,
+          "feedback": [
+            "Right to keep. The foot-strokes clip is subtle, just 履 being written, and 'Stood on a tiger's tail. Not bitten.' is the hexagram's own Judgment. It is vivid, fun and needs no history. The only thing left is making sure the delivery lands the surprise ('Not bitten.' on its own beat).",
+            "Right to keep. The foot being placed is invisible in the strip, and the tiger's tail is the Judgment itself: conduct that is careful and correct survives danger. The sentence spells out who stands on what, and the outcome. It is concrete and fun."
+          ],
+          "decision": {
+            "choice": "keep",
+            "text": "Stood on a tiger's\ntail. Not bitten.",
+            "why": "The foot coming down is subtle in the clip; the tiger tail judgment is the best known image of 履."
+          }
+        },
+        {
+          "number": 13,
+          "score": 8,
+          "feedback": [
+            "Right to keep. The clip is a flat frame with small yellow bits that lift slightly and does not read as 'together'. 'Parted, they weep. Met, they laugh.' is plain, emotional and teaches fellowship. It loses a point only because it is a line rather than the Judgment's 'fellowship in the open'. No better option is on the table.",
+            "Keeping is right: the frame lifting reads as an object lifting, not as people together. 'Parted, they weep. Met, they laugh.' is concrete, and fellowship is the hexagram's own subject, so it teaches intent, not just flavour. A point short of 10 only because line 5 is about finally meeting after struggle rather than the Judgment's open fellowship (in the open field, across the great water)."
+          ],
+          "decision": {
+            "choice": "keep",
+            "text": "Parted, they weep.\nMet, they laugh.",
+            "why": "The 同 clip (a frame, the inside lifting) reads weakly as \"together\"; the line \"Parted, they weep. Met, they laugh.\" is strong."
+          }
+        },
+        {
+          "number": 18,
+          "score": 7,
+          "feedback": [
+            "The green bug glyphs piling out of the pink bowl are lively and read as 'something breeding in a container'. A newcomer won't know they are worms, but they will see a swarm. 'Plan three days, check three days' needs the Judgment, so the character is the right choice. The weak point is that the sentence names the decay, not the hexagram's intent, which is to repair it. 'What you leave shut / goes bad. Fix it.' or 'Open it up / and fix it' would teach the action.",
+            "The drawing is the strongest in the set: worms pouring out of a shut bowl is literally 蠱. The sentence explains how the decay started. The hexagram's point is fixing it (repair what was spoiled, three days before and after). 'What you leave / shut goes bad' warns but teaches no action. 'Open it up / and fix it' or 'Rot left alone / spreads. Fix it' carries the intent and still fits the swarm."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "What you leave\nshut goes bad",
+            "why": "Worms swarming out of a shut bowl is the character and the hexagram (decay you must fix) at once."
+          }
+        },
+        {
+          "number": 19,
+          "score": 7,
+          "feedback": [
+            "The best 3D moment in the set: the tall figure tips forward and three cyan squares light up beneath it. It is fun and legible as 'leaning over something'. 'Lean down to / see what is small' matches the action. The intent of 臨 (the strong drawing near to look after those below, with care) is only half taught, because the squares are not obviously 'small people or things'. Still better than 'Too comfortable? Worry a little.' Something like 'Come close to / those below you' would teach the intent more directly.",
+            "The big eye leaning down over three small squares reads clearly and is fun. 臨 is the superior drawing near to the people to teach and care for them (教思無窮，容保民無疆). 'See what is small' leans toward inspection rather than care. 'Lean down to / those below you' or 'Come close / to those you lead' is closer to the intent. The choice over the 'too comfortable' line is right."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Lean down to\nsee what is small",
+            "why": "The big eye leaning down to look at small things is 臨 (overseeing, drawing near)."
+          }
+        },
+        {
+          "number": 23,
+          "score": 5.5,
+          "feedback": [
+            "The pieces falling off the block to leave the base are visible and match 剝. But 'Stripped back / to the base' describes the picture; it is not a lesson. A newcomer gets 'things fall away' and nothing to do about it. The hexagram's advice is to not push while things are being stripped, and to secure the base. 'When it falls apart, / hold the base' or 'Let it fall; / keep the base' would teach. As written it only narrowly beats the bed-legs line, which is vivid.",
+            "The clip shows pieces coming off until a base is left, which reads. The sentence describes the picture but teaches nothing, and it inverts the hexagram: in 剝 the base goes first (the bed's legs, then its frame) and only the top line survives. The lesson of the text is not to push forward while things fall (不利有攸往) and to shore up what is below (上以厚下安宅). The current line 'The bed breaks at the legs first' is truer. For the character, use something like 'When it falls apart, / don't push' or 'Shore up / what's below'."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Stripped back\nto the base",
+            "why": "Pieces falling off the block until only the base stands is 剝 (stripping away)."
+          }
+        },
+        {
+          "number": 24,
+          "score": 4.5,
+          "feedback": [
+            "The clip reads as a character being assembled. The foot walking back and the road drawn after it are not visible as a return. 'The way out is / the way back' is a riddle, the kind of mannered phrase the rules warn against, and it does not say what returns or why. The current 'Midwinter: rest. / The light returns.' is plain, true to the Image and teaches 復 directly. Keep the current lesson, or use the character with 'What left / comes back'.",
+            "'The way out is the way back' is a riddle, the mannered prose the brief rules out, and a newcomer can't parse it. The clip mostly looks like 復 being drawn stroke by stroke; the foot walking back isn't clear. The current 'Midwinter: rest. The light returns.' already teaches the intent (return after the low point). If the character is kept, use the key line 1: 'Gone a little wrong? / Turn back.' (不遠復)."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "The way out is\nthe way back",
+            "why": "The foot walking back into the passage is 復 (return)."
+          }
+        },
+        {
+          "number": 27,
+          "score": 6.5,
+          "feedback": [
+            "The clip is hard to read: a yellow piece glows inside the left part of 頤, and nothing reads as a jaw or as food spilling out. 'Mind what goes in / and what comes out' is true to the Image (care with food and words), but at 8 words it is over the 3-7 limit and abstract. 'Stop staring at / someone's plate.' is plain, funny and teaches self-reliance at first sight. Keep the current lesson, or shorten to 'Mind what goes in / your mouth' only if the spill becomes visible.",
+            "The sentence is almost exactly the Image (be careful of words, moderate in eating and drinking, 慎言語，節飲食), and it is plain. The jaw with something rising inside reads reasonably well, though the 'spill out' moment is small in the strip. It is better than the envy line, which is line 1 flavour."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Mind what goes in\nand what comes out",
+            "why": "The open jaw with things spilling out teaches minding what goes in and comes out, which is 頤 (nourishment)."
+          }
+        },
+        {
+          "number": 32,
+          "score": 8,
+          "feedback": [
+            "Good. A glowing moon waxes and wanes between two steady bars, which is easy to follow and pretty to watch, and 'Change shape, / keep your course' names exactly what it shows. The current 'No game in this field. Move.' would confuse a newcomer on a hexagram about persistence. The heart that appears at the end is unexplained but harmless.",
+            "The moon waxing and waning between two steady lines is a clear, fun picture of constancy through change, and 'keep your course' matches the Image (stand firm, don't change direction, 立不易方). 'Change shape' is slightly ambiguous: it could read as advice to change yourself. 'Shapes change; / keep your course' would remove that. A good choice over the field-with-no-game line."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Change shape,\nkeep your course",
+            "why": "The moon changing shape between two steady lines shows constancy through change; the current line needs context."
+          }
+        },
+        {
+          "number": 36,
+          "score": 7,
+          "feedback": [
+            "The bright moon shrinking beside 日 is watchable, and 'Keep your light / low and on' teaches the intent. But in the strip the waning reads as a ball getting a little smaller, not as a thin crescent that stays lit, so 'low and on' is only partly shown. 'A prince acted mad to stay alive' is not really history-dependent: it explains itself and is more fun. A close call. The character wins only if the crescent clearly stays lit on screen.",
+            "The sentence is accurate and plain: it is the Image's 用晦而明 (dim your light and stay bright). The clip only draws 明 and shows a moon that mostly goes out; the 'dimmed but still lit' state isn't clear in the strip. The Prince Ji line does need history, so the character is still the better option. Make the lit crescent hold long enough to register."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Keep your light\nlow and on",
+            "why": "Keeping a light low but on is the hexagram (light hidden in dark times); the prince story needs history. The waning moon is our own story of 明, not its etymology."
+          }
+        },
+        {
+          "number": 40,
+          "score": 7,
+          "feedback": [
+            "The cyan 角 lifting free of the pink 牛 does read as 'a part comes loose', and 'Cut it loose / and move on' is plain and fits 解 (release). A newcomer will not see an ox horn or a knife, only one half of a sign floating off. That is still better than the thieves line, which is one line's flavour and needs explaining. Making the knife stroke visibly slice before the lift would sell 'cut'.",
+            "True to the character: knife, ox and horn, with the horn cut free, and 'Cut it loose and move on' fits the Judgment (release, then return or go early) and the Image (pardon faults). In the strip the horn lifting is small and could read as a stroke being placed, so a newcomer may miss the cut. The sentence is good. The payoff needs to be bigger on screen."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Cut it loose\nand move on",
+            "why": "The horn cut free is 解 (release) in the character itself."
+          }
+        },
+        {
+          "number": 47,
+          "score": 7.5,
+          "feedback": [
+            "Clear at first sight: a tree grows and walls close round it, so the final frame is a tree boxed in. The sentence names what is shown, and it beats the dry-lake line, which needs the Image explained. One small mismatch: the tree ends pressed flat, not growing, so 'keep growing' is said over a picture of the tree being stopped. 'Boxed in, / keep growing' or a tree that pushes up once more at the end would make it a 9.",
+            "The character is the right choice: walls closing round a tree shows 困 (hemmed in) at a glance, and the dry lake needs explaining. The sentence is close to the Image (a person keeps to their aim under pressure), but the clip ends with the tree pressed flat, so 'keep growing' says the opposite of what the viewer just saw. 'Pressed in, / hold to your aim' or 'Hemmed in, / stand firm' matches both the drawing and the text."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Pressed in,\nkeep growing",
+            "why": "The walls pressing the tree flat show 困 (oppression) directly; the lake image needs explaining."
+          }
+        },
+        {
+          "number": 48,
+          "score": 6.5,
+          "feedback": [
+            "Keeping the line is right: the strip shows 井 being drawn plus a small cyan blob, and nobody would see water rippling in a well. 'The well is clean. No one drinks.' is plain and odd enough to stick. But it is line 3 (flavour, and a sad exception), not the intent of 井: the well that feeds everyone and does not move. A better clip, or 'The town moves; / the well stays' over a clearer well, would teach more.",
+            "The clip is weak, and I agree: it shows 井 plus a cyan ripple and acts out nothing, so keeping the line is defensible. But the kept line teaches an exception, the one sad line in the hexagram. The hexagram's point is in the Judgment: the town changes, the well does not, and it feeds everyone who comes. The better fix is to put the Judgment sentence into the kept slot ('Towns move. / The well stays.') or improve the clip. Keeping line 3 as it is gives flavour, not intent."
+          ],
+          "decision": {
+            "choice": "keep",
+            "text": "The well is clean.\nNo one drinks.",
+            "why": "The well clip is the weakest: four beams and a ripple. \"The well is clean. No one drinks.\" is a clear, odd image."
+          }
+        },
+        {
+          "number": 50,
+          "score": 6,
+          "feedback": [
+            "The clip is modest: legs are drawn, a yellow dot glows between them, and the top piece drops on. A newcomer sees a character assembling and may not see a pot over a fire. 'A steady base lets things cook' is plain but flat. 'The legs break. Duke wears dinner.' is funnier, teaches the same point from the failure side, and needs no context. I would keep the duke line, or make the fire clearly flicker and the bowl clearly land.",
+            "The clip is subtle: the fire is a small yellow dot, and the bowl dropping onto the legs reads as the character being assembled. 'A steady base / lets things cook' is plain but vague, and it leans on the legs, which are line 4's image. 鼎's intent is nourishing and setting the new order in its right place (正位凝命). 'Duke wears dinner' is funnier and still shows why the base matters. It is close. A sharper sentence, e.g. 'Set it level, / then cook', would decide it."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "A steady base\nlets things cook",
+            "why": "The cauldron set on its legs over a fire shows 鼎 plainly; the duke joke is funny but is about one line."
+          }
+        },
+        {
+          "number": 52,
+          "score": 7.5,
+          "feedback": [
+            "The sign turning round and back is a clear, fun action. But what it shows is literally the Judgment's 'stilling the back': it turns its back. 'Stop, and look / at where you are' is plain and fits 艮, though the comma makes it a little stiff. The clip actually illustrates the current line well, so 'Stillness starts / in the back' over this drawing could beat both. As it stands it is a sound choice.",
+            "The turning figure that holds still is readable, and the sentence matches the Image: thoughts do not go beyond one's place (思不出其位). It is plain, and a newcomer gets it. 'Stillness starts in the back' is truer to the Judgment's wording but harder to picture. Minor issue: the comma is not needed ('Stop and look / at where you are')."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Stop, and look\nat where you are",
+            "why": "The figure turning round to look and holding still teaches stopping; \"Stillness starts in the back\" is harder to picture."
+          }
+        },
+        {
+          "number": 56,
+          "score": 6,
+          "feedback": [
+            "The clip is one of the weaker ones: 旅 gets bigger in steps, but no people or flag are legible, so the 'walking toward you' reads as a zoom. 'Travel light; keep moving' is plain but partly invented; the text's point is that the traveller should be modest and careful as a guest. 'The wanderer burns his own inn' is vivid and fun but is one line. I'd take the character only with a sentence nearer the intent, such as 'Far from home, / be a good guest'.",
+            "A figure walking closer in hops is readable and fun. 'Travel light' isn't in the text. The Judgment says small success for the wanderer who stays modest and correct, and the Image says don't linger over lawsuits. 'Keep moving' only half fits. The burnt inn is one line but a vivid warning about a guest's conduct. A sentence closer to the intent, e.g. 'Far from home, / walk softly', would earn the character a higher score."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Travel light;\nkeep moving",
+            "why": "People walking toward you with a flag is 旅 (travelling); the burnt inn is one line."
+          }
+        },
+        {
+          "number": 58,
+          "score": 7.5,
+          "feedback": [
+            "Charming: the two yellow strokes pop up and bob above the open mouth like laughter or raised eyebrows, which is fun at first sight. 'Joy is better / shared out loud' is plain and true to the Image of friends joined in talk. That clearly beats a lesson about one painting.",
+            "The laugh-lines bobbing out of the open mouth are clear and fun, and the choice over a single painting's lesson is right. 'Out loud' adds little. The Image is friends joining in talk and practice (朋友講習), so the text's point is shared joy, not loud joy. 'Joy grows / when it's shared' or 'Share your joy / with friends' is plainer and truer."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "Joy is better\nshared out loud",
+            "why": "The lines lifting out of an open mouth like laughter is 兌 (joy); the painting lesson is about one painting."
+          }
+        },
+        {
+          "number": 63,
+          "score": 7,
+          "feedback": [
+            "The sentence is excellent: 'When it is done, / stay awake' is plain and is exactly the intent of 既濟. The clip is weak for a newcomer: one half of 既 twists round and back, and neither the bowl nor 'the meal is done' can be seen, so it reads as a spin. It still beats 'Fine silk turns to rags', which needs explaining. The sentence carries it.",
+            "The sentence is right: it is the Image's 思患而豫防之 (after completion, anticipate trouble), in plain words. The clip draws only 既, and the 'turn its back and hold' reads in the strip as the glyph twisting or glitching, not a figure turning. So the sentence is doing the work. It is still better than line 4's rags, whose meaning is disputed. Make the turn legible."
+          ],
+          "decision": {
+            "choice": "character",
+            "text": "When it is done,\nstay awake",
+            "why": "Turning away from the finished meal and staying awake is 既濟 (after completion, stay careful)."
+          }
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "scored": [
+        {
+          "number": 3,
+          "score": 7,
+          "feedback": [
+            "The strip shows a curl growing into 屯. Nothing on screen strains or looks hard, so the sentence has to do all the teaching. 'Starts are hard. Get help.' is plain and covers both halves of the Judgment (hard birth, 利建侯). Dropping 'always' is right. The deer line is more vivid but only one line's image, so choosing the character is reasonable. To score higher, the clip itself would need to show the struggle, e.g. the sprout stalling before it breaks through.",
+            "The sentence is true to the Judgment (a hard birth, 勿用有攸往, 利建侯) and dropping 'always' is right. But the strip is a small comma for three frames before the character appears, so nothing on screen shows strain, and all the teaching falls on 'Get help'. That is a loose reading of 建侯 ('set up lords/helpers'). The kept deer line makes the same point with a concrete image. It would score higher with a sentence that also carries 'don't push ahead yet', e.g. 'Hard start?\\nDon't go alone.'"
+          ],
+          "decision": {
+            "number": 3,
+            "choice": "character",
+            "text": "Starts are hard.\nGet help.",
+            "why": "The sprout drawing is thin, so the sentence has to teach, and this one covers both halves of the Judgment: a hard birth, then set up helpers (利建侯). It also drops 'always', which the text does not say."
+          }
+        },
+        {
+          "number": 5,
+          "score": 7.5,
+          "feedback": [
+            "The rain streaks and the figure lying down read clearly, and 'Eat, rest, wait' is the Image's 飲食宴樂. But the screen shows rain already falling while the sentence asks 'Rain on the way?', a small mismatch a newcomer may feel. A sentence that matches the clip, e.g. 'Rain? Eat, rest, wait.' or 'Waiting on rain? Eat and rest.', would score higher.",
+            "Good choice: the falling rain is the clearest thing in the strip, and 'Eat, rest, wait' is the Image's 飲食宴樂, which is plain and fun. One small mismatch: the Image's clouds have risen but no rain has fallen yet, while the clip shows rain falling, so 'Rain on the way?' goes a little against the screen. 'Rain?\\nEat, rest, wait.' would match what the viewer sees."
+          ],
+          "decision": {
+            "number": 5,
+            "choice": "character",
+            "text": "Rain on the way?\nEat, rest, wait.",
+            "why": "The cloud and rain are clear on screen, and the figure lying down at the end reads as rest. The Image says clouds rise to heaven and you eat, drink and are at ease while you wait, so this fixes the slight reversal in 'it will pass'."
+          }
+        },
+        {
+          "number": 18,
+          "score": 9,
+          "feedback": [
+            "This is the strongest pairing. The worms visibly breed and swarm out of the bowl, and 'Found rot? Clean it out.' turns the image into the hexagram's intent (fix the decay) in five plain words. The only thing left to improve would be a closing beat of the swarm being cleared.",
+            "The worm swarm is the strongest clip, and 'Found rot? Clean it out.' teaches 幹蠱 (setting the decay right) instead of only warning about it. It is plain, short and true. 'Fix it' might sit a bit closer to 幹 than 'clean it out', but that difference is small."
+          ],
+          "decision": {
+            "number": 18,
+            "choice": "character",
+            "text": "Found rot?\nClean it out.",
+            "why": "The worm swarm in the bowl is the strongest drawing in the set. The sentence now teaches what the hexagram asks for, which is fixing the decay, not just a warning that it happens."
+          }
+        },
+        {
+          "number": 19,
+          "score": 7.5,
+          "feedback": [
+            "The tall figure tipping down over three small cyan boxes reads as 'big one comes to small ones'. On a phone the lean can also look like the figure falling flat. The sentence is plain and teaches 臨 correctly (care, not inspection). It is better than the kept line, which is only flavour. For a higher score, slow the lean so it reads as bending down, not collapsing.",
+            "The clip reads (the tall form tilts over three glowing squares), and the sentence fits 臨's intent and the Image's 教思无窮, 容保民. 'Those below you' sounds a little stiff and hierarchical for a newcomer. Something warmer like 'Lean in and\\ncare for the small' would match the leaning motion more directly."
+          ],
+          "decision": {
+            "number": 19,
+            "choice": "character",
+            "text": "Come close to\nthose below you",
+            "why": "The big figure leaning down over three small squares is fun and easy to read. The sentence teaches 臨: the strong come near to care for those below them, not to inspect them."
+          }
+        },
+        {
+          "number": 23,
+          "score": 7.5,
+          "feedback": [
+            "The sentence is good advice and true to 上以厚下安宅. But in the strip the pieces falling off are hard to tell apart from the character re-forming, so 'Falling apart?' depends on the viewer catching that beat. It is better than the literal 'Stripped back to the base', and roughly as strong as the bed-legs line. Clearer falling pieces in the clip would make this an 8 or better.",
+            "Pieces falling away until the base stands is readable. 'Shore up the base' is the Image's 上以厚下安宅 and gives the viewer something to do. It skips the Judgment's 不利有攸往 (don't make a move while things are stripping away), but the Image reading is fair and plain."
+          ],
+          "decision": {
+            "number": 23,
+            "choice": "character",
+            "text": "Falling apart?\nShore up the base.",
+            "why": "Pieces fall off until only the base stands, which the Image turns into advice: those above make the base thick to secure the house (上以厚下安宅). It gives the viewer something to do instead of only describing the picture."
+          }
+        },
+        {
+          "number": 24,
+          "score": 8,
+          "feedback": [
+            "Right call. The strip is 復 drawn stroke by stroke, and no foot or walking back is visible. 'Midwinter: rest. The light returns.' is plain, true to the Image and teaches return. 'The way out is the way back' is a riddle. I would ship it.",
+            "Keeping the current lesson is right. The strip shows 復 being written stroke by stroke, with no foot walking back that anyone could see. 'Midwinter: rest. The light returns.' is plain, true to the Image (the kings close the passes at the solstice) and teaches return. The riddle sentence would lose to it."
+          ],
+          "decision": {
+            "number": 24,
+            "choice": "keep",
+            "text": "Midwinter: rest.\nThe light returns.",
+            "why": "The clip looks like 復 being drawn stroke by stroke, and nobody will see the foot walking back. The current sentence is plain, true to the Image and teaches return. 'The way out is the way back' is a riddle."
+          }
+        },
+        {
+          "number": 27,
+          "score": 8,
+          "feedback": [
+            "Right call. The clip shows a yellow piece lighting up inside the jaw, and nothing spills out, so the 8-word drawn sentence would describe something the viewer doesn't see. 'Stop staring at someone's plate.' is funny and plain, and it teaches 自求口實. A new sentence tied to the glow would not beat it.",
+            "Keeping the current lesson is right: the yellow piece sits inside the jaw and nothing spills out, so the drawn sentence has no picture behind it. The plate line is funny and teaches 自求口實. It comes from Line 1, but it carries the Judgment's intent, so it works as a lesson."
+          ],
+          "decision": {
+            "number": 27,
+            "choice": "keep",
+            "text": "Stop staring at\nsomeone's plate.",
+            "why": "The clip shows a yellow piece glowing inside the jaw, and nothing visibly spills out. The drawn sentence was 8 words and abstract. The current line is plain and funny, and it teaches the Judgment's 'seek your own food' (自求口實)."
+          }
+        },
+        {
+          "number": 36,
+          "score": 8,
+          "feedback": [
+            "The bright moon beside 日 visibly dims before it becomes 月, so 'Dark times? Dim your light.' says what the viewer just watched. It is also 用晦而明, with no history needed. It is better than both the prince line and 'low and on', since no lit crescent is visible. I would ship it.",
+            "The moon dims visibly and no crescent can be seen, so 'Dim your light' says what is on screen and is the Image's 用晦而明. It drops the 'but keep it lit' half (明 stays inside). 'Dim' still suggests a light that is on, so this is acceptable. Plain and short."
+          ],
+          "decision": {
+            "number": 36,
+            "choice": "character",
+            "text": "Dark times?\nDim your light.",
+            "why": "On screen the moon mostly dims, and a lit crescent is not clearly visible, so the sentence should say what is shown. 'Dim your light' does that and is the Image's 用晦而明, with no history needed."
+          }
+        },
+        {
+          "number": 40,
+          "score": 7,
+          "feedback": [
+            "The sentence is good and true to 解. On screen, though, the knife is not readable and the cyan 角 only drifts up a little at the end, so 'cut' has little support in the picture. The keep option is a single line's warning. The choice is fine; making the horn's lift bigger and later in the clip would raise it.",
+            "The sentence is good and true to 解 (release, then go on quickly, 夙吉). But in the strip the horn barely lifts, so on screen this is mostly the character being assembled, which is the case 'a weak drawing should not win over a strong sentence' warns about. It is still the better choice, because the kept thieves line is Line 3 flavour. The score is limited by the clip, not the words."
+          ],
+          "decision": {
+            "number": 40,
+            "choice": "character",
+            "text": "Cut it loose\nand move on",
+            "why": "Both critics call the sentence good and true to 解, release followed by going on. What they flag is how small the horn's lift is in the clip, and a new sentence won't fix that."
+          }
+        },
+        {
+          "number": 47,
+          "score": 8.5,
+          "feedback": [
+            "The tree growing and then the frame closing around it is clear and ends boxed in, so 'Boxed in? Hold to your aim.' matches the last frame and is 致命遂志. Fixing the 'keep growing' contradiction was the right move. I would ship it.",
+            "The final frame shows the tree boxed in by the frame, which is exactly 困. 'Boxed in? Hold to your aim.' matches the picture and is the Image's 致命遂志. The old 'keep growing' said the opposite of the clip, so this is the right fix. It also reuses the current lesson's second half, which keeps continuity."
+          ],
+          "decision": {
+            "number": 47,
+            "choice": "character",
+            "text": "Boxed in?\nHold to your aim.",
+            "why": "The clip ends with the tree boxed in, not growing, so 'keep growing' said the opposite of what the viewer just saw. 'Hold to your aim' matches the final frame and is the Image's 致命遂志."
+          }
+        },
+        {
+          "number": 48,
+          "score": 7,
+          "feedback": [
+            "The sentence teaches 井 well (改邑不改井), but the clip is 井 with a small cyan blob, and nothing on screen shows a town changing or water feeding anyone. That puts a weak drawing against 'The well is clean. No one drinks.', which is odd and memorable but is the sad exception, not the intent. A better option may be the keep format (falling code) with the Judgment sentence 'Towns change. The well stays.', so the plain sentence isn't tied to a thin clip.",
+            "Right call. The clip is modest (井 plus a small water glint), but the Judgment sentence 改邑不改井 teaches what the well is. The sad Line 3 is the exception, not the hexagram's intent. 'Towns change. The well stays.' is plain and literal. Some viewers may not read the blue dot as water, which is the only weakness."
+          ],
+          "decision": {
+            "number": 48,
+            "choice": "character",
+            "text": "Towns change.\nThe well stays.",
+            "why": "The clip is modest, but it shows a well with water in it, and the Judgment sentence (改邑不改井) teaches what 井 means: the well stays and feeds everyone. The kept line is the one sad exception in the hexagram, so it is flavour, not the intent."
+          }
+        },
+        {
+          "number": 50,
+          "score": 7,
+          "feedback": [
+            "The drawing is weak: the fire is a dot and the bowl dropping on reads as assembly, so keeping is defensible. But the duke line is a line image (flavour) and teaches 鼎's intent only by a negative example. The ideal is a strong current-style lesson that states the intent, e.g. set the pot firm before you cook. As it stands it is a fun, acceptable choice.",
+            "The drawing is weak (tiny fire dot, the bowl dropping reads as the character assembling), so keeping the current lesson is defensible, and the duke line is funny and plain. But it is Line 4, a failure case, and it does not teach 鼎's intent (the cauldron that feeds the worthy; 正位凝命, set things in their right place). A plain sentence of that intent over falling code would beat both options."
+          ],
+          "decision": {
+            "number": 50,
+            "choice": "keep",
+            "text": "The legs break.\nDuke wears dinner.",
+            "why": "The fire is a small dot, and the bowl dropping on reads as the character being assembled, so the drawing is weak. The duke line is plain and funny, and it shows why the setup has to be right. A weak drawing should not beat it."
+          }
+        },
+        {
+          "number": 52,
+          "score": 7,
+          "feedback": [
+            "The strip shows the character swinging sideways and back before it lies down. On a phone this can read as a generic 3D spin rather than someone turning to look and holding still. The sentence is plain and fits 思不出其位, though 'look at where you are' is close to a self-help phrase. A clearer hold, or a sentence like 'Stop. Stay where you are.', would score higher.",
+            "The turn-around-and-hold motion is readable and fun. But 'look at where you are' misses the Image slightly: 思不出其位 means your thoughts stay within your place, i.e. stop and stay put, not survey your surroundings. 'Stop.\\nStay where you are.' or 'Stop, and keep\\nyour mind here' would be truer. 'Stillness starts in the back' is the more specific text, but it is harder for a newcomer."
+          ],
+          "decision": {
+            "number": 52,
+            "choice": "character",
+            "text": "Stop and look\nat where you are",
+            "why": "Turning round, holding still and turning back is clear and fun, and the sentence fits the Image's 'thoughts stay in their place'. Dropping the comma makes it read more plainly."
+          }
+        },
+        {
+          "number": 56,
+          "score": 8,
+          "feedback": [
+            "旅 growing larger as it comes toward you reads as someone arriving from far off, and 'Far from home, be a good guest' carries the Judgment (small success, modest and careful). It also quietly connects to the burnt-inn line. It is plain and true to the text. I would ship it.",
+            "The character hopping forward reads as travel. 'Far from home, be a good guest' carries 小亨 / 旅貞吉 (the wanderer does well by being modest and correct), and it echoes Line 3's burnt inn without needing it. 'Travel light' was indeed not in the text. It is plain and fits a newcomer."
+          ],
+          "decision": {
+            "number": 56,
+            "choice": "character",
+            "text": "Far from home,\nbe a good guest",
+            "why": "The figure hopping toward you reads as travel. The sentence now carries the Judgment and Image, which say a wanderer succeeds by being modest and careful. 'Travel light' is not in the text."
+          }
+        },
+        {
+          "number": 58,
+          "score": 7.5,
+          "feedback": [
+            "The yellow strokes bobbing above the open mouth read as laughter, which is fun. 'Share your joy with friends.' is true to 朋友講習 but generic, like a greeting card, and it drops the 'talk and practice' side the painting lesson carried. A more specific sentence, e.g. 'Laugh, then learn, with friends.', would teach more.",
+            "The yellow strokes bobbing above 兄 read as laughter. 'Share your joy with friends.' is the Image's 朋友講習, stated plainly. It is a little generic: the Image's point is joy in talking and learning together. 'Joy grows\\nwhen friends talk' would be more exact, but this version is safe to ship."
+          ],
+          "decision": {
+            "number": 58,
+            "choice": "character",
+            "text": "Share your joy\nwith friends.",
+            "why": "The strokes bobbing above the open mouth read as laughter. The Image joins friends in talk and practice (朋友講習), so the point is shared joy. 'Out loud' added nothing."
+          }
+        },
+        {
+          "number": 63,
+          "score": 7.5,
+          "feedback": [
+            "The sentence is the intent (思患而豫防之) and beats 'Fine silk turns to rags'. But in the strip the turn of 既's right half is hard to read, and nothing identifies a finished meal, so the 'done' has to come from the words. It is a good choice with a weak picture. A clearer bowl and turn in the clip would raise it.",
+            "The sentence is the intent (思患而豫防之) and beats the silk line, which needs explaining. In the strip the turn is only a skew of 旡, and no bowl or figure can be picked out, so the clip adds little beyond the character itself. 'Stay awake' is slightly figurative, but people read it literally as 'stay alert', so it is fine."
+          ],
+          "decision": {
+            "number": 63,
+            "choice": "character",
+            "text": "When it is done,\nstay awake",
+            "why": "Both critics call this sentence exactly the intent (思患而豫防之), and it beats 'Fine silk turns to rags', which needs explaining. The weak spot is how readable the turn is in the clip, not the words."
+          }
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "scored": [
+        {
+          "number": 3,
+          "score": 6.5,
+          "feedback": [
+            "The strip shows a small comma-shaped stroke that grows into 屯. A newcomer won't see a sprout, the ground, or any strain, so the drawing adds almost nothing. The sentence has to carry everything. It is plain, but 'Don't go alone' merges two Judgment clauses into something neither says: 勿用有攸往 means don't set out yet, and 利建侯 means set up helpers. 'Hard start? / Get help first.' is more literal and fits better with a drawing that shows only growth. The deer line isn't clearly worse here, because the clip is this weak.",
+            "True to the Judgment: 勿用有攸往 plus 利建侯 do add up to 'don't set out alone, get helpers'. But the clip is one sprout growing easily, with no strain and no helpers, so nothing on screen supports either half of the sentence. 'Don't go alone' also slightly misreads 勿用有攸往, which says don't set out at all yet. 'Hard start? Get help first.' is closer to 利建侯 and plainer. The deer line is more fun, but it is a line image, not the intent."
+          ],
+          "decision": {
+            "number": 3,
+            "choice": "character",
+            "text": "Hard start?\nDon't go alone.",
+            "why": "The clip shows no strain, so the sentence has to carry both halves of the Judgment: a hard birth, don't push ahead alone (勿用有攸往), and set up helpers (利建侯). It also echoes the deer line, where the hunter has no guide."
+          }
+        },
+        {
+          "number": 5,
+          "score": 8,
+          "feedback": [
+            "Ship it. The falling cyan rain is the clearest action on screen, and 'In the rain?' names it right away. 'Eat, rest, wait' is the Image's 飲食宴樂, said literally. One small gap: nothing on screen shows eating, and a newcomer won't read the stroke-figure as a person lying down. The words still don't contradict the picture, and the sentence beats the guests line for teaching the intent.",
+            "Good. Rain visibly falls in frames 3 to 5 and the character flattens at the end, so the question and 'rest' both match the screen. 飲食宴樂 is literally eating, drinking and enjoying yourself while you wait, so 'Eat, rest, wait' is accurate and plain. A small nit: 需 is about waiting before danger, not in it. The clouds are still above heaven, so 'Rain coming?' would be a little more exact, but the picture shows rain falling, so this is fine to ship."
+          ],
+          "decision": {
+            "number": 5,
+            "choice": "character",
+            "text": "In the rain?\nEat, rest, wait.",
+            "why": "The screen shows rain already falling, so the question now matches the picture. 'Eat, rest, wait' is the Image's 飲食宴樂, and the figure lying down at the end reads as rest."
+          }
+        },
+        {
+          "number": 19,
+          "score": 7,
+          "feedback": [
+            "The clip reads well: the tall stroke tips down and three cyan squares light up under it. 'Lean down' matches that. 'the small' is vague: a newcomer could read it as small things rather than people below you, and the Image (容保民) is about people. 'Lean down and / look after those below' or 'Lean down. / Care for your people.' would say who is cared for. The line also has no end punctuation, unlike the other lines.",
+            "The motion fits: the figure leans down and three small squares light up below it. The reading fits too, since 臨 is approaching from above and the Image is 教思无窮 容保民. The weak part is 'the small': a noun left hanging with no word after it, it reads vague and a little odd ('small what?'), and it sounds as if 臨 is about small things rather than people below you. Something like 'Lean down.\\nLook after those below.' or 'Lean down and\\nlook after them' names who does what more literally."
+          ],
+          "decision": {
+            "number": 19,
+            "choice": "character",
+            "text": "Lean down and\ncare for the small",
+            "why": "'Lean down' names the motion on screen and 'care for the small' names the three lit squares, so a newcomer sees who does what. It is the Image's 教思无窮, 容保民, and less stiff than 'those below you'."
+          }
+        },
+        {
+          "number": 23,
+          "score": 8,
+          "feedback": [
+            "Ship it. Frames 4 to 6 clearly show the left part breaking up, so 'Falling apart?' matches what the viewer sees. 'Shore up the base' is the Image's 上以厚下安宅 and gives the viewer something to do, which the old 'Stripped back to the base' didn't. 'Shore up' is a little idiomatic; 'Strengthen the base.' is more literal but flatter. Better than the bed-legs line for teaching the intent.",
+            "The screen shows pieces falling away until the base remains, so 'Falling apart?' matches it. 上以厚下安宅 (those above build up the base to keep the house safe) becomes 'Shore up the base', which is accurate advice the viewer can use and ties to the base left standing. This beats both the descriptive character sentence and the Line 1 bed. Ship."
+          ],
+          "decision": {
+            "number": 23,
+            "choice": "character",
+            "text": "Falling apart?\nShore up the base.",
+            "why": "Pieces come off the block in frames 4 to 6, so 'falling apart' matches the screen, and 'shore up the base' is the Image's 上以厚下安宅, advice the viewer can use. The other options only describe the collapse."
+          }
+        },
+        {
+          "number": 40,
+          "score": 6.5,
+          "feedback": [
+            "The cyan horn rising and floating free reads as release, and that part is fun. 'Forgive faults' is the Image's 赦過宥罪, but a newcomer won't link a floating horn to forgiving anyone, so the first half has no support on screen. 'Move on' is a loose reading of 夙吉 (going early brings good fortune). 'Let it go. / Move on.' matches the picture and 解 better but is a cliché. 'Forgive, / then move on.' at least reads as one action. It's still better than the thieves line, which is flavour from one line.",
+            "赦過宥罪 is a correct gloss. The problem is that nothing on screen maps to 'forgive': the viewer sees a horn separating from an ox, and a knife that barely reads. 'Move on' for 夙吉 is loose, since 夙 means act early or promptly, not leave behind. 解's core meaning is release: the knot or tension loosens and you return to normal. A sentence that names the loosening and then gives the Image, such as 'Let it loose.\\nForgive and move on.' (a little long) or 'Untie it.\\nForgive, then go.', would link picture and lesson. As written it works, but the drawing does little."
+          ],
+          "decision": {
+            "number": 40,
+            "choice": "character",
+            "text": "Forgive faults.\nMove on.",
+            "why": "The knife barely reads, so 'cut' had no support on screen. The horn floating free reads as release, and 'Forgive faults' is the Image's 赦過宥罪, with 'Move on' for the Judgment's 夙吉 (go early). The thieves line is only Line 3 flavour."
+          }
+        },
+        {
+          "number": 48,
+          "score": 6.5,
+          "feedback": [
+            "The clip is weak: 井 fades in, and there's a small cyan blob inside, which is hard to read as water on a phone. By the brief's own rule, a weak drawing shouldn't win just because the author likes character lessons. 'Towns change. / The well stays.' is literal and true to the Judgment (改邑不改井), but it describes rather than teaches. A newcomer gets 'some things last', not what to do. 'The well is clean. No one drinks.' is odder and sticks in the mind, but it is the sad exception, not the intent. Close to a toss-up. Something like 'Towns move. / Keep the well clean.' would give the drawing a reason to be there.",
+            "改邑不改井 is the hexagram's intent, and the sentence is plain and true. Better to teach it than the sad Line 3. The clip only shows a well with some water: no town changes, so the first half gets no picture. Historically 改邑 means towns being moved or rebuilt, so 'Towns move.\\nThe well stays.' is slightly more literal and more concrete for a newcomer. This is a reasonable swap from the earlier 'keep', but a weak drawing is carrying a strong sentence."
+          ],
+          "decision": {
+            "number": 48,
+            "choice": "character",
+            "text": "Towns change.\nThe well stays.",
+            "why": "The Judgment's 改邑不改井 says what the well is: the one thing that stays while towns change. The clip does show a well with water in it. The kept line is the book's one sad exception, so it is flavour, not the intent."
+          }
+        },
+        {
+          "number": 50,
+          "score": 7.5,
+          "feedback": [
+            "The clip is one of the clearer ones: legs, a yellow fire among them, and the top dropping onto them. 'Set the pot firm, then cook.' names that plainly. But 正位凝命 is about putting yourself in the right place and holding to your charge. 'Pot' makes the lesson small and domestic, while 鼎 is about nourishing and renewing. The duke line is funnier and needs no history, which matters for 'fun to watch'. Choosing the character is right for teaching the intent, but the sentence is a bit flat. 'Get the base right, / then cook.' is closer to 'put things in their place'.",
+            "The clip reads well: legs, a glowing fire, the vessel dropping onto them. 'Set the pot firm, then cook' names that plainly and is a fair plain form of 正位凝命. 'Duke wears dinner' is funnier but teaches by showing a failure from Line 4. One possible tweak: 鼎 is also about nourishing people and renewal, and 'then cook' only hints at that. Fine to ship."
+          ],
+          "decision": {
+            "number": 50,
+            "choice": "character",
+            "text": "Set the pot firm,\nthen cook.",
+            "why": "The clip shows legs, a fire and the bowl dropping onto them. This sentence names that plainly and states the intent, 正位凝命 (put things in their right place). The duke line is Line 4 and teaches only by showing a failure."
+          }
+        },
+        {
+          "number": 52,
+          "score": 7,
+          "feedback": [
+            "'Stop. / Stay where you are.' is plain and true to 思不出其位. But the clip's main event is the character turning round and back (frames 4 to 5). The sentence ignores the turn, so a newcomer sees movement while the words say stay still. The earlier 'Stop, and look at where you are' used the turn, though 'look' drifts from the text. 'Stop. / Keep your back still.' ties the turn to the Judgment's 艮其背, but it may puzzle a newcomer. Good enough to ship if the turn reads as a pause.",
+            "'Stop. Stay where you are.' is a plain, accurate form of 思不出其位. But the clip's main action is the figure turning its back and holding still, which is the Judgment's 艮其背 (keep your back still, don't see the self or the people). The sentence doesn't name the turn, so a newcomer may wonder why the figure turns round. Something like 'Stop.\\nKeep your mind where you stand.' fits the Image more closely. As it is, it works, but it doesn't use what the drawing does."
+          ],
+          "decision": {
+            "number": 52,
+            "choice": "character",
+            "text": "Stop.\nStay where you are.",
+            "why": "The Image's 思不出其位 means your thoughts stay in your own place: stop and stay put, not look around. The turn and hold on screen is a figure stopping, and this sentence says so plainly."
+          }
+        },
+        {
+          "number": 58,
+          "score": 7.5,
+          "feedback": [
+            "The yellow strokes bobbing above the open mouth read as laughter, and it is fun. 'Laugh and learn with friends' is true to 朋友講習. But 'Laugh and learn' sounds like a slogan, and the screen shows one mouth with no friends and nothing being learned. So the second half has to be taken on trust. 'Laugh, and talk / it over with friends' is more literal to 講習 and less catchy. It's still clearly better than the painting lesson for a newcomer. It has no end punctuation.",
+            "The yellow strokes bobbing over the open mouth read as laughter, and 朋友講習 is friends talking and practising together, so 'learn' is true to the text and less greeting-card than 'share your joy'. Plain and short. If anything, 'Laugh and talk it over / with friends' is closer to 講 (discuss), but 'learn' covers 習. Ship."
+          ],
+          "decision": {
+            "number": 58,
+            "choice": "character",
+            "text": "Laugh and learn\nwith friends",
+            "why": "The yellow strokes bobbing above the open mouth read as laughter. The Image's 朋友講習 is friends talking and practising together, so 'learn' keeps the half that 'share your joy' dropped, and it is less like a greeting card."
+          }
+        },
+        {
+          "number": 63,
+          "score": 7,
+          "feedback": [
+            "The clip's turn is weak: part of 既 twists and comes back, and a newcomer won't see a figure turning from a finished meal. So the words carry the whole lesson. 'All done? / Watch for trouble.' is plain, short and true to 思患而豫防之, and better than 'stay awake'. The drawing adds little, but the other option ('Fine silk turns to rags') is a weak, loose reading of line 4, so the character still wins. 'Done? / Now guard against trouble.' would say 'ahead of time' more directly.",
+            "'All done? Watch for trouble.' is a literal, accurate form of 思患而豫防之, and better than the current line: 'fine silk turns to rags' is a shaky reading of 繻有衣袽, which is about keeping rags ready to plug leaks. The risk is the clip. The figure turns its back on the finished meal, which reads more like walking away than watching, so picture and sentence pull slightly apart. The sentence carries it, but the drawing adds little."
+          ],
+          "decision": {
+            "number": 63,
+            "choice": "character",
+            "text": "All done?\nWatch for trouble.",
+            "why": "The Image's 思患而豫防之 means thinking of trouble and guarding against it ahead of time. 'Watch for trouble' says that literally, where 'stay awake' was slightly figurative. The clip's turn is weak, so the words have to carry the idea."
+          }
+        }
+      ]
+    }
+  ],
+  "final": [
+    {
+      "number": 3,
+      "score": 6.5,
+      "feedback": [
+        "The strip shows a small comma-shaped stroke that grows into 屯. A newcomer won't see a sprout, the ground, or any strain, so the drawing adds almost nothing. The sentence has to carry everything. It is plain, but 'Don't go alone' merges two Judgment clauses into something neither says: 勿用有攸往 means don't set out yet, and 利建侯 means set up helpers. 'Hard start? / Get help first.' is more literal and fits better with a drawing that shows only growth. The deer line isn't clearly worse here, because the clip is this weak.",
+        "True to the Judgment: 勿用有攸往 plus 利建侯 do add up to 'don't set out alone, get helpers'. But the clip is one sprout growing easily, with no strain and no helpers, so nothing on screen supports either half of the sentence. 'Don't go alone' also slightly misreads 勿用有攸往, which says don't set out at all yet. 'Hard start? Get help first.' is closer to 利建侯 and plainer. The deer line is more fun, but it is a line image, not the intent."
+      ],
+      "decision": {
+        "number": 3,
+        "choice": "character",
+        "text": "Hard start?\nDon't go alone.",
+        "why": "The clip shows no strain, so the sentence has to carry both halves of the Judgment: a hard birth, don't push ahead alone (勿用有攸往), and set up helpers (利建侯). It also echoes the deer line, where the hunter has no guide."
+      }
+    },
+    {
+      "number": 5,
+      "score": 8,
+      "feedback": [
+        "Ship it. The falling cyan rain is the clearest action on screen, and 'In the rain?' names it right away. 'Eat, rest, wait' is the Image's 飲食宴樂, said literally. One small gap: nothing on screen shows eating, and a newcomer won't read the stroke-figure as a person lying down. The words still don't contradict the picture, and the sentence beats the guests line for teaching the intent.",
+        "Good. Rain visibly falls in frames 3 to 5 and the character flattens at the end, so the question and 'rest' both match the screen. 飲食宴樂 is literally eating, drinking and enjoying yourself while you wait, so 'Eat, rest, wait' is accurate and plain. A small nit: 需 is about waiting before danger, not in it. The clouds are still above heaven, so 'Rain coming?' would be a little more exact, but the picture shows rain falling, so this is fine to ship."
+      ],
+      "decision": {
+        "number": 5,
+        "choice": "character",
+        "text": "In the rain?\nEat, rest, wait.",
+        "why": "The screen shows rain already falling, so the question now matches the picture. 'Eat, rest, wait' is the Image's 飲食宴樂, and the figure lying down at the end reads as rest."
+      }
+    },
+    {
+      "number": 8,
+      "score": 8,
+      "feedback": [
+        "Clear: one figure, a second walks up and stands beside it, and they settle together. 'Choose who you / stand beside' names the action and teaches 比: whom you join, and joining in time. The Renoir lunch was fine, but this is simpler and more active.",
+        "Two figures coming to stand together is clear at a glance. 'Choose who you stand beside' matches the Judgment (examine yourself before joining; latecomers fare badly) and line 3 (joining the wrong people). Plain and short. Ship it."
+      ],
+      "decision": {
+        "choice": "character",
+        "text": "Choose who you\nstand beside",
+        "why": "A second figure walking up to stand beside the first is 比 (holding together)."
+      }
+    },
+    {
+      "number": 10,
+      "score": 9,
+      "feedback": [
+        "Right to keep. The foot-strokes clip is subtle, just 履 being written, and 'Stood on a tiger's tail. Not bitten.' is the hexagram's own Judgment. It is vivid, fun and needs no history. The only thing left is making sure the delivery lands the surprise ('Not bitten.' on its own beat).",
+        "Right to keep. The foot being placed is invisible in the strip, and the tiger's tail is the Judgment itself: conduct that is careful and correct survives danger. The sentence spells out who stands on what, and the outcome. It is concrete and fun."
+      ],
+      "decision": {
+        "choice": "keep",
+        "text": "Stood on a tiger's\ntail. Not bitten.",
+        "why": "The foot coming down is subtle in the clip; the tiger tail judgment is the best known image of 履."
+      }
+    },
+    {
+      "number": 13,
+      "score": 8,
+      "feedback": [
+        "Right to keep. The clip is a flat frame with small yellow bits that lift slightly and does not read as 'together'. 'Parted, they weep. Met, they laugh.' is plain, emotional and teaches fellowship. It loses a point only because it is a line rather than the Judgment's 'fellowship in the open'. No better option is on the table.",
+        "Keeping is right: the frame lifting reads as an object lifting, not as people together. 'Parted, they weep. Met, they laugh.' is concrete, and fellowship is the hexagram's own subject, so it teaches intent, not just flavour. A point short of 10 only because line 5 is about finally meeting after struggle rather than the Judgment's open fellowship (in the open field, across the great water)."
+      ],
+      "decision": {
+        "choice": "keep",
+        "text": "Parted, they weep.\nMet, they laugh.",
+        "why": "The 同 clip (a frame, the inside lifting) reads weakly as \"together\"; the line \"Parted, they weep. Met, they laugh.\" is strong."
+      }
+    },
+    {
+      "number": 18,
+      "score": 9,
+      "feedback": [
+        "This is the strongest pairing. The worms visibly breed and swarm out of the bowl, and 'Found rot? Clean it out.' turns the image into the hexagram's intent (fix the decay) in five plain words. The only thing left to improve would be a closing beat of the swarm being cleared.",
+        "The worm swarm is the strongest clip, and 'Found rot? Clean it out.' teaches 幹蠱 (setting the decay right) instead of only warning about it. It is plain, short and true. 'Fix it' might sit a bit closer to 幹 than 'clean it out', but that difference is small."
+      ],
+      "decision": {
+        "number": 18,
+        "choice": "character",
+        "text": "Found rot?\nClean it out.",
+        "why": "The worm swarm in the bowl is the strongest drawing in the set. The sentence now teaches what the hexagram asks for, which is fixing the decay, not just a warning that it happens."
+      }
+    },
+    {
+      "number": 19,
+      "score": 7,
+      "feedback": [
+        "The clip reads well: the tall stroke tips down and three cyan squares light up under it. 'Lean down' matches that. 'the small' is vague: a newcomer could read it as small things rather than people below you, and the Image (容保民) is about people. 'Lean down and / look after those below' or 'Lean down. / Care for your people.' would say who is cared for. The line also has no end punctuation, unlike the other lines.",
+        "The motion fits: the figure leans down and three small squares light up below it. The reading fits too, since 臨 is approaching from above and the Image is 教思无窮 容保民. The weak part is 'the small': a noun left hanging with no word after it, it reads vague and a little odd ('small what?'), and it sounds as if 臨 is about small things rather than people below you. Something like 'Lean down.\\nLook after those below.' or 'Lean down and\\nlook after them' names who does what more literally."
+      ],
+      "decision": {
+        "number": 19,
+        "choice": "character",
+        "text": "Lean down and\ncare for the small",
+        "why": "'Lean down' names the motion on screen and 'care for the small' names the three lit squares, so a newcomer sees who does what. It is the Image's 教思无窮, 容保民, and less stiff than 'those below you'."
+      }
+    },
+    {
+      "number": 23,
+      "score": 8,
+      "feedback": [
+        "Ship it. Frames 4 to 6 clearly show the left part breaking up, so 'Falling apart?' matches what the viewer sees. 'Shore up the base' is the Image's 上以厚下安宅 and gives the viewer something to do, which the old 'Stripped back to the base' didn't. 'Shore up' is a little idiomatic; 'Strengthen the base.' is more literal but flatter. Better than the bed-legs line for teaching the intent.",
+        "The screen shows pieces falling away until the base remains, so 'Falling apart?' matches it. 上以厚下安宅 (those above build up the base to keep the house safe) becomes 'Shore up the base', which is accurate advice the viewer can use and ties to the base left standing. This beats both the descriptive character sentence and the Line 1 bed. Ship."
+      ],
+      "decision": {
+        "number": 23,
+        "choice": "character",
+        "text": "Falling apart?\nShore up the base.",
+        "why": "Pieces come off the block in frames 4 to 6, so 'falling apart' matches the screen, and 'shore up the base' is the Image's 上以厚下安宅, advice the viewer can use. The other options only describe the collapse."
+      }
+    },
+    {
+      "number": 24,
+      "score": 8,
+      "feedback": [
+        "Right call. The strip is 復 drawn stroke by stroke, and no foot or walking back is visible. 'Midwinter: rest. The light returns.' is plain, true to the Image and teaches return. 'The way out is the way back' is a riddle. I would ship it.",
+        "Keeping the current lesson is right. The strip shows 復 being written stroke by stroke, with no foot walking back that anyone could see. 'Midwinter: rest. The light returns.' is plain, true to the Image (the kings close the passes at the solstice) and teaches return. The riddle sentence would lose to it."
+      ],
+      "decision": {
+        "number": 24,
+        "choice": "keep",
+        "text": "Midwinter: rest.\nThe light returns.",
+        "why": "The clip looks like 復 being drawn stroke by stroke, and nobody will see the foot walking back. The current sentence is plain, true to the Image and teaches return. 'The way out is the way back' is a riddle."
+      }
+    },
+    {
+      "number": 27,
+      "score": 8,
+      "feedback": [
+        "Right call. The clip shows a yellow piece lighting up inside the jaw, and nothing spills out, so the 8-word drawn sentence would describe something the viewer doesn't see. 'Stop staring at someone's plate.' is funny and plain, and it teaches 自求口實. A new sentence tied to the glow would not beat it.",
+        "Keeping the current lesson is right: the yellow piece sits inside the jaw and nothing spills out, so the drawn sentence has no picture behind it. The plate line is funny and teaches 自求口實. It comes from Line 1, but it carries the Judgment's intent, so it works as a lesson."
+      ],
+      "decision": {
+        "number": 27,
+        "choice": "keep",
+        "text": "Stop staring at\nsomeone's plate.",
+        "why": "The clip shows a yellow piece glowing inside the jaw, and nothing visibly spills out. The drawn sentence was 8 words and abstract. The current line is plain and funny, and it teaches the Judgment's 'seek your own food' (自求口實)."
+      }
+    },
+    {
+      "number": 32,
+      "score": 8,
+      "feedback": [
+        "Good. A glowing moon waxes and wanes between two steady bars, which is easy to follow and pretty to watch, and 'Change shape, / keep your course' names exactly what it shows. The current 'No game in this field. Move.' would confuse a newcomer on a hexagram about persistence. The heart that appears at the end is unexplained but harmless.",
+        "The moon waxing and waning between two steady lines is a clear, fun picture of constancy through change, and 'keep your course' matches the Image (stand firm, don't change direction, 立不易方). 'Change shape' is slightly ambiguous: it could read as advice to change yourself. 'Shapes change; / keep your course' would remove that. A good choice over the field-with-no-game line."
+      ],
+      "decision": {
+        "choice": "character",
+        "text": "Change shape,\nkeep your course",
+        "why": "The moon changing shape between two steady lines shows constancy through change; the current line needs context."
+      }
+    },
+    {
+      "number": 36,
+      "score": 8,
+      "feedback": [
+        "The bright moon beside 日 visibly dims before it becomes 月, so 'Dark times? Dim your light.' says what the viewer just watched. It is also 用晦而明, with no history needed. It is better than both the prince line and 'low and on', since no lit crescent is visible. I would ship it.",
+        "The moon dims visibly and no crescent can be seen, so 'Dim your light' says what is on screen and is the Image's 用晦而明. It drops the 'but keep it lit' half (明 stays inside). 'Dim' still suggests a light that is on, so this is acceptable. Plain and short."
+      ],
+      "decision": {
+        "number": 36,
+        "choice": "character",
+        "text": "Dark times?\nDim your light.",
+        "why": "On screen the moon mostly dims, and a lit crescent is not clearly visible, so the sentence should say what is shown. 'Dim your light' does that and is the Image's 用晦而明, with no history needed."
+      }
+    },
+    {
+      "number": 40,
+      "score": 6.5,
+      "feedback": [
+        "The cyan horn rising and floating free reads as release, and that part is fun. 'Forgive faults' is the Image's 赦過宥罪, but a newcomer won't link a floating horn to forgiving anyone, so the first half has no support on screen. 'Move on' is a loose reading of 夙吉 (going early brings good fortune). 'Let it go. / Move on.' matches the picture and 解 better but is a cliché. 'Forgive, / then move on.' at least reads as one action. It's still better than the thieves line, which is flavour from one line.",
+        "赦過宥罪 is a correct gloss. The problem is that nothing on screen maps to 'forgive': the viewer sees a horn separating from an ox, and a knife that barely reads. 'Move on' for 夙吉 is loose, since 夙 means act early or promptly, not leave behind. 解's core meaning is release: the knot or tension loosens and you return to normal. A sentence that names the loosening and then gives the Image, such as 'Let it loose.\\nForgive and move on.' (a little long) or 'Untie it.\\nForgive, then go.', would link picture and lesson. As written it works, but the drawing does little."
+      ],
+      "decision": {
+        "number": 40,
+        "choice": "character",
+        "text": "Forgive faults.\nMove on.",
+        "why": "The knife barely reads, so 'cut' had no support on screen. The horn floating free reads as release, and 'Forgive faults' is the Image's 赦過宥罪, with 'Move on' for the Judgment's 夙吉 (go early). The thieves line is only Line 3 flavour."
+      }
+    },
+    {
+      "number": 47,
+      "score": 8.5,
+      "feedback": [
+        "The tree growing and then the frame closing around it is clear and ends boxed in, so 'Boxed in? Hold to your aim.' matches the last frame and is 致命遂志. Fixing the 'keep growing' contradiction was the right move. I would ship it.",
+        "The final frame shows the tree boxed in by the frame, which is exactly 困. 'Boxed in? Hold to your aim.' matches the picture and is the Image's 致命遂志. The old 'keep growing' said the opposite of the clip, so this is the right fix. It also reuses the current lesson's second half, which keeps continuity."
+      ],
+      "decision": {
+        "number": 47,
+        "choice": "character",
+        "text": "Boxed in?\nHold to your aim.",
+        "why": "The clip ends with the tree boxed in, not growing, so 'keep growing' said the opposite of what the viewer just saw. 'Hold to your aim' matches the final frame and is the Image's 致命遂志."
+      }
+    },
+    {
+      "number": 48,
+      "score": 6.5,
+      "feedback": [
+        "The clip is weak: 井 fades in, and there's a small cyan blob inside, which is hard to read as water on a phone. By the brief's own rule, a weak drawing shouldn't win just because the author likes character lessons. 'Towns change. / The well stays.' is literal and true to the Judgment (改邑不改井), but it describes rather than teaches. A newcomer gets 'some things last', not what to do. 'The well is clean. No one drinks.' is odder and sticks in the mind, but it is the sad exception, not the intent. Close to a toss-up. Something like 'Towns move. / Keep the well clean.' would give the drawing a reason to be there.",
+        "改邑不改井 is the hexagram's intent, and the sentence is plain and true. Better to teach it than the sad Line 3. The clip only shows a well with some water: no town changes, so the first half gets no picture. Historically 改邑 means towns being moved or rebuilt, so 'Towns move.\\nThe well stays.' is slightly more literal and more concrete for a newcomer. This is a reasonable swap from the earlier 'keep', but a weak drawing is carrying a strong sentence."
+      ],
+      "decision": {
+        "number": 48,
+        "choice": "character",
+        "text": "Towns change.\nThe well stays.",
+        "why": "The Judgment's 改邑不改井 says what the well is: the one thing that stays while towns change. The clip does show a well with water in it. The kept line is the book's one sad exception, so it is flavour, not the intent."
+      }
+    },
+    {
+      "number": 50,
+      "score": 7.5,
+      "feedback": [
+        "The clip is one of the clearer ones: legs, a yellow fire among them, and the top dropping onto them. 'Set the pot firm, then cook.' names that plainly. But 正位凝命 is about putting yourself in the right place and holding to your charge. 'Pot' makes the lesson small and domestic, while 鼎 is about nourishing and renewing. The duke line is funnier and needs no history, which matters for 'fun to watch'. Choosing the character is right for teaching the intent, but the sentence is a bit flat. 'Get the base right, / then cook.' is closer to 'put things in their place'.",
+        "The clip reads well: legs, a glowing fire, the vessel dropping onto them. 'Set the pot firm, then cook' names that plainly and is a fair plain form of 正位凝命. 'Duke wears dinner' is funnier but teaches by showing a failure from Line 4. One possible tweak: 鼎 is also about nourishing people and renewal, and 'then cook' only hints at that. Fine to ship."
+      ],
+      "decision": {
+        "number": 50,
+        "choice": "character",
+        "text": "Set the pot firm,\nthen cook.",
+        "why": "The clip shows legs, a fire and the bowl dropping onto them. This sentence names that plainly and states the intent, 正位凝命 (put things in their right place). The duke line is Line 4 and teaches only by showing a failure."
+      }
+    },
+    {
+      "number": 52,
+      "score": 7,
+      "feedback": [
+        "'Stop. / Stay where you are.' is plain and true to 思不出其位. But the clip's main event is the character turning round and back (frames 4 to 5). The sentence ignores the turn, so a newcomer sees movement while the words say stay still. The earlier 'Stop, and look at where you are' used the turn, though 'look' drifts from the text. 'Stop. / Keep your back still.' ties the turn to the Judgment's 艮其背, but it may puzzle a newcomer. Good enough to ship if the turn reads as a pause.",
+        "'Stop. Stay where you are.' is a plain, accurate form of 思不出其位. But the clip's main action is the figure turning its back and holding still, which is the Judgment's 艮其背 (keep your back still, don't see the self or the people). The sentence doesn't name the turn, so a newcomer may wonder why the figure turns round. Something like 'Stop.\\nKeep your mind where you stand.' fits the Image more closely. As it is, it works, but it doesn't use what the drawing does."
+      ],
+      "decision": {
+        "number": 52,
+        "choice": "character",
+        "text": "Stop.\nStay where you are.",
+        "why": "The Image's 思不出其位 means your thoughts stay in your own place: stop and stay put, not look around. The turn and hold on screen is a figure stopping, and this sentence says so plainly."
+      }
+    },
+    {
+      "number": 56,
+      "score": 8,
+      "feedback": [
+        "旅 growing larger as it comes toward you reads as someone arriving from far off, and 'Far from home, be a good guest' carries the Judgment (small success, modest and careful). It also quietly connects to the burnt-inn line. It is plain and true to the text. I would ship it.",
+        "The character hopping forward reads as travel. 'Far from home, be a good guest' carries 小亨 / 旅貞吉 (the wanderer does well by being modest and correct), and it echoes Line 3's burnt inn without needing it. 'Travel light' was indeed not in the text. It is plain and fits a newcomer."
+      ],
+      "decision": {
+        "number": 56,
+        "choice": "character",
+        "text": "Far from home,\nbe a good guest",
+        "why": "The figure hopping toward you reads as travel. The sentence now carries the Judgment and Image, which say a wanderer succeeds by being modest and careful. 'Travel light' is not in the text."
+      }
+    },
+    {
+      "number": 58,
+      "score": 7.5,
+      "feedback": [
+        "The yellow strokes bobbing above the open mouth read as laughter, and it is fun. 'Laugh and learn with friends' is true to 朋友講習. But 'Laugh and learn' sounds like a slogan, and the screen shows one mouth with no friends and nothing being learned. So the second half has to be taken on trust. 'Laugh, and talk / it over with friends' is more literal to 講習 and less catchy. It's still clearly better than the painting lesson for a newcomer. It has no end punctuation.",
+        "The yellow strokes bobbing over the open mouth read as laughter, and 朋友講習 is friends talking and practising together, so 'learn' is true to the text and less greeting-card than 'share your joy'. Plain and short. If anything, 'Laugh and talk it over / with friends' is closer to 講 (discuss), but 'learn' covers 習. Ship."
+      ],
+      "decision": {
+        "number": 58,
+        "choice": "character",
+        "text": "Laugh and learn\nwith friends",
+        "why": "The yellow strokes bobbing above the open mouth read as laughter. The Image's 朋友講習 is friends talking and practising together, so 'learn' keeps the half that 'share your joy' dropped, and it is less like a greeting card."
+      }
+    },
+    {
+      "number": 63,
+      "score": 7,
+      "feedback": [
+        "The clip's turn is weak: part of 既 twists and comes back, and a newcomer won't see a figure turning from a finished meal. So the words carry the whole lesson. 'All done? / Watch for trouble.' is plain, short and true to 思患而豫防之, and better than 'stay awake'. The drawing adds little, but the other option ('Fine silk turns to rags') is a weak, loose reading of line 4, so the character still wins. 'Done? / Now guard against trouble.' would say 'ahead of time' more directly.",
+        "'All done? Watch for trouble.' is a literal, accurate form of 思患而豫防之, and better than the current line: 'fine silk turns to rags' is a shaky reading of 繻有衣袽, which is about keeping rags ready to plug leaks. The risk is the clip. The figure turns its back on the finished meal, which reads more like walking away than watching, so picture and sentence pull slightly apart. The sentence carries it, but the drawing adds little."
+      ],
+      "decision": {
+        "number": 63,
+        "choice": "character",
+        "text": "All done?\nWatch for trouble.",
+        "why": "The Image's 思患而豫防之 means thinking of trouble and guarding against it ahead of time. 'Watch for trouble' says that literally, where 'stay awake' was slightly figurative. The clip's turn is weak, so the words have to carry the idea."
+      }
+    }
+  ]
+}

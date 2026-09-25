@@ -16,11 +16,10 @@
   },
   {
     "number": 3,
-    "kind": "line",
-    "line": 3,
-    "text": "Without a guide,\nlet the deer go.",
-    "source": "series/critic/lessons/input.json#hexagrams[2].lines[2].transliteration",
-    "why": "Line 3: chasing deer into the forest without a forester goes wrong, so let it go."
+    "kind": "character",
+    "text": "Hard start?\nGet help first.",
+    "source": "series/characters.json#3: A sprout stands buried to its tip; it pushes up through the ground in three strains, then lies down as the character.",
+    "why": "The character, with the best of the round 4 candidates (scored 7 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 4,
@@ -31,11 +30,10 @@
   },
   {
     "number": 5,
-    "kind": "line",
-    "line": 6,
-    "text": "Uninvited guests?\nReceive them well.",
-    "source": "series/critic/lessons/input.json#hexagrams[4].lines[5].transliteration",
-    "why": "Line 6: three uninvited guests arrive; treat them with respect and it ends well."
+    "kind": "character",
+    "text": "In the rain?\nEat, rest, wait.",
+    "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
+    "why": "The screen shows rain already falling, so the question now matches the picture. 'Eat, rest, wait' is the Image's 飲食宴樂, and the figure lying down at the end reads as rest. (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 6,
@@ -54,10 +52,10 @@
   },
   {
     "number": 8,
-    "kind": "painting",
-    "text": "Friends at lunch,\nholding together.",
-    "source": "series/critic/lessons/input.json#hexagrams[7].painting",
-    "why": "Accepted: Renoir's crowded table shows holding together at a glance."
+    "kind": "character",
+    "text": "Choose who you\nstand beside",
+    "source": "series/characters.json#8: One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character.",
+    "why": "A second figure walking up to stand beside the first is 比 (holding together). (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 9,
@@ -129,18 +127,17 @@
   },
   {
     "number": 18,
-    "kind": "judgment",
-    "text": "Plan three days,\ncheck three days.",
-    "source": "series/critic/lessons/input.json#hexagrams[17].judgment.transliteration",
-    "why": "The Judgment puts three days before a new start and three days after it, so a repair gets time on both sides."
+    "kind": "character",
+    "text": "Found rot?\nClean it out.",
+    "source": "series/characters.json#18: Worms breed in a shut bowl, swarm up and pour out.",
+    "why": "The worm swarm in the bowl is the strongest drawing in the set. The sentence now teaches what the hexagram asks for, which is fixing the decay, not just a warning that it happens. (Scored 9 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 19,
-    "kind": "line",
-    "line": 3,
-    "text": "Too comfortable?\nWorry a little.",
-    "source": "commentary/en/19.json#lines[2].transliteration",
-    "why": "Line 3: a comfortable approach supports nothing, but once you worry about it there is no fault."
+    "kind": "character",
+    "text": "Lean down. Care\nfor your people.",
+    "source": "series/characters.json#19: A figure with a big eye stands, leans down, and three small squares light up under it one by one; then it lies down as the character.",
+    "why": "The character, with the best of the round 4 candidates (scored 8 in series/critic/lessons/treatment-candidates.json)."
   },
   {
     "number": 20,
@@ -167,11 +164,10 @@
   },
   {
     "number": 23,
-    "kind": "line",
-    "line": 1,
-    "text": "The bed breaks at\nthe legs first.",
-    "source": "commentary/en/23.json#lines[0].synthesis",
-    "why": "Collapse starts at the base, the part nobody looks at."
+    "kind": "character",
+    "text": "Falling apart?\nShore up the base.",
+    "source": "series/characters.json#23: A knife stands beside a block; pieces fall off the block one by one until only its base stands; then both lie down as the character.",
+    "why": "Pieces come off the block in frames 4 to 6, so 'falling apart' matches the screen, and 'shore up the base' is the Image's 上以厚下安宅, advice the viewer can use. The other options only describe the collapse. (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 24,
@@ -237,11 +233,10 @@
   },
   {
     "number": 32,
-    "kind": "line",
-    "line": 4,
-    "text": "No game in this\nfield. Move.",
-    "source": "commentary/en/32.json#lines[3].synthesis",
-    "why": "Persistence in the wrong place is wasted: a field with no game."
+    "kind": "character",
+    "text": "Change shape,\nkeep your course",
+    "source": "series/characters.json#32: Two lines rise; between them a moon goes from new to full and back, then sets into them; a heart is drawn beside it.",
+    "why": "The moon changing shape between two steady lines shows constancy through change; the current line needs context. (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 33,
@@ -269,11 +264,10 @@
   },
   {
     "number": 36,
-    "kind": "line",
-    "line": 5,
-    "text": "A prince acted mad\nto stay alive.",
-    "source": "commentary/en/36.json#lines[4].synthesis",
-    "why": "Line 5: Prince Ji hid his sanity at the tyrant's court, the book's own example of hiding your light to survive."
+    "kind": "character",
+    "text": "Dark times?\nDim your light.",
+    "source": "series/characters.json#36: A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes.",
+    "why": "On screen the moon mostly dims, and a lit crescent is not clearly visible, so the sentence should say what is shown. 'Dim your light' does that and is the Image's 用晦而明, with no history needed. (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 37,
@@ -300,11 +294,10 @@
   },
   {
     "number": 40,
-    "kind": "line",
-    "line": 3,
-    "text": "Riding with a load\ninvites thieves.",
-    "source": "commentary/en/40.json#lines[2].transliteration",
-    "why": "Line 3: carrying the old burden into freedom makes you a target."
+    "kind": "character",
+    "text": "Untie it.\nForgive, then go.",
+    "source": "series/characters.json#40: The ox and its horn are drawn; a knife rises beside them; the horn lifts free and hovers.",
+    "why": "The character, with the best of the round 4 candidates (scored 7 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 41,
@@ -352,18 +345,17 @@
   },
   {
     "number": 47,
-    "kind": "lines",
-    "text": "Lake gone dry?\nHold to your aim.",
-    "source": "series/critic/lessons/input.json#hexagrams[46].image.transliteration",
-    "why": "The Image: the lake without water is oppression, and the realized person stakes their life on following their purpose. Both readers got the empty lake but no lesson."
+    "kind": "character",
+    "text": "Boxed in?\nHold to your aim.",
+    "source": "series/characters.json#47: A tree stands; walls rise round it; it is pressed flat inside them.",
+    "why": "The clip ends with the tree boxed in, not growing, so 'keep growing' said the opposite of what the viewer just saw. 'Hold to your aim' matches the final frame and is the Image's 致命遂志. (Scored 8.5 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 48,
-    "kind": "line",
-    "line": 3,
-    "text": "The well is clean.\nNo one drinks.",
-    "source": "commentary/en/48.json#lines[2].transliteration",
-    "why": "Line 3, the only sad line in the book: the well is cleaned and no one drinks, 'my heart's sorrow'."
+    "kind": "character",
+    "text": "Towns move.\nThe well stays.",
+    "source": "series/characters.json#48: Four beams rise as the well's frame; the water in the middle ripples on every beat.",
+    "why": "The character, with the best of the round 4 candidates (scored 7 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 49,
@@ -374,11 +366,10 @@
   },
   {
     "number": 50,
-    "kind": "line",
-    "line": 4,
-    "text": "The legs break.\nDuke wears dinner.",
-    "source": "commentary/en/50.json#lines[3].transliteration",
-    "why": "The caldron's legs break, the duke's meal spills over him: what happens when the setup isn't right."
+    "kind": "character",
+    "text": "Set the pot firm,\nthen cook.",
+    "source": "series/characters.json#50: The legs rise; a fire is lit among them; the bowl, drawn high above, drops onto them.",
+    "why": "The character, with the best of the round 4 candidates (scored 7.5 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 51,
@@ -389,10 +380,10 @@
   },
   {
     "number": 52,
-    "kind": "judgment",
-    "text": "Stillness starts\nin the back.",
-    "source": "series/critic/lessons/input.json#hexagrams[51].judgment.transliteration",
-    "why": "The Judgment opens with 'Stilling the back', the part you can't see, not the face or the mind. A specific, surprising detail."
+    "kind": "character",
+    "text": "Stop. Stay\nwhere you stand.",
+    "source": "series/characters.json#52: A figure with a big eye stands, turns round to look back, holds still, turns forward again and lies down as the character.",
+    "why": "The character, with the best of the round 4 candidates (scored 7 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 53,
@@ -420,11 +411,10 @@
   },
   {
     "number": 56,
-    "kind": "line",
-    "line": 3,
-    "text": "The wanderer burns\nhis own inn.",
-    "source": "commentary/en/56.json#lines[2].transliteration",
-    "why": "A guest who wrecks the shelter he was given loses his helper too."
+    "kind": "character",
+    "text": "Far from home,\nbe a good guest",
+    "source": "series/characters.json#56: People under a flag are drawn standing far off; they walk toward you in four hops, then lie down as the character.",
+    "why": "The figure hopping toward you reads as travel. The sentence now carries the Judgment and Image, which say a wanderer succeeds by being modest and careful. 'Travel light' is not in the text. (Scored 8 in series/critic/lessons/treatment.json.)"
   },
   {
     "number": 57,
@@ -436,10 +426,10 @@
   },
   {
     "number": 58,
-    "kind": "painting",
-    "text": "Painters toast,\nthen talk shop.",
-    "source": "commentary/en/58.json#image.transliteration",
-    "why": "Krøyer's artists at their party: the Image joins friends for discussion and practice, not only celebration."
+    "kind": "character",
+    "text": "Laugh and learn\nwith friends.",
+    "source": "series/characters.json#58: A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter.",
+    "why": "The character, with the best of the round 4 candidates (scored 8 in series/critic/lessons/treatment-candidates.json)."
   },
   {
     "number": 59,
@@ -473,11 +463,10 @@
   },
   {
     "number": 63,
-    "kind": "line",
-    "line": 4,
-    "text": "Fine silk turns\nto rags.",
-    "source": "commentary/en/63.json#lines[3].transliteration",
-    "why": "After completion, decay is slow and quiet, so the line says to stay watchful all day."
+    "kind": "character",
+    "text": "Done? Now guard\nagainst trouble.",
+    "source": "series/characters.json#63: A figure stands; a bowl rises beside it; the meal done, the figure turns its back on the bowl, holds, turns again and lies down as the character.",
+    "why": "The character, with the best of the round 4 candidates (scored 7.5 in series/critic/lessons/treatment-candidates.json). Under 8: the critics fault the drawing, not the sentence."
   },
   {
     "number": 64,

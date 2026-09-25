@@ -1,0 +1,335 @@
+{
+  "note": "Round 4 of scripts/workflows/lesson-treatment.js: for the 8 choices still under 8 after three rounds, the candidates the critics suggested, plus keeping the current lesson. Each is scored; the best is kept.",
+  "candidates": {
+    "3": [
+      [
+        "character",
+        "Hard start?\nGet help first."
+      ],
+      [
+        "character",
+        "Starts are hard.\nGet help."
+      ],
+      [
+        "keep",
+        "Without a guide,\nlet the deer go."
+      ]
+    ],
+    "19": [
+      [
+        "character",
+        "Lean down. Care\nfor your people."
+      ],
+      [
+        "character",
+        "Lean down to\nthose below you."
+      ],
+      [
+        "keep",
+        "Too comfortable?\nWorry a little."
+      ]
+    ],
+    "40": [
+      [
+        "character",
+        "Untie it.\nForgive, then go."
+      ],
+      [
+        "character",
+        "Let it loose.\nForgive."
+      ],
+      [
+        "keep",
+        "Riding with a load\ninvites thieves."
+      ]
+    ],
+    "48": [
+      [
+        "character",
+        "Towns move.\nThe well stays."
+      ],
+      [
+        "character",
+        "Towns move. Keep\nthe well clean."
+      ],
+      [
+        "keep",
+        "The well is clean.\nNo one drinks."
+      ]
+    ],
+    "50": [
+      [
+        "character",
+        "Get the base\nright, then cook."
+      ],
+      [
+        "character",
+        "Set the pot firm,\nthen cook."
+      ],
+      [
+        "keep",
+        "The legs break.\nDuke wears dinner."
+      ]
+    ],
+    "52": [
+      [
+        "character",
+        "Stop. Keep your\nback still."
+      ],
+      [
+        "character",
+        "Stop. Stay\nwhere you stand."
+      ],
+      [
+        "keep",
+        "Stillness starts\nin the back."
+      ]
+    ],
+    "58": [
+      [
+        "character",
+        "Laugh, and talk it\nover with friends."
+      ],
+      [
+        "character",
+        "Laugh and learn\nwith friends."
+      ],
+      [
+        "keep",
+        "Painters toast,\nthen talk shop."
+      ]
+    ],
+    "63": [
+      [
+        "character",
+        "Done? Now guard\nagainst trouble."
+      ],
+      [
+        "character",
+        "All done?\nWatch for trouble."
+      ],
+      [
+        "keep",
+        "Fine silk turns\nto rags."
+      ]
+    ]
+  },
+  "scores": [
+    {
+      "number": 3,
+      "candidate": 0,
+      "score": 7,
+      "feedback": [
+        "The strip is a small green comma that grows into 屯. No ground, no strain. So the words carry everything. 'Hard start? / Get help first.' is plain and literal to 利建侯, and 'first' hints at 勿用有攸往 (don't set out yet). The drawing adds only 'something small grows', which fits 'start'. Held back by the clip.",
+        "In the strip a comma-shaped stroke grows into 屯. Nothing strains and no ground shows, so the sentence does all the teaching. 'Hard start? Get help first.' is plain and close to 利建侯. 'First' also carries 勿用有攸往 (don't set out yet). This is the best of the three, but the drawing adds almost nothing."
+      ]
+    },
+    {
+      "number": 3,
+      "candidate": 1,
+      "score": 7,
+      "feedback": [
+        "The same weak clip. 'Starts are hard. / Get help.' is as plain as candidate 0 but a statement, not a question. Nothing on screen looks hard, so 'Starts are hard' is taken on trust. It is about equal to candidate 0, a little flatter.",
+        "Plain and true to the Judgment: a hard birth, then set up helpers. It says the same as candidate 0 without the 'don't set out yet' that 'first' adds. The clip is equally thin."
+      ]
+    },
+    {
+      "number": 3,
+      "candidate": 2,
+      "score": 6,
+      "feedback": [
+        "The deer line is concrete and a bit odd, which makes it memorable, but a newcomer won't know why deer or a guide matter. It is line 3 flavour, not the intent of a hard beginning. Only close because the clip is so thin.",
+        "Concrete and a little odd, and it echoes 勿用有攸往 (don't push ahead without help). But it is line 3's image, flavour and not the intent, and a newcomer won't see why a deer matters."
+      ]
+    },
+    {
+      "number": 19,
+      "candidate": 0,
+      "score": 8,
+      "feedback": [
+        "The tall pink figure tips down and three cyan squares light up under it: 'big one bends toward small ones' reads at first sight. 'Lean down.' names the motion, and 'Care for your people.' says who is cared for (容保民) and what to do. Plain and short. Ship.",
+        "The tall figure tips down and three cyan squares light up under it. 'Lean down' names that motion, and 'care for your people' says who is cared for (教思无窮, 容保民). Plain, literal, true to 臨. Ship it."
+      ]
+    },
+    {
+      "number": 19,
+      "candidate": 1,
+      "score": 7,
+      "feedback": [
+        "It matches the motion, but 'Lean down to / those below you' gives no action: lean down to do what? It also sounds hierarchical and stiff. It teaches less of the care in 臨 than candidate 0.",
+        "Names the motion and who is below, but it has no verb for what you do there, so the care in 臨 is only implied. 'Lean down to' also reads a little stiff."
+      ]
+    },
+    {
+      "number": 19,
+      "candidate": 2,
+      "score": 5,
+      "feedback": [
+        "'Too comfortable? Worry a little.' is line 3 flavour, and it throws away the clearest, most fun character clip in this set. It doesn't teach 臨's intent of drawing near to care for people.",
+        "This is line 3 (甘臨): comfortable approach, then worry. It is flavour and does not teach the strong coming near to look after those below. The clip is one of the better ones, and this option wastes it."
+      ]
+    },
+    {
+      "number": 40,
+      "candidate": 0,
+      "score": 7,
+      "feedback": [
+        "On screen the cyan 角 builds beside the pink 牛, then lifts and floats a little: something comes loose. 'Untie it.' matches that loosening better than 'cut'. 'Forgive, then go.' is the Image (赦過宥罪) plus 夙吉 but is terse: go where? A newcomer gets 'let it go and move on'. The horn's lift is still small.",
+        "'Untie it' is the literal sense of 解, and the cyan 角 lifting free of 牛 reads as a part coming loose. 'Forgive' is the Image's 赦過宥罪. 'Then go' is a loose reading of 夙吉 (act early), and two imperatives plus 'then go' is a lot for 5 words. Still the strongest option."
+      ]
+    },
+    {
+      "number": 40,
+      "candidate": 1,
+      "score": 6,
+      "feedback": [
+        "'Let it loose.' fits the floating horn, but a one-word 'Forgive.' with no object comes out of nowhere, since nothing on screen shows a person or a fault. The half-lines feel clipped rather than plain.",
+        "'Let it loose' can mean unleash as easily as release, so the phrase is ambiguous. 'Forgive' then arrives with nothing on screen to tie it to. Short, but less clear than 'Untie it'."
+      ]
+    },
+    {
+      "number": 40,
+      "candidate": 2,
+      "score": 5,
+      "feedback": [
+        "'Riding with a load invites thieves' is a funny line image, but it teaches the opposite side (the danger of carrying old burdens) and needs context to link to release. It is line 3 flavour.",
+        "Line 3 flavour (負且乘, 致寇至). It is a good warning, but it teaches nothing about release, and the clip shows release plainly enough."
+      ]
+    },
+    {
+      "number": 48,
+      "candidate": 0,
+      "score": 7,
+      "feedback": [
+        "The clip is 井 fading in with a small cyan water glint. It is weak, but 井 does look like a well frame, and it stands still while the sentence says 'the well stays'. 'Towns move. / The well stays.' is the Judgment 改邑不改井, literal and plain. A newcomer gets 'the well outlasts the town', though not what to do. The best of the three.",
+        "Literal and true to 改邑不改井 ('move' fits 改邑 better than 'change'). The clip is 井 with a small cyan glint, and no town moves on screen, so a weak drawing carries a strong sentence. It teaches what the well is, not what to do."
+      ]
+    },
+    {
+      "number": 48,
+      "candidate": 1,
+      "score": 6,
+      "feedback": [
+        "'Keep the well clean' turns it into an instruction, but it pulls toward lines 3 and 4 (cleaning, relining) and away from the Judgment's point that the well stays and feeds everyone. Two ideas in two half-lines, and nothing on screen shows cleaning.",
+        "It gives the viewer an action, but 'keep the well clean' borrows line 3/4 (cleaning and lining the well) and drops 'the well stays', which is the Judgment's point. The two halves don't follow from each other, and the clip shows no cleaning."
+      ]
+    },
+    {
+      "number": 48,
+      "candidate": 2,
+      "score": 6,
+      "feedback": [
+        "'The well is clean. No one drinks.' is odd and sticks in the mind, but it is the one sad line, not the hexagram's intent, and with no drawing it is only words over code. A newcomer might take the whole hexagram to be about neglect.",
+        "Odd and memorable, but it is line 3, the one sad exception (為我心惻), not the intent of 井. With the clip this weak it is not clearly worse than the character options."
+      ]
+    },
+    {
+      "number": 50,
+      "candidate": 0,
+      "score": 7,
+      "feedback": [
+        "The clip reads: legs, a yellow fire among them, the top piece dropping on. 'Get the base right' is closer to 正位 but more abstract than what is on screen, and 'then cook' with no pot named makes a newcomer supply the object. Good, slightly vaguer than candidate 1.",
+        "The clip shows legs, a yellow fire among them and the top dropping on, which reads as a pot being set up. 'Get the base right, then cook' is plain and nods to 正位凝命. It is a little generic, and 鼎's nourishing and renewal are only hinted at."
+      ]
+    },
+    {
+      "number": 50,
+      "candidate": 1,
+      "score": 7.5,
+      "feedback": [
+        "'Set the pot firm, / then cook.' names exactly what the clip shows (vessel on legs over fire) in plain words, and states the intent of setting things in their place before you feed anyone. A little domestic, but a newcomer gets who does what at first sight. Ship.",
+        "Names what is on screen more literally ('pot'), so a newcomer sees who does what. 'Firm' is a plain gloss of 正位. It is a bit domestic and flat for a vessel of state, but it is accurate."
+      ]
+    },
+    {
+      "number": 50,
+      "candidate": 2,
+      "score": 6,
+      "feedback": [
+        "'The legs break. Duke wears dinner.' is the funniest text here and needs no history, but it is line 4's failure case and gives up a clip that actually shows legs, fire and pot. Fun, but it teaches by accident.",
+        "Funny and plain, and it shows why the setup matters. But it teaches by line 4's failure (鼎折足, 覆公餗), and 'wears dinner' takes a beat to decode (形渥 is itself disputed)."
+      ]
+    },
+    {
+      "number": 52,
+      "candidate": 0,
+      "score": 6.5,
+      "feedback": [
+        "The clip's main event is the character turning round (frames 4-5) and back. 'Keep your back still' ties the turn to 艮其背, but a newcomer sees movement while the sentence speaks of stillness, and 'back' as a body instruction is puzzling without context. Literal, but it doesn't click.",
+        "It ties the clip's turn-and-hold to 艮其背, so picture and words match. 'Keep your back still' is literal to the Judgment, but a newcomer may wonder why the back, since the sense (don't face desire, don't see the self) is not given."
+      ]
+    },
+    {
+      "number": 52,
+      "candidate": 1,
+      "score": 7,
+      "feedback": [
+        "'Stop. / Stay where you stand.' is plain, and it is the Image's 思不出其位 said literally. The figure turning and then settling reads as 'look around, then stay put'. The turn isn't named, but it doesn't fight the words much. The best of the three.",
+        "A plain, true form of 思不出其位. But the clip's main event is a turn, and the sentence says nothing about it, so screen and words pull apart slightly. Clear to a newcomer."
+      ]
+    },
+    {
+      "number": 52,
+      "candidate": 2,
+      "score": 5.5,
+      "feedback": [
+        "'Stillness starts in the back' is specific to the Judgment but hard to picture, and with no drawing a newcomer gets nothing to hang it on. It also drops a clip that does act out turning the back.",
+        "Specific and true to the Judgment's opening, and it fits the turning-back clip, but as a keep it has no drawing. 'Starts in the back' is hard to picture without one."
+      ]
+    },
+    {
+      "number": 58,
+      "candidate": 0,
+      "score": 7,
+      "feedback": [
+        "The yellow strokes bobbing over the open mouth read as laughter, and it is fun. 'Laugh, and talk it over / with friends' is literal to 講習, but at seven words with a comma it is wordier than needed, and 'talk it over' implies a problem nobody mentioned.",
+        "The yellow strokes bobbing over the open mouth read as laughter, which is fun. 'Talk it over' is literal to 講. At 8 words across a comma it runs longer than the 3 to 7 word limit and reads a little slack."
+      ]
+    },
+    {
+      "number": 58,
+      "candidate": 1,
+      "score": 8,
+      "feedback": [
+        "'Laugh and learn / with friends' is short, plain and true to 朋友講習, and 'Laugh' matches the bobbing laugh-lines on screen. Slightly slogan-like, but a newcomer gets it at once. Ship.",
+        "Short, plain, and true to 朋友講習 ('learn' covers 習). 'Laugh' names what the clip shows. It sounds a little like a slogan, but it is the best of the three. Ship it."
+      ]
+    },
+    {
+      "number": 58,
+      "candidate": 2,
+      "score": 5,
+      "feedback": [
+        "'Painters toast, then talk shop' is about one painting the viewer doesn't see here, and without the drawing it is words over code. It drops the most charming clip in the set.",
+        "It depends on knowing one painting, and the keep slot has no painting on screen, so 'painters' comes from nowhere. It is less clear than the laughing-mouth clip."
+      ]
+    },
+    {
+      "number": 63,
+      "candidate": 0,
+      "score": 7.5,
+      "feedback": [
+        "The clip is weak: 旡 skews and twists back, which reads as a glitch, not a figure turning from a finished meal. 'Done? Now guard / against trouble.' is 思患而豫防之 with 'ahead of time' implied, but 'guard against' is a bit formal and the line break falls awkwardly.",
+        "'Now guard against trouble' is 思患而豫防之 in plain words, including the 'ahead of time' sense. The clip's twist of 旡 adds little, but the sentence carries it and it is short. Ship it."
+      ]
+    },
+    {
+      "number": 63,
+      "candidate": 1,
+      "score": 7.5,
+      "feedback": [
+        "'All done? / Watch for trouble.' is plain, short and literal to the Image's intent, and the break falls cleanly. The drawing adds little, so the words carry it, and they do. Ship.",
+        "Plain and accurate. 'Watch for trouble' is slightly more passive than 豫防 (prevent in advance), which makes it a little weaker than candidate 0. The clip is equally weak."
+      ]
+    },
+    {
+      "number": 63,
+      "candidate": 2,
+      "score": 4,
+      "feedback": [
+        "'Fine silk turns to rags' is a shaky reading of 繻有衣袽 (rags kept ready to plug leaks), needs explaining, and a newcomer won't link it to 'after completion'. The weakest option.",
+        "It rests on a shaky reading of 繻有衣袽 (keep rags ready to stop leaks), needs explaining, and doesn't state the intent of taking care after completion."
+      ]
+    }
+  ]
+}
