@@ -1,7 +1,7 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T15:41:21.633Z",
- "commit": "0c13d51b45402fe6efd9b3b8e10e5e8972e7540d",
+ "rendered": "2026-09-25T15:49:22.162Z",
+ "commit": "cdc2013a6598c68ac93b530db3196c53b23acfc7",
  "clean": true,
  "seconds": 53.888,
  "shareKbps": 3286,
@@ -45,7 +45,8 @@
      "Wang Bi": "218.2",
      "journal": "243.5",
      "note typed": "420-428",
-     "note saved": "482.4"
+     "note saved": "482.4",
+     "hexagram picked": "55.5-60"
     }
    },
    "take2": {
@@ -92,8 +93,8 @@
     ],
     "kind": "live",
     "take": "take1",
-    "from": 169.3,
-    "rate": 1.2,
+    "from": 55.5,
+    "rate": 1.4,
     "text": "It trains\nyour judgment.",
     "zoom": 1
    },
@@ -119,11 +120,11 @@
       "text": "18 · Work on\nthe Decayed"
      },
      {
-      "beat": 24,
+      "beat": 25,
       "text": "The name is a picture:\nbugs in a bowl."
      },
      {
-      "beat": 29,
+      "beat": 31,
       "text": "Found rot?\nClean it out."
      }
     ]
@@ -150,7 +151,7 @@
     "take": "take1",
     "from": 218.3,
     "rate": 1,
-    "text": "Commentary: Wang Bi\nand the Ten Wings.",
+    "text": "Confucian commentary:\nWang Bi, the Ten Wings.",
     "zoom": 1,
     "focus": 0.3
    },
@@ -161,8 +162,8 @@
     ],
     "kind": "live",
     "take": "take2",
-    "from": 9.4,
-    "rate": 0.6,
+    "from": 10.3,
+    "rate": 0.5,
     "zoom": 1,
     "focus": 0.3,
     "text": "The reading lists\nwhat would prove it wrong.",
@@ -207,7 +208,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "1cc22a80166555ecc2df5b338541b3c6d082ca11d140a2afe5519014e8d4b98a",
-  "out/demo/walkthrough/share.mp4": "f10ce89cb88e92a03f0654bbdac644a842aa46589e98f05ce561918c02a95ce6"
+  "out/demo/walkthrough/short.mp4": "1e51b913b0bbff70604a0db6a54a67e94438d03dedd00195b559204f848c794e",
+  "out/demo/walkthrough/share.mp4": "8e7a25363e844ec7bfaa792ffed7e4b9effd99458841d09b16d78fb67688d438"
  }
 }
