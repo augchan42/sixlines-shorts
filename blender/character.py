@@ -26,7 +26,8 @@ in the stroke's own shape, with the neon along their top edge.
 - --pool: a pool of water (for 井) that ripples on every beat.
 
 The camera starts beside the strokes, where they read as things, and cranes up to look
-straight down, where they read as the character.
+straight down, where they read as the character. --hold keeps it there, still, for the
+last beats (in a short, while the sentence is typed under it).
 
 Stroke outlines are from Make Me a Hanzi (hanzi-writer-data, Arphic
 Public License), fetched to public/local/hanzi/ by scripts/character.mjs.
@@ -94,6 +95,7 @@ def parse():
     p.add_argument("--grow", type=float, default=0.0, help="with --stand: metres the standing thing starts under the floor; it pushes up in three strains")
     p.add_argument("--bpm", type=float, required=True)
     p.add_argument("--beats", type=float, required=True)
+    p.add_argument("--hold", type=float, default=0.0, help="beats at the end, inside --beats, looking down on the finished character")
     p.add_argument("--edge", default="#6cff7a")
     p.add_argument("--out", required=True)
     p.add_argument("--still", type=int)
@@ -238,9 +240,9 @@ VIEWS = {
 }
 
 
-def camera(scene, frames, beat, view, zoom=1.0):
+def camera(scene, frames, beat, view, zoom=1.0, hold=0.0):
     """Beside the strokes (low, or high enough to see into the walls), then craning up to look
-    straight down on the character."""
+    straight down on the character, and staying there for the last `hold` beats."""
     target = bpy.data.objects.new("target", None)
     scene.collection.objects.link(target)
     data = bpy.data.cameras.new("camera")
@@ -250,12 +252,13 @@ def camera(scene, frames, beat, view, zoom=1.0):
     scene.camera = cam
     track = cam.constraints.new("TRACK_TO")
     track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
-    rise = frames - round(3 * beat)
+    over = frames - 1 - round(hold * beat)
+    rise = over - round(3 * beat) + 1
     away = lambda loc, t: tuple(t[k] + (loc[k] - t[k]) * zoom for k in range(3))
     (start, start_t), (mid, mid_t) = VIEWS[view]
     start, mid = away(start, start_t), away(mid, mid_t)
     top = away((0, -0.6, 15.5), (0, 0.4, 0))
-    for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (frames - 1, top, (0, 0.4, 0))):
+    for f, loc, t in ((0, start, start_t), (rise, mid, mid_t), (over, top, (0, 0.4, 0))):
         cam.location = loc
         key(cam, "location", f)
         target.location = t
@@ -685,7 +688,7 @@ def main():
     bpy.ops.mesh.primitive_plane_add(size=60, location=(0, 0, 0))
     bpy.context.object.data.materials.append(black)
 
-    camera(scene, frames, beat, args.camera, args.zoom)
+    camera(scene, frames, beat, args.camera, args.zoom, args.hold)
     bloom(scene)
     render_settings(scene, frames, args.out, args.preview)
     if args.still is not None:

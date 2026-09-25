@@ -104,12 +104,12 @@ test("a moon lesson plays its Blender clip for the whole lesson, with the labels
   assert.equal(seriesProps(row).credit, true);
 });
 
-test("a character lesson plays the character's clip, 3 beats longer than its drawing so the sentence can be read", () => {
+test("a character lesson plays the character's clip, 4 beats longer than its drawing: a beat to see the finished character, then 3 for the sentence", () => {
   const character = { char: "坎", beats: 12, args: { stand: true } };
   const lesson = { kind: "character", text: "t", character, source: "written" };
   const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
   const plan = planOf(p);
-  assert.equal(plan.cta - plan.showcase, 15);
-  assert.equal(p.lesson.clip, characterClip(29, 100, 15, character.args));
-  assert.equal(p.lesson.beats, 15);
+  assert.equal(plan.cta - plan.showcase, 16);
+  assert.equal(p.lesson.clip, characterClip(29, 100, 16, character.args));
+  assert.equal(p.lesson.beats, 16);
 });

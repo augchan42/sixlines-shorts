@@ -60,8 +60,9 @@ async function render(number) {
   if (run.status !== 0) process.exit(run.status ?? 1);
 }
 
-// A special's lesson: the short's tempo, and the lesson's length, so the drawing ends where
-// the short's sentence comes on and the camera cranes up under it.
+// A special's lesson: the short's tempo and the lesson's length. The drawing and the camera's
+// crane take the character's own beats; the camera then holds over the finished character
+// for the rest, while the short types its sentence.
 async function renderSpecial(name) {
   const special = JSON.parse(readFileSync(path.join(root, "series/specials", `${name}.json`), "utf8"));
   const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
@@ -82,7 +83,7 @@ async function renderSpecial(name) {
     blender,
     [
       "-b", "--factory-startup", "--python-exit-code", "1", "-P", path.join(root, "blender/character.py"), "--",
-      "--data", data, "--bpm", String(props.bpm), "--beats", String(beats), "--out", partial, ...characterFlags(c.args),
+      "--data", data, "--bpm", String(props.bpm), "--beats", String(beats), "--hold", String(beats - c.beats), "--out", partial, ...characterFlags(c.args),
     ],
     { stdio: ["ignore", "ignore", "inherit"] },
   );

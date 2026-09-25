@@ -89,17 +89,18 @@ const LESSON_SCREENS = {
   painting: { name: "painting-scrolled", caption: "THE PAINTING" },
 };
 
-const CHARACTER_SENTENCE_BEATS = 3;
+// After a character is drawn, the camera holds over it: a beat to see it, then 3 for the sentence.
+export const CHARACTER_HOLD_BEATS = 4;
 
 const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
   const l = row.copy?.lesson;
   if (!l) return undefined;
   // The moon is its own Blender clip (blender/moon.py), rendered once the plan is known.
   if (l.kind === "moon") return { kind: l.kind, text: l.text, ...(l.labels ? { labels: l.labels } : {}) };
-  // A character is drawn by blender/character.py; the sentence gets 3 beats after it.
+  // A character is drawn by blender/character.py, then held while the sentence is typed.
   if (l.kind === "character") {
     if (!l.character) throw new Error(`hexagram ${row.number}'s character lesson has no character`);
-    return { kind: l.kind, text: l.text, beats: l.character.beats + CHARACTER_SENTENCE_BEATS };
+    return { kind: l.kind, text: l.text, beats: l.character.beats + CHARACTER_HOLD_BEATS };
   }
   if (l.kind === "lines") {
     const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
