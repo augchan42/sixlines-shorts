@@ -107,3 +107,28 @@ is in `series/critic/characters/research.md`; 21 fit at 4 or 5.
 - 困 (47): a tree stands, walls rise round it, it is pressed flat. Low camera.
 - 益 (42): a bowl rises, water fills it and spills over the far rim. High camera, so the
   inside of the bowl shows. From the low camera the bowl was a flat strip.
+- The rest of the 4s and 5s, each with its settings in `series/characters.json`. The author:
+  "Love this series so far."
+  - 蠱 (18): worms swarm up out of a shut bowl. Only the rim rises, so the worms stay in view.
+  - 井 (48): four low glass beams and a pool that ripples on every beat.
+  - 屯 (3): a sprout pushes up through the floor in three strains (`--grow`).
+  - 恆 (32), 明 (36): a moon between the walls goes through its phases (`--moon`,
+    `--phases`); 明's stops at a crescent that stays lit.
+  - 鼎 (50): the legs rise, a fire is lit, the bowl drops onto them (`--drop`, `--pool`).
+  - 解 (40): the horn lifts free and hovers (`--lift`).
+  - 需 (5): neon rain falls on a standing figure, then the cloud comes down (`--rain`).
+  - 臨 (19): a figure leans down and small squares light up under it (`--lean`, side camera).
+  - 艮 (52): a figure turns round to look back and holds still (`--turn`).
+  - 剝 (23): a knife stands by a block and the block's pieces fall off (`--shed`).
+  - 旅 (56): travellers walk toward you in four hops (`--march`).
+  - 兌 (58): two lines float up out of an open mouth (`--lift`).
+  - 比 (8): a second figure walks up from behind to stand beside the first (`--join`).
+  - 同 (13): everything inside a frame lifts at once (`--lift`, side camera).
+  - 既 (63): the meal done, the figure turns its back on the bowl (`--turn`).
+  - 復 (24): a foot walks back toward the passage (`--march` with a negative distance).
+  - 履 (10): a figure's foot is set down one stroke at a time (`--drop`).
+  - 頤 (27): what is inside an open jaw spills over its rim (`--spill`).
+- What went wrong on the way: from a low camera, bowls read as strips and figures hid what
+  was behind them (fixed with the high camera and `--zoom`); a big moon filled the frame; a
+  thing turning about the character's centre swung across its neighbours (now it turns about
+  its own middle).
