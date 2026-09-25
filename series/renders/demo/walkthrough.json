@@ -1,7 +1,7 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T16:11:35.183Z",
- "commit": "2e54fa4d9c1eb0816278a3af3edcec50e4048b49",
+ "rendered": "2026-09-25T16:15:26.347Z",
+ "commit": "c63cf63a1e758478528bed2c9a416a091f4ad295",
  "clean": true,
  "seconds": 50.218667,
  "shareKbps": 3535,
@@ -137,7 +137,7 @@
     "rate": 1,
     "zoom": 1,
     "focus": 0,
-    "text": "The reading applies it\nto your project."
+    "text": "The reading applies this\nto your project."
    },
    {
     "beats": [
@@ -205,7 +205,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "1355e67231ac9a3fc2da7760b40a3f73f95f42edcf5c460a0dcf1304fc75c8a5",
-  "out/demo/walkthrough/share.mp4": "4efc01e14aedc67da12f9db2763d0ecc837e5be8f50dd821276cbcf31bbd6265"
+  "out/demo/walkthrough/short.mp4": "48d3fb52e0b0da1c912743d6d0bd02e8b3139214ce7d38f96c7a6a57a03b12cc",
+  "out/demo/walkthrough/share.mp4": "8fedc118be4f92d421a63095de72fb79ccd16ae1ab09f4e00ba7ddfdf9eac55c"
  }
 }
