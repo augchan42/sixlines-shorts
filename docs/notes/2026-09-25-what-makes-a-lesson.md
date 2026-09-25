@@ -91,3 +91,19 @@ The critic, given the tiger lesson as an approved example, scored it 9. A critic
 checks truth to the text does not catch a sentence that is true but misread. So every
 lesson now also goes to cold readers, who see only the sentence and the picture
 (`scripts/workflows/lesson-cold-read.js`).
+
+## Character lessons (Blender)
+
+A new kind, drawn by `blender/character.py` from the characters' real stroke outlines
+(Make Me a Hanzi, fetched by `scripts/character.mjs`). Research on the early forms of all 64
+is in `series/critic/characters/research.md`; 21 fit at 4 or 5.
+
+- First try: tubes along the stroke centre lines. The author: "looks like it was drawn by a
+  kid". Now each stroke is its real outline as a neon tube over a dark glass body, like a
+  Hong Kong neon sign. The author: "I think it's ok."
+- A stroke can lie on the floor, rise as a wall, stand up and be pressed flat (`--stand`), or
+  fill the walls and spill over them (`--spill`). The camera starts beside the strokes, where
+  they read as things, and cranes up to look down, where they read as the character.
+- 困 (47): a tree stands, walls rise round it, it is pressed flat. Low camera.
+- 益 (42): a bowl rises, water fills it and spills over the far rim. High camera, so the
+  inside of the bowl shows. From the low camera the bowl was a flat strip.
