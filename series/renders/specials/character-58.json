@@ -1,0 +1,65 @@
+{
+ "hexagram": 58,
+ "special": "character-58",
+ "rendered": "2026-09-25T13:11:58.822Z",
+ "commit": "98757555e9d19483f221014c8283c05e8b5444fd",
+ "clean": false,
+ "seconds": 27.562667,
+ "shareKbps": 6547,
+ "props": {
+  "hexagram": {
+   "number": 58,
+   "zh": "兌",
+   "pinyin": "Duì",
+   "name": "The Joyous",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+  "musicStart": 98.023,
+  "drop": 14,
+  "hook": "Good news, no one to tell?",
+  "meaning": [
+   "The Joyous says:\nshare it.",
+   "Joy kept alone\ndries up."
+  ],
+  "question": "Who could you\ncall today?",
+  "plates": [
+   "assets/yilin/stipple-58-19.webp",
+   "assets/yilin/stipple-58-24.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Laugh and learn\nwith friends.",
+   "beats": 15,
+   "clip": "assets/3d/character-58-120bpm-15b-1w6ytv7.mp4"
+  },
+  "pace": "even",
+  "credit": true,
+  "hexagramClip": "assets/3d/hexagram-110110-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-110110-120bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
+  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
+  "assets/3d/hexagram-110110-120bpm-8b.mp4": "ce65b27beb9206aabf9591f49952c94ffd31524b1c18c0a1584d770c08872a4a",
+  "assets/3d/endcard-snap-110110-120bpm-9b.mp4": "a2771f48b5761b29045f6349d7a32a955d9e5b3570c2e763094f72d081652fc1",
+  "assets/3d/character-58-120bpm-15b-1w6ytv7.mp4": "ee703052240245f786db23235f94d42ac4b9872e1823c06c6d5b917282f104ff",
+  "assets/yilin/stipple-58-19.webp": "bd65935c580b3c8625cf13dde5f5621fa9b969aeaa0a1ee31cb569fdee4278d5",
+  "assets/yilin/stipple-58-24.webp": "8e6fad91c2f0ebd3c25efda6f07f1c4e88d4f1ceb4d8d23ef2d86f9ce6bbd572",
+  "out/specials/character-58/short.mp4": "f1c8f359697262ed2e4431a222d599c902de33de157550484b0bd7dbe4f3738c",
+  "out/specials/character-58/share.mp4": "d7914a14e12a0ececaa75d59466c332ee0a4babf959b6ef2c85b6abd12363f5c"
+ }
+}

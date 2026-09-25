@@ -1,11 +1,11 @@
 {
  "hexagram": 47,
  "special": "character-47",
- "rendered": "2026-09-25T08:56:08.806Z",
- "commit": "510dab61a6d8afc37e5a3ffce0d6ef0a2c8da405",
+ "rendered": "2026-09-25T13:08:16.308Z",
+ "commit": "98757555e9d19483f221014c8283c05e8b5444fd",
  "clean": false,
- "seconds": 26.56,
- "shareKbps": 6799,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 47,
@@ -39,9 +39,9 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Pressed in,\nkeep growing",
-   "beats": 13,
-   "clip": "assets/3d/character-47-120bpm-13b-1vzav8o.mp4"
+   "text": "Boxed in?\nHold to your aim.",
+   "beats": 14,
+   "clip": "assets/3d/character-47-120bpm-14b-1vzav8o.mp4"
   },
   "pace": "even",
   "credit": true,
@@ -56,10 +56,10 @@
   "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
   "assets/3d/hexagram-010110-120bpm-8b.mp4": "d747a89a32d3a5fbd332a47f8aaa83bb320b9b9007141b477656f29d80dfe0a8",
   "assets/3d/endcard-snap-010110-120bpm-9b.mp4": "f1175b5819c6e4ee55393c7fdef4decbc3b761f82aff32c942f3631044fc7629",
-  "assets/3d/character-47-120bpm-13b-1vzav8o.mp4": "08e9b0f32aeb9703a1c5f6d85bbf266f6c639dff50ce950bfb9f335161d61e50",
+  "assets/3d/character-47-120bpm-14b-1vzav8o.mp4": "ce9760dc1c6d630e508a5330f58bb76dded49a684f82815645705eed79aa0456",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/specials/character-47/short.mp4": "fa092eac023394fc9cd1e38882db102c5fcf65f484a0dbbdcfa11ff1ea25737c",
-  "out/specials/character-47/share.mp4": "cbe0953e4678a23d585c3103b37c36b21c10d16c115ced2d2f46d5824c936f32"
+  "out/specials/character-47/short.mp4": "97790c4977f4ee8e07c4158b4a29b3297d1a17b8d7270d540e0e17a2e3906bce",
+  "out/specials/character-47/share.mp4": "ddb408380249dfb22be1c7bed21ebdc75b1f63ce00366056670eb897e1260ce8"
  }
 }

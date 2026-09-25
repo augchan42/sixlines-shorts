@@ -1,11 +1,11 @@
 {
  "hexagram": 5,
  "special": "character-5",
- "rendered": "2026-09-25T08:57:56.842Z",
- "commit": "510dab61a6d8afc37e5a3ffce0d6ef0a2c8da405",
+ "rendered": "2026-09-25T13:10:06.398Z",
+ "commit": "98757555e9d19483f221014c8283c05e8b5444fd",
  "clean": false,
- "seconds": 30.656,
- "shareKbps": 5874,
+ "seconds": 31.253333,
+ "shareKbps": 5759,
  "props": {
   "hexagram": {
    "number": 5,
@@ -39,9 +39,9 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Wait in the rain;\nit will pass.",
-   "beats": 15,
-   "clip": "assets/3d/character-5-100bpm-15b-1nj2qu2.mp4"
+   "text": "In the rain?\nEat, rest, wait.",
+   "beats": 16,
+   "clip": "assets/3d/character-5-100bpm-16b-1nj2qu2.mp4"
   },
   "pace": "even",
   "credit": true,
@@ -56,10 +56,10 @@
   "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
   "assets/3d/hexagram-111010-100bpm-8b.mp4": "75eb628fa1696f38c83a0c395d73d147111e0f9ef1e836c279e81cdaf350aaef",
   "assets/3d/endcard-snap-111010-100bpm-9b.mp4": "53ca3276993e84d513e501d715756feca05d4e2150dcd461e6e430c69820f11d",
-  "assets/3d/character-5-100bpm-15b-1nj2qu2.mp4": "35b654439477d3dbe41bdad25714b5aab14d93b1dbe385fd95f2fd7e698c0ba7",
+  "assets/3d/character-5-100bpm-16b-1nj2qu2.mp4": "785cd2da205a9324370a2bf582fb3c3c717795f728b28a1e0d18d79d3cab5347",
   "assets/yilin/stipple-5-41.webp": "a5267dd9b8da456822b834a0efcf96ea843c8b4c810dd638ce6f67ca0cc5746b",
   "assets/yilin/stipple-5-34.webp": "c3aaa1314f79ef6d31322d609a09ebb1b9625d5509b25e27a4c99f76bd068c18",
-  "out/specials/character-5/short.mp4": "83417ce912ad588d6d4e85236bf915b8f79f2cc8d9df06b2c94a4d2500ea9d24",
-  "out/specials/character-5/share.mp4": "3bcda1cef9d9550dae2d7439568c6a90da3ee82b5767195079cab51838e8c90e"
+  "out/specials/character-5/short.mp4": "5c13e286a57c8efa7b4c95f7783bb65f48b32a3ffb1f8a8c352ce5352b255760",
+  "out/specials/character-5/share.mp4": "0312d66183452788e58ac532151b487c634d4d3dae80d4d3fe12848ed068d8c5"
  }
 }
