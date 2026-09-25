@@ -12,6 +12,7 @@ in the stroke's own shape, with the neon along their top edge.
 - --moon: a moon between the walls goes from new to full and back (for 恆), then sets
   into these strokes; --last draws lying strokes at the end (恆's heart).
 - --lift: lying strokes lift free once the walls stand and hover (解's horn, cut loose).
+- --rain: before the --drop strokes fall, neon rain falls for this many beats (需).
 - --drop: strokes traced high above fall to their place (鼎's bowl onto its legs).
 - --pool: a pool of water (for 井) that ripples on every beat.
 
@@ -33,6 +34,7 @@ import argparse
 import json
 import math
 import os
+import random
 import sys
 
 import bpy
@@ -46,6 +48,7 @@ CENTRE = (512, 388)
 NEON = 0.03  # the neon tube's radius
 BODY = 0.06  # a lying stroke's glass body, thickness
 WALL_H = 1.5
+CLOUD = 5.5  # the height a cloud forms at, above a standing figure, and rain falls from
 
 
 def parse():
@@ -64,6 +67,9 @@ def parse():
     p.add_argument("--phases", default="180,0,-180", help="the moon's turns, 1.5 beats apart: 180 is new, 0 full")
     p.add_argument("--drop", default="", help="strokes traced high above, which then fall to their place")
     p.add_argument("--lift", default="", help="lying strokes that lift free and hover once the walls stand")
+    p.add_argument("--rain", type=float, default=0.0, help="beats of neon rain before the --drop strokes fall (for 需)")
+    p.add_argument("--lie-step", type=float, default=0.9, help="beats between lying strokes")
+    p.add_argument("--drop-step", type=float, default=0.5, help="beats between the --drop strokes as they are traced")
     p.add_argument("--last", default="", help="lying strokes drawn at the end, not the start")
     p.add_argument("--wall-step", type=float, default=1.0, help="beats between walls")
     p.add_argument("--water", default="#5ee7ff", help="the spilling strokes' neon")
@@ -368,15 +374,16 @@ def phases(ids, medians, paths, t, beat, args, smoke):
     return b(1.6), glows
 
 
-def fall(ids, medians, paths, t, beat, colour, smoke):
-    """For 鼎: strokes traced 3.5 m up, one after another from frame `t`, fall together to
-    their place, land with a small bounce and flare. Returns the frame after and their glows."""
+def fall(ids, medians, paths, t, beat, colour, smoke, step=0.5, until=0, high=3.5):
+    """For 鼎: strokes traced `high` up, one after another from frame `t`, fall together to
+    their place (not before frame `until`), land with a small bounce and flare. Returns the
+    frame after and their glows."""
     x, y, _, _ = centre([p for i in ids for p in medians[i]])
     parent = bpy.data.objects.new("drop", None)
     bpy.context.scene.collection.objects.link(parent)
     parent.location = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, 0)
-    high = 3.5
-    t, glows = lie(ids, paths, t, beat, colour, smoke, parent, step=0.5)
+    t, glows = lie(ids, paths, t, beat, colour, smoke, parent, step=step)
+    t = max(t, until)
     # Falling: height goes as 1 - (time/fall)^2, sampled so the curve accelerates.
     fall_ = 0.6 * beat
     keys = [(0, high), (t, high)] + [(t + round(fall_ * k / 4), high * (1 - (k / 4) ** 2)) for k in range(1, 5)]
@@ -390,6 +397,35 @@ def fall(ids, medians, paths, t, beat, colour, smoke):
             strength.default_value = v
             strength.keyframe_insert("default_value", frame=f + 1)
     return land + round(0.6 * beat), glows
+
+
+def rain(t, beats, beat, args, points, high):
+    """Neon rain: short streaks falling from `high` to the floor at seeded random places over
+    the character, from frame `t` for `beats` beats. Returns the frame it stops."""
+    rng = random.Random(5)
+    xs, ys = [p[0] for p in points], [p[1] for p in points]
+    streak, _ = edge(linear(args.water), "rain")
+    end = t + round(beats * beat)
+    fall_ = round(0.45 * beat)
+    for k in range(round(30 * beats)):
+        start = t + rng.randrange(0, end - t - fall_)
+        x, y = rng.uniform(min(xs), max(xs)), rng.uniform(min(ys), max(ys))
+        c = bpy.data.curves.new(f"drop{k}", "CURVE")
+        c.dimensions, c.bevel_depth, c.bevel_resolution = "3D", NEON * 0.8, 1
+        line = c.splines.new("POLY")
+        line.points.add(1)
+        line.points[0].co, line.points[1].co = (0, 0, 0, 1), (0, 0, 0.7, 1)
+        o = bpy.data.objects.new(f"drop{k}", c)
+        bpy.context.scene.collection.objects.link(o)
+        o.data.materials.append(streak)
+        o.location = ((x - CENTRE[0]) * SCALE, (y - CENTRE[1]) * SCALE, high)
+        for f, z in ((start, high), (start + fall_, -0.7)):
+            o.location.z = z
+            key(o, "location", f, index=2)
+        for f, hidden in ((0, True), (start, False), (start + fall_, True)):
+            o.hide_render = hidden
+            key(o, "hide_render", f)
+    return end
 
 
 def water(spill, medians, paths, walls, args, t, beat):
@@ -470,7 +506,7 @@ def main():
         pivot = bpy.data.objects.new("pivot", None)
         scene.collection.objects.link(pivot)
         pivot.location = (0, (foot[1] - CENTRE[1]) * SCALE, 0)
-    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot)
+    t, glows = lie(lying, paths, t, beat, colour, smoke, pivot, step=args.lie_step)
     if lift:
         freed = bpy.data.objects.new("lift", None)
         scene.collection.objects.link(freed)
@@ -530,7 +566,11 @@ def main():
                 strength.keyframe_insert("default_value", frame=f + 1)
         t += round(0.8 * beat)
     if drop:
-        t, fallen = fall(drop, medians, paths, t, beat, colour, smoke)
+        # With rain, the dropping strokes form above while it rains and fall once it stops.
+        until = t
+        if args.rain:
+            until = rain(t, args.rain, beat, args, [p for ps in medians for p in ps], CLOUD)
+        t, fallen = fall(drop, medians, paths, t, beat, colour, smoke, args.drop_step, until, CLOUD if args.rain else 3.5)
         glows += fallen
     if moon:
         t, wet = phases(moon, medians, paths, t, beat, args, smoke)
