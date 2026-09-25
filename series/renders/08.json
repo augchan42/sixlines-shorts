@@ -1,10 +1,10 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-25T01:01:26.933Z",
- "commit": "dd6e34864a6d6e68e64f1e3b3af100ea4f108e4a",
+ "rendered": "2026-09-25T02:10:13.589Z",
+ "commit": "2921b0a12a17e7c9681405693ce43dba751ef8aa",
  "clean": true,
- "seconds": 25.088,
- "shareKbps": 7206,
+ "seconds": 27.178667,
+ "shareKbps": 6642,
  "props": {
   "hexagram": {
    "number": 8,
@@ -38,12 +38,17 @@
   "screens": [],
   "lesson": {
    "kind": "painting",
-   "text": "Renoir, 1881:\nfriends together.",
+   "text": "Friends at lunch,\nholding together.",
    "screen": {
     "src": "assets/screens/8/painting-scrolled.png",
     "caption": "THE PAINTING"
+   },
+   "painting": {
+    "src": "assets/paintings/8.jpg",
+    "credit": "RENOIR · 1881"
    }
   },
+  "pace": "held",
   "hexagramClip": "assets/3d/hexagram-000010-115bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-000010-115bpm-9b.mp4",
@@ -56,9 +61,10 @@
   "assets/3d/hexagram-000010-115bpm-8b.mp4": "24a13c93517de55db6c88aee6d4a005ca9d49b3c957f63ac9bfe51990977035c",
   "assets/3d/endcard-snap-000010-115bpm-9b.mp4": "4e7cd95a4043154b737826e6143b90be36edb589bad5a3809041de40e4894581",
   "assets/screens/8/painting-scrolled.png": "0a22e0b794ce2040d14672faf14332fdb82f97302b733cbf096d9f1dd91455d1",
+  "assets/paintings/8.jpg": "2484c15d83d2f2c07a13adc64fbda9d5f37a3eb47e8a381b5ebb98aaa25b4e38",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "0d0d1defb360e8b19c8384db69e8b97716d7a0482117f50f067206b849f80682",
-  "out/series/08-bi/share.mp4": "51dfbd1c1b9c8d839d57eb15a092485c6554a19593c0bf815ed42bf5597dc007"
+  "out/series/08-bi/short.mp4": "4e227b2a8a401af2f2ecef49b9e0ef127ead693726a38924f4d5bd7a6bbc0629",
+  "out/series/08-bi/share.mp4": "6c2adc38724953bc7ee0e484ee3f274e53cb0476f52eefe5c977478741439278"
  }
 }
