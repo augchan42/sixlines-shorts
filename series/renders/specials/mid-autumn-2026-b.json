@@ -1,9 +1,9 @@
 {
  "hexagram": 20,
  "special": "mid-autumn-2026-b",
- "rendered": "2026-09-25T03:09:32.419Z",
- "commit": "e6ce1d0098c472bbc8f0f6b07fd2a9c42b011098",
- "clean": false,
+ "rendered": "2026-09-25T03:18:39.697Z",
+ "commit": "135cda5bc48ce3236ece5d3630a55b4cb364b05f",
+ "clean": true,
  "seconds": 30.976,
  "shareKbps": 5812,
  "props": {
@@ -39,7 +39,7 @@
   "screens": [],
   "lesson": {
    "kind": "moon",
-   "text": "Its shape:\na watchtower.",
+   "text": "Look like a guest,\nnot an inspector.",
    "clip": "assets/3d/moon-000011-95bpm-16b.mp4"
   },
   "pace": "held",
@@ -57,7 +57,7 @@
   "assets/3d/endcard-snap-000011-95bpm-9b.mp4": "008b080fd9ecc2e8fe8507b4358f348117ed6fbd18e27bfd9b253ad8e9041f2b",
   "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
   "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
-  "out/specials/mid-autumn-2026-b/short.mp4": "5c8dc7e0b8aae8e6ce361e9c91896840507365116de9d9f6feba0f8e8203edb6",
-  "out/specials/mid-autumn-2026-b/share.mp4": "5b16611d381219a723c0da71ed692cfde82a6d27337ae6c11adbc728c30b41cb"
+  "out/specials/mid-autumn-2026-b/short.mp4": "31ee650d46ee6c34eadfb8c8c5b276367030b635b51bc34a56b06a0e9f2f5842",
+  "out/specials/mid-autumn-2026-b/share.mp4": "46e092445817ef70bab6f78ca95ae0fef1fc4ae1d4c11828073ac63407b2eae6"
  }
 }
