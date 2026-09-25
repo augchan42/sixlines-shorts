@@ -84,7 +84,7 @@
     },
     {
      "beat": 8,
-     "text": "It trains\nyour judgment."
+     "text": "It gives you a situation\nto think through."
     }
    ]
   },
@@ -95,30 +95,34 @@
    ],
    "kind": "hexagram",
    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
-   "text": "Six lines. 64 situations."
+   "text": "You get 1 of 64 situations."
   },
   {
    "beats": [
     18,
-    33
+    34
    ],
    "kind": "clip",
    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
    "texts": [
     {
      "beat": 20,
-     "text": "The name is a picture:\nbugs in a bowl."
+     "text": "The character\nis a picture."
     },
     {
-     "beat": 29,
+     "beat": 26,
+     "text": "Bugs in a bowl."
+    },
+    {
+     "beat": 30,
      "text": "Found rot?\nClean it out."
     }
    ]
   },
   {
    "beats": [
-    33,
-    38
+    34,
+    39
    ],
    "kind": "live",
    "take": "take1",
@@ -130,21 +134,21 @@
   },
   {
    "beats": [
-    38,
-    43
+    39,
+    44
    ],
    "kind": "live",
    "take": "take1",
    "from": 219.3,
    "rate": 1,
-   "text": "Classical commentary:\nWang Bi, the Ten Wings.",
+   "text": "Classical commentary:\nWang Bi.",
    "zoom": 1,
    "focus": 0.3
   },
   {
    "beats": [
-    43,
-    49
+    44,
+    50
    ],
    "kind": "live",
    "take": "take2",
@@ -157,8 +161,8 @@
   },
   {
    "beats": [
-    49,
-    55
+    50,
+    56
    ],
    "kind": "live",
    "take": "take1",
@@ -171,16 +175,16 @@
   },
   {
    "beats": [
-    55,
-    64
+    56,
+    65
    ],
    "kind": "endcard",
    "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
   },
   {
    "beats": [
-    64,
-    68
+    65,
+    69
    ],
    "kind": "credit",
    "name": "~DISNEYFAN"
