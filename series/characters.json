@@ -162,6 +162,15 @@
       "bpm": 95,
       "beats": 13,
       "args": { "order": [7, 5, 6, 8, 3, 0, 1, 2, 4], "stand": true, "lieStep": 0.6, "walls": [0, 1, 2, 3, 4], "wallStep": 0.4, "wallHeight": 0.6, "glassWalls": true, "turn": 170, "camera": "high", "zoom": 2.0, "edge": "#ff5ec8", "water": "#5ee7ff" }
+    },
+    {
+      "number": 24,
+      "char": "復",
+      "story": "A passage rises; a foot stands out in front of it, then walks back toward it in four hops; the road it walks is drawn after it.",
+      "sentence": "The way out is\nthe way back",
+      "bpm": 95,
+      "beats": 13,
+      "args": { "order": [11, 9, 10, 5, 6, 7, 8, 0, 1, 2, 3, 4], "stand": true, "lieStep": 0.6, "walls": [5, 6, 7, 8], "wallStep": 0.5, "wallHeight": 0.6, "glassWalls": true, "march": -4, "last": [0, 1, 2, 3, 4], "camera": "high", "zoom": 1.8, "edge": "#6cff7a", "water": "#5ee7ff" }
     }
   ]
 }
