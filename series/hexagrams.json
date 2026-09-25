@@ -448,6 +448,11 @@
    "caption": {
     "text": "The image is water under the earth, unseen but everywhere. An army is ordinary people, and they’re there when needed if you look after them.",
     "source": "commentary/en/7.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Water under the earth:\nunseen, but everywhere.",
+    "source": "commentary/en/7.json#image.synthesis"
    }
   },
   "source": {
@@ -513,6 +518,11 @@
    "caption": {
     "text": "The image is water on the earth, running to the low ground and filling it. People who need to belong come on their own; the ones who come late do badly.",
     "source": "commentary/en/8.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "painting",
+    "text": "Renoir, 1881:\nfriends holding together.",
+    "source": "masterpieces/artwork_index.json#8 (Luncheon of the Boating Party)"
    }
   },
   "source": {
@@ -643,6 +653,11 @@
    "caption": {
     "text": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep.",
     "source": "commentary/en/10.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "judgment",
+    "text": "Tread on the tiger’s tail.\nIt does not bite.",
+    "source": "commentary/en/10.json#judgment.transliteration"
    }
   },
   "source": {

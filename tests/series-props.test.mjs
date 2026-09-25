@@ -59,3 +59,20 @@ test("an override that changes the tempo changes the clip too", () => {
 test("a row without copy cannot become a short", () => {
   assert.throws(() => seriesProps({ ...row, copy: null }), /hexagram 29 has no copy/);
 });
+
+test("a lesson on the lines names the two trigrams, upper first", () => {
+  const lesson = { kind: "lines", text: "Water under earth.", source: "written" };
+  const p = seriesProps({ ...row, number: 7, lines: [0, 1, 0, 0, 0, 0], upper: "kun", copy: { ...row.copy, lesson } });
+  assert.deepEqual(p.lesson, { kind: "lines", text: "Water under earth.", trigrams: [{ zh: "地", name: "EARTH" }, { zh: "水", name: "WATER" }] });
+  assert.deepEqual(p.screens, []);
+});
+
+test("a lesson on the judgment or the painting shows the Library's own page for it", () => {
+  const withLesson = (kind) => seriesProps({ ...row, copy: { ...row.copy, lesson: { kind, text: "t", source: "written" } } }).lesson;
+  assert.deepEqual(withLesson("judgment").screen, { src: "assets/screens/29/text-scrolled.png", caption: "THE JUDGMENT" });
+  assert.deepEqual(withLesson("painting").screen, { src: "assets/screens/29/painting-scrolled.png", caption: "THE PAINTING" });
+});
+
+test("a short without a lesson keeps its showcase", () => {
+  assert.equal(seriesProps(row).lesson, undefined);
+});

@@ -104,7 +104,18 @@ export const seriesSchema = z.object({
   question: z.string(),
   // Paths under public/ of the plates behind the two meaning lines.
   plates: z.tuple([z.string(), z.string()]),
-  screens: z.array(z.object({ src: z.string(), caption: z.string() })).length(4),
+  // The app screens after the drop; empty when the short has a lesson instead.
+  screens: z.array(z.object({ src: z.string(), caption: z.string() })),
+  // What lands on the drop in place of the showcase: the two trigrams, the Judgment on the
+  // Library's Study page, or the painting on its Art page, then one plain sentence.
+  lesson: z
+    .object({
+      kind: z.enum(["lines", "judgment", "painting"]),
+      text: z.string(),
+      trigrams: z.tuple([z.object({ zh: z.string(), name: z.string() }), z.object({ zh: z.string(), name: z.string() })]).optional(),
+      screen: z.object({ src: z.string(), caption: z.string() }).optional(),
+    })
+    .optional(),
   // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
   endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]) }),
 });

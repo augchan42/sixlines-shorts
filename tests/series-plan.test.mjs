@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { seriesPlan } from "../src/lib/seriesPlan.ts";
+import { LESSON_BEATS, planOf, seriesPlan } from "../src/lib/seriesPlan.ts";
 import { TITLE_BOTTOM } from "../src/scenes/titleLayout.ts";
 import { sectionProblems } from "../scripts/series/limits.mjs";
 
@@ -71,4 +71,11 @@ test("the hexagram part is 8 beats, or 6 when the meaning needs the room", () =>
 
 test("the hexagram names sit above Instagram's bottom 420 px", () => {
   assert.ok(TITLE_BOTTOM >= 420, `${TITLE_BOTTOM}`);
+});
+
+test("a short with a lesson gives the drop 12 beats instead of the showcase's 20", () => {
+  const p = seriesPlan(102, 14.12, LESSON_BEATS);
+  assert.deepEqual([p.drop, p.showcase, p.cta, p.credit, p.end], [24, 24, 36, 45, 48]);
+  assert.equal(planOf({ bpm: 102, drop: 14.12, lesson: { kind: "lines", text: "x" } }).cta, 36);
+  assert.equal(planOf({ bpm: 102, drop: 14.12 }).cta, 44);
 });

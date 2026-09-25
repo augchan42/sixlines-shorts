@@ -21,6 +21,11 @@ const CTA_BEATS = 9;
 const CREDIT_BEATS = 3;
 const ending = (cta: number) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_BEATS + CREDIT_BEATS });
 
+// Beats from the drop to the end card: the showcase's app screens, or a lesson (spec
+// 2026-09-25) that teaches one thing about the hexagram in two halves.
+export const SHOWCASE_BEATS = 20;
+export const LESSON_BEATS = 12;
+
 // The two meaning lines together need at least this long.
 const MEANING_SECONDS = 4;
 
@@ -28,7 +33,7 @@ const MEANING_SECONDS = 4;
 // hold 8.
 const FAST_BPM = 120;
 
-export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
+export const seriesPlan = (bpm: number, drop: number, after = SHOWCASE_BEATS): SeriesPlan => {
   const d = Math.round((drop * bpm) / 60);
   const seconds = (beats: number) => (beats * 60) / bpm;
   const q = bpm > FAST_BPM ? 8 : 4;
@@ -46,7 +51,7 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
         questionLength: q,
         drop: d,
         showcase: d,
-        ...ending(d + 20),
+        ...ending(d + after),
       };
     }
   }
@@ -61,6 +66,10 @@ export const seriesPlan = (bpm: number, drop: number): SeriesPlan => {
     questionLength: q,
     drop: d,
     showcase: d + 3 * q,
-    ...ending(d + 3 * q + 20),
+    ...ending(d + 3 * q + after),
   };
 };
+
+// The plan for a short's props: a lesson, when it has one, replaces the showcase.
+export const planOf = (p: { bpm: number; drop: number; lesson?: unknown }) =>
+  seriesPlan(p.bpm, p.drop, p.lesson ? LESSON_BEATS : SHOWCASE_BEATS);

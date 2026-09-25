@@ -1,5 +1,5 @@
 // Pure helpers for the series scripts (series-clips, series-screens, series).
-import { seriesPlan } from "../../src/lib/seriesPlan.ts";
+import { planOf } from "../../src/lib/seriesPlan.ts";
 
 export const parseNumbers = (arg) => {
   if (arg === "all") return "all";
@@ -14,7 +14,7 @@ export const clipJobs = (propsList, exists) => {
   const seen = new Set();
   const jobs = [];
   for (const p of propsList) {
-    const plan = seriesPlan(p.bpm, p.drop);
+    const plan = planOf(p);
     const lines = p.hexagram.lines.join("");
     const wanted = [
       { kind: "hexagram", clip: p.hexagramClip, lines, bpm: p.bpm, beats: plan.hexagramBeats },
@@ -71,6 +71,7 @@ export const missingAssets = (props, row, { exists, sha256 }) => {
   need(props.hexagramClip, `npm run series:clips -- ${n}`);
   need(props.endcard.clip, `npm run series:clips -- ${n}`);
   for (const s of props.screens) need(s.src, "npm run series:screens");
+  if (props.lesson?.screen) need(props.lesson.screen.src, "npm run series:screens");
   for (const p of props.plates) need(p, `npm run assets -- --hexagram ${n}`);
   return problems;
 };

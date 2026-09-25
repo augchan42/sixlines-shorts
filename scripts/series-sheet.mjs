@@ -8,7 +8,7 @@ import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { seriesPlan } from "../src/lib/seriesPlan.ts";
+import { planOf } from "../src/lib/seriesPlan.ts";
 
 const root = path.resolve(import.meta.dirname, "..");
 const sha = (f) => createHash("sha256").update(readFileSync(f)).digest("hex");
@@ -35,9 +35,11 @@ for (const n of numbers) {
   const file = path.basename(props.music);
   const section = sections.find((s) => s.file === file);
   const track = analysis.tracks.find((t) => t.file === file);
-  const s = seriesPlan(props.bpm, props.drop);
+  const s = planOf(props);
   const at = (beat) => props.firstBeat + (beat * 60) / props.bpm;
-  const screenBeats = (s.cta - s.showcase) / props.screens.length;
+  const screenBeats = (s.cta - s.showcase) / Math.max(1, props.screens.length);
+  const lessonHalf = s.showcase + (s.cta - s.showcase) / 2;
+  const lesson = props.lesson;
   const hexEnd = s.hexagram + s.hexagramBeats;
   const half = s.meaningLength / 2;
 
@@ -47,6 +49,7 @@ for (const n of numbers) {
     ["meaning 1", s.meaning, s.meaning + half],
     ["meaning 2", s.meaning + half, s.meaning + s.meaningLength],
     ["question", s.question, s.question + s.questionLength],
+    ...(lesson ? [[`lesson: ${lesson.kind}`, s.showcase, lessonHalf], ["lesson sentence", lessonHalf, s.cta]] : []),
     ...props.screens.map((sc, i) => [`screen ${i + 1} (${sc.caption})`, s.showcase + i * screenBeats, s.showcase + (i + 1) * screenBeats]),
     ["end card", s.cta, s.credit],
     ["credit", s.credit, s.end],
@@ -61,6 +64,7 @@ for (const n of numbers) {
     ["QUESTION", at(s.question + s.questionLength / 2)],
     ["DROP -0.1s", at(s.drop) - 0.1],
     ["DROP +0.2s", at(s.drop) + 0.2],
+    ...(lesson ? [[`LESSON ${lesson.kind.toUpperCase()}`, at((s.showcase + lessonHalf) / 2)], ["LESSON TEXT", at(lessonHalf + 0.7 * (s.cta - lessonHalf))]] : []),
     ...props.screens.map((_, i) => [`SCREEN ${i + 1}`, at(s.showcase + (i + 0.5) * screenBeats)]),
     ["END 40%", at(s.cta + 0.4 * (s.credit - s.cta))],
     ["END 95%", at(s.cta + 0.95 * (s.credit - s.cta))],
@@ -108,7 +112,7 @@ for (const n of numbers) {
     `- Meaning 1: ${JSON.stringify(props.meaning[0])}`,
     `- Meaning 2: ${JSON.stringify(props.meaning[1])}`,
     `- Question: ${JSON.stringify(props.question)}`,
-    `- Screens: ${props.screens.map((sc) => sc.caption).join(" · ")}`,
+    lesson ? `- Lesson (${lesson.kind}): ${JSON.stringify(lesson.text)}` : `- Screens: ${props.screens.map((sc) => sc.caption).join(" · ")}`,
     "",
     "## Timeline",
     "",

@@ -3,7 +3,7 @@ import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
-import { seriesPlan } from "../lib/seriesPlan";
+import { planOf } from "../lib/seriesPlan";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import type { SeriesProps } from "../schema";
 import { CaptionScreen } from "../scenes/CaptionScreen";
@@ -12,9 +12,10 @@ import { Credit } from "../scenes/Credit";
 import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
+import { Trigrams } from "../scenes/Trigrams";
 
-export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop">, fps: number) =>
-  beatFrame({ fps, bpm: p.bpm, firstBeat: p.firstBeat }, seriesPlan(p.bpm, p.drop).end);
+export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson">, fps: number) =>
+  beatFrame({ fps, bpm: p.bpm, firstBeat: p.firstBeat }, planOf(p).end);
 
 const Badge: React.FC<{ n: number }> = ({ n }) => (
   <AbsoluteFill style={{ padding: "240px 70px 0", pointerEvents: "none" }}>
@@ -28,18 +29,22 @@ const Badge: React.FC<{ n: number }> = ({ n }) => (
 export const Series: React.FC<SeriesProps> = (props) => {
   const { fps } = useVideoConfig();
   const grid: Grid = { fps, bpm: props.bpm, firstBeat: props.firstBeat };
-  const s = seriesPlan(props.bpm, props.drop);
+  const s = planOf(props);
   const f = (b: number) => beatFrame(grid, b);
   const span = (a: number, b: number) => ({ from: f(a), durationInFrames: f(b) - f(a) });
   const half = s.meaningLength / 2;
   const hexEnd = s.hexagram + s.hexagramBeats;
-  const screenBeats = (s.cta - s.showcase) / props.screens.length;
+  const screenBeats = (s.cta - s.showcase) / Math.max(1, props.screens.length);
+  // A lesson shows its picture for the first half, then its sentence.
+  const lessonHalf = s.showcase + (s.cta - s.showcase) / 2;
+  const lesson = props.lesson;
   const cuts: Cut[] = [
     { beat: s.hexagram, kind: "zoom" },
     { beat: s.meaning, kind: "whip-up" },
     { beat: s.meaning + half, kind: "whip-left" },
     { beat: s.question, kind: "whip-right" },
     { beat: s.drop, kind: "zoom" },
+    ...(lesson ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
     ...props.screens.slice(1).map((_, i) => ({ beat: s.showcase + (i + 1) * screenBeats, kind: (i % 2 ? "whip-right" : "whip-left") as Cut["kind"] })),
     { beat: s.cta, kind: "zoom" },
     { beat: s.credit, kind: "whip-up" },
@@ -79,6 +84,20 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <CaptionScreen src={sc.src} caption={sc.caption} color={i % 2 ? "#ffb23f" : "#7dff8a"} seed={`cap-${i}`} />
             </Sequence>
           ))}
+          {lesson && (
+            <>
+              <Sequence {...span(s.showcase, lessonHalf)}>
+                {lesson.trigrams ? (
+                  <Trigrams lines={props.hexagram.lines} trigrams={lesson.trigrams} />
+                ) : (
+                  lesson.screen && <CaptionScreen src={lesson.screen.src} caption={lesson.screen.caption} color="#7dff8a" seed="lesson" />
+                )}
+              </Sequence>
+              <Sequence {...span(lessonHalf, s.cta)}>
+                <CodeRain text={lesson.text} cuts={lesson.kind === "painting" && lesson.screen ? [{ frame: 0, src: lesson.screen.src }] : []} />
+              </Sequence>
+            </>
+          )}
           <Sequence {...span(s.cta, s.credit)}>
             <EndCard3D clip={props.endcard.clip} />
           </Sequence>

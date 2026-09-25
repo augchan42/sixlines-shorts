@@ -1,5 +1,5 @@
 import { endcardClip, type EndcardMode, hexagramClip } from "../lib/clips.ts";
-import { seriesPlan } from "../lib/seriesPlan.ts";
+import { planOf } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
 type Line = { text: string; source: string };
@@ -14,7 +14,14 @@ export type SeriesRow = {
   upper: string;
   commentary: string;
   music: { trigram: string; file: string; bpm: number; start: number; firstBeat: number; drop: number; sha256?: string; certificate?: { file: string; sha256: string } };
-  copy: { hook: Line; meaning: [Line, Line]; question: Line; plates: [string, string]; lineage?: string } | null;
+  copy: {
+    hook: Line;
+    meaning: [Line, Line];
+    question: Line;
+    plates: [string, string];
+    lineage?: string;
+    lesson?: Line & { kind: "lines" | "judgment" | "painting" };
+  } | null;
   source: { sixlinesContent: string };
 };
 
@@ -53,6 +60,35 @@ const screensFor = (n: number) => [
   { src: `assets/screens/tour/${SHARED[(n - 1) % SHARED.length].name}.png`, caption: SHARED[(n - 1) % SHARED.length].caption },
 ];
 
+// Each trigram by its lines, bottom first, with its image in Chinese and English.
+const TRIGRAMS: Record<string, { zh: string; name: string }> = {
+  "111": { zh: "天", name: "HEAVEN" },
+  "000": { zh: "地", name: "EARTH" },
+  "100": { zh: "雷", name: "THUNDER" },
+  "010": { zh: "水", name: "WATER" },
+  "001": { zh: "山", name: "MOUNTAIN" },
+  "011": { zh: "風", name: "WIND" },
+  "101": { zh: "火", name: "FIRE" },
+  "110": { zh: "澤", name: "LAKE" },
+};
+
+// The Library page each lesson shows: the Study tab's Judgment or the Art tab's painting.
+const LESSON_SCREENS = {
+  judgment: { name: "text-scrolled", caption: "THE JUDGMENT" },
+  painting: { name: "painting-scrolled", caption: "THE PAINTING" },
+};
+
+const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
+  const l = row.copy?.lesson;
+  if (!l) return undefined;
+  if (l.kind === "lines") {
+    const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
+    return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
+  }
+  const s = LESSON_SCREENS[l.kind];
+  return { kind: l.kind, text: l.text, screen: { src: `assets/screens/${row.number}/${s.name}.png`, caption: s.caption } };
+};
+
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
   if (!row.copy) throw new Error(`hexagram ${row.number} has no copy in series/copy.json`);
   const n = row.number;
@@ -67,11 +103,12 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     meaning: [row.copy.meaning[0].text, row.copy.meaning[1].text] as [string, string],
     question: row.copy.question.text,
     plates: [plate(row.copy.plates[0]), plate(row.copy.plates[1])] as [string, string],
-    screens: screensFor(n),
+    screens: row.copy.lesson ? [] : screensFor(n),
+    lesson: lessonFor(row),
     ...override,
   };
   // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.
-  const plan = seriesPlan(merged.bpm, merged.drop);
+  const plan = planOf(merged);
   const mode = ENDCARD_MODE[row.upper];
   return {
     ...merged,
