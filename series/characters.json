@@ -144,6 +144,15 @@
       "bpm": 95,
       "beats": 11,
       "args": { "order": [0, 1, 2, 3], "stand": true, "lieStep": 0.7, "join": [2, 3], "camera": "low", "zoom": 1.5, "edge": "#6cff7a", "water": "#5ee7ff" }
+    },
+    {
+      "number": 13,
+      "char": "同",
+      "story": "A frame rises; inside it a board and a mouth are drawn, and all of it inside lifts at once, together, and hovers.",
+      "sentence": "Lift it\ntogether",
+      "bpm": 95,
+      "beats": 11,
+      "args": { "order": [2, 3, 4, 5, 0, 1], "walls": [0, 1], "wallStep": 0.8, "lift": [2, 3, 4, 5], "wallHeight": 1.2, "glassWalls": true, "camera": "side", "zoom": 1.6, "edge": "#ff5ec8", "water": "#ffb347" }
     }
   ]
 }
