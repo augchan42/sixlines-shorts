@@ -12,7 +12,7 @@ import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFil
 import path from "node:path";
 import { overrides } from "../src/series/overrides.ts";
 import { seriesProps } from "../src/series/props.ts";
-import { postCaption } from "./series/caption.mjs";
+import { linkedinCaption, postCaption } from "./series/caption.mjs";
 import { missingAssets, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -70,6 +70,7 @@ const renderOne = async (n) => {
 
   const caption = postCaption(row);
   writeFileSync(path.join(dir, "caption.txt"), caption);
+  writeFileSync(path.join(dir, "linkedin.txt"), linkedinCaption(row));
   const files = Object.fromEntries(
     [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...(props.lesson?.painting ? [props.lesson.painting.src] : []), ...props.plates].map((f) => [f, sha256(f)]),
   );
@@ -80,6 +81,7 @@ const renderOne = async (n) => {
   mkdirSync(records, { recursive: true });
   copyFileSync(path.join(dir, "manifest.json"), path.join(records, `${record}.json`));
   copyFileSync(path.join(dir, "caption.txt"), path.join(records, `${record}.txt`));
+  copyFileSync(path.join(dir, "linkedin.txt"), path.join(records, `${record}.linkedin.txt`));
   console.log(`[${n}] ${path.relative(root, share)} (${seconds.toFixed(1)} s)`);
 };
 

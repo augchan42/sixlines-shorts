@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { postCaption } from "../scripts/series/caption.mjs";
+import { linkedinCaption, postCaption } from "../scripts/series/caption.mjs";
 
 const row = {
   number: 29, zh: "坎", pinyin: "Kǎn", name: "The Abyss", commentary: "Danger doubled.",
@@ -26,4 +26,10 @@ test("a personal note goes first, under the name, in the author's own words", ()
 test("the post caption has 3 to 5 hashtags", () => {
   const tags = postCaption(row).match(/#\w+/g);
   assert.ok(tags.length >= 3 && tags.length <= 5);
+});
+
+test("the LinkedIn caption leaves room for the author's note and drops the Instagram tagline and tag block", () => {
+  const c = linkedinCaption({ ...row, copy: { ...row.copy, linkedin: { text: "Water keeps going.", source: "written" }, tags: ["#midautumn", "#中秋節"] } });
+  assert.equal(c, "29 · 坎 Kǎn · The Abyss\n\n[your note]\n\nWater keeps going.\n\nsixlines.day\n\n#midautumn #中秋節\n");
+  assert.match(linkedinCaption(row), /One problem after another\?[^]*\n\n#iching\n$/);
 });

@@ -38,6 +38,10 @@
    "#midautumn",
    "#中秋節"
   ],
-  "credit": false
+  "credit": false,
+  "linkedin": {
+   "text": "Hexagram 20, Contemplation (觀), means to look. Its fourth line says the person who looks with a guest's courtesy learns more than the one who looks with an inspector's authority.",
+   "source": "commentary/en/20.json#lines[3].synthesis"
+  }
  }
 }

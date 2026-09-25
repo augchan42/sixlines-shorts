@@ -13,3 +13,15 @@ export const postCaption = (row) =>
   ]
     .filter(Boolean)
     .join("\n\n") + "\n";
+
+// The LinkedIn caption: the author's note first (a placeholder until they write it), the
+// LinkedIn text if the copy has one (else the written caption), the site, and only the
+// short's own hashtags, since the Instagram tag block and tagline read as Instagram there.
+export const linkedinCaption = (row) =>
+  [
+    `${row.number} · ${row.zh} ${row.pinyin} · ${row.name}`,
+    row.copy.note ?? "[your note]",
+    (row.copy.linkedin ?? row.copy.caption).text,
+    "sixlines.day",
+    (row.copy.tags ?? ["#iching"]).join(" "),
+  ].join("\n\n") + "\n";
