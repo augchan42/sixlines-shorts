@@ -107,7 +107,7 @@
       "sentence": "Stop, and look\nat where you are",
       "bpm": 95,
       "beats": 12,
-      "args": { "order": [3, 0, 1, 2, 4, 5], "stand": true, "lieStep": 0.6, "turn": 150, "camera": "low", "zoom": 1.4, "edge": "#b28cff", "water": "#5ee7ff" }
+      "args": { "order": [3, 0, 1, 2, 4, 5], "stand": true, "lieStep": 0.6, "turn": 150, "camera": "low", "zoom": 1.6, "edge": "#b28cff", "water": "#5ee7ff" }
     },
     {
       "number": 23,
