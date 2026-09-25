@@ -171,6 +171,15 @@
       "bpm": 95,
       "beats": 13,
       "args": { "order": [11, 9, 10, 5, 6, 7, 8, 0, 1, 2, 3, 4], "stand": true, "lieStep": 0.6, "walls": [5, 6, 7, 8], "wallStep": 0.5, "wallHeight": 0.6, "glassWalls": true, "march": -4, "last": [0, 1, 2, 3, 4], "camera": "high", "zoom": 1.8, "edge": "#6cff7a", "water": "#5ee7ff" }
+    },
+    {
+      "number": 10,
+      "char": "履",
+      "story": "A figure with a big eye stands; its foot comes down in front of it one stroke at a time, a beat apart, each placed with care; then it lies down as the character.",
+      "sentence": "Watch where\nyou step",
+      "bpm": 95,
+      "beats": 13,
+      "args": { "order": [2, 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "stand": true, "lieStep": 0.35, "drop": [12, 13, 14], "dropStep": 1.0, "camera": "high", "zoom": 2.3, "edge": "#ff5ec8", "water": "#5ee7ff" }
     }
   ]
 }
