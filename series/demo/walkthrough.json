@@ -80,7 +80,7 @@
    ],
    "kind": "hexagram",
    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
-   "text": "You get 1 of 64 situations."
+   "text": "Cast six lines: 1 of 64."
   },
   {
    "beats": [
@@ -91,7 +91,7 @@
    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
    "texts": [
     {
-     "beat": 20,
+     "beat": 18,
      "text": "The character\nis a picture."
     },
     {
@@ -151,8 +151,8 @@
    ],
    "kind": "live",
    "take": "take3",
-   "from": 249,
-   "rate": 1.2,
+   "from": 250.3,
+   "rate": 1,
    "zoom": 1,
    "focus": 1,
    "text": "You decide.\nThen write down\nwhat happened.",
