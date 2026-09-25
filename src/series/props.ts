@@ -20,7 +20,8 @@ export type SeriesRow = {
     question: Line;
     plates: [string, string];
     lineage?: string;
-    lesson?: Line & { kind: "lines" | "judgment" | "painting"; credit?: string };
+    lesson?: Line & { kind: "lines" | "judgment" | "painting"; credit?: string; painting?: string };
+    tags?: string[];
     pace?: "even" | "held";
   } | null;
   source: { sixlinesContent: string };
@@ -86,6 +87,9 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
     const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
     return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
   }
+  // A special's painting has its own key in series/paintings.json; the app pairs another
+  // painting with the hexagram, so its Library page is left out.
+  if (l.kind === "painting" && l.painting) return { kind: l.kind, text: l.text, painting: { src: `assets/paintings/${l.painting}.jpg`, credit: l.credit ?? "" } };
   const s = LESSON_SCREENS[l.kind];
   const screen = { src: `assets/screens/${row.number}/${s.name}.png`, caption: s.caption };
   // The painting's file comes from scripts/series-paintings.mjs (series/paintings.json).

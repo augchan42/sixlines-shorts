@@ -9,7 +9,7 @@ export const postCaption = (row) =>
     row.copy.caption.text,
     row.copy.lineage,
     "Reveal the moment. sixlines.day",
-    TAGS.join(" "),
+    [...TAGS, ...(row.copy.tags ?? [])].join(" "),
   ]
     .filter(Boolean)
     .join("\n\n") + "\n";

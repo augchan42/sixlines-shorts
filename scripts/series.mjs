@@ -1,4 +1,8 @@
 // Renders series shorts: npm run series -- 29 | 2,52 | all
+// or a special, a one-off short on a hexagram with its own copy (series/specials/NAME.json,
+// {hexagram, copy}), which leaves the hexagram's series short alone:
+//   npm run series -- --special mid-autumn-2026
+// A special renders to out/specials/NAME/ and records to series/renders/specials/.
 // Per short, out/series/NN-pinyin/ gets short.mp4, share.mp4, caption.txt, props.json and
 // manifest.json; the manifest and caption are also copied to series/renders/ for committing.
 // An earlier render there moves to out/series/versions/NN-pinyin/<time>-<commit>/ first.
@@ -17,7 +21,9 @@ const sha256 = (f) => createHash("sha256").update(readFileSync(pub(f))).digest("
 const shaAbs = (f) => createHash("sha256").update(readFileSync(f)).digest("hex");
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
 const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
-const wanted = parseNumbers(process.argv[2]);
+const special = process.argv[2] === "--special" ? process.argv[3] : null;
+const specialFile = special && path.join(root, "series/specials", `${special}.json`);
+const wanted = special ? [JSON.parse(readFileSync(specialFile, "utf8")).hexagram] : parseNumbers(process.argv[2]);
 const numbers = wanted === "all" ? rows.filter((r) => r.copy).map((r) => r.number) : wanted;
 // Read once, before any render writes series/renders/, so every hexagram in this run
 // records the commit and cleanliness of the tree it was actually rendered from.
@@ -25,17 +31,21 @@ const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
 
 const renderOne = async (n) => {
-  const row = rows.find((r) => r.number === n);
-  const props = seriesProps(row, overrides[n]);
+  const found = rows.find((r) => r.number === n);
+  const row = special ? { ...found, copy: JSON.parse(readFileSync(specialFile, "utf8")).copy } : found;
+  const props = seriesProps(row, special ? {} : overrides[n]);
   const problems = missingAssets(props, row, { exists: (f) => existsSync(pub(f)), sha256 });
   if (problems.length) throw new Error(problems.join("\n  "));
 
   const nn = String(n).padStart(2, "0");
-  const name = `${nn}-${slug(row.pinyin)}`;
-  const dir = path.join(root, "out/series", name);
+  const name = special ?? `${nn}-${slug(row.pinyin)}`;
+  const outBase = special ? "out/specials" : "out/series";
+  const records = path.join(root, special ? "series/renders/specials" : "series/renders");
+  const record = special ?? nn;
+  const dir = path.join(root, outBase, name);
   // Keep the earlier render rather than overwrite it.
   if (existsSync(path.join(dir, "manifest.json"))) {
-    const kept = path.join(root, versionDir("out/series", name, JSON.parse(readFileSync(path.join(dir, "manifest.json"), "utf8"))));
+    const kept = path.join(root, versionDir(outBase, name, JSON.parse(readFileSync(path.join(dir, "manifest.json"), "utf8"))));
     mkdirSync(path.dirname(kept), { recursive: true });
     renameSync(dir, kept);
     console.log(`[${n}] kept the earlier render in ${path.relative(root, kept)}`);
@@ -63,13 +73,13 @@ const renderOne = async (n) => {
   const files = Object.fromEntries(
     [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...(props.lesson?.painting ? [props.lesson.painting.src] : []), ...props.plates].map((f) => [f, sha256(f)]),
   );
-  files[`out/series/${path.basename(dir)}/short.mp4`] = shaAbs(short);
-  files[`out/series/${path.basename(dir)}/share.mp4`] = shaAbs(share);
-  const manifest = { hexagram: n, rendered: new Date().toISOString(), commit, clean, seconds, shareKbps: kbps, props, files };
+  files[`${outBase}/${name}/short.mp4`] = shaAbs(short);
+  files[`${outBase}/${name}/share.mp4`] = shaAbs(share);
+  const manifest = { hexagram: n, ...(special ? { special } : {}), rendered: new Date().toISOString(), commit, clean, seconds, shareKbps: kbps, props, files };
   writeFileSync(path.join(dir, "manifest.json"), `${JSON.stringify(manifest, null, 1)}\n`);
-  mkdirSync(path.join(root, "series/renders"), { recursive: true });
-  copyFileSync(path.join(dir, "manifest.json"), path.join(root, "series/renders", `${nn}.json`));
-  copyFileSync(path.join(dir, "caption.txt"), path.join(root, "series/renders", `${nn}.txt`));
+  mkdirSync(records, { recursive: true });
+  copyFileSync(path.join(dir, "manifest.json"), path.join(records, `${record}.json`));
+  copyFileSync(path.join(dir, "caption.txt"), path.join(records, `${record}.txt`));
   console.log(`[${n}] ${path.relative(root, share)} (${seconds.toFixed(1)} s)`);
 };
 

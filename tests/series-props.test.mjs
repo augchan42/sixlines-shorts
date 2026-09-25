@@ -84,3 +84,10 @@ test("a painting lesson opens on the painting itself, credited, before the Libra
   assert.equal(p.pace, "held");
   assert.equal(seriesProps(row).pace, "even");
 });
+
+test("a painting the app does not pair with the hexagram opens by its own key, with no Library page after it", () => {
+  const lesson = { kind: "painting", text: "t", credit: "YOSHITOSHI · 1885", painting: "mid-autumn-2026", source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson } }).lesson;
+  assert.deepEqual(p.painting, { src: "assets/paintings/mid-autumn-2026.jpg", credit: "YOSHITOSHI · 1885" });
+  assert.equal(p.screen, undefined);
+});

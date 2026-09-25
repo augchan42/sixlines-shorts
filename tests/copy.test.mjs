@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
 import test from "node:test";
 import { copyProblems } from "../scripts/series/copy-rules.mjs";
 
@@ -58,4 +58,11 @@ test("a lesson's sentence follows the same rules as the meaning lines, when ther
   const lesson = (text) => ({ kind: "lines", text, source: "written" });
   assert.match(copyProblems(52, entry({ lesson: lesson("Water under the earth:\nunseen, but everywhere.") })).join(), /lesson: "Water under the earth:" is too wide/);
   assert.deepEqual(copyProblems(52, entry({ lesson: lesson("Unseen water\nunder the earth.") })), []);
+});
+
+test("every special in series/specials passes", () => {
+  for (const f of readdirSync("series/specials")) {
+    const s = JSON.parse(readFileSync(`series/specials/${f}`, "utf8"));
+    assert.deepEqual(copyProblems(s.hexagram, s.copy), [], f);
+  }
 });

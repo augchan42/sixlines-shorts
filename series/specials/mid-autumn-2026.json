@@ -1,0 +1,41 @@
+{
+ "hexagram": 20,
+ "occasion": "Mid-Autumn Festival, 2026-09-25. 20 觀 is the ruling hexagram of the 秋分 month in the app's qi calendar, and 觀 is to look, as at the moon.",
+ "copy": {
+  "hook": {
+   "text": "Looking at the moon tonight?",
+   "source": "written; 觀 is to look"
+  },
+  "meaning": [
+   {
+    "text": "Contemplation:\nlook up, slowly.",
+    "source": "commentary/en/20.json#image.synthesis"
+   },
+   {
+    "text": "The pause before\nthe offering.",
+    "source": "commentary/en/20.json#judgment: the hands are cleansed but the offering not yet made"
+   }
+  ],
+  "question": {
+   "text": "Who are you\nwatching it with?",
+   "source": "written"
+  },
+  "plates": [
+   "20-19",
+   "20-51"
+  ],
+  "caption": {
+   "text": "Happy Mid-Autumn. Hexagram 20, Contemplation (觀), means to look, as everyone looks at the moon tonight. Its Judgment is the moment before the offering: hands washed, nothing given yet.",
+   "source": "commentary/en/20.json#judgment"
+  },
+  "lesson": {
+   "kind": "painting",
+   "text": "Chang’e, flying\nto the moon.",
+   "credit": "YOSHITOSHI · 1885",
+   "painting": "mid-autumn-2026",
+   "source": "series/paintings.json#mid-autumn-2026"
+  },
+  "pace": "held",
+  "tags": ["#midautumn", "#中秋節"]
+ }
+}
