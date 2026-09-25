@@ -20,7 +20,8 @@ export type SeriesRow = {
     question: Line;
     plates: [string, string];
     lineage?: string;
-    lesson?: Line & { kind: "lines" | "judgment" | "painting" };
+    lesson?: Line & { kind: "lines" | "judgment" | "painting"; credit?: string };
+    pace?: "even" | "held";
   } | null;
   source: { sixlinesContent: string };
 };
@@ -86,7 +87,10 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
     return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
   }
   const s = LESSON_SCREENS[l.kind];
-  return { kind: l.kind, text: l.text, screen: { src: `assets/screens/${row.number}/${s.name}.png`, caption: s.caption } };
+  const screen = { src: `assets/screens/${row.number}/${s.name}.png`, caption: s.caption };
+  // The painting's file comes from scripts/series-paintings.mjs (series/paintings.json).
+  if (l.kind === "painting") return { kind: l.kind, text: l.text, screen, painting: { src: `assets/paintings/${row.number}.jpg`, credit: l.credit ?? "" } };
+  return { kind: l.kind, text: l.text, screen };
 };
 
 export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {}): SeriesProps => {
@@ -105,6 +109,7 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     plates: [plate(row.copy.plates[0]), plate(row.copy.plates[1])] as [string, string],
     screens: row.copy.lesson ? [] : screensFor(n),
     lesson: lessonFor(row),
+    pace: row.copy.pace ?? "even",
     ...override,
   };
   // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.

@@ -61,7 +61,7 @@ const renderOne = async (n) => {
   const caption = postCaption(row);
   writeFileSync(path.join(dir, "caption.txt"), caption);
   const files = Object.fromEntries(
-    [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...props.plates].map((f) => [f, sha256(f)]),
+    [props.music, `local/music/certificates/${row.music.certificate.file}`, props.hexagramClip, props.endcard.clip, ...props.screens.map((s) => s.src), ...(props.lesson?.screen ? [props.lesson.screen.src] : []), ...(props.lesson?.painting ? [props.lesson.painting.src] : []), ...props.plates].map((f) => [f, sha256(f)]),
   );
   files[`out/series/${path.basename(dir)}/short.mp4`] = shaAbs(short);
   files[`out/series/${path.basename(dir)}/share.mp4`] = shaAbs(share);

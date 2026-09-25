@@ -79,3 +79,13 @@ test("a short with a lesson gives the drop 12 beats instead of the showcase's 20
   assert.equal(planOf({ bpm: 102, drop: 14.12, lesson: { kind: "lines", text: "x" } }).cta, 36);
   assert.equal(planOf({ bpm: 102, drop: 14.12 }).cta, 44);
 });
+
+test("a held pace shows the meaning as one card and gives the question 6 beats and the lesson 16", () => {
+  const p = seriesPlan(115, (24 * 60) / 115, 16, "held");
+  assert.equal(p.mode, "before");
+  assert.deepEqual(
+    [p.hexagram, p.hexagramBeats, p.meaning, p.meaningLength, p.question, p.questionLength, p.drop, p.cta, p.credit, p.end],
+    [4, 8, 12, 6, 18, 6, 24, 40, 49, 52],
+  );
+  assert.equal(planOf({ bpm: 115, drop: (24 * 60) / 115, pace: "held", lesson: { kind: "painting", text: "x" } }).cta, 40);
+});

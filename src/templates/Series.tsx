@@ -12,6 +12,7 @@ import { Credit } from "../scenes/Credit";
 import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
+import { Painting } from "../scenes/Painting";
 import { Trigrams } from "../scenes/Trigrams";
 
 export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson">, fps: number) =>
@@ -41,7 +42,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
   const cuts: Cut[] = [
     { beat: s.hexagram, kind: "zoom" },
     { beat: s.meaning, kind: "whip-up" },
-    { beat: s.meaning + half, kind: "whip-left" },
+    ...(props.pace === "held" ? [] : [{ beat: s.meaning + half, kind: "whip-left" as const }]),
     { beat: s.question, kind: "whip-right" },
     { beat: s.drop, kind: "zoom" },
     ...(lesson ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
@@ -71,11 +72,25 @@ export const Series: React.FC<SeriesProps> = (props) => {
           <Sequence {...span(s.hexagram, hexEnd)}>
             <Hexagram3D hexagram={props.hexagram} clip={props.hexagramClip} />
           </Sequence>
-          {props.meaning.map((text, i) => (
-            <Sequence key={text} {...span(s.meaning + i * half, s.meaning + (i + 1) * half)}>
-              <CodeRain text={text} cuts={[{ frame: 0, src: props.plates[i] }]} />
+          {props.pace === "held" ? (
+            // One card: the second line types on under the first as the plate changes.
+            <Sequence {...span(s.meaning, s.meaning + s.meaningLength)}>
+              <CodeRain
+                text={props.meaning[0]}
+                then={{ frame: f(s.meaning + half) - f(s.meaning), text: props.meaning[1] }}
+                cuts={[
+                  { frame: 0, src: props.plates[0] },
+                  { frame: f(s.meaning + half) - f(s.meaning), src: props.plates[1] },
+                ]}
+              />
             </Sequence>
-          ))}
+          ) : (
+            props.meaning.map((text, i) => (
+              <Sequence key={text} {...span(s.meaning + i * half, s.meaning + (i + 1) * half)}>
+                <CodeRain text={text} cuts={[{ frame: 0, src: props.plates[i] }]} />
+              </Sequence>
+            ))
+          )}
           <Sequence {...span(s.question, s.question + s.questionLength)}>
             <CodeRain text={props.question} />
           </Sequence>
@@ -89,6 +104,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <Sequence {...span(s.showcase, lessonHalf)}>
                 {lesson.trigrams ? (
                   <Trigrams lines={props.hexagram.lines} trigrams={lesson.trigrams} />
+                ) : lesson.painting ? (
+                  <Painting src={lesson.painting.src} credit={lesson.painting.credit} />
                 ) : (
                   lesson.screen && <CaptionScreen src={lesson.screen.src} caption={lesson.screen.caption} color="#7dff8a" seed="lesson" />
                 )}

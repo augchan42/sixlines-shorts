@@ -25,6 +25,15 @@ const ending = (cta: number) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_
 // 2026-09-25) that teaches one thing about the hexagram in two halves.
 export const SHOWCASE_BEATS = 20;
 export const LESSON_BEATS = 12;
+// A held lesson gets longer, so the picture on the drop can land before the sentence.
+export const HELD_LESSON_BEATS = 16;
+
+// How the text before the drop is cut: "even" gives each meaning line its own card and the
+// question 4 beats; "held" shows both lines on one card and runs the question half as long
+// again into the drop, so the parts are not all the same length.
+export type Pace = "even" | "held";
+// The meaning shown as one card needs at least this long.
+const CARD_SECONDS = 3;
 
 // The two meaning lines together need at least this long.
 const MEANING_SECONDS = 4;
@@ -33,22 +42,24 @@ const MEANING_SECONDS = 4;
 // hold 8.
 const FAST_BPM = 120;
 
-export const seriesPlan = (bpm: number, drop: number, after = SHOWCASE_BEATS): SeriesPlan => {
+export const seriesPlan = (bpm: number, drop: number, after = SHOWCASE_BEATS, pace: Pace = "even"): SeriesPlan => {
   const d = Math.round((drop * bpm) / 60);
   const seconds = (beats: number) => (beats * 60) / bpm;
   const q = bpm > FAST_BPM ? 8 : 4;
   const hook = q;
+  const held = pace === "held";
+  const ql = held ? q + q / 2 : q;
   for (const [mode, h] of [["before", 8], ["short-hexagram", 6]] as const) {
     const meaning = hook + h;
-    if (seconds(d - q - meaning) >= MEANING_SECONDS) {
+    if (seconds(d - ql - meaning) >= (held ? CARD_SECONDS : MEANING_SECONDS)) {
       return {
         mode,
         hexagram: hook,
         hexagramBeats: h,
         meaning,
-        meaningLength: d - q - meaning,
-        question: d - q,
-        questionLength: q,
+        meaningLength: d - ql - meaning,
+        question: d - ql,
+        questionLength: ql,
         drop: d,
         showcase: d,
         ...ending(d + after),
@@ -71,5 +82,5 @@ export const seriesPlan = (bpm: number, drop: number, after = SHOWCASE_BEATS): S
 };
 
 // The plan for a short's props: a lesson, when it has one, replaces the showcase.
-export const planOf = (p: { bpm: number; drop: number; lesson?: unknown }) =>
-  seriesPlan(p.bpm, p.drop, p.lesson ? LESSON_BEATS : SHOWCASE_BEATS);
+export const planOf = (p: { bpm: number; drop: number; lesson?: unknown; pace?: Pace }) =>
+  seriesPlan(p.bpm, p.drop, p.lesson ? (p.pace === "held" ? HELD_LESSON_BEATS : LESSON_BEATS) : SHOWCASE_BEATS, p.pace);

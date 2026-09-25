@@ -14,10 +14,12 @@ export type PlateCut = { frame: number; src: string };
 // Falling green glyphs, then a line of text typed over them. Each cut slams a full-bleed
 // plate in behind the text, with the rain thinned over it. With `showText` off it is
 // just the rain, as the backdrop for the Blender hexagram.
-export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: boolean }> = ({
+// `then` adds a second group under the first, typed on from its frame (a held meaning card).
+export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: boolean; then?: { frame: number; text: string } }> = ({
   text,
   cuts = [],
   showText = true,
+  then,
 }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
@@ -49,6 +51,7 @@ export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: bo
   const sinceCut = cut ? frame - cut.frame : 0;
 
   const typed = Math.ceil(interpolate(frame, [4, 16], [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+  const more = then ? Math.ceil(interpolate(frame, [then.frame, then.frame + 12], [0, then.text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })) : 0;
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
       {cut && (
@@ -87,6 +90,7 @@ export const CodeRain: React.FC<{ text: string; cuts?: PlateCut[]; showText?: bo
             }}
           >
             {text.slice(0, typed)}
+            {then && more > 0 ? `\n\n${then.text.slice(0, more)}` : ""}
           </div>
         </AbsoluteFill>
       )}

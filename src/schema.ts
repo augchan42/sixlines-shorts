@@ -114,8 +114,12 @@ export const seriesSchema = z.object({
       text: z.string(),
       trigrams: z.tuple([z.object({ zh: z.string(), name: z.string() }), z.object({ zh: z.string(), name: z.string() })]).optional(),
       screen: z.object({ src: z.string(), caption: z.string() }).optional(),
+      // A painting lesson opens on the painting itself, full-frame, with its credit.
+      painting: z.object({ src: z.string(), credit: z.string() }).optional(),
     })
     .optional(),
+  // "held": both meaning lines on one card and a longer question (src/lib/seriesPlan.ts).
+  pace: z.enum(["even", "held"]),
   // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
   endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]) }),
 });

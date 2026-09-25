@@ -76,3 +76,11 @@ test("a lesson on the judgment or the painting shows the Library's own page for 
 test("a short without a lesson keeps its showcase", () => {
   assert.equal(seriesProps(row).lesson, undefined);
 });
+
+test("a painting lesson opens on the painting itself, credited, before the Library's page", () => {
+  const lesson = { kind: "painting", text: "t", credit: "RENOIR · 1881", source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson, pace: "held" } });
+  assert.deepEqual(p.lesson.painting, { src: "assets/paintings/29.jpg", credit: "RENOIR · 1881" });
+  assert.equal(p.pace, "held");
+  assert.equal(seriesProps(row).pace, "even");
+});

@@ -229,9 +229,11 @@
   },
   "lesson": {
    "kind": "painting",
-   "text": "Renoir, 1881:\nfriends together.",
-   "source": "masterpieces/artwork_index.json#8 (Luncheon of the Boating Party)"
-  }
+   "text": "Friends at lunch,\nholding together.",
+   "credit": "RENOIR · 1881",
+   "source": "series/paintings.json#8; masterpieces/artwork_index.json#8 reasoning"
+  },
+  "pace": "held"
  },
  "9": {
   "hook": {
