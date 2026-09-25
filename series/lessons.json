@@ -315,11 +315,10 @@
   },
   {
     "number": 42,
-    "kind": "line",
-    "line": 5,
-    "text": "Be kind.\nDon't keep score.",
-    "source": "series/critic/lessons/input.json#hexagrams[41].lines[4].transliteration",
-    "why": "Line 5: sincerity and a kind heart, 'Do not ask', supremely resolves well. The critic's wording."
+    "kind": "character",
+    "text": "Let your gain\nspill over",
+    "source": "series/characters.json#42: A bowl rises; water fills it and spills over the far rim.",
+    "why": "The character: water spilling over a full bowl, as the example short showed (special character-42). Chosen by the author over the line 5 lesson \"Be kind. Don't keep score.\""
   },
   {
     "number": 43,
