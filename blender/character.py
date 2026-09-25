@@ -541,6 +541,9 @@ def main():
         pivot = bpy.data.objects.new("pivot", None)
         scene.collection.objects.link(pivot)
         pivot.location = (0, (foot[1] - CENTRE[1]) * SCALE, 0)
+        if args.turn:
+            # A thing that turns round turns about its own middle, not the character's.
+            pivot.location.x = (centre([p for i in lying for p in medians[i]])[0] - CENTRE[0]) * SCALE
     # Shed strokes stand on their own pivots on the same line, so each falls to its place.
     shed = {}
     for i in (int(i) for i in args.shed.split(",") if i):

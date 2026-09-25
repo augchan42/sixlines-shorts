@@ -153,6 +153,15 @@
       "bpm": 95,
       "beats": 11,
       "args": { "order": [2, 3, 4, 5, 0, 1], "walls": [0, 1], "wallStep": 0.8, "lift": [2, 3, 4, 5], "wallHeight": 1.2, "glassWalls": true, "camera": "side", "zoom": 1.6, "edge": "#ff5ec8", "water": "#ffb347" }
+    },
+    {
+      "number": 63,
+      "char": "既",
+      "story": "A figure stands; a bowl rises beside it; the meal done, the figure turns its back on the bowl, holds, turns again and lies down as the character.",
+      "sentence": "When it is done,\nstay awake",
+      "bpm": 95,
+      "beats": 13,
+      "args": { "order": [7, 5, 6, 8, 3, 0, 1, 2, 4], "stand": true, "lieStep": 0.6, "walls": [0, 1, 2, 3, 4], "wallStep": 0.4, "wallHeight": 0.6, "glassWalls": true, "turn": 170, "camera": "high", "zoom": 2.0, "edge": "#ff5ec8", "water": "#5ee7ff" }
     }
   ]
 }
