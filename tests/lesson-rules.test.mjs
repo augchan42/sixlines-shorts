@@ -22,9 +22,10 @@ test("a kind is one of four, a line lesson names its line, and a painting must b
   assert.match(lessonProblems([lesson(7, "painting", "a b c")], input).join(), /7: no painting is on offer/);
 });
 
-test("no three neighbouring shorts have the same kind", () => {
+// The author posts in any order, so neighbouring shorts may share a kind.
+test("neighbouring shorts may have the same kind", () => {
   const ls = [7, 8, 9].map((n) => lesson(n, "judgment", "a b c"));
-  assert.match(lessonProblems(ls, input).join(), /9: third judgment in a row/);
+  assert.deepEqual(lessonProblems(ls, input), []);
 });
 
 test("a lesson does not repeat the short's own copy", () => {

@@ -1,6 +1,7 @@
 // The rules a lesson (series/lessons.json) keeps, besides the critic's judgment: the copy
 // rules for its sentence, a known kind, the line a line lesson lights, a painting only where
-// one is on offer (series/critic/lessons/input.json), and variety between neighbours.
+// one is on offer (series/critic/lessons/input.json). Neighbours may share a kind: the author
+// posts in any order.
 import { partProblems } from "./copy-rules.mjs";
 
 export const KINDS = ["lines", "judgment", "line", "painting"];
@@ -10,7 +11,7 @@ export const lessonProblems = (lessons, input) => {
   const byNumber = Object.fromEntries(input.hexagrams.map((h) => [h.number, h]));
   const problems = [];
   const sorted = [...lessons].sort((a, b) => a.number - b.number);
-  for (const [i, l] of sorted.entries()) {
+  for (const l of sorted) {
     const h = byNumber[l.number];
     const say = (p) => problems.push(`${l.number}: ${p}`);
     for (const p of partProblems("lesson", l, 3, 7, true)) say(p);
@@ -18,8 +19,6 @@ export const lessonProblems = (lessons, input) => {
     if (l.kind === "line" && !(l.line >= 1 && l.line <= 6)) say("a line lesson needs its line, 1 to 6");
     if (l.kind === "painting" && !h?.painting) say("no painting is on offer for this hexagram");
     if (h && l.text && [h.copy.hook, ...h.copy.meaning, h.copy.question].some((c) => flat(c) === flat(l.text))) say("repeats the short's own copy");
-    const [a, b] = [sorted[i - 1], sorted[i - 2]];
-    if (a && b && a.number === l.number - 1 && b.number === l.number - 2 && a.kind === l.kind && b.kind === l.kind) say(`third ${l.kind} in a row`);
   }
   return problems;
 };

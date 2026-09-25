@@ -32,15 +32,21 @@ author did not love it; paintings land only where the link is obvious.
    A special may also use `moon` (a Blender clip under the sentence).
 3. **Rules checked by code** (`lessonProblems`): the copy rules for the sentence (at most
    2 screen lines), a known kind, a line number for a line lesson, a painting only where
-   offered, no repeat of the short's own copy, and no third lesson of the same kind in a
-   row.
+   offered, and no repeat of the short's own copy. Neighbouring shorts may share a kind:
+   the author posts in any order (amended 2026-09-25; the first version forbade a third
+   of a kind in a row).
 4. **Drafted and scored in a loop** (`scripts/workflows/lesson-drafts.js`): agents draft
    the 64 from the book's texts in four batches; a critic that sees only the brief scores
    each 1-10 and checks the cited text really says it. Anything under 8 goes back with
    the feedback, up to 5 rounds. The standard given to both: 7 "Unseen water / under the
    earth.", 10 "The tiger's tail: / it does not bite.", 20 line 4 "Look like a guest, /
-   not an inspector."
-5. **The author has the last word.** The result goes to the author as a table before
+   not an inspector." The author later rejected the tiger lesson as misleading (it drops
+   that you tread on the tail); see item 5.
+5. **Clear to a newcomer, not only true.** Cold readers who see only the sentence and the
+   picture say what it means; a judge compares that with the source and rewrites what is
+   misread (`scripts/workflows/lesson-cold-read.js`). Where a hexagram gives no clear
+   sentence, show its artwork or trigram imagery instead.
+6. **The author has the last word.** The result goes to the author as a table before
    anything renders.
 
 ## Consequences

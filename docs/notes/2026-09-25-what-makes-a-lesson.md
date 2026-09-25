@@ -15,8 +15,12 @@ scores come from a model critic, so they filter; the author's calls are the stan
 - Liked: "Look like a guest, / not an inspector." (20, line 4). Concrete, a little funny,
   true to the line.
 - Rejected as too cryptic: "Its shape: / a watchtower." (20).
-- Approved: "Unseen water / under the earth." (7), "The tiger's tail: / it does not bite." (10),
-  "Friends at lunch, / holding together." (8, painting).
+- Rejected as misleading: "The tiger's tail: / it does not bite." (10). The book says you
+  tread on the tiger's tail and it does not bite; the sentence drops the treading, so a
+  newcomer can't tell who does what. A lesson has to be clear to someone who has never
+  read the text, not only true to it.
+- Approved: "Unseen water / under the earth." (7), "Friends at lunch, /
+  holding together." (8, painting).
 
 ## What scored well
 
@@ -71,11 +75,19 @@ to a thing happening:
   neighbour's change of kind. Asking for several different candidates at once, scored
   by two critics, worked better than rewording one draft round after round.
 - The critic judges each lesson alone. It cannot see what watching 64 back to back is
-  like, which is what the variety rule is for.
+  like; the author judges that.
 
-## The open question
+## Variety
 
 The best-scoring lesson for each hexagram (`series/critic/lessons/best-table.md`) makes
-40 of 64 line lessons, with runs of up to 7 in a row, which breaks the rule of no three
-of a kind in a row. Holding the rule means taking weaker lessons for some hexagrams
-(for example 25 at 5.5 instead of the ox at 9). That is the author's decision.
+40 of 64 line lessons, with runs of up to 7 in a row. The author decided (2026-09-25)
+this does not matter: the shorts are posted in any order, so the rule of no three of a
+kind in a row is dropped. Where a hexagram gives no clear sentence, the short shows its
+artwork or trigram imagery instead of forcing a lesson.
+
+## The critic scored the tiger 9
+
+The critic, given the tiger lesson as an approved example, scored it 9. A critic that
+checks truth to the text does not catch a sentence that is true but misread. So every
+lesson now also goes to cold readers, who see only the sentence and the picture
+(`scripts/workflows/lesson-cold-read.js`).
