@@ -1,7 +1,7 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T17:02:58.538Z",
- "commit": "8e3a06b305b9104d28ba7f5b18c280fe9acbcfba",
+ "rendered": "2026-09-25T17:07:04.139Z",
+ "commit": "43c8f9101a93ce700f13ee191a6a10d7edef0303",
  "clean": true,
  "seconds": 50.218667,
  "shareKbps": 3535,
@@ -87,7 +87,7 @@
     ],
     "kind": "hexagram",
     "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
-    "text": "You get 1 of 64 situations."
+    "text": "Cast six lines: 1 of 64."
    },
    {
     "beats": [
@@ -98,7 +98,7 @@
     "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
     "texts": [
      {
-      "beat": 20,
+      "beat": 18,
       "text": "The character\nis a picture."
      },
      {
@@ -158,8 +158,8 @@
     ],
     "kind": "live",
     "take": "take3",
-    "from": 249,
-    "rate": 1.2,
+    "from": 250.3,
+    "rate": 1,
     "zoom": 1,
     "focus": 1,
     "text": "You decide.\nThen write down\nwhat happened.",
@@ -189,7 +189,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "de703db94d18588d23c6901ed4e444362e5b6e9ea3cca7d8d119fd59216a0ab3",
-  "out/demo/walkthrough/share.mp4": "fd3959964d8b8aae0b033c57791885b49f658e499b2c0fb0b03c07f038f6f022"
+  "out/demo/walkthrough/short.mp4": "6b66eee2548beba56652f705938af40f4c53d33a5200ba3b9b771c9eebb9c8b5",
+  "out/demo/walkthrough/share.mp4": "a3e7276c0026d1d36189930a893c5d9057111254c7db51c2570ca799c11ac774"
  }
 }
