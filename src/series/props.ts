@@ -29,19 +29,19 @@ const ENDCARD_MODE: Record<string, EndcardMode> = {
 
 // Each hexagram's own screens, from the sixlines-ios galleries (scripts/series-screens.mjs).
 // today is the Almanac on the day the hexagram rules (series/today-days.txt); painting and
-// text are its Library page's Art and Study tabs.
+// text are its Library page's Art and Study tabs, scrolled so the painting or Judgment fills the screen.
 const OWN = [
   { name: "reading", caption: "READ THE STRUCTURE" },
   { name: "verse", caption: "THE BOOK OF CHANGES" },
   { name: "today", caption: "YOUR DAY, READ" },
-  { name: "painting", caption: "THE PAINTING" },
-  { name: "text", caption: "THE TEXT, WORD BY WORD" },
+  { name: "painting-scrolled", caption: "THE PAINTING" },
+  { name: "text-scrolled", caption: "THE TEXT, WORD BY WORD" },
 ];
 // Screens every hexagram shares, from the sixlines-site tour (scripts/series-tour.mjs).
 const SHARED = [
   { name: "ask", caption: "ASK · CAST · REFLECT" },
   { name: "dates", caption: "CHOOSE A DAY" },
-  { name: "prove", caption: "WHAT WOULD PROVE IT WRONG" },
+  { name: "prove", caption: "PROVE IT WRONG" },
   { name: "archive", caption: "THE ARCHIVE" },
 ];
 // The ten pairs of own screens. With the shared screen turning every 4 shorts and the pair

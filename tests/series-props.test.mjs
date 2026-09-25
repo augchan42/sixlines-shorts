@@ -30,7 +30,7 @@ test("the end card's transition follows the energy of the upper trigram's track"
 });
 
 test("each short shows two of its hexagram's own screens, then one of the app's shared screens", () => {
-  const own = ["reading", "verse", "today", "painting", "text"];
+  const own = ["reading", "verse", "today", "painting-scrolled", "text-scrolled"];
   for (let n = 1; n <= 64; n++) {
     const s = seriesProps({ ...row, number: n }).screens;
     assert.equal(s.length, 3);

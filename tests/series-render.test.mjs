@@ -28,6 +28,8 @@ test("each hexagram takes its reading, verse, today, painting and text screens f
     { from: "/ios/gallery-today/matrix/today-matrix-29.png", to: "public/assets/screens/29/today.png" },
     { from: "/ios/gallery-library/matrix/library-art-matrix-29.png", to: "public/assets/screens/29/painting.png" },
     { from: "/ios/gallery-library/matrix/library-study-matrix-29.png", to: "public/assets/screens/29/text.png" },
+    { from: "/ios/gallery-library-scrolled/matrix/library-art-matrix-29.png", to: "public/assets/screens/29/painting-scrolled.png" },
+    { from: "/ios/gallery-library-scrolled/matrix/library-study-matrix-29.png", to: "public/assets/screens/29/text-scrolled.png" },
   ]);
 });
 

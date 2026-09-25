@@ -39,6 +39,9 @@ export const screenFiles = (n, ios) => [
   { from: `${ios}/gallery-today/matrix/today-matrix-${n}.png`, to: `public/assets/screens/${n}/today.png` },
   { from: `${ios}/gallery-library/matrix/library-art-matrix-${n}.png`, to: `public/assets/screens/${n}/painting.png` },
   { from: `${ios}/gallery-library/matrix/library-study-matrix-${n}.png`, to: `public/assets/screens/${n}/text.png` },
+  // The same two pages scrolled so the painting or the Judgment fills the screen; the shorts use these.
+  { from: `${ios}/gallery-library-scrolled/matrix/library-art-matrix-${n}.png`, to: `public/assets/screens/${n}/painting-scrolled.png` },
+  { from: `${ios}/gallery-library-scrolled/matrix/library-study-matrix-${n}.png`, to: `public/assets/screens/${n}/text-scrolled.png` },
 ];
 
 export const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-");
