@@ -100,7 +100,7 @@
   {
    "beats": [
     18,
-    35
+    33
    ],
    "kind": "clip",
    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
@@ -117,34 +117,34 @@
   },
   {
    "beats": [
-    35,
-    40
+    33,
+    38
    ],
    "kind": "live",
    "take": "take1",
    "from": 90.3,
    "rate": 1,
    "zoom": 1,
-   "focus": 0.3,
+   "focus": 0.6,
    "text": "Decay is not the end.\nIt is work to do."
   },
   {
    "beats": [
-    40,
-    45
+    38,
+    43
    ],
    "kind": "live",
    "take": "take1",
-   "from": 218.3,
+   "from": 219.3,
    "rate": 1,
-   "text": "Confucian commentary:\nWang Bi, the Ten Wings.",
+   "text": "Classical commentary:\nWang Bi, the Ten Wings.",
    "zoom": 1,
    "focus": 0.3
   },
   {
    "beats": [
-    45,
-    51
+    43,
+    49
    ],
    "kind": "live",
    "take": "take2",
@@ -157,8 +157,8 @@
   },
   {
    "beats": [
-    51,
-    57
+    49,
+    55
    ],
    "kind": "live",
    "take": "take1",
@@ -171,16 +171,16 @@
   },
   {
    "beats": [
-    57,
-    66
+    55,
+    64
    ],
    "kind": "endcard",
    "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
   },
   {
    "beats": [
-    66,
-    70
+    64,
+    68
    ],
    "kind": "credit",
    "name": "~DISNEYFAN"
