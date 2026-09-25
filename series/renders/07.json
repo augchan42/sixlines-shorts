@@ -1,10 +1,10 @@
 {
  "hexagram": 7,
- "rendered": "2026-09-25T00:20:38.234Z",
- "commit": "5445bf29b8268b176bc60720209347ab9160a1b4",
+ "rendered": "2026-09-25T00:51:42.881Z",
+ "commit": "33fcb3c88e2bfd763f057ecc5a1109d38b8a01e1",
  "clean": true,
- "seconds": 37.376,
- "shareKbps": 4794,
+ "seconds": 32.042667,
+ "shareKbps": 5614,
  "props": {
   "hexagram": {
    "number": 7,
@@ -35,20 +35,21 @@
    "assets/yilin/stipple-7-50.webp",
    "assets/yilin/stipple-7-22.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/7/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/7/text-scrolled.png",
-    "caption": "THE TEXT, WORD BY WORD"
-   },
-   {
-    "src": "assets/screens/tour/prove.png",
-    "caption": "PROVE IT WRONG"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Water under the earth:\nunseen, but everywhere.",
+   "trigrams": [
+    {
+     "zh": "地",
+     "name": "EARTH"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ]
+  },
   "hexagramClip": "assets/3d/hexagram-010000-90bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-010000-90bpm-9b.mp4",
@@ -60,12 +61,9 @@
   "local/music/certificates/synthwave-synthwave-593074-license.txt": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
   "assets/3d/hexagram-010000-90bpm-8b.mp4": "ea8b0ec275f0766aa351787a355ee5e4c932d7a4c0084b9a1bbde76c9552d16e",
   "assets/3d/endcard-join-010000-90bpm-9b.mp4": "7a759273fb0da9e3b10de9b2fec9abf7557d96483abed8853a5822fcfacad46d",
-  "assets/screens/7/verse.png": "fe1520353b47535fa8e02b0331d2416cbb2cd837218a88af2bf3551f4d6d3b09",
-  "assets/screens/7/text-scrolled.png": "533da63b45a81b72b6072e3a5bad2058885cef49ae61e727532f47b8dc4cae69",
-  "assets/screens/tour/prove.png": "c25da271b2cdb30c22b21ed70baa16ee11a08b0ebaa76b01eb4ddce1f13e76c4",
   "assets/yilin/stipple-7-50.webp": "241edc92d9e37dcc22741138a0d5bad405e54356f24a262e262ffdb9e4ba7821",
   "assets/yilin/stipple-7-22.webp": "87b43c5e1d4157f0458b50a16fa74cd3e6ec8ae9aa1a2b61899cd79725ad4f81",
-  "out/series/07-shi/short.mp4": "adff3ea1710a2ef5ff9794d509b615c5edf881d0955dd28927c97d2fcf0d2992",
-  "out/series/07-shi/share.mp4": "e35852a437b05b74bb371869de3e2eb4bdbae463a4187f103ee5282a8d5933c0"
+  "out/series/07-shi/short.mp4": "bf6a22ac2936dda66641a5a4b9536179596971737d602a7d9673beba37e6db62",
+  "out/series/07-shi/share.mp4": "1915054342f10c67d8189bd265c346d7d122cc0a5903c980cbf1f82df6df900d"
  }
 }
