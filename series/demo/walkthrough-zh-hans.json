@@ -52,6 +52,16 @@
     "what would prove this wrong": "38",
     "Wang Bi": "39-48"
    }
+  },
+  "take8-proof": {
+   "file": "local/demo/take8-zh-hans-proof-still.mp4",
+   "sha256": "3d27a7c3a0de659a83b170f82c85f17338ee4b3b8a2eec23d39aba912be1a64c",
+   "from": {
+    "file": "local/demo/take8-zh-hans-69.0s.png",
+    "sha256": "8296c5875bec6cbbba5068eb689b77d38252b36161da39c267901d7c9edc37cd",
+    "how": "frame at 69.0 s of take8-zh-hans-30fps.mp4 (ffmpeg -ss 69.0 -frames:v 1), looped for 8 s with ffmpeg -loop 1 -t 8 -vf fps=30,format=yuv420p -c:v libx264 -crf 16"
+   },
+   "recorded": "Take 8 held still on what would prove the reading wrong. Takes 8 and 9 scroll past the whole section in under a second. A recording of a hold on it (take10-zh-hans-proof.mp4, kept locally) has no frames for the hold, because the simulator recorder writes frames only when the screen changes, and a screenshot of it missed because the swipe was still scrolling."
   }
  },
  "shots": [
@@ -92,7 +102,7 @@
    ],
    "kind": "hexagram",
    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
-   "text": "六爻成卦：\n64 卦之一。"
+   "text": "六爻成卦：64 卦之一。"
   },
   {
    "beats": [
@@ -127,7 +137,7 @@
    "rate": 1,
    "zoom": 1,
    "focus": 0,
-   "text": "解读把它\n用在你的店上。"
+   "text": "解读把这一卦\n落到你的店上。"
   },
   {
    "beats": [
@@ -138,7 +148,7 @@
    "take": "take9",
    "from": 40,
    "rate": 1,
-   "text": "王弼对这一卦的注，\n三世纪。",
+   "text": "王弼的注，\n写于三世纪。",
    "zoom": 1,
    "focus": 0
   },
@@ -148,11 +158,11 @@
     50
    ],
    "kind": "live",
-   "take": "take8",
-   "from": 69,
+   "take": "take8-proof",
+   "from": 0,
    "rate": 1,
    "zoom": 1,
-   "focus": 0,
+   "focus": 0.1,
    "text": "解读也写明：\n怎样算它错了。",
    "place": "bottom"
   },
