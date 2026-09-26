@@ -39,3 +39,12 @@ test("a lesson's sentence comes on halfway, over a moon's last 5 beats, or a cha
   const { motion } = seriesMotion(s, { kind: "character", clip: "c.mp4" });
   assert.equal(at(motion, s.cta - 2.5).punch, 0);
 });
+
+test("a lesson's picture gets no shake and no sway beyond the text's at the drop", () => {
+  // The user still saw the camera shake on 60's trigram picture (2026-09-26).
+  const lesson = { kind: "lines", text: "t" };
+  const s = planOf({ ...base, lesson });
+  const { motion, shakes } = seriesMotion(s, lesson);
+  assert.deepEqual(shakes, []);
+  assert.ok(at(motion, s.drop + 0.5).sway <= 0.1);
+});
