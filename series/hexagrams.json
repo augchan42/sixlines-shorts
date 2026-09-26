@@ -2151,6 +2151,17 @@
    "caption": {
     "text": "The I-Ching’s image here is water. It fills the hole it meets, then flows on.",
     "source": "commentary/en/29.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Through danger,\nkeep your word.",
+    "source": "Tuan Zhuan on 29: 行險而不失其信 (goes through danger and does not lose its trust)",
+    "scene": {
+     "script": "abyss",
+     "args": {
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {

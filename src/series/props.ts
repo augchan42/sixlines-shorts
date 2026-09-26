@@ -29,7 +29,7 @@ export type SeriesRow = {
       character?: { char: string; beats: number; args: Record<string, unknown> };
       // A Judgment or trigram lesson acted out in Blender: blender/glyphs.py or blender/trigram.py
       // with these settings (scripts/lesson3d.mjs), in place of the Library page or the 2D trigrams.
-      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite" | "bird"; args: Record<string, unknown> };
+      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite" | "bird" | "abyss"; args: Record<string, unknown> };
       // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
       readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string } };
     };

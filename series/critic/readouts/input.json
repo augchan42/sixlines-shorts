@@ -1,0 +1,1987 @@
+{
+ "script": "scripts/readout-input.mjs",
+ "hexagrams": [
+  {
+   "number": 1,
+   "name": "The Creative",
+   "lines": "111111",
+   "trigrams": {
+    "lower": "heaven",
+    "upper": "heaven"
+   },
+   "places": [
+    "in",
+    "out",
+    "in",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [],
+   "wangbi": {
+    "masters": [],
+    "judgment": "\"Heaven\" is the name of the form. \"Vigor\" is what employs the form. Now form is the encumbrance of things. To have the form of Heaven and be able to preserve it forever without diminishment, to be the foremost of things — is not that which governs it the ultimate in vigor? Greatly illuminating the Way of ending and beginning, therefore the six positions do not miss their proper time and are completed. Rising and descending without constancy, employed according to the time — when at rest, one rides the submerged dragon; when emerging, one rides the flying dragon — therefore it says 'riding the six dragons in due season.' Riding transformation and change to drive the great vessel, still and focused when at rest, straight and direct when in motion, never losing the Great Harmony — is this not what correctly establishes the genuine nature of all things' natures and destinies?\n\nWithout harmony there is rigidity and violence.\n\nThe reason the myriad states are at peace is that each has its ruler.",
+    "lines": {
+     "1": "The Wenyan (Commentary on the Words) treats this fully.",
+     "2": "Emerging from submersion and leaving concealment, therefore it says 'the dragon appears.' It is situated upon the ground, therefore it says 'in the field.' Its virtue extends broadly and universally, occupying the center without bias. Though it is not in the ruler's position, it possesses the virtue of a ruler. In the first position one is not yet manifest; in the third one is 'ceaselessly vigilan",
+     "3": "Situated at the extreme of the lower trigram and below the upper trigram, in a position that is not centered, treading upon the danger of doubled firmness. Above, not yet in Heaven, one cannot yet rest secure in one's eminence. Below, not in the field, one cannot yet find peace in one's dwelling. If one purely cultivates the way of the lower, then the virtue of occupying the upper position is negl",
+     "4": "Having departed the extreme of the lower trigram and situated at the bottom of the upper trigram, this is the time when the Way of Qian undergoes transformation. Above, not in Heaven; below, not in the field; in the middle, not among humanity — treading upon the danger of doubled firmness, with no fixed position or place. This is truly a time of inconstancy in advancing and retreating. Being near ",
+     "5": "Neither walking nor leaping but being in heaven — if not flying, then what? Therefore it says 'the flying dragon.' When dragon virtue is in heaven, then the path of the great person is open and successful. For position is elevated through virtue, and virtue is given proper order through position. When supreme virtue occupies the flourishing position, that the myriad things behold it — is that not "
+    }
+   },
+   "judgment": "Supreme fulfillment. Sustained orientation is supported.",
+   "image": "Heaven moves with inexhaustible vigor. The realized person accordingly strengthens without ceasing.",
+   "lineTexts": [
+    "The hidden dragon. Do not act.",
+    "The dragon appears in the field. The situation affords meeting the realized person.",
+    "The noble one creates ceaselessly throughout the day. At nightfall, vigilant as though strained. No fault.",
+    "Perhaps leaping over the depths. No fault.",
+    "The flying dragon in heaven. The situation affords meeting the realized person.",
+    "The overreaching dragon. Deviation detected."
+   ],
+   "copy": {
+    "hook": "Waiting for a sign to start?",
+    "meaning": [
+     "The Creative\nsays: begin.",
+     "No conditions.\nJust mean it."
+    ],
+    "question": "What would you\nstart today?",
+    "lesson": "Heaven never\ntakes a day off."
+   }
+  },
+  {
+   "number": 2,
+   "name": "The Receptive",
+   "lines": "000000",
+   "trigrams": {
+    "lower": "earth",
+    "upper": "earth"
+   },
+   "places": [
+    "out",
+    "in",
+    "out",
+    "in",
+    "out",
+    "in"
+   ],
+   "answering": [],
+   "wangbi": {
+    "masters": [],
+    "judgment": "What Kun’s steadfastness benefits is the mare. The horse moves upon the ground below, and being female, it is the utmost of compliance. Only through utmost compliance does one attain success; therefore it benefits only the steadfastness of a mare.\n\nThe southwest is the region of nourishment, sharing the same Way as Kun; hence it says ‘one finds companions.’ The northeast is the opposite of the southwest; hence it says ‘one loses companions.’ The nature of yin is that it must leave its own kind and go toward the opposite kind, and only then does it attain peaceful steadfastness and good fortune.",
+    "lines": {
+     "1": "It begins with treading on frost and reaches solid ice—this is what is meant by ‘utmost softness yet moving toward hardness.’ The Way of yin is rooted in the humble and weak and only later accumulates to prominence; therefore it takes ‘treading on frost’ to illuminate its beginning. Yang as a force is not one that builds from a beginning to reach prominence; therefore it is illuminated through eme",
+     "2": "Dwelling in the center and attaining correctness, it reaches the utmost of Earth’s substance. Entrusting itself to the natural, things arise of themselves; without relying on cultivation or contrivance, accomplishments are completed of themselves. Therefore, without practice, nothing is unfavorable.",
+     "3": "The third position occupies the extreme of the lower trigram, yet is not suspected by yang—it corresponds to this meaning. Not initiating affairs but waiting for the lead before responding, awaiting the command before acting, containing beauty while maintaining correctness—hence it says ‘containing pattern, permitting steadfastness.’ When affairs arise, one follows; one does not dare to take the l",
+     "4": "Situated in a yin hexagram, occupying a yin position with a yin line, treading upon a position that is not central—it lacks the substance of straightness and squareness. Not undertaking yang affairs, it lacks the beauty of containing pattern. Tying shut and blocking closed—the worthy person goes into hiding. Exercising caution is acceptable, but this is not the Way of flourishing.",
+     "5": "Yellow is the color of the center. The lower garment is the adornment of what is below. Kun represents the Way of the minister, whose beauty is fully expressed in the subordinate position. Without the substance of firm strength, yet able to fathom the dispositions of all things—this is one who comprehends principle. With the virtue of yielding compliance, occupying a flourishing position, and entr",
+     "6": "The Way of yin is that through humility, compliance, and not overflowing, it preserves its beauty intact. When it waxes full and does not cease, it encroaches upon yang’s territory, which yang cannot endure—therefore they battle in the open field."
+    }
+   },
+   "judgment": "Supreme fulfillment. Sustained orientation of the mare is supported. The noble one has somewhere to go. At first, disorientation; then, finding the way. Mastery is supported. In the southwest, companions found. In the northeast, companions lost. Settled orientation resolves well.",
+   "image": "The earth's capacity: acceptance. The realized person accordingly sustains all things with generous character.",
+   "lineTexts": [
+    "Treading on frost. Solid ice is coming.",
+    "Straightforward, methodical, expansive. Without rehearsal, nothing that isn't supported.",
+    "Containing one's brilliance allows sustained orientation. Perhaps attending to the sovereign's affairs. No personal achievement, but completion.",
+    "The bag tied shut. No fault, no praise.",
+    "A golden-yellow lower garment. Supremely favorable.",
+    "Dragons battle in the wilderness. Their blood runs dark and golden."
+   ],
+   "copy": {
+    "hook": "Tired of always having to lead?",
+    "meaning": [
+     "The Receptive\nsays: follow well.",
+     "Supporting is its\nown strength."
+    ],
+    "question": "Who could\nyou back?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 3,
+   "name": "Difficulty at the Beginning",
+   "lines": "100010",
+   "trigrams": {
+    "lower": "thunder",
+    "upper": "water"
+   },
+   "places": [
+    "in",
+    "in",
+    "out",
+    "in",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "The firm and the yielding first begin to interact—this is why there is difficulty. If they did not interact, there would be obstruction; therefore difficulty leads to great success. With great success there is no danger; therefore it is beneficial to be correct.\n\nTo go forward would only increase the difficulty.\n\nObtaining a master brings stability.",
+    "lines": {
+     "1": "Situated at the beginning of Zhun, any movement would give rise to difficulty; one cannot advance, hence the hesitating and lingering. In this time, where does benefit lie? Is it not solely in abiding in correctness and establishing lords? To quell disorder, use stillness; to maintain stillness, rely on lords. To bring peace to the people, correctness is needed; to broaden correctness, humility is",
+     "2": "Her aspiration is directed toward the Fifth; she does not follow the Initial line. In this time of Zhun difficulty, the correct way has not yet prevailed. She is close to the Initial line but does not find accord with it, and is troubled by encroachment and harm; hence the difficulty and hesitation. The time is precisely one of Zhun difficulty; the correct way has not yet opened. To travel far and",
+     "3": "The Third is close to the Fifth and has no bandit's obstruction. Although the Fourth is adjacent to the Fifth, its aspiration is directed toward the Initial line and does not block the Third's path; it is possible to advance without difficulty or hesitation. But seeing the ease of the path without measuring the other's intent—the Fifth's correspondent is the Second, so going will certainly meet wi",
+     "4": "Although the Second is adjacent to the Initial line, she holds to her steadfastness and does not follow it; this does not harm the Fourth's intent. Seeking to unite in accord, going will certainly be accepted. Therefore it says 'to advance is auspicious; nothing is without benefit.'\n\nThis is seeing the other's circumstances and sentiments.",
+     "5": "In a time of Zhun difficulty, occupying the exalted position above, yet unable to extend broad generosity, sharing with nothing withheld, to rescue and relieve the humble and stagnant and bring success to the multitude of lesser ones. Instead, one's bond of correspondence is fixed on the Second, hoarding one's bounty in difficulty—this is not one who can make his giving shine. Stubbornly fixing on",
+     "6": "Situated at the extreme of danger and difficulty, with no corresponding support below, advancing has no destination. Although adjacent to the Fifth, the Fifth hoards its bounty and does not find accord with it. Dwelling brings no peace, traveling has no destination; in utter exhaustion and distress, with nothing to rely upon or look up to—hence weeping tears of blood in streaming drops."
+    }
+   },
+   "judgment": "Supreme fulfillment. Sustained orientation is supported. Do not venture forward. Establishing priorities is supported.",
+   "image": "Clouds and thunder: difficulty at the beginning. The realized person accordingly sorts the threads.",
+   "lineTexts": [
+    "Boulders obstruct the path, encircling. Abiding in sustained orientation is supported. Establishing priorities is supported.",
+    "Struggling as if turning back. A team of horses, arrayed but halted. This is not an assailant — it is a suitor. The young woman holds her position, does not accept. Ten years, then she accepts.",
+    "Pursuing deer without a forester. Only entering the forest's depths. The discerning person reads the signs — better to let it go. Continuing forward: friction.",
+    "A team of horses, arrayed. Seeking a match. Going forward resolves well. Nothing that isn't supported.",
+    "Storing one's riches. Modest sustained orientation resolves well. Grand sustained orientation: adverse.",
+    "A team of horses, arrayed but halted. Tears of blood streaming."
+   ],
+   "copy": {
+    "hook": "Big start, total chaos?",
+    "meaning": [
+     "Difficulty says:\nget organized.",
+     "Boring beats\nbold here."
+    ],
+    "question": "What needs\nsorting first?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 4,
+   "name": "Youthful Folly",
+   "lines": "010001",
+   "trigrams": {
+    "lower": "water",
+    "upper": "mountain"
+   },
+   "places": [
+    "out",
+    "out",
+    "out",
+    "in",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Divination is a means for resolving doubt. The young fool comes seeking me because he desires to resolve his perplexity. If the resolution is not singular, he will not know which course to follow and will become perplexed again. Therefore, at the first consultation one gives instruction; at the second or third, it becomes importunity — importuning the one in darkness. The one capable of being the 'first consultation' is surely the second line? With firmness dwelling in the center, it is able to decide doubt.\n\nWhat benefits Youthful Folly is beneficial correctness. Nothing is brighter than the sage; nothing is darker than the fool. To use folly to nurture correctness — this is the work of the sage. But to nurture correctness through manifest brilliance would be to lose the Way.",
+    "lines": {
+     "1": "Dwelling at the beginning of Youthful Folly, the second line illuminates from above it, hence the folly is dispelled. When folly is dispelled and doubt is made clear, then discipline and removal of fetters are fitting. 'To proceed brings regret' means that discipline cannot be prolonged.\n\nThe way of disciplining people is something the Way finds objectionable. But because it serves to set right la",
+     "2": "With firmness dwelling in the center, the young fools turn to him. Embracing them without rejecting any, those near and far all come — hence it says 'embracing the fool, good fortune.' A wife is one who pairs with oneself to accomplish virtue. Having a yang constitution yet able to embrace the foolish, being firm yet able to dwell in the center — with these qualities in taking a mate, nothing fail",
+     "3": "In the time of Youthful Folly, yin seeks yang, the dark seeks the bright — each seeks to have its obscurity dispelled. Six in the Third is at the top of the lower trigram; Top Nine is at the top of the upper trigram — this is the principle of man and woman. The upper does not seek the third, but the third seeks the upper — the woman seeks the man first. As for the woman's proper conduct, she shoul",
+     "4": "Alone and far from yang, dwelling in the midst of two yin lines, with no brightness to dispel the darkness — hence it says 'entangled in folly.' Trapped in darkness, unable to draw close to the worthy to open up its purpose — this too is lowly. Hence it says 'regret.'\n\nYang is called 'the substantial.'",
+     "5": "With a yin constitution dwelling in the honored position, not presuming to examine by itself but delegating to the second, entrusting affairs to the capable, not taxing its own intelligence — the work is thereby accomplished. Hence it says 'youthful folly, good fortune.'\n\nEntrusting affairs to the capable, neither taking the lead nor acting on its own — this is compliance with deference.",
+     "6": "Dwelling at the culmination of Youthful Folly, with firmness occupying the top position, able to strike away youthful folly and dispel the darkness of others — hence it says 'striking at folly.' The young fools desire to have their darkness dispelled, and this one is able to strike it away — this accords with the wishes of those above and below, so none fail to comply. If one defends and protects "
+    }
+   },
+   "judgment": "Fulfillment. It is not I who seek the inexperienced youth — the inexperienced youth seeks me. At the first inquiry, I explain. A second and third asking shows disrespect. Disrespect warrants no answer. Sustained orientation is supported.",
+   "image": "A spring emerges beneath the mountain: inexperience. The realized person accordingly proceeds with thoroughness, developing character.",
+   "lineTexts": [
+    "Delivering the inexperienced from confusion. Discipline is supported. Removing the shackles is the method. Continuing forward from here: friction.",
+    "Embracing the inexperienced: resolves well. Accepting the bride: resolves well. The young one manages the household.",
+    "Do not pair with this woman. She sees the wealthy man and loses her sense of self. No direction is supported.",
+    "Surrounded by inexperience. Friction.",
+    "The youthful inexperienced one. Resolves well.",
+    "Striking at inexperience. Acting as the assailant is not supported. Defending against the assailant is supported."
+   ],
+   "copy": {
+    "hook": "Asking again for a better answer?",
+    "meaning": [
+     "Youthful Folly\nsays: ask once.",
+     "Asking twice is\njust shopping."
+    ],
+    "question": "What’s your\nreal question?",
+    "lesson": "Teachers don't\nchase students."
+   }
+  },
+  {
+   "number": 6,
+   "name": "Conflict",
+   "lines": "010111",
+   "trigrams": {
+    "lower": "water",
+    "upper": "heaven"
+   },
+   "places": [
+    "out",
+    "out",
+    "out",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為訟之主"
+      ],
+      "en": [
+       "Occupying the honored position, it serves as the master of contention, using its centered correctness to judge the crooked and the straight"
+      ]
+     }
+    ],
+    "judgment": "\"Obstructed\" (zhi) means blocked and stopped up. Only when all parties are vigilant and cautious can they attain the good fortune of the middle course.",
+    "lines": {
+     "1": "Situated at the beginning of contention — contention must not be carried to the end, therefore one does not perpetuate the matter, and only then is there good fortune. In general, yang initiates and yin responds; yin is not the one that initiates first. The Fourth calls and this line responds; only when offended against does it enter contention. Situated at the beginning of contention, it does not",
+     "2": "With firmness one engages in contention, unable to defer to others. Contending from below against those above, it is fitting that one cannot prevail. If one can fearfully return and hide away in one's small town, then one can escape disaster. If the town exceeds three hundred households, this is not truly hiding. If one hides yet occupies a strong position, disaster is not yet escaped.",
+     "3": "Its body is yielding and weak, and it submits obediently to those above. Unlike Nine in the Second, which contends from below against those above, it is not encroached upon or dispossessed, and preserves all that it has. Therefore it can feed on its former virtue without losing it. Dwelling in a time of contention and dispute, positioned between two firm lines, both near yet not in accord — hence ",
+     "4": "Being above and contending against those below, this is something that can be changed — therefore the blame is not great. If one can return and follow the original principle, changing the previous mandate, dwelling in peaceful correctness and not offending, not losing one's Way — \"the practice of humaneness depends on oneself\" — therefore good fortune follows.",
+     "5": "Occupying the honored position, it serves as the master of contention, using its centered correctness to judge the crooked and the straight. Being centered, it does not go to excess; being correct, it does not deviate into crookedness. Its firmness is not submerged by anything, and its impartiality is not biased toward anything — therefore \"contention — sublime good fortune.\"",
+     "6": "Situated at the extreme of contention, with firmness occupying the top position, this is one who wins the contention. But receiving bestowals through contention — how can such honor be preserved? Therefore within the span of a single morning, the belt is stripped away three times."
+    }
+   },
+   "judgment": "Sincerity present, yet obstructed. Vigilance. In the middle: resolves well. At the end: adverse. The situation affords meeting the realized person. Crossing the great river is not supported.",
+   "image": "Heaven and water move in opposition: conflict. The realized person accordingly plans carefully at the start of any undertaking.",
+   "lineTexts": [
+    "Do not prolong the affair. Some talk. In the end, resolves well.",
+    "Cannot prevail in the conflict. Returns and retreats to one's village of three hundred households. No calamity.",
+    "Sustained by long-standing virtues. Sustained orientation. Strained, but in the end resolves well. Perhaps attending to the sovereign's affairs. No personal achievement.",
+    "Cannot prevail in the conflict. Returns to face a higher calling. Changes to settled orientation. Resolves well.",
+    "The conflict. Supremely favorable.",
+    "Perhaps awarded the champion's belt. By morning's end, stripped of it three times."
+   ],
+   "copy": {
+    "hook": "Fighting over something you’re right about?",
+    "meaning": [
+     "Conflict says:\nstop halfway.",
+     "Pushing to the end\ncosts you."
+    ],
+    "question": "What fight could\nyou leave now?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 9,
+   "name": "Small Taming",
+   "lines": "111011",
+   "trigrams": {
+    "lower": "heaven",
+    "upper": "wind"
+   },
+   "places": [
+    "in",
+    "out",
+    "in",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "1-4"
+   ],
+   "sole": {
+    "line": 4,
+    "kind": "yin"
+   },
+   "wangbi": {
+    "masters": [],
+    "judgment": "It cannot greatly tame or halt the firm; the will of the firm therefore moves forward—hence there is success.",
+    "lines": {
+     "1": "Situated at the beginning of Qian, ascending toward the first position of Xun; the Fourth is its corresponding line and does not resist it. A yang line ascending toward a yin line returns by its own path; compliant and without contravention—what offense could it commit? It attains the auspiciousness of righteous meaning.",
+     "2": "Situated at the center of Qian, ascending toward the fifth position of Xun; the Fifth is not the extreme of taming and does not hold it firm. Although it cannot be like the yin's complete absence of resistance, it can be pulled along to achieve return—hence it is auspicious.",
+     "3": "Above is where the taming is at its fullest; one cannot be pulled along to advance. To press forward under these circumstances will surely result in the removal of wheel-spokes. The Third is the extreme of yang; the Top is the senior yin. Being tamed by the senior yin and unable to return of its own accord—this is compared to the meaning of \"husband and wife turn their eyes against each other.\"",
+     "4": "When blood is mentioned, it means the yang assails the yin. The Fourth rides atop the Third; being close, they do not get along. The Third strives to advance, while the Fourth blocks it, and so it fears being invaded and overcome. The Top also dislikes the Third and can restrain it; its will accords with that of the Top, sharing the same sincerity. Although the Third presses upon it, it cannot ass",
+     "5": "Occupying the honored position, it does not regard the Second with suspicion and does not resist its approach. The Second pulls and it clasps back, without being exclusive or rigid—this is what is meant by \"there is sincerity, bound together as one.\" A yang line in a yang position occupies what is substantial. Dwelling in fullness and occupying what is substantial without being exclusive or rigid—",
+     "6": "Situated at the extreme of Small Taming, this is the one capable of taming. The yang does not attain pervasion, hence \"already raining.\" The firm cannot invade, hence \"already settled.\" Part of the Xun trigram and situated above, the firm dares not assail it—this is esteeming virtue. As the senior yin, able to tame the firm and vigorous—this is virtue accumulated and bearing its load. When the wif"
+    }
+   },
+   "judgment": "Fulfillment. Dense clouds but no rain. From our western frontier.",
+   "image": "Wind moves across heaven: small taming. The realized person accordingly refines and cultivates character.",
+   "lineTexts": [
+    "Returning to one's own path. How could that be wrong? Resolves well.",
+    "Drawn back to return. Resolves well.",
+    "The cart throws off its wheel spokes. Husband and wife glare at each other.",
+    "Sincerity present. The bleeding stops, the anxiety departs. No fault.",
+    "Sincerity that binds together. Enriched along with one's neighbors.",
+    "The rain has come, rest has arrived. Character is honored and carried. The wife's sustained orientation: strained. The moon nearly full. The noble one advancing: adverse."
+   ],
+   "copy": {
+    "hook": "Everything’s ready, nothing happens?",
+    "meaning": [
+     "Small Taming\nsays: not yet.",
+     "Work on yourself\nmeanwhile."
+    ],
+    "question": "What can you\nwork on now?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 10,
+   "name": "Treading",
+   "lines": "110111",
+   "trigrams": {
+    "lower": "lake",
+    "upper": "heaven"
+   },
+   "places": [
+    "in",
+    "out",
+    "out",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "3-6"
+   ],
+   "sole": {
+    "line": 3,
+    "kind": "yin"
+   },
+   "wangbi": {
+    "masters": [],
+    "judgmentMaster": {
+     "zh": [
+      "言乎一卦之所以為主也"
+     ],
+     "en": []
+    },
+    "judgment": "In general, the Tuan speaks of what constitutes the ruling principle of the entire hexagram; the constitutive body of this hexagram lies in Six in the Third. 'Treading upon the tiger's tail' speaks of its danger. The Third is the ruling line of Lü; being soft it treads upon the firm—one who treads upon danger. Treading upon the tiger's tail yet not being bitten is because it is joyous and responds to Qian. Qian represents the virtue of firmness and correctness. Not using joyousness to practice flattery and wickedness, but using joyousness to respond to Qian—it is fitting that one treads upon the tiger's tail without being bitten, and attains success.\n\nThis speaks of the virtue of the Fifth.",
+    "lines": {
+     "1": "Occupying the beginning of Lü, this is the start of treading. The way of treading abhors ornamentation; therefore plainness brings no blame. If one conducts treading with plainness, where can one go without compliance? One surely carries out one's wishes independently, and nothing violates it.",
+     "2": "The way of treading esteems humility and does not delight in dwelling in fullness; it strives to achieve sincerity and abhors outward adornment. The Second, being yang occupying a yin position, treads in humility. Dwelling within and treading in the center, what is hidden and what is manifest are the same. The beauty of the way of treading reaches its fullness here. Therefore 'the way of treading ",
+     "3": "In the time of Lü, even if yang occupies a yang position, one would still be called not humble—how much more so when yin occupies a yang position, and the soft rides upon the firm? Therefore, to use this as sight is to be one-eyed; to use this as walking is to be lame; to tread upon danger with this is to be bitten. Setting one's will on firmness and strength without cultivating what one treads up",
+     "4": "Pressing close to the most honored position, yang supporting yang, dwelling in a place of much apprehension—therefore it says 'treading upon the tiger's tail, apprehensive and cautious.' However, being yang dwelling in a yin position, one takes humility as the foundation. Although dwelling in danger and apprehension, one ultimately attains one's aim; therefore in the end there is good fortune.",
+     "5": "Attaining the position and dwelling in eminence, deciding with firmness and correctness—therefore it says 'resolute treading, correctness brings danger.' The way of treading abhors excess, yet the Fifth dwells in eminence; this is why there is danger.",
+     "6": "The omens of fortune and misfortune arise from what one treads upon. Dwelling at the culmination of Lü, the way of treading is complete; therefore one can survey one's treading and examine the omens. Dwelling at the extreme yet corresponding to joyousness, being high yet not in danger—this is its coming full circle. The way of treading achieves great completion; therefore there is sublime good for"
+    }
+   },
+   "judgment": "Treading on the tiger's tail. It does not bite. Fulfillment.",
+   "image": "Heaven above, the lake below: treading. The realized person accordingly distinguishes high and low, and steadies the people's resolve.",
+   "lineTexts": [
+    "Simple, plain treading forward. No fault.",
+    "Treading a level, smooth path. The solitary one's sustained orientation resolves well.",
+    "The one-eyed can still see. The lame can still walk. Treading on the tiger's tail — bitten. Adverse. The warrior acts for the great leader.",
+    "Treading on the tiger's tail. Cautious, cautious — in the end, resolves well.",
+    "Decisive treading. Sustained orientation: strained.",
+    "Looking back at one's steps, examining the signs. When they come full circle: supremely favorable."
+   ],
+   "copy": {
+    "hook": "Working for someone with a temper?",
+    "meaning": [
+     "Treading says:\nmind how you step.",
+     "Act well and\nit won’t flare."
+    ],
+    "question": "Who do you tread\ncarefully around?",
+    "lesson": "Stood on a tiger's\ntail. Not bitten."
+   }
+  },
+  {
+   "number": 13,
+   "name": "Fellowship",
+   "lines": "101111",
+   "trigrams": {
+    "lower": "fire",
+    "upper": "heaven"
+   },
+   "places": [
+    "in",
+    "in",
+    "in",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "2-5"
+   ],
+   "sole": {
+    "line": 2,
+    "kind": "yin"
+   },
+   "wangbi": {
+    "masters": [],
+    "judgmentMaster": {
+     "zh": [
+      "二為同人之主"
+     ],
+     "en": [
+      "The second line is the master of Fellowship with People"
+     ]
+    },
+    "judgment": "The second line is the master of Fellowship with People.\n\nThe reason it can achieve fellowship with people in the wilderness, success, and benefit in crossing the great river is not something the second line can accomplish on its own — it is what Qian carries out. Therefore it specially says 'the Fellowship with People hexagram says.'\n\nPracticing vigor not through military force but through cultural brilliance, responding to one another not through crookedness but through centered correctness — this is the correctness of the superior person. Therefore it says 'it is beneficial for the superior person's correctness.'\n\nThe superior person takes cultural brilliance as his virtue.",
+    "lines": {
+     "4": "Being positioned above and attacking below, his strength is sufficient to mount the wall. But he treads a position that is not rightfully his, contending with others. The second naturally corresponds with the fifth; the third has not transgressed against him. Attacking the third to pursue the second, he compounds fault by imitating it. Violating rightness and injuring principle, the multitude will",
+     "5": "The Tuan says: 'The yielding obtains its position and attains the center, and responds to Qian — this is called Fellowship with People.' Being yielding in substance and occupying the center, she is the one the multitude supports. But he grasps firmness and employs straightforwardness, which the multitude has not yet accepted. Therefore, being blocked nearby by two firm lines, he has not yet attain",
+     "6": "The suburbs are the extreme of the outside. Dwelling at the time of Fellowship with People and being furthest on the outside, he does not obtain those of like mind, yet he is far from the internal contention — therefore although there is no regret or meanness, he has also not attained his aim.\n\nIn general, when one dwells in Fellowship with People without achieving great peace, then one must emplo"
+    }
+   },
+   "judgment": "Fellowship in the open. Fulfillment. Crossing the great river is supported. The noble one's sustained orientation is supported.",
+   "image": "Heaven together with fire: fellowship. The realized person accordingly organizes by kind and distinguishes between things.",
+   "lineTexts": [
+    "Fellowship at the gate. No fault.",
+    "Fellowship within the clan only. Friction.",
+    "Hiding weapons in the thicket. Climbing the high hill. Three years without rising.",
+    "Mounting the wall. Unable to attack. Resolves well.",
+    "Fellowship first with weeping and wailing, then laughter. The great army manages to meet.",
+    "Fellowship in the outskirts. No deviation."
+   ],
+   "copy": {
+    "hook": "Same five friends for years?",
+    "meaning": [
+     "Fellowship says:\nkeep it open.",
+     "Let new people\nwalk up."
+    ],
+    "question": "Who could you\ninvite in?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 14,
+   "name": "Great Possession",
+   "lines": "111101",
+   "trigrams": {
+    "lower": "heaven",
+    "upper": "fire"
+   },
+   "places": [
+    "in",
+    "out",
+    "in",
+    "out",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "2-5"
+   ],
+   "sole": {
+    "line": 5,
+    "kind": "yin"
+   },
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "而不威如？為大有之主"
+      ],
+      "en": [
+       "Being both impartial and trustworthy, what difficulty arises, what defenses are needed? When teaching is carried out without speaking, how could there not be awe? As the ruler of Great Possession, if one did not follow this Way, could auspiciousness be attained?"
+      ]
+     }
+    ],
+    "judgment": "Without great pervasion, how could one attain Great Possession? With Great Possession there must be Sublime Success.",
+    "lines": {
+     "1": "Being firm and strong at the beginning of Great Possession, it cannot tread the center. It is full but does not overflow. If one proceeds by this course, harm will surely arrive later. If one wishes to avoid blame, one must be diligent in difficulty, and then there will be no blame.",
+     "2": "Strong yet not departing from centrality, entrusted by the Fifth — bearing heavy responsibility without danger, reaching far without getting mired. Therefore one can go forward and there is no blame.",
+     "3": "Dwelling in the time of Great Possession, occupying the apex of the lower body, riding atop the firm and strong, and treading in a position that matches its line, it shares merit with the Fifth. The flourishing of authority and power — nothing surpasses this. A duke using this position can thereby reach through to the Way of the Son of Heaven. A petty person cannot manage this, and harm may be exp",
+     "4": "Having lost its proper position, it is close above to the authority of the most honored, and adjacent below to the minister who shares power. Its fearfulness can indeed be called perilous. Only one who possesses sage-like wisdom can avoid this blame. Although the Third is at the height of its power, the Fifth cannot be abandoned. If one can discern these circumstances and devote one's heart solely",
+     "5": "It occupies the honored position with yielding, dwells in greatness with centrality, shows no partiality toward things, and above and below all respond to it. Sincerity is used to manifest purpose; therefore its trustworthiness is such that all engage with it. When one shows no partiality toward things, things too are impartial toward oneself. When one harbors no suspicion toward things, things to",
+     "6": "Great Possession is an era of abundance and plenty. Occupying the top of Great Possession yet not burdened by position, its purpose esteems the worthy. All other lines ride upon the firm, while this one alone rides upon the yielding and compliant. The Fifth embodies the virtue of trustworthiness, and this line treads upon it — this is what is meant by 'treading upon sincerity.' Although it cannot "
+    }
+   },
+   "judgment": "Supreme fulfillment.",
+   "image": "Fire in heaven above: great possession. The realized person accordingly curbs evil and promotes good, accepting heaven's mandate.",
+   "lineTexts": [
+    "No interaction with harm. Not a fault. Difficulty, but then no fault.",
+    "A great cart for loading. Having somewhere to go. No fault.",
+    "A prince makes offerings to the Son of Heaven. The common person is not capable of this.",
+    "Not in one's full domain. No fault.",
+    "One's sincerity is mutual, dignified. Resolves well.",
+    "From heaven, protection is extended. Resolves well. Nothing that isn't supported."
+   ],
+   "copy": {
+    "hook": "Doing better than everyone around you?",
+    "meaning": [
+     "Great Possession\nsays: people see.",
+     "Use it to put\nthings right."
+    ],
+    "question": "What would you\nfix first?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 16,
+   "name": "Enthusiasm",
+   "lines": "000100",
+   "trigrams": {
+    "lower": "earth",
+    "upper": "thunder"
+   },
+   "places": [
+    "out",
+    "in",
+    "out",
+    "out",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "1-4"
+   ],
+   "sole": {
+    "line": 4,
+    "kind": "yang"
+   },
+   "wangbi": {
+    "masters": [
+     {
+      "line": 3,
+      "zh": [
+       "承動豫之主"
+      ],
+      "en": [
+       "It treads a position that is not its own and supports the master of active enthusiasm"
+      ]
+     },
+     {
+      "line": 5,
+      "zh": [
+       "為豫之主"
+      ],
+      "en": [
+       "The Fourth, through firm movement, is the master of Enthusiasm and monopolizes authority and control"
+      ]
+     }
+    ],
+    "judgment": null,
+    "lines": {
+     "1": "Situated at the beginning of Enthusiasm, it uniquely obtains fulfillment of its will from the one above. When pleasure becomes excessive it turns to dissipation; when the will is exhausted there is misfortune. How can Enthusiasm be proclaimed?",
+     "2": "Situated in the time of Enthusiasm, it obtains its proper position and treads the center, resting secure in correctness and uprightness, not seeking enthusiasm carelessly. Its compliance does not follow recklessly; its enthusiasm does not depart from the center. Therefore in dealings with superiors there is no flattery, and in dealings with inferiors there is no impropriety. It perceives clearly w",
+     "3": "It occupies the extreme of the lower trigram, situated at the juncture between the two trigrams. It treads a position that is not its own and supports the master of active enthusiasm. If it gazes upward eagerly seeking enthusiasm, regret will also arise. If it hesitates and does not follow, this is what Enthusiasm abhors. Its position is not one it should occupy, yet it follows after enthusiasm. A",
+     "4": "Situated in the time of Enthusiasm, it occupies the beginning of movement. As the sole yang line, it is what all the yin lines follow. None fail to obtain their enthusiasm through it — hence it says \"the source of enthusiasm — there is great gain.\" If one is not trusted by others, others will likewise doubt one. Therefore, if one does not doubt, then friends will join together swiftly. \"He\" (盍) me",
+     "5": "The Fourth, through firm movement, is the master of Enthusiasm and monopolizes authority and control. This is not something the Fifth can ride over. Therefore it does not dare contend with the Fourth for authority. Yet since it dwells in the center and occupies the honored position, it cannot be destroyed. Thus it inevitably reaches the constant state of being \"steadfastly afflicted, yet perpetual",
+     "6": "Situated at the extreme of active enthusiasm, enthusiasm is taken to the utmost and pleasure is exhausted — hence it reaches the completion of enthusiasm in darkness. If one goes on with excessive enthusiasm without ceasing, how can it last? Therefore there must be change and transformation, and only then is there no blame."
+    }
+   },
+   "judgment": "Establishing priorities and deploying the army are supported.",
+   "image": "Thunder bursts from the earth, aroused: enthusiasm. The ancient kings accordingly made music to honor merit, offering generously to the supreme divinity, inviting the ancestors.",
+   "lineTexts": [
+    "Proclaiming one's enthusiasm. Adverse.",
+    "Firm as stone. Not waiting until day's end. Sustained orientation resolves well.",
+    "Looking upward for enthusiasm — deviation detected. The slow one — deviation detected.",
+    "The source of enthusiasm. Great attainment. Have no doubt. Companions gather like hair clasped by a pin.",
+    "Sustained orientation through affliction. Enduring, never dying.",
+    "Blind enthusiasm. Achieving, but with setbacks. No fault."
+   ],
+   "copy": {
+    "hook": "All fired up, nowhere to go?",
+    "meaning": [
+     "Enthusiasm says:\ngive it a shape.",
+     "Organize,\nthen move."
+    ],
+    "question": "Where will you\naim it?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 17,
+   "name": "Following",
+   "lines": "100110",
+   "trigrams": {
+    "lower": "thunder",
+    "upper": "lake"
+   },
+   "places": [
+    "in",
+    "in",
+    "out",
+    "out",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Zhen is the firm and Dui is the yielding. When the firm places itself below the yielding, and there is movement toward joy, then Following is achieved. To have Following without great free passage is to go against the time. To follow one another without Benefit and Correctness is the way of disaster. Therefore, only with great free passage, Benefit, and Correctness can there be no blame. To have Following that brings about great free passage, Benefit, and Correctness is to accord with the time; when one accords with the time, all under heaven follows. What Following enacts depends solely on the time. When the time changes and one does not follow, that is the way of obstruction. Therefore, how great is the meaning of following the time!",
+    "lines": {
+     "1": "Occupying the beginning of Following, above there is no corresponding line, and there is no partial attachment. In movement one can follow the time, and one's intention has no fixed attachment. One does not follow out of desire; rather, one desires to follow what is fitting. Therefore the office undergoes change and transformation, yet in following one does not lose correctness. Going out the gate",
+     "2": "The nature of yin, dwelling in an age of Following, cannot stand independently and must have an attachment. Dwelling in the time of Following, its substance is yielding and weak, and since it rides upon what is firm and active, how could it maintain its resolve and go against what is near? Following this one means losing that one; it cannot serve both at once. The fifth line is above it and the fi",
+     "3": "The nature of yin, dwelling in an age of Following, cannot stand independently and must have an attachment. Although it belongs to the lower trigram, the second line has already claimed the first; to whom then can it attach? Therefore it abandons the first and attaches to the fourth, with its resolve set on the mature man. The fourth likewise has no corresponding line and also desires that it foll",
+     "4": "Positioned at the beginning of the Dui (joy) trigram, below it commands two yin lines. The third seeks to attach to it; if it does not refuse, it acquires them. Therefore it says 'in following there is a catch.' Occupying the position of a minister and treading a rank that is not properly its own, it appropriates the ruler's subjects and fails in the way of a minister -- this is a violation of cor",
+     "5": "Treading in the correct position and dwelling in the center, while occupying a time of Following, it fully realizes what is fitting for following the time and obtains the sincerity of all things. Therefore there is excellence and good fortune.",
+     "6": "The substance of Following is that yin is obedient to yang. Being positioned at the uppermost extreme, this is one that does not submit. When the Way of Following has already been established yet one alone refuses to submit, one must be bound and held fast before one will comply. Within all the shores of the land, there is none who is not a subject of the king; to be one who does not submit is wha"
+    }
+   },
+   "judgment": "Supreme fulfillment. Sustained orientation is supported. No fault.",
+   "image": "Thunder within the lake: following. The realized person accordingly, at nightfall, goes indoors for rest.",
+   "lineTexts": [
+    "The standards are changing. Sustained orientation resolves well. Going out to interact has merit.",
+    "Attached to the small child. Losing the mature one.",
+    "Attached to the mature one. Losing the small child. Following, one finds what one seeks. Abiding in sustained orientation is supported.",
+    "Following gains a catch. Sustained orientation: adverse. Walking sincerely on the path with clarity — what fault is there?",
+    "Sincerity in excellence. Resolves well.",
+    "Seized and bound, then truly held fast. The sovereign makes offerings at the Western Mountain."
+   ],
+   "copy": {
+    "hook": "Still at your desk after dark?",
+    "meaning": [
+     "Following says:\ngo with the day.",
+     "Day’s done.\nGo in, rest."
+    ],
+    "question": "When will you\nstop today?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 20,
+   "name": "Contemplation",
+   "lines": "000011",
+   "trigrams": {
+    "lower": "earth",
+    "upper": "wind"
+   },
+   "places": [
+    "out",
+    "in",
+    "out",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為觀之主"
+      ],
+      "en": [
+       "Dwelling in the noble position, serving as the master of Contemplation, broadly proclaiming the great transforming influence, its radiance reaching the four quarters—this is the ultimate of Contemplation",
+       "Being the master of transformation above, when one intends to observe oneself, one in fact observes the people"
+      ]
+     }
+    ],
+    "judgment": "Of what is worthy of contemplation in the way of the king, nothing surpasses the ancestral temple. Of what is worthy of contemplation in the ancestral temple, nothing surpasses the ablution. When it comes to the offering of food, it is simple and insufficient for further contemplation; therefore one contemplates the ablution but does not contemplate the offering. Confucius said: 'As for the di sacrifice, from after the libation onward, I have no wish to observe it.' When one fully contemplates the grandeur, those below contemplate it and are transformed. Therefore, when contemplation reaches the ablution, there is sincerity, dignified and reverent.",
+    "lines": {
+     "1": "Situated in the time of Contemplation, yet the most distant from the beauty of the court. Embodying yin and softness, unable to advance on its own, with nothing to perceive clearly—hence it says 'childlike contemplation.' Its tendency is merely to follow along, unable to accomplish anything; this is the way of the small person—hence it says 'for the small person, no blame.' For a noble person to b",
+     "2": "Situated within the interior, with little to perceive clearly. Embodying softness and weakness, merely following along compliantly. Yet it still has a correlate, so it is not wholly benighted; what it sees is narrow—hence it says 'peeping contemplation.' Dwelling within and attaining its position, soft, compliant, and seeing little—hence it says 'beneficial for the correctness of a woman'; this is",
+     "3": "Dwelling at the extreme of the lower trigram, situated at the juncture of the two trigrams—close yet not adjacent to the noble one, distant yet not engaging in childlike contemplation—this is one who contemplates the prevailing influence. Dwelling at such a time, one can contemplate the course of one's own life to decide on advance or retreat.\n\nSituated at a time of advancing and retreating, one c",
+     "4": "Dwelling in the time of Contemplation, the closest to the most noble—this is one who contemplates the glory of the state. Dwelling near and attaining its position, it is one who clearly understands the ceremonies of the state. Hence it says 'it is beneficial to be employed as a guest of the king.'",
+     "5": "Dwelling in the noble position, serving as the master of Contemplation, broadly proclaiming the great transforming influence, its radiance reaching the four quarters—this is the ultimate of Contemplation. The transformation of those below by those above is like wind bending grass. Therefore one observes the customs of the people to examine one's own Way. 'If the hundred families have offenses, the",
+     "6": "'Contemplating the course of my life' is observing one's own Way. 'Contemplating the course of his life' is being one whom the people contemplate. Not occupying an official position, dwelling at the very top, lofty in aspiration—this is one whom all under heaven contemplate. Dwelling in a place contemplated by all under heaven, can one not be cautious? Therefore only when the noble person's virtue"
+    }
+   },
+   "judgment": "The hands are cleansed but the offering not yet made. Sincerity present, dignified and impressive.",
+   "image": "Wind moves over the earth: contemplation. The ancient kings accordingly visited the regions, observed the people, and established teaching.",
+   "lineTexts": [
+    "Childlike contemplation. For the lesser person, no fault. For the noble one, friction.",
+    "Peeping through the crack. The woman's sustained orientation is supported.",
+    "Contemplating my own life — advance or retreat.",
+    "Contemplating the light of the realm. Being a guest of the sovereign is supported.",
+    "Contemplating my own life. The noble one: no fault.",
+    "Contemplating their life. The noble one: no fault."
+   ],
+   "copy": {
+    "hook": "Deciding from behind a desk?",
+    "meaning": [
+     "Contemplation:\ngo and look.",
+     "See by going,\nnot by sitting."
+    ],
+    "question": "What could you\ngo see?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 22,
+   "name": "Grace",
+   "lines": "101001",
+   "trigrams": {
+    "lower": "fire",
+    "upper": "mountain"
+   },
+   "places": [
+    "in",
+    "in",
+    "in",
+    "in",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "1-4"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為飾之主"
+      ],
+      "en": [
+       "Occupying the honored position, it is the master of adornment—the most flourishing in adornment"
+      ]
+     }
+    ],
+    "judgment": "If firm and yielding are not apportioned, how can pattern arise? Therefore Kun's top six comes to occupy the second position—this is the meaning of 'the yielding comes to embellish the firm.' The yielding comes to embellish the firm and occupies a position that attains the center; this is why there is Success. Qian's nine in the second is apportioned to occupy the top position—this is the meaning of 'the firm is apportioned upward to embellish the yielding.' The firm goes up to embellish the yielding but does not attain the central position, which is not as good as the yielding coming to embellish the firm; hence 'small benefit in having somewhere to go.'\n\nFirm and yielding interlace to form pattern—this is the pattern of Heaven.\n\nBringing things to rest not through military force but through civilized brightness—this is the pattern of humanity.\n\nIf one understands the patterns of Heaven, then the changes of the seasons can be known; if one understands the patterns of humanity, then transformation and perfection can be achieved.",
+    "lines": {
+     "1": "At the beginning of Adornment, with firmness dwelling below, he occupies a position without rank. He renounces what is not righteous and is content to go on foot in order to follow his aspiration. Therefore he adorns his toes, leaves the carriage and goes on foot—this means that in righteousness he does not ride.",
+     "2": "It has attained its proper position but lacks a correlate. The Third also lacks a correlate. Both lack correlates yet are adjacent—they are close and find affinity with each other. The beard as a thing is something that attaches above. Following what it treads upon to attach itself to what is above, hence it says 'he adorns his beard.'",
+     "3": "Occupying the extreme of the lower body, it dwells in its proper position and is adjacent to the Second. Both tread upon what is correct; they harmonize together and moisten each other, thereby completing their pattern. Having achieved both adornment and moisture, hence it says 'adorned and glistening.' Eternally maintaining its correctness, nothing can encroach upon it; hence it says 'perpetual c",
+     "4": "It has a correlate in the Initial line but is obstructed by the Third, which creates hostile difficulty for it. The two aspirations resonate with each other but cannot achieve free passage. If it wishes to remain still, it doubts* the Initial line's response; if it wishes to advance, it fears the Third line's difficulty. Therefore it is sometimes adorned, sometimes plain—inwardly harboring doubt a",
+     "5": "Occupying the honored position, it is the master of adornment—the most flourishing in adornment. If one lavishes adornment upon things, its Way causes harm. But to bestow adornment upon hills and gardens—nothing is more magnificent. Therefore, if one adorns with rolls of silk, the hills and gardens will decline; but if one adorns in the manner of hills and gardens, the silk remains abundant and sl",
+     "6": "Dwelling at the end of Adornment, when adornment reaches its end it returns to the plain. Therefore it rests in its plain simplicity, not laboring over embellishment, and is without blame. Using white as adornment, without worry or distress—this is one who has attained his aspiration."
+    }
+   },
+   "judgment": "Fulfillment. Small things are supported for going forward.",
+   "image": "Fire at the foot of the mountain: grace. The realized person accordingly clarifies everyday affairs but does not dare decide disputes this way.",
+   "lineTexts": [
+    "Adorning the feet. Leaving the carriage to walk.",
+    "Adorning the beard.",
+    "Graceful and glistening. Lasting sustained orientation resolves well.",
+    "Graceful or plain? A white horse, as if winged. This is not an assailant — it is a suitor.",
+    "Grace among the hill gardens. The bundle of silk is meager, scanty. Friction. But in the end, resolves well.",
+    "Plain white grace. No fault."
+   ],
+   "copy": {
+    "hook": "Polishing the slides instead of deciding?",
+    "meaning": [
+     "Grace says:\nsmall things only.",
+     "Polish can’t make\nbig decisions."
+    ],
+    "question": "What needs more\nthan polish?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 25,
+   "name": "Innocence",
+   "lines": "100111",
+   "trigrams": {
+    "lower": "thunder",
+    "upper": "heaven"
+   },
+   "places": [
+    "in",
+    "in",
+    "out",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為无妄之主者也"
+      ],
+      "en": [
+       "Dwelling in the honored position, this is the ruler of Without Falseness"
+      ]
+     }
+    ],
+    "judgmentMaster": {
+     "zh": [
+      "而為主於內",
+      "而為主於內"
+     ],
+     "en": [
+      "The firm comes from without and becomes the ruler within",
+      "What could this be if not great success through benefit and correctness? When the firm comes from without and becomes the ruler within, then the way of the soft and deviant is eliminated"
+     ]
+    },
+    "judgment": "This refers to Zhen.\n\nZhen moves and Qian is strong.\n\nThis refers to the fifth line.\n\nThe firm comes from without and becomes the ruler within; moving, it grows ever stronger. Firm, centered, and having a correspondent—authoritative, firm, upright, and correct—selfish desires cannot prevail. How could there be falseness? It causes the way of falseness to be extinguished and the way of Without Falseness to be accomplished. What could this be if not great success through benefit and correctness? When the firm comes from without and becomes the ruler within, then the way of the soft and deviant is eliminated. When moving it grows ever stronger, then the way of the firm and upright prevails. When it is firm, centered, and has a correspondent, then the virtue of order and clarity is made manifest. Therefore there is great success through correctness. The teaching mandate of Heaven—how can it be violated? How can there be falseness? This is why if one is not correct there will be calamity, and it is not beneficial to have a place to go.\n\nIf one is not correct and there is calamity, yet one does not seek to reform and follow correctness but instead wishes to go somewhere—dwelling in a time when one must not be false, yet wishing to go somewhere through incorrectness—where does one intend to go? What the mandate of Heaven does not protect is finished indeed!",
+    "lines": {
+     "1": "Its substance is firm and it dwells below, using nobility to descend to the lowly. Its conduct does not transgress into falseness; therefore in going forth it attains its aim.",
+     "2": "Not plowing yet reaping, not clearing yet having mature land—one completes what another began and does not initiate. Not claiming the merit for oneself, one fully fulfills the way of the minister; therefore it is beneficial to have a place to go.",
+     "3": "Occupying a yang position with a yin line, its conduct violates humility and compliance; this is why Without Falseness results in disaster. The ox is the resource for farming. The second line, by not plowing yet reaping, found it beneficial to have a place to go. But the third line engages in non-compliant conduct; therefore someone tethers its ox. This is how the official gains an acquisition and",
+     "4": "Dwelling in a time of Without Falseness, occupying a yin position with a yang line, the firm rides upon the yielding. Treading the path of humility and compliance and being close to the supreme ruler, one may therefore undertake what is correct, firmly maintaining what one holds, and so there is no blame.",
+     "5": "Dwelling in the honored position, this is the ruler of Without Falseness. Those below are all without falseness; the harm is not something one has caused. To take medicine in such a case would make the illness worse. A disaster that does not arise from falseness, if left untreated, will resolve on its own. To apply medicine to what is not false would bring misfortune; hence it says 'do not use med",
+     "6": "Dwelling at the extreme of the time when one must not be false, one should only remain still and preserve one's person. Therefore one must not take action."
+    }
+   },
+   "judgment": "Supreme fulfillment. Sustained orientation is supported. If not upright, there is calamity. Going forward is not supported.",
+   "image": "Thunder moves beneath heaven, all things without pretense. The ancient kings accordingly nourished all beings in alignment with the seasons.",
+   "lineTexts": [
+    "Without pretense. Going forward resolves well.",
+    "Not plowing for the harvest. Not clearing for the cultivated field. Then going forward is supported.",
+    "Innocence encounters misfortune. A tethered ox — the traveler's gain is the townsperson's loss.",
+    "Sustained orientation is invited. No fault.",
+    "An illness without pretense. Do not medicate. There will be happiness.",
+    "Without pretense, yet action brings calamity. No direction is supported."
+   ],
+   "copy": {
+    "hook": "Hiding your real reasons?",
+    "meaning": [
+     "Innocence says:\nbe straight.",
+     "Stop faking,\nand it works."
+    ],
+    "question": "Where are you\nperforming?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 26,
+   "name": "Great Accumulation",
+   "lines": "111001",
+   "trigrams": {
+    "lower": "heaven",
+    "upper": "mountain"
+   },
+   "places": [
+    "in",
+    "out",
+    "in",
+    "in",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為畜之主"
+      ],
+      "en": [
+       "The Fifth occupies the honored position and is the master of accumulation"
+      ]
+     }
+    ],
+    "judgment": "In general, things that decline after being resisted are weak; things that fall after flourishing are insubstantial. Those able to radiate brilliance and daily renew their virtue are only the firm, strong, sincere, and substantial.\n\nThis refers to the Top Nine. It occupies the top position with great openness; the firm comes and it does not resist—this is what is meant by esteeming the worthy.\n\nNothing is stronger than Qian, yet it is able to halt it. Without great correctness, this could not be achieved.\n\nPossessing the substance of great accumulation and using it to nourish the worthy, causing the worthy not to eat at home—this is auspicious. Esteeming the worthy and restraining the strong, with great correctness corresponding to Heaven, one does not worry about dangers and difficulties, hence benefit in crossing a great river.",
+    "lines": {
+     "1": "The Fourth is the one accumulating it; it must not be opposed. Hence advancing brings danger, while stopping brings benefit.\n\nOccupying the beginning of the strong, it has not yet fulfilled its strength, hence it is able to benefit from stopping.",
+     "2": "The Fifth occupies the height of accumulation and must not be opposed. Encountering this and still advancing, the cart therefore sheds its axle straps. Occupying the attainment of the center, able to use its centrality and not recklessly wade across the river—dying without regret—encountering difficulty it is able to stop, hence there is no blame.",
+     "3": "In general, when things reach their extreme they reverse, hence when accumulation reaches its extreme it opens up. The advance of the first and second lines meets the height of accumulation, so they cannot ascend. When it comes to Nine in the Third, it ascends to the Top Nine, and the Top Nine occupies the success of Heaven's thoroughfare—the path is wide open, with no opposition or resistance in ",
+     "4": "Occupying the beginning of Gen, treading properly in its position, it is able to halt the strong Initial line. It resists not with horns; the yielding halts the firm, and the firm dares not oppose. Suppressing keenness at its inception to quell forceful contention—this is not merely beneficial alone; there will indeed be cause for joy.",
+     "5": "The tusks of a boar are recklessly violent—an object fierce, brutal, and difficult to control—this refers to the Second. The Fifth occupies the honored position and is the master of accumulation. The Second is firm and advances, yet it is able to geld its tusks. The yielding can control the strong, restraining violence and suppressing vigor. This is not merely able to secure its position; there wi",
+     "6": "Occupying the extreme of accumulation—when accumulation reaches its extreme it opens up—Great Accumulation has arrived at the time of great success. He (何) is an exclamatory particle, as if to say 'what further accumulation?'—it is now the success of Heaven's thoroughfare."
+    }
+   },
+   "judgment": "Sustained orientation is supported. Not eating at home resolves well. Crossing the great river is supported.",
+   "image": "Heaven within the mountain: great accumulation. The realized person accordingly studies the words and deeds of the past to cultivate character.",
+   "lineTexts": [
+    "There is strain. It is better to stop.",
+    "The carriage is stripped of its axle mounts.",
+    "Fine horses give chase. Difficult sustained orientation is supported. Daily practice with chariot defense. Going forward is supported.",
+    "The young bull's headboard. Supremely resolves well.",
+    "The gelded boar's tusks. Resolves well.",
+    "Bearing heaven's thoroughfare. Fulfillment."
+   ],
+   "copy": {
+    "hook": "Years of practice, nobody’s seen it?",
+    "meaning": [
+     "Great Accumulation\nsays: go public.",
+     "Don’t eat\nat home."
+    ],
+    "question": "What have you\nbeen keeping in?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 31,
+   "name": "Influence",
+   "lines": "001110",
+   "trigrams": {
+    "lower": "mountain",
+    "upper": "lake"
+   },
+   "places": [
+    "out",
+    "in",
+    "in",
+    "out",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "1-4",
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Therefore there is Success.\n\nHence Benefit in Correctness.\n\nTaking a wife brings good fortune.\n\nThe two qi unite with each other, and thus transformation and birth occur.\n\nThe true nature of Heaven, Earth, and the myriad things is seen in what influences them. In general, as a principle of influence, one cannot influence what is not of the same kind; therefore taking a wife is cited to illuminate the meaning of being of the same kind. When those of the same kind do not influence and respond to each other, it is because each holds itself aloof in its position. Therefore, although the female is the counterpart that corresponds to the male, one must lower oneself before her, and only then does taking a wife bring good fortune.",
+    "lines": {
+     "1": "Occupying the beginning of Xian, this is the start of influence. What is influenced is at the extremity, so there is merely an intention and nothing more. As for its fundamental substance, it has not yet reached the point of disturbing stillness.\n\nThe fourth line belongs to the outer trigram.",
+     "2": "The Way of influence advances further: leaving the big toe and ascending to the calf. The calf as a body part is given to motion and restlessness. To influence things through restlessness is the path to misfortune. Because of restlessness there is misfortune; remaining still brings good fortune. This line's position does not ride upon a firm line, therefore it can remain still and obtain good fort",
+     "3": "The thigh as a thing follows the foot. Advancing, it cannot control movement; retreating, it cannot remain quietly still. What is influenced being the thigh, the intention is to follow others. When the intention is to follow others, what one clings to is also base. To proceed on this basis—distress is fitting.",
+     "4": "Occupying the beginning of the upper trigram and corresponding with the beginning of the lower trigram, situated in the center of the body and above the thigh—this is where the two constituent trigrams first interact and influence each other to communicate their intentions. It is the point where the heart and spirit first experience influence. Whenever things first experience influence and one doe",
+     "5": "The mei (upper back flesh) is above the heart and below the mouth. Advancing, one cannot achieve great influence; retreating, one is not without intention either. The intention is shallow and at the periphery; therefore there is merely no regret.",
+     "6": "The Way of influence has turned to its very end, therefore it resides merely in the mouth, tongue, and spoken words.\n\nThe jaws, cheeks, and tongue are the instruments for producing speech. When there is influence in the jaws, cheeks, and tongue, then it is merely eager talk from the mouth. Even restless going back and forth was not yet glorious and great—how much more so when it has come to eager "
+    }
+   },
+   "judgment": "Fulfillment. Sustained orientation is supported. Taking a wife resolves well.",
+   "image": "A lake atop the mountain: influence. The realized person accordingly receives others through emptiness.",
+   "lineTexts": [
+    "Influence in the big toes.",
+    "Influence in the calves. Adverse. Remaining still resolves well.",
+    "Influence in the thighs. Holding to what follows. Going forward: friction.",
+    "Sustained orientation resolves well. Deviation detected dissolves. Restlessly going and coming — companions follow your thinking.",
+    "Influence in the back of the neck. No deviation detected.",
+    "Influence in the jaws, cheeks, and tongue."
+   ],
+   "copy": {
+    "hook": "Listening, but already decided?",
+    "meaning": [
+     "Influence says:\nmake room.",
+     "The full can’t\ntake anything in."
+    ],
+    "question": "What have you\nalready decided?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 33,
+   "name": "Retreat",
+   "lines": "001111",
+   "trigrams": {
+    "lower": "mountain",
+    "upper": "heaven"
+   },
+   "places": [
+    "out",
+    "in",
+    "in",
+    "out",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 2,
+      "zh": [
+       "為遯之主"
+      ],
+      "en": []
+     }
+    ],
+    "judgment": "The meaning of Retreat is that by retreating one then achieves free passage.\n\nThis refers to the fifth line. With firmness occupying its proper position and having a correspondent, it is not blocked or overbearing. Since retreat is not blocked or overbearing, one can act in accordance with the time.\n\nThe way of yin is about to gradually grow, yet the correct way has not yet been entirely extinguished, hence 'Small Benefit in Correctness.'",
+    "lines": {
+     "2": "Dwelling within and occupying the central position, this line is the host of retreat — all things retreat from it. How can it hold them fast? If one can hold to the way of principled centrality, solidity, and compliance to secure them, then none can prevail in loosening it.",
+     "3": "Being within and close to the second line, yang attaches to yin. One ought to retreat, yet one is tethered, hence it says 'tethered retreat.' The meaning of retreat is that one ought to keep far from petty people. By yang attaching to yin, one is tethered to one's place and cannot distance oneself from harm — one is already exhausted. It is fitting that there should be humiliation and perilous dan",
+     "4": "Positioned in the outer trigram yet having a correspondent in the inner, the superior person excels at retreat and thus can let go of it. The petty person clings and is attached, and therefore is blocked.\n\nPronounced as the 'pǐ' in 'zāng pǐ' [praise and blame].",
+     "5": "Retreating yet attaining correctness, one exercises control back over the inner. The petty person obeys the command and follows in rectifying his intentions. Not with hatred but with dignity — attaining the auspiciousness of correctness, this is the admirableness of retreat.",
+     "6": "Positioned at the outermost extreme, with no correspondent within, one rises above and severs all ties. The heart has no doubts or backward glances. Worries and troubles cannot weigh upon one; stringed arrows cannot reach one. This is why bountiful retreat has nothing that is not beneficial."
+    }
+   },
+   "judgment": "Fulfillment. Small sustained orientation is supported.",
+   "image": "Beneath heaven there is a mountain: retreat. The realized person accordingly distances from the petty — not with hostility but with dignity.",
+   "lineTexts": [
+    "Retreat at the tail. Strained. Do not act — going forward is of no use.",
+    "Bound with yellow oxhide. None can manage to loosen it.",
+    "Entangled retreat. There is anxiety, strain. Keeping servants and concubines resolves well.",
+    "Voluntary retreat. For the realized person: resolves well. For the petty: denied.",
+    "Admirable retreat. Sustained orientation resolves well.",
+    "Sleek, well-resourced retreat. Nothing that is not supported."
+   ],
+   "copy": {
+    "hook": "Time to walk away?",
+    "meaning": [
+     "Retreat says:\nleave well.",
+     "No anger,\njust distance."
+    ],
+    "question": "What are you\nready to leave?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 34,
+   "name": "Great Power",
+   "lines": "111100",
+   "trigrams": {
+    "lower": "heaven",
+    "upper": "thunder"
+   },
+   "places": [
+    "in",
+    "out",
+    "in",
+    "out",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "\"The great\" refers to the yang lines. The petty way is about to be extinguished, and the great obtains correctness—hence Benefit in Correctness.\n\nThe nature of Heaven and Earth is simply correctness and greatness. When one broadens correctness and extends greatness to the utmost, then the nature of Heaven and Earth can be perceived.",
+    "lines": {
+     "1": "One who attains Great Vigor must be able to achieve success naturally. There has never been one who encroached upon others yet managed to sustain his vigor to the end. Being in the lowest position yet vigorous—hence it says \"vigor in the toes.\" Dwelling below yet employing forceful vigor, to advance in this manner makes exhausting misfortune a certainty—hence it says \"to advance brings misfortune;",
+     "2": "It occupies the central position. A yang line dwelling in a yin place treads with humility and is not overbearing—hence Correctness brings good fortune.",
+     "3": "It occupies the extreme of the firm, a yang line in a yang position—this is one who employs vigor. Therefore the petty person uses it to display vigor, while the noble person uses it as a net that ensnares himself. To take vigor as one's standard of correctness brings danger. Even a ram that butts against a fence—can it avoid getting its horns entangled?",
+     "4": "The firm lines below advance upward, which will bring worry and apprehension. Yet with a yang line dwelling in a yin position, one's conduct does not violate humility. Not losing one's vigor, one therefore attains Correctness and good fortune, and regret vanishes. Having attained vigor, the yin lines above do not ensnare one's path—hence the fence breaks open and there is no entanglement. With vig",
+     "5": "Dwelling in Great Vigor, even a yang line in a yang position cannot escape blame—how much more so for a yin line in a yang position, the soft riding atop the firm? \"Ram\" symbolizes vigor. One will inevitably lose one's ram and forfeit one's position. If one can relinquish vigor with ease, rather than amid peril and difficulty, then one attains no regret. The second line treads in Correctness and g",
+     "6": "It has a corresponding line in the third—hence it cannot retreat. It fears the growth of the firm—hence it cannot advance. Holding to doubt and hesitation, with the will having no fixed resolve, making decisions in this manner yields no perceivable benefit. Although dwelling amid the growth of the firm, the firm does not harm what is correct. If one settles into one's proper role and firmly fixes "
+    }
+   },
+   "judgment": "Sustained orientation is supported.",
+   "image": "Thunder above heaven: great power. The realized person accordingly does not tread where it does not accord with propriety.",
+   "lineTexts": [
+    "Power in the toes. Advancing: adverse. There is sincerity.",
+    "Sustained orientation resolves well.",
+    "The petty person uses power. The realized person uses restraint. Sustained orientation: strained. The ram butts the hedge and entangles its horns.",
+    "Sustained orientation resolves well. Deviation detected dissolves. The hedge breaks open without entanglement. Power in the great cart's axle mounts.",
+    "Loses the ram with ease. No deviation detected.",
+    "The ram butts the hedge. Cannot retreat. Cannot advance. No direction is supported. Difficulty, then resolves well."
+   ],
+   "copy": {
+    "hook": "Finally in charge?",
+    "meaning": [
+     "Great Power says:\ncheck your aim.",
+     "Mostly, know what\nnot to do."
+    ],
+    "question": "What won’t you\ndo with it?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 35,
+   "name": "Progress",
+   "lines": "000101",
+   "trigrams": {
+    "lower": "earth",
+    "upper": "fire"
+   },
+   "places": [
+    "out",
+    "in",
+    "out",
+    "out",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "In general, when it speaks of 'going upward,' it means one's destination is a position of honor.\n\nKang is a term of praise. To be compliant and thereby manifest brightness—this is the Way of a minister. When the soft advances and goes upward, all things support it. Therefore it receives the bestowal of horses in abundant multitude. In the case of Hexagram Song (Conflict), one receives official vestments only to have them stripped away three times before the morning ends. When the soft advances and receives favor, it is received three times in a single day.",
+    "lines": {
+     "1": "Situated at the beginning of the compliant trigram and corresponding to the start of the bright trigram, the virtue of brightness and compliance will flourish from here. Advancing toward brightness and retreating into compliance, one does not lose what is correct; therefore it says 'advancing, yet pushed back—correctness brings good fortune.' Positioned at the start of the hexagram, one's merits a",
+     "2": "Advancing without a corresponding line above, one's virtue is not made manifest; therefore it says 'advancing, yet sorrowful.' Occupying the central position and attaining the proper place, treading in compliance and correctness, one does not turn back one's resolve because of lacking a corresponding line—this is one who, dwelling in obscurity, is able to bring forth sincerity. Cultivating virtue ",
+     "3": "Occupying a position that is not proper to it—this is cause for regret. Yet its aspiration is to go upward; it shares trust with the multitude; it is compliant and attaches itself to brightness. Therefore it is able to have its regret vanish.",
+     "4": "It treads in a position that is not proper to it; above it serves the Fifth, below it sits atop three yin lines. Treading in a position not proper to it, it both carries a burden and rides in a carriage—it has no established achievement in which to find security, and its aspiration has nothing to rely upon. To advance under such conditions is truly a danger even when correct. Advancing like a hams",
+     "5": "The soft obtains the honored position; a yin line serves as the enlightened ruler, able to refrain from employing scrutiny and not taking over the duties of those below. Therefore, although the position is not properly held, one is able to dispel regret. 'Do not worry about loss and gain'—each has its own responsibility. If one follows this principle and goes forward, nothing will be unfavorable.",
+     "6": "Situated at the extreme of advance, having passed beyond the center of brightness—brightness is about to be leveled. Already at the horn yet still pressing forward, how is this not excessive? Having lost the affair of transforming through the Way and governing through non-action, one must resort to attack and assault, and only then can one subdue the city. Through danger one then attains good fort"
+    }
+   },
+   "judgment": "The thriving lord is presented horses in abundance. In a single day, granted audience three times.",
+   "image": "Brightness emerges above the earth: progress. The realized person accordingly brightens their own character.",
+   "lineTexts": [
+    "Progressing, yet obstructed. Sustained orientation resolves well. If met without trust, remain generous. No fault.",
+    "Progressing, yet anxious. Sustained orientation resolves well. Receiving this constrained blessing from the grandmother.",
+    "The multitude approves. Deviation detected dissolves.",
+    "Progressing like a squirrel. Sustained orientation: strained.",
+    "Deviation detected dissolves. Do not take gain and loss to heart. Going forward resolves well. Nothing that is not supported.",
+    "Advancing with horns. Confined to disciplining one's own territory. Strained, resolves well, no fault. Sustained persistence: friction."
+   ],
+   "copy": {
+    "hook": "Finally getting recognized?",
+    "meaning": [
+     "Progress says:\ncharacter first.",
+     "Not strategy.\nNot network."
+    ],
+    "question": "What are you\nlike up close?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 37,
+   "name": "The Family",
+   "lines": "101011",
+   "trigrams": {
+    "lower": "fire",
+    "upper": "wind"
+   },
+   "places": [
+    "in",
+    "in",
+    "in",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "The meaning of The Family is that each cultivates the Way of one's own household and cannot concern oneself with the affairs of other people outside the family. Considered as a whole, this is not the Correctness of Sublime Beginning, Success, and Benefit for the noble person; therefore it says 'Benefit in the woman's Correctness'—the correct principle lies within the household and nothing more.",
+    "lines": {
+     "1": "In general, instruction should come at the beginning and rules at the start. If one lets the household fall into disrespect and only then becomes strict, or lets intentions change and only then tries to govern, there will be regret. Occupying the beginning of The Family and being the start of The Family, one ought to set barriers for the household; only then does regret vanish.",
+     "2": "Dwelling within and occupying the center, treading in and obtaining its proper position, with yin responding to yang—this exhausts the correct meaning of the woman. There is nothing she must pursue to completion; her duty lies in the food within, being compliant and yielding and nothing more. This is why Correctness brings good fortune.",
+     "3": "With yang occupying a yang position, this is one who is firm and strict. Occupying the top of the lower body, this is the head of the household. In conduct, rather than being lax, it is better to err on the side of reverence; in the household, rather than being disrespectful, it is better to err on the side of severity. This is why even though the family members are treated with harsh severity, br",
+     "4": "Being able to use one's wealth while being yielding and occupying the proper position—therefore there is great good fortune. If one merely were able to enrich the household, how would that suffice for great good fortune? Having a yielding body and dwelling in the Xun trigram, treading in and obtaining the proper position, understanding the Way of the family, and being close to the most honored—thi",
+     "5": "'Jia' means 'to arrive.' Treading in the correct position and having a response, occupying the honored place with the body in the Xun trigram—the king arrives at this Way and thereby possesses his household. Dwelling in the honored position and being illuminated in the Way of the family, then none below fail to be transformed. When the father acts as a father, the son as a son, the elder brother a",
+     "6": "Occupying the end of The Family and dwelling at the completion of the Way of the family, one serves as a model to one's own wife and thereby becomes manifest outwardly; therefore it says 'there is sincerity.' In general, those who take fierceness as the foundation suffer from a lack of kindness, while those who take love as the foundation suffer from a lack of authority. Therefore the Way of The F"
+    }
+   },
+   "judgment": "The woman's sustained orientation is supported.",
+   "image": "Wind comes forth from fire: the family. The realized person accordingly speaks with substance and acts with consistency.",
+   "lineTexts": [
+    "Establishing boundaries for the household. Deviation detected dissolves.",
+    "No outside pursuits to follow. Attending to the nourishment within. Sustained orientation resolves well.",
+    "The family members scold sharply. Regrettable severity, but resolves well. Wife and children giggling: ends in friction.",
+    "Enriching the family. Great resolve well.",
+    "As a king approaches his family. Do not worry. Resolves well.",
+    "There is sincerity, impressive in its bearing. In the end, resolves well."
+   ],
+   "copy": {
+    "hook": "Too many rules at home?",
+    "meaning": [
+     "The Family says:\nskip the rules.",
+     "Say real things.\nDo them daily."
+    ],
+    "question": "What will you\nfollow through on?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 38,
+   "name": "Opposition",
+   "lines": "110101",
+   "trigrams": {
+    "lower": "lake",
+    "upper": "fire"
+   },
+   "places": [
+    "in",
+    "out",
+    "out",
+    "out",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "When all affairs are mutually contrary, this is the way of harm — how then can small matters be fortunate? It is because these three virtues are present.\n\nThe time of opposition and separation is not something a petty person can make use of.",
+    "lines": {
+     "1": "Occupying the beginning of Kui, dwelling at the bottom of the lower trigram, without a responsive counterpart and standing alone — this is cause for regret. Yet it shares its will with the fourth line, and therefore regret vanishes. A horse is a thing that necessarily stands out. At the beginning of things, amid divergence one loses one's horse, but nothing can conceal it in private — it will inev",
+     "2": "Occupying a position in Kui while out of one's proper place, one is about to have nowhere to find rest. Yet the fifth line has also lost its proper place; both seek their kindred, going out and heading the same way, meeting unexpectedly — hence it says 'meets the master in an alleyway.' In the time of Kui one has found an ally; although one has lost one's position, one has not lost the Way.",
+     "3": "In general, when things are near yet do not get along, there is misfortune. In the time of Kui, this line treads in a position that is not its own — yin occupying a yang place, the yielding riding atop the firm. Its will is set on what is above, yet it does not harmonize with the fourth line. The second responds to the fifth, so though near, they do not bond. Hence one sees the carriage dragged ba",
+     "4": "Without a responsive counterpart, dwelling alone — the fifth responds on its own to the second, and the third is in opposition with this line. Hence it says 'opposed and isolated.' The first line likewise has no responsive counterpart and stands alone. In the time of Kui, both stand in isolation; both occupy the lower part of their respective trigrams and share the same will. Yet this line has los",
+     "5": "Not in its proper position — hence regret. Having a responsive counterpart — hence it vanishes. 'Its kinsman' refers to the second line. 'Biting through the skin' means gnawing through what is yielding. Although the third line is adjacent to the second, what the second bites through does not obstruct this line's responsive bond. Going forward under these conditions, what blame could there be? Goin",
+     "6": "Occupying the extreme of Kui, the way of opposition has not yet opened — hence 'opposed and isolated.' This line dwells at the extreme of flame, while the third line occupies the fullness of the marsh — this is the extreme of opposition. Viewing the most defiled of things from the extreme of civilized brightness — this is the utmost of opposition. A pig covered in mud — nothing could be filthier. "
+    }
+   },
+   "judgment": "Small matters resolve well.",
+   "image": "Fire above, lake below: opposition. The realized person accordingly finds commonality while preserving difference.",
+   "lineTexts": [
+    "Deviation detected dissolves. The lost horse — do not chase it; it returns on its own. Seeing difficult people: no fault.",
+    "Meeting the master in a narrow lane. No fault.",
+    "Seeing the wagon dragged back. Its ox restrained. Its driver branded and nose-cut. No beginning, but there is an end.",
+    "Isolated through opposition. Meeting a great person. Exchanging trust. Strained but no fault.",
+    "Deviation detected dissolves. The kinsman bites through the wrapping. Going forward — how could there be fault?",
+    "Isolated through opposition. Seeing a pig covered in mud. A cart loaded with ghosts. First drawing the bow, then setting it down. Not an assailant — a suitor. Going forward, meeting rain: resolves well."
+   ],
+   "copy": {
+    "hook": "Can’t agree on anything?",
+    "meaning": [
+     "Opposition says:\nstart small.",
+     "Share something,\nstay different."
+    ],
+    "question": "What do you\nboth want?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 39,
+   "name": "Obstruction",
+   "lines": "001010",
+   "trigrams": {
+    "lower": "mountain",
+    "upper": "water"
+   },
+   "places": [
+    "out",
+    "in",
+    "in",
+    "in",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 3,
+      "zh": [
+       "為下卦之主"
+      ],
+      "en": [
+       "' As the master of the lower trigram, this is what the inner [trigram] relies upon"
+      ]
+     }
+    ],
+    "judgment": "The southwest is the earth. The northeast is the mountain. If one takes difficulty toward level ground, the difficulty is resolved; if one takes difficulty toward the mountain, the way is exhausted.\n\nGoing forth, one achieves deliverance.\n\nThe lines all occupy their proper positions, each treading its correct place. Dwelling in difficulty and treading correctness—this is the Way of ordering the state. When the correct Way has not yet been blocked, difficulty is overcome through correctness; therefore correctness brings good fortune. If one encounters difficulty and loses correctness, how can good fortune be obtained?",
+    "lines": {
+     "1": "Situated at the beginning of difficulty, dwelling at the start of stopping, one alone perceives what lies ahead, sees danger and stops, waiting for the right time—how wise indeed! Therefore going forth encounters obstruction, while turning back gains praise.",
+     "2": "In a time of dwelling in difficulty*, one treads in the proper position, dwells without losing the center, and responds to the fifth line. One does not, because the fifth is amid difficulty, act selfishly to keep oneself distant from harm. Holding fast with unwavering heart, one's resolve is to assist the royal house. Therefore it says: 'The king's minister struggles through obstruction upon obstr",
+     "3": "Advancing, one enters danger; turning back, one attains one's position. Therefore it says 'going forth meets obstruction; turning back, one returns.' As the master of the lower trigram, this is what the inner [trigram] relies upon.",
+     "4": "Going forth, there is no corresponding line; turning back, one rides upon the strong. Going and coming are both difficult; therefore it says 'going forth meets obstruction, turning back one joins.' Attaining one's position and treading correctly, fulfilling one's fundamental substance—though encountering difficulty, it is not something recklessly brought upon oneself.",
+     "5": "In a time of dwelling in difficulty, alone amid danger—this is the greatest of difficulties; therefore it says 'great obstruction.' Yet dwelling without losing correctness, treading without losing the center, holding fast to virtue's constancy, and not changing one's integrity—being thus, those of like mind gather and arrive; therefore it says 'companions come.'",
+     "6": "Going forth prolongs difficulty; turning back brings difficulty to its end. When difficulty ends, all obstructions are overcome, and one's resolve is greatly fulfilled; therefore it says 'going forth meets obstruction; turning back brings greatness—good fortune.' When danger is leveled and difficulty resolved, the great Way can flourish; therefore it says 'benefit in seeing a great person.'\n\nThere"
+    }
+   },
+   "judgment": "The southwest is supported. The northeast is not supported. Seeing the great person is supported. Sustained orientation resolves well.",
+   "image": "Water upon the mountain: obstruction. The realized person accordingly turns inward to cultivate character.",
+   "lineTexts": [
+    "Going forward: obstruction. Coming back: praise.",
+    "The sovereign's minister, obstruction upon obstruction. It is not a personal matter.",
+    "Going forward: obstruction. Coming back: return.",
+    "Going forward: obstruction. Coming back: connection.",
+    "Great obstruction. Companions come.",
+    "Going forward: obstruction. Coming back: ripeness. Resolves well. Seeing the great person is supported."
+   ],
+   "copy": {
+    "hook": "Hit a wall?",
+    "meaning": [
+     "Obstruction says:\nask for help.",
+     "The wall is\nthe lesson."
+    ],
+    "question": "Who could you\nask?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 40,
+   "name": "Deliverance",
+   "lines": "010100",
+   "trigrams": {
+    "lower": "water",
+    "upper": "thunder"
+   },
+   "places": [
+    "out",
+    "out",
+    "out",
+    "out",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "The southwest represents the multitude. Releasing difficulty and crossing through danger benefits being extended to the multitude. It also does not bring hardship in the northeast, which is why it does not say 'no benefit in the northeast.'\n\nThere has never been one skilled at releasing difficulty who was confused about dwelling in peace. The meaning of Release is releasing difficulty and relieving distress. If there is no difficulty requiring one to go and resolve it, then returning preserves the center. If there is difficulty requiring one to go, then swiftness brings good fortune. Without difficulty, one can restore one's center; with difficulty, one can relieve the distress.",
+    "lines": {
+     "1": "Release means untying. What was obstructed in difficulty and tangled together is here released. Situated at the very beginning when hardship and difficulty first begin to dissolve, at the juncture when the firm and the yielding first begin to disperse, offenses and distress are about to be pardoned, thereby leveling the danger. At such a time, one need not be troubled about one's position and is w",
+     "2": "The fox is a creature that hides and lurks. Being firm and central with a corresponding line, it is entrusted by the Fifth. Situated within the danger, it knows the conditions of danger. Resolving things by this means, it can catch what is hidden and lurking; therefore it says 'in the hunt, three foxes are caught.' Yellow is a designation for the center of principle. Arrow (shi) means straight. Hu",
+     "3": "Occupying a position that is not its own, treading where it has no rightful place, it attaches itself to the Fourth, using yielding flattery to ingratiate itself. It rides upon the Second and bears the burden of the Fourth, thereby finding accommodation for itself. The coming of bandits is brought about by oneself. Even if one is fortunate enough to escape, it is something that correctness despise",
+     "4": "Having lost its proper position and being incorrect, it is adjacent to the Third; therefore the Third is able to attach to it as its big toe. If the Third serves as its big toe, then the correspondence with the Initial line is lost. Therefore one must release the big toe, and only then will allies come with trust.",
+     "5": "Occupying the honored position, treading in the center, and corresponding with the firm, it can achieve release and obtain good fortune. When one uses the Way of the noble person to release difficulty and dissolve danger, even though the petty person is benighted, he still knows to submit and bears no resentment. Therefore it says 'there is trust shown toward the petty person.'",
+     "6": "The Initial line corresponds with the Fourth; the Second corresponds with the Fifth. The Third does not correspond with Top Six. It has lost its position and carries a burden while riding, and it occupies the top of the lower trigram; therefore it is called the 'high wall.' A wall is not a place where a hawk should perch; a height is not where the Third should tread. Top Six dwells at the top of t"
+    }
+   },
+   "judgment": "The southwest is supported. With nowhere to go, returning brings resolve well. If there is somewhere to go, acting promptly resolves well.",
+   "image": "Thunder and rain arise: deliverance. The realized person accordingly pardons transgressions and forgives offenses.",
+   "lineTexts": [
+    "No fault.",
+    "In the field, capturing three foxes. Finding the golden arrow. Sustained orientation resolves well.",
+    "Carrying a burden while riding in a carriage. Inviting thieves to approach. Sustained orientation: friction.",
+    "Release your big toe. When companions arrive, trust is established.",
+    "The realized person alone has deliverance. Resolves well. Having sincerity toward the petty.",
+    "The duke shoots a falcon atop the high wall. Capturing it — nothing that is not supported."
+   ],
+   "copy": {
+    "hook": "The pressure’s finally off?",
+    "meaning": [
+     "Deliverance says:\nact or rest.",
+     "Then let the\ngrudges go."
+    ],
+    "question": "What can you\nforgive?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 41,
+   "name": "Decrease",
+   "lines": "110001",
+   "trigrams": {
+    "lower": "lake",
+    "upper": "mountain"
+   },
+   "places": [
+    "in",
+    "out",
+    "out",
+    "in",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Gen is the yang trigram; Dui is the yin trigram. In general, yin is compliant toward yang. Yang stops above, yin is joyful and compliant — decreasing the lower to benefit the upper: this is the meaning of \"moving upward.\"\n\nThe Way of Decrease is to decrease the lower to benefit the upper, to decrease the firm to benefit the yielding. Decreasing the lower to benefit the upper is not supplementing what is insufficient; decreasing the firm to benefit the yielding is not fostering the Way of the noble person. To practice Decrease and yet be able to obtain good fortune — only through sincerity is this possible! If one decreases with sincerity, then there is Sublime Beginning good fortune, no blame with Correctness possible, and it is Beneficial to have somewhere to go. Decreasing the firm to benefit the yielding does not aim to eliminate firmness; decreasing the lower to benefit the upper does not aim to surfeit the upper. If decreasing firmness does not lead to deviancy, and benefiting the upper does not constitute flattery, then what blame is there that Correctness could address? Even if one cannot rescue from great calamity, proceeding in this way, nothing will resist.\n\n\"He\" (曷) is an interrogative particle. \"What shall one use\" means: what need is there for lavishness?\n\nTwo bamboo bowls are vessels of plain and modest quality. Practicing Decrease with sincerity, even two bamboo bowls may be used for the offering.\n\nThe Way of utmost frugality cannot be constant.\n\nThe lower does not dare to be rigid, valuing upward service — this is what is called \"decreasing the firm to benefit the yielding.\" Firmness is the chief of virtues; decreasing it cannot be made constant.\n\nThe natural endowment of things determines each one's proper measure. What is short should not be considered insufficient; what is long should not be considered excessive. What could Decrease and Increase add to this? It is not a constant principle of the Way, therefore it must move together with the time.",
+    "lines": {
+     "1": "The Way of Decrease is to decrease the lower to benefit the upper, to decrease the firm to benefit the yielding, in response to the demands of the time. Occupying the lowest position and decreasing firmness to serve yielding, one must not be idle. Being at the beginning of Decrease, one must not be complacent. When the task is already done, then go — not daring to rest at ease — and only then will",
+     "2": "Yielding cannot be entirely increased, nor can firmness be entirely stripped away; the lower cannot be without Correctness. Initial Nine has already decreased firmness to comply with yielding. If Nine in the Second, treading the central position, were again to diminish itself to benefit yielding, then the Way of Stripping (Bo, hexagram 23) would be realized. Therefore one must not go swiftly but r",
+     "3": "The Way of Decrease is to decrease the lower to benefit the upper; its Way moves upward. \"Three people\" refers to the three yin lines from Six in the Third upward. If the three yin lines travel together to serve the one above, then the upper loses its companion, and within there is no master — this is called Increase in name, but in reality it is Decrease. Thus when heaven and earth correspond wit",
+     "4": "Treading in its proper position and receiving firmness through yielding, it can decrease its affliction. An affliction cannot be endured for long; therefore acting swiftly brings joy. Decreasing the affliction in order to depart from blame — only with joy is one absolved. Therefore acting swiftly brings joy, and with joy there is no blame.",
+     "5": "Occupying the honored position with yielding and practicing the Way of Decrease — like rivers and seas that dwell in the lowest place, and all the valleys flow toward them. Treading the position of honor with Decrease, then someone will increase it. \"Peng\" (朋) means \"associates\" or \"groups.\" The tortoise is an instrument for resolving doubt. Yin does not initiate; yielding does not take charge on ",
+     "6": "Situated at the end of Decrease, above there is no one to serve. At the end of Decrease it reverses into Increase; the virtue of firmness is not diminished but rather increased, and there is no worry of blame. Employing Correctness brings good fortune. Not controlled by yielding, the virtue of firmness continues to grow. Hence it says, \"Not decreased, but increased; no blame; Correctness brings go"
+    }
+   },
+   "judgment": "There is sincerity. Supremely resolves well. No fault. Sustained orientation is invited. Going forward is supported. How shall this be carried out? Two small baskets may be used for the offering.",
+   "image": "A lake at the foot of the mountain: decrease. The realized person accordingly curbs resentment and restrains desire.",
+   "lineTexts": [
+    "Finishing one's affairs and going swiftly. No fault. But consider how much to decrease.",
+    "Sustained orientation is supported. Advancing: adverse. Without decreasing, increase it.",
+    "Three people walking lose one person. One person walking finds a companion.",
+    "Decreasing one's affliction. Acting swiftly brings happiness. No fault.",
+    "Someone increases this one by ten pairs of tortoise shells. One cannot refuse. Supremely resolves well.",
+    "Without decreasing, increasing. No fault. Sustained orientation resolves well. Going forward is supported. Gaining servants but not a separate household."
+   ],
+   "copy": {
+    "hook": "Having less than before?",
+    "meaning": [
+     "Decrease says:\ngive what you can.",
+     "Cut the anger,\ncut the wants."
+    ],
+    "question": "What can you\nlet go of?",
+    "lesson": "Two small baskets\nare enough."
+   }
+  },
+  {
+   "number": 45,
+   "name": "Gathering Together",
+   "lines": "000110",
+   "trigrams": {
+    "lower": "earth",
+    "upper": "lake"
+   },
+   "places": [
+    "out",
+    "in",
+    "out",
+    "out",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "1-4",
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "When there is gathering, there is free passage.\n\n\"Jia\" means \"to reach.\" The king, through gathering, reaches the ancestral temple.\n\nWhen gathering obtains a great person, then there is free passage and it is beneficial and correct.\n\nWhen the Way of gathering is complete, using great sacrificial animals brings good fortune. When the Way of gathering is not complete, yet one uses great sacrificial animals, the spirits will not bestow blessings.",
+    "lines": {
+     "1": "There is a correspondence with the fourth, yet the third encroaches upon it. The heart harbors suspicion and doubt, hence \"there is sincerity that does not last to the end.\" Unable to hold to the Way and form the most excellent bond, confused and occupied with contention, hence \"then there is disorder, then gathering.\" \"A single handful\" is an image of smallness. \"Becoming laughter\" is an image of",
+     "2": "At the time of Gathering, having a yielding nature in the proper position, dwelling in the center of Kun, one alone occupies the correct position, differing from the multitude. Gathering with different conduct—when the people are mostly deviant, the one who alone is correct is in danger. Unable to change one's nature to distance oneself from harm, one must necessarily be drawn forward, and only th",
+     "3": "Treading in an improper position and being close to the fourth, yet the fourth also has lost its position. Gathering together improperly—when those who gather together are not correct, troubles arise. Intruding upon another's correspondence is where harm originates. Hence \"gathering thus, sighing thus—nothing is Beneficial.\" Top Six also has no correspondence and stands alone, dwelling at the extr",
+     "4": "Treading in an improper position yet commanding the three yin lines below—obtaining what it commands but losing its proper place. At the time of Gathering, being incorrect yet commanding, therefore one must attain great good fortune and establish great merit, and only then will there be no blame.",
+     "5": "At the time of Gathering, occupying the most exalted position, hence it says \"gathering while possessing the position.\" The fourth monopolizes command, and one's own virtue cannot be carried out; one merely guards oneself. Hence it says \"no blame; there is a lack of trust.\" If one cultivates benevolence and maintains correctness, in time regret will surely vanish. Hence it says \"with a Sublime Beg",
+     "6": "At the time of Gathering, dwelling at the uppermost extreme, the fifth is not one to be ridden upon, and inwardly there is no corresponding support. Dwelling above and standing alone, near and far there is no aid—nothing is more perilous than this. \"Lamenting and sighing\" are words of sorrowful exclamation. If one can recognize that danger has arrived, fear the depth of calamity, and be anxious ab"
+    }
+   },
+   "judgment": "Fulfillment. The king approaches the ancestral temple. Seeing the great person is supported. Fulfillment. Sustained orientation is supported. Using great sacrificial offerings resolves well. Going forward is supported.",
+   "image": "The lake rises above the earth: gathering together. The realized person accordingly sets aside weapons and tools, and guards against the unexpected.",
+   "lineTexts": [
+    "Having sincerity but not to the end. Confusion, then gathering. If you call out, one handclasp restores laughter. Do not worry. Going forward: no fault.",
+    "Being drawn in resolves well. No fault. If sincere, then even the modest spring offering is supported.",
+    "Gathering amid sighs. No direction is supported. Going forward: no fault. Small friction.",
+    "Great resolve well. No fault.",
+    "Gathering has position. No fault. If some are not yet sincere, supremely enduring sustained orientation — then deviation detected dissolves.",
+    "Offering counsel amid tears and weeping. No fault."
+   ],
+   "copy": {
+    "hook": "Hosting family, bracing for arguments?",
+    "meaning": [
+     "Gathering says:\nshare a purpose.",
+     "And plan for\nthe friction."
+    ],
+    "question": "What holds your\ngroup together?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 46,
+   "name": "Pushing Upward",
+   "lines": "011000",
+   "trigrams": {
+    "lower": "wind",
+    "upper": "earth"
+   },
+   "places": [
+    "out",
+    "out",
+    "in",
+    "in",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 6,
+      "zh": [
+       "用於為物之主則喪矣"
+      ],
+      "en": [
+       "but if used to serve as the master of things, it leads to ruin"
+      ]
+     }
+    ],
+    "judgment": "Through the compliance of Xun one can ascend. Yet the yang line does not occupy the honored position and lacks the correctness of stern firmness, so one is not free from worry. Therefore, by seeing a great person, one is freed from anxiety.\n\nBy going south with yielding softness, one attaches to the great brightness.",
+    "lines": {
+     "1": "Yun means 'fitting' or 'sincere.' The three lines of the Xun trigram are all ascending. Although this line has no correspondent, it occupies the beginning of Ascending and joins its intent with Nine in the Second and Nine in the Third, ascending together. At the time of ascending, the ascent necessarily brings great attainment—therefore there is great good fortune.",
+     "2": "It corresponds with the Fifth, so going forth it will certainly be entrusted with responsibility. Embodying the virtue of firmness, it advances without seeking favor, guards against deviance and preserves sincerity, and its intent lies in great undertakings. Therefore it is beneficial to present modest offerings to the spirits.",
+     "3": "It treads in its proper position and ascends as yang toward yin. Rising in this manner, nothing opposes or resists it, so it is as if ascending into an empty city.\n\nGoing forth, one will certainly succeed.",
+     "4": "Occupying the juncture of ascending, those below ascend and advance—they can be received but not resisted. To resist the advance of those below, seizing what comes and acting with self-serving exclusivity, would bring calamity and blame. If one can refrain from resisting and instead receive them, following the natural inclinations of things and opening a channel for the many intentions, then one a",
+     "5": "Ascending to attain the honored position, its nature is yielding and it has a correspondence. It receives and does not resist, delegates and does not monopolize. Therefore it attains correctness and good fortune, ascending the stairs to the honored place.",
+     "6": "Occupying the extreme of ascending, this is one who advances without ceasing. Advancing without ceasing, even in darkness one still ascends. Therefore, if applied to the correctness of ceaseless effort, it is acceptable; but if used to serve as the master of things, it leads to ruin. To persist in ceaselessness to the end is the way of diminishment.\n\nExertion cannot be sustained long."
+    }
+   },
+   "judgment": "Supreme fulfillment. Use this time to see the great person. Do not worry. Advancing southward resolves well.",
+   "image": "Within the earth, wood grows: pushing upward. The realized person accordingly cultivates a yielding character, accumulating small things to reach the high and great.",
+   "lineTexts": [
+    "Welcomed upward. Great resolve well.",
+    "If sincere, then even the modest spring offering is supported. No fault.",
+    "Pushing upward into an empty town.",
+    "The king makes an offering at Mount Qi. Resolves well. No fault.",
+    "Sustained orientation resolves well. Ascending by steps.",
+    "Blind ascent. Unceasing sustained orientation is supported."
+   ],
+   "copy": {
+    "hook": "Growing slower than you want?",
+    "meaning": [
+     "Pushing Upward:\ndon’t worry.",
+     "Small steps,\npiled up."
+    ],
+    "question": "What can you add\ntoday?",
+    "lesson": "Go see someone\nabove you."
+   }
+  },
+  {
+   "number": 49,
+   "name": "Revolution",
+   "lines": "101110",
+   "trigrams": {
+    "lower": "fire",
+    "upper": "lake"
+   },
+   "places": [
+    "in",
+    "in",
+    "in",
+    "out",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "The people can be accustomed to the habitual but find it difficult to adapt to change. They can rejoice in accomplishment but find it difficult to deliberate at the beginning. Therefore in the Way of Revolution, on the very day there is no trust, but when the day is done there is trust. Only after there is trust can one attain Sublime Beginning, Success, Benefit, Correctness, and the vanishing of regret. If after the day is done there is still no trust, then the revolution is not appropriate. The arising of regret and distress is born from change and movement. When the revolution is appropriate, then regret vanishes.",
+    "lines": {
+     "1": "At the beginning of Revolution, the Way of revolution is not yet accomplished. One holds fast to the constant center, not yet able to respond to change. This is suitable for maintaining what has been accomplished, but not for taking action. \"Bound firmly\" (gong) means to secure firmly. \"Yellow\" represents the center. The hide of an ox is tough and unyielding, impossible to change. What is used to ",
+     "2": "Yin by its nature cannot take the lead; it is a follower. It cannot initiate revolution on its own, but once revolution has been accomplished it can follow — hence it says \"when the day is done, then carry out the revolution.\" Though the second and fifth lines have the difference of water and fire as separate trigram bodies, they both occupy their respective centers. Yin and yang correspond to eac",
+     "3": "Already situated at the extreme of fire, the three lines of the upper trigram, though their trigram body is of the nature of water, all follow the revolution. From the fourth to the top, they obey the mandate and transform, not daring to defy. Hence it says \"the call for revolution is thrice affirmed.\" Their words are true and sincere, hence it says \"there is trust.\" When the call for revolution i",
+     "4": "Initial Nine occupies the bottom of the lower trigram; Nine in the Fourth occupies the bottom of the upper trigram — therefore it can change. Having no corresponding line is cause for regret. But being adjacent to water and fire and capable of transformation — this is why regret vanishes. Situated at the juncture of water and fire, occupying the beginning of converging transformation, it can avoid",
+     "5": "Without divination there is trust — it accords with the hearts of the time.",
+     "6": "Dwelling at the end of transformation, the Way of change is already accomplished. The noble person, situated here, can bring his cultural refinement to completion. The petty person rejoices in accomplishment and changes only his outward appearance to comply with those above.\n\nThe mandate has been changed and institutions created; the Way of transformation is already accomplished. When merit is ach"
+    }
+   },
+   "judgment": "On the completed day, then trust. Supreme fulfillment. Sustained orientation is supported. Deviation detected dissolves.",
+   "image": "Fire within the lake: revolution. The realized person accordingly organizes the calendar and clarifies the seasons.",
+   "lineTexts": [
+    "Bound with yellow oxhide.",
+    "On the completed day, then make the change. Advancing resolves well. No fault.",
+    "Advancing: adverse. Sustained orientation: strained. When talk of revolution has circulated three times, there is trust.",
+    "Deviation detected dissolves. There is trust. Changing the mandate resolves well.",
+    "The great person transforms like a tiger. Even before divining, there is trust.",
+    "The realized person transforms like a leopard. The petty change only their faces. Advancing: adverse. Dwelling in sustained orientation resolves well."
+   ],
+   "copy": {
+    "hook": "Making a big change nobody believes in?",
+    "meaning": [
+     "Revolution says:\nfinish first.",
+     "Trust comes on\nthe last day."
+    ],
+    "question": "What change are\nyou making?",
+    "lesson": "For a revolution,\na new calendar."
+   }
+  },
+  {
+   "number": 52,
+   "name": "Keeping Still",
+   "lines": "001001",
+   "trigrams": {
+    "lower": "mountain",
+    "upper": "mountain"
+   },
+   "places": [
+    "out",
+    "in",
+    "in",
+    "in",
+    "out",
+    "out"
+   ],
+   "answering": [],
+   "wangbi": {
+    "masters": [],
+    "judgment": "The Way of stopping cannot be constantly employed; it must be applied when one cannot proceed. When it fits the timing, the Way is bright and luminous.\n\nChanging 'back' to 'stopping' clarifies that the back is where stopping applies. Stopping cannot be applied to the face; it can be applied to the back. Applying stopping where stopping is due, not applying stopping where action is due—this is finding its proper place. Therefore it says: stopping at the point of stopping means stopping in its proper place.",
+    "lines": {
+     "1": "Dwelling at the beginning of stopping, there is nowhere to go by moving; therefore stopping at the toes brings no blame. Being utterly still and settled, therefore there is Benefit in lasting Correctness.",
+     "2": "\"What follows\" refers to the toes. Stopping the calves means the toes cannot be lifted. The calves are restless in nature yet are placed in stillness; unable to lift what follows, and also unable to withdraw and listen in quiet composure, therefore one's heart is not glad.",
+     "3": "\"Waist\" (xian) is the middle of the body. The third line falls at the juncture of the two trigram images; therefore it says \"keeping still at the waist.\" \"Yin\" (yi) refers to the flesh along the middle of the spine. Stopping is imposed upon the body at its center, dividing the body; therefore the flesh of the spine is split apart and the worry of danger sears the heart. The meaning of Gen is that ",
+     "4": "The middle and upper portions are called the body. Treading in one's proper position, one seeks to stop within one's own body and finds one's proper place; therefore one does not fall into blame.\n\nOne stops at one's own person without dividing the whole body.",
+     "5": "Applying stopping to the jaws, and dwelling in the center, one's mouth has no ill-chosen words and is able to make regret vanish.\n\nBeing able to employ centrality and correctness, therefore words are well-ordered.",
+     "6": "Dwelling at the extreme of stopping, this is the utmost of stopping. Generous and weighty in the uppermost position, one does not fall into error or recklessness; it is fitting that there be auspiciousness."
+    }
+   },
+   "judgment": "Stilling the back. Not grasping the body. Walking through the courtyard, not seeing the people. No fault.",
+   "image": "Connected mountains: keeping still. The realized person accordingly thinks of nothing beyond their present situation.",
+   "lineTexts": [
+    "Stilling the toes. No fault. Enduring sustained orientation is supported.",
+    "Stilling the calves. Unable to rescue what follows. The heart is not at ease.",
+    "Stilling at the waist. Separating the lower back. Danger. The heart smothers.",
+    "Stilling the body. No fault.",
+    "Stilling the jaws. Words have order. Deviation detected dissolves.",
+    "Genuine stillness. Resolves well."
+   ],
+   "copy": {
+    "hook": "Can't stop overthinking?",
+    "meaning": [
+     "Keeping Still\nsays: pause.",
+     "Stay with where\nyou are now."
+    ],
+    "question": "What can wait?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 53,
+   "name": "Development",
+   "lines": "001011",
+   "trigrams": {
+    "lower": "mountain",
+    "upper": "wind"
+   },
+   "places": [
+    "out",
+    "in",
+    "in",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Jian is the hexagram of gradual advance. Stillness combined with compliance — by these means one proceeds forward; this is gradual advance. Because stillness and compliance constitute the mode of advance, the woman's marriage is auspicious. Because one advances while employing Correctness, there is Benefit in Correctness.",
+    "lines": {
+     "1": "The hong is a water bird. In the meaning of proceeding to advance, it begins from below and ascends, hence the wild goose is used as a metaphor. All six lines take advancing and treading upon their position as their meaning. Beginning to advance yet positioned at the very bottom, with no corresponding line above — it is like treading upon the riverbank, dangerous and unable to find security. Begin",
+     "2": "Pan is a stable mountain rock. Advancing and attaining one's position, dwelling in the center with a corresponding line — originally without salary or sustenance, but advancing and obtaining them. The resulting joy and happiness surpass all other wishes.",
+     "3": "Lu is the top of the heights. Advancing to reach the plateau, it finds mutual affinity with the fourth line and cannot turn back. The husband goes on campaign and does not return, delighting in an improper union; the wife then also cannot maintain her fidelity. Pregnant by one who is not her husband, she therefore does not give birth. The third line originally belongs to the Gen trigram body, yet ",
+     "4": "A bird going to a tree finds what is suitable for it. 'Perhaps finding a flat branch to perch on' means encountering a safe roosting place. Although it rides above the firm line, their intentions find mutual affinity.",
+     "5": "Ling (hilltop) is next in elevation after the plateau. Advancing and attaining the central position, yet separated by the third and fourth lines, unable to unite with its corresponding line — hence the wife does not conceive for three years. Each treads upon what is correct and dwells in the center; the third and fourth lines cannot long obstruct their path. After no more than three years, one wil",
+     "6": "Advancing to dwell in a lofty and pure place, unburdened by official position, nothing can bend its heart or disorder its will. Towering, pure, and transcendent, its deportment is worthy of esteem. Hence it says 'its feathers can be used as ceremonial ornaments, auspicious.'"
+    }
+   },
+   "judgment": "The maiden's marriage resolves well. Sustained orientation is supported.",
+   "image": "On the mountain, a tree: development. The realized person accordingly dwells in worthy character and improves the customs.",
+   "lineTexts": [
+    "The wild goose gradually advances to the shore. The young one is in difficulty, there is talk. No fault.",
+    "The wild goose gradually advances to the cliff. Eating and drinking in contentment. Resolves well.",
+    "The wild goose gradually advances to the plateau. The husband goes on campaign and does not return. The wife conceives but does not give birth. Adverse. It is supported to defend against intruders.",
+    "The wild goose gradually advances to the trees. Perhaps finding a flat branch. No fault.",
+    "The wild goose gradually advances to the hilltop. The wife for three years does not conceive. In the end, nothing can overcome this. Resolves well.",
+    "The wild goose gradually advances to the cloud heights. Its feathers may be used for the sacred dance. Resolves well."
+   ],
+   "copy": {
+    "hook": "Tempted to skip steps?",
+    "meaning": [
+     "Development says:\ngo step by step.",
+     "Slow growth\nlasts."
+    ],
+    "question": "Which step are\nyou skipping?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 54,
+   "name": "The Marrying Maiden",
+   "lines": "110100",
+   "trigrams": {
+    "lower": "lake",
+    "upper": "thunder"
+   },
+   "places": [
+    "in",
+    "out",
+    "out",
+    "out",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "2-5"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgment": "'Maiden' (mei) is a term for a younger sister. Dui is the youngest yin; Zhen is the eldest yang. The youngest yin serves the eldest yang — joyousness leading to movement — this is the image of marrying off a younger sister.",
+    "lines": {
+     "1": "A youngest daughter paired with the eldest son — this is not what is meant by an equal match; it is the meaning of following as a secondary bride. 'Maiden' (mei) is a term for a younger sister. In the conduct of a younger sister, nothing is as good as serving as a secondary bride. Just as an heir who is the ruler's son, though young, does not act recklessly — so a younger sister serving as a secon",
+     "2": "Although it has lost its proper position, it dwells within and occupies the center. The one-eyed can still see — this is sufficient to preserve constancy. Being within and treading in the center, and able to keep to constancy, hence it is beneficial for a secluded person's Correctness.",
+     "3": "The mistress of the household still remains, yet she seeks to advance. The advance does not meet the right time, hence there is waiting. She cannot advance, so she returns to wait for the right time, and only then goes forth as a secondary bride.",
+     "4": "To go to another with an improper position and no corresponding line — one must wait until the other's way is exhausted and there is no one else to engage with, and only then can one go. Hence delaying the date and postponing the marriage, waiting for the right time.",
+     "5": "'Sleeves' (mei) are the garment sleeves used for ceremonial deportment. 'The sovereign's sleeves' refers to the one favored by Di Yi, which is the fifth line. Being adorned and honored by Di Yi, hence it is called 'the sovereign's sleeves.' Her match is at Nine in the Second. Dui is the youngest and Zhen is the eldest; for the eldest to follow the youngest is not as fine as for the youngest to fol",
+     "6": "The sheep refers to the third line. Occupying the extremity of the hexagram, looking up there is nothing to receive from above, and below there is no corresponding line. As a woman receiving a command, the basket is empty and nothing is given to her. As a man issuing a command downward, one slaughters the sheep but there is no blood. Slaughtering the sheep with no blood means there is no response "
+    }
+   },
+   "judgment": "Advancing: adverse. No direction is supported.",
+   "image": "Thunder above the lake: the marrying maiden. The realized person accordingly understands the transitory through the permanence of the end.",
+   "lineTexts": [
+    "The marrying maiden as a junior wife. The lame who can still walk. Advancing resolves well.",
+    "The one-eyed who can still see. The sustained orientation of a solitary person is supported.",
+    "The marrying maiden as a servant. Returns to marry as a junior wife.",
+    "The marrying maiden exceeds the appointed time. A delayed marriage has its moment.",
+    "Emperor Yi gave his maiden daughter in marriage. The princess's sleeves were not as fine as the attendant's. The moon nearly full resolves well.",
+    "The woman holds the basket without fruit. The man slaughters the sheep without blood. No direction is supported."
+   ],
+   "copy": {
+    "hook": "No power, no way out?",
+    "meaning": [
+     "Marrying Maiden\nsays: see the end.",
+     "This part\nwon’t last."
+    ],
+    "question": "What does the\nend look like?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 55,
+   "name": "Abundance",
+   "lines": "101100",
+   "trigrams": {
+    "lower": "fire",
+    "upper": "thunder"
+   },
+   "places": [
+    "in",
+    "in",
+    "in",
+    "out",
+    "out",
+    "in"
+   ],
+   "answering": [
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [],
+    "judgmentMaster": {
+     "zh": [
+      "為天下之主"
+     ],
+     "en": []
+    },
+    "judgment": "What is great and successful is what the king can attain.\n\nThe meaning of Feng is to broaden and expand what is subtle and minute, and to open up what is hidden and stagnant. To be the sovereign of all under heaven while allowing the subtle and hidden not to attain success means that worry has not yet ceased. Therefore, only upon attaining abundance and success can one be free from worry. Employing the virtue of abundance, success, and freedom from worry, one should dwell at the center of heaven to illuminate everywhere. Therefore it says 'it is fitting to be like the sun at midday.'",
+    "lines": {
+     "1": "Dwelling at the beginning of Feng, its counterpart is in the fourth position. Yang going to yang, brilliance joined with movement—they are able to magnify and enlarge each other. Xun means 'equal.' Though equal, there is no blame; to go forth brings esteem. The first and fourth are both yang lines; hence they are called equal.\n\nIf equality is exceeded, there is contention; in their interaction, th",
+     "2": "Bu is a covering that dims and obstructs light—a thing that blocks radiance. Dwelling in a time of brilliance and movement yet unable to make oneself abundant through the virtue of radiant greatness—already situated within the inner trigram, and moreover a yin line dwelling in a yin position—what is made abundant is the screen, dark with nothing visible. Hence it says 'he makes abundant his screen",
+     "3": "Pei is a pennant curtain, used to ward off bright light. Mei is a faint, dim illumination. Its correspondence is with Top Six; its inclination is toward yin. Though better than a yin line dwelling in a yin position, it is still insufficient to escape darkness. What is made abundant is the curtain; this is what 'at midday he sees tiny stars' means. In applying brilliance, one merely sees tiny stars",
+     "4": "A yang line dwelling in a yin position—this is making abundant his screen of grass. Obtaining the first line to bring forth brilliance—the equal lord brings good fortune.",
+     "5": "With the substance of yin, it comes to take up the honored yang position. Able to make itself radiant and great, it makes its virtue luminous and manifest, thereby obtaining celebration and praise.",
+     "6": "Wu (roof/house) is a thing that shelters and shades. A yin line dwelling at the extreme and furthest outside, not treading upon a proper position—one who deeply hides oneself in seclusion, cutting off all traces and concealing oneself in the depths. Having made abundant his roof and further screened his household—the roof thick and the household covered—the darkness is extreme. Though one peers th"
+    }
+   },
+   "judgment": "Fulfillment. The king attains it. Do not worry. It befits the sun at midday.",
+   "image": "Thunder and lightning both arrive: abundance. The realized person accordingly decides disputes and carries out punishments.",
+   "lineTexts": [
+    "Meeting one's equal counterpart. Though it lasts ten days, no fault. Going forward has merit.",
+    "So abundant are the screens that the Big Dipper is visible at midday. Going forward brings suspicion and distrust. Having sincerity and manifesting it resolves well.",
+    "So abundant are the banners that the Milky Way is visible at midday. Breaking the right arm. No fault.",
+    "So abundant are the screens that the Big Dipper is visible at midday. Meeting the hidden master. Resolves well.",
+    "The pattern emerges. There is celebration and praise. Resolves well.",
+    "So abundant his dwelling. Screening off his household. Peering through the gate — desolate, no one there. For three years, seeing no one. Adverse."
+   ],
+   "copy": {
+    "hook": "At your peak and worried?",
+    "meaning": [
+     "Abundance says:\ndon’t worry.",
+     "Be the sun\nat noon."
+    ],
+    "question": "What will you\ndecide now?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 57,
+   "name": "The Gentle",
+   "lines": "011011",
+   "trigrams": {
+    "lower": "wind",
+    "upper": "wind"
+   },
+   "places": [
+    "out",
+    "out",
+    "in",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [],
+   "wangbi": {
+    "masters": [],
+    "judgment": "Taking Xun (compliance) entirely as its virtue, therefore it achieves only small success. Both upper and lower trigrams are Xun, so none disobey the commands, and thus orders are carried out. Therefore, at the time of reiterating commands and carrying out affairs, those above and below cannot but be compliant.\n\nWhen one proceeds with compliance and deference, nothing resists.\n\nWhen a great person employs this, the Way flourishes all the more.",
+    "lines": {
+     "1": "Situated at the beginning of the command, this is one who cannot yet submit to the command, hence the advancing and retreating. To enforce commands and bring the deviant into line, nothing is better than a military person—hence the benefit in a military person's correctness to bring order.\n\nWith a disposition of compliant submission, one advances and retreats in doubt and apprehension.",
+     "2": "Situated at the center of the Xun trigram, already in a lower position, and further having a yang line occupying a yin position—the humility and compliance are extreme. Hence it says 'compliant beneath the bed.' When humility is extreme and correctness is lost, one falls into blame and error. If one can, by virtue of occupying the central position, direct this utmost humility toward the spirits an",
+     "3": "'Pin' (頻) means furrowed and frowning—unhappy and exhausted, referring to what is done out of compulsion. Being firm and correct yet ridden upon by the fourth line, its intent is exhausted and yet it must comply. This is why there is humiliation.",
+     "4": "Riding upon the firm is cause for regret. However, it obtains its proper position and serves the fifth line; in its humility it finds one to serve. Although the yielding controls the firm, it relies on the honored one and treads on correctness. Using this to carry out commands, it will surely be able to capture the violent and keep the inhumane at a distance. For catching game that is beneficial, ",
+     "5": "Having a yang line occupy a yang position diminishes humble compliance. Yet by holding to centrality and correctness to proclaim commands, nothing disobeys—hence it says 'correctness brings auspiciousness, regret vanishes, nothing is unfavorable.' When transformation does not proceed gradually and one abruptly applies firmness and directness to things, at first none are pleased—hence 'no beginning",
+     "6": "Situated at the extreme of Xun, the compliance is excessive and goes too far—hence it says 'compliant beneath the bed.' The axe is that by which one cuts decisively. Excessive compliance loses correctness, and one loses the means to cut decisively—hence it says 'loses the resources and the axe; correctness brings misfortune.'"
+    }
+   },
+   "judgment": "Small fulfillment. Going forward is supported. Seeing the great person is supported.",
+   "image": "Following winds: the gentle. The realized person accordingly reiterates commands and carries out undertakings.",
+   "lineTexts": [
+    "Advancing and retreating. The warrior's sustained orientation is supported.",
+    "Penetration beneath the bed. Using scribes and diviners in great number. Resolves well. No fault.",
+    "Repeated penetration. Friction.",
+    "Deviation detected dissolves. In the field, capturing three kinds of game.",
+    "Sustained orientation resolves well. Deviation detected dissolves. Nothing that is not supported. No beginning, but an end. Three days before the change, three days after. Resolves well.",
+    "Penetration beneath the bed. Losing resources and the ax. Sustained orientation: adverse."
+   ],
+   "copy": {
+    "hook": "Said it once,\nnothing changed?",
+    "meaning": [
+     "The Gentle says:\nsay it again.",
+     "Quiet and steady\ngets through."
+    ],
+    "question": "What’s worth\nrepeating today?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 59,
+   "name": "Dispersion",
+   "lines": "010011",
+   "trigrams": {
+    "lower": "water",
+    "upper": "wind"
+   },
+   "places": [
+    "out",
+    "out",
+    "out",
+    "in",
+    "in",
+    "out"
+   ],
+   "answering": [
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為渙之主"
+      ],
+      "en": [
+       "As the master of Dispersion, only the king may dwell in this position, and only then is there no blame"
+      ]
+     }
+    ],
+    "judgment": "The second line, being firm, comes to dwell on the inside and is not exhausted by danger. The fourth line, being yielding, obtains its position on the outside and is in accord with those above. The firm within faces no difficulty of danger and entrapment; the yielding outside faces no discord of opposition and rebellion—hence there is Success, it is beneficial to cross the great river, and beneficial to be correct. In general, when the firm achieves free expression without the encumbrance of fear and crookedness, and the yielding treads upon correctness and shares its purpose with the firm, then in all cases there is Success, benefit in crossing the great river, and benefit in correctness.\n\nThe king is thereby in the midst of Dispersion, hence he can establish the ancestral temple.\n\nRiding on wood means crossing through difficulty. Wood is specifically the means for crossing the river. To cross difficulty while constantly using the Way of Dispersion will certainly bring success.",
+    "lines": {
+     "1": "Huan means to scatter. Being at the beginning of scattering, the divergence and dispersal are not yet severe; hence one can travel freely, attaining one's purpose while avoiding difficulty. One does not wait until the danger is extreme before fleeing; hence it says 'using rescue, the horse is strong—auspicious.'\n\nObserving the difficulty and then acting, not contending with danger—hence it says 'c",
+     "2": "Ji (bench) is that which supports things—it refers to the first line. The second line has no corresponding line, and is paired with the first. The first obtains the Way of Dispersion; scattering and rushing, it finds its place of rest. Hence regret vanishes.",
+     "3": "The meaning of Dispersion is that the inside is dangerous while the outside is secure. Dispersing one's own self with one's purpose directed outward, not clinging stubbornly to what one holds, and sharing purpose with the firm—hence one attains no regret.",
+     "4": "Having crossed beyond danger and difficulty, obtaining its position and embodying Xun (compliance), sharing its purpose with the fifth line, inwardly managing confidential affairs and outwardly proclaiming transformative commands—hence it is able to disperse the group's dangers and thereby make its Way shine. However, being in a lowly and compliant position, it cannot act on its own authority. In ",
+     "5": "Occupying the honored position and treading upon correctness, dwelling in the center of Xun (compliance), sweating forth the great proclamation to sweep away dangers and hardships. As the master of Dispersion, only the king may dwell in this position, and only then is there no blame.\n\nThe correct position cannot be lent to another.",
+     "6": "Ti means distant. Being farthest from harm and not close to aggression and attack, one disperses one's grief and sorrow and goes far away. Dispersing troubles in a place far from harm—who would assign blame!"
+    }
+   },
+   "judgment": "Fulfillment. The king approaches the ancestral temple. Crossing the great river is supported. Sustained orientation is supported.",
+   "image": "Wind moves over water: dispersion. The ancient kings accordingly made offerings to heaven and established temples.",
+   "lineTexts": [
+    "Using a strong rescue horse: resolves well.",
+    "In the dispersion, rushing to one's support. Deviation detected dissolves.",
+    "Dispersing the self. No deviation detected.",
+    "Dispersing one's group. Supremely resolves well. Dispersion creates accumulation — not what ordinary thinking would expect.",
+    "Dispersion like sweat — the great cry. Dispersion. The king's residence: no fault.",
+    "Dispersing one's blood. Departing, keeping distant, going out. No fault."
+   ],
+   "copy": {
+    "hook": "People drifting apart?",
+    "meaning": [
+     "Dispersion says:\ndon’t argue.",
+     "Remind them where\nthey come from."
+    ],
+    "question": "What do you\nall share?",
+    "lesson": null
+   }
+  },
+  {
+   "number": 60,
+   "name": "Limitation",
+   "lines": "110010",
+   "trigrams": {
+    "lower": "lake",
+    "upper": "water"
+   },
+   "places": [
+    "in",
+    "out",
+    "out",
+    "in",
+    "in",
+    "in"
+   ],
+   "answering": [
+    "1-4"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為節之主不失其中"
+      ],
+      "en": [
+       "Occupying the proper position and dwelling in the center, as the master of regulation one does not lose the mean"
+      ]
+     }
+    ],
+    "judgment": "Kan is yang and Dui is yin. Yang is above and yin is below; the firm and yielding are distinguished. When firm and yielding are distinguished without disorder, and the firm attains the center to serve as the master of regulation, this is the meaning of jie. The greatest form of regulation is none other than the distinction of firm and yielding, the differentiation of male and female.\n\nWhen regulation becomes excessively bitter, then things cannot endure it. When things cannot endure it, then it cannot be maintained as correct.\n\nOnly then does it lead to success. Without joy yet traversing danger, exceeding the center in making regulations—then the Way reaches exhaustion.",
+    "lines": {
+     "1": "Being at the beginning of Regulation, this is one who will bring order to what has been scattered and establish institutional measures. Therefore one discerns clearly between what is open and what is blocked, considers carefully the dangers of deception, does not go out through the door of the courtyard, and maintains cautious secrecy without lapse. Only then are affairs brought to completion with",
+     "2": "The first line has already created the regulations; by the time one reaches the second, it is fitting to promulgate those measures. Yet one deliberately conceals them, missing the critical moment to the utmost degree, and consequently they fall into neglect. Therefore, not going out through the gate of the courtyard leads to misfortune.",
+     "3": "Ruo is a particle. Occupying a yang position with a yin line, and a yielding line riding atop a firm line, one violates the Way of regulation to the point of mournful lamentation. This is brought about by oneself; there is no one else to blame. Hence it says 'no blame.'",
+     "4": "Having attained the proper position and being compliant, one does not alter one's regulation and is thereby able to achieve success. Serving the one above in this manner, one attains the Way.",
+     "5": "Occupying the proper position and dwelling in the center, as the master of regulation one does not lose the mean. This is what is meant by 'not wasting resources and not harming the people.' To regulate without bitterness—if not sweet, then what? Proceeding forth by this method, going forth there is esteem.",
+     "6": "Exceeding the center of regulation to the point of reaching the utmost extreme—this is bitter regulation. If one applies this to governing others*, things cannot endure it; this is the misfortune of correctness. If one applies this to cultivating oneself, one's conduct is free from recklessness, and therefore regret vanishes."
+    }
+   },
+   "judgment": "Fulfillment. Bitter limitation cannot be sustained.",
+   "image": "Water above the lake: limitation. The realized person accordingly creates measures and standards, and examines the nature of character and conduct.",
+   "lineTexts": [
+    "Not going out past the door and courtyard. No fault.",
+    "Not going out past the gate and courtyard. Adverse.",
+    "Without limitation — lamenting. No fault.",
+    "Contented limitation. Fulfillment.",
+    "Sweet limitation. Resolves well. Going forward has merit.",
+    "Bitter limitation. Sustained orientation: adverse. Deviation detected dissolves."
+   ],
+   "copy": {
+    "hook": "Saying yes to everything?",
+    "meaning": [
+     "Limitation says:\nset limits.",
+     "Firm, but\nnot bitter."
+    ],
+    "question": "Where’s your\nlimit?",
+    "lesson": "A lake holds only\nso much water."
+   }
+  },
+  {
+   "number": 64,
+   "name": "Before Completion",
+   "lines": "010101",
+   "trigrams": {
+    "lower": "water",
+    "upper": "fire"
+   },
+   "places": [
+    "out",
+    "out",
+    "out",
+    "out",
+    "out",
+    "out"
+   ],
+   "answering": [
+    "1-4",
+    "2-5",
+    "3-6"
+   ],
+   "wangbi": {
+    "masters": [
+     {
+      "line": 5,
+      "zh": [
+       "為未濟之主"
+      ],
+      "en": [
+       "Dwelling in the honored position with yielding, situated at the fullness of cultural brilliance, serving as the ruler of Not Yet Across—therefore one must be correct and only then is there good fortune"
+      ]
+     }
+    ],
+    "judgment": "By dwelling in the center with yielding, it does not oppose the firm. Being able to receive the firm and strong, it therefore attains success.\n\nA small fox cannot wade across a great river; it must wait until the water is nearly gone before it can cross. In the time of Not Yet Across, one must be firm and strong to extricate from difficulty, and only then can one cross. Crossing only when nearly done, it has not yet emerged from the midst of danger.\n\nA small fox, though able to cross, has no strength to spare. About to cross yet wetting its tail, its strength is exhausted at this point and it cannot continue to the end. The danger and difficulty are still not enough to be crossed. One who would cross what is Not Yet Across must have strength to spare.\n\nThe positions are not proper, therefore it is Not Yet Across. The firm and yielding correspond, therefore it can be crossed.",
+    "lines": {
+     "1": "Situated at the beginning of Not Yet Across, dwelling at the very bottom of danger—one who cannot cross. Yet wishing to go to its correspondent, advancing would drown the self. The beginning of Not Yet Across begins from the Top Six of Already Across. If wetting the head still does not make one turn back, and it reaches the point of wetting the tail, this shows one who does not know where to stop.",
+     "2": "Its substance is firm and it treads the center, corresponding with the fifth. The fifth is yin and yielding in substance, corresponding with and relying upon it rather than taking charge itself. Dwelling in the time of Not Yet Across, situated in the midst of danger, with the quality of firm centrality, it is entrusted and relied upon to rescue from peril and manage difficulties amid distress and ",
+     "3": "With the quality of yin, it has lost its proper position and dwells in danger—one who cannot save itself. With an improper position, its strength is insufficient to save itself; if it seeks to advance, it will lose its life. Hence it says 'to advance brings misfortune.' The second is able to rescue from difficulty, and this line is close beside it. If one abandons self-reliance and entrusts onesel",
+     "4": "Situated in the time of Not Yet Across, having emerged above the danger, dwelling at the beginning of cultural brilliance, with a firm quality of substance, and close to the supreme ruler. Although it treads a position that is not its own, its resolve is set upon correctness, and thus it is fortunate and regret vanishes. Its resolve is carried out and nothing restrains its awesome power, hence it ",
+     "5": "Dwelling in the honored position with yielding, situated at the fullness of cultural brilliance, serving as the ruler of Not Yet Across—therefore one must be correct and only then is there good fortune; with good fortune one then attains no regret. Now, with the quality of yielding compliance and cultural brilliance, dwelling in the honored position, delegating to the capable without laboring ones",
+     "6": "At the extreme of Not Yet Across, it reverts to Already Across. The Way of Already Across is that those entrusted with responsibilities are fitting. When those entrusted are fitting, one can trust them without doubt and enjoy leisure oneself. Hence it says 'there is sincerity in drinking wine, no blame.' Because one is able to trust others, one attains ease and comfort without worrying that affair"
+    }
+   },
+   "judgment": "Fulfillment. The little fox has almost crossed. Wetting its tail. No direction is supported.",
+   "image": "Fire above water: before completion. The realized person accordingly carefully distinguishes things and places them in their proper position.",
+   "lineTexts": [
+    "Wetting the tail. Friction.",
+    "Dragging the wheels. Sustained orientation resolves well.",
+    "Before completion, advancing is adverse. Crossing the great river is supported.",
+    "Sustained orientation resolves well. Deviation detected dissolves. Shock used to campaign against the barbarous region. Three years, and great states award their rewards.",
+    "Sustained orientation resolves well. No deviation detected. The light of the realized person. Having sincerity: resolves well.",
+    "Having sincerity amid drinking wine. No fault. But wetting the head — even having sincerity, one loses it thereby."
+   ],
+   "copy": {
+    "hook": "So close to done?",
+    "meaning": [
+     "Before Completion:\nnot yet.",
+     "Sort things out\nbefore you move."
+    ],
+    "question": "What goes\nwhere?",
+    "lesson": "Almost across,\nthe fox gets wet."
+   }
+  }
+ ]
+}
