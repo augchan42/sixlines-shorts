@@ -96,7 +96,9 @@ if (args?.candidates) {
   }))
 }
 
-let open = null
+// With args {open: [decision, ...]}, start from those decisions instead of the input file's
+// (e.g. series/lessons.json's current text for the choices still under 8).
+let open = args?.open ?? null
 const rounds = []
 const final = {}
 for (let round = 1; round <= ROUNDS; round++) {
