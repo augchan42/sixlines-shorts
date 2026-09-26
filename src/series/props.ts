@@ -33,7 +33,8 @@ export type SeriesRow = {
       // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
       readout?: { mark: number[]; finding?: string };
     };
-    // false leaves out the ~DISNEYFAN credit (a special).
+    // true adds the ~DISNEYFAN credit; left out by default since 2026-09-26, when the user
+    // said the shorts had moved far from her edit.
     credit?: boolean;
     tags?: string[];
     pace?: "even" | "held";
@@ -142,7 +143,7 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     screens: row.copy.lesson ? [] : screensFor(n),
     lesson: lessonFor(row),
     pace: row.copy.pace ?? "even",
-    credit: row.copy.credit ?? true,
+    credit: row.copy.credit ?? false,
     ...override,
   };
   // The clips follow the merged tempo and drop, so an override that moves either gets its own clips.

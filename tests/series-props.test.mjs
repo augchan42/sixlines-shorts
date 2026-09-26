@@ -101,7 +101,11 @@ test("a moon lesson plays its Blender clip for the whole lesson, with the labels
   assert.equal(p.lesson.clip, moonClip(row.lines, 100, 16, labels));
   assert.deepEqual(p.lesson.labels, labels);
   assert.equal(p.credit, false);
-  assert.equal(seriesProps(row).credit, true);
+});
+
+test("a short has no ~DISNEYFAN credit unless its copy asks for one: the series has moved far from her edit", () => {
+  assert.equal(seriesProps(row).credit, false);
+  assert.equal(seriesProps({ ...row, copy: { ...row.copy, credit: true } }).credit, true);
 });
 
 test("a character lesson plays the character's clip, 4 beats longer than its drawing: a beat to see the finished character, then 3 for the sentence", () => {
