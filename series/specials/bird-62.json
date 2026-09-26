@@ -30,7 +30,7 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Fly low.\nDo the small thing.",
+   "text": "Fly low.\nDo small things.",
    "source": "commentary/en/62.json#judgment.synthesis",
    "scene": {
     "script": "bird",
