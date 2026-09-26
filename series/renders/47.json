@@ -1,10 +1,10 @@
 {
  "hexagram": 47,
- "rendered": "2026-09-26T10:31:53.164Z",
- "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
+ "rendered": "2026-09-26T11:59:39.158Z",
+ "commit": "3eb2995dd7aa0e82203c87c4a5be184f5f54bd52",
  "clean": true,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 30.058667,
+ "shareKbps": 5993,
  "props": {
   "hexagram": {
    "number": 47,
@@ -20,11 +20,11 @@
     0
    ]
   },
-  "bpm": 120,
+  "bpm": 100.05,
   "firstBeat": 0,
-  "music": "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
-  "musicStart": 98.023,
-  "drop": 14,
+  "music": "local/music/pick22-cinematic-dark-synthwave.mp3",
+  "musicStart": 163.431,
+  "drop": 14.394,
   "hook": "Speaking up and nobody listens?",
   "meaning": [
    "Oppression says:\nhold your purpose.",
@@ -40,25 +40,25 @@
    "kind": "character",
    "text": "Boxed in?\nHold to your aim.",
    "beats": 14,
-   "clip": "assets/3d/character-47-120bpm-14b-1vzav8o.mp4"
+   "clip": "assets/3d/character-47-100.05bpm-14b-1vzav8o.mp4"
   },
   "pace": "even",
   "credit": true,
-  "hexagramClip": "assets/3d/hexagram-010110-120bpm-8b.mp4",
+  "hexagramClip": "assets/3d/hexagram-010110-100.05bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-010110-120bpm-9b.mp4",
+   "clip": "assets/3d/endcard-snap-010110-100.05bpm-9b.mp4",
    "mode": "snap"
   }
  },
  "files": {
-  "local/music/pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3": "f2f4faed48d4ecb9182182597a43b462e3a511ab12bcf058184fd46a17cf461e",
-  "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
-  "assets/3d/hexagram-010110-120bpm-8b.mp4": "d747a89a32d3a5fbd332a47f8aaa83bb320b9b9007141b477656f29d80dfe0a8",
-  "assets/3d/endcard-snap-010110-120bpm-9b.mp4": "f1175b5819c6e4ee55393c7fdef4decbc3b761f82aff32c942f3631044fc7629",
-  "assets/3d/character-47-120bpm-14b-1vzav8o.mp4": "ce9760dc1c6d630e508a5330f58bb76dded49a684f82815645705eed79aa0456",
+  "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+  "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+  "assets/3d/hexagram-010110-100.05bpm-8b.mp4": "cba983350510978ad4df4fad27ec361f7dc0543f13a7e068ced77a82c20d31cb",
+  "assets/3d/endcard-snap-010110-100.05bpm-9b.mp4": "83de305710c409b9a48ea8d70146f410f82a0dffb06c7996f1b95a93e374e380",
+  "assets/3d/character-47-100.05bpm-14b-1vzav8o.mp4": "31b88833f83cc4a67d03ccbe834feb5757e921ceb2e5ac5b92d296eab0f419a3",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/series/47-kun/short.mp4": "97790c4977f4ee8e07c4158b4a29b3297d1a17b8d7270d540e0e17a2e3906bce",
-  "out/series/47-kun/share.mp4": "ddb408380249dfb22be1c7bed21ebdc75b1f63ce00366056670eb897e1260ce8"
+  "out/series/47-kun/short.mp4": "0ac38a279597b4d8e52f16be13b4807b78965cb65dc750dce155bf6f7f7de3b9",
+  "out/series/47-kun/share.mp4": "bad5dce6f10464e437ef6726592ede7779e70f70dc49ef19fced994bab458ae1"
  }
 }
