@@ -102,7 +102,9 @@
      "beat": 30,
      "text": "Found rot?\nClean it out."
     }
-   ]
+   ],
+   "drop": 260,
+   "place": "top"
   },
   {
    "beats": [

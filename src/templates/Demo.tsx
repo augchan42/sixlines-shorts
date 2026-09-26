@@ -17,7 +17,8 @@ type Shot =
   | { beats: [number, number]; kind: "rain"; text: string }
   | ({ beats: [number, number]; kind: "live"; take: string; from: number; rate: number; zoom?: number; focus?: number; place?: "top" | "bottom" } & Cards)
   | { beats: [number, number]; kind: "hexagram"; clip: string; text: string }
-  | ({ beats: [number, number]; kind: "clip"; clip: string } & Cards)
+  // `drop` moves the drawing down (px) to clear room above it for `place: "top"` cards.
+  | ({ beats: [number, number]; kind: "clip"; clip: string; drop?: number; place?: "top" | "bottom" } & Cards)
   | { beats: [number, number]; kind: "endcard"; clip: string }
   | { beats: [number, number]; kind: "credit"; name: string };
 
@@ -117,9 +118,9 @@ export const Demo: React.FC<DemoProps> = (props) => {
                 {s.kind === "clip" && (
                   <>
                     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-                      <OffthreadVideo src={staticFile(s.clip)} muted style={{ width: "100%", height: "100%" }} />
+                      <OffthreadVideo src={staticFile(s.clip)} muted style={{ width: "100%", height: "100%", transform: `translateY(${s.drop ?? 0}px)` }} />
                     </AbsoluteFill>
-                    {cards(s, "bottom")}
+                    {cards(s, s.place ?? "bottom")}
                   </>
                 )}
                 {s.kind === "endcard" && <EndCard3D clip={s.clip} />}
