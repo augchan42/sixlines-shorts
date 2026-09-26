@@ -1,0 +1,213 @@
+{
+ "demo": "walkthrough-zh-hant",
+ "rendered": "2026-09-26T06:34:21.326Z",
+ "commit": "3c23c3ae01f2e0ca5d0fe9a9402208737e49f4ba",
+ "clean": false,
+ "seconds": 50.218667,
+ "shareKbps": 3535,
+ "props": {
+  "note": "The Six Lines demo walkthrough in Traditional Chinese (the English is walkthrough.json, the Simplified walkthrough-zh-hans.json): music and burned-in text, no voice. The plan is series/critic/demo/review-2.md (changed timeline, 8/10). Rendered by `node scripts/demo.mjs`. Beats are at the music's tempo. A live shot plays a take under public/ from `from` seconds at `rate`; `zoom` and `focus` (0 top, 1 bottom) crop into the phone screen, and `place` puts the text at the top or bottom.",
+  "bpm": 82.5,
+  "firstBeat": 0,
+  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+  "musicStart": 34.934,
+  "hexagram": {
+   "number": 18,
+   "zh": "蠱",
+   "pinyin": "Gǔ",
+   "name": "整治積弊",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  "takes": {
+   "take16": {
+    "file": "local/demo/take16-zh-hant-30fps.mp4",
+    "sha256": "21d8c7515086045aa3e2fa138d2bfc41b6bd60452f2704ef4b084a85c31bd826",
+    "from": {
+     "file": "local/demo/take16-zh-hant.mp4",
+     "sha256": "b0e9c4d396531dcdfd18c761c3756e13d695c17c55eaf6938113666f42110d9d",
+     "how": "mobile-mcp screen recording; variable frame rate, converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+    },
+    "recorded": "2026-09-26, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios PR #196 (merged b23cd1ea: Classical text follows the chosen script, so a Simplified UI no longer shows Traditional characters), Matrix skin, Gua on 8bitoracle-next 9fbb652 (PR #286): the Traditional prompt no longer lets 預測 or 占卜 into the proof section, which now ends 則此解讀有誤. Traditional Chinese (-appLanguage zh-Hant). Question typed, 18 entered by hand with no changing lines, one fresh Gua interpretation. Take 11 was abandoned (hexagram 4 left in the picker made 18 the changing-to hexagram); take 12 had 預測 and 占卜 in the proof section (before PR #286).",
+    "moments": {
+     "question typed": "4-8",
+     "18 entered": "10-34",
+     "Gua rain": "48-59",
+     "interpretation": "60-145",
+     "what would prove this wrong, with Wang Bi below": "146-148",
+     "Wang Bi": "150-156",
+     "what would prove this wrong": "158-170"
+    }
+   },
+   "take17": {
+    "file": "local/demo/take17-zh-hant-note-30fps.mp4",
+    "sha256": "691d48bd4d09453c3a7d20a15466844d3c76f0a9ceb2ae7ae29ca47acd106467",
+    "from": {
+     "file": "local/demo/take17-zh-hant-note.mp4",
+     "sha256": "35112b09d23e70484d6da0fe5bf398d9dfcfb76a5e0cebccd283e17a974b12b1",
+     "how": "mobile-mcp screen recording; variable frame rate, converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+    },
+    "recorded": "2026-09-26, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios PR #196 (merged b23cd1ea: Classical text follows the chosen script, so a Simplified UI no longer shows Traditional characters), Matrix skin, Gua on 8bitoracle-next 9fbb652 (PR #286), Traditional Chinese. The take 16 reading opened from the Journal before recording (the Journal list was not recorded), scrolled to the note, a note typed and saved, then scrolled up to what would prove the reading wrong and held there, then Wang Bi.",
+    "moments": {
+     "note field opened": "12.5",
+     "note typed": "14.5-16",
+     "note saved": "21.5",
+     "what would prove this wrong, held": "29-34",
+     "Wang Bi": "37-50"
+    }
+   }
+  },
+  "shots": [
+   {
+    "beats": [
+     0,
+     4
+    ],
+    "kind": "rain",
+    "text": "我要接手爸媽的店，\n可是生意越來越差。\n該從哪裡改起？"
+   },
+   {
+    "beats": [
+     4,
+     12
+    ],
+    "kind": "live",
+    "take": "take16",
+    "from": 3,
+    "rate": 1.25,
+    "zoom": 1,
+    "focus": 0,
+    "texts": [
+     {
+      "beat": 4,
+      "text": "不是簡單\n回答是否。"
+     },
+     {
+      "beat": 8,
+      "text": "讓你理解及\n想清楚事情。"
+     }
+    ]
+   },
+   {
+    "beats": [
+     12,
+     18
+    ],
+    "kind": "hexagram",
+    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
+    "text": "六爻成卦：64 卦之一。"
+   },
+   {
+    "beats": [
+     18,
+     34
+    ],
+    "kind": "clip",
+    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
+    "texts": [
+     {
+      "beat": 18,
+      "text": "這個字\n是一幅畫。"
+     },
+     {
+      "beat": 26,
+      "text": "碗裡有蟲。"
+     },
+     {
+      "beat": 30,
+      "text": "發現腐敗之處，\n就要清除。"
+     }
+    ],
+    "drop": 260,
+    "place": "top"
+   },
+   {
+    "beats": [
+     34,
+     39
+    ],
+    "kind": "live",
+    "take": "take16",
+    "from": 60.5,
+    "rate": 1,
+    "zoom": 1,
+    "focus": 0,
+    "text": "解讀這一卦，\n明白你的店\n所在處境。"
+   },
+   {
+    "beats": [
+     39,
+     44
+    ],
+    "kind": "live",
+    "take": "take16",
+    "from": 151,
+    "rate": 1,
+    "text": "王弼的注，\n寫於三世紀。",
+    "zoom": 1,
+    "focus": 0
+   },
+   {
+    "beats": [
+     44,
+     50
+    ],
+    "kind": "live",
+    "take": "take17",
+    "from": 29.2,
+    "rate": 1,
+    "zoom": 1,
+    "focus": 0.1,
+    "text": "解讀也寫明：\n怎樣算它錯了。",
+    "place": "top"
+   },
+   {
+    "beats": [
+     50,
+     56
+    ],
+    "kind": "live",
+    "take": "take17",
+    "from": 18.5,
+    "rate": 1.5,
+    "zoom": 1,
+    "focus": 0.5,
+    "text": "你來決定。\n然後記下結果。",
+    "place": "top"
+   },
+   {
+    "beats": [
+     56,
+     65
+    ],
+    "kind": "endcard",
+    "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
+   },
+   {
+    "beats": [
+     65,
+     69
+    ],
+    "kind": "credit",
+    "name": "~DISNEYFAN"
+   }
+  ],
+  "lang": "zh-Hant"
+ },
+ "files": {
+  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+  "local/demo/take16-zh-hant-30fps.mp4": "21d8c7515086045aa3e2fa138d2bfc41b6bd60452f2704ef4b084a85c31bd826",
+  "local/demo/take17-zh-hant-note-30fps.mp4": "691d48bd4d09453c3a7d20a15466844d3c76f0a9ceb2ae7ae29ca47acd106467",
+  "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
+  "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
+  "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
+  "out/demo/walkthrough-zh-hant/short.mp4": "3ca706caf965478bfaf58964599dd45f122a920be6079289ab82fcf74e70249f",
+  "out/demo/walkthrough-zh-hant/share.mp4": "09e09988d395a0a7d0d304008f128d388943c61f504a12b3c2ef159a288b86cd"
+ }
+}
