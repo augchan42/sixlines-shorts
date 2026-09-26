@@ -1,0 +1,220 @@
+{
+ "demo": "walkthrough-zh-hans",
+ "rendered": "2026-09-26T03:55:56.253Z",
+ "commit": "4374a51ab73fc1d6fb7392c9d768de9a0415ce7f",
+ "clean": false,
+ "seconds": 50.218667,
+ "shareKbps": 3535,
+ "props": {
+  "note": "The Six Lines demo walkthrough in Simplified Chinese (the English is walkthrough.json): music and burned-in text, no voice. The plan is series/critic/demo/review-2.md (changed timeline, 8/10). Rendered by `node scripts/demo.mjs`. Beats are at the music's tempo. A live shot plays a take under public/ from `from` seconds at `rate`; `zoom` and `focus` (0 top, 1 bottom) crop into the phone screen, and `place` puts the text at the top or bottom.",
+  "bpm": 82.5,
+  "firstBeat": 0,
+  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+  "musicStart": 34.934,
+  "hexagram": {
+   "number": 18,
+   "zh": "蛊",
+   "pinyin": "Gǔ",
+   "name": "整治积弊",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  "takes": {
+   "take8": {
+    "file": "local/demo/take8-zh-hans-30fps.mp4",
+    "sha256": "db314f2fccc910b9fb4212dc67aa3022dde8e798d7d2ce1e65296ca47131edc0",
+    "from": {
+     "file": "local/demo/take8-zh-hans.mp4",
+     "sha256": "0f644ea675adc1d7aeaca833a38f9b7c9965ad1a5147c2b72d29ca0fff789cba",
+     "how": "mobile-mcp screen recording; variable frame rate, converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+    },
+    "recorded": "2026-09-26, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios b459a31f, Matrix skin, Simplified Chinese (-appLanguage zh-Hans), Gua on 8bitoracle-next f944b498 (PR #285: the proof section follows the locale, \"…，则此解读有误\"). Question typed, 18 entered by hand with no changing lines, one fresh Gua interpretation. Takes 4-7 were abandoned: 4 had hexagram 5 left over in the picker, 5 got the English proof section (before PR #285), 6 crashed the app (SavedReading read after deletion in JournalTab), 7 got take 5's saved reading back.",
+    "moments": {
+     "question typed": "3-9",
+     "18 entered": "10-26",
+     "Gua rain": "33-44",
+     "interpretation": "45-67",
+     "what would prove this wrong, with Wang Bi below": "68-83"
+    }
+   },
+   "take9": {
+    "file": "local/demo/take9-zh-hans-note-30fps.mp4",
+    "sha256": "c72ae89a41a8e1ec9a35c8e2178a1ab0b02cb42b0130707c37cb13a2a8d4e2d3",
+    "from": {
+     "file": "local/demo/take9-zh-hans-note.mp4",
+     "sha256": "cd41b27b3aa44eb09e55bfb0c082fb8e6a0f04b2fe01f1b9dc91c9ae00aef0bd",
+     "how": "mobile-mcp screen recording; variable frame rate, converted with ffmpeg -vf fps=30,format=yuv420p -c:v libx264 -crf 16 for Remotion to seek it by time"
+    },
+    "recorded": "2026-09-26, iPhone 17 Pro Max simulator (iOS 26.2), sixlines-ios b459a31f, Matrix skin, Simplified Chinese (-appLanguage zh-Hans), Gua on 8bitoracle-next f944b498 (PR #285: the proof section follows the locale, \"…，则此解读有误\"). The take 8 reading opened from the Journal (the Journal list itself was not recorded), a note typed and saved, then scrolled back up through the reading.",
+    "moments": {
+     "note typed": "9-10",
+     "note saved": "19",
+     "interpretation": "28-37",
+     "what would prove this wrong": "38",
+     "Wang Bi": "39-48"
+    }
+   },
+   "take8-proof": {
+    "file": "local/demo/take8-zh-hans-proof-still.mp4",
+    "sha256": "3d27a7c3a0de659a83b170f82c85f17338ee4b3b8a2eec23d39aba912be1a64c",
+    "from": {
+     "file": "local/demo/take8-zh-hans-69.0s.png",
+     "sha256": "8296c5875bec6cbbba5068eb689b77d38252b36161da39c267901d7c9edc37cd",
+     "how": "frame at 69.0 s of take8-zh-hans-30fps.mp4 (ffmpeg -ss 69.0 -frames:v 1), looped for 8 s with ffmpeg -loop 1 -t 8 -vf fps=30,format=yuv420p -c:v libx264 -crf 16"
+    },
+    "recorded": "Take 8 held still on what would prove the reading wrong. Takes 8 and 9 scroll past the whole section in under a second. A recording of a hold on it (take10-zh-hans-proof.mp4, kept locally) has no frames for the hold, because the simulator recorder writes frames only when the screen changes, and a screenshot of it missed because the swipe was still scrolling."
+   }
+  },
+  "shots": [
+   {
+    "beats": [
+     0,
+     4
+    ],
+    "kind": "rain",
+    "text": "我要接手爸妈的店，\n但生意越来越差。\n该从哪里改起？"
+   },
+   {
+    "beats": [
+     4,
+     12
+    ],
+    "kind": "live",
+    "take": "take8",
+    "from": 3,
+    "rate": 1.25,
+    "zoom": 1,
+    "focus": 0,
+    "texts": [
+     {
+      "beat": 4,
+      "text": "这个 App\n不回答是或不是。"
+     },
+     {
+      "beat": 8,
+      "text": "它给你一个处境，\n让你想清楚。"
+     }
+    ]
+   },
+   {
+    "beats": [
+     12,
+     18
+    ],
+    "kind": "hexagram",
+    "clip": "assets/3d/hexagram-011001-82.5bpm-6b.mp4",
+    "text": "六爻成卦：64 卦之一。"
+   },
+   {
+    "beats": [
+     18,
+     34
+    ],
+    "kind": "clip",
+    "clip": "assets/3d/character-18-82.5bpm-17b-m0684s.mp4",
+    "texts": [
+     {
+      "beat": 18,
+      "text": "这个字\n是一幅画。"
+     },
+     {
+      "beat": 26,
+      "text": "碗里有虫。"
+     },
+     {
+      "beat": 30,
+      "text": "发现腐坏？\n清理掉。"
+     }
+    ]
+   },
+   {
+    "beats": [
+     34,
+     39
+    ],
+    "kind": "live",
+    "take": "take8",
+    "from": 45.5,
+    "rate": 1,
+    "zoom": 1,
+    "focus": 0,
+    "text": "解读把这一卦\n落到你的店上。"
+   },
+   {
+    "beats": [
+     39,
+     44
+    ],
+    "kind": "live",
+    "take": "take9",
+    "from": 40,
+    "rate": 1,
+    "text": "王弼的注，\n写于三世纪。",
+    "zoom": 1,
+    "focus": 0
+   },
+   {
+    "beats": [
+     44,
+     50
+    ],
+    "kind": "live",
+    "take": "take8-proof",
+    "from": 0,
+    "rate": 1,
+    "zoom": 1,
+    "focus": 0.1,
+    "text": "解读也写明：\n怎样算它错了。",
+    "place": "bottom"
+   },
+   {
+    "beats": [
+     50,
+     56
+    ],
+    "kind": "live",
+    "take": "take9",
+    "from": 8.5,
+    "rate": 1,
+    "zoom": 1,
+    "focus": 0.5,
+    "text": "你来决定。\n然后记下结果。",
+    "place": "top"
+   },
+   {
+    "beats": [
+     56,
+     65
+    ],
+    "kind": "endcard",
+    "clip": "assets/3d/endcard-join-011001-82.5bpm-9b.mp4"
+   },
+   {
+    "beats": [
+     65,
+     69
+    ],
+    "kind": "credit",
+    "name": "~DISNEYFAN"
+   }
+  ],
+  "lang": "zh-Hans"
+ },
+ "files": {
+  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+  "local/demo/take8-zh-hans-30fps.mp4": "db314f2fccc910b9fb4212dc67aa3022dde8e798d7d2ce1e65296ca47131edc0",
+  "local/demo/take9-zh-hans-note-30fps.mp4": "c72ae89a41a8e1ec9a35c8e2178a1ab0b02cb42b0130707c37cb13a2a8d4e2d3",
+  "local/demo/take8-zh-hans-proof-still.mp4": "3d27a7c3a0de659a83b170f82c85f17338ee4b3b8a2eec23d39aba912be1a64c",
+  "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
+  "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
+  "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
+  "out/demo/walkthrough-zh-hans/short.mp4": "3a42233b15a5e47bcf9ad4247fe3ac0138f2cf0ad7eff02ec99ca0ea229cc4f4",
+  "out/demo/walkthrough-zh-hans/share.mp4": "3c8fb345bb489fdb9de83be3ec1a42d52dee4a36640ece985bcc5ff8541737c7"
+ }
+}
