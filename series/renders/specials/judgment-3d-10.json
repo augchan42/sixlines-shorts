@@ -1,0 +1,64 @@
+{
+ "hexagram": 10,
+ "special": "judgment-3d-10",
+ "rendered": "2026-09-26T11:11:08.206Z",
+ "commit": "8d83b005fbd81a99c8819506badd6f285c329064",
+ "clean": true,
+ "seconds": 24.042667,
+ "shareKbps": 7525,
+ "props": {
+  "hexagram": {
+   "number": 10,
+   "zh": "履",
+   "pinyin": "Lǚ",
+   "name": "Treading",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  "bpm": 120,
+  "firstBeat": 0,
+  "music": "local/music/pick20-80s-retro-background.mp3",
+  "musicStart": 4.023,
+  "drop": 12,
+  "hook": "Working for someone with a temper?",
+  "meaning": [
+   "Treading says:\nmind how you step.",
+   "Act well and\nit won’t flare."
+  ],
+  "question": "Who do you tread\ncarefully around?",
+  "plates": [
+   "assets/yilin/stipple-10-62.webp",
+   "assets/yilin/stipple-10-34.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "judgment",
+   "text": "Stood on a tiger's\ntail. Not bitten.",
+   "clip": "assets/3d/glyphs-10-120bpm-12b-1wrfjat.mp4"
+  },
+  "pace": "even",
+  "credit": true,
+  "hexagramClip": "assets/3d/hexagram-110111-120bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-110111-120bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick20-80s-retro-background.mp3": "325443b62d8d9e674ada17eb4706c5efda7ac398035d217cbfc1f08c4fbb0f73",
+  "local/music/certificates/synthwave-synthwave-80s-retro-background-music-347701-license.txt": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
+  "assets/3d/hexagram-110111-120bpm-8b.mp4": "4fe1f498d15ee1fe0ca6cefe061bf0b3bcf7f5203d8a690b436b8502f81ba239",
+  "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
+  "assets/3d/glyphs-10-120bpm-12b-1wrfjat.mp4": "960d9fcee8e0d0d1320debdd9c3ee7c5d700b54ee8866c78421299cbd32ceb11",
+  "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
+  "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
+  "out/specials/judgment-3d-10/short.mp4": "60f2fbad0b834fe6acf9fd44e683beeb39a61797acab2ec109de90089989ac6a",
+  "out/specials/judgment-3d-10/share.mp4": "58d09ab747ae4f799fe58bc11884a587f5c6059adad97cbf0d16c19a357beb68"
+ }
+}
