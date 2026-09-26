@@ -6,6 +6,7 @@ short too long, or at the top of the track when the rise is earlier.
 
   python3 music/add_sections.py pick13:kun pick17:kun ...   # file-name prefix:trigram
   python3 music/add_sections.py pick22:dui:47                # kept for hexagram 47 only
+  python3 music/add_sections.py pick11:kan:3@0               # near 0 s, the part approved
 
 A section kept for named hexagrams (`for` in sections.json) goes to them and is out of the
 trigram's turns (scripts/series/table.mjs); its track may sit under another trigram too.
@@ -70,19 +71,23 @@ def candidates(track, problems=plan_problems):
     return options
 
 
-def section(track, problems=plan_problems, taken=()):
+def section(track, problems=plan_problems, taken=(), near=None):
     """The section at the biggest rise whose short fits and that starts SPREAD from every
-    start in taken; problems(bpm, drops) lists what is wrong with each drop's short."""
+    start in taken; problems(bpm, drops) lists what is wrong with each drop's short. With
+    near, only sections starting within SPREAD of that second: the part the user approved."""
     options = [o for o in candidates(track, problems) if all(abs(o["start"] - t) >= SPREAD for t in taken)]
+    if near is not None:
+        options = [o for o in options if abs(o["start"] - near) < SPREAD]
     if not options:
         raise ValueError("no rise in the track makes a short that fits")
     return {k: v for k, v in options[0].items() if k != "rise"}
 
 
 def parse_arg(arg):
-    """prefix:trigram[:n,n] -> (prefix, trigram, [n, n] or None)."""
+    """prefix:trigram[:n,n][@second] -> (prefix, trigram, [n, n] or None, second or None)."""
+    arg, _, near = arg.partition("@")
     prefix, trigram, *kept = arg.split(":")
-    return prefix, trigram, [int(n) for n in kept[0].split(",")] if kept else None
+    return prefix, trigram, [int(n) for n in kept[0].split(",")] if kept else None, float(near) if near else None
 
 
 def main():
@@ -92,12 +97,12 @@ def main():
     doc = json.load(open(path))
     symbols = {s["trigram"]: s["symbol"] for s in doc["sections"]}
     for arg in sys.argv[1:]:
-        prefix, trigram, kept = parse_arg(arg)
+        prefix, trigram, kept, near = parse_arg(arg)
         t = next(x for x in tracks if x["file"].startswith(prefix))
         same = [s for s in doc["sections"] if s["file"] == t["file"]]
         if not kept and any(s["trigram"] != trigram for s in same):
             raise SystemExit(f"{t['file']} is under another trigram")
-        s = section(t, taken=[x["start"] for x in same])
+        s = section(t, taken=[x["start"] for x in same], near=near)
         if same:
             s["certificate"] = same[0]["certificate"]
         doc["sections"].append(

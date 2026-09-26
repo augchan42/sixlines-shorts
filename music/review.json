@@ -3,16 +3,105 @@
  "script": "music/review.py",
  "seconds": 20,
  "hexagrams": [
-  { "number": 3, "why": "serious; its part is D# major", "proposed": { "file": "pick11-retro-synth-pop.mp3", "start": 0 } },
-  { "number": 12, "why": "dark; shares its part with 1 The Creative", "proposed": { "file": "pick10-retrowave.mp3", "start": 0 } },
-  { "number": 23, "why": "dark; its part is C major", "proposed": { "file": "pick14-lofi-synthwave.mp3", "start": 72 } },
-  { "number": 28, "why": "serious; its part is F major at 120 bpm", "proposed": { "file": "pick22-cinematic-dark-synthwave.mp3", "start": 136 } },
-  { "number": 29, "why": "dark; its part is G# major", "proposed": { "file": "pick07-interstellar-retrowave.mp3", "start": 0 } },
-  { "number": 36, "why": "dark; its part is A# major", "proposed": { "file": "pick13-synthwave-the-mountain.mp3", "start": 48 } },
-  { "number": 39, "why": "dark; its part is G# major", "proposed": { "file": "pick13-synthwave-the-mountain.mp3", "start": 160 } },
-  { "number": 43, "why": "serious; its part is F major", "proposed": { "file": "pick20-80s-retro-background.mp3", "start": 120 } },
-  { "number": 54, "why": "dark; its part is F major at 112 bpm", "proposed": { "file": "pick22-cinematic-dark-synthwave.mp3", "start": 40 } },
-  { "number": 60, "why": "serious; its part is G# major", "proposed": { "file": "pick20-80s-retro-background.mp3", "start": 64 } },
-  { "number": 63, "why": "serious; its part is D# major", "proposed": { "file": "pick22-cinematic-dark-synthwave.mp3", "start": 96 } }
- ]
+  {
+   "number": 3,
+   "why": "serious; its part is D# major",
+   "proposed": {
+    "file": "pick11-retro-synth-pop.mp3",
+    "start": 0
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 12,
+   "why": "dark; shares its part with 1 The Creative",
+   "proposed": {
+    "file": "pick10-retrowave.mp3",
+    "start": 0
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 23,
+   "why": "dark; its part is C major",
+   "proposed": {
+    "file": "pick14-lofi-synthwave.mp3",
+    "start": 72
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 28,
+   "why": "serious; its part is F major at 120 bpm",
+   "proposed": {
+    "file": "pick22-cinematic-dark-synthwave.mp3",
+    "start": 136
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 29,
+   "why": "dark; its part is G# major",
+   "proposed": {
+    "file": "pick07-interstellar-retrowave.mp3",
+    "start": 0
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 36,
+   "why": "dark; its part is A# major",
+   "proposed": {
+    "file": "pick13-synthwave-the-mountain.mp3",
+    "start": 48
+   },
+   "verdict": "keep"
+  },
+  {
+   "number": 39,
+   "why": "dark; its part is G# major",
+   "proposed": {
+    "file": "pick13-synthwave-the-mountain.mp3",
+    "start": 160
+   },
+   "verdict": "keep"
+  },
+  {
+   "number": 43,
+   "why": "serious; its part is F major",
+   "proposed": {
+    "file": "pick20-80s-retro-background.mp3",
+    "start": 120
+   },
+   "verdict": "swap"
+  },
+  {
+   "number": 54,
+   "why": "dark; its part is F major at 112 bpm",
+   "proposed": {
+    "file": "pick22-cinematic-dark-synthwave.mp3",
+    "start": 40
+   },
+   "verdict": "keep"
+  },
+  {
+   "number": 60,
+   "why": "serious; its part is G# major",
+   "proposed": {
+    "file": "pick20-80s-retro-background.mp3",
+    "start": 64
+   },
+   "verdict": "keep"
+  },
+  {
+   "number": 63,
+   "why": "serious; its part is D# major",
+   "proposed": {
+    "file": "pick22-cinematic-dark-synthwave.mp3",
+    "start": 96
+   },
+   "verdict": "keep"
+  }
+ ],
+ "verdicts": "The user, 2026-09-26, by ear: swap 3, 12, 23, 28, 29, 43; keep 36, 39, 54, 60, 63. Each swap went in with music/add_sections.py PREFIX:TRIGRAM:N@SECOND, the biggest rise within SPREAD of the part heard."
 }

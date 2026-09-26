@@ -32,15 +32,13 @@
    "name": "Difficulty at the Beginning",
    "tone": "serious",
    "why": "chaos at the birth of things; don't move yet",
-   "file": "pick19-christmas-synthwave.mp3",
-   "start": 21.157,
-   "bpm": 115,
-   "key": "D# major",
-   "minorMargin": -0.13,
-   "centroid": 2807,
-   "flags": [
-    "D# major (-0.13) is not minor enough for a serious hexagram"
-   ]
+   "file": "pick11-retro-synth-pop.mp3",
+   "start": 5.319,
+   "bpm": 95,
+   "key": "E minor",
+   "minorMargin": 0.125,
+   "centroid": 2554,
+   "flags": []
   },
   {
    "number": 4,
@@ -153,12 +151,12 @@
    "name": "Standstill",
    "tone": "dark",
    "why": "standstill: heaven and earth apart, the petty rise",
-   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
-   "start": 37.671,
-   "bpm": 102,
-   "key": "E minor",
-   "minorMargin": 0.139,
-   "centroid": 3321,
+   "file": "pick10-retrowave.mp3",
+   "start": 0,
+   "bpm": 100,
+   "key": "D# minor",
+   "minorMargin": 0.242,
+   "centroid": 2989,
    "flags": []
   },
   {
@@ -298,15 +296,13 @@
    "name": "Splitting Apart",
    "tone": "dark",
    "why": "splitting apart; the house collapses from below",
-   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
-   "start": 34.934,
-   "bpm": 82.5,
-   "key": "C major",
-   "minorMargin": -0.206,
-   "centroid": 2859,
-   "flags": [
-    "C major (-0.206) is not minor enough for a dark hexagram"
-   ]
+   "file": "pick14-lofi-synthwave.mp3",
+   "start": 57.63,
+   "bpm": 91.99,
+   "key": "A# minor",
+   "minorMargin": 0.225,
+   "centroid": 3020,
+   "flags": []
   },
   {
    "number": 24,
@@ -367,31 +363,26 @@
    "name": "Greatness in Excess",
    "tone": "serious",
    "why": "the ridgepole sags; great excess",
-   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
-   "start": 34.023,
-   "bpm": 120,
-   "key": "F major",
-   "minorMargin": -0.017,
-   "centroid": 3112,
-   "flags": [
-    "F major (-0.017) is not minor enough for a serious hexagram",
-    "120 bpm is fast for a serious hexagram"
-   ]
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "start": 127.446,
+   "bpm": 100.05,
+   "key": "G minor",
+   "minorMargin": 0.278,
+   "centroid": 3251,
+   "flags": []
   },
   {
    "number": 29,
    "name": "The Abyss",
    "tone": "dark",
    "why": "the abyss, danger doubled",
-   "file": "pick09-synthwave.mp3",
-   "start": 91.223,
+   "file": "pick07-interstellar-retrowave.mp3",
+   "start": 4.826,
    "bpm": 100,
-   "key": "G# major",
-   "minorMargin": -0.164,
-   "centroid": 2641,
-   "flags": [
-    "G# major (-0.164) is not minor enough for a dark hexagram"
-   ]
+   "key": "A minor",
+   "minorMargin": 0.286,
+   "centroid": 1607,
+   "flags": []
   },
   {
    "number": 30,
@@ -573,14 +564,13 @@
    "name": "Breakthrough",
    "tone": "serious",
    "why": "breakthrough; announce it, but danger",
-   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
-   "start": 4.023,
+   "file": "pick20-80s-retro-background.mp3",
+   "start": 104.023,
    "bpm": 120,
-   "key": "F major",
-   "minorMargin": -0.001,
-   "centroid": 3016,
+   "key": "C minor",
+   "minorMargin": 0.256,
+   "centroid": 2402,
    "flags": [
-    "F major (-0.001) is not minor enough for a serious hexagram",
     "120 bpm is fast for a serious hexagram"
    ]
   },

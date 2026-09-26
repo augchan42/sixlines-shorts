@@ -47,6 +47,12 @@ class SectionTest(unittest.TestCase):
         second = add_sections.section(t, fits, taken=[first["start"]])
         self.assertGreaterEqual(abs(second["start"] - first["start"]), add_sections.SPREAD)
 
+    def test_a_section_near_a_chosen_start_takes_the_rise_nearest_it(self):
+        # The user approved the part from 30 s by ear; the bigger rise at bar 10 starts at 8.1 s.
+        t = track([3] * 10 + [9] * 5 + [2] * 5 + [7] * 30)
+        s = add_sections.section(t, fits, near=30.0)
+        self.assertEqual(s["start"], 0.1 + 14 * 2.0)
+
     def test_asks_the_plan_in_node(self):
         self.assertEqual(add_sections.plan_problems(90, [10.862, 8.05]), [["40.00 s long"], []])
 
@@ -57,5 +63,9 @@ if __name__ == "__main__":
 
 class ArgTest(unittest.TestCase):
     def test_a_section_can_be_kept_for_named_hexagrams(self):
-        self.assertEqual(add_sections.parse_arg("pick13:kun"), ("pick13", "kun", None))
-        self.assertEqual(add_sections.parse_arg("pick22:dui:47,49"), ("pick22", "dui", [47, 49]))
+        self.assertEqual(add_sections.parse_arg("pick13:kun"), ("pick13", "kun", None, None))
+        self.assertEqual(add_sections.parse_arg("pick22:dui:47,49"), ("pick22", "dui", [47, 49], None))
+
+    def test_a_section_can_start_near_a_chosen_second(self):
+        self.assertEqual(add_sections.parse_arg("pick11:kan:3@0"), ("pick11", "kan", [3], 0.0))
+        self.assertEqual(add_sections.parse_arg("pick22:dui:28@136"), ("pick22", "dui", [28], 136.0))

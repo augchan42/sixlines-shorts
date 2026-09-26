@@ -392,6 +392,132 @@
    "for": [
     49
    ]
+  },
+  {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick11-retro-synth-pop.mp3",
+   "sha256": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+   "title": "Retro Synth Pop by AliveTunes",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retro-synth-pop-415983/",
+   "bpm": 95.0,
+   "start": 5.319,
+   "firstBeat": 0.0,
+   "drop": 15.156,
+   "certificate": {
+    "file": "synthwave-retro-synth-pop-415983-license.txt",
+    "sha256": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   },
+   "for": [
+    3
+   ]
+  },
+  {
+   "trigram": "qian",
+   "symbol": "☰",
+   "file": "pick10-retrowave.mp3",
+   "sha256": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+   "title": "Retrowave by NverAvetyanMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-retrowave-149307/",
+   "bpm": 100.0,
+   "start": 0.0,
+   "firstBeat": 0.023,
+   "drop": 9.623,
+   "certificate": {
+    "file": "synthwave-retrowave-149307-license.txt",
+    "sha256": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+    "downloaded": "2026-09-24 02:36:48 UTC"
+   },
+   "for": [
+    12
+   ]
+  },
+  {
+   "trigram": "gen",
+   "symbol": "☶",
+   "file": "pick14-lofi-synthwave.mp3",
+   "sha256": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+   "title": "Lofi Synthwave by ZephiraMusic",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-lofi-synthwave-588188/",
+   "bpm": 91.99,
+   "start": 57.63,
+   "firstBeat": 0.0,
+   "drop": 15.654,
+   "certificate": {
+    "file": "synthwave-lofi-synthwave-588188-license.txt",
+    "sha256": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   },
+   "for": [
+    23
+   ]
+  },
+  {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
+   "bpm": 100.05,
+   "start": 127.446,
+   "firstBeat": 0.0,
+   "drop": 14.394,
+   "certificate": {
+    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
+    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   },
+   "for": [
+    28
+   ]
+  },
+  {
+   "trigram": "kan",
+   "symbol": "☵",
+   "file": "pick07-interstellar-retrowave.mp3",
+   "sha256": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+   "title": "Interstellar Retrowave by PeterKolaiko",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-interstellar-retrowave-228829/",
+   "bpm": 100.0,
+   "start": 4.826,
+   "firstBeat": 0.0,
+   "drop": 14.4,
+   "certificate": {
+    "file": "synthwave-interstellar-retrowave-228829-license.txt",
+    "sha256": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
+    "downloaded": "2026-09-24 02:36:47 UTC"
+   },
+   "for": [
+    29
+   ]
+  },
+  {
+   "trigram": "dui",
+   "symbol": "☱",
+   "file": "pick20-80s-retro-background.mp3",
+   "sha256": "325443b62d8d9e674ada17eb4706c5efda7ac398035d217cbfc1f08c4fbb0f73",
+   "title": "Synthwave 80s Retro Background Music by Tunetank",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-synthwave-80s-retro-background-music-347701/",
+   "bpm": 120.0,
+   "start": 104.023,
+   "firstBeat": 0.0,
+   "drop": 12.0,
+   "certificate": {
+    "file": "synthwave-synthwave-80s-retro-background-music-347701-license.txt",
+    "sha256": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   },
+   "for": [
+    43
+   ]
   }
  ],
  "dropped": [
