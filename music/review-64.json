@@ -7,10 +7,21 @@
    "number": 64,
    "why": "guitar-heavy for a poised, unresolved hexagram",
    "proposed": [
-    { "file": "pick17-midnight-synthwave.mp3", "start": 72 },
-    { "file": "pick12-neon-drive-horizon.mp3", "start": 64 },
-    { "file": "pick13-synthwave-the-mountain.mp3", "start": 48 }
-   ]
+    {
+     "file": "pick17-midnight-synthwave.mp3",
+     "start": 72
+    },
+    {
+     "file": "pick12-neon-drive-horizon.mp3",
+     "start": 64
+    },
+    {
+     "file": "pick13-synthwave-the-mountain.mp3",
+     "start": 48
+    }
+   ],
+   "verdict": "option 1"
   }
- ]
+ ],
+ "verdicts": "The user, 2026-09-26: option one, pick17 from 72 s. Added with music/add_sections.py pick17:li:64@72 (the short starts at 61.5 s, drop at 77.5 s)."
 }

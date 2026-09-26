@@ -518,6 +518,27 @@
    "for": [
     47
    ]
+  },
+  {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick17-midnight-synthwave.mp3",
+   "sha256": "6f8f4ec9915bc0eeba91aede1421cab678aa8aea2f0415f9a79435fcd72e0e37",
+   "title": "Midnight Synthwave by The_Mountain",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-midnight-synthwave-317752/",
+   "bpm": 90.0,
+   "start": 61.535,
+   "firstBeat": 0.0,
+   "drop": 16.002,
+   "certificate": {
+    "file": "synthwave-midnight-synthwave-317752-license.txt",
+    "sha256": "47aa1fb0cbb3774ecac4e86144cadd7ad4368361c2128d5d7f991fd527b394a4",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   },
+   "for": [
+    64
+   ]
   }
  ],
  "dropped": [

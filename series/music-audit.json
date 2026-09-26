@@ -848,13 +848,15 @@
    "name": "Before Completion",
    "tone": "serious",
    "why": "before completion; the fox gets its tail wet",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "start": 206.613,
-   "bpm": 100.05,
-   "key": "G minor",
-   "minorMargin": 0.087,
-   "centroid": 3184,
-   "flags": []
+   "file": "pick17-midnight-synthwave.mp3",
+   "start": 61.535,
+   "bpm": 90,
+   "key": "D major",
+   "minorMargin": -0.024,
+   "centroid": 1712,
+   "flags": [
+    "D major (-0.024) is not minor enough for a serious hexagram"
+   ]
   }
  ]
 }

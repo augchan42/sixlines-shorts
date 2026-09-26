@@ -262,6 +262,13 @@
      "key": "G major",
      "minorMargin": -0.038,
      "centroid": 1629
+    },
+    {
+     "trigram": "li",
+     "start": 61.535,
+     "key": "D major",
+     "minorMargin": -0.024,
+     "centroid": 1712
     }
    ]
   },
