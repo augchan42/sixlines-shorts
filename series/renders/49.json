@@ -1,10 +1,10 @@
 {
  "hexagram": 49,
- "rendered": "2026-09-26T12:01:54.482Z",
- "commit": "3eb2995dd7aa0e82203c87c4a5be184f5f54bd52",
- "clean": true,
- "seconds": 31.552,
- "shareKbps": 5703,
+ "rendered": "2026-09-26T15:33:08.303Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 29.76,
+ "shareKbps": 6054,
  "props": {
   "hexagram": {
    "number": 49,
@@ -48,10 +48,16 @@
      "zh": "火",
      "name": "FIRE"
     }
-   ]
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
+   }
   },
   "pace": "even",
-  "credit": true,
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-101110-100.05bpm-12b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-101110-100.05bpm-9b.mp4",
@@ -65,7 +71,7 @@
   "assets/3d/endcard-snap-101110-100.05bpm-9b.mp4": "77dbb3cd316a365ea4bfebb1ada4c3c8cb5c1a487cec0d7f538411b556e1ec89",
   "assets/yilin/stipple-49-15.webp": "71187d2f6741bc2194f013588556d66567c16b538380e9dc17699395f02fc1b1",
   "assets/yilin/stipple-49-36.webp": "a7742746890080e9a75bc29c41ebc2e201e29e6cd3dcf3f8ab4bd092cdfb3641",
-  "out/series/49-ge/short.mp4": "7bab2455388cfc595454ef3fa10dec521a1fe6f55d2d8fc3ebbdbb49f9c7da77",
-  "out/series/49-ge/share.mp4": "d9358ed17dc1565c3e3a2b6b09ac0ad5d5b56cca704ffa5d99405f177045ca23"
+  "out/series/49-ge/short.mp4": "97350ce695f18c518ab65125bba9843b32d5a2d60e11b0064bd7e246d4b47ea4",
+  "out/series/49-ge/share.mp4": "54ebdfa7c2e4a235c86bbebb04bb461c114e3ff124350f269c124e606368119c"
  }
 }

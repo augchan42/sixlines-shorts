@@ -1,10 +1,10 @@
 {
  "hexagram": 25,
- "rendered": "2026-09-24T17:53:54.259Z",
- "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
- "clean": true,
- "seconds": 28.053333,
- "shareKbps": 6430,
+ "rendered": "2026-09-26T15:02:12.831Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 24.554667,
+ "shareKbps": 7365,
  "props": {
   "hexagram": {
    "number": 25,
@@ -35,24 +35,35 @@
    "assets/yilin/stipple-25-27.webp",
    "assets/yilin/stipple-25-62.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/25/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Do what's right,\nnot what pays.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     0,
+     4
+    ],
+    "finding": "A STRONG LINE COMES IN AT THE BASE.",
+    "master": {
+     "zh": "為无妄之主",
+     "en": "Master of No Falseness"
+    }
    },
-   {
-    "src": "assets/screens/25/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/25/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-100111-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-100111-120bpm-9b.mp4",
@@ -64,13 +75,9 @@
   "local/music/certificates/synthwave-synthwave-80s-retro-background-music-347701-license.txt": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
   "assets/3d/hexagram-100111-120bpm-8b.mp4": "c7f22554a266a825e993c340e8007c7843cedb7ce2adc306b2706f993a4cce13",
   "assets/3d/endcard-flip-100111-120bpm-9b.mp4": "ba3efab4c96e627778cb59ea96d4061d56e5ed2897d95f860aeb3a53937772a2",
-  "assets/screens/25/reading.png": "9411b632215b9d0ff21e40a48452ab691d3d60bc5e4a285565f0ee7098f3f04c",
-  "assets/screens/25/verse.png": "e0cfb31137ccc8fc029380b74d03fb7f9b3ac5b24afc0252fd67d6fae2d035ed",
-  "assets/screens/25/today.png": "0ec77e2eb173ff498af076c65332af9adc1fbd747be05a316aed08eee2885f6e",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-25-27.webp": "c1cd62ff346ff720d2cd2069408d740a862488b280cbe0d22b76a7df67d4d5ea",
   "assets/yilin/stipple-25-62.webp": "9d3ce4c92aff25f17c1788fe4eb3b0d68af8608ddafd2713450c8c576897b3af",
-  "out/series/25-wu-wang/short.mp4": "cb89138e23d76457a98999806b7252a9b35e196d23c67713f3df2e1082333666",
-  "out/series/25-wu-wang/share.mp4": "fa6c5c616ecf8f029a5c6198830d24ccaa8da649f35726b8e6fdd30dff00e9aa"
+  "out/series/25-wu-wang/short.mp4": "d3ebbc66ac6f40e5d369b4139f15071e4db7a7acc78218e1018fa66a85c647a9",
+  "out/series/25-wu-wang/share.mp4": "044f94d0cd44eb88d66b0567b711aef78614b795f979e0c7ddefbe36a803b1ce"
  }
 }

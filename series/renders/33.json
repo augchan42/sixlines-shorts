@@ -1,10 +1,10 @@
 {
  "hexagram": 33,
- "rendered": "2026-09-24T18:15:15.149Z",
- "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
- "clean": true,
- "seconds": 32.981333,
- "shareKbps": 5450,
+ "rendered": "2026-09-26T15:06:59.567Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 28.885333,
+ "shareKbps": 6242,
  "props": {
   "hexagram": {
    "number": 33,
@@ -35,24 +35,35 @@
    "assets/yilin/stipple-33-20.webp",
    "assets/yilin/stipple-33-24.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/33/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Go while you still\ncan go freely.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    }
+   ],
+   "readout": {
+    "mark": [
+     0,
+     1
+    ],
+    "finding": "TWO YIELDING LINES CREEP UP.",
+    "master": {
+     "zh": "為遯之主",
+     "en": "Master of Retreat"
+    }
    },
-   {
-    "src": "assets/screens/33/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/33/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-001111-102bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-001111-102bpm-9b.mp4",
@@ -64,13 +75,9 @@
   "local/music/certificates/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
   "assets/3d/hexagram-001111-102bpm-8b.mp4": "1850c3f453339dfa92631b074a2eff2a67f38fa80138a555b0a860a0311206e2",
   "assets/3d/endcard-flip-001111-102bpm-9b.mp4": "6f4ff881bc3fe2b87227674edea12f5a1588e3daf9d7d9c084796c80ee4a3090",
-  "assets/screens/33/reading.png": "dbc795062b0ad640bc27961be3865a8a466ff59157272efbc53cacdc5b0ea8de",
-  "assets/screens/33/verse.png": "8ed7df6b86144993c5785cbbfff6a8b8c5e7c1a0ea6af50e726ceafcf47b99a3",
-  "assets/screens/33/today.png": "707f9934da24921ac258372d7b630812c41e3a4e22c1a6cc34ecd531374c8d58",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-33-20.webp": "2de9320736bec0010c59efc47481371d9b1f857f5d8ff3e2f426c2b2376b98aa",
   "assets/yilin/stipple-33-24.webp": "0b466dbea0a7560ef97211f21502961f25bcd78ed89554f3e087e2ee8655a2e1",
-  "out/series/33-dun/short.mp4": "dbdc29a731ab892fa9794bf5990948d315b51157d4287298d4040c7c4357d506",
-  "out/series/33-dun/share.mp4": "d182ec6ef864a8e49023b92b6f96c88c483b0251b7f37df78ffdcc621cd0f239"
+  "out/series/33-dun/short.mp4": "1f614f151c92ba916949ddceb866aea4166a127c57683869ed1dffff052a88c4",
+  "out/series/33-dun/share.mp4": "9083d9d454664bbedc638baa6bd009fa4e048181e9c197eb265e8ee418f263b6"
  }
 }

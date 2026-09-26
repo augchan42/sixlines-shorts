@@ -1,10 +1,10 @@
 {
  "hexagram": 1,
- "rendered": "2026-09-26T10:07:28.181Z",
- "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
- "clean": true,
- "seconds": 28.288,
- "shareKbps": 6376,
+ "rendered": "2026-09-26T14:39:57.155Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 26.517333,
+ "shareKbps": 6810,
  "props": {
   "hexagram": {
    "number": 1,
@@ -48,10 +48,14 @@
      "zh": "天",
      "name": "HEAVEN"
     }
-   ]
+   ],
+   "readout": {
+    "mark": [],
+    "finding": "SIX STRONG LINES. NO REST."
+   }
   },
   "pace": "even",
-  "credit": true,
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-111111-102bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-111111-102bpm-9b.mp4",
@@ -65,7 +69,7 @@
   "assets/3d/endcard-flip-111111-102bpm-9b.mp4": "dd897105135681b57a37142ba87f7690c040dc49d91df25c075fb38c86a23be2",
   "assets/yilin/stipple-1-11.webp": "8a4a752284b0667154921dd98554db79544c0d8256b0d4b305ec586c2f2f0d98",
   "assets/yilin/stipple-1-27.webp": "4970c5edcb4dcc62a2508757b0c71534b6eeb1fe846a6756573882f7af528161",
-  "out/series/01-qian/short.mp4": "dd0fecc935c4299a7626c0041a19114e6d8746bee48d66612338062f13b49dee",
-  "out/series/01-qian/share.mp4": "6e2b97257c75c7152a8dcdef0fb12fc6f13bb61f57174088249e1ade7aa51e31"
+  "out/series/01-qian/short.mp4": "4e30ab2e6519e72077652fe19650bf764e822c3e221a999dec0fa1712d397b08",
+  "out/series/01-qian/share.mp4": "8a60478c26b9d4ef45abe4a4821504b73604316b3110e97bea8c43298acba327"
  }
 }

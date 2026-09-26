@@ -1,10 +1,10 @@
 {
  "hexagram": 59,
- "rendered": "2026-09-24T19:57:48.949Z",
- "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
- "clean": true,
- "seconds": 35.413333,
- "shareKbps": 5067,
+ "rendered": "2026-09-26T15:50:57.180Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 30.976,
+ "shareKbps": 5812,
  "props": {
   "hexagram": {
    "number": 59,
@@ -35,24 +35,34 @@
    "assets/yilin/stipple-59-3.webp",
    "assets/yilin/stipple-59-17.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/59/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Bring them back\nto the centre.",
+   "trigrams": [
+    {
+     "zh": "風",
+     "name": "WIND"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "WIND MOVES OVER WATER.",
+    "master": {
+     "zh": "為渙之主",
+     "en": "Master of Dispersion"
+    }
    },
-   {
-    "src": "assets/screens/59/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/59/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-010011-95bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-010011-95bpm-9b.mp4",
@@ -64,13 +74,9 @@
   "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
   "assets/3d/hexagram-010011-95bpm-8b.mp4": "229dea78c644e402dbe8d3fa8e006df16dc2354f25e4eb1fcb689771d6ab677b",
   "assets/3d/endcard-snap-010011-95bpm-9b.mp4": "49208cbd5237b4d5c6fb0bb6dbfa1ba1551e3e6be0e1f50f464498b0c8d8ebb1",
-  "assets/screens/59/reading.png": "743f93419ea46681e34b31e3f4d8d1bec4af4bed212c304cb48cb294078e5b38",
-  "assets/screens/59/verse.png": "f9fdfd9d83df8b6cebba6bcb0d617ef746e0fcf7e8a0c89f71da88f4afb3ed9e",
-  "assets/screens/59/today.png": "a9b93e837bb557c924e2c435a91126c0c975d1d5686b5fb2eec108ec11a4dc9f",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-59-3.webp": "646edf66afc80a05219b720d68585e642bd6a5409ac8c89cd00b11b5d48e8cf4",
   "assets/yilin/stipple-59-17.webp": "ce6e023e9e6b196376957f16ca09769cc5a9ee2d4a034ca7e09e1f193ea28662",
-  "out/series/59-huan/short.mp4": "7c802127737843acea369a9118e579fd388d9a07e52f98328e7c54d047436106",
-  "out/series/59-huan/share.mp4": "ef115436e98675a55730e4a09e29dfa374bb4e799e2035b661bba9a9d8cdc2e0"
+  "out/series/59-huan/short.mp4": "a522769b9ecdfb8615f42c8e33c04c2bc21b3168118fed1849d65f59f20b28a0",
+  "out/series/59-huan/share.mp4": "91a1d345c5f705bf86f81bbbde3d93fb4c281c83a4a0764f9d07484def4359d2"
  }
 }

@@ -1,10 +1,10 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-26T10:15:14.919Z",
- "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
- "clean": true,
- "seconds": 24.042667,
- "shareKbps": 7525,
+ "rendered": "2026-09-26T14:51:02.421Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 24.554667,
+ "shareKbps": 7365,
  "props": {
   "hexagram": {
    "number": 10,
@@ -37,15 +37,32 @@
   ],
   "screens": [],
   "lesson": {
-   "kind": "judgment",
-   "text": "Stood on a tiger's\ntail. Not bitten.",
-   "screen": {
-    "src": "assets/screens/10/text-scrolled.png",
-    "caption": "THE JUDGMENT"
-   }
+   "kind": "lines",
+   "text": "Beside the strong,\nbe courteous.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    }
+   ],
+   "readout": {
+    "mark": [
+     2
+    ],
+    "finding": "A SOFT LINE TREADS ON THE STRONG.",
+    "master": {
+     "zh": "三為履主",
+     "en": "Line three, master of Treading"
+    }
+   },
+   "beats": 16
   },
   "pace": "even",
-  "credit": true,
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-110111-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-110111-120bpm-9b.mp4",
@@ -57,10 +74,9 @@
   "local/music/certificates/synthwave-synthwave-80s-retro-background-music-347701-license.txt": "9842c388c1904cbd93fb575a6506de7c82b9da9d868eadb612ede3637184d1c0",
   "assets/3d/hexagram-110111-120bpm-8b.mp4": "4fe1f498d15ee1fe0ca6cefe061bf0b3bcf7f5203d8a690b436b8502f81ba239",
   "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
-  "assets/screens/10/text-scrolled.png": "6e34ca24f568d15cab3fd6b163535655ef87f6787b030a106358a198ca5ae96b",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "ffb0da6212ac20fef1696bd2e5811bba1d07b4d1331425924418175cfa32d8c7",
-  "out/series/10-lu/share.mp4": "ee881aad01a4e8f4f4abfa7b9f20677166a39e571a3e18a0bbd50e6a51851291"
+  "out/series/10-lu/short.mp4": "4cbb2ec0d52e2f0f9da0341ce1db33b7cb3f69c809cdff260b96b39115f8b3fb",
+  "out/series/10-lu/share.mp4": "7bce9864ee57c2cc04a7f5213721c4e4884328dd46f7c5e5f0e6ce5fd9b84e25"
  }
 }

@@ -1,10 +1,10 @@
 {
  "hexagram": 9,
- "rendered": "2026-09-24T17:22:37.161Z",
- "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
- "clean": true,
- "seconds": 33.642667,
- "shareKbps": 5341,
+ "rendered": "2026-09-26T14:49:30.021Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 9,
@@ -35,24 +35,29 @@
    "assets/yilin/stipple-9-40.webp",
    "assets/yilin/stipple-9-47.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/9/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/9/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/9/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Small can hold\nbig, for a while.",
+   "trigrams": [
+    {
+     "zh": "風",
+     "name": "WIND"
+    },
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    }
+   ],
+   "readout": {
+    "mark": [
+     3
+    ],
+    "finding": "ONE YIELDING LINE HOLDS FIVE."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-111011-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-111011-100bpm-9b.mp4",
@@ -64,13 +69,9 @@
   "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
   "assets/3d/hexagram-111011-100bpm-8b.mp4": "460128d5bb4682b465b10432427040c66710872e06b69079de2efc4fe6b30ad6",
   "assets/3d/endcard-snap-111011-100bpm-9b.mp4": "aa38b3df4967cf329f8dc358d83df2b09b3f277ff41888b12194bfab816e4514",
-  "assets/screens/9/reading.png": "589c8abc018dcc1335d6327b3d99d67c2ba6aa05e362d629270193c15a9a3831",
-  "assets/screens/9/verse.png": "c4bf656c576f8afdcb20f312ea856c8da62d1568034fcec6d4aeb49889dddbcc",
-  "assets/screens/9/today.png": "8362bfced3530516326a681ab51535c75ec9406d0062b5775d2a2a440c428878",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-9-40.webp": "0c3e7f9ab23871a6196b03c8b532ef462c06dcc5b9cd5f39d5c38d4a32cb082a",
   "assets/yilin/stipple-9-47.webp": "0b671ebe587c5ce56c7359c91602094123ab1d669c557688fe9d7e86a7340784",
-  "out/series/09-xiao-chu/short.mp4": "d17b994b6871b49d57f6eff46bef8d385d1352701648ab767bae14e8f451719c",
-  "out/series/09-xiao-chu/share.mp4": "6488a9595af58dec2519df14df51f3b415821fe1eb5d384b460c073002a90567"
+  "out/series/09-xiao-chu/short.mp4": "546ab7c6aba514995b7a5a2a4a82280806861b672b17fa1f3b74bf33c3d4de33",
+  "out/series/09-xiao-chu/share.mp4": "e908125d862a4df6ad2e350c9bef4859522e59adfbc8f702a2f809301795711a"
  }
 }

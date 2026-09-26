@@ -1,10 +1,10 @@
 {
  "hexagram": 6,
- "rendered": "2026-09-24T15:42:43.322Z",
- "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
- "clean": true,
- "seconds": 35.861333,
- "shareKbps": 5002,
+ "rendered": "2026-09-26T14:47:39.723Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 31.68,
+ "shareKbps": 5680,
  "props": {
   "hexagram": {
    "number": 6,
@@ -35,24 +35,34 @@
    "assets/yilin/stipple-6-41.webp",
    "assets/yilin/stipple-6-24.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/6/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Take it to\na fair judge.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "HEAVEN RISES. WATER SINKS. APART.",
+    "master": {
+     "zh": "為訟之主",
+     "en": "Master of Conflict"
+    }
    },
-   {
-    "src": "assets/screens/6/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/6/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-010111-100.58bpm-12b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-010111-100.58bpm-9b.mp4",
@@ -64,13 +74,9 @@
   "local/music/certificates/synthwave-synthwave-music-neon-drive-horizon-578508-license.txt": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
   "assets/3d/hexagram-010111-100.58bpm-12b.mp4": "566304f710444484c1db3044cbbe36bdc0e402272c7af3c96dcd2fb97896e677",
   "assets/3d/endcard-flip-010111-100.58bpm-9b.mp4": "1713b82c41824f6e8ab2b89d389da3cffbf32455462236ff412fdc2efe139561",
-  "assets/screens/6/reading.png": "d5247db4ff23e5063cda6bc778846d1b7f91fce0038ad17c837b73037e3fc5c9",
-  "assets/screens/6/verse.png": "130fcaf64f7c12e794dbefd89739e84ca6ac8749614d446b133082b1f21debd5",
-  "assets/screens/6/today.png": "ac52fce41f1b677a65e41cb35369e5c81a64f74f7a4fbc18fe8471876e1ce7de",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-6-41.webp": "df591f0c1f471f6c007bc35f3a92b1c4daa48b0469eda3cd1220cc09e077f4ba",
   "assets/yilin/stipple-6-24.webp": "6727ae190f99ba272f86ec7ee5f380c8e470c91b46db4ffccf14b09c70d77903",
-  "out/series/06-song/short.mp4": "50cbfa7b1bff6a84f73bd8c83f7ce8b56c60385241f3ccabb172074be95e43ac",
-  "out/series/06-song/share.mp4": "a409f923bc0dc7cc8a7099b22d543a21b5015659f9c298139572a7c61fbfe068"
+  "out/series/06-song/short.mp4": "f02b80d8e24a6977a21c068e204a63c364fe61e1cdc35de96b95a2b063f5594d",
+  "out/series/06-song/share.mp4": "277dd84c751236d41458c2a3d45b6f09b12fdc2650ea8ba43e4e0bab14d278e3"
  }
 }

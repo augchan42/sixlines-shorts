@@ -1,10 +1,10 @@
 {
  "hexagram": 35,
- "rendered": "2026-09-24T18:22:12.400Z",
- "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
- "clean": true,
- "seconds": 33.621333,
- "shareKbps": 5344,
+ "rendered": "2026-09-26T15:09:53.849Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 35,
@@ -35,24 +35,29 @@
    "assets/yilin/stipple-35-19.webp",
    "assets/yilin/stipple-35-56.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/35/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/35/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/35/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Shine,\ndon't push.",
+   "trigrams": [
+    {
+     "zh": "火",
+     "name": "FIRE"
+    },
+    {
+     "zh": "地",
+     "name": "EARTH"
+    }
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "THE SOFT RISES TO THE TOP CENTRE."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-000101-100.05bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-000101-100.05bpm-9b.mp4",
@@ -64,13 +69,9 @@
   "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
   "assets/3d/hexagram-000101-100.05bpm-8b.mp4": "e6a996ea84dfc890c834745cb4bbc0a32d834eeb6efd688f6a809c72fda9c3bf",
   "assets/3d/endcard-flip-000101-100.05bpm-9b.mp4": "35ca1639549eed593134b018f75256e33916be70347e2dd10b96a2a12e64466b",
-  "assets/screens/35/reading.png": "ba418ddab414fe6bee15e70f66868f0b3c663079eafce71ec6f721263325539c",
-  "assets/screens/35/verse.png": "ceb94c4943ae6965478adb85b238c032e2132a6eba29905640edb28e4b8d0b17",
-  "assets/screens/35/today.png": "f5c2ae40f084da691cfc5cc92b3566242cb480d99b0acd55b77b6473cfe18151",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-35-19.webp": "f2b6a9faf90bfef1fb195c72d85e833c6704325ede2a51d73606cf556be9c9b6",
   "assets/yilin/stipple-35-56.webp": "3066700d609b62af21917eb6986ee15f3eb77f9ebcab892e1569153cfb6d258f",
-  "out/series/35-jin/short.mp4": "fbf49453a04882517a6c6613906f2bbd1acee366698c2959e91659f85b9e558a",
-  "out/series/35-jin/share.mp4": "2cb2c0b4c53898e8d79ac382f22107cd73adb49d2f32c5ecf35f4cb575792918"
+  "out/series/35-jin/short.mp4": "d31abf624c2350d2153c018ca8fac9f77ab7b433e29a44b652d5a5b7b9259854",
+  "out/series/35-jin/share.mp4": "3c6505fcc531d5aa46d80e22eff6cf20b5b569699cca9efa490339e959760899"
  }
 }

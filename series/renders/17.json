@@ -1,10 +1,10 @@
 {
  "hexagram": 17,
- "rendered": "2026-09-24T17:29:14.922Z",
- "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
- "clean": true,
- "seconds": 28.053333,
- "shareKbps": 6430,
+ "rendered": "2026-09-26T14:57:28.486Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 22.549333,
+ "shareKbps": 8000,
  "props": {
   "hexagram": {
    "number": 17,
@@ -35,24 +35,29 @@
    "assets/yilin/stipple-17-60.webp",
    "assets/yilin/stipple-17-63.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/17/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/17/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/17/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "To be followed,\nfollow first.",
+   "trigrams": [
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    },
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     0
+    ],
+    "finding": "THE STRONG GOES BELOW THE WEAK."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-100110-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-100110-120bpm-9b.mp4",
@@ -64,13 +69,9 @@
   "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
   "assets/3d/hexagram-100110-120bpm-8b.mp4": "a70e8f97635a464700d0a2354bcf40158b1af2f587150d4f4f2e0b1afddddd97",
   "assets/3d/endcard-snap-100110-120bpm-9b.mp4": "e6eb24eb0d2feecbd4eb6546dc7ffc546e27c25aeea9031fc77405dd2cb88f2f",
-  "assets/screens/17/reading.png": "2765a40eeedfea265683cbddcec233a30a4d8103f7e9c2e51c888595ba760c35",
-  "assets/screens/17/verse.png": "e04172232ede755326c9f54febef1ceca6bf518403bcc35f35d427a561f33f5c",
-  "assets/screens/17/today.png": "b31060326cab94dd69eeb65b524fe495510af6e0cebf72d8888fda86fde30728",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-17-60.webp": "64877f416186103e7a0c119b6ca4e947b736923deadb2f4f5900d3ddb880b733",
   "assets/yilin/stipple-17-63.webp": "8b47b493bb7d3dad96244450a4fa526538d467a62a02056536790473da000e24",
-  "out/series/17-sui/short.mp4": "91365a4ccb89fd30b3d0e119b8802871e8c0d191ae0136eb5738158bf48bbe7b",
-  "out/series/17-sui/share.mp4": "5911f309e4e6937e0ef740e42d5fc34ed03e39d61cf9b85d3a6ef16a4ccfacd4"
+  "out/series/17-sui/short.mp4": "f310f2bbecd4f1557314841adff5a869956f33e5caa1e943965bb1d800c46654",
+  "out/series/17-sui/share.mp4": "658a8e8fe01a74a1309f528e9b188219a94e569dbc15c0ba1c8784962af2c270"
  }
 }

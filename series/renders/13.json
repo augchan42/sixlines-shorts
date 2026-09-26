@@ -1,10 +1,10 @@
 {
  "hexagram": 13,
- "rendered": "2026-09-24T16:20:00.541Z",
- "commit": "dd91c638563b793a66a5b213da343896403820cb",
- "clean": true,
- "seconds": 35.861333,
- "shareKbps": 5002,
+ "rendered": "2026-09-26T14:52:52.846Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 31.68,
+ "shareKbps": 5680,
  "props": {
   "hexagram": {
    "number": 13,
@@ -35,24 +35,35 @@
    "assets/yilin/stipple-13-43.webp",
    "assets/yilin/stipple-13-47.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/13/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Join on principle,\nnot on kinship.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ],
+   "readout": {
+    "mark": [
+     1,
+     4
+    ],
+    "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+    "master": {
+     "zh": "二為同人之主",
+     "en": "Line two, master of Fellowship"
+    }
    },
-   {
-    "src": "assets/screens/13/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/13/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-101111-100.58bpm-12b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-101111-100.58bpm-9b.mp4",
@@ -64,13 +75,9 @@
   "local/music/certificates/synthwave-synthwave-music-neon-drive-horizon-578508-license.txt": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
   "assets/3d/hexagram-101111-100.58bpm-12b.mp4": "9e571c8f1c1539f67e91927f37011e68a6a7f14fb85bdff8532b62f6c30acc01",
   "assets/3d/endcard-flip-101111-100.58bpm-9b.mp4": "550def7232e61d1ab287c242bc4cd4255219e8c73e7904d4863849cf7e38e1fd",
-  "assets/screens/13/reading.png": "a0f42830382ee8a938d9de63cac9d06e0731aca746677083c623cb3240f07187",
-  "assets/screens/13/verse.png": "b9f120deabab5cbbd159a0fb1c3391c43aa77b00227640b54bf0ed38da02089a",
-  "assets/screens/13/today.png": "3fcd2a3ea74cc308681241c9278406f372a4515c4eae3a0025977eab6c88e084",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-13-43.webp": "6d8ef2f13b0d0f0f2ec457a54e480f05e1bafdff4924b8427c04b569c4064cea",
   "assets/yilin/stipple-13-47.webp": "fd0570026d29fb5cb5df7c1431de9b5c3903b8d4fbaf9866e9f3517f385e17b5",
-  "out/series/13-tong-ren/short.mp4": "dcaaa5a89748bbf317e71fe6a1e34314ed0b6d67f228f76985ecc9c96bcd572b",
-  "out/series/13-tong-ren/share.mp4": "7b89a07a9bed4ba401a6ef37da2ccfbc16ef346b59e14a6bb8ae0420cf4cec0b"
+  "out/series/13-tong-ren/short.mp4": "2d5db37b7a5eba8b48a14c8ed4d5c225e75194a4bc57928be0a85d70af866b5b",
+  "out/series/13-tong-ren/share.mp4": "e41077d34ec270b7fa3b7307907afc759501fe69fd7edec9e82f02cb75f18974"
  }
 }

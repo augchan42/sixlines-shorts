@@ -1,10 +1,10 @@
 {
  "hexagram": 4,
- "rendered": "2026-09-24T15:35:46.984Z",
- "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
- "clean": true,
- "seconds": 36.586667,
- "shareKbps": 4901,
+ "rendered": "2026-09-26T14:45:06.586Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 29.418667,
+ "shareKbps": 6126,
  "props": {
   "hexagram": {
    "number": 4,
@@ -35,24 +35,30 @@
    "assets/yilin/stipple-4-26.webp",
    "assets/yilin/stipple-4-13.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/4/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/4/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/4/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Teachers don't\nchase students.",
+   "trigrams": [
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     1,
+     4
+    ],
+    "finding": "THE YOUTH (5) SEEKS THE TEACHER (2)."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-010001-91.99bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-010001-91.99bpm-9b.mp4",
@@ -64,13 +70,9 @@
   "local/music/certificates/synthwave-lofi-synthwave-588188-license.txt": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
   "assets/3d/hexagram-010001-91.99bpm-8b.mp4": "b1a91bcfc1ef113bfcd28e81d23469467ec66ae84081d5160019a2370417ebfd",
   "assets/3d/endcard-join-010001-91.99bpm-9b.mp4": "f3523564f06149095a9110cb5b856432121bfbd8f8cedf203649d033c610054d",
-  "assets/screens/4/reading.png": "1ce75b085447c5f334f96d8a7cb0abb58c827a22fedd4dc34f470ae5359377db",
-  "assets/screens/4/verse.png": "dfb9b625cea7603048a3804b7a1fd7bd45ff634f458cb712fe9d69ea3e81eba1",
-  "assets/screens/4/today.png": "93d7e8357622db9ab61adda6245490f0de2c4d90d3d1e67a716453d6e8f990b6",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-4-26.webp": "1cbcb87f98ad8d1ae67a31600c4b7db7b20c380604b260a88c136d963f5c14e4",
   "assets/yilin/stipple-4-13.webp": "0357193985339866299050f51ce09b8312b3cd1f6cd3150112f6728bf0ea1642",
-  "out/series/04-meng/short.mp4": "f4ab9b895d35c34945d851d5665f694f07fa6e3d5ebd25388b9e04566c80ef7b",
-  "out/series/04-meng/share.mp4": "f8d2943019b021b768e824fdbc2664a46deada889406eaaeca04a216e175916b"
+  "out/series/04-meng/short.mp4": "134871a01cc668bb85dc8a8fa942640577f552b61d23574248e33a26e2d2c069",
+  "out/series/04-meng/share.mp4": "c3c541ecbe0aa3497c90187697fd12fa77f3f92319dd998f9edfc6c445b15ef5"
  }
 }

@@ -1,10 +1,10 @@
 {
  "hexagram": 60,
- "rendered": "2026-09-26T10:38:03.638Z",
- "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
- "clean": true,
- "seconds": 28.842667,
- "shareKbps": 6251,
+ "rendered": "2026-09-26T15:52:57.750Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 29.461333,
+ "shareKbps": 6117,
  "props": {
   "hexagram": {
    "number": 60,
@@ -48,10 +48,21 @@
      "zh": "澤",
      "name": "LAKE"
     }
-   ]
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "THE STRONG HOLDS THE CENTRE.",
+    "master": {
+     "zh": "為節之主",
+     "en": "Master of Limitation"
+    }
+   },
+   "beats": 16
   },
   "pace": "even",
-  "credit": true,
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-110010-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-110010-100bpm-9b.mp4",
@@ -65,7 +76,7 @@
   "assets/3d/endcard-snap-110010-100bpm-9b.mp4": "5a5aa5ebdbb452894a6760dc398031accb1dcf47c6bea43e30455365774b90e7",
   "assets/yilin/stipple-60-42.webp": "55bcb1cdeab8ecd9a4a694e30286f9cb64172e802ba08f04458d452c140fff8a",
   "assets/yilin/stipple-60-62.webp": "868872ee0c56ccc867061a76a11fdabbd60fd95b3db49cb9b4a0d5e9b1522f14",
-  "out/series/60-jie/short.mp4": "5a708a825b377f91d81f616fd60a8c7f3e42ec63f426d10d674758061a818cc1",
-  "out/series/60-jie/share.mp4": "9100315d5991862ebfa6184bb585227c4237a94562655a974060b0e73e97c259"
+  "out/series/60-jie/short.mp4": "5dcf2fab2923da144d3732b723cddae7c1aa33b212f58c88f8caf55ae31ec6e8",
+  "out/series/60-jie/share.mp4": "9da304140a0992b315a9dbd17112d9d3fa91a9358cfef272c0f50a30b63365f8"
  }
 }

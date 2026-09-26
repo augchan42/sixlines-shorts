@@ -1,10 +1,10 @@
 {
  "hexagram": 3,
- "rendered": "2026-09-24T15:32:14.042Z",
- "commit": "c921c9c527dc5d9533c27bb99df9ab9a58be5933",
- "clean": true,
- "seconds": 29.290667,
- "shareKbps": 6153,
+ "rendered": "2026-09-26T14:43:16.905Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 28.48,
+ "shareKbps": 6332,
  "props": {
   "hexagram": {
    "number": 3,
@@ -20,11 +20,11 @@
     0
    ]
   },
-  "bpm": 115,
+  "bpm": 95,
   "firstBeat": 0,
-  "music": "local/music/pick19-christmas-synthwave.mp3",
-  "musicStart": 21.157,
-  "drop": 12.522,
+  "music": "local/music/pick11-retro-synth-pop.mp3",
+  "musicStart": 5.319,
+  "drop": 15.156,
   "hook": "Big start, total chaos?",
   "meaning": [
    "Difficulty says:\nget organized.",
@@ -35,42 +35,43 @@
    "assets/yilin/stipple-3-53.webp",
    "assets/yilin/stipple-3-54.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/3/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/3/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/3/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Don't push yet.\nWin helpers first.",
+   "trigrams": [
+    {
+     "zh": "水",
+     "name": "WATER"
+    },
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     0
+    ],
+    "finding": "STRONG AT THE BASE, BELOW THE WEAK."
    }
-  ],
-  "hexagramClip": "assets/3d/hexagram-100010-115bpm-8b.mp4",
+  },
+  "pace": "even",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-100010-95bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-100010-115bpm-9b.mp4",
+   "clip": "assets/3d/endcard-snap-100010-95bpm-9b.mp4",
    "mode": "snap"
   }
  },
  "files": {
-  "local/music/pick19-christmas-synthwave.mp3": "bdcd0d1798ff0a49264e794150bd553d8cc46ab62ea72a83c1f2f26ec0fc9981",
-  "local/music/certificates/christmas-christmas-synthwave-442829-license.txt": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
-  "assets/3d/hexagram-100010-115bpm-8b.mp4": "eaa25926c534c9df151dd02d2e673ca4834b2dd6e5620ea79c5e9f4616dcf1ec",
-  "assets/3d/endcard-snap-100010-115bpm-9b.mp4": "69b2ff32f64a3d627fd5059ca7783521f8031ab796733bdacd2fb6e82f053c8c",
-  "assets/screens/3/reading.png": "cab3b3f30f9b2814ec73f65d95c9c89773cd31bed31309bf314fc799fd8559a1",
-  "assets/screens/3/verse.png": "73166a91db7a5a7129ec34c3f8e936d7fa62e16e15e4b60424ba9a104d7825e0",
-  "assets/screens/3/today.png": "560cd53456dc664c4291877186e15c102352e7b0bfa8a7c7221807bcb4044655",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "local/music/pick11-retro-synth-pop.mp3": "a1880ee216009bffa57ec0d9d2e3041ba9019f665b1a2228fc053b596ca6bed8",
+  "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
+  "assets/3d/hexagram-100010-95bpm-8b.mp4": "ad619ccc2c9bbc0624abff6710e2289c4bf8831c5ea8b332fd2a63dfe6759045",
+  "assets/3d/endcard-snap-100010-95bpm-9b.mp4": "aed043cbb70a3f83af47e0f6e2eed6061aa9452761278c4d6f3a3311b6f2b51b",
   "assets/yilin/stipple-3-53.webp": "2bbec583a0ae6ba9b4d375e835019a870077840388a8438cc3016dc412580e77",
   "assets/yilin/stipple-3-54.webp": "42a17b2ea149f8e2eb91cbd9eeb8b1b88303f1a7f53bc6143e3bcc9c1e7e411d",
-  "out/series/03-zhun/short.mp4": "0f14709d328c00a6760358f803792b6f5de03c28d63d0c15a5fe746cdde36c68",
-  "out/series/03-zhun/share.mp4": "d85ba6a0dc19cb935cd70383d27876e161ee27b6f9e059860cae0f77b6de3b68"
+  "out/series/03-zhun/short.mp4": "4844a644668b9d0528d2b6a9338e5ebe40a519547a95d30c2e69b57b7ee3a476",
+  "out/series/03-zhun/share.mp4": "de6c66a3938cc2f0150f411a635d89bec302bf18c9ab3d597a63cdb2ad29ebd5"
  }
 }

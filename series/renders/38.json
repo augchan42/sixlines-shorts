@@ -1,10 +1,10 @@
 {
  "hexagram": 38,
- "rendered": "2026-09-24T18:45:18.488Z",
- "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
- "clean": true,
- "seconds": 33.642667,
- "shareKbps": 5341,
+ "rendered": "2026-09-26T15:15:04.936Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 38,
@@ -35,24 +35,32 @@
    "assets/yilin/stipple-38-17.webp",
    "assets/yilin/stipple-38-44.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/38/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/38/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/38/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Apart, but still\nanswering.",
+   "trigrams": [
+    {
+     "zh": "火",
+     "name": "FIRE"
+    },
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    }
+   ],
+   "readout": {
+    "mark": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "finding": "FIVE OUT OF PLACE. TWO PAIRS ANSWER."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-110101-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-110101-100bpm-9b.mp4",
@@ -64,13 +72,9 @@
   "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
   "assets/3d/hexagram-110101-100bpm-8b.mp4": "fe869e714919ca2262adfccee7fdbe0559f98ae3eab730422914e028664d9a08",
   "assets/3d/endcard-flip-110101-100bpm-9b.mp4": "edc6f5fc1c74db9afc25780d0d62ad4e0aa6fca42fc415d8eeae78accde6b30a",
-  "assets/screens/38/reading.png": "3b8ae52304f8de052873e84561a8a111953529d8df57cb7da1e7363e94bd2d9a",
-  "assets/screens/38/verse.png": "0d8aa60b76a4b6d5f0a1b9444ebe223b063ec70f914c75e91fe18bbd5b7c985d",
-  "assets/screens/38/today.png": "47e57353073059814f907676de8167589ff0bedd33bba427552b8bf160469b55",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-38-17.webp": "c8ac0e3f8863005170e40f19b48e973cec93fc7c6541632c923aaa4fa8de20c9",
   "assets/yilin/stipple-38-44.webp": "816dde2ace1b736b153475253b802b066c3ecc0a9e84191773f3a214eecbc5fc",
-  "out/series/38-kui/short.mp4": "682bb0cc4530b91be5212c56a8c7d42f9be8e7a4ce8b97366b9789eca6caeb18",
-  "out/series/38-kui/share.mp4": "7664b9f7dad913ec7fbb6ee209ab6ac013e798b45d0ea8ece13dce9da6c5a7b1"
+  "out/series/38-kui/short.mp4": "d3174984ee36781f4bea524528b900c681e09759e05ebc60934484f383ed0cf8",
+  "out/series/38-kui/share.mp4": "8cc5f25132e20434ba6ed0e23021381d8d0c25f13dd79c529a68d64489825bff"
  }
 }

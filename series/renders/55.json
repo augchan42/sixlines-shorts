@@ -1,10 +1,10 @@
 {
  "hexagram": 55,
- "rendered": "2026-09-24T19:53:22.575Z",
- "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
- "clean": true,
- "seconds": 33.642667,
- "shareKbps": 5341,
+ "rendered": "2026-09-26T15:45:00.153Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 55,
@@ -35,24 +35,27 @@
    "assets/yilin/stipple-55-45.webp",
    "assets/yilin/stipple-55-44.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/55/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/55/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/55/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "At your fullest,\nlight each corner.",
+   "trigrams": [
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ],
+   "readout": {
+    "mark": [],
+    "finding": "THUNDER AND FIRE AT ONCE: FULL."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-101100-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-101100-100bpm-9b.mp4",
@@ -64,13 +67,9 @@
   "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
   "assets/3d/hexagram-101100-100bpm-8b.mp4": "dad69aefbc252374a1496bd41027041ecfa2b4923f84e9608892c84631f00291",
   "assets/3d/endcard-snap-101100-100bpm-9b.mp4": "a70a9e3e6c15f88c630b1669254043b9df79366868404bc6075f9948cdc0b704",
-  "assets/screens/55/reading.png": "ffcdb6d29857867cb91d5cd44f1cf6f2fa339a8d9de328bc8c8926f6a21a6543",
-  "assets/screens/55/verse.png": "09801da928149ea4590c1c40da4d0c64f486b5e5c3004554960b4ed29d79d058",
-  "assets/screens/55/today.png": "0da5469123724f4f1472634d94f33006240030a5f9c51e1e365db574c94b195e",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-55-45.webp": "ebfe35361e81df2e0456366adc31724e29424ce40729c2283113c0697dcb058b",
   "assets/yilin/stipple-55-44.webp": "37a951a343922ace165d67cb4168ebc4f142ab74a82fd901f83e0deb4b70ea22",
-  "out/series/55-feng/short.mp4": "8fed80635cac798917d3a6c0c0fe70b83c77c75494150416e6459121bda1f1f3",
-  "out/series/55-feng/share.mp4": "97ece94fc209cb80203e5f0bd36c73b3216db549f7a3cecee78daf7584bd657c"
+  "out/series/55-feng/short.mp4": "20f2eded85d38ddb5f054513bbc8f229ee35f9bd67028f45328243747d53133e",
+  "out/series/55-feng/share.mp4": "77cf7e56e5b1f56b2ea3ee8cfca9e4d98d83aac65da2ec52fa988c9043b8015e"
  }
 }

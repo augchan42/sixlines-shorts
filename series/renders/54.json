@@ -1,10 +1,10 @@
 {
  "hexagram": 54,
- "rendered": "2026-09-24T19:39:33.725Z",
- "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
- "clean": true,
- "seconds": 30.058667,
- "shareKbps": 5993,
+ "rendered": "2026-09-26T15:42:01.638Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "clean": false,
+ "seconds": 24.149333,
+ "shareKbps": 7491,
  "props": {
   "hexagram": {
    "number": 54,
@@ -35,24 +35,32 @@
    "assets/yilin/stipple-54-18.webp",
    "assets/yilin/stipple-54-55.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/54/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/54/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/54/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Wrong place?\nDon't push.",
+   "trigrams": [
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    },
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    }
+   ],
+   "readout": {
+    "mark": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "finding": "LINES 2 TO 5 ALL OUT OF PLACE."
    }
-  ],
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-110100-112bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-110100-112bpm-9b.mp4",
@@ -64,13 +72,9 @@
   "local/music/certificates/synthwave-neon-mirage-synthwave-music-384112-license.txt": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
   "assets/3d/hexagram-110100-112bpm-8b.mp4": "db8ad0aec4a45faa878672883b84b55856986711ed206d23da49e9331979bbe0",
   "assets/3d/endcard-snap-110100-112bpm-9b.mp4": "82544cae184deee4bbaa91c0e2eeea8dd80c071134c10fbff1447e47b5a5b8c0",
-  "assets/screens/54/reading.png": "8ee157c1b2da8a90647ed4e3de483db8bc8a965c29320da219c9df28965bd20d",
-  "assets/screens/54/verse.png": "062746c093e1a73cf754a51c7adf9b0d3dfdf7fd4e7018efb41e6f04784918b0",
-  "assets/screens/54/today.png": "8e1fa8ddde5c3e91082a59de6a6e01803e532e716bb4c53cfdd387bfe8b4238c",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-54-18.webp": "6cf21b5f6ba1a046161febcb38e07925c1bebe3b13898a757d26b38ea8e5f303",
   "assets/yilin/stipple-54-55.webp": "7d9bf5d229de1d1717aaffb9f894e294d1f58c4be8111eb5e5948beb49ec48b7",
-  "out/series/54-gui-mei/short.mp4": "12f36e4fe2c6d509da0146b8b97ed0ce4a5442b2f8a36af667c201492b6965c2",
-  "out/series/54-gui-mei/share.mp4": "5b8b47a6df7e774a76aa4dcc059277b566132c5601f69d1b29b516ae3a2eb234"
+  "out/series/54-gui-mei/short.mp4": "9f3bbaebae32b97e719cc620f03211eb3ea9878720b2eafb7014796d97f82a2e",
+  "out/series/54-gui-mei/share.mp4": "ab0c97eb0e306265cdd0697b7739bf74bae824e37289f12cfe599dbc3ebb949f"
  }
 }
