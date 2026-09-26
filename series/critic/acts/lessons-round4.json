@@ -1,0 +1,12 @@
+{
+ "round": 4,
+ "ratings": [
+  {
+   "number": 24,
+   "text": "Turn back\nbefore you go far.",
+   "score": 7,
+   "reasons": "9 and 17 characters, 6 words, plain, and 'before you go far' says 不遠復 directly; the split line rejoining in amber fits 'turn back'. Two problems keep it under 8. (1) It never says what you are turning back from. Without a misstep named, a newcomer can read it as 'don't venture far' or 'stay close to home', which is caution about going out, and that runs against the Judgment ('going out and coming in without affliction', 'going forward is supported'). The source is about correcting yourself: the Image commentary reads line 1 as 以脩身也 (cultivating the self), and the Xici gives Yan Hui as the example, who never failed to notice his own fault and never repeated it. (2) As written it teaches the same thing as 44, 'Check a bad start / while it's small'. The difference in the texts is whose error it is: 44 stops something that arrives from outside, 24 catches your own wrong step. Naming 'your misstep' fixes both: it says what the broken line is, keeps 'turn back' for the rejoin, and 'early' carries 'not far'. The rewrite avoids the colon form used by 11, 12 and 27, and 'step back' in 15.",
+   "rewrite": "See your misstep,\nturn back early."
+  }
+ ]
+}

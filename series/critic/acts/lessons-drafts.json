@@ -1,5 +1,5 @@
 {
- "round": 4,
+ "round": 5,
  "rules": "two lines, each at most 18 characters counting punctuation; 3 to 7 words",
  "drafts": [
   {
@@ -32,9 +32,9 @@
   {
    "number": 24,
    "act": "return",
-   "text": "Turn back\nbefore you go far.",
-   "source": "Line 1 of 24: 不遠復 (returning from not far)",
-   "from": "critic round 3 rewrite"
+   "text": "See your misstep,\nturn back early.",
+   "source": "Line 1 of 24: 不遠復 (returning from not far); its Image commentary: 以脩身也 (cultivating the self)",
+   "from": "critic round 4 rewrite"
   },
   {
    "number": 27,
