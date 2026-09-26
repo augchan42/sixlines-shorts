@@ -29,7 +29,9 @@ export type SeriesRow = {
       character?: { char: string; beats: number; args: Record<string, unknown> };
       // A Judgment or trigram lesson acted out in Blender: blender/glyphs.py or blender/trigram.py
       // with these settings (scripts/lesson3d.mjs), in place of the Library page or the 2D trigrams.
-      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus"; args: Record<string, unknown> };
+      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite"; args: Record<string, unknown> };
+      // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
+      readout?: { mark: number[]; finding?: string };
     };
     // false leaves out the ~DISNEYFAN credit (a special).
     credit?: boolean;
@@ -105,10 +107,12 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
     if (!l.character) throw new Error(`hexagram ${row.number}'s character lesson has no character`);
     return { kind: l.kind, text: l.text, beats: l.character.beats + CHARACTER_HOLD_BEATS };
   }
+  const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
+  // A readout plays for the whole lesson and types the sentence itself.
+  if (l.readout) return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout };
   // A Blender scene plays for the whole lesson, the sentence typed under its end.
   if (l.scene) return { kind: l.kind, text: l.text, scene: l.scene.script };
   if (l.kind === "lines") {
-    const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
     return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
   }
   // A special's painting has its own key in series/paintings.json; the app pairs another

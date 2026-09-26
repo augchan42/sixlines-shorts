@@ -124,3 +124,12 @@ test("a Judgment or trigram lesson with a Blender scene plays its clip for the w
   assert.equal(p.lesson.clip, sceneClip(29, "glyphs", 100, s.cta - s.showcase, scene.args));
   assert.notEqual(sceneClip(29, "glyphs", 100, 12, scene.args), sceneClip(29, "glyphs", 100, 12, { ...scene.args, rows: "1,1" }));
 });
+
+test("a readout lesson carries its trigrams and marks, and no clip: it types its own sentence", () => {
+  const readout = { mark: [0, 3, 5], finding: "SOMETHING BETWEEN THE JAWS" };
+  const lesson = { kind: "lines", text: "t", readout, source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
+  assert.deepEqual(p.lesson.readout, readout);
+  assert.deepEqual(p.lesson.trigrams, [{ zh: "水", name: "WATER" }, { zh: "水", name: "WATER" }]);
+  assert.equal(p.lesson.clip, undefined);
+});

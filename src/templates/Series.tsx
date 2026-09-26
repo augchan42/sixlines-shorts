@@ -15,6 +15,7 @@ import { EndCard3D } from "../scenes/EndCard3D";
 import { Hexagram3D } from "../scenes/Hexagram3D";
 import { Hook } from "../scenes/Hook";
 import { Painting } from "../scenes/Painting";
+import { Readout } from "../scenes/Readout";
 import { Trigrams } from "../scenes/Trigrams";
 
 export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson" | "pace" | "credit">, fps: number) =>
@@ -53,7 +54,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
     ...(props.pace === "held" ? [] : [{ beat: s.meaning + half, kind: "whip-left" as const }]),
     { beat: s.question, kind: "whip-right" },
     { beat: s.drop, kind: "zoom" },
-    ...(lesson && !lesson.clip ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
+    ...(lesson && !lesson.clip && !lesson.readout ? [{ beat: lessonHalf, kind: "whip-left" as const }] : []),
     ...props.screens.slice(1).map((_, i) => ({ beat: s.showcase + (i + 1) * screenBeats, kind: (i % 2 ? "whip-right" : "whip-left") as Cut["kind"] })),
     { beat: s.cta, kind: "zoom" },
     ...(props.credit ? [{ beat: s.credit, kind: "whip-up" as const }] : []),
@@ -117,7 +118,20 @@ export const Series: React.FC<SeriesProps> = (props) => {
               </Sequence>
             </>
           )}
-          {lesson && !lesson.clip && (
+          {lesson?.readout && lesson.trigrams && (
+            <Sequence {...span(s.showcase, s.cta)}>
+              <Readout
+                number={props.hexagram.number}
+                name={props.hexagram.name}
+                lines={props.hexagram.lines}
+                trigrams={lesson.trigrams}
+                text={lesson.text}
+                mark={lesson.readout.mark}
+                finding={lesson.readout.finding}
+              />
+            </Sequence>
+          )}
+          {lesson && !lesson.clip && !lesson.readout && (
             <>
               <Sequence {...span(s.showcase, lessonHalf)}>
                 {lesson.trigrams ? (

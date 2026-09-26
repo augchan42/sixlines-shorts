@@ -122,6 +122,9 @@ export const seriesSchema = z.object({
       // The Blender script of a lesson acted out in a scene (blender/glyphs.py, trigram.py,
       // collapse.py); such a scene carries its own searchlight.
       scene: z.string().optional(),
+      // A lesson as a ship's computer readout (src/scenes/Readout.tsx): the lines plotted and
+      // logged, the trigrams named, these lines marked with the finding, the sentence typed.
+      readout: z.object({ mark: z.array(z.number().int().min(0).max(5)), finding: z.string().optional() }).optional(),
       labels: z.array(z.string()).length(6).optional(),
       // A character lesson (blender/character.py) sets its own length: its drawing, then 3
       // beats for the sentence under the finished character.

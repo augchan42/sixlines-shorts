@@ -1,0 +1,43 @@
+{
+ "hexagram": 21,
+ "occasion": "Experiment (the user, 2026-09-26: \"just go wild\", tell the story as the characters do, minimalist): the lines act the Ten Wings picture of 21 in the build's own look (blender/bite.py). The jaws bite the fourth line into a yin line, leaving 27, the empty mouth.",
+ "copy": {
+  "hook": {
+   "text": "Something blocking you for weeks?",
+   "source": "commentary/en/21.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Biting Through\nsays: bite down.",
+    "source": "commentary/en/21.json#judgment.synthesis"
+   },
+   {
+    "text": "It won’t clear\nby itself.",
+    "source": "commentary/en/21.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What will you\ndeal with now?",
+   "source": "written"
+  },
+  "plates": [
+   "21-42",
+   "21-53"
+  ],
+  "caption": {
+   "text": "Lightning, then thunder: first you see it, then you feel it. The old kings made the rules clear before they enforced them.",
+   "source": "commentary/en/21.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Warn clearly,\nthen bite.",
+   "source": "series/critic/lessons/input.json#hexagrams[20].image.transliteration",
+   "scene": {
+    "script": "bite",
+    "args": {
+     "rain": "public/assets/3d/rain.mp4"
+    }
+   }
+  }
+ }
+}
