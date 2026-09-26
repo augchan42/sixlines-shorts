@@ -696,6 +696,55 @@
   "caption": {
    "text": "The judgment opens every door, then names a date: by the eighth month, trouble. Growth comes with the date it turns, so plan for it.",
    "source": "commentary/en/19.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Lean down. Care\nfor your people.",
+   "source": "series/characters.json#19: A figure with a big eye stands, leans down, and three small squares light up under it one by one; then it lies down as the character.",
+   "character": {
+    "char": "臨",
+    "beats": 12,
+    "args": {
+     "order": [
+      5,
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "stand": true,
+     "lieStep": 0.35,
+     "lean": 40,
+     "last": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+     ],
+     "lastWater": true,
+     "camera": "side",
+     "zoom": 1.6,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "20": {
@@ -1686,6 +1735,33 @@
   "caption": {
    "text": "The town changes; the well doesn’t, and the water is always there. What fails is a rope that’s too short or a bucket that breaks.",
    "source": "commentary/en/48.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Towns move.\nThe well stays.",
+   "source": "series/characters.json#48: Four beams rise as the well's frame; the water in the middle ripples on every beat.",
+   "character": {
+    "char": "井",
+    "beats": 10,
+    "args": {
+     "walls": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "pool": [
+      470,
+      472
+     ],
+     "wallHeight": 0.6,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.5,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "49": {
@@ -1747,6 +1823,44 @@
   "caption": {
    "text": "Wood feeds the fire under the caldron, and it only works if it stands level. Tilted, it spills and the fire misses.",
    "source": "commentary/en/50.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Set the pot firm,\nthen cook.",
+   "source": "series/characters.json#50: The legs rise; a fire is lit among them; the bowl, drawn high above, drops onto them.",
+   "character": {
+    "char": "鼎",
+    "beats": 12,
+    "args": {
+     "walls": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+     ],
+     "pool": [
+      476,
+      150
+     ],
+     "drop": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.5,
+     "wallHeight": 0.9,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.8,
+     "edge": "#ff5ec8",
+     "water": "#ff8a3d"
+    }
+   }
   }
  },
  "51": {
@@ -2006,6 +2120,42 @@
   "caption": {
    "text": "The Joyous is two lakes that keep each other full. Joy kept to yourself dries up.",
    "source": "commentary/en/58.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Laugh and learn\nwith friends.",
+   "source": "series/characters.json#58: A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter.",
+   "character": {
+    "char": "兌",
+    "beats": 11,
+    "args": {
+     "order": [
+      5,
+      6,
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "walls": [
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.6,
+     "lift": [
+      0,
+      1
+     ],
+     "wallHeight": 0.8,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.6,
+     "edge": "#ff5ec8",
+     "water": "#fff15e"
+    }
+   }
   }
  },
  "59": {
@@ -2156,6 +2306,45 @@
   "caption": {
    "text": "Water over fire, in balance for now, and the text warns: good start, messy end. Think about what can go wrong while it still works.",
    "source": "commentary/en/63.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Done? Now guard\nagainst trouble.",
+   "source": "series/characters.json#63: A figure stands; a bowl rises beside it; the meal done, the figure turns its back on the bowl, holds, turns again and lies down as the character.",
+   "character": {
+    "char": "既",
+    "beats": 13,
+    "args": {
+     "order": [
+      7,
+      5,
+      6,
+      8,
+      3,
+      0,
+      1,
+      2,
+      4
+     ],
+     "stand": true,
+     "lieStep": 0.6,
+     "walls": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.4,
+     "wallHeight": 0.6,
+     "glassWalls": true,
+     "turn": 170,
+     "camera": "high",
+     "zoom": 2,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "64": {

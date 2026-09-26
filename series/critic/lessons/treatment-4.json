@@ -1,0 +1,330 @@
+{
+ "note": "Round 4 (run wf_d6b86e76-799) of scripts/workflows/lesson-treatment.js on the 8 choices still under 8 in treatment.json, starting from series/lessons.json's current text (args.open): two critics per round, the average kept, choices under 8 redone.",
+ "rounds": [
+  {
+   "round": 1,
+   "scored": [
+    {
+     "number": 3,
+     "score": 7.5,
+     "feedback": [
+      "The sentence is plain and true: the Judgment says don't set out yet and appoint helpers, and line 3's deer without a forester says the same thing. The problem is that the drawing shows a small hook pushing up and turning into 屯, which reads as a struggling start, and nothing on screen shows help. A newcomer sees the struggle and then reads an instruction the picture never showed. It would score higher if the sentence named the drawing, e.g. \"Hard start. Push up slowly.\", or if the story added a second stroke that holds up the sprout.",
+      "True to the Judgment: 屯 says do not set out yet and appoint helpers (利建侯), so 'Get help first' teaches the intent rather than only the mood. The sprout straining up through the ground shows 'hard start' at first sight, and the sentence adds the advice. It beats the deer line, which is flavour. It does not reach 9 because the drawing shows the struggle but nothing about help, so the second half rests on the words alone. Ship."
+     ],
+     "decision": {
+      "number": 3,
+      "choice": "character",
+      "text": "Hard start?\nGet help first.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 19,
+     "score": 8,
+     "feedback": [
+      "Ship it. The pink figure tips over and three cyan squares light up under it, so \"Lean down\" names what you just watched and \"care for your people\" gives the squares a meaning. It matches the Image (teach and care for the people without tiring) and beats the line-3 worry lesson, which is flavour. It falls short of a 10 because on a phone the tipping figure reads as falling before it reads as leaning.",
+      "Close to the Image (教思无窮，容保民无疆: teach and care for the people without limit), and 'Lean down' names what the figure does as it bends over the small squares. The strip reads: a tall figure tips over and small shapes light up under it. 'Your people' is a slight modern gloss on 民, but a fair one. It is better than the line-3 'Too comfortable?' lesson. Ship."
+     ],
+     "decision": {
+      "number": 19,
+      "choice": "character",
+      "text": "Lean down. Care\nfor your people.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 40,
+     "score": 7,
+     "feedback": [
+      "The text is true: the Image says pardon mistakes and forgive crimes, and the Judgment says go early. But the drawing shows a horn being cut free, and \"Untie\" describes a different action. A newcomer also can't see an ox or a knife, only parts of the character pulling apart. \"Cut it loose. Forgive, then go.\" or \"Cut it free,\nforgive, and go.\" would match the picture and keep the forgiveness.",
+      "'Forgive' is accurate to the Image (赦過宥罪: pardon mistakes, forgive crimes) and 'then go' fits the Judgment's advice to move early. But the drawing shows a knife cutting the horn free, and 'Untie it' does not match a cut. The sentence also holds three actions in six words. 'Cut it loose. / Forgive, move on.' would name what the drawing shows and keep the teaching."
+     ],
+     "decision": {
+      "number": 40,
+      "choice": "character",
+      "text": "Untie it.\nForgive, then go.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 48,
+     "score": 8,
+     "feedback": [
+      "Ship it. \"Towns move. The well stays.\" is the Judgment itself (you can change the town but not the well), so it teaches what the hexagram is about. \"The well is clean. No one drinks.\" is one line's sad image. The drawing is weak: a 井 grid with a cyan blob of water that ripples. But the sentence is strong enough to carry it, and the grid at least looks like a frame. It isn't a 9 because nothing on screen shows the town.",
+      "This is the Judgment almost word for word (改邑不改井: the town changes, the well does not), which is plain and is the hexagram's intent: what feeds people stays put. The drawing is weak (the character plus a ripple), but the sentence carries it, and the input's own 'keep' decision gave the clean-but-unused well line, which is flavour from one line. If the drawing were stronger this would be a 9. Ship."
+     ],
+     "decision": {
+      "number": 48,
+      "choice": "character",
+      "text": "Towns move.\nThe well stays.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 50,
+     "score": 8,
+     "feedback": [
+      "Ship it. The legs go up, a yellow fire glows among them and the top drops on, so \"Set the pot firm, then cook\" names the build in order. It is true to the Image (set your position right, make your mandate firm) and is plain. The duke-wears-dinner joke is funnier but covers only one line. It isn't higher because the pot is abstract on a phone: a newcomer sees shapes and a glowing dot before they see a cauldron.",
+      "The drawing reads clearly: legs rise, fire is lit, the bowl drops onto them. 'Set the pot firm, then cook' matches that order and the Image (正位凝命: set things in their right place, then make the charge firm). 'Pot' makes the ritual cauldron small, but it keeps the sentence plain. The duke line is funnier but covers only one line. Ship."
+     ],
+     "decision": {
+      "number": 50,
+      "choice": "character",
+      "text": "Set the pot firm,\nthen cook.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 52,
+     "score": 7.5,
+     "feedback": [
+      "The sentence is plain and true to the Image (don't think beyond where you stand). But the clip's main motion is the figure turning round and back, which reads as movement, so \"Stop. Stay where you stand\" works against what you just watched. The drawing's own line, \"Stop, and look at where you are\", named the turn-and-hold. It would score higher as \"Stop. Look at\nwhere you stand.\", which keeps the literal wording and names the turn.",
+      "Accurate to the Image (思不出其位: thoughts do not go past one's own position) and plain. The figure turning and holding still fits 'stop'. One risk is that 'Stay where you stand' can read as stubbornness, while 艮 teaches stopping when it is time to stop. It is still clearer for a newcomer than 'Stillness starts in the back'. Ship."
+     ],
+     "decision": {
+      "number": 52,
+      "choice": "character",
+      "text": "Stop. Stay\nwhere you stand.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 58,
+     "score": 9,
+     "feedback": [
+      "Ship it. The yellow strokes lifting and bobbing out of an open mouth read as laughter at first sight, and the drawing is fun. \"Laugh and learn with friends\" is the Image (friends join to discuss and practise), which is what the Krøyer painting lesson was reaching for, now without needing the painting. It is short and literal. The only thing short of 10: \"learn\" isn't shown, only the laughter.",
+      "This is the best match of the eight. Laughter floating out of an open mouth is 兌 at first sight, and 'Laugh and learn with friends' is the Image (朋友講習: friends discuss and practise) in plain words. It keeps the painting lesson's point (friends talking shop) without needing to know the painting. Very little would improve it."
+     ],
+     "decision": {
+      "number": 58,
+      "choice": "character",
+      "text": "Laugh and learn\nwith friends.",
+      "why": "current lessons.json text"
+     }
+    },
+    {
+     "number": 63,
+     "score": 8,
+     "feedback": [
+      "Ship it for the sentence. It is the Image almost word for word (think of trouble and guard against it beforehand), and it is plainer and more about the hexagram's intent than \"Fine silk turns to rags\", which is one line's image. The drawing is the weak part: the turn away from the bowl doesn't read in the strip, only a character that wobbles and settles, so it adds motion but not meaning. A clearer turn-and-watch beat would lift it to 9.",
+      "The sentence is the Image in plain words (思患而豫防之: think of trouble and guard against it in advance) and teaches the hexagram's intent better than the silk-to-rags line. The drawing is the weaker part: in the strip the character mostly twists and settles, and a newcomer may not see a finished meal being turned from. The sentence carries it. Ship."
+     ],
+     "decision": {
+      "number": 63,
+      "choice": "character",
+      "text": "Done? Now guard\nagainst trouble.",
+      "why": "current lessons.json text"
+     }
+    }
+   ]
+  },
+  {
+   "round": 2,
+   "scored": [
+    {
+     "number": 3,
+     "score": 6,
+     "feedback": [
+      "The drawing is weak. In the strip a small green hook appears, grows a little, and then the full character draws itself. There is no ground line and no visible straining, so a newcomer sees a stroke getting longer, not a sprout pushing through soil. The sentence also leans on the picture too much. 'Push up' reads first as the exercise (push-ups). As advice it pulls against the Judgment: 勿用有攸往 ('do not go anywhere yet') and 利建侯 ('appoint helpers') mean hold back and get help, not push. 'Hard start.' is a clipped fragment. Better: keep the character and write a sentence that holds the Judgment's advice without 'push', e.g. 'Hard start.\nGet help first.' (true to 利建侯). Or add a visible ground line for the sprout to break through before the sentence rests on the drawing.",
+      "True to 屯: a difficult beginning, with the Judgment's warning not to set out yet (勿用有攸往). But the strip does not carry the sentence. The 'sprout' is a small green comma that rises a little and then becomes the character. A newcomer sees a stroke move, not a plant straining through soil, so 'push up' names something that is hard to see. 'Slowly' is also a stretch of 勿用有攸往, which says don't set out yet, not go slowly. The Judgment's other advice, 利建侯 (appoint helpers), and the Image's 經綸 (put things in order) are left out. 'Hard start.' is a fragment that reads like a label. Still better than the earlier 'Starts are always hard.', which described without advising, and it beats the deer line, which is flavour. What would score higher: a sentence that stands without the picture and carries the real advice, e.g. 'Hard start.\\nDon't rush. Get help.' or 'Hard start.\\nWait, and find help.'"
+     ],
+     "decision": {
+      "number": 3,
+      "choice": "character",
+      "text": "Hard start.\nPush up slowly.",
+      "why": "The sprout straining up through the ground is what the viewer watches, and the sentence names it. 'Slowly' carries the Judgment's advice not to set out yet (勿用有攸往, 'do not go anywhere yet'), so the whole sentence rests on the picture."
+     }
+    },
+    {
+     "number": 40,
+     "score": 7,
+     "feedback": [
+      "The sentence is plain, short and true: 'cut it loose' is release (解), 'forgive' is the Image's 赦過宥罪 ('pardon mistakes, forgive crimes'), and 'move on' is the Judgment's advice to go early. It teaches the hexagram's intent better than the line-3 image of thieves. The drawing is the weak part. In the strip the pink ox (牛) and the cyan horn (角) draw in, the knife (刀) stays dim at top right, and the horn only rises a little in the last frame. A newcomer sees strokes being written, not a knife freeing a horn, so 'cut' does not clearly match what is on screen. Three verbs in two lines is also a little crowded. For an 8: make the knife bright and show a clear cut before the horn lifts. Or tighten the sentence, e.g. 'Cut it loose.\nForgive. Go.' or 'Forgive,\nthen move on.'",
+      "True to 解. The Image's 赦過宥罪 supports 'forgive', and 'move on' loosely covers the Judgment's advice to go early (夙吉) or return. The problems are the drawing and the crowding. In the strip, 刀 (knife) is mostly hidden behind 角 (horn) and 牛 (ox) as they assemble, and the horn only drifts up in the last frame. A newcomer sees a character building itself, not a knife cutting a horn free, so 'cut' leans on a story the viewer mostly does not see. Three commands in six words (cut, forgive, move on) is busy, and 'it' has no referent. 'Forgive' also shifts the meaning: in the Image the ruler pardons others. Here it could read as self-forgiveness, which is a fair modern reading but loose. What would score higher: pick one idea, e.g. 'Let it go.\\nForgive, move on.' ('let go' avoids promising a cut the drawing barely shows), or keep the plainer 'Cut it loose\\nand move on' if the knife is made visible."
+     ],
+     "decision": {
+      "number": 40,
+      "choice": "character",
+      "text": "Cut it loose.\nForgive, move on.",
+      "why": "The knife freeing the horn is a cut, so 'cut' matches the drawing where 'untie' did not. 'Forgive' keeps the Image's pardon of mistakes (赦過宥罪, 'pardon mistakes, forgive crimes'), and 'move on' follows the Judgment's advice to go early."
+     }
+    },
+    {
+     "number": 52,
+     "score": 7.5,
+     "feedback": [
+      "The sentence works without the picture. 'Stop' is 艮 (keeping still), 'where you stand' keeps 思不出其位 ('thoughts stay within your own position'), and a newcomer gets it at once. That beats 'Stillness starts in the back', which needs explaining. In the strip the character tilts, swings sideways, spins, lies flat and stands again. It reads as a character spinning, not as a figure with a big eye turning round to look, so 'look at' only loosely names what is on screen. The spin is fun to watch, but it shows motion more than holding still. The line break 'Look at / where you stand' splits the verb from its object. 'Stop.\nSee where you stand.' reads more cleanly. For an 8+: fix the break, and give the drawing a clear held pause facing forward so 'stop' is what the viewer sees last.",
+      "Ship it. True to 艮: stopping, and keeping your thoughts within your own position (思不出其位). It also avoids reading as stubbornness, and the Tuan's 時止則止 (stop when it is time to stop) sits under it. The strip clearly shows the character turning round, holding and facing forward again, so 'look at' has something on screen to name, though the 'big eye' figure is not obvious to a newcomer. Plain, literal and short. It beats 'Stillness starts in the back', which is accurate but hard to picture and needs the text to explain. The one weakness is the line break: 'Look at' / 'where you stand' separates the verb from its object. 'Stop, and look\\nat where you stand' or 'Stop. See\\nwhere you stand.' reads more cleanly."
+     ],
+     "decision": {
+      "number": 52,
+      "choice": "character",
+      "text": "Stop. Look at\nwhere you stand.",
+      "why": "The figure turns round, holds still and faces forward again, and 'look at' names that turn. 'Where you stand' keeps the Image's point that your thoughts stay within your own position (思不出其位). It reads as knowing when to stop, not as stubbornness."
+     }
+    }
+   ]
+  },
+  {
+   "round": 3,
+   "scored": [
+    {
+     "number": 3,
+     "score": 7,
+     "feedback": [
+      "The sentence is plain and true to the Judgment: don't set out yet (勿用有攸往) and appoint helpers (利建侯). Dropping 'push up' was right. The problem is the drawing. For most of the strip it is one small dim hook on black, then 屯 appears quickly. A newcomer sees a character being written, not a sprout straining, so the clip is weak and not much fun, and nothing on screen shows 'get help'. The sentence carries the lesson by itself, so the character treatment only adds a slow opening. The old line lesson ('Without a guide, / let the deer go') is flavour and needs context, so it is not better. To reach 8+: re-render so the stroke visibly strains upward (bigger, brighter, pushing against a ground line). Or show a second stroke arriving before 屯 forms, so 'get help' is on screen.",
+      "The strip shows no sprout, only a stroke that becomes 屯, so the clip teaches nothing by itself. The whole lesson rests on the sentence. The sentence is true to the Judgment and plain. 利建侯 in Wang Bi's reading is the weak relying on someone stronger in a hard time, so 'Get help first' is accurate, and it beats the deer line, which a newcomer can't follow without Line 3's context. Two weaknesses: 'A hard start.' is a clipped fragment, and 'first' only hints at 勿用有攸往 ('do not go anywhere yet'). Something like 'Hard start? Don't go alone.' or 'A hard start. / Wait, and find help.' would carry both pieces of advice. It would score higher if the sentence named the waiting outright, or if the drawing showed a struggle so that the character choice earned its place."
+     ],
+     "decision": {
+      "number": 3,
+      "choice": "character",
+      "text": "A hard start.\nGet help first.",
+      "why": "The strip shows only a small stroke that grows into 屯, so the sentence has to make sense without the sprout. It gives the Judgment's two pieces of advice: don't set out yet (勿用有攸往, 'do not go anywhere yet') and appoint helpers (利建侯). It also drops 'push up', which a viewer could read as the exercise."
+     }
+    },
+    {
+     "number": 40,
+     "score": 7.5,
+     "feedback": [
+      "'Forgive old wrongs / and move on' is plain, literal, and true to the Image (赦過宥罪) and to the Judgment's advice to go. It no longer promises a cut the viewer can't see. In the strip, the pink 牛 (ox) and cyan 角 (horn) assemble nicely and it is pleasant to watch. But the knife is barely visible and the horn's lift is a small shift at the end, so the drawing shows no release. A newcomer sees a two-colour character being built, and the sentence could sit under any drawing. 'Forgive' also narrows 解 (release, untangling) to one moral act. 'Let it go / and move on' would match the character's idea of loosening without needing the cut. To reach 8+: make the horn clearly come free and drift away. Then 'Let it go' or 'Set it free' names what the viewer sees, and the pardon can stay in the caption copy.",
+      "Ship it. 赦過宥罪 ('pardon mistakes, forgive crimes') is the Image's core instruction, so 'forgive' teaches the hexagram's intent, and dropping the knife the viewer can't see was right. The strip shows 牛 and 角 being assembled and the horn only barely lifting, so the drawing adds little and the sentence carries the lesson. 'Old' is a small addition the text doesn't have. 'Move on' paraphrases the Judgment's 有攸往夙吉 ('if there is somewhere to go, go early') loosely but fairly. It misses a 9 or 10 because nothing on screen connects 解 (untie, release) with forgiving. 'Let it go. / Forgive and move on.' would tie the character's meaning to the pardon more closely."
+     ],
+     "decision": {
+      "number": 40,
+      "choice": "character",
+      "text": "Forgive old wrongs\nand move on.",
+      "why": "In the strip the knife is dim and the horn barely lifts, so the sentence no longer promises a cut the viewer can't see. It keeps the Image's pardon (赦過宥罪, 'pardon mistakes, forgive crimes') and the Judgment's advice to go. It has one clear object instead of three commands and an 'it' that points at nothing."
+     }
+    },
+    {
+     "number": 52,
+     "score": 7.5,
+     "feedback": [
+      "Ship it. In the strip the character visibly turns round, goes edge-on, lies down and comes back upright, facing forward. 'Stop. See / where you stand.' names that last look. It is short and literal, and it teaches the intent: stop, and keep your thoughts within your own position (思不出其位). The new line break is better. It beats 'Stillness starts in the back', which a newcomer can't picture. Why not higher: the 'big eye' figure from the story does not read as a figure. A newcomer sees a rotating character, so 'see' leans on the sentence more than on the image. The Judgment's 'still the back' (the part you can't see) is also lost. 'Stop. Look / at where you stand.' would tie a little closer to the turning motion, but the gain is small.",
+      "The strip does show 艮 turning in 3D, going side-on, lying down and ending facing forward. A viewer sees a turn and a stop but no 'big eye' looking back. 'Stop.' is exactly right for 艮. The problem is 'See where you stand'. 思不出其位 means your thoughts don't go beyond your position: stay within it, not survey it. The Judgment's 艮其背，不獲其身 ('still the back, not seeing the self') even runs against a 'see' instruction. So 'see' names the animation but not the text. 'Stop. Stay / where you stand.' or 'Stop. Keep / to your place.' would be literal, fit the drawing's final hold as well, and match the Image. Swapping that one verb would bring it to 8 or 9."
+     ],
+     "decision": {
+      "number": 52,
+      "choice": "character",
+      "text": "Stop. See\nwhere you stand.",
+      "why": "The character turns round and ends facing forward, and 'see' names that last look. 'Where you stand' keeps the Image's 思不出其位 ('thoughts stay within your own position'). The new line break keeps the verb and its object on one line, unlike 'Look at / where you stand'."
+     }
+    }
+   ]
+  }
+ ],
+ "final": [
+  {
+   "number": 3,
+   "score": 7,
+   "feedback": [
+    "The sentence is plain and true to the Judgment: don't set out yet (勿用有攸往) and appoint helpers (利建侯). Dropping 'push up' was right. The problem is the drawing. For most of the strip it is one small dim hook on black, then 屯 appears quickly. A newcomer sees a character being written, not a sprout straining, so the clip is weak and not much fun, and nothing on screen shows 'get help'. The sentence carries the lesson by itself, so the character treatment only adds a slow opening. The old line lesson ('Without a guide, / let the deer go') is flavour and needs context, so it is not better. To reach 8+: re-render so the stroke visibly strains upward (bigger, brighter, pushing against a ground line). Or show a second stroke arriving before 屯 forms, so 'get help' is on screen.",
+    "The strip shows no sprout, only a stroke that becomes 屯, so the clip teaches nothing by itself. The whole lesson rests on the sentence. The sentence is true to the Judgment and plain. 利建侯 in Wang Bi's reading is the weak relying on someone stronger in a hard time, so 'Get help first' is accurate, and it beats the deer line, which a newcomer can't follow without Line 3's context. Two weaknesses: 'A hard start.' is a clipped fragment, and 'first' only hints at 勿用有攸往 ('do not go anywhere yet'). Something like 'Hard start? Don't go alone.' or 'A hard start. / Wait, and find help.' would carry both pieces of advice. It would score higher if the sentence named the waiting outright, or if the drawing showed a struggle so that the character choice earned its place."
+   ],
+   "decision": {
+    "number": 3,
+    "choice": "character",
+    "text": "A hard start.\nGet help first.",
+    "why": "The strip shows only a small stroke that grows into 屯, so the sentence has to make sense without the sprout. It gives the Judgment's two pieces of advice: don't set out yet (勿用有攸往, 'do not go anywhere yet') and appoint helpers (利建侯). It also drops 'push up', which a viewer could read as the exercise."
+   }
+  },
+  {
+   "number": 19,
+   "score": 8,
+   "feedback": [
+    "Ship it. The pink figure tips over and three cyan squares light up under it, so \"Lean down\" names what you just watched and \"care for your people\" gives the squares a meaning. It matches the Image (teach and care for the people without tiring) and beats the line-3 worry lesson, which is flavour. It falls short of a 10 because on a phone the tipping figure reads as falling before it reads as leaning.",
+    "Close to the Image (教思无窮，容保民无疆: teach and care for the people without limit), and 'Lean down' names what the figure does as it bends over the small squares. The strip reads: a tall figure tips over and small shapes light up under it. 'Your people' is a slight modern gloss on 民, but a fair one. It is better than the line-3 'Too comfortable?' lesson. Ship."
+   ],
+   "decision": {
+    "number": 19,
+    "choice": "character",
+    "text": "Lean down. Care\nfor your people.",
+    "why": "current lessons.json text"
+   }
+  },
+  {
+   "number": 40,
+   "score": 7.5,
+   "feedback": [
+    "'Forgive old wrongs / and move on' is plain, literal, and true to the Image (赦過宥罪) and to the Judgment's advice to go. It no longer promises a cut the viewer can't see. In the strip, the pink 牛 (ox) and cyan 角 (horn) assemble nicely and it is pleasant to watch. But the knife is barely visible and the horn's lift is a small shift at the end, so the drawing shows no release. A newcomer sees a two-colour character being built, and the sentence could sit under any drawing. 'Forgive' also narrows 解 (release, untangling) to one moral act. 'Let it go / and move on' would match the character's idea of loosening without needing the cut. To reach 8+: make the horn clearly come free and drift away. Then 'Let it go' or 'Set it free' names what the viewer sees, and the pardon can stay in the caption copy.",
+    "Ship it. 赦過宥罪 ('pardon mistakes, forgive crimes') is the Image's core instruction, so 'forgive' teaches the hexagram's intent, and dropping the knife the viewer can't see was right. The strip shows 牛 and 角 being assembled and the horn only barely lifting, so the drawing adds little and the sentence carries the lesson. 'Old' is a small addition the text doesn't have. 'Move on' paraphrases the Judgment's 有攸往夙吉 ('if there is somewhere to go, go early') loosely but fairly. It misses a 9 or 10 because nothing on screen connects 解 (untie, release) with forgiving. 'Let it go. / Forgive and move on.' would tie the character's meaning to the pardon more closely."
+   ],
+   "decision": {
+    "number": 40,
+    "choice": "character",
+    "text": "Forgive old wrongs\nand move on.",
+    "why": "In the strip the knife is dim and the horn barely lifts, so the sentence no longer promises a cut the viewer can't see. It keeps the Image's pardon (赦過宥罪, 'pardon mistakes, forgive crimes') and the Judgment's advice to go. It has one clear object instead of three commands and an 'it' that points at nothing."
+   }
+  },
+  {
+   "number": 48,
+   "score": 8,
+   "feedback": [
+    "Ship it. \"Towns move. The well stays.\" is the Judgment itself (you can change the town but not the well), so it teaches what the hexagram is about. \"The well is clean. No one drinks.\" is one line's sad image. The drawing is weak: a 井 grid with a cyan blob of water that ripples. But the sentence is strong enough to carry it, and the grid at least looks like a frame. It isn't a 9 because nothing on screen shows the town.",
+    "This is the Judgment almost word for word (改邑不改井: the town changes, the well does not), which is plain and is the hexagram's intent: what feeds people stays put. The drawing is weak (the character plus a ripple), but the sentence carries it, and the input's own 'keep' decision gave the clean-but-unused well line, which is flavour from one line. If the drawing were stronger this would be a 9. Ship."
+   ],
+   "decision": {
+    "number": 48,
+    "choice": "character",
+    "text": "Towns move.\nThe well stays.",
+    "why": "current lessons.json text"
+   }
+  },
+  {
+   "number": 50,
+   "score": 8,
+   "feedback": [
+    "Ship it. The legs go up, a yellow fire glows among them and the top drops on, so \"Set the pot firm, then cook\" names the build in order. It is true to the Image (set your position right, make your mandate firm) and is plain. The duke-wears-dinner joke is funnier but covers only one line. It isn't higher because the pot is abstract on a phone: a newcomer sees shapes and a glowing dot before they see a cauldron.",
+    "The drawing reads clearly: legs rise, fire is lit, the bowl drops onto them. 'Set the pot firm, then cook' matches that order and the Image (正位凝命: set things in their right place, then make the charge firm). 'Pot' makes the ritual cauldron small, but it keeps the sentence plain. The duke line is funnier but covers only one line. Ship."
+   ],
+   "decision": {
+    "number": 50,
+    "choice": "character",
+    "text": "Set the pot firm,\nthen cook.",
+    "why": "current lessons.json text"
+   }
+  },
+  {
+   "number": 52,
+   "score": 7.5,
+   "feedback": [
+    "Ship it. In the strip the character visibly turns round, goes edge-on, lies down and comes back upright, facing forward. 'Stop. See / where you stand.' names that last look. It is short and literal, and it teaches the intent: stop, and keep your thoughts within your own position (思不出其位). The new line break is better. It beats 'Stillness starts in the back', which a newcomer can't picture. Why not higher: the 'big eye' figure from the story does not read as a figure. A newcomer sees a rotating character, so 'see' leans on the sentence more than on the image. The Judgment's 'still the back' (the part you can't see) is also lost. 'Stop. Look / at where you stand.' would tie a little closer to the turning motion, but the gain is small.",
+    "The strip does show 艮 turning in 3D, going side-on, lying down and ending facing forward. A viewer sees a turn and a stop but no 'big eye' looking back. 'Stop.' is exactly right for 艮. The problem is 'See where you stand'. 思不出其位 means your thoughts don't go beyond your position: stay within it, not survey it. The Judgment's 艮其背，不獲其身 ('still the back, not seeing the self') even runs against a 'see' instruction. So 'see' names the animation but not the text. 'Stop. Stay / where you stand.' or 'Stop. Keep / to your place.' would be literal, fit the drawing's final hold as well, and match the Image. Swapping that one verb would bring it to 8 or 9."
+   ],
+   "decision": {
+    "number": 52,
+    "choice": "character",
+    "text": "Stop. See\nwhere you stand.",
+    "why": "The character turns round and ends facing forward, and 'see' names that last look. 'Where you stand' keeps the Image's 思不出其位 ('thoughts stay within your own position'). The new line break keeps the verb and its object on one line, unlike 'Look at / where you stand'."
+   }
+  },
+  {
+   "number": 58,
+   "score": 9,
+   "feedback": [
+    "Ship it. The yellow strokes lifting and bobbing out of an open mouth read as laughter at first sight, and the drawing is fun. \"Laugh and learn with friends\" is the Image (friends join to discuss and practise), which is what the Krøyer painting lesson was reaching for, now without needing the painting. It is short and literal. The only thing short of 10: \"learn\" isn't shown, only the laughter.",
+    "This is the best match of the eight. Laughter floating out of an open mouth is 兌 at first sight, and 'Laugh and learn with friends' is the Image (朋友講習: friends discuss and practise) in plain words. It keeps the painting lesson's point (friends talking shop) without needing to know the painting. Very little would improve it."
+   ],
+   "decision": {
+    "number": 58,
+    "choice": "character",
+    "text": "Laugh and learn\nwith friends.",
+    "why": "current lessons.json text"
+   }
+  },
+  {
+   "number": 63,
+   "score": 8,
+   "feedback": [
+    "Ship it for the sentence. It is the Image almost word for word (think of trouble and guard against it beforehand), and it is plainer and more about the hexagram's intent than \"Fine silk turns to rags\", which is one line's image. The drawing is the weak part: the turn away from the bowl doesn't read in the strip, only a character that wobbles and settles, so it adds motion but not meaning. A clearer turn-and-watch beat would lift it to 9.",
+    "The sentence is the Image in plain words (思患而豫防之: think of trouble and guard against it in advance) and teaches the hexagram's intent better than the silk-to-rags line. The drawing is the weaker part: in the strip the character mostly twists and settles, and a newcomer may not see a finished meal being turned from. The sentence carries it. Ship."
+   ],
+   "decision": {
+    "number": 63,
+    "choice": "character",
+    "text": "Done? Now guard\nagainst trouble.",
+    "why": "current lessons.json text"
+   }
+  }
+ ]
+}
