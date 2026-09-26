@@ -1,7 +1,7 @@
-// Renders the app demo walkthrough (series/demo/walkthrough.json): node scripts/demo.mjs
-// out/demo/walkthrough/ gets short.mp4, share.mp4 and manifest.json; the manifest is also
-// copied to series/renders/demo/walkthrough.json for committing. An earlier render moves to
-// out/demo/versions/walkthrough/<time>-<commit>/ first.
+// Renders an app demo (series/demo/<name>.json, walkthrough by default): node scripts/demo.mjs [name]
+// out/demo/<name>/ gets short.mp4, share.mp4 and manifest.json; the manifest is also
+// copied to series/renders/demo/<name>.json for committing. An earlier render moves to
+// out/demo/versions/<name>/<time>-<commit>/ first.
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
@@ -12,7 +12,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const pub = (f) => path.join(root, "public", f);
 const shaAbs = (f) => createHash("sha256").update(readFileSync(f)).digest("hex");
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
-const name = "walkthrough";
+const name = process.argv[2] ?? "walkthrough";
 const propsFile = path.join(root, "series/demo", `${name}.json`);
 const props = JSON.parse(readFileSync(propsFile, "utf8"));
 const commit = run("git", ["rev-parse", "HEAD"]).trim();

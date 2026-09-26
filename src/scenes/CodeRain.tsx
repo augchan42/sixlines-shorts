@@ -87,14 +87,14 @@ const PLACES: Record<Place, React.CSSProperties> = {
   top: { justifyContent: "flex-start", padding: "300px 70px 0" },
 };
 
-const TypedBox: React.FC<{ text: string; place?: Place; size?: number }> = ({ text, place = "centre", size = 110 }) => (
+const TypedBox: React.FC<{ text: string; place?: Place; size?: number; font?: string }> = ({ text, place = "centre", size = 110, font = fonts.punch }) => (
   <AbsoluteFill style={PLACES[place]}>
     <div
       style={{
         alignSelf: "flex-start",
         padding: "14px 28px",
         background: "rgba(0,0,0,0.6)",
-        fontFamily: fonts.punch,
+        fontFamily: font,
         fontSize: size,
         letterSpacing: 2,
         color: "#fff",
@@ -109,8 +109,8 @@ const TypedBox: React.FC<{ text: string; place?: Place; size?: number }> = ({ te
 
 // The same sentence box, typed on over whatever is behind it (a moon lesson's clip), between
 // the `typing` frames.
-export const TypedText: React.FC<{ text: string; place?: Place; size?: number; typing?: [number, number] }> = ({ text, place, size, typing = [4, 16] }) => {
+export const TypedText: React.FC<{ text: string; place?: Place; size?: number; typing?: [number, number]; font?: string }> = ({ text, place, size, typing = [4, 16], font }) => {
   const frame = useCurrentFrame();
   const typed = Math.ceil(interpolate(frame, typing, [0, text.length], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
-  return <TypedBox text={text.slice(0, typed)} place={place} size={size} />;
+  return <TypedBox text={text.slice(0, typed)} place={place} size={size} font={font} />;
 };

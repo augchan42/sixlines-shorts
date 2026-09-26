@@ -1,6 +1,7 @@
 import { AbsoluteFill, OffthreadVideo, Sequence, staticFile, useVideoConfig } from "remotion";
 import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
+import { type Lang, punchFor } from "../lib/fonts";
 import { Soundtrack } from "../fx/Soundtrack";
 import { beatFrame, GridContext, type Grid } from "../lib/timing";
 import { CodeRain, TypedText } from "../scenes/CodeRain";
@@ -22,6 +23,8 @@ type Shot =
 
 // series/demo/walkthrough.json
 export type DemoProps = {
+  // The captions' language; "en" when absent.
+  lang?: Lang;
   bpm: number;
   firstBeat: number;
   music: string;
@@ -34,8 +37,10 @@ export type DemoProps = {
 export const demoFrames = (p: DemoProps, fps: number) =>
   beatFrame({ fps, bpm: p.bpm, firstBeat: p.firstBeat }, Math.max(...p.shots.map((s) => s.beats[1])));
 
-// The typed box fits the longest line across the frame.
-const sizeFor = (text: string) => Math.min(100, Math.floor(1880 / Math.max(...text.split("\n").map((l) => l.length))));
+// The typed box fits the longest line across the frame. A Chinese character is about as wide
+// as 2.3 of the condensed Latin letters.
+const width = (line: string) => [...line].reduce((w, c) => w + (/[\u3000-\u9fff\uff00-\uffef]/.test(c) ? 2.3 : 1), 0);
+const sizeFor = (text: string) => Math.min(100, Math.floor(1880 / Math.max(...text.split("\n").map(width))));
 
 // A simulator recording (1320x2868), filling the frame's width, cropped by `zoom` around
 // `focus` (0 top of the phone screen, 1 bottom).
@@ -70,7 +75,8 @@ export const Demo: React.FC<DemoProps> = (props) => {
     kind: s.kind === "hexagram" || s.kind === "endcard" ? "zoom" : kinds[i % kinds.length],
   }));
   // Each card is typed in full within 0.3 s of its cut, so it can be read before the next.
-  const typed = (text: string, place: "centre" | "bottom" | "top") => <TypedText text={text} place={place} size={sizeFor(text)} typing={[0, 9]} />;
+  const font = punchFor(props.lang);
+  const typed = (text: string, place: "centre" | "bottom" | "top") => <TypedText text={text} place={place} size={sizeFor(text)} typing={[0, 9]} font={font} />;
   const cards = (s: Cards & { beats: [number, number] }, place: "bottom" | "top") => {
     if ("text" in s) return typed(s.text, place);
     const [a, b] = s.beats;
