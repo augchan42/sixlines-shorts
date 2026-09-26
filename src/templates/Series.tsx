@@ -1,6 +1,7 @@
 import { AbsoluteFill, Sequence, useVideoConfig } from "remotion";
 import { Camera, type Cut } from "../fx/Camera";
 import { FxDefs, Grain } from "../fx/Glitch";
+import { Searchlight } from "../fx/Searchlight";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { sentenceBeat, seriesMotion } from "../lib/seriesMotion";
@@ -102,8 +103,13 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <Sequence {...span(s.showcase, s.cta)}>
                 <EndCard3D clip={lesson.clip} />
               </Sequence>
+              {lesson.kind !== "character" && (
+                <Sequence {...span(s.showcase, clipText)}>
+                  <Searchlight />
+                </Sequence>
+              )}
               <Sequence {...span(clipText, s.cta)}>
-                <TypedText text={lesson.text} place={lesson.kind === "character" ? "bottom" : "centre"} />
+                <TypedText text={lesson.text} place={lesson.kind === "moon" ? "centre" : "bottom"} />
               </Sequence>
             </>
           )}
@@ -117,6 +123,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
                 ) : (
                   lesson.screen && <CaptionScreen src={lesson.screen.src} caption={lesson.screen.caption} color="#7dff8a" seed="lesson" />
                 )}
+                <Searchlight />
               </Sequence>
               <Sequence {...span(lessonHalf, s.cta)}>
                 <CodeRain text={lesson.text} cuts={lesson.kind === "painting" && lesson.screen ? [{ frame: 0, src: lesson.screen.src }] : []} />

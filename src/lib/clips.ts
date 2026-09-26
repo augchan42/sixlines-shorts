@@ -37,3 +37,9 @@ export const moonClip = (lines: readonly number[], bpm: number, beats: number, l
 // tempo and length, and a hash of its settings in series/characters.json.
 export const characterClip = (number: number, bpm: number, beats: number, args: Record<string, unknown>) =>
   `assets/3d/character-${number}-${bpm}bpm-${beats}b-${hash(JSON.stringify(args))}.mp4`;
+
+// public/-relative path of a lesson's Blender scene (blender/glyphs.py for a Judgment,
+// blender/trigram.py for the trigrams' picture): the hexagram, script, tempo, length and a
+// hash of its settings in the lesson's copy.
+export const sceneClip = (number: number, script: string, bpm: number, beats: number, args: Record<string, unknown>) =>
+  `assets/3d/${script}-${number}-${bpm}bpm-${beats}b-${hash(JSON.stringify(args))}.mp4`;

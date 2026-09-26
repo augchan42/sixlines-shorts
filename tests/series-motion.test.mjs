@@ -16,8 +16,14 @@ test("the frame does not punch while there is text to read", () => {
       assert.equal(at(motion, beat).punch, 0, `${lesson.kind} at beat ${beat}`);
       assert.ok(at(motion, beat).sway <= 0.15, `${lesson.kind} at beat ${beat}`);
     }
-    assert.ok(at(motion, s.drop + 0.5).punch > 0, "the lesson's picture still punches on the beat");
+    // The user found the beat punch over a lesson's picture distracting (2026-09-26).
+    assert.equal(at(motion, s.drop + 0.5).punch, 0, "the lesson's picture keeps still on the beat");
   }
+});
+
+test("the showcase's app screens still punch on the beat", () => {
+  const s = planOf({ ...base, pace: "even" });
+  assert.ok(at(seriesMotion(s, undefined).motion, s.drop + 0.5).punch > 0);
 });
 
 test("the drop gets one short, lighter burst of shake", () => {

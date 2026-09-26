@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { characterClip, moonClip } from "../src/lib/clips.ts";
+import { characterClip, moonClip, sceneClip } from "../src/lib/clips.ts";
 import { planOf } from "../src/lib/seriesPlan.ts";
 import { seriesProps } from "../src/series/props.ts";
 
@@ -112,4 +112,14 @@ test("a character lesson plays the character's clip, 4 beats longer than its dra
   assert.equal(plan.cta - plan.showcase, 16);
   assert.equal(p.lesson.clip, characterClip(29, 100, 16, character.args));
   assert.equal(p.lesson.beats, 16);
+});
+
+test("a Judgment or trigram lesson with a Blender scene plays its clip for the whole lesson, with no Library page", () => {
+  const scene = { script: "glyphs", args: { glyphs: "坎|坎", glosses: "pit|pit", rows: "2" } };
+  const lesson = { kind: "judgment", text: "t", scene, source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
+  const s = planOf(p);
+  assert.equal(p.lesson.screen, undefined);
+  assert.equal(p.lesson.clip, sceneClip(29, "glyphs", 100, s.cta - s.showcase, scene.args));
+  assert.notEqual(sceneClip(29, "glyphs", 100, 12, scene.args), sceneClip(29, "glyphs", 100, 12, { ...scene.args, rows: "1,1" }));
 });

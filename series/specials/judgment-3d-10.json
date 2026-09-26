@@ -1,0 +1,46 @@
+{
+ "hexagram": 10,
+ "occasion": "A smoke test of the Judgment lesson acted out in Blender (blender/glyphs.py): the Judgment's six characters written in neon with their glosses, 不咥人 turning amber, in place of the Library page. The series short is left alone.",
+ "copy": {
+  "hook": {
+   "text": "Working for someone with a temper?",
+   "source": "commentary/en/10.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Treading says:\nmind how you step.",
+    "source": "commentary/en/10.json#judgment.synthesis"
+   },
+   {
+    "text": "Act well and\nit won’t flare.",
+    "source": "commentary/en/10.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Who do you tread\ncarefully around?",
+   "source": "written"
+  },
+  "plates": [
+   "10-62",
+   "10-34"
+  ],
+  "caption": {
+   "text": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep.",
+   "source": "commentary/en/10.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Stood on a tiger's\ntail. Not bitten.",
+   "source": "series/critic/lessons/input.json#hexagrams[9].judgment.transliteration",
+   "scene": {
+    "script": "glyphs",
+    "args": {
+     "glyphs": "履|虎|尾|不|咥|人",
+     "glosses": "tread|tiger|tail|not|bite|person",
+     "rows": "3,3",
+     "stress": "3,4,5"
+    }
+   }
+  }
+ }
+}

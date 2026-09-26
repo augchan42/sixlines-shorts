@@ -1,4 +1,4 @@
-import { characterClip, endcardClip, type EndcardMode, hexagramClip, moonClip } from "../lib/clips.ts";
+import { characterClip, endcardClip, type EndcardMode, hexagramClip, moonClip, sceneClip } from "../lib/clips.ts";
 import { planOf } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
@@ -27,6 +27,9 @@ export type SeriesRow = {
       labels?: string[];
       // A character lesson's drawing, as in series/characters.json.
       character?: { char: string; beats: number; args: Record<string, unknown> };
+      // A Judgment or trigram lesson acted out in Blender: blender/glyphs.py or blender/trigram.py
+      // with these settings (scripts/lesson3d.mjs), in place of the Library page or the 2D trigrams.
+      scene?: { script: "glyphs" | "trigram"; args: Record<string, unknown> };
     };
     // false leaves out the ~DISNEYFAN credit (a special).
     credit?: boolean;
@@ -102,6 +105,8 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
     if (!l.character) throw new Error(`hexagram ${row.number}'s character lesson has no character`);
     return { kind: l.kind, text: l.text, beats: l.character.beats + CHARACTER_HOLD_BEATS };
   }
+  // A Blender scene plays for the whole lesson, the sentence typed under its end.
+  if (l.scene) return { kind: l.kind, text: l.text };
   if (l.kind === "lines") {
     const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
     return { kind: l.kind, text: l.text, trigrams: [upper, lower] };
@@ -142,6 +147,8 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
   const clip = (l: NonNullable<SeriesProps["lesson"]>) => {
     if (l.kind === "moon") return moonClip(merged.hexagram.lines, merged.bpm, plan.cta - plan.showcase, l.labels);
     if (l.kind === "character") return characterClip(n, merged.bpm, plan.cta - plan.showcase, row.copy!.lesson!.character!.args);
+    const scene = row.copy!.lesson!.scene;
+    if (scene) return sceneClip(n, scene.script, merged.bpm, plan.cta - plan.showcase, scene.args);
     return undefined;
   };
   const lessonClip = merged.lesson && clip(merged.lesson);

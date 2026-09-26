@@ -701,4 +701,6 @@ def main():
         bpy.ops.render.render(animation=True)
 
 
-main()
+# blender/glyphs.py imports the helpers above; Blender runs a -P script as __main__.
+if __name__ == "__main__":
+    main()
