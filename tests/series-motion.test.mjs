@@ -48,3 +48,14 @@ test("a lesson's picture gets no shake and no sway beyond the text's at the drop
   assert.deepEqual(shakes, []);
   assert.ok(at(motion, s.drop + 0.5).sway <= 0.1);
 });
+
+test("the frame keeps still wherever a hexagram or trigram is on screen", () => {
+  // The user, 2026-09-26: "no screen shake when we're showing hexagrams or trigrams": the
+  // hexagram build, the Yilin plates of the meaning, a lesson, and the end card's hexagram.
+  for (const lesson of [undefined, { kind: "lines", text: "t" }]) {
+    const s = planOf({ ...base, lesson });
+    const { motion } = seriesMotion(s, lesson);
+    const beats = [s.hexagram + 0.5, s.meaning + 0.5, s.cta + 0.5, ...(lesson ? [s.drop + 0.5, s.cta - 1] : [])];
+    for (const beat of beats) assert.deepEqual([at(motion, beat).punch, at(motion, beat).sway], [0, 0], `beat ${beat}`);
+  }
+});

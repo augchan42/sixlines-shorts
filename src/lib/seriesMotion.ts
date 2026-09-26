@@ -16,12 +16,14 @@ export const seriesMotion = (s: SeriesPlan, lesson?: { kind?: string; clip?: str
   return {
     motion: [
       { beat: -10, punch: 0, sway: 0.15 },
-      { beat: s.hexagram, punch: 0, sway: 0.3 },
-      { beat: s.meaning, punch: 0, sway: 0.15 },
+      // No sway over a hexagram or trigram: the build, the meaning's Yilin plates, a lesson and
+      // the end card (the user, 2026-09-26: no screen shake when showing hexagrams or trigrams).
+      { beat: s.hexagram, punch: 0, sway: 0 },
+      { beat: s.meaning, punch: 0, sway: 0 },
       { beat: s.question, punch: 0, sway: 0.1 },
-      { beat: s.drop, punch: lesson ? 0 : 0.03, sway: lesson ? 0.1 : 0.3 },
-      ...(sentence === null ? [] : [{ beat: sentence, punch: 0, sway: 0.1 }]),
-      { beat: s.cta, punch: 0, sway: 0.2 },
+      { beat: s.drop, punch: lesson ? 0 : 0.03, sway: lesson ? 0 : 0.3 },
+      ...(sentence === null ? [] : [{ beat: sentence, punch: 0, sway: 0 }]),
+      { beat: s.cta, punch: 0, sway: 0 },
     ],
     // A lesson has no shake at the drop either: its picture keeps still (the user, 2026-09-26).
     shakes: lesson ? [] : [{ beat: s.drop, strength: 30, beats: 0.5 }],
