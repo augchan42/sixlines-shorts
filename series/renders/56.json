@@ -1,10 +1,10 @@
 {
  "hexagram": 56,
- "rendered": "2026-09-24T19:55:37.458Z",
- "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
+ "rendered": "2026-09-26T10:35:54.010Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 33.642667,
- "shareKbps": 5341,
+ "seconds": 31.253333,
+ "shareKbps": 5759,
  "props": {
   "hexagram": {
    "number": 56,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-56-17.webp",
    "assets/yilin/stipple-56-55.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/56/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/56/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/56/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Far from home,\nbe a good guest",
+   "beats": 16,
+   "clip": "assets/3d/character-56-100bpm-16b-1e8wcef.mp4"
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-001101-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-001101-100bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
   "assets/3d/hexagram-001101-100bpm-8b.mp4": "73c4cfe043680ef1930bd11804cde4f90c704990c6cab3e7bc6888b3bac311df",
   "assets/3d/endcard-flip-001101-100bpm-9b.mp4": "170471eb4b9eee824bf9e7823aba36ad45c5a74d6b90a3b0718bd070cbee40b6",
-  "assets/screens/56/reading.png": "20b74504740f02b7965ec79cdb2eeacc1af98ba873c09cfd3716de18f65c189a",
-  "assets/screens/56/verse.png": "9bdca145c38115e088fddba7ae307d2f9a8977be529064a0cb6c1c17ddd38386",
-  "assets/screens/56/today.png": "aa92ca8a8325d5aff2c1b2d9d3109a81ac1fcfbf859516d4f4c6940e49b6fbcf",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/character-56-100bpm-16b-1e8wcef.mp4": "2e85f02992d0e03d50ce886cf45e513090b351f3ceb8c7dbd7d08ef00d3bfa78",
   "assets/yilin/stipple-56-17.webp": "5b7b19e5011cba312bec22a34458c82353456b0e155d8af75187ee4225dab477",
   "assets/yilin/stipple-56-55.webp": "36880f84e8aad51dabbc0a1e06ae6aa878dfaf9f864641a779a0e14bed1fe260",
-  "out/series/56-lu/short.mp4": "53a0b024e08171d7bab9762b833c36eec5ecb003ae30a63a82be8b4ff26e14eb",
-  "out/series/56-lu/share.mp4": "5e5ad6f113f2da7a47cd8cc970ad053e7a54731881361908271ca659d1c0d47e"
+  "out/series/56-lu/short.mp4": "1b002d58a24fe8776634337ec0342cb3812215baa6061b82811c2efba7fe39bc",
+  "out/series/56-lu/share.mp4": "d4f9ed395868e6a9a39952b58769497783c6c5ae15f2af44efa1e514272aac27"
  }
 }

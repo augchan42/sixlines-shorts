@@ -1,10 +1,10 @@
 {
  "hexagram": 15,
- "rendered": "2026-09-24T16:29:42.131Z",
- "commit": "dd91c638563b793a66a5b213da343896403820cb",
+ "rendered": "2026-09-26T10:17:34.983Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 37.418667,
- "shareKbps": 4789,
+ "seconds": 32.085333,
+ "shareKbps": 5606,
  "props": {
   "hexagram": {
    "number": 15,
@@ -35,24 +35,23 @@
    "assets/yilin/stipple-15-6.webp",
    "assets/yilin/stipple-15-25.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/15/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/15/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/15/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Level the heaps,\nfill the holes.",
+   "trigrams": [
+    {
+     "zh": "地",
+     "name": "EARTH"
+    },
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    }
+   ]
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-001000-90bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-001000-90bpm-9b.mp4",
@@ -64,13 +63,9 @@
   "local/music/certificates/synthwave-analog-dreams-synthwave-9497-license.txt": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
   "assets/3d/hexagram-001000-90bpm-8b.mp4": "c4a1451ed4a643f3d8688c35ebc1df57392638533a33e22938fb5e6da6da1395",
   "assets/3d/endcard-join-001000-90bpm-9b.mp4": "03379262ba9f95130c18941be82065cdb4716e9ab8400d50eb4e7309991a6591",
-  "assets/screens/15/reading.png": "38a8ed1ab6065d74445b500c19bcc2faa0dcb71b3d3ebfbb9c07e9c9a1cc1ef9",
-  "assets/screens/15/verse.png": "ac1c491ece024f93fd8fcf5139e872a4de97f9b87665175d60f2d7df8ad9e51b",
-  "assets/screens/15/today.png": "96c8ff462798f5572aa1f34ee81174138073b885adfc827a79e1dc67b1a07d5a",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-15-6.webp": "48eb229ea2c291d7c2ee5d03e6cec7a27d87a01946414e1801ada132198a748d",
   "assets/yilin/stipple-15-25.webp": "dc0ec24787ad859da5cc0c7f4aaaa3754d6442248ff8aa07a030ffad774d9654",
-  "out/series/15-qian/short.mp4": "250b08aa1ac78e0d28bcfac608fb6ea643f0fc0a30130c9843cf66a92f5ac1b9",
-  "out/series/15-qian/share.mp4": "3ed66f46c64d91f1984b9e62f6a202a2ed77d879b901b4c6874bbe539761ca7b"
+  "out/series/15-qian/short.mp4": "d427974e176d73101c063b51b1059fe3a3f566c80ac1a199886297c4f5fcd01e",
+  "out/series/15-qian/share.mp4": "609080a505b44889bdc7efa4e3f496315ba7146c59d9075e346b74fce064d2a5"
  }
 }

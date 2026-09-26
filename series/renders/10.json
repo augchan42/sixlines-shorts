@@ -1,7 +1,7 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-25T01:03:19.270Z",
- "commit": "dd6e34864a6d6e68e64f1e3b3af100ea4f108e4a",
+ "rendered": "2026-09-26T10:15:14.919Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
  "seconds": 24.042667,
  "shareKbps": 7525,
@@ -38,12 +38,14 @@
   "screens": [],
   "lesson": {
    "kind": "judgment",
-   "text": "The tiger’s tail:\nit does not bite.",
+   "text": "Stood on a tiger's\ntail. Not bitten.",
    "screen": {
     "src": "assets/screens/10/text-scrolled.png",
     "caption": "THE JUDGMENT"
    }
   },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-110111-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-110111-120bpm-9b.mp4",
@@ -58,7 +60,7 @@
   "assets/screens/10/text-scrolled.png": "6e34ca24f568d15cab3fd6b163535655ef87f6787b030a106358a198ca5ae96b",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "3c38aaa72315cd3088d96c7071260b3faf6692a019ad643dd93700b34c495d01",
-  "out/series/10-lu/share.mp4": "d0f5a6038a7253fd0316e40355d40d2cd7314514ef00e3a3ef2332a04772da3f"
+  "out/series/10-lu/short.mp4": "ffb0da6212ac20fef1696bd2e5811bba1d07b4d1331425924418175cfa32d8c7",
+  "out/series/10-lu/share.mp4": "ee881aad01a4e8f4f4abfa7b9f20677166a39e571a3e18a0bbd50e6a51851291"
  }
 }

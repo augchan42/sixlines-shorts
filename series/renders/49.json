@@ -1,10 +1,10 @@
 {
  "hexagram": 49,
- "rendered": "2026-09-24T19:29:20.596Z",
- "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "rendered": "2026-09-26T10:33:46.981Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 28.053333,
- "shareKbps": 6430,
+ "seconds": 24.042667,
+ "shareKbps": 7525,
  "props": {
   "hexagram": {
    "number": 49,
@@ -35,24 +35,23 @@
    "assets/yilin/stipple-49-15.webp",
    "assets/yilin/stipple-49-36.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/49/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/49/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/49/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "For a revolution,\na new calendar.",
+   "trigrams": [
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ]
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-101110-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-101110-120bpm-9b.mp4",
@@ -64,13 +63,9 @@
   "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
   "assets/3d/hexagram-101110-120bpm-8b.mp4": "049840a346e092dd8eab0a24fe5f7b5997d5f4632b6d5e93ad68e3d1d3687810",
   "assets/3d/endcard-snap-101110-120bpm-9b.mp4": "13d17ea76f95f992792d0c04bfe2ad7bb0277360a751e7c45521a234c96885f9",
-  "assets/screens/49/reading.png": "c1657b925ff1eb5df2392c61c27c5ae5f2f6f7816b15955237aaee8a8be72d45",
-  "assets/screens/49/verse.png": "88583603019168ebb01ea0f5ceccd34d6112358cae4c2c0605228a69c3376812",
-  "assets/screens/49/today.png": "42c0104cf7ba088a6dca9c8e0ad5b9e7094c082ab1bc79c7d080efa9a29aa11e",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-49-15.webp": "71187d2f6741bc2194f013588556d66567c16b538380e9dc17699395f02fc1b1",
   "assets/yilin/stipple-49-36.webp": "a7742746890080e9a75bc29c41ebc2e201e29e6cd3dcf3f8ab4bd092cdfb3641",
-  "out/series/49-ge/short.mp4": "61a0a1e563ddd273a96298f8c618aaad8e3efb63d809cb1013f99161c710ae25",
-  "out/series/49-ge/share.mp4": "dbf8c5ef64b082791d535f55b802081f9e773b31f5e9e64493a3b27edeacba84"
+  "out/series/49-ge/short.mp4": "b145e87622fabbc3682b9c2674257f2f86c2854eedcb7bc0a536e688a949caba",
+  "out/series/49-ge/share.mp4": "6e23e3541319fc91073a43aaf0001a22e2b1d41535f31978322af5d14f64de25"
  }
 }

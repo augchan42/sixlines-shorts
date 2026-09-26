@@ -1,10 +1,10 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-25T04:20:16.398Z",
- "commit": "7912a3fc11e2c312e8cae6f5444518c280d8b6de",
+ "rendered": "2026-09-26T10:13:29.076Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 27.178667,
- "shareKbps": 6642,
+ "seconds": 26.645333,
+ "shareKbps": 6777,
  "props": {
   "hexagram": {
    "number": 8,
@@ -37,16 +37,10 @@
   ],
   "screens": [],
   "lesson": {
-   "kind": "painting",
-   "text": "Friends at lunch,\nholding together.",
-   "screen": {
-    "src": "assets/screens/8/painting-scrolled.png",
-    "caption": "THE PAINTING"
-   },
-   "painting": {
-    "src": "assets/paintings/8.jpg",
-    "credit": "RENOIR · 1881"
-   }
+   "kind": "character",
+   "text": "Choose who you\nstand beside",
+   "beats": 15,
+   "clip": "assets/3d/character-8-115bpm-15b-mgcsk.mp4"
   },
   "pace": "held",
   "credit": true,
@@ -61,11 +55,10 @@
   "local/music/certificates/christmas-christmas-synthwave-442829-license.txt": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
   "assets/3d/hexagram-000010-115bpm-8b.mp4": "24a13c93517de55db6c88aee6d4a005ca9d49b3c957f63ac9bfe51990977035c",
   "assets/3d/endcard-snap-000010-115bpm-9b.mp4": "4e7cd95a4043154b737826e6143b90be36edb589bad5a3809041de40e4894581",
-  "assets/screens/8/painting-scrolled.png": "0a22e0b794ce2040d14672faf14332fdb82f97302b733cbf096d9f1dd91455d1",
-  "assets/paintings/8.jpg": "2484c15d83d2f2c07a13adc64fbda9d5f37a3eb47e8a381b5ebb98aaa25b4e38",
+  "assets/3d/character-8-115bpm-15b-mgcsk.mp4": "18c315b86fbbdb1d940f9aed82d0a95e82a604ef7f16c1f815e24be1cbad296c",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "63486128b9498289aab92538c4586d608121328aaa160119700ebad9b4221c34",
-  "out/series/08-bi/share.mp4": "546d2c3014c03649fefa7f88aa1adf6f8826a5d3a6e3b133efc178d96b57ddc1"
+  "out/series/08-bi/short.mp4": "0acf34dfa3fc2d8c44b67da598e26cc43ce01c5803551cae08b4e708e74c7ec9",
+  "out/series/08-bi/share.mp4": "121bb212a58990e9f8006be3367d78ade0386d18a96fe20681a8c0547c79a666"
  }
 }

@@ -1,10 +1,10 @@
 {
  "hexagram": 47,
- "rendered": "2026-09-24T19:23:46.940Z",
- "commit": "ace2e5229d28c8ff1a23f5b4b6c3bb4ec76fc1cd",
+ "rendered": "2026-09-26T10:31:53.164Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 30.058667,
- "shareKbps": 5993,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 47,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-47-11.webp",
    "assets/yilin/stipple-47-42.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/47/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/47/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/47/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Boxed in?\nHold to your aim.",
+   "beats": 14,
+   "clip": "assets/3d/character-47-120bpm-14b-1vzav8o.mp4"
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-010110-120bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-010110-120bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/beats-orbit-retrowaver-synthwave-vaporwave-retro-80s-217243-license.txt": "497efc1d370200c793cc3bc7317482cf4c44a758255df7d0ffb9649c1c2dae73",
   "assets/3d/hexagram-010110-120bpm-8b.mp4": "d747a89a32d3a5fbd332a47f8aaa83bb320b9b9007141b477656f29d80dfe0a8",
   "assets/3d/endcard-snap-010110-120bpm-9b.mp4": "f1175b5819c6e4ee55393c7fdef4decbc3b761f82aff32c942f3631044fc7629",
-  "assets/screens/47/reading.png": "e9c88038d502995afc7b3a1da17746f9e90bffa926d722dd7345821b0c452f2d",
-  "assets/screens/47/verse.png": "515ea7560f11120319b77fd4f222ae580401d35b73bc7d29b7284299bada004b",
-  "assets/screens/47/today.png": "d5fffa4c94dfe8cca0005d66e66683585b84d8cf246443148f26e816d1ab8d25",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/character-47-120bpm-14b-1vzav8o.mp4": "ce9760dc1c6d630e508a5330f58bb76dded49a684f82815645705eed79aa0456",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/series/47-kun/short.mp4": "c1d12493e77e0740de1951a7f2827e81f4236a2d854f0edd84d0af1b413324a3",
-  "out/series/47-kun/share.mp4": "fa7536da7fc743666bbf9024136a7b73130cedeeb7041a3d3be1393999616770"
+  "out/series/47-kun/short.mp4": "97790c4977f4ee8e07c4158b4a29b3297d1a17b8d7270d540e0e17a2e3906bce",
+  "out/series/47-kun/share.mp4": "ddb408380249dfb22be1c7bed21ebdc75b1f63ce00366056670eb897e1260ce8"
  }
 }

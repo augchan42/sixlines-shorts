@@ -1,10 +1,10 @@
 {
  "hexagram": 42,
- "rendered": "2026-09-24T19:01:15.813Z",
- "commit": "280309a35f8d329d9c4149d431fbca1cbf63f734",
+ "rendered": "2026-09-26T10:29:55.079Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 35.413333,
- "shareKbps": 5067,
+ "seconds": 32.256,
+ "shareKbps": 5576,
  "props": {
   "hexagram": {
    "number": 42,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-42-33.webp",
    "assets/yilin/stipple-42-1.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/42/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/42/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/42/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Let your gain\nspill over",
+   "beats": 15,
+   "clip": "assets/3d/character-42-95bpm-15b-1gs0k97.mp4"
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-100011-95bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-100011-95bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/synthwave-retro-synth-pop-415983-license.txt": "5a304677843e703f8e69f370fbd5e7eba29566ef8ea06c5d0edd519add3c4c5c",
   "assets/3d/hexagram-100011-95bpm-8b.mp4": "241fdd2fb5e9579a56d3a0e03778adff79d8d0466c01732229b1b329fb7a3525",
   "assets/3d/endcard-snap-100011-95bpm-9b.mp4": "82e8ac980208476dd296e9e9547388b8c29d9141d84d7d22e8215abdf1430e8d",
-  "assets/screens/42/reading.png": "3552e2ae00ac0e88540f1278f9a6d7e3b24c969307f82d11ddbb1235299f1ca1",
-  "assets/screens/42/verse.png": "0c0229822c267f969aacbe373501fbbdefafabdb4d070a9769ae1a4a273ad8b0",
-  "assets/screens/42/today.png": "b9bf8b08fe3ec022504b41d5a61ebdff71c8b3aa56673058c5763190090e869f",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/character-42-95bpm-15b-1gs0k97.mp4": "c9e4f290a09b32a037b6c169251478a751fd69f4216f0a597ee0761eaff13a13",
   "assets/yilin/stipple-42-33.webp": "5526d5774d920fda50f3efe7a1b567651b12e67a91ed86d31976ced85029c95a",
   "assets/yilin/stipple-42-1.webp": "25e57ec0c1a8d0e3df893bff4dd8540a4fdf9bc8aa519d2f90a40b3e6eb7643f",
-  "out/series/42-yi/short.mp4": "fe5bd3c721653b49c8870511f619c2824c7921a7f2245012f0bc4b5af2b4d02b",
-  "out/series/42-yi/share.mp4": "4dfac4c8297b5bc4ba68024dc1fa269b055995466a75f04efc22f901310e7576"
+  "out/series/42-yi/short.mp4": "1d327e50b331efd5a0637cb7eafbf68b417a894c2daaed91d654915434236933",
+  "out/series/42-yi/share.mp4": "2953f58a5e525b55e31e4c471b6761a5f4b254330156c6cef9a99e65222293a6"
  }
 }

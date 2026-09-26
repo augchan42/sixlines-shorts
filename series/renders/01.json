@@ -1,10 +1,10 @@
 {
  "hexagram": 1,
- "rendered": "2026-09-24T11:33:38.939Z",
- "commit": "6c13dbeab3d5dfcf8e2ac681ca179082be51917f",
+ "rendered": "2026-09-26T10:07:28.181Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 32.981333,
- "shareKbps": 5450,
+ "seconds": 28.288,
+ "shareKbps": 6376,
  "props": {
   "hexagram": {
    "number": 1,
@@ -35,24 +35,23 @@
    "assets/yilin/stipple-1-11.webp",
    "assets/yilin/stipple-1-27.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/1/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/1/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/1/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Heaven never\ntakes a day off.",
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    }
+   ]
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-111111-102bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-111111-102bpm-9b.mp4",
@@ -64,13 +63,9 @@
   "local/music/certificates/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
   "assets/3d/hexagram-111111-102bpm-8b.mp4": "525381507c1f13985eb3bd4af6fe87d83b7e8509c1935918a10d8a983a0f4549",
   "assets/3d/endcard-flip-111111-102bpm-9b.mp4": "dd897105135681b57a37142ba87f7690c040dc49d91df25c075fb38c86a23be2",
-  "assets/screens/1/reading.png": "dd915844933dc2cc65991b03127d86382c6d56c56e85c200699cc8421abad545",
-  "assets/screens/1/verse.png": "08ef8ff598639cc605e7176beb00e5728865c6b34f333c8a8a47a7abcac31f43",
-  "assets/screens/1/today.png": "116261a3b98d9af24a3fe6371a5b5bc27b601df4d7482ca2e9432c0648d0f35d",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-1-11.webp": "8a4a752284b0667154921dd98554db79544c0d8256b0d4b305ec586c2f2f0d98",
   "assets/yilin/stipple-1-27.webp": "4970c5edcb4dcc62a2508757b0c71534b6eeb1fe846a6756573882f7af528161",
-  "out/series/01-qian/short.mp4": "daa77d1dffba1de95d8973f85ab947289642a9694f78664ba4d1934086887e0b",
-  "out/series/01-qian/share.mp4": "332c0a2fd5e23f4baabe9e46ed0ca30d852a2b585aeb33ab756219e1bd6992a3"
+  "out/series/01-qian/short.mp4": "dd0fecc935c4299a7626c0041a19114e6d8746bee48d66612338062f13b49dee",
+  "out/series/01-qian/share.mp4": "6e2b97257c75c7152a8dcdef0fb12fc6f13bb61f57174088249e1ade7aa51e31"
  }
 }

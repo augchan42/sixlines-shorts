@@ -1,10 +1,10 @@
 {
  "hexagram": 36,
- "rendered": "2026-09-24T18:26:20.372Z",
- "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
+ "rendered": "2026-09-26T10:27:52.496Z",
+ "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
  "clean": true,
- "seconds": 37.418667,
- "shareKbps": 4789,
+ "seconds": 34.752,
+ "shareKbps": 5166,
  "props": {
   "hexagram": {
    "number": 36,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-36-44.webp",
    "assets/yilin/stipple-36-5.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/36/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/36/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/36/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "Dark times?\nDim your light.",
+   "beats": 16,
+   "clip": "assets/3d/character-36-90bpm-16b-17vj3g7.mp4"
+  },
+  "pace": "even",
+  "credit": true,
   "hexagramClip": "assets/3d/hexagram-101000-90bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-101000-90bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/synthwave-analog-dreams-synthwave-9497-license.txt": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
   "assets/3d/hexagram-101000-90bpm-8b.mp4": "5e7d3f8641e7b9674cc4c2bc791edbd9591203afa012f140c4198ffbb0bd00b3",
   "assets/3d/endcard-join-101000-90bpm-9b.mp4": "43324e39f79f08b4982071a4888d9780769675c78d975ed94c608789b555d58d",
-  "assets/screens/36/reading.png": "f388443cd0e95f54fcc0101bd7b6791c80393d77d79e047cc85fcb6457aba06f",
-  "assets/screens/36/verse.png": "31e7befbd759681703e84feacdba8d8a59d847e278268fc0d393db5d62f14edc",
-  "assets/screens/36/today.png": "04c925e40993ccc26e1733741915fbf9c2df3e348034ceb93f1d3402f011592b",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/character-36-90bpm-16b-17vj3g7.mp4": "5f727d152633c03850c58c211cc502fd0f9826c26e4d0836bfc0efd8215607c9",
   "assets/yilin/stipple-36-44.webp": "b6b13e2619c969717c403f384dc0faef1b01e1015adba7e7ac70ee8142bb5463",
   "assets/yilin/stipple-36-5.webp": "59c9015f60b801c3959efb6e699f4821356acbb9236c02b076c53d5968b7f131",
-  "out/series/36-ming-yi/short.mp4": "7da449b920c0508fd07cbec78febcf60b5c82e612dbcda992a0d8c7628f204f6",
-  "out/series/36-ming-yi/share.mp4": "23db6834e347223a68dbe5fcee997747a8ea60979009f40eb22e2f3821f31b8e"
+  "out/series/36-ming-yi/short.mp4": "c68c4fc9b5c2adf3359efb7ab685c1cfa40bf180736ba4a0f21b47ef2ffccd2e",
+  "out/series/36-ming-yi/share.mp4": "86f98a9e980e4f3a81e8e0d7fbbcebc3041125da43022304ede8818374fe7bf6"
  }
 }
