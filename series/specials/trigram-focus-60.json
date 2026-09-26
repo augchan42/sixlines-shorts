@@ -1,0 +1,44 @@
+{
+ "hexagram": 60,
+ "occasion": "Trigram lesson, less is more (the user, 2026-09-26): the hexagram build's own look (blender/focus.py); the trigrams part a little and the camera moves slowly round and down to LAKE. No words, signs, lights or shake.",
+ "copy": {
+  "hook": {
+   "text": "Saying yes to everything?",
+   "source": "written"
+  },
+  "meaning": [
+   {
+    "text": "Limitation says:\nset limits.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   },
+   {
+    "text": "Firm, but\nnot bitter.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Where’s your\nlimit?",
+   "source": "written"
+  },
+  "plates": [
+   "60-42",
+   "60-62"
+  ],
+  "caption": {
+   "text": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break.",
+   "source": "commentary/en/60.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "A lake holds only\nso much water.",
+   "source": "commentary/en/60.json#image.synthesis",
+   "scene": {
+    "script": "focus",
+    "args": {
+     "stress": 0,
+     "rain": "public/assets/3d/rain.mp4"
+    }
+   }
+  }
+ }
+}
