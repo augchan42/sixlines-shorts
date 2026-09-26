@@ -1,0 +1,80 @@
+{
+ "hexagram": 21,
+ "special": "readout-21",
+ "rendered": "2026-09-26T12:29:54.163Z",
+ "commit": "0471fe8ee58cb3d3e26b9a8b86385ba7fd4965f3",
+ "clean": false,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "props": {
+  "hexagram": {
+   "number": 21,
+   "zh": "噬嗑",
+   "pinyin": "Shì Kè",
+   "name": "Biting Through",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100,
+  "firstBeat": 0,
+  "music": "local/music/pick10-retrowave.mp3",
+  "musicStart": 48.023,
+  "drop": 14.4,
+  "hook": "Something blocking you for weeks?",
+  "meaning": [
+   "Biting Through\nsays: bite down.",
+   "It won’t clear\nby itself."
+  ],
+  "question": "What will you\ndeal with now?",
+  "plates": [
+   "assets/yilin/stipple-21-42.webp",
+   "assets/yilin/stipple-21-53.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Warn clearly,\nthen bite.",
+   "trigrams": [
+    {
+     "zh": "火",
+     "name": "FIRE"
+    },
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     0,
+     3,
+     5
+    ],
+    "finding": "SOMETHING BETWEEN THE JAWS"
+   }
+  },
+  "pace": "even",
+  "credit": true,
+  "hexagramClip": "assets/3d/hexagram-100101-100bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-100101-100bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick10-retrowave.mp3": "281c3d7cc5f05506b75dfe9f51317698808d0140ec71787c598045d6a2349c61",
+  "local/music/certificates/synthwave-retrowave-149307-license.txt": "2da4c5ab8f0e7610502426214cb4fe84ca5905fdc9d4eb027247d050619d4dab",
+  "assets/3d/hexagram-100101-100bpm-8b.mp4": "46dcff31943fc4f9f64193b6bbc9145daa9502e6a424a7b7e6b1adc661f85db4",
+  "assets/3d/endcard-flip-100101-100bpm-9b.mp4": "a488043daa1b689d7e4a67b06d66a8ccc669c0990faa37d6cd905baf5236452a",
+  "assets/yilin/stipple-21-42.webp": "1304bffba57d927907344c213612fba3bf19068aaef374ea293c75d6262c5de5",
+  "assets/yilin/stipple-21-53.webp": "69f0dee6875dcbada462ddb7e1e972abd80fb38fe4b5947ab6763a12d4667583",
+  "out/specials/readout-21/short.mp4": "c40efd6da2ea5383936f051b3c74ac331d048a8a02b131a2a0a5b837b9d16d15",
+  "out/specials/readout-21/share.mp4": "e77eb0eb55334bec8e2312cd298a62772662b9620e175d40819e57085a3e02a0"
+ }
+}
