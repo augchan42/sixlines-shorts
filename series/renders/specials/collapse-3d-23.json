@@ -1,0 +1,65 @@
+{
+ "hexagram": 23,
+ "special": "collapse-3d-23",
+ "rendered": "2026-09-26T11:28:44.477Z",
+ "commit": "97e53f3102e4a14ccd92625144553a342978d325",
+ "clean": false,
+ "seconds": 32.042667,
+ "shareKbps": 5614,
+ "props": {
+  "hexagram": {
+   "number": 23,
+   "zh": "剝",
+   "pinyin": "Bō",
+   "name": "Splitting Apart",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  "bpm": 82.5,
+  "firstBeat": 0,
+  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+  "musicStart": 34.934,
+  "drop": 14.54,
+  "hook": "Everything falling apart?",
+  "meaning": [
+   "Splitting Apart\nsays: don’t run.",
+   "Stay and help\nthose below you."
+  ],
+  "question": "Who depends\non you?",
+  "plates": [
+   "assets/yilin/stipple-23-36.webp",
+   "assets/yilin/stipple-23-57.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Falling apart?\nShore up the base.",
+   "scene": "collapse",
+   "clip": "assets/3d/collapse-23-82.5bpm-12b-3hn1f.mp4"
+  },
+  "pace": "even",
+  "credit": true,
+  "hexagramClip": "assets/3d/hexagram-000001-82.5bpm-6b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-000001-82.5bpm-9b.mp4",
+   "mode": "join"
+  }
+ },
+ "files": {
+  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+  "local/music/certificates/synthwave-80s-retro-inspiring-synth-pop-570162-license.txt": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
+  "assets/3d/hexagram-000001-82.5bpm-6b.mp4": "607ad9e851f9d04a49553e0c2710cf86adc4e2c68bcdb85a4ffc6a6bcd21552d",
+  "assets/3d/endcard-join-000001-82.5bpm-9b.mp4": "57abe36a965ad0fa6d93acada22aa2b4c4a1abd903948a50e25b262ace336194",
+  "assets/3d/collapse-23-82.5bpm-12b-3hn1f.mp4": "4238e862574a8df9cca40f3ddd493bf35c63362e4457db8d91005998155f0144",
+  "assets/yilin/stipple-23-36.webp": "7bc478b925bdd4fc5de49707372a26dc9b7170b2b7efb82e4cd80de1c6c218a8",
+  "assets/yilin/stipple-23-57.webp": "106cd66de37a2be6324515dbc22f546b2caaea89e08fa0b44acce08492f8950d",
+  "out/specials/collapse-3d-23/short.mp4": "84c63be1eda999433efe36443149adaf171c6930a5a1d91f21c602edf082818b",
+  "out/specials/collapse-3d-23/share.mp4": "d93caed680ef808e37a3de53fd626ac92201675ed61659f825fdb1a510e90ed3"
+ }
+}
