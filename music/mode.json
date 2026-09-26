@@ -1,0 +1,309 @@
+{
+ "script": "music/mode.py",
+ "tracks": [
+  {
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "bpm": 102.0,
+   "key": "E minor",
+   "minorMargin": 0.1,
+   "sections": [
+    {
+     "trigram": "qian",
+     "start": 37.671,
+     "key": "E minor",
+     "minorMargin": 0.139
+    }
+   ]
+  },
+  {
+   "file": "pick02-neon-odyssey-medium-3.mp3",
+   "bpm": 129.99,
+   "key": "C major",
+   "minorMargin": -0.086,
+   "sections": []
+  },
+  {
+   "file": "pick03-the-consumate-professional-intro-outro.mp3",
+   "bpm": 150.0,
+   "key": "F major",
+   "minorMargin": -0.081,
+   "sections": []
+  },
+  {
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "bpm": 90.0,
+   "key": "D minor",
+   "minorMargin": 0.005,
+   "sections": [
+    {
+     "trigram": "kun",
+     "start": 0.0,
+     "key": "A# major",
+     "minorMargin": -0.021
+    }
+   ]
+  },
+  {
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "bpm": 82.5,
+   "key": "C major",
+   "minorMargin": -0.133,
+   "sections": [
+    {
+     "trigram": "gen",
+     "start": 34.934,
+     "key": "C major",
+     "minorMargin": -0.206
+    }
+   ]
+  },
+  {
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "bpm": 120.0,
+   "key": "F major",
+   "minorMargin": -0.029,
+   "sections": [
+    {
+     "trigram": "dui",
+     "start": 98.023,
+     "key": "D minor",
+     "minorMargin": 0.015
+    },
+    {
+     "trigram": "dui",
+     "start": 4.023,
+     "key": "F major",
+     "minorMargin": -0.001
+    },
+    {
+     "trigram": "dui",
+     "start": 34.023,
+     "key": "F major",
+     "minorMargin": -0.017
+    }
+   ]
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "key": "A minor",
+   "minorMargin": 0.135,
+   "sections": [
+    {
+     "trigram": "zhen",
+     "start": 158.426,
+     "key": "A minor",
+     "minorMargin": 0.239
+    }
+   ]
+  },
+  {
+   "file": "pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+   "bpm": 97.0,
+   "key": "E major",
+   "minorMargin": -0.361,
+   "sections": []
+  },
+  {
+   "file": "pick09-synthwave.mp3",
+   "bpm": 100.0,
+   "key": "G# major",
+   "minorMargin": -0.201,
+   "sections": [
+    {
+     "trigram": "kan",
+     "start": 91.223,
+     "key": "G# major",
+     "minorMargin": -0.164
+    }
+   ]
+  },
+  {
+   "file": "pick10-retrowave.mp3",
+   "bpm": 100.0,
+   "key": "D# minor",
+   "minorMargin": 0.165,
+   "sections": [
+    {
+     "trigram": "li",
+     "start": 48.023,
+     "key": "D# minor",
+     "minorMargin": 0.04
+    }
+   ]
+  },
+  {
+   "file": "pick11-retro-synth-pop.mp3",
+   "bpm": 95.0,
+   "key": "E minor",
+   "minorMargin": 0.113,
+   "sections": [
+    {
+     "trigram": "xun",
+     "start": 65.943,
+     "key": "E minor",
+     "minorMargin": 0.117
+    }
+   ]
+  },
+  {
+   "file": "pick12-neon-drive-horizon.mp3",
+   "bpm": 100.58,
+   "key": "D# major",
+   "minorMargin": -0.055,
+   "sections": [
+    {
+     "trigram": "qian",
+     "start": 0.0,
+     "key": "D# minor",
+     "minorMargin": 0.11
+    }
+   ]
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "key": "B minor",
+   "minorMargin": 0.141,
+   "sections": [
+    {
+     "trigram": "kun",
+     "start": 0.023,
+     "key": "B minor",
+     "minorMargin": 0.135
+    }
+   ]
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "key": "D# minor",
+   "minorMargin": 0.186,
+   "sections": [
+    {
+     "trigram": "gen",
+     "start": 8.059,
+     "key": "A# minor",
+     "minorMargin": 0.148
+    }
+   ]
+  },
+  {
+   "file": "pick15-arcade-retro-nights.mp3",
+   "bpm": 126.01,
+   "key": "G minor",
+   "minorMargin": 0.078,
+   "sections": []
+  },
+  {
+   "file": "pick16-synthwave-mondamusic.mp3",
+   "bpm": 136.76,
+   "key": "C minor",
+   "minorMargin": 0.045,
+   "sections": []
+  },
+  {
+   "file": "pick17-midnight-synthwave.mp3",
+   "bpm": 90.0,
+   "key": "G major",
+   "minorMargin": -0.054,
+   "sections": [
+    {
+     "trigram": "kun",
+     "start": 0.0,
+     "key": "G major",
+     "minorMargin": -0.038
+    }
+   ]
+  },
+  {
+   "file": "pick18-dreamy-synthwave.mp3",
+   "bpm": 100.0,
+   "key": "G minor",
+   "minorMargin": 0.029,
+   "sections": [
+    {
+     "trigram": "xun",
+     "start": 52.977,
+     "key": "G minor",
+     "minorMargin": 0.019
+    }
+   ]
+  },
+  {
+   "file": "pick19-christmas-synthwave.mp3",
+   "bpm": 115.0,
+   "key": "D# major",
+   "minorMargin": -0.166,
+   "sections": [
+    {
+     "trigram": "kan",
+     "start": 21.157,
+     "key": "D# major",
+     "minorMargin": -0.13
+    }
+   ]
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "key": "C minor",
+   "minorMargin": 0.245,
+   "sections": [
+    {
+     "trigram": "qian",
+     "start": 4.023,
+     "key": "C minor",
+     "minorMargin": 0.249
+    }
+   ]
+  },
+  {
+   "file": "pick21-neon-mirage.mp3",
+   "bpm": 112.0,
+   "key": "F major",
+   "minorMargin": -0.154,
+   "sections": [
+    {
+     "trigram": "zhen",
+     "start": 158.617,
+     "key": "F major",
+     "minorMargin": -0.253
+    }
+   ]
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "key": "G minor",
+   "minorMargin": 0.263,
+   "sections": [
+    {
+     "trigram": "li",
+     "start": 206.613,
+     "key": "G minor",
+     "minorMargin": 0.087
+    },
+    {
+     "trigram": "dui",
+     "start": 163.431,
+     "key": "G minor",
+     "minorMargin": 0.19
+    },
+    {
+     "trigram": "dui",
+     "start": 0.0,
+     "key": "D minor",
+     "minorMargin": 0.126
+    }
+   ]
+  },
+  {
+   "file": "pick23-bot-factory.mp3",
+   "bpm": 147.01,
+   "key": "A minor",
+   "minorMargin": 0.323,
+   "sections": []
+  }
+ ]
+}

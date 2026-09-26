@@ -17,6 +17,17 @@ def key(obj, path, frame):
     obj.keyframe_insert(path, frame=frame + 1)
 
 
+def wet():
+    """A wet street for the floor rather than black glass: rough enough that the searchlight's
+    pool shows on it, glossy enough to glare."""
+    m = bpy.data.materials.new("wet")
+    m.use_nodes = True
+    b = m.node_tree.nodes["Principled BSDF"]
+    b.inputs["Base Color"].default_value = (0.03, 0.032, 0.035, 1)
+    b.inputs["Roughness"].default_value = 0.32
+    return m
+
+
 def haze(scene, density=0.012):
     """Thin smoke through the whole scene, so the beam shows as a shaft."""
     tree = scene.world.node_tree

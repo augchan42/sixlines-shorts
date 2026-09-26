@@ -1,0 +1,37 @@
+{
+ "hexagram": 60,
+ "occasion": "Trigram lesson, option 2 of 3: the flat trigram picture, with no shake, and the 2D searchlight redone as a pool of light sliding across it with glare.",
+ "copy": {
+  "hook": {
+   "text": "Saying yes to everything?",
+   "source": "written"
+  },
+  "meaning": [
+   {
+    "text": "Limitation says:\nset limits.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   },
+   {
+    "text": "Firm, but\nnot bitter.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Where’s your\nlimit?",
+   "source": "written"
+  },
+  "plates": [
+   "60-42",
+   "60-62"
+  ],
+  "caption": {
+   "text": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break.",
+   "source": "commentary/en/60.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "A lake holds only\nso much water.",
+   "source": "commentary/en/60.json#image.synthesis"
+  }
+ }
+}

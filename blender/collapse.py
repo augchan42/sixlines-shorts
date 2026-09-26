@@ -28,7 +28,7 @@ import bpy
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from hexagram import REST, add_slab, animate_slab, bloom, key, linear, obsidian, render_settings  # noqa: E402
 from layout import FPS, LINE_H, frame_count, land_frame, line_z, slabs  # noqa: E402
-from searchlight import haze, searchlight, streaks  # noqa: E402
+from searchlight import haze, searchlight, streaks, wet  # noqa: E402
 
 AMBER = "#ffb347"  # the end card's amber backlight, as the stressed Judgment characters
 BASE = -line_z(0) + LINE_H / 2  # lifts the hexagram so its bottom line stands on the floor
@@ -71,16 +71,6 @@ def let_go(o, f):
     o.keyframe_insert("rigid_body.kinematic", frame=f)
     o.rigid_body.kinematic = False
     o.keyframe_insert("rigid_body.kinematic", frame=f + 1)
-
-
-def wet():
-    """A wet street rather than black glass: rough enough that the searchlight's pool shows on it."""
-    m = bpy.data.materials.new("wet")
-    m.use_nodes = True
-    b = m.node_tree.nodes["Principled BSDF"]
-    b.inputs["Base Color"].default_value = (0.03, 0.032, 0.035, 1)
-    b.inputs["Roughness"].default_value = 0.32
-    return m
 
 
 def pull(scene, f, beat):

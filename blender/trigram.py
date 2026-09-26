@@ -4,14 +4,21 @@ then the picture plays out between them. There is no shake: the camera drifts an
 
 --scene lake (60, water over the lake): the lower trigram sinks into the floor and a round
 lake rises in its place; the upper trigram turns to water and rains into it; the lake fills
-to its rim and stops there, the rim flares, and a last drop only ripples the surface.
+to its rim and stops there, the rim flares, and a last drop only ripples the surface. (The
+user found the water cheesy, 2026-09-26; bars and signs are the next tries.)
+
+--scene bars: the parted trigrams hold with their names, and the one the lesson turns on
+(--stress, 0 the lower, 1 the upper) flares and turns amber, under a searchlight.
+
+--scene signs: as bars, but a neon sign of each trigram's image (--signs, e.g. "lake|water")
+draws on above it, like a Hong Kong neon sign, and turns amber with its trigram.
 
 Timed for a lesson of --beats beats, with the last 5 beats left clear for the sentence the
 template types under it.
 
 Run through scripts/lesson3d.mjs, or directly:
   Blender -b --factory-startup --python-exit-code 1 -P blender/trigram.py -- \
-    --scene lake --lines 110010 --names "LAKE|WATER" --pixel public/fonts/PixelOperator-Bold.ttf \
+    --scene bars|signs|lake --lines 110010 [--stress 0] [--signs "lake|water"] --names "LAKE|WATER" --pixel public/fonts/PixelOperator-Bold.ttf \
     --bpm 100 --beats 12 --out out/trigram.mp4 [--still N] [--preview]
 """
 
@@ -25,11 +32,16 @@ import bpy
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from hexagram import DEPTH, PULSE, REST, add_slab, bloom, edge, key, linear, obsidian, render_settings  # noqa: E402
-from layout import FPS, frame_count, line_z, slabs  # noqa: E402
+from layout import FPS, LINE_H, frame_count, line_z, slabs  # noqa: E402
+from searchlight import haze, searchlight, streaks, wet  # noqa: E402
 
 WATER = "#5ee7ff"
 LABEL = "#e8f5e4"
 BASE = 3.2  # the hexagram's centre height above the floor
+AMBER = "#ffb347"  # the end card's amber backlight, as the stressed Judgment characters
+UPPER_RISE = 1.6  # how far the upper trigram rises as the trigrams part (bars)
+SIGN_RISE = 3.2  # the same with signs, to leave room for the lower trigram's sign
+SIGN_W = 2.6  # a sign's width
 RIM_R = 2.7  # the lake's radius
 RIM_H = 1.3  # the lake's wall height
 FULL = RIM_H - 0.04  # the water's level when the lake is full
@@ -38,7 +50,9 @@ FULL = RIM_H - 0.04  # the water's level when the lake is full
 def parse():
     argv = sys.argv[sys.argv.index("--") + 1 :] if "--" in sys.argv else []
     p = argparse.ArgumentParser()
-    p.add_argument("--scene", choices=("lake",), required=True)
+    p.add_argument("--scene", choices=("lake", "bars", "signs"), required=True)
+    p.add_argument("--stress", type=int, choices=(0, 1), help="the trigram that turns amber: 0 the lower, 1 the upper")
+    p.add_argument("--signs", help="each trigram's sign, lower first, separated by |")
     p.add_argument("--lines", required=True, help="six lines, bottom first, 1 = yang")
     p.add_argument("--names", required=True, help="the lower and upper trigrams' names, separated by |")
     p.add_argument("--pixel", required=True)
@@ -209,6 +223,82 @@ def drop(top, f, beat, level):
     return land
 
 
+def neon_path(name, strokes, colour, t, beat):
+    """A neon tube along each stroke, a list of (x, z) points in the plane facing the camera,
+    drawn on from frame `t` over most of a beat. Returns the tube's material node."""
+    curve = bpy.data.curves.new(name, "CURVE")
+    curve.dimensions = "3D"
+    curve.bevel_depth = 0.045
+    curve.bevel_resolution = 3
+    curve.use_fill_caps = True
+    for points in strokes:
+        spline = curve.splines.new("POLY")
+        spline.points.add(len(points) - 1)
+        for p, (x, z) in zip(spline.points, points):
+            p.co = (x, 0, z, 1)
+    o = bpy.data.objects.new(name, curve)
+    bpy.context.scene.collection.objects.link(o)
+    m, glow = edge(colour, f"neon-{name}")
+    o.data.materials.append(m)
+    for f, v in ((t, 0.0), (t + round(0.8 * beat), 1.0)):
+        curve.bevel_factor_end = v
+        curve.keyframe_insert("bevel_factor_end", frame=f + 1)
+    for f, v in ((t - 1, REST), (t + round(0.8 * beat), PULSE * 0.5), (t + round(1.2 * beat), REST)):
+        glow.default_value = v
+        glow.keyframe_insert("default_value", frame=f + 1)
+    o.hide_render = True
+    key(o, "hide_render", 0)
+    o.hide_render = False
+    key(o, "hide_render", t)
+    return o, m.node_tree.nodes["Principled BSDF"]
+
+
+def sign_strokes(kind):
+    """The strokes of a trigram's sign, SIGN_W wide and centred on (0, 0)."""
+    w = SIGN_W / 2
+    if kind == "water":
+        # Three waves, one above another, as the running water of ☵.
+        return [[(w * (-1 + 2 * k / 48), dz + 0.14 * math.sin(k / 48 * 4 * math.pi)) for k in range(49)] for dz in (0.45, 0, -0.45)]
+    if kind == "lake":
+        # A bowl, and the water in it held at a level just under the brim.
+        bowl = [(w * math.cos(a), 0.5 - 1.05 * math.sin(a)) for a in (math.pi * k / 40 for k in range(41))]
+        return [bowl, [(w * (-0.85 + 1.7 * k / 20), 0.1) for k in range(21)]]
+    raise SystemExit(f"no sign for {kind}")
+
+
+def turn_amber(bsdfs, t):
+    """The given neon flares at frame `t` and turns amber, then holds a little brighter."""
+    for b in bsdfs:
+        c0 = tuple(b.inputs["Emission Color"].default_value)
+        for f, v, c in ((t - 1, REST, c0), (t + 3, PULSE, linear(AMBER)), (t + 14, REST * 1.5, linear(AMBER))):
+            b.inputs["Emission Strength"].default_value = v
+            b.inputs["Emission Strength"].keyframe_insert("default_value", frame=f + 1)
+            for name in ("Emission Color", "Base Color"):
+                b.inputs[name].default_value = c
+                b.inputs[name].keyframe_insert("default_value", frame=f + 1)
+
+
+def held_camera(scene, frames, beat, top):
+    """In front, a little above, drifting in over the lesson. `top` is the height of the
+    highest thing to frame; the picture sits in the upper part, clear of the sentence."""
+    target = bpy.data.objects.new("target", None)
+    scene.collection.objects.link(target)
+    data = bpy.data.cameras.new("camera")
+    data.lens = 35
+    cam = bpy.data.objects.new("camera", data)
+    scene.collection.objects.link(cam)
+    scene.camera = cam
+    track = cam.constraints.new("TRACK_TO")
+    track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
+    mid = top / 2
+    # Never closer than keeps the 6.2 m bars clear of the frame's sides.
+    for f, dist, lift in ((0, max(1.25 * top + 7, 18.5), 0.2), (frames - 1, max(1.1 * top + 6, 16.5), 0.35)):
+        cam.location = (0, -dist, mid + lift * top)
+        key(cam, "location", f)
+        target.location = (0, 0, mid - 0.18 * top)
+        key(target, "location", f)
+
+
 def camera(scene, frames, beat):
     """In front, level with the standing hexagram, then craning up a little over the lake."""
     target = bpy.data.objects.new("target", None)
@@ -229,6 +319,59 @@ def camera(scene, frames, beat):
         key(target, "location", f)
 
 
+def held(args, scene, frames, beat, colour, black, names):
+    """The bars and signs scenes: the trigrams part and take their names (and signs), then
+    the one the lesson turns on turns amber, under a searchlight."""
+    signs = args.signs.split("|") if args.scene == "signs" else None
+    rise = SIGN_RISE if signs else UPPER_RISE
+    halves = trigrams(args.lines, black, colour)
+    parts = halves[0][1] + halves[1][1]
+    for k, (_, strength) in enumerate(parts):
+        pulse(strength, round((0.3 + 0.12 * k) * beat))
+    part = round(1.2 * beat)
+    for (e, _), dz in zip(halves, (0, rise)):
+        for f, z in ((0, 0), (part, 0), (part + round(0.4 * beat), dz)):
+            e.location.z = z
+            key(e, "location", f, index=2)
+    for h, (e, _) in enumerate(halves):
+        label(f"name{h}", names[h], line_z(1 + 3 * h) + BASE, args.pixel, part + round(0.4 * beat)).parent = e
+    stressed = [o.data.materials[1].node_tree.nodes["Principled BSDF"] for o, _ in halves[args.stress][1]] if args.stress is not None else []
+    top = BASE + rise + line_z(5) + LINE_H / 2
+    if signs:
+        # Each sign sits above its trigram; the upper's first, as the eye reads down.
+        for h in (1, 0):
+            z = BASE + line_z(2 + 3 * h) + LINE_H / 2 + (rise if h else 0) + 1.3
+            o, b = neon_path(f"sign{h}", sign_strokes(signs[h]), colour, round((2.0 + 0.7 * (1 - h)) * beat), beat)
+            o.location.z = z
+            if h == args.stress:
+                stressed.append(b)
+        top = BASE + rise + line_z(5) + LINE_H / 2 + 2.0
+    if stressed:
+        turn_amber(stressed, round((3.8 if signs else 3.0) * beat))
+
+    world = bpy.data.worlds.new("black")
+    world.use_nodes = True
+    world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0
+    scene.world = world
+    bpy.ops.mesh.primitive_plane_add(size=120, location=(0, 0, 0))
+    bpy.context.object.data.materials.append(wet())
+    haze(scene)
+    # The searchlight swings from the left, behind, across the trigrams to the floor at the right.
+    searchlight(scene, frames, (6, 9, top + 10), [(0, (-7, 2, 0)), (round(frames * 0.5), (0, 0, top * 0.45)), (frames - 1, (7, -3, 0))])
+    held_camera(scene, frames, beat, top)
+    bloom(scene)
+    streaks(scene)
+    render_settings(scene, frames, args.out, args.preview)
+    if args.still is not None:
+        scene.frame_set(args.still + 1)
+        scene.render.image_settings.media_type = "IMAGE"
+        scene.render.image_settings.file_format = "PNG"
+        scene.render.filepath = os.path.abspath(args.out)
+        bpy.ops.render.render(write_still=True)
+    else:
+        bpy.ops.render.render(animation=True)
+
+
 def main():
     args = parse()
     scene = bpy.context.scene
@@ -240,6 +383,8 @@ def main():
     black = obsidian()
     names = args.names.split("|")
 
+    if args.scene != "lake":
+        return held(args, scene, frames, beat, colour, black, names)
     (lower, low_parts), (upper, up_parts) = trigrams(args.lines, black, colour)
     # Beat 0.3: the lines light bottom to top. Beat 1.2: the trigrams part and take their names.
     for k, (_, strength) in enumerate(low_parts + up_parts):

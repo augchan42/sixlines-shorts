@@ -53,3 +53,9 @@ class SectionTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ArgTest(unittest.TestCase):
+    def test_a_section_can_be_kept_for_named_hexagrams(self):
+        self.assertEqual(add_sections.parse_arg("pick13:kun"), ("pick13", "kun", None))
+        self.assertEqual(add_sections.parse_arg("pick22:dui:47,49"), ("pick22", "dui", [47, 49]))

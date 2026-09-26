@@ -1,0 +1,46 @@
+{
+ "hexagram": 60,
+ "occasion": "Trigram lesson, option 3 of 3: as the bars, with a neon sign of each trigram image drawn on above it (a bowl held at its level for LAKE, three waves for WATER); LAKE and its sign turn amber.",
+ "copy": {
+  "hook": {
+   "text": "Saying yes to everything?",
+   "source": "written"
+  },
+  "meaning": [
+   {
+    "text": "Limitation says:\nset limits.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   },
+   {
+    "text": "Firm, but\nnot bitter.",
+    "source": "commentary/en/60.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Where’s your\nlimit?",
+   "source": "written"
+  },
+  "plates": [
+   "60-42",
+   "60-62"
+  ],
+  "caption": {
+   "text": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break.",
+   "source": "commentary/en/60.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "A lake holds only\nso much water.",
+   "source": "commentary/en/60.json#image.synthesis",
+   "scene": {
+    "script": "trigram",
+    "args": {
+     "scene": "signs",
+     "names": "LAKE|WATER",
+     "stress": 0,
+     "signs": "lake|water"
+    }
+   }
+  }
+ }
+}

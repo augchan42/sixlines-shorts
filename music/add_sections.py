@@ -5,6 +5,10 @@ six bars before it (the hook and the hexagram build), or five or four when six m
 short too long, or at the top of the track when the rise is earlier.
 
   python3 music/add_sections.py pick13:kun pick17:kun ...   # file-name prefix:trigram
+  python3 music/add_sections.py pick22:dui:47                # kept for hexagram 47 only
+
+A section kept for named hexagrams (`for` in sections.json) goes to them and is out of the
+trigram's turns (scripts/series/table.mjs); its track may sit under another trigram too.
 
 A track that already has a section gets another part of it, starting at least SPREAD
 seconds from its other parts, so one song can serve a trigram more than once.
@@ -75,6 +79,12 @@ def section(track, problems=plan_problems, taken=()):
     return {k: v for k, v in options[0].items() if k != "rise"}
 
 
+def parse_arg(arg):
+    """prefix:trigram[:n,n] -> (prefix, trigram, [n, n] or None)."""
+    prefix, trigram, *kept = arg.split(":")
+    return prefix, trigram, [int(n) for n in kept[0].split(",")] if kept else None
+
+
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     tracks = json.load(open(os.path.join(here, "analysis.json")))["tracks"]
@@ -82,17 +92,17 @@ def main():
     doc = json.load(open(path))
     symbols = {s["trigram"]: s["symbol"] for s in doc["sections"]}
     for arg in sys.argv[1:]:
-        prefix, trigram = arg.split(":")
+        prefix, trigram, kept = parse_arg(arg)
         t = next(x for x in tracks if x["file"].startswith(prefix))
         same = [s for s in doc["sections"] if s["file"] == t["file"]]
-        if any(s["trigram"] != trigram for s in same):
+        if not kept and any(s["trigram"] != trigram for s in same):
             raise SystemExit(f"{t['file']} is under another trigram")
         s = section(t, taken=[x["start"] for x in same])
         if same:
             s["certificate"] = same[0]["certificate"]
         doc["sections"].append(
             {"trigram": trigram, "symbol": symbols[trigram], "file": t["file"], "sha256": t["sha256"], "title": t["title"],
-             "licence": t["licence"], "source": t["source"], "bpm": t["bpm"], **s}
+             "licence": t["licence"], "source": t["source"], "bpm": t["bpm"], **s, **({"for": kept} if kept else {})}
         )
         print(f"{trigram:5} {t['file']}: from {s['start']} s, drop {s['drop']} s in")
     with open(path, "w") as f:

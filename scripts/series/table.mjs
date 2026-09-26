@@ -15,15 +15,18 @@ const firstSentence = (text) => text.match(/^.*?[.?!](\s|$)/)?.[0].trim() ?? tex
 // Each upper trigram has one or more tracks, in music/sections.json order. The first goes to
 // the doubled hexagram (lower trigram the same as the upper); the others, in number order,
 // take the tracks in turn from the second, so the first track is not heard twice in a row.
+// A section with `for` is kept for those hexagrams and out of the turns; such a hexagram
+// still counts its turn, so no other hexagram's track moves.
 const trackFor = (sections, lines) => {
   const turn = {};
   return (n) => {
     const upper = trigram(lines[n]);
-    const tracks = sections.filter((s) => s.trigram === upper);
+    const tracks = sections.filter((s) => s.trigram === upper && !s.for);
+    const kept = sections.find((s) => s.for?.includes(n));
     if (!tracks.length) return undefined;
-    if (lines[n].slice(0, 3).join("") === lines[n].slice(3).join("")) return tracks[0];
+    if (lines[n].slice(0, 3).join("") === lines[n].slice(3).join("")) return kept ?? tracks[0];
     turn[upper] = (turn[upper] ?? 0) + 1;
-    return tracks[turn[upper] % tracks.length];
+    return kept ?? tracks[turn[upper] % tracks.length];
   };
 };
 
