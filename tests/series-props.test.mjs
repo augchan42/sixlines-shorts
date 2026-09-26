@@ -137,3 +137,11 @@ test("a readout lesson carries its trigrams and marks, and no clip: it types its
   assert.deepEqual(p.lesson.trigrams, [{ zh: "水", name: "WATER" }, { zh: "水", name: "WATER" }]);
   assert.equal(p.lesson.clip, undefined);
 });
+
+test("a readout with Wang Bi's master takes the held lesson's length, having more to log", () => {
+  const master = { zh: "為坎之主", en: "Master of the Abyss" };
+  const lesson = { kind: "lines", text: "t", readout: { mark: [4], master }, source: "written" };
+  const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
+  assert.deepEqual(p.lesson.readout.master, master);
+  assert.equal(p.lesson.beats, 16);
+});

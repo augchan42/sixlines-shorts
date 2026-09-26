@@ -1,0 +1,83 @@
+{
+ "hexagram": 14,
+ "special": "readout-14",
+ "rendered": "2026-09-26T12:47:59.537Z",
+ "commit": "932658a1b2158a9de0896f533f923923fbb41b8f",
+ "clean": false,
+ "seconds": 29.461333,
+ "shareKbps": 6117,
+ "props": {
+  "hexagram": {
+   "number": 14,
+   "zh": "大有",
+   "pinyin": "Dà Yǒu",
+   "name": "Great Possession",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  "bpm": 100.05,
+  "firstBeat": 0,
+  "music": "local/music/pick22-cinematic-dark-synthwave.mp3",
+  "musicStart": 206.613,
+  "drop": 14.394,
+  "hook": "Doing better than everyone around you?",
+  "meaning": [
+   "Great Possession\nsays: people see.",
+   "Use it to put\nthings right."
+  ],
+  "question": "What would you\nfix first?",
+  "plates": [
+   "assets/yilin/stipple-14-41.webp",
+   "assets/yilin/stipple-14-36.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Lead by trust,\nnot force.",
+   "trigrams": [
+    {
+     "zh": "火",
+     "name": "FIRE"
+    },
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    }
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "master": {
+     "zh": "為大有之主",
+     "en": "Ruler of Great Possession"
+    },
+    "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER."
+   },
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-111101-100.05bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-flip-111101-100.05bpm-9b.mp4",
+   "mode": "flip"
+  }
+ },
+ "files": {
+  "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
+  "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+  "assets/3d/hexagram-111101-100.05bpm-8b.mp4": "a82f651f7fd015ccc304f237a1f7052a452843ee4b4fbfb082824c690a80f4dd",
+  "assets/3d/endcard-flip-111101-100.05bpm-9b.mp4": "fd00da521fc39aac145f775ce9040288000e1f71615564f6c665597c1080ee3f",
+  "assets/yilin/stipple-14-41.webp": "684f8cd71ae0bcd97d9b2dea31d399ab3ce21a4c6c72db00dff79d9777195403",
+  "assets/yilin/stipple-14-36.webp": "2550cdce2580de748693334edf3583a14de67961cebec2a0c5e86bd8c7de8726",
+  "out/specials/readout-14/short.mp4": "78eb476dacaf35cd10ffb6cd218f6fcec52f32247c3b35e2ba2590bc9788e154",
+  "out/specials/readout-14/share.mp4": "7a97e3b8dfba59a3913eafd34bcbffdadbb88affdba689049ce38c8422ec4bc3"
+ }
+}

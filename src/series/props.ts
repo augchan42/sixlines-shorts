@@ -1,5 +1,5 @@
 import { characterClip, endcardClip, type EndcardMode, hexagramClip, moonClip, sceneClip } from "../lib/clips.ts";
-import { planOf } from "../lib/seriesPlan.ts";
+import { HELD_LESSON_BEATS, planOf } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
 type Line = { text: string; source: string };
@@ -29,9 +29,9 @@ export type SeriesRow = {
       character?: { char: string; beats: number; args: Record<string, unknown> };
       // A Judgment or trigram lesson acted out in Blender: blender/glyphs.py or blender/trigram.py
       // with these settings (scripts/lesson3d.mjs), in place of the Library page or the 2D trigrams.
-      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite"; args: Record<string, unknown> };
+      scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite" | "bird"; args: Record<string, unknown> };
       // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
-      readout?: { mark: number[]; finding?: string };
+      readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string } };
     };
     // true adds the ~DISNEYFAN credit; left out by default since 2026-09-26, when the user
     // said the shorts had moved far from her edit.
@@ -109,8 +109,9 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
     return { kind: l.kind, text: l.text, beats: l.character.beats + CHARACTER_HOLD_BEATS };
   }
   const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
-  // A readout plays for the whole lesson and types the sentence itself.
-  if (l.readout) return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout };
+  // A readout plays for the whole lesson and types the sentence itself; with Wang Bi's master
+  // it has more to log, so it takes the held length.
+  if (l.readout) return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout, ...(l.readout.master ? { beats: HELD_LESSON_BEATS } : {}) };
   // A Blender scene plays for the whole lesson, the sentence typed under its end.
   if (l.scene) return { kind: l.kind, text: l.text, scene: l.scene.script };
   if (l.kind === "lines") {

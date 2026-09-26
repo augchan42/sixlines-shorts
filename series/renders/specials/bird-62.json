@@ -1,0 +1,65 @@
+{
+ "hexagram": 62,
+ "special": "bird-62",
+ "rendered": "2026-09-26T12:51:34.907Z",
+ "commit": "932658a1b2158a9de0896f533f923923fbb41b8f",
+ "clean": false,
+ "seconds": 24.149333,
+ "shareKbps": 7491,
+ "props": {
+  "hexagram": {
+   "number": 62,
+   "zh": "小過",
+   "pinyin": "Xiǎo Guò",
+   "name": "Preponderance of the Small",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  "bpm": 112,
+  "firstBeat": 0,
+  "music": "local/music/pick21-neon-mirage.mp3",
+  "musicStart": 158.617,
+  "drop": 12.858,
+  "hook": "Big plan stuck for months?",
+  "meaning": [
+   "The Small says:\nno big moves.",
+   "Small done well\nends well."
+  ],
+  "question": "What small thing\ncan you do?",
+  "plates": [
+   "assets/yilin/stipple-62-26.webp",
+   "assets/yilin/stipple-62-59.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Fly low.\nDo the small thing.",
+   "scene": "bird",
+   "clip": "assets/3d/bird-62-112bpm-12b-j481fo.mp4"
+  },
+  "pace": "even",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-001100-112bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-snap-001100-112bpm-9b.mp4",
+   "mode": "snap"
+  }
+ },
+ "files": {
+  "local/music/pick21-neon-mirage.mp3": "10ae649056b7ce3de8ebf1015bbb32219e2fcd0740bac3a16a2a812f04825618",
+  "local/music/certificates/synthwave-neon-mirage-synthwave-music-384112-license.txt": "12d9d21a10195cfafd4ea5a45251de0510683e1fd7785b00c7fd9ea2f06e6e26",
+  "assets/3d/hexagram-001100-112bpm-8b.mp4": "19a4eec8d2bf810e1d2a583bf65cd9153aa160fa00145e73bc26da46422475c7",
+  "assets/3d/endcard-snap-001100-112bpm-9b.mp4": "211214a5b3d31cf17954669fe24890a31be4ed77da5eb6f5ead2ce1956035bc3",
+  "assets/3d/bird-62-112bpm-12b-j481fo.mp4": "0d73562d57a7eaa134d816edb5b4a5345d0afcc2ef8ccefdbf7de6c442a357b1",
+  "assets/yilin/stipple-62-26.webp": "46c613ac3a4c167190ee5ffafec404b4f05929159b8686e6c6ce6b3a0cbe94a9",
+  "assets/yilin/stipple-62-59.webp": "3ff3c3f7f58718c3c59e908416ec5cadf21a1c576e79da331131a859da9dbe6f",
+  "out/specials/bird-62/short.mp4": "28493e59e20530ca1a1a6a9ea218da67a3965c01c51b5094809abfe5909fa882",
+  "out/specials/bird-62/share.mp4": "68f0266e4f8ef0dc264f4733029296c8eab4acf57ca6de13535731bb32ed32bb"
+ }
+}

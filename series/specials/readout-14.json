@@ -1,0 +1,48 @@
+{
+ "hexagram": 14,
+ "occasion": "Experiment (the user, 2026-09-26: \"do it for both\"): the readout with Wang Bi's reading (src/scenes/Readout.tsx). Each line logged in or out of its place, the centres, the answering lines linked, and the fifth line marked with Wang Bi's words naming it the ruler.",
+ "copy": {
+  "hook": {
+   "text": "Doing better than everyone around you?",
+   "source": "commentary/en/14.json#image.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Great Possession\nsays: people see.",
+    "source": "commentary/en/14.json#image.synthesis"
+   },
+   {
+    "text": "Use it to put\nthings right.",
+    "source": "commentary/en/14.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What would you\nfix first?",
+   "source": "written"
+  },
+  "plates": [
+   "14-41",
+   "14-36"
+  ],
+  "caption": {
+   "text": "The image is fire high in the sky, lighting everything below. When you have a lot, people see what you do with it.",
+   "source": "commentary/en/14.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Lead by trust,\nnot force.",
+   "source": "commentary/en/14.json#lines[4].synthesis",
+   "readout": {
+    "mark": [
+     4
+    ],
+    "master": {
+     "zh": "為大有之主",
+     "en": "Ruler of Great Possession"
+    },
+    "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER."
+   },
+   "readout_source": "master: series/wangbi.json#14 (Wang Bi on line 5); finding: Tuan Zhuan on 14, 柔得尊位大中而上下應之"
+  }
+ }
+}

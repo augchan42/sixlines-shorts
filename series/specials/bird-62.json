@@ -1,0 +1,43 @@
+{
+ "hexagram": 62,
+ "occasion": "Experiment (the user, 2026-09-26: \"do it for both\"): the lines act the picture of 62 as 21's bite does (blender/bird.py). The yin halves are a bird's wings; it beats them and lifts, then glides down, as the Judgment says: not fitting to go up, fitting to go down.",
+ "copy": {
+  "hook": {
+   "text": "Big plan stuck for months?",
+   "source": "commentary/en/62.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "The Small says:\nno big moves.",
+    "source": "commentary/en/62.json#judgment.synthesis"
+   },
+   {
+    "text": "Small done well\nends well.",
+    "source": "commentary/en/62.json#judgment.synthesis"
+   }
+  ],
+  "question": {
+   "text": "What small thing\ncan you do?",
+   "source": "written"
+  },
+  "plates": [
+   "62-26",
+   "62-59"
+  ],
+  "caption": {
+   "text": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal.",
+   "source": "commentary/en/62.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Fly low.\nDo the small thing.",
+   "source": "commentary/en/62.json#judgment.synthesis",
+   "scene": {
+    "script": "bird",
+    "args": {
+     "rain": "public/assets/3d/rain.mp4"
+    }
+   }
+  }
+ }
+}

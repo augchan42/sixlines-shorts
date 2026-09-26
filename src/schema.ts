@@ -124,7 +124,7 @@ export const seriesSchema = z.object({
       scene: z.string().optional(),
       // A lesson as a ship's computer readout (src/scenes/Readout.tsx): the lines plotted and
       // logged, the trigrams named, these lines marked with the finding, the sentence typed.
-      readout: z.object({ mark: z.array(z.number().int().min(0).max(5)), finding: z.string().optional() }).optional(),
+      readout: z.object({ mark: z.array(z.number().int().min(0).max(5)), finding: z.string().optional(), master: z.object({ zh: z.string(), en: z.string() }).optional() }).optional(),
       labels: z.array(z.string()).length(6).optional(),
       // A character lesson (blender/character.py) sets its own length: its drawing, then 3
       // beats for the sentence under the finished character.

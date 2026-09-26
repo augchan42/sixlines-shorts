@@ -104,16 +104,27 @@ export const Readout: React.FC<{
   // Line indices (0 = bottom) to mark, and what the computer says about them.
   mark?: number[];
   finding?: string;
-}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding }) => {
+  // Wang Bi's words naming the marked line the hexagram's master (series/wangbi.json).
+  master?: { zh: string; en: string };
+}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames: d } = useVideoConfig();
-  // The acts, as shares of the lesson: header, plot, trigrams, finding, then the answer.
+  // The acts, as shares of the lesson: header, plot, the answering lines, trigrams, Wang
+  // Bi's master, the finding, then the answer.
   const at = (share: number) => Math.round(share * d);
-  const plotFrom = at(0.05);
-  const plotEach = (at(0.3) - plotFrom) / 6;
-  const trigramsAt = at(0.32);
-  const findingAt = at(0.42);
-  const answerAt = finding ? at(0.5) : at(0.44);
+  const plotFrom = at(0.04);
+  const plotEach = (at(master ? 0.26 : 0.3) - plotFrom) / 6;
+  const linksAt = at(master ? 0.27 : 0.31);
+  const trigramsAt = at(master ? 0.33 : 0.32);
+  const masterAt = at(0.42);
+  const findingAt = master ? at(0.5) : at(0.42);
+  const markAt = master ? masterAt : findingAt;
+  const answerAt = master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
+  // Wang Bi's reading of each line: in its place (yang in the odd places 1, 3, 5, yin in the
+  // even ones) or out of it, and the centres of the two trigrams (2 and 5).
+  const place = (i: number) => (lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT") + (i === 1 || i === 4 ? " · CENTRE" : "");
+  // 1 answers 4, 2 answers 5, 3 answers 6, when one is yin and the other yang.
+  const answering = [0, 1, 2].filter((i) => lines[i] !== lines[i + 3]);
 
   const turn = interpolate(frame, [0, d], [-0.55, 0.35]);
   const cx = width / 2;
@@ -146,8 +157,8 @@ export const Readout: React.FC<{
           {slabsOf(lines).map((s, k) => {
             const drawn = interpolate(frame, [plotFrom + s.i * plotEach, plotFrom + (s.i + 0.8) * plotEach], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
             if (drawn <= 0) return null;
-            const marked = mark.includes(s.i) && frame >= findingAt;
-            const on = !marked || Math.floor((frame - findingAt) / 6) % 2 === 0;
+            const marked = mark.includes(s.i) && frame >= markAt;
+            const on = !marked || Math.floor((frame - markAt) / 6) % 2 === 0;
             return (
               <path
                 key={k}
@@ -161,6 +172,14 @@ export const Readout: React.FC<{
             );
           })}
         </g>
+        {/* The answering lines, linked down the left of the plot. */}
+        {answering.map((i, k) => {
+          const drawn = interpolate(frame, [linksAt + k * 5, linksAt + k * 5 + 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+          if (drawn <= 0) return null;
+          const x = cx - (LINE_W / 2) * scale - 40 - k * 24;
+          const [ya, yb] = [cy - lineZ(i) * scale, cy - lineZ(i + 3) * scale];
+          return <path key={i} d={`M${x + 20},${ya}H${x}V${yb}H${x + 20}`} fill="none" stroke={PHOSPHOR} strokeWidth={3.4} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - drawn} style={{ filter: `drop-shadow(0 0 6px ${PHOSPHOR})` }} />;
+        })}
         {/* Brackets round the two trigrams, once they are named. */}
         {frame >= trigramsAt &&
           [3, 0].map((from) => {
@@ -176,12 +195,12 @@ export const Readout: React.FC<{
         {[5, 4, 3, 2, 1, 0].map((i) => (
           <Line
             key={i}
-            text={`L${i + 1}  ${lines[i] ? "━━━━━━━  YANG" : "━━━   ━━━  YIN"}${mark.includes(i) && frame >= findingAt ? "  ◄" : ""}`}
+            text={`L${i + 1}  ${lines[i] ? "━━━━━━━  YANG" : "━━━   ━━━  YIN "}  ${place(i)}${mark.includes(i) && frame >= markAt ? "  ◄" : ""}`}
             frame={frame}
             at={plotFrom + i * plotEach}
             rate={0.6}
             size={34}
-            color={mark.includes(i) && frame >= findingAt ? "#ffb347" : DIM}
+            color={mark.includes(i) && frame >= markAt ? "#ffb347" : DIM}
             style={{ position: "absolute", top: (5 - i) * 44 }}
           />
         ))}
@@ -199,8 +218,14 @@ export const Readout: React.FC<{
 
       {/* The finding and the answer at the prompt. */}
       <div style={{ position: "absolute", left: 80, right: 80, top: 1360 }}>
-        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color="#ffb347" />}
-        <Line text={`> ${name.toUpperCase()}:`} frame={frame} at={answerAt} size={38} color={DIM} />
+        {master && (
+          <>
+            <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color="#ffb347" />
+            <Line text={`  ${master.en.toUpperCase()}`} frame={frame} at={masterAt + 12} size={34} color="#ffb347" />
+          </>
+        )}
+        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color={master ? DIM : "#ffb347"} />}
+        {!master && <Line text={`> ${name.toUpperCase()}:`} frame={frame} at={answerAt} size={38} color={DIM} />}
         <Line text={text.toUpperCase()} frame={frame} at={answerAt + 10} rate={1.2} size={64} cursor={frame >= answerAt + 10} />
       </div>
 
