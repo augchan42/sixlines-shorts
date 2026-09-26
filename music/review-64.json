@@ -1,0 +1,16 @@
+{
+ "note": "64 Before Completion's music (the user, 2026-09-26: its pick22 part is \"heavy on guitar and a bit questionable\"). The mood: poised and hopeful, unresolved, the moment before the crossing; not celebratory. Options are minor-key parts from music/moody.json that no neighbouring short uses (61 has pick18 from 53 s, 63 pick19, 1 pick01); the ear decides.",
+ "script": "music/review.py",
+ "seconds": 20,
+ "hexagrams": [
+  {
+   "number": 64,
+   "why": "guitar-heavy for a poised, unresolved hexagram",
+   "proposed": [
+    { "file": "pick17-midnight-synthwave.mp3", "start": 72 },
+    { "file": "pick12-neon-drive-horizon.mp3", "start": 64 },
+    { "file": "pick13-synthwave-the-mountain.mp3", "start": 48 }
+   ]
+  }
+ ]
+}

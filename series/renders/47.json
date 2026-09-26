@@ -1,10 +1,10 @@
 {
  "hexagram": 47,
- "rendered": "2026-09-26T12:08:07.848Z",
- "commit": "5eea2f644da0e801faa70b2d948895b16742a5c2",
- "clean": false,
- "seconds": 30.058667,
- "shareKbps": 5993,
+ "rendered": "2026-09-26T14:16:27.630Z",
+ "commit": "d0ba95af381176376bf341ec4ad0098a8eca36d4",
+ "clean": true,
+ "seconds": 31.381333,
+ "shareKbps": 5735,
  "props": {
   "hexagram": {
    "number": 47,
@@ -20,11 +20,11 @@
     0
    ]
   },
-  "bpm": 100.05,
+  "bpm": 90,
   "firstBeat": 0,
-  "music": "local/music/pick22-cinematic-dark-synthwave.mp3",
-  "musicStart": 163.431,
-  "drop": 14.394,
+  "music": "local/music/pick13-synthwave-the-mountain.mp3",
+  "musicStart": 144.041,
+  "drop": 16.002,
   "hook": "Speaking up and nobody listens?",
   "meaning": [
    "Oppression says:\nhold your purpose.",
@@ -40,25 +40,25 @@
    "kind": "character",
    "text": "Boxed in?\nHold to your aim.",
    "beats": 14,
-   "clip": "assets/3d/character-47-100.05bpm-14b-1vzav8o.mp4"
+   "clip": "assets/3d/character-47-90bpm-14b-1vzav8o.mp4"
   },
   "pace": "even",
-  "credit": true,
-  "hexagramClip": "assets/3d/hexagram-010110-100.05bpm-8b.mp4",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-010110-90bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-010110-100.05bpm-9b.mp4",
+   "clip": "assets/3d/endcard-snap-010110-90bpm-9b.mp4",
    "mode": "snap"
   }
  },
  "files": {
-  "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-  "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
-  "assets/3d/hexagram-010110-100.05bpm-8b.mp4": "cba983350510978ad4df4fad27ec361f7dc0543f13a7e068ced77a82c20d31cb",
-  "assets/3d/endcard-snap-010110-100.05bpm-9b.mp4": "83de305710c409b9a48ea8d70146f410f82a0dffb06c7996f1b95a93e374e380",
-  "assets/3d/character-47-100.05bpm-14b-1vzav8o.mp4": "31b88833f83cc4a67d03ccbe834feb5757e921ceb2e5ac5b92d296eab0f419a3",
+  "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
+  "local/music/certificates/synthwave-synthwave-593074-license.txt": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
+  "assets/3d/hexagram-010110-90bpm-8b.mp4": "b54f6b8bc921643a1040a3786d299c4d46068ba4fb13f39fa7be7ad8e68623eb",
+  "assets/3d/endcard-snap-010110-90bpm-9b.mp4": "93adeb568eabc9181040aefabe839f29a2087625f916f8bd17a2be7594c246c2",
+  "assets/3d/character-47-90bpm-14b-1vzav8o.mp4": "d63e7529d83d9799f7686ea62bdbea1ca7930b74b216aa89a1307cf07ba2549e",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/series/47-kun/short.mp4": "dd7064bbfb877bc3b1e00a950007461776a0f9c8a8dde881de15be3c8e0bd0b1",
-  "out/series/47-kun/share.mp4": "b5ee798ae40b2eb6f73b4e6ef1ad85dc361fb49682c761d494612a0c08fa0ab9"
+  "out/series/47-kun/short.mp4": "b2f86f326839f38dc15847377f7660bd3e4d887334536b8afdc8bb79eaea126c",
+  "out/series/47-kun/share.mp4": "270ca12c20bea8a82c7108aefa79ccbd4f76bf193e712a01dbb3407921662008"
  }
 }

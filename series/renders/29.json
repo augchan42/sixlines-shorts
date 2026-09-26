@@ -1,10 +1,10 @@
 {
  "hexagram": 29,
- "rendered": "2026-09-24T11:14:45.929Z",
- "commit": "2876f733f2b1bab1c2a25bd4d303204608a9e741",
- "clean": true,
- "seconds": 33.642667,
- "shareKbps": 5341,
+ "rendered": "2026-09-26T14:21:00.678Z",
+ "commit": "d0ba95af381176376bf341ec4ad0098a8eca36d4",
+ "clean": false,
+ "seconds": 27.050667,
+ "shareKbps": 6674,
  "props": {
   "hexagram": {
    "number": 29,
@@ -22,8 +22,8 @@
   },
   "bpm": 100,
   "firstBeat": 0,
-  "music": "local/music/pick09-synthwave.mp3",
-  "musicStart": 91.223,
+  "music": "local/music/pick07-interstellar-retrowave.mp3",
+  "musicStart": 4.826,
   "drop": 14.4,
   "hook": "One problem after another?",
   "meaning": [
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-29-31.webp",
    "assets/yilin/stipple-29-60.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/29/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/29/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/29/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Through danger,\nkeep your word.",
+   "scene": "abyss",
+   "clip": "assets/3d/abyss-29-100bpm-12b-j481fo.mp4"
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-snap-010010-100bpm-9b.mp4",
@@ -60,17 +51,14 @@
   }
  },
  "files": {
-  "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
-  "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
+  "local/music/pick07-interstellar-retrowave.mp3": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
+  "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
   "assets/3d/hexagram-010010-100bpm-8b.mp4": "6c449974e3e0aff5a483254a7190ce7b2822b180153ed1c288a140286789f63a",
   "assets/3d/endcard-snap-010010-100bpm-9b.mp4": "6e3f6aad738ed2bd49a3e0e97238cd083fe20c433f8360d254f32c2decf7b213",
-  "assets/screens/29/reading.png": "e42822b675af7ef95fdd517efea70f3e49060b8710bf5acdea2462c8a49cbacf",
-  "assets/screens/29/verse.png": "f544b123a8619b42524d1fce6cafc390fe35ef4f3043cc6351053490f46c086b",
-  "assets/screens/29/today.png": "d7d9168ad2a7c326050ccf54fa6bd904195313443b60155ed2e5ed9744da12df",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/abyss-29-100bpm-12b-j481fo.mp4": "9c684df6b72c294e975d02e42fd7931748af4dd3695ffc223c94e724cfdf3aac",
   "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
-  "out/series/29-kan/short.mp4": "3fa89093df07459da9cc07738c60a29efeb6dae6613fb28f688e4c42328c7562",
-  "out/series/29-kan/share.mp4": "eed31bfd40f8c6afe8b77f9587f187a0bcd27ee5bc98c27ecae376470c507d34"
+  "out/series/29-kan/short.mp4": "78c7f1a57e6018ef42cb8f662a196d8024bdc801d472b96bb2ed51fdad93f122",
+  "out/series/29-kan/share.mp4": "8d2eeb86e995ff6ac142de9f2f5fe9ec165071764a02e836369e64dd421c033a"
  }
 }

@@ -3,17 +3,18 @@ music its short uses now, then "proposed" and the darker section in its place, e
 file's `seconds`. Also joins them all into one file and prints where each starts. Writes to
 out/music-review/ (gitignored); the user keeps or swaps each by ear.
 
-  python3 music/review.py
+  python3 music/review.py [music/review-64.json]
 """
 
 import json
 import os
 import subprocess
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 MUSIC = os.path.join(ROOT, "public/local/music")
-OUT = os.path.join(ROOT, "out/music-review")
+WORDS = ["one", "two", "three", "four", "five"]
 AUDIO = ["-ar", "44100", "-ac", "2", "-b:a", "160k"]
 
 
@@ -49,26 +50,31 @@ def length(name):
 
 
 def main():
-    review = json.load(open(os.path.join(HERE, "review.json")))
+    path = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(HERE, "review.json")
+    review = json.load(open(path))
+    OUT = os.path.join(ROOT, "out", os.path.splitext(os.path.basename(path))[0].replace("review", "music-review"))
     rows = {r["number"]: r for r in json.load(open(os.path.join(ROOT, "series/hexagrams.json")))}
     seconds = review["seconds"]
     tmp = os.path.join(OUT, "parts")
     os.makedirs(tmp, exist_ok=True)
     files, t = [], 0.0
     for h in review["hexagrams"]:
-        n, row, p = h["number"], rows[h["number"]], h["proposed"]
+        n, row = h["number"], rows[h["number"]]
+        options = h["proposed"] if isinstance(h["proposed"], list) else [h["proposed"]]
         stem = os.path.join(tmp, f"{n:02d}")
         parts = [
             spoken(f"{n}. {row['name']}. Now.", stem + "-a.mp3"),
             music(row["music"]["file"], row["music"]["start"], seconds, stem + "-now.mp3"),
-            spoken("Proposed.", stem + "-b.mp3"),
-            music(p["file"], p["start"], seconds, stem + "-new.mp3"),
         ]
+        for k, p in enumerate(options):
+            label = "Proposed." if len(options) == 1 else f"Option {WORDS[k]}."
+            parts += [spoken(label, f"{stem}-b{k}.mp3"), music(p["file"], p["start"], seconds, f"{stem}-new{k}.mp3")]
         name = os.path.join(OUT, f"{n:02d}-{row['name'].lower().replace(' ', '-')}.mp3")
         join(parts, name)
         files.append(name)
         m, s = divmod(t, 60)
-        print(f"{int(m)}:{s:04.1f}  {n} {row['name']} ({h['why']}): now {row['music']['file'][:6]} at {row['music']['start']:.0f} s, proposed {p['file'][:6]} at {p['start']} s")
+        said = ", ".join(f"{p['file'][:6]} at {p['start']} s" for p in options)
+        print(f"{int(m)}:{s:04.1f}  {n} {row['name']} ({h['why']}): now {row['music']['file'][:6]} at {row['music']['start']:.0f} s, proposed {said}")
         t += length(name)
     join(files, os.path.join(OUT, "all.mp3"))
     print(os.path.join(OUT, "all.mp3"))
