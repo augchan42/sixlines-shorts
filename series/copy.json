@@ -25,6 +25,11 @@
   "caption": {
    "text": "The Creative is six unbroken lines: a start with nothing held back. It asks for no conditions, only that you mean it.",
    "source": "commentary/en/1.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Heaven never\ntakes a day off.",
+   "source": "series/critic/lessons/input.json#hexagrams[0].image.transliteration"
   }
  },
  "2": {
@@ -109,6 +114,11 @@
   "caption": {
    "text": "The image is a spring at the foot of a mountain. It doesn’t know where the sea is, and it moves on anyway.",
    "source": "commentary/en/4.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Teachers don't\nchase students.",
+   "source": "series/critic/lessons/input.json#hexagrams[3].judgment.transliteration"
   }
  },
  "5": {
@@ -137,6 +147,51 @@
   "caption": {
    "text": "The clouds are up and the rain hasn’t come, so the old text says: eat and drink. Waiting well takes energy.",
    "source": "commentary/en/5.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "In the rain?\nEat, rest, wait.",
+   "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
+   "character": {
+    "char": "需",
+    "beats": 12,
+    "args": {
+     "order": [
+      10,
+      8,
+      9,
+      11,
+      12,
+      13,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "stand": true,
+     "lieStep": 0.6,
+     "drop": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ],
+     "dropStep": 0.3,
+     "rain": 3,
+     "camera": "low",
+     "zoom": 1.8,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "6": {
@@ -197,7 +252,7 @@
   "lesson": {
    "kind": "lines",
    "text": "Unseen water\nunder the earth.",
-   "source": "commentary/en/7.json#image.synthesis"
+   "source": "series/critic/lessons/input.json#hexagrams[6].image.transliteration"
   }
  },
  "8": {
@@ -228,10 +283,31 @@
    "source": "commentary/en/8.json#image.synthesis"
   },
   "lesson": {
-   "kind": "painting",
-   "text": "Friends at lunch,\nholding together.",
-   "credit": "RENOIR · 1881",
-   "source": "series/paintings.json#8; masterpieces/artwork_index.json#8 reasoning"
+   "kind": "character",
+   "text": "Choose who you\nstand beside",
+   "source": "series/characters.json#8: One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character.",
+   "character": {
+    "char": "比",
+    "beats": 11,
+    "args": {
+     "order": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "stand": true,
+     "lieStep": 0.7,
+     "join": [
+      2,
+      3
+     ],
+     "camera": "low",
+     "zoom": 1.5,
+     "edge": "#6cff7a",
+     "water": "#5ee7ff"
+    }
+   }
   },
   "pace": "held"
  },
@@ -292,8 +368,8 @@
   },
   "lesson": {
    "kind": "judgment",
-   "text": "The tiger’s tail:\nit does not bite.",
-   "source": "commentary/en/10.json#judgment.transliteration"
+   "text": "Stood on a tiger's\ntail. Not bitten.",
+   "source": "series/critic/lessons/input.json#hexagrams[9].judgment.transliteration"
   }
  },
  "11": {
@@ -350,6 +426,11 @@
   "caption": {
    "text": "Heaven and earth have stopped talking. When a system is broken, taking its rewards endorses it, so pull back.",
    "source": "commentary/en/12.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "The good leave,\nthe petty move in.",
+   "source": "series/critic/lessons/input.json#hexagrams[11].judgment.transliteration"
   }
  },
  "13": {
@@ -434,6 +515,11 @@
   "caption": {
    "text": "The image is a mountain inside the earth: the biggest thing around, and hidden. It’s the one hexagram where every line is favorable.",
    "source": "commentary/en/15.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Level the heaps,\nfill the holes.",
+   "source": "series/critic/lessons/input.json#hexagrams[14].image.transliteration"
   }
  },
  "16": {
@@ -518,6 +604,70 @@
   "caption": {
    "text": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t.",
    "source": "commentary/en/18.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Found rot?\nClean it out.",
+   "source": "series/characters.json#18: Worms breed in a shut bowl, swarm up and pour out.",
+   "character": {
+    "char": "蠱",
+    "beats": 13,
+    "args": {
+     "order": [
+      22,
+      20,
+      21,
+      18,
+      19,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ],
+     "walls": [
+      18,
+      19
+     ],
+     "spill": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+     ],
+     "stagger": 0.1,
+     "camera": "high",
+     "edge": "#ff5ec8",
+     "water": "#c6ff3a"
+    }
+   }
   }
  },
  "19": {
@@ -602,6 +752,11 @@
   "caption": {
    "text": "Lightning, then thunder: first you see it, then you feel it. The old kings made the rules clear before they enforced them.",
    "source": "commentary/en/21.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Warn clearly,\nthen bite.",
+   "source": "series/critic/lessons/input.json#hexagrams[20].image.transliteration"
   }
  },
  "22": {
@@ -658,6 +813,43 @@
   "caption": {
    "text": "The mountain sits on eroding earth, and the old text tells those on top to give to those below. The summit rests on the base.",
    "source": "commentary/en/23.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Falling apart?\nShore up the base.",
+   "source": "series/characters.json#23: A knife stands beside a block; pieces fall off the block one by one until only its base stands; then both lie down as the character.",
+   "character": {
+    "char": "剝",
+    "beats": 13,
+    "args": {
+     "order": [
+      9,
+      8,
+      3,
+      2,
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+     ],
+     "stand": true,
+     "lieStep": 0.4,
+     "shed": [
+      0,
+      1,
+      4,
+      5,
+      6,
+      7
+     ],
+     "camera": "low",
+     "zoom": 2,
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "24": {
@@ -910,6 +1102,38 @@
   "caption": {
    "text": "Thunder and wind never stop moving, and together they make duration. Stand firm: keep moving, but don’t change direction.",
    "source": "commentary/en/32.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Change shape,\nkeep your course",
+   "source": "series/characters.json#32: Two lines rise; between them a moon goes from new to full and back, then sets into them; a heart is drawn beside it.",
+   "character": {
+    "char": "恆",
+    "beats": 12,
+    "args": {
+     "walls": [
+      3,
+      8
+     ],
+     "moon": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "last": [
+      0,
+      1,
+      2
+     ],
+     "wallHeight": 0.8,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.7,
+     "edge": "#ff5ec8",
+     "water": "#fff1c4"
+    }
+   }
   }
  },
  "33": {
@@ -1022,6 +1246,40 @@
   "caption": {
    "text": "The light has sunk into the earth. In a dark time, dim the outside to keep the inside bright.",
    "source": "commentary/en/36.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Dark times?\nDim your light.",
+   "source": "series/characters.json#36: A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes.",
+   "character": {
+    "char": "明",
+    "beats": 12,
+    "args": {
+     "walls": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "moon": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "phases": [
+      0,
+      0,
+      130
+     ],
+     "wallHeight": 0.8,
+     "glassWalls": true,
+     "camera": "high",
+     "zoom": 1.4,
+     "edge": "#ff5ec8",
+     "water": "#fff1c4"
+    }
+   }
   }
  },
  "37": {
@@ -1162,6 +1420,11 @@
   "caption": {
    "text": "The old text asks for two small baskets, not a grand offering: when you have less, bring less. Anger and wanting cost the most.",
    "source": "commentary/en/41.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Two small baskets\nare enough.",
+   "source": "series/critic/lessons/input.json#hexagrams[40].judgment.transliteration"
   }
  },
  "42": {
@@ -1190,6 +1453,35 @@
   "caption": {
    "text": "Wind and thunder feed each other. The method of increase: see something good and move toward it.",
    "source": "commentary/en/42.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Let your gain\nspill over",
+   "source": "series/characters.json#42: A bowl rises; water fills it and spills over the far rim.",
+   "character": {
+    "char": "益",
+    "beats": 11,
+    "args": {
+     "walls": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "spill": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "wallStep": 0.8,
+     "camera": "high",
+     "edge": "#ff5ec8",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "43": {
@@ -1218,6 +1510,11 @@
   "caption": {
    "text": "The rules in the text: announce it publicly, warn your own people first, and don’t use force. Fight darkness with a sword and you join it.",
    "source": "commentary/en/43.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Tell your own\ntown first.",
+   "source": "commentary/en/43.json#judgment.transliteration"
   }
  },
  "44": {
@@ -1302,6 +1599,11 @@
   "caption": {
    "text": "A tree pushes up through the earth, going around the rock instead of jumping. It’s already growing, so stop braking.",
    "source": "commentary/en/46.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Go see someone\nabove you.",
+   "source": "series/critic/lessons/input.json#hexagrams[45].judgment.transliteration"
   }
  },
  "47": {
@@ -1330,6 +1632,32 @@
   "caption": {
    "text": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose.",
    "source": "commentary/en/47.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Boxed in?\nHold to your aim.",
+   "source": "series/characters.json#47: A tree stands; walls rise round it; it is pressed flat inside them.",
+   "character": {
+    "char": "困",
+    "beats": 10,
+    "args": {
+     "order": [
+      3,
+      2,
+      4,
+      5,
+      0,
+      1,
+      6
+     ],
+     "walls": [
+      0,
+      1,
+      6
+     ],
+     "stand": true
+    }
+   }
   }
  },
  "48": {
@@ -1386,6 +1714,11 @@
   "caption": {
    "text": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. People believe it once it’s done.",
    "source": "commentary/en/49.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "For a revolution,\na new calendar.",
+   "source": "series/critic/lessons/input.json#hexagrams[48].image.transliteration"
   }
  },
  "50": {
@@ -1442,6 +1775,11 @@
   "caption": {
    "text": "The image is thunder, twice. You scream, then you laugh, and your hands still don’t drop the cup. A good scare is a chance to put things in order.",
    "source": "commentary/en/51.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "First fear,\nthen laughter.",
+   "source": "commentary/en/51.json#judgment.transliteration"
   }
  },
  "52": {
@@ -1582,6 +1920,36 @@
   "caption": {
    "text": "Fire on a mountain is bright, seen, and moving on. The traveler gets small wins, so be clear, careful, brief.",
    "source": "commentary/en/56.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "Far from home,\nbe a good guest",
+   "source": "series/characters.json#56: People under a flag are drawn standing far off; they walk toward you in four hops, then lie down as the character.",
+   "character": {
+    "char": "旅",
+    "beats": 12,
+    "args": {
+     "order": [
+      2,
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "stand": true,
+     "lieStep": 0.4,
+     "march": 10,
+     "camera": "low",
+     "zoom": 1.8,
+     "edge": "#ffb347",
+     "water": "#5ee7ff"
+    }
+   }
   }
  },
  "57": {
@@ -1694,6 +2062,11 @@
   "caption": {
    "text": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break.",
    "source": "commentary/en/60.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "A lake holds only\nso much water.",
+   "source": "commentary/en/60.json#image.synthesis"
   }
  },
  "61": {
@@ -1722,6 +2095,11 @@
   "caption": {
    "text": "The old text says inner truth reaches even pigs and fishes. The way in is to understand someone before you judge them.",
    "source": "commentary/en/61.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Truth even reaches\npigs and fish.",
+   "source": "commentary/en/61.json#judgment.transliteration"
   }
  },
  "62": {
@@ -1806,6 +2184,11 @@
   "caption": {
    "text": "The book’s last hexagram is a little fox that gets its tail wet just before the far bank. Sixty-four hexagrams, and the last word is: not yet.",
    "source": "commentary/en/64.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "judgment",
+   "text": "Almost across,\nthe fox gets wet.",
+   "source": "commentary/en/64.json#judgment.transliteration"
   }
  }
 }

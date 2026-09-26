@@ -8,6 +8,8 @@
 //   node scripts/character.mjs --special character-42
 //       renders a special's character lesson (scripts/character-special.mjs) at the short's
 //       tempo and length, to the clip its props name under public/
+//   node scripts/character.mjs --series 42[,18,...]
+//       the same for series shorts whose copy has a character lesson (scripts/lesson-apply.mjs)
 import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -33,7 +35,7 @@ async function fetchStrokes(ch) {
 
 const { values: a, positionals } = parseArgs({
   allowPositionals: true,
-  options: { render: { type: "string" }, special: { type: "string" }, still: { type: "string" }, preview: { type: "boolean", default: false } },
+  options: { render: { type: "string" }, special: { type: "string" }, series: { type: "string" }, still: { type: "string" }, preview: { type: "boolean", default: false } },
 });
 
 async function render(number) {
@@ -60,15 +62,21 @@ async function render(number) {
   if (run.status !== 0) process.exit(run.status ?? 1);
 }
 
-// A special's lesson: the short's tempo and the lesson's length. The drawing and the camera's
-// crane take the character's own beats; the camera then holds over the finished character
-// for the rest, while the short types its sentence.
+const rows = () => JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
+
 async function renderSpecial(name) {
   const special = JSON.parse(readFileSync(path.join(root, "series/specials", `${name}.json`), "utf8"));
-  const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
-  const props = seriesProps({ ...rows.find((r) => r.number === special.hexagram), copy: special.copy });
-  const c = special.copy.lesson?.character;
+  await renderLesson(name, { ...rows().find((r) => r.number === special.hexagram), copy: special.copy });
+}
+
+// A lesson's clip: the short's tempo and the lesson's length. The drawing and the camera's
+// crane take the character's own beats; the camera then holds over the finished character
+// for the rest, while the short types its sentence.
+async function renderLesson(name, row) {
+  const props = seriesProps(row);
+  const c = row.copy?.lesson?.character;
   if (props.lesson?.kind !== "character" || !c) (console.error(`${name} has no character lesson`), process.exit(1));
+  if (existsSync(path.join(root, "public", props.lesson.clip))) return console.log(`${name}: ${props.lesson.clip} is already there`);
   const plan = planOf(props);
   const beats = plan.cta - plan.showcase;
   const data = path.join(dir, `${c.char}.json`);
@@ -98,6 +106,8 @@ async function renderSpecial(name) {
 
 if (a.special) {
   await renderSpecial(a.special);
+} else if (a.series) {
+  for (const n of a.series.split(",").map(Number)) await renderLesson(String(n), rows().find((r) => r.number === n));
 } else if (a.render) {
   for (const n of a.render.split(",")) await render(Number(n));
 } else {
