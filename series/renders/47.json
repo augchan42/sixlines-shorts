@@ -1,8 +1,8 @@
 {
  "hexagram": 47,
- "rendered": "2026-09-26T11:59:39.158Z",
- "commit": "3eb2995dd7aa0e82203c87c4a5be184f5f54bd52",
- "clean": true,
+ "rendered": "2026-09-26T12:08:07.848Z",
+ "commit": "5eea2f644da0e801faa70b2d948895b16742a5c2",
+ "clean": false,
  "seconds": 30.058667,
  "shareKbps": 5993,
  "props": {
@@ -58,7 +58,7 @@
   "assets/3d/character-47-100.05bpm-14b-1vzav8o.mp4": "31b88833f83cc4a67d03ccbe834feb5757e921ceb2e5ac5b92d296eab0f419a3",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/series/47-kun/short.mp4": "0ac38a279597b4d8e52f16be13b4807b78965cb65dc750dce155bf6f7f7de3b9",
-  "out/series/47-kun/share.mp4": "bad5dce6f10464e437ef6726592ede7779e70f70dc49ef19fced994bab458ae1"
+  "out/series/47-kun/short.mp4": "dd7064bbfb877bc3b1e00a950007461776a0f9c8a8dde881de15be3c8e0bd0b1",
+  "out/series/47-kun/share.mp4": "b5ee798ae40b2eb6f73b4e6ef1ad85dc361fb49682c761d494612a0c08fa0ab9"
  }
 }
