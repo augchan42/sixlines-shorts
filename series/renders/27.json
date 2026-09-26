@@ -1,10 +1,10 @@
 {
  "hexagram": 27,
- "rendered": "2026-09-24T18:01:07.026Z",
- "commit": "7ac17dec75cfab9385ad55c4fe784fe6b778f4af",
+ "rendered": "2026-09-26T17:12:02.543Z",
+ "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
  "clean": true,
- "seconds": 37.888,
- "shareKbps": 4728,
+ "seconds": 29.888,
+ "shareKbps": 6028,
  "props": {
   "hexagram": {
    "number": 27,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-27-31.webp",
    "assets/yilin/stipple-27-51.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/27/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/27/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/27/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Guard your mouth:\nfood and words.",
+   "scene": "acts",
+   "clip": "assets/3d/acts-27-82.5bpm-12b-18dtuwg.mp4"
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-100001-82.5bpm-6b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-100001-82.5bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/synthwave-80s-retro-inspiring-synth-pop-570162-license.txt": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
   "assets/3d/hexagram-100001-82.5bpm-6b.mp4": "e6d4b2a11d94035659639ef4741bab039db20142526c59caec0879c7d0c1c01c",
   "assets/3d/endcard-join-100001-82.5bpm-9b.mp4": "779611f09fe31e33e696f79cdcf96e3035730d3d77ddb4591d8ffddef6951116",
-  "assets/screens/27/reading.png": "a6272353ed5c88e18a00b5f727cc996532927f780535f1aca0cbaef8e0991069",
-  "assets/screens/27/verse.png": "485a0ef1b6266dabf261e5fe999a797278deda20fd54a7437b256202e29bd02c",
-  "assets/screens/27/today.png": "3836691ae2f7f591d174347387a368c615d0d510c9f2968d414d2b48159e328b",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/acts-27-82.5bpm-12b-18dtuwg.mp4": "48cdf48fef6c4346d6365dbd331155a32fcbfa0f7db34306c0fbb4b32bdc2856",
   "assets/yilin/stipple-27-31.webp": "77f36a4b32aefc35ee2411da8e1064ddf05923c109693b6f10a7966305ecc12d",
   "assets/yilin/stipple-27-51.webp": "d09e382e2b9c4991b9c24c9cf54d715451800e8a6d88bf4680ee3ae04d777382",
-  "out/series/27-yi/short.mp4": "fa4796676a83201ee2b5737c23386ff139274c69d6f8f6f55899d6263230a1a3",
-  "out/series/27-yi/share.mp4": "cc74fc88feeb66703335d24ac1f3642973a79b8652125f417c0c61eb1ffb7fed"
+  "out/series/27-yi/short.mp4": "284481bd71f8f968fd25ccff60cd8337796f37e949f725499b4c17c92efa92ba",
+  "out/series/27-yi/share.mp4": "aef781a1216dac02d93618d5d108a535f449d155664d656ca1c83d0f82324139"
  }
 }

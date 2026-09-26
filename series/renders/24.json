@@ -1,10 +1,10 @@
 {
  "hexagram": 24,
- "rendered": "2026-09-24T17:50:56.294Z",
- "commit": "dd190801430650a08d9ec87042e0848ebf4e7537",
+ "rendered": "2026-09-26T17:09:42.131Z",
+ "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
  "clean": true,
- "seconds": 34.922667,
- "shareKbps": 5140,
+ "seconds": 27.584,
+ "shareKbps": 6542,
  "props": {
   "hexagram": {
    "number": 24,
@@ -35,24 +35,15 @@
    "assets/yilin/stipple-24-5.webp",
    "assets/yilin/stipple-24-42.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/24/reading.png",
-    "caption": "READ THE STRUCTURE"
-   },
-   {
-    "src": "assets/screens/24/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/24/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "See your misstep,\nturn back early.",
+   "scene": "acts",
+   "clip": "assets/3d/acts-24-90bpm-12b-18ln5vy.mp4"
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-100000-90bpm-6b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-join-100000-90bpm-9b.mp4",
@@ -64,13 +55,10 @@
   "local/music/certificates/synthwave-midnight-synthwave-317752-license.txt": "47aa1fb0cbb3774ecac4e86144cadd7ad4368361c2128d5d7f991fd527b394a4",
   "assets/3d/hexagram-100000-90bpm-6b.mp4": "e495f22c3804c3fe5bc14d2f25049ead0ac7d9646bea5714198c22d645d9f740",
   "assets/3d/endcard-join-100000-90bpm-9b.mp4": "18a53b9102cb14dd07b901ce728e32906c1a7c173c42ab6b96c87a8fab71a0d9",
-  "assets/screens/24/reading.png": "342b585c1eb92f6d17cb844cfd4994e20e3b589e200f8cc524d7ee68da0baf90",
-  "assets/screens/24/verse.png": "bb564c9308bbd03d8def61d1a57fd0dad914ba2e65800b1ce9c921179e79a7b1",
-  "assets/screens/24/today.png": "4ff74592b73d6abbff634e3d21c0db2eaf2141af3fbf8cc11de1a193c9648cbc",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
+  "assets/3d/acts-24-90bpm-12b-18ln5vy.mp4": "1e7bc6e53d9569aed9087f652a66f7875e13dbe3ae4b34562de5db582d7a7b8d",
   "assets/yilin/stipple-24-5.webp": "e5b2712019d283395140f5c82cab3adffa99aa75eb7ad4c68a070696ed6ef323",
   "assets/yilin/stipple-24-42.webp": "c1bfe37661fb25b155cee4150f79bae17c872c3ca6017eae07a397d24c341c9f",
-  "out/series/24-fu/short.mp4": "3fca15ddabede319a6c0f60aa10eb6bcd6640c279bc72d7f76fea734115a5df6",
-  "out/series/24-fu/share.mp4": "ca4ab407cfcc03ec6d48e8991c3443809f394ffd77d5616242d2bed24cd4c57f"
+  "out/series/24-fu/short.mp4": "8a74086d1ea2e2d6ee4ddc8c545f774a7324fcdc5aaf71d0e1fd9e245436a001",
+  "out/series/24-fu/share.mp4": "12b4de8a0920cfbad0f178da92912162cd6c2aea03b79e1ca76b2ab218ff2ac9"
  }
 }

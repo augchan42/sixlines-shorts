@@ -1,10 +1,10 @@
 {
  "hexagram": 23,
- "rendered": "2026-09-26T10:23:44.615Z",
- "commit": "b49aeaf378c1d536f9ea2f57b0ad8847aef2ccde",
- "clean": true,
- "seconds": 35.690667,
- "shareKbps": 5027,
+ "rendered": "2026-09-26T17:15:33.186Z",
+ "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
+ "clean": false,
+ "seconds": 32.661333,
+ "shareKbps": 5505,
  "props": {
   "hexagram": {
    "number": 23,
@@ -20,11 +20,11 @@
     1
    ]
   },
-  "bpm": 82.5,
+  "bpm": 91.99,
   "firstBeat": 0,
-  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
-  "musicStart": 34.934,
-  "drop": 14.54,
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 57.63,
+  "drop": 15.654,
   "hook": "Everything falling apart?",
   "meaning": [
    "Splitting Apart\nsays: don’t run.",
@@ -40,25 +40,25 @@
    "kind": "character",
    "text": "Falling apart?\nShore up the base.",
    "beats": 17,
-   "clip": "assets/3d/character-23-82.5bpm-17b-18o1e6m.mp4"
+   "clip": "assets/3d/character-23-91.99bpm-17b-18o1e6m.mp4"
   },
   "pace": "even",
-  "credit": true,
-  "hexagramClip": "assets/3d/hexagram-000001-82.5bpm-6b.mp4",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-000001-91.99bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-join-000001-82.5bpm-9b.mp4",
+   "clip": "assets/3d/endcard-join-000001-91.99bpm-9b.mp4",
    "mode": "join"
   }
  },
  "files": {
-  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
-  "local/music/certificates/synthwave-80s-retro-inspiring-synth-pop-570162-license.txt": "901067a698125b608f47b19c198f78143166c536e22101b52376738d05af0261",
-  "assets/3d/hexagram-000001-82.5bpm-6b.mp4": "607ad9e851f9d04a49553e0c2710cf86adc4e2c68bcdb85a4ffc6a6bcd21552d",
-  "assets/3d/endcard-join-000001-82.5bpm-9b.mp4": "57abe36a965ad0fa6d93acada22aa2b4c4a1abd903948a50e25b262ace336194",
-  "assets/3d/character-23-82.5bpm-17b-18o1e6m.mp4": "e6f36a95eb1bfd71b0ffe0649a9206808297632272dd64a94e3fde0db11d5f02",
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "local/music/certificates/synthwave-lofi-synthwave-588188-license.txt": "a275041ead0e4040a66fabf274039dc6f73fb13e3008afb3acfbf21e1f93cda0",
+  "assets/3d/hexagram-000001-91.99bpm-8b.mp4": "87180ec9df9661db70404b2a1778ca7776456fb3006b464bf3155e1989060314",
+  "assets/3d/endcard-join-000001-91.99bpm-9b.mp4": "ba48be46e496855c2384c1fd887c5059fa19ae614c9f1f135164ba3d134feed0",
+  "assets/3d/character-23-91.99bpm-17b-18o1e6m.mp4": "66039cb3769d977fc62bdc20bc8acbde2f7d09c0f7aed544d466969587216f43",
   "assets/yilin/stipple-23-36.webp": "7bc478b925bdd4fc5de49707372a26dc9b7170b2b7efb82e4cd80de1c6c218a8",
   "assets/yilin/stipple-23-57.webp": "106cd66de37a2be6324515dbc22f546b2caaea89e08fa0b44acce08492f8950d",
-  "out/series/23-bo/short.mp4": "c6eef7a2fe3ef0e4b41d2482712e78485b6a0c3912c139cce9beac92be77b204",
-  "out/series/23-bo/share.mp4": "e1cb6a906bf873c7d05b01be080e81db1fce0fc949e6a942c1630ba704bf0a6b"
+  "out/series/23-bo/short.mp4": "3414a9852bbe1fa86a50a7476cce65f76717ec99078516fec42da8eb630031cc",
+  "out/series/23-bo/share.mp4": "eb8a19caadd92b50c64d64b0818f12f33bab3bf0aaeffe77f3e62476563cdb86"
  }
 }
