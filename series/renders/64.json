@@ -1,10 +1,10 @@
 {
  "hexagram": 64,
- "rendered": "2026-09-24T20:07:48.759Z",
- "commit": "cdc18ab70e8f6614ebc283491de095e43718d920",
+ "rendered": "2026-09-26T14:11:02.521Z",
+ "commit": "3452321b7b077d847a1ec7d15b513094e280dc99",
  "clean": true,
- "seconds": 33.621333,
- "shareKbps": 5344,
+ "seconds": 29.461333,
+ "shareKbps": 6117,
  "props": {
   "hexagram": {
    "number": 64,
@@ -35,24 +35,34 @@
    "assets/yilin/stipple-64-3.webp",
    "assets/yilin/stipple-64-36.webp"
   ],
-  "screens": [
-   {
-    "src": "assets/screens/64/reading.png",
-    "caption": "READ THE STRUCTURE"
+  "screens": [],
+  "lesson": {
+   "kind": "lines",
+   "text": "Almost across,\nthe fox gets wet.",
+   "trigrams": [
+    {
+     "zh": "火",
+     "name": "FIRE"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ],
+   "readout": {
+    "mark": [
+     4
+    ],
+    "finding": "ALL SIX OUT OF PLACE. ALL ANSWER.",
+    "master": {
+     "zh": "為未濟之主",
+     "en": "Master of Before Completion"
+    }
    },
-   {
-    "src": "assets/screens/64/verse.png",
-    "caption": "THE BOOK OF CHANGES"
-   },
-   {
-    "src": "assets/screens/64/today.png",
-    "caption": "YOUR DAY, READ"
-   },
-   {
-    "src": "assets/matrix-ask.png",
-    "caption": "ASK · CAST · REFLECT"
-   }
-  ],
+   "beats": 16
+  },
+  "pace": "even",
+  "credit": false,
   "hexagramClip": "assets/3d/hexagram-010101-100.05bpm-8b.mp4",
   "endcard": {
    "clip": "assets/3d/endcard-flip-010101-100.05bpm-9b.mp4",
@@ -64,13 +74,9 @@
   "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
   "assets/3d/hexagram-010101-100.05bpm-8b.mp4": "59d1014b9ad36e217dcf02f57993eee10caa2ae5babb9905e58b3fa66d831f5f",
   "assets/3d/endcard-flip-010101-100.05bpm-9b.mp4": "2e0d2c42e539af808ed19f3c22193626e0fab8104f3d67c38f7c10e2850267c9",
-  "assets/screens/64/reading.png": "45a3896d70439c793cacfa2f64a7e61bb7bd2a7df6fe305b01b6ef1343eecb79",
-  "assets/screens/64/verse.png": "368e6deadd90485b87e9972fdbdf895a917bb5a000518ae7af79bd2791d5e460",
-  "assets/screens/64/today.png": "5702222c8ca6ec59bd326de30e5c9be5eee651624a879f6676c613b40183011d",
-  "assets/matrix-ask.png": "24fc4e294867b1db76fbab446e5432a8871a962cdc631a1a19eeab01aee1efe7",
   "assets/yilin/stipple-64-3.webp": "d73457ee3e62fb355cf1113b6dd8462b382be26fb11db828d83418d1e000b169",
   "assets/yilin/stipple-64-36.webp": "42ca0ed8e4e49a2702e347af74cc881b64ff51d1a1c381ffaa7511e1d4065ae2",
-  "out/series/64-wei-ji/short.mp4": "e238b548768791e12c5b23ac614e89e88d155e2e6d1743f5681112da930f14b2",
-  "out/series/64-wei-ji/share.mp4": "0bca106722336f67508fa5618d23807ee472f1b6ef7f07fbeaacb6728d7421df"
+  "out/series/64-wei-ji/short.mp4": "751775c19be480218dfee9e131043e65ade040ce9bc64a148fda020ecd9e309d",
+  "out/series/64-wei-ji/share.mp4": "c4e7a5b41f5a520588768e95700112790ba65ef9fa3bc9466577c9312dfb90f9"
  }
 }
