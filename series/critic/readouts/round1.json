@@ -1,0 +1,518 @@
+{
+ "round": 1,
+ "ratings": [
+  {
+   "number": 1,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Text states heaven's habit but not what the person does (image: strengthens without ceasing); acceptable since it is the existing lesson."
+   ]
+  },
+  {
+   "number": 2,
+   "overall": 7,
+   "truth": 9,
+   "teaching": 6,
+   "plainness": 7,
+   "problems": [
+    "Text 'Follow first' repeats the meaning line 'follow well'.",
+    "'Find the way' loses the judgment's contrast: leading first goes astray, following then finds the way."
+   ],
+   "rewrite": {
+    "mark": [],
+    "finding": "SIX YIELDING LINES. ALL FOLLOW.",
+    "text": "Lead and get lost.\nFollow and arrive."
+   }
+  },
+  {
+   "number": 3,
+   "overall": 6,
+   "truth": 7,
+   "teaching": 5,
+   "plainness": 7,
+   "problems": [
+    "Text 'Sort the threads' repeats the question 'What needs sorting first?' and the meaning 'get organized'.",
+    "Mark [0] turns line 1 amber but the finding says nothing about line 1.",
+    "Finding is the Tuan (movement within danger) but misses the judgment's point: do not venture, establish helpers; Wang Bi's line 1 holds still and puts itself below the weak to win people."
+   ],
+   "rewrite": {
+    "mark": [
+     0
+    ],
+    "finding": "STRONG AT THE BASE, BELOW THE WEAK.",
+    "text": "Don't push yet.\nWin helpers first."
+   }
+  },
+  {
+   "number": 4,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 8,
+   "problems": [
+    "'(5)' and '(2)' in the finding are technical but match the 2-5 link on screen."
+   ]
+  },
+  {
+   "number": 6,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 9,
+   "problems": [
+    "Finding (trigrams) and master (line 5 judges) are two separate points; the text joins them well enough."
+   ]
+  },
+  {
+   "number": 9,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 8,
+   "problems": [
+    "Fine: line 4 is the only yin line; Tuan 柔得位而上下應之."
+   ]
+  },
+  {
+   "number": 10,
+   "overall": 7,
+   "truth": 9,
+   "teaching": 6,
+   "plainness": 7,
+   "problems": [
+    "Text 'it won't bite' echoes meaning line 2 'it won't flare' and the old lesson.",
+    "Wang Bi says it is not bitten because it is pleased and answers Qian (lake JOYFUL under heaven); the text says 'softly', not courtesy."
+   ],
+   "rewrite": {
+    "mark": [
+     2
+    ],
+    "finding": "A SOFT LINE TREADS ON THE STRONG.",
+    "text": "Beside the strong,\nbe courteous.",
+    "master": {
+     "zh": "三為履主",
+     "en": "Line three, master of Treading"
+    }
+   }
+  },
+  {
+   "number": 13,
+   "overall": 6,
+   "truth": 5,
+   "teaching": 5,
+   "plainness": 7,
+   "problems": [
+    "Finding 'line 2 meets line 5 in the open' conflicts with the texts: line 2's own text is fellowship in the clan (regret), and Wang Bi says fellowship in the open is not what line 2 can do alone, it is Qian's doing.",
+    "Text 'Meet in the open' repeats meaning line 1 'keep it open'.",
+    "Mark should also light line 5, which the finding names."
+   ],
+   "rewrite": {
+    "mark": [
+     1,
+     4
+    ],
+    "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+    "text": "Join on principle,\nnot on kinship.",
+    "master": {
+     "zh": "二為同人之主",
+     "en": "Line two, master of Fellowship"
+    }
+   }
+  },
+  {
+   "number": 16,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Master zh 四以剛動，為豫之主 is Wang Bi's (note on line 5); en could keep 'moving firmly': 'Line four, moving firmly, masters Enthusiasm'.",
+    "'One clear voice' is slightly figurative; acceptable because the Image is music."
+   ]
+  },
+  {
+   "number": 17,
+   "overall": 9,
+   "truth": 10,
+   "teaching": 9,
+   "plainness": 9,
+   "problems": [
+    "Good: Tuan 剛來而下柔 matches line 1 yang under line 2 yin."
+   ]
+  },
+  {
+   "number": 20,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 8,
+   "problems": [
+    "Fine. Two yang lines 5 and 6 on top are true."
+   ]
+  },
+  {
+   "number": 22,
+   "overall": 6,
+   "truth": 8,
+   "teaching": 4,
+   "plainness": 7,
+   "problems": [
+    "Text 'It doesn't decide' repeats meaning line 2 'Polish can't make big decisions'.",
+    "The Tuan 柔來而文剛 is about line 2 (soft between strong 1 and 3); mark only lights line 5.",
+    "Wang Bi's line 5 and line 6 (white adornment, no blame) teach that plain adornment is best; the text does not use that."
+   ],
+   "rewrite": {
+    "mark": [
+     1,
+     4
+    ],
+    "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+    "text": "Plain is the best\nadornment.",
+    "master": {
+     "zh": "為飾之主",
+     "en": "Master of Adornment"
+    }
+   }
+  },
+  {
+   "number": 25,
+   "overall": 7,
+   "truth": 9,
+   "teaching": 6,
+   "plainness": 6,
+   "problems": [
+    "'An angle' is slang for a hidden motive; not literal.",
+    "Close to meaning line 1 'be straight'.",
+    "Intent (act on what is, not on calculation of gain) can be said plainly."
+   ],
+   "rewrite": {
+    "mark": [
+     0,
+     4
+    ],
+    "finding": "A STRONG LINE COMES IN AT THE BASE.",
+    "text": "Act on what is,\nnot on what pays.",
+    "master": {
+     "zh": "為无妄之主",
+     "en": "Master of No Falseness"
+    }
+   }
+  },
+  {
+   "number": 26,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Text is generic; could tie to line 5 restraining the strong, but it is true to image and judgment."
+   ]
+  },
+  {
+   "number": 31,
+   "overall": 7,
+   "truth": 10,
+   "teaching": 6,
+   "plainness": 8,
+   "problems": [
+    "Finding is true and strong (1-4, 2-5, 3-6 all answer), but text 'Stay open' repeats meaning line 1 'make room'.",
+    "Text should use what the screen shows: influence is mutual (Tuan: the two forces answer each other)."
+   ],
+   "rewrite": {
+    "mark": [],
+    "finding": "ALL THREE PAIRS ANSWER.",
+    "text": "Be moved as you\nmove others."
+   }
+  },
+  {
+   "number": 33,
+   "overall": 7,
+   "truth": 9,
+   "teaching": 5,
+   "plainness": 8,
+   "problems": [
+    "Text 'leave calm' repeats meaning lines 'leave well' / 'No anger, just distance'.",
+    "Finding is about lines 1-2 but mark lights only line 2.",
+    "The Tuan's point is timing: the yin lines are rising, so go while retreat is still free."
+   ],
+   "rewrite": {
+    "mark": [
+     0,
+     1
+    ],
+    "finding": "TWO YIELDING LINES CREEP UP.",
+    "text": "Go while you still\ncan go freely.",
+    "master": {
+     "zh": "為遯之主",
+     "en": "Master of Retreat"
+    }
+   }
+  },
+  {
+   "number": 34,
+   "overall": 7,
+   "truth": 9,
+   "teaching": 6,
+   "plainness": 7,
+   "problems": [
+    "Text 'hold back' is close to meaning line 2 'know what not to do'.",
+    "Tuan 大者正也: strength is great only when it is correct; the text misses 'correct'."
+   ],
+   "rewrite": {
+    "mark": [],
+    "finding": "FOUR STRONG LINES PUSH UP.",
+    "text": "Be strong only\nin what is right."
+   }
+  },
+  {
+   "number": 35,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 8,
+   "problems": [
+    "Fine: Tuan 柔進而上行, line 5 yin is the upper centre. 'Shine' is plain enough given fire above earth."
+   ]
+  },
+  {
+   "number": 37,
+   "overall": 6,
+   "truth": 9,
+   "teaching": 5,
+   "plainness": 7,
+   "problems": [
+    "Text 'Mean what you say' repeats meaning line 2 'Say real things. Do them daily.'",
+    "Mark [1,4] is right (Tuan: woman's place within, man's without) but the text does not use it; the Tuan's point is: set the home right and the world is settled."
+   ],
+   "rewrite": {
+    "mark": [
+     1,
+     4
+    ],
+    "finding": "FIVE LINES IN THEIR PLACE.",
+    "text": "Home in order,\nthe rest follows."
+   }
+  },
+  {
+   "number": 38,
+   "overall": 6,
+   "truth": 10,
+   "teaching": 4,
+   "plainness": 7,
+   "problems": [
+    "Finding is true (only line 1 in place; 2-5 and 3-6 answer).",
+    "Text 'Agree on one small thing' repeats meaning 'start small', 'Share something' and the question 'What do you both want?'.",
+    "The finding shows the Tuan's point (apart, yet their work is shared); the text should state that."
+   ],
+   "rewrite": {
+    "mark": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "finding": "FIVE OUT OF PLACE. TWO PAIRS ANSWER.",
+    "text": "Apart, but still\nanswering."
+   }
+  },
+  {
+   "number": 39,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 9,
+   "problems": [
+    "Mark [4] does not match the finding (five in place); light lines 2-6 or line 1, the one out of place. Otherwise true (Tuan 當位貞吉) and a clean text."
+   ]
+  },
+  {
+   "number": 40,
+   "overall": 6,
+   "truth": 8,
+   "teaching": 4,
+   "plainness": 8,
+   "problems": [
+    "Text 'forgive' repeats the question 'What can you forgive?' and meaning line 2 'let the grudges go'.",
+    "Mark [1,3] (the yang lines) does not match the trigram finding.",
+    "Tuan: moving out of danger; judgment: return or act promptly, do not linger."
+   ],
+   "rewrite": {
+    "mark": [
+     3,
+     4,
+     5
+    ],
+    "finding": "THUNDER BREAKS OUT OF THE WATER.",
+    "text": "Out of danger?\nThen don't linger."
+   }
+  },
+  {
+   "number": 41,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 8,
+   "plainness": 8,
+   "problems": [
+    "Fine: 3-6 answer; Tuan 損下益上."
+   ]
+  },
+  {
+   "number": 45,
+   "overall": 6,
+   "truth": 9,
+   "teaching": 5,
+   "plainness": 8,
+   "problems": [
+    "Text 'guard the door' repeats meaning line 2 'plan for the friction'.",
+    "Tuan 聚以正: people gather by what is right, around the centred strong line 5; the text misses it."
+   ],
+   "rewrite": {
+    "mark": [
+     3,
+     4
+    ],
+    "finding": "FOUR YIELDING LINES GATHER TO TWO.",
+    "text": "Gather people by\nwhat is right."
+   }
+  },
+  {
+   "number": 46,
+   "overall": 8,
+   "truth": 8,
+   "teaching": 8,
+   "plainness": 9,
+   "problems": [
+    "Finding says 'wood' but the screen names the lower trigram wind; fine if viewers accept wind = wood, else 'THE SOFT RISES IN ITS TIME.' (Tuan 柔以時升)."
+   ]
+  },
+  {
+   "number": 49,
+   "overall": 8,
+   "truth": 8,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Mark [4] (line 5) is not what the finding talks about.",
+    "Text is the Image and the existing lesson; teaches little of the Tuan (change in accord with heaven and people), but acceptable."
+   ]
+  },
+  {
+   "number": 52,
+   "overall": 6,
+   "truth": 10,
+   "teaching": 4,
+   "plainness": 8,
+   "problems": [
+    "Finding is true (no pair answers) and the Tuan's.",
+    "Text 'Be still where you stand' repeats meaning 'pause' / 'Stay with where you are now'.",
+    "Tuan's point: stop when it is time to stop, move when it is time to move."
+   ],
+   "rewrite": {
+    "mark": [],
+    "finding": "NO PAIR ANSWERS. EACH STANDS STILL.",
+    "text": "Stop when it's\ntime to stop."
+   }
+  },
+  {
+   "number": 53,
+   "overall": 6,
+   "truth": 9,
+   "teaching": 5,
+   "plainness": 5,
+   "problems": [
+    "'Step by step' in the finding repeats meaning line 1 'go step by step'.",
+    "Text 'Grow like a tree' is a simile of the image, not the intent (Tuan 進得位: advance by getting each place right)."
+   ],
+   "rewrite": {
+    "mark": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+    "text": "Earn each place\nbefore the next."
+   }
+  },
+  {
+   "number": 54,
+   "overall": 8,
+   "truth": 10,
+   "teaching": 8,
+   "plainness": 9,
+   "problems": [
+    "Fine: lines 2-5 all out of place (Tuan 位不當), text follows the judgment."
+   ]
+  },
+  {
+   "number": 55,
+   "overall": 6,
+   "truth": 8,
+   "teaching": 4,
+   "plainness": 6,
+   "problems": [
+    "Text 'Noon passes' repeats meaning line 2 'Be the sun at noon'.",
+    "'Use the light' is vague.",
+    "Wang Bi: fullness means bringing out the small and hidden, shining on all; teach that."
+   ],
+   "rewrite": {
+    "mark": [],
+    "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+    "text": "At your fullest,\nreach the small."
+   }
+  },
+  {
+   "number": 57,
+   "overall": 5,
+   "truth": 9,
+   "teaching": 3,
+   "plainness": 6,
+   "problems": [
+    "Text 'again, and again' repeats meaning line 1 'say it again' and the question 'What's worth repeating'.",
+    "Finding does not explain the mark [0,3]; those lines are the soft each under a strong line (Tuan 柔皆順乎剛).",
+    "Tuan: the strong enters by centred correctness; yielding is to what is right."
+   ],
+   "rewrite": {
+    "mark": [
+     0,
+     3
+    ],
+    "finding": "EACH SOFT LINE SITS UNDER A STRONG.",
+    "text": "Bend only to\nwhat is right."
+   }
+  },
+  {
+   "number": 59,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Finding is only the Image; text 'bring them back' is close to meaning line 2 but ties to line 5 centre on screen (Tuan 王乃在中)."
+   ]
+  },
+  {
+   "number": 60,
+   "overall": 8,
+   "truth": 9,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Fine: lines 2 and 5 both yang centres. Text is the Image and the existing lesson."
+   ]
+  },
+  {
+   "number": 64,
+   "overall": 8,
+   "truth": 10,
+   "teaching": 7,
+   "plainness": 8,
+   "problems": [
+    "Finding is exact and is the Tuan (not in place, yet all answer); the text (existing lesson) does not say the hopeful half."
+   ]
+  }
+ ]
+}

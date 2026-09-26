@@ -1,39 +1,384 @@
 {
- "note": "Draft readout lessons, round 1 (2026-09-26). mark: 0-based line indexes turned amber. master: Wang Bi's own phrase naming the line the hexagram's master (series/wangbi.json), shown with English. finding: one line from the structure or the Tuan. text: the sentence typed last, at most 18 characters a line.",
+ "note": "Draft readout lessons, round 2: the critic's round 1 rewrites (series/critic/readouts/round1.json) in place of the 17 below 8 (2026-09-26). mark: 0-based line indexes turned amber. master: Wang Bi's own phrase naming the line the hexagram's master (series/wangbi.json), shown with English. finding: one line from the structure or the Tuan. text: the sentence typed last, at most 18 characters a line. Round 3: 55 takes \"At your fullest, light each corner.\" (critic 8, against 7 for its own round 2 rewrite). 25 takes \"Do what's right, not what pays.\": the copy check allows 7 words.",
  "drafts": [
-  {"number": 1, "mark": [], "finding": "SIX STRONG LINES. NO REST.", "text": "Heaven never\ntakes a day off.", "source": "image"},
-  {"number": 2, "mark": [], "finding": "SIX YIELDING LINES. ALL FOLLOW.", "text": "Follow first,\nfind the way.", "source": "judgment: at first disoriented, then finding the way"},
-  {"number": 3, "mark": [0], "finding": "MOVEMENT UNDER DANGER.", "text": "Sort the threads\nbefore you pull.", "source": "image: sorts the threads; judgment: do not venture"},
-  {"number": 4, "mark": [1, 4], "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).", "text": "Teachers don't\nchase students.", "source": "judgment"},
-  {"number": 6, "mark": [4], "master": {"zh": "為訟之主", "en": "Master of Conflict"}, "finding": "HEAVEN RISES. WATER SINKS. APART.", "text": "Take it to\na fair judge.", "source": "judgment: meeting the great person; Wang Bi L5 judges crooked and straight"},
-  {"number": 9, "mark": [3], "finding": "ONE YIELDING LINE HOLDS FIVE.", "text": "Small can hold\nbig, for a while.", "source": "Tuan 柔得位而上下應之; judgment: dense clouds, no rain"},
-  {"number": 10, "mark": [2], "master": {"zh": "三為履主", "en": "Line three, master of Treading"}, "finding": "A SOFT LINE TREADS ON THE STRONG.", "text": "Tread softly\nand it won't bite.", "source": "judgment; Wang Bi on the Tuan: soft treads on firm, answering Qian with joy"},
-  {"number": 13, "mark": [1], "master": {"zh": "二為同人之主", "en": "Master of Fellowship"}, "finding": "LINE 2 MEETS LINE 5 IN THE OPEN.", "text": "Meet in the open,\nnot in a clique.", "source": "judgment: fellowship in the open; line 2 fellowship in the clan"},
-  {"number": 16, "mark": [3], "master": {"zh": "四以剛動，為豫之主", "en": "Line four, master of Enthusiasm"}, "finding": "ONE STRONG LINE. FIVE FOLLOW IT.", "text": "One clear voice\nmoves the crowd.", "source": "Wang Bi L4, L5; image: music"},
-  {"number": 17, "mark": [0], "finding": "THE STRONG GOES BELOW THE WEAK.", "text": "To be followed,\nfollow first.", "source": "Wang Bi on the judgment: the firm places itself below the yielding"},
-  {"number": 20, "mark": [4], "master": {"zh": "為觀之主", "en": "Master of Contemplation"}, "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.", "text": "People watch\nhow you prepare.", "source": "judgment: hands washed, offering not yet made"},
-  {"number": 22, "mark": [4], "master": {"zh": "為飾之主", "en": "Master of Grace"}, "finding": "THE SOFT COMES TO ADORN THE STRONG.", "text": "Grace decorates.\nIt doesn't decide.", "source": "Tuan 柔來而文剛; image: does not decide disputes this way"},
-  {"number": 25, "mark": [0, 4], "master": {"zh": "為无妄之主", "en": "Master of Innocence"}, "finding": "A STRONG LINE COMES IN AT THE BASE.", "text": "Act without\nan angle.", "source": "Wang Bi on the Tuan: the firm comes from without and rules within"},
-  {"number": 26, "mark": [4], "master": {"zh": "為畜之主", "en": "Master of Accumulation"}, "finding": "THE MOUNTAIN HOLDS HEAVEN IN.", "text": "Store up strength,\nthen use it.", "source": "image; judgment: crossing the great river"},
-  {"number": 31, "mark": [], "finding": "ALL THREE PAIRS ANSWER.", "text": "Stay open\nto be moved.", "source": "image: receives others through emptiness"},
-  {"number": 33, "mark": [1], "master": {"zh": "為遯之主", "en": "Master of Retreat"}, "finding": "TWO YIELDING LINES CREEP UP.", "text": "Leave early,\nleave calm.", "source": "image: distance with dignity"},
-  {"number": 34, "mark": [], "finding": "FOUR STRONG LINES PUSH UP.", "text": "Strong enough?\nThen hold back.", "source": "image: does not tread where improper"},
-  {"number": 35, "mark": [4], "finding": "THE SOFT RISES TO THE TOP CENTRE.", "text": "Shine,\ndon't push.", "source": "Wang Bi: the soft advances upward; image: brightens own character"},
-  {"number": 37, "mark": [1, 4], "finding": "FIVE LINES IN THEIR PLACE.", "text": "Mean what\nyou say at home.", "source": "image: speaks with substance, acts with consistency"},
-  {"number": 38, "mark": [], "finding": "FIVE OUT OF PLACE. TWO PAIRS ANSWER.", "text": "Agree on\none small thing.", "source": "judgment: small matters; image: commonality, difference"},
-  {"number": 39, "mark": [4], "finding": "FIVE IN PLACE. STILL BLOCKED.", "text": "Blocked?\nLook at yourself.", "source": "Wang Bi: the lines all occupy their positions; image: turns inward"},
-  {"number": 40, "mark": [1, 3], "finding": "THUNDER BREAKS OUT OF THE WATER.", "text": "Act fast,\nthen forgive.", "source": "judgment: act promptly; image: pardons"},
-  {"number": 41, "mark": [2, 5], "finding": "THE LOW LINE GIVES TO THE TOP.", "text": "Two small baskets\nare enough.", "source": "judgment; Wang Bi: decrease the lower to benefit the upper"},
-  {"number": 45, "mark": [3, 4], "finding": "FOUR YIELDING LINES GATHER TO TWO.", "text": "Gather people,\nguard the door.", "source": "image: guards against the unexpected"},
-  {"number": 46, "mark": [0], "finding": "WOOD UNDER EARTH, GROWING UP.", "text": "Go see someone\nabove you.", "source": "judgment: see the great person"},
-  {"number": 49, "mark": [4], "finding": "FIRE IN THE LAKE. ONE MUST GIVE.", "text": "For a revolution,\na new calendar.", "source": "image"},
-  {"number": 52, "mark": [], "finding": "NO PAIR ANSWERS. EACH STANDS STILL.", "text": "Be still\nwhere you stand.", "source": "image: thinks of nothing beyond the present situation"},
-  {"number": 53, "mark": [1, 2, 3, 4], "finding": "LINES 2 TO 5 IN PLACE, STEP BY STEP.", "text": "Grow like a tree\non a mountain.", "source": "image"},
-  {"number": 54, "mark": [1, 2, 3, 4], "finding": "LINES 2 TO 5 ALL OUT OF PLACE.", "text": "Wrong place?\nDon't push.", "source": "judgment: advancing adverse"},
-  {"number": 55, "mark": [], "finding": "THUNDER AND FIRE AT ONCE: FULL.", "text": "Noon passes.\nUse the light.", "source": "judgment: the sun at midday; Tuan 日中則昃"},
-  {"number": 57, "mark": [0, 3], "finding": "WIND ON WIND. NO PAIR ANSWERS.", "text": "Gentle, and again,\nand again.", "source": "image: reiterates commands"},
-  {"number": 59, "mark": [4], "master": {"zh": "為渙之主", "en": "Master of Dispersion"}, "finding": "WIND MOVES OVER WATER.", "text": "Bring them back\nto the centre.", "source": "judgment: the king approaches the temple"},
-  {"number": 60, "mark": [4], "master": {"zh": "為節之主", "en": "Master of Limitation"}, "finding": "THE STRONG HOLDS THE CENTRE.", "text": "A lake holds only\nso much water.", "source": "image"},
-  {"number": 64, "mark": [4], "master": {"zh": "為未濟之主", "en": "Master of Before Completion"}, "finding": "ALL SIX OUT OF PLACE. ALL ANSWER.", "text": "Almost across,\nthe fox gets wet.", "source": "judgment"}
+  {
+   "number": 1,
+   "mark": [],
+   "finding": "SIX STRONG LINES. NO REST.",
+   "text": "Heaven never\ntakes a day off.",
+   "source": "image"
+  },
+  {
+   "number": 2,
+   "mark": [],
+   "finding": "SIX YIELDING LINES. ALL FOLLOW.",
+   "text": "Lead and get lost.\nFollow and arrive.",
+   "source": "judgment: at first disoriented, then finding the way",
+   "round": 2
+  },
+  {
+   "number": 3,
+   "mark": [
+    0
+   ],
+   "finding": "STRONG AT THE BASE, BELOW THE WEAK.",
+   "text": "Don't push yet.\nWin helpers first.",
+   "source": "image: sorts the threads; judgment: do not venture",
+   "round": 2
+  },
+  {
+   "number": 4,
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+   "text": "Teachers don't\nchase students.",
+   "source": "judgment"
+  },
+  {
+   "number": 6,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為訟之主",
+    "en": "Master of Conflict"
+   },
+   "finding": "HEAVEN RISES. WATER SINKS. APART.",
+   "text": "Take it to\na fair judge.",
+   "source": "judgment: meeting the great person; Wang Bi L5 judges crooked and straight"
+  },
+  {
+   "number": 9,
+   "mark": [
+    3
+   ],
+   "finding": "ONE YIELDING LINE HOLDS FIVE.",
+   "text": "Small can hold\nbig, for a while.",
+   "source": "Tuan 柔得位而上下應之; judgment: dense clouds, no rain"
+  },
+  {
+   "number": 10,
+   "mark": [
+    2
+   ],
+   "finding": "A SOFT LINE TREADS ON THE STRONG.",
+   "text": "Beside the strong,\nbe courteous.",
+   "master": {
+    "zh": "三為履主",
+    "en": "Line three, master of Treading"
+   },
+   "source": "judgment; Wang Bi on the Tuan: soft treads on firm, answering Qian with joy",
+   "round": 2
+  },
+  {
+   "number": 13,
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+   "text": "Join on principle,\nnot on kinship.",
+   "master": {
+    "zh": "二為同人之主",
+    "en": "Line two, master of Fellowship"
+   },
+   "source": "judgment: fellowship in the open; line 2 fellowship in the clan",
+   "round": 2
+  },
+  {
+   "number": 16,
+   "mark": [
+    3
+   ],
+   "master": {
+    "zh": "四以剛動，為豫之主",
+    "en": "Line four, master of Enthusiasm"
+   },
+   "finding": "ONE STRONG LINE. FIVE FOLLOW IT.",
+   "text": "One clear voice\nmoves the crowd.",
+   "source": "Wang Bi L4, L5; image: music"
+  },
+  {
+   "number": 17,
+   "mark": [
+    0
+   ],
+   "finding": "THE STRONG GOES BELOW THE WEAK.",
+   "text": "To be followed,\nfollow first.",
+   "source": "Wang Bi on the judgment: the firm places itself below the yielding"
+  },
+  {
+   "number": 20,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為觀之主",
+    "en": "Master of Contemplation"
+   },
+   "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.",
+   "text": "People watch\nhow you prepare.",
+   "source": "judgment: hands washed, offering not yet made"
+  },
+  {
+   "number": 22,
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+   "text": "Plain is the best\nadornment.",
+   "master": {
+    "zh": "為飾之主",
+    "en": "Master of Adornment"
+   },
+   "source": "Tuan 柔來而文剛; image: does not decide disputes this way",
+   "round": 2
+  },
+  {
+   "number": 25,
+   "mark": [
+    0,
+    4
+   ],
+   "finding": "A STRONG LINE COMES IN AT THE BASE.",
+   "text": "Do what's right,\nnot what pays.",
+   "master": {
+    "zh": "為无妄之主",
+    "en": "Master of No Falseness"
+   },
+   "source": "Wang Bi on the Tuan: the firm comes from without and rules within",
+   "round": 3
+  },
+  {
+   "number": 26,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為畜之主",
+    "en": "Master of Accumulation"
+   },
+   "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+   "text": "Store up strength,\nthen use it.",
+   "source": "image; judgment: crossing the great river"
+  },
+  {
+   "number": 31,
+   "mark": [],
+   "finding": "ALL THREE PAIRS ANSWER.",
+   "text": "Be moved as you\nmove others.",
+   "source": "image: receives others through emptiness",
+   "round": 2
+  },
+  {
+   "number": 33,
+   "mark": [
+    0,
+    1
+   ],
+   "finding": "TWO YIELDING LINES CREEP UP.",
+   "text": "Go while you still\ncan go freely.",
+   "master": {
+    "zh": "為遯之主",
+    "en": "Master of Retreat"
+   },
+   "source": "image: distance with dignity",
+   "round": 2
+  },
+  {
+   "number": 34,
+   "mark": [],
+   "finding": "FOUR STRONG LINES PUSH UP.",
+   "text": "Be strong only\nin what is right.",
+   "source": "image: does not tread where improper",
+   "round": 2
+  },
+  {
+   "number": 35,
+   "mark": [
+    4
+   ],
+   "finding": "THE SOFT RISES TO THE TOP CENTRE.",
+   "text": "Shine,\ndon't push.",
+   "source": "Wang Bi: the soft advances upward; image: brightens own character"
+  },
+  {
+   "number": 37,
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "FIVE LINES IN THEIR PLACE.",
+   "text": "Home in order,\nthe rest follows.",
+   "source": "image: speaks with substance, acts with consistency",
+   "round": 2
+  },
+  {
+   "number": 38,
+   "mark": [
+    1,
+    2,
+    4,
+    5
+   ],
+   "finding": "FIVE OUT OF PLACE. TWO PAIRS ANSWER.",
+   "text": "Apart, but still\nanswering.",
+   "source": "judgment: small matters; image: commonality, difference",
+   "round": 2
+  },
+  {
+   "number": 39,
+   "mark": [
+    4
+   ],
+   "finding": "FIVE IN PLACE. STILL BLOCKED.",
+   "text": "Blocked?\nLook at yourself.",
+   "source": "Wang Bi: the lines all occupy their positions; image: turns inward"
+  },
+  {
+   "number": 40,
+   "mark": [
+    3,
+    4,
+    5
+   ],
+   "finding": "THUNDER BREAKS OUT OF THE WATER.",
+   "text": "Out of danger?\nThen don't linger.",
+   "source": "judgment: act promptly; image: pardons",
+   "round": 2
+  },
+  {
+   "number": 41,
+   "mark": [
+    2,
+    5
+   ],
+   "finding": "THE LOW LINE GIVES TO THE TOP.",
+   "text": "Two small baskets\nare enough.",
+   "source": "judgment; Wang Bi: decrease the lower to benefit the upper"
+  },
+  {
+   "number": 45,
+   "mark": [
+    3,
+    4
+   ],
+   "finding": "FOUR YIELDING LINES GATHER TO TWO.",
+   "text": "Gather people by\nwhat is right.",
+   "source": "image: guards against the unexpected",
+   "round": 2
+  },
+  {
+   "number": 46,
+   "mark": [
+    0
+   ],
+   "finding": "WOOD UNDER EARTH, GROWING UP.",
+   "text": "Go see someone\nabove you.",
+   "source": "judgment: see the great person"
+  },
+  {
+   "number": 49,
+   "mark": [
+    4
+   ],
+   "finding": "FIRE IN THE LAKE. ONE MUST GIVE.",
+   "text": "For a revolution,\na new calendar.",
+   "source": "image"
+  },
+  {
+   "number": 52,
+   "mark": [],
+   "finding": "NO PAIR ANSWERS. EACH STANDS STILL.",
+   "text": "Stop when it's\ntime to stop.",
+   "source": "image: thinks of nothing beyond the present situation",
+   "round": 2
+  },
+  {
+   "number": 53,
+   "mark": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+   "text": "Earn each place\nbefore the next.",
+   "source": "image",
+   "round": 2
+  },
+  {
+   "number": 54,
+   "mark": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "finding": "LINES 2 TO 5 ALL OUT OF PLACE.",
+   "text": "Wrong place?\nDon't push.",
+   "source": "judgment: advancing adverse"
+  },
+  {
+   "number": 55,
+   "mark": [],
+   "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+   "text": "At your fullest,\nlight each corner.",
+   "source": "judgment: the sun at midday; Tuan 日中則昃; Wang Bi 宜日中，以徧照 (shine on everything)",
+   "round": 3
+  },
+  {
+   "number": 57,
+   "mark": [
+    0,
+    3
+   ],
+   "finding": "EACH SOFT LINE SITS UNDER A STRONG.",
+   "text": "Bend only to\nwhat is right.",
+   "source": "image: reiterates commands",
+   "round": 2
+  },
+  {
+   "number": 59,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為渙之主",
+    "en": "Master of Dispersion"
+   },
+   "finding": "WIND MOVES OVER WATER.",
+   "text": "Bring them back\nto the centre.",
+   "source": "judgment: the king approaches the temple"
+  },
+  {
+   "number": 60,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為節之主",
+    "en": "Master of Limitation"
+   },
+   "finding": "THE STRONG HOLDS THE CENTRE.",
+   "text": "A lake holds only\nso much water.",
+   "source": "image"
+  },
+  {
+   "number": 64,
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "為未濟之主",
+    "en": "Master of Before Completion"
+   },
+   "finding": "ALL SIX OUT OF PLACE. ALL ANSWER.",
+   "text": "Almost across,\nthe fox gets wet.",
+   "source": "judgment"
+  }
  ]
 }

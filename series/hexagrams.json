@@ -62,7 +62,12 @@
    "lesson": {
     "kind": "lines",
     "text": "Heaven never\ntakes a day off.",
-    "source": "series/critic/lessons/input.json#hexagrams[0].image.transliteration"
+    "source": "series/critic/readouts/drafts.json#1",
+    "readout": {
+     "mark": [],
+     "finding": "SIX STRONG LINES. NO REST."
+    },
+    "readout_source": "image"
    }
   },
   "source": {
@@ -128,6 +133,16 @@
    "caption": {
     "text": "The Receptive’s old image is a mare, strong and at her best when she follows well. Backing someone is its own strength.",
     "source": "commentary/en/2.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Lead and get lost.\nFollow and arrive.",
+    "source": "series/critic/readouts/drafts.json#2",
+    "readout": {
+     "mark": [],
+     "finding": "SIX YIELDING LINES. ALL FOLLOW."
+    },
+    "readout_source": "judgment: at first disoriented, then finding the way"
    }
   },
   "source": {
@@ -196,6 +211,18 @@
    "caption": {
     "text": "The image is thunder with no rain yet, and the wise one sorts thread. When the rain comes, there’s something to weave.",
     "source": "commentary/en/3.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Don't push yet.\nWin helpers first.",
+    "source": "series/critic/readouts/drafts.json#3",
+    "readout": {
+     "mark": [
+      0
+     ],
+     "finding": "STRONG AT THE BASE, BELOW THE WEAK."
+    },
+    "readout_source": "image: sorts the threads; judgment: do not venture"
    }
   },
   "source": {
@@ -263,9 +290,17 @@
     "source": "commentary/en/4.json#image.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
+    "kind": "lines",
     "text": "Teachers don't\nchase students.",
-    "source": "series/critic/lessons/input.json#hexagrams[3].judgment.transliteration"
+    "source": "series/critic/readouts/drafts.json#4",
+    "readout": {
+     "mark": [
+      1,
+      4
+     ],
+     "finding": "THE YOUTH (5) SEEKS THE TEACHER (2)."
+    },
+    "readout_source": "judgment"
    }
   },
   "source": {
@@ -441,6 +476,22 @@
    "caption": {
     "text": "Heaven moves up and water moves down: both right, never meeting. The middle of a fight is the last good place to walk away.",
     "source": "commentary/en/6.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Take it to\na fair judge.",
+    "source": "series/critic/readouts/drafts.json#6",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "HEAVEN RISES. WATER SINKS. APART.",
+     "master": {
+      "zh": "為訟之主",
+      "en": "Master of Conflict"
+     }
+    },
+    "readout_source": "judgment: meeting the great person; Wang Bi L5 judges crooked and straight"
    }
   },
   "source": {
@@ -669,6 +720,18 @@
    "caption": {
     "text": "Dense clouds, no rain, and wind across the sky with nothing to hold. When the outside won’t move, the inside is the work.",
     "source": "commentary/en/9.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Small can hold\nbig, for a while.",
+    "source": "series/critic/readouts/drafts.json#9",
+    "readout": {
+     "mark": [
+      3
+     ],
+     "finding": "ONE YIELDING LINE HOLDS FIVE."
+    },
+    "readout_source": "Tuan 柔得位而上下應之; judgment: dense clouds, no rain"
    }
   },
   "source": {
@@ -736,9 +799,20 @@
     "source": "commentary/en/10.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
-    "text": "Stood on a tiger's\ntail. Not bitten.",
-    "source": "series/critic/lessons/input.json#hexagrams[9].judgment.transliteration"
+    "kind": "lines",
+    "text": "Beside the strong,\nbe courteous.",
+    "source": "series/critic/readouts/drafts.json#10",
+    "readout": {
+     "mark": [
+      2
+     ],
+     "finding": "A SOFT LINE TREADS ON THE STRONG.",
+     "master": {
+      "zh": "三為履主",
+      "en": "Line three, master of Treading"
+     }
+    },
+    "readout_source": "judgment; Wang Bi on the Tuan: soft treads on firm, answering Qian with joy"
    }
   },
   "source": {
@@ -942,6 +1016,23 @@
    "caption": {
     "text": "The old text puts fellowship out in the open, where anyone can walk up. Once you close the door and pick who’s in, you’ve left it.",
     "source": "commentary/en/13.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Join on principle,\nnot on kinship.",
+    "source": "series/critic/readouts/drafts.json#13",
+    "readout": {
+     "mark": [
+      1,
+      4
+     ],
+     "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+     "master": {
+      "zh": "二為同人之主",
+      "en": "Line two, master of Fellowship"
+     }
+    },
+    "readout_source": "judgment: fellowship in the open; line 2 fellowship in the clan"
    }
   },
   "source": {
@@ -1142,6 +1233,22 @@
    "caption": {
     "text": "Thunder breaks out of the ground, and the first thing the old kings did with that energy was make music. Give it form, then direction.",
     "source": "commentary/en/16.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "One clear voice\nmoves the crowd.",
+    "source": "series/critic/readouts/drafts.json#16",
+    "readout": {
+     "mark": [
+      3
+     ],
+     "finding": "ONE STRONG LINE. FIVE FOLLOW IT.",
+     "master": {
+      "zh": "四以剛動，為豫之主",
+      "en": "Line four, master of Enthusiasm"
+     }
+    },
+    "readout_source": "Wang Bi L4, L5; image: music"
    }
   },
   "source": {
@@ -1207,6 +1314,18 @@
    "caption": {
     "text": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy.",
     "source": "commentary/en/17.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "To be followed,\nfollow first.",
+    "source": "series/critic/readouts/drafts.json#17",
+    "readout": {
+     "mark": [
+      0
+     ],
+     "finding": "THE STRONG GOES BELOW THE WEAK."
+    },
+    "readout_source": "Wang Bi on the judgment: the firm places itself below the yielding"
    }
   },
   "source": {
@@ -1515,6 +1634,22 @@
    "caption": {
     "text": "The image is wind moving over everything. The old kings traveled and looked before they taught.",
     "source": "commentary/en/20.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "People watch\nhow you prepare.",
+    "source": "series/critic/readouts/drafts.json#20",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.",
+     "master": {
+      "zh": "為觀之主",
+      "en": "Master of Contemplation"
+     }
+    },
+    "readout_source": "judgment: hands washed, offering not yet made"
    }
   },
   "source": {
@@ -1650,6 +1785,23 @@
    "caption": {
     "text": "Fire at the foot of the mountain is beautiful, but its light only reaches so far. Use grace for small things and substance for the hard ones.",
     "source": "commentary/en/22.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Plain is the best\nadornment.",
+    "source": "series/critic/readouts/drafts.json#22",
+    "readout": {
+     "mark": [
+      1,
+      4
+     ],
+     "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+     "master": {
+      "zh": "為飾之主",
+      "en": "Master of Adornment"
+     }
+    },
+    "readout_source": "Tuan 柔來而文剛; image: does not decide disputes this way"
    }
   },
   "source": {
@@ -1885,6 +2037,23 @@
    "caption": {
     "text": "The image is thunder under the sky, everything just being what it is. You don’t make things real; you stop making them fake.",
     "source": "commentary/en/25.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Do what's right,\nnot what pays.",
+    "source": "series/critic/readouts/drafts.json#25",
+    "readout": {
+     "mark": [
+      0,
+      4
+     ],
+     "finding": "A STRONG LINE COMES IN AT THE BASE.",
+     "master": {
+      "zh": "為无妄之主",
+      "en": "Master of No Falseness"
+     }
+    },
+    "readout_source": "Wang Bi on the Tuan: the firm comes from without and rules within"
    }
   },
   "source": {
@@ -1950,6 +2119,22 @@
    "caption": {
     "text": "The image is heaven held inside a mountain. The old text says don’t eat at home: take what you’ve stored up out into the world.",
     "source": "commentary/en/26.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Store up strength,\nthen use it.",
+    "source": "series/critic/readouts/drafts.json#26",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+     "master": {
+      "zh": "為畜之主",
+      "en": "Master of Accumulation"
+     }
+    },
+    "readout_source": "image; judgment: crossing the great river"
    }
   },
   "source": {
@@ -2292,6 +2477,16 @@
    "caption": {
     "text": "A lake sits on top of a mountain because the mountain made room. If you’re already certain, nothing can move you.",
     "source": "commentary/en/31.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Be moved as you\nmove others.",
+    "source": "series/critic/readouts/drafts.json#31",
+    "readout": {
+     "mark": [],
+     "finding": "ALL THREE PAIRS ANSWER."
+    },
+    "readout_source": "image: receives others through emptiness"
    }
   },
   "source": {
@@ -2454,6 +2649,23 @@
    "caption": {
     "text": "A mountain under heaven: heaven stays out of reach. Keep your distance from petty people, but without hate, because hate keeps you attached.",
     "source": "commentary/en/33.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Go while you still\ncan go freely.",
+    "source": "series/critic/readouts/drafts.json#33",
+    "readout": {
+     "mark": [
+      0,
+      1
+     ],
+     "finding": "TWO YIELDING LINES CREEP UP.",
+     "master": {
+      "zh": "為遯之主",
+      "en": "Master of Retreat"
+     }
+    },
+    "readout_source": "image: distance with dignity"
    }
   },
   "source": {
@@ -2519,6 +2731,16 @@
    "caption": {
     "text": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. The power goes into staying off wrong paths.",
     "source": "commentary/en/34.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Be strong only\nin what is right.",
+    "source": "series/critic/readouts/drafts.json#34",
+    "readout": {
+     "mark": [],
+     "finding": "FOUR STRONG LINES PUSH UP."
+    },
+    "readout_source": "image: does not tread where improper"
    }
   },
   "source": {
@@ -2584,6 +2806,18 @@
    "caption": {
     "text": "The sun rises over the earth, and progress comes with the light. The text says brighten your character, not your strategy.",
     "source": "commentary/en/35.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Shine,\ndon't push.",
+    "source": "series/critic/readouts/drafts.json#35",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "THE SOFT RISES TO THE TOP CENTRE."
+    },
+    "readout_source": "Wang Bi: the soft advances upward; image: brightens own character"
    }
   },
   "source": {
@@ -2748,6 +2982,19 @@
    "caption": {
     "text": "Wind born from fire: warmth makes the movement. A family whose words mean something and whose actions last doesn’t need the rules.",
     "source": "commentary/en/37.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Home in order,\nthe rest follows.",
+    "source": "series/critic/readouts/drafts.json#37",
+    "readout": {
+     "mark": [
+      1,
+      4
+     ],
+     "finding": "FIVE LINES IN THEIR PLACE."
+    },
+    "readout_source": "image: speaks with substance, acts with consistency"
    }
   },
   "source": {
@@ -2813,6 +3060,21 @@
    "caption": {
     "text": "Fire rises and water sinks; they’ll never meet. Fix small things first, and find what you share while staying different.",
     "source": "commentary/en/38.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Apart, but still\nanswering.",
+    "source": "series/critic/readouts/drafts.json#38",
+    "readout": {
+     "mark": [
+      1,
+      2,
+      4,
+      5
+     ],
+     "finding": "FIVE OUT OF PLACE. TWO PAIRS ANSWER."
+    },
+    "readout_source": "judgment: small matters; image: commonality, difference"
    }
   },
   "source": {
@@ -2878,6 +3140,18 @@
    "caption": {
     "text": "Water on a mountain can’t flow. The old text says turn inward and find the great person: the obstacle tests whether you’ll ask.",
     "source": "commentary/en/39.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Blocked?\nLook at yourself.",
+    "source": "series/critic/readouts/drafts.json#39",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "FIVE IN PLACE. STILL BLOCKED."
+    },
+    "readout_source": "Wang Bi: the lines all occupy their positions; image: turns inward"
    }
   },
   "source": {
@@ -2943,6 +3217,20 @@
    "caption": {
     "text": "Thunder and rain clear the air: if there’s work, do it now; if not, go home. Don’t carry grudges into the next round.",
     "source": "commentary/en/40.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Out of danger?\nThen don't linger.",
+    "source": "series/critic/readouts/drafts.json#40",
+    "readout": {
+     "mark": [
+      3,
+      4,
+      5
+     ],
+     "finding": "THUNDER BREAKS OUT OF THE WATER."
+    },
+    "readout_source": "judgment: act promptly; image: pardons"
    }
   },
   "source": {
@@ -3010,9 +3298,17 @@
     "source": "commentary/en/41.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
+    "kind": "lines",
     "text": "Two small baskets\nare enough.",
-    "source": "series/critic/lessons/input.json#hexagrams[40].judgment.transliteration"
+    "source": "series/critic/readouts/drafts.json#41",
+    "readout": {
+     "mark": [
+      2,
+      5
+     ],
+     "finding": "THE LOW LINE GIVES TO THE TOP."
+    },
+    "readout_source": "judgment; Wang Bi: decrease the lower to benefit the upper"
    }
   },
   "source": {
@@ -3310,6 +3606,19 @@
    "caption": {
     "text": "The king goes to the temple first: without a shared center, a gathering is just a crowd. And where people collect, friction follows.",
     "source": "commentary/en/45.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Gather people by\nwhat is right.",
+    "source": "series/critic/readouts/drafts.json#45",
+    "readout": {
+     "mark": [
+      3,
+      4
+     ],
+     "finding": "FOUR YIELDING LINES GATHER TO TWO."
+    },
+    "readout_source": "image: guards against the unexpected"
    }
   },
   "source": {
@@ -3377,9 +3686,16 @@
     "source": "commentary/en/46.json#image.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
+    "kind": "lines",
     "text": "Go see someone\nabove you.",
-    "source": "series/critic/lessons/input.json#hexagrams[45].judgment.transliteration"
+    "source": "series/critic/readouts/drafts.json#46",
+    "readout": {
+     "mark": [
+      0
+     ],
+     "finding": "WOOD UNDER EARTH, GROWING UP."
+    },
+    "readout_source": "judgment: see the great person"
    }
   },
   "source": {
@@ -3638,7 +3954,14 @@
    "lesson": {
     "kind": "lines",
     "text": "For a revolution,\na new calendar.",
-    "source": "series/critic/lessons/input.json#hexagrams[48].image.transliteration"
+    "source": "series/critic/readouts/drafts.json#49",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
+    },
+    "readout_source": "image"
    }
   },
   "source": {
@@ -3877,6 +4200,16 @@
    "caption": {
     "text": "The old text says to keep your back still, so you stop chasing what’s in front of you.",
     "source": "commentary/en/52.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Stop when it's\ntime to stop.",
+    "source": "series/critic/readouts/drafts.json#52",
+    "readout": {
+     "mark": [],
+     "finding": "NO PAIR ANSWERS. EACH STANDS STILL."
+    },
+    "readout_source": "image: thinks of nothing beyond the present situation"
    }
   },
   "source": {
@@ -3942,6 +4275,21 @@
    "caption": {
     "text": "A tree on a mountain grows slowly where everyone can see it. Every shortcut here goes the wrong way.",
     "source": "commentary/en/53.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Earn each place\nbefore the next.",
+    "source": "series/critic/readouts/drafts.json#53",
+    "readout": {
+     "mark": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+    },
+    "readout_source": "image"
    }
   },
   "source": {
@@ -4007,6 +4355,21 @@
    "caption": {
     "text": "Thunder stirs the lake’s surface while the depths stay still. The text says to look past the middle to how it ends.",
     "source": "commentary/en/54.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Wrong place?\nDon't push.",
+    "source": "series/critic/readouts/drafts.json#54",
+    "readout": {
+     "mark": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "finding": "LINES 2 TO 5 ALL OUT OF PLACE."
+    },
+    "readout_source": "judgment: advancing adverse"
    }
   },
   "source": {
@@ -4072,6 +4435,16 @@
    "caption": {
     "text": "The sun at noon is about to set, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon.",
     "source": "commentary/en/55.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "At your fullest,\nlight each corner.",
+    "source": "series/critic/readouts/drafts.json#55",
+    "readout": {
+     "mark": [],
+     "finding": "THUNDER AND FIRE AT ONCE: FULL."
+    },
+    "readout_source": "judgment: the sun at midday; Tuan 日中則昃; Wang Bi 宜日中，以徧照 (shine on everything)"
    }
   },
   "source": {
@@ -4232,6 +4605,19 @@
    "caption": {
     "text": "The image is wind following wind. One gust changes nothing; a wind that keeps blowing reshapes the land. Say the important thing more than once.",
     "source": "commentary/en/57.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Bend only to\nwhat is right.",
+    "source": "series/critic/readouts/drafts.json#57",
+    "readout": {
+     "mark": [
+      0,
+      3
+     ],
+     "finding": "EACH SOFT LINE SITS UNDER A STRONG."
+    },
+    "readout_source": "image: reiterates commands"
    }
   },
   "source": {
@@ -4398,6 +4784,22 @@
    "caption": {
     "text": "Wind over water scatters the surface, and the old kings built temples. A shared center pulls people back; force only wears you out.",
     "source": "commentary/en/59.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Bring them back\nto the centre.",
+    "source": "series/critic/readouts/drafts.json#59",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "WIND MOVES OVER WATER.",
+     "master": {
+      "zh": "為渙之主",
+      "en": "Master of Dispersion"
+     }
+    },
+    "readout_source": "judgment: the king approaches the temple"
    }
   },
   "source": {
@@ -4467,7 +4869,18 @@
    "lesson": {
     "kind": "lines",
     "text": "A lake holds only\nso much water.",
-    "source": "commentary/en/60.json#image.synthesis"
+    "source": "series/critic/readouts/drafts.json#60",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "THE STRONG HOLDS THE CENTRE.",
+     "master": {
+      "zh": "為節之主",
+      "en": "Master of Limitation"
+     }
+    },
+    "readout_source": "image"
    }
   },
   "source": {
@@ -4774,9 +5187,20 @@
     "source": "commentary/en/64.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
+    "kind": "lines",
     "text": "Almost across,\nthe fox gets wet.",
-    "source": "commentary/en/64.json#judgment.transliteration"
+    "source": "series/critic/readouts/drafts.json#64",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "finding": "ALL SIX OUT OF PLACE. ALL ANSWER.",
+     "master": {
+      "zh": "為未濟之主",
+      "en": "Master of Before Completion"
+     }
+    },
+    "readout_source": "judgment"
    }
   },
   "source": {
