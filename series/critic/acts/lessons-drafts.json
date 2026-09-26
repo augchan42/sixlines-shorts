@@ -1,5 +1,5 @@
 {
- "round": 2,
+ "round": 3,
  "rules": "two lines, each at most 18 characters counting punctuation; 3 to 7 words",
  "drafts": [
   {
@@ -32,9 +32,9 @@
   {
    "number": 24,
    "act": "return",
-   "text": "Once you stray,\ncome back soon.",
+   "text": "Once you stray,\nturn back at once.",
    "source": "Line 1 of 24: 不遠復 (returning from not far)",
-   "from": "critic round 1 rewrite"
+   "from": "critic round 2 rewrite"
   },
   {
    "number": 27,
@@ -45,9 +45,9 @@
   {
    "number": 28,
    "act": "ridgepole",
-   "text": "The beam sags.\nShore it up now.",
-   "source": "Judgment on 28: the ridgepole sags; going forward is supported",
-   "from": "critic round 1 rewrite"
+   "text": "The ends give way.\nBrace them now.",
+   "source": "Tuan on 28: 棟橈，本末弱也 (the ridgepole sags: the root and the tip are weak); Wang Bi on lines 2 and 4: 拯弱 (rescuing the weak)",
+   "from": "critic round 2 rewrite"
   },
   {
    "number": 30,
@@ -72,9 +72,9 @@
   {
    "number": 51,
    "act": "thunder",
-   "text": "When shaken,\nlook at yourself.",
-   "source": "Image on 51: uses fear and trembling to examine themselves",
-   "from": "critic round 1 rewrite"
+   "text": "When shaken,\nexamine yourself.",
+   "source": "Image on 51: 恐懼修省 (uses fear and trembling to examine themselves)",
+   "from": "critic round 2 rewrite"
   },
   {
    "number": 61,
