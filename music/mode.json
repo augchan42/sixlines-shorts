@@ -116,7 +116,15 @@
    "bpm": 97.0,
    "key": "E major",
    "minorMargin": -0.361,
-   "sections": []
+   "sections": [
+    {
+     "trigram": "li",
+     "start": 0.0,
+     "key": "E major",
+     "minorMargin": -0.34,
+     "centroid": 2835
+    }
+   ]
   },
   {
    "file": "pick09-synthwave.mp3",
@@ -189,6 +197,13 @@
      "key": "D# minor",
      "minorMargin": 0.11,
      "centroid": 3083
+    },
+    {
+     "trigram": "li",
+     "start": 147.947,
+     "key": "D# major",
+     "minorMargin": -0.082,
+     "centroid": 3585
     }
    ]
   },

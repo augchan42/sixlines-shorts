@@ -2787,20 +2787,18 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
-   "licence": "Pixabay Content License",
-   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
-   "bpm": 100.05,
-   "start": 206.613,
-   "firstBeat": 0,
-   "drop": 14.394,
-   "certificate": {
-    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
-    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
-    "downloaded": "2026-09-24 14:01:40 UTC"
-   }
+   "file": "pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+   "sha256": "6f2b033a8993fb30096270716a0b4b310c7954e69710cb624e65e61ae9b8e5e2",
+   "title": "Synthwave Pop - Retro 80s Fashion Nostalgic Vintage Happy by SoundGalleryBy",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-synthwave-pop-retro-80s-fashion-nostalgic-vintage-happy-177894/",
+   "bpm": 97,
+   "start": 0,
+   "firstBeat": 0.334,
+   "drop": 10.23,
+   "for": [
+    35
+   ]
   },
   "copy": {
    "hook": {
@@ -4012,20 +4010,23 @@
   "music": {
    "trigram": "li",
    "symbol": "☲",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
+   "file": "pick12-neon-drive-horizon.mp3",
+   "sha256": "fabd518629ca7749ea5b88d5c9a668c2d7a161a3507d6071f732d364319f62a5",
+   "title": "Synthwave Music Neon Drive Horizon by alex-morgan",
    "licence": "Pixabay Content License",
-   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
-   "bpm": 100.05,
-   "start": 206.613,
+   "source": "https://pixabay.com/music/synthwave-synthwave-music-neon-drive-horizon-578508/",
+   "bpm": 100.58,
+   "start": 147.947,
    "firstBeat": 0,
-   "drop": 14.394,
+   "drop": 14.316,
    "certificate": {
-    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
-    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "file": "synthwave-synthwave-music-neon-drive-horizon-578508-license.txt",
+    "sha256": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
     "downloaded": "2026-09-24 14:01:40 UTC"
-   }
+   },
+   "for": [
+    50
+   ]
   },
   "copy": {
    "hook": {

@@ -561,6 +561,43 @@
     40,
     55
    ]
+  },
+  {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+   "sha256": "6f2b033a8993fb30096270716a0b4b310c7954e69710cb624e65e61ae9b8e5e2",
+   "title": "Synthwave Pop - Retro 80s Fashion Nostalgic Vintage Happy by SoundGalleryBy",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-synthwave-pop-retro-80s-fashion-nostalgic-vintage-happy-177894/",
+   "bpm": 97.0,
+   "start": 0.0,
+   "firstBeat": 0.334,
+   "drop": 10.23,
+   "for": [
+    35
+   ]
+  },
+  {
+   "trigram": "li",
+   "symbol": "☲",
+   "file": "pick12-neon-drive-horizon.mp3",
+   "sha256": "fabd518629ca7749ea5b88d5c9a668c2d7a161a3507d6071f732d364319f62a5",
+   "title": "Synthwave Music Neon Drive Horizon by alex-morgan",
+   "licence": "Pixabay Content License",
+   "source": "https://pixabay.com/music/synthwave-synthwave-music-neon-drive-horizon-578508/",
+   "bpm": 100.58,
+   "start": 147.947,
+   "firstBeat": 0.0,
+   "drop": 14.316,
+   "certificate": {
+    "file": "synthwave-synthwave-music-neon-drive-horizon-578508-license.txt",
+    "sha256": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
+    "downloaded": "2026-09-24 14:01:40 UTC"
+   },
+   "for": [
+    50
+   ]
   }
  ],
  "dropped": [
