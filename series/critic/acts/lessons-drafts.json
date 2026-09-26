@@ -1,0 +1,87 @@
+{
+ "round": 2,
+ "rules": "two lines, each at most 18 characters counting punctuation; 3 to 7 words",
+ "drafts": [
+  {
+   "number": 7,
+   "act": "army",
+   "text": "Lead upright,\nthe ranks fall in.",
+   "source": "Tuan on 7: 能以眾正 (able to make the many upright); Image: embraces the people",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 11,
+   "act": "peace",
+   "text": "High and low talk:\nthat is peace.",
+   "source": "Image on 11: heaven and earth interact"
+  },
+  {
+   "number": 12,
+   "act": "standstill",
+   "text": "High and low part:\nturn down rewards.",
+   "source": "Image on 12: heaven and earth do not interact",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 15,
+   "act": "modesty",
+   "text": "Having the most,\nstep back.",
+   "source": "Image on 15: a mountain within the earth",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 24,
+   "act": "return",
+   "text": "Once you stray,\ncome back soon.",
+   "source": "Line 1 of 24: 不遠復 (returning from not far)",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 27,
+   "act": "nourish",
+   "text": "Guard your mouth:\nfood and words.",
+   "source": "Image on 27: careful with speech, moderate in eating and drinking"
+  },
+  {
+   "number": 28,
+   "act": "ridgepole",
+   "text": "The beam sags.\nShore it up now.",
+   "source": "Judgment on 28: the ridgepole sags; going forward is supported",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 30,
+   "act": "fire",
+   "text": "Like fire, cling\nto what is right.",
+   "source": "Tuan on 30: 柔麗乎中正 (the yielding clings to the central and correct)",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 43,
+   "act": "breakthrough",
+   "text": "Remove the wrong\nopenly, unarmed.",
+   "source": "Judgment on 43: proclaimed in the king's court; resorting to arms is not supported",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 44,
+   "act": "meet",
+   "text": "Check a bad start\nwhile it's small.",
+   "source": "Line 1 of 44: tied to a metal brake (Wang Bi: stop it at its start)"
+  },
+  {
+   "number": 51,
+   "act": "thunder",
+   "text": "When shaken,\nlook at yourself.",
+   "source": "Image on 51: uses fear and trembling to examine themselves",
+   "from": "critic round 1 rewrite"
+  },
+  {
+   "number": 61,
+   "act": "truth",
+   "text": "No hidden aim,\nfirm at the core.",
+   "source": "Tuan on 61: 柔在內而剛得中 (the yielding within, the firm holding the centres)",
+   "from": "critic round 1 rewrite"
+  }
+ ]
+}
