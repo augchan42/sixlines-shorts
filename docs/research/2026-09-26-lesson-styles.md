@@ -79,7 +79,7 @@ His reading is structural, and a readout can show structure:
 
 The strongest readouts, where Wang Bi's reading is the lesson:
 
-- **6, 8, 14, 16, 20, 22, 25, 26, 32, 33, 42, 59, 60, 61**: Wang Bi names the master line in his notes (series/wangbi.json).
+- **6, 14, 16, 20, 22, 25, 26, 33, 59, 60**: Wang Bi names the master line in his notes (series/wangbi.json). (He also names masters in 8, 32 and 42, which are characters, and in 7, 21, 27, 29, 51 and 61, which act out the picture.)
 - **9, 10, 13**: one line differs from the other five, and rules them.
 - **64** (010101): every line is out of its place, yet each answers its partner. It is 63 turned inside out.
 - **1, 2**: all yang, all yin. The readout shows six lines in and out of place, and no ruler.
