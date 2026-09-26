@@ -20,6 +20,9 @@ import { Trigrams } from "../scenes/Trigrams";
 export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" | "lesson" | "pace" | "credit">, fps: number) =>
   beatFrame({ fps, bpm: p.bpm, firstBeat: p.firstBeat }, planOf(p).end);
 
+// How far a character lesson's drawing moves down to clear room for its sentence above it (the demo's value).
+const CHARACTER_DROP = 260;
+
 const Badge: React.FC<{ n: number }> = ({ n }) => (
   <AbsoluteFill style={{ padding: "240px 70px 0", pointerEvents: "none" }}>
     <div style={{ fontFamily: fonts.pixel, fontSize: 44, color: "#6cff7a", textShadow: "0 0 12px #6cff7a" }}>
@@ -101,7 +104,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
           {lesson?.clip && (
             <>
               <Sequence {...span(s.showcase, s.cta)}>
-                <EndCard3D clip={lesson.clip} />
+                {/* A character sits low, its sentence above it, as in the demo: text at the bottom covered the drawing. */}
+                <EndCard3D clip={lesson.clip} drop={lesson.kind === "character" ? CHARACTER_DROP : 0} />
               </Sequence>
               {lesson.kind !== "character" && !lesson.scene && (
                 <Sequence {...span(s.showcase, clipText)}>
@@ -109,7 +113,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
                 </Sequence>
               )}
               <Sequence {...span(clipText, s.cta)}>
-                <TypedText text={lesson.text} place={lesson.kind === "moon" ? "centre" : "bottom"} />
+                <TypedText text={lesson.text} place={lesson.kind === "moon" ? "centre" : lesson.kind === "character" ? "top" : "bottom"} />
               </Sequence>
             </>
           )}
