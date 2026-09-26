@@ -523,15 +523,13 @@
    "name": "Deliverance",
    "tone": "bright",
    "why": "deliverance; the storm breaks",
-   "file": "pick07-interstellar-retrowave.mp3",
-   "start": 158.426,
-   "bpm": 100,
-   "key": "A minor",
-   "minorMargin": 0.239,
-   "centroid": 2127,
-   "flags": [
-    "A minor (+0.239) may be too dark for a bright hexagram"
-   ]
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "start": 206.613,
+   "bpm": 100.05,
+   "key": "G minor",
+   "minorMargin": 0.087,
+   "centroid": 3184,
+   "flags": []
   },
   {
    "number": 41,
@@ -725,15 +723,13 @@
    "name": "Abundance",
    "tone": "bright",
    "why": "abundance at its height",
-   "file": "pick07-interstellar-retrowave.mp3",
-   "start": 158.426,
-   "bpm": 100,
-   "key": "A minor",
-   "minorMargin": 0.239,
-   "centroid": 2127,
-   "flags": [
-    "A minor (+0.239) may be too dark for a bright hexagram"
-   ]
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "start": 206.613,
+   "bpm": 100.05,
+   "key": "G minor",
+   "minorMargin": 0.087,
+   "centroid": 3184,
+   "flags": []
   },
   {
    "number": 56,

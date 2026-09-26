@@ -365,6 +365,13 @@
      "key": "G minor",
      "minorMargin": 0.278,
      "centroid": 3251
+    },
+    {
+     "trigram": "zhen",
+     "start": 206.613,
+     "key": "G minor",
+     "minorMargin": 0.087,
+     "centroid": 3184
     }
    ]
   },

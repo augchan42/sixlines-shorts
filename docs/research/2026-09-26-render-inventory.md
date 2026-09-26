@@ -7,7 +7,9 @@ is in [2026-09-26-lesson-methods.md](2026-09-26-lesson-methods.md).
 
 What every final render uses:
 - the music in series/hexagrams.json, including the swaps the user chose on 2026-09-26
-  (3, 12, 23, 28, 29, 43 and 47; music/review.json);
+  (3, 12, 23, 28, 29, 43 and 47; music/review.json), 64's (music/review-64.json), and the
+  celebratory guitar part of pick22 (from 206.613 s) for 40 and 55, which the user liked for
+  both: it is now on 14, 35, 40, 50 and 55, so move one if they sound alike back to back;
 - no ~DISNEYFAN credit;
 - character captions at the top.
 
@@ -44,6 +46,6 @@ lessons, 11, 24, 27, 28, 30 and 44 none. Each gets its lesson sentence with its 
 
 ## Open for the user
 
-- **No short shows the app's screens now.** Every hexagram has a lesson, and a short with a
-  lesson plays it where the screens were. Keep some for the app's pitch?
-- The three samples, then the rest in batches.
+- **No short shows the app's screens.** The user, 2026-09-26: "we have a full demo to show the
+  screens i think so maybe our shorts don't need to show any app screens?"
+- The three samples passed on 2026-09-26 ("all samples pass"); the rest render in batches.
