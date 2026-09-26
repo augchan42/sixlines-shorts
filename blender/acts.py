@@ -134,15 +134,16 @@ def act_breakthrough(st, end):
 
 def act_army(st, end):
     """7 The Army (010000): one yang, the general, in the second place among five yin. The
-    yin lines' halves drift loose and dim; the general brightens once, and the yin lines slide
+    yin lines' halves drift outward by uneven amounts, so the ranks go ragged but every
+    break stays open, and dim; the general brightens once, and the yin lines slide
     back into straight ranks one at a time, nearest the general first, each brightening as it
     falls in. (Critic round 1: all six stepping forward read as a zoom.)"""
     at = st.at
-    loose = (0.35, -0.25, 0.2, -0.4, 0.3, -0.2, 0.25, -0.35, 0.4, -0.3)  # each yin half's drift
+    loose = (0.35, 0.15, 0.2, 0.45, 0.3, 0.2, 0.15, 0.4, 0.5, 0.25)  # each yin half's drift, outward only
     halves = [(o, s) for i in (0, 2, 3, 4, 5) for o, s in st.slabs[i]]
     for (o, s), dx in zip(halves, loose):
         x = o.location.x
-        ease(o, 0, ((at(1.0), x), (at(2.2), x + dx)))
+        ease(o, 0, ((at(1.0), x), (at(2.2), x + (dx if x > 0 else -dx))))
         glow(s, ((at(1.0), REST), (at(2.2), REST * 0.4)))
     [(o, s)] = st.slabs[1]
     glow(s, ((at(3.0), REST), (at(3.3), PULSE * 0.5), (at(4.3), REST)))
@@ -192,12 +193,12 @@ def act_modesty(st, end):
 
 def act_nourish(st, end):
     """27 Nourishment (100001): the open mouth, yang jaws above and below. The upper jaw,
-    the mountain, keeps still; the lower jaw, thunder, rises slowly with the two yin lines
-    before it and lowers again, twice. (Critic round 1: the whole hexagram squeezing read
-    as a breath.)"""
+    the mountain, keeps still; the lower jaw, thunder, rises slowly, crowding the two yin
+    lines above it, and lowers again, twice; the gap between the trigrams stays open.
+    (Critic round 1: the whole hexagram squeezing read as a breath; round 2: the lower
+    trigram rising as a block looked like 11.)"""
     at = st.at
-    lift = 0.5
-    for i in (0, 1, 2):
+    for i, lift in ((0, 0.35), (1, 0.2), (2, 0.1)):
         for o, s in st.slabs[i]:
             z = line_z(i)
             ease(o, 2, ((at(1.2), z), (at(2.6), z + lift), (at(3.8), z), (at(5.0), z + lift), (at(6.4), z)))
@@ -242,7 +243,7 @@ def act_fire(st, end):
 
 def act_thunder(st, end):
     """51 The Arousing (100100): thunder doubled. An amber flash starts in the bottom line
-    and runs up the lower trigram, then a second, fainter one runs up the upper trigram.
+    and runs up the lower trigram, then a second runs up the upper trigram.
     No line moves: the shock passes and the hexagram stands. (Critic round 1: jolting
     lines broke the calm-motion rule.)"""
     at = st.at
