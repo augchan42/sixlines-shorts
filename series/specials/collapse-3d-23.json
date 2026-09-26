@@ -1,0 +1,41 @@
+{
+ "hexagram": 23,
+ "occasion": "A smoke test of the lines acted out in Blender (blender/collapse.py): the house of 23 falls in on itself, the one yang line coming down on top, under a Blade Runner searchlight; the user asked for it on 2026-09-26. The series short is left alone.",
+ "copy": {
+  "hook": {
+   "text": "Everything falling apart?",
+   "source": "commentary/en/23.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "Splitting Apart\nsays: don’t run.",
+    "source": "commentary/en/23.json#judgment.synthesis"
+   },
+   {
+    "text": "Stay and help\nthose below you.",
+    "source": "commentary/en/23.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Who depends\non you?",
+   "source": "written"
+  },
+  "plates": [
+   "23-36",
+   "23-57"
+  ],
+  "caption": {
+   "text": "The mountain sits on eroding earth, and the old text tells those on top to give to those below. The summit rests on the base.",
+   "source": "commentary/en/23.json#image.synthesis"
+  },
+  "lesson": {
+   "kind": "lines",
+   "text": "Falling apart?\nShore up the base.",
+   "source": "series/characters.json#23: A knife stands beside a block; pieces fall off the block one by one until only its base stands; then both lie down as the character.",
+   "scene": {
+    "script": "collapse",
+    "args": {}
+   }
+  }
+ }
+}

@@ -119,6 +119,7 @@ test("a Judgment or trigram lesson with a Blender scene plays its clip for the w
   const lesson = { kind: "judgment", text: "t", scene, source: "written" };
   const p = seriesProps({ ...row, copy: { ...row.copy, lesson } });
   const s = planOf(p);
+  assert.equal(p.lesson.scene, "glyphs", "the template knows the scene carries its own searchlight");
   assert.equal(p.lesson.screen, undefined);
   assert.equal(p.lesson.clip, sceneClip(29, "glyphs", 100, s.cta - s.showcase, scene.args));
   assert.notEqual(sceneClip(29, "glyphs", 100, 12, scene.args), sceneClip(29, "glyphs", 100, 12, { ...scene.args, rows: "1,1" }));

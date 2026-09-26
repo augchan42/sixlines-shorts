@@ -119,6 +119,9 @@ export const seriesSchema = z.object({
       // A moon lesson plays its Blender clip (blender/moon.py) for the whole lesson, the
       // sentence typed over its end; the labels light up on the hexagram's lines.
       clip: z.string().optional(),
+      // The Blender script of a lesson acted out in a scene (blender/glyphs.py, trigram.py,
+      // collapse.py); such a scene carries its own searchlight.
+      scene: z.string().optional(),
       labels: z.array(z.string()).length(6).optional(),
       // A character lesson (blender/character.py) sets its own length: its drawing, then 3
       // beats for the sentence under the finished character.

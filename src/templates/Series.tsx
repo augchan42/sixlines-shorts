@@ -103,7 +103,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
               <Sequence {...span(s.showcase, s.cta)}>
                 <EndCard3D clip={lesson.clip} />
               </Sequence>
-              {lesson.kind !== "character" && (
+              {lesson.kind !== "character" && !lesson.scene && (
                 <Sequence {...span(s.showcase, clipText)}>
                   <Searchlight />
                 </Sequence>
