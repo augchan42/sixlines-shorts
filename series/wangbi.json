@@ -1,0 +1,590 @@
+{
+ "source": "8bitoracle-next@1bee426fe8d31a8512c91c1b2e056ecd358d3ef2:src/constants/wangBiZhu.ts",
+ "script": "scripts/wangbi.mjs",
+ "hexagrams": {
+  "1": {
+   "name": "乾",
+   "masters": []
+  },
+  "2": {
+   "name": "坤",
+   "masters": []
+  },
+  "3": {
+   "name": "屯",
+   "masters": []
+  },
+  "4": {
+   "name": "蒙",
+   "masters": []
+  },
+  "5": {
+   "name": "需",
+   "masters": [
+    {
+     "line": 6,
+     "zh": [
+      "以一陰而為三陽之主"
+     ],
+     "en": []
+    }
+   ]
+  },
+  "6": {
+   "name": "訟",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為訟之主"
+     ],
+     "en": [
+      "Occupying the honored position, it serves as the master of contention, using its centered correctness to judge the crooked and the straight"
+     ]
+    }
+   ]
+  },
+  "7": {
+   "name": "師",
+   "masters": [
+    {
+     "line": 2,
+     "zh": [
+      "為師之主"
+     ],
+     "en": [
+      "Receiving the favor of the one above, it serves as the master of the army"
+     ]
+    }
+   ]
+  },
+  "8": {
+   "name": "比",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為比之主而有應在"
+     ],
+     "en": [
+      "Being the lord of Alliance with a correspondent in the Second—this is manifest alliance",
+      "This qualifies one to serve as an agent of the ruler, but it is not the Way of being a ruler"
+     ]
+    }
+   ]
+  },
+  "9": {
+   "name": "小畜",
+   "masters": []
+  },
+  "10": {
+   "name": "履",
+   "masters": [],
+   "judgment": {
+    "zh": [
+     "言乎一卦之所以為主也"
+    ],
+    "en": []
+   }
+  },
+  "11": {
+   "name": "泰",
+   "masters": []
+  },
+  "12": {
+   "name": "否",
+   "masters": []
+  },
+  "13": {
+   "name": "同人",
+   "masters": [],
+   "judgment": {
+    "zh": [
+     "二為同人之主"
+    ],
+    "en": [
+     "The second line is the master of Fellowship with People"
+    ]
+   }
+  },
+  "14": {
+   "name": "大有",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "而不威如？為大有之主"
+     ],
+     "en": [
+      "Being both impartial and trustworthy, what difficulty arises, what defenses are needed? When teaching is carried out without speaking, how could there not be awe? As the ruler of Great Possession, if one did not follow this Way, could auspiciousness be attained?"
+     ]
+    }
+   ]
+  },
+  "15": {
+   "name": "謙",
+   "masters": []
+  },
+  "16": {
+   "name": "豫",
+   "masters": [
+    {
+     "line": 3,
+     "zh": [
+      "承動豫之主"
+     ],
+     "en": [
+      "It treads a position that is not its own and supports the master of active enthusiasm"
+     ]
+    },
+    {
+     "line": 5,
+     "zh": [
+      "為豫之主"
+     ],
+     "en": [
+      "The Fourth, through firm movement, is the master of Enthusiasm and monopolizes authority and control"
+     ]
+    }
+   ]
+  },
+  "17": {
+   "name": "隨",
+   "masters": []
+  },
+  "18": {
+   "name": "蠱",
+   "masters": []
+  },
+  "19": {
+   "name": "臨",
+   "masters": []
+  },
+  "20": {
+   "name": "觀",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為觀之主"
+     ],
+     "en": [
+      "Dwelling in the noble position, serving as the master of Contemplation, broadly proclaiming the great transforming influence, its radiance reaching the four quarters—this is the ultimate of Contemplation",
+      "Being the master of transformation above, when one intends to observe oneself, one in fact observes the people"
+     ]
+    }
+   ]
+  },
+  "21": {
+   "name": "噬嗑",
+   "masters": [
+    {
+     "line": 4,
+     "zh": [
+      "為陰之主"
+     ],
+     "en": [
+      "Although it is a yang line in substance and acts as the master of the yin lines, it treads without obtaining the center and occupies an improper position"
+     ]
+    }
+   ]
+  },
+  "22": {
+   "name": "賁",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為飾之主"
+     ],
+     "en": [
+      "Occupying the honored position, it is the master of adornment—the most flourishing in adornment"
+     ]
+    }
+   ]
+  },
+  "23": {
+   "name": "剝",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為剝之主者也"
+     ],
+     "en": [
+      "Situated in the time of Stripping, it occupies the honored position and is the master of Stripping"
+     ]
+    }
+   ]
+  },
+  "24": {
+   "name": "復",
+   "masters": []
+  },
+  "25": {
+   "name": "無妄",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為无妄之主者也"
+     ],
+     "en": [
+      "Dwelling in the honored position, this is the ruler of Without Falseness"
+     ]
+    }
+   ],
+   "judgment": {
+    "zh": [
+     "而為主於內",
+     "而為主於內"
+    ],
+    "en": [
+     "The firm comes from without and becomes the ruler within",
+     "What could this be if not great success through benefit and correctness? When the firm comes from without and becomes the ruler within, then the way of the soft and deviant is eliminated"
+    ]
+   }
+  },
+  "26": {
+   "name": "大畜",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為畜之主"
+     ],
+     "en": [
+      "The Fifth occupies the honored position and is the master of accumulation"
+     ]
+    }
+   ]
+  },
+  "27": {
+   "name": "頤",
+   "masters": [
+    {
+     "line": 6,
+     "zh": [
+      "陰不能獨為主",
+      "為眾陰之主",
+      "為養之主"
+     ],
+     "en": [
+      "Being yang and dwelling above while treading upon four yin lines—yin cannot independently serve as master and must defer to yang",
+      "\" Being the master of the many yin lines, it must not be treated with disrespect, hence danger brings good fortune",
+      "Being the master of nourishment, nothing goes against it, hence it is beneficial to cross the great river"
+     ]
+    }
+   ]
+  },
+  "28": {
+   "name": "大過",
+   "masters": []
+  },
+  "29": {
+   "name": "坎",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為坎之主",
+      "為坎之主"
+     ],
+     "en": [
+      "Being the lord of Kan, yet having no corresponding helper to assist itself, it has not yet been able to fill the pit",
+      "Being the lord of Kan, only when it is completely leveled is there no blame"
+     ]
+    }
+   ]
+  },
+  "30": {
+   "name": "離",
+   "masters": [],
+   "judgment": {
+    "zh": [
+     "以柔順為主者也"
+    ],
+    "en": []
+   }
+  },
+  "31": {
+   "name": "咸",
+   "masters": []
+  },
+  "32": {
+   "name": "恆",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為恒之主"
+     ],
+     "en": [
+      "Occupying the honored position and serving as the ruler of Duration, yet unable to exercise authoritative judgment on what is right"
+     ]
+    }
+   ]
+  },
+  "33": {
+   "name": "遯",
+   "masters": [
+    {
+     "line": 2,
+     "zh": [
+      "為遯之主"
+     ],
+     "en": []
+    }
+   ]
+  },
+  "34": {
+   "name": "大壯",
+   "masters": []
+  },
+  "35": {
+   "name": "晉",
+   "masters": []
+  },
+  "36": {
+   "name": "明夷",
+   "masters": [
+    {
+     "line": 1,
+     "zh": [
+      "明夷之主"
+     ],
+     "en": [
+      "The ruler of Ming Yi resides in the Top Six"
+     ]
+    },
+    {
+     "line": 3,
+     "zh": [
+      "\n\n去闇主也"
+     ],
+     "en": [
+      "Having punished the ruler, one is about to set the people right",
+      "'\n\nThis means removing the benighted ruler"
+     ]
+    }
+   ]
+  },
+  "37": {
+   "name": "家人",
+   "masters": []
+  },
+  "38": {
+   "name": "睽",
+   "masters": []
+  },
+  "39": {
+   "name": "蹇",
+   "masters": [
+    {
+     "line": 3,
+     "zh": [
+      "為下卦之主"
+     ],
+     "en": [
+      "' As the master of the lower trigram, this is what the inner [trigram] relies upon"
+     ]
+    }
+   ]
+  },
+  "40": {
+   "name": "解",
+   "masters": []
+  },
+  "41": {
+   "name": "損",
+   "masters": []
+  },
+  "42": {
+   "name": "益",
+   "masters": [
+    {
+     "line": 2,
+     "zh": [
+      "生物之主"
+     ],
+     "en": [
+      "The Supreme Deity is the lord of the generation of living things, the source of flourishing increase, the one who emerges through Zhen and brings all to order through Xun"
+     ]
+    },
+    {
+     "line": 5,
+     "zh": [
+      "為益之主者也"
+     ],
+     "en": [
+      "Attaining the proper position and treading in the place of honor, this is the master of Increase"
+     ]
+    }
+   ]
+  },
+  "43": {
+   "name": "夬",
+   "masters": []
+  },
+  "44": {
+   "name": "姤",
+   "masters": [
+    {
+     "line": 1,
+     "zh": [
+      "柅者制動之主"
+     ],
+     "en": [
+      "having encountered an opening it rushes through, scattered and without a master, giving itself free rein"
+     ]
+    }
+   ]
+  },
+  "45": {
+   "name": "萃",
+   "masters": []
+  },
+  "46": {
+   "name": "升",
+   "masters": [
+    {
+     "line": 6,
+     "zh": [
+      "用於為物之主則喪矣"
+     ],
+     "en": [
+      "but if used to serve as the master of things, it leads to ruin"
+     ]
+    }
+   ]
+  },
+  "47": {
+   "name": "困",
+   "masters": []
+  },
+  "48": {
+   "name": "井",
+   "masters": []
+  },
+  "49": {
+   "name": "革",
+   "masters": []
+  },
+  "50": {
+   "name": "鼎",
+   "masters": []
+  },
+  "51": {
+   "name": "震",
+   "masters": [
+    {
+     "line": 4,
+     "zh": [
+      "為眾陰之主"
+     ],
+     "en": [
+      "Situated in the midst of four yin lines and dwelling in a time of fear and trembling, one serves as the master of the many yin lines and should embolden oneself to bring peace to the multitude"
+     ]
+    }
+   ]
+  },
+  "52": {
+   "name": "艮",
+   "masters": []
+  },
+  "53": {
+   "name": "漸",
+   "masters": []
+  },
+  "54": {
+   "name": "歸妹",
+   "masters": []
+  },
+  "55": {
+   "name": "豐",
+   "masters": [],
+   "judgment": {
+    "zh": [
+     "為天下之主"
+    ],
+    "en": []
+   }
+  },
+  "56": {
+   "name": "旅",
+   "masters": []
+  },
+  "57": {
+   "name": "巽",
+   "masters": []
+  },
+  "58": {
+   "name": "兌",
+   "masters": []
+  },
+  "59": {
+   "name": "渙",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為渙之主"
+     ],
+     "en": [
+      "As the master of Dispersion, only the king may dwell in this position, and only then is there no blame"
+     ]
+    }
+   ]
+  },
+  "60": {
+   "name": "節",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為節之主不失其中"
+     ],
+     "en": [
+      "Occupying the proper position and dwelling in the center, as the master of regulation one does not lose the mean"
+     ]
+    }
+   ]
+  },
+  "61": {
+   "name": "中孚",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "居尊位以為群物之主"
+     ],
+     "en": [
+      "Dwelling in a time of mutual exchange through inner sincerity, occupying the honored position as lord of all things — how could sincerity be abandoned? Therefore, having sincerity that binds together, only then is there no blame"
+     ]
+    }
+   ]
+  },
+  "62": {
+   "name": "小過",
+   "masters": []
+  },
+  "63": {
+   "name": "既濟",
+   "masters": []
+  },
+  "64": {
+   "name": "未濟",
+   "masters": [
+    {
+     "line": 5,
+     "zh": [
+      "為未濟之主"
+     ],
+     "en": [
+      "Dwelling in the honored position with yielding, situated at the fullness of cultural brilliance, serving as the ruler of Not Yet Across—therefore one must be correct and only then is there good fortune"
+     ]
+    }
+   ]
+  }
+ }
+}

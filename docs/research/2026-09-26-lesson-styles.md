@@ -25,20 +25,27 @@ and the meaning, telling the story in an engaging, minimalist way.
 
 ## The readout and Wang Bi
 
-We have no Wang Bi text: our commentary (sixlines-content, commentary/en) gives each
-hexagram's Judgment, Image and lines, transliterated and explained. His reading is
-structural, though, and a readout can show structure:
+We have Wang Bi's own annotations (周易注, the 注 layer of the Zhouyi zhushu 周易註疏) in
+Chinese and English in the backend: 8bitoracle-next/src/constants/wangBiZhu.ts, covering 58
+of the 64 Judgments and 377 of the 384 lines. The app shows them as "Wang Bi Commentary"
+(sixlines-ios ADR-IOS-181). The scanned source text is in chinese-classics-reference,
+zhouyi-zhushu/.
 
-- **One rules the many.** In his Outline (Zhouyi lüeli, "Ming tuan"), where one line differs
-  from the other five, that one line rules the hexagram. The readout marks it.
-- **Places.** Odd places (1, 3, 5) are yang's, even places yin's; a line is in or out of its
-  place. The readout can log each: `L1 YANG · ODD · IN PLACE`.
-- **The centre.** Lines 2 and 5 are the centres of their trigrams.
+His reading is structural, and a readout can show structure:
+
+- **One rules the many.** Where one line differs from the other five, that one rules. In
+  his line notes he names the master (主) of 26 hexagrams, e.g. 21's fourth line "master of
+  the yin lines" (為陰之主), and in the Judgment notes of 5 more (10, 13, 25, 30, 55).
+  `node --experimental-strip-types scripts/wangbi.mjs` finds them and writes
+  series/wangbi.json, with the phrases in Chinese and English and the backend's commit.
+  A few matches need reading before use: 36's third line names the "dark ruler" (闇主),
+  44's first line the brake that "controls movement" (制動之主), 46's top line uses 主 in
+  passing.
+- **Places.** Odd places (1, 3, 5) are yang's, even places yin's: a line is in its place
+  (得位) or out of it (失位). The readout can log each: `L1 YANG · IN PLACE`.
+- **The centre.** Lines 2 and 5 are the centres of their trigrams (處中).
 - **Answering lines.** 1 answers 4, 2 answers 5, 3 answers 6, when one is yin and the other
-  yang. The readout can draw the link.
-
-For hexagrams without a single odd line, the ruler needs a source before we put it on
-screen: Li Guangdi's Zhouyi zhezhong (1715) names the rulers of all 64.
+  yang (應).
 
 ## My pick for each hexagram
 
@@ -72,7 +79,8 @@ screen: Li Guangdi's Zhouyi zhezhong (1715) names the rulers of all 64.
 
 The strongest readouts, where Wang Bi's reading is the lesson:
 
-- **9, 10, 13, 14, 16**: one line differs from the other five, and rules them.
+- **6, 8, 14, 16, 20, 22, 25, 26, 32, 33, 42, 59, 60, 61**: Wang Bi names the master line in his notes (series/wangbi.json).
+- **9, 10, 13**: one line differs from the other five, and rules them.
 - **64** (010101): every line is out of its place, yet each answers its partner. It is 63 turned inside out.
 - **1, 2**: all yang, all yin. The readout shows six lines in and out of place, and no ruler.
 
@@ -84,4 +92,4 @@ them for the app's pitch; which ones is the user's call.
 - Wang Bi, Zhouyi lüeli ("General Remarks on the Changes of the Zhou"), "Ming tuan": the one rules the many. In English: Richard John Lynn, The Classic of Changes: A New Translation of the I Ching as Interpreted by Wang Bi (Columbia University Press, 1994).
 - Tuan Zhuan (Commentary on the Judgments) on 21: "There is something between the corners of the mouth."
 - Shuo Gua (Discussion of the Trigrams), chapter 7: what each trigram does (as src/scenes/Readout.tsx).
-- Li Guangdi, Zhouyi zhezhong (1715): the rulers of all 64.
+- Wang Bi, 周易注, in 周易註疏 (Siku quanshu edition); our text and English in 8bitoracle-next/src/constants/wangBiZhu.ts.
