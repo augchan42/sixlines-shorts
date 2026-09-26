@@ -11,7 +11,8 @@
      "trigram": "qian",
      "start": 37.671,
      "key": "E minor",
-     "minorMargin": 0.139
+     "minorMargin": 0.139,
+     "centroid": 3321
     }
    ]
   },
@@ -39,7 +40,8 @@
      "trigram": "kun",
      "start": 0.0,
      "key": "A# major",
-     "minorMargin": -0.021
+     "minorMargin": -0.021,
+     "centroid": 1342
     }
    ]
   },
@@ -53,7 +55,8 @@
      "trigram": "gen",
      "start": 34.934,
      "key": "C major",
-     "minorMargin": -0.206
+     "minorMargin": -0.206,
+     "centroid": 2859
     }
    ]
   },
@@ -67,19 +70,22 @@
      "trigram": "dui",
      "start": 98.023,
      "key": "D minor",
-     "minorMargin": 0.015
+     "minorMargin": 0.015,
+     "centroid": 3085
     },
     {
      "trigram": "dui",
      "start": 4.023,
      "key": "F major",
-     "minorMargin": -0.001
+     "minorMargin": -0.001,
+     "centroid": 3016
     },
     {
      "trigram": "dui",
      "start": 34.023,
      "key": "F major",
-     "minorMargin": -0.017
+     "minorMargin": -0.017,
+     "centroid": 3112
     }
    ]
   },
@@ -93,7 +99,8 @@
      "trigram": "zhen",
      "start": 158.426,
      "key": "A minor",
-     "minorMargin": 0.239
+     "minorMargin": 0.239,
+     "centroid": 2127
     }
    ]
   },
@@ -114,7 +121,8 @@
      "trigram": "kan",
      "start": 91.223,
      "key": "G# major",
-     "minorMargin": -0.164
+     "minorMargin": -0.164,
+     "centroid": 2641
     }
    ]
   },
@@ -128,7 +136,8 @@
      "trigram": "li",
      "start": 48.023,
      "key": "D# minor",
-     "minorMargin": 0.04
+     "minorMargin": 0.04,
+     "centroid": 3045
     }
    ]
   },
@@ -142,7 +151,8 @@
      "trigram": "xun",
      "start": 65.943,
      "key": "E minor",
-     "minorMargin": 0.117
+     "minorMargin": 0.117,
+     "centroid": 2606
     }
    ]
   },
@@ -156,7 +166,8 @@
      "trigram": "qian",
      "start": 0.0,
      "key": "D# minor",
-     "minorMargin": 0.11
+     "minorMargin": 0.11,
+     "centroid": 3083
     }
    ]
   },
@@ -170,7 +181,8 @@
      "trigram": "kun",
      "start": 0.023,
      "key": "B minor",
-     "minorMargin": 0.135
+     "minorMargin": 0.135,
+     "centroid": 2145
     }
    ]
   },
@@ -184,7 +196,8 @@
      "trigram": "gen",
      "start": 8.059,
      "key": "A# minor",
-     "minorMargin": 0.148
+     "minorMargin": 0.148,
+     "centroid": 2859
     }
    ]
   },
@@ -212,7 +225,8 @@
      "trigram": "kun",
      "start": 0.0,
      "key": "G major",
-     "minorMargin": -0.038
+     "minorMargin": -0.038,
+     "centroid": 1629
     }
    ]
   },
@@ -226,7 +240,8 @@
      "trigram": "xun",
      "start": 52.977,
      "key": "G minor",
-     "minorMargin": 0.019
+     "minorMargin": 0.019,
+     "centroid": 2274
     }
    ]
   },
@@ -240,7 +255,8 @@
      "trigram": "kan",
      "start": 21.157,
      "key": "D# major",
-     "minorMargin": -0.13
+     "minorMargin": -0.13,
+     "centroid": 2807
     }
    ]
   },
@@ -254,7 +270,8 @@
      "trigram": "qian",
      "start": 4.023,
      "key": "C minor",
-     "minorMargin": 0.249
+     "minorMargin": 0.249,
+     "centroid": 2507
     }
    ]
   },
@@ -268,7 +285,8 @@
      "trigram": "zhen",
      "start": 158.617,
      "key": "F major",
-     "minorMargin": -0.253
+     "minorMargin": -0.253,
+     "centroid": 2981
     }
    ]
   },
@@ -282,19 +300,22 @@
      "trigram": "li",
      "start": 206.613,
      "key": "G minor",
-     "minorMargin": 0.087
+     "minorMargin": 0.087,
+     "centroid": 3184
     },
     {
      "trigram": "dui",
      "start": 163.431,
      "key": "G minor",
-     "minorMargin": 0.19
+     "minorMargin": 0.19,
+     "centroid": 3282
     },
     {
      "trigram": "dui",
      "start": 0.0,
      "key": "D minor",
-     "minorMargin": 0.126
+     "minorMargin": 0.126,
+     "centroid": 2277
     }
    ]
   },

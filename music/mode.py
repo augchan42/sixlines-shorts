@@ -1,5 +1,5 @@
 """Estimates each track's key and whether it is major or minor, as a first guide to its mood
-(minor keys tend to sound darker), over the whole track and over each section the series
+(minor keys tend to sound darker) and its brightness (spectral centroid), over the whole track and over each section the series
 uses. The user found 47's track too joyous for Oppression (2026-09-26) and asked for
 something more ominous; the ear decides, this only narrows the listening.
 
@@ -35,6 +35,13 @@ def chroma(y):
     return np.roll(c, -3)  # 0 = C
 
 
+def brightness(y):
+    """The mean spectral centroid in Hz: higher sounds brighter."""
+    f, _, z = stft(y, fs=SR, nperseg=4096, noverlap=2048)
+    mag = np.abs(z)
+    return int(round(float((f[:, None] * mag).sum() / max(mag.sum(), 1e-9))))
+
+
 def key(c):
     """(name, mode, margin): the best-correlating key, and how far minor beats major (+) or loses (-)."""
     best = {}
@@ -62,9 +69,9 @@ def main():
                 continue
             a = int(s["start"] * SR)
             k, m = key(chroma(y[a : a + int(36 * SR)]))
-            parts.append({"trigram": s["trigram"], "start": s["start"], "key": k, "minorMargin": m})
+            parts.append({"trigram": s["trigram"], "start": s["start"], "key": k, "minorMargin": m, "centroid": brightness(y[a : a + int(36 * SR)])})
         out.append({"file": t["file"], "bpm": t["bpm"], "key": whole, "minorMargin": margin, "sections": parts})
-        print(f"{t['file'][:44]:44} {t['bpm']:7} {whole:10} {margin:+.3f}", *(f"[{p['start']}: {p['key']} {p['minorMargin']:+.3f}]" for p in parts))
+        print(f"{t['file'][:44]:44} {t['bpm']:7} {whole:10} {margin:+.3f}", *(f"[{p['start']}: {p['key']} {p['minorMargin']:+.3f} {p['centroid']} Hz]" for p in parts))
     json.dump({"script": "music/mode.py", "tracks": out}, open(os.path.join(ROOT, "music/mode.json"), "w"), indent=1)
 
 
