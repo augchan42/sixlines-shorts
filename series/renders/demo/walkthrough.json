@@ -1,8 +1,8 @@
 {
  "demo": "walkthrough",
- "rendered": "2026-09-25T17:07:04.139Z",
- "commit": "43c8f9101a93ce700f13ee191a6a10d7edef0303",
- "clean": true,
+ "rendered": "2026-09-26T05:01:40.091Z",
+ "commit": "a3dcf00946d66c597bb3dd87e4c4b5b13f07230c",
+ "clean": false,
  "seconds": 50.218667,
  "shareKbps": 3535,
  "props": {
@@ -109,7 +109,9 @@
       "beat": 30,
       "text": "Found rot?\nClean it out."
      }
-    ]
+    ],
+    "drop": 260,
+    "place": "top"
    },
    {
     "beats": [
@@ -189,7 +191,7 @@
   "assets/3d/hexagram-011001-82.5bpm-6b.mp4": "fd3bdcc6875aa3c67ff8e7cd950810f8a0101b5f6cafaf67959e9d336b4a1b14",
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/3d/endcard-join-011001-82.5bpm-9b.mp4": "34c95798ab40d6d6bc2ae5033f69911888527176d59a76aa8d5c409cd52064c8",
-  "out/demo/walkthrough/short.mp4": "6b66eee2548beba56652f705938af40f4c53d33a5200ba3b9b771c9eebb9c8b5",
-  "out/demo/walkthrough/share.mp4": "a3e7276c0026d1d36189930a893c5d9057111254c7db51c2570ca799c11ac774"
+  "out/demo/walkthrough/short.mp4": "c489e709471a0d0aa06d53d5505fe0c5b42745dc283a64f0db0d315b000d08b0",
+  "out/demo/walkthrough/share.mp4": "06dc3e386668ecd2ac7f6a07257ff58694c947b2cbd9c6a5676f0cea52c2adba"
  }
 }
