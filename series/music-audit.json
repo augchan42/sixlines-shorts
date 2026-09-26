@@ -618,12 +618,12 @@
    "name": "Oppression",
    "tone": "dark",
    "why": "oppression; exhausted, words not believed",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "start": 163.431,
-   "bpm": 100.05,
-   "key": "G minor",
-   "minorMargin": 0.19,
-   "centroid": 3282,
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "start": 144.041,
+   "bpm": 90,
+   "key": "B minor",
+   "minorMargin": 0.189,
+   "centroid": 2064,
    "flags": []
   },
   {

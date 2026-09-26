@@ -204,6 +204,13 @@
      "key": "B minor",
      "minorMargin": 0.135,
      "centroid": 2145
+    },
+    {
+     "trigram": "dui",
+     "start": 144.041,
+     "key": "B minor",
+     "minorMargin": 0.189,
+     "centroid": 2064
     }
    ]
   },
@@ -337,13 +344,6 @@
      "key": "G minor",
      "minorMargin": 0.087,
      "centroid": 3184
-    },
-    {
-     "trigram": "dui",
-     "start": 163.431,
-     "key": "G minor",
-     "minorMargin": 0.19,
-     "centroid": 3282
     },
     {
      "trigram": "dui",

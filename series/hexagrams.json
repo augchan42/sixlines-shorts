@@ -3393,18 +3393,18 @@
   "music": {
    "trigram": "dui",
    "symbol": "☱",
-   "file": "pick22-cinematic-dark-synthwave.mp3",
-   "sha256": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-   "title": "Cinematic Dark Synthwave – Cyberpunk Atmosphere by SenorMusica81",
-   "licence": "Pixabay Content License",
-   "source": "https://pixabay.com/music/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557/",
-   "bpm": 100.05,
-   "start": 163.431,
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "sha256": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
+   "title": "Synthwave by The_Mountain",
+   "licence": "Pixabay Content License, Content ID registered",
+   "source": "https://pixabay.com/music/synthwave-synthwave-593074/",
+   "bpm": 90,
+   "start": 144.041,
    "firstBeat": 0,
-   "drop": 14.394,
+   "drop": 16.002,
    "certificate": {
-    "file": "synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt",
-    "sha256": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
+    "file": "synthwave-synthwave-593074-license.txt",
+    "sha256": "95e82cbc338103565bb8c79f2036267b15c0849f052e0c7d86ab9a8a3c4e2712",
     "downloaded": "2026-09-24 14:01:40 UTC"
    },
    "for": [
