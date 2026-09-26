@@ -1098,6 +1098,22 @@
    "caption": {
     "text": "The image is fire high in the sky, lighting everything below. When you have a lot, people see what you do with it.",
     "source": "commentary/en/14.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Lead by trust,\nnot force.",
+    "source": "commentary/en/14.json#lines[4].synthesis",
+    "readout": {
+     "mark": [
+      4
+     ],
+     "master": {
+      "zh": "為大有之主",
+      "en": "Ruler of Great Possession"
+     },
+     "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER."
+    },
+    "readout_source": "master: series/wangbi.json#14 (Wang Bi on line 5); finding: Tuan Zhuan on 14, 柔得尊位大中而上下應之"
    }
   },
   "source": {
@@ -1719,7 +1735,13 @@
    "lesson": {
     "kind": "lines",
     "text": "Warn clearly,\nthen bite.",
-    "source": "series/critic/lessons/input.json#hexagrams[20].image.transliteration"
+    "source": "series/critic/lessons/input.json#hexagrams[20].image.transliteration",
+    "scene": {
+     "script": "bite",
+     "args": {
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -5016,6 +5038,17 @@
    "caption": {
     "text": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal.",
     "source": "commentary/en/62.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Fly low.\nDo small things.",
+    "source": "commentary/en/62.json#judgment.synthesis",
+    "scene": {
+     "script": "bird",
+     "args": {
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
