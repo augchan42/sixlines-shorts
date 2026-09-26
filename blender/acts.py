@@ -89,31 +89,32 @@ def act_return(st, end):
 
 
 def act_meet(st, end):
-    """44 Coming to Meet (011111): one yin at the bottom, under five yang. It presses up and
-    a crack opens in the yang line above it; the crack is stopped early and closes, the
-    first line's "tie it to a metal brake"."""
+    """44 Coming to Meet (011111): one yin arrives under five yang. It brightens and rises
+    until it all but touches the line above; that line flashes amber as it arrives and holds
+    it, and the yin settles back to its place and dims: a small beginning met early by the
+    line next to it. (Critic round 1: the hairline crack could not be seen.)"""
     at = st.at
-    [whole] = st.slabs[1]
-    parts = st.halves(1)
-    st.swap([whole], parts, at(1.5))
-    shut = end - 2.2
-    for (o, s), sx in zip(parts, (-1, 1)):
-        ease(o, 0, ((at(1.5), sx * LINE_W / 4), (at(3.2), sx * (LINE_W / 4 + 0.18)), (at(shut), sx * (LINE_W / 4 + 0.18)), (at(shut + 0.8), sx * LINE_W / 4)))
-    for (o, s), sx in zip(st.slabs[0], (-1, 1)):
-        ease(o, 2, ((at(1.5), line_z(0)), (at(3.2), line_z(0) + 0.14), (at(shut), line_z(0) + 0.14), (at(shut + 0.8), line_z(0))))
-        glow(s, ((at(1.5), REST), (at(3.2), REST * 2), (at(shut), REST * 2), (at(shut + 0.8), REST)))
-    st.swap(parts, [whole], at(shut + 0.8))
-    st.flash(whole[1], at(shut + 0.8))
+    rise, back = 3.2, end - 2.0
+    for o, s in st.slabs[0]:
+        ease(o, 2, ((at(1.2), line_z(0)), (at(rise), line_z(0) + 0.27), (at(back), line_z(0) + 0.27), (at(back + 1.2), line_z(0))))
+        glow(s, ((at(1.2), REST), (at(rise), PULSE * 0.3), (at(back), PULSE * 0.3), (at(back + 1.2), REST * 0.6)))
+    [(o, s)] = st.slabs[1]
+    st.flash(s, at(rise))
 
 
 def act_truth(st, end):
     """61 Inner Truth (110011): the two yin lines in the middle are the empty heart. Their
-    halves slide apart and the emptiness at the centre opens, then closes."""
+    halves slide apart and the emptiness at the centre opens, while the firm centre lines
+    of each trigram, the second and fifth, brighten; it holds open, then closes. (Critic
+    round 1: open wider than the frame.)"""
     at = st.at
-    close = end - 1.6
+    close = end - 1.4
     for i in (2, 3):
         for (o, s), sx in zip(st.slabs[i], (-1, 1)):
-            ease(o, 0, ((at(1.5), sx * AT), (at(3.5), sx * (AT + 0.8)), (at(close), sx * (AT + 0.8)), (at(close + 1.4), sx * AT)))
+            ease(o, 0, ((at(1.5), sx * AT), (at(3.0), sx * (AT + 0.45)), (at(close), sx * (AT + 0.45)), (at(close + 1.2), sx * AT)))
+    for i in (1, 4):
+        [(o, s)] = st.slabs[i]
+        glow(s, ((at(1.5), REST), (at(3.0), REST * 2), (at(close), REST * 2), (at(close + 1.2), REST)))
 
 
 def act_breakthrough(st, end):
@@ -124,7 +125,7 @@ def act_breakthrough(st, end):
     for i in range(5):
         [(o, s)] = st.slabs[i]
         b = 1.0 + i * 0.8
-        glow(s, ((at(b), REST), (at(b + 0.4), PULSE * 0.4), (at(b + 1.6), REST)))
+        glow(s, ((at(b), REST), (at(b + 0.4), PULSE * 0.8), (at(b + 1.6), REST)))
     for (o, s), sx in zip(st.slabs[5], (-1, 1)):
         ease(o, 0, ((at(5.0), sx * AT), (at(end - 0.5), sx * (AT + 1.6))))
         glow(s, ((at(5.0), REST), (at(end - 0.5), 0.0)))
@@ -133,27 +134,40 @@ def act_breakthrough(st, end):
 
 def act_army(st, end):
     """7 The Army (010000): one yang, the general, in the second place among five yin. The
-    general steps forward, and the yin lines fall in behind it one by one, nearest first."""
+    yin lines' halves drift loose and dim; the general brightens once, and the yin lines slide
+    back into straight ranks one at a time, nearest the general first, each brightening as it
+    falls in. (Critic round 1: all six stepping forward read as a zoom.)"""
     at = st.at
-    step = -1.3  # toward the camera
-    order = sorted(range(6), key=lambda i: abs(i - 1))
-    for n, i in enumerate(order):
-        b = 1.0 + n * 0.7
-        for o, s in st.slabs[i]:
-            ease(o, 1, ((at(b), 0.0), (at(b + 1.2), step)))
-            glow(s, ((at(b), REST), (at(b + 0.3), PULSE * 0.25), (at(b + 1.4), REST)))
+    loose = (0.35, -0.25, 0.2, -0.4, 0.3, -0.2, 0.25, -0.35, 0.4, -0.3)  # each yin half's drift
+    halves = [(o, s) for i in (0, 2, 3, 4, 5) for o, s in st.slabs[i]]
+    for (o, s), dx in zip(halves, loose):
+        x = o.location.x
+        ease(o, 0, ((at(1.0), x), (at(2.2), x + dx)))
+        glow(s, ((at(1.0), REST), (at(2.2), REST * 0.4)))
+    [(o, s)] = st.slabs[1]
+    glow(s, ((at(3.0), REST), (at(3.3), PULSE * 0.5), (at(4.3), REST)))
+    for n, i in enumerate(sorted((0, 2, 3, 4, 5), key=lambda i: abs(i - 1))):
+        b = 3.6 + n * 0.7
+        for (o, s), sx in zip(st.slabs[i], (-1, 1)):
+            ease(o, 0, ((at(b), o.location.x), (at(b + 0.7), sx * AT)))
+            glow(s, ((at(b), REST * 0.4), (at(b + 0.7), PULSE * 0.25), (at(b + 1.5), REST)))
 
 
 def act_peace(st, end):
-    """11 Peace (111000): heaven below rises, earth above sinks; they meet, and the gap
-    between the trigrams closes."""
+    """11 Peace (111000): heaven below rises, earth above sinks, until they touch; an amber
+    flash along the seam where they meet, then both ease back to their places. The same
+    distance as 12's drift, the other way, so the pair reads as one. (Critic round 1: half
+    the gap did not show.)"""
     at = st.at
-    shift = (line_z(3) - line_z(2) - LINE_H - LINE_GAP) / 2
+    shift = (line_z(3) - line_z(2) - LINE_H) / 2  # half the gap: the two meet in the middle
+    meet, back = 4.0, end - 2.0
     for i in range(6):
         dz = shift if i < 3 else -shift
         for o, s in st.slabs[i]:
-            ease(o, 2, ((at(1.5), line_z(i)), (at(end - 1.5), line_z(i) + dz)))
-            glow(s, ((at(end - 1.6), REST), (at(end - 1.5), PULSE * 0.4), (at(end), REST)))
+            ease(o, 2, ((at(1.5), line_z(i)), (at(meet), line_z(i) + dz), (at(back), line_z(i) + dz), (at(end), line_z(i))))
+    for i in (2, 3):
+        for o, s in st.slabs[i]:
+            st.flash(s, at(meet))
 
 
 def act_standstill(st, end):
@@ -177,55 +191,65 @@ def act_modesty(st, end):
 
 
 def act_nourish(st, end):
-    """27 Nourishment (100001): the open mouth, yang jaws above and below. It closes
-    slowly, the yin lines between drawing together, and opens again."""
+    """27 Nourishment (100001): the open mouth, yang jaws above and below. The upper jaw,
+    the mountain, keeps still; the lower jaw, thunder, rises slowly with the two yin lines
+    before it and lowers again, twice. (Critic round 1: the whole hexagram squeezing read
+    as a breath.)"""
     at = st.at
-    mid = (line_z(0) + line_z(5)) / 2
-    shut, back = end - 3.5, end - 0.5
-    for i in range(6):
-        z = line_z(i)
-        closed = mid + (z - mid) * 0.72
+    lift = 0.5
+    for i in (0, 1, 2):
         for o, s in st.slabs[i]:
-            ease(o, 2, ((at(1.5), z), (at(shut), closed), (at(shut + 1.0), closed), (at(back), z)))
+            z = line_z(i)
+            ease(o, 2, ((at(1.2), z), (at(2.6), z + lift), (at(3.8), z), (at(5.0), z + lift), (at(6.4), z)))
 
 
 def act_ridgepole(st, end):
-    """28 Greatness in Excess (011110): four yang, heavy, between two weak yin ends. The
-    four settle lower, and the yin ends bow under them, their outer ends dropping."""
+    """28 Greatness in Excess (011110): four yang, heavy in the middle, between two weak
+    yin ends. The four brighten and spread a little apart; the weak ends bend away from
+    them, the top pair's outer ends lifting and the bottom pair's dropping, like ties on a
+    bundle too thick for them. It holds at the strain. (Critic round 1: the ends alone
+    read as drooping wings.)"""
     at = st.at
-    for i in range(1, 5):
+    spread = {1: -0.18, 2: -0.06, 3: 0.06, 4: 0.18}
+    for i, dz in spread.items():
         [(o, s)] = st.slabs[i]
-        ease(o, 2, ((at(1.5), line_z(i)), (at(end - 1.0), line_z(i) - 0.15)))
-    for i in (0, 5):
+        ease(o, 2, ((at(1.5), line_z(i)), (at(end - 1.0), line_z(i) + dz)))
+        glow(s, ((at(1.5), REST), (at(end - 1.0), REST * 1.8)))
+    for i, dz, up in ((0, -0.26, -1), (5, 0.26, 1)):
         for (o, s), sx in zip(st.slabs[i], (-1, 1)):
-            ease(o, 1, ((at(1.5), 0.0), (at(end - 1.0), sx * math.radians(7))), path="rotation_euler")
-            ease(o, 2, ((at(1.5), line_z(i)), (at(end - 1.0), line_z(i) - 0.15)))
+            # About the depth axis a positive angle lifts the left end and drops the right.
+            ease(o, 1, ((at(1.5), 0.0), (at(end - 1.0), -sx * up * math.radians(12))), path="rotation_euler")
+            ease(o, 2, ((at(1.5), line_z(i)), (at(end - 1.0), line_z(i) + dz)))
 
 
 def act_fire(st, end):
-    """30 Clinging Fire (101101): each trigram is a flame, bright outside and hollow in the
-    middle. The hollow centre of each, its yin line, warms to amber."""
+    """30 Clinging Fire (101101): each trigram a flame, bright outside, hollow within. The
+    lower centre warms to amber and the amber takes the lines it clings to, above and
+    below; then the upper flame lights the same way, brightness doubled. All cool back to
+    green but the two centres. (Critic round 1: two lines changing colour said too little.)"""
     at = st.at
-    for i in (1, 4):
-        for o, s in st.slabs[i]:
-            recolour(s.node, ((at(1.5), st.green), (at(end - 1.0), st.amber)))
-            glow(s, ((at(1.5), REST), (at(end - 1.0), REST * 1.6)))
+    fade = end - 1.5
+    for centre, b in ((1, 1.2), (4, 3.6)):
+        for i, t in ((centre, b), (centre - 1, b + 0.9), (centre + 1, b + 0.9)):
+            for o, s in st.slabs[i]:
+                if i == centre:
+                    recolour(s.node, ((at(t), st.green), (at(t + 0.8), st.amber)))
+                    glow(s, ((at(t), REST), (at(t + 0.8), REST * 1.6)))
+                else:
+                    recolour(s.node, ((at(t), st.green), (at(t + 0.8), st.amber), (at(fade), st.amber), (at(fade + 1.0), st.green)))
+                    glow(s, ((at(t), REST), (at(t + 0.8), REST * 1.6), (at(fade), REST * 1.6), (at(fade + 1.0), REST)))
 
 
 def act_thunder(st, end):
-    """51 The Arousing (100100): thunder doubled. The yang at the bottom of each trigram
-    jolts up and settles, the lower first, then the upper, then both once more, lighter."""
+    """51 The Arousing (100100): thunder doubled. An amber flash starts in the bottom line
+    and runs up the lower trigram, then a second, fainter one runs up the upper trigram.
+    No line moves: the shock passes and the hexagram stands. (Critic round 1: jolting
+    lines broke the calm-motion rule.)"""
     at = st.at
-    jolts = ((0, 1.5, 0.2), (3, 3.0, 0.2), (0, 5.0, 0.1), (3, 5.0, 0.1))
-    for i in (0, 3):
-        [(o, s)] = st.slabs[i]
-        points, lights = [], []
-        for j, b, h in jolts:
-            if j == i:
-                points += [(at(b) - 1, line_z(i)), (at(b) + 2, line_z(i) + h), (at(b + 0.8), line_z(i))]
-                lights += [(at(b) - 1, REST), (at(b), PULSE * h * 2), (at(b + 1.0), REST)]
-        ease(o, 2, points)
-        glow(s, lights)
+    for start, lines in ((1.5, (0, 1, 2)), (4.0, (3, 4, 5))):
+        for n, i in enumerate(lines):
+            for o, s in st.slabs[i]:
+                st.flash(s, at(start + n * 0.4))
 
 
 ACTS = {
