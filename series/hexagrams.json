@@ -560,8 +560,15 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Unseen water\nunder the earth.",
-    "source": "series/critic/lessons/input.json#hexagrams[6].image.transliteration"
+    "text": "Lead upright,\nthe ranks fall in.",
+    "source": "Tuan on 7: 能以眾正 (able to make the many upright); Image: embraces the people",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "army",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -878,6 +885,18 @@
    "caption": {
     "text": "The image is heaven and earth meeting. In good times the job isn’t to relax but to make sure the good reaches everyone.",
     "source": "commentary/en/11.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "High and low talk:\nthat is peace.",
+    "source": "Image on 11: heaven and earth interact",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "peace",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -948,9 +967,16 @@
     "source": "commentary/en/12.json#image.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
-    "text": "The good leave,\nthe petty move in.",
-    "source": "series/critic/lessons/input.json#hexagrams[11].judgment.transliteration"
+    "kind": "lines",
+    "text": "High and low part:\nturn down rewards.",
+    "source": "Image on 12: heaven and earth do not interact",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "standstill",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -1182,8 +1208,15 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Level the heaps,\nfill the holes.",
-    "source": "series/critic/lessons/input.json#hexagrams[14].image.transliteration"
+    "text": "Having the most,\nstep back.",
+    "source": "Image on 15: a mountain within the earth",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "modesty",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -1994,6 +2027,18 @@
    "caption": {
     "text": "Thunder underground is energy returning before it shows, and the old kings stayed still to let it come. Only impatience stops a return.",
     "source": "commentary/en/24.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Turn back\nbefore you go far.",
+    "source": "Line 1 of 24: 不遠復 (returning from not far)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "return",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -2222,6 +2267,18 @@
    "caption": {
     "text": "Thunder under a mountain, and the advice is: careful with words, moderate with food. Both sound easy and trip up almost everyone.",
     "source": "commentary/en/27.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Guard your mouth:\nfood and words.",
+    "source": "Image on 27: careful with speech, moderate in eating and drinking",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "nourish",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -2290,6 +2347,18 @@
    "caption": {
     "text": "Water above the trees: the normal rules are off. It asks for one thing, the will to stand alone without making a fuss.",
     "source": "commentary/en/28.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "The ends give way.\nBrace them now.",
+    "source": "Tuan on 28: 棟橈，本末弱也 (the ridgepole sags: the root and the tip are weak); Wang Bi on lines 2 and 4: 拯弱 (rescuing the weak)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "ridgepole",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -2434,6 +2503,18 @@
    "caption": {
     "text": "Fire needs something to burn. The old text says to tend a cow: patient, dull, daily care. That’s what keeps the light going.",
     "source": "commentary/en/30.json#judgment.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Like fire, cling\nto what is right.",
+    "source": "Tuan on 30: 柔麗乎中正 (the yielding clings to the central and correct)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "fire",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -3497,9 +3578,16 @@
     "source": "commentary/en/43.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
-    "text": "Tell your own\ntown first.",
-    "source": "commentary/en/43.json#judgment.transliteration"
+    "kind": "lines",
+    "text": "Remove the wrong\nopenly, unarmed.",
+    "source": "Judgment on 43: proclaimed in the king's court; resorting to arms is not supported",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "breakthrough",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -3565,6 +3653,18 @@
    "caption": {
     "text": "Wind under heaven reaches everywhere. When something slips in looking wonderful, don’t chase it; send your own message just as far.",
     "source": "commentary/en/44.json#image.synthesis"
+   },
+   "lesson": {
+    "kind": "lines",
+    "text": "Check a bad start\nwhile it's small.",
+    "source": "Line 1 of 44: tied to a metal brake (Wang Bi: stop it at its start)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "meet",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -4159,9 +4259,16 @@
     "source": "commentary/en/51.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
-    "text": "First fear,\nthen laughter.",
-    "source": "commentary/en/51.json#judgment.transliteration"
+    "kind": "lines",
+    "text": "When shaken,\nexamine yourself.",
+    "source": "Image on 51: 恐懼修省 (uses fear and trembling to examine themselves)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "thunder",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {
@@ -4979,9 +5086,16 @@
     "source": "commentary/en/61.json#judgment.synthesis"
    },
    "lesson": {
-    "kind": "judgment",
-    "text": "Truth even reaches\npigs and fish.",
-    "source": "commentary/en/61.json#judgment.transliteration"
+    "kind": "lines",
+    "text": "No hidden aim,\nfirm at the core.",
+    "source": "Tuan on 61: 柔在內而剛得中 (the yielding within, the firm holding the centres)",
+    "scene": {
+     "script": "acts",
+     "args": {
+      "act": "truth",
+      "rain": "public/assets/3d/rain.mp4"
+     }
+    }
    }
   },
   "source": {

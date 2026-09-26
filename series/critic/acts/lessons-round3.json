@@ -1,0 +1,26 @@
+{
+ "round": 3,
+ "ratings": [
+  {
+   "number": 24,
+   "text": "Once you stray,\nturn back at once.",
+   "score": 7,
+   "reasons": "15 and 18 characters, 7 words; 'turn back' is the hexagram's move and fits the picture, where the bottom line splits, its halves slide apart and dim, then come back together in an amber flash. But 'once' appears twice with two meanings (conjunction, then 'immediately'), which reads as a pun and draws the eye to the wording, against the plain-words rule. The source's point is 不遠復, returning before you have gone far, and the draft says it only by implication. The rewrite says it directly, keeps 'turn back', and avoids the 'When ...,' opening that 51 uses.",
+   "rewrite": "Turn back\nbefore you go far."
+  },
+  {
+   "number": 28,
+   "text": "The ends give way.\nBrace them now.",
+   "score": 8,
+   "reasons": "18 and 15 characters, 7 words. It matches what the viewer sees: the four middle lines brighten and spread, and the yin lines at the top and bottom bend away. It is faithful to the Tuan (棟橈，本末弱也, the ridgepole sags because root and tip are weak) and to Wang Bi's praise of rescuing the weak (拯弱). A newcomer gets the ask: under a heavy load, shore up the weak points. Small weakness: without the picture 'the ends' could be misread as 'endings' or 'goals', and the excess itself (the heavy middle) is left to the picture. With the picture it works. Passes.",
+   "rewrite": null
+  },
+  {
+   "number": 51,
+   "text": "When shaken,\nexamine yourself.",
+   "score": 8,
+   "reasons": "12 and 17 characters, 4 words. It uses the Image's own verb (恐懼修省, use fear and trembling to examine yourself) and the picture supports it: the amber flash runs line by line up each trigram, like a check passing through, and no line moves, so the shock turns into self-examination instead of panic. Plain, calm, not a rebuke. It leaves out the Judgment's composure (not dropping the ladle), but a one-sentence lesson has to pick one thing, and the Image is the instruction. Passes.",
+   "rewrite": null
+  }
+ ]
+}
