@@ -1,0 +1,668 @@
+{
+ "script": "music/moody.py",
+ "window": 32.0,
+ "best": [
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 0.0,
+   "key": "A minor",
+   "minorMargin": 0.295,
+   "centroid": 1429,
+   "loudness": 0.59,
+   "score": 0.236
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 120.0,
+   "key": "C minor",
+   "minorMargin": 0.306,
+   "centroid": 2227,
+   "loudness": 0.73,
+   "score": -0.067
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 0.0,
+   "key": "D# minor",
+   "minorMargin": 0.298,
+   "centroid": 2873,
+   "loudness": 0.86,
+   "score": -0.384
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 16.0,
+   "key": "G minor",
+   "minorMargin": 0.253,
+   "centroid": 2940,
+   "loudness": 0.73,
+   "score": -0.45
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 160.0,
+   "key": "B minor",
+   "minorMargin": 0.143,
+   "centroid": 1822,
+   "loudness": 0.63,
+   "score": -0.51
+  },
+  {
+   "file": "pick11-retro-synth-pop.mp3",
+   "bpm": 95.0,
+   "start": 0.0,
+   "key": "E minor",
+   "minorMargin": 0.169,
+   "centroid": 2378,
+   "loudness": 0.84,
+   "score": -0.76
+  },
+  {
+   "file": "pick10-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 0.0,
+   "key": "D# minor",
+   "minorMargin": 0.231,
+   "centroid": 2984,
+   "loudness": 0.99,
+   "score": -0.813
+  },
+  {
+   "file": "pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3",
+   "bpm": 102.0,
+   "start": 48.0,
+   "key": "E minor",
+   "minorMargin": 0.199,
+   "centroid": 3300,
+   "loudness": 1.07,
+   "score": -1.101
+  },
+  {
+   "file": "pick06-orbit-retrowaver-synthwave-vaporwave-ret.mp3",
+   "bpm": 120.0,
+   "start": 128.0,
+   "key": "A minor",
+   "minorMargin": 0.168,
+   "centroid": 2933,
+   "loudness": 1.14,
+   "score": -1.199
+  },
+  {
+   "file": "pick12-neon-drive-horizon.mp3",
+   "bpm": 100.58,
+   "start": 64.0,
+   "key": "A# minor",
+   "minorMargin": 0.155,
+   "centroid": 3224,
+   "loudness": 1.05,
+   "score": -1.239
+  },
+  {
+   "file": "pick18-dreamy-synthwave.mp3",
+   "bpm": 100.0,
+   "start": 40.0,
+   "key": "G minor",
+   "minorMargin": 0.093,
+   "centroid": 2266,
+   "loudness": 1.05,
+   "score": -1.241
+  },
+  {
+   "file": "pick04-analog-dreams-synthwave.mp3",
+   "bpm": 90.0,
+   "start": 24.0,
+   "key": "D minor",
+   "minorMargin": 0.049,
+   "centroid": 1482,
+   "loudness": 1.09,
+   "score": -1.262
+  },
+  {
+   "file": "pick21-neon-mirage.mp3",
+   "bpm": 112.0,
+   "start": 0.0,
+   "key": "D minor",
+   "minorMargin": 0.064,
+   "centroid": 3399,
+   "loudness": 0.73,
+   "score": -1.328
+  },
+  {
+   "file": "pick17-midnight-synthwave.mp3",
+   "bpm": 90.0,
+   "start": 72.0,
+   "key": "B minor",
+   "minorMargin": 0.018,
+   "centroid": 1826,
+   "loudness": 1.11,
+   "score": -1.496
+  },
+  {
+   "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+   "bpm": 82.5,
+   "start": 8.0,
+   "key": "C major",
+   "minorMargin": -0.035,
+   "centroid": 2941,
+   "loudness": 1.05,
+   "score": -1.923
+  },
+  {
+   "file": "pick19-christmas-synthwave.mp3",
+   "bpm": 115.0,
+   "start": 0.0,
+   "key": "D# major",
+   "minorMargin": -0.114,
+   "centroid": 2904,
+   "loudness": 0.86,
+   "score": -2.041
+  },
+  {
+   "file": "pick09-synthwave.mp3",
+   "bpm": 100.0,
+   "start": 72.0,
+   "key": "G# major",
+   "minorMargin": -0.155,
+   "centroid": 2591,
+   "loudness": 0.85,
+   "score": -2.115
+  },
+  {
+   "file": "pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+   "bpm": 97.0,
+   "start": 0.0,
+   "key": "E major",
+   "minorMargin": -0.328,
+   "centroid": 2807,
+   "loudness": 0.94,
+   "score": -2.956
+  }
+ ],
+ "top": [
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 0.0,
+   "key": "A minor",
+   "minorMargin": 0.295,
+   "centroid": 1429,
+   "loudness": 0.59,
+   "score": 0.236
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 8.0,
+   "key": "A minor",
+   "minorMargin": 0.258,
+   "centroid": 1562,
+   "loudness": 0.7,
+   "score": -0.054
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 120.0,
+   "key": "C minor",
+   "minorMargin": 0.306,
+   "centroid": 2227,
+   "loudness": 0.73,
+   "score": -0.067
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 64.0,
+   "key": "C minor",
+   "minorMargin": 0.308,
+   "centroid": 2465,
+   "loudness": 0.94,
+   "score": -0.329
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 72.0,
+   "key": "C minor",
+   "minorMargin": 0.299,
+   "centroid": 2351,
+   "loudness": 0.94,
+   "score": -0.336
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 112.0,
+   "key": "C minor",
+   "minorMargin": 0.296,
+   "centroid": 2430,
+   "loudness": 0.92,
+   "score": -0.34
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 80.0,
+   "key": "C minor",
+   "minorMargin": 0.279,
+   "centroid": 2230,
+   "loudness": 0.93,
+   "score": -0.368
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 0.0,
+   "key": "D# minor",
+   "minorMargin": 0.298,
+   "centroid": 2873,
+   "loudness": 0.86,
+   "score": -0.384
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 16.0,
+   "key": "G minor",
+   "minorMargin": 0.253,
+   "centroid": 2940,
+   "loudness": 0.73,
+   "score": -0.45
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 0.0,
+   "key": "C minor",
+   "minorMargin": 0.252,
+   "centroid": 2371,
+   "loudness": 0.91,
+   "score": -0.493
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 160.0,
+   "key": "B minor",
+   "minorMargin": 0.143,
+   "centroid": 1822,
+   "loudness": 0.63,
+   "score": -0.51
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 16.0,
+   "key": "A minor",
+   "minorMargin": 0.184,
+   "centroid": 1811,
+   "loudness": 0.83,
+   "score": -0.548
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 40.0,
+   "key": "G minor",
+   "minorMargin": 0.276,
+   "centroid": 3214,
+   "loudness": 0.87,
+   "score": -0.571
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 96.0,
+   "key": "G minor",
+   "minorMargin": 0.295,
+   "centroid": 3274,
+   "loudness": 1.0,
+   "score": -0.643
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 160.0,
+   "key": "A minor",
+   "minorMargin": 0.204,
+   "centroid": 2128,
+   "loudness": 0.94,
+   "score": -0.66
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 24.0,
+   "key": "A minor",
+   "minorMargin": 0.169,
+   "centroid": 1985,
+   "loudness": 0.91,
+   "score": -0.733
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 56.0,
+   "key": "C minor",
+   "minorMargin": 0.246,
+   "centroid": 2554,
+   "loudness": 1.09,
+   "score": -0.745
+  },
+  {
+   "file": "pick11-retro-synth-pop.mp3",
+   "bpm": 95.0,
+   "start": 0.0,
+   "key": "E minor",
+   "minorMargin": 0.169,
+   "centroid": 2378,
+   "loudness": 0.84,
+   "score": -0.76
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 152.0,
+   "key": "B minor",
+   "minorMargin": 0.144,
+   "centroid": 1951,
+   "loudness": 0.86,
+   "score": -0.77
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 216.0,
+   "key": "G minor",
+   "minorMargin": 0.284,
+   "centroid": 3172,
+   "loudness": 1.11,
+   "score": -0.771
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 152.0,
+   "key": "A minor",
+   "minorMargin": 0.143,
+   "centroid": 2087,
+   "loudness": 0.82,
+   "score": -0.772
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 48.0,
+   "key": "B minor",
+   "minorMargin": 0.13,
+   "centroid": 2008,
+   "loudness": 0.8,
+   "score": -0.779
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 48.0,
+   "key": "A minor",
+   "minorMargin": 0.208,
+   "centroid": 2199,
+   "loudness": 1.07,
+   "score": -0.788
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 72.0,
+   "key": "A# minor",
+   "minorMargin": 0.259,
+   "centroid": 3121,
+   "loudness": 1.05,
+   "score": -0.798
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 104.0,
+   "key": "C minor",
+   "minorMargin": 0.217,
+   "centroid": 2443,
+   "loudness": 1.07,
+   "score": -0.809
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 56.0,
+   "key": "G minor",
+   "minorMargin": 0.232,
+   "centroid": 3244,
+   "loudness": 0.93,
+   "score": -0.809
+  },
+  {
+   "file": "pick10-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 0.0,
+   "key": "D# minor",
+   "minorMargin": 0.231,
+   "centroid": 2984,
+   "loudness": 0.99,
+   "score": -0.813
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 56.0,
+   "key": "A minor",
+   "minorMargin": 0.206,
+   "centroid": 2218,
+   "loudness": 1.08,
+   "score": -0.815
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 64.0,
+   "key": "A# minor",
+   "minorMargin": 0.239,
+   "centroid": 3057,
+   "loudness": 1.01,
+   "score": -0.82
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 80.0,
+   "key": "A# minor",
+   "minorMargin": 0.253,
+   "centroid": 3138,
+   "loudness": 1.05,
+   "score": -0.821
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 136.0,
+   "key": "G minor",
+   "minorMargin": 0.265,
+   "centroid": 3211,
+   "loudness": 1.08,
+   "score": -0.823
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 0.0,
+   "key": "B minor",
+   "minorMargin": 0.156,
+   "centroid": 2173,
+   "loudness": 0.92,
+   "score": -0.837
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 8.0,
+   "key": "C minor",
+   "minorMargin": 0.217,
+   "centroid": 2552,
+   "loudness": 1.07,
+   "score": -0.84
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 24.0,
+   "key": "G minor",
+   "minorMargin": 0.178,
+   "centroid": 3113,
+   "loudness": 0.78,
+   "score": -0.845
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 56.0,
+   "key": "B minor",
+   "minorMargin": 0.115,
+   "centroid": 2052,
+   "loudness": 0.82,
+   "score": -0.873
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 32.0,
+   "key": "A# minor",
+   "minorMargin": 0.207,
+   "centroid": 2973,
+   "loudness": 0.97,
+   "score": -0.886
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 0.0,
+   "key": "G minor",
+   "minorMargin": 0.083,
+   "centroid": 2159,
+   "loudness": 0.68,
+   "score": -0.892
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 120.0,
+   "key": "G minor",
+   "minorMargin": 0.236,
+   "centroid": 3217,
+   "loudness": 1.04,
+   "score": -0.903
+  },
+  {
+   "file": "pick10-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 8.0,
+   "key": "D# minor",
+   "minorMargin": 0.231,
+   "centroid": 2971,
+   "loudness": 1.09,
+   "score": -0.905
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 32.0,
+   "key": "A minor",
+   "minorMargin": 0.151,
+   "centroid": 2136,
+   "loudness": 0.98,
+   "score": -0.914
+  },
+  {
+   "file": "pick07-interstellar-retrowave.mp3",
+   "bpm": 100.0,
+   "start": 168.0,
+   "key": "A minor",
+   "minorMargin": 0.176,
+   "centroid": 2178,
+   "loudness": 1.09,
+   "score": -0.928
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 144.0,
+   "key": "B minor",
+   "minorMargin": 0.155,
+   "centroid": 2098,
+   "loudness": 1.02,
+   "score": -0.928
+  },
+  {
+   "file": "pick14-lofi-synthwave.mp3",
+   "bpm": 91.99,
+   "start": 56.0,
+   "key": "A# minor",
+   "minorMargin": 0.203,
+   "centroid": 2996,
+   "loudness": 1.0,
+   "score": -0.933
+  },
+  {
+   "file": "pick20-80s-retro-background.mp3",
+   "bpm": 120.0,
+   "start": 88.0,
+   "key": "C minor",
+   "minorMargin": 0.183,
+   "centroid": 2470,
+   "loudness": 1.06,
+   "score": -0.943
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 40.0,
+   "key": "B minor",
+   "minorMargin": 0.125,
+   "centroid": 2077,
+   "loudness": 0.94,
+   "score": -0.961
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 112.0,
+   "key": "G minor",
+   "minorMargin": 0.219,
+   "centroid": 3287,
+   "loudness": 1.02,
+   "score": -0.963
+  },
+  {
+   "file": "pick22-cinematic-dark-synthwave.mp3",
+   "bpm": 100.05,
+   "start": 104.0,
+   "key": "G minor",
+   "minorMargin": 0.218,
+   "centroid": 3291,
+   "loudness": 1.02,
+   "score": -0.967
+  },
+  {
+   "file": "pick13-synthwave-the-mountain.mp3",
+   "bpm": 90.0,
+   "start": 64.0,
+   "key": "B minor",
+   "minorMargin": 0.118,
+   "centroid": 2029,
+   "loudness": 0.93,
+   "score": -0.968
+  }
+ ]
+}
