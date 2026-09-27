@@ -1,7 +1,7 @@
 {
  "explainer": "wangbi-flight-test",
- "rendered": "2026-09-27T04:36:24.313Z",
- "commit": "4af50585f46c77808dd2c13d35af5edb5031b7a1",
+ "rendered": "2026-09-27T04:38:15.186Z",
+ "commit": "b08a01d3e567581aeb6c701118c7f83e35aa9fb8",
  "clean": false,
  "seconds": 19.7,
  "shareKbps": 8000,
@@ -92,7 +92,7 @@
   "local/sfx/hum.wav": "5f3c0e320e113d427169cdc32f5e8b4a7bd63476ed24e115e6248aff3cd0d05b",
   "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
   "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
-  "out/explainers/wangbi-flight-test/short.mp4": "d64df1e54689865f02d30e22c0f262b2ead3c502aab8307c4d01a66ac0608da1",
-  "out/explainers/wangbi-flight-test/share.mp4": "4d45828cba7d6473d91389c644e404f2b18817fbfd8a69bebfcc7d6a63f75cb0"
+  "out/explainers/wangbi-flight-test/short.mp4": "1018debdfed59dd680adb253f8517a459237ce475f956fded79a1b810f7d1fc0",
+  "out/explainers/wangbi-flight-test/share.mp4": "56ca4f10df748c1f9c8c3b8585f8773d8dd53ad4ce56d07a6f44a0fe4a965ab9"
  }
 }

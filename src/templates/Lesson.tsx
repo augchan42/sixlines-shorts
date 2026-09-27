@@ -1,4 +1,5 @@
 import { AbsoluteFill, Audio, interpolate, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D } from "../scenes/EndCard3D";
@@ -343,6 +344,8 @@ export const Lesson: React.FC<LessonProps> = (p) => {
       <Sequence from={end}>
         <EndCard3D clip={p.endcard.clip} />
       </Sequence>
+      {/* Film grain, scan lines and dark corners over everything, the end card too, as in the shorts. */}
+      <Grain />
     </AbsoluteFill>
   );
 };
