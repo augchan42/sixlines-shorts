@@ -1,7 +1,7 @@
 {
  "hexagram": 64,
- "rendered": "2026-09-26T15:55:17.269Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "rendered": "2026-09-27T12:59:30.566Z",
+ "commit": "7d6c2c6432c1353b00572e0706954df384920139",
  "clean": false,
  "seconds": 32.725333,
  "shareKbps": 5494,
@@ -53,7 +53,7 @@
     "mark": [
      4
     ],
-    "finding": "ALL SIX OUT OF PLACE. ALL ANSWER.",
+    "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER.",
     "master": {
      "zh": "為未濟之主",
      "en": "Master of Before Completion"
@@ -76,7 +76,7 @@
   "assets/3d/endcard-flip-010101-90bpm-9b.mp4": "80a4eca322e214a5aa4405abb09dcc81bf09709d6a7b2d5b08c4bf22dbe1c0c9",
   "assets/yilin/stipple-64-3.webp": "d73457ee3e62fb355cf1113b6dd8462b382be26fb11db828d83418d1e000b169",
   "assets/yilin/stipple-64-36.webp": "42ca0ed8e4e49a2702e347af74cc881b64ff51d1a1c381ffaa7511e1d4065ae2",
-  "out/series/64-wei-ji/short.mp4": "77b2606c4f305a4c21ece76223f5191e943f540ac0b8653b66fea8b05d3054eb",
-  "out/series/64-wei-ji/share.mp4": "75f9e18fe4b37d5af2d31861bbd00d07d263358577c8cee61955376fea03644c"
+  "out/series/64-wei-ji/short.mp4": "0ebf980da483af0aa62f82fd6d3145e56e136108e3a63a67eb1190a2ce0eee21",
+  "out/series/64-wei-ji/share.mp4": "41155f1df96a7e8cb4cc3171e246ca2c5897c7a97d24a4335f784958ef5aba01"
  }
 }

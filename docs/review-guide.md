@@ -50,7 +50,7 @@ That is about 55 minutes for the whole series.
 Score each line 1 to 10. Anything under 8 gets a note with what to change (the user's rule:
 "anything lower than an eight, then redo").
 
-- **Clear to a newcomer.** Someone who has never heard of the I Ching gets who does what.
+- **Clear to the intended viewer.** Hooks and lesson sentences should be understandable to a newcomer. Readouts may assume the viewer has watched the Wang Bi lesson first; their technical terms do not need to be explained again in each short.
 - **The loop closes.** The lesson answers the hook, not a new idea.
 - **One takeaway.** Not two competing lines.
 - **Plain copy.** Literal phrases, no mannered prose, 1-2 sentences per screen.
@@ -68,6 +68,7 @@ score against them:
 
 - The end card stays REVEAL THE MOMENT + sixlines.day. No "I Ching app" ("very cheesy").
 - Shorts show no app screens.
+- Readouts may assume viewers have watched the Wang Bi lesson first (confirmed 2026-09-27).
 - The hexagram reveal keeps its length. The plain build with its camera moves is the benchmark.
 - No labels on bars, no literal effects (lake, neon icon signs), no ~DISNEYFAN credit.
 - Banned in our copy: oracle, divination, fortune, prediction, mystical, magical (and 预测,
