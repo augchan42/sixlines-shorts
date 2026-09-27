@@ -31,7 +31,8 @@ export type SeriesRow = {
       // with these settings (scripts/lesson3d.mjs), in place of the Library page or the 2D trigrams.
       scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite" | "bird" | "abyss" | "acts"; args: Record<string, unknown> };
       // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
-      readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string } };
+      // master.line and findingMark stage the amber (src/lib/readoutAmber.ts).
+      readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string; line?: number }; findingMark?: number[] };
     };
     // true adds the ~DISNEYFAN credit; left out by default since 2026-09-26, when the user
     // said the shorts had moved far from her edit.

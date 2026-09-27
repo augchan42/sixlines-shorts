@@ -1,5 +1,6 @@
 import { AbsoluteFill, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
 import { fonts } from "../lib/fonts";
+import { amberLines } from "../lib/readoutAmber";
 
 // A lesson as a ship's computer readout, after the Nostromo's screens in Alien (Brian
 // Wyvill's vector plots, the MU/TH/UR terminal): green phosphor on black, scanlines, a
@@ -155,8 +156,11 @@ export const Readout: React.FC<{
   // Line indices (0 = bottom) to mark, and what the computer says about them.
   mark?: number[];
   finding?: string;
-  // Wang Bi's words naming the marked line the hexagram's master (series/wangbi.json).
-  master?: { zh: string; en: string };
+  // Wang Bi's words naming the marked line the hexagram's master (series/wangbi.json), and
+  // which line that is. With `line`, the short turns only the master amber while WANG BI is on
+  // screen, then the lines the finding is about (`findingMark`, or every marked line).
+  master?: { zh: string; en: string; line?: number };
+  findingMark?: number[];
   // For the explainer (src/templates/ReadoutKey.tsx): the whole screen drawn from the first
   // frame; `focus` names the parts at full strength, the rest dimmed (keys in `lit` below);
   // `marked` turns the ◄ lines amber; `prompt` is typed in white in place of the lesson.
@@ -164,7 +168,7 @@ export const Readout: React.FC<{
   focus?: string[];
   marked?: boolean;
   prompt?: { text: string; at: number };
-}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master, built, focus, marked, prompt }) => {
+}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master, findingMark, built, focus, marked, prompt }) => {
   const now = useCurrentFrame();
   // Built: every act has already happened, so the frame the acts see is far past the end.
   const frame = built ? now + 100000 : now;
@@ -183,6 +187,10 @@ export const Readout: React.FC<{
   const masterAt = at(0.42);
   const findingAt = master ? at(0.5) : at(0.42);
   const markAt = master ? masterAt : findingAt;
+  // Staged: the master line, then the finding's lines, each in amber while its text is typed.
+  const staged = !built && !focus && master?.line !== undefined;
+  const amberNow = built || focus ? mark : amberLines({ mark, master, findingMark }, frame, { masterAt, findingAt });
+  const amberFrom = staged && frame >= findingAt ? findingAt : markAt;
   const answerAt = master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
   // Wang Bi's reading of each line: in its place (yang in the odd places 3 and 5, yin in the
   // even ones 2 and 4) or out of it, and the centres of the two trigrams (2 and 5). Lines 1
@@ -222,8 +230,8 @@ export const Readout: React.FC<{
           {slabsOf(lines).map((s, k) => {
             const drawn = interpolate(frame, [plotFrom + s.i * plotEach, plotFrom + (s.i + 0.8) * plotEach], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
             if (drawn <= 0) return null;
-            const amber = mark.includes(s.i) && (focus ? !!marked : frame >= markAt);
-            const on = !amber || Math.floor((frame - markAt) / 6) % 2 === 0;
+            const amber = focus ? mark.includes(s.i) && !!marked : amberNow.includes(s.i);
+            const on = !amber || Math.floor((frame - amberFrom) / 6) % 2 === 0;
             return (
               <path
                 key={k}
@@ -281,11 +289,11 @@ export const Readout: React.FC<{
               yang={lines[i] === 1}
               place={place(i).split(" · ")[0].trim()}
               centre={i === 1 || i === 4}
-              mark={mark.includes(i) && frame >= markAt}
+              mark={amberNow.includes(i)}
               size={34}
               shown={Math.floor((frame - (plotFrom + i * plotEach)) / 0.6)}
               cursor
-              style={() => ({ color: mark.includes(i) && frame >= markAt ? "#ffb347" : DIM })}
+              style={() => ({ color: amberNow.includes(i) ? "#ffb347" : DIM })}
             />
           </div>
         ))}
@@ -305,11 +313,11 @@ export const Readout: React.FC<{
       <div style={{ position: "absolute", left: 80, right: 80, top: 1360 }}>
         {master && (
           <>
-            <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color="#ffb347" style={{ opacity: dim("master") }} />
-            <Line text={`  ${master.en.toUpperCase()}`} frame={frame} at={masterAt + 12} size={34} color="#ffb347" style={{ opacity: dim("master") }} />
+            <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color={staged && frame >= findingAt ? DIM : "#ffb347"} style={{ opacity: dim("master") }} />
+            <Line text={`  ${master.en.toUpperCase()}`} frame={frame} at={masterAt + 12} size={34} color={staged && frame >= findingAt ? DIM : "#ffb347"} style={{ opacity: dim("master") }} />
           </>
         )}
-        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color={master ? DIM : "#ffb347"} style={{ opacity: dim("finding") }} />}
+        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color={master && !staged ? DIM : "#ffb347"} style={{ opacity: dim("finding") }} />}
         {!master && <Line text={`> ${name.toUpperCase()}:`} frame={frame} at={answerAt} size={38} color={DIM} style={{ opacity: dim("finding") }} />}
         {prompt ? (
           <Line text={prompt.text} frame={now} at={prompt.at} rate={1.2} size={64} color="#fff" cursor glowless />

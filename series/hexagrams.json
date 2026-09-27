@@ -1862,8 +1862,12 @@
      "finding": "THE SOFT COMES TO ADORN THE STRONG.",
      "master": {
       "zh": "為飾之主",
-      "en": "Master of Adornment"
-     }
+      "en": "Master of Adornment",
+      "line": 4
+     },
+     "findingMark": [
+      1
+     ]
     },
     "readout_source": "Tuan 柔來而文剛; image: does not decide disputes this way"
    }
