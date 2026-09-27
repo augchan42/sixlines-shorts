@@ -1,10 +1,10 @@
 {
  "explainer": "wangbi-lesson",
- "rendered": "2026-09-27T02:59:51.132Z",
- "commit": "d7ea188a197b28a60a502b0763725c4d0c29a4af",
- "clean": true,
- "seconds": 197.589333,
- "shareKbps": 803,
+ "rendered": "2026-09-27T11:14:25.399Z",
+ "commit": "97dc1dff22dcf69ee572fa0cf3b3edd4e3fadd4b",
+ "clean": false,
+ "seconds": 221.482667,
+ "shareKbps": 702,
  "props": {
   "pages": [
    {
@@ -36,15 +36,16 @@
      "draw": true,
      "log": [
       "yy"
-     ]
+     ],
+     "approach": 5
     }
    },
    {
-    "chapter": "PLACES"
+    "chapter": "POSITIONS"
    },
    {
-    "q": "DEFINE: PLACE",
-    "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+    "q": "DEFINE: POSITION",
+    "a": "LINES 2 TO 5 ARE POSITIONS,\nLIKE POSTS IN AN OFFICE.",
     "show": {
      "hex": 22,
      "log": [
@@ -60,8 +61,8 @@
     }
    },
    {
-    "q": "WHO SUITS EACH PLACE",
-    "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
+    "q": "WHO SUITS EACH POSITION",
+    "a": "ODD POSITIONS, 3 AND 5: YANG.\nEVEN POSITIONS, 2 AND 4: YIN.",
     "show": {
      "hex": 22,
      "log": [
@@ -78,7 +79,7 @@
    },
    {
     "q": "DEFINE: IN, OUT",
-    "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
+    "a": "RIGHT KIND IN ITS POSITION: IN.\nWRONG KIND: OUT OF POSITION.",
     "show": {
      "hex": 22,
      "log": [
@@ -109,7 +110,7 @@
    },
    {
     "q": "LINES 1 AND 6",
-    "a": "NO RANK. THEY ARE THE START\nAND THE END OF THE MATTER.",
+    "a": "NO POSITION. THEY ARE THE START\nAND THE END OF THE MATTER.",
     "show": {
      "hex": 22,
      "log": [
@@ -345,7 +346,9 @@
      ],
      "amber": [
       4
-     ]
+     ],
+     "fly": 4,
+     "hold": 4
     }
    },
    {
@@ -369,8 +372,7 @@
       4
      ],
      "amber": [
-      1,
-      4
+      1
      ]
     }
    },
@@ -395,7 +397,6 @@
       4
      ],
      "amber": [
-      1,
       4
      ],
      "lesson": "PLAIN IS THE BEST\nADORNMENT."
@@ -436,7 +437,8 @@
        1,
        4
       ]
-     ]
+     ],
+     "approach": 5
     }
    },
    {
@@ -485,6 +487,31 @@
      "amber": [
       1
      ]
+    }
+   },
+   {
+    "q": "WHAT THE READOUT IS FOR",
+    "a": "IT GIVES THE STRUCTURE:\nPOSITIONS, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
+    "show": {
+     "hex": 7,
+     "log": [
+      "yy",
+      "place",
+      "centre"
+     ],
+     "links": [
+      [
+       1,
+       4
+      ]
+     ],
+     "lit": [
+      1
+     ],
+     "amber": [
+      1
+     ],
+     "hold": 5
     }
    }
   ],
@@ -644,17 +671,55 @@
   },
   "music": "local/music/pick13-synthwave-the-mountain.mp3",
   "musicStart": 0.023,
+  "mix": {
+   "hum": 1,
+   "beacon": 1,
+   "printer": 1,
+   "ticks": 0.8,
+   "sweep": 0.7,
+   "chatter": 0.7,
+   "warble": 0.5,
+   "winddown": 0.6,
+   "music": 0,
+   "musicUp": [
+    "end"
+   ]
+  },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
-   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-   "seconds": 5.87020328296554
+   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+   "seconds": 7.82693771062072,
+   "rate": 0.5749375
+  },
+  "endMusic": {
+   "at": 80.06,
+   "lead": 2.75
+  },
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon-level.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
   }
  },
  "files": {
   "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
-  "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
+  "assets/3d/endcard-join-101001-9b-ref.mp4": "4766e47ec4e3544adb000bacfa64bd28bc0ac1910e62e3fd675603a684ca52c0",
   "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
-  "out/explainers/wangbi-lesson/short.mp4": "9185fe4e55b8bdbcd1cea22d6dc1ad9a79cba215fed6fafc07134e210f0d24a2",
-  "out/explainers/wangbi-lesson/share.mp4": "d3f48314abdef4adf24064506d79371d34cc7ec321c8abdd311c33f50990eb5b"
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon-level.wav": "f3098c08f0b52633b389c3dbc2d6ae45653a4fe773a4308cf215bb22a5a2c182",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/wangbi-lesson/short.mp4": "fb1a703cb09e87535062f8a0429d819c47ef1f6a283e004a62c8a0db499fa1de",
+  "out/explainers/wangbi-lesson/share.mp4": "1f4e44cbb0e51d8f7bff5249062eb20b0aeaa40abeb46eceb6b6c0ce80aa6694"
  }
 }

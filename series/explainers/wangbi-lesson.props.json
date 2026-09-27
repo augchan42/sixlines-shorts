@@ -29,15 +29,16 @@
     "draw": true,
     "log": [
      "yy"
-    ]
+    ],
+    "approach": 5
    }
   },
   {
-   "chapter": "PLACES"
+   "chapter": "POSITIONS"
   },
   {
-   "q": "DEFINE: PLACE",
-   "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+   "q": "DEFINE: POSITION",
+   "a": "LINES 2 TO 5 ARE POSITIONS,\nLIKE POSTS IN AN OFFICE.",
    "show": {
     "hex": 22,
     "log": [
@@ -53,8 +54,8 @@
    }
   },
   {
-   "q": "WHO SUITS EACH PLACE",
-   "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
+   "q": "WHO SUITS EACH POSITION",
+   "a": "ODD POSITIONS, 3 AND 5: YANG.\nEVEN POSITIONS, 2 AND 4: YIN.",
    "show": {
     "hex": 22,
     "log": [
@@ -71,7 +72,7 @@
   },
   {
    "q": "DEFINE: IN, OUT",
-   "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
+   "a": "RIGHT KIND IN ITS POSITION: IN.\nWRONG KIND: OUT OF POSITION.",
    "show": {
     "hex": 22,
     "log": [
@@ -102,7 +103,7 @@
   },
   {
    "q": "LINES 1 AND 6",
-   "a": "NO RANK. THEY ARE THE START\nAND THE END OF THE MATTER.",
+   "a": "NO POSITION. THEY ARE THE START\nAND THE END OF THE MATTER.",
    "show": {
     "hex": 22,
     "log": [
@@ -338,7 +339,9 @@
     ],
     "amber": [
      4
-    ]
+    ],
+    "fly": 4,
+    "hold": 4
    }
   },
   {
@@ -362,8 +365,7 @@
      4
     ],
     "amber": [
-     1,
-     4
+     1
     ]
    }
   },
@@ -388,7 +390,6 @@
      4
     ],
     "amber": [
-     1,
      4
     ],
     "lesson": "PLAIN IS THE BEST\nADORNMENT."
@@ -429,7 +430,8 @@
       1,
       4
      ]
-    ]
+    ],
+    "approach": 5
    }
   },
   {
@@ -478,6 +480,31 @@
     "amber": [
      1
     ]
+   }
+  },
+  {
+   "q": "WHAT THE READOUT IS FOR",
+   "a": "IT GIVES THE STRUCTURE:\nPOSITIONS, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
+   "show": {
+    "hex": 7,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ],
+    "lit": [
+     1
+    ],
+    "amber": [
+     1
+    ],
+    "hold": 5
    }
   }
  ],
@@ -637,9 +664,39 @@
  },
  "music": "local/music/pick13-synthwave-the-mountain.mp3",
  "musicStart": 0.023,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
-  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-  "seconds": 5.87020328296554
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 7.82693771062072,
+  "rate": 0.5749375
+ },
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon-level.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
  }
 }
