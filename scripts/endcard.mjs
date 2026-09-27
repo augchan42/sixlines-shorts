@@ -3,7 +3,7 @@
 //
 //   node scripts/endcard.mjs --lines 010010 --bpm 100 --mode join|flip|snap|fill [--beats 7] [--tagline STYLE] [--clip PATH] [--preview]
 //
-// Tagline styles: goudy-caps (REVEAL THE MOMENT. in Goudy, typed; the default), serif (Goudy,
+// Tagline styles: goudy-caps (REVEAL THE MOMENT in Goudy, typed, no period since 2026-09-27; the default), serif (Goudy,
 // faded in), or typed with a cursor: pixel
 // (REVEAL THE MOMENT. in PixelOperator), terminal (reveal the moment. in Andale Mono),
 // terminal-caps (REVEAL THE MOMENT. in Andale Mono), goudy and goudy-caps (the serif, typed),
@@ -39,7 +39,7 @@ const TAGLINES = {
   pixel: ["--tagline", "REVEAL THE MOMENT.", "--tagline-font", pixel],
   terminal: ["--tagline", "reveal the moment.", "--tagline-font", "/System/Library/Fonts/Supplemental/Andale Mono.ttf"],
   goudy: ["--tagline", "Reveal the moment.", "--tagline-font", serif],
-  "goudy-caps": ["--tagline", "REVEAL THE MOMENT.", "--tagline-font", serif],
+  "goudy-caps": ["--tagline", "REVEAL THE MOMENT", "--tagline-font", serif],
   "terminal-caps": ["--tagline", "REVEAL THE MOMENT.", "--tagline-font", "/System/Library/Fonts/Supplemental/Andale Mono.ttf"],
   typewriter: ["--tagline", "REVEAL THE MOMENT", "--tagline-font", "/System/Library/Fonts/Supplemental/Courier New.ttf"],
 };
