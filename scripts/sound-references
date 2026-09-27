@@ -1,0 +1,39 @@
+#!/bin/bash
+# Download 3-minute stretches of reference ambiences from YouTube (audio only) and measure them
+# with scripts/sound-check, to set targets for our background sound. For measuring, not for use
+# in the shorts: the audio stays in public/local/sfx/reference/ (gitignored); the measurements
+# go to docs/research/sound-references.jsonl.
+#   scripts/sound-references
+set -e
+cd "$(dirname "$0")/.."
+dir=public/local/sfx/reference
+out=docs/research/sound-references.jsonl
+mkdir -p "$dir"
+: > "$out"
+# name | YouTube id | start second | what it is
+while IFS='|' read -r name id start what; do
+  [ -z "$name" ] && continue
+  f="$dir/$name.wav"
+  if [ ! -f "$f" ]; then
+    # Whole audio track, then cut locally: YouTube refuses ffmpeg's ranged requests (403).
+    yt-dlp -q --no-warnings -f bestaudio -o "$dir/full/$name.%(ext)s" "https://www.youtube.com/watch?v=$id"
+    ffmpeg -nostdin -v error -y -ss "$start" -t 180 -i "$(ls "$dir/full/$name".*)" -ac 2 -ar 48000 "$f"
+  fi
+  for phone in "" --phone; do
+    scripts/sound-check "$f" $phone --png "$dir/png" | python3 -c "
+import json, sys
+d = json.loads(sys.stdin.read())
+d.update(name='$name', youtube='https://www.youtube.com/watch?v=$id', section='$start-$((start + 180)) s', what='$what')
+print(json.dumps(d))" >> "$out"
+  done
+done <<'LIST'
+nostromo-ambience|0GbMnUc71tw|900|thatSFXguy, Nostromo Ambience 1 Hour
+muthur-mainframe|APpkBhWeoFk|900|AMCON, ALIEN: MUTHUR 6000 Mainframe Ambience
+nostromo-deck|MEVmcmYo2Bg|900|STATIC SOUND ARCHIVES, USCSS Nostromo deck controls
+alien-1979-soundscape|NxHKOA3C3GU|900|A L I E N W O R L D S, Alien (1979) Ambient Soundscape
+nostromo-boot|2ywWFvjE-yU|0|jpcqa, Nostromo boot sequence + Interface 2037 (film computer sounds)
+blade-runner-archive|w2EPWCrXI3M|900|Focus Soundscapes, SYSTEM: Blade Runner Ambience, rain at Archive 17
+eno-1-1|LKZ3fGR2SDY|300|Brian Eno, 1/1 (Remastered 2004), Music for Airports
+server-room|-BofZ-seOc0|900|Ambience Corp, Server Room White Noise, data center
+LIST
+echo "wrote $out"

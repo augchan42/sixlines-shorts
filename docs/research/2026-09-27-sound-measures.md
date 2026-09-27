@@ -86,6 +86,38 @@ stay short, quiet and tied to something on screen.
 So the bed fails on chirps and roughness. The next bed should be a real recording (a server or
 control room, a ship's ambience) that passes the targets, with no generated chirps.
 
+## Measured references
+
+The user asked me to download references from YouTube with yt-dlp and measure them ("The goal is
+to download and measure. We're not copying"). `scripts/sound-references` takes a 3-minute stretch
+of each, keeps the audio in public/local/sfx/reference/ (gitignored, never used in a short) and
+writes the measurements to docs/research/sound-references.jsonl.
+
+| Reference | Sharpness | 2–6 kHz on a phone | Blips/min | Swell |
+|---|---|---|---|---|
+| Nostromo Ambience 1 Hour (thatSFXguy) | 0.40 | 0.07 | 8 | 1.6 Hz, broad |
+| MUTHUR 6000 Mainframe (AMCON) | 0.54 | 0.03 | 2 | |
+| Nostromo deck controls (Static Sound Archives) | 1.02 | 0.01 | 10 | |
+| Alien (1979) Ambient Soundscape (A L I E N W O R L D S) | 0.91 | 0.02 | 43 | |
+| Nostromo boot sequence, the film's computer sounds (jpcqa) | 1.73 | 0.46 | 60 | busy by design |
+| Blade Runner Ambience, Archive 17 (Focus Soundscapes) | 0.95 | 0.04 | 3 | steady (swing 0.03) |
+| Brian Eno, 1/1 | 0.73 | 0.00 | 0 | long notes |
+| Server room, data centre (Ambience Corp) | 1.35 | 0.01 | 0 | steady |
+| **our bed.wav** | **1.39** | **0.18** | **27** | |
+
+What the spectrograms show:
+- The Nostromo beds put nearly all their energy under 300 Hz and swell slowly, about every 6 s.
+  Their events are short bursts of broadband noise (machinery), not pure tones.
+- Our bed is bright, flat noise up to about 8 kHz at a steady level. The chirps show as isolated
+  dots at 1.8–3.1 kHz, pure tones in empty space.
+- Eno's 1/1 is long piano notes at 300–1,600 Hz with long gaps and nothing above.
+
+So the targets tighten: sharpness under 1.0 acum, under 0.07 of the energy at 2–6 kHz on a phone,
+and events as noise bursts or low notes, not high pure tones. The Nostromo beds live under 300 Hz
+and almost vanish on a phone (the ambience measures -29 LUFS on a phone against -21 in full).
+That is why a phone needs the 250 Hz–1 kHz part of such a bed turned up rather than a brighter
+sound added.
+
 ## Sources
 
 - Frontiers in Acoustics, "Human response to eVTOL drone sound": https://www.frontiersin.org/journals/acoustics/articles/10.3389/facou.2025.1624669/full
