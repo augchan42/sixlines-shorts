@@ -1,5 +1,6 @@
 import { characterClip, endcardClip, endcardRefClip, type EndcardMode, hexagramClip, moonClip, REF_BPM, sceneClip } from "../lib/clips.ts";
 import { HELD_LESSON_BEATS, planOf } from "../lib/seriesPlan.ts";
+import { stagedBeats } from "../lib/readoutAmber.ts";
 import type { SeriesProps } from "../schema.ts";
 
 type Line = { text: string; source: string };
@@ -115,7 +116,11 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
   const [lower, upper] = [row.lines.slice(0, 3), row.lines.slice(3)].map((t) => TRIGRAMS[t.join("")]);
   // A readout plays for the whole lesson and types the sentence itself; with Wang Bi's master
   // it has more to log, so it takes the held length.
-  if (l.readout) return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout, ...(l.readout.master ? { beats: HELD_LESSON_BEATS } : {}) };
+  // A staged one (its master's line named) gets as many beats as its seconds need at this tempo.
+  if (l.readout) {
+    const beats = l.readout.master?.line !== undefined ? stagedBeats(row.music.bpm) : l.readout.master ? HELD_LESSON_BEATS : undefined;
+    return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout, ...(beats ? { beats } : {}) };
+  }
   // A Blender scene plays for the whole lesson, the sentence typed under its end.
   if (l.scene) return { kind: l.kind, text: l.text, scene: l.scene.script };
   if (l.kind === "lines") {

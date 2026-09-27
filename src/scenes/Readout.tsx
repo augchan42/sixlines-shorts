@@ -1,6 +1,6 @@
 import { AbsoluteFill, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
 import { fonts } from "../lib/fonts";
-import { amberLines } from "../lib/readoutAmber";
+import { amberLines, STAGED } from "../lib/readoutAmber";
 
 // A lesson as a ship's computer readout, after the Nostromo's screens in Alien (Brian
 // Wyvill's vector plots, the MU/TH/UR terminal): green phosphor on black, scanlines, a
@@ -176,22 +176,24 @@ export const Readout: React.FC<{
   // bracket:upper, bracket:lower, master, finding. Without `focus` everything is lit.
   const lit = (...keys: string[]) => !focus || keys.some((k) => focus.includes(k));
   const dim = (...keys: string[]) => (lit(...keys) ? 1 : 0.22);
-  const { width, height, durationInFrames: d } = useVideoConfig();
-  // The acts, as shares of the lesson: header, plot, the answering lines, trigrams, Wang
-  // Bi's master, the finding, then the answer.
-  const at = (share: number) => Math.round(share * d);
-  const plotFrom = at(0.04);
-  const plotEach = (at(master ? 0.26 : 0.3) - plotFrom) / 6;
-  const linksAt = at(master ? 0.27 : 0.31);
-  const trigramsAt = at(master ? 0.33 : 0.32);
-  const masterAt = at(0.42);
-  const findingAt = master ? at(0.5) : at(0.42);
-  const markAt = master ? masterAt : findingAt;
-  // Staged: the master line, then the finding's lines, each in amber while its text is typed.
+  const { width, height, fps, durationInFrames: d } = useVideoConfig();
+  // Staged: the master line, then the finding's lines, each in amber while its text is typed,
+  // on fixed seconds (STAGED) so the master holds long enough to read.
   const staged = !built && !focus && master?.line !== undefined;
+  // The acts, as shares of the lesson (seconds when staged): header, plot, the answering
+  // lines, trigrams, Wang Bi's master, the finding, then the answer.
+  const at = (share: number) => Math.round(share * d);
+  const sec = (s: number) => Math.round(s * fps);
+  const plotFrom = staged ? sec(STAGED.plotFrom) : at(0.04);
+  const plotEach = ((staged ? sec(STAGED.plotTo) : at(master ? 0.26 : 0.3)) - plotFrom) / 6;
+  const linksAt = staged ? sec(STAGED.links) : at(master ? 0.27 : 0.31);
+  const trigramsAt = staged ? sec(STAGED.trigrams) : at(master ? 0.33 : 0.32);
+  const masterAt = staged ? sec(STAGED.master) : at(0.42);
+  const findingAt = staged ? sec(STAGED.finding) : master ? at(0.5) : at(0.42);
+  const markAt = master ? masterAt : findingAt;
   const amberNow = built || focus ? mark : amberLines({ mark, master, findingMark }, frame, { masterAt, findingAt });
   const amberFrom = staged && frame >= findingAt ? findingAt : markAt;
-  const answerAt = master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
+  const answerAt = staged ? sec(STAGED.answer) : master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
   // Wang Bi's reading of each line: in its place (yang in the odd places 3 and 5, yin in the
   // even ones 2 and 4) or out of it, and the centres of the two trigrams (2 and 5). Lines 1
   // and 6 have no place: they are the start and end of the matter (Zhouyi lüeli, 辯位).
