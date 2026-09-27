@@ -66,3 +66,9 @@ test("every special in series/specials passes", () => {
     assert.deepEqual(copyProblems(s.hexagram, s.copy), [], f);
   }
 });
+
+test("a readout lesson is typed in the terminal, so it may run to 30 characters a line", () => {
+  const readout = (text) => ({ kind: "lines", text, source: "written", readout: { mark: [5], finding: "AT THE TOP: X." } });
+  assert.deepEqual(copyProblems(64, entry({ plates: ["64-1", "64-2"], lesson: readout("Almost done?\nStay careful to the end.") })), []);
+  assert.match(copyProblems(64, entry({ plates: ["64-1", "64-2"], lesson: readout("Almost done?\nStay careful all the way to the end.") })).join(), /too wide \(over 30 characters\)/);
+});

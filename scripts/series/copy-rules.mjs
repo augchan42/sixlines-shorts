@@ -2,6 +2,9 @@
 
 // At 110 px in the code-rain font, about 18 characters fill the 940 px text column.
 const MAX_LINE = 18;
+// A readout's lesson is typed inside the terminal at a smaller size; "Stay careful to the end."
+// (24) fills about three quarters of its column (64, 2026-09-27).
+const MAX_READOUT_LINE = 30;
 
 const TONE = [
   [/\bAI\b/, "says AI"],
@@ -30,14 +33,14 @@ export const copyProblems = (n, e) => {
     // leaves out.
     ["caption", e.caption, 8, 35, false],
     // The sentence after a lesson's picture, typed over code rain like the meaning.
-    ...(e.lesson ? [["lesson", e.lesson, 3, 7, true]] : []),
+    ...(e.lesson ? [["lesson", e.lesson, 3, 7, true, e.lesson.readout ? MAX_READOUT_LINE : MAX_LINE]] : []),
   ];
   for (const part of parts) problems.push(...partProblems(...part));
   return problems;
 };
 
 // One part's problems: missing, unsourced, word count, width on the rain, tone.
-export const partProblems = (name, part, min, max, onRain) => {
+export const partProblems = (name, part, min, max, onRain, maxLine = MAX_LINE) => {
   if (!part?.text) return [`${name}: missing`];
   const problems = [];
   if (!part.source) problems.push(`${name}: no source`);
@@ -46,7 +49,7 @@ export const partProblems = (name, part, min, max, onRain) => {
   if (onRain) {
     const lines = part.text.split("\n");
     if (lines.length > 2) problems.push(`${name}: ${lines.length} screen lines (2 at most)`);
-    for (const l of lines) if (l.length > MAX_LINE) problems.push(`${name}: "${l}" is too wide (over ${MAX_LINE} characters)`);
+    for (const l of lines) if (l.length > maxLine) problems.push(`${name}: "${l}" is too wide (over ${maxLine} characters)`);
   }
   for (const [re, why] of TONE) if (re.test(part.text)) problems.push(`${name}: ${why}`);
   return problems;

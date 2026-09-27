@@ -822,7 +822,8 @@
      "timed": true
     },
     "readout_source": "Line 2: 履道坦坦，幽人貞吉 (a level path, the quiet one does well); Small Image: 中不自亂 (steady within); Wang Bi: 履道尚謙…惡夫外飾 (treading values humility, dislikes display). Was the Tuan's soft line treading on the strong, master line 3."
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -3971,7 +3972,7 @@
    },
    "meaning": [
     {
-     "text": "The Well says:\npeople come and go.",
+     "text": "People come\nand go.",
      "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; 改邑不改井"
     },
     {
@@ -3980,8 +3981,8 @@
     }
    ],
    "question": {
-    "text": "What do you help\nkeep in working order?",
-    "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it"
+    "text": "What do you help\nkeep running?",
+    "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; shortened from 'What do you help keep in working order?', which ran off the frame (8 words, 22-character line; the rules allow 6 and 18)"
    },
    "plates": [
     "48-10",
@@ -4018,7 +4019,8 @@
      }
     },
     "lesson_source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; L4 脩井也 (repair the well), L6 勿幕 with Wang Bi 不擅其有，不私其利 (don't keep it private)"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -5369,7 +5371,8 @@
      "timed": true
     },
     "readout_source": "Line 6: 有孚于飲酒，无咎。濡其首，有孚失是 (drinking wine in confidence is fine; soaking the head, the confidence is lost); Small Image 飲酒濡首，亦不知節也 (no restraint). Was the structural finding with master line 5."
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
