@@ -1,0 +1,29 @@
+#!/bin/bash
+# Cut each item of an inventory (docs/research/*-inventory.json) out of its source recording,
+# measure it with scripts/sound-check, and join them into one file to listen through, with a
+# second of silence between. Clips stay in public/local/sfx/reference/<name>/ (gitignored);
+# measurements go to docs/research/<name>.jsonl.
+#   scripts/sound-inventory docs/research/nostromo-boot-inventory.json
+set -e
+cd "$(dirname "$0")/.."
+inv="$1"
+name=$(basename "$inv" .json | sed 's/-inventory$//')
+dir="public/local/sfx/reference/${name#nostromo-}"
+out="docs/research/$name.jsonl"
+mkdir -p "$dir"
+: > "$out"
+src=$(python3 -c "import json;print(json.load(open('$inv'))['source'])")
+list="$dir/join.txt"; : > "$list"
+ffmpeg -nostdin -v error -y -f lavfi -i anullsrc=r=48000:cl=stereo -t 1 "$dir/gap.wav"
+python3 -c "
+import json
+for i, it in enumerate(json.load(open('$inv'))['items'], 1):
+    print(f\"{i:02d}-{it['name']}|{it['at']}|{it['dur']}\")" | while IFS='|' read -r n at dur; do
+  ffmpeg -nostdin -v error -y -ss "$at" -t "$dur" -i "$src" -ac 2 -ar 48000 -af "afade=t=in:d=0.02,afade=t=out:st=$(python3 -c "print(max(0,$dur-0.05))"):d=0.05" "$dir/$n.wav"
+  scripts/sound-check "$dir/$n.wav" | python3 -c "
+import json, sys
+d = json.loads(sys.stdin.read()); d['item'] = '$n'; print(json.dumps(d))" >> "$out"
+  printf "file '%s'\nfile 'gap.wav'\n" "$n.wav" >> "$list"
+done
+ffmpeg -nostdin -v error -y -f concat -safe 0 -i "$list" -c:a aac -b:a 192k "$dir/all.m4a"
+echo "wrote $out and $dir/all.m4a"

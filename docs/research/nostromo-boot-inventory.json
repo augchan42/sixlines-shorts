@@ -1,0 +1,19 @@
+{
+ "about": "The kinds of sound in 'Nostromo boot sequence + Interface 2037' (jpcqa, https://www.youtube.com/watch?v=2ywWFvjE-yU), the film's computer sounds. The user, 2026-09-27: 'this is very good ... it basically contains all the various sounds you'd want, we can inventory all of them separately.' Times in seconds from the start of the video; found from its spectrogram and onsets (scripts/sound-check). For measuring and as models to rebuild our own sounds from, not for use in the shorts. scripts/sound-inventory cuts each into public/local/sfx/reference/boot/ (gitignored) and measures it.",
+ "source": "public/local/sfx/reference/full/nostromo-boot.webm",
+ "items": [
+  {"name": "warble", "at": 0.0, "dur": 4.4, "what": "two tones taking turns, about 483 and 900 Hz with overtones, about 8 a second; a short 2.6 kHz trill over it at 1.2-2.2 s"},
+  {"name": "chatter", "at": 6.3, "dur": 5.3, "what": "dense clicks about 15 a second, noise at 200-800 Hz reaching 6 kHz: a relay bank or teleprinter"},
+  {"name": "hum-and-beeps", "at": 13.7, "dur": 6.3, "what": "a loud hum near 110 Hz, with single beeps at 1,233-1,300 Hz"},
+  {"name": "sweep", "at": 23.2, "dur": 1.0, "what": "a low tone gliding from under 40 Hz up to about 700 Hz: powering up"},
+  {"name": "chatter-low", "at": 28.7, "dur": 5.3, "what": "clicks at 300-400 Hz about 14 a second, with 1-2 kHz ticks: a slower, lower chatter"},
+  {"name": "mains", "at": 38.8, "dur": 6.0, "what": "the steady hum band, 30-300 Hz, under the later scenes, with little on top"},
+  {"name": "print-head", "at": 50.4, "dur": 1.8, "what": "high noise ticks at 3-5 kHz"},
+  {"name": "wind-down", "at": 51.5, "dur": 2.3, "what": "regular clicks at about 333 Hz, 16 a second, decaying: a mechanism running down"},
+  {"name": "carrier", "at": 55.9, "dur": 5.3, "what": "a held tone at 2,000 Hz with fainter tones near 1.3 and 5 kHz"},
+  {"name": "pips", "at": 62.7, "dur": 3.4, "what": "fast pips at 766 Hz, about 13 a second, after a falling 1,650-1,166 Hz figure"},
+  {"name": "warble-2", "at": 70.0, "dur": 2.4, "what": "the 483/900 Hz warble again"},
+  {"name": "air", "at": 73.2, "dur": 0.6, "what": "a burst of high noise at 3-4.3 kHz: air or a servo"},
+  {"name": "high-pips", "at": 75.4, "dur": 2.7, "what": "pips at 2.6-3 kHz, then noisy chatter at 2.4-2.9 kHz"}
+ ]
+}

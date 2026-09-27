@@ -45,22 +45,27 @@ if (!existsSync(pub(ticks))) {
 }
 
 // The flight look's machine sounds (docs/research/2026-09-27-nostromo-screens.md), generated:
-// a ship's background (bed), a relay's click-clack, a printer's chatter. The first hum
-// (hum.wav, 50-150 Hz) was lost on phone speakers, so the bed is mid-range: air through
-// vents (pink noise, 250 Hz-5 kHz), an electrical buzz (120 Hz with 14 overtones, only the
-// overtones heard on a phone, swelling slowly), the low hum under it for headphones, and a
-// console's chirp now and then. 30 s, looped.
-const buzz = Array.from({ length: 14 }, (_, k) => `sin(2*PI*${120 * (k + 1)}*t)/${k + 1}`).join("+");
-const chirps = ["0.10*sin(2*PI*2400*t)*lt(mod(t\\,4.3)\\,0.07)", "0.07*sin(2*PI*3150*t)*lt(mod(t+1.9\\,6.7)\\,0.05)", "0.06*sin(2*PI*1800*t)*lt(mod(t+3.1\\,9.1)\\,0.12)"].join("+");
-const sfx = { hum: "local/sfx/bed.wav", relay: "local/sfx/relay.wav", printer: "local/sfx/printer.wav" };
+// a ship's background (bed), a beacon, a relay's click-clack, a printer's chatter.
+// The bed follows the Nostromo's landing on LV-426 as measured in
+// docs/research/2026-09-27-sound-measures.md: an engine rumble (brown noise, 60-250 Hz)
+// swelling every 6 s, its body at 250 Hz-1 kHz turned up so a phone plays it, and a quiet
+// whine at 440 Hz. No chirps (the first bed's 1.8-3.15 kHz chirps were "very annoying").
+// 30 s, looped. The beacon is the landing's beep: one pitch on a steady 1.65 s pulse, rising
+// 1,166 -> 1,300 Hz over 30 s, mixed no louder than the bed. The first hum (hum.wav, 50-150 Hz)
+// was lost on phone speakers.
+const beep = "min(mod(t\\,1.65)/0.01\\,1)*exp(-max(mod(t\\,1.65)-0.01\\,0)*30)*lt(mod(t\\,1.65)\\,0.15)";
+const sfx = { hum: "local/sfx/bed.wav", beacon: "local/sfx/beacon.wav", relay: "local/sfx/relay.wav", printer: "local/sfx/printer.wav" };
 const makeSfx = {
   bed: [
+    "-f", "lavfi", "-i", "anoisesrc=color=brown:amplitude=0.6:d=30:r=44100",
     "-f", "lavfi", "-i", "anoisesrc=color=pink:amplitude=0.35:d=30:r=44100",
-    "-f", "lavfi", "-i", `aevalsrc=0.05*(${buzz})*(1+0.25*sin(2*PI*0.13*t)):s=44100:d=30`,
-    "-f", "lavfi", "-i", "anoisesrc=color=brown:amplitude=0.5:d=30:r=44100",
-    "-f", "lavfi", "-i", `aevalsrc=${chirps}:s=44100:d=30`,
-    "-filter_complex", "[0]highpass=f=250,lowpass=f=5000,volume=0.5[air];[1]highpass=f=200[buzz];[2]lowpass=f=180,volume=0.6[low];[3]volume=0.8[chirp];[air][buzz][low][chirp]amix=inputs=4:normalize=0,afade=t=in:d=0.5",
+    "-f", "lavfi", "-i", "aevalsrc=0.012*sin(2*PI*440*t)+0.004*sin(2*PI*880.7*t):s=44100:d=30",
+    "-filter_complex",
+    "[0]highpass=f=60,lowpass=f=250,volume='0.75+0.25*sin(2*PI*t/6)':eval=frame[engine];" +
+      "[1]highpass=f=250,lowpass=f=1000,volume='0.8+0.2*sin(2*PI*t/6+1)':eval=frame,volume=0.9[body];" +
+      "[engine][body][2]amix=inputs=3:normalize=0,afade=t=in:d=0.5",
   ],
+  beacon: ["-f", "lavfi", "-i", `aevalsrc=0.05*${beep}*(sin(2*PI*(1166*t+67*t*t/30))+0.2*sin(4*PI*(1166*t+67*t*t/30))):s=44100:d=30`],
   hum: ["-f", "lavfi", "-i", "anoisesrc=color=brown:amplitude=0.5:d=30:r=44100", "-f", "lavfi", "-i", "aevalsrc=0.22*sin(2*PI*50*t)+0.12*sin(2*PI*100*t)+0.04*sin(2*PI*150*t):s=44100:d=30", "-filter_complex", "[0]lowpass=f=180[n];[n][1]amix=inputs=2:normalize=0,afade=t=in:d=0.5,volume=0.8"],
   relay: ["-f", "lavfi", "-i", "aevalsrc=(random(0)*2-1)*(0.9*exp(-t*260)+0.6*gte(t\\,0.035)*exp(-(t-0.035)*300)):s=44100:d=0.15", "-af", "highpass=f=700,lowpass=f=6000"],
   printer: ["-f", "lavfi", "-i", "aevalsrc=(random(0)*2-1)*0.5*exp(-mod(t\\,0.022)*420)*(0.7+0.3*sin(2*PI*2.5*t)):s=44100:d=12", "-af", "bandpass=f=2200:width_type=h:w=1800"],
