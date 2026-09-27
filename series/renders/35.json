@@ -1,10 +1,10 @@
 {
  "hexagram": 35,
- "rendered": "2026-09-26T15:09:53.849Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "rendered": "2026-09-27T01:18:53.476Z",
+ "commit": "58757c9917ca4ad56c9b9ec33863aa9cdc4d3592",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 31.317333,
+ "shareKbps": 5747,
  "props": {
   "hexagram": {
    "number": 35,
@@ -20,11 +20,11 @@
     1
    ]
   },
-  "bpm": 100.05,
-  "firstBeat": 0,
-  "music": "local/music/pick22-cinematic-dark-synthwave.mp3",
-  "musicStart": 206.613,
-  "drop": 14.394,
+  "bpm": 97,
+  "firstBeat": 0.334,
+  "music": "local/music/pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3",
+  "musicStart": 0,
+  "drop": 10.23,
   "hook": "Finally getting recognized?",
   "meaning": [
    "Progress says:\ncharacter first.",
@@ -58,20 +58,20 @@
   },
   "pace": "even",
   "credit": false,
-  "hexagramClip": "assets/3d/hexagram-000101-100.05bpm-8b.mp4",
+  "hexagramClip": "assets/3d/hexagram-000101-97bpm-13b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-flip-000101-100.05bpm-9b.mp4",
+   "clip": "assets/3d/endcard-flip-000101-97bpm-9b.mp4",
    "mode": "flip"
   }
  },
  "files": {
-  "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
-  "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
-  "assets/3d/hexagram-000101-100.05bpm-8b.mp4": "e6a996ea84dfc890c834745cb4bbc0a32d834eeb6efd688f6a809c72fda9c3bf",
-  "assets/3d/endcard-flip-000101-100.05bpm-9b.mp4": "35ca1639549eed593134b018f75256e33916be70347e2dd10b96a2a12e64466b",
+  "local/music/pick08-synthwave-pop-retro-80s-fashion-nostalgi.mp3": "6f2b033a8993fb30096270716a0b4b310c7954e69710cb624e65e61ae9b8e5e2",
+  "local/music/certificates/synthwave-synthwave-pop-retro-80s-fashion-nostalgic-vintage-happy-177894-license.txt": "cdcf2958c983a2ef844948a006d6f86e5678ac30bac21385466fac6db590a119",
+  "assets/3d/hexagram-000101-97bpm-13b.mp4": "6f1e00b0e9157f0e2ad9d62c3245f9ea6f098b9ba6a5ade09d329bb2fa983240",
+  "assets/3d/endcard-flip-000101-97bpm-9b.mp4": "5fa1e67cef415350d6bac5876379cc649fec906ba5a79402e36744d34c27d4ca",
   "assets/yilin/stipple-35-19.webp": "f2b6a9faf90bfef1fb195c72d85e833c6704325ede2a51d73606cf556be9c9b6",
   "assets/yilin/stipple-35-56.webp": "3066700d609b62af21917eb6986ee15f3eb77f9ebcab892e1569153cfb6d258f",
-  "out/series/35-jin/short.mp4": "d31abf624c2350d2153c018ca8fac9f77ab7b433e29a44b652d5a5b7b9259854",
-  "out/series/35-jin/share.mp4": "3c6505fcc531d5aa46d80e22eff6cf20b5b569699cca9efa490339e959760899"
+  "out/series/35-jin/short.mp4": "ee34c1f94d3b43026863e9a18519f62f1f7fff96230fcbae3544fe4a71de1086",
+  "out/series/35-jin/share.mp4": "93bb100b9a964dfade3d5d45cf40f9f2e043d779b9f1610303b848dbd4479ae4"
  }
 }
