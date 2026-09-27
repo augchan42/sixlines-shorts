@@ -3362,17 +3362,16 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Out of danger?\nThen don't linger.",
-    "source": "series/critic/readouts/drafts.json#40",
+    "text": "Out of danger?\nForgive, and move on.",
+    "source": "series/critic/depth/review.json#40; Great Image 君子以赦過宥罪 (the noble one pardons faults and forgives offences); the user, 2026-09-28: 'sure fix them' (after 49 and 46: 'i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'); Codex's review agrees (docs/research/2026-09-27-codex-rewrite-options.md)",
     "readout": {
      "mark": [
-      3,
-      4,
-      5
+      4
      ],
-     "finding": "THUNDER BREAKS OUT OF THE WATER."
+     "finding": "LINE 5: THE NOBLE ONE LETS GO.\nEVEN THE PETTY HOLD NO GRUDGE.",
+     "timed": true
     },
-    "readout_source": "judgment: act promptly; image: pardons"
+    "readout_source": "六五 君子維有解，吉。有孚于小人 (the noble one alone can release; even petty people trust him); Wang Bi 猶知服之而无怨矣 (they still yield and bear no grudge)"
    },
    "endcardRef": true
   },
@@ -4803,16 +4802,16 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Bend only to\nwhat is right.",
-    "source": "series/critic/readouts/drafts.json#57",
+    "text": "People change slowly.\nSay it again, gently.",
+    "source": "series/critic/depth/review.json#57; Great Image 君子以申命行事 (the noble one repeats the charge and carries out affairs); the user, 2026-09-28: 'sure fix them' (after 49 and 46: 'i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'); Codex's review agrees (docs/research/2026-09-27-codex-rewrite-options.md)",
     "readout": {
      "mark": [
-      0,
-      3
+      4
      ],
-     "finding": "EACH SOFT LINE SITS UNDER A STRONG."
+     "finding": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
+     "timed": true
     },
-    "readout_source": "image: reiterates commands"
+    "readout_source": "九五 先庚三日，後庚三日 (three days before, three days after); Wang Bi 以正齊物，不可卒也 (setting people right can't be done all at once)"
    },
    "endcardRef": true
   },
@@ -5066,19 +5065,19 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "A lake holds only\nso much water.",
-    "source": "series/critic/readouts/drafts.json#60",
+    "text": "Set limits\nyou can keep.",
+    "source": "series/critic/depth/review.json#60; Judgment 苦節不可貞 (bitter limits can't be kept); the user, 2026-09-28: 'sure fix them' (after 49 and 46: 'i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'); Codex's review agrees (docs/research/2026-09-27-codex-rewrite-options.md)",
     "readout": {
      "mark": [
       4
      ],
-     "finding": "THE STRONG HOLDS THE CENTRE.",
+     "finding": "LINE 5: A SWEET LIMIT.\nIT KEEPS TO THE MIDDLE.",
      "master": {
       "zh": "為節之主",
       "en": "Master of Limitation"
      }
     },
-    "readout_source": "image"
+    "readout_source": "九五 甘節，吉 (a sweet limit, good); Small Image 居位中也 (it keeps to the middle); Wang Bi 為節而不苦 (a limit that isn't bitter). Line 5 is Wang Bi's master, so the master stays."
    },
    "endcardRef": true
   },
