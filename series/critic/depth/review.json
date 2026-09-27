@@ -1,0 +1,1534 @@
+{
+ "shorts": [
+  {
+   "number": 1,
+   "depth": 6,
+   "issues": [
+    "surface-only: states Heaven's image but not the human half, 自強不息 (make yourself strong, without stopping)",
+    "hook doesn't lead to the lesson: the viewer waiting for a sign is not told what to do"
+   ],
+   "lesson": {
+    "text": "Don't wait for a sign.\nKeep yourself strong.",
+    "basis": "Great Image 天行健，君子以自強不息 (Heaven moves strongly; the noble one makes himself strong and never stops). The strength comes from oneself, not from outside."
+   },
+   "finding": {
+    "line": 3,
+    "text": "LINE 3: TIRELESS ALL DAY.\nALERT, IT MISSES NO MOMENT.",
+    "basis": "Line 3 君子終日乾乾，夕惕若厲，無咎 (the noble one is tireless all day, wary at night as if in danger: no blame); Wang Bi 因時而惕，不失其幾 (wary as the time requires, it does not miss the moment)."
+   },
+   "promises": [],
+   "note": "The lesson quotes the image half of the Great Image and leaves out the person. Line 3 is the human form of 自強不息, and Wang Bi gives its reason: alertness to the moment, not anxiety.",
+   "current": {
+    "hook": "Waiting for a sign to start?",
+    "lesson": "Heaven never\ntakes a day off.",
+    "finding": "SIX STRONG LINES. NO REST."
+   },
+   "checks": []
+  },
+  {
+   "number": 2,
+   "depth": 6,
+   "issues": [
+    "surface-only: lead vs follow names the act, not the stance behind it",
+    "promises an outcome: 'Follow and arrive' reads as a sure result"
+   ],
+   "lesson": {
+    "text": "Keep your shine in.\nSee the work through.",
+    "basis": "Line 3 含章可貞…无成有終 (holds its brilliance within, can stay correct… no credit for starting, yet brings it to an end); Small Image 以時發也 (it shows at the right time); Wang Bi 不為事主，順命而終 (not the master of the affair, it follows the charge to the end)."
+   },
+   "finding": {
+    "line": 3,
+    "text": "LINE 3: HIDES ITS SHINE.\nSHOWS IT WHEN THE TIME COMES.",
+    "basis": "Line 3 含章可貞 (holds its brilliance within); Small Image 含章可貞，以時發也 (it keeps it in so it can come out at the right time)."
+   },
+   "promises": [
+    {
+     "where": "lesson",
+     "text": "Lead and get lost.\nFollow and arrive.",
+     "rewrite": "Keep your shine in.\nSee the work through."
+    }
+   ],
+   "note": "The Tuan's 先迷失道，後順得常 (going first loses the way, following keeps to the constant) is the source, but it stays at lead/follow. Line 3 gives the inner side: talent held back, not suppressed, and a finish that counts though someone else started.",
+   "current": {
+    "hook": "Tired of always having to lead?",
+    "lesson": "Lead and get lost.\nFollow and arrive.",
+    "finding": "SIX YIELDING LINES. ALL FOLLOW."
+   },
+   "checks": []
+  },
+  {
+   "number": 3,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'don't push, win helpers' is the act; the text's reason is the steady aim and staying low",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Pause, but aim true.\nStay low, win help.",
+    "basis": "Line 1 磐桓，利居貞，利建侯 (lingering; good to stay correct, good to set up helpers); Small Image 雖磐桓，志行正也 (though it lingers, its aim goes straight); Wang Bi 初處其首而又下焉…宜其得民 (at the head, yet it places itself below, so it rightly wins the people)."
+   },
+   "finding": {
+    "line": 1,
+    "text": "AT THE BASE: IT LINGERS,\nBUT ITS AIM STAYS TRUE.",
+    "basis": "Line 1 磐桓 (lingering); Small Image 雖磐桓，志行正也 (though it lingers, its aim goes straight)."
+   },
+   "promises": [],
+   "note": "The current lesson sits at the centre (Judgment 勿用有攸往，利建侯) but only as instructions. Line 1's Small Image and Wang Bi give why the pause is not weakness: the aim is set, and helpers come because it puts itself below them.",
+   "current": {
+    "hook": "Big start, total chaos?",
+    "lesson": "Don't push yet.\nWin helpers first.",
+    "finding": "STRONG AT THE BASE, BELOW THE WEAK."
+   },
+   "checks": []
+  },
+  {
+   "number": 4,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook makes the viewer the asker, the lesson speaks for the teacher",
+    "surface-only: states a rule of conduct, not the learner's stance",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Ask once, humbly.\nThen take the answer.",
+    "basis": "Judgment 初筮告，再三瀆，瀆則不告 (the first asking is answered; asking two or three times is disrespect, and disrespect gets no answer); line 5 Small Image 童蒙之吉，順以巽也 (the young learner does well by being yielding and humble)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: YOUTHFUL FOLLY, GOOD.\nHUMBLE, IT LETS 2 TEACH IT.",
+    "basis": "Line 5 童蒙吉 (youthful folly: good); Small Image 順以巽也 (yielding and humble); Wang Bi 不自任察而委於二 (it does not rely on its own cleverness but entrusts itself to line 2)."
+   },
+   "promises": [],
+   "note": "The hexagram's centre is the learner's attitude: 瀆 (asking again) is disrespect, and line 5 shows the right stance. That turns 'teachers don't chase' into what the viewer should do.",
+   "current": {
+    "hook": "Asking again for a better answer?",
+    "lesson": "Teachers don't\nchase students.",
+    "finding": "THE YOUTH (5) SEEKS THE TEACHER (2)."
+   },
+   "checks": []
+  },
+  {
+   "number": 5,
+   "depth": 6,
+   "issues": [
+    "surface-only: eat, rest, wait names the acts; the text's reason is confidence and strength that doesn't rush in"
+   ],
+   "lesson": {
+    "text": "In the rain? Rest,\nready, not worried.",
+    "basis": "Judgment 需，有孚 (Waiting: there is trust); Tuan 險在前也。剛健而不陷 (danger is ahead; strong, it does not fall in); Great Image 君子以飲食宴樂 (the noble one eats, drinks and is at ease)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "Eating and resting are the image; the Tuan says why they are right: the danger is ahead, and a strong one that is sure of itself need not walk into it. The proposal keeps the rain-then-rest animation.",
+   "current": {
+    "hook": "Stuck waiting for your moment?",
+    "lesson": "In the rain?\nEat, rest, wait.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 6,
+   "depth": 5,
+   "issues": [
+    "side image / wrong emphasis: the hexagram's centre is 中吉終凶 (stop midway: good; to the end: bad), which the meaning cards say and the lesson drops",
+    "surface-only: 'take it to a judge' is an outward act",
+    "promises an outcome: 'Pushing to the end costs you'",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "A win by fighting\nearns no respect.",
+    "basis": "Line 6 或錫之鞶帶，終朝三褫之 (he may be given a belt of honour, and it is stripped from him three times in a morning); Small Image 以訟受服，亦不足敬也 (honour gained by contention is not worth respect). Judgment 終凶 (to the end: bad)."
+   },
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+    "basis": "Line 6 終朝三褫之 (stripped three times in a morning); Small Image 以訟受服，亦不足敬也 (honour won by contention is not worth respect)."
+   },
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Pushing to the end\ncosts you.",
+     "rewrite": "Don't push it\nto the end."
+    }
+   ],
+   "note": "The hook ('right about it') is answered best by line 6: even the winner of a fight gains nothing worth having. This moves the finding off line 5, whose master label would need to go.",
+   "current": {
+    "hook": "Fighting over something you’re right about?",
+    "lesson": "Take it to\na fair judge.",
+    "finding": "HEAVEN RISES. WATER SINKS. APART."
+   },
+   "checks": []
+  },
+  {
+   "number": 7,
+   "depth": 8,
+   "issues": [
+    "promises an outcome: 'the ranks fall in' reads as a sure result"
+   ],
+   "lesson": null,
+   "finding": null,
+   "promises": [
+    {
+     "where": "lesson",
+     "text": "Lead upright,\nthe ranks fall in.",
+     "rewrite": "Lead upright,\nso the ranks can be."
+    }
+   ],
+   "note": "Rests on the Tuan's 能以眾正，可以王矣 (able to make the many upright, one can rule): the leader's own uprightness is the reason people follow. Deep enough; only the result wording is too sure.",
+   "current": {
+    "hook": "Leading a team through something hard?",
+    "lesson": "Lead upright,\nthe ranks fall in.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 8,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook and cards are about coming late, the lesson is about choosing company",
+    "side image: choosing partners is lines 3 and 4; the centre is sincerity and timing (原筮…後夫凶)",
+    "promises an outcome: 'Late arrivals miss out'"
+   ],
+   "lesson": {
+    "text": "Come in good faith,\nand come in time.",
+    "basis": "Line 1 有孚比之，无咎 (hold together with trust: no blame); Judgment 原筮，元永貞…後夫凶 (look again at yourself: sound, lasting, correct… the one who comes last: bad); Tuan 後夫凶，其道窮也 (the latecomer's way runs out)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Late arrivals\nmiss out.",
+     "rewrite": "Don't be the\nlast to come."
+    }
+   ],
+   "note": "The animation (a figure walking up to stand beside another) fits joining in time and in good faith better than choosing. The Judgment asks the joiner to check their own sincerity first.",
+   "current": {
+    "hook": "Keep saying you’ll join later?",
+    "lesson": "Choose who you\nstand beside",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 9,
+   "depth": 4,
+   "issues": [
+    "hook doesn't lead to the lesson: the viewer is the one held back, but the lesson speaks for the small force doing the holding",
+    "surface-only: states the shape, not a stance",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Held back? Don't force it.\nKeep to your own path.",
+    "basis": "Line 1 復自道，何其咎？吉 (returning by its own path, what blame? good); Small Image 其義吉也 (it is right to do so); Wang Bi 順而无違，何所犯咎 (it goes along and does not resist, so what fault could there be). Line 3 輿說輻 (the cart loses its spokes) shows forcing ahead."
+   },
+   "finding": {
+    "line": 1,
+    "text": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+    "basis": "Line 1 復自道 (returns by its own path); Wang Bi 順而无違，何所犯咎 (it goes along without resisting, so incurs no fault)."
+   },
+   "promises": [],
+   "note": "The hook and cards ('not yet', 'work on yourself') speak to the strong lines being held. Their right stance is lines 1 and 2 (return, don't lose yourself: 亦不自失), set against line 3's broken cart.",
+   "current": {
+    "hook": "Everything’s ready, nothing happens?",
+    "lesson": "Small can hold\nbig, for a while.",
+    "finding": "ONE YIELDING LINE HOLDS FIVE."
+   },
+   "checks": []
+  },
+  {
+   "number": 11,
+   "depth": 7,
+   "issues": [
+    "surface-only (mild): 'talk' is the act; the Tuan's reason is that high and low come to share one aim"
+   ],
+   "lesson": {
+    "text": "High and low talk\nand find one aim.",
+    "basis": "Tuan 天地交而萬物通也，上下交而其志同也 (heaven and earth meet and all things flow; high and low meet and their aims become one)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The lesson is at the centre (天地交). It stops one step short: contact is the means, a shared aim is what makes it peace.",
+   "current": {
+    "hook": "Good times, now what?",
+    "lesson": "High and low talk:\nthat is peace.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 12,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'turn down rewards' is the act; the Great Image gives the stance behind it"
+   ],
+   "lesson": {
+    "text": "Keep your worth quiet.\nDon't be bought.",
+    "basis": "Great Image 君子以儉德辟難，不可榮以祿 (the noble one keeps his virtue restrained to avoid trouble, and cannot be honoured with pay); line 2 Small Image 大人否亨，不亂群也 (the great one refuses, and so does not mix with the crowd)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "Rewards are refused because in a standstill they come from 匪人 (the wrong people) and would tie you to them. 儉德 (restrained virtue) is the inner half the current lesson leaves out.",
+   "current": {
+    "hook": "Everything stuck and no one’s talking?",
+    "lesson": "High and low part:\nturn down rewards.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 13,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": 2,
+    "text": "LINE 2: ONLY WITH THE CLAN.\nA NARROW WAY. REGRET.",
+    "basis": "Line 2 同人于宗，吝 (fellowship with the clan only: regret); Small Image 同人于宗，吝道也 (fellowship only with the clan is a narrow, stingy way)."
+   },
+   "promises": [],
+   "note": "'On principle, not on kinship' names the reason (Tuan 唯君子為能通天下之志: only the noble one can reach the aims of all) and answers the hook. The finding just needs line 2's image with its reason.",
+   "current": {
+    "hook": "Same five friends for years?",
+    "lesson": "Join on principle,\nnot on kinship.",
+    "finding": "2 AND 5 ANSWER, BOTH CENTRED."
+   },
+   "checks": []
+  },
+  {
+   "number": 14,
+   "depth": 7,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook is having more than others, the lesson jumps to leading",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Ahead of the rest?\nTrust, don't guard.",
+    "basis": "Line 5 厥孚交如，威如，吉 (its trust is shared both ways; dignified: good); Small Image 信以發志也…易而无備也 (trust wakes others' aims… at ease, without guarding); Wang Bi 不疑於物，物亦誠焉 (it does not doubt others, so others are sincere with it)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: TRUST GOES BOTH WAYS.\nIT DOUBTS NO ONE, SO NO GUARD.",
+    "basis": "Line 5 厥孚交如 (trust goes both ways); Small Image 易而无備也 (at ease, without guard); Wang Bi 不疑於物，物亦誠焉 (not doubting others, they are sincere in turn)."
+   },
+   "promises": [],
+   "note": "Trust is the right inner stance (the soft ruler holding five strong lines). The Small Image says what it means for someone who has much: no need to guard it.",
+   "current": {
+    "hook": "Doing better than everyone around you?",
+    "lesson": "Lead by trust,\nnot force.",
+    "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER."
+   },
+   "checks": []
+  },
+  {
+   "number": 15,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook is about credit, the lesson about having the most",
+    "surface-only: 'step back' is an act",
+    "promises an outcome: 'No one stops the quiet ones'"
+   ],
+   "lesson": {
+    "text": "Do the work, claim less.\nMean it, not for show.",
+    "basis": "Line 3 勞謙，君子有終，吉 (working hard and modest, the noble one finishes: good); line 2 Small Image 鳴謙貞吉，中心得也 (modesty that is known is good because it is real in the heart)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "No one stops\nthe quiet ones.",
+     "rewrite": "Quiet work\nstill counts."
+    }
+   ],
+   "note": "Line 3 is the hexagram's only strong line and its centre: the one who does the work and stays modest. Line 2's Small Image gives the reason modesty holds: it is meant, not displayed.",
+   "current": {
+    "hook": "Always needing credit?",
+    "lesson": "Having the most,\nstep back.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 16,
+   "depth": 6,
+   "issues": [
+    "surface-only: a clear voice is the image; the Tuan's reason is moving in accord (順以動)",
+    "promises an outcome: 'moves the crowd'",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Move with them,\nnot at them.",
+    "basis": "Tuan 豫，順以動 (Enthusiasm: it moves by going along with things); 聖人以順動，則刑罰清而民服 (the sage moves in accord, so punishment is light and the people accept); line 1 鳴豫，凶 (announcing your joy: bad)."
+   },
+   "finding": {
+    "line": 4,
+    "text": "LINE 4: JOY STARTS HERE.\nIT TRUSTS, SO FRIENDS GATHER.",
+    "basis": "Line 4 由豫，大有得。勿疑，朋盍簪 (enthusiasm comes from here; much is gained; do not doubt, and friends gather quickly); Wang Bi 夫不信於物，物亦疑焉 (if you don't trust others, they doubt you too)."
+   },
+   "promises": [
+    {
+     "where": "lesson",
+     "text": "One clear voice\nmoves the crowd.",
+     "rewrite": "Move with them,\nnot at them."
+    }
+   ],
+   "note": "Line 1 (a loud voice: bad) warns against what 'one clear voice' can sound like. The Tuan's 順以動 is the centre, and line 4 gathers friends by trusting them, not by being loud.",
+   "current": {
+    "hook": "All fired up, nowhere to go?",
+    "lesson": "One clear voice\nmoves the crowd.",
+    "finding": "ONE STRONG LINE. FIVE FOLLOW IT."
+   },
+   "checks": []
+  },
+  {
+   "number": 17,
+   "depth": 6,
+   "issues": [
+    "hook doesn't lead to the lesson: hook and cards are the Great Image (go in and rest at dusk), the lesson is the Tuan's shape (the strong goes below the weak)",
+    "side image: the hexagram's centre is 隨時, following the time",
+    "finding lacks reason (shape only)"
+   ],
+   "lesson": {
+    "text": "Follow the hour,\nnot your wants.",
+    "basis": "Tuan 天下隨時，隨時之義大矣哉 (all under heaven follows the time; great is the meaning of following the time). Wang Bi on line 1: 隨不以欲，以欲隨宜 (he follows not from desire; he bends desire to what fits). Great Image 君子以嚮晦入宴息 (at dusk the noble one goes in and rests)."
+   },
+   "finding": {
+    "line": 1,
+    "text": "AT THE BASE: THE POST CHANGES.\nFOLLOW WHAT FITS, NOT WANTS.",
+    "basis": "Line 1 官有渝 (the post changes); Small Image 從正吉也 (following what is right is good); Wang Bi 隨不以欲，以欲隨宜 (follows not from desire but by what fits)."
+   },
+   "promises": [],
+   "note": "'To be followed, follow first' is a sound Tuan reading but it answers a leadership question the hook never asks. Following the time, not desire, is the hexagram's centre and answers 'still at your desk after dark'.",
+   "current": {
+    "hook": "Still at your desk after dark?",
+    "lesson": "To be followed,\nfollow first.",
+    "finding": "THE STRONG GOES BELOW THE WEAK."
+   },
+   "checks": []
+  },
+  {
+   "number": 18,
+   "depth": 5,
+   "issues": [
+    "surface-only: names the act (clean it out) but not the stance",
+    "misses the hexagram's reason: five lines repair what the father left, and the Small Images say the aim is to carry it on (意承考, 承以德)"
+   ],
+   "lesson": {
+    "text": "Clean out the rot,\nkeep what was good.",
+    "basis": "Line 1 Small Image 幹父之蠱，意承考也 (setting right the father's spoiled work: the aim is to carry on from him). Line 5 幹父用譽，承以德也 (carries it on through virtue). Line 4 裕父之蠱，往未得也 (letting the rot slide gets nowhere). Fits the animation: the worms pour out, the bowl stays."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Rushed repairs\ndon’t hold.",
+     "rewrite": "Plan before,\ncheck after."
+    }
+   ],
+   "note": "Repair in 蠱 is loyal, not a purge: you fix what those before you left so their work can go on. The judgment's 先甲三日，後甲三日 (three days before, three days after) is the plain basis for the card rewrite.",
+   "current": {
+    "hook": "Something rotting under the surface?",
+    "lesson": "Found rot?\nClean it out.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 19,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'care for your people' is an outward act with no reason",
+    "hook doesn't lead to the lesson: cards are about autumn coming, lesson is about people"
+   ],
+   "lesson": {
+    "text": "Lean down, and\ntrust your people.",
+    "basis": "Line 5 知臨，大君之宜 (approaching with wisdom: what befits a great ruler); Wang Bi 委物以能而不犯焉，則聰明者竭其視聽 (he gives each task to the able and does not meddle, so the able give all they have). Great Image 容保民无疆 (embrace and protect the people without limit). Fits the animation: the eye leans down and the three squares light up."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "When things take off, 臨 is about how the one above approaches those below: by real response (咸臨) and trust (知臨), not sweet talk (甘臨, line 3). Trust gives the reason the growth can outlast the autumn in card 2.",
+   "current": {
+    "hook": "Things finally taking off?",
+    "lesson": "Lean down. Care\nfor your people.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 20,
+   "depth": 6,
+   "issues": [
+    "hook doesn't lead to the lesson: hook and cards say go and look, the lesson says you are watched",
+    "finding lacks reason (shape only)"
+   ],
+   "lesson": {
+    "text": "Go look at your people.\nThey show how you lead.",
+    "basis": "Line 5 觀我生 (look at my own life); Small Image 觀民也 (that is, look at the people); Wang Bi 觀民之俗，以察己道 (observe the people's ways to examine your own way). Great Image 先王以省方觀民設教 (the former kings toured the regions and observed the people)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
+    "basis": "Line 5 觀我生，君子无咎 (look at my own life; the noble one is without blame); Small Image 觀我生，觀民也 (to look at my life is to look at the people). Line 5 is the master already marked."
+   },
+   "promises": [],
+   "note": "觀 means both looking and being looked at, and line 5 joins them: the ruler sees his own conduct in the people. This keeps the hook's 'go and see' and the current lesson's 'people watch you' in one line. The audit's line 4 (guest of the king) is a side image.",
+   "current": {
+    "hook": "Deciding from behind a desk?",
+    "lesson": "People watch\nhow you prepare.",
+    "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP."
+   },
+   "checks": []
+  },
+  {
+   "number": 21,
+   "depth": 7,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook is a thing blocking you, 'warn' assumes a person",
+    "leaves out measure: lines 2 and 5 turn on biting as hard as the fault, no harder (得當)"
+   ],
+   "lesson": {
+    "text": "Be clear first,\nthen bite in measure.",
+    "basis": "Tuan 動而明 (act, and be clear); Great Image 先王以明罰勑法 (make penalties clear and set the law in order); line 5 Small Image 貞厲无咎，得當也 (no blame, because it fits); line 2 Wang Bi 噬過其分，故滅鼻 (bites past its share, so the nose is lost)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "It won’t clear\nby itself.",
+     "rewrite": "Don’t wait for it\nto clear itself."
+    }
+   ],
+   "note": "The current lesson is close; the hexagram's reason is clarity (明) and a bite that fits the fault. Line 1's 小懲大誡 (small punishment, great warning) backs 'warn first' if the user prefers to keep it.",
+   "current": {
+    "hook": "Something blocking you for weeks?",
+    "lesson": "Warn clearly,\nthen bite.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 22,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason: 'AT THE TOP: PLAIN WHITE.' gives the image only"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: PLAIN WHITE.\nIT KEEPS TO WHAT IT IS.",
+    "basis": "Line 6 白賁，无咎 (plain white adornment, no blame); Wang Bi 飾終反素，故在其質素，不勞文飾 (at adornment's end it returns to plain: it keeps to its plain substance and does not toil at ornament)."
+   },
+   "promises": [],
+   "note": "Settled with the user; the lesson holds. The finding is the one rule from 10 it misses, so the reason line is offered as an option only.",
+   "current": {
+    "hook": "Polishing the slides instead of deciding?",
+    "lesson": "Plain is the best\nadornment.",
+    "finding": "AT THE TOP: PLAIN WHITE."
+   },
+   "checks": []
+  },
+  {
+   "number": 23,
+   "depth": 7,
+   "issues": [
+    "lesson restates card 2 ('help those below you') without the reason",
+    "reason missing: the top is secure only because the base carries it"
+   ],
+   "lesson": {
+    "text": "Shore up the base.\nThe top rests on it.",
+    "basis": "Great Image 山附於地，剝。上以厚下安宅 (the mountain rests on the earth: those above make the base thick, and the house is secure). Line 6 Small Image 君子得輿，民所載也 (the noble one gets a carriage: the people carry him). Fits the animation: pieces fall until only the base stands."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "In 剝 the lines strip the bed from the feet up; the one strong line at the top survives only by what is under it. The reason makes 'shore up the base' more than an act.",
+   "current": {
+    "hook": "Everything falling apart?",
+    "lesson": "Falling apart?\nShore up the base.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 24,
+   "depth": 7,
+   "issues": [
+    "hook doesn't quite lead to the lesson: hook is after a long bad stretch, lesson says 'early'",
+    "reason left out: the Small Image gives 以脩身也 (to mend the self), the lesson stops at the act"
+   ],
+   "lesson": {
+    "text": "Turn back early,\nand mend yourself.",
+    "basis": "Line 1 不遠復，无祗悔，元吉 (returning from not far, no great regret); Small Image 不遠之復，以脩身也 (returning from not far is how one mends oneself); Wang Bi 幾悔而反，以此脩身，患難遠矣 (he turns back at the first sign of regret, and by this mends himself)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Rest. Only rushing\nstops it.",
+     "rewrite": "Rest first.\nDon't rush it."
+    }
+   ],
+   "note": "The source already names 以脩身; the lesson just needs to say it. Option instead: change the hook to fit 'early' (e.g. a first slip), since line 3 頻復 (returning again and again) is the line for a long bad stretch.",
+   "current": {
+    "hook": "Coming back after a bad stretch?",
+    "lesson": "See your misstep,\nturn back early.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 25,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason (shape only)",
+    "meaning 2 promises a result"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": 2,
+    "text": "LINE 2: PLOW, NOT FOR CROPS.\nIT IS NOT AFTER GAIN.",
+    "basis": "Line 2 不耕穫 (read with Cheng Yi and Zhu Xi as working without counting on the harvest); Small Image 不耕穫，未富也 (not for riches); Wang Bi 不擅其美，乃盡臣道 (he does not claim the credit; that is the full way of one who serves). Wang Bi reads the image as reaping what another began; his reason (not for his own gain) still supports the second line."
+   },
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Stop faking,\nand it works.",
+     "rewrite": "Stop faking.\nMean what you do."
+    }
+   ],
+   "note": "'Do what's right, not what pays' names the motive, which is the centre of 无妄: action without scheming. The finding option leans on the later reading of line 2's image, so the user may prefer the plain shape finding with no line.",
+   "current": {
+    "hook": "Hiding your real reasons?",
+    "lesson": "Do what's right,\nnot what pays.",
+    "finding": "A STRONG LINE COMES IN AT THE BASE."
+   },
+   "checks": []
+  },
+  {
+   "number": 26,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'store up, then use' is a sequence of acts with no reason",
+    "finding lacks reason (shape only)"
+   ],
+   "lesson": {
+    "text": "Train, then go out\nwhen the time is right.",
+    "basis": "Line 3 曰閑輿衛，利有攸往 (drill the chariot and guard daily; it pays to set out); Wang Bi 進得其時 (he advances at the right time) and 畜極則通 (stored to the full, it breaks through). Great Image 君子以多識前言往行，以畜其德 (learns the words and deeds of the past to store up virtue)."
+   },
+   "finding": {
+    "line": 3,
+    "text": "LINE 3: DRILL, THEN RIDE OUT.\nIT GOES AT THE RIGHT TIME.",
+    "basis": "Line 3 良馬逐…曰閑輿衛，利有攸往 (good horses race; drill the chariot daily; it pays to set out); Wang Bi 進得其時，雖涉艱難而无患也 (advancing at its time, it crosses hardship without harm)."
+   },
+   "promises": [],
+   "note": "Lines 1 and 2 are held back (有厲利已, 輿說輹) and line 3 goes when storing is full; timing is the reason the text gives. The audit's line 3 is right; this adds the reason line from Wang Bi.",
+   "current": {
+    "hook": "Years of practice, nobody’s seen it?",
+    "lesson": "Store up strength,\nthen use it.",
+    "finding": "THE MOUNTAIN HOLDS HEAVEN IN."
+   },
+   "checks": []
+  },
+  {
+   "number": 27,
+   "depth": 5,
+   "issues": [
+    "surface-only: guard your mouth is the Great Image's act",
+    "lesson repeats meaning 1 and 2",
+    "misses the reason: 頤 is about what you nourish (養正則吉)"
+   ],
+   "lesson": {
+    "text": "Guard your mouth.\nFeed what is right.",
+    "basis": "Great Image 君子以慎言語，節飲食 (careful in speech, moderate in food and drink). Tuan 頤，貞吉，養正則吉也。觀頤，觀其所養也 (nourishing what is right is good; look at the jaws to see what one nourishes). Line 1 Wang Bi 守道則福至，求祿則辱來 (keep the way and good comes; chase reward and disgrace comes)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The judgment and Tuan say you can see a person by what they feed themselves and others; care with food and words is how that shows. The lesson should name what the guarding serves.",
+   "current": {
+    "hook": "Said something you regret at dinner?",
+    "lesson": "Guard your mouth:\nfood and words.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 28,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'brace them now' is an act",
+    "misses the reason the lines give: the rigid line 3 holds only its own place and sags, lines 2 and 4 lend strength to the weak"
+   ],
+   "lesson": {
+    "text": "Don't just hold it.\nProp up what's weak.",
+    "basis": "Tuan 棟橈，本末弱也 (the ridgepole sags: root and tip are weak). Line 3 Small Image 棟橈之凶，不可以有輔也 (the sagging ridgepole cannot be helped); Wang Bi 自守所居，不能救危拯弱 (holds only its own place, cannot rescue the weak). Line 2 Wang Bi 能過其本而救其弱 (goes past its own place to rescue the weak)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The hook's viewer is the overloaded middle; line 3 shows the strong one that only holds its place and breaks, and lines 2 and 4 share strength with the weak ends. That is the reason behind bracing.",
+   "current": {
+    "hook": "Under too much weight?",
+    "lesson": "The ends give way.\nBrace them now.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 29,
+   "depth": 6,
+   "issues": [
+    "wrong reading, partly: 信 in the Tuan is water staying true to its course, 'keep your word' reads as a promise to others",
+    "hook doesn't lead to the lesson: one problem after another, answered with promise-keeping"
+   ],
+   "lesson": {
+    "text": "Keep moving.\nHold firm inside.",
+    "basis": "Judgment 有孚，維心亨 (with trust, only the heart gets through); Tuan 水流而不盈，行險而不失其信 (water flows and does not pile up; through danger it does not lose its trust) and 維心亨，乃以剛中也 (the heart gets through by the firmness at its centre)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The two strong centre lines are the point: danger outside, firm within, and water keeps flowing. Close to 10's 'steady inside', so the user may want different words.",
+   "current": {
+    "hook": "One problem after another?",
+    "lesson": "Through danger,\nkeep your word.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 30,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: burnout is answered with an abstract 'cling to what is right'",
+    "side reading: misses line 4, the blaze that comes, burns, dies and is cast off"
+   ],
+   "lesson": {
+    "text": "Fire lives on what\nit clings to. Choose well.",
+    "basis": "Tuan 離，麗也。日月麗乎天，百穀草木麗乎土 (Li is clinging: sun and moon cling to the sky, grain and plants to the soil) and 柔麗乎中正，故亨 (the yielding clings to the central and correct, so it goes through). Line 4 突如其來如，焚如，死如，棄如 (it comes suddenly, blazes, dies, is cast off); Wang Bi 欲進其盛 (it pushes its blaze)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "Fire has no body of its own and lasts only by what it holds to; line 4 is burnout from forcing the blaze. The reason (fire lives on what it clings to) links the hook, 'keep it fed', and the Tuan.",
+   "current": {
+    "hook": "Brilliant once,\nthen burnt out?",
+    "lesson": "Like fire, cling\nto what is right.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 31,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason (shape only)"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": null,
+    "text": "ALL THREE PAIRS ANSWER.\nEACH MOVES AND IS MOVED.",
+    "basis": "Tuan 柔上而剛下，二氣感應以相與 (the soft above, the firm below; the two move and answer each other and join). Shape finding kept, so no LINE prefix; line 4 (the heart) was the only single-line option and it carries a different lesson."
+   },
+   "promises": [],
+   "note": "'Be moved as you move others' is the Tuan's 感應相與 and 男下女 (the man goes below the woman), and the cards carry the Great Image 以虛受人 (receives others by being empty). The hook, cards and lesson hold together.",
+   "current": {
+    "hook": "Listening, but already decided?",
+    "lesson": "Be moved as you\nmove others.",
+    "finding": "ALL THREE PAIRS ANSWER."
+   },
+   "checks": []
+  },
+  {
+   "number": 32,
+   "depth": 8,
+   "issues": [
+    "lesson text lacks a closing period ('keep your course')"
+   ],
+   "lesson": null,
+   "finding": null,
+   "promises": [],
+   "note": "Change shape, keep your course is the Tuan's 四時變化而能久成 (the seasons change and so endure) with the Great Image 立不易方 (stands and does not change direction), and fits the moon animation. If the hook needs a closer link, the Tuan's 終則有始 (each end has a beginning) speaks to 'starting over'.",
+   "current": {
+    "hook": "Starting over again and again?",
+    "lesson": "Change shape,\nkeep your course",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 33,
+   "depth": 6,
+   "issues": [
+    "surface-only: names the timing of leaving, not the stance the text gives (leave without hatred, don't stay attached)",
+    "finding lacks reason: shape readout only",
+    "lineAudit's line 1 reads against the lesson: 遯尾 says 'do not set out' (勿用有攸往)"
+   ],
+   "lesson": {
+    "text": "Leave without anger.\nDon't stay tied.",
+    "basis": "Great Image 君子以遠小人，不惡而嚴 (the noble one keeps away from petty people, not with hatred but with firmness); line 4 Wang Bi 君子好遯，故能舍之，小人繫戀 (the noble one can let go; the petty one stays clinging); line 3 係遯…不能遠害 (tied while retreating, he cannot get clear of harm)"
+   },
+   "finding": {
+    "line": 4,
+    "text": "LINE 4: A GOOD RETREAT.\nHE LETS GO; THE PETTY CLING.",
+    "basis": "九四，好遯，君子吉，小人否 (a retreat he is fond of: good for the noble one, not for the petty one); Wang Bi 故能舍之，小人繫戀 (so he can let go; the petty one clings)"
+   },
+   "promises": [],
+   "note": "Retreat is about the manner of leaving: firm distance without hatred, and not staying bound (line 3) the way the petty do (line 4). The meaning card 'No anger, just distance' already has this; the lesson should carry it rather than timing alone.",
+   "current": {
+    "hook": "Time to walk away?",
+    "lesson": "Go while you still\ncan go freely.",
+    "finding": "TWO YIELDING LINES CREEP UP."
+   },
+   "checks": []
+  },
+  {
+   "number": 34,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason: 'FOUR STRONG LINES PUSH UP' is shape only"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": 3,
+    "text": "LINE 3: RAM BUTTS THE FENCE.\nITS OWN FORCE TRAPS IT.",
+    "basis": "九三，小人用壯，君子用罔…羝羊觸藩，羸其角 (the petty use their strength, the noble do not… the ram butts the fence and its horns get caught); Wang Bi 君子用之以為羅己者也 (the noble one sees such strength as a net around himself)"
+   },
+   "promises": [],
+   "note": "The lesson sits on the Tuan 大者正也 (greatness is being correct) and the Great Image 非禮弗履 (do not tread where it isn't right); it answers 'Finally in charge?'. Only the readout needs the reason.",
+   "current": {
+    "hook": "Finally in charge?",
+    "lesson": "Be strong only\nin what is right.",
+    "finding": "FOUR STRONG LINES PUSH UP."
+   },
+   "checks": []
+  },
+  {
+   "number": 35,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'shine' can read as showing off; the text means brightening your own character (自昭明德)",
+    "finding lacks reason: 'THE SOFT RISES TO THE TOP CENTRE' is position only"
+   ],
+   "lesson": {
+    "text": "Brighten your own light.\nDon't force the climb.",
+    "basis": "Great Image 君子以自昭明德 (the noble one makes his own bright virtue shine); line 6 晉其角…道未光也 (advancing with the horns… his way does not yet shine)"
+   },
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: HORNS FIRST.\nITS WAY DOES NOT YET SHINE.",
+    "basis": "上九，晉其角，維用伐邑 (advancing with the horns, only fit to attack a town); Small Image 道未光也 (the way is not yet bright); Wang Bi 已在乎角，而猶進之，非亢如何 (already at the horn yet still pushing: what is that if not excess?)"
+   },
+   "promises": [],
+   "note": "Progress is advance that comes from being bright and compliant (順而麗乎大明), so others raise you (the lord given horses, received three times a day). Pushing by force (line 6) shows the light hasn't come through yet.",
+   "current": {
+    "hook": "Finally getting recognized?",
+    "lesson": "Shine,\ndon't push.",
+    "finding": "THE SOFT RISES TO THE TOP CENTRE."
+   },
+   "checks": []
+  },
+  {
+   "number": 36,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'dim your light' is the outward act; the text's point is that the light inside must not go out"
+   ],
+   "lesson": {
+    "text": "Hide your light.\nNever let it go out.",
+    "basis": "Tuan 內文明而外柔順…晦其明也，內難而能正其志 (bright within, yielding without… darken the light; in inner hardship keep the aim correct); line 5 Small Image 箕子之貞，明不可息也 (Jizi's steadiness: the light cannot be put out). Fits the crescent that stays lit."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The animation already shows the deeper half (the crescent stays lit); the lesson text stops at the dimming. Meaning card 2 'Keep your light inside' is close, so the new lesson could replace it or the card could shift to Great Image 用晦而明 (use the dark and stay bright).",
+   "current": {
+    "hook": "Your good ideas getting shut down?",
+    "lesson": "Dark times?\nDim your light.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 37,
+   "depth": 4,
+   "issues": [
+    "wrong reading: meaning card 'skip the rules' runs against line 1 閑有家 (set limits at the start) and line 3, which prefers too strict to too lax",
+    "promises an outcome: 'the rest follows'",
+    "surface-only: order is named, not where it comes from (line 6: 反身, turning to oneself)",
+    "finding lacks reason and uses 'ANSWER' jargon"
+   ],
+   "lesson": {
+    "text": "Rules won't hold a home.\nLive what you ask.",
+    "basis": "Great Image 君子以言有物而行有恒 (words with substance, conduct that is constant); line 6 有孚，威如…反身之謂也 (sincere and dignified… meaning turning to oneself); Wang Bi 身得威敬，人亦如之 (when you yourself are respected, others become so too)"
+   },
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
+    "basis": "上九，有孚，威如，終吉 (sincere and dignified, in the end good); Small Image 威如之吉，反身之謂也 (the good of dignity means turning back to oneself)"
+   },
+   "promises": [
+    {
+     "where": "lesson",
+     "text": "Home in order,\nthe rest follows.",
+     "rewrite": "Order at home\nstarts with you."
+    }
+   ],
+   "note": "The Family is not anti-rules: Wang Bi says a house needs trust and dignity (唯信與威), and both begin with the head of house's own conduct. The hook 'too many rules?' is answered by that, not by dropping rules; suggest meaning card 1 'The Family says:\\nlead by example.'",
+   "current": {
+    "hook": "Too many rules at home?",
+    "lesson": "Home in order,\nthe rest follows.",
+    "finding": "2 AND 5 ANSWER, BOTH IN PLACE."
+   },
+   "checks": []
+  },
+  {
+   "number": 38,
+   "depth": 4,
+   "issues": [
+    "newcomer can't parse: 'answering' is readout jargon",
+    "surface-only: says the parties stay in contact, not why difference is workable",
+    "finding lacks reason: two lines of position count"
+   ],
+   "lesson": {
+    "text": "Lower your guard.\nThey may be an ally.",
+    "basis": "line 6 先張之弧，後說之弧。匪寇婚媾 (first he draws the bow, then lays it down: not a raider but a marriage partner); Small Image 遇雨之吉，群疑亡也 (the good of meeting the rain: all doubts vanish); Tuan 天地睽而其事同也 (heaven and earth are apart yet their work is one)"
+   },
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
+    "basis": "上九，睽孤…先張之弧，後說之弧，匪寇婚媾; Small Image 群疑亡也 (the many doubts vanish); Wang Bi 至睽將合，至殊將通 (at the height of opposition things are about to join)"
+   },
+   "promises": [],
+   "note": "Opposition is apartness that is natural (heaven and earth, 同而異), and the lines show most of the enmity is suspicion that clears (line 6). An alternative staying with the cards: 'Stay different.\\nShare the work.' from 君子以同而異.",
+   "current": {
+    "hook": "Can’t agree on anything?",
+    "lesson": "Apart, but still\nanswering.",
+    "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER."
+   },
+   "checks": []
+  },
+  {
+   "number": 39,
+   "depth": 7,
+   "issues": [
+    "hook doesn't lead to the lesson: hook, card and question are about asking for help; the lesson turns inward with no bridge",
+    "finding lacks reason: 'IN POSITION. STILL BLOCKED.' is position only"
+   ],
+   "lesson": {
+    "text": "Blocked? Stop, and\nmend yourself first.",
+    "basis": "Tuan 見險而能止，知矣哉 (seeing danger and able to stop: that is wisdom); Great Image 君子以反身脩德 (the noble one turns to himself and cultivates his character)"
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: BADLY BLOCKED.\nHE HOLDS TRUE; FRIENDS COME.",
+    "basis": "九五，大蹇，朋來 (great obstruction, friends come); Small Image 以中節也 (because he keeps the middle measure); Wang Bi 不改其節，如此則同志者集而至矣 (he does not change his integrity, so the like-minded gather)"
+   },
+   "promises": [],
+   "note": "'Look at yourself' is the right centre (反身脩德) but reads as blame without 'stop' and 'mend'. The line 5 finding ties it to the cards' 'ask for help': friends come to the one who keeps true.",
+   "current": {
+    "hook": "Hit a wall?",
+    "lesson": "Blocked?\nLook at yourself.",
+    "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED."
+   },
+   "checks": []
+  },
+  {
+   "number": 40,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: cards and question are about forgiving; the lesson is about leaving",
+    "surface-only: 'don't linger' is an outward act",
+    "finding lacks reason: trigram image only"
+   ],
+   "lesson": {
+    "text": "Out of danger?\nForgive, and move on.",
+    "basis": "Great Image 雷雨作，解，君子以赦過宥罪 (thunder and rain: release; the noble one pardons faults and forgives offences); Judgment 有攸往，夙吉 (if there is somewhere to go, go early)"
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: THE NOBLE ONE LETS GO.\nEVEN THE PETTY HOLD NO GRUDGE.",
+    "basis": "六五，君子維有解，吉。有孚于小人 (the noble one alone can release; he wins trust even from petty people); Wang Bi 小人雖闇，猶知服之而无怨矣 (though the petty are dull, they still yield and bear no grudge)"
+   },
+   "promises": [],
+   "note": "Deliverance is release after hardship: pardon, untie what's knotted, and go on promptly. The current lesson keeps only the 'promptly' half and drops the forgiving that the cards set up.",
+   "current": {
+    "hook": "The pressure’s finally off?",
+    "lesson": "Out of danger?\nThen don't linger.",
+    "finding": "THUNDER BREAKS OUT OF THE WATER."
+   },
+   "checks": []
+  },
+  {
+   "number": 41,
+   "depth": 5,
+   "issues": [
+    "surface-only: gives the image (two baskets) without its reason (sincerity, not plenty)",
+    "finding lacks reason: shape only"
+   ],
+   "lesson": {
+    "text": "Less, given sincerely,\nis enough.",
+    "basis": "Judgment 損，有孚…二簋可用享 (decrease with sincerity… two simple bowls are enough for the offering); commentary 貴夫誠信，不在於豐 (what counts is good faith, not abundance)"
+   },
+   "finding": {
+    "line": 4,
+    "text": "LINE 4: CUT WHAT AILS YOU.\nAN AILMENT MUST NOT STAY LONG.",
+    "basis": "六四，損其疾，使遄有喜 (reduce the ailment; doing it quickly brings joy); Wang Bi 疾何可久，故速乃有喜 (how can an ailment be let last? so speed brings joy)"
+   },
+   "promises": [],
+   "note": "The two baskets are the classic's picture of sincerity over plenty; without that reason a newcomer hears only 'make do'. Line 4 matches meaning card 2 (curb anger, curb wants, 懲忿窒欲).",
+   "current": {
+    "hook": "Having less than before?",
+    "lesson": "Two small baskets\nare enough.",
+    "finding": "THE LOW LINE GIVES TO THE TOP."
+   },
+   "checks": []
+  },
+  {
+   "number": 42,
+   "depth": 6,
+   "issues": [
+    "hook doesn't lead to the lesson: hook and cards say 'go now', the lesson says share",
+    "lesson lacks reason: why the gain should spill (increase is taking from above to give below)"
+   ],
+   "lesson": {
+    "text": "Let your gain spill\nto those below you.",
+    "basis": "Tuan 益，損上益下，民說无疆 (increase: taking from above to add below, the people's joy has no bounds); line 5 有孚惠心 (sincere kindness of heart); line 6 Wang Bi 求益无已…人弗與也 (seeking gain without end, no one gives to him)"
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The lesson's centre is right (gain flows downward), but the short sets up 'door's open, go' and never links it. Either the hook moves toward sharing ('Things going your way?') or the lesson names who the gain goes to, as proposed; the bowl animation fits both.",
+   "current": {
+    "hook": "Door’s open, still hesitating?",
+    "lesson": "Let your gain\nspill over",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 43,
+   "depth": 7,
+   "issues": [
+    "surface-only: says how (openly, unarmed) but not why force fails",
+    "'unarmed' is a literal word from 不利即戎 that reads oddly to a newcomer"
+   ],
+   "lesson": {
+    "text": "Call it out in the open.\nForce makes enemies.",
+    "basis": "Judgment 揚于王庭…不利即戎 (proclaim it in the king's court… taking up arms does not serve); commentary 若用剛即戎，尚力取勝，為物所疾 (if you go to arms and win by force, others come to hate you); Tuan 決而和 (decisive yet in harmony)"
+   },
+   "finding": null,
+   "promises": [],
+   "note": "Breakthrough is decisive action done openly and without violence; the reason in the text is that winning by force turns people against you. The current lesson is right but gives the act without that reason.",
+   "current": {
+    "hook": "Ready to call something out?",
+    "lesson": "Remove the wrong\nopenly, unarmed.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 44,
+   "depth": 7,
+   "issues": [
+    "hook doesn't fully lead to the lesson: 'shiny thing' vs 'bad start'; the link (the tempting thing grows) is left to the viewer"
+   ],
+   "lesson": {
+    "text": "Tempted? Rein it in\nbefore it grows.",
+    "basis": "line 1 繫于金柅，貞吉…羸豕孚蹢躅 (tie it to a metal brake: steady is good… a lean pig is sure to rampage); Wang Bi 柔之為物，不可以不牽 (the soft thing must be held in check); Judgment 勿用取女，不可與長也 (don't take her; one can't stay with it long)"
+   },
+   "finding": null,
+   "promises": [],
+   "note": "One yielding line meets five strong ones and will grow; the text's reason for checking it early is that it cannot be lived with long. The current lesson has the reason in 'while it's small'; the rewrite ties it to the hook.",
+   "current": {
+    "hook": "Something shiny just showed up?",
+    "lesson": "Check a bad start\nwhile it's small.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 45,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'what is right' is abstract and does not answer a family gathering",
+    "finding lacks reason: shape only"
+   ],
+   "lesson": {
+    "text": "Trust, not rank,\nholds a group together.",
+    "basis": "line 5 萃有位，无咎，匪孚。元永貞，悔亡 (gathering with the high place, but no trust; long constancy and regret goes); line 2 孚乃利用禴 (with sincerity even a small offering serves); Tuan 聚以正也 (gathering by what is correct)"
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: RANK, BUT NO TRUST.\nSTAY RIGHT LONG; REGRET GOES.",
+    "basis": "九五，萃有位…匪孚。元永貞，悔亡; Wang Bi 脩仁守正，久必悔消 (cultivate kindness and keep correct, and in time regret fades)"
+   },
+   "promises": [],
+   "note": "Gathering turns on trust and a shared reverence (王假有廟); line 5 shows even the top place does not gather people without it. The Great Image's 'prepare against the unexpected' is already in meaning card 2.",
+   "current": {
+    "hook": "Hosting family, bracing for arguments?",
+    "lesson": "Gather people by\nwhat is right.",
+    "finding": "FOUR YIELDING LINES GATHER TO TWO."
+   },
+   "checks": []
+  },
+  {
+   "number": 46,
+   "depth": 3,
+   "issues": [
+    "side image: 'go see someone above you' is one Judgment phrase (用見大人), not the hexagram's centre",
+    "hook doesn't lead to the lesson: hook and cards are about slow growth by small steps",
+    "finding lacks reason: trigram image only"
+   ],
+   "lesson": {
+    "text": "Don't rush the climb.\nOne step, then the next.",
+    "basis": "Tuan 柔以時升 (the soft rises in its own time); Great Image 君子以順德，積小以高大 (the noble one follows virtue and piles up small things into the high and great); line 5 貞吉，升階 (steady is good: climbing the stairs)"
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+    "basis": "六五，貞吉，升階 (steady is good, climbing the stairs); Small Image 大得志也 (the aim is fully reached); Wang Bi 納而不距，任而不專 (accepts, does not block; trusts others, does not grab)"
+   },
+   "promises": [],
+   "note": "Pushing Upward is growth like a tree in the earth: in its time, by small additions, without worry (勿恤). The current lesson takes a side phrase and leaves the hook unanswered.",
+   "current": {
+    "hook": "Growing slower than you want?",
+    "lesson": "Go see someone\nabove you.",
+    "finding": "WOOD UNDER EARTH, GROWING UP."
+   },
+   "checks": []
+  },
+  {
+   "number": 47,
+   "depth": 8,
+   "issues": [],
+   "lesson": null,
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Words fail here.\nActions don't.",
+     "rewrite": "Words fail here.\nLet actions speak."
+    }
+   ],
+   "note": "'Hold to your aim' is the Great Image 致命遂志 (stake your life to carry out your aim) and the Tuan 困而不失其所 (hard pressed, yet not losing one's ground): an inner stance at the centre. The cards already give 有言不信, 尚口乃窮 (words aren't believed; relying on talk runs you dry).",
+   "current": {
+    "hook": "Speaking up and nobody listens?",
+    "lesson": "Boxed in?\nHold to your aim.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 48,
+   "depth": 6,
+   "issues": [
+    "surface-only: restates the Judgment image without its reason (the well's constancy, 剛中)",
+    "hook doesn't lead to the lesson: hook and cards are about reach and rope; the lesson is about staying put"
+   ],
+   "lesson": {
+    "text": "Towns move. The well stays.\nBe that steady.",
+    "basis": "Tuan 改邑不改井，乃以剛中也 (the town changes, the well doesn't, because it is firm at the centre); commentary 井用有常德 (the well works by constant virtue); 井養而不窮 (it nourishes without running out)"
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The well is the steady source the town depends on; its warning (汔至亦未繘井，羸其瓶, the jar broken just short of the top) is about finishing what you start. An option that answers the hook: 'The water is there.\\nDon't stop short.'",
+   "current": {
+    "hook": "Good things just out of reach?",
+    "lesson": "Towns move.\nThe well stays.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 49,
+   "depth": 3,
+   "issues": [
+    "side image: the calendar is only the Great Image's 治曆明時, no line carries it",
+    "hook doesn't lead to the lesson: the hook asks how to make people believe a change; a calendar doesn't answer it",
+    "surface-only: names an outward act with no reason",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Go over the change\nuntil it is trusted.",
+    "basis": "Judgment 已日乃孚 (trust comes only once the day is done); line 3 革言三就，有孚 (the call for change is gone over three times, then there is trust); Wang Bi 其言實誠，故曰有孚 (its words are true, so it is trusted); Tuan 革而當，其悔乃亡 (change that fits the moment, regret goes)."
+   },
+   "finding": {
+    "line": 3,
+    "text": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+    "basis": "九三 革言三就，有孚 (talked over three times, trusted); Wang Bi 其言實誠 (its words are true and sincere); line 3 also 征凶 (rushing ahead is ill)."
+   },
+   "promises": [],
+   "note": "Revolution's centre is winning trust for a change that fits the time (已日乃孚, 順乎天而應乎人). The meaning cards already say this; the calendar lesson walks away from them.",
+   "current": {
+    "hook": "Making a big change nobody believes in?",
+    "lesson": "For a revolution,\na new calendar.",
+    "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
+   },
+   "checks": []
+  },
+  {
+   "number": 50,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'set the pot firm' is the act; the reason (don't load more than the base can bear) is missing"
+   ],
+   "lesson": {
+    "text": "Set the pot firm.\nLoad what it can bear.",
+    "basis": "Great Image 君子以正位凝命 (set each thing in its right place and hold firm to the charge); line 4 鼎折足，覆公餗 (the leg breaks, the duke's stew spills), Wang Bi 知小謀大，不堪其任 (he knew little and planned large; the task was more than he could bear); line 2 鼎有實，慎所之也 (the pot is full: be careful where it goes)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The Caldron turns raw things into a meal; it fails when the base is not set or is overloaded (line 4). The new text keeps the animation's legs and dropped bowl and adds why the base matters.",
+   "current": {
+    "hook": "Got the ingredients, not the result?",
+    "lesson": "Set the pot firm,\nthen cook.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 51,
+   "depth": 8,
+   "issues": [],
+   "lesson": null,
+   "finding": null,
+   "promises": [],
+   "note": "The lesson is the Great Image 恐懼脩省 (with fear and trembling, set yourself in order and look within), and the Tuan's 恐致福 (fear brings good) backs it; it gives the inner stance and answers the hook.",
+   "current": {
+    "hook": "Did something just\nshake you?",
+    "lesson": "When shaken,\nexamine yourself.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 52,
+   "depth": 6,
+   "issues": [
+    "hook doesn't lead to the lesson: 'stop when it's time to stop' does not tell an overthinker what to do with their thoughts",
+    "surface-only: close to a restatement of the Tuan",
+    "finding lacks reason: 'NO PAIR ANSWERS' is structure a newcomer can't use"
+   ],
+   "lesson": {
+    "text": "Keep your thoughts\nto where you stand.",
+    "basis": "Great Image 君子以思不出其位 (the noble one's thoughts do not go beyond their place); Tuan 艮其止，止其所也 (keep still where one belongs); line 3 艮其限…厲薰心 (forcing a stop at the waist, anxiety burns the heart) as the counterexample."
+   },
+   "finding": {
+    "line": 4,
+    "text": "LINE 4: HE STILLS HIS BODY.\nHE STAYS WHERE HE BELONGS.",
+    "basis": "六四 艮其身 (keeps his body still); Small Image 止諸躬也 (the stop is in himself); Wang Bi 履得其位，止求諸身，得其所處 (in his right place, he looks to himself to stop and finds where he belongs)."
+   },
+   "promises": [],
+   "note": "The Great Image speaks straight to overthinking: thoughts that stay within your own place. Line 4 (stopping within oneself, in the right place) carries that better than line 6.",
+   "current": {
+    "hook": "Can't stop overthinking?",
+    "lesson": "Stop when it's\ntime to stop.",
+    "finding": "NO PAIR ANSWERS. EACH STANDS STILL."
+   },
+   "checks": []
+  },
+  {
+   "number": 53,
+   "depth": 8,
+   "issues": [
+    "finding lacks reason: 'LINES 2 TO 5 ALL IN THEIR PLACE' shows structure but not why"
+   ],
+   "lesson": null,
+   "finding": {
+    "line": 2,
+    "text": "LINE 2: THE GOOSE ON A ROCK,\nIT HAS EARNED WHAT IT EATS.",
+    "basis": "六二 鴻漸于磐，飲食衎衎 (the goose reaches the rock, eats and drinks in content); Small Image 不素飽也 (it does not eat for nothing); Wang Bi 進而得位 (it advanced and earned its place)."
+   },
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Slow growth\nlasts.",
+     "rewrite": "Grow by steps,\nnot leaps."
+    }
+   ],
+   "note": "'Earn' already gives the reason: 進以正 (advance by what is right), and line 2's 不素飽 is the word 'earn' in the text. Line 3's 貪進忘舊 (greedy advance, forgetting the old) is the skipped step.",
+   "current": {
+    "hook": "Tempted to skip steps?",
+    "lesson": "Earn each place\nbefore the next.",
+    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+   },
+   "checks": []
+  },
+  {
+   "number": 54,
+   "depth": 5,
+   "issues": [
+    "surface-only: 'don't push' names the act and not the stance",
+    "promises an outcome (meaning 2)",
+    "audit finding 'HER TIME WILL COME' promises an outcome"
+   ],
+   "lesson": {
+    "text": "Out of place?\nKeep true and wait.",
+    "basis": "Judgment 征凶，无攸利 (pushing ahead is ill, nothing gained); Tuan 位不當也 (the place is not right); line 2 眇能視，利幽人之貞, Small Image 未變常也 (the one-eyed can still see; the quiet one keeps to what is constant); line 4 愆期之志，有待而行也 (her delay means waiting, then going)."
+   },
+   "finding": {
+    "line": 4,
+    "text": "LINE 4: SHE DELAYS THE DATE.\nSHE WAITS, THEN GOES.",
+    "basis": "九四 歸妹愆期，遲歸有時 (the bride delays the date, a late marriage in its time); Small Image 有待而行也 (she waits, then goes); Wang Bi 以待時也 (to wait for the time)."
+   },
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "This part\nwon’t last.",
+     "rewrite": "Think of how\nthis ends."
+    }
+   ],
+   "note": "The lines show people in weak places who still act well: the lame walk, the one-eyed see, the late bride waits. The reason is holding to what is constant (未變常), not just holding back.",
+   "current": {
+    "hook": "No power, no way out?",
+    "lesson": "Wrong place?\nDon't push.",
+    "finding": "LINES 2 TO 5 ALL OUT OF PLACE."
+   },
+   "checks": []
+  },
+  {
+   "number": 55,
+   "depth": 7,
+   "issues": [
+    "reason missing: why light every corner now? The Tuan's 日中則昃 (noon tips toward evening) is left out",
+    "finding lacks reason"
+   ],
+   "lesson": {
+    "text": "Noon passes.\nLight each corner now.",
+    "basis": "Judgment 勿憂，宜日中 (don't worry; be like the sun at noon); Tuan 宜照天下也 (it should shine on all under heaven) and 日中則昃，月盈則食 (the sun past noon sinks, the full moon wanes)."
+   },
+   "finding": {
+    "line": 6,
+    "text": "AT THE TOP: A BIG HOUSE, DARK.\nHIDING WHEN FULL HELPS NO ONE.",
+    "basis": "上六 豐其屋，蔀其家，闚其戶，闃其无人 (a big house, screened, no one inside); Wang Bi 既濟而隱，以治為亂也 (hiding once things are in order turns order into disorder), 隱不為賢 (hiding is no virtue)."
+   },
+   "promises": [],
+   "note": "The current lesson is close; it names the act of the Judgment but not the Tuan's reason, which also answers 'at your peak and worried': fullness doesn't stay, so use it on everyone now.",
+   "current": {
+    "hook": "At your peak and worried?",
+    "lesson": "At your fullest,\nlight each corner.",
+    "finding": "THUNDER AND FIRE AT ONCE: FULL."
+   },
+   "checks": []
+  },
+  {
+   "number": 56,
+   "depth": 6,
+   "issues": [
+    "surface-only: 'be a good guest' is conduct with no reason",
+    "minor: lesson text lacks a closing period"
+   ],
+   "lesson": {
+    "text": "Far from home,\ndon't take the high seat.",
+    "basis": "Tuan 柔得中乎外而順乎剛 (the soft finds the middle abroad and yields to the strong); Wang Bi on line 2 旅不可以處盛 (a traveller cannot hold high standing); line 6 以旅在上，其義焚也 (a guest who sits on top gets burned), Wang Bi 眾之所嫉 (what everyone resents); line 3 以旅與下，其義喪也 (a guest acting as host to those below loses his place)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The lines are a guest who is petty (1), modest and kept (2), acts the host and is burned out (3, 6). The reason is that a guest holds no power of his own; the animation ends lying down, which fits a low seat.",
+   "current": {
+    "hook": "Somewhere new, feeling out of place?",
+    "lesson": "Far from home,\nbe a good guest",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 57,
+   "depth": 5,
+   "issues": [
+    "hook doesn't lead to the lesson: the hook and cards are about saying it again; 'bend only to what is right' is about yielding",
+    "side image: taken from lines 2 and 6 (under the bed) rather than the Great Image 申命行事",
+    "finding lacks reason",
+    "promises an outcome (meaning 2)"
+   ],
+   "lesson": {
+    "text": "People change slowly.\nSay it again, gently.",
+    "basis": "Great Image 君子以申命行事 (the noble one repeats the charge and carries out affairs); Tuan 重巽以申命 (doubled wind: the charge is given again); line 5 先庚三日，後庚三日 (announce three days before, three days after), Wang Bi 以正齊物，不可卒也 (setting people right cannot be done all at once) and 化不以漸…初皆不說 (change forced abruptly pleases no one at first)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
+    "basis": "九五 先庚三日，後庚三日 (three days before, three days after); Wang Bi 以正齊物，不可卒也 (setting people right cannot be sudden); Small Image 位正中也 (the place is correct and central)."
+   },
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Quiet and steady\ngets through.",
+     "rewrite": "Keep it quiet\nand steady."
+    }
+   ],
+   "note": "Wind gets in by going on and on; line 5 is the ruler who repeats the charge before and after. That answers 'said it once, nothing changed?' with the reason: people take time to change.",
+   "current": {
+    "hook": "Said it once,\nnothing changed?",
+    "lesson": "Bend only to\nwhat is right.",
+    "finding": "EACH SOFT LINE SITS UNDER A STRONG."
+   },
+   "checks": []
+  },
+  {
+   "number": 58,
+   "depth": 6,
+   "issues": [
+    "surface-only: gives the Great Image's scene but not what makes joy good (sincere, not flattering)",
+    "promises an outcome (meaning 2 states a sure result)"
+   ],
+   "lesson": {
+    "text": "Laugh with friends,\nnever to flatter.",
+    "basis": "Great Image 麗澤兌，君子以朋友講習 (two lakes joined: friends talk and practise together); line 1 和兌, Wang Bi 說不在諂 (joy that is not flattery); line 2 孚兌，信志也 (sincere joy, true to one's intent); line 3 來兌凶 (joy sought to please is ill), Wang Bi 非正而求說，邪佞者也 (seeking to please without right is flattery)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Joy kept alone\ndries up.",
+     "rewrite": "Joy is meant\nto be shared."
+    }
+   ],
+   "note": "The lines split sincere joy (1, 2) from joy used to please or flatter (3, 6). The laughing mouth in the animation still fits. The hook about sharing news stays answered.",
+   "current": {
+    "hook": "Good news, no one to tell?",
+    "lesson": "Laugh and learn\nwith friends.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 59,
+   "depth": 7,
+   "issues": [
+    "abstract: 'the centre' is hard for a newcomer to picture",
+    "finding lacks reason: 'WIND MOVES OVER WATER' is the image only"
+   ],
+   "lesson": {
+    "text": "Stay at the centre\nso they can return.",
+    "basis": "Judgment 王假有廟 (the king goes to the temple); Tuan 王乃在中也 (the king is at the centre); Great Image 享于帝，立廟 (make offerings and set up a temple, a place all share); line 5 王居无咎，正位也 (the king stays in place, no blame; the place is right)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: THE KING CALLS OUT,\nHE HOLDS HIS RIGHTFUL PLACE.",
+    "basis": "九五 渙汗其大號，渙，王居无咎 (he sends out the great call; the king stays, no blame); Small Image 正位也 (it is his right place); Wang Bi 為渙之主，唯王居之 (master of Dispersion: only the king can hold it)."
+   },
+   "promises": [],
+   "note": "The current lesson is sound; the change moves from pulling people back to the reason they can come back: someone holds the shared place. The card 'don't argue' has no basis in the text but does no harm.",
+   "current": {
+    "hook": "People drifting apart?",
+    "lesson": "Bring them back\nto the centre.",
+    "finding": "WIND MOVES OVER WATER."
+   },
+   "checks": []
+  },
+  {
+   "number": 60,
+   "depth": 4,
+   "issues": [
+    "side image: the lake is the Great Image's picture, not a stance",
+    "surface-only: states a fact with no conduct and no reason",
+    "finding lacks reason: 'THE STRONG HOLDS THE CENTRE' is structure only"
+   ],
+   "lesson": {
+    "text": "Set limits\nyou can keep.",
+    "basis": "Judgment 苦節不可貞 (bitter limits cannot be held); Tuan 節以制度，不傷財，不害民 (limits set by measure harm neither wealth nor people); line 5 甘節，吉 (limits that sit sweet), Small Image 居位中也 (it keeps to the middle); line 3 不節若，則嗟若 (no limit set, then sighing)."
+   },
+   "finding": {
+    "line": 5,
+    "text": "LINE 5: A SWEET LIMIT.\nIT KEEPS TO THE MIDDLE.",
+    "basis": "九五 甘節，吉 (a sweet limit, good); Small Image 甘節之吉，居位中也 (it sits in the middle); Wang Bi 為節而不苦，非甘而何 (a limit that isn't bitter, what else is sweet)."
+   },
+   "promises": [],
+   "note": "Meaning 2 ('Firm, but not bitter') already holds the hexagram's centre, 苦節不可貞; the lesson should end there. Line 3 (no limit, then sighing, 自己所致: you brought it on yourself) is the other good pick for this hook.",
+   "current": {
+    "hook": "Saying yes to everything?",
+    "lesson": "A lake holds only\nso much water.",
+    "finding": "THE STRONG HOLDS THE CENTRE."
+   },
+   "checks": []
+  },
+  {
+   "number": 61,
+   "depth": 8,
+   "issues": [
+    "meaning cards lean on the Great Image's 議獄緩死 (hold off judging) while the lesson is about sincerity; the two halves don't quite meet"
+   ],
+   "lesson": null,
+   "finding": null,
+   "promises": [],
+   "note": "Sincerity from the centre is the hexagram (中孚; line 2's crane calls in the shade and its young answer, Wang Bi 立誠篤至，雖在闇昧，物亦應焉: true sincerity is answered even unseen). The lesson gives that stance and answers 'can't get through'.",
+   "current": {
+    "hook": "Can’t get through to someone?",
+    "lesson": "No hidden motive;\nmean what you say.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 62,
+   "depth": 5,
+   "issues": [
+    "surface-only: 'fly low, do small things' repeats the Judgment's image with no reason",
+    "promises an outcome (meaning 2)"
+   ],
+   "lesson": {
+    "text": "Out of your reach?\nStay low, do small well.",
+    "basis": "Tuan 剛失位而不中，是以不可大事也 (the strong have lost their place, so no great affairs) and 上逆而下順也 (going up goes against the time, going down goes with it); Great Image 行過乎恭，用過乎儉 (in conduct lean to respect, in spending lean to thrift)."
+   },
+   "finding": null,
+   "promises": [
+    {
+     "where": "meaning 2",
+     "text": "Small done well\nends well.",
+     "rewrite": "Do the small\nthings well."
+    }
+   ],
+   "note": "The reason for going small is that you lack the standing for big moves now (剛失位); flying higher is the bird of line 6 that 過而不知限 (overshoots with no limit). The hook 'stuck for months' fits once that reason is given.",
+   "current": {
+    "hook": "Big plan stuck for months?",
+    "lesson": "Fly low.\nDo small things.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 63,
+   "depth": 7,
+   "issues": [
+    "surface-only, mildly: says guard against trouble but not the Tuan's reason that stopping is where it breaks down"
+   ],
+   "lesson": {
+    "text": "Done? Don't let up.\nGuard what you have.",
+    "basis": "Judgment 初吉終亂 (good at the start, disorder at the end); Tuan 終止則亂，其道窮也 (if you stop at the end, disorder: the way runs out); Great Image 君子以思患而豫防之 (think of trouble and guard against it beforehand)."
+   },
+   "finding": null,
+   "promises": [],
+   "note": "The current lesson is the Great Image and is close to 8; the option adds the Tuan's why (disorder comes from stopping). The animation's figure turning away from the bowl and back again fits 'don't let up'.",
+   "current": {
+    "hook": "Just finished something big?",
+    "lesson": "Done? Now guard\nagainst trouble.",
+    "finding": null
+   },
+   "checks": []
+  },
+  {
+   "number": 64,
+   "depth": 3,
+   "issues": [
+    "surface-only: describes a failure, gives no conduct or reason",
+    "hook doesn't lead to the lesson: 'so close to done?' gets an image, not an answer",
+    "finding lacks reason: 'LINES 2–5 OUT OF POSITION. ALL THREE PAIRS ANSWER.' is structure only"
+   ],
+   "lesson": {
+    "text": "Almost across?\nKeep care to the end.",
+    "basis": "Judgment 小狐汔濟，濡其尾，无攸利 (the little fox almost across wets its tail, nothing gained); Tuan 不續終也 (it did not keep on to the end); Great Image 君子以慎辨物居方 (carefully sort things, each to its place)."
+   },
+   "finding": {
+    "line": 1,
+    "text": "AT THE BASE: A WET TAIL.\nIT DID NOT KNOW ITS LIMIT.",
+    "basis": "初六 濡其尾，吝 (wets its tail, regret); Small Image 亦不知極也 (it did not know its limit); Wang Bi 事在己量，而必困乃反 (it was within its own measure, yet it turned back only when stuck)."
+   },
+   "promises": [],
+   "note": "The fox is the image; the Tuan gives the reason, 不續終 (it did not carry its care through to the end). The cards ('sort things out before you move') already point there; the lesson should say it.",
+   "current": {
+    "hook": "So close to done?",
+    "lesson": "Almost across,\nthe fox gets wet.",
+    "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER."
+   },
+   "checks": []
+  }
+ ]
+}

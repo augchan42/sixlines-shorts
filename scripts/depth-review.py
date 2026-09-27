@@ -39,7 +39,7 @@ def paras(block):
         m = re.match(r"【(.)】(.*)", p.strip())
         if m:
             out.append((m.group(1), m.group(2).strip()))
-        elif p.strip():
+        elif p.strip() and p.strip() != "---":
             out.append(("", p.strip()))
     return out
 
@@ -62,7 +62,9 @@ def line(bs, k):
     image = next((t for g, t in ps if g != "注" and is_image(t)), None)
     if image is None and f"小象傳（{head}）" in bs:
         image = next((t for g, t in paras(bs[f"小象傳（{head}）"]) if is_image(t)), None)
-    note = [t for g, t in ps if g == "注"]
+    # Some notes lost their 【注】 tag (13 lines 1-3) or sit under 【經】 as 注云 (24 line 5, 33 line 1), so an untagged paragraph that is neither the
+    # statement nor the Small Image is taken as the note.
+    note = [t for g, t in ps if g == "注"] or [t[3:] for g, t in ps if t.startswith("注云：")] or [t for g, t in ps if g == "" and t != statement and not is_image(t)]
     return {"statement": statement, "smallImage": image, "wangBi": note[0] if note else None}
 
 
