@@ -812,19 +812,16 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Beside the strong,\nbe courteous.",
-    "source": "series/critic/readouts/drafts.json#10",
+    "text": "Near a temper,\nstay quiet.",
+    "source": "the user, 2026-09-27: 'it's about being unseen as if you aren't there'",
     "readout": {
      "mark": [
-      2
+      1
      ],
-     "finding": "A SOFT LINE TREADS ON THE STRONG.",
-     "master": {
-      "zh": "三為履主",
-      "en": "Line three, master of Treading"
-     }
+     "finding": "LINE 2: A LEVEL PATH.\nTHE QUIET ONE DOES WELL.",
+     "timed": true
     },
-    "readout_source": "judgment; Wang Bi on the Tuan: soft treads on firm, answering Qian with joy"
+    "readout_source": "Line 2: 履道坦坦，幽人貞吉; Wang Bi: 履道尚謙…惡夫外飾 (treading values humility, dislikes display). Was the Tuan's soft line treading on the strong, master line 3."
    }
   },
   "source": {
