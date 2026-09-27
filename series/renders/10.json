@@ -1,8 +1,8 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-27T14:05:45.121Z",
- "commit": "377e541344da5d239027944cd5e05009532fa440",
- "clean": false,
+ "rendered": "2026-09-27T14:11:18.144Z",
+ "commit": "1e4fa0cc3a6ae38eabdde60583060f5eda041909",
+ "clean": true,
  "seconds": 27.562667,
  "shareKbps": 6547,
  "props": {
@@ -28,7 +28,7 @@
   "hook": "Working for someone with a temper?",
   "meaning": [
    "Treading says:\nmind how you step.",
-   "Act well and\nit won’t flare."
+   "Stay steady and\nit may pass."
   ],
   "question": "Who do you tread\ncarefully around?",
   "plates": [
@@ -73,7 +73,7 @@
   "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "ebd39a82fab606dad2942435e1d3f9e5b9da84725bd2290da951821a46d20468",
-  "out/series/10-lu/share.mp4": "2e93668ad6d6453bb1ecc075ac8cf8f45ba2b854ea6bf2941d14ee102755fedb"
+  "out/series/10-lu/short.mp4": "4583f0809eb2180553778165e99cbdeb1b758236d247a12b38dc2b02d4e81da5",
+  "out/series/10-lu/share.mp4": "4ca41a9126273439d68f029dba1463b4695d0dbce32ec9f322c0e5d7ae3d775c"
  }
 }
