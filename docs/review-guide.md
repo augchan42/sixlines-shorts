@@ -18,7 +18,7 @@ differs from short to short:
 | The copy (hook, meaning, question, lesson) | 64 | Reading, as text, in one sitting |
 | The lesson picture | 35 readout, 15 scene, 14 character | Readout once; each scene and character once, since each is a new picture |
 | The music | 18 tracks, played from 30 start points | Listening once per excerpt |
-| The end card | 3 moves (join, flip, snap) | Design settled; 13 shorts are on the new card, 51 still wait for it |
+| The end card | 3 moves (join, flip, snap) | Design settled; all 64 shorts are on the new card (2026-09-28) |
 | The template itself | 1 | Three exemplars, watched in full |
 
 ## Order of work
@@ -93,7 +93,7 @@ A reviewer with the repo can run these before watching anything:
   multi-line readouts (4, 37, 38, 40, 41, 45, 53, 54, 57) have one finding about all their
   marked lines.
 - Tempos over 120 in `series/renders/NN.json`.
-- Which shorts still play an old end card with the period (no `endcardRef` in copy.json).
+- A short without `endcardRef` in copy.json would play an old end card with the period. All 64 have it since 2026-09-28.
 
 ## Files
 
