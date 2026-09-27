@@ -59,8 +59,14 @@
   }
  },
  "readouts": {},
- "music": "local/music/pick13-synthwave-the-mountain.mp3",
- "musicStart": 0.023,
+ "music": null,
+ "musicStart": 0,
+ "mix": {
+  "hum": 1,
+  "relay": 1,
+  "printer": 1,
+  "ticks": 0.8
+ },
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",

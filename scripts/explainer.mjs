@@ -63,8 +63,10 @@ const lesson = script.chapters && {
   pages: script.chapters.flatMap((c) => [...(c.page ? [{ chapter: c.page }] : []), ...c.pages.map(({ q, a, show }) => ({ q, a, show }))]),
   hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
   readouts: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => (p.show?.full ?? []).map((f) => f.n))))].map((n) => [n, readout(n)])),
-  music: `local/music/${script.music.file}`,
-  musicStart: script.music.start,
+  // "music": null leaves only the machine sounds; "mix" sets their volumes.
+  music: script.music ? `local/music/${script.music.file}` : null,
+  musicStart: script.music?.start ?? 0,
+  ...(script.mix ? { mix: script.mix } : {}),
   ticks,
   // A test clip of a page or two has no end card.
   endcard: { clip: sp.endcard.clip, seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm },
@@ -91,7 +93,7 @@ if (process.argv.includes("--props-only")) process.exit(0);
 
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
-const inputs = [props.music, props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
+const inputs = [...(props.music ? [props.music] : []), props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
 const missing = inputs.filter((f) => !existsSync(pub(f)));
 if (missing.length) throw new Error(`missing: ${missing.join(", ")}`);
 
@@ -110,7 +112,7 @@ if (props.look === "flight") {
   // The screen as a tube: rendered flat, then bowed out a little and given a soft bloom.
   const flat = path.join(dir, "flat.mp4");
   run("npx", ["remotion", "render", "src/index.ts", "Lesson", flat, `--props=${propsFile}`, "--log=error"]);
-  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", "[0:v]format=gbrp,lenscorrection=k1=-0.06:k2=-0.02,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.35,gblur=sigma=0.7,format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "copy", short]);
+  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", "[0:v]format=gbrp,lenscorrection=k1=-0.06:k2=-0.02,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.35,gblur=sigma=0.7,format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-af", "loudnorm=I=-16:TP=-1.5", "-ar", "48000", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", short]);
 } else run("npx", ["remotion", "render", "src/index.ts", lesson ? "Lesson" : "ReadoutKey", short, `--props=${propsFile}`, "--log=error"]);
 
 // The share copy: yuv420p, faststart, under 25 MB, for Instagram and Threads.

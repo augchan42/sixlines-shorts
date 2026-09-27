@@ -1,9 +1,9 @@
 {
  "explainer": "wangbi-flight-test",
- "rendered": "2026-09-27T04:23:23.042Z",
- "commit": "986b8fd8d3c2d9823334e07b0f34a6cf4291398f",
+ "rendered": "2026-09-27T04:29:45.698Z",
+ "commit": "e860076d8b957b3cb452e041e9d8d051b0cd48d2",
  "clean": false,
- "seconds": 20.757333,
+ "seconds": 20.8,
  "shareKbps": 8000,
  "props": {
   "pages": [
@@ -66,8 +66,14 @@
    }
   },
   "readouts": {},
-  "music": "local/music/pick13-synthwave-the-mountain.mp3",
-  "musicStart": 0.023,
+  "music": null,
+  "musicStart": 0,
+  "mix": {
+   "hum": 1,
+   "relay": 1,
+   "printer": 1,
+   "ticks": 0.8
+  },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
    "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
@@ -81,13 +87,12 @@
   }
  },
  "files": {
-  "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
   "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
   "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
   "local/sfx/hum.wav": "5f3c0e320e113d427169cdc32f5e8b4a7bd63476ed24e115e6248aff3cd0d05b",
   "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
   "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
-  "out/explainers/wangbi-flight-test/short.mp4": "0bc3e4e584ce69d8373d52f2246be0fc16a00dc18b63ee663d047d7d13d00eb8",
-  "out/explainers/wangbi-flight-test/share.mp4": "43ecdb25c4551c8df2ea08577ea9a3fb351ae89529028919b6f9092d4fb5ee4f"
+  "out/explainers/wangbi-flight-test/short.mp4": "6dbb7efd5b41aff548cc0321bf9357d579b22fe0a575bd9efdec1e88c935ea23",
+  "out/explainers/wangbi-flight-test/share.mp4": "424748d2bcda1936ac2c582c784a1fef7a2db78583b26164a926b85b20c581c0"
  }
 }

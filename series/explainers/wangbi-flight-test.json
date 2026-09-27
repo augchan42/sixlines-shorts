@@ -1,13 +1,9 @@
 {
- "about": "A test of the flight look on one page of the Wang Bi lesson, before changing the lesson. The user, 2026-09-27, on what they liked in Alien's screens: 'There was sound effects, there was vector graphics, there was movement and panning and zoom. It was transporting you into a specific view of the world, which is in the infographic.' See docs/research/2026-09-27-nostromo-screens.md. The view approaches 22 while its lines plot (a relay click each), goes down to L5 as the answer types (a printer's chatter), then circles the upper trigram; a hum under the music; the screen pushed in on slowly, bowed and bloomed like a tube.",
+ "about": "A test of the flight look on one page of the Wang Bi lesson, before changing the lesson. The user, 2026-09-27, on what they liked in Alien's screens: 'There was sound effects, there was vector graphics, there was movement and panning and zoom. It was transporting you into a specific view of the world, which is in the infographic.' See docs/research/2026-09-27-nostromo-screens.md. The view approaches 22 while its lines plot (a relay click each), goes down to L5 as the answer types (a printer's chatter), then circles the upper trigram; a hum under the music; the screen pushed in on slowly, bowed and bloomed like a tube. Round 2, the user: 'boost the sound and take out the music and see what it's like.'",
  "hexagram": 22,
  "look": "flight",
  "endcard": false,
- "music": {
-  "file": "pick13-synthwave-the-mountain.mp3",
-  "start": 0.023,
-  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
- },
+ "music": null,
  "caption": "Test: the flight look on one page.",
  "chapters": [
   {
@@ -49,5 +45,11 @@
     }
    ]
   }
- ]
+ ],
+ "mix": {
+  "hum": 1,
+  "relay": 1,
+  "printer": 1,
+  "ticks": 0.8
+ }
 }

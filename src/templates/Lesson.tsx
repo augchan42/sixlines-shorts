@@ -42,7 +42,7 @@ export type LessonProps = {
   pages: Page[];
   hexagrams: Record<string, Hex>;
   readouts: Record<string, Full>;
-  music: string;
+  music: string | null;
   musicStart: number;
   ticks: string;
   endcard: { clip: string; seconds: number };
@@ -51,6 +51,8 @@ export type LessonProps = {
   // answer types (docs/research/2026-09-27-nostromo-screens.md).
   look?: "flight";
   sfx?: { hum: string; relay: string; printer: string };
+  // Volumes (0..1) of the music and each sound, where a script sets them.
+  mix?: { music?: number; hum?: number; relay?: number; printer?: number; ticks?: number };
 };
 
 const FPS = 30;
@@ -299,16 +301,16 @@ export const Lesson: React.FC<LessonProps> = (p) => {
   const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={p.look === "flight" ? 0.6 : 1} />
+      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={p.mix?.music ?? (p.look === "flight" ? 0.6 : 1)} />
       {p.look === "flight" && p.sfx && (
         <>
-          <Audio src={staticFile(p.sfx.hum)} loop volume={0.55} />
+          <Audio src={staticFile(p.sfx.hum)} loop volume={p.mix?.hum ?? 0.55} />
           {/* A relay click as each line is plotted during the approach. */}
           {pages.flatMap((x, k) =>
             x.page.show?.approach
               ? [0, 1, 2, 3, 4, 5].map((i) => (
                   <Sequence key={`relay-${k}-${i}`} from={x.from + 10 + Math.round(((x.qAt - 20) * i) / 6)} durationInFrames={10}>
-                    <Audio src={staticFile(p.sfx!.relay)} volume={0.8} />
+                    <Audio src={staticFile(p.sfx!.relay)} volume={p.mix?.relay ?? 0.8} />
                   </Sequence>
                 ))
               : [],
@@ -325,7 +327,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
               ...(x.page.a ?? "").split("\n").map((l, i) => ({ from: x.from + x.lineAt[i], n: Math.round(l.length * A_RATE), src: p.look === "flight" && p.sfx ? p.sfx.printer : p.ticks })),
             ].map((s, i) => (
               <Sequence key={`${k}-${i}`} from={s.from} durationInFrames={Math.max(1, s.n)}>
-                <Audio src={staticFile(s.src)} volume={0.35} />
+                <Audio src={staticFile(s.src)} volume={s.src === p.ticks ? p.mix?.ticks ?? 0.35 : p.mix?.printer ?? 0.35} />
               </Sequence>
             )),
       )}
