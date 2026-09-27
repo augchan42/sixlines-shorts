@@ -68,7 +68,9 @@ section { padding-top: 40px; display: grid; gap: 18px; scroll-margin-top: 70px; 
 .item[data-verdict="good"] { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
 .item[data-verdict="change"] { border-color: color-mix(in srgb, var(--amber) 55%, var(--line)); }
 .player { position: relative; aspect-ratio: 9 / 16; width: 100%; max-width: 100%; background: #000; border-radius: 6px; overflow: hidden; }
-.player video, .player img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.player video, .player img { width: 100%; height: 100%; object-fit: contain; display: block; background: #000; }
+/* Full screen keeps the element's styles: never crop the 9:16 frame to fill a wide screen. */
+video:fullscreen, video:-webkit-full-screen { object-fit: contain; }
 .player .none { position: absolute; inset: 0; display: grid; place-items: center; color: #9aa; font: 12px var(--mono); text-align: center; padding: 10px; }
 .body { display: grid; gap: 10px; align-content: start; min-width: 0; }
 .title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
