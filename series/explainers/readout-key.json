@@ -9,7 +9,7 @@
   0,
   1
  ],
- "look": "The readout's own screen with 22's plot, fully built from the start, without the lesson line. Step text sits above the header. The part a step explains goes to full green while the rest dims; amber only where the real screen uses it (◄ lines and the WANG BI line), in the last two steps.",
+ "look": "The readout's own screen with 22's plot, fully built from the start, the plot keeping its slow turn. The WANG BI line and the finding show dimmed, as on the real 22 screen; the lesson line is left out, and each step's text is typed in its place at the prompt, plain white with no glow, so it reads as the explainer and not the readout. The part a step explains goes to full green while the rest dims; amber only where the real screen uses it (the ◄ lines, blinking as in the shorts, and the WANG BI line), in the last two steps.",
  "steps": [
   {
    "at": 0.0,
@@ -17,51 +17,52 @@
    "text": "HOW TO READ\nTHIS SCREEN"
   },
   {
-   "at": 3.6,
+   "at": 2.8,
    "lights": "plot and log; L1 first, then upward",
    "text": "SIX LINES, L1\nAT THE BOTTOM."
   },
   {
-   "at": 7.2,
+   "at": 6.0,
    "lights": "L1 (solid) and L2 (broken) and their YANG/YIN words",
    "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN."
   },
   {
-   "at": 10.8,
+   "at": 9.2,
    "lights": "the IN/OUT column: L1 L3 L5, then L2 L4 L6",
    "text": "ODD PLACES WANT\nYANG, EVEN YIN."
   },
   {
-   "at": 14.4,
+   "at": 13.4,
    "lights": "L2 YIN IN, then L5 YIN OUT",
    "text": "RIGHT KIND: IN.\nWRONG KIND: OUT."
   },
   {
-   "at": 18.0,
+   "at": 16.8,
    "lights": "the left bracket with L1 (YANG) and L4 (YIN); then L2+L5 (both YIN) and L3+L6 (both YANG) briefly, no bracket",
    "text": "1+4, 2+5, 3+6 LINK\nIF YIN MEETS YANG."
   },
   {
-   "at": 21.6,
+   "at": 21.0,
    "lights": "the UPPER row with L4-L6 and its bracket, then the LOWER row with L1-L3 and its bracket",
    "text": "UPPER TRIGRAM: 4-6\nLOWER TRIGRAM: 1-3"
   },
   {
-   "at": 25.2,
+   "at": 24.4,
    "lights": "the right brackets, then L2 and L5 with · CENTRE",
    "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE."
   },
   {
-   "at": 28.8,
-   "lights": "L2 and L5 amber with ◄, and the finding",
+   "at": 27.8,
+   "lights": "L2 and L5 in amber with ◄, blinking as in the shorts; the finding stays dim",
    "text": "◄ MARKS THE LINES\nTO LOOK AT."
   },
   {
-   "at": 32.4,
+   "at": 31.2,
    "lights": "> WANG BI: 為飾之主 / MASTER OF ADORNMENT, and L5",
    "text": "WANG BI NAMES THE\nLINE THAT RULES."
   }
  ],
- "round": 3,
- "caption": "How to read the green screen in 35 of our shorts, using 22 Grace. The Ten Wings judge each line as in or out of its place; Wang Bi (AD 226–249) applied this only to lines 2 to 5."
+ "round": 4,
+ "caption": "How to read the green screen in 35 of our shorts, using 22 Grace. The in/out rule comes from the Ten Wings; Wang Bi (AD 226–249) applied it only to lines 2 to 5.",
+ "end": 36.2
 }
