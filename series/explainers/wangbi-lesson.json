@@ -1,0 +1,162 @@
+{
+ "about": "How Wang Bi reads a hexagram, as one vertical lesson of about 2.5 min, pinned; it replaces the 42 s readout-key explainer. The user, 2026-09-27: 'i feel like we shouldn't need to be restricted to a short of 42 seconds, this is actually a full wang bi lesson. i find it hard to follow whats going on.' Format chosen by the user: one lesson, about 2.5 min. The screen starts empty and each chapter adds its own part of the readout, so by the end the viewer has seen every part built. Assumes the readout drops IN/OUT on lines 1 and 6 (docs/research/2026-09-27-rerender-candidates.md, item 1). 2026-09-27, the user: 'make it like a true nostromo style or even dune (peter lynch) style explainer' (David Lynch's Dune, 1984): an inquiry at the terminal as with MU/TH/UR in Alien, one fact per page as in Paul's filmbook, chapter pages between. Text only (the user's choice), with teletype ticks.",
+ "sources": {
+  "places": "Zhouyi lüeli 辯位: 初上无陰陽定位; 夫位者，列貴賤之地，待才用之宅也",
+  "master": "Zhouyi lüeli 明彖: 至少者為至多之所主; 一卦五陽而一陰，則一陰為之主矣 (同人 履 小畜 大有); 五陰而一陽，則一陽為之主矣 (師 比 謙 豫 復 剝); otherwise 義主中爻, the centre line",
+  "answering": "Zhouyi lüeli 明卦適變通爻: 應者，同志之象也",
+  "22": "Wang Bi on 22 line 5: 處得尊位，為飾之主"
+ },
+ "chapters": [
+  {
+   "page": "",
+   "pages": [
+    {
+     "q": "WHO WAS WANG BI",
+     "a": "A SCHOLAR, AD 226–249.\nHE DIED AT 23.\nHIS NOTES SHAPED HOW\nTHE BOOK IS READ.",
+     "draw": ""
+    },
+    {
+     "q": "WHAT IS A HEXAGRAM",
+     "a": "A SITUATION.\nEACH LINE IS A PERSON IN IT.",
+     "draw": ""
+    }
+   ]
+  },
+  {
+   "page": "LINES",
+   "pages": [
+    {
+     "q": "DEFINE: YANG, YIN",
+     "a": "SOLID LINE: YANG. FIRM.\nBROKEN LINE: YIN. YIELDING.",
+     "draw": "one solid line, one broken line"
+    },
+    {
+     "q": "SHOW 22",
+     "a": "22 GRACE.\nREAD FROM THE BOTTOM UP.",
+     "draw": "22 drawn bottom line first, with the log rows L1–L6 and YANG/YIN"
+    }
+   ]
+  },
+  {
+   "page": "PLACES",
+   "pages": [
+    {
+     "q": "DEFINE: PLACE",
+     "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+     "draw": "22, L2–L5 bracketed"
+    },
+    {
+     "q": "WHO SUITS EACH POST",
+     "a": "3 AND 5: A FIRM LINE.\n2 AND 4: A YIELDING ONE.",
+     "draw": "22, L2–L5"
+    },
+    {
+     "q": "AND IF IT DOES NOT",
+     "a": "THE RIGHT KIND IS IN.\nTHE WRONG KIND IS OUT.",
+     "draw": "22 log, IN/OUT on L2–L5; L2 IN and L5 OUT typed last"
+    },
+    {
+     "q": "LINES 1 AND 6",
+     "a": "NO RANK. THEY ARE THE START\nAND THE END OF THE MATTER.",
+     "draw": "22 log, L1 and L6 with no IN/OUT"
+    }
+   ]
+  },
+  {
+   "page": "CENTRES",
+   "pages": [
+    {
+     "q": "DEFINE: TRIGRAM",
+     "a": "THREE LINES. EACH HEXAGRAM\nHAS TWO: LOWER, UPPER.",
+     "draw": "22 with the brackets and UPPER 山 MOUNTAIN / LOWER 火 FIRE"
+    },
+    {
+     "q": "DEFINE: CENTRE",
+     "a": "THE MIDDLE OF EACH\nTRIGRAM: LINES 2 AND 5.",
+     "draw": "· CENTRE on L2 and L5"
+    },
+    {
+     "q": "WHO SITS THERE",
+     "a": "5 IS THE RULER'S SEAT.\n2 SERVES BELOW.",
+     "draw": "L5 and L2"
+    }
+   ]
+  },
+  {
+   "page": "ANSWERS",
+   "pages": [
+    {
+     "q": "WHICH LINES ANSWER",
+     "a": "1 AND 4, 2 AND 5, 3 AND 6,\nWHEN ONE IS YIN, ONE YANG.",
+     "draw": "the three pairs, one after another"
+    },
+    {
+     "q": "IN 22",
+     "a": "ONLY 1 AND 4.\n2 AND 5 ARE BOTH YIN.\n3 AND 6 ARE BOTH YANG.",
+     "draw": "the link on the left, 1–4"
+    }
+   ]
+  },
+  {
+   "page": "THE MASTER",
+   "pages": [
+    {
+     "q": "WHICH LINE RULES",
+     "a": "ONE LINE RULES THE WHOLE.\nWANG BI CALLS IT\nTHE MASTER.",
+     "draw": ""
+    },
+    {
+     "q": "HOW TO FIND IT",
+     "a": "THE FEW RULE THE MANY.\nONE YIN AMONG FIVE YANG\nRULES. SO DOES ONE YANG\nAMONG FIVE YIN.",
+     "draw": "111110 and 000010 small, the lone line amber"
+    },
+    {
+     "q": "AND IF NONE IS ALONE",
+     "a": "LOOK TO A CENTRE.",
+     "draw": ""
+    }
+   ]
+  },
+  {
+   "page": "22 GRACE",
+   "pages": [
+    {
+     "q": "WHICH LINE RULES 22",
+     "a": "THREE YIN, THREE YANG.\nNONE ALONE. LOOK TO\nTHE CENTRES.",
+     "draw": "22"
+    },
+    {
+     "q": "L5",
+     "a": "SOFT. OUT OF PLACE.\nBUT IN THE RULER'S SEAT.",
+     "draw": "L5 amber with ◄"
+    },
+    {
+     "q": "WANG BI",
+     "a": "為飾之主\nMASTER OF ADORNMENT.",
+     "draw": "the WANG BI line"
+    },
+    {
+     "q": "LESSON",
+     "a": "PLAIN IS THE BEST\nADORNMENT.",
+     "draw": "the lesson at the prompt, as in the short"
+    }
+   ]
+  },
+  {
+   "page": "YOUR TURN",
+   "pages": [
+    {
+     "q": "SHOW 7",
+     "a": "7 THE ARMY.\nWHICH LINE RULES?",
+     "draw": "7 drawn, no mark; hold 4 s"
+    },
+    {
+     "q": "ANSWER",
+     "a": "L2. THE ONE YANG:\nTHE GENERAL.\nTHE FEW RULE THE MANY.",
+     "draw": "L2 amber with ◄"
+    }
+   ]
+  }
+ ],
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037."
+}
