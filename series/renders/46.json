@@ -1,10 +1,10 @@
 {
  "hexagram": 46,
- "rendered": "2026-09-27T18:10:56.967Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-27T23:19:25.672Z",
+ "commit": "627fb9efcc8c21c7b0bf98ab903389abc0be28d0",
  "clean": false,
- "seconds": 30.058667,
- "shareKbps": 5993,
+ "seconds": 33.386667,
+ "shareKbps": 5383,
  "props": {
   "hexagram": {
    "number": 46,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Go see someone\nabove you.",
+   "text": "Don’t rush the climb.\nOne step, then the next.",
    "trigrams": [
     {
      "zh": "地",
@@ -51,10 +51,12 @@
    ],
    "readout": {
     "mark": [
-     0
+     4
     ],
-    "finding": "WOOD UNDER EARTH, GROWING UP."
-   }
+    "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+    "timed": true
+   },
+   "beats": 17
   },
   "pace": "even",
   "credit": false,
@@ -72,7 +74,7 @@
   "assets/3d/endcard-join-011000-9b-ref.mp4": "73d84b4df2f1250f9aee066edf8bb78469f2c4bb199ddc282352a5d0e6a4bf75",
   "assets/yilin/stipple-46-2.webp": "5102518631bafea2f0578a17bef7285052372ec92af0c5a2edd0d60945eb2537",
   "assets/yilin/stipple-46-54.webp": "9e21adbb070262a7ae0db1dbcfe18ef21191ea37a7b7e9364aa569716ab8ea82",
-  "out/series/46-sheng/short.mp4": "8dbd271a5c6cc27786a49fb6a2051b0a9b7cf731a6d310de2bed0f7fa8114a29",
-  "out/series/46-sheng/share.mp4": "4c5cfe82097e260b041e4d2fd5dc3fcb86cd7d48b788a1efb4d268ef7b70e11b"
+  "out/series/46-sheng/short.mp4": "3a1dc2c7da50cff675e074a03afaa525ca0080abc5e402143cbd5245871c85cb",
+  "out/series/46-sheng/share.mp4": "890b9d4f6b5c36b705e6f3f2a403e54ddeee642d9a76fb7e7b4511fde830cfe2"
  }
 }

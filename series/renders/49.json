@@ -1,10 +1,10 @@
 {
  "hexagram": 49,
- "rendered": "2026-09-27T18:16:07.198Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-27T23:17:19.499Z",
+ "commit": "627fb9efcc8c21c7b0bf98ab903389abc0be28d0",
  "clean": false,
- "seconds": 29.76,
- "shareKbps": 6054,
+ "seconds": 33.92,
+ "shareKbps": 5296,
  "props": {
   "hexagram": {
    "number": 49,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "For a revolution,\na new calendar.",
+   "text": "Go over the change\nuntil it is trusted.",
    "trigrams": [
     {
      "zh": "澤",
@@ -51,10 +51,12 @@
    ],
    "readout": {
     "mark": [
-     4
+     2
     ],
-    "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
-   }
+    "finding": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+    "timed": true
+   },
+   "beats": 19
   },
   "pace": "even",
   "credit": false,
@@ -72,7 +74,7 @@
   "assets/3d/endcard-snap-101110-9b-ref.mp4": "2d4b4355d7fc92f7f48636eadb828ca9246aa6bf8144ec08108c0fda6e5797bb",
   "assets/yilin/stipple-49-15.webp": "71187d2f6741bc2194f013588556d66567c16b538380e9dc17699395f02fc1b1",
   "assets/yilin/stipple-49-36.webp": "a7742746890080e9a75bc29c41ebc2e201e29e6cd3dcf3f8ab4bd092cdfb3641",
-  "out/series/49-ge/short.mp4": "6a042540e7e66f070b38d3e91f97d36fd8bb4102155e3a50edd407cf9a82e729",
-  "out/series/49-ge/share.mp4": "6ce59947f504da93d549dabd1dc2fad2d2667932eba24995a4776c2d15f8c15f"
+  "out/series/49-ge/short.mp4": "a748ebe50d31ddd59f329c4cf0ad834a6ae7453da045691fca2d3859b9e8ecd7",
+  "out/series/49-ge/share.mp4": "36db95a1fd178effc91d5e88d7dae1f31e7d97350f38f227cafe426656516d43"
  }
 }
