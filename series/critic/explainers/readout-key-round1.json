@@ -1,0 +1,97 @@
+{
+ "round": 1,
+ "overall": 5,
+ "steps": [
+  {
+   "at": 0.0,
+   "text": "HOW TO READ\nTHE READOUT",
+   "score": 7,
+   "reasons": "Clear, but the word READOUT never appears on the screen (the header says SIX LINES // QUERY 22), so a viewer has to guess that 'the readout' is the green screen. 'This screen' is literal.",
+   "rewrite": { "text": "HOW TO READ\nTHIS SCREEN", "lights": "header" }
+  },
+  {
+   "at": 3.0,
+   "text": "SIX LINES,\nBOTTOM TO TOP.",
+   "score": 7,
+   "reasons": "True, but it doesn't tie the plot to the log. The log is printed L6 at the top down to L1, so a newcomer needs to be told that L1 is the bottom line, which is the step's own note. The same step can't also explain YANG/YIN, and nothing else in the script does, although every log row starts with it. See the added step under 'missing'.",
+   "rewrite": { "text": "SIX LINES, L1\nAT THE BOTTOM.", "lights": "plot and log; L1 in both lights first, then the others upward" }
+  },
+  {
+   "at": 7.0,
+   "text": "PLACES 1, 3, 5\nWANT A YANG LINE.",
+   "score": 6,
+   "reasons": "This is the Tuan/Xiang (Ten Wings) rule of 當位 (proper place) and it is what the screen computes, so it's defensible. Wang Bi, though, says in the Lüeli (辯位) that lines 1 and 6 have no fixed yin/yang place (初上無陰陽定位), and the credit at the end presents the whole screen as his. Don't add a caveat on screen: it would cost a step and lose a newcomer. Instead, don't attribute the place rule to Wang Bi (see the last step) and put one sentence in the caption. The two place steps can also become one, which frees time for YANG/YIN and the trigrams.",
+   "rewrite": { "text": "ODD PLACES WANT\nYANG, EVEN YIN.", "lights": "the IN/OUT column: L1 L3 L5 first, then L2 L4 L6, about 1.5 s each" }
+  },
+  {
+   "at": 10.5,
+   "text": "PLACES 2, 4, 6\nWANT A YIN LINE.",
+   "score": 6,
+   "reasons": "Correct, but it repeats the previous step's structure and uses 3.5 s of a 36 s short. Merge it into the step above.",
+   "rewrite": { "text": "(merged into the step at 7.0)", "lights": "(merged)" }
+  },
+  {
+   "at": 14.0,
+   "text": "IT FITS: IN.\nIT DOESN'T: OUT.",
+   "score": 7,
+   "reasons": "The idea is right and the lights (L2 IN, L5 OUT) are well chosen. 'IT' has no antecedent on screen: a line? a place? Naming the test is more literal.",
+   "rewrite": { "text": "RIGHT KIND: IN.\nWRONG KIND: OUT.", "lights": "L2 YIN IN, then L5 YIN OUT (line and log row)" }
+  },
+  {
+   "at": 18.0,
+   "text": "A LINK: LINES THAT\nANSWER EACH OTHER.",
+   "score": 5,
+   "reasons": "True to Wang Bi: 應 is between 1-4, 2-5 and 3-6 when one line is yin and the other yang (the Lüeli: 應者，同志之象也). But the text doesn't say which lines pair or when, and 'answer' is jargon that isn't on screen (the screen shows only an unlabelled bracket). In 22 only the 1-4 bracket is drawn, and without the rule the viewer can't tell why 2-5 has none. Both 2 and 5 are yin, and that absence is useful for the 22 example.",
+   "rewrite": { "text": "1-4, 2-5, 3-6 LINK\nIF YIN MEETS YANG.", "lights": "the left bracket with L1 and L4; then briefly L2+L5 and L3+L6 lit with no bracket" }
+  },
+  {
+   "at": 22.0,
+   "text": "2 AND 5 ARE\nTHE CENTRES.",
+   "score": 6,
+   "reasons": "True, but it gives no reason, because the trigrams are never introduced. 'Centre' only makes sense as the middle of a three-line trigram, and the screen gives UPPER/LOWER a whole row each plus brackets on the right. Introduce the trigrams first (see 'missing'), then say the centre is each trigram's middle.",
+   "rewrite": { "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE.", "lights": "the right brackets, then L2 and L5 with '· CENTRE' in the log" }
+  },
+  {
+   "at": 25.5,
+   "text": "THE CENTRE COUNTS\nMORE THAN PLACE.",
+   "score": 4,
+   "reasons": "Overstated, and credited to the wrong person. The note cites the Zhouyi lüeli, but 'the centre weighs more than the correct place' (中重於正; 正不必中) is Cheng Yi's maxim (Yichuan zhuan, 震 六五), not a Lüeli rule; I did not find it in the Lüeli. Wang Bi and the Xiang often let a central line make up for being out of place (雖不當位，而處中/得中), which supports a weaker claim. Wang Bi's own reason for 22's line 5 is different: 處得尊位 (it holds the honoured, ruler's place). A newcomer also can't do anything with 'counts more'. Say what the screen lets them see: L5 is OUT and yet a centre.",
+   "rewrite": { "text": "A CENTRE CAN MAKE\nUP FOR BEING OUT.", "lights": "L5: 'OUT' then '· CENTRE' in its log row" }
+  },
+  {
+   "at": 29.0,
+   "text": "◄ MARKS THE LINE\nTHAT RULES.",
+   "score": 3,
+   "reasons": "False, both for the series and for this example. In Readout.tsx `mark` marks the lines the lesson is about, and 'master' (the WANG BI line) is a separate prop. In 22, ◄ is on both L2 and L5 (props mark [1,4]; checked on a frame of out/series/22-bi/short.mp4), and only L5 is Wang Bi's master. L2 is marked because of the finding 'THE SOFT COMES TO ADORN THE STRONG' (Tuan 柔來而文剛, the yin line 2 adorning the yang lines). Across the 35 readouts, 14 have a master, 4 mark nothing, and several mark 2 to 4 lines with no master (38, 40, 53, 54). A viewer who learns '◄ = ruler' will misread most shorts. Split this into two steps: ◄ = the lines to look at; the WANG BI line = the ruler.",
+   "rewrite": { "text": "◄ MARKS THE LINES\nTO LOOK AT.", "lights": "L2 and L5 amber with ◄, and the finding line" }
+  },
+  {
+   "at": 33.0,
+   "text": "WANG BI,\nAD 226–249.",
+   "score": 4,
+   "reasons": "It doesn't earn its place as written. The dates tell a newcomer nothing they need, and the screen line 'WANG BI: 為飾之主 / MASTER OF ADORNMENT', the one amber element the viewer asked about, is never explained; the draft folds it into the ◄ step, which is wrong. Worse, putting his name over 'all' credits him with the IN/OUT of lines 1 and 6, which he rejected. Make this step explain what the WANG BI line is, with his name in it. That credits him accurately and teaches the screen. Put the dates in the caption if wanted.",
+   "rewrite": { "text": "WANG BI NAMES THE\nLINE THAT RULES.", "lights": "'> WANG BI: 為飾之主 / MASTER OF ADORNMENT' and the L5 line" }
+  }
+ ],
+ "missing": [
+  {
+   "what": "YANG and YIN. Every log row reads YANG or YIN, and every rule after it depends on them. A newcomer does not know that solid is yang and broken is yin.",
+   "insert_after": 3.0,
+   "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN.",
+   "lights": "one solid line (L1) and one broken line (L2) in the plot and their YANG/YIN words in the log"
+  },
+  {
+   "what": "The trigrams. UPPER 山 MOUNTAIN · STILL and LOWER 火 FIRE · CLINGING take two rows of the screen plus the right-hand brackets, and 'centre' is meaningless without them. Leave the Chinese unexplained: the English name sits beside it.",
+   "insert_after": 18.0,
+   "text": "LINES 1-3, 4-6:\nTWO TRIGRAMS.",
+   "lights": "the UPPER and LOWER rows and the right brackets"
+  }
+ ],
+ "cut": [
+  "The separate 'PLACES 2, 4, 6' step (merged with 1, 3, 5).",
+  "'AD 226–249' (move to the caption).",
+  "The claim that the centre counts more than place (Cheng Yi's, not Wang Bi's; replaced with the weaker 'can make up for').",
+  "Do not explain the left column of numbers, SYS, the turning, or the finding/lesson lines. They are decoration or plain English. Less is more."
+ ],
+ "notes": "Proposed order and times (11 steps, about 36 s, 3-3.5 s each): 0.0 HOW TO READ / THIS SCREEN; 2.5 SIX LINES, L1 / AT THE BOTTOM.; 5.5 SOLID LINE: YANG. / BROKEN LINE: YIN.; 8.5 ODD PLACES WANT / YANG, EVEN YIN. (hold 3.5 s for the two light sweeps); 12.0 RIGHT KIND: IN. / WRONG KIND: OUT.; 15.5 1-4, 2-5, 3-6 LINK / IF YIN MEETS YANG.; 19.0 LINES 1-3, 4-6: / TWO TRIGRAMS.; 22.0 EACH TRIGRAM'S / MIDDLE: CENTRE.; 25.0 A CENTRE CAN MAKE / UP FOR BEING OUT.; 28.5 ◄ MARKS THE LINES / TO LOOK AT.; 32.0 WANG BI NAMES THE / LINE THAT RULES. That is dense for one viewing, but it's a pinned reference that people will rewatch, so it's acceptable. If time is short, cut the centre-makes-up step first: the last two steps still show L5 as OUT and yet ruling. On 初上無陰陽定位: don't address it on screen. It's a scholar's caveat that costs a step. Keep the script from attributing the place rule to Wang Bi (the rewritten last step credits him only with naming the ruler), and add one caption sentence such as 'The in/out rule is the Ten Wings'; Wang Bi himself left lines 1 and 6 out of it.' An alternative is to change Readout.tsx to print no IN/OUT for L1 and L6, but that changes 35 shorts; offer it to the user as an option, not a fix. Implementation cautions: (1) the draft's 'look' types each step 'at the prompt', but the prompt area is where the WANG BI, finding and lesson lines sit, and the last two steps need those lit. Put the step text somewhere else (for example above the header or over the numbers column), or suppress the lesson line in this explainer. (2) Several lights are sub-strings of a log row (the IN/OUT column, '· CENTRE', YANG/YIN). Each log row is a single typed string at 34 px in DIM, so lighting parts of it means splitting the Line render. (3) The lines in the file (1,0,1,0,0,1) match 22 and the props, and only 1-4 answers, as the note says. Copy rules: all rewrites are 18 characters or fewer per line (◄ counted as one character), uppercase, with no banned words."
+}

@@ -9,67 +9,64 @@
   0,
   1
  ],
- "look": "The readout's own screen: the plot of 22 turns as usual; each step types at the prompt, and the part of the screen it explains lights amber while the rest dims.",
+ "look": "The readout's own screen with 22's plot. Step text sits above the header, not at the prompt (the prompt keeps the WANG BI line and the finding); the part of the screen a step explains lights amber while the rest dims.",
  "steps": [
   {
    "at": 0.0,
    "lights": "header",
-   "text": "HOW TO READ\nTHE READOUT",
-   "note": "the question a viewer of any readout short has"
+   "text": "HOW TO READ\nTHIS SCREEN"
   },
   {
-   "at": 3.0,
-   "lights": "plot and log",
-   "text": "SIX LINES,\nBOTTOM TO TOP.",
-   "note": "L1 is the bottom line"
+   "at": 2.5,
+   "lights": "plot and log; L1 first, then upward",
+   "text": "SIX LINES, L1\nAT THE BOTTOM."
   },
   {
-   "at": 7.0,
-   "lights": "L1 L3 L5 place column",
-   "text": "PLACES 1, 3, 5\nWANT A YANG LINE.",
-   "note": ""
+   "at": 5.5,
+   "lights": "L1 (solid) and L2 (broken) and their YANG/YIN words",
+   "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN."
   },
   {
-   "at": 10.5,
-   "lights": "L2 L4 L6 place column",
-   "text": "PLACES 2, 4, 6\nWANT A YIN LINE.",
-   "note": ""
+   "at": 8.5,
+   "lights": "the IN/OUT column: L1 L3 L5, then L2 L4 L6",
+   "text": "ODD PLACES WANT\nYANG, EVEN YIN."
   },
   {
-   "at": 14.0,
-   "lights": "L2 IN, L5 OUT",
-   "text": "IT FITS: IN.\nIT DOESN'T: OUT.",
-   "note": "L2 is yin in 2: IN. L5 is yin in 5: OUT."
+   "at": 12.0,
+   "lights": "L2 YIN IN, then L5 YIN OUT",
+   "text": "RIGHT KIND: IN.\nWRONG KIND: OUT."
   },
   {
-   "at": 18.0,
-   "lights": "the answering link",
-   "text": "A LINK: LINES THAT\nANSWER EACH OTHER.",
-   "note": "lines 1-4, 2-5, 3-6 answer when they differ; in 22 only 1 and 4 do"
+   "at": 15.5,
+   "lights": "the left bracket with L1 and L4; then L2+L5 and L3+L6 briefly, no bracket",
+   "text": "1-4, 2-5, 3-6 LINK\nIF YIN MEETS YANG."
+  },
+  {
+   "at": 19.0,
+   "lights": "the UPPER and LOWER rows and the right brackets",
+   "text": "LINES 1-3, 4-6:\nTWO TRIGRAMS."
   },
   {
    "at": 22.0,
-   "lights": "L2 and L5 CENTRE",
-   "text": "2 AND 5 ARE\nTHE CENTRES.",
-   "note": "the middle of each trigram"
+   "lights": "the right brackets, then L2 and L5 with · CENTRE",
+   "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE."
   },
   {
-   "at": 25.5,
-   "lights": "L5",
-   "text": "THE CENTRE COUNTS\nMORE THAN PLACE.",
-   "note": "Wang Bi, Zhouyi lüeli: the centre over the correct place"
+   "at": 25.0,
+   "lights": "L5: OUT, then · CENTRE",
+   "text": "A CENTRE CAN MAKE\nUP FOR BEING OUT."
   },
   {
-   "at": 29.0,
-   "lights": "L5 amber ◄, WANG BI: 為飾之主 MASTER OF ADORNMENT",
-   "text": "◄ MARKS THE LINE\nTHAT RULES.",
-   "note": "22's line 5: out of place, a centre, the master"
+   "at": 28.5,
+   "lights": "L2 and L5 amber with ◄, and the finding",
+   "text": "◄ MARKS THE LINES\nTO LOOK AT."
   },
   {
-   "at": 33.0,
-   "lights": "all",
-   "text": "WANG BI,\nAD 226–249.",
-   "note": "who the readings come from; then the end card"
+   "at": 32.0,
+   "lights": "> WANG BI: 為飾之主 / MASTER OF ADORNMENT, and L5",
+   "text": "WANG BI NAMES THE\nLINE THAT RULES."
   }
- ]
+ ],
+ "round": 2,
+ "caption": "The in/out rule is the Ten Wings'; Wang Bi (AD 226–249) left lines 1 and 6 out of it."
 }
