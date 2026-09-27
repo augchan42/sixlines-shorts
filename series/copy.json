@@ -2953,19 +2953,16 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Almost across,\nthe fox gets wet.",
-   "source": "series/critic/readouts/drafts.json#64",
+   "text": "Almost done?\nStay careful to the end.",
+   "source": "docs/research/2026-09-27-depth-review.md (Tuan 不續終也: it did not keep on to the end), worded as in docs/research/2026-09-27-codex-rewrite-options.md; the user: 'yes i like this'",
    "readout": {
     "mark": [
-     4
+     5
     ],
-    "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER.",
-    "master": {
-     "zh": "為未濟之主",
-     "en": "Master of Before Completion"
-    }
+    "finding": "AT THE TOP: HE WETS HIS HEAD.\nNO RESTRAINT AT THE END.",
+    "timed": true
    },
-   "readout_source": "judgment"
+   "readout_source": "Line 6: 有孚于飲酒，无咎。濡其首，有孚失是 (drinking wine in confidence is fine; soaking the head, the confidence is lost); Small Image 飲酒濡首，亦不知節也 (no restraint). Was the structural finding with master line 5."
   }
  }
 }
