@@ -48,11 +48,11 @@
    ]
   },
   {
-   "page": "PLACES",
+   "page": "POSITIONS",
    "pages": [
     {
-     "q": "DEFINE: PLACE",
-     "a": "LINES 2 TO 5 ARE PLACES,\nLIKE POSTS IN AN OFFICE.",
+     "q": "DEFINE: POSITION",
+     "a": "LINES 2 TO 5 ARE POSITIONS,\nLIKE POSTS IN AN OFFICE.",
      "show": {
       "hex": 22,
       "log": [
@@ -115,7 +115,7 @@
     },
     {
      "q": "WHAT THE READOUT IS FOR",
-     "a": "IT GIVES THE STRUCTURE:\nPLACES, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
+     "a": "IT GIVES THE STRUCTURE:\nPOSITIONS, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
      "show": {
       "hex": 22,
       "lit": [
