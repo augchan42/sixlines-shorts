@@ -1,10 +1,10 @@
 {
  "hexagram": 64,
- "rendered": "2026-09-27T12:59:30.566Z",
- "commit": "7d6c2c6432c1353b00572e0706954df384920139",
+ "rendered": "2026-09-27T14:43:07.854Z",
+ "commit": "a51f4bd65c097008a1e4e9b875a19f33e905af8f",
  "clean": false,
- "seconds": 32.725333,
- "shareKbps": 5494,
+ "seconds": 33.386667,
+ "shareKbps": 5383,
  "props": {
   "hexagram": {
    "number": 64,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Almost across,\nthe fox gets wet.",
+   "text": "Almost done?\nStay careful to the end.",
    "trigrams": [
     {
      "zh": "火",
@@ -51,15 +51,12 @@
    ],
    "readout": {
     "mark": [
-     4
+     5
     ],
-    "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER.",
-    "master": {
-     "zh": "為未濟之主",
-     "en": "Master of Before Completion"
-    }
+    "finding": "AT THE TOP: HE WETS HIS HEAD.\nNO RESTRAINT AT THE END.",
+    "timed": true
    },
-   "beats": 16
+   "beats": 17
   },
   "pace": "even",
   "credit": false,
@@ -76,7 +73,7 @@
   "assets/3d/endcard-flip-010101-90bpm-9b.mp4": "80a4eca322e214a5aa4405abb09dcc81bf09709d6a7b2d5b08c4bf22dbe1c0c9",
   "assets/yilin/stipple-64-3.webp": "d73457ee3e62fb355cf1113b6dd8462b382be26fb11db828d83418d1e000b169",
   "assets/yilin/stipple-64-36.webp": "42ca0ed8e4e49a2702e347af74cc881b64ff51d1a1c381ffaa7511e1d4065ae2",
-  "out/series/64-wei-ji/short.mp4": "0ebf980da483af0aa62f82fd6d3145e56e136108e3a63a67eb1190a2ce0eee21",
-  "out/series/64-wei-ji/share.mp4": "41155f1df96a7e8cb4cc3171e246ca2c5897c7a97d24a4335f784958ef5aba01"
+  "out/series/64-wei-ji/short.mp4": "74e04469b1fd23c67f53519d5c1cd90a2b04b48e8ff3b607fc5d110542960ba0",
+  "out/series/64-wei-ji/share.mp4": "7983a4c078ecf74afbe55bf28a35d1ae0eb9de939af35f17f9213513a6b02345"
  }
 }
