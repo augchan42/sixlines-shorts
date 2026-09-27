@@ -1,10 +1,10 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-26T14:51:02.421Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
- "clean": false,
- "seconds": 24.554667,
- "shareKbps": 7365,
+ "rendered": "2026-09-27T13:57:47.035Z",
+ "commit": "24bbf7d97520f7f282a31010eca74b8b86499d3c",
+ "clean": true,
+ "seconds": 27.562667,
+ "shareKbps": 6547,
  "props": {
   "hexagram": {
    "number": 10,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Beside the strong,\nbe courteous.",
+   "text": "Near a temper,\nstay quiet.",
    "trigrams": [
     {
      "zh": "天",
@@ -51,15 +51,12 @@
    ],
    "readout": {
     "mark": [
-     2
+     1
     ],
-    "finding": "A SOFT LINE TREADS ON THE STRONG.",
-    "master": {
-     "zh": "三為履主",
-     "en": "Line three, master of Treading"
-    }
+    "finding": "LINE 2: A LEVEL PATH.\nTHE QUIET ONE DOES WELL.",
+    "timed": true
    },
-   "beats": 16
+   "beats": 22
   },
   "pace": "even",
   "credit": false,
@@ -76,7 +73,7 @@
   "assets/3d/endcard-flip-110111-120bpm-9b.mp4": "38f780417f0139735e4bb139a6f1ce8d41156890e8ee063ebfd42f2baa2a1201",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "4cbb2ec0d52e2f0f9da0341ce1db33b7cb3f69c809cdff260b96b39115f8b3fb",
-  "out/series/10-lu/share.mp4": "7bce9864ee57c2cc04a7f5213721c4e4884328dd46f7c5e5f0e6ce5fd9b84e25"
+  "out/series/10-lu/short.mp4": "d870728f4f92d59a09b4764587d9d9a8150cfb1abf2164fe44726b3d1a7c3cdd",
+  "out/series/10-lu/share.mp4": "54980f2594cf32292df721c26a2296c21d117e432e0e076c5e006a12dd76b2ae"
  }
 }
