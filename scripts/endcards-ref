@@ -15,6 +15,9 @@ mkdir -p out/endcards
 for n in "$@"; do
   n=$((10#$n))
   read -r lines mode < <(python3 scripts/endcard-ref-row.py "$n")
+  # The renderer reads series/hexagrams.json, built from copy.json: without this the first run
+  # of this script rendered seven shorts on their old cards (2026-09-27).
+  npm run series:table >> out/endcards/ref.log 2>&1
   clip="assets/3d/endcard-${mode}-${lines}-9b-ref.mp4"
   if [ -e "public/$clip" ]; then echo "$n: $clip exists"; else
     echo "$n: rendering $clip ($(date +%H:%M))"

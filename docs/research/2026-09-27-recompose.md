@@ -45,7 +45,14 @@ The Remotion part is cheap: about a minute a short.
   its fixed frame counts, a slide, a flare, the typing, scale with the rate so they take the same
   time; the glyph rain is `rain-60.mp4`, each frame doubled, so it runs at its old speed).
   `endcardRef: true` on a row of series/copy.json plays that card at bpm / 120 (`endcard.rate`
-  in the props). Tried on 22 (91.99 bpm, rate 0.767). What changes against a card rendered for
+  in the props). Tried on 22 (91.99 bpm, rate 0.767), then on six edge cases (the user: "just do
+  a handful to see if this method is okay. Pick some edge cases"): 18 (the slowest track,
+  82.5 bpm), 43 (120 bpm, rate 1, snap), 2 (all yin), 1 (all yang), 30 (flip), 47 (snap at
+  90 bpm). A false start first: the renderer reads series/hexagrams.json, built from copy.json
+  by `npm run series:table`, and the first seven renders (commit 8ab11f9 says 22 used the
+  reference card; it did not) went out on the old per-tempo cards. `scripts/endcards-ref`
+  rebuilds the table now, and `scripts/endcard-compare.mjs` puts the current card above the
+  last version at six moments so the clip in use is seen, not assumed. What changes against a card rendered for
   the tempo: the fixed-length moves now slow with the track too (at 92 bpm a slide takes 0.26 s
   instead of 0.2 s, the tagline types in 0.74 s instead of 0.57 s), and the rain runs at 0.77×.
   Blender takes about twice as long a card (271 frames instead of 178), once.

@@ -68,7 +68,8 @@
      "finding": "SIX STRONG LINES. NO REST."
     },
     "readout_source": "image"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -143,7 +144,8 @@
      "finding": "SIX YIELDING LINES. ALL FOLLOW."
     },
     "readout_source": "judgment: at first disoriented, then finding the way"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -1504,7 +1506,8 @@
       "water": "#c6ff3a"
      }
     }
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -1815,6 +1818,7 @@
    }
   },
   "copy": {
+   "endcardRef": true,
    "hook": {
     "text": "Polishing the slides instead of deciding?",
     "source": "commentary/en/22.json#judgment.synthesis"
@@ -2515,7 +2519,8 @@
       "rain": "public/assets/3d/rain.mp4"
      }
     }
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -3593,7 +3598,8 @@
       "rain": "public/assets/3d/rain.mp4"
      }
     }
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -3919,7 +3925,8 @@
       "stand": true
      }
     }
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"

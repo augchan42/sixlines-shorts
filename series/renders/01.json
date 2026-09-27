@@ -1,8 +1,8 @@
 {
  "hexagram": 1,
- "rendered": "2026-09-27T07:30:47.888Z",
- "commit": "1df9e9331a3bf90b1472d50b1a480dbc500868a0",
- "clean": true,
+ "rendered": "2026-09-27T09:40:37.552Z",
+ "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
+ "clean": false,
  "seconds": 26.517333,
  "shareKbps": 6810,
  "props": {
@@ -58,18 +58,19 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-111111-102bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-flip-111111-102bpm-9b.mp4",
-   "mode": "flip"
+   "clip": "assets/3d/endcard-flip-111111-9b-ref.mp4",
+   "mode": "flip",
+   "rate": 0.85
   }
  },
  "files": {
   "local/music/pick01-retrowave-synthwave-80s-90s-retro-pop-fu.mp3": "9c2e238452bb4b9e16a4d3deeb1a974ac77290fc2f5a4775c3c71b08ac391da0",
   "local/music/certificates/synthwave-retrowave-synthwave-80s-90s-retro-pop-future-fashion-177889-license.txt": "3fa6ce9662267662123006d569cd201f4ad4ea86712fff55186ac880d91bb798",
   "assets/3d/hexagram-111111-102bpm-8b.mp4": "525381507c1f13985eb3bd4af6fe87d83b7e8509c1935918a10d8a983a0f4549",
-  "assets/3d/endcard-flip-111111-102bpm-9b.mp4": "ece58d44f64eea9982833944517c3c6dfa4b1f3f7b88abafb45a20f4b6099753",
+  "assets/3d/endcard-flip-111111-9b-ref.mp4": "765f1a30c0dce328e036cd2365c9b4096eb4b114eba1317e797c284853e7def9",
   "assets/yilin/stipple-1-11.webp": "8a4a752284b0667154921dd98554db79544c0d8256b0d4b305ec586c2f2f0d98",
   "assets/yilin/stipple-1-27.webp": "4970c5edcb4dcc62a2508757b0c71534b6eeb1fe846a6756573882f7af528161",
-  "out/series/01-qian/short.mp4": "4ff4d4df44a3801b20f7c00486f8982319ce5212be303bb19027d7d2fdb38b7d",
-  "out/series/01-qian/share.mp4": "b05d7036c01e1ac8564427a56f3702a64b57f7a40c2a6f38b9f0a2329501a812"
+  "out/series/01-qian/short.mp4": "1b5de3a740359b9b80373f17b669c9ffae7ccc3b53bcba02d7baf7c119ef4950",
+  "out/series/01-qian/share.mp4": "5d2c50b1bd900476e1405e9c80da2b414e45f5dc419e6fc5756447cbb59fea32"
  }
 }

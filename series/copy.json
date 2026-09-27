@@ -35,7 +35,8 @@
     "finding": "SIX STRONG LINES. NO REST."
    },
    "readout_source": "image"
-  }
+  },
+  "endcardRef": true
  },
  "2": {
   "hook": {
@@ -73,7 +74,8 @@
     "finding": "SIX YIELDING LINES. ALL FOLLOW."
    },
    "readout_source": "judgment: at first disoriented, then finding the way"
-  }
+  },
+  "endcardRef": true
  },
  "3": {
   "hook": {
@@ -836,7 +838,8 @@
      "water": "#c6ff3a"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "19": {
   "hook": {
@@ -1395,7 +1398,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "31": {
   "hook": {
@@ -1982,7 +1986,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "44": {
   "hook": {
@@ -2157,7 +2162,8 @@
      "stand": true
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "48": {
   "hook": {
