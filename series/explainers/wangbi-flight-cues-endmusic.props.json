@@ -1,0 +1,94 @@
+{
+ "pages": [
+  {
+   "q": "WANG BI ON L5",
+   "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "draw": true,
+    "approach": 5,
+    "fly": 4,
+    "hold": 5,
+    "then": [
+     {
+      "after": 0,
+      "lit": [
+       4
+      ],
+      "amber": [
+       4
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "hexagrams": {
+  "22": {
+   "number": 22,
+   "name": "Grace",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ]
+  }
+ },
+ "readouts": {},
+ "music": "local/music/pick13-synthwave-the-mountain.mp3",
+ "musicStart": 0.023,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+  "seconds": 5.87020328296554
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}

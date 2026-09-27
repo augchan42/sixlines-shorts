@@ -1,0 +1,112 @@
+{
+ "explainer": "wangbi-flight-cues",
+ "rendered": "2026-09-27T06:24:02.199Z",
+ "commit": "61b09bef32716e9790b3024153e60f7a27930bd8",
+ "clean": false,
+ "seconds": 19.7,
+ "shareKbps": 8000,
+ "props": {
+  "pages": [
+   {
+    "q": "WANG BI ON L5",
+    "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
+    "show": {
+     "hex": 22,
+     "log": [
+      "yy",
+      "place",
+      "centre"
+     ],
+     "links": [
+      [
+       0,
+       3
+      ]
+     ],
+     "draw": true,
+     "approach": 5,
+     "fly": 4,
+     "hold": 5,
+     "then": [
+      {
+       "after": 0,
+       "lit": [
+        4
+       ],
+       "amber": [
+        4
+       ]
+      }
+     ]
+    }
+   }
+  ],
+  "hexagrams": {
+   "22": {
+    "number": 22,
+    "name": "Grace",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "trigrams": [
+     {
+      "zh": "山",
+      "name": "MOUNTAIN"
+     },
+     {
+      "zh": "火",
+      "name": "FIRE"
+     }
+    ]
+   }
+  },
+  "readouts": {},
+  "music": null,
+  "musicStart": 0,
+  "mix": {
+   "hum": 1,
+   "beacon": 1,
+   "printer": 1,
+   "ticks": 0.8,
+   "sweep": 0.7,
+   "chatter": 0.7,
+   "warble": 0.5,
+   "winddown": 0.6
+  },
+  "ticks": "local/sfx/teletype.wav",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+   "seconds": 5.87020328296554
+  },
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
+  }
+ },
+ "files": {
+  "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
+  "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon.wav": "c32fb7477871dffb3f0fe1d4a4ff575ecb27e3f5ce03da23e50438e9e4c3fc55",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/wangbi-flight-cues/short.mp4": "5344b4f02e110f42446945eecff0066be9dea41c3468eaa053dd35f4874e0695",
+  "out/explainers/wangbi-flight-cues/share.mp4": "606f594d1d0f2ee4744f138fbc6ff3de6544d240189a7370524e449399d1a104"
+ }
+}

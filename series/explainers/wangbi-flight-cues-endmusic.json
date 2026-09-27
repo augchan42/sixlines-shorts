@@ -1,0 +1,67 @@
+{
+ "about": "A test of the flight look on one page of the Wang Bi lesson; round 7 of wangbi-flight-test (new bed and beacon, no chirps) is the starting point. The user, 2026-09-27: 'Love the new direction. Can we maybe do a couple more?' This version adds four sounds rebuilt after the Nostromo boot sequence's inventory (docs/research/nostromo-boot-inventory.json), each at its moment: a sweep as the view starts, a relay bank's chatter while the lines plot, a warble as the camera reaches L5, a wind-down as the answer stops typing. The user asked whether music should cut in 'maybe just near the end when we show the six lines title screen': the machine sounds throughout and the lesson's music (pick13) only for the end card, as Alien's score gives way to the ship's hum.",
+ "hexagram": 22,
+ "look": "flight",
+ "music": {
+  "file": "pick13-synthwave-the-mountain.mp3",
+  "start": 0.023,
+  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
+ },
+ "caption": "Test: the flight look on one page.",
+ "chapters": [
+  {
+   "page": "",
+   "pages": [
+    {
+     "q": "WANG BI ON L5",
+     "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
+     "draw": "the WANG BI line as on the real screen",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "draw": true,
+      "approach": 5,
+      "fly": 4,
+      "hold": 5,
+      "then": [
+       {
+        "after": 0,
+        "lit": [
+         4
+        ],
+        "amber": [
+         4
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "cues": true
+}

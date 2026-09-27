@@ -51,9 +51,9 @@ export type LessonProps = {
   // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
   // answer types (docs/research/2026-09-27-nostromo-screens.md).
   look?: "flight";
-  sfx?: { hum: string; beacon?: string; relay: string; printer: string };
+  sfx?: { hum: string; beacon?: string; relay: string; printer: string; sweep?: string; chatter?: string; warble?: string; winddown?: string };
   // Volumes (0..1) of the music and each sound, where a script sets them.
-  mix?: { music?: number; hum?: number; beacon?: number; relay?: number; printer?: number; ticks?: number };
+  mix?: { music?: number; hum?: number; beacon?: number; relay?: number; printer?: number; ticks?: number; sweep?: number; chatter?: number; warble?: number; winddown?: number; musicUp?: ("start" | "chapters" | "end")[] };
 };
 
 const FPS = 30;
@@ -303,10 +303,16 @@ export const Lesson: React.FC<LessonProps> = (p) => {
   // The music under the machine sounds, at `mix.music`, up to full at the edges: the first
   // 3 s, the chapter pages and the end card (as Alien's score gives way to the ship's hum).
   const base = p.mix?.music ?? (p.look === "flight" ? 0.6 : 1);
-  const up = [[0, 3 * FPS], ...pages.filter((x) => x.page.chapter).map((x) => [x.from, x.from + x.frames]), [end, durationInFrames]];
+  // `mix.musicUp` picks the edges; "end" alone keeps the music for the end card.
+  const edges = p.mix?.musicUp ?? ["start", "chapters", "end"];
+  const up = [
+    ...(edges.includes("start") ? [[0, 3 * FPS]] : []),
+    ...(edges.includes("chapters") ? pages.filter((x) => x.page.chapter).map((x) => [x.from, x.from + x.frames]) : []),
+    ...(edges.includes("end") ? [[end, durationInFrames]] : []),
+  ];
   const musicLevel = (fr: number) => {
     if (base >= 1) return 1;
-    const near = Math.max(...up.map(([a, b]) => (fr >= a && fr < b ? 1 : fr < a ? Math.max(0, 1 - (a - fr) / FPS) : Math.max(0, 1 - (fr - b) / (1.5 * FPS)))));
+    const near = Math.max(0, ...up.map(([a, b]) => (fr >= a && fr < b ? 1 : fr < a ? Math.max(0, 1 - (a - fr) / FPS) : Math.max(0, 1 - (fr - b) / (1.5 * FPS)))));
     return base + (1 - base) * near;
   };
   return (
@@ -326,16 +332,31 @@ export const Lesson: React.FC<LessonProps> = (p) => {
                   ]
                 : [],
             )}
-          {/* A relay click as each line is plotted during the approach. */}
-          {pages.flatMap((x, k) =>
-            x.page.show?.approach
-              ? [0, 1, 2, 3, 4, 5].map((i) => (
-                  <Sequence key={`relay-${k}-${i}`} from={x.from + 10 + Math.round(((x.qAt - 20) * i) / 6)} durationInFrames={10}>
-                    <Audio src={staticFile(p.sfx!.relay)} volume={p.mix?.relay ?? 0.8} />
-                  </Sequence>
-                ))
-              : [],
-          )}
+          {/* A relay click as each line is plotted during the approach, or, with `sfx.chatter`, a
+              relay bank's chatter all through it. Then the boot sequence's other sounds at their
+              moments (docs/research/nostromo-boot-inventory.json): a sweep as the view starts, a
+              warble as the camera reaches its line, a wind-down as the answer stops typing. */}
+          {pages.flatMap((x, k) => {
+            if (!x.page.show?.approach) return [];
+            const s = p.sfx!;
+            const lines = (x.page.a ?? "").split("\n");
+            const typed = x.lineAt[lines.length - 1] + Math.round(lines[lines.length - 1].length * A_RATE);
+            const cues: { key: string; from: number; frames: number; src?: string; volume: number }[] = [
+              ...(s.chatter
+                ? [{ key: "chatter", from: 10, frames: x.qAt - 20, src: s.chatter, volume: p.mix?.chatter ?? 0.7 }]
+                : [0, 1, 2, 3, 4, 5].map((i) => ({ key: `relay-${i}`, from: 10 + Math.round(((x.qAt - 20) * i) / 6), frames: 10, src: s.relay, volume: p.mix?.relay ?? 0.8 }))),
+              { key: "sweep", from: 0, frames: FPS, src: s.sweep, volume: p.mix?.sweep ?? 0.7 },
+              ...(x.page.show.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
+              { key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 },
+            ];
+            return cues
+              .filter((c) => c.src)
+              .map((c) => (
+                <Sequence key={`${c.key}-${k}`} from={x.from + c.from} durationInFrames={c.frames}>
+                  <Audio src={staticFile(c.src!)} volume={c.volume} />
+                </Sequence>
+              ));
+          })}
         </>
       )}
       {/* The teletype: a tick while the query types, and each answer line (a printer's chatter
