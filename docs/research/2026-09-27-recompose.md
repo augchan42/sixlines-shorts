@@ -25,8 +25,12 @@ The Remotion part is cheap: about a minute a short.
   frame from `rise + beat` with a block cursor blinking on the half beat; the site in the pixel
   font brightening in over 15 frames after it. Positions from the Blender frame (tagline cap
   height at y 1249–1288, site at 1354–1405). Glow by stacked `text-shadow` (a tight core and
-  wider halos, the standard way to fake emission in CSS). The user judges the match on a sample
-  before any batch.
+  wider halos, the standard way to fake emission in CSS). **Failed the user's judgment** on the
+  sample (2026-09-27): "unfortunately, the blender text looks much better." The measured boxes were
+  close (tagline x 232–847 in Blender against 221–847; site y 1353–1407 against 1364–1411) but the
+  glow is not: Blender's is bloom on emission, the CSS is a soft shadow. The code path stays
+  (`endcardText`, off by default); the text stays in Blender. Text changes are rare (one in the
+  whole series, the period), so the saving was never the text: it is B and C.
 - **B. Tempo moves to Remotion.** Render each clip once at the fastest tempo used (120 bpm) at
   60 fps; Remotion plays it at `playbackRate` = clip bpm / track bpm (0.69–1.0). With a 60 fps
   source, a 30 fps output at ≥ 0.5× never repeats a frame, so no stutter (the 0.75× end card in
