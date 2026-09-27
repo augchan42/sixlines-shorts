@@ -1,0 +1,2813 @@
+{
+ "source": "bookofchanges-site@c47df5b055168c9f78b267b1b7b7db2e6a826a08:src/data/zhouyi-zhushu",
+ "readouts": [
+  {
+   "number": 1,
+   "name": "The Creative",
+   "zh": "乾",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "hook": "Waiting for a sign to start?",
+   "meaning": [
+    "The Creative\nsays: begin.",
+    "No conditions.\nJust mean it."
+   ],
+   "question": "What would you\nstart today?",
+   "lesson": "Heaven never\ntakes a day off.",
+   "finding": "SIX STRONG LINES. NO REST.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：天行健，君子以自強不息。",
+    "en": "The Image says: The movement of Heaven is vigorous. The noble person uses this to strengthen himself ceaselessly."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九：潛龍勿用。",
+     "en": "Initial Nine: The dragon is submerged — do not act.",
+     "wangBi": {
+      "zh": "《文言》備矣。",
+      "en": "The Wenyan (Commentary on the Words) treats this fully."
+     }
+    },
+    "2": {
+     "zh": "九二：見龍在田，利見大人。",
+     "en": "Nine in the Second: The dragon appears in the field. It is beneficial to see the great person.",
+     "wangBi": {
+      "zh": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+      "en": "Emerging from submersion and leaving concealment, therefore it says 'the dragon appears.' It is situated upon the ground, therefore it says 'in the field.' Its virtue extends broadly and universally, occupying the center without bias. Though it is not in the ruler's position, it possesses the virtue of a ruler. In the first position one is not yet manifest; in the third one is 'ceaselessly vigilant'; in the fourth one 'perhaps leaps'; in the top one is excessively lofty. 'It is beneficial to see the great person' — only in the second and fifth positions is this so."
+     }
+    },
+    "3": {
+     "zh": "九三：君子終日乾乾，夕惕若厲，無咎。",
+     "en": "Nine in the Third: The noble person is ceaselessly vigilant throughout the day. In the evening still alert, as if in danger — no blame.",
+     "wangBi": {
+      "zh": "處下體之極，居上體之下，在不中之位，履重剛之險。上不在天，未可以安其尊也。下不在田，未可以甯其居也。純脩下道，則居上之德廢；純脩上道，則處下之禮曠。故「終日乾乾」，至於夕惕猶若厲也。居上不驕，在下不憂，因時而惕，不失其幾，雖危而勞，可以「無咎」。處下卦之極，愈於上九之亢，故竭知力而後免於咎也。乾三以處下卦之上，故免亢龍之悔。坤三以處下卦之上，故免龍戰之災。",
+      "en": "Situated at the extreme of the lower trigram and below the upper trigram, in a position that is not centered, treading upon the danger of doubled firmness. Above, not yet in Heaven, one cannot yet rest secure in one's eminence. Below, not in the field, one cannot yet find peace in one's dwelling. If one purely cultivates the way of the lower, then the virtue of occupying the upper position is neglected. If one purely cultivates the way of the upper, then the propriety of dwelling in the lower position is left unfulfilled. Therefore one is 'ceaselessly vigilant throughout the day,' and even into evening one is still alert as if in danger. Occupying the upper position without arrogance, being in the lower position without anxiety — responsive to the moment with alertness, not missing the incipient signs — though in danger and toiling, one can be 'without blame.' Being at the extreme of the lower trigram is better than the excessive loftiness of Top Nine; therefore only by exhausting wisdom and effort can one be freed from blame. Nine in the Third, being at the top of the lower trigram, is thus freed from the regret of the lofty dragon. Kun's third line, being at the top of the lower trigram, is thus freed from the disaster of the dragon battling."
+     }
+    },
+    "4": {
+     "zh": "九四：或躍在淵，無咎。",
+     "en": "Nine in the Fourth: Perhaps leaping over the abyss — no blame.",
+     "wangBi": {
+      "zh": "去下體之極，居上體之下，乾道革之時也。上不在天，下不在田，中不在人，履重剛之險，而無定位所處，斯誠進退無常之時也。近乎尊位，欲進其道，迫乎在下，非躍所及。欲靜其居，居非所安，持疑猶豫未敢決志。用心存公，進不在私，疑以為慮，不謬於果，故「無咎」也。",
+      "en": "Having departed the extreme of the lower trigram and situated at the bottom of the upper trigram, this is the time when the Way of Qian undergoes transformation. Above, not in Heaven; below, not in the field; in the middle, not among humanity — treading upon the danger of doubled firmness, with no fixed position or place. This is truly a time of inconstancy in advancing and retreating. Being near to the honored position, one wishes to advance one's Way; but constrained by those below, it is beyond what a single leap can reach. Wishing to remain still in one's dwelling, one's dwelling is not a place of ease. One holds in suspense and hesitates, not daring to resolve one's intent. One's mind is devoted to the public good, and advancement is not for private gain. Using doubt as deliberation, one does not err through rashness — therefore 'no blame.'"
+     }
+    },
+    "5": {
+     "zh": "九五：飛龍在天，利見大人。",
+     "en": "Nine in the Fifth: The flying dragon is in heaven. It is beneficial to see the great person.",
+     "wangBi": {
+      "zh": "不行不躍而在乎天，非飛而何？故曰「飛龍」也。龍德在天，則大人之路亨也。夫位以德興，德以位敘，以至德而處盛位，萬物之睹，不亦宜乎？",
+      "en": "Neither walking nor leaping but being in heaven — if not flying, then what? Therefore it says 'the flying dragon.' When dragon virtue is in heaven, then the path of the great person is open and successful. For position is elevated through virtue, and virtue is given proper order through position. When supreme virtue occupies the flourishing position, that the myriad things behold it — is that not fitting?"
+     }
+    },
+    "6": {
+     "zh": "上九：亢龍有悔。",
+     "en": "Top Nine: The lofty dragon has regret.",
+     "wangBi": {
+      "zh": null,
+      "en": null
+     }
+    }
+   }
+  },
+  {
+   "number": 2,
+   "name": "The Receptive",
+   "zh": "坤",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "hook": "Tired of always having to lead?",
+   "meaning": [
+    "The Receptive\nsays: follow well.",
+    "Supporting is its\nown strength."
+   ],
+   "question": "Who could\nyou back?",
+   "lesson": "Lead and get lost.\nFollow and arrive.",
+   "finding": "SIX YIELDING LINES. ALL FOLLOW.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：地勢坤。君子以厚德載物。",
+    "en": "The Image says: The disposition of Earth is Kun (receptive). The noble person, through generous virtue, carries all things."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六：履霜，堅冰至。",
+     "en": "Initial Six: Treading on frost, solid ice is approaching.",
+     "wangBi": {
+      "zh": "始於履霜，至于堅冰，所謂至柔而動也剛。陰之為道，本於卑弱而後積著者也，故取履霜以明其始。陽之為物，非基於始以至於著者也，故以出處明之，則以初為潛。",
+      "en": "It begins with treading on frost and reaches solid ice—this is what is meant by ‘utmost softness yet moving toward hardness.’ The Way of yin is rooted in the humble and weak and only later accumulates to prominence; therefore it takes ‘treading on frost’ to illuminate its beginning. Yang as a force is not one that builds from a beginning to reach prominence; therefore it is illuminated through emergence and withdrawal, with the first position being ‘submerged.’"
+     }
+    },
+    "2": {
+     "zh": "六二：直方大，不習无不利。",
+     "en": "Six in the Second: Straight, square, and great. Without practice, nothing is unfavorable.",
+     "wangBi": {
+      "zh": "居中得正，極於地質，任其自然而物自生，不假脩營而功自成，故不習焉而无不利。",
+      "en": "Dwelling in the center and attaining correctness, it reaches the utmost of Earth’s substance. Entrusting itself to the natural, things arise of themselves; without relying on cultivation or contrivance, accomplishments are completed of themselves. Therefore, without practice, nothing is unfavorable."
+     }
+    },
+    "3": {
+     "zh": "六三：含章可貞，或從王事，无成有終。",
+     "en": "Six in the Third: Containing pattern, permitting steadfastness. Perhaps serving in the king’s affairs—no initiating, yet there is completion.",
+     "wangBi": {
+      "zh": "三處下卦之極，而不疑於陽，應斯義者也。不為事始，須唱乃應，待命乃發，含美而可正者也，故曰含章可貞也。有事則從，不敢為首，故曰或從王事也。不為事主，順命而終，故曰无成有終也。",
+      "en": "The third position occupies the extreme of the lower trigram, yet is not suspected by yang—it corresponds to this meaning. Not initiating affairs but waiting for the lead before responding, awaiting the command before acting, containing beauty while maintaining correctness—hence it says ‘containing pattern, permitting steadfastness.’ When affairs arise, one follows; one does not dare to take the lead—hence it says ‘perhaps serving in the king’s affairs.’ Not being the master of affairs but following the command to completion—hence it says ‘no initiating, yet there is completion.’"
+     }
+    },
+    "4": {
+     "zh": "六四：括囊，无咎无譽。",
+     "en": "Six in the Fourth: Tying the sack shut—no blame, no praise.",
+     "wangBi": {
+      "zh": "處陰之卦，以陰居陰，履非中位，无直方之質；不造陽事，无含章之美。括結否閉，賢人乃隱。施慎則可，非泰之道。",
+      "en": "Situated in a yin hexagram, occupying a yin position with a yin line, treading upon a position that is not central—it lacks the substance of straightness and squareness. Not undertaking yang affairs, it lacks the beauty of containing pattern. Tying shut and blocking closed—the worthy person goes into hiding. Exercising caution is acceptable, but this is not the Way of flourishing."
+     }
+    },
+    "5": {
+     "zh": "六五：黃裳，元吉。",
+     "en": "Six in the Fifth: A yellow lower garment—supremely auspicious.",
+     "wangBi": {
+      "zh": "黃，中之色也。裳，下之飾也。坤為臣道，美盡於下。夫體无剛健而能極物之情，通理者也。以柔順之德，處於盛位，任夫文理者也。垂黃裳以獲元吉，非用武者也。極陰之盛，不至疑陽，以文在中，美之至也。",
+      "en": "Yellow is the color of the center. The lower garment is the adornment of what is below. Kun represents the Way of the minister, whose beauty is fully expressed in the subordinate position. Without the substance of firm strength, yet able to fathom the dispositions of all things—this is one who comprehends principle. With the virtue of yielding compliance, occupying a flourishing position, and entrusted with cultural refinement and principle—such a one displays a yellow lower garment to obtain supreme auspiciousness; this is not through the use of martial force. Reaching the fullness of yin without coming to be suspected by yang, with cultural refinement at the center—this is the utmost of beauty."
+     }
+    },
+    "6": {
+     "zh": "上六：龍戰于野，其血玄黃。",
+     "en": "Top Six: Dragons battle in the open field; their blood is dark and yellow.",
+     "wangBi": {
+      "zh": "陰之為道，卑順不盈，乃全其美。盛而不已，固陽之地，陽所不堪，故戰于野。",
+      "en": "The Way of yin is that through humility, compliance, and not overflowing, it preserves its beauty intact. When it waxes full and does not cease, it encroaches upon yang’s territory, which yang cannot endure—therefore they battle in the open field."
+     }
+    }
+   }
+  },
+  {
+   "number": 3,
+   "name": "Difficulty at the Beginning",
+   "zh": "屯",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "hook": "Big start, total chaos?",
+   "meaning": [
+    "Difficulty says:\nget organized.",
+    "Boring beats\nbold here."
+   ],
+   "question": "What needs\nsorting first?",
+   "lesson": "Don't push yet.\nWin helpers first.",
+   "finding": "STRONG AT THE BASE, BELOW THE WEAK.",
+   "mark": [
+    1
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：雲雷屯，君子以經綸。",
+    "en": "The Image states: Clouds and thunder form Zhun. The noble person uses this to weave and order affairs."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，磐桓，利居貞，利建侯。",
+     "en": "Initial Nine: Hesitating and lingering. It is beneficial to abide in correctness. It is beneficial to establish a lord.",
+     "wangBi": {
+      "zh": "處屯之初，動則難生，不可以進，故磐桓也。處此時也，其利安在？不唯居貞建侯乎？夫息亂以靜，守靜以侯，安民在正，弘正在謙。屯難之世，陰求於陽，弱求於強，民思其主之時也。初處其首而又下焉。爻備斯義，宜其得民也。\n\n不可以進，故磐桓也。非為宴安，棄成務也，故雖磐桓，志行正也。\n\n陽貴而陰賤也。",
+      "en": "Situated at the beginning of Zhun, any movement would give rise to difficulty; one cannot advance, hence the hesitating and lingering. In this time, where does benefit lie? Is it not solely in abiding in correctness and establishing lords? To quell disorder, use stillness; to maintain stillness, rely on lords. To bring peace to the people, correctness is needed; to broaden correctness, humility is needed. In a time of Zhun difficulty, the yin seeks the yang, the weak seeks the strong—it is a time when the people long for their lord. The initial line occupies the first position and is moreover at the bottom. The line embodies this meaning; it is fitting that it gains the people.\n\nOne cannot advance, hence the hesitating and lingering. It is not for idle comfort, abandoning the task of accomplishment; therefore, although hesitating and lingering, the aspiration is to act with correctness.\n\nThe yang is noble and the yin is humble."
+     }
+    },
+    "2": {
+     "zh": "六二，屯如邅如，乘馬班如，匪寇婚媾。女子貞不字，十年乃字。",
+     "en": "Six in the Second: Difficult and hesitant, riding horses but wheeling about. It is not a bandit but a suitor seeking marriage. The woman remains steadfast and does not accept the union; after ten years she will then accept.",
+     "wangBi": {
+      "zh": "志在乎五，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰乘馬班如也。寇謂初也。无初之難，則與五婚矣，故曰「匪寇婚媾」也。志在於五，不從於初，故曰女子貞不字也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰十年乃字。",
+      "en": "Her aspiration is directed toward the Fifth; she does not follow the Initial line. In this time of Zhun difficulty, the correct way has not yet prevailed. She is close to the Initial line but does not find accord with it, and is troubled by encroachment and harm; hence the difficulty and hesitation. The time is precisely one of Zhun difficulty; the correct way has not yet opened. To travel far and proceed is difficult to accomplish, hence it says 'riding horses but wheeling about.' The 'bandit' refers to the Initial line. Without the obstruction of the Initial line, she would marry the Fifth; hence it says 'it is not a bandit but a suitor seeking marriage.' Her aspiration is directed toward the Fifth and she does not follow the Initial; hence it says 'the woman remains steadfast and does not accept the union.' In a time of Zhun difficulty, the situation does not last beyond ten years. After ten years, normality returns; when normality returns, the original aspiration will be attained. Hence it says 'after ten years she will then accept.'"
+     }
+    },
+    "3": {
+     "zh": "六三，即鹿无虞，惟入于林中。君子幾不如舍，往吝。",
+     "en": "Six in the Third: Pursuing a deer without a forester, one only enters the depths of the forest. The noble person discerns that it is better to let go. To advance brings regret.",
+     "wangBi": {
+      "zh": "三既近五，而无寇難。四雖比五，其志在初，不妨已路，可以進而无屯邅也。見路之易，不揆其志，五應在二，往必不納，何異无虞以從禽乎？雖見其禽而无其虞，徒入于林中，其可獲乎？幾，辭也。夫君子之動，豈取恨辱哉！故不如舍。往吝，窮也。",
+      "en": "The Third is close to the Fifth and has no bandit's obstruction. Although the Fourth is adjacent to the Fifth, its aspiration is directed toward the Initial line and does not block the Third's path; it is possible to advance without difficulty or hesitation. But seeing the ease of the path without measuring the other's intent—the Fifth's correspondent is the Second, so going will certainly meet with rejection—how is this different from pursuing game without a forester? Although one sees the game but has no forester, one merely enters the forest in vain. Can one catch it? Ji is a particle. When a noble person acts, would he invite resentment and disgrace? Therefore it is better to let go. To advance brings regret—it leads to an impasse."
+     }
+    },
+    "4": {
+     "zh": "六四，乘馬班如，求婚媾，往吉，无不利。",
+     "en": "Six in the Fourth: Riding horses but wheeling about, seeking a marriage alliance. To advance is auspicious; nothing is without benefit.",
+     "wangBi": {
+      "zh": "二雖比初，執貞不從，不害己志者也。求與合好，往必見納矣。故曰「往吉，无不利」。\n\n見彼之情狀也。",
+      "en": "Although the Second is adjacent to the Initial line, she holds to her steadfastness and does not follow it; this does not harm the Fourth's intent. Seeking to unite in accord, going will certainly be accepted. Therefore it says 'to advance is auspicious; nothing is without benefit.'\n\nThis is seeing the other's circumstances and sentiments."
+     }
+    },
+    "5": {
+     "zh": "九五，屯其膏，小貞吉，大貞凶。",
+     "en": "Nine in the Fifth: Hoarding one's bounty. For small matters, correctness brings good fortune. For great matters, correctness brings misfortune.",
+     "wangBi": {
+      "zh": "處屯難之時，居尊位之上，不能恢弘博施，无物不與，拯濟微滯，亨于群小，而繫應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+      "en": "In a time of Zhun difficulty, occupying the exalted position above, yet unable to extend broad generosity, sharing with nothing withheld, to rescue and relieve the humble and stagnant and bring success to the multitude of lesser ones. Instead, one's bond of correspondence is fixed on the Second, hoarding one's bounty in difficulty—this is not one who can make his giving shine. Stubbornly fixing one's intent on a single affinity, allowing no others to intervene: this is good fortune for small correctness, but misfortune for great correctness."
+     }
+    },
+    "6": {
+     "zh": "上六，乘馬班如，泣血漣如。",
+     "en": "Top Six: Riding horses but wheeling about, weeping tears of blood in streaming drops.",
+     "wangBi": {
+      "zh": "處險難之極，下无應援，進无所適，雖比於五，五屯其膏，不與相得，居不獲安，行无所適，窮困闉厄，无所委仰，故泣血漣如。",
+      "en": "Situated at the extreme of danger and difficulty, with no corresponding support below, advancing has no destination. Although adjacent to the Fifth, the Fifth hoards its bounty and does not find accord with it. Dwelling brings no peace, traveling has no destination; in utter exhaustion and distress, with nothing to rely upon or look up to—hence weeping tears of blood in streaming drops."
+     }
+    }
+   }
+  },
+  {
+   "number": 4,
+   "name": "Youthful Folly",
+   "zh": "蒙",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "hook": "Asking again for a better answer?",
+   "meaning": [
+    "Youthful Folly\nsays: ask once.",
+    "Asking twice is\njust shopping."
+   ],
+   "question": "What’s your\nreal question?",
+   "lesson": "Teachers don't\nchase students.",
+   "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+   "mark": [
+    2,
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山下出泉，蒙。\n\n君子以果行育德。",
+    "en": "The Image states: Below the mountain a spring emerges — Youthful Folly.\n\nThe noble person uses this to act with resolution and nurture virtue."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，發蒙，利用刑人，用說桎梏，以往吝。",
+     "en": "Initial Six. Dispelling folly. It is beneficial to discipline people and to remove fetters and shackles. To proceed in this way brings regret.",
+     "wangBi": {
+      "zh": "處蒙之初，二照其上，故蒙發也。蒙發疑明，刑說當也。以往吝，刑不可長也。\n\n刑人之道，道所惡也。以正法制，故刑人也。",
+      "en": "Dwelling at the beginning of Youthful Folly, the second line illuminates from above it, hence the folly is dispelled. When folly is dispelled and doubt is made clear, then discipline and removal of fetters are fitting. 'To proceed brings regret' means that discipline cannot be prolonged.\n\nThe way of disciplining people is something the Way finds objectionable. But because it serves to set right laws and regulations, therefore one disciplines people."
+     }
+    },
+    "2": {
+     "zh": "九二，包蒙，吉。納婦吉，子克家。",
+     "en": "Nine in the Second. Embracing the fool — good fortune. Taking a wife brings good fortune. The son is capable of managing the household.",
+     "wangBi": {
+      "zh": "以剛居中，童蒙所歸，包而不距，則遠近咸至，故曰「包蒙吉」也。婦者，配己而成德者也。體陽而能包蒙，以剛而能居中，以此納配，物莫不應，故納婦吉也。處于卦內，以剛接柔，親而得中，能幹其任，施之於子，克家之義。",
+      "en": "With firmness dwelling in the center, the young fools turn to him. Embracing them without rejecting any, those near and far all come — hence it says 'embracing the fool, good fortune.' A wife is one who pairs with oneself to accomplish virtue. Having a yang constitution yet able to embrace the foolish, being firm yet able to dwell in the center — with these qualities in taking a mate, nothing fails to respond. Hence 'taking a wife brings good fortune.' Positioned within the lower trigram, with firmness connecting to yielding lines, close yet attaining centrality, capable of managing responsibilities — applied to a son, this is the meaning of 'capable of managing the household.'"
+     }
+    },
+    "3": {
+     "zh": "六三，勿用取女。見金夫，不有躬，无攸利。",
+     "en": "Six in the Third. Do not take this woman. She sees a man of bronze and does not keep her person — nothing is beneficial.",
+     "wangBi": {
+      "zh": "童蒙之時，陰求於陽，晦求於明，各求發其昧者也。六三在下卦之上，上九在上卦之上，男女之義也。上不求三而三求上，女先求男者也。女之為體，正行以待命者也。見剛夫而求之，故曰不有躬也。施之於女行在不順，故勿用取女而无攸利。",
+      "en": "In the time of Youthful Folly, yin seeks yang, the dark seeks the bright — each seeks to have its obscurity dispelled. Six in the Third is at the top of the lower trigram; Top Nine is at the top of the upper trigram — this is the principle of man and woman. The upper does not seek the third, but the third seeks the upper — the woman seeks the man first. As for the woman's proper conduct, she should act correctly and await her summons. Seeing a firm husband and pursuing him — hence it says 'she does not keep her person.' Applied to a woman, her conduct is not compliant, hence 'do not take this woman' and 'nothing is beneficial.'"
+     }
+    },
+    "4": {
+     "zh": "六四，困蒙，吝。",
+     "en": "Six in the Fourth. Entangled in folly — regret.",
+     "wangBi": {
+      "zh": "獨遠於陽，處兩陰之中，闇莫之發，故曰困蒙也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰吝也。\n\n陽稱實也。",
+      "en": "Alone and far from yang, dwelling in the midst of two yin lines, with no brightness to dispel the darkness — hence it says 'entangled in folly.' Trapped in darkness, unable to draw close to the worthy to open up its purpose — this too is lowly. Hence it says 'regret.'\n\nYang is called 'the substantial.'"
+     }
+    },
+    "5": {
+     "zh": "六五，童蒙吉。",
+     "en": "Six in the Fifth. Youthful folly — good fortune.",
+     "wangBi": {
+      "zh": "以夫陰質居於尊位，不自任察而委於二，付物以能，不勞聰明，功斯克矣，故曰童蒙吉。\n\n委物以能，不先不為，順以巽也。",
+      "en": "With a yin constitution dwelling in the honored position, not presuming to examine by itself but delegating to the second, entrusting affairs to the capable, not taxing its own intelligence — the work is thereby accomplished. Hence it says 'youthful folly, good fortune.'\n\nEntrusting affairs to the capable, neither taking the lead nor acting on its own — this is compliance with deference."
+     }
+    },
+    "6": {
+     "zh": "上九，擊蒙，不利為寇，利禦寇。",
+     "en": "Top Nine. Striking at folly. It is not beneficial to act as a marauder; it is beneficial to defend against marauders.",
+     "wangBi": {
+      "zh": "處蒙之終，以剛居上，能擊去童蒙，以發其昧者也，故曰擊蒙也。童蒙願發而己能擊去之，合上下之願，故莫不順也。為之扞禦，則物咸附之。若欲取之，則物咸叛矣，故「不利為寇，利禦寇」也。",
+      "en": "Dwelling at the culmination of Youthful Folly, with firmness occupying the top position, able to strike away youthful folly and dispel the darkness of others — hence it says 'striking at folly.' The young fools desire to have their darkness dispelled, and this one is able to strike it away — this accords with the wishes of those above and below, so none fail to comply. If one defends and protects them, all things will attach themselves. If one seeks to seize them, all things will rebel — hence 'it is not beneficial to act as a marauder; it is beneficial to defend against marauders.'"
+     }
+    }
+   }
+  },
+  {
+   "number": 6,
+   "name": "Conflict",
+   "zh": "訟",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "hook": "Fighting over something you’re right about?",
+   "meaning": [
+    "Conflict says:\nstop halfway.",
+    "Pushing to the end\ncosts you."
+   ],
+   "question": "What fight could\nyou leave now?",
+   "lesson": "Take it to\na fair judge.",
+   "finding": "HEAVEN RISES. WATER SINKS. APART.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為訟之主",
+    "en": "Master of Conflict"
+   },
+   "image": {
+    "zh": "《象》曰：天與水違行，訟。君子以作事謀始。",
+    "en": "The Image says: Heaven and water move in contrary directions — Contention. The noble person, in undertaking affairs, plans carefully from the beginning."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，不永所事，小有言，終吉。",
+     "en": "Initial Six: One does not perpetuate the matter. There are minor criticisms, but in the end there is good fortune.",
+     "wangBi": {
+      "zh": "處訟之始，訟不可終，故不永所事，然後乃吉。凡陽唱而陰和，陰非先唱者也。四召而應，見犯乃訟。處訟之始，不為訟先，雖不能不訟，而了訟必辯明也。",
+      "en": "Situated at the beginning of contention — contention must not be carried to the end, therefore one does not perpetuate the matter, and only then is there good fortune. In general, yang initiates and yin responds; yin is not the one that initiates first. The Fourth calls and this line responds; only when offended against does it enter contention. Situated at the beginning of contention, it does not initiate contention first. Although it cannot avoid contention entirely, the resolution of the contention will surely be clearly distinguished."
+     }
+    },
+    "2": {
+     "zh": "《象》曰：不克訟，歸逋竄也。自下訟上，患至掇也。",
+     "en": "The Image says: \"Unable to prevail in contention, one returns and flees into hiding.\" Contending from below against those above — calamity arrives as if picked up by hand.",
+     "wangBi": {
+      "zh": "以剛處訟，不能下物，自下訟上，宜其不克。若能以懼歸竄其邑，乃可以免災。邑過三百，非為竄也。竄而據強，災未免也。",
+      "en": "With firmness one engages in contention, unable to defer to others. Contending from below against those above, it is fitting that one cannot prevail. If one can fearfully return and hide away in one's small town, then one can escape disaster. If the town exceeds three hundred households, this is not truly hiding. If one hides yet occupies a strong position, disaster is not yet escaped."
+     }
+    },
+    "3": {
+     "zh": "六三，食舊德，貞厲，終吉。或從王事，无成。",
+     "en": "Six in the Third: One feeds on former virtue. Steadfast correctness in the face of danger; in the end there is good fortune. If one follows in the king's service, there is no completion.",
+     "wangBi": {
+      "zh": "體夫柔弱，以順於上，不為九二，自下訟上，不見侵奪，保全其有，故得食其舊德而不失也。居爭訟之時，處兩剛之間，而皆近不相得，故曰貞厲。柔體不爭，繫應在上，眾莫能傾，故曰終吉。上壯爭勝，難可忤也，故或從王事，不敢成也。",
+      "en": "Its body is yielding and weak, and it submits obediently to those above. Unlike Nine in the Second, which contends from below against those above, it is not encroached upon or dispossessed, and preserves all that it has. Therefore it can feed on its former virtue without losing it. Dwelling in a time of contention and dispute, positioned between two firm lines, both near yet not in accord — hence \"steadfast correctness in the face of danger.\" Its yielding body does not contend, its bond of correspondence is with the one above, and the multitude cannot overthrow it — hence \"in the end there is good fortune.\" The one above is strong and strives to prevail, and is difficult to oppose — hence \"if one follows in the king's service, one does not dare bring matters to completion.\""
+     }
+    },
+    "4": {
+     "zh": "九四，不克訟。\n\n初辯明也。\n\n復即命渝，安貞吉。",
+     "en": "Nine in the Fourth: Unable to prevail in contention.\n\nThe Initial line distinguishes clearly.\n\nOne returns and submits to the mandate, changing course. Peaceful correctness brings good fortune.",
+     "wangBi": {
+      "zh": "處上訟下，可以改變者也，故其咎不大。若能反從本理，變前之命，安貞不犯，不失其道，為仁由己，故吉從之。",
+      "en": "Being above and contending against those below, this is something that can be changed — therefore the blame is not great. If one can return and follow the original principle, changing the previous mandate, dwelling in peaceful correctness and not offending, not losing one's Way — \"the practice of humaneness depends on oneself\" — therefore good fortune follows."
+     }
+    },
+    "5": {
+     "zh": "九五，訟元吉。",
+     "en": "Nine in the Fifth: Contention — sublime good fortune.",
+     "wangBi": {
+      "zh": "處得尊位，為訟之主，用其中正以斷枉直，中則不過，正則不邪，剛无所溺，公无所偏，故訟元吉。",
+      "en": "Occupying the honored position, it serves as the master of contention, using its centered correctness to judge the crooked and the straight. Being centered, it does not go to excess; being correct, it does not deviate into crookedness. Its firmness is not submerged by anything, and its impartiality is not biased toward anything — therefore \"contention — sublime good fortune.\""
+     }
+    },
+    "6": {
+     "zh": "上九，或錫之鞶帶，終朝三褫之。",
+     "en": "Top Nine: Perhaps one is bestowed a ceremonial belt, but before the morning is over it is stripped away three times.",
+     "wangBi": {
+      "zh": "處訟之極，以剛居上，訟而得勝者也。以訟受錫，榮何可保？故終朝之間，褫帶者三也。",
+      "en": "Situated at the extreme of contention, with firmness occupying the top position, this is one who wins the contention. But receiving bestowals through contention — how can such honor be preserved? Therefore within the span of a single morning, the belt is stripped away three times."
+     }
+    }
+   }
+  },
+  {
+   "number": 9,
+   "name": "Small Taming",
+   "zh": "小畜",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "hook": "Everything’s ready, nothing happens?",
+   "meaning": [
+    "Small Taming\nsays: not yet.",
+    "Work on yourself\nmeanwhile."
+   ],
+   "question": "What can you\nwork on now?",
+   "lesson": "Small can hold\nbig, for a while.",
+   "finding": "ONE YIELDING LINE HOLDS FIVE.",
+   "mark": [
+    4
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：風行天上，小畜。君子以懿文德。",
+    "en": "The Image says: Wind moves above heaven—Small Taming. The noble person thereby refines cultural virtue."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，復自道，何其咎？吉。",
+     "en": "Initial Nine. Returning by one's own path—what blame could there be? Auspicious.",
+     "wangBi": {
+      "zh": "處乾之始，以升巽初，四為己應，不距己者也。以陽升陰，復自其道，順而无違，何所犯咎，得義之吉。",
+      "en": "Situated at the beginning of Qian, ascending toward the first position of Xun; the Fourth is its corresponding line and does not resist it. A yang line ascending toward a yin line returns by its own path; compliant and without contravention—what offense could it commit? It attains the auspiciousness of righteous meaning."
+     }
+    },
+    "2": {
+     "zh": "九二，牽復，吉。",
+     "en": "Nine in the Second. Pulled back in return. Auspicious.",
+     "wangBi": {
+      "zh": "處乾之中，以升巽五，五非畜極，非固己者也。雖不能若陰之不違，可牽以獲復，是以吉也。",
+      "en": "Situated at the center of Qian, ascending toward the fifth position of Xun; the Fifth is not the extreme of taming and does not hold it firm. Although it cannot be like the yin's complete absence of resistance, it can be pulled along to achieve return—hence it is auspicious."
+     }
+    },
+    "3": {
+     "zh": "九三，輿說輻。夫妻反目。",
+     "en": "Nine in the Third. The carriage has its wheel-spokes removed. Husband and wife turn their eyes against each other.",
+     "wangBi": {
+      "zh": "上為畜盛，不可牽征，以斯而進，故必說輻也。己為陽極，上為陰長，畜於陰長，不能自復，方之「夫妻反目」之義也。",
+      "en": "Above is where the taming is at its fullest; one cannot be pulled along to advance. To press forward under these circumstances will surely result in the removal of wheel-spokes. The Third is the extreme of yang; the Top is the senior yin. Being tamed by the senior yin and unable to return of its own accord—this is compared to the meaning of \"husband and wife turn their eyes against each other.\""
+     }
+    },
+    "4": {
+     "zh": "六四，有孚，血去惕出，无咎。",
+     "en": "Six in the Fourth. There is sincerity. Blood departs, apprehension goes away. No blame.",
+     "wangBi": {
+      "zh": "夫言血者，陽犯陰也。四乘於三，近不相得，三務於進，而己隔之，將懼侵克者也。上亦惡三而能制焉，志與上合，共同斯誠，三雖逼己，而不能犯，故得血去懼除，保无咎也。",
+      "en": "When blood is mentioned, it means the yang assails the yin. The Fourth rides atop the Third; being close, they do not get along. The Third strives to advance, while the Fourth blocks it, and so it fears being invaded and overcome. The Top also dislikes the Third and can restrain it; its will accords with that of the Top, sharing the same sincerity. Although the Third presses upon it, it cannot assail it. Therefore blood departs and apprehension is removed, and it preserves itself without blame."
+     }
+    },
+    "5": {
+     "zh": "九五，有孚攣如，富以其鄰。",
+     "en": "Nine in the Fifth. There is sincerity, bound together as one. Sharing wealth with one's neighbor.",
+     "wangBi": {
+      "zh": "處得尊位，不疑於二，來而不距。二牽己攣，不為專固，有孚攣如之謂也。以陽居陽，處實者也。居盛處實而不專固，富以其鄰者也。",
+      "en": "Occupying the honored position, it does not regard the Second with suspicion and does not resist its approach. The Second pulls and it clasps back, without being exclusive or rigid—this is what is meant by \"there is sincerity, bound together as one.\" A yang line in a yang position occupies what is substantial. Dwelling in fullness and occupying what is substantial without being exclusive or rigid—this is \"sharing wealth with one's neighbor.\""
+     }
+    },
+    "6": {
+     "zh": "上九，既雨既處，尚德載，婦貞厲，月幾望，君子征凶。",
+     "en": "Top Nine. Already raining, already settled. Virtue esteemed and accumulated. For the wife, steadfastness brings danger. The moon is nearly full. For the noble person, to advance means misfortune.",
+     "wangBi": {
+      "zh": "處小畜之極，能畜者也。陽不獲亨，故既雨也。剛不能侵，故既處也。體巽處上，剛不敢犯，尚德者也。為陰之長，能畜剛健，德積載者也。婦制其夫，臣制其君，雖貞近危，故曰婦貞厲也。陰之盈盛莫盛於此，故曰月幾望也。滿而又進，必失其道，陰疑於陽，必見戰伐，雖復君子，以征必凶，故曰君子征凶也。\n\n夫處下可以征而无咎者，唯泰也則然。坤本體下，又順而弱，不能敵剛，故可以全其類，征而吉也。自此以往，則其進各有難矣。夫巽雖不能若艮之善畜，猶不肯為坤之順從也，故可得少進，不可盡陵也。是以初九、九二，其復則可，至於九三，則輿說輻也。夫大畜者，畜之極也。畜而不已，畜極則通，是以其畜之盛在於四、五，至于上九，道乃大行。小畜積極而後乃能畜，是以四、五可以進，而上九說征之輻。",
+      "en": "Situated at the extreme of Small Taming, this is the one capable of taming. The yang does not attain pervasion, hence \"already raining.\" The firm cannot invade, hence \"already settled.\" Part of the Xun trigram and situated above, the firm dares not assail it—this is esteeming virtue. As the senior yin, able to tame the firm and vigorous—this is virtue accumulated and bearing its load. When the wife controls her husband, or the minister controls his lord, though steadfast it approaches danger—hence it says \"for the wife, steadfastness brings danger.\" The fullness of yin is nowhere greater than here—hence it says \"the moon is nearly full.\" Being full and still advancing, one must lose the Way; when yin rivals yang, there must be conflict and war. Even if one is a noble person, to advance under these circumstances will surely bring misfortune—hence it says \"for the noble person, to advance means misfortune.\"\n\nNow, the case where those below can advance without blame occurs only in the Tai hexagram. Kun's essential substance is below; moreover it is compliant and yielding, unable to oppose the firm, so it can preserve its kind and advance with good fortune. Beyond this case, each advance has its own difficulties. Although Xun cannot tame as well as Gen does, it still refuses to be as submissively compliant as Kun. Therefore one may advance a little but cannot encroach completely. Thus Initial Nine and Nine in the Second can return, but by Nine in the Third the carriage has its wheel-spokes removed. Now, Da Xu (Great Taming) is the extreme of taming. Taming without ceasing—when taming reaches its extreme, it opens through. Thus the height of its taming is at the Fourth and Fifth; by Top Nine, the Way moves forward freely. In Small Taming, accumulation reaches its extreme and only then can it tame. Thus the Fourth and Fifth can advance, while Top Nine removes the wheel-spokes of those who would march forward."
+     }
+    }
+   }
+  },
+  {
+   "number": 10,
+   "name": "Treading",
+   "zh": "履",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "hook": "Working for someone with a temper?",
+   "meaning": [
+    "Treading says:\nmind how you step.",
+    "Act well and\nit won’t flare."
+   ],
+   "question": "Who do you tread\ncarefully around?",
+   "lesson": "Beside the strong,\nbe courteous.",
+   "finding": "A SOFT LINE TREADS ON THE STRONG.",
+   "mark": [
+    3
+   ],
+   "master": {
+    "zh": "三為履主",
+    "en": "Line three, master of Treading"
+   },
+   "image": {
+    "zh": "《象》曰：上天下澤，履。君子以辯上下、定民志。",
+    "en": "The Image says: Heaven above, the lake below—this is Lü (Treading). The noble person, accordingly, distinguishes between high and low, and settles the aspirations of the people."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，素履，往无咎。",
+     "en": "Initial Nine: Treading in plainness. Going forth, there is no blame.",
+     "wangBi": {
+      "zh": "處履之初，為履之始，履道惡華，故素乃无咎。處履以素，何往不從？必獨行其願，物无犯也。",
+      "en": "Occupying the beginning of Lü, this is the start of treading. The way of treading abhors ornamentation; therefore plainness brings no blame. If one conducts treading with plainness, where can one go without compliance? One surely carries out one's wishes independently, and nothing violates it."
+     }
+    },
+    "2": {
+     "zh": "九二，履道坦坦，幽人貞吉。",
+     "en": "Nine in the Second: The way of treading is smooth and level. For the secluded person, correctness brings good fortune.",
+     "wangBi": {
+      "zh": "履道尚謙，不喜處盈，務在致誠，惡夫外飾者也。而二以陽處陰，履於謙也。居內履中，隱顯同也。履道之美，於斯為盛。故「履道坦坦」，无險厄也。在幽而貞，宜其吉。",
+      "en": "The way of treading esteems humility and does not delight in dwelling in fullness; it strives to achieve sincerity and abhors outward adornment. The Second, being yang occupying a yin position, treads in humility. Dwelling within and treading in the center, what is hidden and what is manifest are the same. The beauty of the way of treading reaches its fullness here. Therefore 'the way of treading is smooth and level'—there are no dangers or difficulties. Being secluded yet correct, good fortune is fitting."
+     }
+    },
+    "3": {
+     "zh": "《象》曰：眇能視，不足以有明也。跛能履，不足以與行也。咥人之凶，位不當也。武人為于大君，志剛也。",
+     "en": "The Image says: The one-eyed can see, but not well enough to have true clarity. The lame can walk, but not well enough to truly travel. The misfortune of biting the person is because the position is not appropriate. A martial person acts as a great ruler—the will is set on firmness.",
+     "wangBi": {
+      "zh": "居履之時，以陽處陽，猶曰不謙，而況以陰居陽，以柔乘剛者乎？故以此為明，眇目者也；以此為行，跛足者也；以此履危，見咥者也。志在剛健，不脩所履，欲以陵武於人，為于大君，行未能免於凶，而志存于王，頑之甚也。",
+      "en": "In the time of Lü, even if yang occupies a yang position, one would still be called not humble—how much more so when yin occupies a yang position, and the soft rides upon the firm? Therefore, to use this as sight is to be one-eyed; to use this as walking is to be lame; to tread upon danger with this is to be bitten. Setting one's will on firmness and strength without cultivating what one treads upon, wishing to domineer over others with martial force and to act as a great ruler—one's conduct cannot escape misfortune, yet one's will is set on being a king. This is the height of obstinate folly."
+     }
+    },
+    "4": {
+     "zh": "九四，履虎尾，愬愬，終吉。",
+     "en": "Nine in the Fourth: Treading upon the tiger's tail, apprehensive and cautious—in the end, good fortune.",
+     "wangBi": {
+      "zh": "逼近至尊，以陽承陽，處多懼之地，故曰「履虎尾，愬愬」也。然以陽居陰，以謙為本，雖處危懼，終獲其志，故終吉也。",
+      "en": "Pressing close to the most honored position, yang supporting yang, dwelling in a place of much apprehension—therefore it says 'treading upon the tiger's tail, apprehensive and cautious.' However, being yang dwelling in a yin position, one takes humility as the foundation. Although dwelling in danger and apprehension, one ultimately attains one's aim; therefore in the end there is good fortune."
+     }
+    },
+    "5": {
+     "zh": "九五，夬履，貞厲。",
+     "en": "Nine in the Fifth: Resolute treading. Correctness brings danger.",
+     "wangBi": {
+      "zh": "得位處尊，以剛決正，故曰「夬履貞厲」也。履道惡盈而五處尊，是以危。",
+      "en": "Attaining the position and dwelling in eminence, deciding with firmness and correctness—therefore it says 'resolute treading, correctness brings danger.' The way of treading abhors excess, yet the Fifth dwells in eminence; this is why there is danger."
+     }
+    },
+    "6": {
+     "zh": "上九：視履考祥，其旋元吉。",
+     "en": "Top Nine: Surveying one's treading and examining the omens—when it comes full circle, there is sublime good fortune.",
+     "wangBi": {
+      "zh": "禍福之祥，生乎所履，處履之極，履道成矣，故可視履而考祥也。居極應說，高而不危，是其旋也。履道大成，故元吉也。",
+      "en": "The omens of fortune and misfortune arise from what one treads upon. Dwelling at the culmination of Lü, the way of treading is complete; therefore one can survey one's treading and examine the omens. Dwelling at the extreme yet corresponding to joyousness, being high yet not in danger—this is its coming full circle. The way of treading achieves great completion; therefore there is sublime good fortune."
+     }
+    }
+   }
+  },
+  {
+   "number": 13,
+   "name": "Fellowship",
+   "zh": "同人",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "hook": "Same five friends for years?",
+   "meaning": [
+    "Fellowship says:\nkeep it open.",
+    "Let new people\nwalk up."
+   ],
+   "question": "Who could you\ninvite in?",
+   "lesson": "Join on principle,\nnot on kinship.",
+   "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+   "mark": [
+    2,
+    5
+   ],
+   "master": {
+    "zh": "二為同人之主",
+    "en": "Line two, master of Fellowship"
+   },
+   "image": {
+    "zh": "《象》曰：天與火，同人。\n\n天體於上，而火炎上，同人之義也。\n\n君子以類族辨物。\n\n君子小人，各得所同。",
+    "en": "The Image says: Heaven together with fire — Fellowship with People.\n\nThe body of Heaven is above, and fire flames upward — this is the meaning of Fellowship with People.\n\nThe superior person uses this to classify clans and distinguish things.\n\nSuperior persons and petty people each attain what they are united with."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，同人于門，无咎。\n\n居同人之始，為同人之首者也。无應於上，心无係吝，通夫大同，出門皆同。故曰「同人于門」也。出門同人，誰與為咎？",
+     "en": "Initial Nine: Fellowship with people at the gate — no blame.\n\nOccupying the beginning of Fellowship with People, it is the head of fellowship. Having no corresponding partner above, the heart is without attachment or meanness, penetrating to the Great Unity — going out the gate, all are united. Therefore it says 'fellowship with people at the gate.' Going out the gate to unite with people, who would find blame in this?",
+     "wangBi": {
+      "zh": null,
+      "en": null
+     }
+    },
+    "2": {
+     "zh": "六二，同人于宗，吝。\n\n應在乎五，唯同於主，過主則否。用心褊狹，鄙吝之道。",
+     "en": "Six in the Second: Fellowship with people limited to the clan — regret.\n\nIts correspondence lies in the fifth line; it only unites with its master, and beyond the master it refuses. The heart is narrow and confined — this is the way of pettiness and meanness.",
+     "wangBi": {
+      "zh": null,
+      "en": null
+     }
+    },
+    "3": {
+     "zh": "九三，伏戎于莽，升其高陵，三歲不興。\n\n居同人之際，履下卦之極，不能包弘上下，通夫大同；物黨相分，欲乖其道，貪於所比，據上之應；其敵剛健，非力所當，故「伏戎于莽」，不敢顯亢也。「升其高陵」，望不敢進，量斯勢也，三歲不能興者也。三歲不能興，則五道亦以成矣，安所行焉？",
+     "en": "Nine in the Third: He hides armed troops in the thickets, climbs his high hill — for three years he cannot rise.\n\nOccupying the juncture of Fellowship with People and treading at the extreme of the lower trigram, he cannot broadly embrace above and below or penetrate to the Great Unity. Factions among things divide from each other; he wishes to deviate from the Way, coveting those nearby, and seizes the correspondence that belongs above. But his adversary is firm and vigorous, not one his strength can match — therefore 'he hides armed troops in the thickets,' not daring to openly resist. 'He climbs his high hill' — he watches but does not dare advance, measuring the balance of power. For three years he cannot rise. If for three years he cannot rise, then the Way of the fifth line will already be accomplished — where could he go?",
+     "wangBi": {
+      "zh": null,
+      "en": null
+     }
+    },
+    "4": {
+     "zh": "《象》曰：乘其墉，義弗克也。其吉，則困而反則也。",
+     "en": "The Image says: He mounts the wall — but in terms of rightness he cannot prevail. That it is auspicious means that, being frustrated, he turns back to the rule.",
+     "wangBi": {
+      "zh": "處上攻下，力能乘墉者也。履非其位，以與人爭，二自五應，三非犯己，攻三求二，尤而效之，違義傷理，眾所不與，故雖乘墉而不克也。不克則反，反則得吉也。不克乃反，其所以得吉，困而反則者也。",
+      "en": "Being positioned above and attacking below, his strength is sufficient to mount the wall. But he treads a position that is not rightfully his, contending with others. The second naturally corresponds with the fifth; the third has not transgressed against him. Attacking the third to pursue the second, he compounds fault by imitating it. Violating rightness and injuring principle, the multitude will not support him — therefore although he mounts the wall, he cannot prevail. When he cannot prevail, he turns back; turning back, he attains auspiciousness. That he cannot prevail and then turns back — the reason he attains auspiciousness is that, being frustrated, he returns to the rule."
+     }
+    },
+    "5": {
+     "zh": "九五，同人先號咷，而後笑，大師克相遇。",
+     "en": "Nine in the Fifth: In fellowship with people, first wailing and weeping, then later laughing. A great army overcomes, and they meet.",
+     "wangBi": {
+      "zh": "《彖》曰：「柔得位得中，而應乎乾，曰同人。」然則體柔居中，眾之所與；執剛用直，眾所未從，故近隔乎二剛，未獲厥志，是以先號咷也。居中處尊，戰必克勝，故後笑也。不能使物自歸而用其強直，故必須大師克之，然後相遇也。",
+      "en": "The Tuan says: 'The yielding obtains its position and attains the center, and responds to Qian — this is called Fellowship with People.' Being yielding in substance and occupying the center, she is the one the multitude supports. But he grasps firmness and employs straightforwardness, which the multitude has not yet accepted. Therefore, being blocked nearby by two firm lines, he has not yet attained his aim — thus first there is wailing and weeping. Occupying the center and dwelling in the honored position, in battle he will surely prevail — therefore later there is laughing. Unable to make things come to him of their own accord, he employs his strength and directness — therefore he must use a great army to overcome them, and only then do they meet."
+     }
+    },
+    "6": {
+     "zh": "上九，同人于郊，无悔。",
+     "en": "Top Nine: Fellowship with people in the suburbs — no regret.",
+     "wangBi": {
+      "zh": "郊者，外之極也。處同人之時，最在於外，不獲同志，而遠於內爭，故雖无悔吝，亦未得其志。\n\n凡處同人而不泰焉，則必用師矣。不能大通，則各私其黨而求利焉。楚人亡弓，不能亡楚。愛國愈甚，益為它災。是以同人不弘剛健之爻，皆至用師也。",
+      "en": "The suburbs are the extreme of the outside. Dwelling at the time of Fellowship with People and being furthest on the outside, he does not obtain those of like mind, yet he is far from the internal contention — therefore although there is no regret or meanness, he has also not attained his aim.\n\nIn general, when one dwells in Fellowship with People without achieving great peace, then one must employ armies. When one cannot achieve great pervasion, then each privately favors his own faction and seeks advantage. When a man of Chu lost his bow, he could not bear for it to leave Chu. The more intense the love of one's own state, the more it invites disaster from others. This is why in Fellowship with People, those firm and vigorous lines that are not broad-minded all end up employing armies."
+     }
+    }
+   }
+  },
+  {
+   "number": 14,
+   "name": "Great Possession",
+   "zh": "大有",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "hook": "Doing better than everyone around you?",
+   "meaning": [
+    "Great Possession\nsays: people see.",
+    "Use it to put\nthings right."
+   ],
+   "question": "What would you\nfix first?",
+   "lesson": "Lead by trust,\nnot force.",
+   "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為大有之主",
+    "en": "Ruler of Great Possession"
+   },
+   "image": {
+    "zh": "《象》曰：火在天上，大有。君子以遏惡揚善，順天休命。",
+    "en": "The Image says: Fire is above Heaven — Great Possession. The noble person thereby curbs evil and promotes good, complying with Heaven to glorify the mandate."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，无交害。匪咎，艱則无咎。",
+     "en": "Initial Nine: No mingling with harm. It is not a fault; if one is diligent in difficulty, there will be no blame.",
+     "wangBi": {
+      "zh": "以夫剛健為大有之始，不能履中，滿而不溢，術斯以往，後害必至。其欲匪咎，艱則无咎也。",
+      "en": "Being firm and strong at the beginning of Great Possession, it cannot tread the center. It is full but does not overflow. If one proceeds by this course, harm will surely arrive later. If one wishes to avoid blame, one must be diligent in difficulty, and then there will be no blame."
+     }
+    },
+    "2": {
+     "zh": "九二，大車以載，\n\n注云：任重而不危。\n\n有攸往，无咎。",
+     "en": "Nine in the Second: A great cart for carrying loads —\n\nThe note says: bearing heavy responsibility without danger.\n\nThere is somewhere to go; no blame.",
+     "wangBi": {
+      "zh": "健不違中，為五所任，任重不危，致遠不泥，故可以往而无咎也。",
+      "en": "Strong yet not departing from centrality, entrusted by the Fifth — bearing heavy responsibility without danger, reaching far without getting mired. Therefore one can go forward and there is no blame."
+     }
+    },
+    "3": {
+     "zh": "《象》曰：公用亨于天子，小人害也。",
+     "en": "The Image says: A duke makes offerings to the Son of Heaven; a petty person would come to harm.",
+     "wangBi": {
+      "zh": "處大有之時，居下體之極，乘剛健之上，而履得其位，與五同功，威權之盛，莫此過焉。公用斯位，乃得通乎天子之道也。小人不克，害可待也。",
+      "en": "Dwelling in the time of Great Possession, occupying the apex of the lower body, riding atop the firm and strong, and treading in a position that matches its line, it shares merit with the Fifth. The flourishing of authority and power — nothing surpasses this. A duke using this position can thereby reach through to the Way of the Son of Heaven. A petty person cannot manage this, and harm may be expected."
+     }
+    },
+    "4": {
+     "zh": "九四，匪其彭，无咎。",
+     "en": "Nine in the Fourth: Not asserting its splendor — no blame.",
+     "wangBi": {
+      "zh": "既失其位，而上近至尊之威，下比分權之臣，其為懼也，可謂危矣。唯夫有聖知者，乃能免斯咎也。三雖至盛，五不可舍，能辯斯數，專心承五，常匪其旁，則无咎矣。旁謂三也。\n\n明猶才也。",
+      "en": "Having lost its proper position, it is close above to the authority of the most honored, and adjacent below to the minister who shares power. Its fearfulness can indeed be called perilous. Only one who possesses sage-like wisdom can avoid this blame. Although the Third is at the height of its power, the Fifth cannot be abandoned. If one can discern these circumstances and devote one's heart solely to serving the Fifth, always not siding with its neighbor, then there will be no blame. 'Neighbor' refers to the Third.\n\n'Bright' (ming) is equivalent to 'talent' (cai)."
+     }
+    },
+    "5": {
+     "zh": "六五，厥孚交如，威如，吉。",
+     "en": "Six in the Fifth: Its sincerity is such that all engage with it. Awe-inspiring — auspicious.",
+     "wangBi": {
+      "zh": "居尊以柔，處大以中，无私於物，上下應之，信以發志，故其孚交如也。夫不私於物，物亦公焉。不疑於物，物亦誠焉。既公且信，何難何備？不言而教行，何為而不威如？為大有之主，而不以此道，吉可得乎？",
+      "en": "It occupies the honored position with yielding, dwells in greatness with centrality, shows no partiality toward things, and above and below all respond to it. Sincerity is used to manifest purpose; therefore its trustworthiness is such that all engage with it. When one shows no partiality toward things, things too are impartial toward oneself. When one harbors no suspicion toward things, things too are sincere toward oneself. Being both impartial and trustworthy, what difficulty arises, what defenses are needed? When teaching is carried out without speaking, how could there not be awe? As the ruler of Great Possession, if one did not follow this Way, could auspiciousness be attained?"
+     }
+    },
+    "6": {
+     "zh": "上九，自天祐之，吉无不利。",
+     "en": "Top Nine: From Heaven it is blessed — auspicious, nothing that is not beneficial.",
+     "wangBi": {
+      "zh": "大有，豐富之世也。處大有之上而不累於位，志尚乎賢者也。餘爻皆乘剛，而己獨乘柔順也。五為信德，而己履焉，履信之謂也。雖不能體柔，而以剛乘柔，思順之義也。居豐有之世，而不以物累其心，高尚其志，尚賢者也。爻有三德，盡夫助道，故《繫辭》具焉。",
+      "en": "Great Possession is an era of abundance and plenty. Occupying the top of Great Possession yet not burdened by position, its purpose esteems the worthy. All other lines ride upon the firm, while this one alone rides upon the yielding and compliant. The Fifth embodies the virtue of trustworthiness, and this line treads upon it — this is what is meant by 'treading upon sincerity.' Although it cannot embody yielding in its own substance, by being firm while riding upon the yielding, it expresses the meaning of 'thinking upon compliance.' Dwelling in an era of abundance and possession yet not letting things burden its heart, exalting its purpose — this is esteeming the worthy. The line possesses three virtues and exhausts the Way of providing assistance, hence the Xici (Appended Statements) details them."
+     }
+    }
+   }
+  },
+  {
+   "number": 16,
+   "name": "Enthusiasm",
+   "zh": "豫",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hook": "All fired up, nowhere to go?",
+   "meaning": [
+    "Enthusiasm says:\ngive it a shape.",
+    "Organize,\nthen move."
+   ],
+   "question": "Where will you\naim it?",
+   "lesson": "One clear voice\nmoves the crowd.",
+   "finding": "ONE STRONG LINE. FIVE FOLLOW IT.",
+   "mark": [
+    4
+   ],
+   "master": {
+    "zh": "四以剛動，為豫之主",
+    "en": "Line four, master of Enthusiasm"
+   },
+   "image": {
+    "zh": "《象》曰：雷出地奮，豫。先王以作樂崇德。殷薦之上帝，以配祖考。",
+    "en": "The Image says: Thunder comes forth from the earth with vigor — this is Enthusiasm. The former kings accordingly composed music to honor virtue, offering it abundantly to the Lord on High, thereby honoring their ancestors and forefathers."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，鳴豫，凶。",
+     "en": "Initial Six: Proclaiming enthusiasm — misfortune.",
+     "wangBi": {
+      "zh": "處豫之初，而特得志於上，樂過則淫，志窮則凶，豫何可鳴？",
+      "en": "Situated at the beginning of Enthusiasm, it uniquely obtains fulfillment of its will from the one above. When pleasure becomes excessive it turns to dissipation; when the will is exhausted there is misfortune. How can Enthusiasm be proclaimed?"
+     }
+    },
+    "2": {
+     "zh": "六二，介于石，不終日，貞吉。",
+     "en": "Six in the Second: Firm as a stone, not waiting till the end of the day — correctness brings good fortune.",
+     "wangBi": {
+      "zh": "處豫之時，得位履中，安夫貞正，不求苟豫者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說。辯必然之理，故不改其操，介如石焉。不終日明矣。",
+      "en": "Situated in the time of Enthusiasm, it obtains its proper position and treads the center, resting secure in correctness and uprightness, not seeking enthusiasm carelessly. Its compliance does not follow recklessly; its enthusiasm does not depart from the center. Therefore in dealings with superiors there is no flattery, and in dealings with inferiors there is no impropriety. It perceives clearly where fortune and misfortune originate, and therefore does not seek easy pleasure. It discerns the principle of what is inevitable, and therefore does not alter its integrity — firm as a stone. That it does not wait till the end of the day is clear."
+     }
+    },
+    "3": {
+     "zh": "六三，盱豫，悔，遲有悔。",
+     "en": "Six in the Third: Looking upward in enthusiasm — regret. Hesitating brings regret.",
+     "wangBi": {
+      "zh": "居下體之極，處兩卦之際，履非其位，承動豫之主。若其睢盱而豫，悔亦生焉。遲而不從，豫之所疾，位非所據，而以從豫，進退離悔，宜其然矣。",
+      "en": "It occupies the extreme of the lower trigram, situated at the juncture between the two trigrams. It treads a position that is not its own and supports the master of active enthusiasm. If it gazes upward eagerly seeking enthusiasm, regret will also arise. If it hesitates and does not follow, this is what Enthusiasm abhors. Its position is not one it should occupy, yet it follows after enthusiasm. Advancing or retreating, it encounters regret — this is only to be expected."
+     }
+    },
+    "4": {
+     "zh": "九四，由豫，大有得。勿疑，朋盍簪。",
+     "en": "Nine in the Fourth: The source of enthusiasm — there is great gain. Do not doubt, and friends will gather swiftly.",
+     "wangBi": {
+      "zh": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+      "en": "Situated in the time of Enthusiasm, it occupies the beginning of movement. As the sole yang line, it is what all the yin lines follow. None fail to obtain their enthusiasm through it — hence it says \"the source of enthusiasm — there is great gain.\" If one is not trusted by others, others will likewise doubt one. Therefore, if one does not doubt, then friends will join together swiftly. \"He\" (盍) means to join together. \"Zan\" (簪) means swiftly."
+     }
+    },
+    "5": {
+     "zh": "六五，貞疾，恒不死。",
+     "en": "Six in the Fifth: Steadfastly afflicted, yet perpetually does not perish.",
+     "wangBi": {
+      "zh": "四以剛動，為豫之主，專權執制，非己所乘，故不敢與四爭權，而又居中處尊，未可得亡，是以必常至于「貞疾，恒不死」而巳。",
+      "en": "The Fourth, through firm movement, is the master of Enthusiasm and monopolizes authority and control. This is not something the Fifth can ride over. Therefore it does not dare contend with the Fourth for authority. Yet since it dwells in the center and occupies the honored position, it cannot be destroyed. Thus it inevitably reaches the constant state of being \"steadfastly afflicted, yet perpetually not perishing\" — and that is all."
+     }
+    },
+    "6": {
+     "zh": "上六，冥豫，成有渝，无咎。",
+     "en": "Top Six: Enthusiasm in darkness — though it has been completed, there is change. No blame.",
+     "wangBi": {
+      "zh": "處動豫之極，極豫盡樂，故至于冥豫成也。過豫不已，何可長乎？故必渝變然後无咎。",
+      "en": "Situated at the extreme of active enthusiasm, enthusiasm is taken to the utmost and pleasure is exhausted — hence it reaches the completion of enthusiasm in darkness. If one goes on with excessive enthusiasm without ceasing, how can it last? Therefore there must be change and transformation, and only then is there no blame."
+     }
+    }
+   }
+  },
+  {
+   "number": 17,
+   "name": "Following",
+   "zh": "隨",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "hook": "Still at your desk after dark?",
+   "meaning": [
+    "Following says:\ngo with the day.",
+    "Day’s done.\nGo in, rest."
+   ],
+   "question": "When will you\nstop today?",
+   "lesson": "To be followed,\nfollow first.",
+   "finding": "THE STRONG GOES BELOW THE WEAK.",
+   "mark": [
+    1
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：澤中有雷，隨，君子以嚮晦入宴息。",
+    "en": "The Image says: Within the lake there is thunder. Following. The noble person, as darkness approaches, enters to rest and be at ease."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，官有渝，貞吉。出門交有功。",
+     "en": "Initial Nine. The office undergoes change. Correctness brings good fortune. Going out the gate to form associations brings achievement.",
+     "wangBi": {
+      "zh": "居隨之始，上无其應，无所偏係，動能隨時，意无所主者也。隨不以欲，以欲隨宜者也。故官有渝變，隨不失正也。出門无違，何所失哉！",
+      "en": "Occupying the beginning of Following, above there is no corresponding line, and there is no partial attachment. In movement one can follow the time, and one's intention has no fixed attachment. One does not follow out of desire; rather, one desires to follow what is fitting. Therefore the office undergoes change and transformation, yet in following one does not lose correctness. Going out the gate without transgression -- what could be lost!"
+     }
+    },
+    "2": {
+     "zh": "《象》曰：係小子，弗兼與也。",
+     "en": "The Image says: 'Attached to the young boy' -- one cannot serve both at once.",
+     "wangBi": {
+      "zh": "陰之為物，以處隨世，不能獨立，必有係也。居隨之時，體於柔弱，而以乘夫剛動，豈能秉志，違於所近。隨此失彼，弗能兼與。五處己上，初處己下，故曰「係小子，失丈夫」也。",
+      "en": "The nature of yin, dwelling in an age of Following, cannot stand independently and must have an attachment. Dwelling in the time of Following, its substance is yielding and weak, and since it rides upon what is firm and active, how could it maintain its resolve and go against what is near? Following this one means losing that one; it cannot serve both at once. The fifth line is above it and the first line is below it; therefore it says 'attached to the young boy, loses the mature man.'"
+     }
+    },
+    "3": {
+     "zh": "六三，係丈夫，失小子。隨有求得，利居貞。",
+     "en": "Six in the Third. Attached to the mature man, loses the young boy. In following, what is sought is obtained. It is beneficial to abide in correctness.",
+     "wangBi": {
+      "zh": "陰之為物，以處隨世，不能獨立，必有係也。雖體下卦，二已據初，將何所附？故舍初係四，志在丈夫。四俱无應，亦欲於己隨之，則得其所求矣，故曰「隨有求得」也。應非其正，以係於人，何可以妄？故利居貞也。初處己下，四處己上，故曰「係丈夫，失小子」也。\n\n下謂初也。",
+      "en": "The nature of yin, dwelling in an age of Following, cannot stand independently and must have an attachment. Although it belongs to the lower trigram, the second line has already claimed the first; to whom then can it attach? Therefore it abandons the first and attaches to the fourth, with its resolve set on the mature man. The fourth likewise has no corresponding line and also desires that it follow him; thus it obtains what it seeks, and therefore it says 'in following, what is sought is obtained.' Since the correspondence is not its proper one, and it attaches itself to another, how can it act recklessly? Therefore it is beneficial to abide in correctness. The first line is below it and the fourth is above it; therefore it says 'attached to the mature man, loses the young boy.'\n\n'Below' refers to the first line."
+     }
+    },
+    "4": {
+     "zh": "《象》曰：隨有獲，其義凶也。有孚在道，明功也。",
+     "en": "The Image says: 'In following there is a catch' -- in its meaning this is ominous. 'Having sincerity on the Way' -- this makes achievement clear.",
+     "wangBi": {
+      "zh": "處說之初，下據二陰，三求係己，不距則獲，故曰「隨有獲」也。居於臣地，履非其位，以擅其民，失於臣道，違正者也，故曰「貞凶」。體剛居說而得民心，能幹其事，而成其功者也。雖為常義，志在濟物，心有公誠，著信在道，以明其功，何咎之有？",
+      "en": "Positioned at the beginning of the Dui (joy) trigram, below it commands two yin lines. The third seeks to attach to it; if it does not refuse, it acquires them. Therefore it says 'in following there is a catch.' Occupying the position of a minister and treading a rank that is not properly its own, it appropriates the ruler's subjects and fails in the way of a minister -- this is a violation of correctness; therefore it says 'correctness brings misfortune.' Its substance is firm, it dwells in joy, and it wins the hearts of the people; it is capable of managing affairs and accomplishing merit. Although this goes against the normal principle, its resolve lies in aiding all things, its heart holds public sincerity, it establishes trustworthiness on the Way, and thereby makes its achievement clear. What blame could there be?"
+     }
+    },
+    "5": {
+     "zh": "九五，孚于嘉，吉。",
+     "en": "Nine in the Fifth. Sincerity in what is excellent. Good fortune.",
+     "wangBi": {
+      "zh": "履正居中，而處隨世，盡隨時之宜，得物之誠，故嘉吉也。",
+      "en": "Treading in the correct position and dwelling in the center, while occupying a time of Following, it fully realizes what is fitting for following the time and obtains the sincerity of all things. Therefore there is excellence and good fortune."
+     }
+    },
+    "6": {
+     "zh": "上六，拘係之乃從，維之，王用亨于西山。",
+     "en": "Top Six. Bound and held fast, then it submits. Tethered to it. The king makes offerings at the Western Mountain.",
+     "wangBi": {
+      "zh": "隨之為體，陰順陽者也。最處上極，不從者也。隨道已成，而特不從，故拘係之乃從也。率土之濱，莫非王臣，而為不從，王之所討也，故維之，王用亨于西山也。兌為西方，山者，途之險隔也。處西方而為不從，故王用通于西山。\n\n處于上極，故窮也。",
+      "en": "The substance of Following is that yin is obedient to yang. Being positioned at the uppermost extreme, this is one that does not submit. When the Way of Following has already been established yet one alone refuses to submit, one must be bound and held fast before one will comply. Within all the shores of the land, there is none who is not a subject of the king; to be one who does not submit is what the king must punish. Therefore 'tethered to it; the king makes offerings at the Western Mountain.' Dui represents the west; the mountain represents dangerous separation along the route. Being in the west and refusing to submit, therefore the king must extend his reach to the Western Mountain.\n\nBeing positioned at the uppermost extreme, therefore it is exhausted."
+     }
+    }
+   }
+  },
+  {
+   "number": 20,
+   "name": "Contemplation",
+   "zh": "觀",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "hook": "Deciding from behind a desk?",
+   "meaning": [
+    "Contemplation:\ngo and look.",
+    "See by going,\nnot by sitting."
+   ],
+   "question": "What could you\ngo see?",
+   "lesson": "People watch\nhow you prepare.",
+   "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為觀之主",
+    "en": "Master of Contemplation"
+   },
+   "image": {
+    "zh": "《象》曰：風行地上，觀，先王以省方觀民設教。",
+    "en": "The Image says: Wind moves over the earth—Contemplation. The former kings thereby inspected the regions, observed the people, and established their teaching."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，童觀，小人无咎，君子吝。\n\n象曰：初六童觀，小人道也。",
+     "en": "Initial Six. Childlike contemplation. For the small person, no blame. For the noble person, regret.\n\nThe Image says: Initial Six's childlike contemplation—this is the way of the small person.",
+     "wangBi": {
+      "zh": "處於觀時，而最遠朝美，體於陰柔，不能自進，无所鑒見，故曰童觀。趣順而已，无所能為，小人之道也，故曰小人无咎。君子處大觀之時而為童觀，不亦鄙乎。",
+      "en": "Situated in the time of Contemplation, yet the most distant from the beauty of the court. Embodying yin and softness, unable to advance on its own, with nothing to perceive clearly—hence it says 'childlike contemplation.' Its tendency is merely to follow along, unable to accomplish anything; this is the way of the small person—hence it says 'for the small person, no blame.' For a noble person to be in the time of great Contemplation yet engage in childlike contemplation—is this not deplorable?"
+     }
+    },
+    "2": {
+     "zh": "六二，闚觀，利女貞。",
+     "en": "Six in the Second. Peeping contemplation. Beneficial for the correctness of a woman.",
+     "wangBi": {
+      "zh": "處在於內，寡所鑒見。體於柔弱，從順而已。猶有應焉，不為全蒙，所見者狹，故曰闚觀。居內得位，柔順寡見，故曰利女貞，婦人之道也。處大觀之時，居中得位，不能大觀廣鑒，闚觀而已，誠可醜也。",
+      "en": "Situated within the interior, with little to perceive clearly. Embodying softness and weakness, merely following along compliantly. Yet it still has a correlate, so it is not wholly benighted; what it sees is narrow—hence it says 'peeping contemplation.' Dwelling within and attaining its position, soft, compliant, and seeing little—hence it says 'beneficial for the correctness of a woman'; this is the way of a woman. Being in the time of great Contemplation, dwelling in the center and attaining its position, yet unable to contemplate broadly and perceive widely, merely peeping—this is truly something to be ashamed of."
+     }
+    },
+    "3": {
+     "zh": "六三，觀我生，進退。",
+     "en": "Six in the Third. Contemplating the course of my life, whether to advance or retreat.",
+     "wangBi": {
+      "zh": "居下體之極，處二卦之際，近不比尊，遠不童觀，觀風者也。居此時也，可以觀我生進退也。\n\n處進退之時，以觀進退之幾，未失道也。",
+      "en": "Dwelling at the extreme of the lower trigram, situated at the juncture of the two trigrams—close yet not adjacent to the noble one, distant yet not engaging in childlike contemplation—this is one who contemplates the prevailing influence. Dwelling at such a time, one can contemplate the course of one's own life to decide on advance or retreat.\n\nSituated at a time of advancing and retreating, one contemplates the incipient signs of advance and retreat. The Way is not yet lost."
+     }
+    },
+    "4": {
+     "zh": "六四，觀國之光，利用賓于王。",
+     "en": "Six in the Fourth. Contemplating the glory of the state. It is beneficial to be employed as a guest of the king.",
+     "wangBi": {
+      "zh": "居觀之時，最近至尊，觀國之光者也。居近得位，明習國儀者也，故曰利用賓于王也。",
+      "en": "Dwelling in the time of Contemplation, the closest to the most noble—this is one who contemplates the glory of the state. Dwelling near and attaining its position, it is one who clearly understands the ceremonies of the state. Hence it says 'it is beneficial to be employed as a guest of the king.'"
+     }
+    },
+    "5": {
+     "zh": "九五，觀我生，君子无咎。",
+     "en": "Nine in the Fifth. Contemplating the course of my life. The noble person is without blame.",
+     "wangBi": {
+      "zh": "居於尊位，為觀之主，宣弘大化，光於四表，觀之極者也。上之化下，猶風之靡草，故觀民之俗，以察己道，百姓有罪，在余一人。君子風著，己乃无咎。上為化主，將欲自觀乃觀民也。",
+      "en": "Dwelling in the noble position, serving as the master of Contemplation, broadly proclaiming the great transforming influence, its radiance reaching the four quarters—this is the ultimate of Contemplation. The transformation of those below by those above is like wind bending grass. Therefore one observes the customs of the people to examine one's own Way. 'If the hundred families have offenses, the fault rests with me alone.' When the noble person's influence is clearly manifest, then one is without blame. Being the master of transformation above, when one intends to observe oneself, one in fact observes the people."
+     }
+    },
+    "6": {
+     "zh": "上九，觀其生，君子无咎。",
+     "en": "Top Nine. Contemplating the course of his life. The noble person is without blame.",
+     "wangBi": {
+      "zh": "觀我生，自觀其道者也。觀其生，為民所觀者也。不在於位，最處上極，高尚其志，為天下所觀者也。處天下所觀之地，可不慎乎？故君子德見，乃得无咎。生，猶動出也。\n\n特處異地，為眾所觀，不為平易，和光流通，志未平也。",
+      "en": "'Contemplating the course of my life' is observing one's own Way. 'Contemplating the course of his life' is being one whom the people contemplate. Not occupying an official position, dwelling at the very top, lofty in aspiration—this is one whom all under heaven contemplate. Dwelling in a place contemplated by all under heaven, can one not be cautious? Therefore only when the noble person's virtue is manifest does one attain the state of being without blame. 'Life' (sheng) means activity and emergence.\n\nSingularly situated in an exceptional position, being contemplated by the multitude, not acting with ease and ordinariness, blending one's light and circulating freely—one's aspiration is not yet at ease."
+     }
+    }
+   }
+  },
+  {
+   "number": 22,
+   "name": "Grace",
+   "zh": "賁",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "hook": "Polishing the slides instead of deciding?",
+   "meaning": [
+    "Grace says:\nsmall things only.",
+    "Polish can’t make\nbig decisions."
+   ],
+   "question": "What needs more\nthan polish?",
+   "lesson": "Plain is the best\nadornment.",
+   "finding": "AT THE TOP: PLAIN WHITE.",
+   "mark": [
+    6
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山下有火，賁。君子以明庶政，无敢折獄。",
+    "en": "The Image states: Below the mountain there is fire—Adornment. The noble person uses this to bring clarity to the various affairs of governance and does not dare to decide legal cases by force."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，賁其趾，舍車而徒。",
+     "en": "Initial Nine. He adorns his toes. He leaves the carriage and goes on foot.",
+     "wangBi": {
+      "zh": "在賁之始，以剛處下，居於无位，棄於不義，安夫徒步以從其志者也。故飾其趾，舍車而徒，義弗乘之謂也。",
+      "en": "At the beginning of Adornment, with firmness dwelling below, he occupies a position without rank. He renounces what is not righteous and is content to go on foot in order to follow his aspiration. Therefore he adorns his toes, leaves the carriage and goes on foot—this means that in righteousness he does not ride."
+     }
+    },
+    "2": {
+     "zh": "六二，賁其須。",
+     "en": "Six in the Second. He adorns his beard.",
+     "wangBi": {
+      "zh": "得其位而无應，三亦无應，俱无應而比焉，近而相得者也。須之為物，上附者也。循其所履以附於上，故曰賁其須也。",
+      "en": "It has attained its proper position but lacks a correlate. The Third also lacks a correlate. Both lack correlates yet are adjacent—they are close and find affinity with each other. The beard as a thing is something that attaches above. Following what it treads upon to attach itself to what is above, hence it says 'he adorns his beard.'"
+     }
+    },
+    "3": {
+     "zh": "九三，賁如濡如，永貞吉。",
+     "en": "Nine in the Third. Adorned and glistening. Perpetual Correctness brings good fortune.",
+     "wangBi": {
+      "zh": "處下體之極，居得其位，與二相比，俱履其正，和合相潤，以成其文者也。既得其飾，又得其潤，故曰「賁如濡如」也。永保其貞，物莫之陵，故曰「永貞吉」也。",
+      "en": "Occupying the extreme of the lower body, it dwells in its proper position and is adjacent to the Second. Both tread upon what is correct; they harmonize together and moisten each other, thereby completing their pattern. Having achieved both adornment and moisture, hence it says 'adorned and glistening.' Eternally maintaining its correctness, nothing can encroach upon it; hence it says 'perpetual correctness brings good fortune.'"
+     }
+    },
+    "4": {
+     "zh": "六四，賁如皤如，白馬翰如。匪寇婚媾。",
+     "en": "Six in the Fourth. Adorned, then plain white. A white horse, soaring. Not bandits but marriage allies.",
+     "wangBi": {
+      "zh": "有應在初而閡於三，為己寇難，二志相感，不獲通亨，欲靜則疑*初之應，欲進則懼三之難，故或飾或素，內懷疑懼也。鮮絜其馬，翰如以待，雖履正位，未敢果其志也。三為剛猛，未可輕犯，匪寇乃婚，終无尤也。",
+      "en": "It has a correlate in the Initial line but is obstructed by the Third, which creates hostile difficulty for it. The two aspirations resonate with each other but cannot achieve free passage. If it wishes to remain still, it doubts* the Initial line's response; if it wishes to advance, it fears the Third line's difficulty. Therefore it is sometimes adorned, sometimes plain—inwardly harboring doubt and apprehension. It keeps its horse bright and clean, soaring in readiness. Though it treads in the correct position, it does not dare to act decisively on its aspiration. The Third is firm and fierce, not to be lightly offended. When they are not bandits but marriage allies, there will be no fault in the end."
+     }
+    },
+    "5": {
+     "zh": "六五，賁於丘園，束帛戔戔。吝，終吉。",
+     "en": "Six in the Fifth. Adornment in the hills and gardens. Rolls of silk, meager and slight. Stinginess, but good fortune in the end.",
+     "wangBi": {
+      "zh": "處得尊位，為飾之主，飾之盛者也。施飾於物，其道害也。施飾丘園，盛莫大焉，故賁於束帛，丘園乃落；賁於丘園，帛乃戔戔。用莫過儉，泰而能約，故必吝焉，乃得終吉也。",
+      "en": "Occupying the honored position, it is the master of adornment—the most flourishing in adornment. If one lavishes adornment upon things, its Way causes harm. But to bestow adornment upon hills and gardens—nothing is more magnificent. Therefore, if one adorns with rolls of silk, the hills and gardens will decline; but if one adorns in the manner of hills and gardens, the silk remains abundant and slight. In expenditure nothing surpasses frugality; being prosperous yet able to be restrained—therefore there must be stinginess, and only then can one attain good fortune in the end."
+     }
+    },
+    "6": {
+     "zh": "上九，白賁，无咎。",
+     "en": "Top Nine. White adornment. No blame.",
+     "wangBi": {
+      "zh": "處飾之終，飾終反素，故在其質素，不勞文飾而无咎也。以白為飾，而无患憂，得志者也。",
+      "en": "Dwelling at the end of Adornment, when adornment reaches its end it returns to the plain. Therefore it rests in its plain simplicity, not laboring over embellishment, and is without blame. Using white as adornment, without worry or distress—this is one who has attained his aspiration."
+     }
+    }
+   }
+  },
+  {
+   "number": 25,
+   "name": "Innocence",
+   "zh": "无妄",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "hook": "Hiding your real reasons?",
+   "meaning": [
+    "Innocence says:\nbe straight.",
+    "Stop faking,\nand it works."
+   ],
+   "question": "Where are you\nperforming?",
+   "lesson": "Do what's right,\nnot what pays.",
+   "finding": "A STRONG LINE COMES IN AT THE BASE.",
+   "mark": [
+    1,
+    5
+   ],
+   "master": {
+    "zh": "為无妄之主",
+    "en": "Master of No Falseness"
+   },
+   "image": {
+    "zh": "先王以茂對，時育萬物。",
+    "en": "The former kings, through abundant correspondence with the time, nurtured the myriad things."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，无妄往，吉。",
+     "en": "Initial Nine: Without Falseness in going forth—auspicious.",
+     "wangBi": {
+      "zh": "體剛處下，以貴下賤，行不犯妄，故往得其志。",
+      "en": "Its substance is firm and it dwells below, using nobility to descend to the lowly. Its conduct does not transgress into falseness; therefore in going forth it attains its aim."
+     }
+    },
+    "2": {
+     "zh": "六二，不耕穫，不菑畬，則利有攸往。",
+     "en": "Six in the Second: Not plowing yet reaping, not clearing new fields yet having mature land—then it is beneficial to have a place to go.",
+     "wangBi": {
+      "zh": "不耕而穫，不菑而畬，代終已成而不造也。不擅其美，乃盡臣道，故利有攸往。",
+      "en": "Not plowing yet reaping, not clearing yet having mature land—one completes what another began and does not initiate. Not claiming the merit for oneself, one fully fulfills the way of the minister; therefore it is beneficial to have a place to go."
+     }
+    },
+    "3": {
+     "zh": "六三，无妄之災，或繫之牛。行人之得，邑人之災。",
+     "en": "Six in the Third: The disaster of Without Falseness—someone tethers his ox. The traveler's gain is the townsman's disaster.",
+     "wangBi": {
+      "zh": "以陰居陽，行違謙順，是无妄之所以為災也。牛者稼穡之資也。二以不耕而穫，利有攸往，而三為不順之行，故或繫之牛，是有司之所以為獲，彼人之所以為災也，故曰「行人之得，邑人之災」也。",
+      "en": "Occupying a yang position with a yin line, its conduct violates humility and compliance; this is why Without Falseness results in disaster. The ox is the resource for farming. The second line, by not plowing yet reaping, found it beneficial to have a place to go. But the third line engages in non-compliant conduct; therefore someone tethers its ox. This is how the official gains an acquisition and how that person suffers a disaster. Hence it says 'the traveler's gain is the townsman's disaster.'"
+     }
+    },
+    "4": {
+     "zh": "九四，可貞，无咎。",
+     "en": "Nine in the Fourth: One may be correct—no blame.",
+     "wangBi": {
+      "zh": "處无妄之時，以陽居陰，以剛乘柔，履於謙順，比近至尊，故可以任正，固有所守而无咎也。",
+      "en": "Dwelling in a time of Without Falseness, occupying a yin position with a yang line, the firm rides upon the yielding. Treading the path of humility and compliance and being close to the supreme ruler, one may therefore undertake what is correct, firmly maintaining what one holds, and so there is no blame."
+     }
+    },
+    "5": {
+     "zh": "九五，无妄之疾，勿藥有喜。",
+     "en": "Nine in the Fifth: The illness of Without Falseness—do not use medicine and there will be joy.",
+     "wangBi": {
+      "zh": "居得尊位，為无妄之主者也。下皆无妄，害非所致，而取藥焉，疾之甚也。非妄之災，勿治自復，非妄而藥之則凶，故曰勿藥有喜。\n\n藥攻有妄者也，而反攻无妄，故不可試也。",
+      "en": "Dwelling in the honored position, this is the ruler of Without Falseness. Those below are all without falseness; the harm is not something one has caused. To take medicine in such a case would make the illness worse. A disaster that does not arise from falseness, if left untreated, will resolve on its own. To apply medicine to what is not false would bring misfortune; hence it says 'do not use medicine and there will be joy.'\n\nMedicine is for attacking what is false. To turn and attack what is without falseness—this must not be attempted."
+     }
+    },
+    "6": {
+     "zh": "上九，无妄行，有眚，无攸利。",
+     "en": "Top Nine: Without Falseness yet taking action—there will be calamity; nothing is beneficial.",
+     "wangBi": {
+      "zh": "處不可妄之極，唯宜靜保其身而已，故不可以行也。",
+      "en": "Dwelling at the extreme of the time when one must not be false, one should only remain still and preserve one's person. Therefore one must not take action."
+     }
+    }
+   }
+  },
+  {
+   "number": 26,
+   "name": "Great Accumulation",
+   "zh": "大畜",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "hook": "Years of practice, nobody’s seen it?",
+   "meaning": [
+    "Great Accumulation\nsays: go public.",
+    "Don’t eat\nat home."
+   ],
+   "question": "What have you\nbeen keeping in?",
+   "lesson": "Store up strength,\nthen use it.",
+   "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為畜之主",
+    "en": "Master of Accumulation"
+   },
+   "image": {
+    "zh": "《象》曰：天在山中，大畜。君子以多識前言往行，以畜其德。",
+    "en": "The Image says: Heaven is within the mountain—Great Accumulation. The noble person, through broadly recording the words of the ancients and the deeds of the past, accumulates virtue."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，有厲，利已。",
+     "en": "Initial Nine. There is danger. Benefit in stopping.",
+     "wangBi": {
+      "zh": "四乃畜己，未可犯也。故進則有厲，已則利也。\n\n處健之始，未果其健者，故能利已。",
+      "en": "The Fourth is the one accumulating it; it must not be opposed. Hence advancing brings danger, while stopping brings benefit.\n\nOccupying the beginning of the strong, it has not yet fulfilled its strength, hence it is able to benefit from stopping."
+     }
+    },
+    "2": {
+     "zh": "九二，輿說輹。",
+     "en": "Nine in the Second. The cart sheds its axle straps.",
+     "wangBi": {
+      "zh": "五處畜盛，未可犯也。遇斯而進，故輿說輹也。居得其中，能以其中不為馮河，死而无悔，遇難能止，故无尤也。",
+      "en": "The Fifth occupies the height of accumulation and must not be opposed. Encountering this and still advancing, the cart therefore sheds its axle straps. Occupying the attainment of the center, able to use its centrality and not recklessly wade across the river—dying without regret—encountering difficulty it is able to stop, hence there is no blame."
+     }
+    },
+    "3": {
+     "zh": "九三，良馬逐，利艱貞。曰閑輿衛，利有攸往。",
+     "en": "Nine in the Third. Fine horses give chase. Benefit in difficult Correctness. It is said: practice guarding the chariot. Benefit in having a destination.",
+     "wangBi": {
+      "zh": "凡物極則反，故畜極則通。初二之進，值於畜盛，故不可以升。至於九三，升于上九，而上九處天衢之亨，塗徑大通，進无違距，可以馳騁，故曰良馬逐也。履當其位，進得其時，之乎通路*，不憂險厄，故利艱貞也。閑，閡也。衛，護也。進得其時，雖涉艱難而无患也，輿雖遇閑而故衛也。與上合志，故利有攸往也。",
+      "en": "In general, when things reach their extreme they reverse, hence when accumulation reaches its extreme it opens up. The advance of the first and second lines meets the height of accumulation, so they cannot ascend. When it comes to Nine in the Third, it ascends to the Top Nine, and the Top Nine occupies the success of Heaven's thoroughfare—the path is wide open, with no opposition or resistance in advancing, so one may gallop freely. Hence it says 'fine horses give chase.' Treading properly in its position, advancing at the right time, on an open road,* without worry of danger or hardship—hence benefit in difficult correctness. Xian means to bar; wei means to protect. Advancing at the right time, even though passing through difficulty there is no harm; even though the chariot encounters obstruction, it actually serves as protection. It shares its purpose with the top line, hence benefit in having a destination."
+     }
+    },
+    "4": {
+     "zh": "六四，童牛之牿，元吉。",
+     "en": "Six in the Fourth. A headboard on a young bull. Sublime Beginning of auspiciousness.",
+     "wangBi": {
+      "zh": "處艮之始，履得其位，能止健初，距不以角，柔以止剛，剛不敢犯。抑銳之始，以息強爭，豈唯獨利，乃將有喜也。",
+      "en": "Occupying the beginning of Gen, treading properly in its position, it is able to halt the strong Initial line. It resists not with horns; the yielding halts the firm, and the firm dares not oppose. Suppressing keenness at its inception to quell forceful contention—this is not merely beneficial alone; there will indeed be cause for joy."
+     }
+    },
+    "5": {
+     "zh": "六五，豶豕之牙，吉。",
+     "en": "Six in the Fifth. The tusks of a gelded boar. Auspicious.",
+     "wangBi": {
+      "zh": "豕牙橫猾，剛暴難制之物，謂二也。五處得尊位，為畜之主。二剛而進，能豶其牙，柔能制健，禁暴抑盛，豈唯能固其位，乃將有慶也！",
+      "en": "The tusks of a boar are recklessly violent—an object fierce, brutal, and difficult to control—this refers to the Second. The Fifth occupies the honored position and is the master of accumulation. The Second is firm and advances, yet it is able to geld its tusks. The yielding can control the strong, restraining violence and suppressing vigor. This is not merely able to secure its position; there will indeed be cause for celebration!"
+     }
+    },
+    "6": {
+     "zh": "上九，何天之衢，亨。",
+     "en": "Top Nine. How vast the thoroughfare of Heaven! Success.",
+     "wangBi": {
+      "zh": "處畜之極，畜極則通，大畜以至於大亨之時。何，辭也，猶云何畜，乃天之衢亨也。",
+      "en": "Occupying the extreme of accumulation—when accumulation reaches its extreme it opens up—Great Accumulation has arrived at the time of great success. He (何) is an exclamatory particle, as if to say 'what further accumulation?'—it is now the success of Heaven's thoroughfare."
+     }
+    }
+   }
+  },
+  {
+   "number": 31,
+   "name": "Influence",
+   "zh": "咸",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "hook": "Listening, but already decided?",
+   "meaning": [
+    "Influence says:\nmake room.",
+    "The full can’t\ntake anything in."
+   ],
+   "question": "What have you\nalready decided?",
+   "lesson": "Be moved as you\nmove others.",
+   "finding": "ALL THREE PAIRS ANSWER.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山上有澤，咸。君子以虛受人。",
+    "en": "The Image states: Above the mountain there is a lake—Xian. The noble person, through emptiness, receives others."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，咸其拇。",
+     "en": "Initial Six: Influence in the big toe.",
+     "wangBi": {
+      "zh": "處咸之初，為感之始，所感在末，故有志而已。如其本實，未至傷靜。\n\n四屬外卦。",
+      "en": "Occupying the beginning of Xian, this is the start of influence. What is influenced is at the extremity, so there is merely an intention and nothing more. As for its fundamental substance, it has not yet reached the point of disturbing stillness.\n\nThe fourth line belongs to the outer trigram."
+     }
+    },
+    "2": {
+     "zh": "六二，咸其腓，凶。居吉。",
+     "en": "Six in the Second: Influence in the calf—misfortune. Remaining still brings good fortune.",
+     "wangBi": {
+      "zh": "咸道轉進，離拇升腓，腓體動躁者也。感物以躁，凶之道也。由躁故凶，居則吉矣。處不乘剛，故可以居而獲吉。\n\n陰而為居，順之道也。不躁而居，順不害也。",
+      "en": "The Way of influence advances further: leaving the big toe and ascending to the calf. The calf as a body part is given to motion and restlessness. To influence things through restlessness is the path to misfortune. Because of restlessness there is misfortune; remaining still brings good fortune. This line's position does not ride upon a firm line, therefore it can remain still and obtain good fortune.\n\nBeing yin and remaining still accords with the Way of compliance. Not being restless but remaining still—compliance does no harm."
+     }
+    },
+    "3": {
+     "zh": "《象》曰：咸其股，亦不處也。志在隨人，所執下也。",
+     "en": "The Image states: Influence in the thigh—likewise unable to remain still. The intention is to follow others; what one clings to is lowly.",
+     "wangBi": {
+      "zh": "股之為物，隨足者也。進不能制動，退不能靜處，所感在股，志在隨人者也。志在隨人，所執亦以賤矣。用斯以往，吝其宜也。",
+      "en": "The thigh as a thing follows the foot. Advancing, it cannot control movement; retreating, it cannot remain quietly still. What is influenced being the thigh, the intention is to follow others. When the intention is to follow others, what one clings to is also base. To proceed on this basis—distress is fitting."
+     }
+    },
+    "4": {
+     "zh": "九四，貞吉，悔亡。憧憧往來，朋從爾思。",
+     "en": "Nine in the Fourth: Correctness brings good fortune; regret vanishes. Restlessly going back and forth—friends follow your thinking.",
+     "wangBi": {
+      "zh": "處上卦之初，應下卦之始，居體之中，在股之上，二體始相交感，以通其志，心神始感者也。凡物始感而不以之於正，則至於害，故必貞然後乃吉，吉然後乃得亡其悔也。始在於感，未盡感極，不能至於无思以得其黨，故有憧憧往來然後朋從其思也。\n\n未感於害，故可正之，得悔亡也。",
+      "en": "Occupying the beginning of the upper trigram and corresponding with the beginning of the lower trigram, situated in the center of the body and above the thigh—this is where the two constituent trigrams first interact and influence each other to communicate their intentions. It is the point where the heart and spirit first experience influence. Whenever things first experience influence and one does not direct this toward correctness, harm results. Therefore one must be correct and only then is there good fortune; with good fortune, one can then cause regret to vanish. Being at the beginning of influence, not yet having reached the utmost of influence, one cannot attain the state of no-thought to gain one's companions. Therefore there is restless going back and forth, and only then do friends follow one's thinking.\n\nNot yet having been influenced toward harm, therefore one can correct it and achieve the vanishing of regret."
+     }
+    },
+    "5": {
+     "zh": "九五，咸其脢，无悔。",
+     "en": "Nine in the Fifth: Influence in the flesh of the upper back—no regret.",
+     "wangBi": {
+      "zh": "脢者，心之上，口之下，進不能大感，退亦不為无志，其志淺末，故无悔而已。",
+      "en": "The mei (upper back flesh) is above the heart and below the mouth. Advancing, one cannot achieve great influence; retreating, one is not without intention either. The intention is shallow and at the periphery; therefore there is merely no regret."
+     }
+    },
+    "6": {
+     "zh": "《象》曰：咸其輔頰舌，滕口說也。",
+     "en": "The Image states: Influence in the jaws, cheeks, and tongue—it is merely eager talk from the mouth.",
+     "wangBi": {
+      "zh": "咸道轉末，故在口舌言語而已。\n\n輔頰舌者，所以為語之具也。咸其輔頰舌，則滕口說也。憧憧往來，猶未光大，況在滕口，薄可知也。",
+      "en": "The Way of influence has turned to its very end, therefore it resides merely in the mouth, tongue, and spoken words.\n\nThe jaws, cheeks, and tongue are the instruments for producing speech. When there is influence in the jaws, cheeks, and tongue, then it is merely eager talk from the mouth. Even restless going back and forth was not yet glorious and great—how much more so when it has come to eager talk from the mouth; that it is shallow goes without saying."
+     }
+    }
+   }
+  },
+  {
+   "number": 33,
+   "name": "Retreat",
+   "zh": "遯",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "hook": "Time to walk away?",
+   "meaning": [
+    "Retreat says:\nleave well.",
+    "No anger,\njust distance."
+   ],
+   "question": "What are you\nready to leave?",
+   "lesson": "Go while you still\ncan go freely.",
+   "finding": "TWO YIELDING LINES CREEP UP.",
+   "mark": [
+    1,
+    2
+   ],
+   "master": {
+    "zh": "為遯之主",
+    "en": "Master of Retreat"
+   },
+   "image": {
+    "zh": "《象》曰：天下有山，遯。\n\n君子以遠小人，不惡而嚴。",
+    "en": "The Image says: Below heaven there is a mountain — Retreat.\n\nThe superior person accordingly keeps distant from petty people, not with hatred but with dignity."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "注云：遯之為義，辟內而之外者也。尾之為物，最在體後者也。處遯之時，不往何災，而為遯尾，禍所及也。危至而後求行，難可免乎厲，則勿用有攸往也。",
+     "en": "The note says: The meaning of Retreat is to leave the inner and go to the outer. The tail, as a thing, is what is furthest behind in the body. In the time of Retreat, if one does not go, what disaster could there be? But to be the tail of retreat means calamity will reach one. When danger has arrived and only then does one seek to move, it is difficult to avoid peril, so one should not undertake any ventures.",
+     "wangBi": {
+      "zh": null,
+      "en": null
+     }
+    },
+    "2": {
+     "zh": "六二，執之用黃牛之革，莫之勝說。",
+     "en": "Six in the Second: Hold fast to it with the leather of a yellow ox — none can prevail in loosening it.",
+     "wangBi": {
+      "zh": "居內處中，為遯之主，物皆遯己，何以固之？若能執乎理中厚順之道以固之也，則莫之勝解。",
+      "en": "Dwelling within and occupying the central position, this line is the host of retreat — all things retreat from it. How can it hold them fast? If one can hold to the way of principled centrality, solidity, and compliance to secure them, then none can prevail in loosening it."
+     }
+    },
+    "3": {
+     "zh": "九三，係遯，有疾厲，畜臣妾吉。",
+     "en": "Nine in the Third: Tethered retreat. There is illness and danger. Maintaining servants and concubines — auspicious.",
+     "wangBi": {
+      "zh": "在內近二，以陽附陰，宜遯而繫，故曰繫遯。遯之為義，宜遠小人，以陽附陰，繫於所在，不能遠害，亦已憊矣，宜其屈辱而危厲也。繫於所在，畜臣妾可也。施於大事，凶之道也。",
+      "en": "Being within and close to the second line, yang attaches to yin. One ought to retreat, yet one is tethered, hence it says 'tethered retreat.' The meaning of retreat is that one ought to keep far from petty people. By yang attaching to yin, one is tethered to one's place and cannot distance oneself from harm — one is already exhausted. It is fitting that there should be humiliation and perilous danger. Being tethered to one's place, maintaining servants and concubines is acceptable. But applying this to great affairs would be the path to misfortune."
+     }
+    },
+    "4": {
+     "zh": "九四，好遯，君子吉，小人否。",
+     "en": "Nine in the Fourth: Graceful retreat. For the superior person — auspicious. For the petty person — blocked.",
+     "wangBi": {
+      "zh": "處於外而有應於內，君子好遯，故能舍之，小人繫戀，是以否也。\n\n音臧否之否。",
+      "en": "Positioned in the outer trigram yet having a correspondent in the inner, the superior person excels at retreat and thus can let go of it. The petty person clings and is attached, and therefore is blocked.\n\nPronounced as the 'pǐ' in 'zāng pǐ' [praise and blame]."
+     }
+    },
+    "5": {
+     "zh": "九五，嘉遯，貞吉。",
+     "en": "Nine in the Fifth: Admirable retreat. Correctness — auspicious.",
+     "wangBi": {
+      "zh": "遯而得正，反制於內。小人應命，率正其志，不惡而嚴，得正之吉，遯之嘉也。",
+      "en": "Retreating yet attaining correctness, one exercises control back over the inner. The petty person obeys the command and follows in rectifying his intentions. Not with hatred but with dignity — attaining the auspiciousness of correctness, this is the admirableness of retreat."
+     }
+    },
+    "6": {
+     "zh": "上九，肥遯，无不利。",
+     "en": "Top Nine: Bountiful retreat. Nothing that is not beneficial.",
+     "wangBi": {
+      "zh": "最處外極，无應於內，超然絕志，心无疑顧，憂患不能累，矰繳不能及，是以肥遯无不利也。",
+      "en": "Positioned at the outermost extreme, with no correspondent within, one rises above and severs all ties. The heart has no doubts or backward glances. Worries and troubles cannot weigh upon one; stringed arrows cannot reach one. This is why bountiful retreat has nothing that is not beneficial."
+     }
+    }
+   }
+  },
+  {
+   "number": 34,
+   "name": "Great Power",
+   "zh": "大壯",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "hook": "Finally in charge?",
+   "meaning": [
+    "Great Power says:\ncheck your aim.",
+    "Mostly, know what\nnot to do."
+   ],
+   "question": "What won’t you\ndo with it?",
+   "lesson": "Be strong only\nin what is right.",
+   "finding": "FOUR STRONG LINES PUSH UP.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：雷在天上，大壯。\n\n君子以非禮弗履。",
+    "en": "The Image states: Thunder is above heaven—Great Vigor.\n\nThe noble person does not tread upon what is contrary to ritual propriety."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，壯于趾，征凶有孚。",
+     "en": "Initial Nine: Vigor in the toes. To advance brings misfortune—this is certain.",
+     "wangBi": {
+      "zh": "夫得大壯者，必能自然成也。未有陵犯於物而得終其壯者。在下而壯，故曰壯于趾也。居下而用剛壯，以斯而進，窮凶可必也，故曰征凶有孚。\n\n言其信窮。",
+      "en": "One who attains Great Vigor must be able to achieve success naturally. There has never been one who encroached upon others yet managed to sustain his vigor to the end. Being in the lowest position yet vigorous—hence it says \"vigor in the toes.\" Dwelling below yet employing forceful vigor, to advance in this manner makes exhausting misfortune a certainty—hence it says \"to advance brings misfortune; this is certain.\"\n\nThis means one can be certain of reaching an impasse."
+     }
+    },
+    "2": {
+     "zh": "九二，貞吉。",
+     "en": "Nine in the Second: Correctness brings good fortune.",
+     "wangBi": {
+      "zh": "居得中位，以陽居陰，履謙不亢，是以貞吉。",
+      "en": "It occupies the central position. A yang line dwelling in a yin place treads with humility and is not overbearing—hence Correctness brings good fortune."
+     }
+    },
+    "3": {
+     "zh": "九三，小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。",
+     "en": "Nine in the Third: The petty person uses vigor; the noble person uses restraint. Correctness brings danger. A ram butts against a fence and entangles its horns.",
+     "wangBi": {
+      "zh": "處健之極，以陽處陽，用其壯者也。故小人用之以為壯，君子用之以為羅己者也。貞厲以壯，雖復羝羊，以之觸藩，能無羸乎？",
+      "en": "It occupies the extreme of the firm, a yang line in a yang position—this is one who employs vigor. Therefore the petty person uses it to display vigor, while the noble person uses it as a net that ensnares himself. To take vigor as one's standard of correctness brings danger. Even a ram that butts against a fence—can it avoid getting its horns entangled?"
+     }
+    },
+    "4": {
+     "zh": "九四，貞吉，悔亡。藩決不羸。壯于大輿之輹。",
+     "en": "Nine in the Fourth: Correctness brings good fortune; regret vanishes. The fence breaks open and there is no entanglement. Vigor in the axle straps of a great cart.",
+     "wangBi": {
+      "zh": "下剛而進，將有憂虞。而以陽處陰，行不違謙，不失其壯，故得貞吉而悔亡也。己得其壯，而上陰不罔己路，故藩決不羸也。壯于大輿之輹，无有能說其輹者，可以往也。",
+      "en": "The firm lines below advance upward, which will bring worry and apprehension. Yet with a yang line dwelling in a yin position, one's conduct does not violate humility. Not losing one's vigor, one therefore attains Correctness and good fortune, and regret vanishes. Having attained vigor, the yin lines above do not ensnare one's path—hence the fence breaks open and there is no entanglement. With vigor in the axle straps of a great cart, nothing can detach the straps—one may proceed."
+     }
+    },
+    "5": {
+     "zh": "六五，喪羊于易，无悔。",
+     "en": "Six in the Fifth: Losing the ram with ease. No regret.",
+     "wangBi": {
+      "zh": "居於大壯，以陽處陽，猶不免咎，而況以陰處陽，以柔乘剛者乎？羊，壯也。必喪其羊，失其所居也。能喪壯于易，不于險難，故得无悔。二履貞吉，能幹其任，而己委焉，則得无悔。委之則難不至，居之則敵寇來，故曰喪羊于易。",
+      "en": "Dwelling in Great Vigor, even a yang line in a yang position cannot escape blame—how much more so for a yin line in a yang position, the soft riding atop the firm? \"Ram\" symbolizes vigor. One will inevitably lose one's ram and forfeit one's position. If one can relinquish vigor with ease, rather than amid peril and difficulty, then one attains no regret. The second line treads in Correctness and good fortune, capable of handling its charge; if one entrusts matters to it, then one attains no regret. Entrusting yields no difficulty; holding on brings hostile forces—hence it says \"losing the ram with ease.\""
+     }
+    },
+    "6": {
+     "zh": "《象》曰：不能退，不能遂，不詳也。艱則吉，咎不長也。",
+     "en": "The Image states: Unable to retreat, unable to advance—this is not auspicious. Perseverance in difficulty brings good fortune; the blame will not last.",
+     "wangBi": {
+      "zh": "有應於三，故不能退。懼於剛長，故不能遂。持疑猶豫，志无所定，以斯決事，未見所利。雖處剛長，剛不害正。苟定其分，固志在三*，以斯自處，則憂患消亡，故曰艱則吉也。",
+      "en": "It has a corresponding line in the third—hence it cannot retreat. It fears the growth of the firm—hence it cannot advance. Holding to doubt and hesitation, with the will having no fixed resolve, making decisions in this manner yields no perceivable benefit. Although dwelling amid the growth of the firm, the firm does not harm what is correct. If one settles into one's proper role and firmly fixes one's will upon the third line*, then by conducting oneself in this manner, worry and calamity will vanish—hence it says \"perseverance in difficulty brings good fortune.\""
+     }
+    }
+   }
+  },
+  {
+   "number": 35,
+   "name": "Progress",
+   "zh": "晉",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "hook": "Finally getting recognized?",
+   "meaning": [
+    "Progress says:\ncharacter first.",
+    "Not strategy.\nNot network."
+   ],
+   "question": "What are you\nlike up close?",
+   "lesson": "Shine,\ndon't push.",
+   "finding": "THE SOFT RISES TO THE TOP CENTRE.",
+   "mark": [
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：明出地上，晉。君子以自昭明德。",
+    "en": "The Image states: Brightness emerges above the earth—this is Jin. The noble person uses this to illuminate his own bright virtue."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，晉如摧如，貞吉。罔孚，裕，无咎。",
+     "en": "Initial Six. Advancing, yet pushed back. Correctness brings good fortune. Without trust from others, if one remains generous and unhurried, there will be no blame.",
+     "wangBi": {
+      "zh": "處順之初，應明之始，明順之德，於斯將隆。進明退順，不失其正，故曰「晉如摧如貞吉」也。處卦之始，功業未著，物未之信，故曰罔孚。方踐卦始，未至履位，以此為足，自喪其長者也。故必裕之，然後无咎。\n\n未得履位，未受命也。",
+      "en": "Situated at the beginning of the compliant trigram and corresponding to the start of the bright trigram, the virtue of brightness and compliance will flourish from here. Advancing toward brightness and retreating into compliance, one does not lose what is correct; therefore it says 'advancing, yet pushed back—correctness brings good fortune.' Positioned at the start of the hexagram, one's merits and achievements are not yet notable, and others do not yet trust one; therefore it says 'without trust.' Having just entered the beginning of the hexagram and not yet attained a proper position, to regard this as sufficient would be to forfeit one's own growth. Therefore one must remain generous and unhurried, and only then will there be no blame.\n\nNot yet having attained a proper position means not yet having received the mandate."
+     }
+    },
+    "2": {
+     "zh": "六二，晉如愁如，貞吉。受茲介福，于其王母。",
+     "en": "Six in the Second. Advancing, yet sorrowful. Correctness brings good fortune. One receives this great blessing from one's royal mother.",
+     "wangBi": {
+      "zh": "進而无應，其德不昭，故曰「晉如愁如」。居中得位，履順而正，不以无應而回其志，處晦能致其誠者也。脩德以斯，聞乎幽昧，得正之吉也，故曰貞吉。母者，處內而成德者也。鳴鶴在陰則其子和之，立誠於闇，闇亦應之，故其初愁如。履貞不回，則乃受茲大福于其王母也。",
+      "en": "Advancing without a corresponding line above, one's virtue is not made manifest; therefore it says 'advancing, yet sorrowful.' Occupying the central position and attaining the proper place, treading in compliance and correctness, one does not turn back one's resolve because of lacking a corresponding line—this is one who, dwelling in obscurity, is able to bring forth sincerity. Cultivating virtue in this way, one's repute reaches even into the hidden and dark. This is the good fortune of attaining what is correct; therefore it says 'correctness brings good fortune.' The mother is one who dwells within and brings virtue to completion. 'When the crane calls in the shade, its young harmonize with it'—when one establishes sincerity in the dark, the dark responds in kind. Therefore at first there is sorrow, but treading in correctness without turning back, one then receives this great blessing from one's royal mother."
+     }
+    },
+    "3": {
+     "zh": "六三，眾允，悔亡。",
+     "en": "Six in the Third. The multitude approves. Regret vanishes.",
+     "wangBi": {
+      "zh": "處非其位，悔也。志在上行，與眾同信，順而麗明，故得悔亡也。",
+      "en": "Occupying a position that is not proper to it—this is cause for regret. Yet its aspiration is to go upward; it shares trust with the multitude; it is compliant and attaches itself to brightness. Therefore it is able to have its regret vanish."
+     }
+    },
+    "4": {
+     "zh": "九四，晉如鼫鼠，貞厲。",
+     "en": "Nine in the Fourth. Advancing like a hamster. Correctness brings danger.",
+     "wangBi": {
+      "zh": "履非其位，上承於五，下據三陰。履非其位，又負且乘，无業可安，志无所據，以斯為進，正之危也。進如鼫鼠，无所守也。",
+      "en": "It treads in a position that is not proper to it; above it serves the Fifth, below it sits atop three yin lines. Treading in a position not proper to it, it both carries a burden and rides in a carriage—it has no established achievement in which to find security, and its aspiration has nothing to rely upon. To advance under such conditions is truly a danger even when correct. Advancing like a hamster, it has nothing to hold fast to."
+     }
+    },
+    "5": {
+     "zh": "六五，悔亡，失得勿恤，往吉，无不利。",
+     "en": "Six in the Fifth. Regret vanishes. Do not worry about loss and gain. Going forward brings good fortune; nothing is unfavorable.",
+     "wangBi": {
+      "zh": "柔得尊位，陰為明主，能不用察，不代下任也。故雖不當位，能消其悔。失得勿恤，各有其司，術斯以往，无不利也。",
+      "en": "The soft obtains the honored position; a yin line serves as the enlightened ruler, able to refrain from employing scrutiny and not taking over the duties of those below. Therefore, although the position is not properly held, one is able to dispel regret. 'Do not worry about loss and gain'—each has its own responsibility. If one follows this principle and goes forward, nothing will be unfavorable."
+     }
+    },
+    "6": {
+     "zh": "上九，晉其角，維用伐邑。厲吉无咎，貞吝。",
+     "en": "Top Nine. Advancing to the horn. One resorts to attacking the city. Danger, then good fortune, and no blame. Yet correctness brings regret.",
+     "wangBi": {
+      "zh": "處進之極，過明之中，明將夷焉。已在乎角，而猶進之，非亢如何？失夫道化无為之事，必須攻伐，然後服邑，危乃得吉，吉乃无咎。用斯為正，亦以賤矣。",
+      "en": "Situated at the extreme of advance, having passed beyond the center of brightness—brightness is about to be leveled. Already at the horn yet still pressing forward, how is this not excessive? Having lost the affair of transforming through the Way and governing through non-action, one must resort to attack and assault, and only then can one subdue the city. Through danger one then attains good fortune; through good fortune one then avoids blame. But to take this as the standard of correctness is likewise something to be regarded as lowly."
+     }
+    }
+   }
+  },
+  {
+   "number": 37,
+   "name": "The Family",
+   "zh": "家人",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "hook": "Too many rules at home?",
+   "meaning": [
+    "The Family says:\nskip the rules.",
+    "Say real things.\nDo them daily."
+   ],
+   "question": "What will you\nfollow through on?",
+   "lesson": "Home in order,\nthe rest follows.",
+   "finding": "2 AND 5 ANSWER, BOTH IN PLACE.",
+   "mark": [
+    2,
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：風自火出，家人。\n\n君子以言有物而行有恒。",
+    "en": "The Image states: Wind issues from fire—The Family.\n\nThe noble person, through this, ensures that words have substance and actions have constancy."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，閑有家，悔亡。",
+     "en": "Initial Nine. Setting barriers for the household—regret vanishes.",
+     "wangBi": {
+      "zh": "凡教在初而法在始，家瀆而後嚴之，志變而後治之，則悔矣。處家人之初，為家人之始，故宜必以閑有家，然後悔亡也。",
+      "en": "In general, instruction should come at the beginning and rules at the start. If one lets the household fall into disrespect and only then becomes strict, or lets intentions change and only then tries to govern, there will be regret. Occupying the beginning of The Family and being the start of The Family, one ought to set barriers for the household; only then does regret vanish."
+     }
+    },
+    "2": {
+     "zh": "六二，无攸遂，在中饋，貞吉。",
+     "en": "Six in the Second. She has nothing she pursues to completion; she is occupied with the food within. Correctness brings good fortune.",
+     "wangBi": {
+      "zh": "居內處中，履得其位，以陰應陽，盡婦人之正義，无所必遂，職乎中饋，巽順而巳，是以貞吉也。",
+      "en": "Dwelling within and occupying the center, treading in and obtaining its proper position, with yin responding to yang—this exhausts the correct meaning of the woman. There is nothing she must pursue to completion; her duty lies in the food within, being compliant and yielding and nothing more. This is why Correctness brings good fortune."
+     }
+    },
+    "3": {
+     "zh": "九三，家人嗃嗃，悔厲，吉。婦子嘻嘻，終吝。",
+     "en": "Nine in the Third. When the family members are treated with harsh severity—regret and danger, but good fortune. When wives and children giggle and titter—in the end, distress.",
+     "wangBi": {
+      "zh": "以陽處陽，剛嚴者也。處下體之極，為一家之長者也。行與其慢，寧過乎恭；家與其瀆，寧過乎嚴。是以家人雖嗃嗃悔厲，猶得其道。婦子嘻嘻，乃失其節也。",
+      "en": "With yang occupying a yang position, this is one who is firm and strict. Occupying the top of the lower body, this is the head of the household. In conduct, rather than being lax, it is better to err on the side of reverence; in the household, rather than being disrespectful, it is better to err on the side of severity. This is why even though the family members are treated with harsh severity, bringing regret and danger, this still attains the Way. When wives and children giggle and titter, this means losing proper restraint."
+     }
+    },
+    "4": {
+     "zh": "六四，富家，大吉。",
+     "en": "Six in the Fourth. Enriching the household—great good fortune.",
+     "wangBi": {
+      "zh": "能以其富，順而處位，故大吉也。若但能富其家，何足為大吉？體柔居巽，履得其位，明於家道，以近至尊，能富其家也。",
+      "en": "Being able to use one's wealth while being yielding and occupying the proper position—therefore there is great good fortune. If one merely were able to enrich the household, how would that suffice for great good fortune? Having a yielding body and dwelling in the Xun trigram, treading in and obtaining the proper position, understanding the Way of the family, and being close to the most honored—this is what enables enriching the household."
+     }
+    },
+    "5": {
+     "zh": "九五，王假有家，勿恤，吉。",
+     "en": "Nine in the Fifth. The king arrives at possessing a household. Do not worry—good fortune.",
+     "wangBi": {
+      "zh": "假，至也。履正而應，處尊體巽，王至斯道，以有其家者也。居於尊位，而明於家道，則下莫不化矣。父父、子子、兄兄、弟弟、夫夫、婦婦，六親和睦，交相愛樂，而家道正，正家而天下定矣，故王假有家則勿恤而吉。",
+      "en": "'Jia' means 'to arrive.' Treading in the correct position and having a response, occupying the honored place with the body in the Xun trigram—the king arrives at this Way and thereby possesses his household. Dwelling in the honored position and being illuminated in the Way of the family, then none below fail to be transformed. When the father acts as a father, the son as a son, the elder brother as an elder brother, the younger brother as a younger brother, the husband as a husband, and the wife as a wife, the six relations are harmonious and at peace, mutually loving and taking joy in one another, and the Way of the family is correct. When the family is rectified, the whole world is settled; therefore when the king arrives at possessing a household, he need not worry and there is good fortune."
+     }
+    },
+    "6": {
+     "zh": "上九，有孚，威如，終吉。",
+     "en": "Top Nine. There is sincerity, and a dignified bearing—in the end, good fortune.",
+     "wangBi": {
+      "zh": "處家人之終，居家道之成，刑于寡妻，以著于外者也，故曰有孚。凡物以猛為本者則患在寡恩，以愛為本者則患在寡威，故家人之道尚威嚴也。家道可終，唯信與威。身得威敬，人亦如之。反之於身，則知施於人也。",
+      "en": "Occupying the end of The Family and dwelling at the completion of the Way of the family, one serves as a model to one's own wife and thereby becomes manifest outwardly; therefore it says 'there is sincerity.' In general, those who take fierceness as the foundation suffer from a lack of kindness, while those who take love as the foundation suffer from a lack of authority. Therefore the Way of The Family esteems authority and dignity. What allows the Way of the family to endure to the end is solely sincerity and authority. When one's own person attains dignified respect, others likewise accord with it. Reflecting it back upon oneself, one then understands how to extend it to others."
+     }
+    }
+   }
+  },
+  {
+   "number": 38,
+   "name": "Opposition",
+   "zh": "睽",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "hook": "Can’t agree on anything?",
+   "meaning": [
+    "Opposition says:\nstart small.",
+    "Share something,\nstay different."
+   ],
+   "question": "What do you\nboth want?",
+   "lesson": "Apart, but still\nanswering.",
+   "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER.",
+   "mark": [
+    2,
+    3,
+    5,
+    6
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：上火下澤，睽。君子以同而異。",
+    "en": "The Image states: Fire above, marsh below — Kui (Opposition). The noble person thereby shares in what is common yet preserves what is distinct."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，悔亡。喪馬，勿逐自復。見惡人，无咎。",
+     "en": "Initial Nine: Regret vanishes. Losing a horse — do not pursue it; it will return of itself. If one sees an evil person, there is no blame.",
+     "wangBi": {
+      "zh": "處睽之初，居下體之下，无應獨立，悔也。與四合志，故得悔亡。馬者，必顯之物。處物之始，乖而喪其馬，物莫能同其私，必相顯也，故勿逐而自復也。時方乖離，而位乎窮下，上无應可援，下无權可恃，顯德自異，為惡所害，故見惡人乃得免咎也。",
+      "en": "Occupying the beginning of Kui, dwelling at the bottom of the lower trigram, without a responsive counterpart and standing alone — this is cause for regret. Yet it shares its will with the fourth line, and therefore regret vanishes. A horse is a thing that necessarily stands out. At the beginning of things, amid divergence one loses one's horse, but nothing can conceal it in private — it will inevitably be made visible, so do not pursue it and it will return of itself. The time is one of divergence and separation; one's position is at the very bottom, with no responsive counterpart above to give aid and no power below to rely upon. To make one's virtue conspicuous and set oneself apart would invite harm from the wicked. Therefore, by meeting with the evil person, one is able to avoid blame."
+     }
+    },
+    "2": {
+     "zh": "九二，遇主于巷，无咎。",
+     "en": "Nine in the Second: One meets the master in an alleyway. No blame.",
+     "wangBi": {
+      "zh": "處睽失位，將无所安。然五亦失位，俱求其黨，出門同趣，不期而遇，故曰遇主於巷也。處睽得援，雖失其位，未失道也。",
+      "en": "Occupying a position in Kui while out of one's proper place, one is about to have nowhere to find rest. Yet the fifth line has also lost its proper place; both seek their kindred, going out and heading the same way, meeting unexpectedly — hence it says 'meets the master in an alleyway.' In the time of Kui one has found an ally; although one has lost one's position, one has not lost the Way."
+     }
+    },
+    "3": {
+     "zh": "六三，見輿曳，其牛掣。其人天且劓，无初有終。",
+     "en": "Six in the Third: One sees the carriage dragged back, its ox restrained. The person is branded on the forehead and has the nose cut off. No beginning, but there is an end.",
+     "wangBi": {
+      "zh": "凡物近而不相得則凶。處睽之時，履非其位，以陰居陽，以柔乘剛，志在於上，而不和於四。二應於五，則近而不相比，故見輿曳。輿曳者，履非其位，失所載也。其牛掣者，滯隔所在，不獲進也。「其人天且劓」者，四從上取，二從下取，而應在上九，執志不回。初雖受困，終獲剛助。",
+      "en": "In general, when things are near yet do not get along, there is misfortune. In the time of Kui, this line treads in a position that is not its own — yin occupying a yang place, the yielding riding atop the firm. Its will is set on what is above, yet it does not harmonize with the fourth line. The second responds to the fifth, so though near, they do not bond. Hence one sees the carriage dragged back. The carriage being dragged back means treading in the wrong position and losing what one carries. The ox being restrained means being stuck and blocked where one is, unable to advance. 'The person is branded on the forehead and has the nose cut off' — the fourth line attacks from above, the second attacks from below. Yet this line's responsive counterpart is Top Nine, and it holds fast to its will without turning back. Though at first it suffers hardship, in the end it obtains the aid of the firm."
+     }
+    },
+    "4": {
+     "zh": "九四，睽孤，遇元夫。交孚，厲，无咎。",
+     "en": "Nine in the Fourth: Opposed and isolated, one meets a man of original character. Mutual trust through exchange. Danger, but no blame.",
+     "wangBi": {
+      "zh": "无應獨處，五自應二，三與己睽，故曰睽孤也。初亦无應特立。處睽之時，俱在獨立，同處體下，同志者也。而己失位，比於三五，皆與己乖，處无所安，故求其疇類而自託焉，故曰遇元夫也。同志相得而无疑焉，故曰交孚也。雖在乖隔，志故得行，故雖危无咎。",
+      "en": "Without a responsive counterpart, dwelling alone — the fifth responds on its own to the second, and the third is in opposition with this line. Hence it says 'opposed and isolated.' The first line likewise has no responsive counterpart and stands alone. In the time of Kui, both stand in isolation; both occupy the lower part of their respective trigrams and share the same will. Yet this line has lost its position; the lines adjacent to it — the third and fifth — are all in discord with it; it has no place to find rest, and so it seeks out its kindred and entrusts itself to them. Hence it says 'meets a man of original character.' Sharing the same will, they find each other without doubt; hence 'mutual trust through exchange.' Although amid divergence and separation, their wills succeed in being carried out; therefore despite danger there is no blame."
+     }
+    },
+    "5": {
+     "zh": "六五，悔亡。厥宗噬膚，往，何咎？",
+     "en": "Six in the Fifth: Regret vanishes. Its kinsman bites through the skin. Going forward — what blame could there be?",
+     "wangBi": {
+      "zh": "非位，悔也。有應，故亡。厥宗，謂二也。噬膚者，齧柔也。三雖比二，二之所噬，非妨己應者也。以斯而往，何咎之有？往必合也。",
+      "en": "Not in its proper position — hence regret. Having a responsive counterpart — hence it vanishes. 'Its kinsman' refers to the second line. 'Biting through the skin' means gnawing through what is yielding. Although the third line is adjacent to the second, what the second bites through does not obstruct this line's responsive bond. Going forward under these conditions, what blame could there be? Going forward will certainly bring union."
+     }
+    },
+    "6": {
+     "zh": "上九，睽孤。見豕負塗，載鬼一車，先張之弧，後說之弧。匪寇婚媾，往，遇雨則吉。",
+     "en": "Top Nine: Opposed and isolated. One sees a pig covered in mud, a cartload of ghosts. First one draws the bow, afterward one puts the bow aside. It is not a bandit but a marriage partner. Going forward, encountering rain brings good fortune.",
+     "wangBi": {
+      "zh": "處睽之極，睽道未通，故曰睽孤。己居炎極，三處澤盛，睽之極也。以文明之極，而觀至穢之物，睽之甚也。豕而負塗，穢莫過焉。至睽將合，至殊將通，恢詭譎怪，道將為一。未至於洽，先見殊怪，故見豕負塗，甚可穢也。見鬼盈車，吁可怪也。先張之弧，將攻害也。後說之弧，睽怪通也。四剠其應，故為寇也。睽志將通，匪寇婚媾，往不失時，睽疑亡也。貴於遇雨，和陰陽也。陰陽既和，群疑亡也。",
+      "en": "Occupying the extreme of Kui, the way of opposition has not yet opened — hence 'opposed and isolated.' This line dwells at the extreme of flame, while the third line occupies the fullness of the marsh — this is the extreme of opposition. Viewing the most defiled of things from the extreme of civilized brightness — this is the utmost of opposition. A pig covered in mud — nothing could be filthier. When opposition reaches its extreme, union is about to come; when difference reaches its extreme, communication is about to open. The vast, the uncanny, the strange, and the monstrous — the Way is about to unify them all. Before harmony is reached, one first sees strange monstrosities; hence seeing a pig covered in mud, something supremely foul. Seeing ghosts filling a cart — how utterly bizarre! First drawing the bow — about to attack. Afterward putting the bow aside — the strangeness of opposition gives way to communication. The fourth line brands this line's responsive counterpart, and so appears as a bandit. But the will toward opposition is about to open into communication — it is not a bandit but a marriage partner. Going forward without missing the moment, the doubts of opposition vanish. The value of encountering rain lies in the harmonizing of yin and yang. Once yin and yang are harmonized, all doubts vanish."
+     }
+    }
+   }
+  },
+  {
+   "number": 39,
+   "name": "Obstruction",
+   "zh": "蹇",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "hook": "Hit a wall?",
+   "meaning": [
+    "Obstruction says:\nask for help.",
+    "The wall is\nthe lesson."
+   ],
+   "question": "Who could you\nask?",
+   "lesson": "Blocked?\nLook at yourself.",
+   "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED.",
+   "mark": [
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山上有水，蹇。\n\n君子以反身脩德。",
+    "en": "The Image says: Above the mountain there is water—Jian.\n\nThe noble person thereby turns inward to cultivate virtue."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，往蹇，來譽。",
+     "en": "Initial Six: Going forth meets obstruction; turning back brings praise.",
+     "wangBi": {
+      "zh": "處難之始，居止之初，獨見前識，覩險而止，以待其時，知矣哉！故往則遇蹇，來則得譽。",
+      "en": "Situated at the beginning of difficulty, dwelling at the start of stopping, one alone perceives what lies ahead, sees danger and stops, waiting for the right time—how wise indeed! Therefore going forth encounters obstruction, while turning back gains praise."
+     }
+    },
+    "2": {
+     "zh": "六二，王臣蹇蹇，匪躬之故。",
+     "en": "Six in the Second: The king's minister struggles through obstruction upon obstruction—not for his own sake.",
+     "wangBi": {
+      "zh": "處難之時*，履當其位，居不失中，以應於五。不以五在難中，私身遠害，執心不回，志匡王室者也。故曰：「王臣蹇蹇，匪躬之故」。履中行義，以存其上，處蹇以此，未見其尤也。",
+      "en": "In a time of dwelling in difficulty*, one treads in the proper position, dwells without losing the center, and responds to the fifth line. One does not, because the fifth is amid difficulty, act selfishly to keep oneself distant from harm. Holding fast with unwavering heart, one's resolve is to assist the royal house. Therefore it says: 'The king's minister struggles through obstruction upon obstruction—not for his own sake.' Treading the center and practicing righteous meaning, thereby sustaining one's superior—handling Jian in this way, no fault is to be seen."
+     }
+    },
+    "3": {
+     "zh": "九三，往蹇，來反。",
+     "en": "Nine in the Third: Going forth meets obstruction; turning back, one returns.",
+     "wangBi": {
+      "zh": "進則入險，來則得位，故曰往蹇來反。為下卦之主，是內之所恃也。",
+      "en": "Advancing, one enters danger; turning back, one attains one's position. Therefore it says 'going forth meets obstruction; turning back, one returns.' As the master of the lower trigram, this is what the inner [trigram] relies upon."
+     }
+    },
+    "4": {
+     "zh": "六四，往蹇，來連。",
+     "en": "Six in the Fourth: Going forth meets obstruction; turning back, one joins [with others].",
+     "wangBi": {
+      "zh": "往則无應，來則乘剛，往來皆難，故曰往蹇來連。得位履正，當其本實，雖遇於難，非妄所招也。",
+      "en": "Going forth, there is no corresponding line; turning back, one rides upon the strong. Going and coming are both difficult; therefore it says 'going forth meets obstruction, turning back one joins.' Attaining one's position and treading correctly, fulfilling one's fundamental substance—though encountering difficulty, it is not something recklessly brought upon oneself."
+     }
+    },
+    "5": {
+     "zh": "九五，大蹇，朋來。",
+     "en": "Nine in the Fifth: Great obstruction; companions come.",
+     "wangBi": {
+      "zh": "處難之時，獨在險中，難之大者也，故曰大蹇。然居不失正，履不失中，執德之長，不改其節，如此則同志者集而至矣，故曰朋來也。",
+      "en": "In a time of dwelling in difficulty, alone amid danger—this is the greatest of difficulties; therefore it says 'great obstruction.' Yet dwelling without losing correctness, treading without losing the center, holding fast to virtue's constancy, and not changing one's integrity—being thus, those of like mind gather and arrive; therefore it says 'companions come.'"
+     }
+    },
+    "6": {
+     "zh": "《象》曰：往蹇來碩，志在內也。\n\n利見大人，以從貴也。",
+     "en": "The Image says: Going forth meets obstruction; turning back brings greatness—the resolve is directed inward.\n\nBenefit in seeing a great person—thereby following the noble.",
+     "wangBi": {
+      "zh": "往則長難，來則難終，難終則眾難皆濟，志大得矣，故曰往蹇來碩吉。險夷難解，大道可興，故曰利見大人也。\n\n有應在內，往則失之*。來則志獲，志在內也。",
+      "en": "Going forth prolongs difficulty; turning back brings difficulty to its end. When difficulty ends, all obstructions are overcome, and one's resolve is greatly fulfilled; therefore it says 'going forth meets obstruction; turning back brings greatness—good fortune.' When danger is leveled and difficulty resolved, the great Way can flourish; therefore it says 'benefit in seeing a great person.'\n\nThere is a corresponding line within; going forth, one loses it*. Turning back, one's resolve is fulfilled—the resolve is directed inward."
+     }
+    }
+   }
+  },
+  {
+   "number": 40,
+   "name": "Deliverance",
+   "zh": "解",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hook": "The pressure’s finally off?",
+   "meaning": [
+    "Deliverance says:\nact or rest.",
+    "Then let the\ngrudges go."
+   ],
+   "question": "What can you\nforgive?",
+   "lesson": "Out of danger?\nThen don't linger.",
+   "finding": "THUNDER BREAKS OUT OF THE WATER.",
+   "mark": [
+    4,
+    5,
+    6
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：雷雨作，解，君子以赦過宥罪。",
+    "en": "The Image says: Thunder and rain arise—Release. The noble person thereby pardons transgressions and shows leniency toward offenses."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，无咎。",
+     "en": "Initial Six: No blame.",
+     "wangBi": {
+      "zh": "解者，解也。屯難盤結，於是乎解也。處蹇難始解之初，在剛柔始散之際，將赦罪厄，以夷其險。處此之時，不煩於位而无咎也。\n\n或有過咎，非其理也。義猶理也。",
+      "en": "Release means untying. What was obstructed in difficulty and tangled together is here released. Situated at the very beginning when hardship and difficulty first begin to dissolve, at the juncture when the firm and the yielding first begin to disperse, offenses and distress are about to be pardoned, thereby leveling the danger. At such a time, one need not be troubled about one's position and is without blame.\n\nIf there were any error or blame, it would be contrary to principle. 'Meaning' here is equivalent to 'principle.'"
+     }
+    },
+    "2": {
+     "zh": "九二，田獲三狐，得黃矢，貞吉。",
+     "en": "Nine in the Second: In the hunt, three foxes are caught; a yellow arrow is obtained. Correctness brings good fortune.",
+     "wangBi": {
+      "zh": "狐者，隱伏之物也。剛中而應，為五所任，處於險中，知險之情，以斯解物，能獲隱伏也，故曰「田獲三狐」也。黃，理中之稱也。矢，直也。田而獲三狐，得乎理中之道，不失枉直之實，能全其正者也，故曰「田獲三狐，得黃矢，貞吉」也。",
+      "en": "The fox is a creature that hides and lurks. Being firm and central with a corresponding line, it is entrusted by the Fifth. Situated within the danger, it knows the conditions of danger. Resolving things by this means, it can catch what is hidden and lurking; therefore it says 'in the hunt, three foxes are caught.' Yellow is a designation for the center of principle. Arrow (shi) means straight. Hunting and catching three foxes, one attains the Way of centered principle and does not lose the reality of what is crooked and what is straight, thereby fully preserving one's correctness. Therefore it says 'in the hunt, three foxes are caught; a yellow arrow is obtained; correctness brings good fortune.'"
+     }
+    },
+    "3": {
+     "zh": "六三，負且乘，致寇至，貞吝。",
+     "en": "Six in the Third: Carrying a burden while riding in a carriage, one invites bandits to come. Correctness brings regret.",
+     "wangBi": {
+      "zh": "處非其位，履非其正，以附於四，用夫柔邪以自媚者也。乘二負四，以容其身。寇之來也，自己所致，雖幸而免，正之所賤也。",
+      "en": "Occupying a position that is not its own, treading where it has no rightful place, it attaches itself to the Fourth, using yielding flattery to ingratiate itself. It rides upon the Second and bears the burden of the Fourth, thereby finding accommodation for itself. The coming of bandits is brought about by oneself. Even if one is fortunate enough to escape, it is something that correctness despises."
+     }
+    },
+    "4": {
+     "zh": "九四，解而拇，朋至斯孚。",
+     "en": "Nine in the Fourth: Release your big toe; then allies will come with trust.",
+     "wangBi": {
+      "zh": "失位不正，而比於三，故三得附之為其拇也。三為之拇，則失初之應，故解其拇，然後朋至而信矣。",
+      "en": "Having lost its proper position and being incorrect, it is adjacent to the Third; therefore the Third is able to attach to it as its big toe. If the Third serves as its big toe, then the correspondence with the Initial line is lost. Therefore one must release the big toe, and only then will allies come with trust."
+     }
+    },
+    "5": {
+     "zh": "六五，君子維有解，吉。有孚于小人。",
+     "en": "Six in the Fifth: The noble person herein achieves release—good fortune. There is trust shown toward the petty person.",
+     "wangBi": {
+      "zh": "居尊履中而應乎剛，可以有解而獲吉矣。以君子之道解難釋險，小人雖闇，猶知服之而无怨矣。故曰「有孚于小人」也。",
+      "en": "Occupying the honored position, treading in the center, and corresponding with the firm, it can achieve release and obtain good fortune. When one uses the Way of the noble person to release difficulty and dissolve danger, even though the petty person is benighted, he still knows to submit and bears no resentment. Therefore it says 'there is trust shown toward the petty person.'"
+     }
+    },
+    "6": {
+     "zh": "上六，公用射隼于高墉之上，獲之，无不利。",
+     "en": "Top Six: The duke shoots a hawk upon the high wall. He catches it. Nothing is unfavorable.",
+     "wangBi": {
+      "zh": "初為四應，二為五應，三不應上，失位負乘，處下體之上，故曰高墉。墉非隼之所處，高非三之所履，上六居動之上，為解之極，將解荒悖而除穢亂者也。故用射之，極而後動，成而後舉，故必獲之而无不利也。",
+      "en": "The Initial line corresponds with the Fourth; the Second corresponds with the Fifth. The Third does not correspond with Top Six. It has lost its position and carries a burden while riding, and it occupies the top of the lower trigram; therefore it is called the 'high wall.' A wall is not a place where a hawk should perch; a height is not where the Third should tread. Top Six dwells at the top of the movement trigram and is the culmination of Release. It is about to release what is dissolute and perverse and to eliminate what is foul and disordered. Therefore it uses shooting. Acting only at the culmination, moving only after conditions are ripe, proceeding only after success is assured—therefore it necessarily catches it, and nothing is unfavorable."
+     }
+    }
+   }
+  },
+  {
+   "number": 41,
+   "name": "Decrease",
+   "zh": "損",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "hook": "Having less than before?",
+   "meaning": [
+    "Decrease says:\ngive what you can.",
+    "Cut the anger,\ncut the wants."
+   ],
+   "question": "What can you\nlet go of?",
+   "lesson": "Two small baskets\nare enough.",
+   "finding": "THE LOW LINE GIVES TO THE TOP.",
+   "mark": [
+    3,
+    6
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山下有澤，損。\n\n君子以懲忿窒欲。",
+    "en": "The Image states: Below the mountain there is a lake — Decrease.\n\nThe noble person uses this to curb anger and restrain desires."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，已事遄往，无咎，酌損之。",
+     "en": "Initial Nine: When the task is finished, go swiftly. No blame. Consider carefully how to decrease.",
+     "wangBi": {
+      "zh": "損之為道，損下益上，損剛益柔，以應其時者也。居於下極，損剛奉柔，則不可以逸。處損之始，則不可以盈。時已則往，不敢宴安，乃獲无咎也。剛以奉柔，雖免乎咎，猶未親也，故既獲无咎，復自酌損，乃得合志也。遄，速也。\n\n尚合於志，故速往也。",
+      "en": "The Way of Decrease is to decrease the lower to benefit the upper, to decrease the firm to benefit the yielding, in response to the demands of the time. Occupying the lowest position and decreasing firmness to serve yielding, one must not be idle. Being at the beginning of Decrease, one must not be complacent. When the task is already done, then go — not daring to rest at ease — and only then will one obtain no blame. Using firmness to serve yielding, although one avoids blame, there is not yet closeness. Therefore, having obtained no blame, one further carefully measures how to decrease oneself, and only then achieves alignment of wills. \"Chuan\" (遄) means \"swiftly.\"\n\nOne hopes to align wills, and therefore goes swiftly."
+     }
+    },
+    "2": {
+     "zh": "九二，利貞，征凶。弗損，益之。",
+     "en": "Nine in the Second: Benefit in Correctness. To advance brings misfortune. Do not decrease; increase it instead.",
+     "wangBi": {
+      "zh": "柔不可全益，剛不可全削，下不可以无正。初九已損剛以順柔，九二履中，而復損己以益柔，則剝道成焉，故不可遄往，而利貞也。進之於柔，則凶矣，故曰征凶也。故九二不損而務益，以中為志也。",
+      "en": "Yielding cannot be entirely increased, nor can firmness be entirely stripped away; the lower cannot be without Correctness. Initial Nine has already decreased firmness to comply with yielding. If Nine in the Second, treading the central position, were again to diminish itself to benefit yielding, then the Way of Stripping (Bo, hexagram 23) would be realized. Therefore one must not go swiftly but rather find Benefit in Correctness. To advance toward yielding would be misfortune; hence it says \"to advance brings misfortune.\" Therefore Nine in the Second does not decrease itself but devotes effort to increase, taking the center as its guiding purpose."
+     }
+    },
+    "3": {
+     "zh": "六三，三人行則損一人，一人行則得其友。",
+     "en": "Six in the Third: When three people travel together, one person is decreased. When one person travels alone, one finds a companion.",
+     "wangBi": {
+      "zh": "損之為道，損下益上，其道上行。三人，謂自六三已上三陰也。三陰並行，以承於上，則上失其友，內无其主，名之曰益，其實乃損。故天地相應，乃得化淳；男女匹配，乃得化生。陰陽不對，生可得乎？故六三獨行，乃得其友，三陰俱行，則必疑矣。",
+      "en": "The Way of Decrease is to decrease the lower to benefit the upper; its Way moves upward. \"Three people\" refers to the three yin lines from Six in the Third upward. If the three yin lines travel together to serve the one above, then the upper loses its companion, and within there is no master — this is called Increase in name, but in reality it is Decrease. Thus when heaven and earth correspond with each other, transformation achieves purity; when man and woman are properly matched, procreation is achieved. If yin and yang are not properly paired, can life be attained? Therefore, when Six in the Third travels alone, it finds its companion. If all three yin lines travel together, then there will surely be suspicion."
+     }
+    },
+    "4": {
+     "zh": "六四，損其疾，使遄有喜，无咎。",
+     "en": "Six in the Fourth: Decrease one's affliction. Act swiftly and there will be joy. No blame.",
+     "wangBi": {
+      "zh": "履得其位，以柔納剛，能損其疾也。疾何可久，故速乃有喜。損疾以離其咎，有喜乃免，故使速乃有喜，有喜乃无咎也。",
+      "en": "Treading in its proper position and receiving firmness through yielding, it can decrease its affliction. An affliction cannot be endured for long; therefore acting swiftly brings joy. Decreasing the affliction in order to depart from blame — only with joy is one absolved. Therefore acting swiftly brings joy, and with joy there is no blame."
+     }
+    },
+    "5": {
+     "zh": "六五，或益之，十朋之龜弗克違，元吉。",
+     "en": "Six in the Fifth: Someone increases it. A tortoise worth ten sets of cowries cannot gainsay this. Sublime Beginning good fortune.",
+     "wangBi": {
+      "zh": "以柔居尊，而為損道，江海處下，百谷歸之。履尊以損，則或益之矣。朋，黨也。龜者，決疑之物也。陰非先唱，柔非自任，尊以自居，損以守之。故人用其力，事竭其功，知者慮能，明者慮策，弗能違也，則眾才之用盡矣。獲益而得十朋之龜，足以盡天人之助也。",
+      "en": "Occupying the honored position with yielding and practicing the Way of Decrease — like rivers and seas that dwell in the lowest place, and all the valleys flow toward them. Treading the position of honor with Decrease, then someone will increase it. \"Peng\" (朋) means \"associates\" or \"groups.\" The tortoise is an instrument for resolving doubt. Yin does not initiate; yielding does not take charge on its own. Dwelling in the honored position and maintaining it through Decrease — therefore people devote their strength, affairs exhaust their merit, the wise deliberate with their abilities, and the perceptive deliberate with their strategies, unable to gainsay it. Then the full use of all talents is exhausted. To receive increase and obtain a tortoise worth ten sets of cowries is sufficient to exhaust the aid of both heaven and humans."
+     }
+    },
+    "6": {
+     "zh": "上九，弗損，益之，无咎，貞吉。利有攸往，得臣无家。",
+     "en": "Top Nine: Not decreased, but increased. No blame. Correctness brings good fortune. It is Beneficial to have somewhere to go. One gains ministers but has no private household.",
+     "wangBi": {
+      "zh": "處損之終，上无所奉，損終反益，剛德不損，乃反益之，而不憂於咎。用正而吉，不制於柔，剛德遂長，故曰｢弗損，益之，无咎，貞吉，利有攸往｣也。居上乘柔，處損之極，尚夫剛德，為物所歸，故曰得臣。得臣則天下為一，故无家也。",
+      "en": "Situated at the end of Decrease, above there is no one to serve. At the end of Decrease it reverses into Increase; the virtue of firmness is not diminished but rather increased, and there is no worry of blame. Employing Correctness brings good fortune. Not controlled by yielding, the virtue of firmness continues to grow. Hence it says, \"Not decreased, but increased; no blame; Correctness brings good fortune; it is Beneficial to have somewhere to go.\" Dwelling above and riding upon yielding, situated at the extreme of Decrease, valuing the virtue of firmness — all beings return to it. Hence it says, \"gains ministers.\" When one gains ministers, then all under heaven becomes one; hence \"no private household.\""
+     }
+    }
+   }
+  },
+  {
+   "number": 45,
+   "name": "Gathering Together",
+   "zh": "萃",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "hook": "Hosting family, bracing for arguments?",
+   "meaning": [
+    "Gathering says:\nshare a purpose.",
+    "And plan for\nthe friction."
+   ],
+   "question": "What holds your\ngroup together?",
+   "lesson": "Gather people by\nwhat is right.",
+   "finding": "FOUR YIELDING LINES GATHER TO TWO.",
+   "mark": [
+    4,
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：澤上於地，萃。君子以除戎器，戒不虞。",
+    "en": "The Image states: The lake rises above the earth—Gathering. The noble person thereby readies weapons of war and guards against the unforeseen."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，有孚不終，乃亂乃萃。若號一握為笑，勿恤，往无咎。",
+     "en": "Initial Six: There is sincerity that does not last to the end; then there is disorder, then gathering. If one calls out, a single handful becomes laughter. Do not worry—going forward is without blame.",
+     "wangBi": {
+      "zh": "有應在四而三承之，心懷嫌疑，故有孚不終也。不能守道，以結至好，迷務競爭，故乃亂乃萃也。一握者，小之貌也。為笑者，懦劣之貌也。己為正配，三以近寵，若安夫卑退，謙以自牧，則勿恤而往无咎也。",
+      "en": "There is a correspondence with the fourth, yet the third encroaches upon it. The heart harbors suspicion and doubt, hence \"there is sincerity that does not last to the end.\" Unable to hold to the Way and form the most excellent bond, confused and occupied with contention, hence \"then there is disorder, then gathering.\" \"A single handful\" is an image of smallness. \"Becoming laughter\" is an image of timidity and weakness. Oneself is the proper match, yet the third gains favor through proximity. If one is content with humility and withdrawal, using modesty to govern oneself, then there will be no worry and going forward is without blame."
+     }
+    },
+    "2": {
+     "zh": "六二，引吉无咎，孚乃利用禴。",
+     "en": "Six in the Second: Being drawn forward brings good fortune and is without blame. With sincerity, it is then Beneficial to use the Yue sacrifice.",
+     "wangBi": {
+      "zh": "居萃之時，體柔當位，處坤之中，己獨處正，與眾相殊，異操而聚，民之多僻，獨正者危。未能變體以遠於害，故必見引，然後乃吉而无咎也。禴，殷春祭名也，四時祭之省者也。居聚之時，處於中正，而行以忠信，故可以省薄薦於鬼神也。",
+      "en": "At the time of Gathering, having a yielding nature in the proper position, dwelling in the center of Kun, one alone occupies the correct position, differing from the multitude. Gathering with different conduct—when the people are mostly deviant, the one who alone is correct is in danger. Unable to change one's nature to distance oneself from harm, one must necessarily be drawn forward, and only then is there good fortune and no blame. The \"Yue\" is the name of the Yin dynasty's spring sacrifice, the simplest of the four seasonal sacrifices. At the time of gathering, dwelling in centrality and correctness, and acting with loyalty and sincerity, one may use simple and modest offerings to present to the ghosts and spirits."
+     }
+    },
+    "3": {
+     "zh": "六三，萃如，嗟如，无攸利。往无咎，小吝。",
+     "en": "Six in the Third: Gathering thus, sighing thus—nothing is Beneficial. Going forward is without blame, but there is slight regret.",
+     "wangBi": {
+      "zh": "履非其位，以比於四，四亦失位。不正相聚，相聚不正，患所生也。干人之應，害所起也，故「萃如嗟如，无攸利」也。上六亦无應而獨立，處極而憂危，思援而求朋，巽以待物者也。與其萃於不正，不若之於同志，故可以往而无咎也。二陰相合，猶不若一陰一陽之應*，故有小吝也。",
+      "en": "Treading in an improper position and being close to the fourth, yet the fourth also has lost its position. Gathering together improperly—when those who gather together are not correct, troubles arise. Intruding upon another's correspondence is where harm originates. Hence \"gathering thus, sighing thus—nothing is Beneficial.\" Top Six also has no correspondence and stands alone, dwelling at the extreme and anxious about danger, seeking aid and looking for companions, humbly yielding in receiving others. Rather than gathering with what is not correct, it is better to go to one of the same aspiration. Hence one may go forward and be without blame. Yet two yin lines joining together is still not as good as a yin and yang correspondence*; hence there is slight regret."
+     }
+    },
+    "4": {
+     "zh": "九四，大吉，无咎。",
+     "en": "Nine in the Fourth: Great good fortune, and no blame.",
+     "wangBi": {
+      "zh": "履非其位而下據三陰，得其所據，失其所處。處聚之時，不正而據，故必大吉，立夫大功，然後无咎也。",
+      "en": "Treading in an improper position yet commanding the three yin lines below—obtaining what it commands but losing its proper place. At the time of Gathering, being incorrect yet commanding, therefore one must attain great good fortune and establish great merit, and only then will there be no blame."
+     }
+    },
+    "5": {
+     "zh": "九五，萃有位，无咎，匪孚。元永貞，悔亡。",
+     "en": "Nine in the Fifth: Gathering while possessing the position—no blame. There is a lack of trust. With a Sublime Beginning, perpetual Correctness, regret vanishes.",
+     "wangBi": {
+      "zh": "處聚之時，最得盛位，故曰萃有位也。四專而據，己德不行，自守而已，故曰无咎匪孚。夫脩仁守正，久必悔消，故曰「元永貞，悔亡」。",
+      "en": "At the time of Gathering, occupying the most exalted position, hence it says \"gathering while possessing the position.\" The fourth monopolizes command, and one's own virtue cannot be carried out; one merely guards oneself. Hence it says \"no blame; there is a lack of trust.\" If one cultivates benevolence and maintains correctness, in time regret will surely vanish. Hence it says \"with a Sublime Beginning, perpetual Correctness, regret vanishes.\""
+     }
+    },
+    "6": {
+     "zh": "上六，齎咨涕洟，无咎。",
+     "en": "Top Six: Lamenting and sighing, weeping and sniveling—no blame.",
+     "wangBi": {
+      "zh": "處聚之時，居於上極，五非所乘，內无應援。處上獨立，近遠无助，危莫甚焉。齎咨，嗟歎之辭也。若能知危之至，懼禍之深，憂病之甚，至於涕洟，不敢自安，亦眾所不害，故得无咎也。",
+      "en": "At the time of Gathering, dwelling at the uppermost extreme, the fifth is not one to be ridden upon, and inwardly there is no corresponding support. Dwelling above and standing alone, near and far there is no aid—nothing is more perilous than this. \"Lamenting and sighing\" are words of sorrowful exclamation. If one can recognize that danger has arrived, fear the depth of calamity, and be anxious about affliction to the utmost, to the point of weeping and sniveling, not daring to rest at ease, then the multitude will also not harm one. Hence there is no blame."
+     }
+    }
+   }
+  },
+  {
+   "number": 46,
+   "name": "Pushing Upward",
+   "zh": "升",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "hook": "Growing slower than you want?",
+   "meaning": [
+    "Pushing Upward:\ndon’t worry.",
+    "Small steps,\npiled up."
+   ],
+   "question": "What can you add\ntoday?",
+   "lesson": "Go see someone\nabove you.",
+   "finding": "WOOD UNDER EARTH, GROWING UP.",
+   "mark": [
+    1
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：地中生木，升。君子以順德，積小以高大。",
+    "en": "The Image says: Trees grow within the earth—this is Ascending. The noble person, in accordance with this, cultivates virtue through compliance and accumulates small things to achieve greatness."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，允升，大吉。",
+     "en": "Initial Six. Sincerely ascending—great good fortune.",
+     "wangBi": {
+      "zh": "允，當也。巽卦三爻，皆升者也。雖无其應，處升之初，與九二、九三合志俱升。當升之時，升必大得，是以大吉也。",
+      "en": "Yun means 'fitting' or 'sincere.' The three lines of the Xun trigram are all ascending. Although this line has no correspondent, it occupies the beginning of Ascending and joins its intent with Nine in the Second and Nine in the Third, ascending together. At the time of ascending, the ascent necessarily brings great attainment—therefore there is great good fortune."
+     }
+    },
+    "2": {
+     "zh": "九二，孚乃利用禴，无咎。",
+     "en": "Nine in the Second. If there is sincerity, then it is beneficial to perform the Yue sacrifice—no blame.",
+     "wangBi": {
+      "zh": "與五為應，往必見任。體夫剛德，進不求寵，閑邪存誠，志在大業，故乃利用納約于神明矣。",
+      "en": "It corresponds with the Fifth, so going forth it will certainly be entrusted with responsibility. Embodying the virtue of firmness, it advances without seeking favor, guards against deviance and preserves sincerity, and its intent lies in great undertakings. Therefore it is beneficial to present modest offerings to the spirits."
+     }
+    },
+    "3": {
+     "zh": "九三，升虛邑。",
+     "en": "Nine in the Third. Ascending into an empty city.",
+     "wangBi": {
+      "zh": "履得其位，以陽升陰，以斯而舉，莫之違距，故若升虛邑也。\n\n往必得也。",
+      "en": "It treads in its proper position and ascends as yang toward yin. Rising in this manner, nothing opposes or resists it, so it is as if ascending into an empty city.\n\nGoing forth, one will certainly succeed."
+     }
+    },
+    "4": {
+     "zh": "六四，王用亨於岐山，吉，无咎。",
+     "en": "Six in the Fourth. The king makes offerings at Mount Qi—good fortune, no blame.",
+     "wangBi": {
+      "zh": "處升之際，下升而進，可納而不可距也。距下之進，攘來自專，則殃咎至焉。若能不距而納，順物之情，以通庶志，則得吉而无咎矣。岐山之會，順事之情，无不納也。",
+      "en": "Occupying the juncture of ascending, those below ascend and advance—they can be received but not resisted. To resist the advance of those below, seizing what comes and acting with self-serving exclusivity, would bring calamity and blame. If one can refrain from resisting and instead receive them, following the natural inclinations of things and opening a channel for the many intentions, then one attains good fortune and is without blame. At the gathering at Mount Qi, King Wen followed the natural course of affairs and received all without exception."
+     }
+    },
+    "5": {
+     "zh": "六五，貞吉，升階。",
+     "en": "Six in the Fifth. Correctness brings good fortune—ascending the stairs.",
+     "wangBi": {
+      "zh": "升得尊位，體柔而應，納而不距，任而不專，故得貞吉，升階而尊也。",
+      "en": "Ascending to attain the honored position, its nature is yielding and it has a correspondence. It receives and does not resist, delegates and does not monopolize. Therefore it attains correctness and good fortune, ascending the stairs to the honored place."
+     }
+    },
+    "6": {
+     "zh": "上六，冥升，利于不息之貞。",
+     "en": "Top Six. Ascending in darkness—it is beneficial to maintain the correctness of ceaseless effort.",
+     "wangBi": {
+      "zh": "處升之極，進而不息者也。進而不息，故雖冥猶升也。故施於不息之正則可，用於為物之主則喪矣。終於不息，消之道也。\n\n勞不可久也。",
+      "en": "Occupying the extreme of ascending, this is one who advances without ceasing. Advancing without ceasing, even in darkness one still ascends. Therefore, if applied to the correctness of ceaseless effort, it is acceptable; but if used to serve as the master of things, it leads to ruin. To persist in ceaselessness to the end is the way of diminishment.\n\nExertion cannot be sustained long."
+     }
+    }
+   }
+  },
+  {
+   "number": 49,
+   "name": "Revolution",
+   "zh": "革",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "hook": "Making a big change nobody believes in?",
+   "meaning": [
+    "Revolution says:\nfinish first.",
+    "Trust comes on\nthe last day."
+   ],
+   "question": "What change are\nyou making?",
+   "lesson": "For a revolution,\na new calendar.",
+   "finding": "FIRE IN THE LAKE. ONE MUST GIVE.",
+   "mark": [
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：澤中有火，革。君子以治歷明時。",
+    "en": "The Image states: Within the lake there is fire — Revolution. The noble person thereby regulates the calendar and clarifies the seasons."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，鞏用黃牛之革。",
+     "en": "Initial Nine: Bound firmly with the hide of a yellow ox.",
+     "wangBi": {
+      "zh": "在革之始，革道未成，固夫常中，未能應變者也。此可以守成，不可以有為也。鞏，固也。黃，中也。牛之革，堅仞不可變也。固之所用，常中堅仞，不肯變也。",
+      "en": "At the beginning of Revolution, the Way of revolution is not yet accomplished. One holds fast to the constant center, not yet able to respond to change. This is suitable for maintaining what has been accomplished, but not for taking action. \"Bound firmly\" (gong) means to secure firmly. \"Yellow\" represents the center. The hide of an ox is tough and unyielding, impossible to change. What is used to hold firm is the constant center, tough and unyielding, unwilling to change."
+     }
+    },
+    "2": {
+     "zh": "六二，已日乃革之，征吉，无咎。",
+     "en": "Six in the Second: When the day is done, then carry out the revolution. Advancing brings good fortune, no blame.",
+     "wangBi": {
+      "zh": "陰之為物，不能先唱，順從者也。不能自革，革已乃能從之，故曰「已日乃革之」也。二與五雖有水火殊體之異，同處厥中，陰陽相應，往必合志，不憂咎也，是以征吉而无咎。",
+      "en": "Yin by its nature cannot take the lead; it is a follower. It cannot initiate revolution on its own, but once revolution has been accomplished it can follow — hence it says \"when the day is done, then carry out the revolution.\" Though the second and fifth lines have the difference of water and fire as separate trigram bodies, they both occupy their respective centers. Yin and yang correspond to each other; going forth they must unite in purpose and need not worry about blame. Therefore advancing brings good fortune and there is no blame."
+     }
+    },
+    "3": {
+     "zh": "九三，征凶，貞厲。革言三就，有孚。",
+     "en": "Nine in the Third: Advancing brings misfortune. Correctness brings danger. When the call for revolution is thrice affirmed, there is trust.",
+     "wangBi": {
+      "zh": "已處火極，上卦三爻，雖體水性，皆從革者也。自四至上，從命而變，不敢有違，故曰革言三就。其言實誠，故曰有孚。革言三就，有孚而猶征之，凶其宜也。",
+      "en": "Already situated at the extreme of fire, the three lines of the upper trigram, though their trigram body is of the nature of water, all follow the revolution. From the fourth to the top, they obey the mandate and transform, not daring to defy. Hence it says \"the call for revolution is thrice affirmed.\" Their words are true and sincere, hence it says \"there is trust.\" When the call for revolution is thrice affirmed and there is trust, yet one still advances — misfortune is fitting."
+     }
+    },
+    "4": {
+     "zh": "九四，悔亡，有孚，改命吉。",
+     "en": "Nine in the Fourth: Regret vanishes. There is trust. Changing the mandate brings good fortune.",
+     "wangBi": {
+      "zh": "初九處下卦之下，九四處上卦之下，故能變也。无應，悔也。與水火相比，能變者也，是以悔亡。處水火之際，居會變之始，能不固吝，不疑於下，信志改命，不失時願，是以吉也。有孚則見信矣，見信以改命，則物安而无違，故曰「悔亡，有孚，改命吉」也。處上體之下，始宣命也。\n\n信志而行。",
+      "en": "Initial Nine occupies the bottom of the lower trigram; Nine in the Fourth occupies the bottom of the upper trigram — therefore it can change. Having no corresponding line is cause for regret. But being adjacent to water and fire and capable of transformation — this is why regret vanishes. Situated at the juncture of water and fire, occupying the beginning of converging transformation, it can avoid obstinate stinginess and does not doubt those below. Trusting its purpose to change the mandate and not missing the aspirations of the time — this is why there is good fortune. When there is trust one is believed; being believed while changing the mandate, then all things are at ease and none defy — hence it says \"regret vanishes, there is trust, changing the mandate brings good fortune.\" Occupying the bottom of the upper trigram body, one begins to proclaim the mandate.\n\nTrusting one's purpose and proceeding."
+     }
+    },
+    "5": {
+     "zh": "九五，大人虎變，未占有孚。",
+     "en": "Nine in the Fifth: The great person transforms like a tiger. Without divination there is trust.",
+     "wangBi": {
+      "zh": "未占而孚，合時心也。",
+      "en": "Without divination there is trust — it accords with the hearts of the time."
+     }
+    },
+    "6": {
+     "zh": "上六，君子豹變，小人革面。\n\n征凶，居貞吉。",
+     "en": "Top Six: The noble person transforms like a leopard; the petty person changes only their outward appearance.\n\nAdvancing brings misfortune. Remaining in correctness brings good fortune.",
+     "wangBi": {
+      "zh": "居變之終，變道已成，君子處之，能成其文。小人樂成，則變面以順上也。\n\n改命創制，變道已成，功成則事損，事損則无為。故居則得正而吉，征則躁擾而凶也。",
+      "en": "Dwelling at the end of transformation, the Way of change is already accomplished. The noble person, situated here, can bring his cultural refinement to completion. The petty person rejoices in accomplishment and changes only his outward appearance to comply with those above.\n\nThe mandate has been changed and institutions created; the Way of transformation is already accomplished. When merit is achieved, then affairs are reduced; when affairs are reduced, there is non-action. Therefore remaining in place brings correctness and good fortune, while advancing brings agitation and disturbance and hence misfortune."
+     }
+    }
+   }
+  },
+  {
+   "number": 52,
+   "name": "Keeping Still",
+   "zh": "艮",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "hook": "Can't stop overthinking?",
+   "meaning": [
+    "Keeping Still\nsays: pause.",
+    "Stay with where\nyou are now."
+   ],
+   "question": "What can wait?",
+   "lesson": "Stop when it's\ntime to stop.",
+   "finding": "NO PAIR ANSWERS. EACH STANDS STILL.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：兼山，艮，君子以思，不出其位。",
+    "en": "The Image says: Mountains joined together form Gen. The noble person, accordingly, thinks without going beyond his position."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，艮其趾，无咎；利永貞。\n\n象曰：艮其趾，未失正也。",
+     "en": "Initial Six: Keeping still at one's toes—no blame. Benefit in lasting Correctness.\n\nThe Image says: Keeping still at one's toes means one has not yet lost what is correct.",
+     "wangBi": {
+      "zh": "處止之初，行无所之，故止其趾乃得无咎。至靜而定，故利永貞。",
+      "en": "Dwelling at the beginning of stopping, there is nowhere to go by moving; therefore stopping at the toes brings no blame. Being utterly still and settled, therefore there is Benefit in lasting Correctness."
+     }
+    },
+    "2": {
+     "zh": "六二，艮其腓，不拯其隨，其心不快。\n\n象曰：不拯其隨，未退聽也。",
+     "en": "Six in the Second: Keeping still at one's calves. One cannot lift what follows along; one's heart is not glad.\n\nThe Image says: Not lifting what follows along—one has not yet withdrawn to listen obediently.",
+     "wangBi": {
+      "zh": "隨，謂趾也。止其腓，故其趾不拯也。腓體躁而處止，而不得拯其隨，又不能退聽安靜，故其心不快也。",
+      "en": "\"What follows\" refers to the toes. Stopping the calves means the toes cannot be lifted. The calves are restless in nature yet are placed in stillness; unable to lift what follows, and also unable to withdraw and listen in quiet composure, therefore one's heart is not glad."
+     }
+    },
+    "3": {
+     "zh": "九三，艮其限，列其夤，厲薰心。\n\n象曰：艮其限，危薰心也。",
+     "en": "Nine in the Third: Keeping still at one's waist. The flesh along the spine is split apart; danger sears the heart.\n\nThe Image says: Keeping still at one's waist—peril sears the heart.",
+     "wangBi": {
+      "zh": "限，身之中也。三當兩象之中，故曰艮其限。夤，當中脊之肉也。止加其身，中體而分，故列其夤而憂危薰心也。艮之為義，各止於其所，上下不相與，至中則列矣。列加其夤，危莫甚焉，危亡之憂，乃薰灼其心也。施止體中，其體分焉，體分兩主，大器喪矣。",
+      "en": "\"Waist\" (xian) is the middle of the body. The third line falls at the juncture of the two trigram images; therefore it says \"keeping still at the waist.\" \"Yin\" (yi) refers to the flesh along the middle of the spine. Stopping is imposed upon the body at its center, dividing the body; therefore the flesh of the spine is split apart and the worry of danger sears the heart. The meaning of Gen is that each stops in its proper place, with upper and lower not interacting; when one reaches the middle, there is splitting. When the splitting reaches the flesh of the spine, nothing is more perilous. The anxiety of danger and ruin thus sears and scorches the heart. When stopping is applied at the center of the body, the body is divided; when the body is divided into two ruling parts, the great vessel is lost."
+     }
+    },
+    "4": {
+     "zh": "六四，艮其身，无咎。\n\n象曰：艮其身，止諸躬也。",
+     "en": "Six in the Fourth: Keeping still at one's whole body—no blame.\n\nThe Image says: Keeping still at one's whole body means stopping at one's own person.",
+     "wangBi": {
+      "zh": "中上稱身，履得其位，止求諸身，得其所處，故不陷於咎也。\n\n自止其躬，不分全體。",
+      "en": "The middle and upper portions are called the body. Treading in one's proper position, one seeks to stop within one's own body and finds one's proper place; therefore one does not fall into blame.\n\nOne stops at one's own person without dividing the whole body."
+     }
+    },
+    "5": {
+     "zh": "六五，艮其輔，言有序，悔亡。\n\n象曰：艮其輔，以中正也。",
+     "en": "Six in the Fifth: Keeping still at one's jaws. Words are well-ordered; regret vanishes.\n\nThe Image says: Keeping still at one's jaws—because of centrality and correctness.",
+     "wangBi": {
+      "zh": "施止於輔，以處於中，故口无擇言，能亡其悔也。\n\n能用中正，故言有序也。",
+      "en": "Applying stopping to the jaws, and dwelling in the center, one's mouth has no ill-chosen words and is able to make regret vanish.\n\nBeing able to employ centrality and correctness, therefore words are well-ordered."
+     }
+    },
+    "6": {
+     "zh": "上九，敦艮，吉。\n\n象曰：敦艮之吉，以厚終也。",
+     "en": "Top Nine: Magnanimous keeping still—auspicious.\n\nThe Image says: The auspiciousness of magnanimous keeping still is because of ending with generosity.",
+     "wangBi": {
+      "zh": "居止之極，極止者也。敦重在上，不陷非妄，宜其吉也。",
+      "en": "Dwelling at the extreme of stopping, this is the utmost of stopping. Generous and weighty in the uppermost position, one does not fall into error or recklessness; it is fitting that there be auspiciousness."
+     }
+    }
+   }
+  },
+  {
+   "number": 53,
+   "name": "Development",
+   "zh": "漸",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "hook": "Tempted to skip steps?",
+   "meaning": [
+    "Development says:\ngo step by step.",
+    "Slow growth\nlasts."
+   ],
+   "question": "Which step are\nyou skipping?",
+   "lesson": "Earn each place\nbefore the next.",
+   "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+   "mark": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：山上有木，漸，君子以居賢德善俗。",
+    "en": "The Image says: On the mountain there are trees — Gradual Advance. The noble person thereby establishes worthy virtue and improves customs."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，鴻漸于干，小子厲，有言，无咎。",
+     "en": "Initial Six. The wild goose gradually advances to the riverbank. The young son is in danger. There are words of blame. No fault.",
+     "wangBi": {
+      "zh": "鴻，水鳥也。適進之義，始於下而升者也，故以鴻為喻。六爻皆以進而履之為義焉，始進而位乎窮下，又无其應。若履于干，危不可以安也。始進而未得其位，則困於小子，窮於謗言，故曰小子厲有言也。困於小子讒諛之言，未傷君子之義，故曰无咎也。",
+      "en": "The hong is a water bird. In the meaning of proceeding to advance, it begins from below and ascends, hence the wild goose is used as a metaphor. All six lines take advancing and treading upon their position as their meaning. Beginning to advance yet positioned at the very bottom, with no corresponding line above — it is like treading upon the riverbank, dangerous and unable to find security. Beginning to advance but not yet having attained one's position, one is beset by petty persons and harassed by slanderous words, hence it says 'the young son is in danger, there are words of blame.' Being beset by the flattering and slanderous words of petty persons does not injure the meaning of the noble person, hence it says 'no fault.'"
+     }
+    },
+    "2": {
+     "zh": "六二，鴻漸于磐，飲食衎衎，吉。",
+     "en": "Six in the Second. The wild goose gradually advances to the large rock. Eating and drinking in contentment. Auspicious.",
+     "wangBi": {
+      "zh": "磐，山石之安者也。進而得位，居中而應，本无祿養，進而得之，其為歡樂，願莫先焉。",
+      "en": "Pan is a stable mountain rock. Advancing and attaining one's position, dwelling in the center with a corresponding line — originally without salary or sustenance, but advancing and obtaining them. The resulting joy and happiness surpass all other wishes."
+     }
+    },
+    "3": {
+     "zh": "《象》曰：夫征不復，離群醜也。婦孕不育，失其道也。利用禦寇，順相保也。",
+     "en": "The Image says: The husband goes on campaign and does not return — he separates from his group and kin. The wife is pregnant but does not give birth — she has lost the Way. It is beneficial to ward off enemies — they protect each other through compliance.",
+     "wangBi": {
+      "zh": "陸，高之頂也。進而之陸，與四相得，不能復反者也。夫征不復，樂於邪配，則婦亦不能執貞矣。非夫而孕，故不育也。三本艮體，而棄乎群醜，與四相得，遂乃不反，至使婦孕不育，見利忘義，貪進忘舊，凶之道也。異體合好，順而相保，物莫能間，故利禦寇也。",
+      "en": "Lu is the top of the heights. Advancing to reach the plateau, it finds mutual affinity with the fourth line and cannot turn back. The husband goes on campaign and does not return, delighting in an improper union; the wife then also cannot maintain her fidelity. Pregnant by one who is not her husband, she therefore does not give birth. The third line originally belongs to the Gen trigram body, yet abandons its group and kin, finds mutual affinity with the fourth line, and consequently does not return. This leads to the wife being pregnant but not giving birth — seeing benefit and forgetting meaning, being greedy for advancement and forgetting old ties — this is the way of misfortune. When different trigram bodies form a bond, they protect each other through compliance, and nothing can come between them, hence it is beneficial to ward off enemies."
+     }
+    },
+    "4": {
+     "zh": "《象》曰：或得其桷，順以巽也。",
+     "en": "The Image says: Perhaps finding a flat branch to perch on — through compliance and deference.",
+     "wangBi": {
+      "zh": "鳥而之木，得其宜也。或得其桷，遇安棲也。雖乘于剛，志相得也。",
+      "en": "A bird going to a tree finds what is suitable for it. 'Perhaps finding a flat branch to perch on' means encountering a safe roosting place. Although it rides above the firm line, their intentions find mutual affinity."
+     }
+    },
+    "5": {
+     "zh": "九五，鴻漸于陵。婦三歲不孕，終莫之勝，吉。",
+     "en": "Nine in the Fifth. The wild goose gradually advances to the hilltop. The wife does not conceive for three years. In the end, nothing can overcome this. Auspicious.",
+     "wangBi": {
+      "zh": "陵，次陸者也。進得中位，而隔乎三四，不得與其應合，故婦三歲不孕也。各履正而居中，三四不能久塞其塗者也。不過三歲，必得所願矣。進以正邦，三年有成，成則道濟，故不過三歲也。",
+      "en": "Ling (hilltop) is next in elevation after the plateau. Advancing and attaining the central position, yet separated by the third and fourth lines, unable to unite with its corresponding line — hence the wife does not conceive for three years. Each treads upon what is correct and dwells in the center; the third and fourth lines cannot long obstruct their path. After no more than three years, one will surely obtain what one desires. Advancing to bring Correctness to the state, in three years there is accomplishment. Once accomplished, the Way is fulfilled, hence it does not exceed three years."
+     }
+    },
+    "6": {
+     "zh": "上九，鴻漸于陸。其羽可用為儀，吉。",
+     "en": "Top Nine. The wild goose gradually advances to the high plateau. Its feathers can be used as ceremonial ornaments. Auspicious.",
+     "wangBi": {
+      "zh": "進處高絜，不累於位，无物可以屈其心而亂其志。峨峨清遠，儀可貴也，故曰「其羽可用為儀，吉」。",
+      "en": "Advancing to dwell in a lofty and pure place, unburdened by official position, nothing can bend its heart or disorder its will. Towering, pure, and transcendent, its deportment is worthy of esteem. Hence it says 'its feathers can be used as ceremonial ornaments, auspicious.'"
+     }
+    }
+   }
+  },
+  {
+   "number": 54,
+   "name": "The Marrying Maiden",
+   "zh": "歸妹",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "hook": "No power, no way out?",
+   "meaning": [
+    "Marrying Maiden\nsays: see the end.",
+    "This part\nwon’t last."
+   ],
+   "question": "What does the\nend look like?",
+   "lesson": "Wrong place?\nDon't push.",
+   "finding": "LINES 2 TO 5 ALL OUT OF PLACE.",
+   "mark": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：澤上有雷，歸妹。君子以永終知敝。",
+    "en": "The Image says: Above the lake there is thunder — the Marrying Maiden. The noble person thereby perpetuates what endures and understands what deteriorates."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，歸妹以娣，跛能履，征吉。",
+     "en": "Initial Nine. The Marrying Maiden as a secondary bride. The lame can walk. To advance brings good fortune.",
+     "wangBi": {
+      "zh": "少女而與長男為耦，非敵之謂，是娣從之義也。妹，少女之稱也。少女之行，善莫若娣。夫承嗣以君之子，雖幼而不妄行。少女以娣，雖跛能履，斯乃恒久之義，吉而相承之道也。以斯而進，吉其宜也。",
+      "en": "A youngest daughter paired with the eldest son — this is not what is meant by an equal match; it is the meaning of following as a secondary bride. 'Maiden' (mei) is a term for a younger sister. In the conduct of a younger sister, nothing is as good as serving as a secondary bride. Just as an heir who is the ruler's son, though young, does not act recklessly — so a younger sister serving as a secondary bride, though lame, can walk. This is the meaning of constancy and endurance, the Way of good fortune and mutual succession. To advance on this basis — good fortune is fitting."
+     }
+    },
+    "2": {
+     "zh": "《象》曰：利幽人之貞，未變常也。",
+     "en": "The Image says: It is beneficial for a secluded person's Correctness — one has not departed from constancy.",
+     "wangBi": {
+      "zh": "雖失其位，而居內處中，眇猶能視，足以保常也。在內履中，而能守其常，故利幽人之貞也。",
+      "en": "Although it has lost its proper position, it dwells within and occupies the center. The one-eyed can still see — this is sufficient to preserve constancy. Being within and treading in the center, and able to keep to constancy, hence it is beneficial for a secluded person's Correctness."
+     }
+    },
+    "3": {
+     "zh": "六三，歸妹以須，反歸以娣。",
+     "en": "Six in the Third. The Marrying Maiden must wait. She returns and goes back as a secondary bride.",
+     "wangBi": {
+      "zh": "室主猶存，而求進焉。進未值時，故有須也。不可以進，故反歸待時，以娣乃行也。",
+      "en": "The mistress of the household still remains, yet she seeks to advance. The advance does not meet the right time, hence there is waiting. She cannot advance, so she returns to wait for the right time, and only then goes forth as a secondary bride."
+     }
+    },
+    "4": {
+     "zh": "九四，歸妹愆期，遲歸有時。",
+     "en": "Nine in the Fourth. The Marrying Maiden delays the date. The late marriage will come in its own time.",
+     "wangBi": {
+      "zh": "夫以不正无應而適人也，必須彼道窮盡，无所與交，然後乃可以往，故愆期遲歸，以待時也。",
+      "en": "To go to another with an improper position and no corresponding line — one must wait until the other's way is exhausted and there is no one else to engage with, and only then can one go. Hence delaying the date and postponing the marriage, waiting for the right time."
+     }
+    },
+    "5": {
+     "zh": "六五，帝乙歸妹，其君之袂，不如其娣之袂良。月幾望，吉。",
+     "en": "Six in the Fifth. Di Yi marries off his younger sister. The sovereign's sleeves are not as fine as those of her secondary bride. The moon is nearly full. Good fortune.",
+     "wangBi": {
+      "zh": "歸妹之中，獨處貴位，故謂之帝乙歸妹也。袂，衣袖，所以為禮容者也。其君之袂，為帝乙所寵也，即五也。為帝乙所崇飾，故謂之其君之袂也。配在九二，兌少震長，以長從少，不若以少從長之為美也，故曰「不若其娣之袂良」也。位在乎中，以貴而行，極陰之盛，以斯適配，雖不若少，往亦必合，故曰「月幾望，吉」也。",
+      "en": "'Sleeves' (mei) are the garment sleeves used for ceremonial deportment. 'The sovereign's sleeves' refers to the one favored by Di Yi, which is the fifth line. Being adorned and honored by Di Yi, hence it is called 'the sovereign's sleeves.' Her match is at Nine in the Second. Dui is the youngest and Zhen is the eldest; for the eldest to follow the youngest is not as fine as for the youngest to follow the eldest. Hence it says 'not as fine as those of her secondary bride.' Positioned in the center and proceeding with nobility, at the fullness of yin's flourishing — going to match with this, though not as fine as the younger, the union will surely be achieved. Hence it says 'the moon is nearly full — good fortune.'"
+     }
+    },
+    "6": {
+     "zh": "上六，女承筐无實，士刲羊无血，无攸利。",
+     "en": "Top Six. The woman holds a basket with nothing inside. The man slaughters the sheep but there is no blood. Nothing is of benefit.",
+     "wangBi": {
+      "zh": "羊謂三也。處卦之窮，仰无所承，下又无應，為女而承命，則筐虛而莫之與。為士而下命，則刲羊而无血。刲羊而无血，不應所命也。進退莫與，故曰无攸利也。",
+      "en": "The sheep refers to the third line. Occupying the extremity of the hexagram, looking up there is nothing to receive from above, and below there is no corresponding line. As a woman receiving a command, the basket is empty and nothing is given to her. As a man issuing a command downward, one slaughters the sheep but there is no blood. Slaughtering the sheep with no blood means there is no response to the command. Advancing or retreating, nothing is given — hence it says 'nothing is of benefit.'"
+     }
+    }
+   }
+  },
+  {
+   "number": 55,
+   "name": "Abundance",
+   "zh": "豐",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "hook": "At your peak and worried?",
+   "meaning": [
+    "Abundance says:\ndon’t worry.",
+    "Be the sun\nat noon."
+   ],
+   "question": "What will you\ndecide now?",
+   "lesson": "At your fullest,\nlight each corner.",
+   "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+   "mark": [],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：雷電皆至，豐。君子以折獄致刑。",
+    "en": "The Image says: Thunder and lightning both arrive—Abundance. The noble person thereby decides lawsuits and carries out punishments."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，遇其配主，雖旬无咎，往有尚。",
+     "en": "Initial Nine. He meets his matching lord. Though they are equal, there is no blame. To go forth brings esteem.",
+     "wangBi": {
+      "zh": "處豐之初，其配在四，以陽適陽，以明之動，能相光大者也。旬，均也。雖均无咎，往有尚也。初、四俱陽爻，故曰均也。\n\n過均則爭，交斯叛也。",
+      "en": "Dwelling at the beginning of Feng, its counterpart is in the fourth position. Yang going to yang, brilliance joined with movement—they are able to magnify and enlarge each other. Xun means 'equal.' Though equal, there is no blame; to go forth brings esteem. The first and fourth are both yang lines; hence they are called equal.\n\nIf equality is exceeded, there is contention; in their interaction, there would then be betrayal."
+     }
+    },
+    "2": {
+     "zh": "六二，豐其蔀，日中見斗。往得疑疾，有孚發若，吉。",
+     "en": "Six in the Second. He makes abundant his screen of grass. At midday he sees the Dipper. Going forth, he encounters suspicion and hostility. With sincerity he arouses trust—auspicious.",
+     "wangBi": {
+      "zh": "蔀，覆曖，鄣光明之物也。處明動之時，不能自豐以光大之德，既處乎內，而又以陰居陰，所豐在蔀，幽而无覩者也，故曰「豐其蔀，日中見斗」也。日中者，明之盛也。斗見者，闇之極也。處盛明而豐其蔀，故曰「日中見斗」。不能自發，故往得疑疾。然履中當位，處闇不邪，有孚者也。若，辭也。有孚可以發其志，不困於闇，故獲吉也。",
+      "en": "Bu is a covering that dims and obstructs light—a thing that blocks radiance. Dwelling in a time of brilliance and movement yet unable to make oneself abundant through the virtue of radiant greatness—already situated within the inner trigram, and moreover a yin line dwelling in a yin position—what is made abundant is the screen, dark with nothing visible. Hence it says 'he makes abundant his screen of grass; at midday he sees the Dipper.' Midday is the peak of brightness. The Dipper becoming visible is the extreme of darkness. Dwelling in peak brightness yet making abundant his screen; hence it says 'at midday he sees the Dipper.' Unable to bring himself forth, therefore going forth he encounters suspicion and hostility. Yet he treads the central position and occupies the proper place, dwelling in darkness without deviation—he possesses sincerity. Ruo is an expletive particle. With sincerity he can bring forth his resolve and is not trapped in darkness; therefore he obtains good fortune."
+     }
+    },
+    "3": {
+     "zh": "九三，豐其沛，日中見沬。折其右肱，无咎。",
+     "en": "Nine in the Third. He makes abundant his curtain. At midday he sees tiny stars. He breaks his right arm—no blame.",
+     "wangBi": {
+      "zh": "沛，幡幔，所以禦盛光也。沬，微昧之明也。應在上六，志在乎陰，雖愈乎以陰處陰，亦未足以免於闇也。所豐在沛，日中見沬之謂也。施明則見沬而已，施用則折其右肱，故可以自守而已，未足用也。\n\n明不足也。\n\n雖有左在，不足用也。",
+      "en": "Pei is a pennant curtain, used to ward off bright light. Mei is a faint, dim illumination. Its correspondence is with Top Six; its inclination is toward yin. Though better than a yin line dwelling in a yin position, it is still insufficient to escape darkness. What is made abundant is the curtain; this is what 'at midday he sees tiny stars' means. In applying brilliance, one merely sees tiny stars; in applying function, one breaks one's right arm. Therefore one can only maintain self-preservation; it is insufficient for use.\n\nBrilliance is insufficient.\n\nThough the left arm remains, it is insufficient for use."
+     }
+    },
+    "4": {
+     "zh": "九四，豐其蔀，日中見斗。遇其夷主，吉。",
+     "en": "Nine in the Fourth. He makes abundant his screen of grass. At midday he sees the Dipper. He meets his equal lord—auspicious.",
+     "wangBi": {
+      "zh": "以陽居陰，豐其蔀也。得初以發，夷主吉也。",
+      "en": "A yang line dwelling in a yin position—this is making abundant his screen of grass. Obtaining the first line to bring forth brilliance—the equal lord brings good fortune."
+     }
+    },
+    "5": {
+     "zh": "六五，來章有慶譽，吉。",
+     "en": "Six in the Fifth. Brilliance comes; there will be celebration and praise—auspicious.",
+     "wangBi": {
+      "zh": "以陰之質，來適尊陽之位，能自光大，章顯其德，獲慶譽也。",
+      "en": "With the substance of yin, it comes to take up the honored yang position. Able to make itself radiant and great, it makes its virtue luminous and manifest, thereby obtaining celebration and praise."
+     }
+    },
+    "6": {
+     "zh": "上六，豐其屋，蔀其家，闚其戶，闃其无人。三歲不覿，凶。",
+     "en": "Top Six. He makes abundant his roof, screens his household. Peering through his door—silent, with no one there. For three years he is not seen—misfortune.",
+     "wangBi": {
+      "zh": "屋，藏蔭之物，以陰處極而最在外，不履於位，深自幽隱，絕跡深藏者也。既豐其屋，又蔀其家，屋厚家覆，闇之甚也。雖闚其戶，闃其无人，棄其所處，而自深藏也。處於明動尚大之時而深自幽隱，以高其行；大道既濟，而猶不見，隱不為賢，更為反道，凶其宜也。三年，豐道之成。治道未濟，隱猶可也；既濟而隱，以治為亂也。\n\n翳光最甚者也。\n\n可以出而不出，自藏之謂也，非有為而藏。不出戶庭，失時致凶，況自藏乎？凶其宜也。",
+      "en": "Wu (roof/house) is a thing that shelters and shades. A yin line dwelling at the extreme and furthest outside, not treading upon a proper position—one who deeply hides oneself in seclusion, cutting off all traces and concealing oneself in the depths. Having made abundant his roof and further screened his household—the roof thick and the household covered—the darkness is extreme. Though one peers through his door, it is silent with no one there; he has abandoned his proper place and hidden himself in the depths. Dwelling in a time of brilliance, movement, and esteem for greatness, yet deeply hiding in seclusion to elevate his conduct—when the great Way has already been accomplished yet he still does not appear, hiding does not constitute worthiness but rather goes against the Way. Misfortune is fitting for him. Three years is the completion of the Way of Feng. When the Way of governance has not yet been accomplished, hiding is still acceptable; once accomplished yet still hiding, one treats good order as disorder.\n\nThis is the most extreme eclipse of light.\n\nAble to come forth yet not coming forth—this is what is meant by hiding oneself; it is not hiding for a purposeful reason. If merely not going out through the door and courtyard causes one to miss the moment and bring about misfortune, how much more so when one actively hides oneself! Misfortune is fitting indeed."
+     }
+    }
+   }
+  },
+  {
+   "number": 57,
+   "name": "The Gentle",
+   "zh": "巽",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "hook": "Said it once,\nnothing changed?",
+   "meaning": [
+    "The Gentle says:\nsay it again.",
+    "Quiet and steady\ngets through."
+   ],
+   "question": "What’s worth\nrepeating today?",
+   "lesson": "Bend only to\nwhat is right.",
+   "finding": "EACH SOFT LINE SITS UNDER A STRONG.",
+   "mark": [
+    1,
+    4
+   ],
+   "master": null,
+   "image": {
+    "zh": "《象》曰：隨風，巽，君子以申命行事。",
+    "en": "The Image states: Following winds—Xun. The noble person uses this to reiterate commands and carry out affairs."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，進退，利武人之貞。",
+     "en": "Initial Six: Advancing and retreating. Benefit in the correctness of a military person.",
+     "wangBi": {
+      "zh": "處令之初，未能服令者也。故進退也。成命齊邪，莫善武人，故利武人之貞以整之。\n\n巽順之志，進退疑懼。",
+      "en": "Situated at the beginning of the command, this is one who cannot yet submit to the command, hence the advancing and retreating. To enforce commands and bring the deviant into line, nothing is better than a military person—hence the benefit in a military person's correctness to bring order.\n\nWith a disposition of compliant submission, one advances and retreats in doubt and apprehension."
+     }
+    },
+    "2": {
+     "zh": "九二，巽在牀下，用史巫紛若，吉，无咎。",
+     "en": "Nine in the Second: Compliant beneath the bed. Employing scribes and shamans in profusion—auspicious, no blame.",
+     "wangBi": {
+      "zh": "處巽之中，既在下位，而復以陽居陰，卑巽之甚，故曰「巽在牀下」也。卑甚失正，則入于咎過矣。能以居中而施至卑於神祗，而不用之於威勢，則乃至于紛若之吉，而亡其過矣。故曰「用史巫紛若，吉，无咎」也。",
+      "en": "Situated at the center of the Xun trigram, already in a lower position, and further having a yang line occupying a yin position—the humility and compliance are extreme. Hence it says 'compliant beneath the bed.' When humility is extreme and correctness is lost, one falls into blame and error. If one can, by virtue of occupying the central position, direct this utmost humility toward the spirits and deities rather than employing it toward those with power and authority, then one attains the auspiciousness of profusion and eliminates one's errors. Hence it says 'employing scribes and shamans in profusion—auspicious, no blame.'"
+     }
+    },
+    "3": {
+     "zh": "九三，頻巽，吝。",
+     "en": "Nine in the Third: Repeatedly compliant with a furrowed brow—humiliation.",
+     "wangBi": {
+      "zh": "頻，頻蹙，不樂而窮，不得已之謂也。以其剛正而為四所乘，志窮而巽，是以吝也。",
+      "en": "'Pin' (頻) means furrowed and frowning—unhappy and exhausted, referring to what is done out of compulsion. Being firm and correct yet ridden upon by the fourth line, its intent is exhausted and yet it must comply. This is why there is humiliation."
+     }
+    },
+    "4": {
+     "zh": "六四，悔亡，田獲三品。",
+     "en": "Six in the Fourth: Regret vanishes. In the hunt, three kinds of game are caught.",
+     "wangBi": {
+      "zh": "乘剛，悔也，然得位承五，卑得所奉。雖以柔御剛，而依尊履正，以斯行命，必能獲強暴，遠不仁者也。獲而有益，莫善三品，故曰「悔亡，田獲三品」。一曰乾豆，二曰賓客，三曰充君之包。",
+      "en": "Riding upon the firm is cause for regret. However, it obtains its proper position and serves the fifth line; in its humility it finds one to serve. Although the yielding controls the firm, it relies on the honored one and treads on correctness. Using this to carry out commands, it will surely be able to capture the violent and keep the inhumane at a distance. For catching game that is beneficial, nothing surpasses the three categories—hence it says 'regret vanishes; in the hunt, three kinds of game are caught.' The first is for the dried sacrificial vessels, the second is for guests and visitors, the third is to stock the ruler's kitchen."
+     }
+    },
+    "5": {
+     "zh": "九五，貞吉，悔亡，无不利。无初有終。先庚三日，後庚三日，吉。",
+     "en": "Nine in the Fifth: Correctness brings auspiciousness, regret vanishes, nothing is unfavorable. No beginning, but there is an end. Three days before geng, three days after geng—auspicious.",
+     "wangBi": {
+      "zh": "以陽居陽，損於謙巽。然秉乎中正以宣其令，物莫之違，故曰「貞吉，悔亡，无不利」也。化不以漸，卒以剛直用加於物，故初皆不說也。終於中正，邪道以消，故有終也。申命令謂之庚。夫以正齊物，不可卒也；民迷固久，直不可肆也，故先申三日，令著之後，復申三日，然後誅而无咎怨矣。甲、庚，皆申命之謂也。",
+      "en": "Having a yang line occupy a yang position diminishes humble compliance. Yet by holding to centrality and correctness to proclaim commands, nothing disobeys—hence it says 'correctness brings auspiciousness, regret vanishes, nothing is unfavorable.' When transformation does not proceed gradually and one abruptly applies firmness and directness to things, at first none are pleased—hence 'no beginning.' In the end, through centrality and correctness, deviant ways are eliminated—hence 'there is an end.' The reiteration of commands is called 'geng.' Now, to align things through correctness cannot be done abruptly; the people's confusion has solidified over a long time, and directness cannot be given free rein. Therefore one first reiterates for three days, and after the command has been made clear, one reiterates again for three days. Only then does one punish, and there will be no blame or resentment. Both 'jia' and 'geng' refer to the reiteration of commands."
+     }
+    },
+    "6": {
+     "zh": "上九，巽在牀下，喪其資斧，貞凶。",
+     "en": "Top Nine: Compliant beneath the bed. Loses the resources and the axe. Correctness brings misfortune.",
+     "wangBi": {
+      "zh": "處巽之極，極巽過甚，故曰「巽在牀下」也。斧所以斷者也，過巽失正，喪所以斷，故曰「喪其資斧，貞凶」也。",
+      "en": "Situated at the extreme of Xun, the compliance is excessive and goes too far—hence it says 'compliant beneath the bed.' The axe is that by which one cuts decisively. Excessive compliance loses correctness, and one loses the means to cut decisively—hence it says 'loses the resources and the axe; correctness brings misfortune.'"
+     }
+    }
+   }
+  },
+  {
+   "number": 59,
+   "name": "Dispersion",
+   "zh": "渙",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   "hook": "People drifting apart?",
+   "meaning": [
+    "Dispersion says:\ndon’t argue.",
+    "Remind them where\nthey come from."
+   ],
+   "question": "What do you\nall share?",
+   "lesson": "Bring them back\nto the centre.",
+   "finding": "WIND MOVES OVER WATER.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為渙之主",
+    "en": "Master of Dispersion"
+   },
+   "image": {
+    "zh": "《象》曰：風行水上，渙，先王以享于帝，立廟。",
+    "en": "The Image says: Wind moves over the water—Dispersion. The former kings accordingly made offerings to the Supreme Deity and established ancestral temples."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，用拯馬壯，吉。",
+     "en": "Initial Six. Using rescue, the horse is strong. Auspicious.",
+     "wangBi": {
+      "zh": "渙，散也。處散之初，乖散未甚，故可以遊行，得其志而違於難也，不在危劇而後乃逃竄，故曰「用拯馬壯，吉」。\n\n觀難而行，不與險爭，故曰順也。",
+      "en": "Huan means to scatter. Being at the beginning of scattering, the divergence and dispersal are not yet severe; hence one can travel freely, attaining one's purpose while avoiding difficulty. One does not wait until the danger is extreme before fleeing; hence it says 'using rescue, the horse is strong—auspicious.'\n\nObserving the difficulty and then acting, not contending with danger—hence it says 'compliance.'"
+     }
+    },
+    "2": {
+     "zh": "九二，渙奔其机，悔亡。",
+     "en": "Nine in the Second. In Dispersion, one rushes to the bench. Regret vanishes.",
+     "wangBi": {
+      "zh": "机，承物者也，謂初也。二俱无應，與初相得，而初得散道，離散而奔，得其所安，故悔亡也。",
+      "en": "Ji (bench) is that which supports things—it refers to the first line. The second line has no corresponding line, and is paired with the first. The first obtains the Way of Dispersion; scattering and rushing, it finds its place of rest. Hence regret vanishes."
+     }
+    },
+    "3": {
+     "zh": "六三，渙其躬，无悔。",
+     "en": "Six in the Third. Dispersing one's own self. No regret.",
+     "wangBi": {
+      "zh": "渙之為義，內險而外安者也。散躬志外，不固所守，與剛合志，故得无悔也。",
+      "en": "The meaning of Dispersion is that the inside is dangerous while the outside is secure. Dispersing one's own self with one's purpose directed outward, not clinging stubbornly to what one holds, and sharing purpose with the firm—hence one attains no regret."
+     }
+    },
+    "4": {
+     "zh": "六四，渙其群，元吉。渙，有丘匪夷，所思。",
+     "en": "Six in the Fourth. Dispersing the group—Sublime Beginning auspiciousness. In Dispersion, there are hills that are not level—something to ponder.",
+     "wangBi": {
+      "zh": "踰乎險難，得位體巽，與五合志，內掌機密，外宣化命者也，故能散群之險，以光其道。然處於卑順，不可自專，而為散之任，猶有丘虛匪夷之慮，雖得元吉，所思不可忘也。",
+      "en": "Having crossed beyond danger and difficulty, obtaining its position and embodying Xun (compliance), sharing its purpose with the fifth line, inwardly managing confidential affairs and outwardly proclaiming transformative commands—hence it is able to disperse the group's dangers and thereby make its Way shine. However, being in a lowly and compliant position, it cannot act on its own authority. In carrying out the charge of Dispersion, there are still concerns about hills and mounds that are not level. Although one obtains Sublime Beginning auspiciousness, what must be pondered should not be forgotten."
+     }
+    },
+    "5": {
+     "zh": "九五，渙汗其大號，渙，王居无咎。",
+     "en": "Nine in the Fifth. In Dispersion, one sweats forth the great proclamation. In Dispersion, the king dwells here—no blame.",
+     "wangBi": {
+      "zh": "處尊履正，居巽之中，散汗大號，以蕩險阨者也。為渙之主，唯王居之，乃得无咎也。\n\n正位不可以假人。",
+      "en": "Occupying the honored position and treading upon correctness, dwelling in the center of Xun (compliance), sweating forth the great proclamation to sweep away dangers and hardships. As the master of Dispersion, only the king may dwell in this position, and only then is there no blame.\n\nThe correct position cannot be lent to another."
+     }
+    },
+    "6": {
+     "zh": "上九，渙其血，去逖出，无咎。",
+     "en": "Top Nine. Dispersing the blood. Departing, going far away and out. No blame.",
+     "wangBi": {
+      "zh": "逖，遠也。最遠於害，不近侵克，散其憂傷，遠出者也。散患於遠害之地，誰將咎之哉！",
+      "en": "Ti means distant. Being farthest from harm and not close to aggression and attack, one disperses one's grief and sorrow and goes far away. Dispersing troubles in a place far from harm—who would assign blame!"
+     }
+    }
+   }
+  },
+  {
+   "number": 60,
+   "name": "Limitation",
+   "zh": "節",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "hook": "Saying yes to everything?",
+   "meaning": [
+    "Limitation says:\nset limits.",
+    "Firm, but\nnot bitter."
+   ],
+   "question": "Where’s your\nlimit?",
+   "lesson": "A lake holds only\nso much water.",
+   "finding": "THE STRONG HOLDS THE CENTRE.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為節之主",
+    "en": "Master of Limitation"
+   },
+   "image": {
+    "zh": "《象》曰：澤上有水，節。君子以制數度，議德行。",
+    "en": "The Image says: Above the lake there is water—Regulation. The noble person thereby establishes numerical measures and deliberates upon virtue and conduct."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初九，不出戶庭，无咎。",
+     "en": "Initial Nine. Not going out through the door of the courtyard. No blame.",
+     "wangBi": {
+      "zh": "為節之初，將整離散而立制度者也，故明於通塞，慮於險偽，不出戶庭，慎密不失，然後事濟而无咎也。",
+      "en": "Being at the beginning of Regulation, this is one who will bring order to what has been scattered and establish institutional measures. Therefore one discerns clearly between what is open and what is blocked, considers carefully the dangers of deception, does not go out through the door of the courtyard, and maintains cautious secrecy without lapse. Only then are affairs brought to completion without blame."
+     }
+    },
+    "2": {
+     "zh": "九二，不出門庭，凶。",
+     "en": "Nine in the Second. Not going out through the gate of the courtyard. Misfortune.",
+     "wangBi": {
+      "zh": "初已造之，至二宜宣其制矣，而故匿之，失時之極，則遂廢矣。故不出門庭，則凶也。",
+      "en": "The first line has already created the regulations; by the time one reaches the second, it is fitting to promulgate those measures. Yet one deliberately conceals them, missing the critical moment to the utmost degree, and consequently they fall into neglect. Therefore, not going out through the gate of the courtyard leads to misfortune."
+     }
+    },
+    "3": {
+     "zh": "六三，不節若，則嗟若，无咎。",
+     "en": "Six in the Third. If one does not regulate, then one will lament. No blame.",
+     "wangBi": {
+      "zh": "若，辭也。以陰處陽，以柔乘剛，違節之道，以至哀嗟。自己所致，无所怨咎，故曰无咎也。",
+      "en": "Ruo is a particle. Occupying a yang position with a yin line, and a yielding line riding atop a firm line, one violates the Way of regulation to the point of mournful lamentation. This is brought about by oneself; there is no one else to blame. Hence it says 'no blame.'"
+     }
+    },
+    "4": {
+     "zh": "六四，安節，亨。",
+     "en": "Six in the Fourth. Peaceful regulation. Success.",
+     "wangBi": {
+      "zh": "得位而順，不改其節，而能亨者也。承上以斯，得其道也。",
+      "en": "Having attained the proper position and being compliant, one does not alter one's regulation and is thereby able to achieve success. Serving the one above in this manner, one attains the Way."
+     }
+    },
+    "5": {
+     "zh": "九五，甘節，吉。往有尚。",
+     "en": "Nine in the Fifth. Sweet regulation. Auspicious. Going forth, there is esteem.",
+     "wangBi": {
+      "zh": "當位居中，為節之主不失其中，不傷財，不害民之謂也。為節而不苦，非甘而何？術斯以往，往有尚也。",
+      "en": "Occupying the proper position and dwelling in the center, as the master of regulation one does not lose the mean. This is what is meant by 'not wasting resources and not harming the people.' To regulate without bitterness—if not sweet, then what? Proceeding forth by this method, going forth there is esteem."
+     }
+    },
+    "6": {
+     "zh": "上六，苦節，貞凶，悔亡。",
+     "en": "Top Six. Bitter regulation. Correctness brings misfortune. Regret vanishes.",
+     "wangBi": {
+      "zh": "過節之中，以致亢極，苦節者也。以斯施人*，物所不堪，正之凶也。以斯脩身，行在无妄，故得悔亡。",
+      "en": "Exceeding the center of regulation to the point of reaching the utmost extreme—this is bitter regulation. If one applies this to governing others*, things cannot endure it; this is the misfortune of correctness. If one applies this to cultivating oneself, one's conduct is free from recklessness, and therefore regret vanishes."
+     }
+    }
+   }
+  },
+  {
+   "number": 64,
+   "name": "Before Completion",
+   "zh": "未濟",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "hook": "So close to done?",
+   "meaning": [
+    "Before Completion:\nnot yet.",
+    "Sort things out\nbefore you move."
+   ],
+   "question": "What goes\nwhere?",
+   "lesson": "Almost across,\nthe fox gets wet.",
+   "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER.",
+   "mark": [
+    5
+   ],
+   "master": {
+    "zh": "為未濟之主",
+    "en": "Master of Before Completion"
+   },
+   "image": {
+    "zh": "《象》曰：火在水上，未濟，君子以慎辨物居方。",
+    "en": "The Image says: Fire above water—Not Yet Across. The noble person thereby carefully distinguishes things and assigns them to their proper places."
+   },
+   "lineTexts": {
+    "1": {
+     "zh": "初六，濡其尾，吝。",
+     "en": "Initial Six. Wets its tail. Regret.",
+     "wangBi": {
+      "zh": "處未濟之初，最居險下，不可以濟者也。而欲之其應，進則溺身。未濟之始，始於既濟之上六也。濡其首猶不反，至于濡其尾，不知紀極者也。然以陰處下，非為進亢，遂其志者也。困則能反，故不曰凶。事在己量，而必困乃反，頑亦甚矣，故曰吝也。",
+      "en": "Situated at the beginning of Not Yet Across, dwelling at the very bottom of danger—one who cannot cross. Yet wishing to go to its correspondent, advancing would drown the self. The beginning of Not Yet Across begins from the Top Six of Already Across. If wetting the head still does not make one turn back, and it reaches the point of wetting the tail, this shows one who does not know where to stop. However, being yin dwelling below, it is not one that presses forward aggressively to fulfill its ambition. When in difficulty, it is able to turn back, and therefore the text does not say 'misfortune.' The matter lies in one's own judgment, yet one must be in difficulty before turning back—this is exceedingly obstinate. Hence it says 'regret.'"
+     }
+    },
+    "2": {
+     "zh": "九二，曳其輪，貞吉。",
+     "en": "Nine in the Second. Dragging back the wheels. Correctness brings good fortune.",
+     "wangBi": {
+      "zh": "體剛履中，而應於五，五體陰柔，應與而不自任者也。居未濟之時，處險難之中，體剛中之質，而見任與，拯救危難，經綸屯蹇者也。用健拯難*，靖難*在正，而不違中，故「曳其輪，貞吉」也。\n\n位雖不正，中以行正也。",
+      "en": "Its substance is firm and it treads the center, corresponding with the fifth. The fifth is yin and yielding in substance, corresponding with and relying upon it rather than taking charge itself. Dwelling in the time of Not Yet Across, situated in the midst of danger, with the quality of firm centrality, it is entrusted and relied upon to rescue from peril and manage difficulties amid distress and obstruction. Employing strength to rescue from difficulty*, bringing peace to difficulty* through correctness, and not deviating from the center—hence 'dragging back the wheels, correctness brings good fortune.'\n\nAlthough the position is not proper, through centrality one acts with correctness."
+     }
+    },
+    "3": {
+     "zh": "六三，未濟，征凶，利涉大川。",
+     "en": "Six in the Third. Not yet across. To advance brings misfortune. It is beneficial to cross the great river.",
+     "wangBi": {
+      "zh": "以陰之質，失位居險，不能自濟者也。以不正之身，力不能自濟，而求進焉，喪其身也。故曰征凶也。二能拯難，而己比之，棄己委二，載二而行，溺可得乎？何憂未濟，故曰利涉大川。",
+      "en": "With the quality of yin, it has lost its proper position and dwells in danger—one who cannot save itself. With an improper position, its strength is insufficient to save itself; if it seeks to advance, it will lose its life. Hence it says 'to advance brings misfortune.' The second is able to rescue from difficulty, and this line is close beside it. If one abandons self-reliance and entrusts oneself to the second, being carried by the second and proceeding, can drowning then occur? Why worry about Not Yet Across? Hence it says 'it is beneficial to cross the great river.'"
+     }
+    },
+    "4": {
+     "zh": "九四，貞吉，悔亡。震用伐鬼方，三年有賞于大國。",
+     "en": "Nine in the Fourth. Correctness brings good fortune. Regret vanishes. With a thunderous campaign one attacks the Gui Fang. After three years, there is reward from a great state.",
+     "wangBi": {
+      "zh": "處未濟之時，而出險難之上，居文明之初，體乎剛質，以近至尊。雖履非其位，志在乎正，則吉而悔亡矣。其志得行，靡禁其威，故曰「震用伐鬼方」也。「伐鬼方」者，興衰之征也。故每至興衰而取義焉。處文明之初，始出於難，其德未盛，故曰三年也。五居尊以柔，體乎文明之盛，不奪物功者也，故以大國賞之也。",
+      "en": "Situated in the time of Not Yet Across, having emerged above the danger, dwelling at the beginning of cultural brilliance, with a firm quality of substance, and close to the supreme ruler. Although it treads a position that is not its own, its resolve is set upon correctness, and thus it is fortunate and regret vanishes. Its resolve is carried out and nothing restrains its awesome power, hence it says 'with a thunderous campaign one attacks the Gui Fang.' 'Attacking the Gui Fang' is a sign of rise and decline; hence whenever rise and decline occur, this meaning is invoked. Dwelling at the beginning of cultural brilliance, having just emerged from difficulty, its virtue is not yet abundant, hence it says 'three years.' The fifth dwells in the honored position with yielding, embodying the fullness of cultural brilliance, and does not usurp the merit of others. Therefore it rewards with a great state."
+     }
+    },
+    "5": {
+     "zh": "六五，貞吉，无悔。君子之光，有孚，吉。",
+     "en": "Six in the Fifth. Correctness brings good fortune. No regret. The light of the noble person. There is sincerity. Good fortune.",
+     "wangBi": {
+      "zh": "以柔居尊，處文明之盛，為未濟之主，故必正然後乃吉，吉乃得无悔也。夫以柔順文明之質，居於尊位，付與於能，而不自役，使武以文，御剛以柔，斯誠君子之光也。付物以能，而不疑也，物則竭力，功斯克矣，故曰「有孚，吉。」",
+      "en": "Dwelling in the honored position with yielding, situated at the fullness of cultural brilliance, serving as the ruler of Not Yet Across—therefore one must be correct and only then is there good fortune; with good fortune one then attains no regret. Now, with the quality of yielding compliance and cultural brilliance, dwelling in the honored position, delegating to the capable without laboring oneself, directing the martial through the civil and governing the firm through the yielding—this is truly the light of the noble person. Entrusting others with tasks according to their abilities without doubting them, others then exert their utmost strength, and merit is thereby achieved. Hence it says 'there is sincerity, good fortune.'"
+     }
+    },
+    "6": {
+     "zh": "上九，有孚于飲酒，无咎。濡其首，有孚失是。",
+     "en": "Top Nine. There is sincerity in drinking wine. No blame. Wets its head. Having sincerity, one loses what is right.",
+     "wangBi": {
+      "zh": "未濟之極，則反於既濟。既濟之道，所任者當也。所任者當，則可信之无疑，而己逸焉，故曰「有孚於飲酒，无咎」也。以其能信於物，故得逸豫而不憂於事之廢。苟不憂於事之廢，而耽於樂之甚，則至於失節矣。由於有孚，失於是矣，故曰「濡其首，有孚，失是」也。",
+      "en": "At the extreme of Not Yet Across, it reverts to Already Across. The Way of Already Across is that those entrusted with responsibilities are fitting. When those entrusted are fitting, one can trust them without doubt and enjoy leisure oneself. Hence it says 'there is sincerity in drinking wine, no blame.' Because one is able to trust others, one attains ease and comfort without worrying that affairs will be neglected. But if one does not worry about affairs being neglected and indulges excessively in pleasure, then one reaches the point of losing restraint. It is through having sincerity that one loses what is right. Hence it says 'wets its head; having sincerity, one loses what is right.'"
+     }
+    }
+   }
+  }
+ ]
+}
