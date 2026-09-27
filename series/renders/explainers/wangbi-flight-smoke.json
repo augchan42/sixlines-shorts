@@ -1,10 +1,10 @@
 {
  "explainer": "wangbi-flight-smoke",
- "rendered": "2026-09-27T07:04:18.096Z",
- "commit": "ad69a60f35a2bd0e3a63c9db155ad1f21f1ab280",
+ "rendered": "2026-09-27T07:16:57.467Z",
+ "commit": "ae8b2c6ee61f689ba2bfce152b8e90045294aac0",
  "clean": false,
- "seconds": 53.589333,
- "shareKbps": 3305,
+ "seconds": 53.845333,
+ "shareKbps": 3289,
  "props": {
   "pages": [
    {
@@ -23,11 +23,11 @@
     }
    },
    {
-    "chapter": "PLACES"
+    "chapter": "POSITIONS"
    },
    {
-    "q": "DEFINE: PLACE",
-    "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+    "q": "DEFINE: POSITION",
+    "a": "LINES 2 TO 5 ARE POSITIONS,\nLIKE POSTS IN AN OFFICE.",
     "show": {
      "hex": 22,
      "log": [
@@ -81,7 +81,6 @@
       4
      ],
      "amber": [
-      1,
       4
      ],
      "lesson": "PLAIN IS THE BEST\nADORNMENT."
@@ -89,7 +88,7 @@
    },
    {
     "q": "WHAT THE READOUT IS FOR",
-    "a": "IT GIVES THE STRUCTURE:\nPLACES, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
+    "a": "IT GIVES THE STRUCTURE:\nPOSITIONS, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
     "show": {
      "hex": 22,
      "lit": [
@@ -178,7 +177,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-flight-smoke/short.mp4": "af74cfcd1257d521d469b898b01aa7599156846cb83058514fde99b1d7d12969",
-  "out/explainers/wangbi-flight-smoke/share.mp4": "beb75540827dd0f3ab90e6edc19f36d56a83bc58cea920fece712f405e5bf0ea"
+  "out/explainers/wangbi-flight-smoke/short.mp4": "547e9bb03be8cdfebda98aa376973ef428532d6548352f4ef1aa914177187a34",
+  "out/explainers/wangbi-flight-smoke/share.mp4": "7b05b25764b2449407b485349fe006e93a9e96847329ad1249a988ff59846fd8"
  }
 }

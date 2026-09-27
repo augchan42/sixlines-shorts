@@ -174,7 +174,9 @@ if (props.look === "flight") {
   // falls back to dynamic when a linear gain would pass TP.
   const measure = (args) => JSON.parse(loudnormJson(["-i", flat, "-vn", "-af", `loudnorm=${args}:print_format=json`]));
   const m = measure("I=-16:TP=-1.5");
-  const target = Math.min(-16, Number(m.input_i) + (-1.5 - Number(m.input_tp)));
+  // Floored to a tenth and a tenth below that: rounding the target up by 0.04 dB was enough to
+  // pass TP and make loudnorm fall back (the smoke test, 2026-09-27).
+  const target = Math.floor(Math.min(-16, Number(m.input_i) + (-1.5 - Number(m.input_tp))) * 10) / 10 - 0.1;
   const norm = `loudnorm=I=${target.toFixed(1)}:TP=-1.5:LRA=20:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true`;
   const check = measure(norm.slice("loudnorm=".length));
   if (check.normalization_type !== "linear") throw new Error(`loudnorm fell back to ${check.normalization_type}: ${JSON.stringify(check)}`);
