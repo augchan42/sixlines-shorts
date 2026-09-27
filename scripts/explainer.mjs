@@ -109,10 +109,13 @@ const short = path.join(dir, "short.mp4");
 const share = path.join(dir, "share.mp4");
 console.log("rendering");
 if (props.look === "flight") {
-  // The screen as a tube: rendered flat, then bowed out a little and given a soft bloom.
+  // The screen's glow: rendered flat, then a light bloom over the lesson, not the end card.
+  // No bow or blur: resampling smeared the scan lines and the pixel font (the user, round 3:
+  // "It's not pixelated. I can't see the scan lines").
   const flat = path.join(dir, "flat.mp4");
   run("npx", ["remotion", "render", "src/index.ts", "Lesson", flat, `--props=${propsFile}`, "--log=error"]);
-  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", "[0:v]format=gbrp,lenscorrection=k1=-0.06:k2=-0.02,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.35,gblur=sigma=0.7,format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-af", "loudnorm=I=-16:TP=-1.5", "-ar", "48000", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", short]);
+  const lessonEnd = Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", flat]).trim()) - props.endcard.seconds;
+  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", `[0:v]format=gbrp,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.3:enable='lt(t,${lessonEnd.toFixed(3)})',format=yuv420p[v]`, "-map", "[v]", "-map", "0:a", "-af", "loudnorm=I=-16:TP=-1.5", "-ar", "48000", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", short]);
 } else run("npx", ["remotion", "render", "src/index.ts", lesson ? "Lesson" : "ReadoutKey", short, `--props=${propsFile}`, "--log=error"]);
 
 // The share copy: yuv420p, faststart, under 25 MB, for Instagram and Threads.
