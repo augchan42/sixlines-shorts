@@ -1,0 +1,6 @@
+[project]
+name = "sixlines-audio-check"
+version = "0.1.0"
+description = "Measures the shorts' sounds: loudness, spectrum, onsets (chirps, clicks), and psychoacoustic sharpness and roughness (scripts/sound-check)"
+requires-python = ">=3.12,<3.13"
+dependencies = ["librosa", "mosqito", "soundfile", "numpy", "matplotlib"]

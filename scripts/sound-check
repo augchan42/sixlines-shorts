@@ -1,0 +1,3 @@
+#!/bin/bash
+# Measure sounds (loudness, bands, chirps, sharpness, roughness, tonality): see tools/audio/sound_check.py
+exec uv run --project "$(dirname "$0")/../tools/audio" python "$(dirname "$0")/../tools/audio/sound_check.py" "$@" 2> >(grep -v Warning >&2)
