@@ -1,5 +1,5 @@
 {
- "about": "A test of the flight look on one page of the Wang Bi lesson; round 7 of wangbi-flight-test (new bed and beacon, no chirps) is the starting point. The user, 2026-09-27: 'Love the new direction. Can we maybe do a couple more?' This version adds four sounds rebuilt after the Nostromo boot sequence's inventory (docs/research/nostromo-boot-inventory.json), each at its moment: a sweep as the view starts, a relay bank's chatter while the lines plot, a warble as the camera reaches L5, a wind-down as the answer stops typing. The user asked whether music should cut in 'maybe just near the end when we show the six lines title screen': the machine sounds throughout and the lesson's music (pick13) only for the end card, as Alien's score gives way to the ship's hum.",
+ "about": "A test of the flight look on one page of the Wang Bi lesson; round 7 of wangbi-flight-test (new bed and beacon, no chirps) is the starting point. The user, 2026-09-27: 'Love the new direction. Can we maybe do a couple more?' This version adds four sounds rebuilt after the Nostromo boot sequence's inventory (docs/research/nostromo-boot-inventory.json), each at its moment: a sweep as the view starts, a relay bank's chatter while the lines plot, a warble as the camera reaches L5, a wind-down as the answer stops typing. The user asked whether music should cut in 'maybe just near the end when we show the six lines title screen': the machine sounds throughout and the lesson's music (pick13) only for the end card, as Alien's score gives way to the ship's hum. Round 9, the user: 'the end music needs to last a bit longer ... Maybe print out, reveal the moment a bit slower ... We want the music to have an impact.' The end card plays at 0.75 speed (7.8 s, a slower reveal); the music lands its return after the breakdown (the full band at 80.06 s of pick13) on the cut to the end card, its 4-beat build (from 77.3 s) fading in over the 2.75 s before as the machine sounds fall away.",
  "hexagram": 22,
  "look": "flight",
  "music": {
@@ -63,5 +63,10 @@
    "end"
   ]
  },
- "cues": true
+ "cues": true,
+ "endcardRate": 0.75,
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ }
 }

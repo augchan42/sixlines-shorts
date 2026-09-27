@@ -78,7 +78,12 @@
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-  "seconds": 5.87020328296554
+  "seconds": 7.82693771062072,
+  "rate": 0.75
+ },
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
  },
  "look": "flight",
  "sfx": {

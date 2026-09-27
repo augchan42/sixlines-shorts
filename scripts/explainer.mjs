@@ -108,8 +108,11 @@ const lesson = script.chapters && {
   musicStart: script.music?.start ?? 0,
   ...(script.mix ? { mix: script.mix } : {}),
   ticks,
-  // A test clip of a page or two has no end card.
-  endcard: { clip: sp.endcard.clip, seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm },
+  // A test clip of a page or two has no end card. "endcardRate" below 1 plays the card slower
+  // (a slower reveal, longer for the music); "endMusic" lands the music's `at` second on the cut
+  // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
+  endcard: { clip: sp.endcard.clip, seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: script.endcardRate ?? 1 },
+  ...(script.endMusic ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
 

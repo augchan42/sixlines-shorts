@@ -1,9 +1,9 @@
 {
  "explainer": "wangbi-flight-cues-endmusic",
- "rendered": "2026-09-27T06:24:39.466Z",
- "commit": "61b09bef32716e9790b3024153e60f7a27930bd8",
+ "rendered": "2026-09-27T06:30:32.954Z",
+ "commit": "974a959527bbec55272db209f01adcddaa524ad9",
  "clean": false,
- "seconds": 19.7,
+ "seconds": 21.6,
  "shareKbps": 8000,
  "props": {
   "pages": [
@@ -85,7 +85,12 @@
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
    "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-   "seconds": 5.87020328296554
+   "seconds": 7.82693771062072,
+   "rate": 0.75
+  },
+  "endMusic": {
+   "at": 80.06,
+   "lead": 2.75
   },
   "look": "flight",
   "sfx": {
@@ -111,7 +116,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-flight-cues-endmusic/short.mp4": "4391aa4f9aebdc3d7c1dbed389e488baafd72c55eb4d407823a4c249b706db33",
-  "out/explainers/wangbi-flight-cues-endmusic/share.mp4": "15537e7290a2823be02ba46a741db3f36b63454bee896b947b4a7fe7d3e63b5b"
+  "out/explainers/wangbi-flight-cues-endmusic/short.mp4": "8e619eadebd2be7d69ef05c7e1cc40151cec7253f9ac7ffa1b42da7686a1b8a8",
+  "out/explainers/wangbi-flight-cues-endmusic/share.mp4": "6988ac87b6a5f4bdfe292a3c9b285976a16faf14b8d59927f65f68f95ac35150"
  }
 }

@@ -1,4 +1,4 @@
-import { AbsoluteFill, Audio, interpolate, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, interpolate, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
@@ -46,7 +46,10 @@ export type LessonProps = {
   music: string | null;
   musicStart: number;
   ticks: string;
-  endcard: { clip: string; seconds: number };
+  endcard: { clip: string; seconds: number; rate?: number };
+  // The music only for the end card, its `at` second landing on the cut, faded in over `lead`
+  // seconds as the machine sounds fall away.
+  endMusic?: { at: number; lead: number };
   // "flight": the view moves through the hexagram, the screen is a tube pushed in on slowly,
   // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
   // answer types (docs/research/2026-09-27-nostromo-screens.md).
@@ -315,12 +318,28 @@ export const Lesson: React.FC<LessonProps> = (p) => {
     const near = Math.max(0, ...up.map(([a, b]) => (fr >= a && fr < b ? 1 : fr < a ? Math.max(0, 1 - (a - fr) / FPS) : Math.max(0, 1 - (fr - b) / (1.5 * FPS)))));
     return base + (1 - base) * near;
   };
+  // With `endMusic` the machine sounds fall away under the music's lead-in, to a faint trace.
+  const machines = (fr: number) => (p.endMusic ? interpolate(fr, [end - p.endMusic.lead * FPS, end], [1, 0.15], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1);
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={musicLevel} />
+      {p.endMusic && p.music ? (
+        <Sequence from={end - Math.round(p.endMusic.lead * FPS)}>
+          <Audio
+            src={staticFile(p.music)}
+            trimBefore={Math.round((p.endMusic.at - p.endMusic.lead) * FPS)}
+            volume={(f) => {
+              const lead = p.endMusic!.lead * FPS;
+              const last = durationInFrames - end + lead;
+              return interpolate(f, [0, lead], [0.1, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }) * interpolate(f, [last - 2 * FPS, last], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+            }}
+          />
+        </Sequence>
+      ) : (
+        <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={musicLevel} />
+      )}
       {p.look === "flight" && p.sfx && (
         <>
-          <Audio src={staticFile(p.sfx.hum)} loop volume={p.mix?.hum ?? 0.55} />
+          <Audio src={staticFile(p.sfx.hum)} loop volume={(f) => (p.mix?.hum ?? 0.55) * machines(f)} />
           {/* The beacon, as in the Nostromo's landing: a steady beep that rises through a flight page. */}
           {p.sfx.beacon &&
             pages.flatMap((x, k) =>
@@ -383,7 +402,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
         </AbsoluteFill>
       </Sequence>
       <Sequence from={end}>
-        <EndCard3D clip={p.endcard.clip} />
+        <EndCard3D clip={p.endcard.clip} rate={p.endcard.rate} />
       </Sequence>
       {/* Film grain, scan lines and dark corners over everything, the end card too, as in the shorts. */}
       <Grain />
