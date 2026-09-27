@@ -20,7 +20,7 @@
   },
   {
    "q": "DEFINE: PLACE",
-   "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+   "a": "LINES 2 TO 5 ARE PLACES,\nLIKE POSTS IN AN OFFICE.",
    "show": {
     "hex": 22,
     "log": [
@@ -74,7 +74,6 @@
      4
     ],
     "amber": [
-     1,
      4
     ],
     "lesson": "PLAIN IS THE BEST\nADORNMENT."
