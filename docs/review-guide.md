@@ -17,8 +17,8 @@ differs from short to short:
 |---|---|---|
 | The copy (hook, meaning, question, lesson) | 64 | Reading, as text, in one sitting |
 | The lesson picture | 35 readout, 15 scene, 14 character | Readout once; each scene and character once, since each is a new picture |
-| The music | 18 tracks | Listening once per track |
-| The end card | 3 moves (join, flip, snap) | Done: 13 shorts checked on the new card |
+| The music | 18 tracks, played from 30 start points | Listening once per excerpt |
+| The end card | 3 moves (join, flip, snap) | Design settled; 13 shorts are on the new card, 51 still wait for it |
 | The template itself | 1 | Three exemplars, watched in full |
 
 ## Order of work
@@ -29,21 +29,23 @@ differs from short to short:
    - Character: **47**
    - Scene: **29** (the abyss)
    - Music: **2** (Kun), the user's favourite for its track.
-   Judge each rubric line below on these. Anything wrong here is wrong in every short of that
-   style, so note it once as a style note, not 35 times.
+   Judge each rubric line below on these. A problem in the template (timing, colour, motion)
+   is in every short of that style, so note it once as a style note. A problem in one
+   exemplar's words or data is only in that short.
 2. **Read all 64 as text (15 minutes).** In `series/hexagrams.json`, per short: hook →
    meaning → question → lesson. Check that the lesson answers the hook. Astra found this
    broken on 18 and 30. Put each finding on that short's card on the board.
-3. **Scan the pictures that are unique (20 minutes).** Skip the readout shorts after 64,
-   since they share one device. For the 15 scene and 14 character shorts, watch only the
-   lesson section, about the middle third.
-4. **Listen once per track (10 minutes).** Mood must match the hexagram: dark hexagrams get
-   dark sections. Tracks shared by several shorts only need hearing once, then a check that
-   each hexagram on it suits the mood.
+3. **Scan the pictures that are unique (20 minutes).** For the 15 scene and 14 character
+   shorts, watch only the lesson, which comes last, just before the end card. The readouts
+   share one device, but read each one's finding, trigram names and master line beside its
+   lesson sentence: those vary.
+4. **Listen once per excerpt (15 minutes).** Mood must match the hexagram: dark hexagrams get
+   dark sections. The 18 tracks are played from 30 start points, and a track can change mood
+   between sections, so listen at each start point.
 5. **The Wang Bi lesson (4 minutes).** Watch it in full. It is the one piece with a different
    look and sound.
 
-That is about 55 minutes for the whole series.
+That is about an hour for the whole series.
 
 ## Rubric
 
@@ -55,8 +57,10 @@ Score each line 1 to 10. Anything under 8 gets a note with what to change (the u
 - **One takeaway.** Not two competing lines.
 - **Plain copy.** Literal phrases, no mannered prose, 1-2 sentences per screen.
 - **English beside Chinese.** Every Chinese character on screen has English near it.
-- **One amber line.** Amber marks the one line to look at, one at a time. Green frame, cyan
-  prompt, blue only to explain a point.
+- **Amber follows the text.** Amber marks the lines the text on screen is about: Wang Bi's
+  master line while WANG BI is typed, then the finding's lines. Several lines can be amber
+  together when one finding is about all of them. Green frame, cyan prompt, blue only to
+  explain a point.
 - **Calm motion.** No punch, shake or sway over hexagrams, trigrams or lessons.
 - **Music fits the mood,** at or under 120 bpm.
 - **End card.** REVEAL THE MOMENT with no period, then sixlines.day.
@@ -80,10 +84,14 @@ score against them:
 A reviewer with the repo can run these before watching anything:
 
 - Banned words in `series/copy.json`.
-- How many shorts use "X says:" in the meaning (44 of 64 on 2026-09-27; an open decision).
-- Readout lessons that mark more than one line (`copy.lesson.readout.mark` in hexagrams.json).
-  On 2026-09-27: 4, 13, 22, 25, 33, 37, 38, 40, 41, 45, 53, 54, 57. Watch these to see the
-  amber moves one line at a time.
+- How many shorts use "X says:" (57 of 64 on 2026-09-27; an open decision). Search for
+  "says:" alone: 13 of them put a line break before it, not a space.
+- Findings that count lines 1 or 6 as in or out of place. Wang Bi gives them no position, and
+  the table leaves them blank (fixed on 64, 37, 38 and 39, 2026-09-27).
+- Readouts with a master and a finding about different lines, which need `master.line` and
+  `findingMark` so the amber moves from one to the other: 22 (done), 13, 25 and 33. The other
+  multi-line readouts (4, 37, 38, 40, 41, 45, 53, 54, 57) have one finding about all their
+  marked lines.
 - Tempos over 120 in `series/renders/NN.json`.
 - Which shorts still play an old end card with the period (no `endcardRef` in copy.json).
 

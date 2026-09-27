@@ -1,8 +1,8 @@
 {
  "hexagram": 37,
- "rendered": "2026-09-26T15:11:35.403Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
- "clean": false,
+ "rendered": "2026-09-27T13:08:32.045Z",
+ "commit": "2d0dedf56863c0f2c1f445139390ded0377b6101",
+ "clean": true,
  "seconds": 27.050667,
  "shareKbps": 6674,
  "props": {
@@ -54,7 +54,7 @@
      1,
      4
     ],
-    "finding": "FIVE LINES IN THEIR PLACE."
+    "finding": "2 AND 5 ANSWER, BOTH IN PLACE."
    }
   },
   "pace": "even",
@@ -72,7 +72,7 @@
   "assets/3d/endcard-snap-101011-100bpm-9b.mp4": "4906bab4abb284d9f8b5ee65aa07b09467c1d226e4341d054dc095a2be93ab23",
   "assets/yilin/stipple-37-41.webp": "e3ab8349022d9f91b42a8da5f6a467c7eafe199f0476701e4501873766a9adf8",
   "assets/yilin/stipple-37-57.webp": "75b07548c1e5fb786cae1e3ea118e7a70a8649996f59d0360b22101d7ebf4429",
-  "out/series/37-jia-ren/short.mp4": "e682d9d2658f8410ebadd5db9dc8dfd0f13ef52ff1a9559968995c11e12faad4",
-  "out/series/37-jia-ren/share.mp4": "17b80ec7206be9b902546c1befe7a4fa3833b13c45094f0a6aed4ef95ade57d1"
+  "out/series/37-jia-ren/short.mp4": "2fc48a66147a5b25b439cc44d2cd02d2a8712482fec756e1cea480cdc41b4e4d",
+  "out/series/37-jia-ren/share.mp4": "0ecba1795a3103791cd1a7e7c85a556f5eb6ad2e83b2f99468f1c43f3d06b6c1"
  }
 }
