@@ -6,7 +6,7 @@
 // out/explainers/<name>/ gets short.mp4, share.mp4, caption.txt and manifest.json; the
 // manifest is copied to series/renders/explainers/<name>.json. An earlier render moves to
 // out/explainers/versions/<name>/<time>-<commit>/ first.
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -18,6 +18,11 @@ const root = path.resolve(import.meta.dirname, "..");
 const pub = (f) => path.join(root, "public", f);
 const shaAbs = (f) => createHash("sha256").update(readFileSync(f)).digest("hex");
 const run = (cmd, args) => execFileSync(cmd, args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
+// loudnorm prints its measurements to stderr; the JSON block is the part between the braces.
+const loudnormJson = (args) => {
+  const { stderr } = spawnSync("ffmpeg", ["-nostdin", "-hide_banner", "-y", ...args, "-f", "null", "-"], { cwd: root, encoding: "utf8" });
+  return stderr.slice(stderr.lastIndexOf("{"), stderr.lastIndexOf("}") + 1);
+};
 const name = process.argv.slice(2).find((a) => !a.startsWith("--")) ?? "readout-key";
 const script = JSON.parse(readFileSync(path.join(root, "series/explainers", `${name}.json`), "utf8"));
 const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
@@ -60,8 +65,11 @@ const beep = "min(mod(t\\,1.65)/0.01\\,1)*exp(-max(mod(t\\,1.65)-0.01\\,0)*30)*l
 // 15 a second at 200-800 Hz, while the lines plot; in place of the single relay clicks),
 // warble (483 and 900 Hz taking turns 8 times a second, as the camera reaches its line) and
 // winddown (clicks near 333 Hz slowing and fading, as the answer stops typing).
+// "beacon": "level" takes the beacon up to the bed's level, as the landing's beep sits level
+// with the engine (the bed measures -31 LUFS on a phone, the first beacon -41; review of
+// 2026-09-27, item 2). The first beacon, 10 dB under, stays the default.
 const sfx = {
-  hum: "local/sfx/bed.wav", beacon: "local/sfx/beacon.wav", relay: "local/sfx/relay.wav", printer: "local/sfx/printer.wav",
+  hum: "local/sfx/bed.wav", beacon: script.beacon === "level" ? "local/sfx/beacon-level.wav" : "local/sfx/beacon.wav", relay: "local/sfx/relay.wav", printer: "local/sfx/printer.wav",
   ...(script.cues ? { sweep: "local/sfx/sweep.wav", chatter: "local/sfx/chatter.wav", warble: "local/sfx/warble.wav", winddown: "local/sfx/winddown.wav" } : {}),
 };
 const makeSfx = {
@@ -75,6 +83,7 @@ const makeSfx = {
       "[engine][body][2]amix=inputs=3:normalize=0,afade=t=in:d=0.5",
   ],
   beacon: ["-f", "lavfi", "-i", `aevalsrc=0.05*${beep}*(sin(2*PI*(1166*t+67*t*t/30))+0.2*sin(4*PI*(1166*t+67*t*t/30))):s=44100:d=30`],
+  "beacon-level": ["-f", "lavfi", "-i", `aevalsrc=0.16*${beep}*(sin(2*PI*(1166*t+67*t*t/30))+0.2*sin(4*PI*(1166*t+67*t*t/30))):s=44100:d=30`],
   sweep: ["-f", "lavfi", "-i", "aevalsrc=0.35*sin(PI*t)*(sin(2*PI*40*(pow(17.5\\,t)-1)/2.862)+0.3*sin(4*PI*40*(pow(17.5\\,t)-1)/2.862)):s=44100:d=1"],
   chatter: [
     "-f", "lavfi", "-i", "aevalsrc=(random(0)*2-1)*(exp(-mod(t\\,0.067)*140)+0.6*exp(-mod(t+0.03\\,0.109)*160)):s=44100:d=8",
@@ -158,7 +167,19 @@ if (props.look === "flight") {
   const flat = path.join(dir, "flat.mp4");
   run("npx", ["remotion", "render", "src/index.ts", "Lesson", flat, `--props=${propsFile}`, "--log=error"]);
   const lessonEnd = Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", flat]).trim()) - props.endcard.seconds;
-  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", `[0:v]format=gbrp,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.3:enable='lt(t,${lessonEnd.toFixed(3)})',format=yuv420p[v]`, "-map", "[v]", "-map", "0:a", "-af", "loudnorm=I=-16:TP=-1.5", "-ar", "48000", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", short]);
+  // Loudness in two passes, linear: one gain over the whole file, so the jump from the machine
+  // sounds to the end card's music is kept as mixed. One pass (no measured values) is
+  // loudnorm's dynamic mode, which levelled it (a render at 02e2ae3 measured LRA 10.6 in,
+  // 6.7 out). The target comes down from -16 as far as the true peak needs, since loudnorm
+  // falls back to dynamic when a linear gain would pass TP.
+  const measure = (args) => JSON.parse(loudnormJson(["-i", flat, "-vn", "-af", `loudnorm=${args}:print_format=json`]));
+  const m = measure("I=-16:TP=-1.5");
+  const target = Math.min(-16, Number(m.input_i) + (-1.5 - Number(m.input_tp)));
+  const norm = `loudnorm=I=${target.toFixed(1)}:TP=-1.5:LRA=20:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true`;
+  const check = measure(norm.slice("loudnorm=".length));
+  if (check.normalization_type !== "linear") throw new Error(`loudnorm fell back to ${check.normalization_type}: ${JSON.stringify(check)}`);
+  console.log(`loudnorm linear: ${m.input_i} -> ${target.toFixed(1)} LUFS, true peak ${m.input_tp} -> -1.5`);
+  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", `[0:v]format=gbrp,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.3:enable='lt(t,${lessonEnd.toFixed(3)})',format=yuv420p[v]`, "-map", "[v]", "-map", "0:a", "-af", norm, "-ar", "48000", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k", short]);
 } else run("npx", ["remotion", "render", "src/index.ts", lesson ? "Lesson" : "ReadoutKey", short, `--props=${propsFile}`, "--log=error"]);
 
 // The share copy: yuv420p, faststart, under 25 MB, for Instagram and Threads.

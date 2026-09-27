@@ -45,16 +45,32 @@ const EDGES = [
 
 // The camera at `sec` seconds into a page: from far off to `near` while the lines plot
 // (0..approach), then down to line `to` from `descendAt` over 4 s, then a slow circle.
-export const flightCam = (sec: number, o: { approach: number; descendAt: number; to?: number; end: number }): Cam => {
-  const ease = { easing: Easing.inOut(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-  const lin = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
-  const come = interpolate(sec, [0, o.approach + 2], [0, 1], ease);
-  const down = o.to === undefined ? 0 : interpolate(sec, [o.descendAt, o.descendAt + 4], [0, 1], ease);
-  const z = o.to === undefined ? 0 : lineZ(o.to);
+// Over a lesson of many pages the camera is one state carried from page to page (`start`, the
+// state the last page left it in): it comes in once, goes down once, and otherwise only
+// circles. A page that sets `approach` or `fly` moves it; the others hold where it is.
+export type CamStart = { come: number; down: number; z: number; az: number };
+export const CAM_FAR: CamStart = { come: 0, down: 0, z: 0, az: 0 };
+const ORBIT = 1.5; // degrees a second once arrived
+type Leg = { approach: number; descendAt: number; to?: number; end: number; start?: CamStart };
+const ease = { easing: Easing.inOut(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
+const legAt = (sec: number, o: Leg) => {
+  const s = o.start ?? CAM_FAR;
+  const come = s.come >= 1 ? 1 : interpolate(sec, [0, o.approach + 2], [s.come, 1], ease);
+  const ramp = o.to === undefined ? 0 : interpolate(sec, [o.descendAt, o.descendAt + 4], [0, 1], ease);
+  const down = s.down + (1 - s.down) * ramp;
+  const z = o.to === undefined ? s.z : s.z + (lineZ(o.to) - s.z) * ramp;
+  // The circling starts as the descent does, or, on a page that only holds, at once.
+  const orbitFrom = o.to !== undefined ? o.descendAt : s.come >= 1 ? 0 : o.approach + 2;
+  const az = s.az + ORBIT * Math.max(0, sec - orbitFrom);
+  return { come, down, z, az };
+};
+export const camEnd = (o: Leg): CamStart => legAt(o.end, o);
+export const flightCam = (sec: number, o: Leg): Cam => {
+  const { come, down, z, az } = legAt(sec, o);
   return {
-    target: [0, 0, z * down],
+    target: [0, 0, z],
     dist: interpolate(come, [0, 1], [70, 16]) - 4.5 * down,
-    az: interpolate(come, [0, 1], [-40, -18]) + interpolate(sec, [o.descendAt, o.end], [0, 30], lin),
+    az: interpolate(come, [0, 1], [-40, -18]) + az,
     el: interpolate(come, [0, 1], [24, 12]) - 5 * down,
   };
 };

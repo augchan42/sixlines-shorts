@@ -3,7 +3,7 @@ import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D } from "../scenes/EndCard3D";
-import { descended, flightCam, FlightPlot, type Cam } from "../scenes/Flight";
+import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
@@ -67,14 +67,16 @@ const CHAPTER = Math.round(1.5 * FPS);
 
 // Each page's timeline: the query typed, then each answer line in turn, with any cut to a
 // full readout after a given line, then a hold long enough to read it.
-type Timed = { page: Page; from: number; frames: number; qAt: number; aAt: number; lineAt: number[]; fulls: { n: number; from: number }[] };
+// `cam` is the flight camera's state as the page starts, carried from the pages before it.
+type Timed = { page: Page; from: number; frames: number; qAt: number; aAt: number; lineAt: number[]; fulls: { n: number; from: number }[]; cam: CamStart };
 export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
   let t = 0;
+  let cam = CAM_FAR;
   const pages = p.pages.map((page) => {
     const from = t;
     if (page.chapter) {
       t += CHAPTER;
-      return { page, from, frames: CHAPTER, qAt: 0, aAt: 0, lineAt: [], fulls: [] };
+      return { page, from, frames: CHAPTER, qAt: 0, aAt: 0, lineAt: [], fulls: [], cam };
     }
     const q = page.q ?? "";
     const lines = (page.a ?? "").split("\n");
@@ -92,7 +94,9 @@ export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
     const hold = page.show?.hold !== undefined ? page.show.hold * FPS : Math.max(2.5, words / 3.7) * FPS + (page.show?.draw ? FPS : 0);
     const frames = Math.max(Math.round(3.5 * FPS), (fulls.length ? at - aAt : at) + Math.round(fulls.length ? FPS : hold));
     t += frames;
-    return { page, from, frames, qAt, aAt, lineAt, fulls };
+    const timed = { page, from, frames, qAt, aAt, lineAt, fulls, cam };
+    if (typeof page.show?.hex === "number") cam = camEnd({ approach: page.show.approach ?? 0, descendAt: aAt / FPS, to: page.show.fly, end: frames / FPS, start: cam });
+    return timed;
   });
   return { pages, end: t };
 };
@@ -268,7 +272,9 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
   const drawn = approach
     ? interpolate(f, [10, t.qAt - 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
     : interpolate(f, [t.aAt, t.aAt + 1.2 * FPS], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const cam = flight && typeof show.hex === "number" ? flightCam(f / FPS, { approach, descendAt: t.aAt / FPS, to: show.fly, end: t.frames / FPS }) : undefined;
+  const cam = flight && typeof show.hex === "number" ? flightCam(f / FPS, { approach, descendAt: t.aAt / FPS, to: show.fly, end: t.frames / FPS, start: t.cam }) : undefined;
+  // The log fades as the camera goes down to its line, and stays out while it is down.
+  const logFade = !cam ? 1 : show.fly !== undefined ? 1 - descended(f / FPS, t.aAt / FPS) : 1 - t.cam.down;
   const lastLine = t.lineAt[t.lineAt.length - 1] + Math.round(lines[lines.length - 1].length * A_RATE);
   // A page with nothing to draw sets its answer larger, in the middle of the screen.
   const textOnly = Object.keys(page.show ?? {}).length === 0;
@@ -286,7 +292,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
           <Line key={i} text={l} frame={f} at={t.lineAt[i]} rate={A_RATE} size={textOnly ? 58 : 46} cursor={i === lines.length - 1 && f >= lastLine} />
         ))}
       </div>
-      <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={cam && show.fly !== undefined ? 1 - descended(f / FPS, t.aAt / FPS) : 1} />
+      <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={logFade} />
       {show.lesson && f >= lastLine + 15 && (
         <div style={{ position: "absolute", left: 80, right: 80, top: 1520 }}>
           <Line text={show.lesson} frame={f} at={lastLine + 15} rate={A_RATE} size={60} color="#fff" glowless cursor />
@@ -354,19 +360,24 @@ export const Lesson: React.FC<LessonProps> = (p) => {
           {/* A relay click as each line is plotted during the approach, or, with `sfx.chatter`, a
               relay bank's chatter all through it. Then the boot sequence's other sounds at their
               moments (docs/research/nostromo-boot-inventory.json): a sweep as the view starts, a
-              warble as the camera reaches its line, a wind-down as the answer stops typing. */}
+              warble as the camera reaches its line, a wind-down as the lesson's last answer stops
+              typing. Each page gets the cues for what its camera does. */}
           {pages.flatMap((x, k) => {
-            if (!x.page.show?.approach) return [];
             const s = p.sfx!;
             const lines = (x.page.a ?? "").split("\n");
             const typed = x.lineAt[lines.length - 1] + Math.round(lines[lines.length - 1].length * A_RATE);
+            const last = x === [...pages].reverse().find((y) => !y.page.chapter);
             const cues: { key: string; from: number; frames: number; src?: string; volume: number }[] = [
-              ...(s.chatter
-                ? [{ key: "chatter", from: 10, frames: x.qAt - 20, src: s.chatter, volume: p.mix?.chatter ?? 0.7 }]
-                : [0, 1, 2, 3, 4, 5].map((i) => ({ key: `relay-${i}`, from: 10 + Math.round(((x.qAt - 20) * i) / 6), frames: 10, src: s.relay, volume: p.mix?.relay ?? 0.8 }))),
-              { key: "sweep", from: 0, frames: FPS, src: s.sweep, volume: p.mix?.sweep ?? 0.7 },
-              ...(x.page.show.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
-              { key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 },
+              ...(x.page.show?.approach
+                ? [
+                    ...(s.chatter
+                      ? [{ key: "chatter", from: 10, frames: x.qAt - 20, src: s.chatter, volume: p.mix?.chatter ?? 0.7 }]
+                      : [0, 1, 2, 3, 4, 5].map((i) => ({ key: `relay-${i}`, from: 10 + Math.round(((x.qAt - 20) * i) / 6), frames: 10, src: s.relay, volume: p.mix?.relay ?? 0.8 }))),
+                    { key: "sweep", from: 0, frames: FPS, src: s.sweep, volume: p.mix?.sweep ?? 0.7 },
+                  ]
+                : []),
+              ...(x.page.show?.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
+              ...(last && !x.page.chapter ? [{ key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 }] : []),
             ];
             return cues
               .filter((c) => c.src)

@@ -1,0 +1,161 @@
+{
+ "pages": [
+  {
+   "chapter": "LINES"
+  },
+  {
+   "q": "SHOW 22",
+   "a": "22 GRACE.\nREAD FROM THE BOTTOM UP.",
+   "show": {
+    "hex": 22,
+    "draw": true,
+    "log": [
+     "yy"
+    ],
+    "approach": 5
+   }
+  },
+  {
+   "chapter": "PLACES"
+  },
+  {
+   "q": "DEFINE: PLACE",
+   "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy"
+    ],
+    "ranks": true,
+    "lit": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "chapter": "22 GRACE"
+  },
+  {
+   "q": "WANG BI ON L5",
+   "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     4
+    ],
+    "amber": [
+     4
+    ],
+    "fly": 4,
+    "hold": 4
+   }
+  },
+  {
+   "q": "LESSON",
+   "a": "WANG BI ON L5: 用莫過儉,\nNOTHING BEATS THRIFT.",
+   "show": {
+    "hex": 22,
+    "lit": [
+     1,
+     4
+    ],
+    "amber": [
+     1,
+     4
+    ],
+    "lesson": "PLAIN IS THE BEST\nADORNMENT."
+   }
+  },
+  {
+   "q": "WHAT THE READOUT IS FOR",
+   "a": "IT GIVES THE STRUCTURE:\nPLACES, CENTRES, ANSWERS,\nTHE MASTER.\nTHE CONCLUSION IS YOURS.",
+   "show": {
+    "hex": 22,
+    "lit": [
+     1,
+     4
+    ],
+    "amber": [
+     4
+    ],
+    "hold": 5
+   }
+  }
+ ],
+ "hexagrams": {
+  "22": {
+   "number": 22,
+   "name": "Grace",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ]
+  }
+ },
+ "readouts": {},
+ "music": "local/music/pick13-synthwave-the-mountain.mp3",
+ "musicStart": 0.023,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+  "seconds": 7.82693771062072,
+  "rate": 0.75
+ },
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon-level.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
