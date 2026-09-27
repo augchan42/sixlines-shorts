@@ -59,7 +59,7 @@ def parse():
     # No tagline or site: Remotion draws them over the clip (src/scenes/EndCard3D.tsx), so copy
     # changes never come back here. The timing they need is written beside the clip as JSON.
     p.add_argument("--no-text", action="store_true")
-    p.add_argument("--tagline", default="Reveal the moment.")
+    p.add_argument("--tagline", default="Reveal the moment")
     p.add_argument("--tagline-font", help="type the tagline in this font, with a cursor; default: the serif, faded in")
     p.add_argument("--preview", action="store_true")
     p.add_argument("--fps", type=int, default=FPS)
