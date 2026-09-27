@@ -1,0 +1,645 @@
+{
+ "pages": [
+  {
+   "q": "WHO WAS WANG BI",
+   "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+   "show": {}
+  },
+  {
+   "q": "WHAT IS A HEXAGRAM",
+   "a": "A SITUATION IN SIX LINES.\nEACH LINE IS A PERSON IN IT.",
+   "show": {}
+  },
+  {
+   "chapter": "LINES"
+  },
+  {
+   "q": "DEFINE: YANG, YIN",
+   "a": "SOLID: YANG. FIRM, STRONG.\nBROKEN: YIN. SOFT, YIELDING.",
+   "show": {
+    "hex": "pair",
+    "draw": true
+   }
+  },
+  {
+   "q": "SHOW 22",
+   "a": "22 GRACE.\nREAD FROM THE BOTTOM UP.",
+   "show": {
+    "hex": 22,
+    "draw": true,
+    "log": [
+     "yy"
+    ]
+   }
+  },
+  {
+   "chapter": "PLACES"
+  },
+  {
+   "q": "DEFINE: PLACE",
+   "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy"
+    ],
+    "ranks": true,
+    "lit": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "q": "WHO SUITS EACH PLACE",
+   "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy"
+    ],
+    "ranks": true,
+    "lit": [
+     1,
+     2,
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "q": "DEFINE: IN, OUT",
+   "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place"
+    ],
+    "lit": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "then": [
+     {
+      "after": 0.5,
+      "lit": [
+       1
+      ]
+     },
+     {
+      "after": 2,
+      "lit": [
+       4
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "q": "LINES 1 AND 6",
+   "a": "NO RANK. THEY ARE THE START\nAND THE END OF THE MATTER.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place"
+    ],
+    "lit": [
+     0,
+     5
+    ]
+   }
+  },
+  {
+   "chapter": "CENTRES"
+  },
+  {
+   "q": "DEFINE: TRIGRAM",
+   "a": "THREE LINES. EACH HEXAGRAM\nHAS TWO: LOWER, UPPER.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place"
+    ],
+    "brackets": true,
+    "names": true
+   }
+  },
+  {
+   "q": "DEFINE: CENTRE",
+   "a": "THE MIDDLE OF EACH\nTRIGRAM: LINES 2 AND 5.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "brackets": true,
+    "names": true,
+    "lit": [
+     1,
+     4
+    ]
+   }
+  },
+  {
+   "q": "WHO SITS THERE",
+   "a": "L5: THE HONOURED SEAT.\nL2: THE ONE WHO SERVES IT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "brackets": true,
+    "names": true,
+    "lit": [
+     4
+    ],
+    "then": [
+     {
+      "after": 1.2,
+      "lit": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "ANSWERS"
+  },
+  {
+   "q": "DEFINE: ANSWER",
+   "a": "LINES 1+4, 2+5, 3+6 PAIR.\nIF ONE IS YIN, ONE YANG,\nTHEY ANSWER: ONE PURPOSE.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     0,
+     3
+    ],
+    "then": [
+     {
+      "after": 1.5,
+      "lit": [
+       1,
+       4
+      ],
+      "links": []
+     },
+     {
+      "after": 3,
+      "lit": [
+       2,
+       5
+      ],
+      "links": []
+     }
+    ]
+   }
+  },
+  {
+   "q": "IN 22",
+   "a": "ONLY 1 AND 4.\n2 AND 5 ARE BOTH YIN.\n3 AND 6 ARE BOTH YANG.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     0,
+     3
+    ]
+   }
+  },
+  {
+   "chapter": "THE MASTER"
+  },
+  {
+   "q": "WHICH LINE RULES",
+   "a": "OFTEN ONE LINE RULES.\nWANG BI CALLS IT 主,\nTHE MASTER.",
+   "show": {
+    "big": "主\nMASTER"
+   }
+  },
+  {
+   "q": "HOW TO FIND IT",
+   "a": "WANG BI: THE FEW\nRULE THE MANY.\nONE YIN AMONG FIVE YANG,\nONE YANG AMONG FIVE YIN.",
+   "show": {
+    "small": [
+     10,
+     16
+    ]
+   }
+  },
+  {
+   "q": "AND IF NONE IS ALONE",
+   "a": "LOOK TO THE CENTRES.\nMOST OFTEN IT IS L5,\nTHE HONOURED SEAT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     1,
+     4
+    ]
+   }
+  },
+  {
+   "chapter": "22 GRACE"
+  },
+  {
+   "q": "WHICH LINE RULES 22",
+   "a": "NONE ALONE. BOTH CENTRES\nARE YIN. L2 IS IN, L5 OUT.\nSTILL L5 RULES. IT HOLDS\nTHE HONOURED SEAT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     1,
+     4
+    ],
+    "then": [
+     {
+      "after": 1,
+      "lit": [
+       4
+      ],
+      "amber": [
+       4
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "q": "WANG BI ON L5",
+   "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     4
+    ],
+    "amber": [
+     4
+    ]
+   }
+  },
+  {
+   "q": "WHY IS L2 MARKED TOO",
+   "a": "OLD NOTES IN THE I CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     1,
+     4
+    ],
+    "amber": [
+     1,
+     4
+    ]
+   }
+  },
+  {
+   "q": "LESSON",
+   "a": "WANG BI ON L5: 用莫過儉,\nNOTHING BEATS THRIFT.",
+   "show": {
+    "hex": 22,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      0,
+      3
+     ]
+    ],
+    "lit": [
+     1,
+     4
+    ],
+    "amber": [
+     1,
+     4
+    ],
+    "lesson": "PLAIN IS THE BEST\nADORNMENT."
+   }
+  },
+  {
+   "q": "SHOW READOUT 22",
+   "a": "THIS SCREEN IS IN\n35 SIX LINES SHORTS.\nNO MASTER (主) NAMED?\nREAD THE AMBER FINDING.",
+   "show": {
+    "full": [
+     {
+      "n": 22,
+      "after": 2
+     },
+     {
+      "n": 53,
+      "after": 4
+     }
+    ]
+   }
+  },
+  {
+   "chapter": "YOUR TURN"
+  },
+  {
+   "q": "SHOW 7",
+   "a": "7 THE ARMY.\nWHICH LINE RULES?",
+   "show": {
+    "hex": 7,
+    "draw": true,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ]
+   }
+  },
+  {
+   "q": "SHOW ANSWER",
+   "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
+   "show": {
+    "hex": 7,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ],
+    "lit": [
+     1
+    ],
+    "amber": [
+     1
+    ]
+   }
+  },
+  {
+   "q": "AND L5",
+   "a": "THE HONOURED SEAT, BUT YIN.\nIT HANDS L2 THE ARMY.",
+   "show": {
+    "hex": 7,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ],
+    "lit": [
+     4
+    ],
+    "amber": [
+     1
+    ]
+   }
+  }
+ ],
+ "hexagrams": {
+  "7": {
+   "number": 7,
+   "name": "The Army",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "trigrams": [
+    {
+     "zh": "地",
+     "name": "EARTH"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ]
+  },
+  "10": {
+   "number": 10,
+   "name": "Treading",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    }
+   ]
+  },
+  "16": {
+   "number": 16,
+   "name": "Enthusiasm",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "trigrams": [
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    },
+    {
+     "zh": "地",
+     "name": "EARTH"
+    }
+   ]
+  },
+  "22": {
+   "number": 22,
+   "name": "Grace",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ]
+  }
+ },
+ "readouts": {
+  "22": {
+   "number": 22,
+   "name": "Grace",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ],
+   "text": "Plain is the best\nadornment.",
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+   "master": {
+    "zh": "為飾之主",
+    "en": "Master of Adornment"
+   }
+  },
+  "53": {
+   "number": 53,
+   "name": "Development",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "風",
+     "name": "WIND"
+    },
+    {
+     "zh": "山",
+     "name": "MOUNTAIN"
+    }
+   ],
+   "text": "Earn each place\nbefore the next.",
+   "mark": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+  }
+ },
+ "music": "local/music/pick13-synthwave-the-mountain.mp3",
+ "musicStart": 0.023,
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+  "seconds": 5.87020328296554
+ }
+}

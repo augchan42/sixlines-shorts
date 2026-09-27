@@ -10,12 +10,12 @@ import { fonts } from "../lib/fonts";
 //
 // The frame keeps still; only the plot turns, once, slowly.
 
-const PHOSPHOR = "#7dff8a";
-const DIM = "rgba(125,255,138,0.45)";
-const glow = `0 0 10px ${PHOSPHOR}, 0 0 22px rgba(125,255,138,0.5)`;
+export const PHOSPHOR = "#7dff8a";
+export const DIM = "rgba(125,255,138,0.45)";
+export const glow = `0 0 10px ${PHOSPHOR}, 0 0 22px rgba(125,255,138,0.5)`;
 
 // What each trigram does, from the Shuo Gua (Discussion of the Trigrams), chapter 7.
-const DOES: Record<string, string> = {
+export const DOES: Record<string, string> = {
   HEAVEN: "STRONG",
   EARTH: "YIELDING",
   THUNDER: "MOVING",
@@ -29,17 +29,17 @@ const DOES: Record<string, string> = {
 export type Trigram = { zh: string; name: string };
 
 // Layout of the lines in plot units: as blender/layout.py (a line 6.2 wide, 0.5 tall).
-const LINE_W = 6.2;
-const LINE_H = 0.5;
+export const LINE_W = 6.2;
+export const LINE_H = 0.5;
 const GAP = 0.3;
 const TRIGRAM_GAP = 0.9;
 const YIN_GAP = 0.7;
 const DEPTH = 0.45;
-const lineZ = (i: number) => {
+export const lineZ = (i: number) => {
   const total = 6 * LINE_H + 4 * GAP + TRIGRAM_GAP;
   return -total / 2 + LINE_H / 2 + i * (LINE_H + GAP) + (i >= 3 ? TRIGRAM_GAP - GAP : 0);
 };
-const slabsOf = (lines: (0 | 1)[]) =>
+export const slabsOf = (lines: (0 | 1)[]) =>
   lines.flatMap((yang, i) => {
     const z = lineZ(i);
     if (yang) return [{ i, x0: -LINE_W / 2, x1: LINE_W / 2, z }];
@@ -51,7 +51,7 @@ const slabsOf = (lines: (0 | 1)[]) =>
   });
 
 // A box's 12 edges, projected from a camera `dist` away, turned `turn` radians about the vertical.
-const boxEdges = (x0: number, x1: number, z: number, turn: number, scale: number, cx: number, cy: number) => {
+export const boxEdges = (x0: number, x1: number, z: number, turn: number, scale: number, cx: number, cy: number) => {
   const dist = 16;
   const corners = [x0, x1].flatMap((x) => [-DEPTH / 2, DEPTH / 2].flatMap((y) => [z - LINE_H / 2, z + LINE_H / 2].map((zz) => [x, y, zz])));
   const p = corners.map(([x, y, zz]) => {
@@ -74,7 +74,7 @@ const typed = (text: string, frame: number, at: number, rate = 1.2) => {
   return { shown: text.slice(0, n), typing: n > 0 && n < text.length, started: n > 0 };
 };
 
-const Line: React.FC<{ text: string; frame: number; at: number; rate?: number; size?: number; color?: string; cursor?: boolean; glowless?: boolean; style?: React.CSSProperties }> = ({
+export const Line: React.FC<{ text: string; frame: number; at: number; rate?: number; size?: number; color?: string; cursor?: boolean; glowless?: boolean; style?: React.CSSProperties }> = ({
   text,
   frame,
   at,
@@ -107,7 +107,7 @@ const LogRow: React.FC<{ i: number; yang: boolean; place: string; amber: boolean
     <div style={{ position: "absolute", top, fontFamily: fonts.pixel, fontSize: 34, lineHeight: 1.25, whiteSpace: "pre" }}>
       {part(`L${i + 1}  ${yang ? "━━━━━━━" : "━━━   ━━━"}  `, `plot:${i}`)}
       {part(yang ? "YANG" : "YIN ", `yy:${i}`)}
-      {part(`  ${inOut}`, `place:${i}`)}
+      {inOut && part(`  ${inOut}`, `place:${i}`)}
       {centre && part(` · ${centre}`, `centre:${i}`)}
       {amber && part("  ◄")}
     </div>
@@ -152,9 +152,10 @@ export const Readout: React.FC<{
   const findingAt = master ? at(0.5) : at(0.42);
   const markAt = master ? masterAt : findingAt;
   const answerAt = master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
-  // Wang Bi's reading of each line: in its place (yang in the odd places 1, 3, 5, yin in the
-  // even ones) or out of it, and the centres of the two trigrams (2 and 5).
-  const place = (i: number) => (lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT") + (i === 1 || i === 4 ? " · CENTRE" : "");
+  // Wang Bi's reading of each line: in its place (yang in the odd places 3 and 5, yin in the
+  // even ones 2 and 4) or out of it, and the centres of the two trigrams (2 and 5). Lines 1
+  // and 6 have no place: they are the start and end of the matter (Zhouyi lüeli, 辯位).
+  const place = (i: number) => (i === 0 || i === 5 ? "" : (lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT") + (i === 1 || i === 4 ? " · CENTRE" : ""));
   // 1 answers 4, 2 answers 5, 3 answers 6, when one is yin and the other yang.
   const answering = [0, 1, 2].filter((i) => lines[i] !== lines[i + 3]);
 

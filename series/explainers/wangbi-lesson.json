@@ -1,5 +1,6 @@
 {
  "about": "How Wang Bi reads a hexagram, as one vertical lesson of about 2.5 min, pinned; it replaces the 42 s readout-key explainer. The user, 2026-09-27: 'i feel like we shouldn't need to be restricted to a short of 42 seconds, this is actually a full wang bi lesson. i find it hard to follow whats going on.' Format chosen by the user: one lesson, about 2.5 min. The screen starts empty and each chapter adds its own part of the readout, so by the end the viewer has seen every part built. Assumes the readout drops IN/OUT on lines 1 and 6 (docs/research/2026-09-27-rerender-candidates.md, item 1). 2026-09-27, the user: 'make it like a true nostromo style or even dune (peter lynch) style explainer' (David Lynch's Dune, 1984): an inquiry at the terminal as with MU/TH/UR in Alien, one fact per page as in Paul's filmbook, chapter pages between. Text only (the user's choice), with teletype ticks.",
+ "hexagram": 22,
  "sources": {
   "places": "Zhouyi lüeli 辯位: 初上无陰陽定位; 夫位者，列貴賤之地，待才用之宅也",
   "master": "Wang Bi, Zhouyi lüeli 明彖: the centre line first, and the few ruling the many (夫少者多之所貴也); sometimes no line rules and the trigrams do. The lists of hexagrams and 至少者為至多之所主 printed with it are Xing Shu's Tang notes, not Wang Bi's.",
@@ -22,12 +23,14 @@
     {
      "q": "WHO WAS WANG BI",
      "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
-     "draw": ""
+     "draw": "",
+     "show": {}
     },
     {
      "q": "WHAT IS A HEXAGRAM",
      "a": "A SITUATION IN SIX LINES.\nEACH LINE IS A PERSON IN IT.",
-     "draw": ""
+     "draw": "",
+     "show": {}
     }
    ]
   },
@@ -37,12 +40,23 @@
     {
      "q": "DEFINE: YANG, YIN",
      "a": "SOLID: YANG. FIRM, STRONG.\nBROKEN: YIN. SOFT, YIELDING.",
-     "draw": "one solid line, one broken line"
+     "draw": "one solid line, one broken line",
+     "show": {
+      "hex": "pair",
+      "draw": true
+     }
     },
     {
      "q": "SHOW 22",
      "a": "22 GRACE.\nREAD FROM THE BOTTOM UP.",
-     "draw": "22 drawn bottom line first, with the log rows L1–L6 and YANG/YIN"
+     "draw": "22 drawn bottom line first, with the log rows L1–L6 and YANG/YIN",
+     "show": {
+      "hex": 22,
+      "draw": true,
+      "log": [
+       "yy"
+      ]
+     }
     }
    ]
   },
@@ -52,22 +66,86 @@
     {
      "q": "DEFINE: PLACE",
      "a": "LINES 2 TO 5 ARE RANKS,\nLIKE POSTS IN AN OFFICE.",
-     "draw": "22, L2–L5 bracketed"
+     "draw": "22, L2–L5 bracketed",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy"
+      ],
+      "ranks": true,
+      "lit": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
     },
     {
      "q": "WHO SUITS EACH PLACE",
      "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
-     "draw": "22, L2–L5"
+     "draw": "22, L2–L5",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy"
+      ],
+      "ranks": true,
+      "lit": [
+       1,
+       2,
+       3,
+       4
+      ]
+     }
     },
     {
      "q": "DEFINE: IN, OUT",
      "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
-     "draw": "22 log, IN/OUT on L2–L5; L2 IN and L5 OUT typed last"
+     "draw": "22 log, IN/OUT on L2–L5; L2 IN and L5 OUT typed last",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place"
+      ],
+      "lit": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "then": [
+       {
+        "after": 0.5,
+        "lit": [
+         1
+        ]
+       },
+       {
+        "after": 2.0,
+        "lit": [
+         4
+        ]
+       }
+      ]
+     }
     },
     {
      "q": "LINES 1 AND 6",
      "a": "NO RANK. THEY ARE THE START\nAND THE END OF THE MATTER.",
-     "draw": "22 log, L1 and L6 with no IN/OUT"
+     "draw": "22 log, L1 and L6 with no IN/OUT",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place"
+      ],
+      "lit": [
+       0,
+       5
+      ]
+     }
     }
    ]
   },
@@ -77,17 +155,61 @@
     {
      "q": "DEFINE: TRIGRAM",
      "a": "THREE LINES. EACH HEXAGRAM\nHAS TWO: LOWER, UPPER.",
-     "draw": "22 with the brackets and UPPER 山 MOUNTAIN / LOWER 火 FIRE, with what each does (· STILL, · CLINGING)"
+     "draw": "22 with the brackets and UPPER 山 MOUNTAIN / LOWER 火 FIRE, with what each does (· STILL, · CLINGING)",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place"
+      ],
+      "brackets": true,
+      "names": true
+     }
     },
     {
      "q": "DEFINE: CENTRE",
      "a": "THE MIDDLE OF EACH\nTRIGRAM: LINES 2 AND 5.",
-     "draw": "· CENTRE on L2 and L5"
+     "draw": "· CENTRE on L2 and L5",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "brackets": true,
+      "names": true,
+      "lit": [
+       1,
+       4
+      ]
+     }
     },
     {
      "q": "WHO SITS THERE",
      "a": "L5: THE HONOURED SEAT.\nL2: THE ONE WHO SERVES IT.",
-     "draw": "L5 and L2"
+     "draw": "L5 and L2",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "brackets": true,
+      "names": true,
+      "lit": [
+       4
+      ],
+      "then": [
+       {
+        "after": 1.2,
+        "lit": [
+         1
+        ]
+       }
+      ]
+     }
     }
    ]
   },
@@ -97,12 +219,66 @@
     {
      "q": "DEFINE: ANSWER",
      "a": "LINES 1+4, 2+5, 3+6 PAIR.\nIF ONE IS YIN, ONE YANG,\nTHEY ANSWER: ONE PURPOSE.",
-     "draw": "the three pairs, one after another"
+     "draw": "the three pairs, one after another",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       0,
+       3
+      ],
+      "then": [
+       {
+        "after": 1.5,
+        "lit": [
+         1,
+         4
+        ],
+        "links": []
+       },
+       {
+        "after": 3.0,
+        "lit": [
+         2,
+         5
+        ],
+        "links": []
+       }
+      ]
+     }
     },
     {
      "q": "IN 22",
      "a": "ONLY 1 AND 4.\n2 AND 5 ARE BOTH YIN.\n3 AND 6 ARE BOTH YANG.",
-     "draw": "the link on the left, 1–4"
+     "draw": "the link on the left, 1–4",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       0,
+       3
+      ]
+     }
     }
    ]
   },
@@ -112,17 +288,44 @@
     {
      "q": "WHICH LINE RULES",
      "a": "OFTEN ONE LINE RULES.\nWANG BI CALLS IT 主,\nTHE MASTER.",
-     "draw": "主 large, MASTER under it"
+     "draw": "主 large, MASTER under it",
+     "show": {
+      "big": "主\nMASTER"
+     }
     },
     {
      "q": "HOW TO FIND IT",
      "a": "WANG BI: THE FEW\nRULE THE MANY.\nONE YIN AMONG FIVE YANG,\nONE YANG AMONG FIVE YIN.",
-     "draw": "two small hexagrams, no digits: five yang with one yin at line 3 (10), five yin with one yang at line 4 (16); the lone line amber, each lone line appearing with its answer line"
+     "draw": "two small hexagrams, no digits: five yang with one yin at line 3 (10), five yin with one yang at line 4 (16); the lone line amber, each lone line appearing with its answer line",
+     "show": {
+      "small": [
+       10,
+       16
+      ]
+     }
     },
     {
      "q": "AND IF NONE IS ALONE",
      "a": "LOOK TO THE CENTRES.\nMOST OFTEN IT IS L5,\nTHE HONOURED SEAT.",
-     "draw": "22 with L2 and L5 lit, L5 brighter"
+     "draw": "22 with L2 and L5 lit, L5 brighter",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       1,
+       4
+      ]
+     }
     }
    ]
   },
@@ -132,27 +335,133 @@
     {
      "q": "WHICH LINE RULES 22",
      "a": "NONE ALONE. BOTH CENTRES\nARE YIN. L2 IS IN, L5 OUT.\nSTILL L5 RULES. IT HOLDS\nTHE HONOURED SEAT.",
-     "draw": "22 log; L2 and L5 rows lit, then L5 amber with ◄"
+     "draw": "22 log; L2 and L5 rows lit, then L5 amber with ◄",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       1,
+       4
+      ],
+      "then": [
+       {
+        "after": 1.0,
+        "lit": [
+         4
+        ],
+        "amber": [
+         4
+        ]
+       }
+      ]
+     }
     },
     {
      "q": "WANG BI ON L5",
      "a": "處得尊位，為飾之主\nHOLDING THE HONOURED SEAT,\nIT IS MASTER OF ADORNMENT.",
-     "draw": "the WANG BI line as on the real screen"
+     "draw": "the WANG BI line as on the real screen",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       4
+      ],
+      "amber": [
+       4
+      ]
+     }
     },
     {
      "q": "WHY IS L2 MARKED TOO",
      "a": "OLD NOTES IN THE I CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
-     "draw": "the finding line and L2 with ◄"
+     "draw": "the finding line and L2 with ◄",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       1,
+       4
+      ],
+      "amber": [
+       1,
+       4
+      ]
+     }
     },
     {
      "q": "LESSON",
      "a": "WANG BI ON L5: 用莫過儉,\nNOTHING BEATS THRIFT.",
-     "draw": "then the lesson typed white at the prompt, as in the short: PLAIN IS THE BEST / ADORNMENT."
+     "draw": "then the lesson typed white at the prompt, as in the short: PLAIN IS THE BEST / ADORNMENT.",
+     "show": {
+      "hex": 22,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        0,
+        3
+       ]
+      ],
+      "lit": [
+       1,
+       4
+      ],
+      "amber": [
+       1,
+       4
+      ],
+      "lesson": "PLAIN IS THE BEST\nADORNMENT."
+     }
     },
     {
      "q": "SHOW READOUT 22",
      "a": "THIS SCREEN IS IN\n35 SIX LINES SHORTS.\nNO MASTER (主) NAMED?\nREAD THE AMBER FINDING.",
-     "draw": "the complete 22 readout, as in the short, held; on the last two lines cut to 53's real readout, built, its finding amber (LINES 2 TO 5 ALL IN THEIR PLACE) and ◄ on L2–L5; 22's own screen is never altered"
+     "draw": "the complete 22 readout, as in the short, held; on the last two lines cut to 53's real readout, built, its finding amber (LINES 2 TO 5 ALL IN THEIR PLACE) and ◄ on L2–L5; 22's own screen is never altered",
+     "show": {
+      "full": [
+       {
+        "n": 22,
+        "after": 2
+       },
+       {
+        "n": 53,
+        "after": 4
+       }
+      ]
+     }
     }
    ]
   },
@@ -162,22 +471,84 @@
     {
      "q": "SHOW 7",
      "a": "7 THE ARMY.\nWHICH LINE RULES?",
-     "draw": "7 drawn with its full log (IN/OUT, CENTRE, the 2+5 link), no marks; hold 4 s"
+     "draw": "7 drawn with its full log (IN/OUT, CENTRE, the 2+5 link), no marks; hold 4 s",
+     "show": {
+      "hex": 7,
+      "draw": true,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        1,
+        4
+       ]
+      ]
+     }
     },
     {
      "q": "SHOW ANSWER",
      "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
-     "draw": "L2 amber with ◄, the 2+5 link"
+     "draw": "L2 amber with ◄, the 2+5 link",
+     "show": {
+      "hex": 7,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        1,
+        4
+       ]
+      ],
+      "lit": [
+       1
+      ],
+      "amber": [
+       1
+      ]
+     }
     },
     {
      "q": "AND L5",
      "a": "THE HONOURED SEAT, BUT YIN.\nIT HANDS L2 THE ARMY.",
-     "draw": "L5 row"
+     "draw": "L5 row",
+     "show": {
+      "hex": 7,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        1,
+        4
+       ]
+      ],
+      "lit": [
+       4
+      ],
+      "amber": [
+       1
+      ]
+     }
     }
    ]
   }
  ],
  "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
  "round": 4,
- "holds": "one-glance pages (DEFINE: TRIGRAM, DEFINE: CENTRE, IN 22, LINES 1 AND 6) about 4 s; others by reading time"
+ "holds": "one-glance pages (DEFINE: TRIGRAM, DEFINE: CENTRE, IN 22, LINES 1 AND 6) about 4 s; others by reading time",
+ "music": {
+  "file": "pick13-synthwave-the-mountain.mp3",
+  "start": 0.023,
+  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
+ },
+ "show_keys": "hex: hexagram number, or 'pair' (one solid, one broken), or small: [a, b] (two small hexagrams); draw: plot draws in bottom line first; log: columns shown (yy, place, centre; place never on L1/L6); lit: lines at full strength, the rest dim; amber: lines amber with ◄; links: answering pairs drawn on the left; brackets, names: trigram brackets and UPPER/LOWER names; ranks: a bracket over L2–L5; big: large text in the drawing area; lesson: white text typed in the drawing area; full: [{n, after}] cut to hexagram n's complete readout after answer line `after`, 5 s; then: [{after: seconds after the answer, ...changes}]",
+ "caption": "How Wang Bi (AD 226–249) reads a hexagram: places, centres, answering lines and the master. It is the green screen in 35 of our shorts, built one part at a time."
 }
