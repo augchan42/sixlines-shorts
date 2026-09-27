@@ -55,8 +55,14 @@ def spectrogram(path, start, dur, out):
     subprocess.run(cmd, check=True)
 
 
+def load(path, start, dur):
+    # Through ffmpeg, so any audio or video file will do (mp4, webm, m4a, wav).
+    cmd = ["ffmpeg", "-nostdin", "-v", "error", "-ss", str(start)] + (["-t", str(dur)] if dur else []) + ["-i", path, "-vn", "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"]
+    return np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, dtype=np.float32).copy()
+
+
 def measure(path, start=0.0, dur=None, phone=False):
-    y, _ = librosa.load(path, sr=SR, mono=True, offset=start, duration=dur)
+    y = load(path, start, dur)
     if phone:
         spec = np.fft.rfft(y)
         f = np.fft.rfftfreq(len(y), 1 / SR)

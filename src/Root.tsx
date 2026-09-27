@@ -25,7 +25,9 @@ import { protos } from "./prototypes/protos";
 const FPS = 30;
 
 // The studio opens on 29; scripts/series.mjs passes each hexagram's props with --props.
-const row29 = (table as SeriesRow[]).find((r) => r.number === 29)!;
+// Through unknown: JSON imports type arrays as lists, and SeriesRow's meaning is a pair (all 64
+// rows have two lines).
+const row29 = (table as unknown as SeriesRow[]).find((r) => r.number === 29)!;
 
 const calculateMetadata = ({ props }: { props: ShortProps }) => ({
   durationInFrames: beatFrame({ fps: FPS, bpm: props.bpm, firstBeat: props.firstBeat }, plan(props).end),

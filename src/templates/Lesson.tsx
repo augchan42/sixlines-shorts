@@ -51,9 +51,9 @@ export type LessonProps = {
   // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
   // answer types (docs/research/2026-09-27-nostromo-screens.md).
   look?: "flight";
-  sfx?: { hum: string; relay: string; printer: string };
+  sfx?: { hum: string; beacon?: string; relay: string; printer: string };
   // Volumes (0..1) of the music and each sound, where a script sets them.
-  mix?: { music?: number; hum?: number; relay?: number; printer?: number; ticks?: number };
+  mix?: { music?: number; hum?: number; beacon?: number; relay?: number; printer?: number; ticks?: number };
 };
 
 const FPS = 30;
@@ -315,6 +315,17 @@ export const Lesson: React.FC<LessonProps> = (p) => {
       {p.look === "flight" && p.sfx && (
         <>
           <Audio src={staticFile(p.sfx.hum)} loop volume={p.mix?.hum ?? 0.55} />
+          {/* The beacon, as in the Nostromo's landing: a steady beep that rises through a flight page. */}
+          {p.sfx.beacon &&
+            pages.flatMap((x, k) =>
+              x.page.show?.approach
+                ? [
+                    <Sequence key={`beacon-${k}`} from={x.from} durationInFrames={x.frames}>
+                      <Audio src={staticFile(p.sfx!.beacon!)} volume={(f) => (p.mix?.beacon ?? 1) * interpolate(f, [0, FPS, x.frames - FPS, x.frames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+                    </Sequence>,
+                  ]
+                : [],
+            )}
           {/* A relay click as each line is plotted during the approach. */}
           {pages.flatMap((x, k) =>
             x.page.show?.approach

@@ -63,6 +63,7 @@
  "musicStart": 0,
  "mix": {
   "hum": 1,
+  "beacon": 1,
   "relay": 1,
   "printer": 1,
   "ticks": 0.8
@@ -75,6 +76,7 @@
  "look": "flight",
  "sfx": {
   "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
   "relay": "local/sfx/relay.wav",
   "printer": "local/sfx/printer.wav"
  }
