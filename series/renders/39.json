@@ -1,7 +1,7 @@
 {
  "hexagram": 39,
- "rendered": "2026-09-26T15:18:55.545Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "rendered": "2026-09-27T13:11:53.780Z",
+ "commit": "ab8277e02c4a6338ee8f4937818fcb59f34d0f5a",
  "clean": false,
  "seconds": 27.050667,
  "shareKbps": 6674,
@@ -53,7 +53,7 @@
     "mark": [
      4
     ],
-    "finding": "FIVE IN PLACE. STILL BLOCKED."
+    "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED."
    }
   },
   "pace": "even",
@@ -71,7 +71,7 @@
   "assets/3d/endcard-snap-001010-100bpm-9b.mp4": "25ac772e41945e56f4673df5dcf37c77c5693f29c85335228174eeb5e4d82ffa",
   "assets/yilin/stipple-39-28.webp": "b308abd4b5271f7cd9d03a317a44fdb6972bee49e1aec2050c470d5c6c538614",
   "assets/yilin/stipple-39-29.webp": "676b2581f8e3f620e0ecec8bb959a50a5f82700625fbf4a2e10c8719fcf31f19",
-  "out/series/39-jian/short.mp4": "21bbe10be227df0cd717f0cd7b83e05026a0defb5dac118d314e0c1b1eb18342",
-  "out/series/39-jian/share.mp4": "55f7848e6e0bb6d4ca70a465873db2eaef9766d38341be4d1be3a4019b080802"
+  "out/series/39-jian/short.mp4": "3337c4ac020f600ccc5579a9d1b7a57dbd63356a1fdf668489bf77e48db22ab3",
+  "out/series/39-jian/share.mp4": "8d38548e33bed6e32f30f858c654a4d16766fad04aeda1a9b47c0a49801fe27d"
  }
 }
