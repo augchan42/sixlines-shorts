@@ -1,8 +1,8 @@
 {
  "explainer": "wangbi-lesson",
- "rendered": "2026-09-27T03:29:06.380Z",
- "commit": "2de980a5d8501d17aaf51cd1669e8c6f21b68014",
- "clean": false,
+ "rendered": "2026-09-27T02:59:51.132Z",
+ "commit": "d7ea188a197b28a60a502b0763725c4d0c29a4af",
+ "clean": true,
  "seconds": 197.589333,
  "shareKbps": 803,
  "props": {
@@ -221,8 +221,7 @@
        ],
        "links": []
       }
-     ],
-     "blue": true
+     ]
     }
    },
    {
@@ -244,8 +243,7 @@
      "lit": [
       0,
       3
-     ],
-     "blue": true
+     ]
     }
    },
    {
@@ -462,8 +460,7 @@
      ],
      "amber": [
       1
-     ],
-     "blue": true
+     ]
     }
    },
    {
@@ -657,7 +654,7 @@
   "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
   "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
   "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
-  "out/explainers/wangbi-lesson/short.mp4": "74397f18941209949d0eabcc6739014e7ff68e70bcdd734e7b8e00ed95d274bf",
-  "out/explainers/wangbi-lesson/share.mp4": "6de1a4ac2dd07c7f979b632de83fdde025dc5b71d682317ac1b8d0ec86ad4913"
+  "out/explainers/wangbi-lesson/short.mp4": "9185fe4e55b8bdbcd1cea22d6dc1ad9a79cba215fed6fafc07134e210f0d24a2",
+  "out/explainers/wangbi-lesson/share.mp4": "d3f48314abdef4adf24064506d79371d34cc7ec321c8abdd311c33f50990eb5b"
  }
 }

@@ -1,7 +1,7 @@
 {
  "hexagram": 22,
- "rendered": "2026-09-27T03:25:18.112Z",
- "commit": "2de980a5d8501d17aaf51cd1669e8c6f21b68014",
+ "rendered": "2026-09-26T15:00:51.142Z",
+ "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
  "clean": false,
  "seconds": 32.021333,
  "shareKbps": 5618,
@@ -77,7 +77,7 @@
   "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
   "assets/yilin/stipple-22-34.webp": "6551b4737f169a64b1be447fc87dd7d9b7415ac1d04c82a5f51a9e07ac87af07",
   "assets/yilin/stipple-22-37.webp": "5317712cd0693512a1acd880422b5e59edd428d1d511963d0ee7a87e4b42d01e",
-  "out/series/22-bi/short.mp4": "a0c5a167a5b50e7466b53a66ae953f3cdd772b98a0c7857b425181988a90a95f",
-  "out/series/22-bi/share.mp4": "d8acdea22356ee554b9f0ce5f99ed09b91fa1696842d3971873496271137b5c9"
+  "out/series/22-bi/short.mp4": "ca8238b4a5e0d1239ec2551add47ca4d210a2c7b6162e585bccd593375c142bf",
+  "out/series/22-bi/share.mp4": "370782b89646e0fabcfa4c450430f1a92bb23eb6852a94a5b9af668d9e67f02f"
  }
 }
