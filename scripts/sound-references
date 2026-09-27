@@ -10,20 +10,21 @@ dir=public/local/sfx/reference
 out=docs/research/sound-references.jsonl
 mkdir -p "$dir"
 : > "$out"
-# name | YouTube id | start second | what it is
-while IFS='|' read -r name id start what; do
+# name | YouTube id | start second | what it is | seconds (default 180)
+while IFS='|' read -r name id start what dur; do
   [ -z "$name" ] && continue
+  dur=${dur:-180}
   f="$dir/$name.wav"
   if [ ! -f "$f" ]; then
     # Whole audio track, then cut locally: YouTube refuses ffmpeg's ranged requests (403).
     yt-dlp -q --no-warnings -f bestaudio -o "$dir/full/$name.%(ext)s" "https://www.youtube.com/watch?v=$id"
-    ffmpeg -nostdin -v error -y -ss "$start" -t 180 -i "$(ls "$dir/full/$name".*)" -ac 2 -ar 48000 "$f"
+    ffmpeg -nostdin -v error -y -ss "$start" -t "$dur" -i "$(ls "$dir/full/$name".*)" -ac 2 -ar 48000 "$f"
   fi
   for phone in "" --phone; do
     scripts/sound-check "$f" $phone --png "$dir/png" | python3 -c "
 import json, sys
 d = json.loads(sys.stdin.read())
-d.update(name='$name', youtube='https://www.youtube.com/watch?v=$id', section='$start-$((start + 180)) s', what='$what')
+d.update(name='$name', youtube='https://www.youtube.com/watch?v=$id', section='$start-$((start + dur)) s', what='$what')
 print(json.dumps(d))" >> "$out"
   done
 done <<'LIST'
@@ -35,5 +36,6 @@ nostromo-boot|2ywWFvjE-yU|0|jpcqa, Nostromo boot sequence + Interface 2037 (film
 blade-runner-archive|w2EPWCrXI3M|900|Focus Soundscapes, SYSTEM: Blade Runner Ambience, rain at Archive 17
 eno-1-1|LKZ3fGR2SDY|300|Brian Eno, 1/1 (Remastered 2004), Music for Airports
 server-room|-BofZ-seOc0|900|Ambience Corp, Server Room White Noise, data center
+nostromo-landing|0k5eziWR7Gc|213|Marcelo Arias, Alien Nostromo Landing on LV 426 (film footage re-edited); the user chose 3:33|60
 LIST
 echo "wrote $out"

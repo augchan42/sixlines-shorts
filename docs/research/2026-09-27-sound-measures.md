@@ -118,6 +118,27 @@ and almost vanish on a phone (the ambience measures -29 LUFS on a phone against 
 That is why a phone needs the 250 Hz–1 kHz part of such a bed turned up rather than a brighter
 sound added.
 
+## The landing on LV-426 (the user's pick)
+
+The user pointed to the landing sequence at 3:33 of https://www.youtube.com/watch?v=0k5eziWR7Gc
+(Marcelo Arias's re-edit of the film's footage and sound). Measured over 60 s from 3:33:
+sharpness 1.04 (1.31 on a phone), roughness 0.11, 40 blips a minute, 12% at 2–6 kHz on a phone.
+It has as many beeps as our bed, so beeps as such are not the problem. How they differ:
+
+| | The landing | Our bed |
+|---|---|---|
+| Pitch | one beep, about 1.2 kHz | three pitches, 1.8, 2.4 and 3.15 kHz |
+| Rhythm | steady, every ~1.65 s | irregular |
+| Level | at the level of the bed around it (about 0 dB) | 1–9 dB above it |
+| Over time | rises slowly, 1,166 → 1,300 Hz over 40 s, as the ship comes down | the same pitches throughout |
+| Under it | engine rumble at 100–250 Hz and a steady whine near 440 Hz | flat noise to 8 kHz |
+
+At about 36 s a short burst of stacked tones (700–2,500 Hz) goes by, and from 43 s the computers
+chatter in many short tones at 700 Hz–4 kHz, with the action.
+
+So the landing's beep reads as a instrument counting down, not a chirp: one low pitch, a steady
+pulse, buried in the engine, climbing with the tension.
+
 ## Sources
 
 - Frontiers in Acoustics, "Human response to eVTOL drone sound": https://www.frontiersin.org/journals/acoustics/articles/10.3389/facou.2025.1624669/full
