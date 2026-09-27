@@ -29,7 +29,10 @@ audit = {r["number"]: r for r in json.load(open(os.path.join(root, "series/criti
 def blocks(n):
     f = next(x for x in sorted(os.listdir(text_dir)) if x.startswith(f"{n:02d}-"))
     body = open(os.path.join(text_dir, f)).read()
-    return {b.split("\n", 1)[0].strip(): b for b in re.split(r"^## ", body, flags=re.M)[1:]}
+    parts = re.split(r"^## ", body, flags=re.M)
+    out = {b.split("\n", 1)[0].strip(): b for b in parts[1:]}
+    out[""] = parts[0]
+    return out
 
 
 def paras(block):
@@ -70,7 +73,14 @@ def line(bs, k):
 
 def classic(n):
     bs = blocks(n)
-    judgment = [p for p in tagged(bs.get("卦辭", ""), "經")][1:]
+    # The first 經 paragraph names the trigrams (履兌下乾上, ䷇比卦坤下坎上); Qian and Kun put the judgment on the
+    # same line (乾下乾上。乾：元，亨，利，貞。), so only the trigram names are dropped. 52 keeps its
+    # judgment in pieces above the Tuan and commentary under 卦辭, so the section that holds the
+    # trigram names is the one read, and quoted commentary (「…」者) is left out.
+    trigrams = re.compile(r"^\S{1,6}?下\S上。?")
+    section = next((bs[k] for k in ("卦辭", "") if any(trigrams.match(p) for p in tagged(bs.get(k, ""), "經"))), "")
+    judgment = [trigrams.sub("", p) for p in tagged(section, "經") if not p.startswith("「")]
+    judgment = ["".join(p for p in judgment if p)]
     tuan = [p for p in tagged(bs.get("彖傳", ""), "經")]
     image = [p for p in tagged(bs.get("大象傳", ""), "經")]
     out = {"judgment": judgment, "tuan": tuan, "greatImage": image}
