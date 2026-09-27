@@ -3966,22 +3966,22 @@
   },
   "copy": {
    "hook": {
-    "text": "Good things just out of reach?",
-    "source": "commentary/en/48.json#judgment.synthesis"
+    "text": "Who maintains what\neveryone uses?",
+    "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it"
    },
    "meaning": [
     {
-     "text": "The Well says:\nlengthen the rope.",
-     "source": "commentary/en/48.json#judgment.synthesis"
+     "text": "The Well says:\npeople come and go.",
+     "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; 改邑不改井"
     },
     {
-     "text": "The water is\nalways there.",
-     "source": "commentary/en/48.json#judgment.synthesis"
+     "text": "The well\nremains.",
+     "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; 改邑不改井"
     }
    ],
    "question": {
-    "text": "What’s cutting\nyour rope short?",
-    "source": "written"
+    "text": "What do you help\nkeep in working order?",
+    "source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it"
    },
    "plates": [
     "48-10",
@@ -3993,7 +3993,7 @@
    },
    "lesson": {
     "kind": "character",
-    "text": "Towns move.\nThe well stays.",
+    "text": "Care for what\nothers depend on.",
     "source": "series/characters.json#48: Four beams rise as the well's frame; the water in the middle ripples on every beat.",
     "character": {
      "char": "井",
@@ -4016,7 +4016,8 @@
       "edge": "#ff5ec8",
       "water": "#5ee7ff"
      }
-    }
+    },
+    "lesson_source": "the user, approved 2026-09-27 (docs/research/2026-09-27-codex-rewrite-options.md#48): a shared resource that needs maintenance and outlasts the people around it; L4 脩井也 (repair the well), L6 勿幕 with Wang Bi 不擅其有，不私其利 (don't keep it private)"
    }
   },
   "source": {
