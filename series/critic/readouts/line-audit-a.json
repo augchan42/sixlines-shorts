@@ -1,0 +1,155 @@
+{
+ "part": "a",
+ "readouts": [
+  {
+   "number": 1,
+   "fit": 8,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: TIRELESS ALL DAY,\nSTILL ALERT AT NIGHT.",
+   "verdict": "one-line",
+   "why": "Line 3 says the noble person is tireless all day and still alert in the evening, which is 'Heaven never takes a day off' said of a person. The current shape finding is also sound, so 'keep' is a fair fallback if 1 and 2 should stay a pair of whole-shape readouts.",
+   "lineText": "Nine in the Third: The noble person is ceaselessly vigilant throughout the day. In the evening still alert, as if in danger - no blame.",
+   "loopNote": ""
+  },
+  {
+   "number": 2,
+   "fit": 7,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: DOES NOT START IT,\nYET SEES IT THROUGH.",
+   "verdict": "one-line",
+   "why": "Line 3's 'no initiating, yet there is completion' (serving in the king's affairs) is 'follow and arrive' in one line. Line 6 (dragons fight, blood in the field) is the 'lead and get lost' half, but pairing them makes two points.",
+   "lineText": "Six in the Third: Containing pattern, permitting steadfastness. Perhaps serving in the king's affairs - no initiating, yet there is completion.",
+   "loopNote": ""
+  },
+  {
+   "number": 3,
+   "fit": 9,
+   "lines": [
+    1
+   ],
+   "finding": "AT THE BASE: HOLD BACK.\nSET UP HELPERS.",
+   "verdict": "one-line",
+   "why": "Line 1 is 'hesitating and lingering ... beneficial to establish lords': don't push, and install helpers. That is the lesson almost word for word, and line 1 is already the marked line.",
+   "lineText": "Initial Nine: Hesitating and lingering. It is beneficial to abide in correctness. It is beneficial to establish a lord.",
+   "loopNote": ""
+  },
+  {
+   "number": 4,
+   "fit": 5,
+   "lines": [
+    2,
+    5
+   ],
+   "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+   "verdict": "keep",
+   "why": "'Teachers don't chase students' comes from the Judgment ('I do not seek the young fool; the young fool seeks me'), not from a line. Line 2 ('embracing the fool') and line 5 ('youthful folly, good') each hold only half, and the current finding already joins them plainly.",
+   "lineText": "Six in the Fifth. Youthful folly - good fortune. / Nine in the Second. Embracing the fool - good fortune.",
+   "loopNote": "The hook ('Asking again for a better answer?') also comes from the Judgment (asking twice is disrespectful); no line carries it. The loop holds through the Judgment, not the lines."
+  },
+  {
+   "number": 6,
+   "fit": 6,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: A PRIZE BELT,\nTAKEN BACK THREE TIMES.",
+   "verdict": "lesson-mismatch",
+   "why": "Line 5 is only 'Contention: supremely good'; the fair judge comes from the Tuan/Xiang and Wang Bi ('centred correctness judges crooked and straight'), so line 5 for 'Take it to a fair judge' is strained (fit 6). Line 6 (awarded a belt, stripped from him three times before the morning ends) plainly shows the meaning cards' point, 'pushing to the end costs you'. Option only: lesson 'A win by fighting won't stay won.'",
+   "lineText": "Top Nine: Perhaps one is bestowed a ceremonial belt, but before the morning is over it is stripped away three times.",
+   "loopNote": "Hook 'Fighting over something you're right about?' closes better on line 6 (you win, and lose it) than on the fair-judge lesson. If the lesson stays, line 5 is the line: 'LINE 5: THE CASE GOES TO\nA FAIR JUDGE. GOOD.'",
+   "dataNote": "lineTexts['2'] holds the line 2 Image comment, not the statement (九二，不克訟，歸而逋，其邑人三百戶，无眚)."
+  },
+  {
+   "number": 9,
+   "fit": 5,
+   "lines": [
+    4
+   ],
+   "finding": "ONE YIELDING LINE HOLDS FIVE.",
+   "verdict": "keep",
+   "why": "No line statement says 'small holds big'. Line 4 (sincerity, blood goes, fear leaves) is about getting through the tension, and line 3 (the cart loses its spokes) only shows the big being stopped. The current finding shows the lesson in the shape itself.",
+   "lineText": "Six in the Fourth. There is sincerity. Blood departs, apprehension goes away. No blame.",
+   "loopNote": ""
+  },
+  {
+   "number": 10,
+   "fit": 8,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: ON THE TIGER'S TAIL,\nCAREFUL. IT ENDS WELL.",
+   "verdict": "one-line",
+   "why": "Line 4 treads on the tiger's tail, 'apprehensive and cautious - in the end, good': care beside the strong is what saves you. It says cautious rather than courteous, but a viewer gets it; line 3 (the tiger bites the one who acts big) is the contrast if a second beat is wanted.",
+   "lineText": "Nine in the Fourth: Treading upon the tiger's tail, apprehensive and cautious - in the end, good fortune.",
+   "loopNote": "",
+   "dataNote": "lineTexts['3'] holds the line 3 Image comment, not the statement (六三，眇能視，跛能履，履虎尾，咥人，凶。武人為于大君)."
+  },
+  {
+   "number": 13,
+   "fit": 9,
+   "lines": [
+    2
+   ],
+   "finding": "LINE 2: FELLOWSHIP ONLY\nWITH THE CLAN. REGRET.",
+   "verdict": "one-line",
+   "why": "Line 2, 'fellowship with people limited to the clan - regret', is 'not on kinship' literally. Line 1 ('fellowship at the gate - no blame') is the other half; marking [1,2] with 'AT THE GATE: NO BLAME.\\nONLY THE CLAN: REGRET.' is an option.",
+   "lineText": "Six in the Second: Fellowship with people limited to the clan - regret.",
+   "loopNote": "Hook 'Same five friends for years?' lands directly on the clan line.",
+   "dataNote": "lineTexts 1-3 have Wang Bi's note folded into zh/en; lineTexts['4'] holds the Image comment, not the statement (九四，乘其墉，弗克攻，吉)."
+  },
+  {
+   "number": 14,
+   "fit": 8,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: TRUST, GIVEN AND\nRETURNED, WITH DIGNITY.",
+   "verdict": "one-line",
+   "why": "Line 5 is the one yielding line in the ruler's place: 'its sincerity is such that all engage with it; awe-inspiring - good'. A soft ruler held by trust is 'lead by trust, not force', and the viewer can see it is the only soft line.",
+   "lineText": "Six in the Fifth: Its sincerity is such that all engage with it. Awe-inspiring - auspicious.",
+   "loopNote": "",
+   "dataNote": "lineTexts['3'] holds the line 3 Image comment, not the statement (九三，公用亨于天子，小人弗克)."
+  },
+  {
+   "number": 16,
+   "fit": 8,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: IT STARTS HERE.\nNO DOUBT. FRIENDS GATHER.",
+   "verdict": "one-line",
+   "why": "Line 4, 'the source of enthusiasm ... do not doubt, and friends will gather', is one clear voice with the crowd coming to it. Line 1 ('proclaiming enthusiasm - bad') warns against a loud voice, so marking only line 4 keeps it clean.",
+   "lineText": "Nine in the Fourth: The source of enthusiasm - there is great gain. Do not doubt, and friends will gather swiftly.",
+   "loopNote": ""
+  },
+  {
+   "number": 17,
+   "fit": 4,
+   "lines": [
+    1
+   ],
+   "finding": "THE STRONG GOES BELOW THE WEAK.",
+   "verdict": "keep",
+   "why": "'Follow first' is the Tuan's reading of the shape (the strong comes down below the weak); no line says it. Line 1 ('the post changes ... go out the gate and mix, it works') is the nearest, but a viewer would not get 'follow first' from it.",
+   "lineText": "Initial Nine. The office undergoes change. Correctness brings good fortune. Going out the gate to form associations brings achievement.",
+   "loopNote": "Broken, and no line fixes it: the hook and meaning cards come from the Image ('as darkness approaches, the noble person goes in to rest'), the lesson from the Tuan. Option: keep the hook and change the lesson to the Image, e.g. 'When it gets dark, go in and rest.'; or keep the lesson and change the hook to something like 'Want people to follow you?'.",
+   "dataNote": "lineTexts['2'] and ['4'] hold Image comments, not the statements (六二，係小子，失丈夫; 九四，隨有獲，貞凶。有孚在道，以明，何咎)."
+  },
+  {
+   "number": 20,
+   "fit": 7,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: GOES TO SEE\nTHE LIGHT OF THE STATE.",
+   "verdict": "lesson-mismatch",
+   "why": "'People watch how you prepare' is the Judgment (washed but not yet offered; the people look up), not a line; line 5 ('contemplating my life, no blame') is the nearest at fit 5. Line 4, 'contemplating the glory of the state, beneficial to be the king's guest', is going to look for yourself, which is what the hook and meaning cards say. Option only: lesson 'Go and see it for yourself.'",
+   "lineText": "Six in the Fourth. Contemplating the glory of the state. It is beneficial to be employed as a guest of the king.",
+   "loopNote": "Line 4 fixes the loop: 'Deciding from behind a desk?' -> go and see -> line 4 goes to see the state. Line 1 ('childlike looking: no blame for the small person, regret for the noble') could add the contrast, but that makes two points."
+  }
+ ]
+}

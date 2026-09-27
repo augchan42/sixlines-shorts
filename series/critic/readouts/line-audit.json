@@ -1,0 +1,520 @@
+{
+ "checkedAgainst": "chinese-classics-reference@fe21f572a47123532e6360f3b924a08360e6def0:zhouyi-zhushu/text",
+ "readouts": [
+  {
+   "number": 1,
+   "fit": 8,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: TIRELESS ALL DAY,\nSTILL ALERT AT NIGHT.",
+   "verdict": "one-line",
+   "why": "Line 3 says the noble person is tireless all day and still alert in the evening, which is 'Heaven never takes a day off' said of a person. The current shape finding is also sound, so 'keep' is a fair fallback if 1 and 2 should stay a pair of whole-shape readouts.",
+   "lineText": "Nine in the Third: The noble person is ceaselessly vigilant throughout the day. In the evening still alert, as if in danger - no blame.",
+   "loopNote": "",
+   "statements": {
+    "3": "九三：君子終日乾乾，夕惕若厲，無咎。"
+   }
+  },
+  {
+   "number": 2,
+   "fit": 7,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: DOES NOT START IT,\nYET SEES IT THROUGH.",
+   "verdict": "one-line",
+   "why": "Line 3's 'no initiating, yet there is completion' (serving in the king's affairs) is 'follow and arrive' in one line. Line 6 (dragons fight, blood in the field) is the 'lead and get lost' half, but pairing them makes two points.",
+   "lineText": "Six in the Third: Containing pattern, permitting steadfastness. Perhaps serving in the king's affairs - no initiating, yet there is completion.",
+   "loopNote": "",
+   "statements": {
+    "3": "六三：含章可貞，或從王事，无成有終。"
+   }
+  },
+  {
+   "number": 3,
+   "fit": 9,
+   "lines": [
+    1
+   ],
+   "finding": "AT THE BASE: HOLD BACK.\nSET UP HELPERS.",
+   "verdict": "one-line",
+   "why": "Line 1 is 'hesitating and lingering ... beneficial to establish lords': don't push, and install helpers. That is the lesson almost word for word, and line 1 is already the marked line.",
+   "lineText": "Initial Nine: Hesitating and lingering. It is beneficial to abide in correctness. It is beneficial to establish a lord.",
+   "loopNote": "",
+   "statements": {
+    "1": "初九，磐桓，利居貞，利建侯。"
+   }
+  },
+  {
+   "number": 4,
+   "fit": 5,
+   "lines": [
+    2,
+    5
+   ],
+   "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+   "verdict": "keep",
+   "why": "'Teachers don't chase students' comes from the Judgment ('I do not seek the young fool; the young fool seeks me'), not from a line. Line 2 ('embracing the fool') and line 5 ('youthful folly, good') each hold only half, and the current finding already joins them plainly.",
+   "lineText": "Six in the Fifth. Youthful folly - good fortune. / Nine in the Second. Embracing the fool - good fortune.",
+   "loopNote": "The hook ('Asking again for a better answer?') also comes from the Judgment (asking twice is disrespectful); no line carries it. The loop holds through the Judgment, not the lines.",
+   "statements": {
+    "2": "九二，包蒙，吉。納婦吉，子克家。",
+    "5": "六五，童蒙吉。"
+   }
+  },
+  {
+   "number": 6,
+   "fit": 6,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: A PRIZE BELT,\nTAKEN BACK THREE TIMES.",
+   "verdict": "lesson-mismatch",
+   "why": "Line 5 is only 'Contention: supremely good'; the fair judge comes from the Tuan/Xiang and Wang Bi ('centred correctness judges crooked and straight'), so line 5 for 'Take it to a fair judge' is strained (fit 6). Line 6 (awarded a belt, stripped from him three times before the morning ends) plainly shows the meaning cards' point, 'pushing to the end costs you'. Option only: lesson 'A win by fighting won't stay won.'",
+   "lineText": "Top Nine: Perhaps one is bestowed a ceremonial belt, but before the morning is over it is stripped away three times.",
+   "loopNote": "Hook 'Fighting over something you're right about?' closes better on line 6 (you win, and lose it) than on the fair-judge lesson. If the lesson stays, line 5 is the line: 'LINE 5: THE CASE GOES TO\nA FAIR JUDGE. GOOD.'",
+   "dataNote": "lineTexts['2'] holds the line 2 Image comment, not the statement (九二，不克訟，歸而逋，其邑人三百戶，无眚).",
+   "statements": {
+    "6": "上九，或錫之鞶帶，終朝三褫之。"
+   }
+  },
+  {
+   "number": 9,
+   "fit": 5,
+   "lines": [
+    4
+   ],
+   "finding": "ONE YIELDING LINE HOLDS FIVE.",
+   "verdict": "keep",
+   "why": "No line statement says 'small holds big'. Line 4 (sincerity, blood goes, fear leaves) is about getting through the tension, and line 3 (the cart loses its spokes) only shows the big being stopped. The current finding shows the lesson in the shape itself.",
+   "lineText": "Six in the Fourth. There is sincerity. Blood departs, apprehension goes away. No blame.",
+   "loopNote": "",
+   "statements": {
+    "4": "六四，有孚，血去惕出，无咎。"
+   }
+  },
+  {
+   "number": 10,
+   "fit": 8,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: ON THE TIGER'S TAIL,\nCAREFUL. IT ENDS WELL.",
+   "verdict": "one-line",
+   "why": "Line 4 treads on the tiger's tail, 'apprehensive and cautious - in the end, good': care beside the strong is what saves you. It says cautious rather than courteous, but a viewer gets it; line 3 (the tiger bites the one who acts big) is the contrast if a second beat is wanted.",
+   "lineText": "Nine in the Fourth: Treading upon the tiger's tail, apprehensive and cautious - in the end, good fortune.",
+   "loopNote": "",
+   "dataNote": "lineTexts['3'] holds the line 3 Image comment, not the statement (六三，眇能視，跛能履，履虎尾，咥人，凶。武人為于大君).",
+   "statements": {
+    "4": "九四，履虎尾，愬愬，終吉。"
+   }
+  },
+  {
+   "number": 13,
+   "fit": 9,
+   "lines": [
+    2
+   ],
+   "finding": "LINE 2: FELLOWSHIP ONLY\nWITH THE CLAN. REGRET.",
+   "verdict": "one-line",
+   "why": "Line 2, 'fellowship with people limited to the clan - regret', is 'not on kinship' literally. Line 1 ('fellowship at the gate - no blame') is the other half; marking [1,2] with 'AT THE GATE: NO BLAME.\\nONLY THE CLAN: REGRET.' is an option.",
+   "lineText": "Six in the Second: Fellowship with people limited to the clan - regret.",
+   "loopNote": "Hook 'Same five friends for years?' lands directly on the clan line.",
+   "dataNote": "lineTexts 1-3 have Wang Bi's note folded into zh/en; lineTexts['4'] holds the Image comment, not the statement (九四，乘其墉，弗克攻，吉).",
+   "statements": {
+    "2": "六二，同人于宗，吝。"
+   }
+  },
+  {
+   "number": 14,
+   "fit": 8,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: TRUST, GIVEN AND\nRETURNED, WITH DIGNITY.",
+   "verdict": "one-line",
+   "why": "Line 5 is the one yielding line in the ruler's place: 'its sincerity is such that all engage with it; awe-inspiring - good'. A soft ruler held by trust is 'lead by trust, not force', and the viewer can see it is the only soft line.",
+   "lineText": "Six in the Fifth: Its sincerity is such that all engage with it. Awe-inspiring - auspicious.",
+   "loopNote": "",
+   "dataNote": "lineTexts['3'] holds the line 3 Image comment, not the statement (九三，公用亨于天子，小人弗克).",
+   "statements": {
+    "5": "六五，厥孚交如，威如，吉。"
+   }
+  },
+  {
+   "number": 16,
+   "fit": 8,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: IT STARTS HERE.\nNO DOUBT. FRIENDS GATHER.",
+   "verdict": "one-line",
+   "why": "Line 4, 'the source of enthusiasm ... do not doubt, and friends will gather', is one clear voice with the crowd coming to it. Line 1 ('proclaiming enthusiasm - bad') warns against a loud voice, so marking only line 4 keeps it clean.",
+   "lineText": "Nine in the Fourth: The source of enthusiasm - there is great gain. Do not doubt, and friends will gather swiftly.",
+   "loopNote": "",
+   "statements": {
+    "4": "九四，由豫，大有得。勿疑，朋盍簪。"
+   }
+  },
+  {
+   "number": 17,
+   "fit": 4,
+   "lines": [
+    1
+   ],
+   "finding": "THE STRONG GOES BELOW THE WEAK.",
+   "verdict": "keep",
+   "why": "'Follow first' is the Tuan's reading of the shape (the strong comes down below the weak); no line says it. Line 1 ('the post changes ... go out the gate and mix, it works') is the nearest, but a viewer would not get 'follow first' from it.",
+   "lineText": "Initial Nine. The office undergoes change. Correctness brings good fortune. Going out the gate to form associations brings achievement.",
+   "loopNote": "Broken, and no line fixes it: the hook and meaning cards come from the Image ('as darkness approaches, the noble person goes in to rest'), the lesson from the Tuan. Option: keep the hook and change the lesson to the Image, e.g. 'When it gets dark, go in and rest.'; or keep the lesson and change the hook to something like 'Want people to follow you?'.",
+   "dataNote": "lineTexts['2'] and ['4'] hold Image comments, not the statements (六二，係小子，失丈夫; 九四，隨有獲，貞凶。有孚在道，以明，何咎).",
+   "statements": {
+    "1": "初九，官有渝，貞吉。出門交有功。"
+   }
+  },
+  {
+   "number": 20,
+   "fit": 7,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: GOES TO SEE\nTHE LIGHT OF THE STATE.",
+   "verdict": "lesson-mismatch",
+   "why": "'People watch how you prepare' is the Judgment (washed but not yet offered; the people look up), not a line; line 5 ('contemplating my life, no blame') is the nearest at fit 5. Line 4, 'contemplating the glory of the state, beneficial to be the king's guest', is going to look for yourself, which is what the hook and meaning cards say. Option only: lesson 'Go and see it for yourself.'",
+   "lineText": "Six in the Fourth. Contemplating the glory of the state. It is beneficial to be employed as a guest of the king.",
+   "loopNote": "Line 4 fixes the loop: 'Deciding from behind a desk?' -> go and see -> line 4 goes to see the state. Line 1 ('childlike looking: no blame for the small person, regret for the noble') could add the contrast, but that makes two points.",
+   "statements": {
+    "4": "六四，觀國之光，利用賓于王。"
+   }
+  },
+  {
+   "number": 25,
+   "fit": 7,
+   "lines": [
+    2
+   ],
+   "finding": "LINE 2: DON'T PLOW\nFOR THE HARVEST.",
+   "verdict": "one-line",
+   "why": "Line 2 (不耕穫) in the Cheng Yi / Zhu Xi reading is working without counting on the crop, which is 'do what's right, not what pays' almost word for word. Caveat: the input's literal English ('not plowing yet reaping') and Wang Bi ('completes what another began, does not claim the merit') read it differently, so the finding leans on the later reading; the safer but flatter option is line 1, 'AT THE BASE: GO OUT\\nWITHOUT FALSENESS.' (fit 6).",
+   "lineText": "Not plowing yet reaping, not clearing new fields yet having mature land—then it is beneficial to have a place to go.",
+   "loopNote": "",
+   "statements": {
+    "2": "六二，不耕穫，不菑畬，則利有攸往。"
+   }
+  },
+  {
+   "number": 26,
+   "fit": 8,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: DRILL THE CHARIOT\nDAILY. THEN SET OUT.",
+   "verdict": "one-line",
+   "why": "Line 3 says 'practice guarding the chariot (daily)... benefit in having a destination': practise first, then go, which is the lesson 'store up strength, then use it' and answers the hook about years of practice. Line 6 ('how vast the thoroughfare of Heaven') is the payoff image but says only the second half.",
+   "lineText": "Fine horses give chase. Benefit in difficult Correctness. It is said: practice guarding the chariot. Benefit in having a destination.",
+   "loopNote": "",
+   "statements": {
+    "3": "九三，良馬逐，利艱貞。曰閑輿衛，利有攸往。"
+   }
+  },
+  {
+   "number": 31,
+   "fit": 5,
+   "lines": [],
+   "finding": "ALL THREE PAIRS ANSWER.",
+   "verdict": "keep",
+   "why": "The lesson 'be moved as you move others' is about the whole shape, every line answered by its partner; no single line says it. The lines climb the body (toe, calf, thigh, back, jaw) and mostly warn against restless or shallow influence. Option only: line 6, 'AT THE TOP: ONLY JAW,\\nCHEEKS AND TONGUE.', would carry a different lesson such as 'Talk alone moves no one.' Data note: lines 3 and 6 in the input hold the Image text, not the line statement.",
+   "lineText": "",
+   "loopNote": "",
+   "statements": {}
+  },
+  {
+   "number": 33,
+   "fit": 8,
+   "lines": [
+    1
+   ],
+   "finding": "AT THE BASE: THE TAIL\nOF THE RETREAT. DANGER.",
+   "verdict": "one-line",
+   "why": "Line 1 (遯尾，厲) is the last one out, caught by the danger: the plain warning behind 'go while you still can go freely'. Wang Bi: 'when danger has arrived and only then does one seek to move, it is difficult to avoid peril.' Alternative: line 6 'Bountiful retreat. Nothing that is not beneficial' (leaving early and free). Data note: the input's line 1 holds Wang Bi's note, not the statement 遯尾，厲，勿用有攸往 ('Retreating at the tail. Danger. Do not set out.').",
+   "lineText": "Retreating at the tail. Danger. Do not set out.",
+   "loopNote": "",
+   "statements": {
+    "1": "注云：遯之為義，辟內而之外者也。尾之為物，最在體後者也。處遯之時，不往何災，而為遯尾，禍所及也。危至而後求行，難可免乎厲，則勿用有攸往也。"
+   }
+  },
+  {
+   "number": 34,
+   "fit": 8,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: THE RAM BUTTS\nTHE FENCE. HORNS CAUGHT.",
+   "verdict": "one-line",
+   "why": "Line 3 sets 'the petty person uses vigor; the noble person does not' beside the ram that butts a fence and gets its horns stuck: strength used wrongly traps itself, the reverse side of 'be strong only in what is right'. Line 4 (the fence breaks open) could follow, but one line is enough.",
+   "lineText": "The petty person uses vigor; the noble person uses restraint. Correctness brings danger. A ram butts against a fence and entangles its horns.",
+   "loopNote": "",
+   "statements": {
+    "3": "九三，小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。"
+   }
+  },
+  {
+   "number": 35,
+   "fit": 7,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: ADVANCING\nWITH THE HORNS.",
+   "verdict": "one-line",
+   "why": "Line 6 (晉其角) is advance by force, horns first, even attacking a town; Wang Bi: 'already at the horn yet still pressing forward, how is this not excessive?' It carries the 'don't push' half clearly; the 'shine' half is left to the lesson line. Alternative: line 4, 'advancing like a hamster' (grasping advance).",
+   "lineText": "Advancing to the horn. One resorts to attacking the city. Danger, then good fortune, and no blame. Yet correctness brings regret.",
+   "loopNote": "",
+   "statements": {
+    "6": "上九，晉其角，維用伐邑。厲吉无咎，貞吝。"
+   }
+  },
+  {
+   "number": 37,
+   "fit": 6,
+   "lines": [],
+   "finding": "2 AND 5 ANSWER, BOTH IN PLACE.",
+   "verdict": "keep",
+   "why": "'Home in order, the rest follows' is about everyone in their place, which the whole-shape finding shows; no one line says it. Line 1 ('setting barriers for the household') is literally rules, which contradicts the meaning card 'skip the rules'. Option only: line 6, 'AT THE TOP: SINCERE\\nAND DIGNIFIED.' ('there is sincerity and a dignified bearing, in the end good fortune'), fits the meaning card 'Say real things' and a lesson like 'Be sincere, not strict.' The current finding uses the ANSWER jargon.",
+   "lineText": "",
+   "loopNote": "Meaning 'skip the rules' sits awkwardly with the hexagram's line 1 and line 3, which favour strictness; the hook-to-lesson loop itself holds.",
+   "statements": {}
+  },
+  {
+   "number": 38,
+   "fit": 7,
+   "lines": [
+    2
+   ],
+   "finding": "LINE 2: MEETS HIS LORD\nIN A SIDE STREET.",
+   "verdict": "one-line",
+   "why": "Line 2 (遇主于巷): both partners are out of place, yet they still find each other by a back way; Wang Bi: 'both seek their kindred... meet'. That is 'apart, but still answering' and fits 'start small'. Option: line 6 (draws the bow, then lays it down: 'not a bandit but a marriage partner') is the stronger image but carries a different lesson, that the one you oppose may be a partner.",
+   "lineText": "One meets the master in an alleyway. No blame.",
+   "loopNote": "",
+   "statements": {
+    "2": "九二，遇主于巷，无咎。"
+   }
+  },
+  {
+   "number": 39,
+   "fit": 8,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: BADLY BLOCKED.\nFRIENDS COME.",
+   "verdict": "lesson-mismatch",
+   "why": "Line 5 (大蹇，朋來) says the hook, meaning card and question ('ask for help', 'who could you ask?') directly, but not the current lesson. For 'look at yourself' the best line is line 1 ('going forth meets obstruction; turning back brings praise'), fit 5 at most; the lesson comes from the hexagram image (反身修德), not a line. Option: lesson 'Blocked? Ask for help.' Data note: the input's line 6 holds the Image text.",
+   "lineText": "Great obstruction; companions come.",
+   "loopNote": "The loop breaks at the lesson: hook, meaning and question are about asking for help, then the lesson turns to self-examination. Line 5 with a lesson like 'Blocked? Ask for help.' closes the loop.",
+   "statements": {
+    "5": "九五，大蹇，朋來。"
+   }
+  },
+  {
+   "number": 40,
+   "fit": 7,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: THE NOBLE ONE\nUNTIES THE KNOT.",
+   "verdict": "lesson-mismatch",
+   "why": "No line says 'don't linger'; that comes from the Judgment (有攸往，夙吉, 'if there is somewhere to go, early is good'). Line 5 (君子維有解... 有孚于小人) is the noble person releasing, with trust shown even to petty people, which fits the meaning card 'let the grudges go' and the question 'what can you forgive?'. Option: lesson 'Out of danger? Let the grudges go.' Fit against the current lesson: 4. Alternative image: line 4, 'release your big toe; then allies come'.",
+   "lineText": "The noble person herein achieves release—good fortune. There is trust shown toward the petty person.",
+   "loopNote": "Hook to lesson ('pressure's off?' to 'don't linger') holds, but meaning and question (forgive, grudges) point elsewhere; line 5 would tie the finding to them.",
+   "statements": {
+    "5": "六五，君子維有解，吉。有孚于小人。"
+   }
+  },
+  {
+   "number": 41,
+   "fit": 7,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: CUT WHAT AILS YOU.\nSOON THERE IS JOY.",
+   "verdict": "lesson-mismatch",
+   "why": "The lesson 'two small baskets are enough' is from the Judgment (二簋可用享); no line carries it. Line 4 (損其疾，使遄有喜) fits the meaning card 'cut the anger, cut the wants' and the question 'what can you let go of?'. Option: lesson 'Cut what hurts you. Do it soon.' Line 3 ('three travel, one is lost; one alone finds a friend') is the other candidate but harder for a newcomer.",
+   "lineText": "Decrease one's affliction. Act swiftly and there will be joy. No blame.",
+   "loopNote": "",
+   "statements": {
+    "4": "六四，損其疾，使遄有喜，无咎。"
+   }
+  },
+  {
+   "number": 45,
+   "fit": 6,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: IN PLACE, NOT TRUSTED.\nSTAY CORRECT; REGRET GOES.",
+   "verdict": "one-line",
+   "why": "Line 5 holds the top place but 'there is a lack of trust'; only 'perpetual Correctness' makes regret vanish, so rank alone does not gather people, what is right does. The link holds but needs the viewer to follow two clauses, so it is weaker than 22.",
+   "lineText": "Nine in the Fifth: Gathering while possessing the position—no blame. There is a lack of trust. With a Sublime Beginning, perpetual Correctness, regret vanishes.",
+   "loopNote": "The hook (family, bracing for arguments) is better met by line 1: 'disorder, then gathering. If one calls out, a single handful becomes laughter. Do not worry.' Option only: AT THE BASE: DISORDER, THEN\\nGATHERING. A CRY TURNS TO LAUGHTER.",
+   "statements": {
+    "5": "九五，萃有位，无咎，匪孚。元永貞，悔亡。"
+   }
+  },
+  {
+   "number": 46,
+   "fit": 4,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: STEADY AND CORRECT,\nIT CLIMBS THE STAIRS.",
+   "verdict": "lesson-mismatch",
+   "why": "No line says 'go see someone above you' (that comes from the Judgment, 用見大人). Line 5, 'ascending the stairs', carries the hook and meaning (growing slowly, small steps piled up) almost literally, fit 8 for a lesson like 'Climb one stair at a time.'",
+   "lineText": "Six in the Fifth. Correctness brings good fortune—ascending the stairs.",
+   "loopNote": "Loop confirmed broken: small steps -> seeing someone senior. Line 5 (stairs) would close it with a lesson such as 'Climb one stair at a time.' Line 6 ('ascending in darkness... ceaseless effort') is a second option for 'growing slower than you want'.",
+   "statements": {
+    "5": "六五，貞吉，升階。"
+   }
+  },
+  {
+   "number": 49,
+   "fit": 2,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: TALK THE CHANGE OVER\nTHREE TIMES; THEN TRUST.",
+   "verdict": "lesson-mismatch",
+   "why": "The calendar comes only from the Image (治曆明時); no line mentions it. Line 3 answers the hook directly: rushing brings misfortune, and 'when the call for revolution is thrice affirmed, there is trust' (fit 8 for a lesson like 'Talk a change over until it is trusted').",
+   "lineText": "Nine in the Third: Advancing brings misfortune. Correctness brings danger. When the call for revolution is thrice affirmed, there is trust.",
+   "loopNote": "Loop confirmed broken (trust in change -> calendar). Line 3 fixes it: hook 'a big change nobody believes in', line 'thrice affirmed, there is trust'. Line 5's tiger is trusted 'without divination', which our copy cannot say. Line 6 (leopard vs the petty person who 'changes only the face') is another option: real change vs surface change.",
+   "statements": {
+    "3": "九三，征凶，貞厲。革言三就，有孚。"
+   }
+  },
+  {
+   "number": 52,
+   "fit": 7,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: STILL, STEADY,\nTO THE END.",
+   "verdict": "one-line",
+   "why": "Line 6, 'magnanimous (solid) keeping still—auspicious', is stillness held well at the end of the hexagram; its Image note says it 'ends with generosity'. It says 'stop, and stop well' plainly, better than the current structural 'NO PAIR ANSWERS', which a newcomer cannot follow.",
+   "lineText": "Top Nine: Magnanimous keeping still—auspicious.",
+   "loopNote": "The body sequence (toes, calves, waist, trunk, jaws) is the hexagram's memorable picture; line 5 'keeping still at the jaws, words are well-ordered' is an option if the short leans to overthinking and speech.",
+   "statements": {
+    "6": "上九，敦艮，吉。"
+   }
+  },
+  {
+   "number": 53,
+   "fit": 6,
+   "lines": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+   "verdict": "keep",
+   "why": "The lesson is the whole climb: the goose goes shore, rock, dry land, tree, hill, heights, one place at a time, and the four lines in place show that. Line 2 (the goose reaches the rock, 'eating and drinking in contentment') is the best single line but only says one step is earned, not each.",
+   "lineText": "Six in the Second. The wild goose gradually advances to the large rock. Eating and drinking in contentment. Auspicious.",
+   "loopNote": "Data issue: lineTexts 3 and 4 in the input hold Image commentary, not the line statements (should be 鴻漸于陸，夫征不復，婦孕不育… and 鴻漸于木，或得其桷，无咎).",
+   "statements": {
+    "2": "六二，鴻漸于磐，飲食衎衎，吉。",
+    "3": null,
+    "4": null,
+    "5": "九五，鴻漸于陵。婦三歲不孕，終莫之勝，吉。"
+   }
+  },
+  {
+   "number": 54,
+   "fit": 8,
+   "lines": [
+    4
+   ],
+   "finding": "LINE 4: OUT OF PLACE, SHE WAITS.\nHER TIME WILL COME.",
+   "verdict": "one-line",
+   "why": "Line 4 is a strong line in a weak place, and its statement is 'the Marrying Maiden delays the date. The late marriage will come in its own time': wrong place, don't push, both halves of the lesson in one line.",
+   "lineText": "Nine in the Fourth. The Marrying Maiden delays the date. The late marriage will come in its own time.",
+   "loopNote": "Data issue: lineTexts 2 holds Image commentary; the line is 眇能視，利幽人之貞 ('The one-eyed can see. Benefit in the constancy of a secluded person').",
+   "statements": {
+    "4": "九四，歸妹愆期，遲歸有時。"
+   }
+  },
+  {
+   "number": 55,
+   "fit": 7,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: A GREAT HOUSE,\nSCREENED. NO ONE INSIDE.",
+   "verdict": "one-line",
+   "why": "Line 6 enlarges his house, screens his household, and 'peering through his door—silent, with no one there'; abundance shut away in the dark is the plain opposite of lighting each corner. It teaches by counterexample, so the lesson sentence must follow right after.",
+   "lineText": "Top Six. He makes abundant his roof, screens his household. Peering through his door—silent, with no one there. For three years he is not seen—misfortune.",
+   "loopNote": "Option: lines 2/4 'at midday he sees the Dipper' (a screen so thick it is dark at noon) also fit 'at your fullest'.",
+   "statements": {
+    "6": "上六，豐其屋，蔀其家，闚其戶，闃其无人。三歲不覿，凶。"
+   }
+  },
+  {
+   "number": 57,
+   "fit": 7,
+   "lines": [
+    6
+   ],
+   "finding": "AT THE TOP: BENT UNDER THE BED,\nHE LOSES HIS AXE.",
+   "verdict": "one-line",
+   "why": "Line 6, 'compliant beneath the bed. Loses the resources and the axe', shows bending too far: Wang Bi says the axe is 'that by which one cuts decisively'. It carries 'bend only to what is right' by counterexample.",
+   "lineText": "Top Nine: Compliant beneath the bed. Loses the resources and the axe. Correctness brings misfortune.",
+   "loopNote": "Loop confirmed weak (repeat a message -> choosing what to bend to). Line 5 'no beginning, but there is an end' fits the hook 'said it once, nothing changed' and would close the loop with a lesson like 'No good start? Keep on to the end.' (Its 'three days before geng' needs explaining; leave it out.)",
+   "statements": {
+    "6": "上九，巽在牀下，喪其資斧，貞凶。"
+   }
+  },
+  {
+   "number": 59,
+   "fit": 7,
+   "lines": [
+    5
+   ],
+   "finding": "LINE 5: THE KING CALLS OUT,\nAND STAYS WHERE HE IS.",
+   "verdict": "one-line",
+   "why": "Line 5, 'one sweats forth the great proclamation... the king dwells here', is one figure who calls the scattered people and holds his place so they have somewhere to return. That is 'bring them back to the centre' without the word centre.",
+   "lineText": "Nine in the Fifth. In Dispersion, one sweats forth the great proclamation. In Dispersion, the king dwells here—no blame.",
+   "loopNote": "Option: line 4 'dispersing the group (the faction)... there are hills', breaking up cliques so a larger whole gathers, suits 'people drifting apart' too.",
+   "statements": {
+    "5": "九五，渙汗其大號，渙，王居无咎。"
+   }
+  },
+  {
+   "number": 60,
+   "fit": 8,
+   "lines": [
+    3
+   ],
+   "finding": "LINE 3: NO LIMIT SET,\nTHEN SIGHING.",
+   "verdict": "one-line",
+   "why": "Line 3, 'if one does not regulate, then one will lament', is the hook 'saying yes to everything' and its cost; Wang Bi: 'brought about by oneself; there is no one else to blame'. A lake with no limit overflows.",
+   "lineText": "Six in the Third. If one does not regulate, then one will lament. No blame.",
+   "loopNote": "Option: lines 5 and 6 ('sweet regulation' vs 'bitter regulation') carry the meaning card 'Firm, but not bitter' as one point: LINE 5: SWEET LIMITS.\\nAT THE TOP: BITTER LIMITS.",
+   "statements": {
+    "3": "六三，不節若，則嗟若，无咎。"
+   }
+  },
+  {
+   "number": 64,
+   "fit": 8,
+   "lines": [
+    1
+   ],
+   "finding": "AT THE BASE: THE FOX\nWETS ITS TAIL.",
+   "verdict": "one-line",
+   "why": "Line 1, 'wets its tail. Regret', is the Judgment's fox image (小狐汔濟，濡其尾) in the line itself, so the lesson 'the fox gets wet' is shown almost literally. The line does not say 'fox'; the Judgment does, so adding 'THE FOX' borrows one word from the Judgment.",
+   "lineText": "Initial Six. Wets its tail. Regret.",
+   "loopNote": "Placement caveat: line 1 is at the start, while the lesson says 'almost across'. Option for 'so close to done': line 3 'not yet across. To advance brings misfortune' (LINE 3: NOT YET ACROSS.\\nPUSHING ON NOW GOES BADLY.). Line 6 'wets its head' comes from drinking, a different point.",
+   "statements": {
+    "1": "初六，濡其尾，吝。"
+   }
+  }
+ ]
+}
