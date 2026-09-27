@@ -1,7 +1,7 @@
 {
  "hexagram": 48,
- "rendered": "2026-09-27T14:58:13.866Z",
- "commit": "c727f0ab4f242072231a5936e6bc12e50fdff934",
+ "rendered": "2026-09-27T15:15:58.144Z",
+ "commit": "b308de7230b1aaebb8909b89bbd76414e0f4ab21",
  "clean": false,
  "seconds": 24.576,
  "shareKbps": 7358,
@@ -27,10 +27,10 @@
   "drop": 12.522,
   "hook": "Who maintains what\neveryone uses?",
   "meaning": [
-   "The Well says:\npeople come and go.",
+   "People come\nand go.",
    "The well\nremains."
   ],
-  "question": "What do you help\nkeep in working order?",
+  "question": "What do you help\nkeep running?",
   "plates": [
    "assets/yilin/stipple-48-10.webp",
    "assets/yilin/stipple-48-57.webp"
@@ -46,19 +46,20 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-011010-115bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-011010-115bpm-9b.mp4",
-   "mode": "snap"
+   "clip": "assets/3d/endcard-snap-011010-9b-ref.mp4",
+   "mode": "snap",
+   "rate": 0.9583333333333334
   }
  },
  "files": {
   "local/music/pick19-christmas-synthwave.mp3": "bdcd0d1798ff0a49264e794150bd553d8cc46ab62ea72a83c1f2f26ec0fc9981",
   "local/music/certificates/christmas-christmas-synthwave-442829-license.txt": "cc7371177e48ff43f591a404e0238028fa6d6e7afcb524378f195c319304ef23",
   "assets/3d/hexagram-011010-115bpm-8b.mp4": "8bf6d74319b86bce381e3ede5027a475e822e735b14cc0f9c8e00789833a2a37",
-  "assets/3d/endcard-snap-011010-115bpm-9b.mp4": "65689075ddb45440354be2433f54208203a6aa9019ef018bdcfe518e26012b0b",
+  "assets/3d/endcard-snap-011010-9b-ref.mp4": "d7d6bea787a81d33a9dbf4a8d185e650138a99d6ef18d8f600d43cba9df35802",
   "assets/3d/character-48-115bpm-14b-hgct5l.mp4": "8d5d40ffb13427bf11420b678cf8475ea5503f95ff4df4d489c71e47f79499ea",
   "assets/yilin/stipple-48-10.webp": "f432087bf5511242d6465bc6368842373c08773bcc8400411b3bb526aa63959d",
   "assets/yilin/stipple-48-57.webp": "d2bc448a0ccd620988479852921def8ee91b8cf09808b5d2320ab5e82b225b60",
-  "out/series/48-jing/short.mp4": "473905f2aca137ccc35eee250948efb1e1ef73a428734396e082de1323589ec7",
-  "out/series/48-jing/share.mp4": "f0ce968584566b90c793728e4e0de402343e0747c2bc9c611464c37cb61b8670"
+  "out/series/48-jing/short.mp4": "85d725eaa056c07623b5b51b4131ded9c61145c4e8eca5216d77748be2f4ec87",
+  "out/series/48-jing/share.mp4": "01fbe8f3e784661403d6946236c4c2601b2148dfeeb935320f93da19e73623f4"
  }
 }
