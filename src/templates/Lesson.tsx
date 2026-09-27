@@ -300,9 +300,18 @@ export const Lesson: React.FC<LessonProps> = (p) => {
   const t = pages.find((x) => now >= x.from && now < x.from + x.frames);
   const turn = interpolate(now, [0, end], [-0.5, 0.3]);
   const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
+  // The music under the machine sounds, at `mix.music`, up to full at the edges: the first
+  // 3 s, the chapter pages and the end card (as Alien's score gives way to the ship's hum).
+  const base = p.mix?.music ?? (p.look === "flight" ? 0.6 : 1);
+  const up = [[0, 3 * FPS], ...pages.filter((x) => x.page.chapter).map((x) => [x.from, x.from + x.frames]), [end, durationInFrames]];
+  const musicLevel = (fr: number) => {
+    if (base >= 1) return 1;
+    const near = Math.max(...up.map(([a, b]) => (fr >= a && fr < b ? 1 : fr < a ? Math.max(0, 1 - (a - fr) / FPS) : Math.max(0, 1 - (fr - b) / (1.5 * FPS)))));
+    return base + (1 - base) * near;
+  };
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={p.mix?.music ?? (p.look === "flight" ? 0.6 : 1)} />
+      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={musicLevel} />
       {p.look === "flight" && p.sfx && (
         <>
           <Audio src={staticFile(p.sfx.hum)} loop volume={p.mix?.hum ?? 0.55} />
