@@ -1,7 +1,7 @@
 {
  "hexagram": 6,
- "rendered": "2026-09-26T14:47:39.723Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "rendered": "2026-09-27T10:57:22.589Z",
+ "commit": "a75acdf43fca418b4757cc391488859daacb683e",
  "clean": false,
  "seconds": 31.68,
  "shareKbps": 5680,
@@ -65,18 +65,19 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-010111-100.58bpm-12b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-flip-010111-100.58bpm-9b.mp4",
-   "mode": "flip"
+   "clip": "assets/3d/endcard-flip-010111-9b-ref.mp4",
+   "mode": "flip",
+   "rate": 0.8381666666666666
   }
  },
  "files": {
   "local/music/pick12-neon-drive-horizon.mp3": "fabd518629ca7749ea5b88d5c9a668c2d7a161a3507d6071f732d364319f62a5",
   "local/music/certificates/synthwave-synthwave-music-neon-drive-horizon-578508-license.txt": "c95d9ae12c5d5946cca304f9d79cd4d656d15b6963f85fbc6286bbd3ac3fffd0",
   "assets/3d/hexagram-010111-100.58bpm-12b.mp4": "566304f710444484c1db3044cbbe36bdc0e402272c7af3c96dcd2fb97896e677",
-  "assets/3d/endcard-flip-010111-100.58bpm-9b.mp4": "1713b82c41824f6e8ab2b89d389da3cffbf32455462236ff412fdc2efe139561",
+  "assets/3d/endcard-flip-010111-9b-ref.mp4": "c7db1c20f36347cc4918e71ed1fe5cc2e440198709979a01a641f7cba1fc3cae",
   "assets/yilin/stipple-6-41.webp": "df591f0c1f471f6c007bc35f3a92b1c4daa48b0469eda3cd1220cc09e077f4ba",
   "assets/yilin/stipple-6-24.webp": "6727ae190f99ba272f86ec7ee5f380c8e470c91b46db4ffccf14b09c70d77903",
-  "out/series/06-song/short.mp4": "f02b80d8e24a6977a21c068e204a63c364fe61e1cdc35de96b95a2b063f5594d",
-  "out/series/06-song/share.mp4": "277dd84c751236d41458c2a3d45b6f09b12fdc2650ea8ba43e4e0bab14d278e3"
+  "out/series/06-song/short.mp4": "a25e33ea0bc0a68ce9fde7cd5ab41261bb22f5923af82fe21e07d02eef6fadcf",
+  "out/series/06-song/share.mp4": "a6c9078c70379c3bae9487a3598ed1a4fa69038c8510593597e55d26ef111372"
  }
 }

@@ -1,7 +1,7 @@
 {
  "hexagram": 14,
- "rendered": "2026-09-26T14:54:34.921Z",
- "commit": "7a64396a687132043de84bed6a0f3e9207e7d4aa",
+ "rendered": "2026-09-27T10:52:08.989Z",
+ "commit": "a75acdf43fca418b4757cc391488859daacb683e",
  "clean": false,
  "seconds": 29.461333,
  "shareKbps": 6117,
@@ -65,18 +65,19 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-111101-100.05bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-flip-111101-100.05bpm-9b.mp4",
-   "mode": "flip"
+   "clip": "assets/3d/endcard-flip-111101-9b-ref.mp4",
+   "mode": "flip",
+   "rate": 0.83375
   }
  },
  "files": {
   "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
   "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
   "assets/3d/hexagram-111101-100.05bpm-8b.mp4": "a82f651f7fd015ccc304f237a1f7052a452843ee4b4fbfb082824c690a80f4dd",
-  "assets/3d/endcard-flip-111101-100.05bpm-9b.mp4": "fd00da521fc39aac145f775ce9040288000e1f71615564f6c665597c1080ee3f",
+  "assets/3d/endcard-flip-111101-9b-ref.mp4": "4f78c55e87172a22cdfd15cce8e18afb952d47a624413eb433c0e05ed8d0decb",
   "assets/yilin/stipple-14-41.webp": "684f8cd71ae0bcd97d9b2dea31d399ab3ce21a4c6c72db00dff79d9777195403",
   "assets/yilin/stipple-14-36.webp": "2550cdce2580de748693334edf3583a14de67961cebec2a0c5e86bd8c7de8726",
-  "out/series/14-da-you/short.mp4": "78eb476dacaf35cd10ffb6cd218f6fcec52f32247c3b35e2ba2590bc9788e154",
-  "out/series/14-da-you/share.mp4": "7a97e3b8dfba59a3913eafd34bcbffdadbb88affdba689049ce38c8422ec4bc3"
+  "out/series/14-da-you/short.mp4": "791b63b2c7d1494f123c074650580b8b0a1a3ccb7cb0fbbe1aabc21ab9269e30",
+  "out/series/14-da-you/share.mp4": "19afafbcc9410935cce2234e9ab0c28eeb7b4033066d5144589def8b425a006c"
  }
 }

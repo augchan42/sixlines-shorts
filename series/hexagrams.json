@@ -225,7 +225,8 @@
      "finding": "STRONG AT THE BASE, BELOW THE WEAK."
     },
     "readout_source": "image: sorts the threads; judgment: do not venture"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -494,7 +495,8 @@
      }
     },
     "readout_source": "judgment: meeting the great person; Wang Bi L5 judges crooked and straight"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -664,7 +666,8 @@
      }
     }
    },
-   "pace": "held"
+   "pace": "held",
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -1142,7 +1145,8 @@
      "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER."
     },
     "readout_source": "master: series/wangbi.json#14 (Wang Bi on line 5); finding: Tuan Zhuan on 14, 柔得尊位大中而上下應之"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -1300,7 +1304,8 @@
      }
     },
     "readout_source": "Wang Bi L4, L5; image: music"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
@@ -2929,7 +2934,8 @@
      "finding": "THE SOFT RISES TO THE TOP CENTRE."
     },
     "readout_source": "Wang Bi: the soft advances upward; image: brightens own character"
-   }
+   },
+   "endcardRef": true
   },
   "source": {
    "sixlinesContent": "fd827b1c4017f0cfb9e49f2fbd193d71af4ffbb6"
