@@ -1,7 +1,9 @@
 """For scripts/endcards-ref: prints a short's lines and end card mode ("101001 join"), and marks
 its row in series/copy.json with endcardRef so it plays the tempo-independent card.
 
-    python3 scripts/endcard-ref-row.py 22
+    python3 scripts/endcard-ref-row.py 22 [--no-mark]
+
+--no-mark only prints, for rendering the card ahead of the short (scripts/endcards-ref --cards).
 """
 
 import json
@@ -15,6 +17,8 @@ row = next(r for r in json.load(open(os.path.join(root, "series/hexagrams.json")
 MODE = {"kun": "join", "gen": "join", "qian": "flip", "li": "flip", "zhen": "snap", "kan": "snap", "xun": "snap", "dui": "snap"}
 print("".join(map(str, row["lines"])), MODE[row["upper"]])
 
+if "--no-mark" in sys.argv:
+    sys.exit(0)
 path = os.path.join(root, "series/copy.json")
 copy = json.load(open(path))
 if not copy[str(n)].get("endcardRef"):

@@ -7,22 +7,37 @@
 # cases." The first handful: 18 (the slowest track, 82.5 bpm), 43 (120 bpm, rate 1, snap),
 # 2 (all yin, six joins), 1 (all yang, flares only), 30 (flip), 47 (snap at 90 bpm).
 #
+# --cards renders only the Blender cards and leaves copy.json and the shorts alone, so the
+# long part runs ahead of any short re-render (the user accepted the method: "I can't tell
+# anything wrong with these"; the text stays REVEAL THE MOMENT, "we don't need to baby the
+# audience and say I Ching app"). Without numbers it takes every short that has none yet.
+#
 #   scripts/endcards-ref NN [NN ...]
+#   scripts/endcards-ref --cards [NN ...]
 set -euo pipefail
 cd "$(dirname "$0")/.."
-[ $# -gt 0 ] || { echo "usage: scripts/endcards-ref NN [NN ...]" >&2; exit 1; }
+cards=0
+[ "${1:-}" = "--cards" ] && { cards=1; shift; }
+[ $# -gt 0 ] || [ $cards = 1 ] || { echo "usage: scripts/endcards-ref [--cards] NN [NN ...]" >&2; exit 1; }
+nums=("$@")
+[ ${#nums[@]} -eq 0 ] && nums=($(seq 1 64))
 mkdir -p out/endcards
-for n in "$@"; do
+for n in "${nums[@]}"; do
   n=$((10#$n))
-  read -r lines mode < <(python3 scripts/endcard-ref-row.py "$n")
-  # The renderer reads series/hexagrams.json, built from copy.json: without this the first run
-  # of this script rendered seven shorts on their old cards (2026-09-27).
-  npm run series:table >> out/endcards/ref.log 2>&1
+  if [ $cards = 1 ]; then
+    read -r lines mode < <(python3 scripts/endcard-ref-row.py "$n" --no-mark)
+  else
+    read -r lines mode < <(python3 scripts/endcard-ref-row.py "$n")
+    # The renderer reads series/hexagrams.json, built from copy.json: without this the first run
+    # of this script rendered seven shorts on their old cards (2026-09-27).
+    npm run series:table >> out/endcards/ref.log 2>&1
+  fi
   clip="assets/3d/endcard-${mode}-${lines}-9b-ref.mp4"
   if [ -e "public/$clip" ]; then echo "$n: $clip exists"; else
     echo "$n: rendering $clip ($(date +%H:%M))"
     node scripts/endcard.mjs --lines "$lines" --ref --mode "$mode" --beats 9 --clip "$clip" >> out/endcards/ref.log 2>&1
   fi
+  [ $cards = 1 ] && continue
   echo "$n: rendering the short ($(date +%H:%M))"
   npm run series -- "$n" >> out/endcards/ref.log 2>&1
 done
