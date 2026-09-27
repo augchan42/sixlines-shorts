@@ -136,7 +136,7 @@ It has as many beeps as our bed, so beeps as such are not the problem. How they 
 At about 36 s a short burst of stacked tones (700–2,500 Hz) goes by, and from 43 s the computers
 chatter in many short tones at 700 Hz–4 kHz, with the action.
 
-So the landing's beep reads as a instrument counting down, not a chirp: one low pitch, a steady
+So the landing's beep reads as an instrument counting down, not a chirp: one low pitch, a steady
 pulse, buried in the engine, climbing with the tension.
 
 ## Sources
