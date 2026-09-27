@@ -8,6 +8,7 @@ do them all in one shot (if we are going to do it)". Nothing here is decided; ea
 | 1 | Print no IN/OUT on L1 and L6 of the readout | Wang Bi, Zhouyi lüeli 辯位: lines 1 and 6 have no fixed yin or yang place (初上无陰陽定位); the readout otherwise credits him with a rule he rejected | the 35 readouts, and the explainer (its place steps and caption) |
 | 2 | Name the line in the Wang Bi label, "LINE FIVE, MASTER OF ADORNMENT", as 10, 13 and 16 already do | where ◄ marks more than one line, nothing says which one Wang Bi names | 22, 25, 33 (critic, explainer round 2) |
 | 3 | Header "QUERY NN" to something without the sense of asking the book a question | the series reads the book for judgment, not answers (critic, explainer round 3) | the 35 readouts |
+| 4 | 14's WANG BI line reads "RULER OF GREAT POSSESSION"; the others say MASTER | one word for 主 across the screens (critic, lesson round 2) | 14 |
 
 ## Why Wang Bi leaves out lines 1 and 6 (辯位)
 

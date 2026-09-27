@@ -1,0 +1,246 @@
+{
+ "round": 2,
+ "overall": 7,
+ "chapters": [
+  {
+   "page": "",
+   "score": 8,
+   "pages": [
+    {
+     "q": "WHO WAS WANG BI",
+     "score": 8,
+     "reasons": "Takes the round-1 rewrite. The dates are right, 23 is the Western count (He Shao's biography says 年二十四, 'aged 24', in sui), and I CHING is now named once. 'A THINKER' is plain. The sources field has no entry for the dates; add one (He Shao's 王弼傳, in Pei Songzhi's notes to the Sanguozhi).",
+     "rewrite": null
+    },
+    {
+     "q": "WHAT IS A HEXAGRAM",
+     "score": 8,
+     "reasons": "Wang Bi's own view (明卦適變通爻: 夫卦者時也，爻者適時之變者也, 'a hexagram is a time; the lines are the changes that fit the time'). 'SITUATION' is a fair plain word for 時. 'EACH LINE IS A PERSON' fits his line notes, which read 1 and 6 as persons too (22 line 1: 安夫徒步, 'content to go on foot'), so it does not clash with LINES 1 AND 6.",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "LINES",
+   "score": 8,
+   "pages": [
+    {
+     "q": "DEFINE: YANG, YIN",
+     "score": 9,
+     "reasons": "Takes the round-1 rewrite. STRONG, SOFT and YIELDING are the words the viewer will meet in the findings. (Two findings, 3 and 17, also say WEAK; SOFT covers it.)",
+     "rewrite": null
+    },
+    {
+     "q": "SHOW 22",
+     "score": 8,
+     "reasons": "A literal command, and the log's L1–L6 show the bottom-up order. The name is GRACE here and ADORNMENT from the WANG BI ON L5 page on (Wang Bi glosses 賁 as 飾, 'adornment'). A newcomer can make the link because ADORN comes back on the WHY IS L2 MARKED page, so no change is needed.",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "PLACES",
+   "score": 7,
+   "pages": [
+    {
+     "q": "DEFINE: PLACE",
+     "score": 8,
+     "reasons": "Close to 辯位: 夫位者，列貴賤之地，待才用之宅也 ('a place is a rank, high or low, a post that waits for talent'). The answer brings in two more words for a place (RANK, POST), and the next pages then say POST where the screen says PLACE (see the next two pages). Keep POSTS here as a simile and use PLACE everywhere else.",
+     "rewrite": null
+    },
+    {
+     "q": "WHO SUITS EACH POST",
+     "score": 6,
+     "reasons": "'3 AND 5 ARE HIGH, 2 AND 4 ARE LOW' will look wrong to a newcomer, because 3 is below 4 on the screen. Wang Bi's reason for it depends on the trigrams: once 1 and 6 are set aside, 3 and 5 are each the upper line of a trigram and 2 and 4 the lower (去初上而論位分，則三五各在一卦之上…二四各在一卦之下). Trigrams are not taught until the next chapter, so the reason is not available here and the page reads as a contradiction. Odd and even gives the same assignment and matches the code (Readout.tsx: yang in 1, 3, 5, yin in 2, 4, 6). Wang Bi does call 3 and 5 陽位 (yang places) and 2 and 4 陰位 (yin places), so the claim stays his. Odd and even is a way to remember it, not his reason, and the page doesn't say it is. The query should also say PLACE, which is the screen's word.",
+     "rewrite": {
+      "q": "WHO SUITS EACH PLACE",
+      "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
+      "draw": "22, L2–L5"
+     }
+    },
+    {
+     "q": "DEFINE: IN, OUT",
+     "score": 7,
+     "reasons": "The query now matches the answer (round 1's fix), and the drawing (L2 IN and L5 OUT typed last, both yin) is good. But the findings on the real screens say PLACE: 'FIVE LINES IN THEIR PLACE' (37), 'LINES 2 TO 5 ALL IN THEIR PLACE' (53), 'ALL OUT OF PLACE' (54), 'ALL SIX OUT OF PLACE' (64). 'IN ITS POST' teaches a word the viewer will never see. 'OUT OF PLACE' also tells the viewer what OUT stands for.",
+     "rewrite": {
+      "q": "DEFINE: IN, OUT",
+      "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
+      "draw": "22 log, IN/OUT on L2–L5; L2 IN and L5 OUT typed last"
+     }
+    },
+    {
+     "q": "LINES 1 AND 6",
+     "score": 9,
+     "reasons": "Accurate to 辯位: 初上者，體之終始，事之先後也 and 初上无陰陽定位 (both Wang Bi, not Xing Shu). It matches the changed Readout. Wang Bi on 22 line 1: 居於无位 ('it holds no place').",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "CENTRES",
+   "score": 8,
+   "pages": [
+    {
+     "q": "DEFINE: TRIGRAM",
+     "score": 8,
+     "reasons": "Needed and literal. The real screen prints each trigram with a word for what it does (UPPER 山 MOUNTAIN · STILL, LOWER 火 FIRE · CLINGING, from the Shuo Gua). The drawing leaves those words out, and the lesson never explains them. Draw them as on the screen. No page is needed: they are English words and self-explaining.",
+     "rewrite": null
+    },
+    {
+     "q": "DEFINE: CENTRE",
+     "score": 9,
+     "reasons": "Matches the code and Wang Bi (22 Tuan note: 居位得中, 'holds its place and gains the centre', about line 2).",
+     "rewrite": null
+    },
+    {
+     "q": "WHO SITS THERE",
+     "score": 8,
+     "reasons": "Takes the round-1 rewrite. HONOURED SEAT is Wang Bi's 尊位, and it no longer clashes with RULES. One small thing: it says '5:' and '2:', and every later page says L5 and L2, as the log does. 'L5: THE HONOURED SEAT.' / 'L2: THE ONE WHO SERVES IT.' (26 characters) would match. 'SERVES' is his (7 line 2: 承上之寵, 'receives the favour of the one above').",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "ANSWERS",
+   "score": 8,
+   "pages": [
+    {
+     "q": "DEFINE: ANSWER",
+     "score": 8,
+     "reasons": "Takes the round-1 rewrite. 'ONE PURPOSE' renders 應者，同志之象也 ('answering is the sign of a shared aim'), which is Wang Bi's text in 明卦適變通爻. The pairs and the yin/yang condition match `answering` in Readout.tsx.",
+     "rewrite": null
+    },
+    {
+     "q": "IN 22",
+     "score": 9,
+     "reasons": "Correct for 22 (101001): 1+4 answer; 2+5 both yin; 3+6 both yang. Wang Bi: 22 line 4 有應在初; line 2 无應，三亦无應. One-glance page, about 4 s.",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "THE MASTER",
+   "score": 6,
+   "pages": [
+    {
+     "q": "WHICH LINE RULES",
+     "score": 8,
+     "reasons": "Takes the round-1 rewrite. OFTEN covers 明彖's 或有遺爻而舉二體者 (sometimes no line is picked and the two trigrams are cited), and 主 has MASTER beside it.",
+     "rewrite": null
+    },
+    {
+     "q": "HOW TO FIND IT",
+     "score": 5,
+     "reasons": "The words are Wang Bi's (明彖: 夫眾不能治眾，治眾者至寡者也; 一卦五陽而一陰，則一陰為之主矣；五陰而一陽，則一陽為之主矣). Both drawn examples are wrong. (1) 43 is the one hexagram where Wang Bi's own note contradicts the rule shown: his note on 43 line 4 says 五為夬主 ('line 5 is master of 夬'), not the lone yin on top. It is the partner case of 23 剝, where he names line 5 (為剝之主) and not the lone yang. (Xing Shu's list of examples leaves out 夬 and 剝, probably for this reason.) (2) 'Five yin with one yang at 2' is 7's exact shape, drawn with the lone line amber. The YOUR TURN chapter then asks the viewer to find 7's master, and this page has already shown the answer. Use 10 and 16. In both, Wang Bi names the lone line as master, and our readouts print it: 10, 三為履主 ('line three, master of Treading'), the lone yin at 3; 16, 四以剛動，為豫之主 ('line four, master of Enthusiasm'), the lone yang at 4. Neither lone line is in a centre, so the drawing also shows that this rule does not depend on the centres.",
+     "rewrite": {
+      "q": "HOW TO FIND IT",
+      "a": "THE FEW RULE THE MANY.\nONE YIN AMONG FIVE YANG\nRULES. SO DOES ONE YANG\nAMONG FIVE YIN.",
+      "draw": "two small hexagrams, no digits: five yang with one yin at line 3 (10), five yin with one yang at line 4 (16); the lone line amber. Not 43, not 7's shape"
+     }
+    },
+    {
+     "q": "AND IF NONE IS ALONE",
+     "score": 8,
+     "reasons": "Takes the round-1 rewrite. 'LOOK TO THE CENTRES' is Wang Bi (非其中爻，莫之備矣, 'without the centre line nothing is complete'). 'MOST OFTEN IT IS L5' is our own count (16 of the 29 masters that scripts/wangbi.mjs found in his notes), and the page does not credit it to him, so it is honest. The procedure matches 12 of the 13 masters on our screens (6, 10, 13, 14, 16, 20, 22, 25, 26, 59, 60, 64). The exception is 33, where the master is L2, and MOST OFTEN covers it.",
+     "rewrite": null
+    }
+   ]
+  },
+  {
+   "page": "22 GRACE",
+   "score": 7,
+   "pages": [
+    {
+     "q": "WHICH LINE RULES 22",
+     "score": 7,
+     "reasons": "Correct (three and three), but the answer only repeats the rule from the page before, and 'LOOK TO / THE CENTRES' ends on a cliffhanger that the next page settles. The lesson runs long (see cut), and this page and L2 OR L5 fit on one page without losing anything: the count, the two centres, IN against OUT, and the seat as the tie-break.",
+     "rewrite": {
+      "q": "WHICH LINE RULES 22",
+      "a": "NONE ALONE. BOTH CENTRES\nARE YIN. L2 IS IN, L5 OUT.\nL5 RULES: IT HOLDS\nTHE HONOURED SEAT.",
+      "draw": "22 log; L2 and L5 rows lit, then L5 amber with ◄"
+     }
+    },
+    {
+     "q": "L2 OR L5",
+     "score": 7,
+     "reasons": "The content is right, and L2 IN against L5 OUT is the best point in the lesson: being in place is not what makes a master. But it takes four lines and breaks 'BUT L5 HAS THE / HONOURED SEAT' in the middle of the phrase that decides it. Merge it into WHICH LINE RULES 22 (above). If it is kept as its own page, use three lines.",
+     "rewrite": {
+      "q": "L2 OR L5",
+      "a": "BOTH YIN. BOTH CENTRES.\nL2 IS IN. L5 IS OUT.\nL5 HAS THE HONOURED SEAT.",
+      "draw": "L2 and L5 rows, then L5 amber with ◄"
+     }
+    },
+    {
+     "q": "WANG BI ON L5",
+     "score": 9,
+     "reasons": "His full sentence with the reason: 處得尊位，為飾之主 (22 line 5). The translation is right, and it confirms the tie-break just taught.",
+     "rewrite": null
+    },
+    {
+     "q": "WHY IS L2 MARKED",
+     "score": 8,
+     "reasons": "Credited correctly. The words are the Tuan's (柔來而文剛), and Wang Bi's Tuan note places that soft line at 2 (坤之上六來居二位). It is the only page that explains ◄, and it only does so for 22. 'WHY IS L2 MARKED TOO' (20 characters) would tell the viewer that ◄ marks more than the master. The sources field has no entry for this page; add the Tuan phrase and the Wang Bi note.",
+     "rewrite": null
+    },
+    {
+     "q": "LESSON",
+     "score": 7,
+     "reasons": "The newcomer is shown 'PLAIN IS THE BEST ADORNMENT' straight after being told L5 is the master of adornment, and nothing connects the two. The connection is in the same note of Wang Bi's: 用莫過儉 ('in spending, nothing beats thrift'), and that is where the lesson comes from. Give his words as the computer's answer and type the short's lesson in white at the prompt under it. Also move this page to directly after WANG BI ON L5, so that the two pages about L5 are together and WHY IS L2 MARKED leads into SHOW READOUT 22.",
+     "rewrite": {
+      "q": "LESSON",
+      "a": "WANG BI ON L5: 用莫過儉,\nNOTHING BEATS THRIFT.",
+      "draw": "then the lesson typed white at the prompt, as in the short: PLAIN IS THE BEST / ADORNMENT."
+     }
+    },
+    {
+     "q": "SHOW READOUT 22",
+     "score": 7,
+     "reasons": "Three faults. (1) 主 stands alone with no English beside it, which breaks the copy rule even though it was defined earlier. (2) 'READ THE AMBER FINDING' points at something that is not on this screen: when there is a WANG BI line, Readout.tsx draws the finding dim, so on 22 the finding is not amber. The drawing has to show the other case. (3) 'OUR SHORTS' puts a voice into the computer's answer. MU/TH/UR says nothing about itself. The counts are right: 35 readouts, 13 with a WANG BI line.",
+     "rewrite": {
+      "q": "SHOW READOUT 22",
+      "a": "THIS SCREEN IS IN\n35 SIX LINES SHORTS.\nNO MASTER (主) NAMED?\nREAD THE AMBER FINDING.",
+      "draw": "the complete 22 readout, as in the short; on the last two lines the WANG BI line blanks and the finding turns amber, as on the 22 screens that have no WANG BI line"
+     }
+    }
+   ]
+  },
+  {
+   "page": "YOUR TURN",
+   "score": 8,
+   "pages": [
+    {
+     "q": "SHOW 7",
+     "score": 8,
+     "reasons": "A fair test once HOW TO FIND IT stops drawing 7's shape. The few rule gives L2. A viewer who remembers only 'L5, the honoured seat' falls into the trap, and AND L5 then explains why. Specify the drawing as the full log (YANG/YIN, IN/OUT, CENTRE, link) with no ◄ and no amber, as round 1 asked; 'drawn' alone is ambiguous. Hold 4 s.",
+     "rewrite": null
+    },
+    {
+     "q": "REVEAL",
+     "score": 7,
+     "reasons": "Accurate to Wang Bi on 7 line 2 (以剛居中，而應於上…為師之主). Two faults. (1) 'IN A CENTRE' uses IN, which the lesson has just defined as 'in its place'. 7's L2 is yang in an even place, so the log beside it reads OUT · CENTRE, and the answer seems to contradict it. (2) 為師之主 has no attribution, so a newcomer can take it for the I Ching's own text. Every other quote says WANG BI. 'FIRM' repeats YANG, so drop it.",
+     "rewrite": {
+      "q": "REVEAL",
+      "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
+      "draw": "L2 amber with ◄, the 2+5 link"
+     }
+    },
+    {
+     "q": "AND L5",
+     "score": 9,
+     "reasons": "Wang Bi on 7 line 5: 柔得尊位 … 柔非軍帥，陰非剛武，故不躬行，必以授也 ('the soft holds the honoured seat … the soft is no commander, so it does not lead in person; it must hand the army over'). 'IT HANDS L2 THE ARMY' is right: the 長子 ('eldest son') who leads the army is line 2. It closes the trap, and it ends the lesson on the seat and the master being two different things.",
+     "rewrite": null
+    }
+   ]
+  }
+ ],
+ "missing": [
+  "Sources for the claims that have none: the dates (He Shao's 王弼傳); 夫眾不能治眾，治眾者至寡者也 and 一卦五陽而一陰，則一陰為之主矣 (HOW TO FIND IT, 明彖); 非其中爻，莫之備矣 (the centres, 明彖); the Tuan's 柔來而文剛 and Wang Bi's 坤之上六來居二位 (WHY IS L2 MARKED); 用莫過儉 (LESSON, 22 line 5); 以剛居中，而應於上 (REVEAL, 7 line 2); 三為履主 and 四以剛動，為豫之主 (the new HOW TO FIND IT drawing). Label 'most often L5' as our own count (scripts/wangbi.mjs), not his.",
+  "The sources field says 'the centre line first', but the lesson checks for a lone line first. That is fine as a working order, since no page credits the order to Wang Bi. Say in the sources that the order is ours, so that nobody later adds 'WANG BI:' to it.",
+  "The trigram words on the real screen (· STILL, · CLINGING) belong in the DEFINE: TRIGRAM drawing. No new page is needed."
+ ],
+ "cut": [
+  "L2 OR L5, merged into WHICH LINE RULES 22 (rewrite above). That saves one page, about 6 s.",
+  "Timing: 25 pages and 7 chapter pages come to about 3 min at typing speed (25 chars/s) plus a reading hold of about 3.3 words/s, not 2.5. After the merge it is about 2.9 min. The rest should come from holds: 4 s for the one-glance pages as planned, and 2 s rather than longer for the chapter pages. Do not cut more content. Every remaining page is either a part of the screen or a step in the 22 or 7 reasoning. Time it as a timeline before rendering."
+ ],
+ "notes": "Round 2 takes all of round 1's rewrites, and they work. HONOURED SEAT removes the word clash with RULES, 22 now breaks the tie between L2 and L5 with Wang Bi's own reason, and the ◄ and finding pages, the full readout and 7's L5 page are in. Copy rules: every query is 24 characters or fewer, and every answer line is 28 or fewer (three lines are exactly 28). Everything is uppercase apart from the Chinese. None of the banned words appears. The one bare Chinese character is 主 on SHOW READOUT 22 (fixed above). Sources: all five quotes in the field are Wang Bi's own text, not Xing Shu's: 初上无陰陽定位 and 夫位者… (辯位), 夫少者多之所貴也 (明彖), 應者，同志之象也 (明卦適變通爻), and the 22 and 7 line notes. The field is right that 至少者為至多之所主 and the lists of hexagrams are Xing Shu's. Also watch for this: in 明卦適變通爻 a Xing Shu note says 師之六五爲師之主 ('7's line 5 is master of the army'). That contradicts Wang Bi's own line note (為師之主 on line 2). The lesson follows Wang Bi, which is correct, and nobody should 'fix' it from the Lüeli. The worst fault is the HOW TO FIND IT drawing. 43 is a case where Wang Bi names a different master (五為夬主), and the second figure is the answer to the YOUR TURN test. Changing the drawing to 10 and 16 fixes both. The second fault is vocabulary. The screen says PLACE, the script says POST, and 'IN A CENTRE' collides with the IN of IN/OUT. The 22 and 7 examples hold up. 22 shows the tie-break by the seat, and that being IN is not what makes a master. 7 shows the few rule beating the seat, and the seat handing over the army. Tone: the queries read like a person at a terminal, and the answers are flat, as MU/TH/UR's are. Outside this file: 14's WANG BI line in copy.json reads 'RULER OF GREAT POSSESSION' while the 12 others say MASTER. After this lesson, 'MASTER OF GREAT POSSESSION' would match; this is a re-render candidate, not urgent. With the drawing, PLACE, REVEAL and LESSON fixes, the script would be an 8 or better."
+}

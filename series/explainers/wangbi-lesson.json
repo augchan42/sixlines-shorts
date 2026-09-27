@@ -5,7 +5,15 @@
   "master": "Wang Bi, Zhouyi lüeli 明彖: the centre line first, and the few ruling the many (夫少者多之所貴也); sometimes no line rules and the trigrams do. The lists of hexagrams and 至少者為至多之所主 printed with it are Xing Shu's Tang notes, not Wang Bi's.",
   "answering": "Zhouyi lüeli 明卦適變通爻: 應者，同志之象也",
   "22": "Wang Bi on 22 line 5: 處得尊位，為飾之主",
-  "7": "Wang Bi on 7 line 2: 為師之主; on 7 line 5: 柔非軍帥……必以授也"
+  "7": "Wang Bi on 7 line 2: 為師之主; on 7 line 5: 柔非軍帥……必以授也",
+  "dates": "He Shao, 王弼傳 (Biography of Wang Bi)",
+  "few rule the many": "明彖: 夫眾不能治眾，治眾者至寡者也 (the many can't govern the many; the fewest govern them); 一卦五陽而一陰，則一陰為之主矣 (five yang and one yin: the yin is master)",
+  "centres": "明彖: 非其中爻，莫之備矣 (without the centre line, none is complete)",
+  "why L2 is marked": "Tuan 柔來而文剛 (the soft comes to adorn the strong); Wang Bi: 坤之上六來居二位 (Kun's top yin comes to sit in the second place)",
+  "22 lesson": "Wang Bi on 22 line 5: 用莫過儉 (in spending, nothing beats thrift)",
+  "7 reveal": "Wang Bi on 7 line 2: 以剛居中，而應於上 (firm, in the centre, answered from above); 為師之主 (master of the army)",
+  "10 and 16 drawing": "Wang Bi: 三為履主 (line three, master of Treading); 四以剛動，為豫之主 (line four moves with firmness, master of Enthusiasm)",
+  "order": "Checking for a lone line first, then the centres, is our working order, not Wang Bi's; 'most often L5' is our count of the masters in his notes (scripts/wangbi.mjs). Never credit either to him on screen."
  },
  "chapters": [
   {
@@ -47,13 +55,13 @@
      "draw": "22, L2–L5 bracketed"
     },
     {
-     "q": "WHO SUITS EACH POST",
-     "a": "3 AND 5 ARE HIGH: YANG.\n2 AND 4 ARE LOW: YIN.",
+     "q": "WHO SUITS EACH PLACE",
+     "a": "ODD PLACES, 3 AND 5: YANG.\nEVEN PLACES, 2 AND 4: YIN.",
      "draw": "22, L2–L5"
     },
     {
      "q": "DEFINE: IN, OUT",
-     "a": "RIGHT KIND IN ITS POST: IN.\nWRONG KIND: OUT.",
+     "a": "RIGHT KIND IN ITS PLACE: IN.\nWRONG KIND: OUT OF PLACE.",
      "draw": "22 log, IN/OUT on L2–L5; L2 IN and L5 OUT typed last"
     },
     {
@@ -69,7 +77,7 @@
     {
      "q": "DEFINE: TRIGRAM",
      "a": "THREE LINES. EACH HEXAGRAM\nHAS TWO: LOWER, UPPER.",
-     "draw": "22 with the brackets and UPPER 山 MOUNTAIN / LOWER 火 FIRE"
+     "draw": "22 with the brackets and UPPER 山 MOUNTAIN / LOWER 火 FIRE, with what each does (· STILL, · CLINGING)"
     },
     {
      "q": "DEFINE: CENTRE",
@@ -109,7 +117,7 @@
     {
      "q": "HOW TO FIND IT",
      "a": "THE FEW RULE THE MANY.\nONE YIN AMONG FIVE YANG\nRULES. SO DOES ONE YANG\nAMONG FIVE YIN.",
-     "draw": "two small hexagrams, no digits: five yang with one yin on top (43), five yin with one yang at 2 (7); the lone line amber"
+     "draw": "two small hexagrams, no digits: five yang with one yin at line 3 (10), five yin with one yang at line 4 (16); the lone line amber. Not 43, not 7's shape"
     },
     {
      "q": "AND IF NONE IS ALONE",
@@ -123,13 +131,8 @@
    "pages": [
     {
      "q": "WHICH LINE RULES 22",
-     "a": "THREE YIN, THREE YANG.\nNONE ALONE. LOOK TO\nTHE CENTRES.",
-     "draw": "22"
-    },
-    {
-     "q": "L2 OR L5",
-     "a": "BOTH YIN. BOTH CENTRES.\nL2 IS IN. L5 IS OUT,\nBUT L5 HAS THE\nHONOURED SEAT.",
-     "draw": "L2 and L5 rows, then L5 amber with ◄"
+     "a": "NONE ALONE. BOTH CENTRES\nARE YIN. L2 IS IN, L5 OUT.\nL5 RULES: IT HOLDS\nTHE HONOURED SEAT.",
+     "draw": "22 log; L2 and L5 rows lit, then L5 amber with ◄"
     },
     {
      "q": "WANG BI ON L5",
@@ -143,13 +146,13 @@
     },
     {
      "q": "LESSON",
-     "a": "PLAIN IS THE BEST\nADORNMENT.",
-     "draw": "the lesson at the prompt, as in the short"
+     "a": "WANG BI ON L5: 用莫過儉,\nNOTHING BEATS THRIFT.",
+     "draw": "then the lesson typed white at the prompt, as in the short: PLAIN IS THE BEST / ADORNMENT."
     },
     {
      "q": "SHOW READOUT 22",
-     "a": "THIS SCREEN IS IN\n35 OF OUR SHORTS.\nNO 主 NAMED? READ THE\nAMBER FINDING.",
-     "draw": "the complete 22 readout, as in the short"
+     "a": "THIS SCREEN IS IN\n35 SIX LINES SHORTS.\nNO MASTER (主) NAMED?\nREAD THE AMBER FINDING.",
+     "draw": "the complete 22 readout, as in the short; on the last two lines the WANG BI line blanks and the finding turns amber, as on the 22 screens that have no WANG BI line"
     }
    ]
   },
@@ -163,7 +166,7 @@
     },
     {
      "q": "REVEAL",
-     "a": "L2. THE ONE YANG. FIRM,\nIN A CENTRE, ANSWERED BY L5.\n為師之主\nMASTER OF THE ARMY.",
+     "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
      "draw": "L2 amber with ◄, the 2+5 link"
     },
     {
@@ -175,6 +178,6 @@
   }
  ],
  "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
- "round": 2,
+ "round": 3,
  "holds": "one-glance pages (DEFINE: TRIGRAM, DEFINE: CENTRE, IN 22, LINES 1 AND 6) about 4 s; others by reading time"
 }
