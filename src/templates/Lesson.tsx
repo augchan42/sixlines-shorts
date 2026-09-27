@@ -4,6 +4,7 @@ import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
+import { cameraStart } from "../lib/lessonCam";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
@@ -73,6 +74,7 @@ type Timed = { page: Page; from: number; frames: number; qAt: number; aAt: numbe
 export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
   let t = 0;
   let cam = CAM_FAR;
+  let lastHex: number | undefined;
   const pages = p.pages.map((page) => {
     const from = t;
     if (page.chapter) {
@@ -95,8 +97,10 @@ export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
     const hold = page.show?.hold !== undefined ? page.show.hold * FPS : Math.max(2.5, words / 3.7) * FPS + (page.show?.draw ? FPS : 0);
     const frames = Math.max(Math.round(3.5 * FPS), (fulls.length ? at - aAt : at) + Math.round(fulls.length ? FPS : hold));
     t += frames;
+    const hex = page.show?.hex;
+    if (typeof hex === "number") (cam = cameraStart(cam, CAM_FAR, lastHex, hex)), (lastHex = hex);
     const timed = { page, from, frames, qAt, aAt, lineAt, fulls, cam };
-    if (typeof page.show?.hex === "number") cam = camEnd({ approach: page.show.approach ?? 0, descendAt: aAt / FPS, to: page.show.fly, end: frames / FPS, start: cam });
+    if (typeof hex === "number") cam = camEnd({ approach: page.show?.approach ?? 0, descendAt: aAt / FPS, to: page.show?.fly, end: frames / FPS, start: cam });
     return timed;
   });
   return { pages, end: t };
