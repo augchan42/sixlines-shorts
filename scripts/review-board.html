@@ -1,0 +1,411 @@
+<title>Sixty-Four Records Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root {
+  --ground: #eef1ec;
+  --surface: #fafbf8;
+  --sunk: #e4e9e2;
+  --ink: #16201a;
+  --muted: #5a685e;
+  --line: #d2dad1;
+  --accent: #1d7a44;
+  --accent-soft: #d9ecdf;
+  --amber: #a86200;
+  --amber-soft: #f6e6cc;
+  --grey-soft: #e7eae6;
+  --focus: #1d7a44;
+  --display: "Goudy Bookletter 1911", "Goudy Old Style", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ground: #0d1310; --surface: #141c17; --sunk: #1b251f; --ink: #e2eae3; --muted: #93a398;
+    --line: #26342b; --accent: #5fd58c; --accent-soft: #173524; --amber: #f0b04a; --amber-soft: #3a2a10;
+    --grey-soft: #1f2923; --focus: #5fd58c;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #0d1310; --surface: #141c17; --sunk: #1b251f; --ink: #e2eae3; --muted: #93a398;
+  --line: #26342b; --accent: #5fd58c; --accent-soft: #173524; --amber: #f0b04a; --amber-soft: #3a2a10;
+  --grey-soft: #1f2923; --focus: #5fd58c;
+}
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body); padding-inline: 16px; padding-block: 0 64px; }
+.wrap { max-width: 1120px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 42px); line-height: 1.1; }
+h2 { font-size: 28px; line-height: 1.2; }
+h3 { font-size: 21px; line-height: 1.25; }
+p { margin: 0; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.muted { color: var(--muted); }
+.label { font: 500 11px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--ground); border-bottom: 1px solid var(--line); margin-inline: -16px; padding: 12px 16px; }
+header.top .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; }
+.progress { display: flex; align-items: center; gap: 10px; flex: 1 1 220px; min-width: 0; }
+.bar { flex: 1; height: 6px; background: var(--sunk); border-radius: 3px; overflow: hidden; min-width: 60px; }
+.bar i { display: block; height: 100%; background: var(--accent); width: 0; transition: width .3s; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 4px 14px; }
+nav.jump a { color: var(--ink); text-decoration: none; font-size: 14px; border-bottom: 1px solid transparent; }
+nav.jump a:hover { border-bottom-color: var(--accent); }
+.saving { font: 12px var(--mono); color: var(--muted); min-width: 6em; text-align: right; }
+
+.intro { padding-block: 32px 8px; display: grid; gap: 10px; max-width: 68ch; }
+.notice { background: var(--amber-soft); color: var(--ink); border-radius: 6px; padding: 10px 14px; font-size: 14px; }
+
+section { padding-top: 40px; display: grid; gap: 18px; scroll-margin-top: 70px; }
+.section-head { display: grid; gap: 6px; max-width: 68ch; }
+
+/* An item to review: the video on the left, what it is and the verdict on the right. */
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 16px; }
+.item.wide { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
+.item[data-verdict="good"] { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.item[data-verdict="change"] { border-color: color-mix(in srgb, var(--amber) 55%, var(--line)); }
+.player { position: relative; aspect-ratio: 9 / 16; width: 100%; max-width: 100%; background: #000; border-radius: 6px; overflow: hidden; }
+.player video, .player img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.player .none { position: absolute; inset: 0; display: grid; place-items: center; color: #9aa; font: 12px var(--mono); text-align: center; padding: 10px; }
+.body { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.title .num { font: 500 14px var(--mono); color: var(--muted); }
+.title .zh { font-size: 18px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 12px/1 var(--mono); padding: 5px 8px; border-radius: 4px; background: var(--grey-soft); color: var(--ink); white-space: nowrap; }
+.chip.new { background: var(--accent-soft); color: var(--accent); }
+.chip.old { background: var(--amber-soft); color: var(--amber); }
+.copy { display: grid; gap: 4px; font-size: 14px; }
+.copy .row { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 8px; }
+.copy .row span:last-child { white-space: pre-line; }
+ul.notes { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px; }
+
+.verdict { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; width: fit-content; max-width: 100%; flex-wrap: wrap; }
+.verdict button { font: 500 13px var(--body); border: 0; background: var(--surface); color: var(--ink); padding: 7px 12px; cursor: pointer; }
+.verdict button + button { border-left: 1px solid var(--line); }
+.verdict button[aria-pressed="true"][data-v="good"] { background: var(--accent-soft); color: var(--accent); }
+.verdict button[aria-pressed="true"][data-v="change"] { background: var(--amber-soft); color: var(--amber); }
+.verdict button[aria-pressed="true"][data-v="later"] { background: var(--grey-soft); }
+.verdict button:disabled { cursor: not-allowed; opacity: .6; }
+textarea { width: 100%; min-height: 64px; resize: vertical; font: 14px/1.45 var(--body); color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; }
+button:focus-visible, textarea:focus-visible, a:focus-visible, select:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+
+/* Astra's critiques: the short beside the points, each point with its own verdict. */
+.critique { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; grid-template-columns: minmax(0, 200px) minmax(0, 1fr); gap: 16px; }
+.points { display: grid; gap: 12px; }
+.point { display: grid; gap: 6px; padding-top: 12px; border-top: 1px solid var(--line); }
+.point .take { font-size: 14px; }
+.point .take b { font-weight: 600; }
+.point.conflict .take { color: var(--muted); }
+
+.decisions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; }
+.decision { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; align-content: start; }
+
+.filters { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 58px); z-index: 4; background: var(--ground); padding-block: 10px; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; flex-wrap: wrap; }
+.seg button { font: 13px var(--body); border: 0; background: var(--surface); color: var(--ink); padding: 6px 11px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 500px), 1fr)); gap: 14px; }
+.empty { color: var(--muted); padding: 20px 0; }
+details summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+details[open] summary { margin-bottom: 6px; }
+
+@media (max-width: 560px) {
+  .item, .item.wide, .critique { grid-template-columns: minmax(0, 1fr); }
+  .player { max-width: 260px; }
+  .filters { top: calc(env(safe-area-inset-top, 0px) + 92px); }
+}
+@media (prefers-reduced-motion: reduce) { .bar i { transition: none; } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="progress"><span class="mono" id="count">0 of 0 reviewed</span><span class="bar"><i id="fill"></i></span></div>
+    <nav class="jump" aria-label="Sections">
+      <a href="#new">New</a><a href="#astra">Astra</a><a href="#decisions">Decisions</a><a href="#all">All 64</a>
+    </nav>
+    <span class="saving" id="saving" aria-live="polite"></span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="intro">
+    <p class="label">Six Lines · Sixty-Four Records</p>
+    <h1>Review board</h1>
+    <p class="muted">Everything waiting on your eye, in one place. Mark each item and leave a note. Your marks and notes are saved as you go, and Claude reads them back.</p>
+    <p class="notice" id="offline" hidden>Saving isn't available in this view, so marks and notes won't be kept. Open the board from claude.ai to save them.</p>
+  </div>
+
+  <section id="new">
+    <div class="section-head">
+      <p class="label">New since your last look</p>
+      <h2>The Wang Bi lesson and six end cards</h2>
+    </div>
+    <div id="new-lesson"></div>
+    <p class="muted" id="endcards-note"></p>
+    <div class="grid" id="new-endcards"></div>
+  </section>
+
+  <section id="astra">
+    <div class="section-head">
+      <p class="label">Critiques</p>
+      <h2>Astra's notes on three styles</h2>
+      <p class="muted">One short of each lesson style. Each of Astra's points has Claude's take beside it. Mark the ones to act on. Points that go against a rule you set are greyed.</p>
+    </div>
+    <div id="critiques" class="points"></div>
+  </section>
+
+  <section id="decisions">
+    <div class="section-head">
+      <p class="label">Open decisions</p>
+      <h2>Calls that touch many shorts</h2>
+    </div>
+    <div class="decisions" id="decision-list"></div>
+  </section>
+
+  <section id="all">
+    <div class="section-head">
+      <p class="label">The series</p>
+      <h2>All 64 shorts</h2>
+    </div>
+    <div class="filters">
+      <div class="seg" id="f-style" role="group" aria-label="Lesson style"></div>
+      <div class="seg" id="f-state" role="group" aria-label="Review state"></div>
+    </div>
+    <div class="grid" id="shorts"></div>
+    <p class="empty" id="shorts-empty" hidden>No shorts match these filters.</p>
+  </section>
+</main>
+
+<script>
+const DATA = /*BOARD_DATA*/null;
+
+const reviews = {};          // id -> {verdict, comment}
+let db = null;
+let canSave = false;
+const $ = (s, el = document) => el.querySelector(s);
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v === true ? "" : v);
+  }
+  for (const k of kids.flat()) if (k != null) e.append(k);
+  return e;
+};
+
+const VIDEO_VERDICTS = [["good", "Looks good"], ["change", "Needs change"]];
+const POINT_VERDICTS = [["good", "Do it"], ["later", "Not now"], ["change", "Disagree"]];
+const DECISION_VERDICTS = [["good", "Go ahead"], ["later", "Not yet"], ["change", "No"]];
+
+// Every control that shows an item's verdict or comment, so one change updates all its copies
+// (a short appears in the new section and in the grid).
+const views = {};
+const register = (id, v) => (views[id] ||= []).push(v);
+
+function verdictControl(id, options) {
+  const box = el("div", { class: "verdict", role: "group", "aria-label": "Verdict" });
+  const buttons = options.map(([v, label]) => el("button", { type: "button", "data-v": v, "aria-pressed": "false", text: label }));
+  buttons.forEach((b) => b.addEventListener("click", () => {
+    const cur = reviews[id]?.verdict;
+    save(id, { verdict: cur === b.dataset.v ? null : b.dataset.v });
+  }));
+  box.append(...buttons);
+  register(id, { paint: (r) => buttons.forEach((b) => { b.setAttribute("aria-pressed", String(r.verdict === b.dataset.v)); b.disabled = !canSave; }) });
+  return box;
+}
+
+let uid = 0;
+function commentBox(id, placeholder) {
+  const t = el("textarea", { id: `c-${id}-${uid++}`, placeholder, "aria-label": "Comment" });
+  let timer;
+  const flush = () => { clearTimeout(timer); if ((reviews[id]?.comment ?? "") !== t.value) save(id, { comment: t.value }); };
+  t.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(flush, 900); });
+  t.addEventListener("blur", flush);
+  register(id, { paint: (r) => { if (document.activeElement !== t) t.value = r.comment ?? ""; t.disabled = !canSave; } });
+  return t;
+}
+
+function player(videoUrl, posterUrl) {
+  const box = el("div", { class: "player" });
+  if (videoUrl) box.append(el("video", { src: videoUrl, poster: posterUrl, controls: true, preload: "none", playsinline: true }));
+  else box.append(el("div", { class: "none", text: "Video not uploaded yet" }));
+  return box;
+}
+
+function shortCard(s) {
+  const card = el("article", { class: "item", "data-id": s.id });
+  const copy = el("div", { class: "copy" },
+    el("div", { class: "row" }, el("span", { class: "label", text: "Hook" }), el("span", { text: s.hook })),
+    ...s.meaning.map((m, i) => el("div", { class: "row" }, el("span", { class: "label", text: i ? "" : "Meaning" }), el("span", { text: m }))),
+    el("div", { class: "row" }, el("span", { class: "label", text: "Question" }), el("span", { text: s.question })),
+    el("div", { class: "row" }, el("span", { class: "label", text: "Lesson" }), el("span", { text: s.lesson })),
+  );
+  card.append(
+    player(s.videoUrl, s.posterUrl),
+    el("div", { class: "body" },
+      el("div", { class: "title" }, el("span", { class: "num", text: String(s.number).padStart(2, "0") }), el("h3", { text: s.name }), el("span", { class: "zh", text: s.zh }), el("span", { class: "muted", text: s.pinyin })),
+      el("div", { class: "chips" },
+        el("span", { class: "chip", text: s.style }),
+        el("span", { class: "chip mono", text: `${s.bpm} bpm` }),
+        el("span", { class: s.newCard ? "chip new" : "chip old", text: s.newCard ? "New end card" : "Old card, with period" }),
+      ),
+      el("details", {}, el("summary", { text: "On-screen text" }), copy),
+      el("p", { class: "muted mono", style: "font-size:12px", text: `${s.seconds} s · ${s.track} · rendered ${s.rendered} at ${s.commit}` }),
+      verdictControl(s.id, VIDEO_VERDICTS),
+      commentBox(s.id, "Notes on this short"),
+    ),
+  );
+  register(s.id, { paint: (r) => (card.dataset.verdict = r.verdict ?? "") });
+  return card;
+}
+
+function lessonCard(l) {
+  const card = el("article", { class: "item wide", "data-id": l.id });
+  card.append(
+    player(l.videoUrl, l.posterUrl),
+    el("div", { class: "body" },
+      el("div", { class: "title" }, el("h3", { text: l.title }), el("span", { class: "chip", text: l.kind })),
+      el("ul", { class: "notes" }, ...l.notes.map((n) => el("li", { text: n }))),
+      el("p", { class: "muted mono", style: "font-size:12px", text: `rendered at ${l.commit}` }),
+      verdictControl(l.id, VIDEO_VERDICTS),
+      commentBox(l.id, "Notes on the lesson: pacing, sound, camera, copy"),
+    ),
+  );
+  register(l.id, { paint: (r) => (card.dataset.verdict = r.verdict ?? "") });
+  return card;
+}
+
+function critiqueBlock(c, s) {
+  const points = el("div", { class: "points" },
+    el("p", { text: c.summary }),
+    ...c.points.map((p) => el("div", { class: p.conflict ? "point conflict" : "point" },
+      el("p", { text: p.text }),
+      el("p", { class: "take" }, el("b", { text: "Claude: " }), p.take),
+      verdictControl(p.id, POINT_VERDICTS),
+      commentBox(p.id, "Your call, or a note"),
+    )),
+  );
+  return el("article", { class: "critique" },
+    el("div", { class: "body" },
+      player(s.videoUrl, s.posterUrl),
+      el("div", { class: "title" }, el("span", { class: "num", text: String(s.number).padStart(2, "0") }), el("h3", { text: s.name }), el("span", { class: "zh", text: s.zh })),
+      el("div", { class: "chips" }, el("span", { class: "chip", text: s.style })),
+    ),
+    points,
+  );
+}
+
+function decisionCard(d) {
+  return el("article", { class: "decision" },
+    el("h3", { text: d.title }),
+    el("p", { text: d.text }),
+    d.after ? el("p", { class: "muted", text: d.after }) : null,
+    verdictControl(d.id, DECISION_VERDICTS),
+    commentBox(d.id, "Your call, or a note"),
+  );
+}
+
+// Filters for the grid, remembered in this browser only.
+const STYLES = ["All", "Readout", "Scene", "Character"];
+const STATES = [["all", "All"], ["todo", "Not reviewed"], ["change", "Needs change"], ["good", "Looks good"], ["new", "New end card"]];
+let filter = { style: "All", state: "all" };
+try { filter = { ...filter, ...JSON.parse(localStorage.getItem("board-filter") || "{}") }; } catch {}
+const byNumber = Object.fromEntries(DATA.shorts.map((s) => [s.number, s]));
+const gridCards = DATA.shorts.map((s) => [s, shortCard(s)]);
+
+function seg(box, options, key) {
+  const buttons = options.map(([v, label]) => el("button", { type: "button", "aria-pressed": String(filter[key] === v), text: label }));
+  buttons.forEach((b, i) => b.addEventListener("click", () => {
+    filter[key] = options[i][0];
+    buttons.forEach((x, j) => x.setAttribute("aria-pressed", String(i === j)));
+    try { localStorage.setItem("board-filter", JSON.stringify(filter)); } catch {}
+    applyFilter();
+  }));
+  box.append(...buttons);
+}
+
+function applyFilter() {
+  let shown = 0;
+  for (const [s, card] of gridCards) {
+    const v = reviews[s.id]?.verdict;
+    const okStyle = filter.style === "All" || s.style === filter.style;
+    const okState = filter.state === "all" || (filter.state === "todo" && !v) || (filter.state === "new" && s.newCard) || filter.state === v;
+    card.hidden = !(okStyle && okState);
+    if (!card.hidden) shown++;
+  }
+  $("#shorts-empty").hidden = shown > 0;
+}
+
+// Everything that takes a verdict counts toward progress.
+const ALL_IDS = [DATA.lesson.id, ...DATA.critiques.flatMap((c) => c.points.map((p) => p.id)), ...DATA.decisions.map((d) => d.id), ...DATA.shorts.map((s) => s.id)];
+
+function paint(id) {
+  const r = reviews[id] ?? {};
+  for (const v of views[id] ?? []) v.paint(r);
+}
+function paintAll() {
+  for (const id of Object.keys(views)) paint(id);
+  const done = ALL_IDS.filter((id) => reviews[id]?.verdict).length;
+  $("#count").textContent = `${done} of ${ALL_IDS.length} reviewed`;
+  $("#fill").style.width = `${(100 * done) / ALL_IDS.length}%`;
+  applyFilter();
+}
+
+// One write at a time per document; a newer change waits for the one in flight.
+const pending = {}, inFlight = {};
+async function save(id, patch) {
+  if (!canSave) return;
+  reviews[id] = { ...(reviews[id] ?? {}), ...patch };
+  paintAll();
+  pending[id] = reviews[id];
+  if (inFlight[id]) return;
+  inFlight[id] = true;
+  $("#saving").textContent = "Saving…";
+  try {
+    while (pending[id]) {
+      const body = pending[id];
+      delete pending[id];
+      await db.doc(`reviews/${id}`).set({ verdict: body.verdict ?? null, comment: body.comment ?? "", updated: new Date().toISOString() });
+    }
+    $("#saving").textContent = "Saved";
+  } catch (e) {
+    $("#saving").textContent = e?.code === "invalid_argument" ? "Read only" : "Not saved";
+    if (e?.code === "invalid_argument") { canSave = false; paintAll(); }
+  } finally {
+    inFlight[id] = false;
+  }
+}
+
+// Build the page.
+$("#new-lesson").append(lessonCard(DATA.lesson));
+$("#endcards-note").textContent = DATA.endcardsNote;
+for (const n of DATA.endcards) $("#new-endcards").append(shortCard(byNumber[n]));
+for (const c of DATA.critiques) $("#critiques").append(critiqueBlock(c, byNumber[c.short]));
+for (const d of DATA.decisions) $("#decision-list").append(decisionCard(d));
+for (const [, card] of gridCards) $("#shorts").append(card);
+seg($("#f-style"), STYLES.map((s) => [s, s]), "style");
+seg($("#f-state"), STATES, "state");
+paintAll();
+
+(async () => {
+  db = window.claude?.use ? await window.claude.use("db").catch(() => null) : null;
+  if (!db) { $("#offline").hidden = false; return; }
+  canSave = true;
+  paintAll();
+  db.collection("reviews").onSnapshot((snap) => {
+    for (const d of snap.docs) {
+      if (pending[d.id] || inFlight[d.id]) continue;
+      const b = d.data();
+      reviews[d.id] = { verdict: b.verdict ?? null, comment: b.comment ?? "" };
+    }
+    paintAll();
+  }, (e) => {
+    if (e.code === "revoked") { canSave = false; paintAll(); }
+  });
+})();
+</script>
