@@ -1,0 +1,26 @@
+#!/bin/bash
+# Moves shorts onto the tempo-independent end card (docs/research/2026-09-27-recompose.md, plan
+# B): for each short, marks its row in series/copy.json with endcardRef, renders the reference
+# card (scripts/endcard.mjs --ref: 120 bpm at 60 fps, once, any track) if it is not there yet,
+# and renders the short again. Restartable: a card that exists is not rendered twice. The
+# user, 2026-09-27, after 22: "just do a handful to see if this method is okay. Pick some edge
+# cases." The first handful: 18 (the slowest track, 82.5 bpm), 43 (120 bpm, rate 1, snap),
+# 2 (all yin, six joins), 1 (all yang, flares only), 30 (flip), 47 (snap at 90 bpm).
+#
+#   scripts/endcards-ref NN [NN ...]
+set -euo pipefail
+cd "$(dirname "$0")/.."
+[ $# -gt 0 ] || { echo "usage: scripts/endcards-ref NN [NN ...]" >&2; exit 1; }
+mkdir -p out/endcards
+for n in "$@"; do
+  n=$((10#$n))
+  read -r lines mode < <(python3 scripts/endcard-ref-row.py "$n")
+  clip="assets/3d/endcard-${mode}-${lines}-9b-ref.mp4"
+  if [ -e "public/$clip" ]; then echo "$n: $clip exists"; else
+    echo "$n: rendering $clip ($(date +%H:%M))"
+    node scripts/endcard.mjs --lines "$lines" --ref --mode "$mode" --beats 9 --clip "$clip" >> out/endcards/ref.log 2>&1
+  fi
+  echo "$n: rendering the short ($(date +%H:%M))"
+  npm run series -- "$n" >> out/endcards/ref.log 2>&1
+done
+echo "done $(date +%H:%M)"
