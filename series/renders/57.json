@@ -1,10 +1,10 @@
 {
  "hexagram": 57,
- "rendered": "2026-09-27T18:57:49.009Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-27T23:51:50.800Z",
+ "commit": "b3f63d1e7c8c2152a490fe24a67c26bbce661f8b",
  "clean": false,
- "seconds": 28.48,
- "shareKbps": 6332,
+ "seconds": 32.256,
+ "shareKbps": 5576,
  "props": {
   "hexagram": {
    "number": 57,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Bend only to\nwhat is right.",
+   "text": "People change slowly.\nSay it again, gently.",
    "trigrams": [
     {
      "zh": "風",
@@ -51,11 +51,12 @@
    ],
    "readout": {
     "mark": [
-     0,
-     3
+     4
     ],
-    "finding": "EACH SOFT LINE SITS UNDER A STRONG."
-   }
+    "finding": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
+    "timed": true
+   },
+   "beats": 18
   },
   "pace": "even",
   "credit": false,
@@ -73,7 +74,7 @@
   "assets/3d/endcard-snap-011011-9b-ref.mp4": "d6bd546a37e6c79014a42ff2d9dfa8668a07c4aa13f1230e3927415137e2063f",
   "assets/yilin/stipple-57-48.webp": "d725503d82b36cbd3708a29533391f2ef9a6e02348fef1cf7aa57a9d7c766a9b",
   "assets/yilin/stipple-57-64.webp": "f2f25217c450f64648954b4dfae25c48208119440d5d7618565d5c1d750e0745",
-  "out/series/57-xun/short.mp4": "0454fc5dc943b7fbc0f931200b3817bd6e6c8e462ca0d17127342796ff9b763e",
-  "out/series/57-xun/share.mp4": "0c99d81cb25b157e6619cf5f0d36f7fa05f29543c0cb4871ff696852d6f81f4c"
+  "out/series/57-xun/short.mp4": "46919475e10e8957c2c3b1c48ee2310b2906f18c877b5c4f78819ef491660e69",
+  "out/series/57-xun/share.mp4": "2904589d55d82f87c8cadb98124259b72770c1d380ed0d206774957fbcac2a17"
  }
 }
