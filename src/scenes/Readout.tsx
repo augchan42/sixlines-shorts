@@ -1,5 +1,6 @@
 import { AbsoluteFill, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
 import { fonts } from "../lib/fonts";
+import { Hud } from "./Hud";
 
 // A lesson as a ship's computer readout, after the Nostromo's screens in Alien (Brian
 // Wyvill's vector plots, the MU/TH/UR terminal): green phosphor on black, scanlines, a
@@ -192,28 +193,30 @@ export const Readout: React.FC<{
   const answering = [0, 1, 2].filter((i) => lines[i] !== lines[i + 3]);
 
   const turn = interpolate(now, [0, d], [-0.55, 0.35]);
-  const cx = width / 2;
+  // Left of centre, to leave the column of values on the right.
+  const cx = 460;
   const cy = 670;
-  const scale = 100;
+  const scale = 95;
   const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", opacity: flicker }}>
-      {/* The message area's frame and its running counters, as on the Nostromo's orbit display. */}
-      <div style={{ position: "absolute", inset: "150px 50px 200px", border: `3px solid ${DIM}`, boxShadow: `inset 0 0 40px rgba(125,255,138,0.08)` }} />
-      <div style={{ position: "absolute", left: 50, right: 50, top: 150, height: 90, borderBottom: `3px solid ${DIM}` }} />
-      <div style={{ position: "absolute", left: 80, top: 168, opacity: dim("header") }}>
-        <Line text={`SIX LINES // QUERY ${pad(number)}`} frame={frame} at={0} rate={0.8} size={46} />
-      </div>
-      <div style={{ position: "absolute", right: 80, top: 176, fontFamily: fonts.pixel, fontSize: 34, color: DIM, opacity: dim("header") }}>
-        {`SYS ${(76.75 + ((now * 7.31) % 23)).toFixed(2)}`}
-      </div>
-      {/* A column of changing figures down the left edge. */}
-      <div style={{ position: "absolute", left: 76, top: 300, fontFamily: fonts.pixel, fontSize: 26, lineHeight: 1.6, color: DIM, opacity: focus ? 0.22 : 1 }}>
-        {Array.from({ length: 12 }, (_, k) => (
-          <div key={k}>{Math.floor(random(`col-${k}-${Math.floor(now / 3)}`) * 9000 + 1000)}</div>
-        ))}
+      {/* The frame, title and column of values, as on the Nostromo's navigation displays
+          (src/scenes/Hud.tsx). The values fill in as the acts happen. */}
+      <div style={{ opacity: dim("header") }}>
+        <Hud
+          title="SIX LINES"
+          tags={[`QUERY ${pad(number)}`]}
+          now={now}
+          cross={{ left: 90, right: 790, top: 350, bottom: 945 }}
+          fields={[
+            { label: "HEX", value: pad(number) },
+            { label: "PLOTTED", value: `${Math.max(0, Math.min(6, Math.floor((frame - plotFrom) / plotEach)))}/6` },
+            { label: "ANSWER", value: frame < linksAt ? "--" : answering.length ? answering.map((i) => `${i + 1}+${i + 4}`).join("\n") : "NONE" },
+            { label: "MARK", value: mark.length && (focus ? !!marked : frame >= markAt) ? mark.map((i) => `L${i + 1}`).join(" ") : "--", on: mark.length > 0 && (focus ? !!marked : frame >= markAt) },
+          ]}
+        />
       </div>
 
       {/* The plot: the hexagram as a turning wireframe, drawn bottom line first. */}
@@ -250,13 +253,13 @@ export const Readout: React.FC<{
           [3, 0].map((from) => {
             const top = cy - lineZ(from + 2) * scale - LINE_H * scale;
             const bottom = cy - lineZ(from) * scale + LINE_H * scale;
-            const x = cx + (LINE_W / 2) * scale + 70;
+            const x = cx + (LINE_W / 2) * scale + 50;
             return <path key={from} opacity={dim(from ? "bracket:upper" : "bracket:lower")} d={`M${x - 24},${top}H${x}V${bottom}H${x - 24}`} fill="none" stroke={DIM} strokeWidth={3} />;
           })}
       </svg>
 
       {/* The log: one entry per line as it is plotted, top to bottom on screen. */}
-      <div style={{ position: "absolute", left: 80, top: 1070, right: 80 }}>
+      <div style={{ position: "absolute", left: 80, top: 1070, right: 280 }}>
         {[5, 4, 3, 2, 1, 0].map((i) => focus ? (
           <div key={i} style={{ position: "absolute", top: (5 - i) * 44 }}>
             <LogRowView
@@ -295,14 +298,14 @@ export const Readout: React.FC<{
       <div style={{ position: "absolute", left: 170, right: 80, top: 0 }}>
         {frame >= trigramsAt && (
           <>
-            <Line text={`UPPER ${upper.zh} ${upper.name} · ${DOES[upper.name]}`} frame={frame} at={trigramsAt} size={42} style={{ position: "absolute", top: 272, opacity: dim("upper") }} />
+            <Line text={`UPPER ${upper.zh} ${upper.name} · ${DOES[upper.name]}`} frame={frame} at={trigramsAt} size={42} style={{ position: "absolute", top: 300, opacity: dim("upper") }} />
             <Line text={`LOWER ${lower.zh} ${lower.name} · ${DOES[lower.name]}`} frame={frame} at={trigramsAt + 14} size={42} style={{ position: "absolute", top: 985, opacity: dim("lower") }} />
           </>
         )}
       </div>
 
       {/* The finding and the answer at the prompt. */}
-      <div style={{ position: "absolute", left: 80, right: 80, top: 1360 }}>
+      <div style={{ position: "absolute", left: 80, right: 280, top: 1360 }}>
         {master && (
           <>
             <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color="#ffb347" style={{ opacity: dim("master") }} />

@@ -2,6 +2,7 @@ import { AbsoluteFill, Audio, interpolate, random, Sequence, staticFile, useCurr
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D } from "../scenes/EndCard3D";
+import { BLUE, Hud, type Field } from "../scenes/Hud";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
@@ -22,6 +23,8 @@ type Show = {
   lit?: number[];
   amber?: number[];
   links?: [number, number][];
+  // Draw the links in blue: only on the pages that teach answering lines.
+  blue?: boolean;
   brackets?: boolean;
   names?: boolean;
   ranks?: boolean;
@@ -88,16 +91,7 @@ const showAt = (show: Show, sec: number): Show => {
   return s;
 };
 
-const Frame: React.FC<{ now: number }> = ({ now }) => (
-  <>
-    <div style={{ position: "absolute", inset: "150px 50px 200px", border: `3px solid ${DIM}`, boxShadow: "inset 0 0 40px rgba(125,255,138,0.08)" }} />
-    <div style={{ position: "absolute", left: 50, right: 50, top: 150, height: 90, borderBottom: `3px solid ${DIM}` }} />
-    <div style={{ position: "absolute", left: 80, top: 172, fontFamily: fonts.pixel, fontSize: 44, color: PHOSPHOR, textShadow: glow }}>SIX LINES // READY FOR INQUIRY</div>
-    <div style={{ position: "absolute", right: 80, top: 250, fontFamily: fonts.pixel, fontSize: 26, color: DIM }}>{`SYS ${(76.75 + ((now * 7.31) % 23)).toFixed(2)}`}</div>
-  </>
-);
-
-const CX = 540;
+const CX = 450;
 const CY = 850;
 const SCALE = 86;
 
@@ -119,7 +113,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
   if (show.big) {
     const [top, under] = show.big.split("\n");
     return (
-      <div style={{ position: "absolute", top: 640, left: 0, right: 0, textAlign: "center", color: AMBER, textShadow: `0 0 14px ${AMBER}` }}>
+      <div style={{ position: "absolute", top: 640, left: 50, width: 780, textAlign: "center", color: AMBER, textShadow: `0 0 14px ${AMBER}` }}>
         <div style={{ fontFamily: fonts.pixel, fontSize: 300, lineHeight: 1.1 }}>{top}</div>
         <div style={{ fontFamily: fonts.pixel, fontSize: 60 }}>{under}</div>
       </div>
@@ -133,7 +127,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
             const h = hexagrams[n];
             const lone = h.lines.findIndex((l) => h.lines.filter((m) => m === l).length === 1);
             const partner = (lone + 3) % 6;
-            const cx = k ? 780 : 300;
+            const cx = k ? 640 : 270;
             const x = cx - (LINE_W / 2) * 50 - 26;
             const [ya, yb] = [CY - lineZ(Math.min(lone, partner)) * 50, CY - lineZ(Math.max(lone, partner)) * 50];
             return (
@@ -145,7 +139,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
           })}
         </svg>
         {show.small.map((n, k) => (
-          <div key={n} style={{ position: "absolute", top: 1030, left: k ? 560 : 80, width: 440, textAlign: "center", fontFamily: fonts.pixel, fontSize: 36, color: PHOSPHOR, textShadow: glow }}>
+          <div key={n} style={{ position: "absolute", top: 1030, left: k ? 420 : 50, width: 440, textAlign: "center", fontFamily: fonts.pixel, fontSize: 36, color: PHOSPHOR, textShadow: glow }}>
             {`${n} ${hexagrams[n].name.toUpperCase()}`}
           </div>
         ))}
@@ -160,7 +154,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
           <Plot lines={[0, 1]} turn={turn} cx={CX - 60} cy={CY + 120} scale={SCALE} drawn={drawn / 3} />
         </svg>
         {drawn >= 1 && (
-          <div style={{ position: "absolute", left: 830, top: CY + 120 - lineZ(1) * SCALE - 26, fontFamily: fonts.pixel, fontSize: 40, lineHeight: `${(LINE_H + 0.3) * SCALE}px`, color: PHOSPHOR, textShadow: glow }}>
+          <div style={{ position: "absolute", left: 740, top: CY + 120 - lineZ(1) * SCALE - 26, fontFamily: fonts.pixel, fontSize: 40, lineHeight: `${(LINE_H + 0.3) * SCALE}px`, color: PHOSPHOR, textShadow: glow }}>
             <div>YANG</div>
             <div>YIN</div>
           </div>
@@ -186,7 +180,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
         <Plot lines={lines} turn={turn} cx={CX} cy={CY} scale={SCALE} drawn={show.draw ? drawn : 1} lit={lit} amber={amber} />
         {(show.links ?? []).map(([a, b], k) => {
           const x = CX - (LINE_W / 2) * SCALE - 40 - k * 24;
-          return <path key={k} d={`M${x + 20},${CY - lineZ(a) * SCALE}H${x}V${CY - lineZ(b) * SCALE}H${x + 20}`} fill="none" stroke={PHOSPHOR} strokeWidth={3.4} style={{ filter: `drop-shadow(0 0 6px ${PHOSPHOR})` }} />;
+          return <path key={k} d={`M${x + 20},${CY - lineZ(a) * SCALE}H${x}V${CY - lineZ(b) * SCALE}H${x + 20}`} fill="none" stroke={show.blue ? BLUE : PHOSPHOR} strokeWidth={3.4} style={{ filter: `drop-shadow(0 0 6px ${show.blue ? BLUE : PHOSPHOR})` }} />;
         })}
         {show.brackets && [bracket(3, 5), bracket(0, 2)].map((d, k) => <path key={k} d={d} fill="none" stroke={DIM} strokeWidth={3} />)}
         {show.ranks && <path d={bracket(1, 4)} fill="none" stroke={PHOSPHOR} strokeWidth={3} />}
@@ -221,12 +215,40 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
   );
 };
 
+// The column's values for what the page shows: the hexagram, the line in view, and that
+// line's place and centre. The line is inverted when it is amber (the line to look at).
+const fieldsOf = (t: Timed | undefined, now: number, hexagrams: Record<string, Hex>): Field[] => {
+  const blank = [
+    { label: "HEX", value: "--" },
+    { label: "LINE", value: "--" },
+    { label: "PLACE", value: "--" },
+    { label: "CENTRE", value: "--" },
+  ];
+  if (!t || t.page.chapter || !t.page.show) return blank;
+  const show = showAt(t.page.show, (now - t.from - t.aAt) / FPS);
+  if (show.small) return [{ label: "HEX", value: show.small.join(" ") }, ...blank.slice(1)];
+  if (typeof show.hex !== "number") return blank;
+  const { lines } = hexagrams[show.hex];
+  const amber = show.amber ?? [];
+  const lit = amber.length ? amber : show.lit ?? [];
+  const sorted = [...lit].sort();
+  const line = !sorted.length ? "--" : sorted.length > 2 ? `L${sorted[0] + 1}-L${sorted[sorted.length - 1] + 1}` : sorted.map((i) => `L${i + 1}`).join(" ");
+  const one = sorted.length === 1 ? sorted[0] : undefined;
+  const log = show.log ?? [];
+  return [
+    { label: "HEX", value: String(show.hex) },
+    { label: "LINE", value: line, on: amber.length > 0 },
+    { label: "PLACE", value: one === undefined || !log.includes("place") ? "--" : place(lines, one).trim() || "NONE" },
+    { label: "CENTRE", value: one === undefined || !log.includes("centre") ? "--" : one === 1 || one === 4 ? "YES" : "NO" },
+  ];
+};
+
 const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: Record<string, Full>; now: number; turn: number }> = ({ t, hexagrams, readouts, now, turn }) => {
   const f = now - t.from;
   const { page } = t;
   if (page.chapter) {
     return (
-      <div style={{ position: "absolute", top: 860, left: 0, right: 0, textAlign: "center", fontFamily: fonts.pixel, fontSize: 96, color: PHOSPHOR, textShadow: glow }}>
+      <div style={{ position: "absolute", top: 860, left: 50, width: 780, textAlign: "center", fontFamily: fonts.pixel, fontSize: 96, color: PHOSPHOR, textShadow: glow }}>
         {page.chapter}
       </div>
     );
@@ -249,7 +271,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
   const textOnly = Object.keys(page.show ?? {}).length === 0;
   return (
     <>
-      <div style={{ position: "absolute", left: 80, right: 80, top: textOnly ? 700 : 290 }}>
+      <div style={{ position: "absolute", left: 80, right: 280, top: textOnly ? 700 : 310 }}>
         {/* The question: full strength with a light glow, its prompt in cyan, the one cyan on the
             screen (the human side of the inquiry; amber is the line to look at). */}
         <div style={{ display: "flex", fontFamily: fonts.pixel, fontSize: textOnly ? 46 : 40 }}>
@@ -263,7 +285,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
       </div>
       <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} />
       {show.lesson && f >= lastLine + 15 && (
-        <div style={{ position: "absolute", left: 80, right: 80, top: 1520 }}>
+        <div style={{ position: "absolute", left: 80, right: 280, top: 1520 }}>
           <Line text={show.lesson} frame={f} at={lastLine + 15} rate={A_RATE} size={60} color="#fff" glowless cursor />
         </div>
       )}
@@ -276,6 +298,10 @@ export const Lesson: React.FC<LessonProps> = (p) => {
   const { durationInFrames } = useVideoConfig();
   const { pages, end } = lessonPlan(p);
   const t = pages.find((x) => now >= x.from && now < x.from + x.frames);
+  const k = t ? pages.indexOf(t) : 0;
+  const chapter = [...pages.slice(0, k + 1)].reverse().find((x) => x.page.chapter)?.page.chapter ?? "WANG BI";
+  const asked = pages.filter((x) => !x.page.chapter);
+  const n = asked.filter((x) => x.from <= now).length;
   const turn = interpolate(now, [0, end], [-0.5, 0.3]);
   const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
   return (
@@ -296,7 +322,13 @@ export const Lesson: React.FC<LessonProps> = (p) => {
       )}
       <Sequence durationInFrames={end}>
         <AbsoluteFill style={{ opacity: flicker }}>
-          <Frame now={now} />
+          <Hud
+            title={chapter}
+            tags={["READY FOR INQUIRY", `PAGE ${String(n).padStart(2, "0")}/${asked.length}`]}
+            fields={fieldsOf(t, now, p.hexagrams)}
+            now={now}
+            cross={{ left: 90, right: 790, top: 620, bottom: 1150 }}
+          />
           {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} />}
           <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0px, rgba(0,0,0,0.28) 2px, transparent 2px, transparent 5px)", pointerEvents: "none" }} />
           <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.75) 100%)", pointerEvents: "none" }} />

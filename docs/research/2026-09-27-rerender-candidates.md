@@ -12,6 +12,7 @@ do them all in one shot (if we are going to do it)". Nothing here is decided; ea
 | 6 | The lesson's question was dim green under a full glow and looked blurry; now full strength with a light glow | the user: "is there a reason why the question is a bit blurry" (MU/TH/UR doesn't dim the question) | the lesson (code done) |
 | 7 | Cyan, very sparingly: only the "> " prompt of the lesson's questions; amber stays the line to look at | the user: "strategic use of amber and cyan VERY sparingly in the ui HUD" | the lesson (code done); none in the readouts unless the user wants it |
 | 4 | 14's WANG BI line reads "RULER OF GREAT POSSESSION"; the others say MASTER | one word for 主 across the screens (critic, lesson round 2) | 14 |
+| 8 | The HUD after the Nostromo navigation screens the user sent: a large title with boxed tags, crosshairs round the plot, a column of boxed values on the right (inverted when a line is marked); the frame stays green, blue only on the lesson pages that teach answering lines | the user: "frame stays green, no need for blue on every screen, only where it is needed to explain a point"; tried on the lesson and 22 only, "just run it on one lesson and one hexagram first before deciding" | the lesson and 22 (rendered 2026-09-27); the other 34 readouts if the user approves |
 
 ## Why Wang Bi leaves out lines 1 and 6 (辯位)
 
