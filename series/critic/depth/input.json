@@ -1,0 +1,4487 @@
+{
+ "checkedAgainst": "chinese-classics-reference@fe21f572a47123532e6360f3b924a08360e6def0:zhouyi-zhushu/text",
+ "shorts": [
+  {
+   "number": 1,
+   "hook": "Waiting for a sign to start?",
+   "meaning": [
+    "The Creative\nsays: begin.",
+    "No conditions.\nJust mean it."
+   ],
+   "question": "What would you\nstart today?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Heaven never\ntakes a day off.",
+    "source": "series/critic/readouts/drafts.json#1"
+   },
+   "classic": {
+    "judgment": [],
+    "tuan": [
+     "《彖》曰：大哉乾元！萬物資始，乃統天。雲行雨施，品物流形，大明終始，六位時成，時乘六龍，以禦天。乾道變化，各正性命。",
+     "保合大和，乃利貞。",
+     "首出庶物，萬國咸寧。"
+    ],
+    "greatImage": [
+     "《象》曰：天行健，君子以自強不息。"
+    ],
+    "smallImages": [
+     "「潛龍勿用」，陽在下也。「見龍在田」，德施普也。「終日乾乾」，反復道也。",
+     "「或躍在淵」，進無咎也。「飛龍在天」，大人造也。「亢龍有悔」，盈不可久也。",
+     "用九，天德不可為首也。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九：潛龍勿用。",
+      "smallImage": null,
+      "wangBi": "《文言》備矣。"
+     },
+     "2": {
+      "statement": "九二：見龍在田，利見大人。",
+      "smallImage": null,
+      "wangBi": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。"
+     },
+     "3": {
+      "statement": "九三：君子終日乾乾，夕惕若厲，無咎。",
+      "smallImage": null,
+      "wangBi": "處下體之極，居上體之下，在不中之位，履重剛之險。上不在天，未可以安其尊也。下不在田，未可以甯其居也。純脩下道，則居上之德廢；純脩上道，則處下之禮曠。故「終日乾乾」，至於夕惕猶若厲也。居上不驕，在下不憂，因時而惕，不失其幾，雖危而勞，可以「無咎」。處下卦之極，愈於上九之亢，故竭知力而後免於咎也。乾三以處下卦之上，故免亢龍之悔。坤三以處下卦之上，故免龍戰之災。"
+     },
+     "4": {
+      "statement": "九四：或躍在淵，無咎。",
+      "smallImage": null,
+      "wangBi": "去下體之極，居上體之下，乾道革之時也。上不在天，下不在田，中不在人，履重剛之險，而無定位所處，斯誠進退無常之時也。近乎尊位，欲進其道，迫乎在下，非躍所及。欲靜其居，居非所安，持疑猶豫未敢決志。用心存公，進不在私，疑以為慮，不謬於果，故「無咎」也。"
+     },
+     "5": {
+      "statement": "九五：飛龍在天，利見大人。",
+      "smallImage": null,
+      "wangBi": "不行不躍而在乎天，非飛而何？故曰「飛龍」也。龍德在天，則大人之路亨也。夫位以德興，德以位敘，以至德而處盛位，萬物之睹，不亦宜乎？"
+     },
+     "6": {
+      "statement": "上九：亢龍有悔。",
+      "smallImage": null,
+      "wangBi": null
+     }
+    }
+   },
+   "readout": {
+    "finding": "SIX STRONG LINES. NO REST.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: TIRELESS ALL DAY,\nSTILL ALERT AT NIGHT.",
+    "why": "Line 3 says the noble person is tireless all day and still alert in the evening, which is 'Heaven never takes a day off' said of a person. The current shape finding is also sound, so 'keep' is a fair fallback if 1 and 2 should stay a pair of whole-shape readouts."
+   }
+  },
+  {
+   "number": 2,
+   "hook": "Tired of always having to lead?",
+   "meaning": [
+    "The Receptive\nsays: follow well.",
+    "Supporting is its\nown strength."
+   ],
+   "question": "Who could\nyou back?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Lead and get lost.\nFollow and arrive.",
+    "source": "series/critic/readouts/drafts.json#2"
+   },
+   "classic": {
+    "judgment": [],
+    "tuan": [
+     "《彖》曰：至哉坤元！萬物資生，乃順承天，坤厚載物，德合无疆。含弘光大，品物咸亨，牝馬地類，行地无疆。",
+     "柔順利貞，君子攸行，先迷失道，後順得常。西南得朋，乃與類行。東北喪朋，乃終有慶。安貞之吉，應地无疆。"
+    ],
+    "greatImage": [
+     "《象》曰：地勢坤。君子以厚德載物。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六：履霜，堅冰至。",
+      "smallImage": "《象》曰：「履霜堅冰，陰始凝也。馴致其道，至堅冰也。」",
+      "wangBi": "始於履霜，至于堅冰，所謂至柔而動也剛。陰之為道，本於卑弱而後積著者也，故取履霜以明其始。陽之為物，非基於始以至於著者也，故以出處明之，則以初為潛。"
+     },
+     "2": {
+      "statement": "六二：直方大，不習无不利。",
+      "smallImage": "《象》曰：「六二之動，直以方也。不習无不利，地道光也。」",
+      "wangBi": "居中得正，極於地質，任其自然而物自生，不假脩營而功自成，故不習焉而无不利。"
+     },
+     "3": {
+      "statement": "六三：含章可貞，或從王事，无成有終。",
+      "smallImage": "《象》曰：「含章可貞，以時發也。或從王事，知光大也。」",
+      "wangBi": "三處下卦之極，而不疑於陽，應斯義者也。不為事始，須唱乃應，待命乃發，含美而可正者也，故曰含章可貞也。有事則從，不敢為首，故曰或從王事也。不為事主，順命而終，故曰无成有終也。"
+     },
+     "4": {
+      "statement": "六四：括囊，无咎无譽。",
+      "smallImage": "《象》曰：「括囊无咎，慎不害也。」",
+      "wangBi": "處陰之卦，以陰居陰，履非中位，无直方之質；不造陽事，无含章之美。括結否閉，賢人乃隱。施慎則可，非泰之道。"
+     },
+     "5": {
+      "statement": "六五：黃裳，元吉。",
+      "smallImage": "《象》曰：「黃裳元吉，文在中也。」",
+      "wangBi": "黃，中之色也。裳，下之飾也。坤為臣道，美盡於下。夫體无剛健而能極物之情，通理者也。以柔順之德，處於盛位，任夫文理者也。垂黃裳以獲元吉，非用武者也。極陰之盛，不至疑陽，以文在中，美之至也。"
+     },
+     "6": {
+      "statement": "上六：龍戰于野，其血玄黃。",
+      "smallImage": "《象》曰：「龍戰于野，其道窮也。」",
+      "wangBi": "陰之為道，卑順不盈，乃全其美。盛而不已，固陽之地，陽所不堪，故戰于野。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "SIX YIELDING LINES. ALL FOLLOW.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: DOES NOT START IT,\nYET SEES IT THROUGH.",
+    "why": "Line 3's 'no initiating, yet there is completion' (serving in the king's affairs) is 'follow and arrive' in one line. Line 6 (dragons fight, blood in the field) is the 'lead and get lost' half, but pairing them makes two points."
+   }
+  },
+  {
+   "number": 3,
+   "hook": "Big start, total chaos?",
+   "meaning": [
+    "Difficulty says:\nget organized.",
+    "Boring beats\nbold here."
+   ],
+   "question": "What needs\nsorting first?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Don't push yet.\nWin helpers first.",
+    "source": "series/critic/readouts/drafts.json#3"
+   },
+   "classic": {
+    "judgment": [
+     "屯，元亨利貞。",
+     "勿用有攸往。",
+     "利建侯。"
+    ],
+    "tuan": [
+     "《彖》曰：屯，剛柔始交而難生，動乎險中，大亨貞。",
+     "雷雨之動滿盈。",
+     "天造草昧，宜建侯而不寧。"
+    ],
+    "greatImage": [
+     "《象》曰：雲雷屯，君子以經綸。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，磐桓，利居貞，利建侯。",
+      "smallImage": "《象》曰：雖磐桓，志行正也。",
+      "wangBi": "處屯之初，動則難生，不可以進，故磐桓也。處此時也，其利安在？不唯居貞建侯乎？夫息亂以靜，守靜以侯，安民在正，弘正在謙。屯難之世，陰求於陽，弱求於強，民思其主之時也。初處其首而又下焉。爻備斯義，宜其得民也。"
+     },
+     "2": {
+      "statement": "六二，屯如邅如，乘馬班如，匪寇婚媾。女子貞不字，十年乃字。",
+      "smallImage": "《象》曰：六二之難，乘剛也。十年乃字，反常也。",
+      "wangBi": "志在乎五，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰乘馬班如也。寇謂初也。无初之難，則與五婚矣，故曰「匪寇婚媾」也。志在於五，不從於初，故曰女子貞不字也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰十年乃字。"
+     },
+     "3": {
+      "statement": "六三，即鹿无虞，惟入于林中。君子幾不如舍，往吝。",
+      "smallImage": "《象》曰：即鹿无虞，以從禽也。君子舍之，往吝窮也。",
+      "wangBi": "三既近五，而无寇難。四雖比五，其志在初，不妨已路，可以進而无屯邅也。見路之易，不揆其志，五應在二，往必不納，何異无虞以從禽乎？雖見其禽而无其虞，徒入于林中，其可獲乎？幾，辭也。夫君子之動，豈取恨辱哉！故不如舍。往吝，窮也。"
+     },
+     "4": {
+      "statement": "六四，乘馬班如，求婚媾，往吉，无不利。",
+      "smallImage": "《象》曰：求而往，明也。",
+      "wangBi": "二雖比初，執貞不從，不害己志者也。求與合好，往必見納矣。故曰「往吉，无不利」。"
+     },
+     "5": {
+      "statement": "九五，屯其膏，小貞吉，大貞凶。",
+      "smallImage": "《象》曰：屯其膏，施未光也。",
+      "wangBi": "處屯難之時，居尊位之上，不能恢弘博施，无物不與，拯濟微滯，亨于群小，而繫應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+     },
+     "6": {
+      "statement": "上六，乘馬班如，泣血漣如。",
+      "smallImage": "《象》曰：泣血漣如，何可長也？",
+      "wangBi": "處險難之極，下无應援，進无所適，雖比於五，五屯其膏，不與相得，居不獲安，行无所適，窮困闉厄，无所委仰，故泣血漣如。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "STRONG AT THE BASE, BELOW THE WEAK.",
+    "mark": [
+     1
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 9,
+    "lines": [
+     1
+    ],
+    "finding": "AT THE BASE: HOLD BACK.\nSET UP HELPERS.",
+    "why": "Line 1 is 'hesitating and lingering ... beneficial to establish lords': don't push, and install helpers. That is the lesson almost word for word, and line 1 is already the marked line."
+   }
+  },
+  {
+   "number": 4,
+   "hook": "Asking again for a better answer?",
+   "meaning": [
+    "Youthful Folly\nsays: ask once.",
+    "Asking twice is\njust shopping."
+   ],
+   "question": "What’s your\nreal question?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Teachers don't\nchase students.",
+    "source": "series/critic/readouts/drafts.json#4"
+   },
+   "classic": {
+    "judgment": [
+     "蒙，亨。匪我求童蒙，童蒙求我。初筮告，再三瀆，瀆則不告。",
+     "利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：蒙，山下有險，險而止，蒙。",
+     "蒙，亨，以亨行，時中也。",
+     "匪我求童蒙，童蒙求我，志應也。",
+     "初筮告，以剛中也。",
+     "再、三瀆，瀆則不告。瀆蒙也，蒙以養正，聖功也。"
+    ],
+    "greatImage": [
+     "《象》曰：山下出泉，蒙。",
+     "君子以果行育德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，發蒙，利用刑人，用說桎梏，以往吝。",
+      "smallImage": "《象》曰：利用刑人，以正法也。",
+      "wangBi": "處蒙之初，二照其上，故蒙發也。蒙發疑明，刑說當也。以往吝，刑不可長也。"
+     },
+     "2": {
+      "statement": "九二，包蒙，吉。納婦吉，子克家。",
+      "smallImage": "《象》曰：子克家，剛柔接也。",
+      "wangBi": "以剛居中，童蒙所歸，包而不距，則遠近咸至，故曰「包蒙吉」也。婦者，配己而成德者也。體陽而能包蒙，以剛而能居中，以此納配，物莫不應，故納婦吉也。處于卦內，以剛接柔，親而得中，能幹其任，施之於子，克家之義。"
+     },
+     "3": {
+      "statement": "六三，勿用取女。見金夫，不有躬，无攸利。",
+      "smallImage": "《象》曰：勿用取女，行不順也。",
+      "wangBi": "童蒙之時，陰求於陽，晦求於明，各求發其昧者也。六三在下卦之上，上九在上卦之上，男女之義也。上不求三而三求上，女先求男者也。女之為體，正行以待命者也。見剛夫而求之，故曰不有躬也。施之於女行在不順，故勿用取女而无攸利。"
+     },
+     "4": {
+      "statement": "六四，困蒙，吝。",
+      "smallImage": "《象》曰：困蒙之吝，獨遠實也。",
+      "wangBi": "獨遠於陽，處兩陰之中，闇莫之發，故曰困蒙也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰吝也。"
+     },
+     "5": {
+      "statement": "六五，童蒙吉。",
+      "smallImage": "《象》曰：童蒙之吉，順以巽也。",
+      "wangBi": "以夫陰質居於尊位，不自任察而委於二，付物以能，不勞聰明，功斯克矣，故曰童蒙吉。"
+     },
+     "6": {
+      "statement": "上九，擊蒙，不利為寇，利禦寇。",
+      "smallImage": "《象》曰：利用禦寇，上下順也。",
+      "wangBi": "處蒙之終，以剛居上，能擊去童蒙，以發其昧者也，故曰擊蒙也。童蒙願發而己能擊去之，合上下之願，故莫不順也。為之扞禦，則物咸附之。若欲取之，則物咸叛矣，故「不利為寇，利禦寇」也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+    "mark": [
+     2,
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 5,
+    "lines": [
+     2,
+     5
+    ],
+    "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+    "why": "'Teachers don't chase students' comes from the Judgment ('I do not seek the young fool; the young fool seeks me'), not from a line. Line 2 ('embracing the fool') and line 5 ('youthful folly, good') each hold only half, and the current finding already joins them plainly."
+   }
+  },
+  {
+   "number": 5,
+   "hook": "Stuck waiting for your moment?",
+   "meaning": [
+    "Waiting says:\nwait well.",
+    "Eat, rest,\nstay ready."
+   ],
+   "question": "How can you\nwait well today?",
+   "lesson": {
+    "kind": "character",
+    "text": "In the rain?\nEat, rest, wait.",
+    "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it."
+   },
+   "classic": {
+    "judgment": [
+     "需，有孚，光亨，貞吉，利涉大川。"
+    ],
+    "tuan": [
+     "《彖》曰：需，須也，險在前也。剛健而不陷，其義不困窮矣。需有孚，光亨貞吉，位乎天位，以正中也。",
+     "利涉大川，往有功也。"
+    ],
+    "greatImage": [
+     "《象》曰：雲上於天，需，君子以飲食宴樂。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，需于郊，利用恒，无咎。",
+      "smallImage": "《象》曰：需於郊，不犯難行也。利用恒无咎，未失常也。",
+      "wangBi": "居需之時，是遠於難*，能抑其進以遠險待時，雖不應幾，可以保常也。"
+     },
+     "2": {
+      "statement": "九二，需于沙，小有言，終吉。",
+      "smallImage": "《象》曰：需于沙，衍在中也。雖小有言，以吉終也。",
+      "wangBi": "轉近於難，故曰「需于沙」也。不至致寇，故曰「小有言」也。近不逼難，遠不後時，履健居中，以待其會，雖小有言，以吉終也。"
+     },
+     "3": {
+      "statement": "九三，需于泥，致寇至。",
+      "smallImage": "《象》曰：需于泥，災在外也。自我致寇，敬慎不敗也。",
+      "wangBi": "以剛逼難，欲進其道，所以招寇而致敵也。猶有須焉，不陷其剛。寇之來也，自我所招，敬慎防備，可以不敗。"
+     },
+     "4": {
+      "statement": "六四，需于血，出自穴。",
+      "smallImage": "《象》曰：需于血，順以聽也。",
+      "wangBi": "凡稱血者，陰陽相傷者也。陰陽相近而不相得，陽欲進而陰塞之，則相害也。穴者，陰之路也，處坎之始，居穴者也。九三剛進，四不能距，見侵則辟，順以聽命者也，故曰「需于血，出自穴」也。"
+     },
+     "5": {
+      "statement": "九五，需于酒食，貞吉。",
+      "smallImage": "《象》曰：酒食貞吉，以中正也。",
+      "wangBi": "需之所須，以待達也。已得天位，暢其中正，无所復須，故酒食而已，獲貞吉也。"
+     },
+     "6": {
+      "statement": "上六，入于穴，有不速之客三人來，敬之，終吉。",
+      "smallImage": "《象》曰：不速之客來，敬之終吉，雖不當位，未大失也。",
+      "wangBi": "六四所以出自穴者，以不與三相得而塞其路，不辟則害，故不得不出自穴而辟之也。至於上六，處卦之終，非塞路者也。與三為應，三來之己，乃為己援，故无畏害之辟，而乃有入穴之固也。三陽所以不敢進者，須難之終也。難終則至，不待召也。己居難終，故自來也。處无位之地，以一陰而為三陽之主，故必敬之而後終吉。"
+     }
+    }
+   }
+  },
+  {
+   "number": 6,
+   "hook": "Fighting over something you’re right about?",
+   "meaning": [
+    "Conflict says:\nstop halfway.",
+    "Pushing to the end\ncosts you."
+   ],
+   "question": "What fight could\nyou leave now?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Take it to\na fair judge.",
+    "source": "series/critic/readouts/drafts.json#6"
+   },
+   "classic": {
+    "judgment": [
+     "訟，有孚，窒惕，中吉。",
+     "終凶。利見大人，不利涉大川。"
+    ],
+    "tuan": [
+     "《彖》曰：訟，上剛下險，險而健，訟。訟有孚窒惕中吉，剛來而得中也。終凶，訟不可成也。利見大人，尚中正也。不利涉大川，入于淵也。"
+    ],
+    "greatImage": [
+     "《象》曰：天與水違行，訟。君子以作事謀始。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，不永所事，小有言，終吉。",
+      "smallImage": "《象》曰：不永所事，訟不可長也。雖小有言，其辯明也。",
+      "wangBi": "處訟之始，訟不可終，故不永所事，然後乃吉。凡陽唱而陰和，陰非先唱者也。四召而應，見犯乃訟。處訟之始，不為訟先，雖不能不訟，而了訟必辯明也。"
+     },
+     "2": {
+      "statement": "九二，不克訟，歸而逋其邑。人三百戶，无眚。",
+      "smallImage": "《象》曰：不克訟，歸逋竄也。自下訟上，患至掇也。",
+      "wangBi": "以剛處訟，不能下物，自下訟上，宜其不克。若能以懼歸竄其邑，乃可以免災。邑過三百，非為竄也。竄而據強，災未免也。"
+     },
+     "3": {
+      "statement": "六三，食舊德，貞厲，終吉。或從王事，无成。",
+      "smallImage": "《象》曰：食舊德，從上吉也。",
+      "wangBi": "體夫柔弱，以順於上，不為九二，自下訟上，不見侵奪，保全其有，故得食其舊德而不失也。居爭訟之時，處兩剛之間，而皆近不相得，故曰貞厲。柔體不爭，繫應在上，眾莫能傾，故曰終吉。上壯爭勝，難可忤也，故或從王事，不敢成也。"
+     },
+     "4": {
+      "statement": "九四，不克訟。",
+      "smallImage": "《象》曰：復即命渝，安貞不失也。",
+      "wangBi": "處上訟下，可以改變者也，故其咎不大。若能反從本理，變前之命，安貞不犯，不失其道，為仁由己，故吉從之。"
+     },
+     "5": {
+      "statement": "九五，訟元吉。",
+      "smallImage": "《象》曰：訟元吉，以中正也。",
+      "wangBi": "處得尊位，為訟之主，用其中正以斷枉直，中則不過，正則不邪，剛无所溺，公无所偏，故訟元吉。"
+     },
+     "6": {
+      "statement": "上九，或錫之鞶帶，終朝三褫之。",
+      "smallImage": "《象》曰：以訟受服，亦不足敬也。",
+      "wangBi": "處訟之極，以剛居上，訟而得勝者也。以訟受錫，榮何可保？故終朝之間，褫帶者三也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "HEAVEN RISES. WATER SINKS. APART.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為訟之主",
+     "en": "Master of Conflict"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 6,
+    "lines": [
+     6
+    ],
+    "finding": "AT THE TOP: A PRIZE BELT,\nTAKEN BACK THREE TIMES.",
+    "why": "Line 5 is only 'Contention: supremely good'; the fair judge comes from the Tuan/Xiang and Wang Bi ('centred correctness judges crooked and straight'), so line 5 for 'Take it to a fair judge' is strained (fit 6). Line 6 (awarded a belt, stripped from him three times before the morning ends) plainly shows the meaning cards' point, 'pushing to the end costs you'. Option only: lesson 'A win by fighting won't stay won.'"
+   }
+  },
+  {
+   "number": 7,
+   "hook": "Leading a team through something hard?",
+   "meaning": [
+    "The Army needs\na grown-up.",
+    "Feed people\nbefore you ask."
+   ],
+   "question": "Who’s counting\non you?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Lead upright,\nthe ranks fall in.",
+    "source": "Tuan on 7: 能以眾正 (able to make the many upright); Image: embraces the people"
+   },
+   "classic": {
+    "judgment": [
+     "師，貞，丈人吉，无咎。"
+    ],
+    "tuan": [
+     "《彖》曰：師，眾也。貞，正也。能以眾正，可以王矣。剛中而應，行險而順，以此毒天下而民從之，吉又何咎矣？"
+    ],
+    "greatImage": [
+     "《象》曰：地中有水，師。君子以容民畜眾。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，師出以律，否臧凶。",
+      "smallImage": "《象》曰：師出以律，失律凶也。",
+      "wangBi": "為師之始，齊師者也。齊眾以律，失律則散。故師出以律，律不可失。失律而臧，何異於否？失令有功，法所不赦。故師出不以律，否臧皆凶。"
+     },
+     "2": {
+      "statement": "九二，在師中，吉，无咎，王三錫命。",
+      "smallImage": "《象》曰：在師中吉，承天寵也。王三錫命，懷萬邦也。",
+      "wangBi": "以剛居中，而應於上，在師而得其中者也。承上之寵，為師之主，任大役重，无功則凶，故吉乃无咎也。行師得吉，莫善懷邦，邦懷眾服，錫莫重焉，故乃得成命。"
+     },
+     "3": {
+      "statement": "六三，師或輿尸，凶。",
+      "smallImage": "《象》曰：師或輿尸，大无功也。",
+      "wangBi": "以陰處陽，以柔乘剛，進則无應，退无所守，以此用師，宜獲輿尸之凶。"
+     },
+     "4": {
+      "statement": "六四，師左次，无咎。",
+      "smallImage": "《象》曰：左次无咎，未失常也。",
+      "wangBi": "得位而无應，无應不可以行，得位則可以處，故左次之而无咎也。行師之法，欲右背高，故左次之。"
+     },
+     "5": {
+      "statement": "六五，田有禽，利執言，无咎。長子帥師，弟子輿尸，貞凶。",
+      "smallImage": "《象》曰：長子帥師，以中行也。弟子輿尸，使不當也。",
+      "wangBi": "處師之時，柔得尊位，陰不先唱，柔不犯物，犯而後應，往必得直，故田有禽也。物先犯己，故可以執言而无咎也。柔非軍帥，陰非剛武，故不躬行，必以授也。授不得主*，則眾不從，故長子帥師可也。弟子之凶，固其宜也。"
+     },
+     "6": {
+      "statement": "上六，大君有命，開國承家，小人勿用。",
+      "smallImage": "《象》曰：大君有命，以正功也。小人勿用，必亂邦也。",
+      "wangBi": "處師之極，師之終也。大君之命，不失功也。開國承家，以寧邦也。小人勿用，非其道也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 8,
+   "hook": "Keep saying you’ll join later?",
+   "meaning": [
+    "Holding Together\nsays: join now.",
+    "Late arrivals\nmiss out."
+   ],
+   "question": "Who’s waiting\nfor your yes?",
+   "lesson": {
+    "kind": "character",
+    "text": "Choose who you\nstand beside",
+    "source": "series/characters.json#8: One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character."
+   },
+   "classic": {
+    "judgment": [
+     "比，吉，原筮，元永貞，无咎。不寧方來，後夫凶。"
+    ],
+    "tuan": [
+     "《彖》曰：比，吉也。比，輔也，下順從也。原筮，元永貞，无咎，以剛中也。",
+     "不寧方來，上下應也。",
+     "後夫凶，其道窮也。"
+    ],
+    "greatImage": [
+     "《象》曰：地上有水，比。先王以建萬國，親諸侯。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，有孚比之，无咎。有孚盈缶，終來，有它吉。",
+      "smallImage": "《象》曰：比之初六，有它吉也。",
+      "wangBi": "處比之始，為比之首者也。夫以不信為比之首，則禍莫大焉，故必「有孚盈缶」，然後乃得免比之咎，故曰「有孚比之，无咎」也。處比之首，應不在一，心无私吝，則莫不比之。著信立誠，盈溢乎質素之器，則物終來无衰竭也。親乎天下，著信盈缶，應者豈一道而來？故必「有他吉」也。"
+     },
+     "2": {
+      "statement": "六二，比之自內，貞吉。",
+      "smallImage": "《象》曰：比之自內，不自失也。",
+      "wangBi": "處比之時，居中得位，而繫應在五，不能來它，故得其自內貞吉而已。"
+     },
+     "3": {
+      "statement": "六三，比之匪人。",
+      "smallImage": "《象》曰：比之匪人，不亦傷乎！",
+      "wangBi": "四自外比，二為五貞，近不相得，遠則无應，所與比者，皆非己親，故曰「比之匪人」。"
+     },
+     "4": {
+      "statement": "六四，外比之，貞吉。",
+      "smallImage": "《象》曰：外比於賢，以從上也。",
+      "wangBi": "外比於五，履得其位，比不失賢，處不失位，故貞吉也。"
+     },
+     "5": {
+      "statement": "九五，顯比。王用三驅，失前禽。邑人不誡，吉。",
+      "smallImage": "《象》曰：顯比之吉，位正中也。舍逆取順，失前禽也。邑人不誡，上使中也。",
+      "wangBi": "為比之主而有應在二，顯比者也。比而顯之，則所親者狹矣。夫无私於物，唯賢是與，則去之與來，皆无失也。夫三驅之禮，禽逆來趣己則舍之，背己而走則射之，愛於來而惡於去也，故其所施，常失前禽也。以顯比而居王位，用三驅之道者也，故曰「王用三驅，失前禽也」。用其中正，征討有常，伐不加邑，動必討叛，邑人无虞，故「不誡」也。雖不得乎大人之吉，是顯比之吉也。此可以為上之使，非為上之道也。"
+     },
+     "6": {
+      "statement": "上六，比之无首，凶。",
+      "smallImage": "《象》曰：比之无首，无所終也。",
+      "wangBi": "无首，後也。處卦之終，是後夫也。親道已成，无所與終，為時所棄，宜其凶也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 9,
+   "hook": "Everything’s ready, nothing happens?",
+   "meaning": [
+    "Small Taming\nsays: not yet.",
+    "Work on yourself\nmeanwhile."
+   ],
+   "question": "What can you\nwork on now?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Small can hold\nbig, for a while.",
+    "source": "series/critic/readouts/drafts.json#9"
+   },
+   "classic": {
+    "judgment": [
+     "小畜，亨。",
+     "密雲不雨，自我西郊。"
+    ],
+    "tuan": [
+     "《彖》曰：小畜，柔得位而上下應之，曰小畜。",
+     "健而巽，剛中而志行，乃亨。密雲不雨，尚往也；自我西郊，施未行也。"
+    ],
+    "greatImage": [
+     "《象》曰：風行天上，小畜。君子以懿文德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，復自道，何其咎？吉。",
+      "smallImage": "《象》曰：復自道，其義吉也。",
+      "wangBi": "處乾之始，以升巽初，四為己應，不距己者也。以陽升陰，復自其道，順而无違，何所犯咎，得義之吉。"
+     },
+     "2": {
+      "statement": "九二，牽復，吉。",
+      "smallImage": "《象》曰：牽復在中，亦不自失也。",
+      "wangBi": "處乾之中，以升巽五，五非畜極，非固己者也。雖不能若陰之不違，可牽以獲復，是以吉也。"
+     },
+     "3": {
+      "statement": "九三，輿說輻。夫妻反目。",
+      "smallImage": "《象》曰：夫妻反目，不能正室也。",
+      "wangBi": "上為畜盛，不可牽征，以斯而進，故必說輻也。己為陽極，上為陰長，畜於陰長，不能自復，方之「夫妻反目」之義也。"
+     },
+     "4": {
+      "statement": "六四，有孚，血去惕出，无咎。",
+      "smallImage": "《象》曰：有孚惕出，上合志也。",
+      "wangBi": "夫言血者，陽犯陰也。四乘於三，近不相得，三務於進，而己隔之，將懼侵克者也。上亦惡三而能制焉，志與上合，共同斯誠，三雖逼己，而不能犯，故得血去懼除，保无咎也。"
+     },
+     "5": {
+      "statement": "九五，有孚攣如，富以其鄰。",
+      "smallImage": "《象》曰：有孚攣如，不獨富也。",
+      "wangBi": "處得尊位，不疑於二，來而不距。二牽己攣，不為專固，有孚攣如之謂也。以陽居陽，處實者也。居盛處實而不專固，富以其鄰者也。"
+     },
+     "6": {
+      "statement": "上九，既雨既處，尚德載，婦貞厲，月幾望，君子征凶。",
+      "smallImage": "《象》曰：既雨既處，德積載也。君子征凶，有所疑也。",
+      "wangBi": "處小畜之極，能畜者也。陽不獲亨，故既雨也。剛不能侵，故既處也。體巽處上，剛不敢犯，尚德者也。為陰之長，能畜剛健，德積載者也。婦制其夫，臣制其君，雖貞近危，故曰婦貞厲也。陰之盈盛莫盛於此，故曰月幾望也。滿而又進，必失其道，陰疑於陽，必見戰伐，雖復君子，以征必凶，故曰君子征凶也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "ONE YIELDING LINE HOLDS FIVE.",
+    "mark": [
+     4
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 5,
+    "lines": [
+     4
+    ],
+    "finding": "ONE YIELDING LINE HOLDS FIVE.",
+    "why": "No line statement says 'small holds big'. Line 4 (sincerity, blood goes, fear leaves) is about getting through the tension, and line 3 (the cart loses its spokes) only shows the big being stopped. The current finding shows the lesson in the shape itself."
+   }
+  },
+  {
+   "number": 10,
+   "hook": "Working for someone with a temper?",
+   "meaning": [
+    "Treading says:\nmind how you step.",
+    "Stay steady and\nit may pass."
+   ],
+   "question": "Who do you tread\ncarefully around?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Near a temper,\nstay steady inside.",
+    "source": "the user, 2026-09-27: 'it's about being unseen as if you aren't there', then 'there's got to be more than that than just staying quiet'; line 2's Small Image 中不自亂 (steady within, not thrown into disorder)"
+   },
+   "classic": {
+    "judgment": [
+     "履虎尾，不咥人，亨。"
+    ],
+    "tuan": [
+     "《彖》曰：履，柔履剛也。說而應乎乾，是以履虎尾，不咥人亨。",
+     "剛中正，履帝位而不疚，光明也。"
+    ],
+    "greatImage": [
+     "《象》曰：上天下澤，履。君子以辯上下、定民志。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，素履，往无咎。",
+      "smallImage": "《象》曰：素履之往，獨行願也。",
+      "wangBi": "處履之初，為履之始，履道惡華，故素乃无咎。處履以素，何往不從？必獨行其願，物无犯也。"
+     },
+     "2": {
+      "statement": "九二，履道坦坦，幽人貞吉。",
+      "smallImage": "《象》曰：幽人貞吉，中不自亂也。",
+      "wangBi": "履道尚謙，不喜處盈，務在致誠，惡夫外飾者也。而二以陽處陰，履於謙也。居內履中，隱顯同也。履道之美，於斯為盛。故「履道坦坦」，无險厄也。在幽而貞，宜其吉。"
+     },
+     "3": {
+      "statement": "六三，眇能視，跛能履。履虎尾，咥人凶。武人為于大君。",
+      "smallImage": "《象》曰：眇能視，不足以有明也。跛能履，不足以與行也。咥人之凶，位不當也。武人為于大君，志剛也。",
+      "wangBi": "居履之時，以陽處陽，猶曰不謙，而況以陰居陽，以柔乘剛者乎？故以此為明，眇目者也；以此為行，跛足者也；以此履危，見咥者也。志在剛健，不脩所履，欲以陵武於人，為于大君，行未能免於凶，而志存于王，頑之甚也。"
+     },
+     "4": {
+      "statement": "九四，履虎尾，愬愬，終吉。",
+      "smallImage": "《象》曰：愬愬終吉，志行也。",
+      "wangBi": "逼近至尊，以陽承陽，處多懼之地，故曰「履虎尾，愬愬」也。然以陽居陰，以謙為本，雖處危懼，終獲其志，故終吉也。"
+     },
+     "5": {
+      "statement": "九五，夬履，貞厲。",
+      "smallImage": "《象》曰：夬履貞厲，位正當也。",
+      "wangBi": "得位處尊，以剛決正，故曰「夬履貞厲」也。履道惡盈而五處尊，是以危。"
+     },
+     "6": {
+      "statement": "上九：視履考祥，其旋元吉。",
+      "smallImage": "《象》曰：元吉在上，大有慶也。",
+      "wangBi": "禍福之祥，生乎所履，處履之極，履道成矣，故可視履而考祥也。居極應說，高而不危，是其旋也。履道大成，故元吉也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINE 2: A LEVEL PATH.\nSTEADY INSIDE, IT GOES WELL.",
+    "mark": [
+     2
+    ],
+    "master": null,
+    "timed": true
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     4
+    ],
+    "finding": "LINE 4: ON THE TIGER'S TAIL,\nCAREFUL. IT ENDS WELL.",
+    "why": "Line 4 treads on the tiger's tail, 'apprehensive and cautious - in the end, good': care beside the strong is what saves you. It says cautious rather than courteous, but a viewer gets it; line 3 (the tiger bites the one who acts big) is the contrast if a second beat is wanted."
+   }
+  },
+  {
+   "number": 11,
+   "hook": "Good times, now what?",
+   "meaning": [
+    "Peace says:\nkeep it moving.",
+    "Peace is contact,\nnot a vacation."
+   ],
+   "question": "Who haven’t you\nreached lately?",
+   "lesson": {
+    "kind": "lines",
+    "text": "High and low talk:\nthat is peace.",
+    "source": "Image on 11: heaven and earth interact"
+   },
+   "classic": {
+    "judgment": [
+     "泰，小往大來，吉亨。"
+    ],
+    "tuan": [
+     "《彖》曰：泰，小往大來，吉亨。則是天地交而萬物通也，上下交而其志同也。內陽而外陰，內健而外順，內君子而外小人。君子道長，小人道消也。"
+    ],
+    "greatImage": [
+     "《象》曰：天地交，泰。后以財成天地之道，輔相天地之宜，以左右民。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，拔茅茹，以其彙，征吉。",
+      "smallImage": "《象》曰：拔茅征吉，志在外也。",
+      "wangBi": "茅之為物，拔其根而相牽引者也。茹，相牽引之貌也。三陽同志，俱志在外，初為類首，己舉則從，若茅茹也。上順而應，不為違距，進皆得志，故以其類征吉。"
+     },
+     "2": {
+      "statement": "九二，包荒，用馮河，不遐遺，朋亡。得尚于中行。",
+      "smallImage": "《象》曰：包荒得尚于中行，以光大也。",
+      "wangBi": "體健居中而用乎泰，能包含荒穢，受納馮河者也。用心弘大，无所遐棄，故曰「不遐遺」也。无私无偏，存乎光大，故曰朋亡也。如此乃可以「得尚于中行」。尚，猶配也。中行，謂五。"
+     },
+     "3": {
+      "statement": "九三，无平不陂，无往不復。艱貞无咎。勿恤其孚，於食有福。",
+      "smallImage": "《象》曰：无往不復，天地際也。",
+      "wangBi": "乾本上也，坤本下也，而得泰者，降與升也。而三處天地之際，將復其所處。復其所處則上守其尊，下守其卑，是故无往而不復也，无平而不陂也。處天地之將閉，平路之將陂，時將大變，世將大革，而居不失其正，動不失其應，艱而能貞，不失其義，故无咎也。信義誠著，故不恤其孚而自明也，故曰「勿恤其孚，于食有福」也。"
+     },
+     "4": {
+      "statement": "六四，翩翩，不富以其鄰，不戒以孚。",
+      "smallImage": "《象》曰：翩翩不富，皆失實也。不戒以孚，中心願也。",
+      "wangBi": "乾樂上復，坤樂下復，四處坤首，不固所居，見命則退，故曰翩翩也。坤爻皆樂下，己退則從，故不待富而用其鄰也。莫不與己同其志願，故不待戒而自孚也。"
+     },
+     "5": {
+      "statement": "六五，帝乙歸妹，以祉元吉。",
+      "smallImage": "《象》曰：以祉元吉，中以行願也。",
+      "wangBi": "婦人謂嫁曰歸。泰者，陰陽交通之時也。女處尊位，履中居順，降身應二，感以相與，用中行願，不失其禮。帝乙歸妹，誠合斯義。履順居中，行願以祉，盡夫陰陽交配之宜，故元吉也。"
+     },
+     "6": {
+      "statement": "上六，城復于隍，勿用師。自邑告命，貞吝。",
+      "smallImage": "《象》曰：城復于隍，其命亂也。",
+      "wangBi": "居泰上極，各反所應，泰道將滅，上下不交，卑不上承，尊不下施，是故城復于隍，卑道崩也。勿用師，不煩攻也。自邑告命，貞吝，否道已成，命不行也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 12,
+   "hook": "Everything stuck and no one’s talking?",
+   "meaning": [
+    "Standstill says:\nhold back.",
+    "Don’t take\nthe bad deal."
+   ],
+   "question": "What will you\nturn down?",
+   "lesson": {
+    "kind": "lines",
+    "text": "High and low part:\nturn down rewards.",
+    "source": "Image on 12: heaven and earth do not interact"
+   },
+   "classic": {
+    "judgment": [
+     "否之匪人，不利君子貞。大往小來。"
+    ],
+    "tuan": [
+     "《彖》曰：否之匪人，不利君子貞，大往小來，則是天地不交，而萬物不通也；上下不交，而天下无邦也。內陰而外陽，內柔而外剛，內小人而外君子，小人道長，君子道消也。"
+    ],
+    "greatImage": [
+     "《象》曰：天地不交，否。君子以儉德辟難，不可榮以祿。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，拔茅茹，以其彙，貞吉亨。",
+      "smallImage": "《象》曰：拔茅貞吉，志在君也。",
+      "wangBi": "居否之初，處順之始，為類之首者也。順非健也，何可以征？居否之時，動則入邪，三陰同道，皆不可進。故茅茹以類，貞而不諂，則吉亨。"
+     },
+     "2": {
+      "statement": "六二，包承，小人吉，大人否，亨。",
+      "smallImage": "《象》曰：大人否亨，不亂群也。",
+      "wangBi": "居否之世，而得其位，用其至順，包承於上，小人路通，內柔外剛，大人否之，其道乃亨。"
+     },
+     "3": {
+      "statement": "六三，包羞。",
+      "smallImage": "《象》曰：包羞，位不當也。",
+      "wangBi": "俱用小道以承其上，而但不當，所以包羞也。"
+     },
+     "4": {
+      "statement": "九四，有命无咎，疇離祉。",
+      "smallImage": "《象》曰：有命无咎，志行也。",
+      "wangBi": "夫處否而不可以有命者，以所應者小人也。有命於小人，則消君子之道者也。今初志在君，處乎窮下，故可以有命无咎而疇麗福也。疇謂初也。"
+     },
+     "5": {
+      "statement": "九五，休否，大人吉。其亡其亡，繫于苞桑。",
+      "smallImage": "《象》曰：大人之吉，位正當也。",
+      "wangBi": "居尊當位，能休否道者也。施否於小人，否之休也。唯大人而後能然，故曰大人吉也。處君子道消之時，己居尊位，何可以安？故心存將危，乃得固也。"
+     },
+     "6": {
+      "statement": "上九，傾否，先否後喜。",
+      "smallImage": "《象》曰：否終則傾，何可長也？",
+      "wangBi": "先傾後通，故後喜也。始以傾為否，後得通乃喜。"
+     }
+    }
+   }
+  },
+  {
+   "number": 13,
+   "hook": "Same five friends for years?",
+   "meaning": [
+    "Fellowship says:\nkeep it open.",
+    "Let new people\nwalk up."
+   ],
+   "question": "Who could you\ninvite in?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Join on principle,\nnot on kinship.",
+    "source": "series/critic/readouts/drafts.json#13"
+   },
+   "classic": {
+    "judgment": [
+     "同人于野，亨，利涉大川，利君子貞。"
+    ],
+    "tuan": [
+     "《彖》曰：同人，柔得位得中而應乎乾，曰同人。",
+     "同人曰：同人于野，亨，利涉大川。乾行也。",
+     "文明以健，中正而應，君子正也。",
+     "唯君子為能通天下之志。"
+    ],
+    "greatImage": [
+     "《象》曰：天與火，同人。",
+     "君子以類族辨物。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，同人于門，无咎。",
+      "smallImage": "《象》曰：出門同人，又誰咎也？",
+      "wangBi": null
+     },
+     "2": {
+      "statement": "六二，同人于宗，吝。",
+      "smallImage": "《象》曰：同人于宗，吝道也。",
+      "wangBi": null
+     },
+     "3": {
+      "statement": "九三，伏戎于莽，升其高陵，三歲不興。",
+      "smallImage": "《象》曰：伏戎于莽，敵剛也。三歲不興，安行也。",
+      "wangBi": null
+     },
+     "4": {
+      "statement": "九四，乘其墉，弗克攻，吉。",
+      "smallImage": "《象》曰：乘其墉，義弗克也。其吉，則困而反則也。",
+      "wangBi": "處上攻下，力能乘墉者也。履非其位，以與人爭，二自五應，三非犯己，攻三求二，尤而效之，違義傷理，眾所不與，故雖乘墉而不克也。不克則反，反則得吉也。不克乃反，其所以得吉，困而反則者也。"
+     },
+     "5": {
+      "statement": "九五，同人先號咷，而後笑，大師克相遇。",
+      "smallImage": "《象》曰：同人之先，以中直也。大師相遇，言相克也。",
+      "wangBi": "《彖》曰：「柔得位得中，而應乎乾，曰同人。」然則體柔居中，眾之所與；執剛用直，眾所未從，故近隔乎二剛，未獲厥志，是以先號咷也。居中處尊，戰必克勝，故後笑也。不能使物自歸而用其強直，故必須大師克之，然後相遇也。"
+     },
+     "6": {
+      "statement": "上九，同人于郊，无悔。",
+      "smallImage": "《象》曰：同人于郊，志未得也。",
+      "wangBi": "郊者，外之極也。處同人之時，最在於外，不獲同志，而遠於內爭，故雖无悔吝，亦未得其志。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+    "mark": [
+     2,
+     5
+    ],
+    "master": {
+     "zh": "二為同人之主",
+     "en": "Line two, master of Fellowship"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 9,
+    "lines": [
+     2
+    ],
+    "finding": "LINE 2: FELLOWSHIP ONLY\nWITH THE CLAN. REGRET.",
+    "why": "Line 2, 'fellowship with people limited to the clan - regret', is 'not on kinship' literally. Line 1 ('fellowship at the gate - no blame') is the other half; marking [1,2] with 'AT THE GATE: NO BLAME.\\nONLY THE CLAN: REGRET.' is an option."
+   }
+  },
+  {
+   "number": 14,
+   "hook": "Doing better than everyone around you?",
+   "meaning": [
+    "Great Possession\nsays: people see.",
+    "Use it to put\nthings right."
+   ],
+   "question": "What would you\nfix first?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Lead by trust,\nnot force.",
+    "source": "commentary/en/14.json#lines[4].synthesis"
+   },
+   "classic": {
+    "judgment": [
+     "大有，元亨。"
+    ],
+    "tuan": [
+     "《彖》曰：大有，柔得尊位，大中而上下應之，曰大有。",
+     "其德剛健而文明，應乎天而時行，是以元亨。"
+    ],
+    "greatImage": [
+     "《象》曰：火在天上，大有。君子以遏惡揚善，順天休命。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，无交害。匪咎，艱則无咎。",
+      "smallImage": "《象》曰：大有初九，无交害也。",
+      "wangBi": "以夫剛健為大有之始，不能履中，滿而不溢，術斯以往，後害必至。其欲匪咎，艱則无咎也。"
+     },
+     "2": {
+      "statement": "九二，大車以載，",
+      "smallImage": "《象》曰：大車以載，積中不敗也。",
+      "wangBi": "健不違中，為五所任，任重不危，致遠不泥，故可以往而无咎也。"
+     },
+     "3": {
+      "statement": "九三，公用亨于天子，小人弗克。",
+      "smallImage": "《象》曰：公用亨于天子，小人害也。",
+      "wangBi": "處大有之時，居下體之極，乘剛健之上，而履得其位，與五同功，威權之盛，莫此過焉。公用斯位，乃得通乎天子之道也。小人不克，害可待也。"
+     },
+     "4": {
+      "statement": "九四，匪其彭，无咎。",
+      "smallImage": "《象》曰：匪其彭，无咎，明辯晢也。",
+      "wangBi": "既失其位，而上近至尊之威，下比分權之臣，其為懼也，可謂危矣。唯夫有聖知者，乃能免斯咎也。三雖至盛，五不可舍，能辯斯數，專心承五，常匪其旁，則无咎矣。旁謂三也。"
+     },
+     "5": {
+      "statement": "六五，厥孚交如，威如，吉。",
+      "smallImage": "《象》曰：厥孚交如，信以發志也。威如之吉，易而无備也。",
+      "wangBi": "居尊以柔，處大以中，无私於物，上下應之，信以發志，故其孚交如也。夫不私於物，物亦公焉。不疑於物，物亦誠焉。既公且信，何難何備？不言而教行，何為而不威如？為大有之主，而不以此道，吉可得乎？"
+     },
+     "6": {
+      "statement": "上九，自天祐之，吉无不利。",
+      "smallImage": "《象》曰：大有上吉，自天祐也。",
+      "wangBi": "大有，豐富之世也。處大有之上而不累於位，志尚乎賢者也。餘爻皆乘剛，而己獨乘柔順也。五為信德，而己履焉，履信之謂也。雖不能體柔，而以剛乘柔，思順之義也。居豐有之世，而不以物累其心，高尚其志，尚賢者也。爻有三德，盡夫助道，故《繫辭》具焉。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為大有之主",
+     "en": "Ruler of Great Possession"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: TRUST, GIVEN AND\nRETURNED, WITH DIGNITY.",
+    "why": "Line 5 is the one yielding line in the ruler's place: 'its sincerity is such that all engage with it; awe-inspiring - good'. A soft ruler held by trust is 'lead by trust, not force', and the viewer can see it is the only soft line."
+   }
+  },
+  {
+   "number": 15,
+   "hook": "Always needing credit?",
+   "meaning": [
+    "Modesty says:\nfinish quietly.",
+    "No one stops\nthe quiet ones."
+   ],
+   "question": "What could you\ndo without credit?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Having the most,\nstep back.",
+    "source": "Image on 15: a mountain within the earth"
+   },
+   "classic": {
+    "judgment": [
+     "謙，亨。君子有終。"
+    ],
+    "tuan": [
+     "《彖》曰：謙，亨，天道下濟而光明，地道卑而上行。天道虧盈而益謙，地道變盈而流謙，鬼神害盈而福謙，人道惡盈而好謙。謙尊而光，卑而不可踰，君子之終也。"
+    ],
+    "greatImage": [
+     "《象》曰：地中有山，謙。君子以裒多益寡，稱物平施。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，謙謙君子，用涉大川，吉。",
+      "smallImage": "《象》曰：謙謙君子，卑以自牧也。",
+      "wangBi": "處謙之下，謙之謙者也。能體謙謙，其唯君子。用涉大難，物无害也。"
+     },
+     "2": {
+      "statement": "六二，鳴謙，貞吉。",
+      "smallImage": "《象》曰：鳴謙貞吉，中心得也。",
+      "wangBi": "鳴者，聲名聞之謂也。得位居中，謙而正焉。"
+     },
+     "3": {
+      "statement": "九三，勞謙，君子有終，吉。",
+      "smallImage": "《象》曰：勞謙君子，萬民服也。",
+      "wangBi": "處下體之極，履得其位，上下无陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下綏，勞謙匪解，是以吉也。"
+     },
+     "4": {
+      "statement": "六四，无不利，撝謙。",
+      "smallImage": "《象》曰：无不利，撝謙，不違則也。",
+      "wangBi": "處三之上，而用謙焉，則是自上下下之義也。承五而用謙順，則是上行之道也。盡乎奉上下下之道，故「无不利」。指撝皆謙，不違則也。"
+     },
+     "5": {
+      "statement": "六五，不富以其鄰，利用侵伐，无不利。",
+      "smallImage": "《象》曰：利用侵伐，征不服也。",
+      "wangBi": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。"
+     },
+     "6": {
+      "statement": "上六，鳴謙。利用行師征邑國。",
+      "smallImage": "《象》曰：鳴謙，志未得也。可用行師，征邑國也。",
+      "wangBi": null
+     }
+    }
+   }
+  },
+  {
+   "number": 16,
+   "hook": "All fired up, nowhere to go?",
+   "meaning": [
+    "Enthusiasm says:\ngive it a shape.",
+    "Organize,\nthen move."
+   ],
+   "question": "Where will you\naim it?",
+   "lesson": {
+    "kind": "lines",
+    "text": "One clear voice\nmoves the crowd.",
+    "source": "series/critic/readouts/drafts.json#16"
+   },
+   "classic": {
+    "judgment": [
+     "豫，利建侯、行師。"
+    ],
+    "tuan": [
+     "《彖》曰：豫，剛應而志行，順以動，豫。豫，順以動，故天地如之，而況建侯行師乎？天地以順動，故日月不過，而四時不忒，聖人以順動，則刑罰清而民服。豫之時義大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：雷出地奮，豫。先王以作樂崇德。殷薦之上帝，以配祖考。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，鳴豫，凶。",
+      "smallImage": "《象》曰：初六鳴豫，志窮凶也。",
+      "wangBi": "處豫之初，而特得志於上，樂過則淫，志窮則凶，豫何可鳴？"
+     },
+     "2": {
+      "statement": "六二，介于石，不終日，貞吉。",
+      "smallImage": "《象》曰：不終日貞吉，以中正也。",
+      "wangBi": "處豫之時，得位履中，安夫貞正，不求苟豫者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說。辯必然之理，故不改其操，介如石焉。不終日明矣。"
+     },
+     "3": {
+      "statement": "六三，盱豫，悔，遲有悔。",
+      "smallImage": "《象》曰：盱豫有悔，位不當也。",
+      "wangBi": "居下體之極，處兩卦之際，履非其位，承動豫之主。若其睢盱而豫，悔亦生焉。遲而不從，豫之所疾，位非所據，而以從豫，進退離悔，宜其然矣。"
+     },
+     "4": {
+      "statement": "九四，由豫，大有得。勿疑，朋盍簪。",
+      "smallImage": "《象》曰：由豫，大有得，志大行也。",
+      "wangBi": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+     },
+     "5": {
+      "statement": "六五，貞疾，恒不死。",
+      "smallImage": "《象》曰：六五貞疾，乘剛也。恒不死，中未亡也。",
+      "wangBi": "四以剛動，為豫之主，專權執制，非己所乘，故不敢與四爭權，而又居中處尊，未可得亡，是以必常至于「貞疾，恒不死」而巳。"
+     },
+     "6": {
+      "statement": "上六，冥豫，成有渝，无咎。",
+      "smallImage": "《象》曰：冥豫在上，何可長也？",
+      "wangBi": "處動豫之極，極豫盡樂，故至于冥豫成也。過豫不已，何可長乎？故必渝變然後无咎。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "ONE STRONG LINE. FIVE FOLLOW IT.",
+    "mark": [
+     4
+    ],
+    "master": {
+     "zh": "四以剛動，為豫之主",
+     "en": "Line four, master of Enthusiasm"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     4
+    ],
+    "finding": "LINE 4: IT STARTS HERE.\nNO DOUBT. FRIENDS GATHER.",
+    "why": "Line 4, 'the source of enthusiasm ... do not doubt, and friends will gather', is one clear voice with the crowd coming to it. Line 1 ('proclaiming enthusiasm - bad') warns against a loud voice, so marking only line 4 keeps it clean."
+   }
+  },
+  {
+   "number": 17,
+   "hook": "Still at your desk after dark?",
+   "meaning": [
+    "Following says:\ngo with the day.",
+    "Day’s done.\nGo in, rest."
+   ],
+   "question": "When will you\nstop today?",
+   "lesson": {
+    "kind": "lines",
+    "text": "To be followed,\nfollow first.",
+    "source": "series/critic/readouts/drafts.json#17"
+   },
+   "classic": {
+    "judgment": [
+     "隨，元亨利貞，无咎。"
+    ],
+    "tuan": [
+     "《彖》曰：隨，剛來而下柔，動而說，隨。大亨貞无咎，而天下隨時。隨時之義大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：澤中有雷，隨，君子以嚮晦入宴息。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，官有渝，貞吉。出門交有功。",
+      "smallImage": "《象》曰：官有渝，從正吉也。出門交有功，不失也。",
+      "wangBi": "居隨之始，上无其應，无所偏係，動能隨時，意无所主者也。隨不以欲，以欲隨宜者也。故官有渝變，隨不失正也。出門无違，何所失哉！"
+     },
+     "2": {
+      "statement": "六二，係小子，失丈夫。",
+      "smallImage": "《象》曰：係小子，弗兼與也。",
+      "wangBi": "陰之為物，以處隨世，不能獨立，必有係也。居隨之時，體於柔弱，而以乘夫剛動，豈能秉志，違於所近。隨此失彼，弗能兼與。五處己上，初處己下，故曰「係小子，失丈夫」也。"
+     },
+     "3": {
+      "statement": "六三，係丈夫，失小子。隨有求得，利居貞。",
+      "smallImage": "《象》曰：係丈夫，志舍下也。",
+      "wangBi": "陰之為物，以處隨世，不能獨立，必有係也。雖體下卦，二已據初，將何所附？故舍初係四，志在丈夫。四俱无應，亦欲於己隨之，則得其所求矣，故曰「隨有求得」也。應非其正，以係於人，何可以妄？故利居貞也。初處己下，四處己上，故曰「係丈夫，失小子」也。"
+     },
+     "4": {
+      "statement": "九四，隨有獲，貞凶。有孚在道以明，何咎？",
+      "smallImage": "《象》曰：隨有獲，其義凶也。有孚在道，明功也。",
+      "wangBi": "處說之初，下據二陰，三求係己，不距則獲，故曰「隨有獲」也。居於臣地，履非其位，以擅其民，失於臣道，違正者也，故曰「貞凶」。體剛居說而得民心，能幹其事，而成其功者也。雖為常義，志在濟物，心有公誠，著信在道，以明其功，何咎之有？"
+     },
+     "5": {
+      "statement": "九五，孚于嘉，吉。",
+      "smallImage": "《象》曰：孚于嘉，吉，位正中也。",
+      "wangBi": "履正居中，而處隨世，盡隨時之宜，得物之誠，故嘉吉也。"
+     },
+     "6": {
+      "statement": "上六，拘係之乃從，維之，王用亨于西山。",
+      "smallImage": "《象》曰：拘係之，上窮也。",
+      "wangBi": "隨之為體，陰順陽者也。最處上極，不從者也。隨道已成，而特不從，故拘係之乃從也。率土之濱，莫非王臣，而為不從，王之所討也，故維之，王用亨于西山也。兌為西方，山者，途之險隔也。處西方而為不從，故王用通于西山。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE STRONG GOES BELOW THE WEAK.",
+    "mark": [
+     1
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 4,
+    "lines": [
+     1
+    ],
+    "finding": "THE STRONG GOES BELOW THE WEAK.",
+    "why": "'Follow first' is the Tuan's reading of the shape (the strong comes down below the weak); no line says it. Line 1 ('the post changes ... go out the gate and mix, it works') is the nearest, but a viewer would not get 'follow first' from it."
+   }
+  },
+  {
+   "number": 18,
+   "hook": "Something rotting under the surface?",
+   "meaning": [
+    "Decay says:\nit can be fixed.",
+    "Rushed repairs\ndon’t hold."
+   ],
+   "question": "What’s overdue\nfor repair?",
+   "lesson": {
+    "kind": "character",
+    "text": "Found rot?\nClean it out.",
+    "source": "series/characters.json#18: Worms breed in a shut bowl, swarm up and pour out."
+   },
+   "classic": {
+    "judgment": [
+     "蠱，元亨，利涉大川。先甲三日，後甲三日。"
+    ],
+    "tuan": [
+     "《彖》曰：蠱，剛上而柔下，",
+     "巽而止，蠱。",
+     "注云：既巽又止，不競爭也。有事而无競爭之患，故可以有為也。",
+     "蠱，元亨而天下治也。",
+     "利涉大川，往有事也。先甲三日，後甲三日，終則有始，天行也。"
+    ],
+    "greatImage": [
+     "《象》曰：山下有風，蠱。君子以振民育德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，幹父之蠱，有子考无咎，厲終吉。",
+      "smallImage": "《象》曰：幹父之蠱，意承考也。",
+      "wangBi": "處事之首，始見任者也。以柔巽之質，幹父之事，能承先軌，堪其任者也，故曰有子也。任為事首，能堪其事，考乃无咎也，故曰有子考无咎也。當事之首，是以危也。能堪其事，故終吉。"
+     },
+     "2": {
+      "statement": "九二，幹母之蠱，不可貞。",
+      "smallImage": "《象》曰：幹母之蠱，得中道也。",
+      "wangBi": "居於內中，宜幹母事，故曰幹母之蠱也。婦人之性難可全正，宜屈己剛。既幹且順，故曰不可貞也。幹不失中，得中道也。"
+     },
+     "3": {
+      "statement": "九三，幹父之蠱，小有悔，无大咎。",
+      "smallImage": "《象》曰：幹父之蠱，終无咎也。",
+      "wangBi": "以剛幹事，而无其應，故有悔也。履得其位，以正幹父，雖小有悔，終无大咎。"
+     },
+     "4": {
+      "statement": "六四，裕父之蠱，往見吝。",
+      "smallImage": "《象》曰：裕父之蠱，往未得也。",
+      "wangBi": "體柔當位，幹不以剛，而以柔和，能裕先事者也。然无其應，往必不合，故曰往見吝。"
+     },
+     "5": {
+      "statement": "六五，幹父之蠱，用譽。",
+      "smallImage": "《象》曰：幹父用譽，承以德也。",
+      "wangBi": "以柔處尊，用中而應，承先以斯，用譽之道也。"
+     },
+     "6": {
+      "statement": "上九，不事王侯，高尚其事。",
+      "smallImage": "《象》曰：不事王侯，志可則也。",
+      "wangBi": "最處事上而不累於位，不事王侯，高尚其事也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 19,
+   "hook": "Things finally taking off?",
+   "meaning": [
+    "Approach says:\ngo, but plan.",
+    "Every spring has\nan autumn."
+   ],
+   "question": "What will you\nprepare now?",
+   "lesson": {
+    "kind": "character",
+    "text": "Lean down. Care\nfor your people.",
+    "source": "series/characters.json#19: A figure with a big eye stands, leans down, and three small squares light up under it one by one; then it lies down as the character."
+   },
+   "classic": {
+    "judgment": [
+     "臨，元亨利貞。至于八月有凶。"
+    ],
+    "tuan": [
+     "《彖》曰：臨，剛浸而長，說而順，剛中而應，大亨以正，天之道也。",
+     "至于八月有凶，消不久也。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上有地，臨。君子以教思无窮，容保民无疆。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，咸臨，貞吉。",
+      "smallImage": "《象》曰：咸臨貞吉，志行正也。",
+      "wangBi": "咸，感也。感，應也。有應於四，感以臨者也。四履正位，而己應焉，志行正者也。以剛感順，志行其正，以斯臨物，正而獲吉也。"
+     },
+     "2": {
+      "statement": "九二，咸臨，吉，无不利。",
+      "smallImage": "《象》曰：咸臨，吉无不利，未順命也。",
+      "wangBi": "有應在五，感以臨者也。剛勝則柔危，而五體柔，非能同斯志者也。若順於五，則剛德不長，何由得吉无不利乎？全與相違，則失於感應，其得「咸臨，吉无不利」，必未順命也。"
+     },
+     "3": {
+      "statement": "六三，甘臨，无攸利。既憂之，无咎。",
+      "smallImage": "《象》曰：甘臨，位不當也。既憂之，咎不長也。",
+      "wangBi": "甘者，佞邪說媚，不正之名也。履非其位，居剛長之世，而以邪說臨物，宜其无攸利也。若能盡憂其危，改脩其道，剛不害正，故咎不長。"
+     },
+     "4": {
+      "statement": "六四，至臨，无咎。",
+      "smallImage": "《象》曰：至臨无咎，位當也。",
+      "wangBi": "處順應陽，不忌剛長，而乃應之，履得其位，盡其至者也。剛勝則柔危，柔不失正，乃得无咎也。"
+     },
+     "5": {
+      "statement": "六五，知臨，大君之宜，吉。",
+      "smallImage": "《象》曰：大君之宜，行中之謂也。",
+      "wangBi": "處於尊位，履得其中，能納剛以禮，用建其正，不忌剛長而能任之，委物以能而不犯焉，則聰明者竭其視聽，知力者盡其謀能，不為而成，不行而至矣。大君之宜，如此而已，故曰「知臨大君之宜吉」。"
+     },
+     "6": {
+      "statement": "上六，敦臨，吉，无咎。",
+      "smallImage": "象曰：敦臨之吉，志在內也。",
+      "wangBi": "處坤之極，以敦而臨者也。志在助賢，以敦為德，雖在剛長，剛不害厚，故无咎也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 20,
+   "hook": "Deciding from behind a desk?",
+   "meaning": [
+    "Contemplation:\ngo and look.",
+    "See by going,\nnot by sitting."
+   ],
+   "question": "What could you\ngo see?",
+   "lesson": {
+    "kind": "lines",
+    "text": "People watch\nhow you prepare.",
+    "source": "series/critic/readouts/drafts.json#20"
+   },
+   "classic": {
+    "judgment": [
+     "觀，盥而不薦，有孚顒若。"
+    ],
+    "tuan": [
+     "《彖》曰：大觀在上。",
+     "順而巽，中正以觀天下。觀，盥而不薦，有孚顒若，下觀而化也。觀天之神道，而四時不忒。聖人以神道設教，而天下服矣。"
+    ],
+    "greatImage": [
+     "《象》曰：風行地上，觀，先王以省方觀民設教。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，童觀，小人无咎，君子吝。",
+      "smallImage": "象曰：初六童觀，小人道也。",
+      "wangBi": "處於觀時，而最遠朝美，體於陰柔，不能自進，无所鑒見，故曰童觀。趣順而已，无所能為，小人之道也，故曰小人无咎。君子處大觀之時而為童觀，不亦鄙乎。"
+     },
+     "2": {
+      "statement": "六二，闚觀，利女貞。",
+      "smallImage": "《象》曰：闚觀女貞，亦可醜也。",
+      "wangBi": "處在於內，寡所鑒見。體於柔弱，從順而已。猶有應焉，不為全蒙，所見者狹，故曰闚觀。居內得位，柔順寡見，故曰利女貞，婦人之道也。處大觀之時，居中得位，不能大觀廣鑒，闚觀而已，誠可醜也。"
+     },
+     "3": {
+      "statement": "六三，觀我生，進退。",
+      "smallImage": "《象》曰：觀我生進退，未失道也。",
+      "wangBi": "居下體之極，處二卦之際，近不比尊，遠不童觀，觀風者也。居此時也，可以觀我生進退也。"
+     },
+     "4": {
+      "statement": "六四，觀國之光，利用賓于王。",
+      "smallImage": "《象》曰：觀國之光，尚賓也。",
+      "wangBi": "居觀之時，最近至尊，觀國之光者也。居近得位，明習國儀者也，故曰利用賓于王也。"
+     },
+     "5": {
+      "statement": "九五，觀我生，君子无咎。",
+      "smallImage": "《象》曰：觀我生，觀民也。",
+      "wangBi": "居於尊位，為觀之主，宣弘大化，光於四表，觀之極者也。上之化下，猶風之靡草，故觀民之俗，以察己道，百姓有罪，在余一人。君子風著，己乃无咎。上為化主，將欲自觀乃觀民也。"
+     },
+     "6": {
+      "statement": "上九，觀其生，君子无咎。",
+      "smallImage": "《象》曰：觀其生，志未平也。",
+      "wangBi": "觀我生，自觀其道者也。觀其生，為民所觀者也。不在於位，最處上極，高尚其志，為天下所觀者也。處天下所觀之地，可不慎乎？故君子德見，乃得无咎。生，猶動出也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為觀之主",
+     "en": "Master of Contemplation"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 7,
+    "lines": [
+     4
+    ],
+    "finding": "LINE 4: GOES TO SEE\nTHE LIGHT OF THE STATE.",
+    "why": "'People watch how you prepare' is the Judgment (washed but not yet offered; the people look up), not a line; line 5 ('contemplating my life, no blame') is the nearest at fit 5. Line 4, 'contemplating the glory of the state, beneficial to be the king's guest', is going to look for yourself, which is what the hook and meaning cards say. Option only: lesson 'Go and see it for yourself.'"
+   }
+  },
+  {
+   "number": 21,
+   "hook": "Something blocking you for weeks?",
+   "meaning": [
+    "Biting Through\nsays: bite down.",
+    "It won’t clear\nby itself."
+   ],
+   "question": "What will you\ndeal with now?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Warn clearly,\nthen bite.",
+    "source": "series/critic/lessons/input.json#hexagrams[20].image.transliteration"
+   },
+   "classic": {
+    "judgment": [
+     "噬嗑，亨。利用獄。"
+    ],
+    "tuan": [
+     "《彖》曰：頤中有物，曰噬嗑。",
+     "噬嗑而亨。",
+     "剛柔分，動而明，雷電合而章。",
+     "柔得中而上行，雖不當位，利用獄也。",
+     "「剛柔分動而明，雷電合而章」者釋「利用獄」之義。剛柔既分，不相溷雜，故動而顯明也。雷電既合，而不錯亂，故事得彰著，明而且著，可以斷獄。剛柔分謂震剛在下，離柔在上。剛柔云分，雷電云合者，欲見明之與動，各是一事，故剛柔云分也。明、動雖各一事，相須而用，故雷電云合。但易之為體，取象既多。若取分義，則云「震下離上」。若取合義，則云離震合體，共成一卦也。此釋二象「利用獄」之義也。"
+    ],
+    "greatImage": [
+     "《象》曰：雷電，噬嗑，先王以明罰勑法。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，屨校滅趾，无咎。",
+      "smallImage": "《象》曰：屨校滅趾，不行也。",
+      "wangBi": "居无位之地，以處刑初，受刑而非治刑者也。凡過之所始，必始於微，而後至於著。罰之所始，必始於薄，而後至於誅。過輕戮薄，故「屨校滅趾」，桎其行也。足懲而已，故不重也。過而不改，乃謂之過。小懲大誡，乃得其福，故无咎也。校者以木絞校者也，即械也，校者取其通名也。"
+     },
+     "2": {
+      "statement": "六二，噬膚滅鼻，无咎。",
+      "smallImage": "《象》曰：噬膚滅鼻，乘剛也。",
+      "wangBi": "噬，齧也。齧者，刑克之謂也。處中得位，所刑者當，故曰噬膚也。乘剛而刑，未盡順道，噬過其分，故滅鼻也。刑得所疾，故雖滅鼻而无咎也。膚者，柔脆之物也。"
+     },
+     "3": {
+      "statement": "六三，噬腊肉，遇毒，小吝，无咎。",
+      "smallImage": "《象》曰：遇毒，位不當也。",
+      "wangBi": "處下體之極，而履非其位，以斯食物，其物必堅。豈唯堅乎？將遇其毒。噬以喻刑人，腊以喻不服，毒以喻怨生。然承於四而不乘剛，雖失其正，刑不侵順，故雖遇毒，小吝无咎。"
+     },
+     "4": {
+      "statement": "九四，噬乾胏，得金矢。利艱貞，吉。",
+      "smallImage": "《象》曰：利艱貞吉，未光也。",
+      "wangBi": "雖體陽爻，為陰之主，履不獲中，而居非其位，以斯噬物，物亦不服，故曰「噬乾胏」也。金，剛也，矢，直也。噬乾胏而得剛直，可以利於艱貞之吉，未足以盡通理之道也。"
+     },
+     "5": {
+      "statement": "六五，噬乾肉，得黃金，貞厲，无咎。",
+      "smallImage": "《象》曰：貞厲无咎，得當也。",
+      "wangBi": "乾肉，堅也。黃，中也。金，剛也。以陰處陽，以柔乘剛，以噬於物，物亦不服，故曰「噬乾肉」也。然處得尊位，以柔乘剛而居於中，能行其戮者也。履不正而能行其戮，剛勝者也。噬雖不服，得中而勝，故曰「噬乾肉得黃金」也。己雖不正，而刑戮得當，故雖貞厲而无咎也。"
+     },
+     "6": {
+      "statement": "上九，何校滅耳，凶。",
+      "smallImage": "《象》曰：何校滅耳，聰不明也。",
+      "wangBi": "處罰之極，惡積不改者也。罪非所懲，故刑及其首，至于滅耳，及首非誡，滅耳非懲，凶莫甚焉。"
+     }
+    }
+   }
+  },
+  {
+   "number": 22,
+   "hook": "Polishing the slides instead of deciding?",
+   "meaning": [
+    "Grace says:\nsmall things only.",
+    "Polish can’t make\nbig decisions."
+   ],
+   "question": "What needs more\nthan polish?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Plain is the best\nadornment.",
+    "source": "series/critic/readouts/drafts.json#22"
+   },
+   "classic": {
+    "judgment": [
+     "賁，亨，小利有攸往。"
+    ],
+    "tuan": [
+     "《彖》曰：賁亨，柔來而文剛，故亨。分剛上而文柔，故小利有攸往。",
+     "天文也。",
+     "文明以止，人文也。",
+     "觀乎天文，以察時變；觀乎人文，以化成天下。",
+     "注坤之上六至之義也：正義曰：坤之上六，何以來居二位，不居於初三？乾之九二，何以分居上位，不居於五者？乾性剛亢，故以己九二上居坤極；坤性柔順，不為物首，故以己上六下居乾之二位也。且若柔不分居乾二，剛不分居坤極，則不得文明以止故也。又陽本在上，陰本在下，應分剛而下，分柔而上，何因分剛向上，分柔向下者，今謂此本泰卦故也。若天地交泰，則剛柔得交。若乾上坤下，則是天地否閉，剛柔不得交，故分剛而上，分柔而下也。"
+    ],
+    "greatImage": [
+     "《象》曰：山下有火，賁。君子以明庶政，无敢折獄。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，賁其趾，舍車而徒。",
+      "smallImage": "《象》曰：舍車而徒，義弗乘也。",
+      "wangBi": "在賁之始，以剛處下，居於无位，棄於不義，安夫徒步以從其志者也。故飾其趾，舍車而徒，義弗乘之謂也。"
+     },
+     "2": {
+      "statement": "六二，賁其須。",
+      "smallImage": "《象》曰：賁其須，與上興也。",
+      "wangBi": "得其位而无應，三亦无應，俱无應而比焉，近而相得者也。須之為物，上附者也。循其所履以附於上，故曰賁其須也。"
+     },
+     "3": {
+      "statement": "九三，賁如濡如，永貞吉。",
+      "smallImage": "《象》曰：永貞之吉，終莫之陵也。",
+      "wangBi": "處下體之極，居得其位，與二相比，俱履其正，和合相潤，以成其文者也。既得其飾，又得其潤，故曰「賁如濡如」也。永保其貞，物莫之陵，故曰「永貞吉」也。"
+     },
+     "4": {
+      "statement": "六四，賁如皤如，白馬翰如。匪寇婚媾。",
+      "smallImage": "《象》曰：六四當位，疑也。匪寇婚媾，終無尤也。",
+      "wangBi": "有應在初而閡於三，為己寇難，二志相感，不獲通亨，欲靜則疑*初之應，欲進則懼三之難，故或飾或素，內懷疑懼也。鮮絜其馬，翰如以待，雖履正位，未敢果其志也。三為剛猛，未可輕犯，匪寇乃婚，終无尤也。"
+     },
+     "5": {
+      "statement": "六五，賁於丘園，束帛戔戔。吝，終吉。",
+      "smallImage": "《象》曰：六五之吉，有喜也。",
+      "wangBi": "處得尊位，為飾之主，飾之盛者也。施飾於物，其道害也。施飾丘園，盛莫大焉，故賁於束帛，丘園乃落；賁於丘園，帛乃戔戔。用莫過儉，泰而能約，故必吝焉，乃得終吉也。"
+     },
+     "6": {
+      "statement": "上九，白賁，无咎。",
+      "smallImage": "《象》曰：白賁无咎，上得志也。",
+      "wangBi": "處飾之終，飾終反素，故在其質素，不勞文飾而无咎也。以白為飾，而无患憂，得志者也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "AT THE TOP: PLAIN WHITE.",
+    "mark": [
+     6
+    ],
+    "master": null,
+    "timed": true
+   }
+  },
+  {
+   "number": 23,
+   "hook": "Everything falling apart?",
+   "meaning": [
+    "Splitting Apart\nsays: don’t run.",
+    "Stay and help\nthose below you."
+   ],
+   "question": "Who depends\non you?",
+   "lesson": {
+    "kind": "character",
+    "text": "Falling apart?\nShore up the base.",
+    "source": "series/characters.json#23: A knife stands beside a block; pieces fall off the block one by one until only its base stands; then both lie down as the character."
+   },
+   "classic": {
+    "judgment": [
+     "剝，不利有攸往。"
+    ],
+    "tuan": [
+     "《彖》曰：剝，剝也，柔變剛也。不利有攸往，小人長也。順而止之，觀象也。君子尚消息盈虛，天行也。"
+    ],
+    "greatImage": [
+     "《象》曰：山附於地，剝。上以厚下安宅。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，剝牀以足，蔑貞凶。",
+      "smallImage": "《象》曰：剝牀以足，以滅下也。",
+      "wangBi": "牀者，人之所以安也。剝牀以足，猶云剝牀之足也。蔑猶削也。剝牀之足，滅下之道也。下道始滅，剛隕柔長，則正削而凶來也。"
+     },
+     "2": {
+      "statement": "六二，剝牀以辨，蔑貞凶。",
+      "smallImage": "《象》曰：剝牀以辨，未有與也。",
+      "wangBi": "蔑猶甚極之辭也。辨者，足之上也。剝道浸長，故剝其辨也。稍近於牀，轉欲滅物之所處，長柔而削正。以斯為德，物所棄也。"
+     },
+     "3": {
+      "statement": "六三，剝之，无咎。",
+      "smallImage": "《象》曰：剝之无咎，失上下也。",
+      "wangBi": "與上為應，群陰剝陽，我獨協焉，雖處於剝，可以无咎。"
+     },
+     "4": {
+      "statement": "六四，剝牀以膚，凶。",
+      "smallImage": "《象》曰：剝牀以膚，切近災也。",
+      "wangBi": "初二剝牀，民所以安，未剝其身也。至四剝道浸長，牀既剝盡，以及人身，小人遂盛，物將失身，豈唯削正，靡所不凶。"
+     },
+     "5": {
+      "statement": "六五，貫魚，以宮人寵，无不利。",
+      "smallImage": "《象》曰：以宮人寵，終无尤也。",
+      "wangBi": "處剝之時，居得尊位，為剝之主者也。剝之為害，小人得寵，以消君子者也。若能施寵小人，於宮人而已，不害於正，則所寵雖眾，終无尤也。貫魚，謂此眾陰也，駢頭相次，似貫魚也。"
+     },
+     "6": {
+      "statement": "上九，碩果不食，君子得輿，小人剝廬。",
+      "smallImage": "《象》曰：君子得輿，民所載也。小人剝廬，終不可用也。",
+      "wangBi": "處卦之終，獨全不落，故果至于碩而不見食也。君子居之，則為民覆蔭；小人用之，則剝下所庇也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 24,
+   "hook": "Coming back after a bad stretch?",
+   "meaning": [
+    "Return says:\nenergy returns.",
+    "Rest. Only rushing\nstops it."
+   ],
+   "question": "What are you\nrushing back to?",
+   "lesson": {
+    "kind": "lines",
+    "text": "See your misstep,\nturn back early.",
+    "source": "Line 1 of 24: 不遠復 (returning from not far); its Image commentary: 以脩身也 (cultivating the self)"
+   },
+   "classic": {
+    "judgment": [
+     "復，亨。出入无疾，朋來无咎。反復其道，七日來復，利有攸往。"
+    ],
+    "tuan": [
+     "《彖》曰：復，亨，剛反，動而以順行，是以出入无疾。",
+     "朋來无咎，",
+     "反復其道，七日來復。",
+     "天行也。",
+     "利有攸往，剛長也。",
+     "復其見天地之心乎。"
+    ],
+    "greatImage": [
+     "《象》曰：雷在地中，復。先王以至日閉關，商旅不行， 后不省方。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，不遠復，无祗悔，元吉。",
+      "smallImage": "《象》曰：不遠之復，以脩身也。",
+      "wangBi": "最處復初，始復者也。復之不速，遂至遠凶，不遠而復，幾悔而反，以此脩身，患難遠矣。錯之於事，其始庶幾乎？故元吉也。"
+     },
+     "2": {
+      "statement": "六二，休復，吉。",
+      "smallImage": "《象》曰：休復之吉，以下仁也。",
+      "wangBi": "得位處中，最比於初。上无陽爻以疑其親，陽為仁行，在初之上而附順之，下仁之謂也。既處中位，親仁善鄰，復之休也。"
+     },
+     "3": {
+      "statement": "六三，頻復，厲无咎。",
+      "smallImage": "《象》曰：頻復之厲，義无咎也。",
+      "wangBi": "頻，頻蹙之貌也。處下體之終，雖愈於上六之迷，已失復遠矣，是以蹙也。蹙而求復，未至於迷，故雖危无咎也。復道宜速，蹙而乃復，義雖无咎，它來難保。"
+     },
+     "4": {
+      "statement": "六四，中行獨復。",
+      "smallImage": "《象》曰：中行獨復，以從道也。",
+      "wangBi": "四上下各有二陰而處厥中，履得其位而應於初，獨得所復，順道而反，物莫之犯，故曰「中行獨復」也。"
+     },
+     "5": {
+      "statement": "六五，敦復，无悔。",
+      "smallImage": "《象》曰：敦復无悔，中以自考也。",
+      "wangBi": null
+     },
+     "6": {
+      "statement": "上六，迷復，凶，有災眚。用行師，終有大敗。以其國君凶，至于十年不克征。",
+      "smallImage": "《象》曰：迷復之凶，反君道也。",
+      "wangBi": "最處復後，是迷者也。以迷求復，故曰迷復也。用之行師，難用有克也，終必大敗。用之於國，則反乎君道也。大敗乃復量斯勢也。雖復十年脩之，猶未能征也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 25,
+   "hook": "Hiding your real reasons?",
+   "meaning": [
+    "Innocence says:\nbe straight.",
+    "Stop faking,\nand it works."
+   ],
+   "question": "Where are you\nperforming?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Do what's right,\nnot what pays.",
+    "source": "series/critic/readouts/drafts.json#25"
+   },
+   "classic": {
+    "judgment": [
+     "无妄，元亨利貞。其匪正有眚，不利有攸往。"
+    ],
+    "tuan": [
+     "《彖》曰：无妄，剛自外來而為主於內。",
+     "動而健，",
+     "剛中而應。",
+     "大亨以正，天之命也。",
+     "其匪正有眚，不利有攸往。无妄之往，何之矣？天命不祐，行矣哉！"
+    ],
+    "greatImage": [
+     "先王以茂對，時育萬物。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，无妄往，吉。",
+      "smallImage": "《象》曰：无妄之往，得志也。",
+      "wangBi": "體剛處下，以貴下賤，行不犯妄，故往得其志。"
+     },
+     "2": {
+      "statement": "六二，不耕穫，不菑畬，則利有攸往。",
+      "smallImage": "《象》曰：不耕穫，未富也。",
+      "wangBi": "不耕而穫，不菑而畬，代終已成而不造也。不擅其美，乃盡臣道，故利有攸往。"
+     },
+     "3": {
+      "statement": "六三，无妄之災，或繫之牛。行人之得，邑人之災。",
+      "smallImage": "《象》曰：行人得牛，邑人災也。",
+      "wangBi": "以陰居陽，行違謙順，是无妄之所以為災也。牛者稼穡之資也。二以不耕而穫，利有攸往，而三為不順之行，故或繫之牛，是有司之所以為獲，彼人之所以為災也，故曰「行人之得，邑人之災」也。"
+     },
+     "4": {
+      "statement": "九四，可貞，无咎。",
+      "smallImage": "《象》曰：可貞无咎，固有之也。",
+      "wangBi": "處无妄之時，以陽居陰，以剛乘柔，履於謙順，比近至尊，故可以任正，固有所守而无咎也。"
+     },
+     "5": {
+      "statement": "九五，无妄之疾，勿藥有喜。",
+      "smallImage": "《象》曰：无妄之藥，不可試也。",
+      "wangBi": "居得尊位，為无妄之主者也。下皆无妄，害非所致，而取藥焉，疾之甚也。非妄之災，勿治自復，非妄而藥之則凶，故曰勿藥有喜。"
+     },
+     "6": {
+      "statement": "上九，无妄行，有眚，无攸利。",
+      "smallImage": "《象》曰：无妄之行，窮之災也。",
+      "wangBi": "處不可妄之極，唯宜靜保其身而已，故不可以行也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "A STRONG LINE COMES IN AT THE BASE.",
+    "mark": [
+     1,
+     5
+    ],
+    "master": {
+     "zh": "為无妄之主",
+     "en": "Master of No Falseness"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     2
+    ],
+    "finding": "LINE 2: DON'T PLOW\nFOR THE HARVEST.",
+    "why": "Line 2 (不耕穫) in the Cheng Yi / Zhu Xi reading is working without counting on the crop, which is 'do what's right, not what pays' almost word for word. Caveat: the input's literal English ('not plowing yet reaping') and Wang Bi ('completes what another began, does not claim the merit') read it differently, so the finding leans on the later reading; the safer but flatter option is line 1, 'AT THE BASE: GO OUT\\nWITHOUT FALSENESS.' (fit 6)."
+   }
+  },
+  {
+   "number": 26,
+   "hook": "Years of practice, nobody’s seen it?",
+   "meaning": [
+    "Great Accumulation\nsays: go public.",
+    "Don’t eat\nat home."
+   ],
+   "question": "What have you\nbeen keeping in?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Store up strength,\nthen use it.",
+    "source": "series/critic/readouts/drafts.json#26"
+   },
+   "classic": {
+    "judgment": [
+     "大畜，利貞。不家食，吉。利涉大川。"
+    ],
+    "tuan": [
+     "《彖》曰：大畜，剛健篤實，輝光日新其德。",
+     "剛上而尚賢，",
+     "能止健，大正也。",
+     "不家食吉，養賢也。利涉大川，應乎天也。"
+    ],
+    "greatImage": [
+     "《象》曰：天在山中，大畜。君子以多識前言往行，以畜其德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，有厲，利已。",
+      "smallImage": "《象》曰：有厲利已，不犯災也。",
+      "wangBi": "四乃畜己，未可犯也。故進則有厲，已則利也。"
+     },
+     "2": {
+      "statement": "九二，輿說輹。",
+      "smallImage": "《象》曰：輿說輹，中无尤也。",
+      "wangBi": "五處畜盛，未可犯也。遇斯而進，故輿說輹也。居得其中，能以其中不為馮河，死而无悔，遇難能止，故无尤也。"
+     },
+     "3": {
+      "statement": "九三，良馬逐，利艱貞。曰閑輿衛，利有攸往。",
+      "smallImage": "《象》曰：利有攸往，上合志也。",
+      "wangBi": "凡物極則反，故畜極則通。初二之進，值於畜盛，故不可以升。至於九三，升于上九，而上九處天衢之亨，塗徑大通，進无違距，可以馳騁，故曰良馬逐也。履當其位，進得其時，之乎通路*，不憂險厄，故利艱貞也。閑，閡也。衛，護也。進得其時，雖涉艱難而无患也，輿雖遇閑而故衛也。與上合志，故利有攸往也。"
+     },
+     "4": {
+      "statement": "六四，童牛之牿，元吉。",
+      "smallImage": "《象》曰：六四元吉，有喜也。",
+      "wangBi": "處艮之始，履得其位，能止健初，距不以角，柔以止剛，剛不敢犯。抑銳之始，以息強爭，豈唯獨利，乃將有喜也。"
+     },
+     "5": {
+      "statement": "六五，豶豕之牙，吉。",
+      "smallImage": "《象》曰：六五之吉，有慶也。",
+      "wangBi": "豕牙橫猾，剛暴難制之物，謂二也。五處得尊位，為畜之主。二剛而進，能豶其牙，柔能制健，禁暴抑盛，豈唯能固其位，乃將有慶也！"
+     },
+     "6": {
+      "statement": "上九，何天之衢，亨。",
+      "smallImage": "《象》曰：何天之衢，道大行也。",
+      "wangBi": "處畜之極，畜極則通，大畜以至於大亨之時。何，辭也，猶云何畜，乃天之衢亨也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為畜之主",
+     "en": "Master of Accumulation"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: DRILL THE CHARIOT\nDAILY. THEN SET OUT.",
+    "why": "Line 3 says 'practice guarding the chariot (daily)... benefit in having a destination': practise first, then go, which is the lesson 'store up strength, then use it' and answers the hook about years of practice. Line 6 ('how vast the thoroughfare of Heaven') is the payoff image but says only the second half."
+   }
+  },
+  {
+   "number": 27,
+   "hook": "Said something you regret at dinner?",
+   "meaning": [
+    "Nourishment says:\nwatch your mouth.",
+    "What goes in,\nwhat comes out."
+   ],
+   "question": "Which do you\nwatch less?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Guard your mouth:\nfood and words.",
+    "source": "Image on 27: careful with speech, moderate in eating and drinking"
+   },
+   "classic": {
+    "judgment": [
+     "頤，貞吉。觀頤，自求口實。"
+    ],
+    "tuan": [
+     "《彖》曰：頤，貞吉，養正則吉也。觀頤，觀其所養也。自求口實，觀其自養也。天地養萬物，聖人養賢以及萬民，頤之時大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：山下有雷，頤。君子以慎言語，節飲食。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，舍爾靈龜，觀我朵頤，凶。",
+      "smallImage": "《象》曰：觀我朵頤，亦不足貴也。",
+      "wangBi": "朵頤者，嚼也。以陽處下而為動始，不能令物由己養，動而求養者也。夫安身莫若不競，脩己莫若自保。守道則福至，求祿則辱來。居養賢之世，不能貞其所履以全其德，而舍其靈龜之明兆，羨我朵頤而躁求，離其致養之至道，闚我寵祿而競進，凶莫甚焉。"
+     },
+     "2": {
+      "statement": "六二，顛頤，拂經于丘，頤征凶。",
+      "smallImage": "《象》曰：六二征凶，行失類也。",
+      "wangBi": "養下曰顛。拂，違也。經猶義也。丘，所履之常也。處下體之中，无應於上，反而養初，居下不奉上而反養下，故曰「顛頤拂經于丘」也。以此而養，未見其福也；以此而行，未見有與，故曰「頤征凶」。"
+     },
+     "3": {
+      "statement": "六三，拂頤貞，凶。十年勿用，无攸利。",
+      "smallImage": "《象》曰：十年勿用，道大悖也。",
+      "wangBi": "履夫不正，以養於上，納上以諂者也。拂養正之義，故曰「拂頤貞凶」也。處頤而為此行，十年見棄者也。立行於斯，无施而利。"
+     },
+     "4": {
+      "statement": "六四，顛頤，吉。虎視耽耽，其欲逐逐，无咎。",
+      "smallImage": "《象》曰：顛頤之吉，上施光也。",
+      "wangBi": "體屬上體，居得其位，而應於初，以上養下，得頤之義，故曰顛頤吉也。下交不可以瀆，故虎視耽耽。威而不猛，不惡而嚴。養德施賢，何可有利？故其欲逐逐，尚敦實也。脩此二者，然後乃得全其吉而无咎。觀其自養則履正，察其所養則養陽，頤爻之貴，斯為盛矣。"
+     },
+     "5": {
+      "statement": "六五，拂經，居貞吉。不可涉大川。",
+      "smallImage": "《象》曰：居貞之吉，順以從上也。",
+      "wangBi": "以陰居陽，拂頤之義也。行則失類，故宜居貞也。无應於下而比於上，故可守貞從上，得頤之吉，雖得居貞之吉，處頤違謙，難未可涉也。"
+     },
+     "6": {
+      "statement": "上九，由頤，厲吉，利涉大川。",
+      "smallImage": "《象》曰：由頤厲吉，大有慶也。",
+      "wangBi": "以陽處上而履四陰，陰不能獨為主，必宗於陽也。故莫不由之以得其養，故曰由頤。為眾陰之主，不可瀆也，故厲乃吉。有似《家人》「悔厲」之義，貴而无位，是以厲也。高而有民，是以吉也。為養之主，物莫之違，故利涉大川也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 28,
+   "hook": "Under too much weight?",
+   "meaning": [
+    "Great Excess\nsays: move now.",
+    "Waiting under it\nisn’t caution."
+   ],
+   "question": "What’s bending\nright now?",
+   "lesson": {
+    "kind": "lines",
+    "text": "The ends give way.\nBrace them now.",
+    "source": "Tuan on 28: 棟橈，本末弱也 (the ridgepole sags: the root and the tip are weak); Wang Bi on lines 2 and 4: 拯弱 (rescuing the weak)"
+   },
+   "classic": {
+    "judgment": [
+     "大過，",
+     "棟橈，利有攸往，亨。",
+     "棟橈者，謂屋棟也。本之與末俱橈弱，以言衰亂之世，始終皆弱也。「利有攸往亨」者，既遭衰難，聖人利有所往，以拯患難，乃得亨通，故云「利有攸往亨」也。",
+     "○注「音相過之過」。正義曰：相過者，謂相過越之甚也，非謂相過從之過，故《象》云「澤滅木」，是過越之甚也。四陽在中，二陰在外，以陽之過越之甚也。"
+    ],
+    "tuan": [
+     "棟橈，本末弱也。",
+     "剛過而中，",
+     "巽而說行，",
+     "利有攸往，乃亨。",
+     "大過之時大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：澤滅木，大過。君子以獨立不懼，遯世无悶。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，藉用白茅，无咎。",
+      "smallImage": "《象》曰：藉用白茅，柔在下也。",
+      "wangBi": "以柔處下，過而可以无咎，其唯慎乎！"
+     },
+     "2": {
+      "statement": "九二，枯楊生稊，老夫得其女妻，无不利。",
+      "smallImage": "《象》曰：老夫女妻，過以相與也。",
+      "wangBi": "稊者，楊之秀也。以陽處陰，能過其本而救其弱者也。上无其應，心无特吝，處過以此，无衰不濟也。故能令枯楊更生稊，老夫更得少妻，拯弱興衰，莫盛斯爻，故无不利也。老過則枯，少過則稚。以老分少，則稚者長；以稚分老，則枯者榮，過以相與之謂也。大過至衰而己至壯，以至壯輔至衰，應斯義也。"
+     },
+     "3": {
+      "statement": "九三，棟橈，凶。",
+      "smallImage": "《象》曰：棟橈之凶，不可以有輔也。",
+      "wangBi": "居大過之時，處下體之極，不能救危拯弱，以隆其棟，而以陽處陽，自守所居，又應於上，係心在一，宜其淹溺而凶衰也。"
+     },
+     "4": {
+      "statement": "九四，棟隆，吉，有它吝。",
+      "smallImage": "《象》曰：棟隆之吉，不橈乎下也。",
+      "wangBi": "體屬上體，以陽處陰，能拯其弱，不為下所橈者也，故棟隆吉也。而應在初，用心不弘，故有它吝也。"
+     },
+     "5": {
+      "statement": "九五，枯楊生華，老婦得其士夫，无咎无譽。",
+      "smallImage": "《象》曰：枯楊生華，何可久也？老婦士夫，亦可醜也。",
+      "wangBi": "處得尊位，而以陽處陽，未能拯危。處得尊位，亦未有橈，故能生華，不能生稊；能得夫，不能得妻。處棟橈之世，而為无咎无譽，何可長哉？故生華不可久，士夫誠可醜也。"
+     },
+     "6": {
+      "statement": "上六，過涉滅頂，凶，无咎。",
+      "smallImage": "《象》曰：過涉之凶，不可咎也。",
+      "wangBi": "處太過之極，過之甚也。涉難過甚，故至于滅頂，凶。志在救時，故不可咎也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 29,
+   "hook": "One problem after another?",
+   "meaning": [
+    "The Abyss says:\nkeep moving.",
+    "Like water: fill\nit, flow on."
+   ],
+   "question": "What's the next\nsmall step?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Through danger,\nkeep your word.",
+    "source": "Tuan Zhuan on 29: 行險而不失其信 (goes through danger and does not lose its trust)"
+   },
+   "classic": {
+    "judgment": [
+     "習坎，",
+     "有孚，維心亨，",
+     "行有尚。",
+     "有孚者，孚，信也，由剛正在內，故有信也。維心亨者，陽不外發而在於內，是維心亨，言心得通也。",
+     "行有尚者，內亨外闇，內剛外柔，以此行險，事可尊尚，故云行有尚也。",
+     "案：諸卦之名，皆於卦上不加其字。此坎卦之名特加習者，以坎為險難，故特加習名。習有二義：一者習重也，謂上下俱坎，是重疊有險，險之重疊，乃成險之用也。二者人之行險，先須便習其事，乃可得通，故云習也。"
+    ],
+    "tuan": [
+     "《彖》曰：習坎，重險也。",
+     "水流而不盈，行險而不失其信。",
+     "維心亨，乃以剛中也。行有尚，往有功也。",
+     "天險不可升也，",
+     "地險山川丘陵也，",
+     "王公設險以守其國。",
+     "險之時用大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：水洊至，習坎。",
+     "君子以常德行，習教事。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，習坎，入于坎窞，凶。",
+      "smallImage": "《象》曰：習坎入坎，失道凶也。",
+      "wangBi": "習坎者，習為險難之事也。最處坎底，入坎窞者也。處重險而復入坎底，其道凶也。行險而不能自濟，習坎而入坎窞，失道而窮在坎底，上无應援可以自濟，是以凶也。"
+     },
+     "2": {
+      "statement": "九二，坎有險，求小得。",
+      "smallImage": "《象》曰：求小得，未出中也。",
+      "wangBi": "履失其位，故曰坎。上无應援，故曰有險。坎而有險，未能出險之中也。處中而與初三相得，故可以求小得也。初三未足以為援，故曰小得也。"
+     },
+     "3": {
+      "statement": "六三，來之坎坎，險且枕，入于坎窞，勿用。",
+      "smallImage": "《象》曰：來之坎坎，終无功也。",
+      "wangBi": "既履非其位，而又處兩坎之間，出則之坎，居則亦坎，故曰來之坎坎也。枕者，枝而不安之謂也。出則无之，處則无安，故曰險且枕也。來之皆坎，无所用之，徒勞而已。"
+     },
+     "4": {
+      "statement": "六四，樽酒簋貳，用缶，納約自牖，終无咎。",
+      "smallImage": "《象》曰：樽酒簋貳，剛柔際也。",
+      "wangBi": "處重險而履正，以柔居柔，履得其位，以承於五，五亦得位，剛柔各得其所，不相犯位，皆无餘應，以相承比，明信顯著，不存外飾。處坎以斯，雖復一樽之酒，二簋之食，瓦缶之器，納此至約，自進於牖，乃可羞之於王公，薦之於宗廟，故終无咎也。"
+     },
+     "5": {
+      "statement": "九五，坎不盈，祇既平，无咎。",
+      "smallImage": "《象》曰：坎不盈，中未大也。",
+      "wangBi": "為坎之主，而无應輔可以自佐，未能盈坎者也。坎之不盈，則險不盡矣。祇，辭也。為坎之主，盡平乃无咎，故曰「祇既平无咎」也。說既平乃无咎，明九五未免於咎也。"
+     },
+     "6": {
+      "statement": "上六，係用徽纆，寘於叢棘，三歲不得，凶。",
+      "smallImage": "《象》曰：上六失道，凶三歲也。",
+      "wangBi": "險陗之極，不可升也。嚴法峻整，難可犯也。宜其囚執，寘于思過之地。三歲，險道之夷也。險終乃反，故三歲不得。自脩三歲，乃可以求復，故曰三歲不得凶也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 30,
+   "hook": "Brilliant once,\nthen burnt out?",
+   "meaning": [
+    "Fire’s answer:\nkeep it fed.",
+    "Steady care,\nnot big gestures."
+   ],
+   "question": "What needs\ntending today?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Like fire, cling\nto what is right.",
+    "source": "Tuan on 30: 柔麗乎中正 (the yielding clings to the central and correct)"
+   },
+   "classic": {
+    "judgment": [
+     "離，利貞，亨。",
+     "畜牝牛吉。",
+     "「畜牝牛吉」者，柔處於內而履正中，是牝之善者，外強內順，是牛之善者也。離之為體，以柔順為主，故畜養牝牛，乃得其吉。若畜養剛健，則不可也。此云畜牝牛，假像以明人事也。言離之為德，須內順外強，而行此德，則得吉也。若內剛外順，則反離之道也。"
+    ],
+    "tuan": [
+     "《彖》曰：離，麗也。",
+     "日月麗乎天，百穀草木麗乎土。重明以麗乎正，乃化成天下。柔麗乎中正，故亨，是以畜牝牛吉也。",
+     "「日月麗乎天，百穀草木麗乎土」者，此廣明附著之義。以柔附著中正，是附得宜，故廣言所附得宜之事也。「重明以麗乎正，乃化成天下」者，此以卦象，說離之功德也，並明利貞之義也。重明，謂上下俱離。麗乎正也者，謂兩陰在內，既有重明之德，又附於正道，所以化成天下也。然陰居二位，可謂為正。若陰居五位，非其正位，而云「重明麗乎正」者，以五處於中正，又居尊位，雖非陰陽之正，乃是事理之正，故總云麗於正也。「柔麗乎中正，故亨。是以牝牛吉」者，釋《經》亨義也，又總釋「畜牝牛吉」也。柔麗於中正，謂六五、六二之柔，皆麗於中，中則不偏，故云中正。以中正為德，故萬事亨。以中正得通，故畜養牝牛而得吉也。以牝牛有中正故也。"
+    ],
+    "greatImage": [
+     "《象》曰：明兩作，離，大人以繼明照于四方。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，履錯然，敬之，无咎。",
+      "smallImage": "《象》曰：履錯之敬，以辟咎也。",
+      "wangBi": "錯然者，警慎之貌也。處離之始，將進而盛，未在既濟，故宜慎其所履，以敬為務，辟其咎也。"
+     },
+     "2": {
+      "statement": "六二，黃離，元吉。",
+      "smallImage": "《象》曰：黃離元吉，得中道也。",
+      "wangBi": "居中得位，以柔處柔，履文明之盛而得其中，故曰黃離元吉也。"
+     },
+     "3": {
+      "statement": "九三，日昃之離，不鼓缶而歌，則大耊之嗟，凶。",
+      "smallImage": "《象》曰：日昃之離，何可久也？",
+      "wangBi": "嗟，憂歎之辭也。處下離之終，明在將沒，故曰「日昃之離」也。明在將終，若不委之於人，養志无為，則至于耊老有嗟，凶矣，故曰「不鼓缶而歌，則大耊之嗟凶」也。"
+     },
+     "4": {
+      "statement": "九四，突如其來如，焚如，死如，棄如。",
+      "smallImage": "《象》曰：突如其來如，无所容也。",
+      "wangBi": "處於明道始變之際，昏而始曉，沒而始出，故曰突如其來如。其明始進，其炎始盛，故曰焚如。逼近至尊，履非其位，欲進其盛，以炎其上，命必不終，故曰死如。違離之義，无應无承，眾所不容，故曰棄如也。"
+     },
+     "5": {
+      "statement": "六五，出涕沱若，戚嗟若，吉。",
+      "smallImage": "《象》曰：六五之吉，離王公也。",
+      "wangBi": "履非其位，不勝所履。以柔乘剛，不能制下，下剛而進，將來害己，憂傷之深，至于沱嗟也。然所麗在尊，四為逆首，憂傷至深，眾之所助，故乃沱嗟而獲吉也。"
+     },
+     "6": {
+      "statement": "上九，王用出征，有嘉折首，獲匪其醜，无咎。",
+      "smallImage": "《象》曰：王用出征，以正邦也。",
+      "wangBi": "離，麗也，各得安其所麗謂之離。處離之極，離道已成，則除其非類，以去民害，王用出征之時也。故必有嘉折首，獲匪其醜，乃得无咎也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 31,
+   "hook": "Listening, but already decided?",
+   "meaning": [
+    "Influence says:\nmake room.",
+    "The full can’t\ntake anything in."
+   ],
+   "question": "What have you\nalready decided?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Be moved as you\nmove others.",
+    "source": "series/critic/readouts/drafts.json#31"
+   },
+   "classic": {
+    "judgment": [
+     "咸，亨，利貞，取女吉。"
+    ],
+    "tuan": [
+     "《彖》曰：咸，感也。柔上而剛下，二氣感應以相與。",
+     "止而說，",
+     "男下女，",
+     "是以亨利貞，取女吉也。天地感而萬物化生，",
+     "聖人感人心而天下和平。觀其所感，而天地萬物之情可見矣。"
+    ],
+    "greatImage": [
+     "《象》曰：山上有澤，咸。君子以虛受人。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，咸其拇。",
+      "smallImage": "《象》曰：咸其拇，志在外也。",
+      "wangBi": "處咸之初，為感之始，所感在末，故有志而已。如其本實，未至傷靜。"
+     },
+     "2": {
+      "statement": "六二，咸其腓，凶。居吉。",
+      "smallImage": "《象》曰：雖凶居吉，順不害也。",
+      "wangBi": "咸道轉進，離拇升腓，腓體動躁者也。感物以躁，凶之道也。由躁故凶，居則吉矣。處不乘剛，故可以居而獲吉。"
+     },
+     "3": {
+      "statement": "九三，咸其股，執其隨，往吝。",
+      "smallImage": "《象》曰：咸其股，亦不處也。志在隨人，所執下也。",
+      "wangBi": "股之為物，隨足者也。進不能制動，退不能靜處，所感在股，志在隨人者也。志在隨人，所執亦以賤矣。用斯以往，吝其宜也。"
+     },
+     "4": {
+      "statement": "九四，貞吉，悔亡。憧憧往來，朋從爾思。",
+      "smallImage": "《象》曰：貞吉悔亡，未感害也。",
+      "wangBi": "處上卦之初，應下卦之始，居體之中，在股之上，二體始相交感，以通其志，心神始感者也。凡物始感而不以之於正，則至於害，故必貞然後乃吉，吉然後乃得亡其悔也。始在於感，未盡感極，不能至於无思以得其黨，故有憧憧往來然後朋從其思也。"
+     },
+     "5": {
+      "statement": "九五，咸其脢，无悔。",
+      "smallImage": "《象》曰：咸其脢，志末也。",
+      "wangBi": "脢者，心之上，口之下，進不能大感，退亦不為无志，其志淺末，故无悔而已。"
+     },
+     "6": {
+      "statement": "上六，咸其輔頰舌。",
+      "smallImage": "《象》曰：咸其輔頰舌，滕口說也。",
+      "wangBi": "咸道轉末，故在口舌言語而已。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "ALL THREE PAIRS ANSWER.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 5,
+    "lines": [],
+    "finding": "ALL THREE PAIRS ANSWER.",
+    "why": "The lesson 'be moved as you move others' is about the whole shape, every line answered by its partner; no single line says it. The lines climb the body (toe, calf, thigh, back, jaw) and mostly warn against restless or shallow influence. Option only: line 6, 'AT THE TOP: ONLY JAW,\\nCHEEKS AND TONGUE.', would carry a different lesson such as 'Talk alone moves no one.' Data note: lines 3 and 6 in the input hold the Image text, not the line statement."
+   }
+  },
+  {
+   "number": 32,
+   "hook": "Starting over again and again?",
+   "meaning": [
+    "Duration says:\nshow up again.",
+    "Keep moving, same\ndirection."
+   ],
+   "question": "What will you\nkeep doing?",
+   "lesson": {
+    "kind": "character",
+    "text": "Change shape,\nkeep your course",
+    "source": "series/characters.json#32: Two lines rise; between them a moon goes from new to full and back, then sets into them; a heart is drawn beside it."
+   },
+   "classic": {
+    "judgment": [
+     "恒，亨，无咎，利貞。",
+     "利有攸往。",
+     "利有攸往者，得其常道，何往不利，故曰利有攸往也。"
+    ],
+    "tuan": [
+     "《彖》曰：恒，久也。剛上而柔下，",
+     "雷風相與，",
+     "巽而動，",
+     "剛柔皆應，",
+     "恒。",
+     "恒亨，无咎，利貞，久於其道也。",
+     "天地之道，恒久而不已也。",
+     "利有攸往，終則有始也。",
+     "日月得天而能久照，四時變化而能久成，聖人久於其道而天下化成。",
+     "觀其所恒，而天地萬物之情可見矣。"
+    ],
+    "greatImage": [
+     "《象》曰：雷風，恒。",
+     "君子以立不易方。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，浚恒，貞凶，无攸利。",
+      "smallImage": "《象》曰：浚恒之凶，始求深也。",
+      "wangBi": "處恒之初，最處卦底，始求深者也。求深窮底，令物无餘縕，漸以至此，物猶不堪，而況始求深者乎？以此為恒，凶正害德，无施而利也。"
+     },
+     "2": {
+      "statement": "九二，悔亡。",
+      "smallImage": "《象》曰：九二悔亡，能久中也。",
+      "wangBi": "雖失其位，恒位於中，可以消悔也。"
+     },
+     "3": {
+      "statement": "九三，不恒其德，或承之羞，貞吝。",
+      "smallImage": "《象》曰：不恒其德，无所容也。",
+      "wangBi": "處三陽之中，居下體之上，處上體之下，上不全尊，下不全卑，中不在體，體在乎恒，而分无所定，无恒者也。德行无恒，自相違錯，不可致詰，故或承之羞也。施德於斯，物莫之納，鄙賤甚矣，故曰貞吝也。"
+     },
+     "4": {
+      "statement": "九四，田无禽。",
+      "smallImage": "《象》曰：久非其位，安得禽也？",
+      "wangBi": "恒於非位，雖勞无獲也。"
+     },
+     "5": {
+      "statement": "六五，恒其德貞。婦人吉，夫子凶。",
+      "smallImage": "《象》曰：婦人貞吉，從一而終也。夫子制義，從婦凶也。",
+      "wangBi": "居得尊位，為恒之主，不能制義，而係應在二，用心專貞，從唱而已。婦人之吉，夫子之凶也。"
+     },
+     "6": {
+      "statement": "上六，振恒，凶。",
+      "smallImage": "《象》曰：振恒在上，大无功也。",
+      "wangBi": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，无施而得也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 33,
+   "hook": "Time to walk away?",
+   "meaning": [
+    "Retreat says:\nleave well.",
+    "No anger,\njust distance."
+   ],
+   "question": "What are you\nready to leave?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Go while you still\ncan go freely.",
+    "source": "series/critic/readouts/drafts.json#33"
+   },
+   "classic": {
+    "judgment": [
+     "遯，亨，小利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：遯亨，遯而亨也。",
+     "剛當位而應，與時行也。",
+     "小利貞，浸而長也。",
+     "遯之時義大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：天下有山，遯。",
+     "君子以遠小人，不惡而嚴。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，遯尾，厲，勿用有攸往。",
+      "smallImage": "《象》曰：遯尾之厲，不往何災也。",
+      "wangBi": null
+     },
+     "2": {
+      "statement": "六二，執之用黃牛之革，莫之勝說。",
+      "smallImage": "《象》曰：執用黃牛，固志也。",
+      "wangBi": "居內處中，為遯之主，物皆遯己，何以固之？若能執乎理中厚順之道以固之也，則莫之勝解。"
+     },
+     "3": {
+      "statement": "九三，係遯，有疾厲，畜臣妾吉。",
+      "smallImage": "《象》曰：係遯之厲，有疾憊也。畜臣妾吉，不可大事也。",
+      "wangBi": "在內近二，以陽附陰，宜遯而繫，故曰繫遯。遯之為義，宜遠小人，以陽附陰，繫於所在，不能遠害，亦已憊矣，宜其屈辱而危厲也。繫於所在，畜臣妾可也。施於大事，凶之道也。"
+     },
+     "4": {
+      "statement": "九四，好遯，君子吉，小人否。",
+      "smallImage": "《象》曰：君子好遯，小人否也。",
+      "wangBi": "處於外而有應於內，君子好遯，故能舍之，小人繫戀，是以否也。"
+     },
+     "5": {
+      "statement": "九五，嘉遯，貞吉。",
+      "smallImage": "《象》曰：嘉遯貞吉，以正志也。",
+      "wangBi": "遯而得正，反制於內。小人應命，率正其志，不惡而嚴，得正之吉，遯之嘉也。"
+     },
+     "6": {
+      "statement": "上九，肥遯，无不利。",
+      "smallImage": "《象》曰：肥遯无不利，无所疑也。",
+      "wangBi": "最處外極，无應於內，超然絕志，心无疑顧，憂患不能累，矰繳不能及，是以肥遯无不利也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "TWO YIELDING LINES CREEP UP.",
+    "mark": [
+     1,
+     2
+    ],
+    "master": {
+     "zh": "為遯之主",
+     "en": "Master of Retreat"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     1
+    ],
+    "finding": "AT THE BASE: THE TAIL\nOF THE RETREAT. DANGER.",
+    "why": "Line 1 (遯尾，厲) is the last one out, caught by the danger: the plain warning behind 'go while you still can go freely'. Wang Bi: 'when danger has arrived and only then does one seek to move, it is difficult to avoid peril.' Alternative: line 6 'Bountiful retreat. Nothing that is not beneficial' (leaving early and free). Data note: the input's line 1 holds Wang Bi's note, not the statement 遯尾，厲，勿用有攸往 ('Retreating at the tail. Danger. Do not set out.')."
+   }
+  },
+  {
+   "number": 34,
+   "hook": "Finally in charge?",
+   "meaning": [
+    "Great Power says:\ncheck your aim.",
+    "Mostly, know what\nnot to do."
+   ],
+   "question": "What won’t you\ndo with it?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Be strong only\nin what is right.",
+    "source": "series/critic/readouts/drafts.json#34"
+   },
+   "classic": {
+    "judgment": [
+     "大壯，利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：大壯，大者壯也。",
+     "剛以動，故壯。大壯利貞，大者正也，正大而天地之情可見矣。"
+    ],
+    "greatImage": [
+     "《象》曰：雷在天上，大壯。",
+     "君子以非禮弗履。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，壯于趾，征凶有孚。",
+      "smallImage": "《象》曰：壯于趾，其孚窮也。",
+      "wangBi": "夫得大壯者，必能自然成也。未有陵犯於物而得終其壯者。在下而壯，故曰壯于趾也。居下而用剛壯，以斯而進，窮凶可必也，故曰征凶有孚。"
+     },
+     "2": {
+      "statement": "九二，貞吉。",
+      "smallImage": "《象》曰：九二貞吉，以中也。",
+      "wangBi": "居得中位，以陽居陰，履謙不亢，是以貞吉。"
+     },
+     "3": {
+      "statement": "九三，小人用壯，君子用罔，貞厲。羝羊觸藩，羸其角。",
+      "smallImage": "《象》曰：小人用壯，君子罔也。",
+      "wangBi": "處健之極，以陽處陽，用其壯者也。故小人用之以為壯，君子用之以為羅己者也。貞厲以壯，雖復羝羊，以之觸藩，能無羸乎？"
+     },
+     "4": {
+      "statement": "九四，貞吉，悔亡。藩決不羸。壯于大輿之輹。",
+      "smallImage": "《象》曰：藩決不羸，尚往也。",
+      "wangBi": "下剛而進，將有憂虞。而以陽處陰，行不違謙，不失其壯，故得貞吉而悔亡也。己得其壯，而上陰不罔己路，故藩決不羸也。壯于大輿之輹，无有能說其輹者，可以往也。"
+     },
+     "5": {
+      "statement": "六五，喪羊于易，无悔。",
+      "smallImage": "《象》曰：喪羊于易，位不當也。",
+      "wangBi": "居於大壯，以陽處陽，猶不免咎，而況以陰處陽，以柔乘剛者乎？羊，壯也。必喪其羊，失其所居也。能喪壯于易，不于險難，故得无悔。二履貞吉，能幹其任，而己委焉，則得无悔。委之則難不至，居之則敵寇來，故曰喪羊于易。"
+     },
+     "6": {
+      "statement": "上六，羝羊觸藩，不能退，不能遂。无攸利，艱則吉。",
+      "smallImage": "《象》曰：不能退，不能遂，不詳也。艱則吉，咎不長也。",
+      "wangBi": "有應於三，故不能退。懼於剛長，故不能遂。持疑猶豫，志无所定，以斯決事，未見所利。雖處剛長，剛不害正。苟定其分，固志在三*，以斯自處，則憂患消亡，故曰艱則吉也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "FOUR STRONG LINES PUSH UP.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: THE RAM BUTTS\nTHE FENCE. HORNS CAUGHT.",
+    "why": "Line 3 sets 'the petty person uses vigor; the noble person does not' beside the ram that butts a fence and gets its horns stuck: strength used wrongly traps itself, the reverse side of 'be strong only in what is right'. Line 4 (the fence breaks open) could follow, but one line is enough."
+   }
+  },
+  {
+   "number": 35,
+   "hook": "Finally getting recognized?",
+   "meaning": [
+    "Progress says:\ncharacter first.",
+    "Not strategy.\nNot network."
+   ],
+   "question": "What are you\nlike up close?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Shine,\ndon't push.",
+    "source": "series/critic/readouts/drafts.json#35"
+   },
+   "classic": {
+    "judgment": [
+     "晉，康侯用錫馬蕃庶，晝日三接。"
+    ],
+    "tuan": [
+     "《彖》曰：晉，進也。明出地上，順而麗乎大明，柔進而上行。",
+     "是以康侯用錫馬蕃庶，晝日三接也。"
+    ],
+    "greatImage": [
+     "《象》曰：明出地上，晉。君子以自昭明德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，晉如摧如，貞吉。罔孚，裕，无咎。",
+      "smallImage": "《象》曰：晉如摧如，獨行正也。裕无咎，未受命也。",
+      "wangBi": "處順之初，應明之始，明順之德，於斯將隆。進明退順，不失其正，故曰「晉如摧如貞吉」也。處卦之始，功業未著，物未之信，故曰罔孚。方踐卦始，未至履位，以此為足，自喪其長者也。故必裕之，然後无咎。"
+     },
+     "2": {
+      "statement": "六二，晉如愁如，貞吉。受茲介福，于其王母。",
+      "smallImage": "《象》曰：受茲介福，以中正也。",
+      "wangBi": "進而无應，其德不昭，故曰「晉如愁如」。居中得位，履順而正，不以无應而回其志，處晦能致其誠者也。脩德以斯，聞乎幽昧，得正之吉也，故曰貞吉。母者，處內而成德者也。鳴鶴在陰則其子和之，立誠於闇，闇亦應之，故其初愁如。履貞不回，則乃受茲大福于其王母也。"
+     },
+     "3": {
+      "statement": "六三，眾允，悔亡。",
+      "smallImage": "《象》曰：眾允之，志上行也。",
+      "wangBi": "處非其位，悔也。志在上行，與眾同信，順而麗明，故得悔亡也。"
+     },
+     "4": {
+      "statement": "九四，晉如鼫鼠，貞厲。",
+      "smallImage": "《象》曰：鼫鼠貞厲，位不當也。",
+      "wangBi": "履非其位，上承於五，下據三陰。履非其位，又負且乘，无業可安，志无所據，以斯為進，正之危也。進如鼫鼠，无所守也。"
+     },
+     "5": {
+      "statement": "六五，悔亡，失得勿恤，往吉，无不利。",
+      "smallImage": "《象》曰：失得勿恤，往有慶也。",
+      "wangBi": "柔得尊位，陰為明主，能不用察，不代下任也。故雖不當位，能消其悔。失得勿恤，各有其司，術斯以往，无不利也。"
+     },
+     "6": {
+      "statement": "上九，晉其角，維用伐邑。厲吉无咎，貞吝。",
+      "smallImage": "《象》曰：維用伐邑，道未光也。",
+      "wangBi": "處進之極，過明之中，明將夷焉。已在乎角，而猶進之，非亢如何？失夫道化无為之事，必須攻伐，然後服邑，危乃得吉，吉乃无咎。用斯為正，亦以賤矣。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE SOFT RISES TO THE TOP CENTRE.",
+    "mark": [
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     6
+    ],
+    "finding": "AT THE TOP: ADVANCING\nWITH THE HORNS.",
+    "why": "Line 6 (晉其角) is advance by force, horns first, even attacking a town; Wang Bi: 'already at the horn yet still pressing forward, how is this not excessive?' It carries the 'don't push' half clearly; the 'shine' half is left to the lesson line. Alternative: line 4, 'advancing like a hamster' (grasping advance)."
+   }
+  },
+  {
+   "number": 36,
+   "hook": "Your good ideas getting shut down?",
+   "meaning": [
+    "Dark times say:\nlie low.",
+    "Keep your light\ninside."
+   ],
+   "question": "What light are\nyou protecting?",
+   "lesson": {
+    "kind": "character",
+    "text": "Dark times?\nDim your light.",
+    "source": "series/characters.json#36: A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes."
+   },
+   "classic": {
+    "judgment": [
+     "明夷，利艱貞。"
+    ],
+    "tuan": [
+     "《彖》曰：明入地中，明夷。內文明而外柔順，以蒙大難，文王以之。利艱貞，晦其明也。內難而能正其志，箕子以之。"
+    ],
+    "greatImage": [
+     "《象》曰：明入地中，明夷，君子以莅眾，",
+     "用晦而明。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，明夷于飛，垂其翼。君子于行，三日不食。有攸往，主人有言。",
+      "smallImage": "《象》曰：君子于行，義不食也。",
+      "wangBi": "明夷之主，在於上六，上六為至闇者也。初處卦之始，最遠於難也。遠難過甚，明夷遠遯，絕跡匿形，不由軌路，故曰明夷于飛。懷懼而行，行不敢顯，故曰垂其翼也。尚義而行，故曰君子于行也。志急於行，飢不遑食，故曰三日不食也。殊類過甚，以斯適人，人心疑之，故曰「有攸往，主人有言」。"
+     },
+     "2": {
+      "statement": "六二，明夷，夷于左股，用拯馬壯，吉。",
+      "smallImage": "《象》曰：六二之吉，順以則也。",
+      "wangBi": "夷于左股，示行不能壯也。以柔居中，用夷其明，進不殊類，退不近難，不見疑憚，順以則也，故可用拯馬而壯，吉也。不垂其翼，然後乃免也。"
+     },
+     "3": {
+      "statement": "九三，明夷于南狩，得其大首，不可疾貞。",
+      "smallImage": "《象》曰：南狩之志，乃大得也。",
+      "wangBi": "處下體之上，居文明之極，上為至晦，入地之物也。故夷其明，以獲南狩，得大首也。南狩者，發其明也。既誅其主，將正其民。民之迷也，其日固已久矣。化宜以漸，不可速正，故曰不可疾貞。"
+     },
+     "4": {
+      "statement": "六四，入于左腹，獲明夷之心，于出門庭。",
+      "smallImage": "《象》曰：入于左腹，獲心意也。",
+      "wangBi": "左者，取其順也。入于左腹，得其心意，故雖近不危。隨時辟難*，門庭而已，能不逆忤也。"
+     },
+     "5": {
+      "statement": "六五，箕子之明夷，利貞。",
+      "smallImage": "《象》曰：箕子之貞，明不可息也。",
+      "wangBi": "最近於晦，與難為比，險莫如茲。而在斯中，猶闇不能沒，明不可息，正不憂危，故利貞也。"
+     },
+     "6": {
+      "statement": "上六，不明晦，初登于天，後入于地。",
+      "smallImage": "《象》曰：初登于天，照四國也。後入于地，失則也。",
+      "wangBi": "處明夷之極，是至晦者也。本其初也，在乎光照，轉至於晦，遂入于地。"
+     }
+    }
+   }
+  },
+  {
+   "number": 37,
+   "hook": "Too many rules at home?",
+   "meaning": [
+    "The Family says:\nskip the rules.",
+    "Say real things.\nDo them daily."
+   ],
+   "question": "What will you\nfollow through on?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Home in order,\nthe rest follows.",
+    "source": "series/critic/readouts/drafts.json#37"
+   },
+   "classic": {
+    "judgment": [
+     "家人，利女貞。"
+    ],
+    "tuan": [
+     "《彖》曰：家人，女正位乎內，",
+     "男正位乎外。",
+     "男女正，天地之大義也。家人有嚴君焉，父母之謂也。父父、子子、兄兄、弟弟、夫夫、婦婦，而家道正，正家而天下定矣。"
+    ],
+    "greatImage": [
+     "《象》曰：風自火出，家人。",
+     "君子以言有物而行有恒。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，閑有家，悔亡。",
+      "smallImage": "《象》曰：閑有家，志未變也。",
+      "wangBi": "凡教在初而法在始，家瀆而後嚴之，志變而後治之，則悔矣。處家人之初，為家人之始，故宜必以閑有家，然後悔亡也。"
+     },
+     "2": {
+      "statement": "六二，无攸遂，在中饋，貞吉。",
+      "smallImage": "《象》曰：六二之吉，順以巽也。",
+      "wangBi": "居內處中，履得其位，以陰應陽，盡婦人之正義，无所必遂，職乎中饋，巽順而巳，是以貞吉也。"
+     },
+     "3": {
+      "statement": "九三，家人嗃嗃，悔厲，吉。婦子嘻嘻，終吝。",
+      "smallImage": "《象》曰：家人嗃嗃，未失也。婦子嘻嘻，失家節也。",
+      "wangBi": "以陽處陽，剛嚴者也。處下體之極，為一家之長者也。行與其慢，寧過乎恭；家與其瀆，寧過乎嚴。是以家人雖嗃嗃悔厲，猶得其道。婦子嘻嘻，乃失其節也。"
+     },
+     "4": {
+      "statement": "六四，富家，大吉。",
+      "smallImage": "《象》曰：富家大吉，順在位也。",
+      "wangBi": "能以其富，順而處位，故大吉也。若但能富其家，何足為大吉？體柔居巽，履得其位，明於家道，以近至尊，能富其家也。"
+     },
+     "5": {
+      "statement": "九五，王假有家，勿恤，吉。",
+      "smallImage": "《象》曰：王假有家，交相愛也。",
+      "wangBi": "假，至也。履正而應，處尊體巽，王至斯道，以有其家者也。居於尊位，而明於家道，則下莫不化矣。父父、子子、兄兄、弟弟、夫夫、婦婦，六親和睦，交相愛樂，而家道正，正家而天下定矣，故王假有家則勿恤而吉。"
+     },
+     "6": {
+      "statement": "上九，有孚，威如，終吉。",
+      "smallImage": "《象》曰：威如之吉，反身之謂也。",
+      "wangBi": "處家人之終，居家道之成，刑于寡妻，以著于外者也，故曰有孚。凡物以猛為本者則患在寡恩，以愛為本者則患在寡威，故家人之道尚威嚴也。家道可終，唯信與威。身得威敬，人亦如之。反之於身，則知施於人也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "2 AND 5 ANSWER, BOTH IN PLACE.",
+    "mark": [
+     2,
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 6,
+    "lines": [],
+    "finding": "2 AND 5 ANSWER, BOTH IN PLACE.",
+    "why": "'Home in order, the rest follows' is about everyone in their place, which the whole-shape finding shows; no one line says it. Line 1 ('setting barriers for the household') is literally rules, which contradicts the meaning card 'skip the rules'. Option only: line 6, 'AT THE TOP: SINCERE\\nAND DIGNIFIED.' ('there is sincerity and a dignified bearing, in the end good fortune'), fits the meaning card 'Say real things' and a lesson like 'Be sincere, not strict.' The current finding uses the ANSWER jargon."
+   }
+  },
+  {
+   "number": 38,
+   "hook": "Can’t agree on anything?",
+   "meaning": [
+    "Opposition says:\nstart small.",
+    "Share something,\nstay different."
+   ],
+   "question": "What do you\nboth want?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Apart, but still\nanswering.",
+    "source": "series/critic/readouts/drafts.json#38"
+   },
+   "classic": {
+    "judgment": [
+     "睽，小事吉。"
+    ],
+    "tuan": [
+     "《彖》曰：睽，火動而上，澤動而下。二女同居，其志不同行。說而麗乎明，柔進而上行，得中而應乎剛，是以小事吉。",
+     "天地睽而其事同也，男女睽而其志通也，萬物睽而其事類也。睽之時用大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：上火下澤，睽。君子以同而異。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，悔亡。喪馬，勿逐自復。見惡人，无咎。",
+      "smallImage": "《象》曰：見惡人，以辟咎也。",
+      "wangBi": "處睽之初，居下體之下，无應獨立，悔也。與四合志，故得悔亡。馬者，必顯之物。處物之始，乖而喪其馬，物莫能同其私，必相顯也，故勿逐而自復也。時方乖離，而位乎窮下，上无應可援，下无權可恃，顯德自異，為惡所害，故見惡人乃得免咎也。"
+     },
+     "2": {
+      "statement": "九二，遇主于巷，无咎。",
+      "smallImage": "《象》曰：遇主于巷，未失道也。",
+      "wangBi": "處睽失位，將无所安。然五亦失位，俱求其黨，出門同趣，不期而遇，故曰遇主於巷也。處睽得援，雖失其位，未失道也。"
+     },
+     "3": {
+      "statement": "六三，見輿曳，其牛掣。其人天且劓，无初有終。",
+      "smallImage": "《象》曰：見輿曳，位不當也。无初有終，遇剛也。",
+      "wangBi": "凡物近而不相得則凶。處睽之時，履非其位，以陰居陽，以柔乘剛，志在於上，而不和於四。二應於五，則近而不相比，故見輿曳。輿曳者，履非其位，失所載也。其牛掣者，滯隔所在，不獲進也。「其人天且劓」者，四從上取，二從下取，而應在上九，執志不回。初雖受困，終獲剛助。"
+     },
+     "4": {
+      "statement": "九四，睽孤，遇元夫。交孚，厲，无咎。",
+      "smallImage": "《象》曰：交孚无咎，志行也。",
+      "wangBi": "无應獨處，五自應二，三與己睽，故曰睽孤也。初亦无應特立。處睽之時，俱在獨立，同處體下，同志者也。而己失位，比於三五，皆與己乖，處无所安，故求其疇類而自託焉，故曰遇元夫也。同志相得而无疑焉，故曰交孚也。雖在乖隔，志故得行，故雖危无咎。"
+     },
+     "5": {
+      "statement": "六五，悔亡。厥宗噬膚，往，何咎？",
+      "smallImage": "《象》曰：厥宗噬膚，往有慶也。",
+      "wangBi": "非位，悔也。有應，故亡。厥宗，謂二也。噬膚者，齧柔也。三雖比二，二之所噬，非妨己應者也。以斯而往，何咎之有？往必合也。"
+     },
+     "6": {
+      "statement": "上九，睽孤。見豕負塗，載鬼一車，先張之弧，後說之弧。匪寇婚媾，往，遇雨則吉。",
+      "smallImage": "《象》曰：遇雨之吉，群疑亡也。",
+      "wangBi": "處睽之極，睽道未通，故曰睽孤。己居炎極，三處澤盛，睽之極也。以文明之極，而觀至穢之物，睽之甚也。豕而負塗，穢莫過焉。至睽將合，至殊將通，恢詭譎怪，道將為一。未至於洽，先見殊怪，故見豕負塗，甚可穢也。見鬼盈車，吁可怪也。先張之弧，將攻害也。後說之弧，睽怪通也。四剠其應，故為寇也。睽志將通，匪寇婚媾，往不失時，睽疑亡也。貴於遇雨，和陰陽也。陰陽既和，群疑亡也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER.",
+    "mark": [
+     2,
+     3,
+     5,
+     6
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     2
+    ],
+    "finding": "LINE 2: MEETS HIS LORD\nIN A SIDE STREET.",
+    "why": "Line 2 (遇主于巷): both partners are out of place, yet they still find each other by a back way; Wang Bi: 'both seek their kindred... meet'. That is 'apart, but still answering' and fits 'start small'. Option: line 6 (draws the bow, then lays it down: 'not a bandit but a marriage partner') is the stronger image but carries a different lesson, that the one you oppose may be a partner."
+   }
+  },
+  {
+   "number": 39,
+   "hook": "Hit a wall?",
+   "meaning": [
+    "Obstruction says:\nask for help.",
+    "The wall is\nthe lesson."
+   ],
+   "question": "Who could you\nask?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Blocked?\nLook at yourself.",
+    "source": "series/critic/readouts/drafts.json#39"
+   },
+   "classic": {
+    "judgment": [
+     "蹇，利西南，不利東北。",
+     "利見大人。",
+     "貞吉。"
+    ],
+    "tuan": [
+     "《彖》曰：蹇，難也，險在前也。見險而能止，知矣哉！蹇，利西南，往得中也。不利東北，其道窮也。利見大人，往有功也。當位貞吉，以正邦也。蹇之時用大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：山上有水，蹇。",
+     "君子以反身脩德。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，往蹇，來譽。",
+      "smallImage": "《象》曰：往蹇來譽，宜待也。",
+      "wangBi": "處難之始，居止之初，獨見前識，覩險而止，以待其時，知矣哉！故往則遇蹇，來則得譽。"
+     },
+     "2": {
+      "statement": "六二，王臣蹇蹇，匪躬之故。",
+      "smallImage": "《象》曰：王臣蹇蹇，終无尤也。",
+      "wangBi": "處難之時*，履當其位，居不失中，以應於五。不以五在難中，私身遠害，執心不回，志匡王室者也。故曰：「王臣蹇蹇，匪躬之故」。履中行義，以存其上，處蹇以此，未見其尤也。"
+     },
+     "3": {
+      "statement": "九三，往蹇，來反。",
+      "smallImage": "《象》曰：往蹇來反，內喜之也。",
+      "wangBi": "進則入險，來則得位，故曰往蹇來反。為下卦之主，是內之所恃也。"
+     },
+     "4": {
+      "statement": "六四，往蹇，來連。",
+      "smallImage": "《象》曰：往蹇來連，當位實也。",
+      "wangBi": "往則无應，來則乘剛，往來皆難，故曰往蹇來連。得位履正，當其本實，雖遇於難，非妄所招也。"
+     },
+     "5": {
+      "statement": "九五，大蹇，朋來。",
+      "smallImage": "《象》曰：大蹇朋來，以中節也。",
+      "wangBi": "處難之時，獨在險中，難之大者也，故曰大蹇。然居不失正，履不失中，執德之長，不改其節，如此則同志者集而至矣，故曰朋來也。"
+     },
+     "6": {
+      "statement": "上六，往蹇來碩吉，利見大人。",
+      "smallImage": "《象》曰：往蹇來碩，志在內也。",
+      "wangBi": "往則長難，來則難終，難終則眾難皆濟，志大得矣，故曰往蹇來碩吉。險夷難解，大道可興，故曰利見大人也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED.",
+    "mark": [
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 8,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: BADLY BLOCKED.\nFRIENDS COME.",
+    "why": "Line 5 (大蹇，朋來) says the hook, meaning card and question ('ask for help', 'who could you ask?') directly, but not the current lesson. For 'look at yourself' the best line is line 1 ('going forth meets obstruction; turning back brings praise'), fit 5 at most; the lesson comes from the hexagram image (反身修德), not a line. Option: lesson 'Blocked? Ask for help.' Data note: the input's line 6 holds the Image text."
+   }
+  },
+  {
+   "number": 40,
+   "hook": "The pressure’s finally off?",
+   "meaning": [
+    "Deliverance says:\nact or rest.",
+    "Then let the\ngrudges go."
+   ],
+   "question": "What can you\nforgive?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Out of danger?\nThen don't linger.",
+    "source": "series/critic/readouts/drafts.json#40"
+   },
+   "classic": {
+    "judgment": [
+     "解，利西南。",
+     "无所往，其來復吉。有攸往，夙吉。"
+    ],
+    "tuan": [
+     "《彖》曰：解，險以動，動而免乎險，解。",
+     "解，利西南，往得眾也。其來復吉，乃得中也。有攸往夙吉，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。",
+     "解之時大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：雷雨作，解，君子以赦過宥罪。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，无咎。",
+      "smallImage": "《象》曰：剛柔之際，義无咎也。",
+      "wangBi": "解者，解也。屯難盤結，於是乎解也。處蹇難始解之初，在剛柔始散之際，將赦罪厄，以夷其險。處此之時，不煩於位而无咎也。"
+     },
+     "2": {
+      "statement": "九二，田獲三狐，得黃矢，貞吉。",
+      "smallImage": "《象》曰：九二貞吉，得中道也。",
+      "wangBi": "狐者，隱伏之物也。剛中而應，為五所任，處於險中，知險之情，以斯解物，能獲隱伏也，故曰「田獲三狐」也。黃，理中之稱也。矢，直也。田而獲三狐，得乎理中之道，不失枉直之實，能全其正者也，故曰「田獲三狐，得黃矢，貞吉」也。"
+     },
+     "3": {
+      "statement": "六三，負且乘，致寇至，貞吝。",
+      "smallImage": "《象》曰：負且乘，亦可醜也。自我致戎，又誰咎也？",
+      "wangBi": "處非其位，履非其正，以附於四，用夫柔邪以自媚者也。乘二負四，以容其身。寇之來也，自己所致，雖幸而免，正之所賤也。"
+     },
+     "4": {
+      "statement": "九四，解而拇，朋至斯孚。",
+      "smallImage": "《象》曰：解而拇，未當位也。",
+      "wangBi": "失位不正，而比於三，故三得附之為其拇也。三為之拇，則失初之應，故解其拇，然後朋至而信矣。"
+     },
+     "5": {
+      "statement": "六五，君子維有解，吉。有孚于小人。",
+      "smallImage": "《象》曰：君子有解，小人退也。",
+      "wangBi": "居尊履中而應乎剛，可以有解而獲吉矣。以君子之道解難釋險，小人雖闇，猶知服之而无怨矣。故曰「有孚于小人」也。"
+     },
+     "6": {
+      "statement": "上六，公用射隼于高墉之上，獲之，无不利。",
+      "smallImage": "《象》曰：公用射隼，以解悖也。",
+      "wangBi": "初為四應，二為五應，三不應上，失位負乘，處下體之上，故曰高墉。墉非隼之所處，高非三之所履，上六居動之上，為解之極，將解荒悖而除穢亂者也。故用射之，極而後動，成而後舉，故必獲之而无不利也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THUNDER BREAKS OUT OF THE WATER.",
+    "mark": [
+     4,
+     5,
+     6
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 7,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: THE NOBLE ONE\nUNTIES THE KNOT.",
+    "why": "No line says 'don't linger'; that comes from the Judgment (有攸往，夙吉, 'if there is somewhere to go, early is good'). Line 5 (君子維有解... 有孚于小人) is the noble person releasing, with trust shown even to petty people, which fits the meaning card 'let the grudges go' and the question 'what can you forgive?'. Option: lesson 'Out of danger? Let the grudges go.' Fit against the current lesson: 4. Alternative image: line 4, 'release your big toe; then allies come'."
+   }
+  },
+  {
+   "number": 41,
+   "hook": "Having less than before?",
+   "meaning": [
+    "Decrease says:\ngive what you can.",
+    "Cut the anger,\ncut the wants."
+   ],
+   "question": "What can you\nlet go of?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Two small baskets\nare enough.",
+    "source": "series/critic/readouts/drafts.json#41"
+   },
+   "classic": {
+    "judgment": [
+     "損，有孚，元吉，无咎可貞。利有攸往。曷之用？二簋可用享。",
+     "「曷之用，二簋可用享」者，明行損之禮，貴夫誠信，不在於豐。既行損以信，何用豐為？二簋至約，可用享祭矣，故曰「曷之用，二簋可用享」也。"
+    ],
+    "tuan": [
+     "《彖》曰：損，損下益上，其道上行。",
+     "損而有孚，元吉，无咎可貞，利有攸往。",
+     "曷之用？",
+     "二簋可用享；",
+     "二簋應有時。",
+     "損剛益柔有時，",
+     "損益盈虛，與時偕行。"
+    ],
+    "greatImage": [
+     "《象》曰：山下有澤，損。",
+     "君子以懲忿窒欲。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，已事遄往，无咎，酌損之。",
+      "smallImage": "《象》曰：已事遄往，尚合志也。",
+      "wangBi": "損之為道，損下益上，損剛益柔，以應其時者也。居於下極，損剛奉柔，則不可以逸。處損之始，則不可以盈。時已則往，不敢宴安，乃獲无咎也。剛以奉柔，雖免乎咎，猶未親也，故既獲无咎，復自酌損，乃得合志也。遄，速也。"
+     },
+     "2": {
+      "statement": "九二，利貞，征凶。弗損，益之。",
+      "smallImage": "《象》曰：九二利貞，中以為志也。",
+      "wangBi": "柔不可全益，剛不可全削，下不可以无正。初九已損剛以順柔，九二履中，而復損己以益柔，則剝道成焉，故不可遄往，而利貞也。進之於柔，則凶矣，故曰征凶也。故九二不損而務益，以中為志也。"
+     },
+     "3": {
+      "statement": "六三，三人行則損一人，一人行則得其友。",
+      "smallImage": "《象》曰：一人行，三則疑也。",
+      "wangBi": "損之為道，損下益上，其道上行。三人，謂自六三已上三陰也。三陰並行，以承於上，則上失其友，內无其主，名之曰益，其實乃損。故天地相應，乃得化淳；男女匹配，乃得化生。陰陽不對，生可得乎？故六三獨行，乃得其友，三陰俱行，則必疑矣。"
+     },
+     "4": {
+      "statement": "六四，損其疾，使遄有喜，无咎。",
+      "smallImage": "《象》曰：損其疾，亦可喜也。",
+      "wangBi": "履得其位，以柔納剛，能損其疾也。疾何可久，故速乃有喜。損疾以離其咎，有喜乃免，故使速乃有喜，有喜乃无咎也。"
+     },
+     "5": {
+      "statement": "六五，或益之，十朋之龜弗克違，元吉。",
+      "smallImage": "《象》曰：六五元吉，自上祐也。",
+      "wangBi": "以柔居尊，而為損道，江海處下，百谷歸之。履尊以損，則或益之矣。朋，黨也。龜者，決疑之物也。陰非先唱，柔非自任，尊以自居，損以守之。故人用其力，事竭其功，知者慮能，明者慮策，弗能違也，則眾才之用盡矣。獲益而得十朋之龜，足以盡天人之助也。"
+     },
+     "6": {
+      "statement": "上九，弗損，益之，无咎，貞吉。利有攸往，得臣无家。",
+      "smallImage": "《象》曰：弗損，益之，大得志也。",
+      "wangBi": "處損之終，上无所奉，損終反益，剛德不損，乃反益之，而不憂於咎。用正而吉，不制於柔，剛德遂長，故曰｢弗損，益之，无咎，貞吉，利有攸往｣也。居上乘柔，處損之極，尚夫剛德，為物所歸，故曰得臣。得臣則天下為一，故无家也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE LOW LINE GIVES TO THE TOP.",
+    "mark": [
+     3,
+     6
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 7,
+    "lines": [
+     4
+    ],
+    "finding": "LINE 4: CUT WHAT AILS YOU.\nSOON THERE IS JOY.",
+    "why": "The lesson 'two small baskets are enough' is from the Judgment (二簋可用享); no line carries it. Line 4 (損其疾，使遄有喜) fits the meaning card 'cut the anger, cut the wants' and the question 'what can you let go of?'. Option: lesson 'Cut what hurts you. Do it soon.' Line 3 ('three travel, one is lost; one alone finds a friend') is the other candidate but harder for a newcomer."
+   }
+  },
+  {
+   "number": 42,
+   "hook": "Door’s open, still hesitating?",
+   "meaning": [
+    "Increase says:\ngo now.",
+    "See good, move\ntoward it."
+   ],
+   "question": "What will you\nmove toward?",
+   "lesson": {
+    "kind": "character",
+    "text": "Let your gain\nspill over",
+    "source": "series/characters.json#42: A bowl rises; water fills it and spills over the far rim."
+   },
+   "classic": {
+    "judgment": [
+     "益，利有攸往，利涉大川。"
+    ],
+    "tuan": [
+     "《彖》曰：益，損上益下，民說无疆，",
+     "自上下下，其道大光。 利有攸往，中正有慶。",
+     "利涉大川，木道乃行。",
+     "益動而巽，日進无疆。天施地生，其益无方。",
+     "凡益之道，與時偕行。",
+     "「益動而巽，日進无疆」者，自此已下，廣明益義。前則就二體明損上益下以釋卦名，以下有動求，上能巽接，是損上益下之義。今就二體更明得益之方也，若動而驕盈，則被損无已；若動而卑巽，則進益无疆，故曰「益動而巽，日進无疆」。"
+    ],
+    "greatImage": [
+     "《象》曰：風雷，益。君子以見善則遷，有過則改。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，利用為大作，元吉无咎。",
+      "smallImage": "《象》曰：元吉无咎，下不厚事也。",
+      "wangBi": "處益之初，居動之始，體夫剛德，以莅其事，而之乎巽，以斯大作，必獲大功。夫居下非厚事之地，在卑非任重之處，大作非小功所濟，故元吉，乃得无咎也。"
+     },
+     "2": {
+      "statement": "六二，或益之十朋之龜，弗克違，永貞吉。王用享于帝，吉。",
+      "smallImage": "《象》曰：或益之，自外來也。",
+      "wangBi": "以柔居中，而得其位，處內履中，居益以沖。益自外來，不召自至，不先不為，則朋龜獻策，同於損卦六五之位。位不當尊，故吉在永貞也。帝者，生物之主，興益之宗，出震而齊巽者也。六二居益之中，體柔當位，而應於巽，享帝之美，在此時也。"
+     },
+     "3": {
+      "statement": "六三，益之用凶事，无咎。有孚，中行，告公用圭。",
+      "smallImage": "《象》曰：益用凶事，固有之也。",
+      "wangBi": "以陰居陽，求益者也，故曰益之。益不外來，己自為之，物所不與，故在謙則戮，救凶則免。以陰居陽，處下卦之上，壯之甚也，用救衰危，物所恃也，故用凶事，乃得无咎也。若能益不為私，志在救難，壯不至亢，不失中行，以此告公，國主所任也。用圭之禮，備此道矣。故曰有孚，中行告公用圭也。公者，臣之極也。凡事足以施天下，則稱王；次天下之大者，則稱公。六三之才，不足以告王，足以告公，而得用圭也。故曰｢中行，告公用圭｣也。"
+     },
+     "4": {
+      "statement": "六四，中行，告公從，利用為依遷國。",
+      "smallImage": "《象》曰：告公從，以益志也。",
+      "wangBi": "居益之時，處巽之始，體柔當位，在上應下，卑不窮下，高不處亢，位雖不中，用中行者也。以斯告公，何有不從？以斯依遷，誰有不納也？"
+     },
+     "5": {
+      "statement": "九五，有孚惠心，勿問元吉。有孚，惠我德。",
+      "smallImage": "《象》曰：有孚惠心，勿問之矣。惠我德，大得志也。",
+      "wangBi": "得位履尊，為益之主者也。為益之大，莫大於信，為惠之大，莫大於心。因民所利而利之焉，惠而不費，惠心者也。信以惠心，盡物之願，固不待問而元吉。有孚，惠我德也，以誠惠物，物亦應之，故曰｢有孚，惠我德｣也。"
+     },
+     "6": {
+      "statement": "上九，莫益之，或擊之，立心勿恒，凶。",
+      "smallImage": "《象》曰：莫益之，偏辭也。或擊之，自外來也。",
+      "wangBi": "處益之極，過盈者也。求益无已，心无恒者也。无厭之求，人弗與也。獨唱莫和，是偏辭也。人道惡盈，怨者非一，故曰｢或擊之｣也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 43,
+   "hook": "Ready to call something out?",
+   "meaning": [
+    "Breakthrough:\nsay it openly.",
+    "Speak up, but\nno force."
+   ],
+   "question": "What needs\nsaying out loud?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Remove the wrong\nopenly, unarmed.",
+    "source": "Judgment on 43: proclaimed in the king's court; resorting to arms is not supported"
+   },
+   "classic": {
+    "judgment": [
+     "夬，揚于王庭，孚號有厲。告自邑，不利即戎，利有攸往。",
+     "「孚號有厲」者，號，號令也。行決之法，先須號令。夬，以剛決柔，則是用明信之法而宣其號令，如此即柔邪者危，故曰孚號有厲也。以剛制斷，行令於邑可也。若用剛即戎，尚力取勝，為物所疾，以此用師，必有不利，故曰「告自邑，不利即戎」。雖不利即戎，然剛德不長，則柔邪不消。故陽爻宜有所往，夬道乃成，故曰利有攸往也。"
+    ],
+    "tuan": [
+     "《彖》曰：夬，決也，剛決柔也。健而說，決而和。",
+     "揚于王庭，柔乘五剛也。",
+     "孚號有厲，其危乃光也。",
+     "告自邑，不利即戎，所尚乃窮也。",
+     "利有攸往，剛長乃終也。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上於天，夬。君子以施祿及下，居德則忌。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，壯于前趾，往不勝，為咎。",
+      "smallImage": "《象》曰：不勝而往，咎也。",
+      "wangBi": "居健之初，為決之始，宜審其策，以行其事。壯其前趾，往而不勝，宜其咎也。"
+     },
+     "2": {
+      "statement": "九二，惕號，莫夜有戎，勿恤。",
+      "smallImage": "《象》曰：有戎勿恤，得中道也。",
+      "wangBi": "居健履中，以斯決事，能審己度而不疑者也。故雖有惕懼號呼，莫夜有戎，不憂不惑，故勿恤也。"
+     },
+     "3": {
+      "statement": "九三，壯於頄，有凶。君子夬夬，獨行，遇雨若濡，有慍无咎。",
+      "smallImage": "《象》曰：君子夬夬，終无咎也。",
+      "wangBi": "頄，面權也，謂上六也。最處體上，故曰權也。剝之六三，以應陽為善。夫剛長則君子道興，陰盛則小人道長。然則處陰長而助陽則善，處剛長而助柔則凶矣。夬為剛長，而三獨應上六，助於小人，是以凶也。君子處之，必能棄夫情累，決之不疑，故曰夬夬也。若不與眾陽為群，而獨行殊志，應於小人，則受其困焉。遇雨若濡，有恨而无所咎也。"
+     },
+     "4": {
+      "statement": "九四，臀无膚，其行次且。牽羊悔亡，聞言不信。",
+      "smallImage": "《象》曰：其行次且，位不當也。聞言不信，聰不明也。",
+      "wangBi": "下剛而進，非己所據，必見侵食*，失其所安，故臀无膚其行次且也。羊者，牴很難移之物，謂五也。五為夬主，非下所侵。若牽於五，則可得悔亡而已。剛亢不能納言，自任所處，聞言不信，以斯而行，凶可知矣。"
+     },
+     "5": {
+      "statement": "九五，莧陸夬夬，中行无咎。",
+      "smallImage": "《象》曰：中行无咎，中未光也。",
+      "wangBi": "莧陸，草之柔脆者也。決之至易，故曰夬夬也。夬之為義，以剛決柔，以君子除小人者也。而五處尊位，最比小人，躬自決者也。以至尊而敵至賤，雖其克勝，未足多也。處中而行，足以免咎而已，未足光也。"
+     },
+     "6": {
+      "statement": "上六，无號，終有凶。",
+      "smallImage": "《象》曰：无號之凶，終不可長也。",
+      "wangBi": "處夬之極，小人在上，君子道長，眾所共棄，故非號咷所能延也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 44,
+   "hook": "Something shiny just showed up?",
+   "meaning": [
+    "Coming to Meet\nsays: be wary.",
+    "Charm can be\nthe warning."
+   ],
+   "question": "What’s too good\nto be true?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Check a bad start\nwhile it's small.",
+    "source": "Line 1 of 44: tied to a metal brake (Wang Bi: stop it at its start)"
+   },
+   "classic": {
+    "judgment": [
+     "姤，女壯，勿用取女。"
+    ],
+    "tuan": [
+     "《彖》曰：姤，遇也，柔遇剛也。",
+     "勿用取女，不可與長也。天地相遇，品物咸章也。",
+     "剛遇中正，天下大行也。",
+     "姤之時義大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：天下有風，姤，后以施命誥四方。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，繫于金柅，貞吉。有攸往，見凶。羸豕孚蹢躅。",
+      "smallImage": "《象》曰：繫于金柅，柔道牽也。",
+      "wangBi": "金者堅剛之物，柅者制動之主，謂九四也。初六處遇之始，以一柔而承五剛，體夫躁質，得遇而通，散而无主，自縱者也。柔之為物，不可以不牽。臣妾之道，不可以不貞，故必繫于正應，乃得貞吉也。若不牽于一，而有攸往行，則唯凶是見矣。羸豕，謂牝豕也。群豕之中，豭強而牝弱，故謂之羸豕也。孚，猶務躁也。夫陰質而躁恣者，羸豕特甚焉，言以不貞之陰，失其所牽，其為淫醜，若羸豕之孚務蹢躅也。"
+     },
+     "2": {
+      "statement": "九二，包有魚，无咎，不利賓。",
+      "smallImage": "《象》曰：包有魚，義不及賓也。",
+      "wangBi": "初陰而窮下，故稱魚。不正之陰，處遇之始，不能逆近者也。初自樂來應己之廚，非為犯奪，故无咎也。擅人之物，以為己惠，義所不為，故不利賓也。"
+     },
+     "3": {
+      "statement": "九三，臀无膚，其行次且，厲，无大咎。",
+      "smallImage": "《象》曰：其行次且，行未牽也。",
+      "wangBi": "處下體之極，而二據於初，不為己乘，居不獲安，行无其應，不能牽據，以固所處，故曰「臀无膚，其行次且」也。然履得其位，非為妄處，不遇其時，故使危厲。災非己招，是以无大咎也。"
+     },
+     "4": {
+      "statement": "九四，包无魚，起凶。",
+      "smallImage": "《象》曰：无魚之凶，遠民也。",
+      "wangBi": "二有其魚，故失之也。无民而動，失應而作，是以凶也。"
+     },
+     "5": {
+      "statement": "九五，以杞包瓜，含章，有隕自天。",
+      "smallImage": "《象》曰：九五含章，中正也。有隕自天，志不捨命也。",
+      "wangBi": "杞之為物，生於肥地者也。包瓜為物，繫而不食者也。九五履得尊位，而不遇其應，得地而不食，含章而未發，不遇其應，命未流行。然處得其所，體剛居中，志不舍命，不可傾隕，故曰有隕自天也。"
+     },
+     "6": {
+      "statement": "上九，姤其角，吝，无咎。",
+      "smallImage": "《象》曰：姤其角，上窮吝也。",
+      "wangBi": "進之於極，无所復遇，遇角而已，故曰姤其角也。進而无遇，獨恨而已，不與物爭，其道不害，故无凶咎也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 45,
+   "hook": "Hosting family, bracing for arguments?",
+   "meaning": [
+    "Gathering says:\nshare a purpose.",
+    "And plan for\nthe friction."
+   ],
+   "question": "What holds your\ngroup together?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Gather people by\nwhat is right.",
+    "source": "series/critic/readouts/drafts.json#45"
+   },
+   "classic": {
+    "judgment": [
+     "萃，亨，",
+     "王假有廟。",
+     "利見大人，亨，利貞。",
+     "用大牲，吉。",
+     "利有攸往。"
+    ],
+    "tuan": [
+     "《彖》曰：萃，聚也。順以說，剛中而應，故聚也。",
+     "王假有廟，致孝享也。",
+     "利見大人，亨，聚以正也。",
+     "用大牲吉，利有攸往，順天命也。",
+     "觀其所聚，而天地萬物之情可見矣。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上於地，萃。君子以除戎器，戒不虞。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，有孚不終，乃亂乃萃。若號一握為笑，勿恤，往无咎。",
+      "smallImage": "《象》曰：乃亂乃萃，其志亂也。",
+      "wangBi": "有應在四而三承之，心懷嫌疑，故有孚不終也。不能守道，以結至好，迷務競爭，故乃亂乃萃也。一握者，小之貌也。為笑者，懦劣之貌也。己為正配，三以近寵，若安夫卑退，謙以自牧，則勿恤而往无咎也。"
+     },
+     "2": {
+      "statement": "六二，引吉无咎，孚乃利用禴。",
+      "smallImage": "《象》曰：引吉无咎，中未變也。",
+      "wangBi": "居萃之時，體柔當位，處坤之中，己獨處正，與眾相殊，異操而聚，民之多僻，獨正者危。未能變體以遠於害，故必見引，然後乃吉而无咎也。禴，殷春祭名也，四時祭之省者也。居聚之時，處於中正，而行以忠信，故可以省薄薦於鬼神也。"
+     },
+     "3": {
+      "statement": "六三，萃如，嗟如，无攸利。往无咎，小吝。",
+      "smallImage": "《象》曰：往无咎，上巽也。",
+      "wangBi": "履非其位，以比於四，四亦失位。不正相聚，相聚不正，患所生也。干人之應，害所起也，故「萃如嗟如，无攸利」也。上六亦无應而獨立，處極而憂危，思援而求朋，巽以待物者也。與其萃於不正，不若之於同志，故可以往而无咎也。二陰相合，猶不若一陰一陽之應*，故有小吝也。"
+     },
+     "4": {
+      "statement": "九四，大吉，无咎。",
+      "smallImage": "《象》曰：大吉无咎，位不當也。",
+      "wangBi": "履非其位而下據三陰，得其所據，失其所處。處聚之時，不正而據，故必大吉，立夫大功，然後无咎也。"
+     },
+     "5": {
+      "statement": "九五，萃有位，无咎，匪孚。元永貞，悔亡。",
+      "smallImage": "《象》曰：萃有位，志未光也。",
+      "wangBi": "處聚之時，最得盛位，故曰萃有位也。四專而據，己德不行，自守而已，故曰无咎匪孚。夫脩仁守正，久必悔消，故曰「元永貞，悔亡」。"
+     },
+     "6": {
+      "statement": "上六，齎咨涕洟，无咎。",
+      "smallImage": "《象》曰：齎咨涕洟，未安上也。",
+      "wangBi": "處聚之時，居於上極，五非所乘，內无應援。處上獨立，近遠无助，危莫甚焉。齎咨，嗟歎之辭也。若能知危之至，懼禍之深，憂病之甚，至於涕洟，不敢自安，亦眾所不害，故得无咎也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "FOUR YIELDING LINES GATHER TO TWO.",
+    "mark": [
+     4,
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 6,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: IN PLACE, NOT TRUSTED.\nSTAY CORRECT; REGRET GOES.",
+    "why": "Line 5 holds the top place but 'there is a lack of trust'; only 'perpetual Correctness' makes regret vanish, so rank alone does not gather people, what is right does. The link holds but needs the viewer to follow two clauses, so it is weaker than 22."
+   }
+  },
+  {
+   "number": 46,
+   "hook": "Growing slower than you want?",
+   "meaning": [
+    "Pushing Upward:\ndon’t worry.",
+    "Small steps,\npiled up."
+   ],
+   "question": "What can you add\ntoday?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Go see someone\nabove you.",
+    "source": "series/critic/readouts/drafts.json#46"
+   },
+   "classic": {
+    "judgment": [
+     "升，元亨，用見大人，勿恤。",
+     "南征吉。"
+    ],
+    "tuan": [
+     "《彖》曰：柔以時升。",
+     "巽而順，剛中而應，是以大亨。",
+     "用見大人，勿恤，有慶也。南征吉，志行也。"
+    ],
+    "greatImage": [
+     "《象》曰：地中生木，升。君子以順德，積小以高大。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，允升，大吉。",
+      "smallImage": "《象》曰：允升大吉，上合志也。",
+      "wangBi": "允，當也。巽卦三爻，皆升者也。雖无其應，處升之初，與九二、九三合志俱升。當升之時，升必大得，是以大吉也。"
+     },
+     "2": {
+      "statement": "九二，孚乃利用禴，无咎。",
+      "smallImage": "《象》曰：九二之孚，有喜也。",
+      "wangBi": "與五為應，往必見任。體夫剛德，進不求寵，閑邪存誠，志在大業，故乃利用納約于神明矣。"
+     },
+     "3": {
+      "statement": "九三，升虛邑。",
+      "smallImage": "《象》曰：升虛邑，无所疑也。",
+      "wangBi": "履得其位，以陽升陰，以斯而舉，莫之違距，故若升虛邑也。"
+     },
+     "4": {
+      "statement": "六四，王用亨於岐山，吉，无咎。",
+      "smallImage": "《象》曰：王用亨於岐山，順事也。",
+      "wangBi": "處升之際，下升而進，可納而不可距也。距下之進，攘來自專，則殃咎至焉。若能不距而納，順物之情，以通庶志，則得吉而无咎矣。岐山之會，順事之情，无不納也。"
+     },
+     "5": {
+      "statement": "六五，貞吉，升階。",
+      "smallImage": "《象》曰：貞吉升階，大得志也。",
+      "wangBi": "升得尊位，體柔而應，納而不距，任而不專，故得貞吉，升階而尊也。"
+     },
+     "6": {
+      "statement": "上六，冥升，利于不息之貞。",
+      "smallImage": "《象》曰：冥升在上，消不富也。",
+      "wangBi": "處升之極，進而不息者也。進而不息，故雖冥猶升也。故施於不息之正則可，用於為物之主則喪矣。終於不息，消之道也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "WOOD UNDER EARTH, GROWING UP.",
+    "mark": [
+     1
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 4,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: STEADY AND CORRECT,\nIT CLIMBS THE STAIRS.",
+    "why": "No line says 'go see someone above you' (that comes from the Judgment, 用見大人). Line 5, 'ascending the stairs', carries the hook and meaning (growing slowly, small steps piled up) almost literally, fit 8 for a lesson like 'Climb one stair at a time.'"
+   }
+  },
+  {
+   "number": 47,
+   "hook": "Speaking up and nobody listens?",
+   "meaning": [
+    "Oppression says:\nhold your purpose.",
+    "Words fail here.\nActions don’t."
+   ],
+   "question": "What’s worth\neverything?",
+   "lesson": {
+    "kind": "character",
+    "text": "Boxed in?\nHold to your aim.",
+    "source": "series/characters.json#47: A tree stands; walls rise round it; it is pressed flat inside them."
+   },
+   "classic": {
+    "judgment": [
+     "困，亨。",
+     "貞，大人吉，无咎。",
+     "有言不信。",
+     "「有言不信」者，處困求濟，在於正身脩德。若巧言飾辭，人所不信，則其道彌窮，故誡之以有言不信也。"
+    ],
+    "tuan": [
+     "《彖》曰：困，剛揜也。",
+     "險以說，困而不失其所，亨。",
+     "其唯君子乎！貞，大人吉，以剛中也。",
+     "有言不信，尚口乃窮也。"
+    ],
+    "greatImage": [
+     "《象》曰：澤无水，困。君子以致命遂志。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，臀困于株木，入于幽谷，三歲不覿。",
+      "smallImage": "《象》曰：入于幽谷，幽不明也。",
+      "wangBi": "言幽者，不明之辭也。入于不明，以自藏也。"
+     },
+     "2": {
+      "statement": "九二，困于酒食，朱紱方來，利用享祀。征凶，无咎。",
+      "smallImage": "《象》曰：困于酒食，中有慶也。",
+      "wangBi": "以陽居陰，尚謙者也。居困之時，處得其中。體夫剛質，而用中履謙，應不在一，心无所私，盛莫先焉。夫謙以待物，物之所歸。剛以處險，難之所濟。履中則不失其宜，无應則心无私恃，以斯處困，物莫不至，不勝豐衍，故曰困于酒食，美之至矣。坎，北方之卦也。朱紱，南方之物也。處困以斯，能招異方者也，故曰朱紱方來也。豐衍盈盛，故利用享祀。盈而又進，傾之道也。以此而征，凶誰咎乎？故曰征凶无咎。"
+     },
+     "3": {
+      "statement": "六三，困于石，據于蒺蔾，入于其宮，不見其妻，凶。",
+      "smallImage": "《象》曰：據于蒺蔾，乘剛也。入于其宮，不見其妻，不祥也。",
+      "wangBi": "石之為物，堅而不納者也，謂四也。三以陰居陽，志武者也。四自納初，不受己者。二非所據，剛非所乘。上比困石，下據蒺蔾，无應而入，焉得配偶？在困處斯，凶其宜也。"
+     },
+     "4": {
+      "statement": "九四，來徐徐，困于金車。吝，有終。",
+      "smallImage": "《象》曰：來徐徐，志在下也。",
+      "wangBi": "金車，謂二也。二剛以載者也，故謂之金車。徐徐者，疑懼之辭也。志在於初而隔於二，履不當位，威命不行。棄之則不能，欲往則畏二，故曰「來徐徐，困于金車」也。有應而不能濟之，故曰吝也。然以陽居陰，履謙之道，量力而處，不與二爭，雖不當位，物終與之，故曰有終也。"
+     },
+     "5": {
+      "statement": "九五，劓刖，困于赤紱，乃徐有說，利用祭祀。",
+      "smallImage": "《象》曰：劓刖，志未得也。乃徐有說，以中直也。利用祭祀，受福也。",
+      "wangBi": "以陽居陽，任其壯者也。不能以謙致物，物則不附。忿物不附而用其壯猛，行其威刑，異方愈乖，遐邇愈叛。刑之欲以得，乃益所以失也，故曰「劓刖，困于赤紱」也。二以謙得之，五以剛失之，體在中直，能不遂迷，困而後能用其道者也。致物之功，不在於暴，故曰徐也。困而後乃徐，徐則有說矣，故曰「困于赤紱，乃徐有說」也。祭祀，所以受福也。履夫尊位，困而能改，不遂其迷，以斯祭祀，必得福焉，故曰「利用祭祀」也。"
+     },
+     "6": {
+      "statement": "上六，困于葛藟，於臲卼，曰動悔有悔，征吉。",
+      "smallImage": "《象》曰：困于葛藟，未當也。",
+      "wangBi": "居困之極，而乘於剛，下无其應，行則愈繞者也。行則纏繞，居不獲安，故曰困于葛藟于臲卼也。下句无困，因於上也。處困之極，行无通路，居无所安，困之至也。凡物窮則思變，困則謀通，處至困之地，用謀之時也。曰者，思謀之辭也。謀之所行，有隙則獲，言將何以通至困乎？曰動悔，令生有悔，以征則濟矣，故曰「動悔有悔，征吉」也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 48,
+   "hook": "Good things just out of reach?",
+   "meaning": [
+    "The Well says:\nlengthen the rope.",
+    "The water is\nalways there."
+   ],
+   "question": "What’s cutting\nyour rope short?",
+   "lesson": {
+    "kind": "character",
+    "text": "Towns move.\nThe well stays.",
+    "source": "series/characters.json#48: Four beams rise as the well's frame; the water in the middle ripples on every beat."
+   },
+   "classic": {
+    "judgment": [
+     "井，改邑不改井，",
+     "无喪无得，",
+     "往來井井。",
+     "汔至亦未繘井，",
+     "羸其瓶，凶。",
+     "「无喪无得」者，此明井用有常德，終日引汲，未嘗言損。終日泉注，未嘗言益，故曰无喪无得也。",
+     "「往來井井」者，此明性常。井井，絜靜之貌也。往者來者，皆使絜靜，不以人有往來改其洗濯之性，故曰往來井井也。",
+     "「汔至亦未繘井，羸其瓶，凶」者，此下明井，誡言井功難成也。汔，幾也。幾，近也。繘，綆也。雖汲水以至井上，然綆出猶未離井口，而鉤羸其瓶而覆之也。棄其方成之功，雖有出井之勞，而與未汲不異，喻今人行常德，須善始令終。若有初无終，則必致凶咎，故曰「汔至亦未繘井，羸其瓶，凶」。言亦者，不必之辭，言不必有如此不克終者。計覆一瓶之水，何足言凶？以喻人之修德不成，又云但取喻人之德行不恒，不能慎終如始，故就人言凶也。"
+    ],
+    "tuan": [
+     "《彖》曰：巽乎水而上水，井。",
+     "井養而不窮也，改邑不改井，乃以剛中也。",
+     "汔至亦未繘井，未有功也。",
+     "羸其瓶，是以凶也。"
+    ],
+    "greatImage": [
+     "《象》曰：木上有水，井，君子以勞民勸相。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，井泥不食，舊井无禽。",
+      "smallImage": "《象》曰：井泥不食，下也。舊井无禽，時舍也。",
+      "wangBi": "最在井底，上又无應，沈滯滓穢，故曰井泥不食也。井泥而不可食，則是久井不見渫治者也。久井不見渫治，禽所不嚮，而況人乎？一時所共棄舍也。井者不變之物，居德之地，恒德至賤，物无取也。"
+     },
+     "2": {
+      "statement": "九二，井谷射鮒，甕敝漏。",
+      "smallImage": "《象》曰：井谷射鮒，无與也。",
+      "wangBi": "谿谷出水，從上注下，水常射焉。井之為道，以下給上者也。而无應於上，反下與初，故曰「井谷射鮒」。鮒，謂初也。失井之道，水不上出，而反下注，故曰「甕敝漏」也。夫處上宜下，處下宜上，井已下矣，而復下注，其道不交，則莫之與也。"
+     },
+     "3": {
+      "statement": "九三，井渫不食，為我心惻，可用汲。王明，並受其福。",
+      "smallImage": "《象》曰：井渫不食，行惻也。",
+      "wangBi": "渫，不停汙之謂也。處下卦之上，履得其位，而應於上，得井之義也。當井之義而不見食，脩己全絜而不見用，故為我心惻也。為，猶使也。不下注而應上，故可用汲也。王明則見照明，既嘉其行，又欽其用，故曰「王明，並受其福」也。"
+     },
+     "4": {
+      "statement": "六四，井甃，无咎。",
+      "smallImage": "《象》曰：井甃无咎，脩井也。",
+      "wangBi": "得位而无應，自守而不能給上，可以脩井之壞，補過而已。"
+     },
+     "5": {
+      "statement": "九五，井冽，寒泉食。",
+      "smallImage": "《象》曰：寒泉之食，中正也。",
+      "wangBi": "冽，絜也。居中得正，體剛不撓，不食不義，中正高絜，故井冽寒泉，然後乃食也。"
+     },
+     "6": {
+      "statement": "上九，井收勿幕，有孚元吉。",
+      "smallImage": "《象》曰：元吉在上，大成也。",
+      "wangBi": "處井上極，水已出井，井功大成，在此爻矣，故曰井收也。群下仰之以濟，淵泉由之以通者也。幕猶覆也。不擅其有，不私其利，則物歸之，往无窮矣，故曰「勿幕有孚，元吉」也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 49,
+   "hook": "Making a big change nobody believes in?",
+   "meaning": [
+    "Revolution says:\nfinish first.",
+    "Trust comes on\nthe last day."
+   ],
+   "question": "What change are\nyou making?",
+   "lesson": {
+    "kind": "lines",
+    "text": "For a revolution,\na new calendar.",
+    "source": "series/critic/readouts/drafts.json#49"
+   },
+   "classic": {
+    "judgment": [
+     "革，已日乃孚，元亨利貞，悔亡。"
+    ],
+    "tuan": [
+     "《彖》曰：革，水火相息，二女同居，其志不相得，曰革。",
+     "已日乃孚，革而信之。文明以說，大亨以正，革而當，其悔乃亡。",
+     "天地革而四時成，湯武革命，順乎天而應乎人，革之時大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：澤中有火，革。君子以治歷明時。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，鞏用黃牛之革。",
+      "smallImage": "《象》曰：鞏用黃牛，不可以有為也。",
+      "wangBi": "在革之始，革道未成，固夫常中，未能應變者也。此可以守成，不可以有為也。鞏，固也。黃，中也。牛之革，堅仞不可變也。固之所用，常中堅仞，不肯變也。"
+     },
+     "2": {
+      "statement": "六二，已日乃革之，征吉，无咎。",
+      "smallImage": "《象》曰：已日革之，行有嘉也。",
+      "wangBi": "陰之為物，不能先唱，順從者也。不能自革，革已乃能從之，故曰「已日乃革之」也。二與五雖有水火殊體之異，同處厥中，陰陽相應，往必合志，不憂咎也，是以征吉而无咎。"
+     },
+     "3": {
+      "statement": "九三，征凶，貞厲。革言三就，有孚。",
+      "smallImage": "《象》曰：革言三就，又何之矣。",
+      "wangBi": "已處火極，上卦三爻，雖體水性，皆從革者也。自四至上，從命而變，不敢有違，故曰革言三就。其言實誠，故曰有孚。革言三就，有孚而猶征之，凶其宜也。"
+     },
+     "4": {
+      "statement": "九四，悔亡，有孚，改命吉。",
+      "smallImage": "《象》曰：改命之吉，信志也。",
+      "wangBi": "初九處下卦之下，九四處上卦之下，故能變也。无應，悔也。與水火相比，能變者也，是以悔亡。處水火之際，居會變之始，能不固吝，不疑於下，信志改命，不失時願，是以吉也。有孚則見信矣，見信以改命，則物安而无違，故曰「悔亡，有孚，改命吉」也。處上體之下，始宣命也。"
+     },
+     "5": {
+      "statement": "九五，大人虎變，未占有孚。",
+      "smallImage": "《象》曰：大人虎變，其文炳也。",
+      "wangBi": "未占而孚，合時心也。"
+     },
+     "6": {
+      "statement": "上六，君子豹變，小人革面。",
+      "smallImage": "《象》曰：君子豹變，其文蔚也。小人革面，順以從君也。",
+      "wangBi": "居變之終，變道已成，君子處之，能成其文。小人樂成，則變面以順上也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "FIRE IN THE LAKE. ONE MUST GIVE.",
+    "mark": [
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "lesson-mismatch",
+    "fit": 2,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: TALK THE CHANGE OVER\nTHREE TIMES; THEN TRUST.",
+    "why": "The calendar comes only from the Image (治曆明時); no line mentions it. Line 3 answers the hook directly: rushing brings misfortune, and 'when the call for revolution is thrice affirmed, there is trust' (fit 8 for a lesson like 'Talk a change over until it is trusted')."
+   }
+  },
+  {
+   "number": 50,
+   "hook": "Got the ingredients, not the result?",
+   "meaning": [
+    "The Caldron says:\nset it right.",
+    "Get set up\nbefore you start."
+   ],
+   "question": "What’s out of\nplace right now?",
+   "lesson": {
+    "kind": "character",
+    "text": "Set the pot firm,\nthen cook.",
+    "source": "series/characters.json#50: The legs rise; a fire is lit among them; the bowl, drawn high above, drops onto them."
+   },
+   "classic": {
+    "judgment": [
+     "鼎，元吉，亨。"
+    ],
+    "tuan": [
+     "《彖》曰：鼎，象也。",
+     "以木巽火，亨飪也。",
+     "聖人亨以享上帝，而大亨以養聖賢。",
+     "巽而耳目聰明。",
+     "柔進而上行，得中而應乎剛，是以元亨。"
+    ],
+    "greatImage": [
+     "《象》曰：木上有火，鼎。君子以正位凝命。",
+     "注云：凝者，嚴整之貌也。鼎者，取新成變者也。革去故而鼎成新。正位者，明尊卑之序也。凝命者，以成教命之嚴也。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，鼎顛趾，利出否，得妾以其子，无咎。",
+      "smallImage": "《象》曰：鼎顛趾，未悖也。",
+      "wangBi": "凡陽為實而陰為虛，鼎之為物，下實而上虛。而今陰在下，則是為覆鼎也，鼎覆則趾倒矣。否謂不善之物也。取妾以為室主，亦顛趾之義也。處鼎之初，將在納新，施顛以出穢，得妾以為子，故无咎也。"
+     },
+     "2": {
+      "statement": "九二，鼎有實，我仇有疾，不我能即，吉。",
+      "smallImage": "《象》曰：鼎有實，慎所之也。",
+      "wangBi": "以陽之質，處鼎之中，有實者也。有實之物，不可復加，益之則溢，反傷其實。我仇，謂五也。困於乘剛之疾，不能就我，則我不溢，得全其吉也。"
+     },
+     "3": {
+      "statement": "九三，鼎耳革，其行塞，雉膏不食。方雨虧悔，終吉。",
+      "smallImage": "《象》曰：鼎耳革，失其義也。",
+      "wangBi": "鼎之為義，虛中以待物者也。而三處下體之上，以陽居陽，守實无應，无所納受。耳宜空以待鉉，而反全其實塞，故曰「鼎耳革，其行塞」，雖有雉膏，而終不能食也。雨者，陰陽交和，不偏亢者也，雖體陽爻，而統屬陰卦。若不全任剛亢，務在和通，方雨則悔虧，終則吉也。"
+     },
+     "4": {
+      "statement": "九四，鼎折足，覆公餗，其形渥，凶。",
+      "smallImage": "《象》曰：覆公餗，信如何也。",
+      "wangBi": "處上體之下而又應初，既承且施，非己所堪，故曰鼎折足也。初已出否，至四所盛，則已絜矣，故曰覆公餗也。渥，沾濡之貌也。既覆公餗，體為渥沾，知小謀大，不堪其任，受其至辱，災及其身，故曰「其形渥，凶」也。"
+     },
+     "5": {
+      "statement": "六五，鼎黃耳金鉉，利貞。",
+      "smallImage": "《象》曰：鼎黃耳，中以為實也。",
+      "wangBi": "居中以柔，能以通理，納乎剛正，故曰「黃耳金鉉，利貞」也。耳黃，則能納剛正以自舉也。"
+     },
+     "6": {
+      "statement": "上九，鼎玉鉉，大吉，无不利。",
+      "smallImage": "《象》曰：玉鉉在上，剛柔節也。",
+      "wangBi": "處鼎之終，鼎道之成也。居鼎之成，體剛履柔，用勁施鉉，以斯處上，高不誡亢，得夫剛柔之節，能舉其任者也。應不在一，則靡所不舉，故曰「大吉，无不利」也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 51,
+   "hook": "Did something just\nshake you?",
+   "meaning": [
+    "The Arousing says:\nuse the fear.",
+    "Let it show\nwhat to fix."
+   ],
+   "question": "What did the\nscare show you?",
+   "lesson": {
+    "kind": "lines",
+    "text": "When shaken,\nexamine yourself.",
+    "source": "Image on 51: 恐懼修省 (uses fear and trembling to examine themselves)"
+   },
+   "classic": {
+    "judgment": [
+     "震，亨。",
+     "震來虩虩，笑言啞啞。",
+     "震驚百里，不喪匕鬯。",
+     "「震來虩虩，笑言啞啞」者，「虩虩」恐懼之貌也，「啞啞」笑語之聲也。震之為用，天之威怒，所以肅整怠慢，故迅雷風烈，君子為之變容，施之於人事，則是威嚴之教行於天下也。故震之來也，莫不恐懼，故曰「震來虩虩」也。物既恐懼，不敢為非，保安其福，遂至笑語之盛，故曰「笑言啞啞」也。",
+     "「震驚百里，不喪匕鬯」者，匕，所以載鼎實；鬯，香酒也。奉宗廟之盛者也。震卦施之於人，又為長子，長子則正體於上，將所傳重，出則撫軍，守則監國，威震驚於百里，可以奉承宗廟，彝器粢盛，守而不失也，故曰「震驚百里，不喪匕鬯」。"
+    ],
+    "tuan": [
+     "《彖》曰：震，亨。震來虩虩，恐致福也。笑言啞啞，後有則也。震驚百里，驚遠而懼邇也。",
+     "出可以守宗廟社稷，以為祭主也。"
+    ],
+    "greatImage": [
+     "《象》曰：洊雷，震，君子以恐懼脩省。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，震來虩虩，後笑言啞啞，吉。",
+      "smallImage": "《象》曰：震來虩虩，恐致福也。笑言啞啞，後有則也。",
+      "wangBi": "體夫剛德，為卦之先，能以恐懼脩其德也。"
+     },
+     "2": {
+      "statement": "六二，震來厲，億喪貝。躋于九陵，勿逐，七日得。",
+      "smallImage": "《象》曰：震來厲，乘剛也。",
+      "wangBi": "震之為義，威駭怠懈，肅整惰慢者也。初幹其任，而二乘之，震來則危，喪其資貨，亡其所處矣，故曰震來厲，億喪貝。億，辭也。貝，資貨，糧用之屬也。犯逆受戮，无應而行，行无所舍。威嚴大行，物莫之納，无糧而走。雖復超越陵險，必困于窮匱，不過七日，故曰勿逐，七日得也。"
+     },
+     "3": {
+      "statement": "六三，震蘇蘇，震行无眚。",
+      "smallImage": "《象》曰：震蘇蘇，位不當也。",
+      "wangBi": "不當其位，位非所處，故懼蘇蘇也。而无乘剛之逆，故可以懼行而无眚也。"
+     },
+     "4": {
+      "statement": "九四，震，遂泥。",
+      "smallImage": "《象》曰：「震遂泥」未光也。",
+      "wangBi": "處四陰之中，居恐懼之時，為眾陰之主，宜勇其身以安於眾。若其震也，遂困難矣。履夫不正，不能除恐，使物安己，德未光也。"
+     },
+     "5": {
+      "statement": "六五，震往來厲，億无喪，有事！",
+      "smallImage": "象曰：震往來厲，危行也。其事在中，大无喪也。",
+      "wangBi": "往則无應，來則乘剛，恐而往來，不免於危。夫處震之時，而得尊位，斯乃有事之機也。而懼往來，將喪其事，故曰億无喪，有事也。"
+     },
+     "6": {
+      "statement": "上六，震索索，視矍矍，征凶。震不于其躬，于其鄰，无咎，婚媾有言。",
+      "smallImage": "象曰：震索索，未得中也。雖凶无咎，畏鄰戒也。",
+      "wangBi": "處震之極，極震者也。居震之極，求中未得，故懼而索索，視而矍矍，无所安親也。已處動極而復征焉，凶其宜也。若恐非己造，彼動故懼，懼鄰而戒，合於備豫，故无咎也。極懼相疑，故雖婚媾而有言也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 52,
+   "hook": "Can't stop overthinking?",
+   "meaning": [
+    "Keeping Still\nsays: pause.",
+    "Stay with where\nyou are now."
+   ],
+   "question": "What can wait?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Stop when it's\ntime to stop.",
+    "source": "series/critic/readouts/drafts.json#52"
+   },
+   "classic": {
+    "judgment": [],
+    "tuan": [
+     "彖曰：艮，止也。時止則止，時行則行，動靜不失其時，其道光明。",
+     "艮其止，止其所也。",
+     "上下敵應，不相與也。是以不獲其身，行其庭不見其人，无咎也。",
+     "艮其止，止其所也：此釋施止之所也。「艮其止」者，疊經文「艮其背」也。「易背曰止，以明背」者，无見之物，即是可止之所也。既時止即宜止，時行則行，所以施止須是所。艮既訓止，今言「艮其止」，是止其所止也，故曰「艮其止，止其所」也。"
+    ],
+    "greatImage": [
+     "《象》曰：兼山，艮，君子以思，不出其位。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，艮其趾，无咎；利永貞。",
+      "smallImage": "象曰：艮其趾，未失正也。",
+      "wangBi": "處止之初，行无所之，故止其趾乃得无咎。至靜而定，故利永貞。"
+     },
+     "2": {
+      "statement": "六二，艮其腓，不拯其隨，其心不快。",
+      "smallImage": "象曰：不拯其隨，未退聽也。",
+      "wangBi": "隨，謂趾也。止其腓，故其趾不拯也。腓體躁而處止，而不得拯其隨，又不能退聽安靜，故其心不快也。"
+     },
+     "3": {
+      "statement": "九三，艮其限，列其夤，厲薰心。",
+      "smallImage": "象曰：艮其限，危薰心也。",
+      "wangBi": "限，身之中也。三當兩象之中，故曰艮其限。夤，當中脊之肉也。止加其身，中體而分，故列其夤而憂危薰心也。艮之為義，各止於其所，上下不相與，至中則列矣。列加其夤，危莫甚焉，危亡之憂，乃薰灼其心也。施止體中，其體分焉，體分兩主，大器喪矣。"
+     },
+     "4": {
+      "statement": "六四，艮其身，无咎。",
+      "smallImage": "象曰：艮其身，止諸躬也。",
+      "wangBi": "中上稱身，履得其位，止求諸身，得其所處，故不陷於咎也。"
+     },
+     "5": {
+      "statement": "六五，艮其輔，言有序，悔亡。",
+      "smallImage": "象曰：艮其輔，以中正也。",
+      "wangBi": "施止於輔，以處於中，故口无擇言，能亡其悔也。"
+     },
+     "6": {
+      "statement": "上九，敦艮，吉。",
+      "smallImage": "象曰：敦艮之吉，以厚終也。",
+      "wangBi": "居止之極，極止者也。敦重在上，不陷非妄，宜其吉也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "NO PAIR ANSWERS. EACH STANDS STILL.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     6
+    ],
+    "finding": "AT THE TOP: STILL, STEADY,\nTO THE END.",
+    "why": "Line 6, 'magnanimous (solid) keeping still—auspicious', is stillness held well at the end of the hexagram; its Image note says it 'ends with generosity'. It says 'stop, and stop well' plainly, better than the current structural 'NO PAIR ANSWERS', which a newcomer cannot follow."
+   }
+  },
+  {
+   "number": 53,
+   "hook": "Tempted to skip steps?",
+   "meaning": [
+    "Development says:\ngo step by step.",
+    "Slow growth\nlasts."
+   ],
+   "question": "Which step are\nyou skipping?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Earn each place\nbefore the next.",
+    "source": "series/critic/readouts/drafts.json#53"
+   },
+   "classic": {
+    "judgment": [
+     "漸，女歸吉，利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：漸之進也，",
+     "女歸吉也。進得位，往有功也。進以正，可以正邦也。其位，剛得中也。",
+     "止而巽，動不窮也。"
+    ],
+    "greatImage": [
+     "《象》曰：山上有木，漸，君子以居賢德善俗。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，鴻漸于干，小子厲，有言，无咎。",
+      "smallImage": "《象》曰：小子之厲，義无咎也。",
+      "wangBi": "鴻，水鳥也。適進之義，始於下而升者也，故以鴻為喻。六爻皆以進而履之為義焉，始進而位乎窮下，又无其應。若履于干，危不可以安也。始進而未得其位，則困於小子，窮於謗言，故曰小子厲有言也。困於小子讒諛之言，未傷君子之義，故曰无咎也。"
+     },
+     "2": {
+      "statement": "六二，鴻漸于磐，飲食衎衎，吉。",
+      "smallImage": "《象》曰：飲食衎衎，不素飽也。",
+      "wangBi": "磐，山石之安者也。進而得位，居中而應，本无祿養，進而得之，其為歡樂，願莫先焉。"
+     },
+     "3": {
+      "statement": "九三，鴻漸于陸。夫征不復，婦孕不育，凶。利禦寇。",
+      "smallImage": "《象》曰：夫征不復，離群醜也。婦孕不育，失其道也。利用禦寇，順相保也。",
+      "wangBi": "陸，高之頂也。進而之陸，與四相得，不能復反者也。夫征不復，樂於邪配，則婦亦不能執貞矣。非夫而孕，故不育也。三本艮體，而棄乎群醜，與四相得，遂乃不反，至使婦孕不育，見利忘義，貪進忘舊，凶之道也。異體合好，順而相保，物莫能間，故利禦寇也。"
+     },
+     "4": {
+      "statement": "六四，鴻漸于木。或得其桷，无咎。",
+      "smallImage": "《象》曰：或得其桷，順以巽也。",
+      "wangBi": "鳥而之木，得其宜也。或得其桷，遇安棲也。雖乘于剛，志相得也。"
+     },
+     "5": {
+      "statement": "九五，鴻漸于陵。婦三歲不孕，終莫之勝，吉。",
+      "smallImage": "《象》曰：終莫之勝吉，得所願也。",
+      "wangBi": "陵，次陸者也。進得中位，而隔乎三四，不得與其應合，故婦三歲不孕也。各履正而居中，三四不能久塞其塗者也。不過三歲，必得所願矣。進以正邦，三年有成，成則道濟，故不過三歲也。"
+     },
+     "6": {
+      "statement": "上九，鴻漸于陸。其羽可用為儀，吉。",
+      "smallImage": "《象》曰：其羽可用為儀，吉，不可亂也。",
+      "wangBi": "進處高絜，不累於位，无物可以屈其心而亂其志。峨峨清遠，儀可貴也，故曰「其羽可用為儀，吉」。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+    "mark": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "keep",
+    "fit": 6,
+    "lines": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+    "why": "The lesson is the whole climb: the goose goes shore, rock, dry land, tree, hill, heights, one place at a time, and the four lines in place show that. Line 2 (the goose reaches the rock, 'eating and drinking in contentment') is the best single line but only says one step is earned, not each."
+   }
+  },
+  {
+   "number": 54,
+   "hook": "No power, no way out?",
+   "meaning": [
+    "Marrying Maiden\nsays: see the end.",
+    "This part\nwon’t last."
+   ],
+   "question": "What does the\nend look like?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Wrong place?\nDon't push.",
+    "source": "series/critic/readouts/drafts.json#54"
+   },
+   "classic": {
+    "judgment": [
+     "歸妹，征凶，无攸利。"
+    ],
+    "tuan": [
+     "《彖》曰：歸妹，天地之大義也。天地不交，而萬物不興。歸妹，人之終始也。",
+     "說以動，所歸妹也。",
+     "征凶，位不當也。",
+     "无攸利，柔乘剛也。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上有雷，歸妹。君子以永終知敝。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，歸妹以娣，跛能履，征吉。",
+      "smallImage": "《象》曰：歸妹以娣，以恒也。跛能履，吉相承也。",
+      "wangBi": "少女而與長男為耦，非敵之謂，是娣從之義也。妹，少女之稱也。少女之行，善莫若娣。夫承嗣以君之子，雖幼而不妄行。少女以娣，雖跛能履，斯乃恒久之義，吉而相承之道也。以斯而進，吉其宜也。"
+     },
+     "2": {
+      "statement": "九二，眇能視，利幽人之貞。",
+      "smallImage": "《象》曰：利幽人之貞，未變常也。",
+      "wangBi": "雖失其位，而居內處中，眇猶能視，足以保常也。在內履中，而能守其常，故利幽人之貞也。"
+     },
+     "3": {
+      "statement": "六三，歸妹以須，反歸以娣。",
+      "smallImage": "《象》曰：歸妹以須，未當也。",
+      "wangBi": "室主猶存，而求進焉。進未值時，故有須也。不可以進，故反歸待時，以娣乃行也。"
+     },
+     "4": {
+      "statement": "九四，歸妹愆期，遲歸有時。",
+      "smallImage": "《象》曰：愆期之志，有待而行也。",
+      "wangBi": "夫以不正无應而適人也，必須彼道窮盡，无所與交，然後乃可以往，故愆期遲歸，以待時也。"
+     },
+     "5": {
+      "statement": "六五，帝乙歸妹，其君之袂，不如其娣之袂良。月幾望，吉。",
+      "smallImage": "《象》曰：帝乙歸妹，不如其娣之袂良也。其位在中，以貴行也。",
+      "wangBi": "歸妹之中，獨處貴位，故謂之帝乙歸妹也。袂，衣袖，所以為禮容者也。其君之袂，為帝乙所寵也，即五也。為帝乙所崇飾，故謂之其君之袂也。配在九二，兌少震長，以長從少，不若以少從長之為美也，故曰「不若其娣之袂良」也。位在乎中，以貴而行，極陰之盛，以斯適配，雖不若少，往亦必合，故曰「月幾望，吉」也。"
+     },
+     "6": {
+      "statement": "上六，女承筐无實，士刲羊无血，无攸利。",
+      "smallImage": "《象》曰：上六无實，承虛筐也。",
+      "wangBi": "羊謂三也。處卦之窮，仰无所承，下又无應，為女而承命，則筐虛而莫之與。為士而下命，則刲羊而无血。刲羊而无血，不應所命也。進退莫與，故曰无攸利也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINES 2 TO 5 ALL OUT OF PLACE.",
+    "mark": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     4
+    ],
+    "finding": "LINE 4: OUT OF PLACE, SHE WAITS.\nHER TIME WILL COME.",
+    "why": "Line 4 is a strong line in a weak place, and its statement is 'the Marrying Maiden delays the date. The late marriage will come in its own time': wrong place, don't push, both halves of the lesson in one line."
+   }
+  },
+  {
+   "number": 55,
+   "hook": "At your peak and worried?",
+   "meaning": [
+    "Abundance says:\ndon’t worry.",
+    "Be the sun\nat noon."
+   ],
+   "question": "What will you\ndecide now?",
+   "lesson": {
+    "kind": "lines",
+    "text": "At your fullest,\nlight each corner.",
+    "source": "series/critic/readouts/drafts.json#55"
+   },
+   "classic": {
+    "judgment": [
+     "豐，亨，王假之。",
+     "勿憂，宜日中。"
+    ],
+    "tuan": [
+     "《彖》曰：豐，大也。",
+     "明以動，故豐。王假之，尚大也。",
+     "勿憂，宜日中，宜照天下也。",
+     "日中則昃，月盈則食，天地盈虛，與時消息，而況於人乎？況於鬼神乎？"
+    ],
+    "greatImage": [
+     "《象》曰：雷電皆至，豐。君子以折獄致刑。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，遇其配主，雖旬无咎，往有尚。",
+      "smallImage": "《象》曰：雖旬无咎，過旬災也。",
+      "wangBi": "處豐之初，其配在四，以陽適陽，以明之動，能相光大者也。旬，均也。雖均无咎，往有尚也。初、四俱陽爻，故曰均也。"
+     },
+     "2": {
+      "statement": "六二，豐其蔀，日中見斗。往得疑疾，有孚發若，吉。",
+      "smallImage": "《象》曰：有孚發若，信以發志也。",
+      "wangBi": "蔀，覆曖，鄣光明之物也。處明動之時，不能自豐以光大之德，既處乎內，而又以陰居陰，所豐在蔀，幽而无覩者也，故曰「豐其蔀，日中見斗」也。日中者，明之盛也。斗見者，闇之極也。處盛明而豐其蔀，故曰「日中見斗」。不能自發，故往得疑疾。然履中當位，處闇不邪，有孚者也。若，辭也。有孚可以發其志，不困於闇，故獲吉也。"
+     },
+     "3": {
+      "statement": "九三，豐其沛，日中見沬。折其右肱，无咎。",
+      "smallImage": "《象》曰：豐其沛，不可大事也。",
+      "wangBi": "沛，幡幔，所以禦盛光也。沬，微昧之明也。應在上六，志在乎陰，雖愈乎以陰處陰，亦未足以免於闇也。所豐在沛，日中見沬之謂也。施明則見沬而已，施用則折其右肱，故可以自守而已，未足用也。"
+     },
+     "4": {
+      "statement": "九四，豐其蔀，日中見斗。遇其夷主，吉。",
+      "smallImage": "《象》曰：豐其蔀，位不當也。日中見斗，幽不明也。遇其夷主，吉行也。",
+      "wangBi": "以陽居陰，豐其蔀也。得初以發，夷主吉也。"
+     },
+     "5": {
+      "statement": "六五，來章有慶譽，吉。",
+      "smallImage": "《象》曰：六五之吉，有慶也。",
+      "wangBi": "以陰之質，來適尊陽之位，能自光大，章顯其德，獲慶譽也。"
+     },
+     "6": {
+      "statement": "上六，豐其屋，蔀其家，闚其戶，闃其无人。三歲不覿，凶。",
+      "smallImage": "《象》曰：豐其屋，天際翔也。",
+      "wangBi": "屋，藏蔭之物，以陰處極而最在外，不履於位，深自幽隱，絕跡深藏者也。既豐其屋，又蔀其家，屋厚家覆，闇之甚也。雖闚其戶，闃其无人，棄其所處，而自深藏也。處於明動尚大之時而深自幽隱，以高其行；大道既濟，而猶不見，隱不為賢，更為反道，凶其宜也。三年，豐道之成。治道未濟，隱猶可也；既濟而隱，以治為亂也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+    "mark": [],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     6
+    ],
+    "finding": "AT THE TOP: A GREAT HOUSE,\nSCREENED. NO ONE INSIDE.",
+    "why": "Line 6 enlarges his house, screens his household, and 'peering through his door—silent, with no one there'; abundance shut away in the dark is the plain opposite of lighting each corner. It teaches by counterexample, so the lesson sentence must follow right after."
+   }
+  },
+  {
+   "number": 56,
+   "hook": "Somewhere new, feeling out of place?",
+   "meaning": [
+    "The Wanderer says:\nkeep it brief.",
+    "You’re a guest.\nAct like one."
+   ],
+   "question": "Where are you\na guest?",
+   "lesson": {
+    "kind": "character",
+    "text": "Far from home,\nbe a good guest",
+    "source": "series/characters.json#56: People under a flag are drawn standing far off; they walk toward you in four hops, then lie down as the character."
+   },
+   "classic": {
+    "judgment": [
+     "旅，小亨，旅貞吉。"
+    ],
+    "tuan": [
+     "《彖》曰：旅，小亨，柔得中乎外而順乎剛，止而麗乎明，是以小亨，旅貞吉也。",
+     "旅之時義大矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：山上有火，旅。君子以明慎用刑而不留獄。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，旅瑣瑣，斯其所取災。",
+      "smallImage": "《象》曰：旅瑣瑣，志窮災也。",
+      "wangBi": "最處下極，寄旅不得所安，而為斯賤之役，所取致災，志窮且困。"
+     },
+     "2": {
+      "statement": "六二，旅即次，懷其資，得童僕貞。",
+      "smallImage": "《象》曰：得童僕貞，終无尤也。",
+      "wangBi": "次者，可以安行旅之地也。懷，來也。得位居中，體柔奉上，以此寄旅，必獲次舍。懷來資貨，得童僕之所正也。旅不可以處盛，故其美盡於童僕之正也。過斯以往，則見害矣。童僕之正，義足而已。"
+     },
+     "3": {
+      "statement": "九三，旅焚其次，喪其童僕貞，厲。",
+      "smallImage": "《象》曰：旅焚其次，亦以傷矣。以旅與下，其義喪也。",
+      "wangBi": "居下體之上，與二相得，以寄旅之身而為施下之道，與萌侵權，主之所疑也，故次焚僕喪，而身危也。"
+     },
+     "4": {
+      "statement": "九四，旅于處，得其資斧，我心不快。",
+      "smallImage": "《象》曰：旅于處，未得位也。得其資斧，心未快也。",
+      "wangBi": "斧所以斫除荊棘，以安其舍者也。雖處上體之下，不先於物，然而不得其位，不獲平坦之地，客于所處，不得其次，而得其資斧之地，故其心不快也。"
+     },
+     "5": {
+      "statement": "六五，射雉，一矢亡，終以譽命。",
+      "smallImage": "《象》曰：終以譽命，上逮也。",
+      "wangBi": "射雉以一矢，而復亡之，明雖有雉，終不可得矣。寄旅而進，雖處于文明之中，居于貴位，此位終不可有也。以其能知禍福之萌，不安其處以乘其下，而上承於上，故終以譽而見命也。"
+     },
+     "6": {
+      "statement": "上九，鳥焚其巢，旅人先笑後號咷。喪牛于易，凶。",
+      "smallImage": "《象》曰：以旅在上，其義焚也。喪牛于易，終莫之聞也。",
+      "wangBi": "居高危而以為宅，巢之謂也。客而得上位，故先笑也。以旅而處于上極，眾之所嫉也。以不親之身而當嫉害之地，必凶之道也，故曰後號咷。牛者，稼穡之資。以旅處上，無所同嫉，故喪牛於易，不在於難。物莫之與，危而不扶，喪牛于易，終莫之聞。莫之聞，則傷之者至矣。"
+     }
+    }
+   }
+  },
+  {
+   "number": 57,
+   "hook": "Said it once,\nnothing changed?",
+   "meaning": [
+    "The Gentle says:\nsay it again.",
+    "Quiet and steady\ngets through."
+   ],
+   "question": "What’s worth\nrepeating today?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Bend only to\nwhat is right.",
+    "source": "series/critic/readouts/drafts.json#57"
+   },
+   "classic": {
+    "judgment": [
+     "巽，小亨。",
+     "利有攸往。",
+     "利見大人。"
+    ],
+    "tuan": [
+     "《彖》曰：重巽以申命。",
+     "剛巽乎中正而志行。",
+     "柔皆順乎剛。",
+     "是以小亨，利有攸往，利見大人。"
+    ],
+    "greatImage": [
+     "《象》曰：隨風，巽，君子以申命行事。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，進退，利武人之貞。",
+      "smallImage": "《象》曰：進退，志疑也。",
+      "wangBi": "處令之初，未能服令者也。故進退也。成命齊邪，莫善武人，故利武人之貞以整之。"
+     },
+     "2": {
+      "statement": "九二，巽在牀下，用史巫紛若，吉，无咎。",
+      "smallImage": "《象》曰：紛若之吉，得中也。",
+      "wangBi": "處巽之中，既在下位，而復以陽居陰，卑巽之甚，故曰「巽在牀下」也。卑甚失正，則入于咎過矣。能以居中而施至卑於神祗，而不用之於威勢，則乃至于紛若之吉，而亡其過矣。故曰「用史巫紛若，吉，无咎」也。"
+     },
+     "3": {
+      "statement": "九三，頻巽，吝。",
+      "smallImage": "《象》曰：頻巽之吝，志窮也。",
+      "wangBi": "頻，頻蹙，不樂而窮，不得已之謂也。以其剛正而為四所乘，志窮而巽，是以吝也。"
+     },
+     "4": {
+      "statement": "六四，悔亡，田獲三品。",
+      "smallImage": "《象》曰：田獲三品，有功也。",
+      "wangBi": "乘剛，悔也，然得位承五，卑得所奉。雖以柔御剛，而依尊履正，以斯行命，必能獲強暴，遠不仁者也。獲而有益，莫善三品，故曰「悔亡，田獲三品」。一曰乾豆，二曰賓客，三曰充君之包。"
+     },
+     "5": {
+      "statement": "九五，貞吉，悔亡，无不利。无初有終。先庚三日，後庚三日，吉。",
+      "smallImage": "《象》曰：九五之吉，位正中也。",
+      "wangBi": "以陽居陽，損於謙巽。然秉乎中正以宣其令，物莫之違，故曰「貞吉，悔亡，无不利」也。化不以漸，卒以剛直用加於物，故初皆不說也。終於中正，邪道以消，故有終也。申命令謂之庚。夫以正齊物，不可卒也；民迷固久，直不可肆也，故先申三日，令著之後，復申三日，然後誅而无咎怨矣。甲、庚，皆申命之謂也。"
+     },
+     "6": {
+      "statement": "上九，巽在牀下，喪其資斧，貞凶。",
+      "smallImage": "《象》曰：巽在牀下，上窮也。喪其資斧，正乎凶也。",
+      "wangBi": "處巽之極，極巽過甚，故曰「巽在牀下」也。斧所以斷者也，過巽失正，喪所以斷，故曰「喪其資斧，貞凶」也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "EACH SOFT LINE SITS UNDER A STRONG.",
+    "mark": [
+     1,
+     4
+    ],
+    "master": null,
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     6
+    ],
+    "finding": "AT THE TOP: BENT UNDER THE BED,\nHE LOSES HIS AXE.",
+    "why": "Line 6, 'compliant beneath the bed. Loses the resources and the axe', shows bending too far: Wang Bi says the axe is 'that by which one cuts decisively'. It carries 'bend only to what is right' by counterexample."
+   }
+  },
+  {
+   "number": 58,
+   "hook": "Good news, no one to tell?",
+   "meaning": [
+    "The Joyous says:\nshare it.",
+    "Joy kept alone\ndries up."
+   ],
+   "question": "Who could you\ncall today?",
+   "lesson": {
+    "kind": "character",
+    "text": "Laugh and learn\nwith friends.",
+    "source": "series/characters.json#58: A figure's mouth rises open; the two lines above it lift out of it and float, bobbing, like laughter."
+   },
+   "classic": {
+    "judgment": [
+     "兌，亨，利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：兌，說也。剛中而柔外，說以利貞。",
+     "是以順乎天而應乎人。",
+     "說以先民，民忘其勞；說以犯難，民忘其死。說之大，民勸矣哉！"
+    ],
+    "greatImage": [
+     "《象》曰：麗澤兌，君子以朋友講習。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，和兌，吉。",
+      "smallImage": "《象》曰：和兌之吉，行未疑也。",
+      "wangBi": "居兌之初，應不在一，无所黨係，和兌之謂也。說不在諂，履斯而行，未見有疑之者，吉其宜矣。"
+     },
+     "2": {
+      "statement": "九二，孚兌，吉，悔亡。",
+      "smallImage": "《象》曰：孚兌之吉，信志也。",
+      "wangBi": "說不失中，有孚者也。失位而說，孚吉，乃悔亡也。"
+     },
+     "3": {
+      "statement": "六三，來兌，凶。",
+      "smallImage": "《象》曰：來兌之凶，位不當也。",
+      "wangBi": "以陰柔之質，履非其位，來求說者也。非正而求說，邪佞者也。"
+     },
+     "4": {
+      "statement": "九四，商兌未寧，介疾有喜。",
+      "smallImage": "《象》曰：九四之喜，有慶也。",
+      "wangBi": "商，商量裁制之謂也。介，隔也。三為佞說，將近至尊。故四以剛德，裁而隔之，匡內制外，是以未寧也。處於幾近，閑邪介疾，宜其有喜也。"
+     },
+     "5": {
+      "statement": "九五，孚于剝，有厲。",
+      "smallImage": "《象》曰：孚于剝，位正當也。",
+      "wangBi": "比於上六，而與相得，處尊正之位，不說信乎陽，而說信乎陰，孚于剝之義也。剝之為義，小人道長之謂。"
+     },
+     "6": {
+      "statement": "上六，引兌。",
+      "smallImage": "《象》曰：上六引兌，未光也。",
+      "wangBi": "以夫陰質，最處說後，靜退者也。故必見引，然後乃說也。"
+     }
+    }
+   }
+  },
+  {
+   "number": 59,
+   "hook": "People drifting apart?",
+   "meaning": [
+    "Dispersion says:\ndon’t argue.",
+    "Remind them where\nthey come from."
+   ],
+   "question": "What do you\nall share?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Bring them back\nto the centre.",
+    "source": "series/critic/readouts/drafts.json#59"
+   },
+   "classic": {
+    "judgment": [
+     "渙，亨。王假有廟，利涉大川，利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：渙亨，剛來而不窮，柔得位乎外而上同。",
+     "王假有廟，王乃在中也。",
+     "利涉大川，乘木有功也。",
+     "○注「木者專所以涉川也。」。○正義曰：先儒皆以此卦坎下巽上，以為乘木水上，涉川之象，故言乘木有功，王不用象，直取況喻之義，故言此以序之也。"
+    ],
+    "greatImage": [
+     "《象》曰：風行水上，渙，先王以享于帝，立廟。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，用拯馬壯，吉。",
+      "smallImage": "《象》曰：初六之吉，順也。",
+      "wangBi": "渙，散也。處散之初，乖散未甚，故可以遊行，得其志而違於難也，不在危劇而後乃逃竄，故曰「用拯馬壯，吉」。"
+     },
+     "2": {
+      "statement": "九二，渙奔其机，悔亡。",
+      "smallImage": "《象》曰：渙奔其机，得願也。",
+      "wangBi": "机，承物者也，謂初也。二俱无應，與初相得，而初得散道，離散而奔，得其所安，故悔亡也。"
+     },
+     "3": {
+      "statement": "六三，渙其躬，无悔。",
+      "smallImage": "《象》曰：渙其躬，志在外也。",
+      "wangBi": "渙之為義，內險而外安者也。散躬志外，不固所守，與剛合志，故得无悔也。"
+     },
+     "4": {
+      "statement": "六四，渙其群，元吉。渙，有丘匪夷，所思。",
+      "smallImage": "《象》曰：渙其群，元吉，光大也。",
+      "wangBi": "踰乎險難，得位體巽，與五合志，內掌機密，外宣化命者也，故能散群之險，以光其道。然處於卑順，不可自專，而為散之任，猶有丘虛匪夷之慮，雖得元吉，所思不可忘也。"
+     },
+     "5": {
+      "statement": "九五，渙汗其大號，渙，王居无咎。",
+      "smallImage": "《象》曰：王居无咎，正位也。",
+      "wangBi": "處尊履正，居巽之中，散汗大號，以蕩險阨者也。為渙之主，唯王居之，乃得无咎也。"
+     },
+     "6": {
+      "statement": "上九，渙其血，去逖出，无咎。",
+      "smallImage": "《象》曰：渙其血，遠害也。",
+      "wangBi": "逖，遠也。最遠於害，不近侵克，散其憂傷，遠出者也。散患於遠害之地，誰將咎之哉！"
+     }
+    }
+   },
+   "readout": {
+    "finding": "WIND MOVES OVER WATER.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為渙之主",
+     "en": "Master of Dispersion"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 7,
+    "lines": [
+     5
+    ],
+    "finding": "LINE 5: THE KING CALLS OUT,\nAND STAYS WHERE HE IS.",
+    "why": "Line 5, 'one sweats forth the great proclamation... the king dwells here', is one figure who calls the scattered people and holds his place so they have somewhere to return. That is 'bring them back to the centre' without the word centre."
+   }
+  },
+  {
+   "number": 60,
+   "hook": "Saying yes to everything?",
+   "meaning": [
+    "Limitation says:\nset limits.",
+    "Firm, but\nnot bitter."
+   ],
+   "question": "Where’s your\nlimit?",
+   "lesson": {
+    "kind": "lines",
+    "text": "A lake holds only\nso much water.",
+    "source": "series/critic/readouts/drafts.json#60"
+   },
+   "classic": {
+    "judgment": [
+     "節，亨，苦節不可貞。"
+    ],
+    "tuan": [
+     "《彖》曰：節亨，剛柔分而剛得中。",
+     "苦節不可貞，其道窮也。",
+     "說以行險，當位以節，中正以通。",
+     "天地節而四時成，節以制度，不傷財，不害民。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上有水，節。君子以制數度，議德行。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，不出戶庭，无咎。",
+      "smallImage": "《象》曰：不出戶庭，知通塞也。",
+      "wangBi": "為節之初，將整離散而立制度者也，故明於通塞，慮於險偽，不出戶庭，慎密不失，然後事濟而无咎也。"
+     },
+     "2": {
+      "statement": "九二，不出門庭，凶。",
+      "smallImage": "《象》曰：不出門庭，凶，失時極也。",
+      "wangBi": "初已造之，至二宜宣其制矣，而故匿之，失時之極，則遂廢矣。故不出門庭，則凶也。"
+     },
+     "3": {
+      "statement": "六三，不節若，則嗟若，无咎。",
+      "smallImage": "《象》曰：不節之嗟，又誰咎也。",
+      "wangBi": "若，辭也。以陰處陽，以柔乘剛，違節之道，以至哀嗟。自己所致，无所怨咎，故曰无咎也。"
+     },
+     "4": {
+      "statement": "六四，安節，亨。",
+      "smallImage": "《象》曰：安節之亨，承上道也。",
+      "wangBi": "得位而順，不改其節，而能亨者也。承上以斯，得其道也。"
+     },
+     "5": {
+      "statement": "九五，甘節，吉。往有尚。",
+      "smallImage": "《象》曰：甘節之吉，居位中也。",
+      "wangBi": "當位居中，為節之主不失其中，不傷財，不害民之謂也。為節而不苦，非甘而何？術斯以往，往有尚也。"
+     },
+     "6": {
+      "statement": "上六，苦節，貞凶，悔亡。",
+      "smallImage": "《象》曰：苦節貞凶，其道窮也。",
+      "wangBi": "過節之中，以致亢極，苦節者也。以斯施人*，物所不堪，正之凶也。以斯脩身，行在无妄，故得悔亡。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "THE STRONG HOLDS THE CENTRE.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為節之主",
+     "en": "Master of Limitation"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     3
+    ],
+    "finding": "LINE 3: NO LIMIT SET,\nTHEN SIGHING.",
+    "why": "Line 3, 'if one does not regulate, then one will lament', is the hook 'saying yes to everything' and its cost; Wang Bi: 'brought about by oneself; there is no one else to blame'. A lake with no limit overflows."
+   }
+  },
+  {
+   "number": 61,
+   "hook": "Can’t get through to someone?",
+   "meaning": [
+    "Inner Truth says:\nunderstand first.",
+    "Hold off judging\nuntil you do."
+   ],
+   "question": "What haven’t you\nasked them yet?",
+   "lesson": {
+    "kind": "lines",
+    "text": "No hidden motive;\nmean what you say.",
+    "source": "Line 1 of 61: 有它不燕 (having another aim, no peace); Tuan 柔在內而剛得中, Wang Bi: 直而正 (straight and upright)"
+   },
+   "classic": {
+    "judgment": [
+     "中孚，豚魚吉。利涉大川，利貞。"
+    ],
+    "tuan": [
+     "《彖》曰：中孚，柔在內而剛得中，說而巽孚，",
+     "乃化邦也。",
+     "豚魚吉，信及豚魚也。",
+     "利涉大川，乘木舟虛也。",
+     "中孚以利貞，乃應乎天也。"
+    ],
+    "greatImage": [
+     "《象》曰：澤上有風，中孚，君子以議獄緩死。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，虞吉，有它不燕。",
+      "smallImage": "《象》曰：初九虞吉，志未變也。",
+      "wangBi": "虞猶專也。為信之始，而應在四，得乎專吉者也，志未能變，繫心於一，故「有它不燕」也。"
+     },
+     "2": {
+      "statement": "九二，鳴鶴在陰，其子和之。我有好爵，吾與爾靡之。",
+      "smallImage": "《象》曰：其子和之，中心願也。",
+      "wangBi": "處內而居重陰之下，而履不失中，不徇於外，任其真者也。立誠篤至，雖在闇昧，物亦應焉，故曰「鳴鶴在陰，其子和之」也。不私權利，唯德是與，誠之至也，故曰我有好爵，與物散之。"
+     },
+     "3": {
+      "statement": "六三，得敵，或鼓或罷，或泣或歌。",
+      "smallImage": "《象》曰：或鼓或罷，位不當也。",
+      "wangBi": "三居少陰之上，四居長陰之下，對而不相比，敵之謂也。以陰居陽，欲進者也。欲進而閡敵，故或鼓也。四履正而承五，非己所克，故或罷也。不勝而退，懼見侵陵，故或泣也。四履於順。不與物校，退而不見害，故或歌也。不量其力，進退无恒，憊可知也。"
+     },
+     "4": {
+      "statement": "六四，月幾望，馬匹亡，无咎。",
+      "smallImage": "《象》曰：馬匹亡，絕類上也。",
+      "wangBi": "居中孚之時，處巽之始，應說之初，居正履順，以承於五，內毗元首，外宣德化者也。充乎陰德之盛，故曰月幾望。馬匹亡者，棄群類也。若夫居盛德之位，而與物校其競爭，則失其所盛矣，故曰絕類而上，履正承尊，不與三爭，乃得无咎也。"
+     },
+     "5": {
+      "statement": "九五，有孚攣如，无咎。",
+      "smallImage": "《象》曰：有孚攣如，位正當也。",
+      "wangBi": "攣如者，繫其信之辭也。處中誠以相交之時，居尊位以為群物之主，信何可舍？故有孚攣如，乃得无咎也。"
+     },
+     "6": {
+      "statement": "上九，翰音登于天，貞凶。",
+      "smallImage": "《象》曰：翰音登于天，何可長也。",
+      "wangBi": "翰，高飛也。飛音者，音飛而實不從之謂也。居卦之上，處信之終，信終則衰，忠篤內喪，華美外揚，故曰「翰音登於天」也。翰音登天，正亦滅矣。"
+     }
+    }
+   }
+  },
+  {
+   "number": 62,
+   "hook": "Big plan stuck for months?",
+   "meaning": [
+    "The Small says:\nno big moves.",
+    "Small done well\nends well."
+   ],
+   "question": "What small thing\ncan you do?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Fly low.\nDo small things.",
+    "source": "commentary/en/62.json#judgment.synthesis"
+   },
+   "classic": {
+    "judgment": [
+     "小過，亨，利貞。可小事，不可大事。飛鳥遺之音，不宜上，宜下，大吉。",
+     "○注「飛鳥遺其音聲，哀以求處」。○正義曰：遺，失也。鳥之失聲，必是窮迫，未得安處。《論語》曰：「鳥之將死，其鳴也哀。」故知遺音即哀聲也。",
+     "*止或作上。矯或作厚。止之或作立之。"
+    ],
+    "tuan": [
+     "《彖》曰：小過，小者過而亨也。",
+     "過以利貞，與時行也。",
+     "柔得中，是以小事吉也；剛失位而不中，是以不可大事也。",
+     "有飛鳥之象焉。",
+     "飛鳥遺之音，不宜上，宜下，大吉，上逆而下順也。"
+    ],
+    "greatImage": [
+     "《象》曰：山上有雷，小過。君子以行過乎恭，喪過乎哀，用過乎儉。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，飛鳥以凶。",
+      "smallImage": "《象》曰：飛鳥以凶，不可如何也。",
+      "wangBi": "小過，上逆下順，而應在上卦，進而之逆，无所錯足，飛鳥之凶也。"
+     },
+     "2": {
+      "statement": "六二，過其祖，遇其妣，不及其君。遇其臣，无咎。",
+      "smallImage": "《象》曰：不及其君，臣不可過也。",
+      "wangBi": "過而得之謂之遇，在小過而當位，過而得之之謂也。祖，始也，謂初也。妣者，居內履中而正者也。過初而履二位，故曰「過其祖」而「遇其妣」，過而不至於僣，盡於臣位而已，故曰「不及其君，遇其臣，无咎」。"
+     },
+     "3": {
+      "statement": "九三，弗過防之，從或戕之，凶。",
+      "smallImage": "《象》曰：從或戕之，凶如何也。",
+      "wangBi": "小過之世，大者不立，故令小者得過也。居下體之上，以陽當位，而不能先過防之，至令小者咸過*，而復應而從焉。其從之也，則戕之凶至矣。故曰「弗過防之，從或戕之，凶」也。"
+     },
+     "4": {
+      "statement": "九四，无咎，弗過遇之，往厲必戒，勿用永貞。",
+      "smallImage": "《象》曰：弗過遇之，位不當也。往厲必戒，終不可長也。",
+      "wangBi": "雖體陽爻，而不居其位，不為貴主*，故得无咎也。失位在下，不能過者也。以其不能過，故得合於免咎之宜，故曰弗過遇之。夫宴安酖毒，不可懷也。處於小過不寧之時，而以陽居陰，不能有所為者也。以此自守，免咎可也。以斯攸往，危之道也。不交於物，物亦弗與，无援之助，故危則必戒而已，无所告救也。沈沒怯弱，自守而已，以斯而處於群小之中，未足任者也，故曰「勿用永貞」，言不足用之於永貞。"
+     },
+     "5": {
+      "statement": "六五，密雲不雨，自我西郊，公弋取彼在穴。",
+      "smallImage": "《象》曰：密雲不雨，已上也。",
+      "wangBi": "小過，小者過於大也。六得五位，陰之盛也。故密雲不雨，至于西郊也。夫雨者，陰布於上*而陽薄之而不得通，則烝而為雨。今艮止於下而不交焉，故不雨也。是故小畜尚往而亨，則不雨也。小過陽不上交，亦不雨也。雖陰盛於上，未能行其施也。公者，臣之極也，五極陰盛，故稱公也。弋，射也。在穴者，隱伏之物也。小過者，過小而難未大作，猶在隱伏者也。以陰質治小過，能獲小過者也，故曰「公弋取彼在穴」也。除過之道，不在取之，是乃密雲未能雨也。"
+     },
+     "6": {
+      "statement": "上六，弗遇過之，飛鳥離之，凶，是謂災眚。",
+      "smallImage": "《象》曰：弗遇過之，已亢也。",
+      "wangBi": "小人之過，遂至上極，過而不知限，至于亢也。過至於亢，將何所遇？飛而不已，將何所託？災自己致，復何言哉！"
+     }
+    }
+   }
+  },
+  {
+   "number": 63,
+   "hook": "Just finished something big?",
+   "meaning": [
+    "Completion says:\nstay alert.",
+    "Prepare now,\nwhile it works."
+   ],
+   "question": "What could\ngo wrong?",
+   "lesson": {
+    "kind": "character",
+    "text": "Done? Now guard\nagainst trouble.",
+    "source": "series/characters.json#63: A figure stands; a bowl rises beside it; the meal done, the figure turns its back on the bowl, holds, turns again and lies down as the character."
+   },
+   "classic": {
+    "judgment": [
+     "既濟，亨小，利貞，初吉終亂。"
+    ],
+    "tuan": [
+     "《彖》曰：既濟，亨，小者亨也。",
+     "利貞，剛柔正而位當也。",
+     "初吉，柔得中也。終止則亂，其道窮也。"
+    ],
+    "greatImage": [
+     "《象》曰：水在火上，既濟，君子以思患而豫防之。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初九，曳其輪，濡其尾，无咎。",
+      "smallImage": "《象》曰：曳其輪，義无咎也。",
+      "wangBi": "最處既濟之初，始濟者也。始濟未涉於燥，故輪曳而尾濡也。雖未造易，心无顧戀，志棄難者也。其於義也，无所咎矣。"
+     },
+     "2": {
+      "statement": "六二，婦喪其茀，勿逐，七日得。",
+      "smallImage": "《象》曰：七日得，以中道也。",
+      "wangBi": "居中履正，處文明之盛，而應乎五，陰之光盛者也。然居初、三之間，而近不相得，上不承三，下不比初。夫以光盛之陰，處於二陽之間，近而不相得，能无見侵乎？故曰「喪其茀」也。稱婦者，以明自有夫，而它人侵之也。茀，首飾也。夫以中道執乎貞正，而見侵者，眾之所助也。處既濟之時，不容邪道者也。時既明峻，眾又助之，竊之者逃竄而莫之歸矣。量斯勢也，不過七日，不須己逐，而自得也。"
+     },
+     "3": {
+      "statement": "九三，高宗伐鬼方，三年克之，小人勿用。",
+      "smallImage": "《象》曰：三年克之，憊也。",
+      "wangBi": "處既濟之時，居文明之終，履得其位，是居衰末而能濟者，故伐鬼方三年乃克也*。君子處之，故能興也，小人居之，遂喪邦也。"
+     },
+     "4": {
+      "statement": "六四，繻有衣袽，終日戒。",
+      "smallImage": "《象》曰：終日戒，有所疑也。",
+      "wangBi": "繻宜曰濡，衣袽所以塞舟漏也。履得其正，而近不與三、五相得。夫有隙之棄舟，而得濟者，有衣袽也。鄰於不親，而得全者，終日戒也。"
+     },
+     "5": {
+      "statement": "九五，東鄰殺牛，不如西鄰之禴祭，實受其福。",
+      "smallImage": "《象》曰：東鄰殺牛，不如西鄰之時也。",
+      "wangBi": "牛，祭之盛者也。禴，祭之薄者也。居既濟之時，而處尊位，物皆濟矣，將何為焉？其所務者，祭祀而已。祭祀之盛，莫盛脩德，故沼沚之毛，蘋蘩之菜，可羞於鬼神，故黍稷非馨，明德惟馨，是以「東鄰殺牛，不如西鄰之禴祭，實受其福」也。"
+     },
+     "6": {
+      "statement": "上六，濡其首，厲。",
+      "smallImage": "《象》曰：濡其首厲，何可久也？",
+      "wangBi": "處既濟之極，既濟道窮，則之於未濟，之於未濟，則首先犯焉。過進不已*，則遇於難，故濡其首也。將沒不久，危莫先焉。"
+     }
+    }
+   }
+  },
+  {
+   "number": 64,
+   "hook": "So close to done?",
+   "meaning": [
+    "Before Completion:\nnot yet.",
+    "Sort things out\nbefore you move."
+   ],
+   "question": "What goes\nwhere?",
+   "lesson": {
+    "kind": "lines",
+    "text": "Almost across,\nthe fox gets wet.",
+    "source": "series/critic/readouts/drafts.json#64"
+   },
+   "classic": {
+    "judgment": [
+     "未濟，亨，小狐汔濟，濡其尾，无攸利。"
+    ],
+    "tuan": [
+     "《彖》曰：未濟，亨，柔得中也。",
+     "小狐汔濟，未出中也。",
+     "濡其尾，无攸利，不續終也。",
+     "雖不當位，剛柔應也。"
+    ],
+    "greatImage": [
+     "《象》曰：火在水上，未濟，君子以慎辨物居方。"
+    ],
+    "lines": {
+     "1": {
+      "statement": "初六，濡其尾，吝。",
+      "smallImage": "《象》曰：濡其尾，亦不知極也。",
+      "wangBi": "處未濟之初，最居險下，不可以濟者也。而欲之其應，進則溺身。未濟之始，始於既濟之上六也。濡其首猶不反，至于濡其尾，不知紀極者也。然以陰處下，非為進亢，遂其志者也。困則能反，故不曰凶。事在己量，而必困乃反，頑亦甚矣，故曰吝也。"
+     },
+     "2": {
+      "statement": "九二，曳其輪，貞吉。",
+      "smallImage": "《象》曰：九二貞吉，中以行正也。",
+      "wangBi": "體剛履中，而應於五，五體陰柔，應與而不自任者也。居未濟之時，處險難之中，體剛中之質，而見任與，拯救危難，經綸屯蹇者也。用健拯難*，靖難*在正，而不違中，故「曳其輪，貞吉」也。"
+     },
+     "3": {
+      "statement": "六三，未濟，征凶，利涉大川。",
+      "smallImage": "《象》曰：未濟征凶，位不當也。",
+      "wangBi": "以陰之質，失位居險，不能自濟者也。以不正之身，力不能自濟，而求進焉，喪其身也。故曰征凶也。二能拯難，而己比之，棄己委二，載二而行，溺可得乎？何憂未濟，故曰利涉大川。"
+     },
+     "4": {
+      "statement": "九四，貞吉，悔亡。震用伐鬼方，三年有賞于大國。",
+      "smallImage": "《象》曰：貞吉悔亡，志行也。",
+      "wangBi": "處未濟之時，而出險難之上，居文明之初，體乎剛質，以近至尊。雖履非其位，志在乎正，則吉而悔亡矣。其志得行，靡禁其威，故曰「震用伐鬼方」也。「伐鬼方」者，興衰之征也。故每至興衰而取義焉。處文明之初，始出於難，其德未盛，故曰三年也。五居尊以柔，體乎文明之盛，不奪物功者也，故以大國賞之也。"
+     },
+     "5": {
+      "statement": "六五，貞吉，无悔。君子之光，有孚，吉。",
+      "smallImage": "《象》曰：君子之光，其暉吉也。",
+      "wangBi": "以柔居尊，處文明之盛，為未濟之主，故必正然後乃吉，吉乃得无悔也。夫以柔順文明之質，居於尊位，付與於能，而不自役，使武以文，御剛以柔，斯誠君子之光也。付物以能，而不疑也，物則竭力，功斯克矣，故曰「有孚，吉。」"
+     },
+     "6": {
+      "statement": "上九，有孚于飲酒，无咎。濡其首，有孚失是。",
+      "smallImage": "《象》曰：飲酒濡首，亦不知節也。",
+      "wangBi": "未濟之極，則反於既濟。既濟之道，所任者當也。所任者當，則可信之无疑，而己逸焉，故曰「有孚於飲酒，无咎」也。以其能信於物，故得逸豫而不憂於事之廢。苟不憂於事之廢，而耽於樂之甚，則至於失節矣。由於有孚，失於是矣，故曰「濡其首，有孚，失是」也。"
+     }
+    }
+   },
+   "readout": {
+    "finding": "LINES 2–5 OUT OF POSITION.\nALL THREE PAIRS ANSWER.",
+    "mark": [
+     5
+    ],
+    "master": {
+     "zh": "為未濟之主",
+     "en": "Master of Before Completion"
+    },
+    "timed": false
+   },
+   "lineAudit": {
+    "verdict": "one-line",
+    "fit": 8,
+    "lines": [
+     1
+    ],
+    "finding": "AT THE BASE: THE FOX\nWETS ITS TAIL.",
+    "why": "Line 1, 'wets its tail. Regret', is the Judgment's fox image (小狐汔濟，濡其尾) in the line itself, so the lesson 'the fox gets wet' is shown almost literally. The line does not say 'fox'; the Judgment does, so adding 'THE FOX' borrows one word from the Judgment."
+   }
+  }
+ ]
+}
