@@ -1,7 +1,7 @@
 {
  "hexagram": 5,
- "rendered": "2026-09-26T17:05:01.579Z",
- "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
+ "rendered": "2026-09-27T15:27:50.081Z",
+ "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
  "clean": false,
  "seconds": 29.461333,
  "shareKbps": 6117,
@@ -46,19 +46,20 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-111010-100bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-111010-100bpm-9b.mp4",
-   "mode": "snap"
+   "clip": "assets/3d/endcard-snap-111010-9b-ref.mp4",
+   "mode": "snap",
+   "rate": 0.8333333333333334
   }
  },
  "files": {
   "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
   "local/music/certificates/upbeat-synthwave-353881-license.txt": "2725b08c1043fe144ddf6e6966972d5d97a67509d1b836ce5a3a2245237b0572",
   "assets/3d/hexagram-111010-100bpm-8b.mp4": "75eb628fa1696f38c83a0c395d73d147111e0f9ef1e836c279e81cdaf350aaef",
-  "assets/3d/endcard-snap-111010-100bpm-9b.mp4": "53ca3276993e84d513e501d715756feca05d4e2150dcd461e6e430c69820f11d",
+  "assets/3d/endcard-snap-111010-9b-ref.mp4": "e7fb22aeb285bb0549119d87559eb700583931000c4f3f57210c4154520df40f",
   "assets/3d/character-5-100bpm-16b-1nj2qu2.mp4": "785cd2da205a9324370a2bf582fb3c3c717795f728b28a1e0d18d79d3cab5347",
   "assets/yilin/stipple-5-41.webp": "a5267dd9b8da456822b834a0efcf96ea843c8b4c810dd638ce6f67ca0cc5746b",
   "assets/yilin/stipple-5-34.webp": "c3aaa1314f79ef6d31322d609a09ebb1b9625d5509b25e27a4c99f76bd068c18",
-  "out/series/05-xu/short.mp4": "61c71e031b4c4c626fc0a188e7f4753327ed81f8985697ff544bf9550af26306",
-  "out/series/05-xu/share.mp4": "4a524dd5f169e2544b03f28fba9dcd174f70f867171290c63e96ef3bc2eab2e3"
+  "out/series/05-xu/short.mp4": "610727a4dbcdcfc5403bf0d803af00bf4e1e69c3f343fc09c60c6a09ee0bae6a",
+  "out/series/05-xu/share.mp4": "e1d5e2fddaf804c2380571d929ae417ad83b46bfe90e31c0c0c46c2e91c8676a"
  }
 }

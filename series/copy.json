@@ -157,7 +157,8 @@
     "finding": "THE YOUTH (5) SEEKS THE TEACHER (2)."
    },
    "readout_source": "judgment"
-  }
+  },
+  "endcardRef": true
  },
  "5": {
   "hook": {
@@ -230,7 +231,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "6": {
   "hook": {
@@ -315,7 +317,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "8": {
   "hook": {
@@ -412,7 +415,8 @@
     "finding": "ONE YIELDING LINE HOLDS FIVE."
    },
    "readout_source": "Tuan 柔得位而上下應之; judgment: dense clouds, no rain"
-  }
+  },
+  "endcardRef": true
  },
  "10": {
   "hook": {
@@ -494,7 +498,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "12": {
   "hook": {
@@ -534,7 +539,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "13": {
   "hook": {
@@ -579,7 +585,8 @@
     }
    },
    "readout_source": "judgment: fellowship in the open; line 2 fellowship in the clan"
-  }
+  },
+  "endcardRef": true
  },
  "14": {
   "hook": {
@@ -664,7 +671,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "16": {
   "hook": {
@@ -749,7 +757,8 @@
     "finding": "THE STRONG GOES BELOW THE WEAK."
    },
    "readout_source": "Wang Bi on the judgment: the firm places itself below the yielding"
-  }
+  },
+  "endcardRef": true
  },
  "18": {
   "hook": {
@@ -919,7 +928,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "20": {
   "hook": {
@@ -963,7 +973,8 @@
     }
    },
    "readout_source": "judgment: hands washed, offering not yet made"
-  }
+  },
+  "endcardRef": true
  },
  "21": {
   "hook": {
@@ -1002,7 +1013,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "22": {
   "endcardRef": true,
@@ -1109,7 +1121,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "24": {
   "hook": {
@@ -1149,7 +1162,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "25": {
   "hook": {
@@ -1194,7 +1208,8 @@
     }
    },
    "readout_source": "Wang Bi on the Tuan: the firm comes from without and rules within"
-  }
+  },
+  "endcardRef": true
  },
  "26": {
   "hook": {
@@ -1238,7 +1253,8 @@
     }
    },
    "readout_source": "image; judgment: crossing the great river"
-  }
+  },
+  "endcardRef": true
  },
  "27": {
   "hook": {
@@ -1278,7 +1294,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "28": {
   "hook": {
@@ -1318,7 +1335,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "29": {
   "hook": {
@@ -1357,7 +1375,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "30": {
   "hook": {
@@ -1436,7 +1455,8 @@
     "finding": "ALL THREE PAIRS ANSWER."
    },
    "readout_source": "image: receives others through emptiness"
-  }
+  },
+  "endcardRef": true
  },
  "32": {
   "hook": {
@@ -1496,7 +1516,8 @@
      "water": "#fff1c4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "33": {
   "hook": {
@@ -1541,7 +1562,8 @@
     }
    },
    "readout_source": "image: distance with dignity"
-  }
+  },
+  "endcardRef": true
  },
  "34": {
   "hook": {
@@ -1579,7 +1601,8 @@
     "finding": "FOUR STRONG LINES PUSH UP."
    },
    "readout_source": "image: does not tread where improper"
-  }
+  },
+  "endcardRef": true
  },
  "35": {
   "hook": {
@@ -1682,7 +1705,8 @@
      "water": "#fff1c4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "37": {
   "hook": {
@@ -1723,7 +1747,8 @@
     "finding": "2 AND 5 ANSWER, BOTH IN PLACE."
    },
    "readout_source": "image: speaks with substance, acts with consistency"
-  }
+  },
+  "endcardRef": true
  },
  "38": {
   "hook": {
@@ -1766,7 +1791,8 @@
     "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER."
    },
    "readout_source": "judgment: small matters; image: commonality, difference"
-  }
+  },
+  "endcardRef": true
  },
  "39": {
   "hook": {
@@ -1806,7 +1832,8 @@
     "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED."
    },
    "readout_source": "Wang Bi: the lines all occupy their positions; image: turns inward"
-  }
+  },
+  "endcardRef": true
  },
  "40": {
   "hook": {
@@ -1848,7 +1875,8 @@
     "finding": "THUNDER BREAKS OUT OF THE WATER."
    },
    "readout_source": "judgment: act promptly; image: pardons"
-  }
+  },
+  "endcardRef": true
  },
  "41": {
   "hook": {
@@ -1889,7 +1917,8 @@
     "finding": "THE LOW LINE GIVES TO THE TOP."
    },
    "readout_source": "judgment; Wang Bi: decrease the lower to benefit the upper"
-  }
+  },
+  "endcardRef": true
  },
  "42": {
   "hook": {
@@ -1946,7 +1975,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "43": {
   "hook": {
@@ -2027,7 +2057,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "45": {
   "hook": {
@@ -2068,7 +2099,8 @@
     "finding": "FOUR YIELDING LINES GATHER TO TWO."
    },
    "readout_source": "image: guards against the unexpected"
-  }
+  },
+  "endcardRef": true
  },
  "46": {
   "hook": {
@@ -2108,7 +2140,8 @@
     "finding": "WOOD UNDER EARTH, GROWING UP."
    },
    "readout_source": "judgment: see the great person"
-  }
+  },
+  "endcardRef": true
  },
  "47": {
   "hook": {
@@ -2260,7 +2293,8 @@
     "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
    },
    "readout_source": "image"
-  }
+  },
+  "endcardRef": true
  },
  "50": {
   "hook": {
@@ -2326,7 +2360,8 @@
      "water": "#ff8a3d"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "51": {
   "hook": {
@@ -2366,7 +2401,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "52": {
   "hook": {
@@ -2404,7 +2440,8 @@
     "finding": "NO PAIR ANSWERS. EACH STANDS STILL."
    },
    "readout_source": "image: thinks of nothing beyond the present situation"
-  }
+  },
+  "endcardRef": true
  },
  "53": {
   "hook": {
@@ -2447,7 +2484,8 @@
     "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
    },
    "readout_source": "image"
-  }
+  },
+  "endcardRef": true
  },
  "54": {
   "hook": {
@@ -2490,7 +2528,8 @@
     "finding": "LINES 2 TO 5 ALL OUT OF PLACE."
    },
    "readout_source": "judgment: advancing adverse"
-  }
+  },
+  "endcardRef": true
  },
  "55": {
   "hook": {
@@ -2528,7 +2567,8 @@
     "finding": "THUNDER AND FIRE AT ONCE: FULL."
    },
    "readout_source": "judgment: the sun at midday; Tuan 日中則昃; Wang Bi 宜日中，以徧照 (shine on everything)"
-  }
+  },
+  "endcardRef": true
  },
  "56": {
   "hook": {
@@ -2586,7 +2626,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "57": {
   "hook": {
@@ -2627,7 +2668,8 @@
     "finding": "EACH SOFT LINE SITS UNDER A STRONG."
    },
    "readout_source": "image: reiterates commands"
-  }
+  },
+  "endcardRef": true
  },
  "58": {
   "hook": {
@@ -2691,7 +2733,8 @@
      "water": "#fff15e"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "59": {
   "hook": {
@@ -2735,7 +2778,8 @@
     }
    },
    "readout_source": "judgment: the king approaches the temple"
-  }
+  },
+  "endcardRef": true
  },
  "60": {
   "hook": {
@@ -2779,7 +2823,8 @@
     }
    },
    "readout_source": "image"
-  }
+  },
+  "endcardRef": true
  },
  "61": {
   "hook": {
@@ -2819,7 +2864,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "62": {
   "hook": {
@@ -2858,7 +2904,8 @@
      "rain": "public/assets/3d/rain.mp4"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "63": {
   "hook": {
@@ -2925,7 +2972,8 @@
      "water": "#5ee7ff"
     }
    }
-  }
+  },
+  "endcardRef": true
  },
  "64": {
   "hook": {

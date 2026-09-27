@@ -1,7 +1,7 @@
 {
  "hexagram": 61,
- "rendered": "2026-09-27T01:28:39.077Z",
- "commit": "eb08c86c6a1ddb8d13d845b4a231092ff42e93bd",
+ "rendered": "2026-09-27T19:18:56.836Z",
+ "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
  "clean": false,
  "seconds": 27.050667,
  "shareKbps": 6674,
@@ -46,19 +46,20 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-110011-100bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-110011-100bpm-9b.mp4",
-   "mode": "snap"
+   "clip": "assets/3d/endcard-snap-110011-9b-ref.mp4",
+   "mode": "snap",
+   "rate": 0.8333333333333334
   }
  },
  "files": {
   "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
   "local/music/certificates/video-games-dreamy-synthwave-music-347512-license.txt": "0059c9cf14c6d674aa02771795a667f95239ce5590bf7a0b87b52db08dae4e1c",
   "assets/3d/hexagram-110011-100bpm-8b.mp4": "4f88a4c1a567d871b465b91e822e4390d0fe6677bf4767724e0d2acad3269c88",
-  "assets/3d/endcard-snap-110011-100bpm-9b.mp4": "cc0faf907ed7bff9e13a1c3ff0bc6e8f1c0abf57899418bb86856d2d5e22ae79",
+  "assets/3d/endcard-snap-110011-9b-ref.mp4": "9a23eb9a1882e2bc2711415fd4835152d7649135bfb4beebef3c9ab78eef4300",
   "assets/3d/acts-61-100bpm-12b-s6slxn.mp4": "195ce66b248714b7308e3fe019a4e381d0b5537407d6408c1028814c8354a899",
   "assets/yilin/stipple-61-10.webp": "9baaaa609d6e1d6a6e7f1435952dc5872141380af532405642c31ec0138f5a95",
   "assets/yilin/stipple-61-8.webp": "97ba4b5b20391715206fc623c2a3866ffbdb7f15117038cf5f04755a6539a2eb",
-  "out/series/61-zhong-fu/short.mp4": "2454de8f2302423fa8e907cb63e788692d1c4b2f2b91307a3060cd0ab6335517",
-  "out/series/61-zhong-fu/share.mp4": "b5d4aad7a7378d645f33893218b044ed7957ce6b6c4c4d9a287dca41663c25b3"
+  "out/series/61-zhong-fu/short.mp4": "910921086df2058ab7dc33b066570c4883dd8a772d80ae26527fe0800b9bcb3e",
+  "out/series/61-zhong-fu/share.mp4": "709093895145ab02ea7bd5df5c673643171999f81ea846a33c0540afade6df22"
  }
 }

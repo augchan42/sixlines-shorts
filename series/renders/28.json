@@ -1,8 +1,8 @@
 {
  "hexagram": 28,
- "rendered": "2026-09-26T17:14:08.060Z",
- "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
- "clean": true,
+ "rendered": "2026-09-27T16:52:19.850Z",
+ "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "clean": false,
  "seconds": 27.050667,
  "shareKbps": 6674,
  "props": {
@@ -46,19 +46,20 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-011110-100.05bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-011110-100.05bpm-9b.mp4",
-   "mode": "snap"
+   "clip": "assets/3d/endcard-snap-011110-9b-ref.mp4",
+   "mode": "snap",
+   "rate": 0.83375
   }
  },
  "files": {
   "local/music/pick22-cinematic-dark-synthwave.mp3": "0062b7a9e86ed7b4d6fda459a4539df15692d42c13cc31ce9e0ec4513060de9f",
   "local/music/certificates/synthwave-cinematic-dark-synthwave-cyberpunk-atmosphere-508557-license.txt": "6dc3ac3c24a133a5a92d7381dc6e142021e7dfeff70741c9e430d0326eac99d1",
   "assets/3d/hexagram-011110-100.05bpm-8b.mp4": "64289095cf8829b4c495b8c2ed6b6c51c0e8a77b439c5c9a2d5a2bdeb0bf957a",
-  "assets/3d/endcard-snap-011110-100.05bpm-9b.mp4": "7d2881439817181e863fe248a20e25020bc625b0bb7af92097bffb0a748c4da5",
+  "assets/3d/endcard-snap-011110-9b-ref.mp4": "4e94d0a66b3a29bc7300f8e51d28f06ed271b9e438ae666010e3fc8bd8b8d959",
   "assets/3d/acts-28-100.05bpm-12b-8tat8v.mp4": "4554f2d718398811852e4bed5670951c7c283395a08a347812badc85a9c55194",
   "assets/yilin/stipple-28-33.webp": "8ac21b7b985ba08b65719de3da8cf7b4dad37a91d21e51b21cbfced87d64c01d",
   "assets/yilin/stipple-28-18.webp": "d608678db3684229537645351060df4d358cb5596954a4e3f57c7e081ba60568",
-  "out/series/28-da-guo/short.mp4": "2a05808d5b96a66a205eaf06972b80130b720b6371130ae5c26a092918964773",
-  "out/series/28-da-guo/share.mp4": "dbb8f98b0204e0585456ac7a8b3493eb4d8523b57d11b9e3b6367c65e396296a"
+  "out/series/28-da-guo/short.mp4": "3da685fce4fd211630aa36d5590c78b45ae7b5a7e15f68490d4dadcba7877f7f",
+  "out/series/28-da-guo/share.mp4": "e54e36405dba1a67e6fd8f396eff7ab420d9ec9501ea1b0726ecc625384c42ab"
  }
 }

@@ -1,7 +1,7 @@
 {
  "hexagram": 29,
- "rendered": "2026-09-26T14:21:00.678Z",
- "commit": "d0ba95af381176376bf341ec4ad0098a8eca36d4",
+ "rendered": "2026-09-27T16:57:35.644Z",
+ "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
  "clean": false,
  "seconds": 27.050667,
  "shareKbps": 6674,
@@ -46,19 +46,20 @@
   "credit": false,
   "hexagramClip": "assets/3d/hexagram-010010-100bpm-8b.mp4",
   "endcard": {
-   "clip": "assets/3d/endcard-snap-010010-100bpm-9b.mp4",
-   "mode": "snap"
+   "clip": "assets/3d/endcard-snap-010010-9b-ref.mp4",
+   "mode": "snap",
+   "rate": 0.8333333333333334
   }
  },
  "files": {
   "local/music/pick07-interstellar-retrowave.mp3": "d1a2684ca9ad37b460ae1e1326ceb5ea11878a77f7c184a2ddbcede95cb8c603",
   "local/music/certificates/synthwave-interstellar-retrowave-228829-license.txt": "8638b3b5cb1fd2c245853698e81fdc1282a9ca9c88c80587901ff9df07575c25",
   "assets/3d/hexagram-010010-100bpm-8b.mp4": "6c449974e3e0aff5a483254a7190ce7b2822b180153ed1c288a140286789f63a",
-  "assets/3d/endcard-snap-010010-100bpm-9b.mp4": "6e3f6aad738ed2bd49a3e0e97238cd083fe20c433f8360d254f32c2decf7b213",
+  "assets/3d/endcard-snap-010010-9b-ref.mp4": "2b0c60be486441457bf874083b7092c4480e33465b0296a4e9472a6e8e3fb0e0",
   "assets/3d/abyss-29-100bpm-12b-j481fo.mp4": "9c684df6b72c294e975d02e42fd7931748af4dd3695ffc223c94e724cfdf3aac",
   "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
-  "out/series/29-kan/short.mp4": "78c7f1a57e6018ef42cb8f662a196d8024bdc801d472b96bb2ed51fdad93f122",
-  "out/series/29-kan/share.mp4": "8d2eeb86e995ff6ac142de9f2f5fe9ec165071764a02e836369e64dd421c033a"
+  "out/series/29-kan/short.mp4": "818c56382305ac13ac309ff6d504c9a65000eefab5ceb1a9b5eb1ad92b58dbc0",
+  "out/series/29-kan/share.mp4": "dee7b6cee0a563d11e389cce184a1b93938d9c90655911085d82d6399f0d1e0f"
  }
 }
