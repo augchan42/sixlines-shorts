@@ -34,7 +34,7 @@ export const LINE_H = 0.5;
 const GAP = 0.3;
 const TRIGRAM_GAP = 0.9;
 const YIN_GAP = 0.7;
-const DEPTH = 0.45;
+export const DEPTH = 0.45;
 export const lineZ = (i: number) => {
   const total = 6 * LINE_H + 4 * GAP + TRIGRAM_GAP;
   return -total / 2 + LINE_H / 2 + i * (LINE_H + GAP) + (i >= 3 ? TRIGRAM_GAP - GAP : 0);

@@ -44,6 +44,21 @@ if (!existsSync(pub(ticks))) {
   run("ffmpeg", ["-v", "error", "-y", "-f", "lavfi", "-i", "aevalsrc=0.3*sin(2*PI*1900*t)*exp(-mod(t\\,0.04)*350):s=44100:d=20", pub(ticks)]);
 }
 
+// The flight look's machine sounds (docs/research/2026-09-27-nostromo-screens.md), generated:
+// a hum (mains and its overtones over brown noise), a relay's click-clack, a printer's chatter.
+const sfx = { hum: "local/sfx/hum.wav", relay: "local/sfx/relay.wav", printer: "local/sfx/printer.wav" };
+const makeSfx = {
+  hum: ["-f", "lavfi", "-i", "anoisesrc=color=brown:amplitude=0.5:d=30:r=44100", "-f", "lavfi", "-i", "aevalsrc=0.22*sin(2*PI*50*t)+0.12*sin(2*PI*100*t)+0.04*sin(2*PI*150*t):s=44100:d=30", "-filter_complex", "[0]lowpass=f=180[n];[n][1]amix=inputs=2:normalize=0,afade=t=in:d=0.5,volume=0.8"],
+  relay: ["-f", "lavfi", "-i", "aevalsrc=(random(0)*2-1)*(0.9*exp(-t*260)+0.6*gte(t\\,0.035)*exp(-(t-0.035)*300)):s=44100:d=0.15", "-af", "highpass=f=700,lowpass=f=6000"],
+  printer: ["-f", "lavfi", "-i", "aevalsrc=(random(0)*2-1)*0.5*exp(-mod(t\\,0.022)*420)*(0.7+0.3*sin(2*PI*2.5*t)):s=44100:d=12", "-af", "bandpass=f=2200:width_type=h:w=1800"],
+};
+if (script.look === "flight")
+  for (const [k, f] of Object.entries(sfx))
+    if (!existsSync(pub(f))) {
+      mkdirSync(path.dirname(pub(f)), { recursive: true });
+      run("ffmpeg", ["-v", "error", "-y", ...makeSfx[k], pub(f)]);
+    }
+
 const lesson = script.chapters && {
   pages: script.chapters.flatMap((c) => [...(c.page ? [{ chapter: c.page }] : []), ...c.pages.map(({ q, a, show }) => ({ q, a, show }))]),
   hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
@@ -51,7 +66,9 @@ const lesson = script.chapters && {
   music: `local/music/${script.music.file}`,
   musicStart: script.music.start,
   ticks,
-  endcard: { clip: sp.endcard.clip, seconds: (9 * 60) / sp.bpm },
+  // A test clip of a page or two has no end card.
+  endcard: { clip: sp.endcard.clip, seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm },
+  ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
 
 const props = lesson || {
@@ -74,7 +91,7 @@ if (process.argv.includes("--props-only")) process.exit(0);
 
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
-const inputs = [props.music, props.endcard.clip, ...(lesson ? [ticks] : [])];
+const inputs = [props.music, props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
 const missing = inputs.filter((f) => !existsSync(pub(f)));
 if (missing.length) throw new Error(`missing: ${missing.join(", ")}`);
 
@@ -89,7 +106,12 @@ mkdirSync(dir, { recursive: true });
 const short = path.join(dir, "short.mp4");
 const share = path.join(dir, "share.mp4");
 console.log("rendering");
-run("npx", ["remotion", "render", "src/index.ts", lesson ? "Lesson" : "ReadoutKey", short, `--props=${propsFile}`, "--log=error"]);
+if (props.look === "flight") {
+  // The screen as a tube: rendered flat, then bowed out a little and given a soft bloom.
+  const flat = path.join(dir, "flat.mp4");
+  run("npx", ["remotion", "render", "src/index.ts", "Lesson", flat, `--props=${propsFile}`, "--log=error"]);
+  run("ffmpeg", ["-v", "error", "-y", "-i", flat, "-filter_complex", "[0:v]format=gbrp,lenscorrection=k1=-0.06:k2=-0.02,split[a][b];[b]gblur=sigma=14[g];[a][g]blend=all_mode=screen:all_opacity=0.35,gblur=sigma=0.7,format=yuv420p[v]", "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-crf", "14", "-pix_fmt", "yuv420p", "-c:a", "copy", short]);
+} else run("npx", ["remotion", "render", "src/index.ts", lesson ? "Lesson" : "ReadoutKey", short, `--props=${propsFile}`, "--log=error"]);
 
 // The share copy: yuv420p, faststart, under 25 MB, for Instagram and Threads.
 const seconds = Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", short]).trim());

@@ -2,6 +2,7 @@ import { AbsoluteFill, Audio, interpolate, random, Sequence, staticFile, useCurr
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D } from "../scenes/EndCard3D";
+import { descended, flightCam, FlightPlot, type Cam } from "../scenes/Flight";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
@@ -29,6 +30,11 @@ type Show = {
   lesson?: string;
   full?: { n: number; after: number }[];
   then?: ({ after: number } & Show)[];
+  // The flight look (src/scenes/Flight.tsx): seconds of approach, while the lines plot, before
+  // the query is typed; the line to go down to once the answer starts; seconds to hold.
+  approach?: number;
+  fly?: number;
+  hold?: number;
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -40,6 +46,11 @@ export type LessonProps = {
   musicStart: number;
   ticks: string;
   endcard: { clip: string; seconds: number };
+  // "flight": the view moves through the hexagram, the screen is a tube pushed in on slowly,
+  // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
+  // answer types (docs/research/2026-09-27-nostromo-screens.md).
+  look?: "flight";
+  sfx?: { hum: string; relay: string; printer: string };
 };
 
 const FPS = 30;
@@ -61,7 +72,7 @@ export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
     }
     const q = page.q ?? "";
     const lines = (page.a ?? "").split("\n");
-    const qAt = 10;
+    const qAt = 10 + Math.round((page.show?.approach ?? 0) * FPS);
     const aAt = qAt + Math.round((q.length + 2) * Q_RATE) + 12;
     let at = aAt;
     const lineAt: number[] = [];
@@ -72,7 +83,7 @@ export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
       for (const f of page.show?.full ?? []) if (f.after === i + 1) (fulls.push({ n: f.n, from: at }), (at += FULL));
     });
     const words = (page.a ?? "").split(/\s+/).length + (page.show?.lesson ?? "").split(/\s+/).length;
-    const hold = Math.max(2.5, words / 3.7) * FPS + (page.show?.draw ? FPS : 0);
+    const hold = page.show?.hold !== undefined ? page.show.hold * FPS : Math.max(2.5, words / 3.7) * FPS + (page.show?.draw ? FPS : 0);
     const frames = Math.max(Math.round(3.5 * FPS), (fulls.length ? at - aAt : at) + Math.round(fulls.length ? FPS : hold));
     t += frames;
     return { page, from, frames, qAt, aAt, lineAt, fulls };
@@ -115,7 +126,7 @@ const Plot: React.FC<{ lines: (0 | 1)[]; turn: number; cx: number; cy: number; s
 
 const place = (lines: (0 | 1)[], i: number) => (i === 0 || i === 5 ? "" : lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT");
 
-const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: number; drawn: number }> = ({ show, hexagrams, turn, drawn }) => {
+const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: number; drawn: number; cam?: Cam; logFade?: number }> = ({ show, hexagrams, turn, drawn, cam, logFade = 1 }) => {
   if (show.big) {
     const [top, under] = show.big.split("\n");
     return (
@@ -183,13 +194,17 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
   return (
     <>
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
-        <Plot lines={lines} turn={turn} cx={CX} cy={CY} scale={SCALE} drawn={show.draw ? drawn : 1} lit={lit} amber={amber} />
-        {(show.links ?? []).map(([a, b], k) => {
+        {cam ? (
+          <FlightPlot lines={lines} cam={cam} cx={CX} cy={CY + 40} drawn={show.draw ? drawn : 1} lit={lit} amber={amber} />
+        ) : (
+          <Plot lines={lines} turn={turn} cx={CX} cy={CY} scale={SCALE} drawn={show.draw ? drawn : 1} lit={lit} amber={amber} />
+        )}
+        {!cam && (show.links ?? []).map(([a, b], k) => {
           const x = CX - (LINE_W / 2) * SCALE - 40 - k * 24;
           return <path key={k} d={`M${x + 20},${CY - lineZ(a) * SCALE}H${x}V${CY - lineZ(b) * SCALE}H${x + 20}`} fill="none" stroke={PHOSPHOR} strokeWidth={3.4} style={{ filter: `drop-shadow(0 0 6px ${PHOSPHOR})` }} />;
         })}
-        {show.brackets && [bracket(3, 5), bracket(0, 2)].map((d, k) => <path key={k} d={d} fill="none" stroke={DIM} strokeWidth={3} />)}
-        {show.ranks && <path d={bracket(1, 4)} fill="none" stroke={PHOSPHOR} strokeWidth={3} />}
+        {!cam && show.brackets && [bracket(3, 5), bracket(0, 2)].map((d, k) => <path key={k} d={d} fill="none" stroke={DIM} strokeWidth={3} />)}
+        {!cam && show.ranks && <path d={bracket(1, 4)} fill="none" stroke={PHOSPHOR} strokeWidth={3} />}
       </svg>
       {show.names && (
         <>
@@ -198,7 +213,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
         </>
       )}
       {log.length > 0 && (
-        <div style={{ position: "absolute", left: 80, top: 1200 }}>
+        <div style={{ position: "absolute", left: 80, top: 1200, opacity: logFade }}>
           {[5, 4, 3, 2, 1, 0].map((i) => {
             if (show.draw && drawn * 6 - i <= 0) return <div key={i} style={{ height: 46 }} />;
             const on = !lit || lit.includes(i) || amber.includes(i);
@@ -221,7 +236,7 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
   );
 };
 
-const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: Record<string, Full>; now: number; turn: number }> = ({ t, hexagrams, readouts, now, turn }) => {
+const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: Record<string, Full>; now: number; turn: number; flight?: boolean }> = ({ t, hexagrams, readouts, now, turn, flight }) => {
   const f = now - t.from;
   const { page } = t;
   if (page.chapter) {
@@ -243,7 +258,11 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
   const lines = (page.a ?? "").split("\n");
   const sec = (f - t.aAt) / FPS;
   const show = showAt(page.show ?? {}, sec);
-  const drawn = interpolate(f, [t.aAt, t.aAt + 1.2 * FPS], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const approach = page.show?.approach ?? 0;
+  const drawn = approach
+    ? interpolate(f, [10, t.qAt - 10], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
+    : interpolate(f, [t.aAt, t.aAt + 1.2 * FPS], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const cam = flight && typeof show.hex === "number" ? flightCam(f / FPS, { approach, descendAt: t.aAt / FPS, to: show.fly, end: t.frames / FPS }) : undefined;
   const lastLine = t.lineAt[t.lineAt.length - 1] + Math.round(lines[lines.length - 1].length * A_RATE);
   // A page with nothing to draw sets its answer larger, in the middle of the screen.
   const textOnly = Object.keys(page.show ?? {}).length === 0;
@@ -261,7 +280,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
           <Line key={i} text={l} frame={f} at={t.lineAt[i]} rate={A_RATE} size={textOnly ? 58 : 46} cursor={i === lines.length - 1 && f >= lastLine} />
         ))}
       </div>
-      <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} />
+      <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={cam && show.fly !== undefined ? 1 - descended(f / FPS, t.aAt / FPS) : 1} />
       {show.lesson && f >= lastLine + 15 && (
         <div style={{ position: "absolute", left: 80, right: 80, top: 1520 }}>
           <Line text={show.lesson} frame={f} at={lastLine + 15} rate={A_RATE} size={60} color="#fff" glowless cursor />
@@ -280,24 +299,41 @@ export const Lesson: React.FC<LessonProps> = (p) => {
   const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
-      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} />
-      {/* The teletype: a tick while the query and each answer line type. */}
+      <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={p.look === "flight" ? 0.6 : 1} />
+      {p.look === "flight" && p.sfx && (
+        <>
+          <Audio src={staticFile(p.sfx.hum)} loop volume={0.55} />
+          {/* A relay click as each line is plotted during the approach. */}
+          {pages.flatMap((x, k) =>
+            x.page.show?.approach
+              ? [0, 1, 2, 3, 4, 5].map((i) => (
+                  <Sequence key={`relay-${k}-${i}`} from={x.from + 10 + Math.round(((x.qAt - 20) * i) / 6)} durationInFrames={10}>
+                    <Audio src={staticFile(p.sfx!.relay)} volume={0.8} />
+                  </Sequence>
+                ))
+              : [],
+          )}
+        </>
+      )}
+      {/* The teletype: a tick while the query types, and each answer line (a printer's chatter
+          in the flight look). */}
       {pages.flatMap((x, k) =>
         x.page.chapter
           ? []
           : [
-              { from: x.from + x.qAt, n: Math.round(((x.page.q ?? "").length + 2) * Q_RATE) },
-              ...(x.page.a ?? "").split("\n").map((l, i) => ({ from: x.from + x.lineAt[i], n: Math.round(l.length * A_RATE) })),
+              { from: x.from + x.qAt, n: Math.round(((x.page.q ?? "").length + 2) * Q_RATE), src: p.ticks },
+              ...(x.page.a ?? "").split("\n").map((l, i) => ({ from: x.from + x.lineAt[i], n: Math.round(l.length * A_RATE), src: p.look === "flight" && p.sfx ? p.sfx.printer : p.ticks })),
             ].map((s, i) => (
               <Sequence key={`${k}-${i}`} from={s.from} durationInFrames={Math.max(1, s.n)}>
-                <Audio src={staticFile(p.ticks)} volume={0.35} />
+                <Audio src={staticFile(s.src)} volume={0.35} />
               </Sequence>
             )),
       )}
       <Sequence durationInFrames={end}>
-        <AbsoluteFill style={{ opacity: flicker }}>
+        {/* In the flight look the screen is a tube the camera pushes in on, slowly. */}
+        <AbsoluteFill style={{ opacity: flicker, transform: p.look === "flight" ? `scale(${interpolate(now, [0, end], [1, 1.07])}) translateY(${interpolate(now, [0, end], [0, -18])}px)` : undefined }}>
           <Frame now={now} />
-          {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} />}
+          {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} flight={p.look === "flight"} />}
           <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0px, rgba(0,0,0,0.28) 2px, transparent 2px, transparent 5px)", pointerEvents: "none" }} />
           <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.75) 100%)", pointerEvents: "none" }} />
         </AbsoluteFill>
