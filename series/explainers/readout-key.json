@@ -1,0 +1,75 @@
+{
+ "about": "One pinned short that shows how to read the readout (src/scenes/Readout.tsx), which 35 shorts use. The user, 2026-09-27: 'we probably need an explainer video then for each of the styles? or are all of the styles pretty self explanatory except for the nostromo wang bi shorts'. The example is 22 Grace: line 5 is yin, OUT of place, yet a centre and the master.",
+ "hexagram": 22,
+ "lines": [
+  1,
+  0,
+  1,
+  0,
+  0,
+  1
+ ],
+ "look": "The readout's own screen: the plot of 22 turns as usual; each step types at the prompt, and the part of the screen it explains lights amber while the rest dims.",
+ "steps": [
+  {
+   "at": 0.0,
+   "lights": "header",
+   "text": "HOW TO READ\nTHE READOUT",
+   "note": "the question a viewer of any readout short has"
+  },
+  {
+   "at": 3.0,
+   "lights": "plot and log",
+   "text": "SIX LINES,\nBOTTOM TO TOP.",
+   "note": "L1 is the bottom line"
+  },
+  {
+   "at": 7.0,
+   "lights": "L1 L3 L5 place column",
+   "text": "PLACES 1, 3, 5\nWANT A YANG LINE.",
+   "note": ""
+  },
+  {
+   "at": 10.5,
+   "lights": "L2 L4 L6 place column",
+   "text": "PLACES 2, 4, 6\nWANT A YIN LINE.",
+   "note": ""
+  },
+  {
+   "at": 14.0,
+   "lights": "L2 IN, L5 OUT",
+   "text": "IT FITS: IN.\nIT DOESN'T: OUT.",
+   "note": "L2 is yin in 2: IN. L5 is yin in 5: OUT."
+  },
+  {
+   "at": 18.0,
+   "lights": "the answering link",
+   "text": "A LINK: LINES THAT\nANSWER EACH OTHER.",
+   "note": "lines 1-4, 2-5, 3-6 answer when they differ; in 22 only 1 and 4 do"
+  },
+  {
+   "at": 22.0,
+   "lights": "L2 and L5 CENTRE",
+   "text": "2 AND 5 ARE\nTHE CENTRES.",
+   "note": "the middle of each trigram"
+  },
+  {
+   "at": 25.5,
+   "lights": "L5",
+   "text": "THE CENTRE COUNTS\nMORE THAN PLACE.",
+   "note": "Wang Bi, Zhouyi lüeli: the centre over the correct place"
+  },
+  {
+   "at": 29.0,
+   "lights": "L5 amber ◄, WANG BI: 為飾之主 MASTER OF ADORNMENT",
+   "text": "◄ MARKS THE LINE\nTHAT RULES.",
+   "note": "22's line 5: out of place, a centre, the master"
+  },
+  {
+   "at": 33.0,
+   "lights": "all",
+   "text": "WANG BI,\nAD 226–249.",
+   "note": "who the readings come from; then the end card"
+  }
+ ]
+}
