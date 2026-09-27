@@ -1,7 +1,7 @@
 {
  "hexagram": 48,
- "rendered": "2026-09-26T17:26:36.928Z",
- "commit": "bc2faba7617e3a43d48d4416cd035c6ab8c5d0c0",
+ "rendered": "2026-09-27T14:58:13.866Z",
+ "commit": "c727f0ab4f242072231a5936e6bc12e50fdff934",
  "clean": false,
  "seconds": 24.576,
  "shareKbps": 7358,
@@ -25,12 +25,12 @@
   "music": "local/music/pick19-christmas-synthwave.mp3",
   "musicStart": 21.157,
   "drop": 12.522,
-  "hook": "Good things just out of reach?",
+  "hook": "Who maintains what\neveryone uses?",
   "meaning": [
-   "The Well says:\nlengthen the rope.",
-   "The water is\nalways there."
+   "The Well says:\npeople come and go.",
+   "The well\nremains."
   ],
-  "question": "What’s cutting\nyour rope short?",
+  "question": "What do you help\nkeep in working order?",
   "plates": [
    "assets/yilin/stipple-48-10.webp",
    "assets/yilin/stipple-48-57.webp"
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Towns move.\nThe well stays.",
+   "text": "Care for what\nothers depend on.",
    "beats": 14,
    "clip": "assets/3d/character-48-115bpm-14b-hgct5l.mp4"
   },
@@ -58,7 +58,7 @@
   "assets/3d/character-48-115bpm-14b-hgct5l.mp4": "8d5d40ffb13427bf11420b678cf8475ea5503f95ff4df4d489c71e47f79499ea",
   "assets/yilin/stipple-48-10.webp": "f432087bf5511242d6465bc6368842373c08773bcc8400411b3bb526aa63959d",
   "assets/yilin/stipple-48-57.webp": "d2bc448a0ccd620988479852921def8ee91b8cf09808b5d2320ab5e82b225b60",
-  "out/series/48-jing/short.mp4": "f1b11111d10656ea9e49014f0906de0b11f09ba69dad3d05a596d85b20725790",
-  "out/series/48-jing/share.mp4": "3436a98768ff09e338e814b3df72f58bc48a287f26710996de21a5c5e001d6d8"
+  "out/series/48-jing/short.mp4": "473905f2aca137ccc35eee250948efb1e1ef73a428734396e082de1323589ec7",
+  "out/series/48-jing/share.mp4": "f0ce968584566b90c793728e4e0de402343e0747c2bc9c611464c37cb61b8670"
  }
 }
