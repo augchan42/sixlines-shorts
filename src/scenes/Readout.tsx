@@ -96,20 +96,52 @@ export const Line: React.FC<{ text: string; frame: number; at: number; rate?: nu
   );
 };
 
-// A log row in parts, so the explainer can light one part: the line, YANG/YIN, IN/OUT, CENTRE.
-const LogRow: React.FC<{ i: number; yang: boolean; place: string; amber: boolean; dim: (...k: string[]) => number; top: number }> = ({ i, yang, place, amber, dim, top }) => {
-  const [inOut, centre] = place.split(" · ");
-  const part = (text: string, ...keys: string[]) => {
-    const on = dim(`row:${i}`, ...keys) === 1;
-    return <span style={{ opacity: on ? 1 : 0.35, color: amber ? "#ffb347" : on ? PHOSPHOR : DIM, textShadow: on ? glow : "none" }}>{text}</span>;
-  };
+// One log row in fixed columns: L1, the line drawn as a bar (one for yang, two halves for
+// yin, the same overall length), YANG/YIN, IN/OUT, · CENTRE and ◄. The pixel font has no box
+// glyphs, and its letters differ in width, so each column has its own width. `shown` counts the
+// characters typed so far (the row types in as a string of the same length would); `style`
+// gives each part's colour and strength (keys: bar, yy, place, centre, mark).
+type PartStyle = { color: string; opacity?: number; glow?: boolean };
+const ROW = { label: 2.1, bar: 5.4, gap: 0.9, yy: 3.6, place: 2.9 };
+export const LogRowView: React.FC<{
+  i: number;
+  yang: boolean;
+  place: string;
+  centre: boolean;
+  mark: boolean;
+  size: number;
+  shown?: number;
+  style: (part: "bar" | "yy" | "place" | "centre" | "mark") => PartStyle;
+  cursor?: boolean;
+}> = ({ i, yang, place, centre, mark, size, shown = Infinity, style, cursor }) => {
+  const label = `L${i + 1}`;
+  const word = yang ? "YANG" : "YIN";
+  // Characters each column takes to type, as in the old one-string row.
+  const counts = [label.length + 2, 9, word.length + 2, place ? place.length + 2 : 0, centre ? 9 : 0, mark ? 3 : 0];
+  const starts = counts.map((_, k) => counts.slice(0, k).reduce((a, b) => a + b, 0));
+  const typed = (k: number, text: string) => text.slice(0, Math.max(0, Math.min(text.length, shown - starts[k])));
+  const css = (p: PartStyle): React.CSSProperties => ({ color: p.color, opacity: p.opacity ?? 1, textShadow: p.glow === false ? "none" : glow });
+  const bar = style("bar");
+  const barDone = Math.max(0, Math.min(1, (shown - starts[1]) / 9));
+  const w = ROW.bar * size;
+  const h = size * 0.3;
+  const half = (w - ROW.gap * size) / 2;
+  const box = (left: number, width: number) => (
+    <div style={{ position: "absolute", left, top: (size * 1.25 - h) / 2, width: Math.max(0, width), height: h, backgroundColor: bar.color, boxShadow: bar.glow === false ? "none" : `0 0 8px ${bar.color}` }} />
+  );
+  const cell = (width: number, children: React.ReactNode, extra?: React.CSSProperties) => (
+    <div style={{ position: "relative", display: "inline-block", width: width * size, height: size * 1.25, verticalAlign: "top", ...extra }}>{children}</div>
+  );
+  const done = shown >= counts.reduce((a, b) => a + b, 0);
   return (
-    <div style={{ position: "absolute", top, fontFamily: fonts.pixel, fontSize: 34, lineHeight: 1.25, whiteSpace: "pre" }}>
-      {part(`L${i + 1}  ${yang ? "━━━━━━━" : "━━━   ━━━"}  `, `plot:${i}`)}
-      {part(yang ? "YANG" : "YIN ", `yy:${i}`)}
-      {inOut && part(`  ${inOut}`, `place:${i}`)}
-      {centre && part(` · ${centre}`, `centre:${i}`)}
-      {amber && part("  ◄")}
+    <div style={{ fontFamily: fonts.pixel, fontSize: size, lineHeight: 1.25, whiteSpace: "pre", height: size * 1.25 }}>
+      {cell(ROW.label, typed(0, label), css(bar))}
+      {cell(ROW.bar + 0.8, <div style={{ opacity: bar.opacity ?? 1 }}>{yang ? box(0, w * barDone) : <>{box(0, Math.min(half, w * barDone))}{barDone * w > half + ROW.gap * size && box(half + ROW.gap * size, w * barDone - half - ROW.gap * size)}</>}</div>)}
+      {cell(ROW.yy, typed(2, word), css(style("yy")))}
+      {place ? cell(ROW.place, typed(3, place), css(style("place"))) : null}
+      {centre ? <span style={css(style("centre"))}>{typed(4, "· CENTRE")}</span> : null}
+      {mark ? <span style={css(style("mark"))}>{typed(5, "  ◄")}</span> : null}
+      {cursor && !done && shown > 0 && <span style={{ backgroundColor: bar.color, color: "transparent" }}>█</span>}
     </div>
   );
 };
@@ -226,18 +258,36 @@ export const Readout: React.FC<{
       {/* The log: one entry per line as it is plotted, top to bottom on screen. */}
       <div style={{ position: "absolute", left: 80, top: 1070, right: 80 }}>
         {[5, 4, 3, 2, 1, 0].map((i) => focus ? (
-          <LogRow key={i} i={i} yang={lines[i] === 1} place={place(i)} amber={mark.includes(i) && !!marked} dim={dim} top={(5 - i) * 44} />
+          <div key={i} style={{ position: "absolute", top: (5 - i) * 44 }}>
+            <LogRowView
+              i={i}
+              yang={lines[i] === 1}
+              place={place(i).split(" · ")[0].trim()}
+              centre={i === 1 || i === 4}
+              mark={mark.includes(i) && !!marked}
+              size={34}
+              style={(part) => {
+                const key = { bar: `plot:${i}`, yy: `yy:${i}`, place: `place:${i}`, centre: `centre:${i}`, mark: "mark" }[part];
+                const on = dim(`row:${i}`, key) === 1;
+                const amber = mark.includes(i) && !!marked;
+                return { color: amber ? "#ffb347" : on ? PHOSPHOR : DIM, opacity: on ? 1 : 0.35, glow: on };
+              }}
+            />
+          </div>
         ) : (
-          <Line
-            key={i}
-            text={`L${i + 1}  ${lines[i] ? "━━━━━━━  YANG" : "━━━   ━━━  YIN "}  ${place(i)}${mark.includes(i) && frame >= markAt ? "  ◄" : ""}`}
-            frame={frame}
-            at={plotFrom + i * plotEach}
-            rate={0.6}
-            size={34}
-            color={mark.includes(i) && frame >= markAt ? "#ffb347" : DIM}
-            style={{ position: "absolute", top: (5 - i) * 44 }}
-          />
+          <div key={i} style={{ position: "absolute", top: (5 - i) * 44 }}>
+            <LogRowView
+              i={i}
+              yang={lines[i] === 1}
+              place={place(i).split(" · ")[0].trim()}
+              centre={i === 1 || i === 4}
+              mark={mark.includes(i) && frame >= markAt}
+              size={34}
+              shown={Math.floor((frame - (plotFrom + i * plotEach)) / 0.6)}
+              cursor
+              style={() => ({ color: mark.includes(i) && frame >= markAt ? "#ffb347" : DIM })}
+            />
+          </div>
         ))}
       </div>
 

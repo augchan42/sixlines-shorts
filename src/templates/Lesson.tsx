@@ -2,7 +2,7 @@ import { AbsoluteFill, Audio, interpolate, random, Sequence, staticFile, useCurr
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D } from "../scenes/EndCard3D";
-import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
+import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
 // terminal: after MU/TH/UR in Alien (a question typed, the answer typed back) and Paul's
@@ -11,6 +11,7 @@ import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, lineZ, PHOSPHOR, Reado
 // teletype tick while typing. Rendered by scripts/explainer.mjs wangbi-lesson.
 
 const AMBER = "#ffb347";
+const CYAN = "#5ee7ff";
 
 type Hex = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram] };
 type Show = {
@@ -201,13 +202,17 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
           {[5, 4, 3, 2, 1, 0].map((i) => {
             if (show.draw && drawn * 6 - i <= 0) return <div key={i} style={{ height: 46 }} />;
             const on = !lit || lit.includes(i) || amber.includes(i);
-            const pl = log.includes("place") ? place(lines, i) : "";
-            const centre = log.includes("centre") && (i === 1 || i === 4) ? " · CENTRE" : "";
-            const text = `L${i + 1}  ${lines[i] ? "━━━━━━━" : "━━━   ━━━"}  ${lines[i] ? "YANG" : "YIN "}${pl ? `  ${pl}` : ""}${centre}${amber.includes(i) ? "  ◄" : ""}`;
             return (
-              <div key={i} style={{ height: 46, fontFamily: fonts.pixel, fontSize: 36, whiteSpace: "pre", color: amber.includes(i) ? AMBER : on ? PHOSPHOR : DIM, opacity: on ? 1 : 0.35, textShadow: on ? glow : "none" }}>
-                {text}
-              </div>
+              <LogRowView
+                key={i}
+                i={i}
+                yang={lines[i] === 1}
+                place={log.includes("place") ? place(lines, i).trim() : ""}
+                centre={log.includes("centre") && (i === 1 || i === 4)}
+                mark={amber.includes(i)}
+                size={36}
+                style={() => ({ color: amber.includes(i) ? AMBER : on ? PHOSPHOR : DIM, opacity: on ? 1 : 0.35, glow: on })}
+              />
             );
           })}
         </div>
@@ -245,7 +250,12 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
   return (
     <>
       <div style={{ position: "absolute", left: 80, right: 80, top: textOnly ? 700 : 290 }}>
-        <Line text={`> ${page.q}`} frame={f} at={t.qAt} rate={Q_RATE} size={textOnly ? 46 : 40} color={DIM} />
+        {/* The question: full strength with a light glow, its prompt in cyan, the one cyan on the
+            screen (the human side of the inquiry; amber is the line to look at). */}
+        <div style={{ display: "flex", fontFamily: fonts.pixel, fontSize: textOnly ? 46 : 40 }}>
+          <span style={{ color: CYAN, textShadow: `0 0 6px ${CYAN}`, whiteSpace: "pre" }}>{"> "}</span>
+          <Line text={page.q ?? ""} frame={f} at={t.qAt} rate={Q_RATE} size={textOnly ? 46 : 40} color={PHOSPHOR} glowless style={{ textShadow: "0 0 6px rgba(125,255,138,0.6)" }} />
+        </div>
         <div style={{ height: textOnly ? 24 : 14 }} />
         {lines.map((l, i) => (
           <Line key={i} text={l} frame={f} at={t.lineAt[i]} rate={A_RATE} size={textOnly ? 58 : 46} cursor={i === lines.length - 1 && f >= lastLine} />
