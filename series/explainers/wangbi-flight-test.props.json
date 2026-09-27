@@ -19,7 +19,7 @@
     "draw": true,
     "approach": 5,
     "fly": 4,
-    "hold": 12,
+    "hold": 5,
     "then": [
      {
       "after": 0,
@@ -70,7 +70,7 @@
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-  "seconds": 0
+  "seconds": 5.87020328296554
  },
  "look": "flight",
  "sfx": {

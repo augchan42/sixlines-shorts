@@ -1,9 +1,9 @@
 {
  "explainer": "wangbi-flight-test",
- "rendered": "2026-09-27T04:29:45.698Z",
- "commit": "e860076d8b957b3cb452e041e9d8d051b0cd48d2",
+ "rendered": "2026-09-27T04:32:46.266Z",
+ "commit": "488cab7dabd25ffb7cdb8caa682b828cfe9f7812",
  "clean": false,
- "seconds": 20.8,
+ "seconds": 19.7,
  "shareKbps": 8000,
  "props": {
   "pages": [
@@ -26,7 +26,7 @@
      "draw": true,
      "approach": 5,
      "fly": 4,
-     "hold": 12,
+     "hold": 5,
      "then": [
       {
        "after": 0,
@@ -77,7 +77,7 @@
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
    "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
-   "seconds": 0
+   "seconds": 5.87020328296554
   },
   "look": "flight",
   "sfx": {
@@ -92,7 +92,7 @@
   "local/sfx/hum.wav": "5f3c0e320e113d427169cdc32f5e8b4a7bd63476ed24e115e6248aff3cd0d05b",
   "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
   "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
-  "out/explainers/wangbi-flight-test/short.mp4": "6dbb7efd5b41aff548cc0321bf9357d579b22fe0a575bd9efdec1e88c935ea23",
-  "out/explainers/wangbi-flight-test/share.mp4": "424748d2bcda1936ac2c582c784a1fef7a2db78583b26164a926b85b20c581c0"
+  "out/explainers/wangbi-flight-test/short.mp4": "d7f1c9f426875c504534cc5daa9719115a78af2e628336cc4791a8584ca4c61d",
+  "out/explainers/wangbi-flight-test/share.mp4": "cf95e62bc58fc756ab73252499269a8857d4d5c27f2ba8e793c3de749f1a2bec"
  }
 }
