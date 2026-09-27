@@ -72,3 +72,12 @@ test("a readout lesson is typed in the terminal, so it may run to 30 characters 
   assert.deepEqual(copyProblems(64, entry({ plates: ["64-1", "64-2"], lesson: readout("Almost done?\nStay careful to the end.") })), []);
   assert.match(copyProblems(64, entry({ plates: ["64-1", "64-2"], lesson: readout("Almost done?\nStay careful all the way to the end.") })).join(), /too wide \(over 30 characters\)/);
 });
+
+test("a readout lesson may run to 9 words; one over the rain stays at 7", () => {
+  const readout = (text) => ({ kind: "lines", text, source: "written", readout: { mark: [4], finding: "LINE 5: X." } });
+  const rain = (text) => ({ kind: "lines", text, source: "written" });
+  const e = (lesson) => copyProblems(46, entry({ plates: ["46-1", "46-2"], lesson }));
+  assert.deepEqual(e(readout("Don't rush the climb.\nOne step, then the next.")), []);
+  assert.match(e(readout("Don't rush the climb at all.\nOne step, then the next.")).join(), /lesson: 11 words \(3–9\)/);
+  assert.match(e(rain("Don't rush the climb.\nOne step, then the next.")).join(), /lesson: 9 words \(3–7\)/);
+});

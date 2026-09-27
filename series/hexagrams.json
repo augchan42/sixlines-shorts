@@ -3854,15 +3854,16 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "Go see someone\nabove you.",
-    "source": "series/critic/readouts/drafts.json#46",
+    "text": "Don’t rush the climb.\nOne step, then the next.",
+    "source": "series/critic/depth/review.json#46; Tuan 柔以時升 (rises gently, in its time); Image 積小以高大 (piles small into great); the user, 2026-09-28: 'yes i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'",
     "readout": {
      "mark": [
-      0
+      4
      ],
-     "finding": "WOOD UNDER EARTH, GROWING UP."
+     "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+     "timed": true
     },
-    "readout_source": "judgment: see the great person"
+    "readout_source": "六五 貞吉，升階 (steady and right, it goes well: he climbs the stairs)"
    },
    "endcardRef": true
   },
@@ -4124,15 +4125,16 @@
    },
    "lesson": {
     "kind": "lines",
-    "text": "For a revolution,\na new calendar.",
-    "source": "series/critic/readouts/drafts.json#49",
+    "text": "Go over the change\nuntil it is trusted.",
+    "source": "series/critic/depth/review.json#49; the user, 2026-09-28: 'yes i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'",
     "readout": {
      "mark": [
-      4
+      2
      ],
-     "finding": "FIRE IN THE LAKE. ONE MUST GIVE."
+     "finding": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+     "timed": true
     },
-    "readout_source": "image"
+    "readout_source": "九三 革言三就，有孚 (the change talked over three times, then trusted); Wang Bi 其言實誠 (its words are true)"
    },
    "endcardRef": true
   },

@@ -5,6 +5,8 @@ const MAX_LINE = 18;
 // A readout's lesson is typed inside the terminal at a smaller size; "Stay careful to the end."
 // (24) fills about three quarters of its column (64, 2026-09-27).
 const MAX_READOUT_LINE = 30;
+// A readout lesson is typed and held on the terminal, so it may run to 9 words; one over the rain stays at 7.
+const MAX_READOUT_WORDS = 9;
 
 const TONE = [
   [/\bAI\b/, "says AI"],
@@ -33,7 +35,7 @@ export const copyProblems = (n, e) => {
     // leaves out.
     ["caption", e.caption, 8, 35, false],
     // The sentence after a lesson's picture, typed over code rain like the meaning.
-    ...(e.lesson ? [["lesson", e.lesson, 3, 7, true, e.lesson.readout ? MAX_READOUT_LINE : MAX_LINE]] : []),
+    ...(e.lesson ? [["lesson", e.lesson, 3, e.lesson.readout ? MAX_READOUT_WORDS : 7, true, e.lesson.readout ? MAX_READOUT_LINE : MAX_LINE]] : []),
   ];
   for (const part of parts) problems.push(...partProblems(...part));
   return problems;
