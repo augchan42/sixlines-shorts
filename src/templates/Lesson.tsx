@@ -2,7 +2,7 @@ import { AbsoluteFill, Audio, Easing, interpolate, random, Sequence, staticFile,
 import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
-import { EndCard3D } from "../scenes/EndCard3D";
+import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
@@ -46,7 +46,8 @@ export type LessonProps = {
   music: string | null;
   musicStart: number;
   ticks: string;
-  endcard: { clip: string; seconds: number; rate?: number };
+  // `text`: the clip has no tagline or site and EndCard3D draws them (src/scenes/EndCard3D.tsx).
+  endcard: { clip: string; seconds: number; rate?: number; text?: EndCardText };
   // The music only for the end card, its `at` second landing on the cut, faded in over `lead`
   // seconds as the machine sounds fall away.
   endMusic?: { at: number; lead: number };
@@ -413,7 +414,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
         </AbsoluteFill>
       </Sequence>
       <Sequence from={end}>
-        <EndCard3D clip={p.endcard.clip} rate={p.endcard.rate} />
+        <EndCard3D clip={p.endcard.clip} rate={p.endcard.rate} text={p.endcard.text} />
       </Sequence>
       {/* Film grain, scan lines and dark corners over everything, the end card too, as in the shorts. */}
       <Grain />

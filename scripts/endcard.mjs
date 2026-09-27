@@ -12,7 +12,7 @@
 // The wordmark and tagline use the app's Goudy Old Style from the sixlines-ios checkout
 // (SIXLINES_IOS, default ../sixlines-ios); it is not copied into this public repo.
 import { execFileSync, spawnSync } from "node:child_process";
-import { existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseArgs } from "node:util";
 import { clipFrames } from "../src/lib/clips.ts";
@@ -25,6 +25,9 @@ const { values: a } = parseArgs({
   options: {
     lines: { type: "string" }, bpm: { type: "string" }, mode: { type: "string" },
     beats: { type: "string", default: "7" }, preview: { type: "boolean", default: false },
+    // No tagline or site in the clip: Remotion draws them (src/scenes/EndCard3D.tsx); Blender's
+    // timing JSON moves into place beside the clip.
+    "no-text": { type: "boolean", default: false },
     tagline: { type: "string", default: "goudy-caps" }, clip: { type: "string" },
   },
 });
@@ -48,7 +51,7 @@ const rain = path.join(root, "public/assets/3d/rain.mp4");
 for (const f of [serif, pixel, rain]) if (!existsSync(f)) (console.error(`missing ${f}`), process.exit(1));
 
 const style = a.tagline === "serif" ? "" : `-${a.tagline}`;
-const name = `endcard-${a.mode}${style}-${a.lines}-${a.bpm}bpm-${a.beats}b${a.preview ? "-preview" : ""}`;
+const name = `endcard-${a.mode}${style}-${a.lines}-${a.bpm}bpm-${a.beats}b${a["no-text"] ? "-notext" : ""}${a.preview ? "-preview" : ""}`;
 // Blender writes to out/endcards/ first; a --clip only takes its real name once every frame is there.
 const partial = path.join(root, "out/endcards", `${name}.mp4`);
 const out = a.clip ? path.join(root, "public", a.clip) : partial;
@@ -62,7 +65,7 @@ const run = spawnSync(
     "-b", "--factory-startup", "--python-exit-code", "1", "-P", path.join(root, "blender/endcard.py"), "--",
     "--lines", a.lines, "--bpm", a.bpm, "--beats", a.beats, "--mode", a.mode,
     "--rain", rain, "--serif", serif, "--pixel", pixel, "--out", partial, ...TAGLINES[a.tagline],
-    ...(a.preview ? ["--preview"] : []),
+    ...(a.preview ? ["--preview"] : []), ...(a["no-text"] ? ["--no-text"] : []),
   ],
   { encoding: "utf8", maxBuffer: 1 << 28 },
 );
@@ -84,5 +87,7 @@ if (a.clip) {
     console.error(`The render had ${frames} frames; expected ${expected}. Log: out/endcards/${name}.log`);
     process.exit(1);
   }
+  const timing = partial.replace(/\.mp4$/, ".json");
+  if (existsSync(timing)) renameSync(timing, out.replace(/\.mp4$/, ".json"));
   console.log(`wrote ${path.relative(root, out)} (${frames} frames)`);
 }

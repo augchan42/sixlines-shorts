@@ -108,6 +108,15 @@ if (script.look === "flight")
       run("ffmpeg", ["-v", "error", "-y", ...makeSfx[path.basename(f, ".wav")], pub(f)]);
     }
 
+// "endcardText": true plays the end card clip rendered without its tagline and site
+// (<clip>-notext.mp4, blender/endcard.py --no-text) and has Remotion draw them, on the timing
+// Blender wrote beside the clip. The tagline is the one in scripts/endcard.mjs (goudy-caps).
+const endcardClip = (clip, text) => {
+  if (!text) return { clip };
+  const notext = clip.replace(/\.mp4$/, "-notext.mp4");
+  const timing = JSON.parse(readFileSync(pub(notext.replace(/\.mp4$/, ".json")), "utf8"));
+  return { clip: notext, text: { rise: timing.rise, beat: timing.beat, frames: timing.frames, tagline: "REVEAL THE MOMENT", site: "sixlines.day" } };
+};
 const lesson = script.chapters && {
   pages: script.chapters.flatMap((c) => [...(c.page ? [{ chapter: c.page }] : []), ...c.pages.map(({ q, a, show }) => ({ q, a, show }))]),
   hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
@@ -120,7 +129,7 @@ const lesson = script.chapters && {
   // A test clip of a page or two has no end card. "endcardRate" below 1 plays the card slower
   // (a slower reveal, longer for the music); "endMusic" lands the music's `at` second on the cut
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
-  endcard: { clip: sp.endcard.clip, seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: script.endcardRate ?? 1 },
+  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: script.endcardRate ?? 1 },
   ...(script.endMusic ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };

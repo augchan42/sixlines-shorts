@@ -1,5 +1,5 @@
 {
- "about": "Smoke test, 2026-09-27, after the review (docs/research/2026-09-27-review.md, items 1-3). The user: 'this is a smoke test, so you don't need to do a full thing, but enough for us to get a feel of whether it's incorporating the copy properly'. Five pages cut from wangbi-lesson.json with the camera carried across them: the arrival at 22 (LINES: SHOW 22, with the approach), a held page (PLACES: DEFINE: PLACE), the descent to L5 (22 GRACE: WANG BI ON L5), the LESSON page held down, and a new closing page in the App Store description's words ('reasons across the structure and stops short of drawing your conclusion'). The beacon at the bed's level; loudnorm linear; the music only for the end card, as round 10. Edit after the user's first viewing: L2 went amber on the LESSON page ('when we talk about line five being the important line, line two is also in amber. So that's also confusing'); amber is now one line at a time.",
+ "about": "Smoke test, 2026-09-27, after the review (docs/research/2026-09-27-review.md, items 1-3). The user: 'this is a smoke test, so you don't need to do a full thing, but enough for us to get a feel of whether it's incorporating the copy properly'. Five pages cut from wangbi-lesson.json with the camera carried across them: the arrival at 22 (LINES: SHOW 22, with the approach), a held page (PLACES: DEFINE: PLACE), the descent to L5 (22 GRACE: WANG BI ON L5), the LESSON page held down, and a new closing page in the App Store description's words ('reasons across the structure and stops short of drawing your conclusion'). The beacon at the bed's level; loudnorm linear; the music only for the end card, as round 10. Edit after the user's first viewing: L2 went amber on the LESSON page ('when we talk about line five being the important line, line two is also in amber. So that's also confusing'); amber is now one line at a time. Then the end card's tagline and site drawn by Remotion over a text-free Blender clip (endcardText), the first try at recomposing without Blender (the user: 'we really need a better way to compose or recompose all 64 without being such a huge render effort').",
  "hexagram": 22,
  "look": "flight",
  "music": {
@@ -130,5 +130,6 @@
     }
    ]
   }
- ]
+ ],
+ "endcardText": true
 }

@@ -15,6 +15,7 @@ Run through scripts/endcard.mjs, or directly:
 """
 
 import argparse
+import json
 import math
 import os
 import sys
@@ -44,6 +45,9 @@ def parse():
     p.add_argument("--pixel", required=True)
     p.add_argument("--out", required=True)
     p.add_argument("--edge", default="#6cff7a")
+    # No tagline or site: Remotion draws them over the clip (src/scenes/EndCard3D.tsx), so copy
+    # changes never come back here. The timing they need is written beside the clip as JSON.
+    p.add_argument("--no-text", action="store_true")
     p.add_argument("--tagline", default="Reveal the moment.")
     p.add_argument("--tagline-font", help="type the tagline in this font, with a cursor; default: the serif, faded in")
     p.add_argument("--preview", action="store_true")
@@ -345,7 +349,11 @@ def main():
     solid = change(args.lines, args.mode, beat, black, colour)
     rise = solid + round(0.5 * beat)
     wordmark(args.serif, colour, rise)
-    if args.tagline_font:
+    with open(os.path.splitext(args.out)[0] + ".json", "w") as f:
+        json.dump({"frames": frames, "beat": beat, "solid": solid, "rise": rise, "text": not args.no_text}, f)
+    if args.no_text:
+        pass
+    elif args.tagline_font:
         typed = typed_text(args.tagline, args.tagline_font, 0.66, -3.55, CREAM, 3.0, rise + round(beat), beat, frames)
         lit_text("sixlines.day", args.pixel, 0.8, -4.6, args.edge, 5.0, typed + round(0.5 * beat))
     else:

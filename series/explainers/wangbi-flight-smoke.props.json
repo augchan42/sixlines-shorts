@@ -138,7 +138,14 @@
  },
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
-  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b-notext.mp4",
+  "text": {
+   "rise": 45,
+   "beat": 19.5673442765518,
+   "frames": 178,
+   "tagline": "REVEAL THE MOMENT",
+   "site": "sixlines.day"
+  },
   "seconds": 7.82693771062072,
   "rate": 0.75
  },

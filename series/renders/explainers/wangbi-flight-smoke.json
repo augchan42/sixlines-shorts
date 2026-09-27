@@ -1,7 +1,7 @@
 {
  "explainer": "wangbi-flight-smoke",
- "rendered": "2026-09-27T07:16:57.467Z",
- "commit": "ae8b2c6ee61f689ba2bfce152b8e90045294aac0",
+ "rendered": "2026-09-27T07:42:41.608Z",
+ "commit": "ab0bcac5596cd48d1e40af71368d58d1b8597aa4",
  "clean": false,
  "seconds": 53.845333,
  "shareKbps": 3289,
@@ -145,7 +145,14 @@
   },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
-   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b-notext.mp4",
+   "text": {
+    "rise": 45,
+    "beat": 19.5673442765518,
+    "frames": 178,
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day"
+   },
    "seconds": 7.82693771062072,
    "rate": 0.75
   },
@@ -167,7 +174,7 @@
  },
  "files": {
   "local/music/pick13-synthwave-the-mountain.mp3": "e7f989747cc1eeb039098d0ea6cb47a34685ec3308bb7164dd839c60fe07aa50",
-  "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "6d34b02ab220c0fbdca433741637468af25344bca50e5790c2568c6dc093b730",
+  "assets/3d/endcard-join-101001-91.99bpm-9b-notext.mp4": "bb1156c58bd36cfebe0e55a360a86dbacd788231f088478408e82c9823edced1",
   "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
   "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
   "local/sfx/beacon-level.wav": "f3098c08f0b52633b389c3dbc2d6ae45653a4fe773a4308cf215bb22a5a2c182",
@@ -177,7 +184,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-flight-smoke/short.mp4": "547e9bb03be8cdfebda98aa376973ef428532d6548352f4ef1aa914177187a34",
-  "out/explainers/wangbi-flight-smoke/share.mp4": "7b05b25764b2449407b485349fe006e93a9e96847329ad1249a988ff59846fd8"
+  "out/explainers/wangbi-flight-smoke/short.mp4": "12f02768c9ef62322ada6095fe48e83d586954c3c6ee5a5dd72eac77b6ce3707",
+  "out/explainers/wangbi-flight-smoke/share.mp4": "6384890ad1bfb195d99b0b1ce4605b7258098996ef5148ec7c9fca6b0f43a877"
  }
 }
