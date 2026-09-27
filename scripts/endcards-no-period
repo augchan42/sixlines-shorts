@@ -18,9 +18,10 @@ for n in "${nums[@]}"; do
     mode=${BASH_REMATCH[1]} lines=${BASH_REMATCH[2]} bpm=${BASH_REMATCH[3]} beats=${BASH_REMATCH[4]}
   else echo "$n: cannot parse $clip" >&2; exit 1; fi
   kept="public/assets/3d/versions/${clip%.mp4}-period.mp4"
-  if [ -e "$kept" ]; then echo "$n: $clip done already"; continue; fi
+  if [ -e "$kept" ] && [ -e "public/assets/3d/$clip" ]; then echo "$n: $clip done already"; continue; fi
   echo "$n: $clip ($(date +%H:%M))"
-  mv "public/assets/3d/$clip" "$kept"
+  # A run stopped mid-render leaves the old clip kept and no new one: render again.
+  [ -e "public/assets/3d/$clip" ] && mv "public/assets/3d/$clip" "$kept"
   node scripts/endcard.mjs --lines "$lines" --bpm "$bpm" --mode "$mode" --beats "$beats" --clip "assets/3d/$clip" >> out/endcards/no-period.log 2>&1 \
     || { echo "$n: Blender failed; the old clip is back" >&2; mv "$kept" "public/assets/3d/$clip"; exit 1; }
 done
