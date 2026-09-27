@@ -1,6 +1,6 @@
 import { AbsoluteFill, interpolate, random, useCurrentFrame, useVideoConfig } from "remotion";
 import { fonts } from "../lib/fonts";
-import { amberLines, STAGED } from "../lib/readoutAmber";
+import { amberLines, STAGED, TIMED } from "../lib/readoutAmber";
 
 // A lesson as a ship's computer readout, after the Nostromo's screens in Alien (Brian
 // Wyvill's vector plots, the MU/TH/UR terminal): green phosphor on black, scanlines, a
@@ -161,6 +161,8 @@ export const Readout: React.FC<{
   // screen, then the lines the finding is about (`findingMark`, or every marked line).
   master?: { zh: string; en: string; line?: number };
   findingMark?: number[];
+  // Timed without a master: the same seconds, the finding in the master's place.
+  timed?: boolean;
   // For the explainer (src/templates/ReadoutKey.tsx): the whole screen drawn from the first
   // frame; `focus` names the parts at full strength, the rest dimmed (keys in `lit` below);
   // `marked` turns the ◄ lines amber; `prompt` is typed in white in place of the lesson.
@@ -168,7 +170,7 @@ export const Readout: React.FC<{
   focus?: string[];
   marked?: boolean;
   prompt?: { text: string; at: number };
-}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master, findingMark, built, focus, marked, prompt }) => {
+}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master, findingMark, timed, built, focus, marked, prompt }) => {
   const now = useCurrentFrame();
   // Built: every act has already happened, so the frame the acts see is far past the end.
   const frame = built ? now + 100000 : now;
@@ -179,21 +181,22 @@ export const Readout: React.FC<{
   const { width, height, fps, durationInFrames: d } = useVideoConfig();
   // Staged: the master line, then the finding's lines, each in amber while its text is typed,
   // on fixed seconds (STAGED) so the master holds long enough to read.
-  const staged = !built && !focus && master?.line !== undefined;
+  const staged = !built && !focus && (master?.line !== undefined || (!!timed && !master));
+  const T = master ? STAGED : TIMED;
   // The acts, as shares of the lesson (seconds when staged): header, plot, the answering
   // lines, trigrams, Wang Bi's master, the finding, then the answer.
   const at = (share: number) => Math.round(share * d);
   const sec = (s: number) => Math.round(s * fps);
-  const plotFrom = staged ? sec(STAGED.plotFrom) : at(0.04);
-  const plotEach = ((staged ? sec(STAGED.plotTo) : at(master ? 0.26 : 0.3)) - plotFrom) / 6;
-  const linksAt = staged ? sec(STAGED.links) : at(master ? 0.27 : 0.31);
-  const trigramsAt = staged ? sec(STAGED.trigrams) : at(master ? 0.33 : 0.32);
-  const masterAt = staged ? sec(STAGED.master) : at(0.42);
-  const findingAt = staged ? sec(STAGED.finding) : master ? at(0.5) : at(0.42);
+  const plotFrom = staged ? sec(T.plotFrom) : at(0.04);
+  const plotEach = ((staged ? sec(T.plotTo) : at(master ? 0.26 : 0.3)) - plotFrom) / 6;
+  const linksAt = staged ? sec(T.links) : at(master ? 0.27 : 0.31);
+  const trigramsAt = staged ? sec(T.trigrams) : at(master ? 0.33 : 0.32);
+  const masterAt = staged ? sec(T.master) : at(0.42);
+  const findingAt = staged ? sec(T.finding) : master ? at(0.5) : at(0.42);
   const markAt = master ? masterAt : findingAt;
   const amberNow = built || focus ? mark : amberLines({ mark, master, findingMark }, frame, { masterAt, findingAt });
   const amberFrom = staged && frame >= findingAt ? findingAt : markAt;
-  const answerAt = staged ? sec(STAGED.answer) : master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
+  const answerAt = staged ? sec(T.answer) : master ? (finding ? at(0.58) : at(0.52)) : finding ? at(0.5) : at(0.44);
   // Wang Bi's reading of each line: in its place (yang in the odd places 3 and 5, yin in the
   // even ones 2 and 4) or out of it, and the centres of the two trigrams (2 and 5). Lines 1
   // and 6 have no place: they are the start and end of the matter (Zhouyi lüeli, 辯位).

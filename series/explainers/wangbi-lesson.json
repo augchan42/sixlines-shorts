@@ -1,6 +1,20 @@
 {
  "about": "How Wang Bi reads a hexagram, as one vertical lesson of about 2.5 min, pinned; it replaces the 42 s readout-key explainer. The user, 2026-09-27: 'i feel like we shouldn't need to be restricted to a short of 42 seconds, this is actually a full wang bi lesson. i find it hard to follow whats going on.' Format chosen by the user: one lesson, about 2.5 min. The screen starts empty and each chapter adds its own part of the readout, so by the end the viewer has seen every part built. Assumes the readout drops IN/OUT on lines 1 and 6 (docs/research/2026-09-27-rerender-candidates.md, item 1). 2026-09-27, the user: 'make it like a true nostromo style or even dune (peter lynch) style explainer' (David Lynch's Dune, 1984): an inquiry at the terminal as with MU/TH/UR in Alien, one fact per page as in Paul's filmbook, chapter pages between. Text only (the user's choice), with teletype ticks.",
  "hexagram": 22,
+ "readoutsNote": "22's readout as the lesson teaches it (master line 5), pinned 2026-09-27 when the short's own readout moved to line 6, plain white",
+ "readouts": {
+  "22": {
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+   "master": {
+    "zh": "為飾之主",
+    "en": "Master of Adornment"
+   }
+  }
+ },
  "sources": {
   "places": "Zhouyi lüeli 辯位: 初上无陰陽定位; 夫位者，列貴賤之地，待才用之宅也",
   "master": "Wang Bi, Zhouyi lüeli 明彖: the centre line first, and the few ruling the many (夫少者多之所貴也); sometimes no line rules and the trigrams do. The lists of hexagrams and 至少者為至多之所主 printed with it are Xing Shu's Tang notes, not Wang Bi's.",

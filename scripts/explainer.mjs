@@ -37,9 +37,11 @@ const hexagram = (n) => {
   const r = rows.find((x) => x.number === n);
   return { number: n, name: r.name, lines: r.lines, trigrams: [trigram(r.lines.slice(3)), trigram(r.lines.slice(0, 3))] };
 };
+// A script can pin a readout as it teaches it (`readouts` in its json), so the lesson keeps
+// its example when the short's own readout changes (22, 2026-09-27).
 const readout = (n) => {
   const p = seriesProps(rows.find((x) => x.number === n), overrides[n]);
-  return { ...hexagram(n), trigrams: p.lesson.trigrams, text: p.lesson.text, ...p.lesson.readout };
+  return { ...hexagram(n), trigrams: p.lesson.trigrams, text: p.lesson.text, ...(script.readouts?.[n] ?? p.lesson.readout) };
 };
 
 // The teletype tick: a short decaying click, 25 a second (one per typed character), generated.

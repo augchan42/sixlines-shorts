@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { amberLines, STAGED, STAGED_SECONDS, stagedBeats } from "../src/lib/readoutAmber.ts";
+import { amberLines, STAGED, STAGED_SECONDS, stagedBeats, TIMED, TIMED_SECONDS } from "../src/lib/readoutAmber.ts";
 
 // Amber is the line to look at, so it follows the text on screen (Codex's review, 2026-09-27):
 // in 22 Wang Bi's master is line 5 and the finding is about line 2. The master line is amber
@@ -61,4 +61,19 @@ test("a staged lesson gets enough whole beats to fit, and never fewer than the h
     assert.ok(beats >= 16);
   }
   assert.equal(stagedBeats(91.99), 20);
+});
+
+// 22 without a master (the user, 2026-09-27: "yes lets try that"): line 6, plain white, is the
+// point, so its finding gets the time the master had.
+test("a timed readout without a master holds its finding at least 3 seconds before the answer", () => {
+  assert.ok(TIMED.answer - TIMED.finding >= 3);
+});
+
+test("a timed readout's sentence holds at least 2 seconds after it is typed", () => {
+  const typedBy = TIMED.answer + (10 + 29 * 1.2) / 30;
+  assert.ok(TIMED_SECONDS - typedBy >= 2);
+});
+
+test("beats follow the seconds they are asked for", () => {
+  assert.equal(stagedBeats(91.99, TIMED_SECONDS), Math.max(16, Math.ceil((TIMED_SECONDS * 91.99) / 60)));
 });

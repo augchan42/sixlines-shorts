@@ -1,6 +1,6 @@
 import { characterClip, endcardClip, endcardRefClip, type EndcardMode, hexagramClip, moonClip, REF_BPM, sceneClip } from "../lib/clips.ts";
 import { HELD_LESSON_BEATS, planOf } from "../lib/seriesPlan.ts";
-import { stagedBeats } from "../lib/readoutAmber.ts";
+import { stagedBeats, TIMED_SECONDS } from "../lib/readoutAmber.ts";
 import type { SeriesProps } from "../schema.ts";
 
 type Line = { text: string; source: string };
@@ -33,7 +33,7 @@ export type SeriesRow = {
       scene?: { script: "glyphs" | "trigram" | "collapse" | "focus" | "bite" | "bird" | "abyss" | "acts"; args: Record<string, unknown> };
       // A readout lesson (src/scenes/Readout.tsx): the lines to mark and what it finds there.
       // master.line and findingMark stage the amber (src/lib/readoutAmber.ts).
-      readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string; line?: number }; findingMark?: number[] };
+      readout?: { mark: number[]; finding?: string; master?: { zh: string; en: string; line?: number }; findingMark?: number[]; timed?: boolean };
     };
     // true adds the ~DISNEYFAN credit; left out by default since 2026-09-26, when the user
     // said the shorts had moved far from her edit.
@@ -118,7 +118,8 @@ const lessonFor = (row: SeriesRow): SeriesProps["lesson"] => {
   // it has more to log, so it takes the held length.
   // A staged one (its master's line named) gets as many beats as its seconds need at this tempo.
   if (l.readout) {
-    const beats = l.readout.master?.line !== undefined ? stagedBeats(row.music.bpm) : l.readout.master ? HELD_LESSON_BEATS : undefined;
+    const r = l.readout;
+    const beats = r.master?.line !== undefined ? stagedBeats(row.music.bpm) : r.master ? HELD_LESSON_BEATS : r.timed ? stagedBeats(row.music.bpm, TIMED_SECONDS) : undefined;
     return { kind: l.kind, text: l.text, trigrams: [upper, lower], readout: l.readout, ...(beats ? { beats } : {}) };
   }
   // A Blender scene plays for the whole lesson, the sentence typed under its end.

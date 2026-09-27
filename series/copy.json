@@ -1040,20 +1040,12 @@
    "source": "series/critic/readouts/drafts.json#22",
    "readout": {
     "mark": [
-     1,
-     4
+     5
     ],
-    "finding": "THE SOFT COMES TO ADORN THE STRONG.",
-    "master": {
-     "zh": "為飾之主",
-     "en": "Master of Adornment",
-     "line": 4
-    },
-    "findingMark": [
-     1
-    ]
+    "finding": "AT THE TOP: PLAIN WHITE.",
+    "timed": true
    },
-   "readout_source": "Tuan 柔來而文剛; image: does not decide disputes this way"
+   "readout_source": "Line 6: 白賁 plain white, no blame; Wang Bi: 飾終反素, at the end adornment returns to plain (2026-09-27, was Tuan 柔來而文剛 with the master on line 5)"
   }
  },
  "23": {

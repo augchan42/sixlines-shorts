@@ -18,5 +18,9 @@ export const amberLines = (r: AmberReadout, frame: number, { masterAt, findingAt
 export const STAGED = { plotFrom: 0.4, plotTo: 2.4, links: 2.5, trigrams: 3.0, master: 3.8, finding: 7.0, answer: 8.8 };
 // The sentence typed after the answer, then held for about 2.5 s.
 export const STAGED_SECONDS = 12.8;
-// Whole beats for a staged lesson at this tempo, never fewer than the held 16.
-export const stagedBeats = (bpm: number) => Math.max(16, Math.ceil((STAGED_SECONDS * bpm) / 60));
+// A timed readout without a master (22, 2026-09-27) runs on the same seconds: its finding gets
+// the master's place and time, then the answer.
+export const TIMED = { ...STAGED, finding: STAGED.master, answer: STAGED.finding };
+export const TIMED_SECONDS = 11.0;
+// Whole beats for a staged or timed lesson at this tempo, never fewer than the held 16.
+export const stagedBeats = (bpm: number, seconds = STAGED_SECONDS) => Math.max(16, Math.ceil((seconds * bpm) / 60));

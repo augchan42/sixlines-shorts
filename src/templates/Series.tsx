@@ -130,6 +130,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
                 finding={lesson.readout.finding}
                 master={lesson.readout.master}
                 findingMark={lesson.readout.findingMark}
+                timed={lesson.readout.timed}
               />
             </Sequence>
           )}
