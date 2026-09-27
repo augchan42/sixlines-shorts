@@ -1,5 +1,5 @@
 {
- "round": 5,
+ "round": 6,
  "rules": "two lines, each at most 18 characters counting punctuation; 3 to 7 words",
  "drafts": [
   {
@@ -79,9 +79,9 @@
   {
    "number": 61,
    "act": "truth",
-   "text": "No hidden aim,\nfirm at the core.",
-   "source": "Tuan on 61: 柔在內而剛得中 (the yielding within, the firm holding the centres)",
-   "from": "critic round 1 rewrite"
+   "text": "No hidden aim,\nopen at the heart.",
+   "source": "Tuan on 61: 柔在內而剛得中 (the yielding within, the firm holding each trigram's centre); 中孚 (truth at the centre)",
+   "from": "the user, 2026-09-27: the core of 61 is its two yin lines, so 'firm at the core' fights the picture"
   }
  ]
 }
