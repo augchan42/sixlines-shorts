@@ -12,6 +12,11 @@ Run through scripts/endcard.mjs, or directly:
   Blender -b --factory-startup --python-exit-code 1 -P blender/endcard.py -- \
     --lines 010010 --bpm 100 --beats 7 --mode join --rain public/assets/3d/rain.mp4 \
     --serif …/goudos.ttf --pixel public/fonts/PixelOperator-Bold.ttf --out out/endcard.mp4
+
+--fps 60 renders at 60 frames a second (the fixed-length moves, a slide or a flare, take the
+same time). Rendered once at 120 bpm and 60 fps, a card serves any slower track: Remotion
+plays it at track bpm / 120 and a 30 fps output never repeats a source frame
+(scripts/endcard.mjs --ref, docs/research/2026-09-27-recompose.md).
 """
 
 import argparse
@@ -30,7 +35,13 @@ from layout import FPS, LINE_W, frame_count, line_z, slabs  # noqa: E402
 
 CREAM = "#f4efe4"
 AMBER = "#ffb347"
-SLIDE = 6  # frames for halves to meet or a line to turn
+SLIDE = 6  # frames for halves to meet or a line to turn, at 30 fps
+S = 1.0  # frames per 30 fps frame; set from --fps in main()
+
+
+def fr(n):
+    """A frame count written for 30 fps, at the render's rate."""
+    return round(n * S)
 
 
 def parse():
@@ -51,6 +62,7 @@ def parse():
     p.add_argument("--tagline", default="Reveal the moment.")
     p.add_argument("--tagline-font", help="type the tagline in this font, with a cursor; default: the serif, faded in")
     p.add_argument("--preview", action="store_true")
+    p.add_argument("--fps", type=int, default=FPS)
     return p.parse_args(argv)
 
 
@@ -70,7 +82,7 @@ def hide(o, frame):
 
 
 def flare(strength, frame, peak=PULSE):
-    for f, v in ((frame - 1, REST), (frame, peak), (frame + 12, REST)):
+    for f, v in ((frame - 1, REST), (frame, peak), (frame + fr(12), REST)):
         strength.default_value = v
         strength.keyframe_insert("default_value", frame=f + 1)
 
@@ -95,7 +107,7 @@ def change(lines, mode, beat, black, colour):
     done = 0
     for k, i in enumerate(yin):
         at = round(beat) if mode == "snap" else round((0.5 + 0.5 * k) * beat)
-        slide = 3 if mode == "snap" else SLIDE
+        slide = fr(3 if mode == "snap" else SLIDE)
         solid, strength = add_slab(i, 0.0, line_z(i), LINE_W, black, colour)
         joined = at + slide
         if mode in ("join", "snap"):
@@ -178,10 +190,10 @@ def wordmark(font, colour, at):
         o = text(body, font, 1.5, z, outline=0.016)
         o.data.materials.append(glow)
         show(o, at)
-        for f, dz in ((at, -1.2), (at + 10, 0.04), (at + 14, 0.0)):
+        for f, dz in ((at, -1.2), (at + fr(10), 0.04), (at + fr(14), 0.0)):
             o.location.z = z + dz
             key(o, "location", f, index=2)
-    flare(strength, at + 10, PULSE * 0.6)
+    flare(strength, at + fr(10), PULSE * 0.6)
 
 
 def emissive(name, colour, strength):
@@ -203,7 +215,7 @@ def lit_text(body, font, size, z, colour, strength, at):
     m, s = emissive(f"text-{body}", colour, strength)
     o.data.materials.append(m)
     show(o, at)
-    for f, v in ((at, 0.0), (at + 15, strength)):
+    for f, v in ((at, 0.0), (at + fr(15), strength)):
         s.default_value = v
         s.keyframe_insert("default_value", frame=f + 1)
 
@@ -221,8 +233,9 @@ def visible(o, spans):
 
 
 def typed_text(body, font, size, z, colour, strength, at, beat, frames, width=7.4):
-    """Typed one character a frame from the left of where the finished line sits centred, with
-    a block cursor that follows and then blinks on the half-beat. Returns the last typed frame."""
+    """Typed one character a frame (a 30 fps frame) from the left of where the finished line sits
+    centred, with a block cursor that follows and then blinks on the half-beat. Returns the last
+    typed frame."""
     m, _ = emissive(f"typed-{body}", colour, strength)
     probe = text(body, font, size, z)
     bpy.context.view_layer.update()
@@ -246,13 +259,14 @@ def typed_text(body, font, size, z, colour, strength, at, beat, frames, width=7.
     x = measure("x")
     ends = [0.0] + [measure(body[:k] + "x") - x for k in range(1, len(body) + 1)]
     cw = 0.5 * size
-    done = at + len(body) - 1
+    step = fr(1)
+    done = at + (len(body) - 1) * step
     for k in range(1, len(body) + 1):
         o = text(body[:k], font, size, z)
         o.data.align_x = "LEFT"
         o.location.x = left
         o.data.materials.append(m)
-        visible(o, [(at + k - 1, None if k == len(body) else at + k)])
+        visible(o, [(at + (k - 1) * step, None if k == len(body) else at + k * step)])
     half = round(beat / 2)
     for k in range(len(body) + 1):
         gap = 0.08 * size if k else 0.0
@@ -262,7 +276,7 @@ def typed_text(body, font, size, z, colour, strength, at, beat, frames, width=7.
         cursor.scale = (cw * 0.8, size * 0.8, 1)
         cursor.data.materials.append(m)
         if k < len(body):  # sits after the k characters typed so far
-            visible(cursor, [(at + k - 1, at + k)] if k else [(at - half, at)])
+            visible(cursor, [(at + (k - 1) * step, at + k * step)] if k else [(at - half, at)])
         else:
             visible(cursor, [(f, f + half) for f in range(done, frames, 2 * half)])
     return done
@@ -330,7 +344,7 @@ def camera(scene, frames, beat, mode, pull):
     stops = [(0, 13.0, -0.9), (pull, 13.0, -0.9), (pull + round(1.5 * beat), 18.5, -0.4), (frames - 1, 19.0, -0.4)]
     if mode == "snap":
         # A push on the downbeat, as the lines shut.
-        stops[1:1] = [(round(beat), 13.0, -0.9), (round(beat) + 3, 12.2, -0.9), (round(beat) + 12, 13.0, -0.9)]
+        stops[1:1] = [(round(beat), 13.0, -0.9), (round(beat) + fr(3), 12.2, -0.9), (round(beat) + fr(12), 13.0, -0.9)]
     for f, dist, tz in stops:
         cam.location = (0, -dist, tz)
         key(cam, "location", f)
@@ -339,18 +353,20 @@ def camera(scene, frames, beat, mode, pull):
 
 
 def main():
+    global S
     args = parse()
+    S = args.fps / FPS
     scene = bpy.context.scene
     for o in list(bpy.data.objects):
         bpy.data.objects.remove(o)
-    frames = frame_count(args.beats, args.bpm)
-    beat = 60 * FPS / args.bpm
+    frames = frame_count(args.beats, args.bpm, args.fps)
+    beat = 60 * args.fps / args.bpm
     black, colour = obsidian(), linear(args.edge)
     solid = change(args.lines, args.mode, beat, black, colour)
     rise = solid + round(0.5 * beat)
     wordmark(args.serif, colour, rise)
     with open(os.path.splitext(args.out)[0] + ".json", "w") as f:
-        json.dump({"frames": frames, "beat": beat, "solid": solid, "rise": rise, "text": not args.no_text}, f)
+        json.dump({"frames": frames, "fps": args.fps, "beat": beat, "solid": solid, "rise": rise, "text": not args.no_text}, f)
     if args.no_text:
         pass
     elif args.tagline_font:
@@ -365,7 +381,7 @@ def main():
     camera(scene, frames, beat, args.mode, rise)
     blade_runner(scene, frames)
     bloom(scene)
-    render_settings(scene, frames, args.out, args.preview)
+    render_settings(scene, frames, args.out, args.preview, args.fps)
     bpy.ops.render.render(animation=True)
 
 

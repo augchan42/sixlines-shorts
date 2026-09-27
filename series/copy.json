@@ -999,6 +999,7 @@
   }
  },
  "22": {
+  "endcardRef": true,
   "hook": {
    "text": "Polishing the slides instead of deciding?",
    "source": "commentary/en/22.json#judgment.synthesis"

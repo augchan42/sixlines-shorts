@@ -3,9 +3,16 @@
 
 export const CLIP_FPS = 30;
 
+// A tempo-independent clip is rendered once at the fastest tempo the series allows (the user:
+// nothing above 120 bpm) and at 60 fps, and played at track bpm / REF_BPM (0.5-1.0): a 30 fps
+// output then never repeats a source frame. So a music change is a Remotion render, not a
+// Blender one (docs/research/2026-09-27-recompose.md, plan B).
+export const REF_BPM = 120;
+export const REF_FPS = 60;
+
 // Frames rendered for a section of `beats` beats. Section lengths come from rounding
 // absolute beat times, so this is always at least as many as the section takes.
-export const clipFrames = (beats: number, bpm: number) => Math.ceil((beats * 60 * CLIP_FPS) / bpm) + 1;
+export const clipFrames = (beats: number, bpm: number, fps = CLIP_FPS) => Math.ceil((beats * 60 * fps) / bpm) + 1;
 
 // public/-relative path of a hexagram clip. Only the lines (bottom first), tempo and
 // length change the clip, so hexagrams that share them share a file.
@@ -19,6 +26,10 @@ export type EndcardMode = "join" | "flip" | "snap";
 // public/-relative path of an end card: the hexagram it starts from, its tempo, length and treatment.
 export const endcardClip = (lines: readonly number[], bpm: number, beats: number, mode: EndcardMode) =>
   `assets/3d/endcard-${mode}-${lines.join("")}-${bpm}bpm-${beats}b.mp4`;
+
+// The tempo-independent end card (scripts/endcard.mjs --ref): REF_BPM at REF_FPS, any track.
+export const endcardRefClip = (lines: readonly number[], beats: number, mode: EndcardMode) =>
+  `assets/3d/endcard-${mode}-${lines.join("")}-${beats}b-ref.mp4`;
 
 // A short hash of a clip's labels or settings, so clips that differ never share a name.
 const hash = (text: string) => {

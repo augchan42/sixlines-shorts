@@ -1,4 +1,4 @@
-import { characterClip, endcardClip, type EndcardMode, hexagramClip, moonClip, sceneClip } from "../lib/clips.ts";
+import { characterClip, endcardClip, endcardRefClip, type EndcardMode, hexagramClip, moonClip, REF_BPM, sceneClip } from "../lib/clips.ts";
 import { HELD_LESSON_BEATS, planOf } from "../lib/seriesPlan.ts";
 import type { SeriesProps } from "../schema.ts";
 
@@ -38,6 +38,9 @@ export type SeriesRow = {
     credit?: boolean;
     tags?: string[];
     pace?: "even" | "held";
+    // true plays the tempo-independent end card (endcardRefClip, scripts/endcard.mjs --ref) at
+    // the track's rate instead of a card rendered for this tempo. Tried on 22 first (2026-09-27).
+    endcardRef?: boolean;
   } | null;
   source: { sixlinesContent: string };
 };
@@ -163,6 +166,10 @@ export const seriesProps = (row: SeriesRow, override: Partial<SeriesProps> = {})
     ...merged,
     lesson,
     hexagramClip: override.hexagramClip ?? hexagramClip(merged.hexagram.lines, merged.bpm, plan.hexagramBeats),
-    endcard: override.endcard ?? { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.credit - plan.cta, mode), mode },
+    endcard:
+      override.endcard ??
+      (row.copy.endcardRef
+        ? { clip: endcardRefClip(merged.hexagram.lines, plan.credit - plan.cta, mode), mode, rate: merged.bpm / REF_BPM }
+        : { clip: endcardClip(merged.hexagram.lines, merged.bpm, plan.credit - plan.cta, mode), mode }),
   };
 };

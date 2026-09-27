@@ -32,13 +32,26 @@ The Remotion part is cheap: about a minute a short.
   (`endcardText`, off by default); the text stays in Blender. Text changes are rare (one in the
   whole series, the period), so the saving was never the text: it is B and C.
 - **B. Tempo moves to Remotion.** Render each clip once at the fastest tempo used (120 bpm) at
-  60 fps; Remotion plays it at `playbackRate` = clip bpm / track bpm (0.69–1.0). With a 60 fps
+  60 fps; Remotion plays it at `playbackRate` = track bpm / 120 (0.5–1.0). With a 60 fps
   source, a 30 fps output at ≥ 0.5× never repeats a frame, so no stutter (the 0.75× end card in
   the flight test is a 30 fps source, which repeats one frame in four). Remotion's note: a
   playback rate that *changes over time* needs the elapsed source time accumulated by hand and
   `trimBefore` set from it; a constant rate per clip, as here, is the plain case. `OffthreadVideo`
   reads VP8/VP9 and ProRes, and `transparent` (PNG extraction, slow) if an alpha layer is ever
   wanted.
+
+  Built for the end card first (2026-09-27, after A failed): `scripts/endcard.mjs --ref` renders
+  `endcard-<mode>-<lines>-<beats>b-ref.mp4` at 120 bpm and 60 fps (`blender/endcard.py --fps`;
+  its fixed frame counts, a slide, a flare, the typing, scale with the rate so they take the same
+  time; the glyph rain is `rain-60.mp4`, each frame doubled, so it runs at its old speed).
+  `endcardRef: true` on a row of series/copy.json plays that card at bpm / 120 (`endcard.rate`
+  in the props). Tried on 22 (91.99 bpm, rate 0.767). What changes against a card rendered for
+  the tempo: the fixed-length moves now slow with the track too (at 92 bpm a slide takes 0.26 s
+  instead of 0.2 s, the tagline types in 0.74 s instead of 0.57 s), and the rain runs at 0.77×.
+  Blender takes about twice as long a card (271 frames instead of 178), once.
+
+  Every hexagram has its own lines, so this does not cut the number of cards (64). It cuts what
+  a music change costs: nothing in Blender.
 - **C. `scripts/recompose`.** Re-render only the shorts whose recorded input hashes changed (the
   render records already carry every input's sha256), several in parallel, then a strip of one
   frame per changed short. The same idea as the incremental pipelines in the search results

@@ -150,7 +150,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
             </>
           )}
           <Sequence {...span(s.cta, s.credit)}>
-            <EndCard3D clip={props.endcard.clip} />
+            <EndCard3D clip={props.endcard.clip} rate={props.endcard.rate} />
           </Sequence>
           {props.credit && (
             <Sequence {...span(s.credit, s.end)}>

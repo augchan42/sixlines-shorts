@@ -14,9 +14,9 @@ TRIGRAM_GAP = 0.9  # LINE * 1.8, between the trigrams
 YIN_GAP = 0.7  # 70px, the break in a yin line
 
 
-def frame_count(beats, bpm):
+def frame_count(beats, bpm, fps=FPS):
     """Frames to render; the same formula as clipFrames in src/lib/clips.ts."""
-    return math.ceil(beats * 60 * FPS / bpm) + 1
+    return math.ceil(beats * 60 * fps / bpm) + 1
 
 
 def land_frame(line, bpm):

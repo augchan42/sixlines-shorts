@@ -135,8 +135,9 @@ export const seriesSchema = z.object({
   pace: z.enum(["even", "held"]),
   // The ~DISNEYFAN credit after the end card; a special leaves it out.
   credit: z.boolean(),
-  // The Blender end card (blender/endcard.py), which carries the tagline and site itself.
-  endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]) }),
+  // The Blender end card (blender/endcard.py), which carries the tagline and site itself. A
+  // tempo-independent card (endcardRefClip) plays at `rate` = track bpm / REF_BPM.
+  endcard: z.object({ clip: z.string(), mode: z.enum(["join", "flip", "snap"]), rate: z.number().optional() }),
 });
 
 export type SeriesProps = z.infer<typeof seriesSchema>;

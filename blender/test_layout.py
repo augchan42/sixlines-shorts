@@ -33,6 +33,10 @@ class LayoutTest(unittest.TestCase):
     def test_frame_count_matches_clips_ts(self):
         self.assertEqual(frame_count(4, 110), 67)
 
+    def test_frame_count_at_the_reference_tempo_and_rate(self):
+        # A tempo-independent clip: 9 beats at 120 bpm rendered at 60 fps (REF_BPM, REF_FPS in clips.ts).
+        self.assertEqual(frame_count(9, 120, 60), 271)
+
 
 if __name__ == "__main__":
     unittest.main()

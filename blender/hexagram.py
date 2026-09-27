@@ -185,13 +185,13 @@ def bloom(scene):
     scene.compositing_node_group = tree
 
 
-def render_settings(scene, frames, out, preview):
+def render_settings(scene, frames, out, preview, fps=FPS):
     scene.render.engine = "BLENDER_EEVEE"
     scene.eevee.use_raytracing = True
     scene.eevee.taa_render_samples = 16 if preview else 64
     scene.render.resolution_x, scene.render.resolution_y = (540, 960) if preview else (1080, 1920)
     scene.render.resolution_percentage = 100
-    scene.render.fps = FPS
+    scene.render.fps = fps
     scene.frame_start, scene.frame_end = 1, frames
     scene.view_settings.view_transform = "Standard"
     scene.render.image_settings.media_type = "VIDEO"

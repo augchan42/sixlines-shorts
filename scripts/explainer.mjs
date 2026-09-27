@@ -129,7 +129,8 @@ const lesson = script.chapters && {
   // A test clip of a page or two has no end card. "endcardRate" below 1 plays the card slower
   // (a slower reveal, longer for the music); "endMusic" lands the music's `at` second on the cut
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
-  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: script.endcardRate ?? 1 },
+  // A tempo-independent card (sp.endcard.rate) plays at its own rate times endcardRate.
+  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
   ...(script.endMusic ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
