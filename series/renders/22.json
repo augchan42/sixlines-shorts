@@ -1,10 +1,10 @@
 {
  "hexagram": 22,
- "rendered": "2026-09-27T13:22:49.701Z",
- "commit": "313fff1b2d887ff1b9b364f4036a05f09bd87205",
+ "rendered": "2026-09-27T13:35:27.219Z",
+ "commit": "05621c15321264532fc1cad0a37e47525630fdb2",
  "clean": true,
- "seconds": 34.624,
- "shareKbps": 5186,
+ "seconds": 32.661333,
+ "shareKbps": 5505,
  "props": {
   "hexagram": {
    "number": 22,
@@ -51,20 +51,12 @@
    ],
    "readout": {
     "mark": [
-     1,
-     4
+     5
     ],
-    "finding": "THE SOFT COMES TO ADORN THE STRONG.",
-    "master": {
-     "zh": "為飾之主",
-     "en": "Master of Adornment",
-     "line": 4
-    },
-    "findingMark": [
-     1
-    ]
+    "finding": "AT THE TOP: PLAIN WHITE.",
+    "timed": true
    },
-   "beats": 20
+   "beats": 17
   },
   "pace": "even",
   "credit": false,
@@ -82,7 +74,7 @@
   "assets/3d/endcard-join-101001-9b-ref.mp4": "4766e47ec4e3544adb000bacfa64bd28bc0ac1910e62e3fd675603a684ca52c0",
   "assets/yilin/stipple-22-34.webp": "6551b4737f169a64b1be447fc87dd7d9b7415ac1d04c82a5f51a9e07ac87af07",
   "assets/yilin/stipple-22-37.webp": "5317712cd0693512a1acd880422b5e59edd428d1d511963d0ee7a87e4b42d01e",
-  "out/series/22-bi/short.mp4": "f3dbdba294a7a25e022bb9278a0b05b341e88e3f8cb5a1ef2f569c481e4f5a77",
-  "out/series/22-bi/share.mp4": "b8e345d854107b3b302b4b8f40c18b20c8e25990f36f3ad35d008becb07041f0"
+  "out/series/22-bi/short.mp4": "068f11e7214c5cc09aec92b14f629d96747f640a38f6fd0475a09b621f6f7f59",
+  "out/series/22-bi/share.mp4": "d58dd0479e10f9b7990936a3e08688931bedc95d5bed8c007e6e6baeedf47a60"
  }
 }
