@@ -1,0 +1,97 @@
+{
+ "round": 2,
+ "overall": 7,
+ "steps": [
+  {
+   "at": 0.0,
+   "text": "HOW TO READ\nTHIS SCREEN",
+   "score": 9,
+   "reasons": "Literal and matches what the viewer sees. The header it lights, SIX LINES // QUERY 22, is on screen from frame 0.",
+   "rewrite": null
+  },
+  {
+   "at": 2.5,
+   "text": "SIX LINES, L1\nAT THE BOTTOM.",
+   "score": 8,
+   "reasons": "True in both places: the plot draws line 0 lowest, and the log prints L6 at the top down to L1. The text also echoes the header's SIX LINES. The lights (L1 in plot and log first, then upward) show the order.",
+   "rewrite": null
+  },
+  {
+   "at": 5.5,
+   "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN.",
+   "score": 9,
+   "reasons": "Needed: every log row says YANG or YIN, and every rule after this one depends on it. Lights L1 (solid) and L2 (broken) and their words, which is exactly right for 22.",
+   "rewrite": null
+  },
+  {
+   "at": 8.5,
+   "text": "ODD PLACES WANT\nYANG, EVEN YIN.",
+   "score": 8,
+   "reasons": "Matches place() in Readout.tsx (index 0, 2, 4 = L1, L3, L5 want yang). The Tuan and Xiang apply this when they say a line's place is or isn't proper (位當 / 位不當). Wang Bi states it himself for 3/5 and 2/4 in the Lüeli (辯位) but says lines 1 and 6 have no fixed yin or yang place. The screen still prints IN/OUT for L1 and L6, so that caveat belongs in the caption, not on screen. 'PLACES' is a new word, but the L1-L6 labels and the two light sweeps make it clear.",
+   "rewrite": null
+  },
+  {
+   "at": 12.0,
+   "text": "RIGHT KIND: IN.\nWRONG KIND: OUT.",
+   "score": 8,
+   "reasons": "Literal. Good example lights: L2 YIN IN, then L5 YIN OUT, which sets up the later payoff (L5 is out and still the master).",
+   "rewrite": null
+  },
+  {
+   "at": 15.5,
+   "text": "1-4, 2-5, 3-6 LINK\nIF YIN MEETS YANG.",
+   "score": 6,
+   "reasons": "The rule is right (Wang Bi's Lüeli: 應者，同志之象也; also the Tuan's 應), and so is the code: `answering` draws a bracket where lines[i] differs from lines[i+3], so 22 gets only the 1-4 bracket. The problem is the notation. Here '1-4' means the pair 1 and 4, and 3.5 s later 'LINES 1-3, 4-6' uses the same dash for a range. A newcomer will read '1-4' as 'lines 1 to 4', which is also how the left bracket looks, since it spans L1 to L4. Use + for pairs and keep the dash for ranges.",
+   "rewrite": {
+    "text": "1+4, 2+5, 3+6 LINK\nIF YIN MEETS YANG.",
+    "lights": "the left bracket with L1 (YANG) and L4 (YIN); then L2+L5 (both YIN) and L3+L6 (both YANG) briefly, with no bracket"
+   }
+  },
+  {
+   "at": 19.0,
+   "text": "LINES 1-3, 4-6:\nTWO TRIGRAMS.",
+   "score": 7,
+   "reasons": "True, but it doesn't use the screen's own words UPPER and LOWER, which each take a full row in large type. Naming them links the step to the rows it lights. Put UPPER on the first line because it is higher on screen.",
+   "rewrite": {
+    "text": "UPPER TRIGRAM: 4-6\nLOWER TRIGRAM: 1-3",
+    "lights": "the UPPER row with L4-L6 and its bracket, then the LOWER row with L1-L3 and its bracket"
+   }
+  },
+  {
+   "at": 22.0,
+   "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE.",
+   "score": 8,
+   "reasons": "Now that the trigrams have been introduced, this makes sense, and it matches the code (· CENTRE on index 1 and 4). The lights are right.",
+   "rewrite": null
+  },
+  {
+   "at": 25.0,
+   "text": "A CENTRE CAN MAKE\nUP FOR BEING OUT.",
+   "score": 5,
+   "reasons": "As a general rule it has a Ten Wings source (Shi He's Tuan: 柔得中而上行，雖不當位, 'the soft gains the centre... although not in its proper place'). But (1) it gives the wrong reason for this example. Wang Bi on 22's line 5 says 處得尊位，為飾之主: it holds the honoured place, the fifth, and so is the master of adornment. Centring isn't his reason. Putting this step right before 'WANG BI NAMES THE LINE THAT RULES' tells the viewer that Wang Bi ruled L5 in because of the centre. (2) It teaches doctrine, not the screen: nothing on the screen shows one thing making up for another. (3) It's the eleventh idea in 36 s. Round 1 already named it as the first to cut. Cutting it gives the other ten steps about 3.5 s each. The last step still shows L5 OUT and yet the master, so the viewer sees that being out doesn't decide it.",
+   "rewrite": {
+    "text": "(cut; spread its 3.5 s over the other steps)",
+    "lights": "(none)"
+   }
+  },
+  {
+   "at": 28.5,
+   "text": "◄ MARKS THE LINES\nTO LOOK AT.",
+   "score": 8,
+   "reasons": "Accurate: `mark` puts ◄ on the rows and blinks those lines amber, whether or not there's a master. 14 of the 35 readouts have a master, 4 mark nothing, and 38, 40, 53 and 54 mark 2 to 4 lines. It holds across the series. The amber (both the lines and the log rows turn #ffb347) is as visible as the ◄, so it could be named too, but only if the explainer stops using amber for its own highlight (see notes).",
+   "rewrite": null
+  },
+  {
+   "at": 32.0,
+   "text": "WANG BI NAMES THE\nLINE THAT RULES.",
+   "score": 8,
+   "reasons": "Right source and right claim. 為飾之主 is Wang Bi's note on 賁 six-five, and 主 as the hexagram's master is his idea (Lüeli, 明彖). The limit: nothing on the screen says which marked line the WANG BI line names. In 22 both L2 and L5 carry ◄, and the en prop is just 'Master of Adornment', so only the explainer's lights point to L5. The same holds in 25 and 33. 10, 13 and 16 already say 'Line N, master of …'. That makes the text accurate but leaves the screen ambiguous. See notes for an optional prop fix. 'RULES' is not the screen's word (MASTER), but it says what a master is, so keep it.",
+   "rewrite": null
+  }
+ ],
+ "caption": {
+  "score": 6,
+  "rewrite": "How to read the green screen in 35 of our shorts, using 22 Grace. The Ten Wings judge each line as in or out of its place; Wang Bi (AD 226–249) applied this only to lines 2 to 5."
+ },
+ "notes": "The script is sound: every claim is now credited to the right source, and nothing is Cheng Yi's. It lands at 7 because of one notation clash (1-4 as a pair vs 1-3 as a range), one step that gives the wrong reason for the example and should be cut (centre makes up for OUT), and one design problem in 'look' that would mislead viewers more than any wording. (1) Amber: 'look' lights each explained part amber, but on the real screen amber means something specific. The marked lines and ◄ rows turn #ffb347, and so does the WANG BI line. If L1/L2, the IN/OUT column, the brackets and so on flash amber in steps 2-8, the viewer learns 'amber = what's being explained' and then misreads amber in the 35 shorts. Highlight by dimming the rest (say to 25%) and bringing the lit part to full PHOSPHOR green with glow, and keep amber for the last two steps, where it means what it means in the shorts. (2) Caption: the round-2 caption is only the scholarly caveat. A pinned post should first say what it is. The rewrite keeps the caveat but states it more accurately: Wang Bi does call 3/5 yang places and 2/4 yin places (辯位), so he didn't reject the rule, he limited it to lines 2 to 5. (3) Pacing: with the centre step cut there are 10 steps in about 36 s. Suggested times: 0.0, 3.0, 6.5, 10.0 (hold 4 s for both sweeps), 14.0, 17.5 (hold 4 s for the pair sweeps), 21.5, 25.0, 28.5, 32.0 to the end. (4) Optional, for the user to decide, not a fix: 22's master.en could read 'Line five, master of Adornment', like 10, 13 and 16. Then the screen itself says which line Wang Bi names, and 25 and 33 could get the same change. It re-renders those shorts, so offer it only. (5) Implementation, carried over from round 1 and still open: the readout's acts are timed as shares of the duration, so the explainer needs the whole 22 screen built from the start, or revealed per step. Several lights are substrings of a single typed log row (YANG/YIN, IN/OUT, · CENTRE), which means splitting the row's render. Step text above the header has only about 150 px, which sits under Instagram's top overlay. Check that area on a phone, or put the text over the left number column. Decide whether the lesson line at the prompt (64 px) is shown. It competes with the step text, so leave it out. Copy rules: all current and rewritten lines are 18 characters or fewer (1+4, 2+5, 3+6 LINK = 18; UPPER/LOWER TRIGRAM: 4-6/1-3 = 18), uppercase, with no banned words."
+}
