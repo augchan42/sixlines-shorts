@@ -1,6 +1,7 @@
 import { Composition, staticFile } from "remotion";
 import table from "../series/hexagrams.json";
 import walkthrough from "../series/demo/walkthrough.json";
+import readoutKey from "../series/explainers/readout-key.props.json";
 import { hexagramClip } from "./lib/clips";
 import { beatFrame } from "./lib/timing";
 import { gotchuSchema, seriesSchema, shortSchema, type GotchuProps, type SeriesProps, type ShortProps } from "./schema";
@@ -11,6 +12,7 @@ import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
 import { Demo, demoFrames, type DemoProps } from "./templates/Demo";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
+import { ReadoutKey, readoutKeyFrames, type ReadoutKeyProps } from "./templates/ReadoutKey";
 import { Series, seriesFrames } from "./templates/Series";
 import { overrides } from "./series/overrides";
 import { seriesProps, type SeriesRow } from "./series/props";
@@ -110,6 +112,16 @@ export const Root: React.FC = () => (
       fps={FPS}
       durationInFrames={1}
       calculateMetadata={({ props }: { props: DemoProps }) => ({ durationInFrames: demoFrames(props, FPS) })}
+    />
+    <Composition
+      id="ReadoutKey"
+      component={ReadoutKey}
+      defaultProps={readoutKey as unknown as ReadoutKeyProps}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={300}
+      calculateMetadata={({ props }: { props: ReadoutKeyProps }) => ({ durationInFrames: readoutKeyFrames(props, FPS) })}
     />
     <Composition id="Spike1" component={Series1} width={1080} height={1920} fps={FPS} durationInFrames={spike1Frames(FPS)} />
     {protos.map(({ id, props }) => (

@@ -74,7 +74,7 @@ const typed = (text: string, frame: number, at: number, rate = 1.2) => {
   return { shown: text.slice(0, n), typing: n > 0 && n < text.length, started: n > 0 };
 };
 
-const Line: React.FC<{ text: string; frame: number; at: number; rate?: number; size?: number; color?: string; cursor?: boolean; style?: React.CSSProperties }> = ({
+const Line: React.FC<{ text: string; frame: number; at: number; rate?: number; size?: number; color?: string; cursor?: boolean; glowless?: boolean; style?: React.CSSProperties }> = ({
   text,
   frame,
   at,
@@ -82,15 +82,34 @@ const Line: React.FC<{ text: string; frame: number; at: number; rate?: number; s
   size = 44,
   color = PHOSPHOR,
   cursor,
+  glowless,
   style,
 }) => {
   const t = typed(text, frame, at, rate);
   if (!t.started && !cursor) return <div style={{ height: size * 1.25, ...style }} />;
   const blink = Math.floor(frame / 8) % 2 === 0;
   return (
-    <div style={{ fontFamily: fonts.pixel, fontSize: size, lineHeight: 1.25, color, textShadow: glow, whiteSpace: "pre-wrap", ...style }}>
+    <div style={{ fontFamily: fonts.pixel, fontSize: size, lineHeight: 1.25, color, textShadow: glowless ? "none" : glow, whiteSpace: "pre-wrap", ...style }}>
       {t.shown}
       {(t.typing || (cursor && blink)) && <span style={{ backgroundColor: color, color: "transparent" }}>█</span>}
+    </div>
+  );
+};
+
+// A log row in parts, so the explainer can light one part: the line, YANG/YIN, IN/OUT, CENTRE.
+const LogRow: React.FC<{ i: number; yang: boolean; place: string; amber: boolean; dim: (...k: string[]) => number; top: number }> = ({ i, yang, place, amber, dim, top }) => {
+  const [inOut, centre] = place.split(" · ");
+  const part = (text: string, ...keys: string[]) => {
+    const on = dim(`row:${i}`, ...keys) === 1;
+    return <span style={{ opacity: on ? 1 : 0.35, color: amber ? "#ffb347" : on ? PHOSPHOR : DIM, textShadow: on ? glow : "none" }}>{text}</span>;
+  };
+  return (
+    <div style={{ position: "absolute", top, fontFamily: fonts.pixel, fontSize: 34, lineHeight: 1.25, whiteSpace: "pre" }}>
+      {part(`L${i + 1}  ${yang ? "━━━━━━━" : "━━━   ━━━"}  `, `plot:${i}`)}
+      {part(yang ? "YANG" : "YIN ", `yy:${i}`)}
+      {part(`  ${inOut}`, `place:${i}`)}
+      {centre && part(` · ${centre}`, `centre:${i}`)}
+      {amber && part("  ◄")}
     </div>
   );
 };
@@ -106,8 +125,21 @@ export const Readout: React.FC<{
   finding?: string;
   // Wang Bi's words naming the marked line the hexagram's master (series/wangbi.json).
   master?: { zh: string; en: string };
-}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master }) => {
-  const frame = useCurrentFrame();
+  // For the explainer (src/templates/ReadoutKey.tsx): the whole screen drawn from the first
+  // frame; `focus` names the parts at full strength, the rest dimmed (keys in `lit` below);
+  // `marked` turns the ◄ lines amber; `prompt` is typed in white in place of the lesson.
+  built?: boolean;
+  focus?: string[];
+  marked?: boolean;
+  prompt?: { text: string; at: number };
+}> = ({ number, name, lines, trigrams: [upper, lower], text, mark = [], finding, master, built, focus, marked, prompt }) => {
+  const now = useCurrentFrame();
+  // Built: every act has already happened, so the frame the acts see is far past the end.
+  const frame = built ? now + 100000 : now;
+  // header, plot:i, row:i (the whole log row), yy:i, place:i, centre:i, link, upper, lower,
+  // bracket:upper, bracket:lower, master, finding. Without `focus` everything is lit.
+  const lit = (...keys: string[]) => !focus || keys.some((k) => focus.includes(k));
+  const dim = (...keys: string[]) => (lit(...keys) ? 1 : 0.22);
   const { width, height, durationInFrames: d } = useVideoConfig();
   // The acts, as shares of the lesson: header, plot, the answering lines, trigrams, Wang
   // Bi's master, the finding, then the answer.
@@ -126,11 +158,11 @@ export const Readout: React.FC<{
   // 1 answers 4, 2 answers 5, 3 answers 6, when one is yin and the other yang.
   const answering = [0, 1, 2].filter((i) => lines[i] !== lines[i + 3]);
 
-  const turn = interpolate(frame, [0, d], [-0.55, 0.35]);
+  const turn = interpolate(now, [0, d], [-0.55, 0.35]);
   const cx = width / 2;
   const cy = 670;
   const scale = 100;
-  const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(frame / 2)}`);
+  const flicker = 0.94 + 0.06 * random(`flicker-${Math.floor(now / 2)}`);
   const pad = (n: number) => String(n).padStart(2, "0");
 
   return (
@@ -138,16 +170,16 @@ export const Readout: React.FC<{
       {/* The message area's frame and its running counters, as on the Nostromo's orbit display. */}
       <div style={{ position: "absolute", inset: "150px 50px 200px", border: `3px solid ${DIM}`, boxShadow: `inset 0 0 40px rgba(125,255,138,0.08)` }} />
       <div style={{ position: "absolute", left: 50, right: 50, top: 150, height: 90, borderBottom: `3px solid ${DIM}` }} />
-      <div style={{ position: "absolute", left: 80, top: 168 }}>
+      <div style={{ position: "absolute", left: 80, top: 168, opacity: dim("header") }}>
         <Line text={`SIX LINES // QUERY ${pad(number)}`} frame={frame} at={0} rate={0.8} size={46} />
       </div>
-      <div style={{ position: "absolute", right: 80, top: 176, fontFamily: fonts.pixel, fontSize: 34, color: DIM }}>
-        {`SYS ${(76.75 + ((frame * 7.31) % 23)).toFixed(2)}`}
+      <div style={{ position: "absolute", right: 80, top: 176, fontFamily: fonts.pixel, fontSize: 34, color: DIM, opacity: dim("header") }}>
+        {`SYS ${(76.75 + ((now * 7.31) % 23)).toFixed(2)}`}
       </div>
       {/* A column of changing figures down the left edge. */}
-      <div style={{ position: "absolute", left: 76, top: 300, fontFamily: fonts.pixel, fontSize: 26, lineHeight: 1.6, color: DIM }}>
+      <div style={{ position: "absolute", left: 76, top: 300, fontFamily: fonts.pixel, fontSize: 26, lineHeight: 1.6, color: DIM, opacity: focus ? 0.22 : 1 }}>
         {Array.from({ length: 12 }, (_, k) => (
-          <div key={k}>{Math.floor(random(`col-${k}-${Math.floor(frame / 3)}`) * 9000 + 1000)}</div>
+          <div key={k}>{Math.floor(random(`col-${k}-${Math.floor(now / 3)}`) * 9000 + 1000)}</div>
         ))}
       </div>
 
@@ -157,8 +189,8 @@ export const Readout: React.FC<{
           {slabsOf(lines).map((s, k) => {
             const drawn = interpolate(frame, [plotFrom + s.i * plotEach, plotFrom + (s.i + 0.8) * plotEach], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
             if (drawn <= 0) return null;
-            const marked = mark.includes(s.i) && frame >= markAt;
-            const on = !marked || Math.floor((frame - markAt) / 6) % 2 === 0;
+            const amber = mark.includes(s.i) && (focus ? !!marked : frame >= markAt);
+            const on = !amber || Math.floor((frame - markAt) / 6) % 2 === 0;
             return (
               <path
                 key={k}
@@ -166,8 +198,8 @@ export const Readout: React.FC<{
                 pathLength={1}
                 strokeDasharray={1}
                 strokeDashoffset={1 - drawn}
-                stroke={marked ? "#ffb347" : PHOSPHOR}
-                opacity={on ? 1 : 0.35}
+                stroke={amber ? "#ffb347" : PHOSPHOR}
+                opacity={(on ? 1 : 0.35) * dim(`plot:${s.i}`)}
               />
             );
           })}
@@ -178,7 +210,7 @@ export const Readout: React.FC<{
           if (drawn <= 0) return null;
           const x = cx - (LINE_W / 2) * scale - 40 - k * 24;
           const [ya, yb] = [cy - lineZ(i) * scale, cy - lineZ(i + 3) * scale];
-          return <path key={i} d={`M${x + 20},${ya}H${x}V${yb}H${x + 20}`} fill="none" stroke={PHOSPHOR} strokeWidth={3.4} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - drawn} style={{ filter: `drop-shadow(0 0 6px ${PHOSPHOR})` }} />;
+          return <path key={i} opacity={dim("link")} d={`M${x + 20},${ya}H${x}V${yb}H${x + 20}`} fill="none" stroke={PHOSPHOR} strokeWidth={3.4} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - drawn} style={{ filter: `drop-shadow(0 0 6px ${PHOSPHOR})` }} />;
         })}
         {/* Brackets round the two trigrams, once they are named. */}
         {frame >= trigramsAt &&
@@ -186,13 +218,15 @@ export const Readout: React.FC<{
             const top = cy - lineZ(from + 2) * scale - LINE_H * scale;
             const bottom = cy - lineZ(from) * scale + LINE_H * scale;
             const x = cx + (LINE_W / 2) * scale + 70;
-            return <path key={from} d={`M${x - 24},${top}H${x}V${bottom}H${x - 24}`} fill="none" stroke={DIM} strokeWidth={3} />;
+            return <path key={from} opacity={dim(from ? "bracket:upper" : "bracket:lower")} d={`M${x - 24},${top}H${x}V${bottom}H${x - 24}`} fill="none" stroke={DIM} strokeWidth={3} />;
           })}
       </svg>
 
       {/* The log: one entry per line as it is plotted, top to bottom on screen. */}
       <div style={{ position: "absolute", left: 80, top: 1070, right: 80 }}>
-        {[5, 4, 3, 2, 1, 0].map((i) => (
+        {[5, 4, 3, 2, 1, 0].map((i) => focus ? (
+          <LogRow key={i} i={i} yang={lines[i] === 1} place={place(i)} amber={mark.includes(i) && !!marked} dim={dim} top={(5 - i) * 44} />
+        ) : (
           <Line
             key={i}
             text={`L${i + 1}  ${lines[i] ? "━━━━━━━  YANG" : "━━━   ━━━  YIN "}  ${place(i)}${mark.includes(i) && frame >= markAt ? "  ◄" : ""}`}
@@ -210,8 +244,8 @@ export const Readout: React.FC<{
       <div style={{ position: "absolute", left: 170, right: 80, top: 0 }}>
         {frame >= trigramsAt && (
           <>
-            <Line text={`UPPER ${upper.zh} ${upper.name} · ${DOES[upper.name]}`} frame={frame} at={trigramsAt} size={42} style={{ position: "absolute", top: 272 }} />
-            <Line text={`LOWER ${lower.zh} ${lower.name} · ${DOES[lower.name]}`} frame={frame} at={trigramsAt + 14} size={42} style={{ position: "absolute", top: 985 }} />
+            <Line text={`UPPER ${upper.zh} ${upper.name} · ${DOES[upper.name]}`} frame={frame} at={trigramsAt} size={42} style={{ position: "absolute", top: 272, opacity: dim("upper") }} />
+            <Line text={`LOWER ${lower.zh} ${lower.name} · ${DOES[lower.name]}`} frame={frame} at={trigramsAt + 14} size={42} style={{ position: "absolute", top: 985, opacity: dim("lower") }} />
           </>
         )}
       </div>
@@ -220,13 +254,17 @@ export const Readout: React.FC<{
       <div style={{ position: "absolute", left: 80, right: 80, top: 1360 }}>
         {master && (
           <>
-            <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color="#ffb347" />
-            <Line text={`  ${master.en.toUpperCase()}`} frame={frame} at={masterAt + 12} size={34} color="#ffb347" />
+            <Line text={`> WANG BI: ${master.zh}`} frame={frame} at={masterAt} size={38} color="#ffb347" style={{ opacity: dim("master") }} />
+            <Line text={`  ${master.en.toUpperCase()}`} frame={frame} at={masterAt + 12} size={34} color="#ffb347" style={{ opacity: dim("master") }} />
           </>
         )}
-        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color={master ? DIM : "#ffb347"} />}
-        {!master && <Line text={`> ${name.toUpperCase()}:`} frame={frame} at={answerAt} size={38} color={DIM} />}
-        <Line text={text.toUpperCase()} frame={frame} at={answerAt + 10} rate={1.2} size={64} cursor={frame >= answerAt + 10} />
+        {finding && <Line text={`> ${finding}`} frame={frame} at={findingAt} size={38} color={master ? DIM : "#ffb347"} style={{ opacity: dim("finding") }} />}
+        {!master && <Line text={`> ${name.toUpperCase()}:`} frame={frame} at={answerAt} size={38} color={DIM} style={{ opacity: dim("finding") }} />}
+        {prompt ? (
+          <Line text={prompt.text} frame={now} at={prompt.at} rate={1.2} size={64} color="#fff" cursor glowless />
+        ) : (
+          <Line text={text.toUpperCase()} frame={frame} at={answerAt + 10} rate={1.2} size={64} cursor={frame >= answerAt + 10} />
+        )}
       </div>
 
       {/* Scanlines and the tube's dark corners. */}

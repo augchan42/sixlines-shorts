@@ -1,0 +1,249 @@
+{
+ "explainer": "readout-key",
+ "rendered": "2026-09-27T01:49:03.405Z",
+ "commit": "d3ce00feb3c7c0266bd32b5c0175a98e4e3b0e66",
+ "clean": false,
+ "seconds": 42.112,
+ "shareKbps": 4241,
+ "props": {
+  "number": 22,
+  "name": "Grace",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "trigrams": [
+   {
+    "zh": "山",
+    "name": "MOUNTAIN"
+   },
+   {
+    "zh": "火",
+    "name": "FIRE"
+   }
+  ],
+  "mark": [
+   1,
+   4
+  ],
+  "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+  "master": {
+   "zh": "為飾之主",
+   "en": "Master of Adornment"
+  },
+  "steps": [
+   {
+    "at": 0,
+    "text": "HOW TO READ\nTHIS SCREEN",
+    "focus": [
+     [
+      0,
+      [
+       "header"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 2.8,
+    "text": "SIX LINES, L1\nAT THE BOTTOM.",
+    "focus": [
+     [
+      0,
+      [
+       "plot:0",
+       "row:0"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 6,
+    "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN.",
+    "focus": [
+     [
+      0,
+      [
+       "plot:0",
+       "yy:0",
+       "plot:1",
+       "yy:1"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 9.2,
+    "text": "ODD PLACES WANT\nYANG, EVEN YIN.",
+    "focus": [
+     [
+      0,
+      [
+       "place:0",
+       "place:2",
+       "place:4"
+      ]
+     ],
+     [
+      2.1,
+      [
+       "place:1",
+       "place:3",
+       "place:5"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 13.4,
+    "text": "RIGHT KIND: IN.\nWRONG KIND: OUT.",
+    "focus": [
+     [
+      0,
+      [
+       "plot:1",
+       "place:1"
+      ]
+     ],
+     [
+      1.7,
+      [
+       "plot:4",
+       "place:4"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 16.8,
+    "text": "1+4, 2+5, 3+6 LINK\nIF YIN MEETS YANG.",
+    "focus": [
+     [
+      0,
+      [
+       "link",
+       "plot:0",
+       "plot:3",
+       "yy:0",
+       "yy:3"
+      ]
+     ],
+     [
+      1.8,
+      [
+       "plot:1",
+       "plot:4",
+       "yy:1",
+       "yy:4"
+      ]
+     ],
+     [
+      2.6,
+      [
+       "plot:2",
+       "plot:5",
+       "yy:2",
+       "yy:5"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 21,
+    "text": "UPPER TRIGRAM: 4-6\nLOWER TRIGRAM: 1-3",
+    "focus": [
+     [
+      0,
+      [
+       "upper",
+       "bracket:upper",
+       "plot:3",
+       "plot:4",
+       "plot:5"
+      ]
+     ],
+     [
+      1.7,
+      [
+       "lower",
+       "bracket:lower",
+       "plot:0",
+       "plot:1",
+       "plot:2"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 24.4,
+    "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE.",
+    "focus": [
+     [
+      0,
+      [
+       "bracket:upper",
+       "bracket:lower"
+      ]
+     ],
+     [
+      1.2,
+      [
+       "plot:1",
+       "plot:4",
+       "centre:1",
+       "centre:4"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 27.8,
+    "text": "◄ MARKS THE LINES\nTO LOOK AT.",
+    "focus": [
+     [
+      0,
+      [
+       "mark",
+       "plot:1",
+       "plot:4",
+       "row:1",
+       "row:4"
+      ]
+     ]
+    ]
+   },
+   {
+    "at": 31.2,
+    "text": "WANG BI NAMES THE\nLINE THAT RULES.",
+    "focus": [
+     [
+      0,
+      [
+       "mark",
+       "master",
+       "plot:4",
+       "row:4"
+      ]
+     ]
+    ]
+   }
+  ],
+  "end": 36.2,
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 8.059,
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+   "seconds": 5.87020328296554
+  }
+ },
+ "files": {
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "assets/3d/endcard-join-101001-91.99bpm-9b.mp4": "199c70b5f79a4935dc30e749ef0adf5cc53ffa42dcefc019615c2205b4e68286",
+  "out/explainers/readout-key/short.mp4": "8fbb5061ba371bc7206c74d40704f1703f37fccc976993150f9f03c853817f8a",
+  "out/explainers/readout-key/share.mp4": "e6725978a7f8e52aa998535a217ccdc025ef20667cf65bc1d6e55aa8b06b6e47"
+ }
+}

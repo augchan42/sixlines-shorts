@@ -1,6 +1,6 @@
 {
- "about": "One pinned short that shows how to read the readout (src/scenes/Readout.tsx), which 35 shorts use. The user, 2026-09-27: 'we probably need an explainer video then for each of the styles? or are all of the styles pretty self explanatory except for the nostromo wang bi shorts'. The example is 22 Grace: line 5 is yin, OUT of place, yet a centre and the master.",
- "hexagram": 22,
+ "number": 22,
+ "name": "Grace",
  "lines": [
   1,
   0,
@@ -9,11 +9,28 @@
   0,
   1
  ],
- "look": "The readout's own screen with 22's plot, fully built from the start, the plot keeping its slow turn. The WANG BI line and the finding show dimmed, as on the real 22 screen; the lesson line is left out, and each step's text is typed in its place at the prompt, plain white with no glow, so it reads as the explainer and not the readout. The part a step explains goes to full green while the rest dims; amber only where the real screen uses it (the ◄ lines, blinking as in the shorts, and the WANG BI line), in the last two steps.",
+ "trigrams": [
+  {
+   "zh": "山",
+   "name": "MOUNTAIN"
+  },
+  {
+   "zh": "火",
+   "name": "FIRE"
+  }
+ ],
+ "mark": [
+  1,
+  4
+ ],
+ "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+ "master": {
+  "zh": "為飾之主",
+  "en": "Master of Adornment"
+ },
  "steps": [
   {
-   "at": 0.0,
-   "lights": "header",
+   "at": 0,
    "text": "HOW TO READ\nTHIS SCREEN",
    "focus": [
     [
@@ -26,7 +43,6 @@
   },
   {
    "at": 2.8,
-   "lights": "plot and log; L1 first, then upward",
    "text": "SIX LINES, L1\nAT THE BOTTOM.",
    "focus": [
     [
@@ -39,8 +55,7 @@
    ]
   },
   {
-   "at": 6.0,
-   "lights": "L1 (solid) and L2 (broken) and their YANG/YIN words",
+   "at": 6,
    "text": "SOLID LINE: YANG.\nBROKEN LINE: YIN.",
    "focus": [
     [
@@ -56,7 +71,6 @@
   },
   {
    "at": 9.2,
-   "lights": "the IN/OUT column: L1 L3 L5, then L2 L4 L6",
    "text": "ODD PLACES WANT\nYANG, EVEN YIN.",
    "focus": [
     [
@@ -79,7 +93,6 @@
   },
   {
    "at": 13.4,
-   "lights": "L2 YIN IN, then L5 YIN OUT",
    "text": "RIGHT KIND: IN.\nWRONG KIND: OUT.",
    "focus": [
     [
@@ -100,7 +113,6 @@
   },
   {
    "at": 16.8,
-   "lights": "the left bracket with L1 (YANG) and L4 (YIN); then L2+L5 (both YIN) and L3+L6 (both YANG) briefly, no bracket",
    "text": "1+4, 2+5, 3+6 LINK\nIF YIN MEETS YANG.",
    "focus": [
     [
@@ -134,8 +146,7 @@
    ]
   },
   {
-   "at": 21.0,
-   "lights": "the UPPER row with L4-L6 and its bracket, then the LOWER row with L1-L3 and its bracket",
+   "at": 21,
    "text": "UPPER TRIGRAM: 4-6\nLOWER TRIGRAM: 1-3",
    "focus": [
     [
@@ -162,7 +173,6 @@
   },
   {
    "at": 24.4,
-   "lights": "the right brackets, then L2 and L5 with · CENTRE",
    "text": "EACH TRIGRAM'S\nMIDDLE: CENTRE.",
    "focus": [
     [
@@ -185,7 +195,6 @@
   },
   {
    "at": 27.8,
-   "lights": "L2 and L5 in amber with ◄, blinking as in the shorts; the finding stays dim",
    "text": "◄ MARKS THE LINES\nTO LOOK AT.",
    "focus": [
     [
@@ -202,7 +211,6 @@
   },
   {
    "at": 31.2,
-   "lights": "> WANG BI: 為飾之主 / MASTER OF ADORNMENT, and L5",
    "text": "WANG BI NAMES THE\nLINE THAT RULES.",
    "focus": [
     [
@@ -217,8 +225,11 @@
    ]
   }
  ],
- "round": 4,
- "caption": "How to read the green screen in 35 of our shorts, using 22 Grace. The in/out rule comes from the Ten Wings; Wang Bi (AD 226–249) applied it only to lines 2 to 5.",
  "end": 36.2,
- "focus_keys": "header, plot:i, row:i, yy:i, place:i, centre:i (i = 0 for L1), link, upper, lower, bracket:upper, bracket:lower, master, finding; 'mark' turns the ◄ lines amber (src/scenes/Readout.tsx)"
+ "music": "local/music/pick14-lofi-synthwave.mp3",
+ "musicStart": 8.059,
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-91.99bpm-9b.mp4",
+  "seconds": 5.87020328296554
+ }
 }
