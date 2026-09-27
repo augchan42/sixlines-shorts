@@ -1,0 +1,27 @@
+#!/bin/bash
+# Re-render every end card clip the 64 shorts use without the period after REVEAL THE MOMENT
+# (the user, 2026-09-27: "we're going to need to redo our end credits to get rid of the dot after
+# reveal the moment"). Each clip's mode, lines, tempo and beats are read from its name in the
+# short's render record; the old clip moves to public/assets/3d/versions/<name>-period.mp4 first,
+# so nothing is lost. A clip whose -period copy already exists is done (22's, 3acb5f9) and is
+# skipped, so the batch can be stopped and started again. About 2:17 of Blender per clip.
+#
+#   scripts/endcards-no-period [NN ...]      # all 64 shorts, or the ones given
+set -euo pipefail
+cd "$(dirname "$0")/.."
+mkdir -p public/assets/3d/versions out/endcards
+nums=("$@")
+[ ${#nums[@]} -eq 0 ] && nums=($(seq -w 1 64))
+for n in "${nums[@]}"; do
+  clip=$(python3 -c "import json,re,sys;s=json.dumps(json.load(open('series/renders/$n.json')));print(re.search(r'endcard-[a-z]+-[01]{6}-[\d.]+bpm-\d+b\.mp4',s).group(0))")
+  if [[ $clip =~ ^endcard-([a-z]+)-([01]{6})-([0-9.]+)bpm-([0-9]+)b\.mp4$ ]]; then
+    mode=${BASH_REMATCH[1]} lines=${BASH_REMATCH[2]} bpm=${BASH_REMATCH[3]} beats=${BASH_REMATCH[4]}
+  else echo "$n: cannot parse $clip" >&2; exit 1; fi
+  kept="public/assets/3d/versions/${clip%.mp4}-period.mp4"
+  if [ -e "$kept" ]; then echo "$n: $clip done already"; continue; fi
+  echo "$n: $clip ($(date +%H:%M))"
+  mv "public/assets/3d/$clip" "$kept"
+  node scripts/endcard.mjs --lines "$lines" --bpm "$bpm" --mode "$mode" --beats "$beats" --clip "assets/3d/$clip" >> out/endcards/no-period.log 2>&1 \
+    || { echo "$n: Blender failed; the old clip is back" >&2; mv "$kept" "public/assets/3d/$clip"; exit 1; }
+done
+echo "done $(date +%H:%M)"
