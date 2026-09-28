@@ -21,7 +21,7 @@ const TRIGRAMS = {
   "110": { key: "dui", zh: "兌", name: "LAKE", does: "JOYFUL" },
 };
 const BANNED = /oracle|divin|fortune|predict|mystical|magical|预测|預測|占卜|算命|神諭/i;
-const strings = (e) => [e.zh, e.pinyin, e.name, e.upper.zh, e.upper.name, e.upper.does, e.lower.zh, e.lower.name, e.lower.does, ...e.masters.flatMap((x) => [x.zh, x.en])];
+const strings = (e) => [e.zh, e.pinyin, e.pinyin.toUpperCase(), e.name, e.upper.zh, e.upper.name, e.upper.does, e.lower.zh, e.lower.name, e.lower.does, ...e.masters.flatMap((x) => [x.zh, x.en])];
 
 export function buildTerminalData(hexagrams, masters) {
   const out = {};

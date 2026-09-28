@@ -36,6 +36,14 @@ test("the font subset covers every non-ASCII character shown, pinyin and punctua
   assert.ok(text.includes("，"), "16's full-width comma");
 });
 
+test("the font subset covers the uppercased pinyin shown in the title (Reading.title upper-cases it)", () => {
+  const text = displayText(data);
+  for (const e of Object.values(data))
+    for (const ch of e.pinyin.toUpperCase()) if (ch.charCodeAt(0) > 127) assert.ok(text.includes(ch), ch);
+  assert.ok(text.includes("Ī"), "7's pinyin SHĪ");
+  assert.ok(text.includes("Ǎ"), "62's pinyin uppercased");
+});
+
 test("banned words and a master without English are refused", () => {
   const bad = structuredClone(masters);
   bad[7].masters[0].en = "An oracle";
