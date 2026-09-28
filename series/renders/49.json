@@ -1,10 +1,10 @@
 {
  "hexagram": 49,
- "rendered": "2026-09-27T23:17:19.499Z",
- "commit": "627fb9efcc8c21c7b0bf98ab903389abc0be28d0",
+ "rendered": "2026-09-28T02:13:56.746Z",
+ "commit": "ba5a69ffbf11719f757fa08a44bce55758f01d4c",
  "clean": false,
- "seconds": 33.92,
- "shareKbps": 5296,
+ "seconds": 35.712,
+ "shareKbps": 5024,
  "props": {
   "hexagram": {
    "number": 49,
@@ -27,8 +27,8 @@
   "drop": 9.895,
   "hook": "Making a big change nobody believes in?",
   "meaning": [
-   "Revolution says:\nfinish first.",
-   "Trust comes on\nthe last day."
+   "Revolution:\nchange needs trust.",
+   "Explain why.\nHear the doubts."
   ],
   "question": "What change are\nyou making?",
   "plates": [
@@ -74,7 +74,7 @@
   "assets/3d/endcard-snap-101110-9b-ref.mp4": "2d4b4355d7fc92f7f48636eadb828ca9246aa6bf8144ec08108c0fda6e5797bb",
   "assets/yilin/stipple-49-15.webp": "71187d2f6741bc2194f013588556d66567c16b538380e9dc17699395f02fc1b1",
   "assets/yilin/stipple-49-36.webp": "a7742746890080e9a75bc29c41ebc2e201e29e6cd3dcf3f8ab4bd092cdfb3641",
-  "out/series/49-ge/short.mp4": "a748ebe50d31ddd59f329c4cf0ad834a6ae7453da045691fca2d3859b9e8ecd7",
-  "out/series/49-ge/share.mp4": "36db95a1fd178effc91d5e88d7dae1f31e7d97350f38f227cafe426656516d43"
+  "out/series/49-ge/short.mp4": "1ff1329648bcceb3358311be51ba0a4550d4d7cb96ec7e95538be4b507d6cc47",
+  "out/series/49-ge/share.mp4": "7887cdbad3fe4c5c1255a878b333034856792d1fe52c05ca9863f0a156e20fb4"
  }
 }

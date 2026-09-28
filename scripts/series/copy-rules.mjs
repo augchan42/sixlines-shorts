@@ -2,6 +2,9 @@
 
 // At 110 px in the code-rain font, about 18 characters fill the 940 px text column.
 const MAX_LINE = 18;
+// A part with `fits` (the frame that shows it inside the column) may run 2 over: "change needs
+// trust." (19) sits inside the column with margin in 49's render (2026-09-28).
+const MAX_CHECKED_LINE = 20;
 // A readout's lesson is typed inside the terminal at a smaller size; "Stay careful to the end."
 // (24) fills about three quarters of its column (64, 2026-09-27).
 const MAX_READOUT_LINE = 30;
@@ -51,7 +54,8 @@ export const partProblems = (name, part, min, max, onRain, maxLine = MAX_LINE) =
   if (onRain) {
     const lines = part.text.split("\n");
     if (lines.length > 2) problems.push(`${name}: ${lines.length} screen lines (2 at most)`);
-    for (const l of lines) if (l.length > maxLine) problems.push(`${name}: "${l}" is too wide (over ${maxLine} characters)`);
+    const widest = part.fits && maxLine === MAX_LINE ? MAX_CHECKED_LINE : maxLine;
+    for (const l of lines) if (l.length > widest) problems.push(`${name}: "${l}" is too wide (over ${widest} characters)`);
   }
   for (const [re, why] of TONE) if (re.test(part.text)) problems.push(`${name}: ${why}`);
   return problems;

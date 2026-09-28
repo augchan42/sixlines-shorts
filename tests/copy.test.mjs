@@ -26,6 +26,12 @@ test("a screen line over 18 characters is too wide for the frame", () => {
   assert.match(copyProblems(52, entry({ meaning: [line("Keeping Still says: pause."), line("Stay with where\nyou are now.")] })).join(), /too wide/);
 });
 
+test("a line checked in a render (fits) may run to 20 characters, and no further", () => {
+  const checked = (text) => ({ ...line(text), fits: "out/series/49/frame.png" });
+  assert.deepEqual(copyProblems(52, entry({ meaning: [checked("Revolution:\nchange needs trust."), line("Stay with where\nyou are now.")] })), []);
+  assert.match(copyProblems(52, entry({ meaning: [checked("Revolution:\nchange needs trust now."), line("Stay with where\nyou are now.")] })).join(), /too wide \(over 20/);
+});
+
 test("the tone rules catch banned words, exclamation marks and I Ching without a hyphen", () => {
   for (const bad of ["You should rest.", "Rest now!", "The AI says so.", "Your fortune awaits.", "Ask the I Ching."]) {
     assert.notDeepEqual(copyProblems(52, entry({ question: line(bad) })), [], bad);
