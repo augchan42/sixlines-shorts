@@ -175,7 +175,7 @@
    {
     "line": 5,
     "zh": "必有其主，五則是也",
-    "en": "Line 5, master of Biting Through"
+    "en": "Line five, master of Biting Through"
    }
   ]
  },
@@ -267,8 +267,8 @@
   "masters": [
    {
     "line": 6,
-    "zh": "明夷之主，在於上六",
-    "en": "Line 6, master of Darkening of the Light"
+    "zh": "明夷之主，在於上六，上六為至闇者也",
+    "en": "Line six, master of Darkening of the Light: the darkest line"
    }
   ]
  },
@@ -697,7 +697,7 @@
    {
     "line": 3,
     "zh": "三為履主",
-    "en": "Line 3, master of Treading"
+    "en": "Line three, master of Treading"
    }
   ]
  },
@@ -904,7 +904,7 @@
    {
     "line": 5,
     "zh": "五為夬主",
-    "en": "Line 5, master of Breakthrough"
+    "en": "Line five, master of Breakthrough"
    }
   ]
  },
@@ -1324,7 +1324,7 @@
    {
     "line": 5,
     "zh": "為坎之主",
-    "en": "Master of The Abyss"
+    "en": "Master of the Abyss"
    }
   ]
  },
@@ -1554,13 +1554,7 @@
    "name": "LAKE",
    "does": "JOYFUL"
   },
-  "masters": [
-   {
-    "line": 5,
-    "zh": "以剛為主，主剛而履中",
-    "en": "Line 5, master of Gathering Together"
-   }
-  ]
+  "masters": []
  },
  "011000": {
   "number": 46,

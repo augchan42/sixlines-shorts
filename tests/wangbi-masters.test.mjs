@@ -36,4 +36,5 @@ test("the extractor's mistakes are not repeated", () => {
   assert.ok(!lines(46).includes(6), "46 L6 warns against being master");
   assert.ok(!lines(39).includes(3), "39 L3 is master of the lower trigram only");
   assert.deepEqual(lines(10), [3], "10: 三為履主");
+  assert.deepEqual(lines(45), [], "45: 以剛為主 is a quality, like 30");
 });

@@ -30,7 +30,7 @@
      "where": "note on line 5"
     }
    ],
-   "checked": "chinese-classics-reference: 06-song.json; Judgment note's 善聽之主 (L2) is a hearer, not master of Song"
+   "checked": "chinese-classics-reference: 06-song.json; the Tuan note asks 必有善聽之主焉，其在二乎 and Kong reads L2; kept L5, which he names outright"
   },
   "7": {
    "masters": [
@@ -63,7 +63,7 @@
     {
      "line": 3,
      "zh": "三為履主",
-     "en": "Line 3, master of Treading",
+     "en": "Line three, master of Treading",
      "where": "note on the Judgment"
     }
    ],
@@ -142,7 +142,7 @@
     {
      "line": 5,
      "zh": "必有其主，五則是也",
-     "en": "Line 5, master of Biting Through",
+     "en": "Line five, master of Biting Through",
      "where": "note on the Judgment"
     }
    ],
@@ -216,7 +216,7 @@
     {
      "line": 5,
      "zh": "為坎之主",
-     "en": "Master of The Abyss",
+     "en": "Master of the Abyss",
      "where": "note on line 5"
     }
    ],
@@ -264,8 +264,8 @@
    "masters": [
     {
      "line": 6,
-     "zh": "明夷之主，在於上六",
-     "en": "Line 6, master of Darkening of the Light",
+     "zh": "明夷之主，在於上六，上六為至闇者也",
+     "en": "Line six, master of Darkening of the Light: the darkest line",
      "where": "note on line 1"
     }
    ],
@@ -307,7 +307,7 @@
     {
      "line": 5,
      "zh": "五為夬主",
-     "en": "Line 5, master of Breakthrough",
+     "en": "Line five, master of Breakthrough",
      "where": "note on line 4"
     }
    ],
@@ -318,15 +318,8 @@
    "checked": "chinese-classics-reference: 44-gou.json; L1's 制動之主 is L4 as the brake, not master of Gou"
   },
   "45": {
-   "masters": [
-    {
-     "line": 5,
-     "zh": "以剛為主，主剛而履中",
-     "en": "Line 5, master of Gathering Together",
-     "where": "note on the Judgment"
-    }
-   ],
-   "checked": "chinese-classics-reference: 45-cui.json; the firm central line is L5"
+   "masters": [],
+   "checked": "chinese-classics-reference: 45-cui.json; Judgment note 以剛為主，主剛而履中 names a quality, like 30, not a line"
   },
   "46": {
    "masters": [],
@@ -366,7 +359,7 @@
   },
   "55": {
    "masters": [],
-   "checked": "chinese-classics-reference: 55-feng.json; Judgment note 為天下之主 is the king; no line named"
+   "checked": "chinese-classics-reference: 55-feng.json; Judgment note 為天下之主 is the king, no line named; L4's 夷主 is the peer lord, not a hexagram master"
   },
   "56": {
    "masters": [],

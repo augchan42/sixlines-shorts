@@ -6,6 +6,7 @@
 import { execFileSync } from "node:child_process";
 import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { makeSfx } from "./sfx.mjs";
 
 // Bottom-first lines of each trigram; what each does, as DOES in src/scenes/Readout.tsx.
@@ -41,7 +42,7 @@ export function buildTerminalData(hexagrams, masters) {
 // Every non-ASCII character shown; Pixel Operator has ASCII only, so these fall back to Noto.
 export const displayText = (data) => [...new Set(Object.values(data).flatMap(strings).join("").replace(/[\x00-\x7f]/g, ""))].join("");
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const root = path.resolve(import.meta.dirname, "..");
   const godot = path.join(root, "godot/wangbi-terminal");
   const read = (p) => JSON.parse(readFileSync(path.join(root, p), "utf8"));
