@@ -5,6 +5,8 @@ const GREEN := Color("#7dff8a")
 const DIM := Color(0.49, 1.0, 0.54, 0.45)
 const CYAN := Color("#5ee7ff")
 const PROMPT := "TAP A LINE TO CHANGE IT"
+const LOG_TOP := 960.0
+const ROW_GAP := 45.0  # about one row tall at the 34 px body size, between stacked blocks
 
 var data := Reading.load_data()
 var lines: Array = [0, 1, 0, 0, 0, 0]
@@ -46,7 +48,7 @@ func _ready() -> void:
 	label(title, Vector2(60, 70), 44, GREEN)
 	plot.position = Vector2(540, 560)
 	add_child(plot)
-	label(log_label, Vector2(60, 960), 34, GREEN)
+	label(log_label, Vector2(60, LOG_TOP), 34, GREEN)
 	label(trigrams, Vector2(60, 1250), 34, DIM)
 	label(wangbi, Vector2(60, 1380), 34, GREEN)
 	label(prompt, Vector2(60, 1770), 38, CYAN)
@@ -85,3 +87,8 @@ func show_lines(l: Array) -> void:
 	plot.lines = l
 	plot.amber = Reading.master_lines(e)
 	prompt.text = PROMPT
+	# Stack each block below the real (wrapped) height of the one above it, so a longer WANG BI
+	# row never overlaps the trigrams, and a longer log or trigrams block never overlaps what
+	# follows it.
+	trigrams.position.y = log_label.position.y + log_label.get_combined_minimum_size().y + ROW_GAP
+	wangbi.position.y = trigrams.position.y + trigrams.get_combined_minimum_size().y + ROW_GAP
