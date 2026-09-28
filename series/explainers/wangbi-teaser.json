@@ -1,0 +1,168 @@
+{
+ "about": "A teaser of the Wang Bi lesson (series/explainers/wangbi-lesson.json) for Instagram, whose Reels stop at 3 min (the lesson is 3:48). The user, 2026-09-28: 'Lets cut a teaser and let me see it'. The pages are the lesson's own, unchanged: who Wang Bi was, what a hexagram is, yin and yang, the master and how to find it, then 7 The Army as the question and its answer. Rendered by the same Lesson composition, so the sounds and end card follow the lesson.",
+ "hexagram": 22,
+ "readoutsNote": "22's readout as the lesson teaches it (master line 5), pinned 2026-09-27 when the short's own readout moved to line 6, plain white",
+ "readouts": {
+  "22": {
+   "mark": [
+    1,
+    4
+   ],
+   "finding": "THE SOFT COMES TO ADORN THE STRONG.",
+   "master": {
+    "zh": "為飾之主",
+    "en": "Master of Adornment"
+   }
+  }
+ },
+ "sources": {
+  "places": "Zhouyi lüeli 辯位: 初上无陰陽定位; 夫位者，列貴賤之地，待才用之宅也",
+  "master": "Wang Bi, Zhouyi lüeli 明彖: the centre line first, and the few ruling the many (夫少者多之所貴也); sometimes no line rules and the trigrams do. The lists of hexagrams and 至少者為至多之所主 printed with it are Xing Shu's Tang notes, not Wang Bi's.",
+  "answering": "Zhouyi lüeli 明卦適變通爻: 應者，同志之象也 (answering lines share an aim); the OCR here lost the start, so cite a printed edition",
+  "22": "Wang Bi on 22 line 5: 處得尊位，為飾之主",
+  "7": "Wang Bi on 7 line 2: 為師之主; on 7 line 5: 柔非軍帥……必以授也",
+  "dates": "He Shao, 王弼傳 (Biography of Wang Bi)",
+  "few rule the many": "明彖: 夫眾不能治眾，治眾者至寡者也 (the many can't govern the many; the fewest govern them); 一卦五陽而一陰，則一陰為之主矣 (five yang and one yin: the yin is master)",
+  "centres": "明彖: 非其中爻，莫之備矣 (without the centre line, none is complete), Wang Bi adapting the Great Commentary (繫辭下)",
+  "why L2 is marked": "Tuan 柔來而文剛 (the soft comes to adorn the strong); Wang Bi: 坤之上六來居二位 (Kun's top yin comes to sit in the second place)",
+  "22 lesson": "Wang Bi on 22 line 5: 用莫過儉 (in spending, nothing beats thrift)",
+  "7 reveal": "Wang Bi on 7 line 2: 以剛居中，而應於上 (firm, in the centre, answered from above); 為師之主 (master of the army)",
+  "10 and 16 drawing": "Wang Bi: 三為履主 (line three, master of Treading); on 16 line 4: 獨體陽爻，眾陰所從 (the one yang line, which all the yin follow)",
+  "order": "Checking for a lone line first, then the centres, is our working order, not Wang Bi's; 'most often L5' is our count of the masters in his notes (scripts/wangbi.mjs). Never credit either to him on screen."
+ },
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "round": 5,
+ "holds": "one-glance pages (DEFINE: TRIGRAM, DEFINE: CENTRE, IN 22, LINES 1 AND 6) about 4 s; others by reading time",
+ "music": {
+  "file": "pick13-synthwave-the-mountain.mp3",
+  "start": 0.023,
+  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
+ },
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "cues": true,
+ "beacon": "level",
+ "endcardRate": 0.75,
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ },
+ "show_keys": "hex: hexagram number, or 'pair' (one solid, one broken), or small: [a, b] (two small hexagrams); draw: plot draws in bottom line first; log: columns shown (yy, place, centre; place never on L1/L6); lit: lines at full strength, the rest dim; amber: lines amber with ◄; links: answering pairs drawn on the left; brackets, names: trigram brackets and UPPER/LOWER names; ranks: a bracket over L2–L5; big: large text in the drawing area; lesson: white text typed in the drawing area; full: [{n, after}] cut to hexagram n's complete readout after answer line `after`, 5 s; then: [{after: seconds after the answer, ...changes}]",
+ "chapters": [
+  {
+   "page": "",
+   "pages": [
+    {
+     "q": "WHO WAS WANG BI",
+     "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+     "draw": "",
+     "show": {}
+    },
+    {
+     "q": "WHAT IS A HEXAGRAM",
+     "a": "A SITUATION IN SIX LINES.\nEACH LINE IS A PERSON IN IT.",
+     "draw": "",
+     "show": {}
+    },
+    {
+     "q": "DEFINE: YANG, YIN",
+     "a": "SOLID: YANG. FIRM, STRONG.\nBROKEN: YIN. SOFT, YIELDING.",
+     "draw": "one solid line, one broken line",
+     "show": {
+      "hex": "pair",
+      "draw": true
+     }
+    }
+   ]
+  },
+  {
+   "page": "THE MASTER",
+   "pages": [
+    {
+     "q": "WHICH LINE RULES",
+     "a": "OFTEN ONE LINE RULES.\nWANG BI CALLS IT 主,\nTHE MASTER.",
+     "draw": "主 large, MASTER under it",
+     "show": {
+      "big": "主\nMASTER"
+     }
+    },
+    {
+     "q": "HOW TO FIND IT",
+     "a": "WANG BI: THE FEW\nRULE THE MANY.\nONE YIN AMONG FIVE YANG,\nONE YANG AMONG FIVE YIN.",
+     "draw": "two small hexagrams, no digits: five yang with one yin at line 3 (10), five yin with one yang at line 4 (16); the lone line amber, each lone line appearing with its answer line",
+     "show": {
+      "small": [
+       10,
+       16
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "page": "YOUR TURN",
+   "pages": [
+    {
+     "q": "SHOW 7",
+     "a": "7 THE ARMY.\nWHICH LINE RULES?",
+     "draw": "7 drawn with its full log (IN/OUT, CENTRE, the 2+5 link), no marks; hold 4 s",
+     "show": {
+      "hex": 7,
+      "draw": true,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        1,
+        4
+       ]
+      ],
+      "approach": 5
+     }
+    },
+    {
+     "q": "SHOW ANSWER",
+     "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
+     "draw": "L2 amber with ◄, the 2+5 link",
+     "show": {
+      "hex": 7,
+      "log": [
+       "yy",
+       "place",
+       "centre"
+      ],
+      "links": [
+       [
+        1,
+        4
+       ]
+      ],
+      "lit": [
+       1
+      ],
+      "amber": [
+       1
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "caption": "Wang Bi (AD 226–249) found the line that rules a hexagram: the few rule the many. The full lesson is on sixlines.day."
+}

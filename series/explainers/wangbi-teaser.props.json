@@ -1,0 +1,195 @@
+{
+ "pages": [
+  {
+   "q": "WHO WAS WANG BI",
+   "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+   "show": {}
+  },
+  {
+   "q": "WHAT IS A HEXAGRAM",
+   "a": "A SITUATION IN SIX LINES.\nEACH LINE IS A PERSON IN IT.",
+   "show": {}
+  },
+  {
+   "q": "DEFINE: YANG, YIN",
+   "a": "SOLID: YANG. FIRM, STRONG.\nBROKEN: YIN. SOFT, YIELDING.",
+   "show": {
+    "hex": "pair",
+    "draw": true
+   }
+  },
+  {
+   "chapter": "THE MASTER"
+  },
+  {
+   "q": "WHICH LINE RULES",
+   "a": "OFTEN ONE LINE RULES.\nWANG BI CALLS IT 主,\nTHE MASTER.",
+   "show": {
+    "big": "主\nMASTER"
+   }
+  },
+  {
+   "q": "HOW TO FIND IT",
+   "a": "WANG BI: THE FEW\nRULE THE MANY.\nONE YIN AMONG FIVE YANG,\nONE YANG AMONG FIVE YIN.",
+   "show": {
+    "small": [
+     10,
+     16
+    ]
+   }
+  },
+  {
+   "chapter": "YOUR TURN"
+  },
+  {
+   "q": "SHOW 7",
+   "a": "7 THE ARMY.\nWHICH LINE RULES?",
+   "show": {
+    "hex": 7,
+    "draw": true,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ],
+    "approach": 5
+   }
+  },
+  {
+   "q": "SHOW ANSWER",
+   "a": "L2, THE ONE YANG.\nA CENTRE, AND L5 ANSWERS.\nWANG BI: 為師之主,\nMASTER OF THE ARMY.",
+   "show": {
+    "hex": 7,
+    "log": [
+     "yy",
+     "place",
+     "centre"
+    ],
+    "links": [
+     [
+      1,
+      4
+     ]
+    ],
+    "lit": [
+     1
+    ],
+    "amber": [
+     1
+    ]
+   }
+  }
+ ],
+ "hexagrams": {
+  "7": {
+   "number": 7,
+   "name": "The Army",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "trigrams": [
+    {
+     "zh": "地",
+     "name": "EARTH"
+    },
+    {
+     "zh": "水",
+     "name": "WATER"
+    }
+   ]
+  },
+  "10": {
+   "number": 10,
+   "name": "Treading",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "trigrams": [
+    {
+     "zh": "天",
+     "name": "HEAVEN"
+    },
+    {
+     "zh": "澤",
+     "name": "LAKE"
+    }
+   ]
+  },
+  "16": {
+   "number": 16,
+   "name": "Enthusiasm",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "trigrams": [
+    {
+     "zh": "雷",
+     "name": "THUNDER"
+    },
+    {
+     "zh": "地",
+     "name": "EARTH"
+    }
+   ]
+  }
+ },
+ "readouts": {},
+ "music": "local/music/pick13-synthwave-the-mountain.mp3",
+ "musicStart": 0.023,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 10.435916947494293,
+  "rate": 0.5749375
+ },
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon-level.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
