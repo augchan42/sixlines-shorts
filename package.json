@@ -14,7 +14,9 @@
     "series:clips": "node scripts/series-clips.mjs",
     "series:screens": "node scripts/series-screens.mjs",
     "series": "node scripts/series.mjs",
-    "series:captions": "node scripts/series-captions.mjs"
+    "series:captions": "node scripts/series-captions.mjs",
+    "test:godot": "/Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal --import && /Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal -s res://tests/run.gd",
+    "terminal:web": "mkdir -p godot/wangbi-terminal/build/web && /Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal --export-release Web build/web/index.html"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.527",
