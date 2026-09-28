@@ -28,7 +28,8 @@ document.getElementById('go').addEventListener('click', () => {
   }
   document.getElementById('note').textContent = 'LOADING…';
   document.getElementById('canvas').style.display = 'block';
-  engine.startGame().then(() => document.getElementById('start').remove());
+  engine.startGame().then(() => document.getElementById('start').remove())
+    .catch((err) => { document.getElementById('note').textContent = 'COULD NOT START: ' + err.message; });
 });
 </script>
 </body>
