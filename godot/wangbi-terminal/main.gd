@@ -145,7 +145,12 @@ func set_lines(l: Array) -> void:
 	tween.tween_property(plot, "turn", Reading.turn_target(plot.turn), 6.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	play("relay")
 	var now: Array = Reading.master_lines(data[Reading.key(l)])
-	if now != before and not now.is_empty():
+	var newly_amber := false
+	for n in now:
+		if n not in before:
+			newly_amber = true
+			break
+	if newly_amber:
 		play("warble")
 
 func _process(delta: float) -> void:
