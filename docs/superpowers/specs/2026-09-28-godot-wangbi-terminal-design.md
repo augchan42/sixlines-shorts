@@ -1,6 +1,6 @@
 # Wang Bi terminal in Godot: design
 
-Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md); nothing is built yet.
+Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md). Built through the web export; not yet on the sites.
 
 ## What it is
 
