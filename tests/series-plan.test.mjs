@@ -90,9 +90,11 @@ test("a held pace shows the meaning as one card and gives the question 6 beats a
   assert.equal(planOf({ bpm: 115, drop: (24 * 60) / 115, pace: "held", lesson: { kind: "painting", text: "x" } }).cta, 40);
 });
 
-test("a short without the credit ends when the end card has held", () => {
+// The user, on 35 (2026-09-27): "could last a bit longer so the music fades more naturally".
+// Without the credit, its 3 beats hold the end card's last frame while the music fades.
+test("a short without the credit holds the end card 3 beats more for the music to fade", () => {
   const p = seriesPlan(95, 15.16, HELD_LESSON_BEATS, "held", false);
-  assert.equal(p.end, p.credit);
   assert.equal(p.credit - p.cta, 9);
-  assert.equal(seriesPlan(95, 15.16, HELD_LESSON_BEATS, "held").end, p.credit + 3);
+  assert.equal(p.end, p.credit + 3);
+  assert.equal(seriesPlan(95, 15.16, HELD_LESSON_BEATS, "held").end, p.end);
 });

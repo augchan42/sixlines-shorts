@@ -11,7 +11,7 @@ export type SeriesPlan = {
   drop: number;
   showcase: number;
   cta: number;
-  // Her credit ("Original edit by ~DISNEYFAN"), after the end card has held.
+  // Her credit ("Original edit by ~DISNEYFAN"), or the held tail, after the end card has held.
   credit: number;
   end: number;
 };
@@ -19,8 +19,9 @@ export type SeriesPlan = {
 // The end card's 9 beats let it hold about 2 s once its last line is lit; the credit takes 3.
 const CTA_BEATS = 9;
 const CREDIT_BEATS = 3;
-// Without the credit (a special), the short ends when the end card has held.
-const ending = (cta: number, credit = true) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_BEATS + (credit ? CREDIT_BEATS : 0) });
+// Without the credit, its beats hold the end card's last frame while the music fades (the user,
+// on 35, 2026-09-27: "could last a bit longer so the music fades more naturally").
+const ending = (cta: number, _credit = true) => ({ cta, credit: cta + CTA_BEATS, end: cta + CTA_BEATS + CREDIT_BEATS });
 
 // Beats from the drop to the end card: the showcase's app screens, or a lesson (spec
 // 2026-09-25) that teaches one thing about the hexagram in two halves.

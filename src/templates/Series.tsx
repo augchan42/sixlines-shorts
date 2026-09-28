@@ -23,6 +23,8 @@ export const seriesFrames = (p: Pick<SeriesProps, "bpm" | "firstBeat" | "drop" |
 
 // How far a character lesson's drawing moves down to clear room for its sentence above it (the demo's value).
 const CHARACTER_DROP = 260;
+// The music fades over the end card's last 2 beats and the 3 it is held after them.
+const FADE_BEATS = 5;
 
 const Badge: React.FC<{ n: number }> = ({ n }) => (
   <AbsoluteFill style={{ padding: "240px 70px 0", pointerEvents: "none" }}>
@@ -63,7 +65,7 @@ export const Series: React.FC<SeriesProps> = (props) => {
     <GridContext.Provider value={grid}>
       <AbsoluteFill style={{ backgroundColor: "#000" }}>
         <FxDefs />
-        <Soundtrack src={props.music} start={props.musicStart} fadeFrom={f(s.end - 2)} />
+        <Soundtrack src={props.music} start={props.musicStart} fadeFrom={f(s.end - FADE_BEATS)} />
         <Camera
           cuts={cuts}
           motion={motion.motion}
@@ -151,7 +153,8 @@ export const Series: React.FC<SeriesProps> = (props) => {
               </Sequence>
             </>
           )}
-          <Sequence {...span(s.cta, s.credit)}>
+          {/* Without the credit the card runs on through the held tail. */}
+          <Sequence {...span(s.cta, props.credit ? s.credit : s.end)}>
             <EndCard3D clip={props.endcard.clip} rate={props.endcard.rate} />
           </Sequence>
           {props.credit && (

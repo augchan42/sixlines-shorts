@@ -11,6 +11,7 @@ do them all in one shot (if we are going to do it)". Nothing here is decided; ea
 | 5 | The log rows: bars and columns were misaligned (the pixel font has no ━ or ◄, so they fell back to another font, and its letters differ in width); now fixed columns with the bars drawn as boxes | the user: "the yin lines are a bit longer than the yang lines" | the 35 readouts, the lesson (code done 2026-09-27) |
 | 6 | The lesson's question was dim green under a full glow and looked blurry; now full strength with a light glow | the user: "is there a reason why the question is a bit blurry" (MU/TH/UR doesn't dim the question) | the lesson (code done) |
 | 7 | Cyan, very sparingly: only the "> " prompt of the lesson's questions; amber stays the line to look at | the user: "strategic use of amber and cyan VERY sparingly in the ui HUD" | the lesson (code done); none in the readouts unless the user wants it |
+| 8 | The end card holds 3 beats more and the music fades over 5 beats, not 2 (code done 2026-09-28; 35 rendered as the sample) | the user, on 35: "could last a bit longer so the music fades more naturally"; on the lesson: "the end credit ends too abruptly" | every short, about 2 s longer each (still under the 38 s limit, which counted the old credit's 3 beats) |
 | 4 | 14's WANG BI line reads "RULER OF GREAT POSSESSION"; the others say MASTER | one word for 主 across the screens (critic, lesson round 2) | 14 |
 
 ## Why Wang Bi leaves out lines 1 and 6 (辯位)
