@@ -1,0 +1,1874 @@
+{
+ "100000": {
+  "number": 24,
+  "zh": "復",
+  "pinyin": "Fù",
+  "name": "RETURN",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "100001": {
+  "number": 27,
+  "zh": "頤",
+  "pinyin": "Yí",
+  "name": "NOURISHMENT",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": [
+   {
+    "line": 6,
+    "zh": "為養之主",
+    "en": "Master of Nourishment"
+   }
+  ]
+ },
+ "100010": {
+  "number": 3,
+  "zh": "屯",
+  "pinyin": "Zhūn",
+  "name": "DIFFICULTY AT THE BEGINNING",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": []
+ },
+ "100011": {
+  "number": 42,
+  "zh": "益",
+  "pinyin": "Yì",
+  "name": "INCREASE",
+  "lines": [
+   1,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為益之主",
+    "en": "Master of Increase"
+   }
+  ]
+ },
+ "100100": {
+  "number": 51,
+  "zh": "震",
+  "pinyin": "Zhèn",
+  "name": "THE AROUSING",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "100101": {
+  "number": 21,
+  "zh": "噬嗑",
+  "pinyin": "Shì Kè",
+  "name": "BITING THROUGH",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "必有其主，五則是也",
+    "en": "Line 5, master of Biting Through"
+   }
+  ]
+ },
+ "100110": {
+  "number": 17,
+  "zh": "隨",
+  "pinyin": "Suí",
+  "name": "FOLLOWING",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "100111": {
+  "number": 25,
+  "zh": "无妄",
+  "pinyin": "Wú Wàng",
+  "name": "INNOCENCE",
+  "lines": [
+   1,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為无妄之主",
+    "en": "Master of No Falseness"
+   }
+  ]
+ },
+ "101000": {
+  "number": 36,
+  "zh": "明夷",
+  "pinyin": "Míng Yí",
+  "name": "DARKENING OF THE LIGHT",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": [
+   {
+    "line": 6,
+    "zh": "明夷之主，在於上六",
+    "en": "Line 6, master of Darkening of the Light"
+   }
+  ]
+ },
+ "101001": {
+  "number": 22,
+  "zh": "賁",
+  "pinyin": "Bì",
+  "name": "GRACE",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為飾之主",
+    "en": "Master of adornment"
+   }
+  ]
+ },
+ "101010": {
+  "number": 63,
+  "zh": "既濟",
+  "pinyin": "Jì Jì",
+  "name": "AFTER COMPLETION",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": []
+ },
+ "101011": {
+  "number": 37,
+  "zh": "家人",
+  "pinyin": "Jiā Rén",
+  "name": "THE FAMILY",
+  "lines": [
+   1,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": []
+ },
+ "101100": {
+  "number": 55,
+  "zh": "豐",
+  "pinyin": "Fēng",
+  "name": "ABUNDANCE",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "101101": {
+  "number": 30,
+  "zh": "離",
+  "pinyin": "Lí",
+  "name": "CLINGING FIRE",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": []
+ },
+ "101110": {
+  "number": 49,
+  "zh": "革",
+  "pinyin": "Gé",
+  "name": "REVOLUTION",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "101111": {
+  "number": 13,
+  "zh": "同人",
+  "pinyin": "Tóng Rén",
+  "name": "FELLOWSHIP",
+  "lines": [
+   1,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": [
+   {
+    "line": 2,
+    "zh": "二為同人之主",
+    "en": "Line two, master of Fellowship"
+   }
+  ]
+ },
+ "110000": {
+  "number": 19,
+  "zh": "臨",
+  "pinyin": "Lín",
+  "name": "APPROACH",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "110001": {
+  "number": 41,
+  "zh": "損",
+  "pinyin": "Sǔn",
+  "name": "DECREASE",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": []
+ },
+ "110010": {
+  "number": 60,
+  "zh": "節",
+  "pinyin": "Jié",
+  "name": "LIMITATION",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為節之主",
+    "en": "Master of Limitation"
+   }
+  ]
+ },
+ "110011": {
+  "number": 61,
+  "zh": "中孚",
+  "pinyin": "Zhōng Fú",
+  "name": "INNER TRUTH",
+  "lines": [
+   1,
+   1,
+   0,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": []
+ },
+ "110100": {
+  "number": 54,
+  "zh": "歸妹",
+  "pinyin": "Guī Mèi",
+  "name": "THE MARRYING MAIDEN",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "110101": {
+  "number": 38,
+  "zh": "睽",
+  "pinyin": "Kuí",
+  "name": "OPPOSITION",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": []
+ },
+ "110110": {
+  "number": 58,
+  "zh": "兌",
+  "pinyin": "Duì",
+  "name": "THE JOYOUS",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "110111": {
+  "number": 10,
+  "zh": "履",
+  "pinyin": "Lǚ",
+  "name": "TREADING",
+  "lines": [
+   1,
+   1,
+   0,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": [
+   {
+    "line": 3,
+    "zh": "三為履主",
+    "en": "Line 3, master of Treading"
+   }
+  ]
+ },
+ "111000": {
+  "number": 11,
+  "zh": "泰",
+  "pinyin": "Tài",
+  "name": "PEACE",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "111001": {
+  "number": 26,
+  "zh": "大畜",
+  "pinyin": "Dà Chù",
+  "name": "GREAT ACCUMULATION",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為畜之主",
+    "en": "Master of Accumulation"
+   }
+  ]
+ },
+ "111010": {
+  "number": 5,
+  "zh": "需",
+  "pinyin": "Xū",
+  "name": "WAITING",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": []
+ },
+ "111011": {
+  "number": 9,
+  "zh": "小畜",
+  "pinyin": "Xiǎo Chù",
+  "name": "SMALL TAMING",
+  "lines": [
+   1,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": []
+ },
+ "111100": {
+  "number": 34,
+  "zh": "大壯",
+  "pinyin": "Dà Zhuàng",
+  "name": "GREAT POWER",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "111101": {
+  "number": 14,
+  "zh": "大有",
+  "pinyin": "Dà Yǒu",
+  "name": "GREAT POSSESSION",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為大有之主",
+    "en": "Ruler of Great Possession"
+   }
+  ]
+ },
+ "111110": {
+  "number": 43,
+  "zh": "夬",
+  "pinyin": "Guài",
+  "name": "BREAKTHROUGH",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "五為夬主",
+    "en": "Line 5, master of Breakthrough"
+   }
+  ]
+ },
+ "111111": {
+  "number": 1,
+  "zh": "乾",
+  "pinyin": "Qián",
+  "name": "THE CREATIVE",
+  "lines": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": []
+ },
+ "000000": {
+  "number": 2,
+  "zh": "坤",
+  "pinyin": "Kūn",
+  "name": "THE RECEPTIVE",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "010001": {
+  "number": 4,
+  "zh": "蒙",
+  "pinyin": "Méng",
+  "name": "YOUTHFUL FOLLY",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": []
+ },
+ "010111": {
+  "number": 6,
+  "zh": "訟",
+  "pinyin": "Sòng",
+  "name": "CONFLICT",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為訟之主",
+    "en": "Master of Conflict"
+   }
+  ]
+ },
+ "010000": {
+  "number": 7,
+  "zh": "師",
+  "pinyin": "Shī",
+  "name": "THE ARMY",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": [
+   {
+    "line": 2,
+    "zh": "為師之主",
+    "en": "Master of the army"
+   }
+  ]
+ },
+ "000010": {
+  "number": 8,
+  "zh": "比",
+  "pinyin": "Bǐ",
+  "name": "HOLDING TOGETHER",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為比之主",
+    "en": "Master of Holding Together"
+   }
+  ]
+ },
+ "000111": {
+  "number": 12,
+  "zh": "否",
+  "pinyin": "Pǐ",
+  "name": "STANDSTILL",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": []
+ },
+ "001000": {
+  "number": 15,
+  "zh": "謙",
+  "pinyin": "Qiān",
+  "name": "MODESTY",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "000100": {
+  "number": 16,
+  "zh": "豫",
+  "pinyin": "Yù",
+  "name": "ENTHUSIASM",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": [
+   {
+    "line": 4,
+    "zh": "四以剛動，為豫之主",
+    "en": "Line four, master of Enthusiasm"
+   }
+  ]
+ },
+ "011001": {
+  "number": 18,
+  "zh": "蠱",
+  "pinyin": "Gǔ",
+  "name": "WORK ON THE DECAYED",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": []
+ },
+ "000011": {
+  "number": 20,
+  "zh": "觀",
+  "pinyin": "Guān",
+  "name": "CONTEMPLATION",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為觀之主",
+    "en": "Master of Contemplation"
+   }
+  ]
+ },
+ "000001": {
+  "number": 23,
+  "zh": "剝",
+  "pinyin": "Bō",
+  "name": "SPLITTING APART",
+  "lines": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為剝之主",
+    "en": "Master of Splitting Apart"
+   }
+  ]
+ },
+ "011110": {
+  "number": 28,
+  "zh": "大過",
+  "pinyin": "Dà Guò",
+  "name": "GREATNESS IN EXCESS",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "010010": {
+  "number": 29,
+  "zh": "坎",
+  "pinyin": "Kǎn",
+  "name": "THE ABYSS",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為坎之主",
+    "en": "Master of The Abyss"
+   }
+  ]
+ },
+ "001110": {
+  "number": 31,
+  "zh": "咸",
+  "pinyin": "Xián",
+  "name": "INFLUENCE",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "011100": {
+  "number": 32,
+  "zh": "恆",
+  "pinyin": "Héng",
+  "name": "DURATION",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為恒之主",
+    "en": "Master of Duration"
+   }
+  ]
+ },
+ "001111": {
+  "number": 33,
+  "zh": "遯",
+  "pinyin": "Dùn",
+  "name": "RETREAT",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": [
+   {
+    "line": 2,
+    "zh": "為遯之主",
+    "en": "Master of Retreat"
+   }
+  ]
+ },
+ "000101": {
+  "number": 35,
+  "zh": "晉",
+  "pinyin": "Jìn",
+  "name": "PROGRESS",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": []
+ },
+ "001010": {
+  "number": 39,
+  "zh": "蹇",
+  "pinyin": "Jiǎn",
+  "name": "OBSTRUCTION",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": []
+ },
+ "010100": {
+  "number": 40,
+  "zh": "解",
+  "pinyin": "Xiè",
+  "name": "DELIVERANCE",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "011111": {
+  "number": 44,
+  "zh": "姤",
+  "pinyin": "Gòu",
+  "name": "COMING TO MEET",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "qian",
+   "zh": "乾",
+   "name": "HEAVEN",
+   "does": "STRONG"
+  },
+  "masters": []
+ },
+ "000110": {
+  "number": 45,
+  "zh": "萃",
+  "pinyin": "Cuì",
+  "name": "GATHERING TOGETHER",
+  "lines": [
+   0,
+   0,
+   0,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "以剛為主，主剛而履中",
+    "en": "Line 5, master of Gathering Together"
+   }
+  ]
+ },
+ "011000": {
+  "number": 46,
+  "zh": "升",
+  "pinyin": "Shēng",
+  "name": "PUSHING UPWARD",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "kun",
+   "zh": "坤",
+   "name": "EARTH",
+   "does": "YIELDING"
+  },
+  "masters": []
+ },
+ "010110": {
+  "number": 47,
+  "zh": "困",
+  "pinyin": "Kùn",
+  "name": "OPPRESSION",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "dui",
+   "zh": "兌",
+   "name": "LAKE",
+   "does": "JOYFUL"
+  },
+  "masters": []
+ },
+ "011010": {
+  "number": 48,
+  "zh": "井",
+  "pinyin": "Jǐng",
+  "name": "THE WELL",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   0
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "masters": []
+ },
+ "011101": {
+  "number": 50,
+  "zh": "鼎",
+  "pinyin": "Dǐng",
+  "name": "THE CALDRON",
+  "lines": [
+   0,
+   1,
+   1,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": []
+ },
+ "001001": {
+  "number": 52,
+  "zh": "艮",
+  "pinyin": "Gèn",
+  "name": "KEEPING STILL",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "masters": []
+ },
+ "001011": {
+  "number": 53,
+  "zh": "漸",
+  "pinyin": "Jiàn",
+  "name": "DEVELOPMENT",
+  "lines": [
+   0,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": []
+ },
+ "001101": {
+  "number": 56,
+  "zh": "旅",
+  "pinyin": "Lǚ",
+  "name": "THE WANDERER",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": []
+ },
+ "011011": {
+  "number": 57,
+  "zh": "巽",
+  "pinyin": "Xùn",
+  "name": "THE GENTLE",
+  "lines": [
+   0,
+   1,
+   1,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": []
+ },
+ "010011": {
+  "number": 59,
+  "zh": "渙",
+  "pinyin": "Huàn",
+  "name": "DISPERSION",
+  "lines": [
+   0,
+   1,
+   0,
+   0,
+   1,
+   1
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "xun",
+   "zh": "巽",
+   "name": "WIND",
+   "does": "ENTERING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為渙之主",
+    "en": "Master of Dispersion"
+   }
+  ]
+ },
+ "001100": {
+  "number": 62,
+  "zh": "小過",
+  "pinyin": "Xiǎo Guò",
+  "name": "PREPONDERANCE OF THE SMALL",
+  "lines": [
+   0,
+   0,
+   1,
+   1,
+   0,
+   0
+  ],
+  "lower": {
+   "key": "gen",
+   "zh": "艮",
+   "name": "MOUNTAIN",
+   "does": "STILL"
+  },
+  "upper": {
+   "key": "zhen",
+   "zh": "震",
+   "name": "THUNDER",
+   "does": "MOVING"
+  },
+  "masters": []
+ },
+ "010101": {
+  "number": 64,
+  "zh": "未濟",
+  "pinyin": "Wèi Jì",
+  "name": "BEFORE COMPLETION",
+  "lines": [
+   0,
+   1,
+   0,
+   1,
+   0,
+   1
+  ],
+  "lower": {
+   "key": "kan",
+   "zh": "坎",
+   "name": "WATER",
+   "does": "SINKING"
+  },
+  "upper": {
+   "key": "li",
+   "zh": "離",
+   "name": "FIRE",
+   "does": "CLINGING"
+  },
+  "masters": [
+   {
+    "line": 5,
+    "zh": "為未濟之主",
+    "en": "Master of Before Completion"
+   }
+  ]
+ }
+}

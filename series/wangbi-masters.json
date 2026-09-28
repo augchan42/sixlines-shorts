@@ -1,0 +1,429 @@
+{
+ "about": "The line Wang Bi (周易注) names master (主) of each hexagram, read by hand. `line` is the master line; `where` is the note the phrase stands in; masters: [] means he names none. Sources: chinese-classics-reference zhouyi-zhushu and 8bitoracle-next wangBiZhu.ts; candidates from series/wangbi.json.",
+ "hexagrams": {
+  "1": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 01-qian.json; 主 only in the Wenyan note on King Wen — no master named"
+  },
+  "2": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 02-kun.json; 二主必危 and L3's 不為事主 — not a hexagram master"
+  },
+  "3": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 03-zhun.json; 得主則定 and L1's 民思其主 are a ruler the people seek — no line named"
+  },
+  "4": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 04-meng.json; Judgment note 二為眾陰之主: L2 master of the yin lines, not named master of Meng"
+  },
+  "5": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 05-xu.json; L6 以一陰而為三陽之主 is host to the three yang lines, not master of Xu"
+  },
+  "6": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為訟之主",
+     "en": "Master of Conflict",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 06-song.json; Judgment note's 善聽之主 (L2) is a hearer, not master of Song"
+  },
+  "7": {
+   "masters": [
+    {
+     "line": 2,
+     "zh": "為師之主",
+     "en": "Master of the army",
+     "where": "note on line 2"
+    }
+   ],
+   "checked": "Wang Bi lesson"
+  },
+  "8": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為比之主",
+     "en": "Master of Holding Together",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 08-bi.json"
+  },
+  "9": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 09-xiaoxu.json"
+  },
+  "10": {
+   "masters": [
+    {
+     "line": 3,
+     "zh": "三為履主",
+     "en": "Line 3, master of Treading",
+     "where": "note on the Judgment"
+    }
+   ],
+   "checked": "chinese-classics-reference: 10-lv.json"
+  },
+  "11": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 11-tai.json"
+  },
+  "12": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 12-pi.json"
+  },
+  "13": {
+   "masters": [
+    {
+     "line": 2,
+     "zh": "二為同人之主",
+     "en": "Line two, master of Fellowship",
+     "where": "note on the Judgment"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "14": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為大有之主",
+     "en": "Ruler of Great Possession",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "15": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 15-qian2.json"
+  },
+  "16": {
+   "masters": [
+    {
+     "line": 4,
+     "zh": "四以剛動，為豫之主",
+     "en": "Line four, master of Enthusiasm",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "17": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 17-sui.json; L1's 意无所主 is 'no fixed intent'"
+  },
+  "18": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 18-gu.json"
+  },
+  "19": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 19-lin.json"
+  },
+  "20": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為觀之主",
+     "en": "Master of Contemplation",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "21": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "必有其主，五則是也",
+     "en": "Line 5, master of Biting Through",
+     "where": "note on the Judgment"
+    }
+   ],
+   "checked": "chinese-classics-reference: 21-shihe.json; L4's 為陰之主 is not master of Shihe"
+  },
+  "22": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為飾之主",
+     "en": "Master of adornment",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "Wang Bi lesson"
+  },
+  "23": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為剝之主",
+     "en": "Master of Splitting Apart",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 23-bo.json"
+  },
+  "24": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 24-fu.json"
+  },
+  "25": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為无妄之主",
+     "en": "Master of No Falseness",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "26": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為畜之主",
+     "en": "Master of Accumulation",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "27": {
+   "masters": [
+    {
+     "line": 6,
+     "zh": "為養之主",
+     "en": "Master of Nourishment",
+     "where": "note on line 6"
+    }
+   ],
+   "checked": "chinese-classics-reference: 27-yi.json"
+  },
+  "28": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 28-daguo.json"
+  },
+  "29": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為坎之主",
+     "en": "Master of The Abyss",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 29-kan.json"
+  },
+  "30": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 30-li.json; Judgment note 以柔順為主 names a quality, softness, not a line"
+  },
+  "31": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 31-xian.json"
+  },
+  "32": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為恒之主",
+     "en": "Master of Duration",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 32-heng.json"
+  },
+  "33": {
+   "masters": [
+    {
+     "line": 2,
+     "zh": "為遯之主",
+     "en": "Master of Retreat",
+     "where": "note on line 2"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "34": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 34-dazhuang.json"
+  },
+  "35": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 35-jin.json; L5's 陰為明主 is 'a bright ruler', not named master of Jin"
+  },
+  "36": {
+   "masters": [
+    {
+     "line": 6,
+     "zh": "明夷之主，在於上六",
+     "en": "Line 6, master of Darkening of the Light",
+     "where": "note on line 1"
+    }
+   ],
+   "checked": "chinese-classics-reference: 36-mingyi.json; L3's 去闇主 is the dark ruler removed"
+  },
+  "37": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 37-jiaren.json"
+  },
+  "38": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 38-kui.json; L2's 遇主於巷 meets its lord, L5 — not a hexagram master"
+  },
+  "39": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 39-jian.json; L3 為下卦之主 is master of the lower trigram only"
+  },
+  "40": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 40-xie.json"
+  },
+  "41": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 41-sun.json; L3's 內无其主 — not a hexagram master"
+  },
+  "42": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為益之主",
+     "en": "Master of Increase",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 42-yi2.json; L2's 生物之主 is the Supreme Deity; L3's 國主 is a state's ruler"
+  },
+  "43": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "五為夬主",
+     "en": "Line 5, master of Breakthrough",
+     "where": "note on line 4"
+    }
+   ],
+   "checked": "chinese-classics-reference: 43-guai.json"
+  },
+  "44": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 44-gou.json; L1's 制動之主 is L4 as the brake, not master of Gou"
+  },
+  "45": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "以剛為主，主剛而履中",
+     "en": "Line 5, master of Gathering Together",
+     "where": "note on the Judgment"
+    }
+   ],
+   "checked": "chinese-classics-reference: 45-cui.json; the firm central line is L5"
+  },
+  "46": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 46-sheng.json; L6 warns against 為物之主"
+  },
+  "47": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 47-kun2.json"
+  },
+  "48": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 48-jing.json"
+  },
+  "49": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 49-ge.json"
+  },
+  "50": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 50-ding.json; L1's 室主 is the mistress of the house"
+  },
+  "51": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 51-zhen.json; L4 為眾陰之主 is master of the yin lines, not named master of Zhen"
+  },
+  "52": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 52-gen.json; L3's 體分兩主 — no master"
+  },
+  "53": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 53-jian2.json"
+  },
+  "54": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 54-guimei.json; L3's 室主 is the mistress of the house"
+  },
+  "55": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 55-feng.json; Judgment note 為天下之主 is the king; no line named"
+  },
+  "56": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 56-lv2.json; 物失其主 and L3's 主之所疑 — no master named"
+  },
+  "57": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 57-xun.json"
+  },
+  "58": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 58-dui.json"
+  },
+  "59": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為渙之主",
+     "en": "Master of Dispersion",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "60": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為節之主",
+     "en": "Master of Limitation",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "shorts readout"
+  },
+  "61": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 61-zhongfu.json; L5's 為群物之主 is ruler of all things, not named master of Zhongfu"
+  },
+  "62": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 62-xiaoguo.json; L4's 不為貴主 says it is not the master"
+  },
+  "63": {
+   "masters": [],
+   "checked": "chinese-classics-reference: 63-jiji.json"
+  },
+  "64": {
+   "masters": [
+    {
+     "line": 5,
+     "zh": "為未濟之主",
+     "en": "Master of Before Completion",
+     "where": "note on line 5"
+    }
+   ],
+   "checked": "chinese-classics-reference: 64-weiji.json"
+  }
+ }
+}
