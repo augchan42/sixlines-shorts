@@ -1,0 +1,35 @@
+<!-- godot/wangbi-terminal/shell.html: Godot's web shell, with the engine loaded only after START. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Wang Bi Terminal</title>
+<style>
+html, body { margin: 0; height: 100%; background: #000; color: #7dff8a; font: 700 20px monospace; }
+#canvas { display: none; width: 100%; height: 100%; }
+#start { position: fixed; inset: 0; display: grid; place-items: center; text-align: center; }
+#start button { background: none; border: 2px solid #7dff8a; color: #5ee7ff; font: inherit; padding: 16px 32px; cursor: pointer; }
+#start p { color: rgba(125,255,138,0.45); font-size: 14px; }
+</style>
+$GODOT_HEAD_INCLUDE
+</head>
+<body>
+<canvas id="canvas"></canvas>
+<div id="start"><div><button id="go">START</button><p id="note">TAP A LINE TO CHANGE IT. LOADS ABOUT 10 MB.</p></div></div>
+<script src="$GODOT_URL"></script>
+<script>
+const engine = new Engine($GODOT_CONFIG);
+document.getElementById('go').addEventListener('click', () => {
+  const missing = Engine.getMissingFeatures({ threads: false });
+  if (missing.length) {
+    document.getElementById('note').textContent = missing.join(', ');
+    return;
+  }
+  document.getElementById('note').textContent = 'LOADING…';
+  document.getElementById('canvas').style.display = 'block';
+  engine.startGame().then(() => document.getElementById('start').remove());
+});
+</script>
+</body>
+</html>
