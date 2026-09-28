@@ -1,0 +1,63 @@
+{
+ "hexagram": 2,
+ "occasion": "The user, 2026-09-28: 'Please create a lovely short neon style with the character for horse, Ma.' 馬 is the image in 2 The Receptive's Judgment (牝馬之貞, the mare's steadiness; the Tuan: 牝馬地類，行地無疆, the mare is of the earth and travels it without end), and 2026 is a 丙午 (fire horse) year. The series short 2's copy, with its lesson replaced by 馬 in neon: the horse stands far off, walks toward you in four steps, then lies down as the character (旅's march). The first leg dot is drawn first: standing strokes pivot on the first stroke's foot, and with the top stroke first most of 馬 stood under the floor (first render, 2026-09-28).",
+ "copy": {
+  "hook": {
+   "text": "Tired of always having to lead?",
+   "source": "commentary/en/2.json#judgment.synthesis"
+  },
+  "meaning": [
+   {
+    "text": "The Receptive\nsays: follow well.",
+    "source": "commentary/en/2.json#judgment.synthesis"
+   },
+   {
+    "text": "Supporting is its\nown strength.",
+    "source": "commentary/en/2.json#image.synthesis"
+   }
+  ],
+  "question": {
+   "text": "Who could\nyou back?",
+   "source": "written"
+  },
+  "plates": [
+   "2-57",
+   "2-32"
+  ],
+  "caption": {
+   "text": "The Receptive’s old image is a mare, strong and at her best when she follows well. Backing someone is its own strength.",
+   "source": "commentary/en/2.json#judgment.synthesis"
+  },
+  "lesson": {
+   "kind": "character",
+   "text": "The mare follows\nand goes far.",
+   "source": "sixlines-content commentary/en/2.json#judgment.synthesis ('The mare covers more ground than the stallion. She just doesn't pick where.'); Tuan 行地無疆",
+   "character": {
+    "char": "馬",
+    "beats": 12,
+    "args": {
+     "order": [
+      6,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9
+     ],
+     "stand": true,
+     "lieStep": 0.4,
+     "march": 10,
+     "camera": "low",
+     "zoom": 1.8,
+     "edge": "#ff6a3d",
+     "water": "#5ee7ff"
+    }
+   }
+  },
+  "endcardRef": true
+ }
+}

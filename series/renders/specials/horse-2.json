@@ -1,0 +1,66 @@
+{
+ "hexagram": 2,
+ "special": "horse-2",
+ "rendered": "2026-09-28T09:31:11.398Z",
+ "commit": "47cf8d9cf346a212716281507dea757dcbbbd70e",
+ "clean": false,
+ "seconds": 34.752,
+ "shareKbps": 5166,
+ "props": {
+  "hexagram": {
+   "number": 2,
+   "zh": "坤",
+   "pinyin": "Kūn",
+   "name": "The Receptive",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "bpm": 90,
+  "firstBeat": 0.049,
+  "music": "local/music/pick04-analog-dreams-synthwave.mp3",
+  "musicStart": 0,
+  "drop": 8.05,
+  "hook": "Tired of always having to lead?",
+  "meaning": [
+   "The Receptive\nsays: follow well.",
+   "Supporting is its\nown strength."
+  ],
+  "question": "Who could\nyou back?",
+  "plates": [
+   "assets/yilin/stipple-2-57.webp",
+   "assets/yilin/stipple-2-32.webp"
+  ],
+  "screens": [],
+  "lesson": {
+   "kind": "character",
+   "text": "The mare follows\nand goes far.",
+   "beats": 16,
+   "clip": "assets/3d/character-2-90bpm-16b-1f9n52t.mp4"
+  },
+  "pace": "even",
+  "credit": false,
+  "hexagramClip": "assets/3d/hexagram-000000-90bpm-8b.mp4",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-000000-9b-ref.mp4",
+   "mode": "join",
+   "rate": 0.75
+  }
+ },
+ "files": {
+  "local/music/pick04-analog-dreams-synthwave.mp3": "68420324940c2da12a1255ead2d5cdb42e6a341f63a5f465f9a4e548d6eb07eb",
+  "local/music/certificates/synthwave-analog-dreams-synthwave-9497-license.txt": "f665c7bfb3bf7190f428ab80c46f0174ae769c4542d8787b299225ab1ff12750",
+  "assets/3d/hexagram-000000-90bpm-8b.mp4": "996da8f5ddb7af8923c2ebe3ad06ef5425b44e2be8c22ea1f2dd6881127600a5",
+  "assets/3d/endcard-join-000000-9b-ref.mp4": "9577f655217566ebf4f01159b6a8ab20919f1c441896d6743600f787c93da155",
+  "assets/3d/character-2-90bpm-16b-1f9n52t.mp4": "fecbf6052d603422b048be7d7dc2da05084c8e26b5fcd2b450a7c2a8403fdf58",
+  "assets/yilin/stipple-2-57.webp": "076581bfd3a780cfc92f6630bab1ebd3264035ed5df069e0862f3ea689c45d81",
+  "assets/yilin/stipple-2-32.webp": "e9d8fc07b3a0b76bdb1e70056f9c9386c74137c12c6c9f189a53757c3af66a77",
+  "out/specials/horse-2/short.mp4": "7d1de2295cf89b5fc4de0209a6675915b58e67155ac7fc2b68f1592dbb1a8233",
+  "out/specials/horse-2/share.mp4": "71e09bc2e77bfb41f5a68358b15d09f52ceba54424be22bedf08f9b0229a1c1b"
+ }
+}
