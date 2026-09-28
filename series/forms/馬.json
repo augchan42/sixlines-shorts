@@ -1,0 +1,33 @@
+{
+ "char": "馬",
+ "about": "馬 through its scripts, a sample for the user, 2026-09-28: 'Sure do 1' (a character through its scripts: bone, bronze, seal, then the kaishu, each redrawn in neon from the one before). The older forms are public-domain SVGs of Wikimedia Commons' Ancient Chinese Characters Project; the kaishu is Make Me a Hanzi's. Labels say 'carved on bone', never the word the copy rules ban.",
+ "bpm": 90,
+ "per": 4,
+ "hold": 6,
+ "edge": "#ff6a3d",
+ "forms": [
+  {
+   "key": "bone",
+   "label": "SHANG, C. 1200 BC\nCARVED ON BONE",
+   "commons": "File:馬-oracle.svg (馬-oracle-shang, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/5/50/%E9%A6%AC-oracle.svg"
+  },
+  {
+   "key": "bronze",
+   "label": "ZHOU, C. 1000 BC\nCAST IN BRONZE",
+   "commons": "File:馬-bronze.svg (馬-bronze-west, Western Zhou, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/1/18/%E9%A6%AC-bronze.svg"
+  },
+  {
+   "key": "seal",
+   "label": "QIN, 221 BC\nSEAL SCRIPT",
+   "commons": "File:馬-seal.svg (Shuowen small seal, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/3/3a/%E9%A6%AC-seal.svg"
+  },
+  {
+   "key": "kaishu",
+   "label": "LATE HAN TO TODAY\nREGULAR SCRIPT",
+   "hanzi": true
+  }
+ ]
+}
