@@ -1,10 +1,10 @@
 {
  "hexagram": 37,
- "rendered": "2026-09-27T17:28:58.024Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-28T01:31:33.626Z",
+ "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 33.045333,
+ "shareKbps": 5440,
  "props": {
   "hexagram": {
    "number": 37,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Home in order,\nthe rest follows.",
+   "text": "Order at home\nstarts with you.",
    "trigrams": [
     {
      "zh": "風",
@@ -51,11 +51,12 @@
    ],
    "readout": {
     "mark": [
-     1,
-     4
+     5
     ],
-    "finding": "2 AND 5 ANSWER, BOTH IN PLACE."
-   }
+    "finding": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
+    "timed": true
+   },
+   "beats": 19
   },
   "pace": "even",
   "credit": false,
@@ -73,7 +74,7 @@
   "assets/3d/endcard-snap-101011-9b-ref.mp4": "51209d400ef95cb0f35cda7124691ea140248b2819f2608392891bc28562af09",
   "assets/yilin/stipple-37-41.webp": "e3ab8349022d9f91b42a8da5f6a467c7eafe199f0476701e4501873766a9adf8",
   "assets/yilin/stipple-37-57.webp": "75b07548c1e5fb786cae1e3ea118e7a70a8649996f59d0360b22101d7ebf4429",
-  "out/series/37-jia-ren/short.mp4": "313892a7fe67112b1a56380b65daff1311dedb5555f5d602e26a29abdbaf7ca8",
-  "out/series/37-jia-ren/share.mp4": "21c646d9ee6eab45c6cb48ce51d2797e1255cb87c758360a865f441876e4cfd0"
+  "out/series/37-jia-ren/short.mp4": "9138e4b37da7148f769c5dfba24c38cb71d70590857d7c4fa688d87150c09dc4",
+  "out/series/37-jia-ren/share.mp4": "9a2f1f87bae94f03f269f40b0e7ad61d702b42d3bbb2c5c172813566dd594dbc"
  }
 }

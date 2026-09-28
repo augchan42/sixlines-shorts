@@ -1,10 +1,10 @@
 {
  "hexagram": 38,
- "rendered": "2026-09-27T17:34:22.534Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-28T01:33:01.457Z",
+ "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 33.045333,
+ "shareKbps": 5440,
  "props": {
   "hexagram": {
    "number": 38,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Apart, but still\nanswering.",
+   "text": "Lower your guard.\nThey may be an ally.",
    "trigrams": [
     {
      "zh": "火",
@@ -51,13 +51,12 @@
    ],
    "readout": {
     "mark": [
-     1,
-     2,
-     4,
      5
     ],
-    "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER."
-   }
+    "finding": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
+    "timed": true
+   },
+   "beats": 19
   },
   "pace": "even",
   "credit": false,
@@ -75,7 +74,7 @@
   "assets/3d/endcard-flip-110101-9b-ref.mp4": "fc6d0362a838e45a6f27f4233bfb2e7aa418361c70a826d57457accda42d6695",
   "assets/yilin/stipple-38-17.webp": "c8ac0e3f8863005170e40f19b48e973cec93fc7c6541632c923aaa4fa8de20c9",
   "assets/yilin/stipple-38-44.webp": "816dde2ace1b736b153475253b802b066c3ecc0a9e84191773f3a214eecbc5fc",
-  "out/series/38-kui/short.mp4": "89d6c4022cea87c4a0a7254394f774d915a6ed9bba51f41068a7e28152799060",
-  "out/series/38-kui/share.mp4": "f599de4af20522ab3b16b0554c36de762e5bc18d6e62d2ea070e175c4ff76f78"
+  "out/series/38-kui/short.mp4": "b10eb0a2491cf70ef9f6c86454e8e054cfbd6eb5cbf064bb078912d9772e5eec",
+  "out/series/38-kui/share.mp4": "28857041667d16ed5b338777d1161f9340fc47ae788b36403c299c7b650ba875"
  }
 }

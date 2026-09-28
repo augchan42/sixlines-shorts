@@ -1,10 +1,10 @@
 {
  "hexagram": 9,
- "rendered": "2026-09-27T15:38:25.948Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-28T01:28:35.359Z",
+ "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 33.045333,
+ "shareKbps": 5440,
  "props": {
   "hexagram": {
    "number": 9,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Small can hold\nbig, for a while.",
+   "text": "Don’t force a start.\nUse the time to prepare.",
    "trigrams": [
     {
      "zh": "風",
@@ -51,10 +51,12 @@
    ],
    "readout": {
     "mark": [
-     3
+     0
     ],
-    "finding": "ONE YIELDING LINE HOLDS FIVE."
-   }
+    "finding": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+    "timed": true
+   },
+   "beats": 19
   },
   "pace": "even",
   "credit": false,
@@ -72,7 +74,7 @@
   "assets/3d/endcard-snap-111011-9b-ref.mp4": "aec575d05a158a19e7335ca1e1f272479f4283598061973d756b25d6a2cd2ade",
   "assets/yilin/stipple-9-40.webp": "0c3e7f9ab23871a6196b03c8b532ef462c06dcc5b9cd5f39d5c38d4a32cb082a",
   "assets/yilin/stipple-9-47.webp": "0b671ebe587c5ce56c7359c91602094123ab1d669c557688fe9d7e86a7340784",
-  "out/series/09-xiao-chu/short.mp4": "edfa7a92283f213e802ecd70ccbe13855bc660c776d473704710680939e679a0",
-  "out/series/09-xiao-chu/share.mp4": "83b8abb22d9e3f7e2ece5d4f2676c36aa215f6e7e2b0212673698e71b61a5af6"
+  "out/series/09-xiao-chu/short.mp4": "fdb1694bd501bdf9e52bc7c26e1e4a45501b502989d1434a7b94dbd8a6ec0bcb",
+  "out/series/09-xiao-chu/share.mp4": "fad4a7a6de06700ea15043b82d68fff8fde546595f6e75c13744a8696fa2c2c7"
  }
 }

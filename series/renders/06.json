@@ -1,10 +1,10 @@
 {
  "hexagram": 6,
- "rendered": "2026-09-27T10:57:22.589Z",
- "commit": "a75acdf43fca418b4757cc391488859daacb683e",
+ "rendered": "2026-09-28T01:27:06.884Z",
+ "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
  "clean": false,
- "seconds": 31.68,
- "shareKbps": 5680,
+ "seconds": 35.242667,
+ "shareKbps": 5092,
  "props": {
   "hexagram": {
    "number": 6,
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Take it to\na fair judge.",
+   "text": "Being right isn’t\nreason to fight on.",
    "trigrams": [
     {
      "zh": "天",
@@ -51,15 +51,12 @@
    ],
    "readout": {
     "mark": [
-     4
+     5
     ],
-    "finding": "HEAVEN RISES. WATER SINKS. APART.",
-    "master": {
-     "zh": "為訟之主",
-     "en": "Master of Conflict"
-    }
+    "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+    "timed": true
    },
-   "beats": 16
+   "beats": 19
   },
   "pace": "even",
   "credit": false,
@@ -77,7 +74,7 @@
   "assets/3d/endcard-flip-010111-9b-ref.mp4": "c7db1c20f36347cc4918e71ed1fe5cc2e440198709979a01a641f7cba1fc3cae",
   "assets/yilin/stipple-6-41.webp": "df591f0c1f471f6c007bc35f3a92b1c4daa48b0469eda3cd1220cc09e077f4ba",
   "assets/yilin/stipple-6-24.webp": "6727ae190f99ba272f86ec7ee5f380c8e470c91b46db4ffccf14b09c70d77903",
-  "out/series/06-song/short.mp4": "a25e33ea0bc0a68ce9fde7cd5ab41261bb22f5923af82fe21e07d02eef6fadcf",
-  "out/series/06-song/share.mp4": "a6c9078c70379c3bae9487a3598ed1a4fa69038c8510593597e55d26ef111372"
+  "out/series/06-song/short.mp4": "ee8575cbf22d736720074e460948ba6c8ca4868fa6367d0e3df286c7f864db6e",
+  "out/series/06-song/share.mp4": "4e66eaa2a3d1c5de75efee8c268ff1787394b930f98884ea8d678a811c68a677"
  }
 }
