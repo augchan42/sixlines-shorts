@@ -1,10 +1,10 @@
 {
  "hexagram": 35,
- "rendered": "2026-09-27T10:46:55.600Z",
- "commit": "a75acdf43fca418b4757cc391488859daacb683e",
+ "rendered": "2026-09-27T23:59:58.415Z",
+ "commit": "028db02d3fb72a000576ed262d16f95f22e776e3",
  "clean": false,
- "seconds": 31.317333,
- "shareKbps": 5747,
+ "seconds": 33.194667,
+ "shareKbps": 5415,
  "props": {
   "hexagram": {
    "number": 35,
@@ -72,7 +72,7 @@
   "assets/3d/endcard-flip-000101-9b-ref.mp4": "2bde7a018457f256209386577323594ecaebb60a1be228edf877e48e76cd1288",
   "assets/yilin/stipple-35-19.webp": "f2b6a9faf90bfef1fb195c72d85e833c6704325ede2a51d73606cf556be9c9b6",
   "assets/yilin/stipple-35-56.webp": "3066700d609b62af21917eb6986ee15f3eb77f9ebcab892e1569153cfb6d258f",
-  "out/series/35-jin/short.mp4": "8af39fdd2d501777b68075cf472ba15be52146d1b81aec3f72d1152d86a1da76",
-  "out/series/35-jin/share.mp4": "b8eb1278cb8b8c28df8e3c29ea683a9751dc39a2eca709a03565e383974aab9a"
+  "out/series/35-jin/short.mp4": "63c88ba3967904aa421f685bb07a5e080492cf523bed9bc1a221e1080ca1c42a",
+  "out/series/35-jin/share.mp4": "8237f347415e6ab3c6c310e177f44b2d92839700aba215f9820d0bc0139a0e54"
  }
 }
