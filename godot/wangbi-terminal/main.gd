@@ -74,6 +74,9 @@ func _ready() -> void:
 		lines = picked
 	show_lines(lines)
 	play("sweep")
+	if "--record" in args:
+		typing_speed = 60.0  # record mode only; the web terminal keeps 25 characters a second
+		record()
 
 func show_lines(l: Array) -> void:
 	lines = l
@@ -209,3 +212,16 @@ func _input(event: InputEvent) -> void:
 			toggle_bed()
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_6:
 			set_lines(Reading.flip(lines, event.keycode - KEY_0))
+
+# Record mode (-- --record): a fixed sequence for shorts, recorded by scripts/terminal-record.mjs.
+func record() -> void:
+	show_lines([1, 1, 1, 1, 1, 1])
+	for n in [1, 3, 4, 5, 6]:
+		await get_tree().create_timer(1.0).timeout
+		set_lines(Reading.flip(lines, n))
+	for step in [0, 2, 2]:
+		if step:
+			set_lines(Reading.flip(lines, step))
+		await reading_typed
+		await get_tree().create_timer(3.0).timeout
+	get_tree().quit()
