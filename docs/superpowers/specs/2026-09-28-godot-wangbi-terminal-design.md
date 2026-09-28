@@ -7,7 +7,7 @@ Status: 2026-09-28. The user answered the open questions (see Decisions); nothin
 A live version of the readout from the Wang Bi lesson. The viewer builds a hexagram by
 tapping its six lines (yang ↔ yin), and the terminal reads it the way the lesson does:
 each line's place, the two centres, which pairs answer, and the master line Wang Bi names.
-It runs in a browser at /terminal on sixlines.day and on the 8-Bit Oracle site. Screen recordings of it become shorts.
+It runs in a browser at /terminal on sixlines.day and on 8bitoracle.ai. Screen recordings of it become shorts.
 
 The user asked for it on 2026-09-28 ("plan out the spec for the godot terminal") after the
 Wang Bi lesson went out. It is the lesson turned into something a viewer can try.
@@ -104,9 +104,10 @@ The terminal reads structure. It does not answer questions about the viewer's li
 - Hosting: one export, served at `/terminal` on both sites. Both are other repos, and each
   deploy needs the user's approval.
   - sixlines.day: `sixlines-site` (Next.js on Vercel), files under `public/terminal/`.
-  - The 8-Bit Oracle site: `8bitoracle-next` (Next.js 16 on Vercel), files under `public/terminal/`.
-    Its pages sit under `[locale]`, so the route must be kept out of the locale middleware
-    (checked in the plan).
+  - 8bitoracle.ai: `8bitoracle-brand` (Next.js 16), files under `public/terminal/`. This is
+    the public site; `8bitoracle-next` is the app at app.8bitoracle.ai and could link to it.
+    If the brand site routes pages by locale, the route must be kept out of the locale
+    middleware (checked in the plan).
 - Sound: the Wang Bi lesson's machine sounds, made by the same ffmpeg recipes as
   `scripts/explainer.mjs` (`makeSfx` and the teletype tick). They are generated, so there is
   no licence to track, and like all media they stay out of git: a script writes them into
@@ -136,13 +137,13 @@ The terminal reads structure. It does not answer questions about the viewer's li
 5. Add input and the one slow turn. Review a recording.
 6. Move the sound recipes to `scripts/sfx.mjs`, add the sounds, and add the `--record` mode and one 30 s clip for a short.
 7. Make the web export and try it on a phone. After approval, add it to sixlines-site and
-   8bitoracle-next, one deploy each.
+   8bitoracle-brand, one deploy each.
 
 ## Decisions (the user, 2026-09-28)
 
 1. Godot, not a plain web page.
 2. Where Wang Bi names no master: `WANG BI NAMES NO MASTER HERE`, nothing more.
-3. A `/terminal` route on sixlines.day and on the 8-Bit Oracle site.
+3. A `/terminal` route on sixlines.day and on 8bitoracle.ai.
 4. Sound from our own library: the lesson's machine sounds.
 
 ## Other ways considered
