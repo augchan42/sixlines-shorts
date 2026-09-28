@@ -1,6 +1,6 @@
 # Wang Bi terminal in Godot: design
 
-Status: 2026-09-28. The user answered the open questions (see Decisions); nothing is built yet.
+Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md); nothing is built yet.
 
 ## What it is
 
@@ -32,37 +32,45 @@ The look is the lesson's readout (`src/scenes/Readout.tsx`, the MU/TH/UR termina
 
 Screen, top to bottom:
 
-1. The plot, with each line tappable.
-2. A line log, one row per line from the bottom:
-   `L1  YANG  --  (no place)`; `L2  YIN  CORRECT  CENTRE  ANSWERS L5`.
-3. The two trigrams, named with what they do (Shuo Gua ch. 7, as `DOES` in Readout.tsx):
-   `LOWER: WATER, SINKING`.
-4. The hexagram: number, name, Chinese with English beside it (`7 師 THE ARMY`).
-5. WANG BI: the master line and his words, Chinese with the English beside it
-   (`L2 為師之主 MASTER OF THE ARMY`). The master line turns amber.
-6. The prompt, in cyan: `TAP A LINE TO CHANGE IT`.
+1. The hexagram: number, Chinese, pinyin and English name (`7  師 SHĪ  THE ARMY`).
+2. The plot, with each line tappable. Taps are hit-tested against the lines as drawn,
+   including while the plot turns.
+3. A line log, one row per line, top line first:
+   `L1  YIN   NO FIXED PLACE`; `L2  YANG  NOT CORRECT  CENTRE  ANSWERS L5`.
+4. The two trigrams, named with what they do (Shuo Gua ch. 7, as `DOES` in Readout.tsx):
+   `LOWER  坎 WATER, SINKING`.
+5. WANG BI: each master line and his words, Chinese with the English beside it
+   (`L2  為師之主  Master of the army`). Master lines turn amber.
+6. The prompt, in cyan: `TAP A LINE TO CHANGE IT`. Beside it, in dim green, `SOUND OFF`/`SOUND ON`.
+
+Labels wrap at a fixed width; the longest title and a hexagram with two masters are
+checked in a still before anything else is built.
 
 ## The rules it applies
 
-These come from Wang Bi's outline (略例, the 辯位 and 明彖 chapters). The lesson states them
-already, and `series/explainers/wangbi-lesson.json` records the sources.
+The terminal shows the lesson's selected structural reading, drawn from Wang Bi's outline
+(略例). It is not all of his method. The lesson states these rules already, and
+`series/explainers/wangbi-lesson.json` records the sources.
 
-- Place: lines 2 and 4 are yin places; 3 and 5 are yang places. A line is CORRECT when
-  its kind matches its place. Lines 1 and 6 have no yin or yang place (辯位); the log
-  says so and marks them neither correct nor incorrect.
+- Place (辯位): lines 2 and 4 are yin places; 3 and 5 are yang places. A line is CORRECT
+  when its kind matches its place. Lines 1 and 6 have no fixed yin or yang place; the log
+  says `NO FIXED PLACE` and marks them neither correct nor incorrect.
 - Centre: lines 2 and 5 are the centres of their trigrams.
-- Answering (應): 1 with 4, 2 with 5, 3 with 6. A pair answers when one is yin and the
-  other yang.
+- Answering (應, discussed in 明卦適變通爻): 1 with 4, 2 with 5, 3 with 6. A pair answers
+  when one is yin and the other yang.
 - Master line: taken from Wang Bi's own notes, not computed, and checked by hand. The
   terminal reads one table, `series/wangbi-masters.json`: for each of the 64 hexagrams,
-  the master line or lines, or none, with his phrase (zh), an English gloss, and where it
-  is in his text.
+  the master line or lines, or none, with his phrase (zh), an English gloss, and where the
+  phrase is in his text. The master line and the note it is found in are recorded
+  separately: 16's master is line 4, named in the note on line 5.
   - `series/wangbi.json` (scripts/wangbi.mjs) is only the list of candidates. It matches
-    phrases with 主, and some matches are not masters: on 16 line 3, 承動豫之主 is "supports
-    the master" (the master is line 4); on 36 line 3, 去闇主 is "removing the dark ruler";
+    phrases with 主 and files each under the note it is in, and some matches are not
+    masters: on 16 line 3, 承動豫之主 is "supports the master" (the master is line 4); on
+    36 line 1 the note speaks of line 6; on 36 line 3, 去闇主 is "removing the dark ruler";
     on 42 line 2, 生物之主 is the Supreme Deity; on 46 line 6 he warns against being master.
-    It also misses masters he names in the note on the Judgment (10: 三為履主, "line three
-    is master of Treading"; 13: 二為同人之主).
+    It misses 10's master, named in the note on the Judgment (三為履主, "line three is
+    master of Treading"). 13's 二為同人之主 is in its Judgment field but was never
+    promoted to a line master.
   - The nine masters already checked for the shorts' readouts (`series/copy.json`, lesson
     readouts of 13, 14, 16, 20, 25, 26, 33, 59, 60) seed the table as they are.
   - Every other hexagram is read by hand in chinese-classics-reference, and each entry
@@ -87,27 +95,34 @@ The terminal reads structure. It does not answer questions about the viewer's li
 
 - Godot 4.7.2. It is installed at `/Applications/Godot.app` and runs headless. The export
   templates are not installed; they are needed for a web export (step 1 below).
-- Project: `godot/wangbi-terminal/` in this repo (scenes, GDScript, the font, a
-  `data/` folder).
+- Project: `godot/wangbi-terminal/` in this repo (scenes, GDScript, a `data/` folder).
+- Fonts: PixelOperator for Latin, with Noto Sans TC as the fallback, subset to every
+  non-ASCII character shown: Han, full-width punctuation such as `，`, and pinyin tone
+  marks. The subset build fails if Noto lacks a character.
 - Data: a build script, `scripts/terminal-data.mjs`, writes `godot/wangbi-terminal/data/hexagrams.json`
   from `series/hexagrams.json` (numbers, names, lines, trigrams) and
   `series/wangbi-masters.json` (the hand-checked masters). The terminal reads only that file.
-  A test checks that its 64
-  entries agree with the sources.
-- Rules: one GDScript file, `reading.gd`, with pure functions: `place(line, i)`,
-  `centre(i)`, `answers(lines)`, `masters(number)`. A GDScript test runs headless
+  A test checks that its 64 entries agree with the sources, and the build refuses a banned
+  word or a master without English.
+- Rules: one GDScript file, `reading.gd`, with pure functions (`place`, `is_centre`,
+  `answers`, `master_lines` and the text rows). A GDScript test runs headless
   (`Godot --headless -s tests/run.gd`) and checks them against the lesson's own examples:
   7 (L2 answers L5, master L2), 22 (master L5) and 10 (master L3, from the Judgment note).
 - Look: a 2D scene. The plot is drawn with `draw_line`, projected as `boxEdges` does in
   Readout.tsx. Scanlines are one full-screen shader. The glow is WorldEnvironment glow,
   or a blur shader if glow is too heavy on the web.
-- Input: a tap or click on a line flips it. The keys 1 to 6 flip lines, and 0 to 9 with
-  Enter jump to a hexagram by number.
-- Web export: single-threaded, so the site needs no cross-origin isolation headers. Godot
-  4's web build is roughly 8 to 10 MB compressed; the page loads it only when the viewer
-  presses START.
+- Input: a tap or click on a line flips it. Every decorative node ignores the mouse, and
+  taps are read in `_input`, so nothing swallows them. The keys 1 to 6 flip lines; G, then
+  digits, then Enter jumps to a hexagram by number (Esc cancels); S toggles the sound bed.
+- Web export: single-threaded, so the site needs no cross-origin isolation headers. A
+  custom HTML shell shows only a START button; the engine, wasm and data download after
+  it is pressed, and that click also unlocks audio. The download size is measured on the
+  first export and printed under the button.
 - Hosting: one export, served at `/terminal` on both sites. Both are other repos, and each
   deploy needs the user's approval.
+  - `/terminal` redirects to `/terminal/index.html`, so the export's relative paths
+    resolve; a rewrite would fetch them from the site root. Both sites' locale middleware
+    must skip `terminal`.
   - sixlines.day: `sixlines-site` (Next.js on Vercel), files under `public/terminal/`.
   - 8bitoracle.ai: `8bitoracle-brand` (Next.js 16), files under `public/terminal/`. This is
     the public site; `8bitoracle-next` is the app at app.8bitoracle.ai and could link to it.
@@ -117,7 +132,8 @@ The terminal reads structure. It does not answer questions about the viewer's li
   `scripts/explainer.mjs` (`makeSfx` and the teletype tick). They are generated, so there is
   no licence to track, and like all media they stay out of git: a script writes them into
   the Godot project's gitignored `sfx/` folder before a build.
-  - teletype: one tick per typed character, as in the lesson.
+  - tick: one click per typed character. It is one click of the lesson's teletype train
+    (a new short recipe), so the terminal does not restart a 20 s sound per character.
   - relay: a click when a line flips.
   - sweep: once, as the terminal starts.
   - warble: once, when the master line turns amber.
@@ -126,7 +142,8 @@ The terminal reads structure. It does not answer questions about the viewer's li
   The recipes move into one shared module (`scripts/sfx.mjs`) that both the explainer and the
   terminal use, so the lesson and the terminal always sound the same.
 - Recording for shorts: a `--record` flag plays a scripted sequence (build 7 line by line,
-  pause, flip L2, pause) at 60 fps with Godot's movie maker (`--write-movie`). This gives
+  flip L2, flip it back, each held 3 s after its reading has finished typing) at 60 fps
+  with Godot's movie maker (`--write-movie`); the clip's length is measured. This gives
   frame-exact clips without screen capture. The clips feed the shorts pipeline like the
   Blender clips do.
 
