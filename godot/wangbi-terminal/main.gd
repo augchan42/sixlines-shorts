@@ -27,6 +27,7 @@ func label(l: Label, pos: Vector2, size: int, colour: Color) -> void:
 	l.position = pos
 	l.size = Vector2(960, 0)
 	l.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	l.visible_characters_behavior = TextServer.VC_CHARS_AFTER_SHAPING
 	l.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	l.add_theme_font_override("font", font())
 	l.add_theme_font_size_override("font_size", size)

@@ -113,6 +113,23 @@ func _ready() -> void:
 			changed_3.append(i + 1)
 	check(changed_3 == [3], "G, tap a line, then key 3 flips line 3 (changed: %s)" % str(changed_3))
 
+	# An interrupted set_lines lays trigrams a full row below the log's FULL-TEXT height, not
+	# wherever the previous reading's typing had gotten to (Review Focus, round 1): the typed
+	# labels keep visible_characters_behavior = VC_CHARS_AFTER_SHAPING so layout always shapes
+	# the whole string, regardless of how many characters are actually shown.
+	await key(KEY_G)
+	await type_number(7)
+	await key(KEY_ENTER)
+	for i in 3:
+		await get_tree().process_frame  # partway into 7's typing, not all of it
+	main.set_lines(Reading.flip(main.lines, 2))  # a new, differently-sized reading, mid-type
+	var actual_gap: float = main.trigrams.position.y - main.log_label.position.y
+	var total: int = main.log_label.get_total_character_count()
+	main.log_label.visible_characters = total
+	var expected_gap: float = main.log_label.get_combined_minimum_size().y + main.ROW_GAP
+	main.log_label.visible_characters = 0
+	check(is_equal_approx(actual_gap, expected_gap), "trigrams sits a full row below the log's full-text height after an interrupted set_lines (actual: %s expected: %s)" % [actual_gap, expected_gap])
+
 	# S, and a tap on SOUND, toggle the bed.
 	var bed_before: bool = main.bed_on
 	await key(KEY_S)
