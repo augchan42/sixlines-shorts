@@ -130,8 +130,11 @@ func _ready() -> void:
 	main.log_label.visible_characters = 0
 	check(is_equal_approx(actual_gap, expected_gap), "trigrams sits a full row below the log's full-text height after an interrupted set_lines (actual: %s expected: %s)" % [actual_gap, expected_gap])
 
-	# S, and a tap on SOUND, toggle the bed.
+	# The bed is on by default (turned on in _ready, since web only reaches _ready after START
+	# has already unlocked audio); S, and a tap on SOUND, toggle it.
 	var bed_before: bool = main.bed_on
+	check(bed_before, "the bed starts on")
+	check(main.sound_toggle.text == "SOUND ON", "SOUND ON shows while the bed is on")
 	await key(KEY_S)
 	check(main.bed_on == (not bed_before), "S toggles the bed")
 	await click(main.sound_toggle.get_global_rect().get_center())

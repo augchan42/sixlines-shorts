@@ -138,7 +138,8 @@ The terminal reads structure. It does not answer questions about the viewer's li
   - sweep: once, as the terminal starts.
   - warble: once, when the master line turns amber.
   - winddown: when the answer stops typing.
-  - bed: the quiet background, looped, off by default on the web (a SOUND key turns it on).
+  - bed: the quiet background, looped, on by default (SOUND/S turns it off; at the user's
+    request on 2026-09-29).
   The recipes move into one shared module (`scripts/sfx.mjs`) that both the explainer and the
   terminal use, so the lesson and the terminal always sound the same.
 - Recording for shorts: a `--record` flag plays a scripted sequence (build 7 line by line,

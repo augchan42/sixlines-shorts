@@ -56,7 +56,7 @@ func _ready() -> void:
 	label(sound_toggle, Vector2(760, 1770), 30, DIM)
 	sound_toggle.size = Vector2(260, 0)
 	sound_toggle.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	sound_toggle.text = "SOUND OFF"
+	sound_toggle.text = "SOUND ON" if bed_on else "SOUND OFF"
 	var scan := ColorRect.new()
 	scan.set_anchors_preset(Control.PRESET_FULL_RECT)
 	scan.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -75,6 +75,7 @@ func _ready() -> void:
 		lines = picked
 	show_lines(lines)
 	play("sweep")
+	set_bed(bed_on)  # on by default: web starts this only after START, so audio is already unlocked
 	if "--record" in args:
 		typing_speed = 60.0  # record mode only; the web terminal keeps 25 characters a second
 		record()
@@ -120,7 +121,7 @@ var typing_speed := 25.0  # characters a second, as the lesson types
 var tween: Tween
 var entering := ""  # digits typed after G; "" when not entering a number
 var entry := false
-var bed_on := false
+var bed_on := true  # the looped bed starts on; SOUND/S turns it off
 
 func sound(name: String) -> AudioStreamPlayer:
 	if not sounds.has(name):
@@ -175,8 +176,8 @@ func _process(delta: float) -> void:
 		play("winddown")
 		reading_typed.emit()
 
-func toggle_bed() -> void:
-	bed_on = not bed_on
+func set_bed(on: bool) -> void:
+	bed_on = on
 	var p := sound("bed")
 	(p.stream as AudioStreamOggVorbis).loop = true
 	if bed_on:
@@ -184,6 +185,9 @@ func toggle_bed() -> void:
 	else:
 		p.stop()
 	sound_toggle.text = "SOUND ON" if bed_on else "SOUND OFF"
+
+func toggle_bed() -> void:
+	set_bed(not bed_on)
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
