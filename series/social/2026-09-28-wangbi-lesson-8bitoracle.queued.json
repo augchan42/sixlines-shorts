@@ -1,10 +1,15 @@
 {
  "draft_id": 10961326,
  "media_id": "074dad47-837d-47ad-8e81-c130bdb4a96e",
- "scheduled_date": "2026-09-28T15:30:00Z",
- "status": "scheduled",
+ "scheduled_date": "2026-09-28T06:11:00Z",
+ "status": "published",
  "private_url": "https://typefully.com/?d=10961326&a=310318",
  "share_url": null,
  "created_at": "2026-09-28T02:44:50.390Z",
- "updated_at": "2026-09-28T06:03:38.699Z"
+ "updated_at": "2026-09-28T06:09:00.748Z",
+ "x_url": "https://x.com/8bitoracle/status/2104453843908239572",
+ "moved_drafts": {
+  "9491087": "2026-09-28T13:00Z -> 2026-10-05T13:00Z",
+  "9491089": "2026-10-05T13:00Z -> 2026-10-12T13:00Z"
+ }
 }
