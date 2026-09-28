@@ -263,19 +263,16 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Take it to\na fair judge.",
-   "source": "series/critic/readouts/drafts.json#6",
+   "text": "Being right isn’t\nreason to fight on.",
+   "source": "docs/research/2026-09-27-codex-rewrite-options.md; Small Image 以訟受服，亦不足敬也 (honour won by contention is not worth respect); the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
    "readout": {
     "mark": [
-     4
+     5
     ],
-    "finding": "HEAVEN RISES. WATER SINKS. APART.",
-    "master": {
-     "zh": "為訟之主",
-     "en": "Master of Conflict"
-    }
+    "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+    "timed": true
    },
-   "readout_source": "judgment: meeting the great person; Wang Bi L5 judges crooked and straight"
+   "readout_source": "上九 或錫之鞶帶，終朝三褫之 (given a belt of honour, stripped three times in a morning); Small Image 以訟受服，亦不足敬也. The master (line 5) is dropped so amber marks only the line the finding is about."
   },
   "endcardRef": true
  },
@@ -406,15 +403,16 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Small can hold\nbig, for a while.",
-   "source": "series/critic/readouts/drafts.json#9",
+   "text": "Don’t force a start.\nUse the time to prepare.",
+   "source": "docs/research/2026-09-27-codex-rewrite-options.md; line 1 復自道 (returns by its own path); Great Image 君子以懿文德 (the noble one refines their conduct); the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
    "readout": {
     "mark": [
-     3
+     0
     ],
-    "finding": "ONE YIELDING LINE HOLDS FIVE."
+    "finding": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+    "timed": true
    },
-   "readout_source": "Tuan 柔得位而上下應之; judgment: dense clouds, no rain"
+   "readout_source": "初九 復自道，何其咎 (returns by its own path, what blame?); Wang Bi 順而无違，何所犯咎 (it goes along and does not resist, so incurs no fault)"
   },
   "endcardRef": true
  },
@@ -960,19 +958,19 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "People watch\nhow you prepare.",
-   "source": "series/critic/readouts/drafts.json#20",
+   "text": "Look at your people.\nThey show how you lead.",
+   "source": "series/critic/depth/review.json#20, less 'Go' to fit 9 words; Small Image 觀我生，觀民也 (to look at my life is to look at the people); Wang Bi 觀民之俗，以察己道; the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
    "readout": {
     "mark": [
      4
     ],
-    "finding": "TWO STRONG LINES ON TOP. ALL LOOK UP.",
+    "finding": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
     "master": {
      "zh": "為觀之主",
      "en": "Master of Contemplation"
     }
    },
-   "readout_source": "judgment: hands washed, offering not yet made"
+   "readout_source": "九五 觀我生 (look at my own life); Small Image 觀民也 (that is, look at the people). Line 5 is Wang Bi's master, so the master stays."
   },
   "endcardRef": true
  },
@@ -1737,16 +1735,16 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Home in order,\nthe rest follows.",
-   "source": "series/critic/readouts/drafts.json#37",
+   "text": "Order at home\nstarts with you.",
+   "source": "series/critic/depth/review.json#37; Small Image 反身之謂也 (it means turning back on yourself); the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
    "readout": {
     "mark": [
-     1,
-     4
+     5
     ],
-    "finding": "2 AND 5 ANSWER, BOTH IN PLACE."
+    "finding": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
+    "timed": true
    },
-   "readout_source": "image: speaks with substance, acts with consistency"
+   "readout_source": "上九 有孚，威如 (sincere and dignified); Small Image 威如之吉，反身之謂也 (the good of dignity means turning back to oneself)"
   },
   "endcardRef": true
  },
@@ -1779,18 +1777,16 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Apart, but still\nanswering.",
-   "source": "series/critic/readouts/drafts.json#38",
+   "text": "Lower your guard.\nThey may be an ally.",
+   "source": "series/critic/depth/review.json#38; line 6 匪寇婚媾 (not a raider but a marriage partner); the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
    "readout": {
     "mark": [
-     1,
-     2,
-     4,
      5
     ],
-    "finding": "LINES 2–5 OUT OF POSITION.\nTWO PAIRS ANSWER."
+    "finding": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
+    "timed": true
    },
-   "readout_source": "judgment: small matters; image: commonality, difference"
+   "readout_source": "上九 先張之弧，後說之弧，匪寇婚媾 (first he draws the bow, then lays it down); Small Image 群疑亡也 (the many doubts vanish)"
   },
   "endcardRef": true
  },
