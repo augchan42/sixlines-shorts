@@ -19,6 +19,7 @@ import os
 import sys
 
 import bpy
+from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from character import BODY, NEON, body, draw, glass, neon, show  # noqa: E402
@@ -27,6 +28,10 @@ from layout import FPS, frame_count  # noqa: E402
 
 LABEL = "#e8f5e4"
 LABEL_Y = -4.9  # metres: under the lowest form (the kaishu's hook reaches about -4)
+# Metres either side of the centre a form may reach and stay in the portrait frame with its
+# glow, from the closest camera (lens 35, 14.6 m away: about 4.2 m either side). 馬 fits;
+# 井's regular script, as wide as the box, does not.
+HALF_WIDTH = 3.6
 
 
 def parse():
@@ -82,8 +87,16 @@ def hide_from(objs, at):
             key(o, "hide_render", f)
 
 
-def camera(scene, frames):
-    """High, a little in front, looking down at the character; drifts in over the clip."""
+def half_width():
+    """How far the widest form reaches either side of the centre, in metres."""
+    bpy.context.view_layer.update()
+    xs = [(o.matrix_world @ Vector(c)).x for o in bpy.data.objects if o.name.startswith("neon") for c in o.bound_box]
+    return max(abs(x) for x in xs)
+
+
+def camera(scene, frames, scale=1.0):
+    """High, a little in front, looking down at the character; drifts in over the clip. A
+    character too wide for the frame (HALF_WIDTH) is seen from further back by `scale`."""
     target = bpy.data.objects.new("target", None)
     scene.collection.objects.link(target)
     target.location = (0, -0.5, 0)
@@ -95,7 +108,7 @@ def camera(scene, frames):
     track = cam.constraints.new("TRACK_TO")
     track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
     for f, loc in ((0, (0, -4.2, 16.5)), (frames - 1, (0, -3.2, 14.2))):
-        cam.location = loc
+        cam.location = tuple(v * scale for v in loc)
         key(cam, "location", f)
 
 
@@ -165,7 +178,7 @@ def main():
     bpy.ops.mesh.primitive_plane_add(size=60, location=(0, 0, 0))
     bpy.context.object.data.materials.append(black)
 
-    camera(scene, frames)
+    camera(scene, frames, max(1.0, half_width() / HALF_WIDTH))
     bloom(scene)
     render_settings(scene, frames, args.out, args.preview)
     if args.still is not None:

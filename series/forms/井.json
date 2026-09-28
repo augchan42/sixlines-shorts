@@ -1,0 +1,33 @@
+{
+ "char": "井",
+ "about": "井 through its scripts, for hexagram 48 井 The Well; the user, 2026-09-28: 'Can we do it for a few of the main hexagram characters like Kun Oppression, for example, and any other ones that would be good examples?' Older forms from Wikimedia Commons (public domain); kaishu from Make Me a Hanzi.",
+ "bpm": 90,
+ "per": 4,
+ "hold": 6,
+ "edge": "#ff6a3d",
+ "forms": [
+  {
+   "key": "bone",
+   "label": "SHANG, C. 1200 BC\nCARVED ON BONE",
+   "commons": "File:井-oracle.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/8/82/%E4%BA%95-oracle.svg"
+  },
+  {
+   "key": "bronze",
+   "label": "ZHOU DYNASTY\nCAST IN BRONZE",
+   "commons": "File:井-bronze.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/8/8f/%E4%BA%95-bronze.svg"
+  },
+  {
+   "key": "seal",
+   "label": "QIN, 221 BC\nSEAL SCRIPT",
+   "commons": "File:井-seal.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/0/09/%E4%BA%95-seal.svg"
+  },
+  {
+   "key": "kaishu",
+   "label": "LATE HAN TO TODAY\nREGULAR SCRIPT",
+   "hanzi": true
+  }
+ ]
+}

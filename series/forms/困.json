@@ -1,0 +1,27 @@
+{
+ "char": "困",
+ "about": "困 through its scripts, for hexagram 47 困 Oppression; the user, 2026-09-28: 'Can we do it for a few of the main hexagram characters like Kun Oppression, for example, and any other ones that would be good examples?' Older forms from Wikimedia Commons (public domain); kaishu from Make Me a Hanzi. Commons has no bronze form of 困, so it has three forms.",
+ "bpm": 90,
+ "per": 4,
+ "hold": 6,
+ "edge": "#ff6a3d",
+ "forms": [
+  {
+   "key": "bone",
+   "label": "SHANG, C. 1200 BC\nCARVED ON BONE",
+   "commons": "File:困-oracle.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E5%9B%B0-oracle.svg"
+  },
+  {
+   "key": "seal",
+   "label": "QIN, 221 BC\nSEAL SCRIPT",
+   "commons": "File:困-seal.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/4/47/%E5%9B%B0-seal.svg"
+  },
+  {
+   "key": "kaishu",
+   "label": "LATE HAN TO TODAY\nREGULAR SCRIPT",
+   "hanzi": true
+  }
+ ]
+}

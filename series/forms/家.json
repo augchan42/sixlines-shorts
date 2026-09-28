@@ -1,0 +1,33 @@
+{
+ "char": "家",
+ "about": "家 through its scripts, for hexagram 37 家人 The Family; the user, 2026-09-28: 'Can we do it for a few of the main hexagram characters like Kun Oppression, for example, and any other ones that would be good examples?' Older forms from Wikimedia Commons (public domain); kaishu from Make Me a Hanzi.",
+ "bpm": 90,
+ "per": 4,
+ "hold": 6,
+ "edge": "#ff6a3d",
+ "forms": [
+  {
+   "key": "bone",
+   "label": "SHANG, C. 1200 BC\nCARVED ON BONE",
+   "commons": "File:家-oracle.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/1/12/%E5%AE%B6-oracle.svg"
+  },
+  {
+   "key": "bronze",
+   "label": "WESTERN ZHOU\nCAST IN BRONZE",
+   "commons": "File:家-bronze.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/d/dc/%E5%AE%B6-bronze.svg"
+  },
+  {
+   "key": "seal",
+   "label": "QIN, 221 BC\nSEAL SCRIPT",
+   "commons": "File:家-seal.svg (Ancient Chinese Characters Project, public domain)",
+   "svg": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%E5%AE%B6-seal.svg"
+  },
+  {
+   "key": "kaishu",
+   "label": "LATE HAN TO TODAY\nREGULAR SCRIPT",
+   "hanzi": true
+  }
+ ]
+}
