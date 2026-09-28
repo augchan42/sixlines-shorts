@@ -134,6 +134,7 @@ func play(name: String) -> void:
 
 func set_lines(l: Array) -> void:
 	var before: Array = Reading.master_lines(data[Reading.key(lines)])
+	entry = false
 	show_lines(l)
 	typed = 0.0
 	for x in [log_label, trigrams, wangbi]:

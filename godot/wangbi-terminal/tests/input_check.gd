@@ -99,6 +99,20 @@ func _ready() -> void:
 	await key(KEY_ENTER)
 	check(main.lines == before_99, "G 9 9 Enter does nothing")
 
+	# G, then a tap on a line, leaves entry mode: a following key flips that line rather than
+	# being read as a digit for GO TO.
+	await key(KEY_G)
+	await click(point_for(1))
+	check(not main.entry, "a tap on a line during G ends entry mode")
+	var before_3: Array = main.lines.duplicate()
+	await key(KEY_3)
+	var after_3: Array = main.lines
+	var changed_3 := []
+	for i in 6:
+		if int(before_3[i]) != int(after_3[i]):
+			changed_3.append(i + 1)
+	check(changed_3 == [3], "G, tap a line, then key 3 flips line 3 (changed: %s)" % str(changed_3))
+
 	# S, and a tap on SOUND, toggle the bed.
 	var bed_before: bool = main.bed_on
 	await key(KEY_S)
