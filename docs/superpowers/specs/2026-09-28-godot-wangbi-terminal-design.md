@@ -53,17 +53,22 @@ already, and `series/explainers/wangbi-lesson.json` records the sources.
 - Centre: lines 2 and 5 are the centres of their trigrams.
 - Answering (應): 1 with 4, 2 with 5, 3 with 6. A pair answers when one is yin and the
   other yang.
-- Master line: taken from Wang Bi's own notes, not computed. `series/wangbi.json` holds
-  what he names for each hexagram (scripts/wangbi.mjs extracts it from wangBiZhu.ts).
-  - Named in his line notes (26 hexagrams, 3 of them with more than one): show each,
-    amber, with his words.
-  - Named only in his note on the Judgment (4 hexagrams): the extractor finds the phrase
-    but not the line number (for 10 it caught 言乎一卦之所以為主也, "tells what the
-    hexagram takes as master", where 三為履主, "line three is master of Treading", is the
-    answer). These four are read by hand, checked against chinese-classics-reference,
-    and kept in `series/wangbi-masters.json` with the source phrase for each.
-  - Named nowhere (34 hexagrams): the WANG BI line reads `WANG BI NAMES NO MASTER HERE`,
-    and no line turns amber. Nothing else is offered in his place.
+- Master line: taken from Wang Bi's own notes, not computed, and checked by hand. The
+  terminal reads one table, `series/wangbi-masters.json`: for each of the 64 hexagrams,
+  the master line or lines, or none, with his phrase (zh), an English gloss, and where it
+  is in his text.
+  - `series/wangbi.json` (scripts/wangbi.mjs) is only the list of candidates. It matches
+    phrases with 主, and some matches are not masters: on 16 line 3, 承動豫之主 is "supports
+    the master" (the master is line 4); on 36 line 3, 去闇主 is "removing the dark ruler";
+    on 42 line 2, 生物之主 is the Supreme Deity; on 46 line 6 he warns against being master.
+    It also misses masters he names in the note on the Judgment (10: 三為履主, "line three
+    is master of Treading"; 13: 二為同人之主).
+  - The nine masters already checked for the shorts' readouts (`series/copy.json`, lesson
+    readouts of 13, 14, 16, 20, 25, 26, 33, 59, 60) seed the table as they are.
+  - Every other hexagram is read by hand in chinese-classics-reference, and each entry
+    records the verdict: a line, several lines, or none.
+  - Where the table says none: `WANG BI NAMES NO MASTER HERE`, and no line turns amber.
+    Nothing else is offered in his place.
 
 The lesson's working order (a lone line first, then the centres) is ours, not Wang Bi's.
 The terminal never credits it to him (the rule in `wangbi-lesson.json`, "order").
@@ -85,9 +90,9 @@ The terminal reads structure. It does not answer questions about the viewer's li
 - Project: `godot/wangbi-terminal/` in this repo (scenes, GDScript, the font, a
   `data/` folder).
 - Data: a build script, `scripts/terminal-data.mjs`, writes `godot/wangbi-terminal/data/hexagrams.json`
-  from `series/hexagrams.json` (numbers, names, lines, trigrams), `series/wangbi.json`
-  (masters from the line notes, zh and en) and `series/wangbi-masters.json` (the four from
-  the Judgment notes). The terminal reads only that file. A test checks that its 64
+  from `series/hexagrams.json` (numbers, names, lines, trigrams) and
+  `series/wangbi-masters.json` (the hand-checked masters). The terminal reads only that file.
+  A test checks that its 64
   entries agree with the sources.
 - Rules: one GDScript file, `reading.gd`, with pure functions: `place(line, i)`,
   `centre(i)`, `answers(lines)`, `masters(number)`. A GDScript test runs headless
@@ -129,8 +134,8 @@ The terminal reads structure. It does not answer questions about the viewer's li
 
 1. Install the 4.7.2 export templates. Make an empty project, and check that a web export
    loads in a browser locally.
-2. Read the four Judgment-note masters by hand into `series/wangbi-masters.json`, then
-   write `terminal-data.mjs` and its test.
+2. Check every hexagram's master by hand into `series/wangbi-masters.json`, then write
+   `terminal-data.mjs` and its test.
 3. Write `reading.gd` and its headless test.
 4. Build the screen: plot, log, trigrams, WANG BI line, prompt. Review one still with the
    user before going further.
