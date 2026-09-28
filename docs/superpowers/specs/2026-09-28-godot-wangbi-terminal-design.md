@@ -1,13 +1,13 @@
-# Wang Bi terminal in Godot: design (draft for review)
+# Wang Bi terminal in Godot: design
 
-Status: draft, 2026-09-28. Not approved; nothing is built.
+Status: 2026-09-28. The user answered the open questions (see Decisions); nothing is built yet.
 
 ## What it is
 
 A live version of the readout from the Wang Bi lesson. The viewer builds a hexagram by
 tapping its six lines (yang ↔ yin), and the terminal reads it the way the lesson does:
 each line's place, the two centres, which pairs answer, and the master line Wang Bi names.
-It runs in a browser on sixlines.day. Screen recordings of it become shorts.
+It runs in a browser at /terminal on sixlines.day and on the 8-Bit Oracle site. Screen recordings of it become shorts.
 
 The user asked for it on 2026-09-28 ("plan out the spec for the godot terminal") after the
 Wang Bi lesson went out. It is the lesson turned into something a viewer can try.
@@ -62,7 +62,8 @@ already, and `series/explainers/wangbi-lesson.json` records the sources.
     hexagram takes as master", where 三為履主, "line three is master of Treading", is the
     answer). These four are read by hand, checked against chinese-classics-reference,
     and kept in `series/wangbi-masters.json` with the source phrase for each.
-  - Named nowhere (34 hexagrams): see open question 2.
+  - Named nowhere (34 hexagrams): the WANG BI line reads `WANG BI NAMES NO MASTER HERE`,
+    and no line turns amber. Nothing else is offered in his place.
 
 The lesson's working order (a lone line first, then the centres) is ours, not Wang Bi's.
 The terminal never credits it to him (the rule in `wangbi-lesson.json`, "order").
@@ -100,9 +101,24 @@ The terminal reads structure. It does not answer questions about the viewer's li
 - Web export: single-threaded, so the site needs no cross-origin isolation headers. Godot
   4's web build is roughly 8 to 10 MB compressed; the page loads it only when the viewer
   presses START.
-- Hosting: `sixlines-site` (Next.js on Vercel) serves the export under
-  `public/terminal/` at `sixlines.day/terminal`. That is another repo, and deploying it
-  needs the user's approval.
+- Hosting: one export, served at `/terminal` on both sites. Both are other repos, and each
+  deploy needs the user's approval.
+  - sixlines.day: `sixlines-site` (Next.js on Vercel), files under `public/terminal/`.
+  - The 8-Bit Oracle site: `8bitoracle-next` (Next.js 16 on Vercel), files under `public/terminal/`.
+    Its pages sit under `[locale]`, so the route must be kept out of the locale middleware
+    (checked in the plan).
+- Sound: the Wang Bi lesson's machine sounds, made by the same ffmpeg recipes as
+  `scripts/explainer.mjs` (`makeSfx` and the teletype tick). They are generated, so there is
+  no licence to track, and like all media they stay out of git: a script writes them into
+  the Godot project's gitignored `sfx/` folder before a build.
+  - teletype: one tick per typed character, as in the lesson.
+  - relay: a click when a line flips.
+  - sweep: once, as the terminal starts.
+  - warble: once, when the master line turns amber.
+  - winddown: when the answer stops typing.
+  - bed: the quiet background, looped, off by default on the web (a SOUND key turns it on).
+  The recipes move into one shared module (`scripts/sfx.mjs`) that both the explainer and the
+  terminal use, so the lesson and the terminal always sound the same.
 - Recording for shorts: a `--record` flag plays a scripted sequence (build 7 line by line,
   pause, flip L2, pause) at 60 fps with Godot's movie maker (`--write-movie`). This gives
   frame-exact clips without screen capture. The clips feed the shorts pipeline like the
@@ -118,30 +134,20 @@ The terminal reads structure. It does not answer questions about the viewer's li
 4. Build the screen: plot, log, trigrams, WANG BI line, prompt. Review one still with the
    user before going further.
 5. Add input and the one slow turn. Review a recording.
-6. Add the `--record` mode and one 30 s clip for a short.
-7. Make the web export and try it on a phone. After approval, add it to sixlines-site.
+6. Move the sound recipes to `scripts/sfx.mjs`, add the sounds, and add the `--record` mode and one 30 s clip for a short.
+7. Make the web export and try it on a phone. After approval, add it to sixlines-site and
+   8bitoracle-next, one deploy each.
 
-## Other ways to build it
+## Decisions (the user, 2026-09-28)
 
-- A plain web page (TypeScript and canvas) in sixlines-site. It could look the same, load
-  about 100 KB instead of about 10 MB, and share code with Readout.tsx. It has no 3D and
-  no native app, and recording needs Remotion or screen capture.
-- A Remotion-only version. It is not interactive, so it fails the main goal.
+1. Godot, not a plain web page.
+2. Where Wang Bi names no master: `WANG BI NAMES NO MASTER HERE`, nothing more.
+3. A `/terminal` route on sixlines.day and on the 8-Bit Oracle site.
+4. Sound from our own library: the lesson's machine sounds.
 
-Godot is worth it if we want the plot in real 3D with neon, as in the Blender clips, later
-builds for iOS or desktop, or frame-exact recordings from the same program people use.
-Otherwise the plain web page is the lighter choice. See open question 1.
+## Other ways considered
 
-## Open questions for the user
-
-1. Godot or a plain web page? Godot costs about 10 MB of download but gives real 3D and
-   native builds. The web page is light and shares code with the shorts.
-2. For the 34 hexagrams where Wang Bi names no master, what should it show? Options:
-   (a) `WANG BI NAMES NO MASTER HERE`, and nothing more;
-   (b) that line, plus "our reading" from the lesson's order (lone line, then centres),
-   marked as ours;
-   (c) his 明彖 point that sometimes no line rules and the trigrams do, shown with the
-   trigrams highlighted.
-3. Where does it live: `sixlines.day/terminal`, a page per hexagram (`/terminal/7`), or
-   inside the app later?
-4. Sound: silent, or real recorded key clicks (CC0, downloaded by the user, above 250 Hz)?
+- A plain web page (TypeScript and canvas): about 100 KB instead of about 10 MB, and could
+  share code with Readout.tsx, but no 3D, no native builds, and no frame-exact recording.
+  Not chosen.
+- A Remotion-only version: not interactive. Not chosen.
