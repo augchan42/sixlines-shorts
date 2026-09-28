@@ -1,10 +1,10 @@
 {
  "explainer": "wangbi-lesson",
- "rendered": "2026-09-27T11:14:25.399Z",
- "commit": "97dc1dff22dcf69ee572fa0cf3b3edd4e3fadd4b",
+ "rendered": "2026-09-28T00:08:45.187Z",
+ "commit": "028db02d3fb72a000576ed262d16f95f22e776e3",
  "clean": false,
- "seconds": 221.482667,
- "shareKbps": 702,
+ "seconds": 228.416,
+ "shareKbps": 677,
  "props": {
   "pages": [
    {
@@ -688,7 +688,7 @@
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
    "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
-   "seconds": 7.82693771062072,
+   "seconds": 10.435916947494293,
    "rate": 0.5749375
   },
   "endMusic": {
@@ -719,7 +719,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-lesson/short.mp4": "fb1a703cb09e87535062f8a0429d819c47ef1f6a283e004a62c8a0db499fa1de",
-  "out/explainers/wangbi-lesson/share.mp4": "1f4e44cbb0e51d8f7bff5249062eb20b0aeaa40abeb46eceb6b6c0ce80aa6694"
+  "out/explainers/wangbi-lesson/short.mp4": "e4afcd59dc3200992081578f8f61af7b2d9a04c671917451f6eba38b660b669a",
+  "out/explainers/wangbi-lesson/share.mp4": "5715b9bbd11a22f3a959408c021a845ce21c086ee4d83d97354a9f2a181ff2ec"
  }
 }
