@@ -20,16 +20,48 @@ $GODOT_HEAD_INCLUDE
 <script src="$GODOT_URL"></script>
 <script>
 const engine = new Engine($GODOT_CONFIG);
-document.getElementById('go').addEventListener('click', () => {
+const go = document.getElementById('go');
+let started = false;
+go.addEventListener('click', () => {
+  if (started) return;  // ignore a second tap; startGame() is already running
+  started = true;
+  go.disabled = true;
   const missing = Engine.getMissingFeatures({ threads: false });
   if (missing.length) {
     document.getElementById('note').textContent = missing.join(', ');
+    started = false;
+    go.disabled = false;
     return;
   }
   document.getElementById('note').textContent = 'LOADING…';
   document.getElementById('canvas').style.display = 'block';
-  engine.startGame().then(() => document.getElementById('start').remove())
-    .catch((err) => { document.getElementById('note').textContent = 'COULD NOT START: ' + err.message; });
+  // Godot creates its AudioContext inside startGame(), after the async download, which is
+  // outside this click's user-gesture window: on iOS Safari that context starts suspended and
+  // stays silent until some later tap. Create and resume one synchronously, right here in the
+  // gesture, then make the engine construct that same context instead of a fresh one.
+  const AC = window.AudioContext || window.webkitAudioContext;
+  let audioCtx = null;
+  const RealAudioContext = window.AudioContext;
+  const RealWebkitAudioContext = window.webkitAudioContext;
+  if (AC) {
+    audioCtx = new AC();
+    audioCtx.resume();
+    const useExisting = function () { return audioCtx; };
+    if (window.AudioContext) window.AudioContext = useExisting;
+    if (window.webkitAudioContext) window.webkitAudioContext = useExisting;
+  }
+  const restoreAudioContext = () => {
+    if (!AC) return;
+    if (RealAudioContext) window.AudioContext = RealAudioContext;
+    if (RealWebkitAudioContext) window.webkitAudioContext = RealWebkitAudioContext;
+  };
+  engine.startGame().then(() => { restoreAudioContext(); document.getElementById('start').remove(); })
+    .catch((err) => {
+      restoreAudioContext();
+      document.getElementById('note').textContent = 'COULD NOT START: ' + String(err?.message ?? err);
+      started = false;
+      go.disabled = false;
+    });
 });
 </script>
 </body>
