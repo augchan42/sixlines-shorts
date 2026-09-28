@@ -1,0 +1,13 @@
+{
+ "about": "The Wang Bi lesson, full length (3:48), on the Six Lines accounts. The user, 2026-09-28: 'Try to queue the full video to sixlines', after the posting plan (Six Lines first and pinned, 8-Bit Oracle quotes it about two hours later, personal LinkedIn and X the next day). Bluesky is off: its video limit is 3 min. The time is the set's usual slot, 16:00 UTC (00:00 HKT), the day after the draft already queued for 29 Sep.",
+ "set": 310894,
+ "title": "Wang Bi lesson (video, full 3:48)",
+ "video": "out/explainers/wangbi-lesson/typefully.mp4",
+ "alt": "A green terminal teaches how Wang Bi read a hexagram: positions, centres, answering lines and the master line, built one part at a time.",
+ "publish_at": "2026-09-30T16:00:00Z",
+ "platforms": {
+  "x": "How Wang Bi (226–249) read a hexagram: positions, centres, answering lines, and the one line that rules the rest.\n\nIt’s the green screen in 35 of our shorts, built one part at a time.\n\nsixlines.day",
+  "threads": "How Wang Bi (226–249) read a hexagram: positions, centres, answering lines, and the one line that rules the rest.\n\nIt’s the green screen in 35 of our shorts, built one part at a time.\n\nsixlines.day"
+ },
+ "video_note": "Typefully's free plan takes video up to 10 MB, so share.mp4 (23.3 MB) is re-encoded to 720x1280 at 290 kb/s, two-pass, AAC 48 kb/s, faststart: 9.97 MB. Text checked legible at 40, 120 and 200 s."
+}
