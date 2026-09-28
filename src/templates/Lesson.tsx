@@ -5,6 +5,7 @@ import { fonts } from "../lib/fonts";
 import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
 import { cameraStart } from "../lib/lessonCam";
+import { readBeforeCut } from "../lib/lessonRead";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
 
 // How Wang Bi reads a hexagram (series/explainers/wangbi-lesson.json), as an inquiry at the
@@ -66,6 +67,8 @@ const Q_RATE = 1.1; // frames per character
 const A_RATE = 0.9;
 const FULL = 4 * FPS;
 const CHAPTER = Math.round(1.5 * FPS);
+// Seconds the music fades over at the end (the user: "the end credit ends too abruptly").
+const END_FADE = 4;
 
 // Each page's timeline: the query typed, then each answer line in turn, with any cut to a
 // full readout after a given line, then a hold long enough to read it.
@@ -88,10 +91,17 @@ export const lessonPlan = (p: LessonProps): { pages: Timed[]; end: number } => {
     let at = aAt;
     const lineAt: number[] = [];
     const fulls: { n: number; from: number }[] = [];
+    let since = 0;
     lines.forEach((l, i) => {
       lineAt.push(at);
       at += Math.round(l.length * A_RATE) + 6;
-      for (const f of page.show?.full ?? []) if (f.after === i + 1) (fulls.push({ n: f.n, from: at }), (at += FULL));
+      for (const f of page.show?.full ?? []) {
+        if (f.after !== i + 1) continue;
+        at += Math.round(readBeforeCut(lines.slice(since, i + 1)) * FPS);
+        since = i + 1;
+        fulls.push({ n: f.n, from: at });
+        at += FULL;
+      }
     });
     const words = (page.a ?? "").split(/\s+/).length + (page.show?.lesson ?? "").split(/\s+/).length;
     const hold = page.show?.hold !== undefined ? page.show.hold * FPS : Math.max(2.5, words / 3.7) * FPS + (page.show?.draw ? FPS : 0);
@@ -341,12 +351,12 @@ export const Lesson: React.FC<LessonProps> = (p) => {
             volume={(f) => {
               const lead = p.endMusic!.lead * FPS;
               const last = durationInFrames - end + lead;
-              return interpolate(f, [0, lead], [0.1, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }) * interpolate(f, [last - 2 * FPS, last], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+              return interpolate(f, [0, lead], [0.1, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.in(Easing.quad) }) * interpolate(f, [last - END_FADE * FPS, last], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
             }}
           />
         </Sequence>
       ) : (
-        <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - 2 * FPS} volume={musicLevel} />
+        <Soundtrack src={p.music} start={p.musicStart} fadeFrom={durationInFrames - END_FADE * FPS} volume={musicLevel} />
       )}
       {p.look === "flight" && p.sfx && (
         <>

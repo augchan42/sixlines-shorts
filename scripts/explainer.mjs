@@ -23,6 +23,9 @@ const loudnormJson = (args) => {
   const { stderr } = spawnSync("ffmpeg", ["-nostdin", "-hide_banner", "-y", ...args, "-f", "null", "-"], { cwd: root, encoding: "utf8" });
   return stderr.slice(stderr.lastIndexOf("{"), stderr.lastIndexOf("}") + 1);
 };
+// The end card holds 3 beats past its 9 while the music fades, as in the shorts (the user, on the
+// lesson, 2026-09-27: "the end credit ends too abruptly").
+const END_HOLD_BEATS = 3;
 const name = process.argv.slice(2).find((a) => !a.startsWith("--")) ?? "readout-key";
 const script = JSON.parse(readFileSync(path.join(root, "series/explainers", `${name}.json`), "utf8"));
 const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
@@ -132,7 +135,7 @@ const lesson = script.chapters && {
   // (a slower reveal, longer for the music); "endMusic" lands the music's `at` second on the cut
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
   // A tempo-independent card (sp.endcard.rate) plays at its own rate times endcardRate.
-  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : (9 * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
+  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : ((9 + END_HOLD_BEATS) * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
   ...(script.endMusic ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
