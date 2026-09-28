@@ -113,7 +113,8 @@ The terminal reads structure. It does not answer questions about the viewer's li
   or a blur shader if glow is too heavy on the web.
 - Input: a tap or click on a line flips it. Every decorative node ignores the mouse, and
   taps are read in `_input`, so nothing swallows them. The keys 1 to 6 flip lines; G, then
-  digits, then Enter jumps to a hexagram by number (Esc cancels); S toggles the sound bed.
+  digits (including the keypad), then Enter jumps to a hexagram by number (Esc cancels);
+  S turns all sound off and on (the Master bus).
 - Web export: single-threaded, so the site needs no cross-origin isolation headers. A
   custom HTML shell shows only a START button; the engine, wasm and data download after
   it is pressed, and that click also unlocks audio. The download size is measured on the
@@ -138,8 +139,9 @@ The terminal reads structure. It does not answer questions about the viewer's li
   - sweep: once, as the terminal starts.
   - warble: once, when the master line turns amber.
   - winddown: when the answer stops typing.
-  - bed: the quiet background, looped, on by default (SOUND/S turns it off; at the user's
-    request on 2026-09-29).
+  - bed: the quiet background, looped, on by default (SOUND/S turns all sound off and back
+    on again, muting the Master bus rather than just this loop; at the user's request on
+    2026-09-29).
   The recipes move into one shared module (`scripts/sfx.mjs`) that both the explainer and the
   terminal use, so the lesson and the terminal always sound the same.
 - Recording for shorts: a `--record` flag plays a scripted sequence (build 7 line by line,

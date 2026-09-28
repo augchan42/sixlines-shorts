@@ -53,11 +53,19 @@ func type_number(n: int) -> void:
 	for c in str(n):
 		await key(KEY_0 + int(c) as Key)
 
+func type_number_kp(n: int) -> void:
+	for c in str(n):
+		await key(KEY_KP_0 + int(c) as Key)
+
 func _ready() -> void:
 	main = preload("res://main.tscn").instantiate()
 	add_child(main)
 	await get_tree().process_frame
 	await get_tree().process_frame
+
+	# The first hexagram (7, whose master is L2) plays its warble once on arrival, the same
+	# "newly amber" rule set_lines uses, but only once, not in --record mode.
+	check(main.sounds.has("warble"), "the warble plays once for the starting hexagram's master line")
 
 	# Tapping each line flips it. Each tap lands while the previous tap's 6-second turn tween
 	# is still running, so this also covers a tap mid-turn hitting the right line, not a
@@ -84,6 +92,12 @@ func _ready() -> void:
 		await click(point_for(2))
 	check(Reading.key(main.lines) == "000000", "five taps on 7's L2 end on 2 坤")
 	check(main.typed < 3.0, "typing restarted after the last flip")
+
+	# G-entry also takes keypad digits.
+	await key(KEY_G)
+	await type_number_kp(9)
+	await key(KEY_ENTER)
+	check(Reading.key(main.lines) == "111011", "G, keypad 9, Enter goes to 9")
 
 	# G 2 2 Enter goes to 22, and only L5 is amber.
 	await key(KEY_G)
@@ -130,15 +144,20 @@ func _ready() -> void:
 	main.log_label.visible_characters = 0
 	check(is_equal_approx(actual_gap, expected_gap), "trigrams sits a full row below the log's full-text height after an interrupted set_lines (actual: %s expected: %s)" % [actual_gap, expected_gap])
 
-	# The bed is on by default (turned on in _ready, since web only reaches _ready after START
-	# has already unlocked audio); S, and a tap on SOUND, toggle it.
-	var bed_before: bool = main.bed_on
-	check(bed_before, "the bed starts on")
-	check(main.sound_toggle.text == "SOUND ON", "SOUND ON shows while the bed is on")
+	# Sound is on by default (turned on in _ready, since web only reaches _ready after START has
+	# already unlocked audio); S, and a tap on SOUND, mute and unmute the whole Master bus, not
+	# just the bed.
+	var master_bus := AudioServer.get_bus_index("Master")
+	var sound_before: bool = main.sound_on
+	check(sound_before, "sound starts on")
+	check(not AudioServer.is_bus_mute(master_bus), "the Master bus starts unmuted")
+	check(main.sound_toggle.text == "SOUND ON", "SOUND ON shows while sound is on")
 	await key(KEY_S)
-	check(main.bed_on == (not bed_before), "S toggles the bed")
+	check(main.sound_on == (not sound_before), "S toggles sound")
+	check(AudioServer.is_bus_mute(master_bus) == sound_before, "S mutes the Master bus")
 	await click(main.sound_toggle.get_global_rect().get_center())
-	check(main.bed_on == bed_before, "a tap on SOUND toggles the bed back")
+	check(main.sound_on == sound_before, "a tap on SOUND toggles sound back")
+	check(not AudioServer.is_bus_mute(master_bus), "a tap on SOUND unmutes the Master bus again")
 
 	print("---")
 	print("%d failed" % failed)

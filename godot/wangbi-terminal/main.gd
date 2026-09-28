@@ -56,7 +56,7 @@ func _ready() -> void:
 	label(sound_toggle, Vector2(760, 1770), 30, DIM)
 	sound_toggle.size = Vector2(260, 0)
 	sound_toggle.horizontal_alignment = HORIZONTAL_ALIGNMENT_RIGHT
-	sound_toggle.text = "SOUND ON" if bed_on else "SOUND OFF"
+	sound_toggle.text = "SOUND ON" if sound_on else "SOUND OFF"
 	var scan := ColorRect.new()
 	scan.set_anchors_preset(Control.PRESET_FULL_RECT)
 	scan.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -75,7 +75,12 @@ func _ready() -> void:
 		lines = picked
 	show_lines(lines)
 	play("sweep")
-	set_bed(bed_on)  # on by default: web starts this only after START, so audio is already unlocked
+	# The first hexagram's own master line(s) count as newly amber too (set_lines' rule), but
+	# not in --record mode: record() immediately shows its own fixed starting hexagram and runs
+	# its own scripted warbles, so playing one here would double up.
+	if not ("--record" in args) and not Reading.master_lines(data[Reading.key(lines)]).is_empty():
+		play("warble")
+	set_sound(sound_on)  # on by default: web starts this only after START, so audio is already unlocked
 	if "--record" in args:
 		typing_speed = 60.0  # record mode only; the web terminal keeps 25 characters a second
 		record()
@@ -121,7 +126,7 @@ var typing_speed := 25.0  # characters a second, as the lesson types
 var tween: Tween
 var entering := ""  # digits typed after G; "" when not entering a number
 var entry := false
-var bed_on := true  # the looped bed starts on; SOUND/S turns it off
+var sound_on := true  # sound starts on, bed playing; SOUND/S mutes/unmutes the whole Master bus
 
 func sound(name: String) -> AudioStreamPlayer:
 	if not sounds.has(name):
@@ -176,23 +181,22 @@ func _process(delta: float) -> void:
 		play("winddown")
 		reading_typed.emit()
 
-func set_bed(on: bool) -> void:
-	bed_on = on
+func set_sound(on: bool) -> void:
+	sound_on = on
+	AudioServer.set_bus_mute(AudioServer.get_bus_index("Master"), not sound_on)
 	var p := sound("bed")
 	(p.stream as AudioStreamOggVorbis).loop = true
-	if bed_on:
-		p.play()
-	else:
-		p.stop()
-	sound_toggle.text = "SOUND ON" if bed_on else "SOUND OFF"
+	if not p.playing:
+		p.play()  # keeps looping under the mute so it's already playing when SOUND turns back on
+	sound_toggle.text = "SOUND ON" if sound_on else "SOUND OFF"
 
-func toggle_bed() -> void:
-	set_bed(not bed_on)
+func toggle_sound() -> void:
+	set_sound(not sound_on)
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if sound_toggle.get_global_rect().grow(20).has_point(event.position):
-			toggle_bed()
+			toggle_sound()
 			return
 		var n := plot.line_at(event.position)
 		if n:
@@ -201,6 +205,8 @@ func _input(event: InputEvent) -> void:
 		if entry:
 			if event.keycode >= KEY_0 and event.keycode <= KEY_9 and entering.length() < 2:
 				entering += str(event.keycode - KEY_0)
+			elif event.keycode >= KEY_KP_0 and event.keycode <= KEY_KP_9 and entering.length() < 2:
+				entering += str(event.keycode - KEY_KP_0)
 			elif event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER:
 				var l := Reading.lines_of(data, int(entering)) if entering != "" else []
 				entry = false
@@ -214,7 +220,7 @@ func _input(event: InputEvent) -> void:
 			entering = ""
 			prompt.text = "GO TO: _"
 		elif event.keycode == KEY_S:
-			toggle_bed()
+			toggle_sound()
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_6:
 			set_lines(Reading.flip(lines, event.keycode - KEY_0))
 
