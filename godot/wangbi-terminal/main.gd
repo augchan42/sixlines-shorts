@@ -73,6 +73,7 @@ func _ready() -> void:
 			picked.append(int(key[c]))
 		lines = picked
 	show_lines(lines)
+	play("sweep")
 
 func show_lines(l: Array) -> void:
 	lines = l
@@ -92,3 +93,113 @@ func show_lines(l: Array) -> void:
 	# follows it.
 	trigrams.position.y = log_label.position.y + log_label.get_combined_minimum_size().y + ROW_GAP
 	wangbi.position.y = trigrams.position.y + trigrams.get_combined_minimum_size().y + ROW_GAP
+
+# Input, typing, the turn and sound. Every change goes through set_lines, so what shows is
+# always the reading of the lines as they are now (Review Focus 2).
+signal reading_typed
+
+# Linear volumes, set on each player's volume_db with linear_to_db(): tick, sweep, warble and
+# winddown are the Wang Bi lesson's own mix (series/explainers/wangbi-lesson.json "mix"); relay
+# and bed are not in that mix (they're the terminal's own) but keep the same shape.
+const MIX := {
+	"tick": 0.8,
+	"sweep": 0.7,
+	"warble": 0.5,
+	"winddown": 0.6,
+	"relay": 1.0,
+	"bed": 0.5,
+}
+
+var sounds := {}
+var typed := 0.0
+var typing_speed := 25.0  # characters a second, as the lesson types
+var tween: Tween
+var entering := ""  # digits typed after G; "" when not entering a number
+var entry := false
+var bed_on := false
+
+func sound(name: String) -> AudioStreamPlayer:
+	if not sounds.has(name):
+		var p := AudioStreamPlayer.new()
+		p.stream = load("res://sfx/%s.ogg" % name)
+		p.volume_db = linear_to_db(MIX.get(name, 1.0))
+		if name == "tick":
+			p.max_polyphony = 2  # ticks can overlap at 25 characters a second
+		add_child(p)
+		sounds[name] = p
+	return sounds[name]
+
+func play(name: String) -> void:
+	sound(name).play()
+
+func set_lines(l: Array) -> void:
+	var before: Array = Reading.master_lines(data[Reading.key(lines)])
+	show_lines(l)
+	typed = 0.0
+	for x in [log_label, trigrams, wangbi]:
+		x.visible_characters = 0
+	if tween:
+		tween.kill()
+	tween = create_tween()
+	tween.tween_property(plot, "turn", Reading.turn_target(plot.turn), 6.0).set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+	play("relay")
+	var now: Array = Reading.master_lines(data[Reading.key(l)])
+	if now != before and not now.is_empty():
+		play("warble")
+
+func _process(delta: float) -> void:
+	var total := 0
+	for x in [log_label, trigrams, wangbi]:
+		total += x.get_total_character_count()
+	if typed >= total:
+		return
+	var before := int(typed)
+	typed = minf(typed + delta * typing_speed, total)
+	var left := int(typed)
+	for x in [log_label, trigrams, wangbi]:
+		x.visible_characters = mini(left, x.get_total_character_count())
+		left -= x.visible_characters
+	if int(typed) > before:
+		play("tick")
+	if typed >= total:
+		play("winddown")
+		reading_typed.emit()
+
+func toggle_bed() -> void:
+	bed_on = not bed_on
+	var p := sound("bed")
+	(p.stream as AudioStreamOggVorbis).loop = true
+	if bed_on:
+		p.play()
+	else:
+		p.stop()
+	sound_toggle.text = "SOUND ON" if bed_on else "SOUND OFF"
+
+func _input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
+		if sound_toggle.get_global_rect().grow(20).has_point(event.position):
+			toggle_bed()
+			return
+		var n := plot.line_at(event.position)
+		if n:
+			set_lines(Reading.flip(lines, n))
+	elif event is InputEventKey and event.pressed and not event.echo:
+		if entry:
+			if event.keycode >= KEY_0 and event.keycode <= KEY_9 and entering.length() < 2:
+				entering += str(event.keycode - KEY_0)
+			elif event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER:
+				var l := Reading.lines_of(data, int(entering)) if entering != "" else []
+				entry = false
+				if not l.is_empty():
+					set_lines(l)
+			elif event.keycode == KEY_ESCAPE:
+				entry = false
+			prompt.text = ("GO TO: %s_" % entering) if entry else PROMPT
+		elif event.keycode == KEY_G:
+			entry = true
+			entering = ""
+			prompt.text = "GO TO: _"
+		elif event.keycode == KEY_S:
+			toggle_bed()
+		elif event.keycode >= KEY_1 and event.keycode <= KEY_6:
+			set_lines(Reading.flip(lines, event.keycode - KEY_0))

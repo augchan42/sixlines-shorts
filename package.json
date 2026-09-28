@@ -16,6 +16,7 @@
     "series": "node scripts/series.mjs",
     "series:captions": "node scripts/series-captions.mjs",
     "test:godot": "/Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal --import && /Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal -s res://tests/run.gd",
+    "test:godot-input": "/Applications/Godot.app/Contents/MacOS/Godot --path godot/wangbi-terminal --import && /Applications/Godot.app/Contents/MacOS/Godot --path godot/wangbi-terminal tests/input_check.tscn",
     "terminal:web": "node scripts/terminal-data.mjs && mkdir -p godot/wangbi-terminal/build/web && /Applications/Godot.app/Contents/MacOS/Godot --headless --path godot/wangbi-terminal --export-release Web build/web/index.html"
   },
   "dependencies": {
