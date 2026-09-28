@@ -4,6 +4,7 @@
 import { execFileSync } from "node:child_process";
 import { mkdirSync, rmSync } from "node:fs";
 import path from "node:path";
+import { ffmpegArgs } from "./terminal-record-args.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const name = process.argv[2];
@@ -32,23 +33,6 @@ execFileSync(
   ],
   { stdio: "inherit" },
 );
-execFileSync("ffmpeg", [
-  "-v",
-  "error",
-  "-y",
-  "-i",
-  avi,
-  "-c:v",
-  "libx264",
-  "-pix_fmt",
-  "yuv420p",
-  "-crf",
-  "18",
-  "-c:a",
-  "aac",
-  "-movflags",
-  "+faststart",
-  path.join(dir, `${name}.mp4`),
-]);
+execFileSync("ffmpeg", ffmpegArgs(avi, path.join(dir, `${name}.mp4`)));
 rmSync(avi);
 console.log(`wrote out/terminal/${name}.mp4`);
