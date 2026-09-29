@@ -46,6 +46,7 @@ HOME, SEA = "#ff5ec8", "#bfe9ff"  # Wuyue's magenta; cyan-white for what crosses
 GREY = "#a89aa3"
 LANE = 0.5  # metres between an outward line and the line back beside it
 SETTLED = REST * 1.5  # a finished sign's glow (sign.py's default)
+SNUG = 1.08  # the frame's width over the whole map's, in the vertical cut (MARGIN's is 1.3)
 COAST = REST * 0.25  # the coast's glow: there to place things, not to look at
 
 
@@ -213,14 +214,16 @@ class Camera:
         key(self.target, "location", f)
         key(self.cam, "location", f)
 
-    def top(self, objs, head=0.2):
+    def top(self, objs, head=0.2, snug=False):
         """Looking nearly straight down (1 m in front for 15.5 m up, as the lessons end) on the
         objects' middle, far enough that they fit with MARGIN, with the top `head` of the frame
-        kept clear for the text cards: (aim, eye)."""
+        kept clear for the text cards: (aim, eye). `snug`: the whole map in the vertical cut,
+        with a narrower side margin so it is larger (the user asked it be zoomed in more)."""
         x0, y0, x1, y1 = bounds(objs)
         y1 += (y1 - y0) * head / (1 - head)
         half = 18 / 35
-        dist = max(MARGIN[0] * (x1 - x0) / 2 / half, MARGIN[1] * (y1 - y0) / 2 / (half * self.aspect))
+        mx = SNUG if snug and self.aspect > 1 else MARGIN[0]
+        dist = max(mx * (x1 - x0) / 2 / half, MARGIN[1] * (y1 - y0) / 2 / (half * self.aspect))
         aim = Vector(((x0 + x1) / 2, (y0 + y1) / 2, 0))
         return aim, aim + Vector((0, -dist / 15.5, dist))
 
@@ -342,7 +345,7 @@ def exchange(args, t, m, cam):
     first = cam.top(objs + [lab, marker(north_end)])
     cam.pose(0, *first)
     cam.pose(t["widen"][0], *first)
-    aim, eye = cam.top(everything)
+    aim, eye = cam.top(everything, snug=True)
     cam.pose(t["widen"][1], aim, eye)
 
 
@@ -354,7 +357,7 @@ def surrender(args, t, m, cam):
     for f, hidden in ((0, False), (t["border"][1] + 1, True)):  # unlit, the tube still shows
         edge.hide_render = hidden
         key(edge, "hide_render", f)
-    cam.pose(0, *cam.top(everything))
+    cam.pose(0, *cam.top(everything, snug=True))
     near = objs + [lab, nl, edge]
     cam.pose(t["frames"], *cam.top_short_of(near + [marker(north_end)], [o for o in everything if o not in near]))
 
@@ -390,7 +393,7 @@ def end(args, t, m, cam):
         _, low, _, _ = bounds([o])
         y = low - 0.55
         labels.append(o)
-    cam.pose(0, *cam.top(everything))
+    cam.pose(0, *cam.top(everything, snug=True))
     cam.pose(t["descend"][1], *cam.top(objs + labels))
 
 
