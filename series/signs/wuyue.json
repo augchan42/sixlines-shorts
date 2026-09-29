@@ -1,0 +1,14 @@
+{
+ "name": "wuyue",
+ "about": "吳越 (Wuyue) as a Hong Kong style neon sign, a still for the user to look at before any clip, 2026-09-29. For phones; a friend may want a wide version for her site (set size, and layout row). Strokes: Make Me a Hanzi's traditional 吳 and 越. Magenta as the web panel and 15 character lessons.",
+ "chars": ["吳", "越"],
+ "layout": "stack",
+ "size": [1080, 1920],
+ "edge": "#ff5ec8",
+ "labelColour": "#a89aa3",
+ "labels": [
+  { "text": "WUYUE", "size": 1.7 },
+  { "text": "KINGDOM OF WUYUE · 907–978", "size": 0.62 }
+ ],
+ "fonts": ["pixel", "goudy"]
+}
