@@ -103,6 +103,22 @@ button:focus-visible, textarea:focus-visible, a:focus-visible, select:focus-visi
 .point .take b { font-weight: 600; }
 .point.conflict .take { color: var(--muted); }
 
+/* The copy review: old and new text, one field a row. */
+.copies { display: grid; gap: 14px; }
+.copycard { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; }
+.copycard[data-verdict="good"], .copycard[data-verdict="opus"], .copycard[data-verdict="astra"] { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.copycard[data-verdict="change"], .copycard[data-verdict="keep"] { border-color: color-mix(in srgb, var(--amber) 55%, var(--line)); }
+.diff { display: grid; grid-template-columns: 76px minmax(0, 1fr) minmax(0, 1fr); gap: 4px 12px; font-size: 14px; }
+.diff .old { color: var(--muted); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--muted) 60%, transparent); }
+.diff span { white-space: pre-line; }
+.versions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px; }
+.version { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 8px; align-content: start; }
+.version .diff { grid-template-columns: 76px minmax(0, 1fr); }
+.reason { font-size: 14px; }
+.reason b { font-weight: 600; }
+.verdict button[aria-pressed="true"][data-v="opus"], .verdict button[aria-pressed="true"][data-v="astra"] { background: var(--accent-soft); color: var(--accent); }
+.verdict button[aria-pressed="true"][data-v="keep"] { background: var(--amber-soft); color: var(--amber); }
+@media (max-width: 640px) { .diff { grid-template-columns: minmax(0, 1fr); } .diff .label { margin-top: 6px; } }
 .decisions { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 14px; }
 .decision { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 10px; align-content: start; }
 
@@ -128,7 +144,7 @@ details[open] summary { margin-bottom: 6px; }
   <div class="wrap">
     <div class="progress"><span class="mono" id="count">0 of 0 reviewed</span><span class="bar"><i id="fill"></i></span></div>
     <nav class="jump" aria-label="Sections">
-      <a href="#new">New</a><a href="#astra">Astra</a><a href="#decisions">Decisions</a><a href="#all">All 64</a>
+      <a href="#copy">Copy</a><a href="#new">New</a><a href="#astra">Astra</a><a href="#decisions">Decisions</a><a href="#all">All 64</a>
     </nav>
     <span class="saving" id="saving" aria-live="polite"></span>
   </div>
@@ -141,6 +157,18 @@ details[open] summary { margin-bottom: 6px; }
     <p class="muted">Everything waiting on your eye, in one place. Mark each item and leave a note. Your marks and notes are saved as you go, and Claude reads them back.</p>
     <p class="notice" id="offline" hidden>Saving isn't available in this view, so marks and notes won't be kept. Open the board from claude.ai to save them.</p>
   </div>
+
+  <section id="copy">
+    <div class="section-head">
+      <p class="label">Copy review</p>
+      <h2>Opus and Astra on the 64 shorts' text</h2>
+      <p class="muted" id="copy-note"></p>
+    </div>
+    <h3 class="label" id="splits-head"></h3>
+    <div class="copies" id="copy-splits"></div>
+    <h3 class="label" id="changes-head" style="margin-top:22px"></h3>
+    <div class="copies" id="copy-changes"></div>
+  </section>
 
   <section id="new">
     <div class="section-head">
@@ -202,6 +230,48 @@ const el = (tag, attrs = {}, ...kids) => {
 
 const VIDEO_VERDICTS = [["good", "Looks good"], ["change", "Needs change"]];
 const POINT_VERDICTS = [["good", "Do it"], ["later", "Not now"], ["change", "Disagree"]];
+const CHANGE_VERDICTS = [["good", "Yes"], ["change", "No"]];
+const SPLIT_VERDICTS = [["opus", "Opus"], ["astra", "Astra"], ["keep", "Keep shipped"]];
+const WHO = { opus: "Opus", astra: "Astra" };
+const FIELD = { hook: "Hook", meaning1: "Meaning 1", meaning2: "Meaning 2", question: "Question", lesson: "Lesson", finding: "Finding", caption: "Caption" };
+function diffRows(diffs, withOld) {
+  return el("div", { class: "diff" }, ...diffs.flatMap(([f, a, b]) => [
+    el("span", { class: "label", text: FIELD[f] }),
+    ...(withOld ? [el("span", { class: "old", text: a })] : []),
+    el("span", { text: b }),
+  ]));
+}
+function copyTitle(c) {
+  return el("div", { class: "title" }, el("span", { class: "num", text: String(c.number).padStart(2, "0") }), el("h3", { text: c.name }));
+}
+function changeCard(c) {
+  const card = el("article", { class: "copycard", "data-id": c.id },
+    copyTitle(c),
+    diffRows(c.diffs, true),
+    ...c.reasons.map(([w, score, r]) => el("p", { class: "reason" }, el("b", { text: `${WHO[w]} (${score}): ` }), r)),
+    verdictControl(c.id, CHANGE_VERDICTS),
+    commentBox(c.id, "A note, or your own wording"),
+  );
+  register(c.id, { paint: (r) => (card.dataset.verdict = r.verdict ?? "") });
+  return card;
+}
+function splitCard(c) {
+  const card = el("article", { class: "copycard", "data-id": c.id },
+    copyTitle(c),
+    el("div", { class: "versions" }, ...c.options.map((o) => el("div", { class: "version" },
+      el("p", { class: "label", text: `${WHO[o.who]}'s version (${o.score})` }),
+      o.diffs.length ? diffRows(o.diffs.map(([f, , b]) => [f, "", b]), false) : el("p", { class: "muted", text: "Keep the shipped copy." }),
+      el("p", { class: "reason", text: o.reason }),
+      o.problems.length ? el("p", { class: "muted", text: `Rule check: ${o.problems.join("; ")}` }) : null,
+    ))),
+    el("details", {}, el("summary", { text: "Shipped copy of these fields" }),
+      diffRows([...new Map(c.options.flatMap((o) => o.diffs).map(([f, a]) => [f, [f, "", a]])).values()], false)),
+    verdictControl(c.id, SPLIT_VERDICTS),
+    commentBox(c.id, "A note, or your own wording"),
+  );
+  register(c.id, { paint: (r) => (card.dataset.verdict = r.verdict ?? "") });
+  return card;
+}
 const DECISION_VERDICTS = [["good", "Go ahead"], ["later", "Not yet"], ["change", "No"]];
 
 // Every control that shows an item's verdict or comment, so one change updates all its copies
@@ -344,7 +414,7 @@ function applyFilter() {
 }
 
 // Everything that takes a verdict counts toward progress.
-const ALL_IDS = [DATA.lesson.id, ...DATA.critiques.flatMap((c) => c.points.map((p) => p.id)), ...DATA.decisions.map((d) => d.id), ...DATA.shorts.map((s) => s.id)];
+const ALL_IDS = [...DATA.copy.splits.map((c) => c.id), ...DATA.copy.changes.map((c) => c.id), DATA.lesson.id, ...DATA.critiques.flatMap((c) => c.points.map((p) => p.id)), ...DATA.decisions.map((d) => d.id), ...DATA.shorts.map((s) => s.id)];
 
 function paint(id) {
   const r = reviews[id] ?? {};
@@ -384,6 +454,11 @@ async function save(id, patch) {
 }
 
 // Build the page.
+$("#copy-note").textContent = `${DATA.copy.rounds.length} rounds. The first at high effort each on its own, then back and forth; the last at xhigh. Agreed to keep as shipped: ${DATA.copy.kept.join(", ")}. Nothing is re-rendered until you've called these.`;
+$("#splits-head").textContent = `Still split: ${DATA.copy.splits.length}. Pick one, keep the shipped copy, or write your own in the note.`;
+$("#changes-head").textContent = `Agreed changes: ${DATA.copy.changes.length}. Yes to re-render with it.`;
+for (const c of DATA.copy.splits) $("#copy-splits").append(splitCard(c));
+for (const c of DATA.copy.changes) $("#copy-changes").append(changeCard(c));
 $("#new-lesson").append(lessonCard(DATA.lesson));
 $("#endcards-note").textContent = DATA.endcardsNote;
 for (const n of DATA.endcards) $("#new-endcards").append(shortCard(byNumber[n]));

@@ -1,0 +1,124 @@
+{
+  "shorts": [
+    {
+      "number": 26,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The mountain identifies the trigram but does not explain the highlighted fifth line, which restrains force rather than releasing stored skill. The boar makes what is held back concrete: aggression."
+    },
+    {
+      "number": 28,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "This keeps the weak ends and the strong supporting the weak, while adding advice the video leaves out. Standing alone without fear is clearer than my caption’s final clause."
+    },
+    {
+      "number": 29,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "This fixes the filling error and lets the water image develop before the lesson. Staying true connects its passage through danger to steady conduct without repeating the same instruction."
+    },
+    {
+      "number": 30,
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "I miscounted: the shipped lesson has seven words, and 'Like fire' connects it to the picture. Your two-sentence caption restores gentleness and right conduct while keeping the tending theme."
+    },
+    {
+      "number": 32,
+      "choice": "current",
+      "score": 9,
+      "reason": "Four words across two short lines remain readable in 2.4 seconds, and 'moving' prepares the changing moon. The alternative wording and final period do not improve the short enough to justify changing it."
+    },
+    {
+      "number": 33,
+      "choice": "opus-2",
+      "score": 9,
+      "reason": "Keeping both rising lines fits the fixed highlight and the quotation about line two. The added danger supplies the reason for leaving while departure is still free."
+    },
+    {
+      "number": 34,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "The ram works better when the finding names the animal and explains its trap. At 2.1 seconds, asking viewers to imagine having horns before that introduction adds unnecessary work."
+    },
+    {
+      "number": 35,
+      "choice": "new",
+      "score": 7,
+      "reason": "Your caption connects character to shining but repeats the screen’s advice. This keeps that connection and makes restraint concrete without requiring a newcomer to understand a line number.",
+      "rewrite": {
+        "meaning2": "Give people\nreason to trust.",
+        "caption": "The sun rises over the earth. Show your character in how you lead: give others room to do their work."
+      }
+    },
+    {
+      "number": 37,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "I miscounted the shipped second meaning: it has six words and already fits. We agree on the stronger hook and the rule-setter’s responsibility, so the extra wording change is unnecessary."
+    },
+    {
+      "number": 38,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Your earlier caption gives the bow a memorable scene and a clear reversal. Adding the trigrams repeats the cooperation point already on screen and delays that reversal."
+    },
+    {
+      "number": 39,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your revised second meaning adds self-examination and removes the word-for-word repetition. I keep seeking help as the action, with steady conduct explaining why friends come.",
+      "rewrite": {
+        "meaning2": "Stop pushing.\nCheck yourself.",
+        "lesson": "ASK FOR HELP.\nKEEP YOUR STANDARDS.",
+        "finding": "LINE 5: IN DANGER, STILL CENTRED.\nITS STEADY CONDUCT DRAWS FRIENDS.",
+        "caption": "Water ahead, a mountain below: pushing on can deepen the trouble. Stop, examine your conduct, and seek someone who can help."
+      }
+    },
+    {
+      "number": 41,
+      "choice": "new",
+      "score": 7,
+      "reason": "I keep the concrete offering and accept that 'baskets' needs no correction, but timing matters alongside sincerity. The finding explains why line three approaches its partner alone, giving the restraint a reason.",
+      "rewrite": {
+        "lesson": "Two small baskets\ncan be enough.",
+        "finding": "LINE 3: ONE GOES TO ITS PARTNER.\nTHREE TOGETHER WOULD BRING DOUBT.",
+        "caption": "Two small baskets can serve as an offering when the time calls for less, if you mean it. Cut anger and excess wanting, too."
+      }
+    },
+    {
+      "number": 43,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "This keeps the clear explanation of why force fails. The court and acknowledged danger add something beyond the warning to your own people already on screen."
+    },
+    {
+      "number": 46,
+      "choice": "new",
+      "score": 7,
+      "reason": "The stairs belong in the finding because the lesson depends on them, but repeating 'step by step' leaves out Wang Bi’s explanation. Keeping the stairs and adding accepted help connects the image to its reason.",
+      "rewrite": {
+        "finding": "LINE 5: HE CLIMBS THE STAIRS.\nACCEPTS HELP; ENTRUSTS THE WORK.",
+        "caption": "Wood grows within the earth: small gains accumulate. The text also warns against climbing on blindly, unable to stop."
+      }
+    },
+    {
+      "number": 47,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Returning to the aim answers the question about what is worth everything and gives the ending a definite object. Staying who you are broadens that into general identity advice without making the instruction clearer."
+    },
+    {
+      "number": 53,
+      "choice": "new",
+      "score": 7,
+      "reason": "The fixed picture still highlights four lines; this finding acknowledges them and locates the earned meal at line two. The Tuan praises advancing rightly, so slowness alone cannot support a promise of lasting growth.",
+      "rewrite": {
+        "meaning2": "Do the work\nat each step.",
+        "finding": "LINES 2–5 EACH HOLD THEIR PLACE.\nLINE 2: THE GOOSE HAS EARNED ITS MEAL.",
+        "caption": "A tree on a mountain grows where everyone can see it. Build the character you want others to learn from."
+      }
+    }
+  ]
+}

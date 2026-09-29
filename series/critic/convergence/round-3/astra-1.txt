@@ -1,0 +1,113 @@
+{
+  "shorts": [
+    {
+      "number": 2,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your objection to the flatter replacement is fair, but “arrive” still reads as a promised result. Two short commands keep the force and make supporting someone an active job.",
+      "rewrite": {
+        "lesson": "LET THEM LEAD.\nPULL YOUR WEIGHT."
+      }
+    },
+    {
+      "number": 4,
+      "choice": "current",
+      "score": 8,
+      "reason": "The hook already makes this about asking again for a preferred answer, which answers my concern about honest follow-ups. The shipped shopping line has more bite, and the teacher readout supports its point."
+    },
+    {
+      "number": 5,
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Your instruction and question fix the repetition that remains in astra-1. They work with the concrete inbox hook and the lesson explaining why rest matters."
+    },
+    {
+      "number": 6,
+      "choice": "astra-2",
+      "score": 9,
+      "reason": "The finding makes winning and losing explicit while retaining the Small Image’s reason: no respect. 中吉，終凶 warns against taking conflict to its end; it does not make the middle a last chance to withdraw."
+    },
+    {
+      "number": 7,
+      "choice": "new",
+      "score": 7,
+      "reason": "You are right that repeating care loses what the ranks show. Make the ending two instructions, and use the caption to explain responsibility without promising obedience.",
+      "rewrite": {
+        "lesson": "Set the example.\nSteady the ranks.",
+        "caption": "Water lies within the earth; an army comes from the people. Caring for them is part of leading them, before there is any marching to do."
+      }
+    },
+    {
+      "number": 8,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your ending fits the moving figure; it works once the viewer has been told to choose well. Put that choice on screen before the instruction to commit, instead of leaving it to the caption.",
+      "rewrite": {
+        "meaning1": "Holding Together\nsays: choose well.",
+        "meaning2": "Then stop\nputting it off.",
+        "lesson": "Walk over.\nStand beside them.",
+        "caption": "Water gathers on the earth, as people gather around someone they trust. Choose your company carefully, then commit before the group has moved on."
+      }
+    },
+    {
+      "number": 9,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your revised finding fixes line one’s movement, but “not yet” and the caption about working on yourself still make the advance feel like another instruction to wait. This version makes the question, marked line and lesson support the same decision."
+    },
+    {
+      "number": 11,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "“Keep talking” names the action immediately and leads straight into contact and the meeting lines. It loses no bite, so the clarity gain warrants the change."
+    },
+    {
+      "number": 12,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "The unnamed “them” is understandable as whoever offers the rewards. “Buy you” says why the deal is bad and gives the refusal more bite."
+    },
+    {
+      "number": 13,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your revised caption fixes the overstatement about membership and names the fault of keeping fellowship within one’s own circle. It preserves the image of fellowship in the open without repeating the lesson."
+    },
+    {
+      "number": 15,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "“Cannot be surpassed” does not establish that quiet people cannot be stopped. Wang Bi’s work and care explain the strong line’s restraint; the fact about favorable lines does not."
+    },
+    {
+      "number": 17,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your combined option keeps the finding that explains line one’s freedom and the lesson about following the time rather than desire. That gives the ending a reason beyond another instruction to stop work."
+    },
+    {
+      "number": 20,
+      "choice": "opus-2",
+      "score": 9,
+      "reason": "You are right about the limits: the shipped second meaning has six words and the lesson nine. Your revised meaning advances the point, and the finding explains how people’s conduct reflects the ruler’s."
+    },
+    {
+      "number": 21,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "The repeated boundary violation gives “warn clearly” a person and a problem to address. The fixed jaw scene still supplies the obstruction image, so the new hook connects the sequence more clearly."
+    },
+    {
+      "number": 23,
+      "choice": "current",
+      "score": 7,
+      "reason": "You are right that the second meaning has six words. Here “don’t run” means do not abandon people who depend on you, which the Great Image supports; the replacement repeats the base lesson."
+    },
+    {
+      "number": 24,
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "Your latest version removes both unsupported “only” claims; my last response missed that. It also keeps the rest theme consistent with the scene and the Great Image, without repeating “turn back early.”"
+    }
+  ]
+}

@@ -17,6 +17,7 @@ in series/review/board.json. Verdicts and comments live in the artifact's databa
 """
 
 import json
+import re
 import os
 import subprocess
 import sys
@@ -100,6 +101,39 @@ def build_media():
         print(f"{k}/{len(jobs)} {video} {os.path.getsize(os.path.join(media, video)) / 1e6:.1f} MB", flush=True)
 
 
+FIELDS = ["hook", "meaning1", "meaning2", "question", "lesson", "finding", "caption"]
+
+
+def copy_review():
+    """The copy convergence (scripts/convergence.mjs): the changes Opus and Astra agreed on, and
+    the shorts still split after the last round, each with both versions, for the user to call."""
+    state = json.load(open(rel("series/critic/convergence/state.json")))
+    glosses = json.load(open(rel("series/critic/convergence/glosses.json")))["glosses"]
+    quoted = re.compile("|".join(re.escape(k) for k in sorted(glosses, key=len, reverse=True)))
+
+    def english(reason):
+        # The user doesn't read Chinese: each quoted phrase gets its English beside it.
+        return quoted.sub(lambda m: f"{m.group(0)} [{glosses[m.group(0)]}]", reason)
+
+    def diffs(n, option):
+        cur, new = state["shorts"][n]["options"]["current"], state["shorts"][n]["options"][option]
+        return [[f, cur[f], new[f]] for f in FIELDS if cur[f] != new[f]]
+
+    changes, splits, kept = [], [], []
+    for n, s in state["shorts"].items():
+        last = s["votes"][-1]
+        if s["agreed"] == "current":
+            kept.append(int(n))
+        elif s["agreed"]:
+            changes.append({"id": f"copy-{int(n):02d}", "number": int(n), "name": s["name"], "round": last["round"], "diffs": diffs(n, s["agreed"]),
+                            "reasons": [[w, last[w]["score"], english(last[w]["reason"])] for w in ("opus", "astra")]})
+        else:
+            splits.append({"id": f"copy-{int(n):02d}", "number": int(n), "name": s["name"],
+                           "options": [{"who": w, "score": last[w]["score"], "reason": english(last[w]["reason"]), "diffs": diffs(n, last[w]["choice"]),
+                                        "problems": s["problems"].get(last[w]["choice"], [])} for w in ("opus", "astra")]})
+    return {"rounds": state["rounds"], "changes": changes, "splits": splits, "kept": kept}
+
+
 def build_page():
     assets_file = os.path.join(out, "assets.json")
     assets = json.load(open(assets_file)) if os.path.exists(assets_file) else {}
@@ -119,6 +153,7 @@ def build_page():
         "endcardsNote": board["new"]["endcardsNote"],
         "critiques": board["critiques"],
         "decisions": board["decisions"],
+        "copy": copy_review(),
         "shorts": items,
     }
     template = open(rel("scripts/review-board.html")).read()

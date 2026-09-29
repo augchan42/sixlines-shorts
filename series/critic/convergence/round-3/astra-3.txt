@@ -1,0 +1,69 @@
+{
+  "shorts": [
+    {
+      "number": 54,
+      "choice": "new",
+      "score": 6,
+      "reason": "A line-3 finding cannot repair a picture that lights four lines, so I accept your finding. The empty-basket caption answers the ending question with a concrete failure and explains the missing support.",
+      "rewrite": {
+        "meaning2": "Check how it\ncould go wrong.",
+        "caption": "The last line has an empty basket and a sheep that gives no blood. Neither side has the support to carry out its part."
+      }
+    },
+    {
+      "number": 55,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "You're right that singling out line 5 gives the viewer no matching highlight. Your question and the corrected noon caption strengthen the same point while the shipped finding fits the fixed picture."
+    },
+    {
+      "number": 56,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your lesson adds a consequence worth keeping, but 'lose your room' makes it certain. 'Take charge, risk your room' keeps the bite in five words, and the caption explains the host's suspicion.",
+      "rewrite": {
+        "meaning1": "The Wanderer:\ndon't take over.",
+        "lesson": "Take charge,\nrisk your room.",
+        "caption": "In the third line, the inn burns. Wang Bi says the guest has taken the host's authority and made the host suspicious."
+      }
+    },
+    {
+      "number": 57,
+      "choice": "new",
+      "score": 9,
+      "reason": "Your repetition objection is fair: turning up the volume is a different response worth challenging. This gives the advice bite without promising success, while the caption adds Wang Bi's timing for repeating the instruction.",
+      "rewrite": {
+        "meaning2": "Don't just\nsay it louder.",
+        "caption": "Wind follows wind. Wang Bi says to repeat an instruction before and after it takes effect, giving people time to change."
+      }
+    },
+    {
+      "number": 58,
+      "choice": "new",
+      "score": 7,
+      "reason": "Your objection to repeating 'learn' is fair, so the meaning now asks for more than good news. That prepares the lesson without saying joy alone must fade, and the caption explains the learning and honesty.",
+      "rewrite": {
+        "meaning2": "Share more\nthan good news.",
+        "caption": "Two lakes together: friends talking and learning from each other. Enjoy the company without pretending to agree."
+      }
+    },
+    {
+      "number": 59,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "The question already explains the centre as what everyone shares, and your revised caption removes 'stays put'. Keeping the shipped lesson preserves its link to the marked fifth line."
+    },
+    {
+      "number": 61,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your point about both parts of the animation settles it: open listening fits the empty centre, and honest speech fits the firm lines. The four-word lesson keeps both readable as advice for the same conversation."
+    },
+    {
+      "number": 64,
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "The finding now identifies excessive drinking as the fault, and the shipped lesson does not forbid rest. It closes the hook clearly; a separate instruction about celebrating adds no necessary clarification."
+    }
+  ]
+}
