@@ -7,7 +7,8 @@
 // writes out/wuyue/wuyue-vertical.mp4 (and -wide), H.264 yuv420p with faststart; each shot is
 // kept as out/wuyue/shots/<cut>-<shot>.mp4, --shot renders one shot alone, and --reuse keeps
 // shots already rendered. --shot NAME --alone also writes out/wuyue/<cut>-<shot>-alone.mp4: that
-// shot with its cards and its stretch of the music, to look at on its own.
+// shot with its cards and its stretch of the music, to look at on its own. --shot NAME --still S
+// writes out/wuyue/stills/<cut>-<shot>-<S>.png instead: the shot's frame at S seconds.
 import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -112,11 +113,11 @@ export const SHOTS = [
   },
 ];
 
-// Each cut: its frame, the map (metres from Hangzhou's sign; a character is about 10 m wide),
-// and the text's size and height in the frame. Korea lies north-east, Japan east of it.
+// Each cut: its frame, and the text's size and height in the frame. Both cuts share the map,
+// series/wuyue-map.json (scripts/wuyue-map.mjs).
 export const CUTS = {
-  vertical: { size: [1080, 1920], korea: [16, 50], japan: [32, 28], north: [0, 34], fontsize: 58, y: 0.08 },
-  wide: { size: [1920, 1080], korea: [42, 30], japan: [66, 8], north: [0, 30], fontsize: 52, y: 0.07 },
+  vertical: { size: [1080, 1920], fontsize: 58, y: 0.08 },
+  wide: { size: [1920, 1080], fontsize: 52, y: 0.07 },
 };
 
 // The sources card closing the wide cut, for the friend's site.
@@ -191,7 +192,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const root = path.resolve(import.meta.dirname, "..");
   const blender = process.env.BLENDER ?? "/Applications/Blender.app/Contents/MacOS/Blender";
   const font = path.join(root, "public/local/fonts/goudos.ttf");
-  const { values: a } = parseArgs({ options: { cut: { type: "string" }, shot: { type: "string" }, samples: { type: "string" }, reuse: { type: "boolean", default: false }, alone: { type: "boolean", default: false } } });
+  const { values: a } = parseArgs({ options: { cut: { type: "string" }, shot: { type: "string" }, samples: { type: "string" }, reuse: { type: "boolean", default: false }, alone: { type: "boolean", default: false }, still: { type: "string" } } });
+  if (a.still && !a.shot) (console.error("--still needs --shot"), process.exit(1));
   // Duration's calm section of Interstellar Retrowave (100 bpm, A minor).
   const music = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8")).find((r) => r.number === 32).music;
   const hanzi = (c) => path.join(root, "public/local/hanzi", `${c}.json`);
@@ -208,13 +210,14 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const shots = a.shot ? SHOTS.filter((s) => s.name === a.shot) : SHOTS;
     const done = [];
     for (const shot of shots) {
-      const out = path.join(root, "out/wuyue/shots", `${name}-${shot.name}.mp4`);
+      const out = a.still ? path.join(root, "out/wuyue/stills", `${name}-${shot.name}-${a.still}.png`) : path.join(root, "out/wuyue/shots", `${name}-${shot.name}.mp4`);
       if (a.reuse && existsSync(out)) {
         done.push(out);
         continue;
       }
       const partial = path.join(root, "out/wuyue/partial", `${name}-${shot.name}.mp4`);
       mkdirSync(path.dirname(partial), { recursive: true });
+      mkdirSync(path.dirname(out), { recursive: true });
       rmSync(partial, { force: true });
       const timing = { frames: frames(shot.bars), ...Object.fromEntries(Object.entries(shot.events).map(([k, v]) => [k, Array.isArray(v) ? v.map((s) => Math.round(s * FPS)) : Math.round(v * FPS)])) };
       const t0 = Date.now();
@@ -223,20 +226,25 @@ if (import.meta.url === `file://${process.argv[1]}`) {
         [
           "-b", "--factory-startup", "--python-exit-code", "1", "-P", path.join(root, "blender/wuyue.py"), "--",
           "--shot", shot.name, "--hanzi", path.join(root, "public/local/hanzi"), "--font", font,
-          "--map", JSON.stringify({ korea: cut.korea, japan: cut.japan, north: cut.north }),
+          "--map", path.join(root, "series/wuyue-map.json"),
           "--timeline", JSON.stringify(timeline(16, 0.25)),
           "--timing", JSON.stringify(timing), "--width", String(cut.size[0]), "--height", String(cut.size[1]),
-          ...(a.samples ? ["--samples", a.samples] : []), "--out", partial,
+          ...(a.samples ? ["--samples", a.samples] : []), ...(a.still ? ["--still", String(Math.round(Number(a.still) * FPS) + 1), "--out", out] : ["--out", partial]),
         ],
         { stdio: ["ignore", "ignore", "inherit"] },
       );
+      if (a.still) {
+        if (run.status !== 0 || !existsSync(out)) (console.error(`Blender failed on ${shot.name} (exit ${run.status})`), process.exit(1));
+        console.log(`wrote ${path.relative(root, out)} in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
+        continue;
+      }
       if (run.status !== 0 || !existsSync(partial)) (console.error(`Blender failed on ${shot.name} (exit ${run.status})`), process.exit(1));
       const got = probe(partial);
       if (!keepIfComplete({ partial, out, frames: got, expected: timing.frames })) (console.error(`${shot.name}: ${got} frames; expected ${timing.frames}.`), process.exit(1));
       console.log(`wrote ${path.relative(root, out)} in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
       done.push(out);
     }
-    if (a.shot && !a.alone) continue;
+    if (a.still || (a.shot && !a.alone)) continue;
 
     // Cut together, the cards over it, the sources card closing the wide cut, and the music.
     const list = path.join(root, "out/wuyue/partial", `${name}.txt`);

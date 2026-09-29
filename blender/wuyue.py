@@ -9,19 +9,20 @@ straight down; nothing shakes or flickers, and each shot has at most one flare.
             the camera rises to the whole sign
   family    錢 (Qian, the ruling family) traces in; a line from 907 to 978 draws in five spans,
             one per reign
-  exchange  the map: a faint border round Hangzhou; a line north; 高麗 (Goryeo, Korea) and 日本
+  exchange  the map: the coast and Wuyue's border fade in; a line north; 高麗 (Goryeo, Korea) and 日本
             (Japan) trace in; lines out to both; the cyan-white line back from Korea; one flare
   printing  one page of light columns traces in; a stupa like Qian Chu's small bronze ones builds
             round it; copies of it light up outward in a wave while the camera rises over them
   leifeng   Leifeng Pagoda builds storey by storey and stands
-  surrender the map as the exchange left it; the border fades, the routes stay lit
+  surrender the map as the exchange left it; the camera closes in on Wuyue and the line north
+            while the border fades; the routes stay lit
   vault     the standing pagoda fades to its platform; the camera comes down to where its vault
             was, and the iron case and the silver stupa found there trace in; one flare
   end       the map as the video left it; its routes and places fade while the camera comes down
             to the 吳越 sign, which flares, and WUYUE fades in under it
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/wuyue.py -- --shot hook \\
-    --hanzi public/local/hanzi --font goudos.ttf --map '{"korea":[24,46],...}' \\
+    --hanzi public/local/hanzi --font goudos.ttf --map series/wuyue-map.json \\
     --timeline '[[-8,-2.5],...]' --timing '{"frames":288,...}' --width 1080 --height 1920 --out hook.mp4
 """
 
@@ -45,6 +46,7 @@ HOME, SEA = "#ff5ec8", "#bfe9ff"  # Wuyue's magenta; cyan-white for what crosses
 GREY = "#a89aa3"
 LANE = 0.5  # metres between an outward line and the line back beside it
 SETTLED = REST * 1.5  # a finished sign's glow (sign.py's default)
+COAST = REST * 0.25  # the coast's glow: there to place things, not to look at
 
 
 def parse():
@@ -53,12 +55,13 @@ def parse():
     p.add_argument("--shot", required=True, choices=("hook", "family", "exchange", "printing", "leifeng", "surrender", "vault", "end"))
     p.add_argument("--hanzi", required=True, help="the folder of stroke data files")
     p.add_argument("--font", required=True)
-    p.add_argument("--map", required=True, help="JSON: korea, japan and north, x,y metres from the sign")
+    p.add_argument("--map", required=True, help="scripts/wuyue-map.mjs's map: the coast, Wuyue's border and the places")
     p.add_argument("--timeline", required=True, help="JSON: the reigns' spans, [x0, x1] metres each")
     p.add_argument("--timing", required=True, help="JSON: frames, and the shot's events in frames")
     p.add_argument("--width", type=int, default=1080)
     p.add_argument("--height", type=int, default=1920)
     p.add_argument("--samples", type=int, default=64)
+    p.add_argument("--still", type=int, help="render only this frame, as a PNG")
     p.add_argument("--out", required=True)
     return p.parse_args(argv)
 
@@ -153,22 +156,30 @@ def right_mid(objs, pad=0.4):
     return (x1 + pad, (y0 + y1) / 2, 0)
 
 
-def border(centre, rx, ry, strength):
-    """A faint closed loop round Hangzhou: Wuyue's border, drawn as one line of light."""
-    c = bpy.data.curves.new("border", "CURVE")
+def load_map(file):
+    """scripts/wuyue-map.mjs's map, moved so the kingdom's middle, where the 吳越 sign stands, is
+    at the origin: each place's (x, y), and the border and the coast as lists of (x, y)."""
+    m = json.load(open(file))
+    dx, dy = m["places"]["wuyue"]["xy"]
+    move = lambda p: (p[0] - dx, p[1] - dy)  # noqa: E731
+    places = {k: move(v["xy"]) for k, v in m["places"].items()}
+    return {**places, "border": [move(p) for p in m["border"]], "coast": [[move(p) for p in line] for line in m["coast"]]}
+
+
+def lines(name, polylines, colour, strength, tube):
+    """Lines of light lying on the floor, one object with one glow: the coast, or the border."""
+    c = bpy.data.curves.new(name, "CURVE")
     c.dimensions = "3D"
-    c.bevel_depth, c.bevel_resolution = NEON * 0.7, 1
-    s = c.splines.new("POLY")
-    n = 96
-    s.points.add(n - 1)
-    for i, p in enumerate(s.points):
-        a = 2 * math.pi * i / n
-        p.co = (centre[0] + rx * math.cos(a), centre[1] + ry * math.sin(a), 0, 1)
-    s.use_cyclic_u = True
-    o = bpy.data.objects.new("border", c)
+    c.bevel_depth, c.bevel_resolution = tube, 1
+    for pts in polylines:
+        s = c.splines.new("POLY")
+        s.points.add(len(pts) - 1)
+        for p, (x, y) in zip(s.points, pts):
+            p.co = (x, y, 0, 1)
+    o = bpy.data.objects.new(name, c)
     bpy.context.scene.collection.objects.link(o)
-    o.location.z = BODY + NEON
-    mat, glow = edge(linear(HOME), "border")
+    o.location.z = tube
+    mat, glow = edge(linear(colour), name)
     glow.default_value = strength
     c.materials.append(mat)
     return o, glow
@@ -213,6 +224,15 @@ class Camera:
         aim = Vector(((x0 + x1) / 2, (y0 + y1) / 2, 0))
         return aim, aim + Vector((0, -dist / 15.5, dist))
 
+    def top_short_of(self, objs, east_of, head=0.2, pad=2.0):
+        """top(), moved west only as far as it takes to leave `east_of` (objects east of these)
+        out of frame."""
+        aim, eye = self.top(objs, head)
+        x0, _, _, _ = bounds(east_of)
+        east = aim.x + (eye.z - aim.z) * 18 / 35
+        dx = min(0.0, x0 - pad - east)
+        return aim + Vector((dx, 0, 0)), eye + Vector((dx, 0, 0))
+
     def fit(self, wide, tall, head=0.2):
         """How far back a side view must stand for `wide` x `tall` metres to fit with MARGIN,
         the top `head` of the frame kept clear."""
@@ -238,9 +258,9 @@ def hz(args, c):
 
 
 def home(args, size=2.0):
-    """The finished 吳越 sign, centred at the origin, HANGZHOU under it."""
+    """The finished 吳越 sign, centred at the origin, WUYUE under it."""
     group, objs, glow = names([hz(args, "吳"), hz(args, "越")], 0, HOME, (0, 0), "stack")
-    lab, lab_glow = under(objs, "HANGZHOU", args.font, size)
+    lab, lab_glow = under(objs, "WUYUE", args.font, size)
     return group, objs, glow, lab, lab_glow
 
 
@@ -289,18 +309,20 @@ def world_map(args, t, m, drawn):
     """The map for the exchange (drawing itself) or the end (as the exchange left it)."""
     group, objs, glow, lab, lab_glow = home(args, 3.6)
     wu = group[0][1]
-    x0, y0, x1, y1 = bounds(objs + [lab])
-    edge, edge_glow = border(((x0 + x1) / 2, (y0 + y1) / 2), (x1 - x0) / 2 + 5, (y1 - y0) / 2 + 5, REST * 0.4)
+    edge, edge_glow = lines("border", [m["border"]], HOME, REST * 0.4, NEON * 0.7)
+    _, coast_glow = lines("coast", m["coast"], GREY, COAST, NEON * 0.4)
     when = (lambda k: (-3, -1)) if drawn else (lambda k: t[k])  # drawn: already there at frame 0
     if not drawn:
         fade(edge_glow, 0, 30, 0.0, REST * 0.4)
+        fade(coast_glow, 0, 30, 0.0, COAST)
     wx0, _, wx1, wy1 = bounds(wu)
     north_end = (m["north"][0], m["north"][1], 0)
     route("north", ((wx0 + wx1) / 2, wy1 + 0.6, 0), north_end, 0, 0, HOME, *when("north"))
     nl = label("NORTHERN COURTS", "NORTHERN COURTS", args.font, 3.6, GREY, 1.0, None if drawn else (t["north"][1], 20))
     nl.location = (north_end[0], north_end[1], 0.02)
-    lx0, _, lx1, _ = bounds([nl])  # to the left of the line's end, clear of Korea
-    nl.location.x -= lx1 - north_end[0] + 1.5
+    lx0, ly0, lx1, _ = bounds([nl])  # centred over the line's end
+    nl.location.x -= (lx0 + lx1) / 2 - north_end[0]
+    nl.location.y += north_end[1] + 1.2 - ly0
     places = when("places")
     ko, ko_objs, _ = names([hz(args, "高"), hz(args, "麗")], 2, SEA, m["korea"], "row", *places)
     ja, ja_objs, _ = names([hz(args, "日"), hz(args, "本")], 4, SEA, m["japan"], "row", *places)
@@ -325,16 +347,16 @@ def exchange(args, t, m, cam):
 
 
 def surrender(args, t, m, cam):
-    """978: the map as the exchange left it, framed on Wuyue and the line north to the Song's
-    court; Wuyue's border fades, the routes stay lit."""
-    _, lab, _, (edge, edge_glow), objs, _, (north_end, nl) = world_map(args, t, m, drawn=True)
+    """978: the map as the exchange left it; the camera closes in on Wuyue and the line north to
+    the Song's court while Wuyue's border fades; the routes stay lit."""
+    _, lab, _, (edge, edge_glow), objs, everything, (north_end, nl) = world_map(args, t, m, drawn=True)
     fade(edge_glow, *t["border"], REST * 0.4, 0.0)
     for f, hidden in ((0, False), (t["border"][1] + 1, True)):  # unlit, the tube still shows
         edge.hide_render = hidden
         key(edge, "hide_render", f)
-    aim, eye = cam.top(objs + [lab, nl, marker(north_end), edge])
-    cam.pose(0, aim, eye)
-    cam.pose(t["frames"], aim, aim + (eye - aim) * 0.96)
+    cam.pose(0, *cam.top(everything))
+    near = objs + [lab, nl, edge]
+    cam.pose(t["frames"], *cam.top_short_of(near + [marker(north_end)], [o for o in everything if o not in near]))
 
 
 def fade_out(objs, a, b):
@@ -499,7 +521,7 @@ SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": print
 
 def main():
     args = parse()
-    t, m = json.loads(args.timing), json.loads(args.map)
+    t, m = json.loads(args.timing), load_map(args.map)
     scene = bpy.context.scene
     for o in list(bpy.data.objects):
         bpy.data.objects.remove(o)
@@ -510,7 +532,14 @@ def main():
     scene.eevee.taa_render_samples = args.samples
     scene.render.resolution_x, scene.render.resolution_y = args.width, args.height
     bloom(scene)
-    bpy.ops.render.render(animation=True)
+    if args.still is None:
+        bpy.ops.render.render(animation=True)
+        return
+    scene.frame_set(args.still)
+    scene.render.image_settings.media_type = "IMAGE"
+    scene.render.image_settings.file_format = "PNG"
+    scene.render.filepath = args.out
+    bpy.ops.render.render(write_still=True)
 
 
 if __name__ == "__main__":

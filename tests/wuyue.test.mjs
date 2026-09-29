@@ -40,13 +40,10 @@ test("the timeline has one span per reign, 907 to 978, each as long as its reign
   assert.equal(ratio.toFixed(3), ((978 - 948) / (932 - 907)).toFixed(3));
 });
 
-test("each cut sets its frame and a map where Korea is north-east and Japan east of it", () => {
+test("each cut sets its frame; the map is the same for both (tests/wuyue-map.test.mjs)", () => {
   assert.deepEqual(CUTS.vertical.size, [1080, 1920]);
   assert.deepEqual(CUTS.wide.size, [1920, 1080]);
-  for (const c of Object.values(CUTS)) {
-    assert.ok(c.korea[0] > 0 && c.korea[1] > 0);
-    assert.ok(c.japan[0] > c.korea[0] && c.japan[1] < c.korea[1]);
-  }
+  for (const c of Object.values(CUTS)) assert.equal(c.korea, undefined);
 });
 
 test("a card's lines are drawn one under another, centred, fading, each read from a file", () => {
