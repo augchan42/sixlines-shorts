@@ -54,10 +54,25 @@ Everything a viewer sees, hears and can do matches the Godot build as of commit 
 
 ## Build
 
-- Source in `web/terminal/` in this repo: plain ES modules, no framework. A build script
-  (`npm run terminal:plain`) writes `web/terminal/build/` (gitignored) with the page, JS,
-  fonts, data and sounds, and prints the total size and the size compressed.
-- Tests: node tests for the rules port and the build output (files present, no banned words,
-  total size under 0.6 MB).
-- Hosting: copied to sixlines-site `public/terminal/`, replacing the Godot files there. The
-  existing `/terminal` → `/terminal/index.html` redirect and the middleware exclusion stay.
+**As of 2026-09-29, the page itself lives in `sixlines-site`, not here.** The source (plain ES
+modules, no framework: `index.html`, `main.js`, `plot.js`, `reading.js`, `turning.js`) is at
+`terminal/` in that repo's root; its build script (`pnpm terminal:build`, `scripts/
+terminal-build.mjs`, esbuild) writes `public/terminal/` there directly — sixlines-site owns and
+serves that page, so it owns building it. The rules-port and build-output tests moved with it,
+to `scripts/terminal-*.test.ts` there. See sixlines-site's ADR-047 for why.
+
+This repo (`sixlines-shorts`) still generates the three asset kinds the page needs, since they
+depend on data and tools that belong here:
+
+- `npm run terminal:assets [out-dir]` (`scripts/terminal-assets.mjs`) writes
+  `data/hexagrams.json` (the Godot build's, as is), both fonts as woff2 (Pixel Operator; the
+  Noto Sans TC subset to the characters shown) and the sounds as `.ogg` and `.m4a`
+  (`scripts/sfx.mjs`) into a directory — by default `~/projects/sixlines-site/terminal/assets`,
+  sixlines-site's committed copy of these inputs (see that directory's README there).
+- Test: `tests/terminal-assets.test.mjs` (files present, the data matches the Godot build's, no
+  banned words).
+- After a data or sound change: run `npm run terminal:assets` here, then `pnpm terminal:build`
+  in sixlines-site, and check `git diff --stat public/terminal` there.
+
+Hosting: sixlines-site's `public/terminal/`, replacing the Godot files that were there before.
+The existing `/terminal` → `/terminal/index.html` redirect and the middleware exclusion stay.

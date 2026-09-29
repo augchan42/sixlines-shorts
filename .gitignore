@@ -5,4 +5,3 @@ public/local/
 .DS_Store
 __pycache__/
 .playwright-mcp/
-web/terminal/build/
