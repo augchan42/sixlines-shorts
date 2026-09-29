@@ -3,10 +3,11 @@
 // over the video afterwards (so they stay level while the camera moves) and one track under it.
 // The first version of this script rendered only the 11 s returning-route smoke test (64f1af5).
 //
-//   node scripts/wuyue.mjs [--cut vertical|wide] [--shot NAME] [--samples N] [--reuse]
+//   node scripts/wuyue.mjs [--cut vertical|wide] [--shot NAME] [--samples N] [--reuse] [--alone]
 // writes out/wuyue/wuyue-vertical.mp4 (and -wide), H.264 yuv420p with faststart; each shot is
 // kept as out/wuyue/shots/<cut>-<shot>.mp4, --shot renders one shot alone, and --reuse keeps
-// shots already rendered.
+// shots already rendered. --shot NAME --alone also writes out/wuyue/<cut>-<shot>-alone.mp4: that
+// shot with its cards and its stretch of the music, to look at on its own.
 import { execFileSync, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -72,12 +73,23 @@ export const SHOTS = [
   {
     name: "printing",
     bars: 7,
-    events: { page: [0.5, 2.5], spread: [4.0, 10.0], rise: [3.6, 12.0] },
+    events: { page: [0.3, 2.0], build: [2.2, 6.8], flare: 7.2, orbit: [4.4, 9.6], spread: [9.6, 14.4], rise: [9.6, 15.6] },
     cards: [
-      { text: "Qian Chu had a short\nBuddhist text printed.", from: 0.3, to: 4.3 },
-      { text: "It is said 84,000\ncopies were made.", from: 4.8, to: 9.1 },
-      { text: "Copies dated 956, 965\nand 975 survive.", from: 9.6, to: 13.2 },
-      { text: "Among the oldest\nprinted pages anywhere.", from: 13.6, to: 16.8 },
+      { text: "Qian Chu had the Baoqieyin\nDharani printed.", from: 0.3, to: 4.3 },
+      { text: "The sutra says a stupa holding it\nbecomes a reliquary.", from: 4.8, to: 9.1 },
+      { text: "It is said 84,000 small stupas\nwere made to hold the copies.", from: 9.6, to: 13.2 },
+      { text: "Copies dated 956 and 965\nsurvive, among the oldest prints.", from: 13.6, to: 16.8 },
+    ],
+  },
+  {
+    name: "leifeng",
+    bars: 6,
+    events: { rise: [0.3, 4.4], fall: [5.0, 7.4], descend: [6.6, 10.0], case: [7.8, 8.6], build: [8.4, 11.6], flare: 12.0 },
+    cards: [
+      { text: "Leifeng Pagoda, by West Lake,\ndedicated in 975.", from: 0.3, to: 4.4 },
+      { text: "It fell in 1924. Copies of the\n975 print were in its bricks.", from: 4.8, to: 8.6 },
+      { text: "In 2001 its vault was opened.\nThis silver stupa was inside.", from: 9.0, to: 12.0 },
+      { text: "Inside it: a strand\nof the Buddha’s hair.", from: 12.2, to: 14.4 },
     ],
   },
   {
@@ -142,7 +154,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const root = path.resolve(import.meta.dirname, "..");
   const blender = process.env.BLENDER ?? "/Applications/Blender.app/Contents/MacOS/Blender";
   const font = path.join(root, "public/local/fonts/goudos.ttf");
-  const { values: a } = parseArgs({ options: { cut: { type: "string" }, shot: { type: "string" }, samples: { type: "string" }, reuse: { type: "boolean", default: false } } });
+  const { values: a } = parseArgs({ options: { cut: { type: "string" }, shot: { type: "string" }, samples: { type: "string" }, reuse: { type: "boolean", default: false }, alone: { type: "boolean", default: false } } });
   // Duration's calm section of Interstellar Retrowave (100 bpm, A minor).
   const music = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8")).find((r) => r.number === 32).music;
   const hanzi = (c) => path.join(root, "public/local/hanzi", `${c}.json`);
@@ -187,7 +199,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       console.log(`wrote ${path.relative(root, out)} in ${((Date.now() - t0) / 1000).toFixed(0)} s`);
       done.push(out);
     }
-    if (a.shot) continue;
+    if (a.shot && !a.alone) continue;
 
     // Cut together, the cards over it, the sources card closing the wide cut, and the music.
     const list = path.join(root, "out/wuyue/partial", `${name}.txt`);
@@ -202,20 +214,21 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       for (const [f, text] of files) writeFileSync(f, text);
       filters.push(filter);
     };
-    for (const s of SHOTS) {
+    for (const s of shots) {
       card(s.cards, cut, at);
       at += s.bars * BAR;
     }
-    const tail = name === "wide" ? 6 : 0;
+    const tail = name === "wide" && !a.shot ? 6 : 0;
     const secs = at + tail;
     if (tail) card([{ text: SOURCES.join("\n"), from: 0.3, to: tail }], { ...cut, fontsize: 36, y: 0.32 }, at);
-    const out = path.join(root, "out/wuyue", `wuyue-${name}.mp4`);
+    const out = path.join(root, "out/wuyue", a.shot ? `${name}-${a.shot}-alone.mp4` : `wuyue-${name}.mp4`);
+    const before = SHOTS.slice(0, SHOTS.findIndex((s) => s === shots[0])).reduce((t, s) => t + s.bars * BAR, 0);
     const mux = spawnSync("ffmpeg", [
       "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", list,
-      "-ss", musicStart(music).toFixed(3), "-i", path.join(root, "public/local/music", music.file),
+      "-ss", (musicStart(music) + before).toFixed(3), "-i", path.join(root, "public/local/music", music.file),
       "-filter_complex",
       `[0:v]tpad=stop_duration=${tail}:color=black,${filters.join(",")}[v];` +
-        `[1:a]atrim=duration=${secs},afade=t=in:st=0:d=1,afade=t=out:st=${secs - 3}:d=3[a]`,
+        `[1:a]atrim=duration=${secs},afade=t=in:st=0:d=${a.shot ? 0.3 : 1},afade=t=out:st=${secs - 3}:d=3[a]`,
       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "20", "-preset", "slow", "-pix_fmt", "yuv420p",
       "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", String(secs), out,
     ], { stdio: "inherit" });

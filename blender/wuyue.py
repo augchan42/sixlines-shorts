@@ -11,8 +11,12 @@ straight down; nothing shakes or flickers, and each shot has at most one flare.
             one per reign
   exchange  the map: a faint border round Hangzhou; a line north; 高麗 (Goryeo, Korea) and 日本
             (Japan) trace in; lines out to both; the cyan-white line back from Korea; one flare
-  printing  one page of light columns traces in; copies of it appear outward in a wave while the
-            camera rises over the field of them
+  printing  one page of light columns traces in; a stupa (after the silver one from Leifeng's
+            vault) builds round it and flares; copies of the stupa appear outward in a wave while
+            the camera rises over the field of them
+  leifeng   Leifeng Pagoda builds storey by storey, then falls away from the top, leaving its
+            platform; the camera comes down to where its vault was, and the silver stupa found
+            there traces in inside its iron case; one flare
   end       the map as the exchange left it; the border fades, the routes stay lit; the camera
             comes down to the sign, which flares, and WUYUE fades in under it
 
@@ -34,6 +38,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from character import BODY, NEON, draw, glass  # noqa: E402
 from hexagram import PULSE, REST, bloom, edge, key, linear, render_settings  # noqa: E402
 from sign import MARGIN, arrange, bounds, label, sign_char, stage  # noqa: E402
+import pagoda  # noqa: E402
+import stupa  # noqa: E402
 
 HOME, SEA = "#ff5ec8", "#bfe9ff"  # Wuyue's magenta; cyan-white for what crosses the sea
 GREY = "#a89aa3"
@@ -44,7 +50,7 @@ SETTLED = REST * 1.5  # a finished sign's glow (sign.py's default)
 def parse():
     argv = sys.argv[sys.argv.index("--") + 1 :]
     p = argparse.ArgumentParser()
-    p.add_argument("--shot", required=True, choices=("hook", "family", "exchange", "printing", "end"))
+    p.add_argument("--shot", required=True, choices=("hook", "family", "exchange", "printing", "leifeng", "end"))
     p.add_argument("--hanzi", required=True, help="the folder of stroke data files")
     p.add_argument("--font", required=True)
     p.add_argument("--map", required=True, help="JSON: korea, japan and north, x,y metres from the sign")
@@ -130,9 +136,9 @@ def fade(strength, a, b, v0, v1):
         strength.keyframe_insert("default_value", frame=f + 1)
 
 
-def flare(glow, f):
-    """The one flare: up to PULSE and back to the settled glow."""
-    for g, v in ((f - 1, SETTLED), (f + 2, PULSE), (f + 20, SETTLED)):
+def flare(glow, f, settled=SETTLED, peak=PULSE):
+    """The one flare: up to `peak` and back to the settled glow."""
+    for g, v in ((f - 1, settled), (f + 2, peak), (f + 20, settled)):
         glow.default_value = v
         glow.keyframe_insert("default_value", frame=g + 1)
 
@@ -206,6 +212,19 @@ class Camera:
         dist = max(MARGIN[0] * (x1 - x0) / 2 / half, MARGIN[1] * (y1 - y0) / 2 / (half * self.aspect))
         aim = Vector(((x0 + x1) / 2, (y0 + y1) / 2, 0))
         return aim, aim + Vector((0, -dist / 15.5, dist))
+
+    def fit(self, wide, tall, head=0.2):
+        """How far back a side view must stand for `wide` x `tall` metres to fit with MARGIN,
+        the top `head` of the frame kept clear."""
+        half = 18 / 35
+        return max(MARGIN[0] * wide / 2 / half, MARGIN[1] * tall / 2 / (half * self.aspect) / (1 - head))
+
+    @staticmethod
+    def toward(azimuth, elevation):
+        """The unit vector from the aim to the eye: `azimuth` degrees round from due south
+        (positive towards the east), `elevation` degrees up."""
+        a, e = math.radians(azimuth), math.radians(elevation)
+        return Vector((math.sin(a) * math.cos(e), -math.cos(a) * math.cos(e), math.sin(e)))
 
     def low(self, objs, back=9.0, up=6.0):
         """Low and close over the objects' middle, from the south: (aim, eye)."""
@@ -332,7 +351,7 @@ def end(args, t, m, cam):
 
 
 def printing(args, t, m, cam):
-    # The page: seven columns of light, traced one after another.
+    # The page: seven columns of light, traced one after another, flat on the floor.
     cols, gap, tall = 7, 0.14, 1.2
     a0, a1 = t["page"]
     per = (a1 - a0) / cols
@@ -341,48 +360,63 @@ def printing(args, t, m, cam):
         x = (i - (cols - 1) / 2) * gap
         o, _ = route(f"col{i}", (x, tall / 2, 0), (x, -tall / 2, 0), 0, 0, HOME, round(a0 + i * per), round(a0 + (i + 1) * per))
         hero.append(o)
-    # Its copies: one page collection, instanced over a grid, each appearing as the wave reaches it.
-    page = bpy.data.collections.new("page")
-    mat = bpy.data.materials.new("page")
-    mat.use_nodes = True
-    nodes = mat.node_tree.nodes
-    nodes.clear()
-    emit = nodes.new("ShaderNodeEmission")
-    emit.inputs["Color"].default_value = linear(HOME)
-    emit.inputs["Strength"].default_value = REST * 0.15  # dimmer than the first page
-    mat.node_tree.links.new(emit.outputs["Emission"], nodes.new("ShaderNodeOutputMaterial").inputs["Surface"])
-    r = NEON
-    for i in range(cols):
-        mesh = bpy.data.meshes.new(f"pagecol{i}")
-        x = (i - (cols - 1) / 2) * gap
-        vs = [(x + dx, y, z) for y in (-tall / 2, tall / 2) for dx in (-r, r) for z in (BODY, BODY + 2 * r)]
-        faces = [(0, 1, 3, 2), (4, 6, 7, 5), (0, 4, 5, 1), (2, 3, 7, 6), (0, 2, 6, 4), (1, 5, 7, 3)]
-        mesh.from_pydata(vs, [], faces)
-        mesh.materials.append(mat)
-        page.objects.link(bpy.data.objects.new(f"pagecol{i}", mesh))
-    nx, ny, sx, sy = 31, 41, 1.6, 2.2
+    # The stupa built round it, in the form of Qian Chu's small bronze ones; one flare.
+    W, radius = 1.6, NEON * 0.6
+    mat, glow = edge(linear(HOME), "stupa")
+    glow.default_value = REST
+    stupa.build("stupa", "bronze", W, mat, span=t["build"], radius=radius)
+    flare(glow, t["flare"], REST, PULSE / 3)  # a small object: a smaller flare
+    # Its copies: one finished stupa kept out of the scene, instanced over the floor, each
+    # appearing as the wave reaches it. The field stops short of the frame's top, under the text.
+    copy = bpy.data.collections.new("copy")
+    dim, dim_glow = edge(linear(HOME), "copy")
+    dim_glow.default_value = REST * 0.5
+    stupa.build("copy", "bronze", W, dim, collection=copy, radius=radius)
     s0, s1 = t["spread"]
-    far = math.hypot((nx // 2) * sx, (ny // 2) * sy)
-    for i in range(nx):
-        for j in range(ny):
-            x, y = (i - nx // 2) * sx, (j - ny // 2) * sy
-            if (x, y) == (0, 0) or y > 13:  # the field ends below the text cards
-                continue
-            e = bpy.data.objects.new(f"page{i}-{j}", None)
-            e.instance_type, e.instance_collection = "COLLECTION", page
-            bpy.context.scene.collection.objects.link(e)
-            e.location = (x, y, 0)
-            at = round(s0 + (s1 - s0) * math.hypot(x, y) / far)
-            for f, v in ((0, 0.0), (at, 0.0), (at + 8, 1.0)):
-                e.scale = (v, v, v)
-                key(e, "scale", f)
+    step = 6.0
+    spots = [(i * step, j * step) for i in range(-6, 7) for j in range(-7, 2) if (i, j) != (0, 0)]
+    far = max(math.hypot(x, y) for x, y in spots)
+    for x, y in spots:
+        e = bpy.data.objects.new(f"copy{x}-{y}", None)
+        e.instance_type, e.instance_collection = "COLLECTION", copy
+        bpy.context.scene.collection.objects.link(e)
+        e.location = (x, y, 0)
+        at = round(s0 + (s1 - s0) * math.hypot(x, y) / far)
+        stupa.keyed_scale(e, ((0, 0.0), (at, 0.0), (at + 10, 1.0)))
+    # Low over the page; back and round to the whole stupa; up over the field.
     aim, eye = cam.low(hero, back=3.2, up=2.2)
     cam.pose(0, aim, eye)
-    cam.pose(t["rise"][0], aim, eye + Vector((0, 0.3, 0.4)))
-    cam.pose(t["rise"][1], *cam.top([marker((-12, -16, 0)), marker((12, 16, 0))]))
+    cam.pose(t["build"][0], aim, eye + Vector((0, 0.2, 0.3)))
+    H = 3.7 * W
+    mid = Vector((0, 0, H * 0.55))
+    dist = cam.fit(1.7 * W, H) * 1.3  # the near side looks larger
+    cam.pose(t["orbit"][0], mid, mid + cam.toward(-25, 16) * dist)
+    cam.pose(t["orbit"][1], mid, mid + cam.toward(-15, 18) * dist)
+    high = Vector((0, -12, 0))
+    cam.pose(t["rise"][1], high, high + cam.toward(-5, 50) * 60)
 
 
-SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": printing, "end": end}
+def leifeng(args, t, m, cam):
+    R, storey = 6.0, 7.0
+    mat, _ = edge(linear(HOME), "leifeng")
+    pagoda.build(R, storey, mat, t["rise"], t["fall"], radius=NEON * 1.6)
+    W = 1.6
+    smat, glow = edge(linear(HOME), "silver")
+    glow.default_value = REST
+    pagoda.case(1.25 * W, 0.35 * W, smat, t["case"], radius=NEON * 0.6)
+    stupa.build("silver", "silver", W, smat, span=t["build"], radius=NEON * 0.6)
+    flare(glow, t["flare"], REST, PULSE / 3)
+    tall = 0.08 * storey + 7 * storey
+    whole = Vector((0, 0, tall * 0.5))
+    far = cam.fit(2.7 * R, tall) * 0.92
+    cam.pose(0, whole, whole + cam.toward(22, 8) * far)
+    cam.pose(t["descend"][0], whole, whole + cam.toward(12, 9) * far)
+    low = Vector((0, 0, 2.3 * W * 0.5))
+    cam.pose(t["descend"][1], low, low + cam.toward(4, 14) * cam.fit(1.9 * W, 2.3 * W) * 1.25)
+    cam.pose(t["frames"], low, low + cam.toward(-2, 15) * cam.fit(1.9 * W, 2.3 * W) * 1.2)
+
+
+SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": printing, "leifeng": leifeng, "end": end}
 
 
 def main():
