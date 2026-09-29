@@ -3,13 +3,16 @@
 // at the same 1080x1920 design size, letterboxed to fit the window (Godot's "keep").
 import { Plot, lineZ, project } from "./plot.js";
 import * as Reading from "./reading.js";
+import { DRAG_TAP_THRESHOLD, SETTLE_TIME, TURN_KEYS, dragAngles, turnByKeys } from "./turning.js";
 
 const GREEN = "rgb(125,255,138)"; // #7dff8a
 const DIM = "rgba(125,255,138,0.45)"; // Color(0.49, 1.0, 0.54, 0.45)
 const CYAN = "rgb(94,231,255)"; // #5ee7ff
 const OUTLINE = (c) => c.replace(/rgba?\(([^,]+,[^,]+,[^,)]+).*/, "rgba($1,0.35)"); // Color(colour, 0.35)
 const PROMPT = "TAP A LINE TO CHANGE IT";
-const LEGEND_KEYBOARD = "1-6  FLIP A LINE      S  SOUND ON/OFF\nG, NUMBER, ENTER  GO TO     DRAG  TURN IT";
+// The keyboard legend differs from the Godot build's: this page also turns the plot with WASD
+// or the arrows, so sound is on M instead of S.
+const LEGEND_KEYBOARD = "1-6  FLIP A LINE      M  SOUND ON/OFF\nG, NUMBER, ENTER  GO TO     WASD OR DRAG  TURN IT";
 const LEGEND_TOUCH = "TAP THE NAME  GO TO A HEXAGRAM\nDRAG  TURN IT";
 const LOG_TOP = 960;
 const ROW_GAP = 45;
@@ -26,23 +29,24 @@ const PAD_LABELS = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "DEL", "0", "GO
 const PAD_AREA_TOP = 960;
 const PAD_AREA_BOTTOM = 1640;
 
-const DRAG_TAP_THRESHOLD = 12;
-const DRAG_TURN_PER_PX = (0.4 * Math.PI) / 180;
-const DRAG_TURN_MAX = (80 * Math.PI) / 180;
-const DRAG_TILT_PER_PX = (0.4 * Math.PI) / 180;
-const DRAG_TILT_MAX = (25 * Math.PI) / 180;
-const DRAG_SETTLE_TIME = 1.2;
-
 // Linear volumes, as main.gd's MIX.
 const MIX = { tick: 0.8, sweep: 0.7, warble: 0.5, winddown: 0.6, relay: 1.0, bed: 0.5 };
 
 // ---- Text, laid out the way Godot's Label lays it out with PixelOperator and its Noto
-// fallback: every line is as tall as Noto's ascent plus descent, each rounded up, with
-// 3 px between lines; glyph advances are whole pixels (no subpixel positioning above 20 px).
+// fallback (measured against the Godot build with godot/wangbi-terminal/tests/metrics.gd and
+// screenshots): every line is as tall as Noto's ascent plus descent, each rounded up, with 3 px
+// between lines. A line drawn wholly in PixelOperator sits centred in that height on its own
+// ascent and descent; a line with Chinese (or anything else past Latin-1) sits on Noto's ascent.
+// Glyphs advance by their exact widths and land on whole pixels. The outline reaches about
+// 1.5 px past each glyph.
 const LINE_SPACING = 3;
-const OUTLINE_WIDTH = 12; // Godot's outline_size 6 strokes 6 px out from the glyph
+const OUTLINE_WIDTH = 3;
 const ascent = (size) => Math.ceil(1.16 * size);
 const lineHeight = (size) => ascent(size) + Math.ceil(0.288 * size);
+const pixelAscent = (size) => Math.ceil(0.8125 * size);
+const pixelHeight = (size) => pixelAscent(size) + Math.ceil(0.1875 * size);
+const baselineOf = (row, size) =>
+  row.some(([c]) => c.codePointAt(0) > 0xff) ? ascent(size) : Math.floor((lineHeight(size) - pixelHeight(size)) / 2) + pixelAscent(size);
 const fontOf = (size) => `${size}px PixelOperator, NotoTC`;
 
 const canvas = document.getElementById("screen");
@@ -52,14 +56,14 @@ function advance(size, ch) {
   const k = size + ch;
   if (!advances.has(k)) {
     ctx.font = fontOf(size);
-    advances.set(k, Math.round(ctx.measureText(ch).width));
+    advances.set(k, ctx.measureText(ch).width);
   }
   return advances.get(k);
 }
 
 class Label {
   constructor(x, y, size, colour, { width = 960, align = "left", height = 0 } = {}) {
-    Object.assign(this, { x, y, size, colour, width, align, height, text: "", visible: -1, shown: true });
+    Object.assign(this, { x, y, size, colour, width, align, height, text: "", visible: -1 });
   }
   // Rows of [character, index in text, x], wrapped at spaces (a word longer than the width
   // breaks where it must), as AUTOWRAP_WORD_SMART does.
@@ -106,15 +110,14 @@ class Label {
     return { x: this.x, y: this.y, w: this.width, h: this.height || this.minHeight };
   }
   draw() {
-    if (!this.shown) return;
     const rows = this.rows();
     const top = this.height ? this.y + Math.floor((this.height - this.minHeight) / 2) : this.y;
     ctx.font = fontOf(this.size);
     const glyphs = [];
     rows.forEach((row, r) => {
-      const base = top + r * (lineHeight(this.size) + LINE_SPACING) + ascent(this.size);
+      const base = top + r * (lineHeight(this.size) + LINE_SPACING) + baselineOf(row, this.size);
       const dx = this.align === "right" ? this.width - row.width : this.align === "center" ? Math.round((this.width - row.width) / 2) : 0;
-      for (const [c, i, x] of row) if (c !== " " && (this.visible < 0 || i < this.visible)) glyphs.push([c, this.x + dx + x, base]);
+      for (const [c, i, x] of row) if (c !== " " && (this.visible < 0 || i < this.visible)) glyphs.push([c, Math.round(this.x + dx + x), base]);
     });
     ctx.lineJoin = "round";
     ctx.lineWidth = OUTLINE_WIDTH;
@@ -158,6 +161,8 @@ let entry = false;
 let padOpen = false;
 let soundOn = true;
 let drag = null; // { start: [x, y], turn, tilt, moved }
+const held = new Set(); // turn keys down (KeyboardEvent.code)
+let keyBase = null; // the turn when the turn keys were first held; null while none are
 
 const grow = (r, by) => ({ x: r.x - by, y: r.y - by, w: r.w + 2 * by, h: r.h + 2 * by });
 const has = (r, [x, y]) => x >= r.x && y >= r.y && x < r.x + r.w && y < r.y + r.h;
@@ -334,9 +339,19 @@ function move(p) {
     drag.moved = true;
     tween = null;
   }
-  if (drag.moved) {
-    plot.turn = Math.min(Math.max(drag.turn + dx * DRAG_TURN_PER_PX, drag.turn - DRAG_TURN_MAX), drag.turn + DRAG_TURN_MAX);
-    plot.tilt = Math.min(Math.max(drag.tilt + dy * DRAG_TILT_PER_PX, -DRAG_TILT_MAX), DRAG_TILT_MAX);
+  if (drag.moved) Object.assign(plot, dragAngles(dx, dy, drag.turn, drag.tilt));
+}
+
+// Held turn keys turn the plot smoothly; when the last is released it eases back square, as
+// after a drag. They do nothing during G entry or the pad (the plot settles then too).
+function stepKeys(delta) {
+  if (held.size && !entry && !drag) {
+    if (keyBase === null) keyBase = plot.turn;
+    tween = null;
+    Object.assign(plot, turnByKeys(held, delta, { turn: plot.turn, tilt: plot.tilt, base: keyBase }));
+  } else if (keyBase !== null) {
+    keyBase = null;
+    startTween({ turn: Reading.nearestSquare(plot.turn), tilt: 0 }, SETTLE_TIME, sineOut);
   }
 }
 function release(p, cancelled = false) {
@@ -345,7 +360,7 @@ function release(p, cancelled = false) {
   drag = null;
   if (d.moved) {
     // Turn back square, slowly, with no overshoot.
-    startTween({ turn: Reading.nearestSquare(plot.turn), tilt: 0 }, DRAG_SETTLE_TIME, sineOut);
+    startTween({ turn: Reading.nearestSquare(plot.turn), tilt: 0 }, SETTLE_TIME, sineOut);
   } else if (!cancelled) {
     const n = plot.lineAt(...p);
     if (n) setLines(Reading.flip(lines, n));
@@ -368,7 +383,12 @@ canvas.addEventListener("pointercancel", (e) => e.isPrimary && release(toDesign(
 window.addEventListener("keydown", (e) => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   unlock();
-  if (!data || e.repeat) return;
+  if (!data) return;
+  if (!entry && TURN_KEYS[e.code]) {
+    held.add(e.code);
+    return e.preventDefault();
+  }
+  if (e.repeat) return;
   const digit = /^(Digit|Numpad)([0-9])$/.exec(e.code)?.[2];
   const k = e.key.toLowerCase();
   if (entry) {
@@ -380,11 +400,14 @@ window.addEventListener("keydown", (e) => {
     entry = true;
     entering = "";
     prompt.text = "GO TO: _";
-  } else if (k === "s") setSound(!soundOn);
+  } else if (k === "m") setSound(!soundOn);
   else if (/^Digit[1-6]$/.test(e.code)) setLines(Reading.flip(lines, Number(digit)));
   else return;
   e.preventDefault();
 });
+
+window.addEventListener("keyup", (e) => held.delete(e.code));
+window.addEventListener("blur", () => held.clear());
 
 // ---- Drawing.
 let scan = null; // the scanlines, at device resolution, as scanlines.gdshader draws them
@@ -438,6 +461,7 @@ function tick(t) {
   const delta = last ? Math.min((t - last) / 1000, 0.1) : 0;
   last = t;
   stepTween(delta);
+  stepKeys(delta);
   stepTyping(delta);
   draw();
   requestAnimationFrame(tick);

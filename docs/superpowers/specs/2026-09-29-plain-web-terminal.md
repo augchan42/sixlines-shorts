@@ -41,6 +41,16 @@ Everything a viewer sees, hears and can do matches the Godot build as of commit 
   (browsers need a gesture); until then the SOUND label still says SOUND ON.
 - Sounds ship as .ogg plus .m4a (Safari), made by the same scripts/sfx.mjs recipes.
 - No recording mode. Shorts keep coming from the Godot recorder.
+- Keys to turn the plot, on this page only (asked for by the user on 2026-09-29): A/D or
+  left/right turn it about the vertical axis, W/S or up/down tilt it. While a key is held it
+  turns smoothly, about 60° a second, within the drag's clamps (±80° of turn from where the
+  keys were first held, ±25° of tilt); when every turn key is released it eases back square in
+  1.2 s, as after a drag. While G entry or the number pad is open these keys do nothing (digits
+  only). Because S now tilts, sound moves to M (a tap on SOUND still works). The keyboard
+  legend reads:
+  `1-6  FLIP A LINE      M  SOUND ON/OFF` /
+  `G, NUMBER, ENTER  GO TO     WASD OR DRAG  TURN IT`.
+  The Godot build keeps S for sound and has no turn keys.
 
 ## Build
 
