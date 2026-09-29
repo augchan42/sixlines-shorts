@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { BAR, CUTS, REIGNS, SHOTS, cardsFilter, musicStart, timeline } from "../scripts/wuyue.mjs";
+import { BAR, CUTS, REIGNS, SHOTS, cardsFilter, fitBitrate, musicStart, timeline } from "../scripts/wuyue.mjs";
 
 const BANNED = ["oracle", "divination", "fortune", "prediction", "mystical", "magical"];
 
@@ -63,4 +63,9 @@ test("the music starts so the exchange's flare lands on the drop", () => {
   const m = { start: 158.426, drop: 14.4 };
   const flareAt = SHOTS.slice(0, 2).reduce((t, s) => t + s.bars * BAR, 0) + SHOTS[2].events.flare;
   assert.equal((musicStart(m) + flareAt).toFixed(3), (158.426 + 14.4).toFixed(3));
+});
+
+test("the Instagram bitrate keeps 98.4 s of video and audio under 24 MB", () => {
+  const kbps = fitBitrate(98.4);
+  assert.ok(((kbps + 192) * 98.4) / 8e3 < 24 && kbps > 1500, String(kbps));
 });

@@ -9,7 +9,7 @@
 // shots already rendered. --shot NAME --alone also writes out/wuyue/<cut>-<shot>-alone.mp4: that
 // shot with its cards and its stretch of the music, to look at on its own.
 import { execFileSync, spawnSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { parseArgs } from "node:util";
 import { keepIfComplete } from "./blender-output.mjs";
@@ -163,6 +163,30 @@ export function musicStart(music) {
 
 const frames = (bars) => Math.round(bars * BAR * FPS);
 
+// The video bitrate (kbit/s) that brings `secs` of video with 192 kbit/s audio under `mb` MB,
+// leaving 3% for the container.
+export function fitBitrate(secs, mb = 24) {
+  return Math.floor((mb * 8e3 * 0.97) / secs - 192);
+}
+
+export function fitInstagram(file, secs, root) {
+  const { size } = statSync(file);
+  if (size <= 24e6) return;
+  const tmp = file.replace(/\.mp4$/, "-fit.mp4");
+  const log = path.join(root, "out/wuyue/partial/fit");
+  const rate = `${fitBitrate(secs)}k`;
+  for (const pass of [1, 2]) {
+    const run = spawnSync("ffmpeg", [
+      "-y", "-v", "error", "-i", file, "-c:v", "libx264", "-b:v", rate, "-preset", "slow", "-pix_fmt", "yuv420p",
+      "-pass", String(pass), "-passlogfile", log,
+      ...(pass === 1 ? ["-an", "-f", "mp4", "/dev/null"] : ["-c:a", "copy", "-movflags", "+faststart", tmp]),
+    ], { stdio: "inherit" });
+    if (run.status !== 0) (console.error("ffmpeg failed fitting for Instagram"), process.exit(1));
+  }
+  renameSync(tmp, file);
+  console.log(`fitted ${path.relative(root, file)} to ${(statSync(file).size / 1e6).toFixed(1)} MB at ${rate}`);
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const root = path.resolve(import.meta.dirname, "..");
   const blender = process.env.BLENDER ?? "/Applications/Blender.app/Contents/MacOS/Blender";
@@ -247,5 +271,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     ], { stdio: "inherit" });
     if (mux.status !== 0) (console.error("ffmpeg failed"), process.exit(1));
     console.log(`wrote ${path.relative(root, out)}`);
+    // Instagram takes files under 25 MB: over 24 MB, re-encode the video to fit (two passes).
+    if (name === "vertical" && !a.shot) fitInstagram(out, secs, root);
   }
 }
