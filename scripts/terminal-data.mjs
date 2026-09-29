@@ -42,6 +42,16 @@ export function buildTerminalData(hexagrams, masters) {
 // Every non-ASCII character shown; Pixel Operator has ASCII only, so these fall back to Noto.
 export const displayText = (data) => [...new Set(Object.values(data).flatMap(strings).join("").replace(/[\x00-\x7f]/g, ""))].join("");
 
+// Noto Sans TC (SIL OFL), kept in public/local (gitignored); fetched once if missing.
+export function notoSource(root) {
+  const noto = path.join(root, "public/local/fonts/NotoSansTC-wght.ttf");
+  if (!existsSync(noto)) {
+    mkdirSync(path.dirname(noto), { recursive: true });
+    execFileSync("curl", ["-sfL", "-o", noto, "https://github.com/google/fonts/raw/main/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf"]);
+  }
+  return noto;
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const root = path.resolve(import.meta.dirname, "..");
   const godot = path.join(root, "godot/wangbi-terminal");
@@ -51,13 +61,8 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   writeFileSync(path.join(godot, "data/hexagrams.json"), JSON.stringify(data, null, 1) + "\n");
   mkdirSync(path.join(godot, "fonts"), { recursive: true });
   copyFileSync(path.join(root, "public/fonts/PixelOperator-Bold.ttf"), path.join(godot, "fonts/PixelOperator-Bold.ttf"));
-  // Noto Sans TC (SIL OFL), kept in public/local (gitignored). A character it lacks fails here.
-  const noto = path.join(root, "public/local/fonts/NotoSansTC-wght.ttf");
-  if (!existsSync(noto)) {
-    mkdirSync(path.dirname(noto), { recursive: true });
-    execFileSync("curl", ["-sfL", "-o", noto, "https://github.com/google/fonts/raw/main/ofl/notosanstc/NotoSansTC%5Bwght%5D.ttf"]);
-  }
-  execFileSync("pyftsubset", [noto, `--text=${displayText(data)}`, "--no-ignore-missing-unicodes", `--output-file=${path.join(godot, "fonts/NotoSansTC-subset.ttf")}`]);
+  // A character Noto lacks fails here.
+  execFileSync("pyftsubset", [notoSource(root), `--text=${displayText(data)}`, "--no-ignore-missing-unicodes", `--output-file=${path.join(godot, "fonts/NotoSansTC-subset.ttf")}`]);
   for (const s of ["tick", "relay", "sweep", "warble", "winddown", "bed"]) makeSfx(s, path.join(godot, "sfx", `${s}.ogg`));
   console.log(`wrote ${Object.keys(data).length} hexagrams, fonts and sounds into godot/wangbi-terminal`);
 }

@@ -56,9 +56,10 @@ SFX.teletype = ["-f", "lavfi", "-i", "aevalsrc=0.3*sin(2*PI*1900*t)*exp(-mod(t\\
 // One click of it, for the terminal to play once per typed character.
 SFX.tick = ["-f", "lavfi", "-i", "aevalsrc=0.3*sin(2*PI*1900*t)*exp(-t*350):s=44100:d=0.04"];
 
-// Writes one sound; the extension picks the format (.wav for Remotion, .ogg for Godot's web build).
-export function makeSfx(name, file) {
+// Writes one sound; the extension picks the format (.wav for Remotion, .ogg for Godot's web build,
+// .m4a for Safari in the plain web terminal). `encode` adds encoder options, e.g. a bitrate.
+export function makeSfx(name, file, encode = []) {
   if (!SFX[name]) throw new Error(`no sound recipe named ${name}`);
   mkdirSync(path.dirname(file), { recursive: true });
-  execFileSync("ffmpeg", ["-v", "error", "-y", ...SFX[name], file], { stdio: ["ignore", "pipe", "pipe"] });
+  execFileSync("ffmpeg", ["-v", "error", "-y", ...SFX[name], ...encode, file], { stdio: ["ignore", "pipe", "pipe"] });
 }
