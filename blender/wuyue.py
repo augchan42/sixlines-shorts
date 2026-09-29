@@ -323,8 +323,8 @@ def world_map(args, t, m, drawn):
     route("north", ((wx0 + wx1) / 2, wy1 + 0.6, 0), north_end, 0, 0, HOME, *when("north"))
     nl = label("NORTHERN COURTS", "NORTHERN COURTS", args.font, 3.6, GREY, 1.0, None if drawn else (t["north"][1], 20))
     nl.location = (north_end[0], north_end[1], 0.02)
-    lx0, ly0, lx1, _ = bounds([nl])  # centred over the line's end
-    nl.location.x -= (lx0 + lx1) / 2 - north_end[0]
+    lx0, ly0, _, _ = bounds([nl])  # starting over the line's end, to keep the map narrow
+    nl.location.x -= lx0 - north_end[0] + 1.0
     nl.location.y += north_end[1] + 1.2 - ly0
     places = when("places")
     ko, ko_objs, _ = names([hz(args, "高"), hz(args, "麗")], 2, SEA, m["korea"], "row", *places)
