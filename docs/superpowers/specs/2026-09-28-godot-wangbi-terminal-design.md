@@ -1,6 +1,6 @@
 # Wang Bi terminal in Godot: design
 
-Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md). Live at /terminal on sixlines.day and 8bitoracle.ai since 2026-09-29 (sixlines-site d1cc750, 8bitoracle-brand 5f2371f).
+Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md). Live at /terminal on sixlines.day and 8bitoracle.ai since 2026-09-29 (sixlines-site d1cc750, 8bitoracle-brand 5f2371f). Revised again 2026-09-29 to add a touch way into G entry (a number pad) and dragging to turn the plot (docs/superpowers/ledgers/2026-09-29-terminal-pad-and-drag-report.md).
 
 ## What it is
 
@@ -32,19 +32,25 @@ The look is the lesson's readout (`src/scenes/Readout.tsx`, the MU/TH/UR termina
 
 Screen, top to bottom:
 
-1. The hexagram: number, Chinese, pinyin and English name (`7  師 SHĪ  THE ARMY`).
+1. The hexagram: number, Chinese, pinyin and English name (`7  師 SHĪ  THE ARMY`). A tap or
+   click on it (its hit area grown about 20 px) opens a number pad, the touch way into G
+   entry (added 2026-09-29, see Input below).
 2. The plot, with each line tappable. Taps are hit-tested against the lines as drawn,
-   including while the plot turns.
+   including while the plot turns. Press and drag turns the plot by hand (added
+   2026-09-29, see Input below); while the number pad is open, line taps do nothing.
 3. A line log, one row per line, top line first:
    `L1  YIN   NO FIXED PLACE`; `L2  YANG  NOT CORRECT  CENTRE  ANSWERS L5`.
 4. The two trigrams, named with what they do (Shuo Gua ch. 7, as `DOES` in Readout.tsx):
    `LOWER  坎 WATER, SINKING`.
 5. WANG BI: each master line and his words, Chinese with the English beside it
    (`L2  為師之主  Master of the army`). Master lines turn amber.
-6. The prompt, in cyan: `TAP A LINE TO CHANGE IT`. Beside it, in dim green, `SOUND OFF`/`SOUND ON`.
-   Above it, in dim green, a key legend: `1-6  FLIP A LINE  S  SOUND ON/OFF` and
-   `G, NUMBER, ENTER  GO TO A HEXAGRAM`. It is hidden on touchscreens and in recordings
-   (added 2026-09-29 at the user's request).
+6. The prompt, in cyan: `TAP A LINE TO CHANGE IT`, or, while entering a number (by G or by
+   the pad), `GO TO: 3_`. Beside it, in dim green, `SOUND OFF`/`SOUND ON`. Above it, in dim
+   green, a key legend, hidden in recordings: on a keyboard device, `1-6  FLIP A LINE
+   S  SOUND ON/OFF` and `G, NUMBER, ENTER  GO TO     DRAG  TURN IT`; on a touchscreen (shown
+   there too since 2026-09-29), `TAP THE NAME  GO TO A HEXAGRAM` and `DRAG  TURN IT`.
+7. While the pad is open: a 3x4 grid of green-outlined cells (1-9, DEL, 0, GO) on an opaque
+   black panel over the log area, so the log beneath doesn't show through.
 
 Labels wrap at a fixed width; the longest title and a hexagram with two masters are
 checked in a still before anything else is built.
@@ -114,10 +120,28 @@ The terminal reads structure. It does not answer questions about the viewer's li
 - Look: a 2D scene. The plot is drawn with `draw_line`, projected as `boxEdges` does in
   Readout.tsx. Scanlines are one full-screen shader. The glow is WorldEnvironment glow,
   or a blur shader if glow is too heavy on the web.
-- Input: a tap or click on a line flips it. Every decorative node ignores the mouse, and
-  taps are read in `_input`, so nothing swallows them. The keys 1 to 6 flip lines; G, then
-  digits (including the keypad), then Enter jumps to a hexagram by number (Esc cancels);
-  S turns all sound off and on (the Master bus).
+- Input: a tap or click on a line flips it, on release (changed 2026-09-29: a press that
+  moves 12 px or more is a drag, not a tap, so a drag never flips a line). Every decorative
+  node ignores the mouse, and taps are read in `_input`, so nothing swallows them. The keys
+  1 to 6 flip lines; G, then digits (including the keypad), then Enter jumps to a hexagram
+  by number (Esc cancels); S turns all sound off and on (the Master bus).
+  - Go to a hexagram without a keyboard (added 2026-09-29, for phones): a tap or click on
+    the title opens a number pad, sharing G entry's own state (`entry`, `entering`) and its
+    `GO TO: 3_` prompt. Tapping a digit cell types it (two digits max, as G entry already
+    allows); DEL removes the last digit; GO does what Enter does (empty, 0 or a number over
+    64 exits quietly). A tap outside the pad, on the title again, or Esc, cancels. Typing by
+    keyboard, including G itself, still works whether or not the pad is open, and G never
+    opens the pad. Each pad tap plays the relay sound.
+  - Turning the plot by hand (added 2026-09-29): pressing and dragging on the plot turns it
+    about the vertical axis, about 0.4 degrees per pixel of horizontal drag, clamped to ±80
+    degrees; a vertical drag tilts it a little too, about the horizontal axis, clamped to
+    ±25 degrees (`plot.gd`'s `project()` takes a second angle, `tilt`, for this). Dragging
+    kills whatever turn tween is running. On release, a drag (12 px or more of movement)
+    turns the plot back square over about 1.2 s, eased out, with no overshoot; a press
+    under that threshold is read as a tap on release, hit-tested the same way as before.
+    Godot's default `emulate_mouse_from_touch` (on, unchanged in `project.godot`) gives the
+    web export mouse events from touch, so this reaches phones without separate
+    `InputEventScreenTouch`/`InputEventScreenDrag` handling.
 - Web export: single-threaded, so the site needs no cross-origin isolation headers. A
   custom HTML shell shows only a START button; the engine, wasm and data download after
   it is pressed, and that click also unlocks audio. The download size is measured on the
