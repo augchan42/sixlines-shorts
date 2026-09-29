@@ -57,6 +57,32 @@ func type_number_kp(n: int) -> void:
 	for c in str(n):
 		await key(KEY_KP_0 + int(c) as Key)
 
+func press(at: Vector2) -> void:
+	var down := InputEventMouseButton.new()
+	down.button_index = MOUSE_BUTTON_LEFT
+	down.pressed = true
+	down.position = at
+	down.global_position = at
+	Input.parse_input_event(down)
+	await get_tree().process_frame
+
+func move(at: Vector2) -> void:
+	var m := InputEventMouseMotion.new()
+	m.position = at
+	m.global_position = at
+	m.button_mask = MOUSE_BUTTON_MASK_LEFT
+	Input.parse_input_event(m)
+	await get_tree().process_frame
+
+func release(at: Vector2) -> void:
+	var up := InputEventMouseButton.new()
+	up.button_index = MOUSE_BUTTON_LEFT
+	up.pressed = false
+	up.position = at
+	up.global_position = at
+	Input.parse_input_event(up)
+	await get_tree().process_frame
+
 func _ready() -> void:
 	main = preload("res://main.tscn").instantiate()
 	add_child(main)
@@ -162,7 +188,8 @@ func _ready() -> void:
 	# The key legend: shown on a keyboard device (this window has no touchscreen), dim, above the
 	# prompt and clear of the WANG BI block.
 	check(main.legend.visible, "the key legend shows without a touchscreen")
-	check("1-6" in main.legend.text and "G, NUMBER, ENTER" in main.legend.text and "S " in main.legend.text, "the legend names 1-6, G entry and S")
+	check("1-6" in main.legend.text and "G, NUMBER, ENTER" in main.legend.text and "S " in main.legend.text and "DRAG" in main.legend.text, "the legend names 1-6, G entry, S and drag")
+	check(main.legend.text.split("\n").size() <= 2, "the legend is at most two lines")
 	check(main.legend.position.y + main.legend.get_combined_minimum_size().y < main.prompt.position.y, "the legend sits above the prompt")
 
 	# 36 has the longest WANG BI row (two lines when wrapped); the legend must still clear it.
@@ -173,6 +200,90 @@ func _ready() -> void:
 	var wangbi_bottom: float = main.wangbi.position.y + main.wangbi.get_combined_minimum_size().y
 	main.wangbi.visible_characters = shown
 	check(wangbi_bottom < main.legend.position.y, "36's WANG BI block ends above the legend (%s < %s)" % [wangbi_bottom, main.legend.position.y])
+
+	# Feature 1: a tap on the title opens the number pad, the same state as G entry.
+	await click(main.title.get_global_rect().get_center())
+	check(main.entry and main.pad_open, "a tap on the title opens the pad")
+	check(main.prompt.text == "GO TO: _", "the pad shows the same GO TO: prompt as G entry")
+
+	# While the pad is open, a line tap does nothing to the lines, and (being outside the pad)
+	# cancels it, same as Esc.
+	var before_pad_tap: Array = main.lines.duplicate()
+	await click(point_for(1))
+	check(main.lines == before_pad_tap, "a line tap does nothing while the pad is open")
+	check(not main.pad_open and not main.entry, "a tap outside the pad (a line) cancels it")
+
+	# Tapping 3, then 6, then GO goes to 36, and DEL removes the last digit.
+	await click(main.title.get_global_rect().get_center())
+	await click(main.pad_cell_point("3"))
+	check(main.entering == "3" and main.prompt.text == "GO TO: 3_", "the pad's 3 types a digit")
+	await click(main.pad_cell_point("6"))
+	check(main.entering == "36" and main.prompt.text == "GO TO: 36_", "the pad's 6 makes GO TO: 36_")
+	await click(main.pad_cell_point("DEL"))
+	check(main.entering == "3", "DEL removes the last digit")
+	await click(main.pad_cell_point("6"))
+	await click(main.pad_cell_point("GO"))
+	check(Reading.key(main.lines) == Reading.key(Reading.lines_of(main.data, 36)), "the pad's GO goes to 36")
+	check(not main.pad_open and not main.entry, "GO closes the pad")
+
+	# GO with nothing entered does nothing (quiet exit), same as bare Enter in G entry.
+	await click(main.title.get_global_rect().get_center())
+	var before_empty_go: Array = main.lines.duplicate()
+	await click(main.pad_cell_point("GO"))
+	check(main.lines == before_empty_go, "the pad's GO with nothing entered does nothing")
+	check(not main.pad_open, "GO with nothing entered still closes the pad")
+
+	# Typing digits by keyboard works while the pad is open, and Esc cancels it.
+	await click(main.title.get_global_rect().get_center())
+	await key(KEY_3)
+	check(main.entering == "3" and main.pad_open, "typing a digit by keyboard works while the pad is open")
+	await key(KEY_ESCAPE)
+	check(not main.entry and not main.pad_open, "Esc cancels the pad")
+
+	# G opens entry by keyboard without opening the pad.
+	await key(KEY_G)
+	check(main.entry and not main.pad_open, "G opens entry without the pad")
+	await key(KEY_ESCAPE)
+
+	# Feature 2: dragging the plot turns it, never flips a line, and settles back square.
+	var turn_before_drag: float = main.plot.turn
+	var line3_before_drag: Array = main.lines.duplicate()
+	var drag_start_point := point_for(3)
+	await press(drag_start_point)
+	await move(drag_start_point + Vector2(50, 0))
+	check(main.drag_moved, "a 50 px move counts as a drag, not a tap")
+	check(not is_equal_approx(main.plot.turn, turn_before_drag), "dragging turns the plot")
+	var turn_mid_drag: float = main.plot.turn
+	await release(drag_start_point + Vector2(50, 0))
+	check(main.lines == line3_before_drag, "a drag never flips the line under the press")
+	check(not main.drag_active, "drag ends on release")
+	await get_tree().create_timer(1.4).timeout  # the settle tween (1.2 s) finishes
+	check(is_equal_approx(main.plot.turn, Reading.nearest_square(turn_mid_drag)), "the plot turns back square after a drag")
+	check(is_equal_approx(main.plot.tilt, 0.0), "tilt settles back to 0 after a drag")
+
+	# A press that moves under the 12 px threshold is a tap: it flips the line, on release.
+	var line5_before_tap: Array = main.lines.duplicate()
+	var tap_point := point_for(5)
+	await press(tap_point)
+	await move(tap_point + Vector2(3, 0))
+	await release(tap_point + Vector2(3, 0))
+	var after_tap: Array = main.lines
+	var changed_tap := []
+	for i in 6:
+		if int(line5_before_tap[i]) != int(after_tap[i]):
+			changed_tap.append(i + 1)
+	check(changed_tap == [5], "a move under the threshold is still a tap, flipping the line on release (changed: %s)" % str(changed_tap))
+
+	# Dragging kills a running turn tween (the relay's own 6 s turn), and takes turn over
+	# directly for the rest of the drag.
+	main.set_lines(Reading.flip(main.lines, 1))
+	await get_tree().process_frame
+	var drag2_point := point_for(2)
+	await press(drag2_point)
+	await move(drag2_point + Vector2(100, 0))
+	var expected_turn: float = clampf(main.drag_start_turn + 100.0 * main.DRAG_TURN_PER_PX, main.drag_start_turn - main.DRAG_TURN_MAX, main.drag_start_turn + main.DRAG_TURN_MAX)
+	check(is_equal_approx(main.plot.turn, expected_turn), "dragging kills the running relay tween and drives turn directly")
+	await release(drag2_point + Vector2(100, 0))
 
 	print("---")
 	print("%d failed" % failed)
