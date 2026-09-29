@@ -1,6 +1,6 @@
 {
  "name": "fung",
- "about": "馮 (Fung, the Cantonese spelling of the surname) as a neon sign, a still for the user, 2026-09-29: 冫 (two dots) and 馬 (horse). No small line: none we could stand behind. In Make Me a Hanzi's data strokes 0-1 are 冫 and 2-11 馬; a clip traces 2-11 then 0-1 (\"order\").",
+ "about": "馮 (Fung, the Cantonese spelling of the surname) as a neon sign, a still for the user, 2026-09-29: 冫 (two dots) and 馬 (horse). No small line: none we could stand behind. Clips trace the data's own stroke order: 冫 (strokes 0-1, the ice radical, 'two-dot water') first, then 馬 (2-11). An override drawing 馬 first was a misreading, removed the same day.",
  "chars": ["馮"],
  "layout": "stack",
  "size": [1080, 1920],
@@ -8,6 +8,5 @@
  "labelColour": "#a89aa3",
  "labels": [{ "text": "FUNG", "size": 1.4 }],
  "fonts": ["pixel", "goudy"],
- "music": { "hexagram": 2, "why": "The Receptive's track (Analog Dreams, 90 bpm), the user's favourite of the first shorts; calm, for a sign that draws itself in" },
- "order": { "馮": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 0, 1] }
+ "music": { "hexagram": 2, "why": "The Receptive's track (Analog Dreams, 90 bpm), the user's favourite of the first shorts; calm, for a sign that draws itself in" }
 }
