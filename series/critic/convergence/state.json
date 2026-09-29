@@ -1,0 +1,1291 @@
+{
+ "rounds": [],
+ "shorts": {
+  "1": {
+   "name": "The Creative",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Waiting for a sign to start?",
+     "meaning1": "The Creative\nsays: begin.",
+     "meaning2": "No conditions.\nJust mean it.",
+     "question": "What would you\nstart today?",
+     "lesson": "Heaven never\ntakes a day off.",
+     "finding": "SIX STRONG LINES. NO REST.",
+     "caption": "The Creative is six unbroken lines: a start with nothing held back. It asks for no conditions, only that you mean it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "2": {
+   "name": "The Receptive",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Tired of always having to lead?",
+     "meaning1": "The Receptive\nsays: follow well.",
+     "meaning2": "Supporting is its\nown strength.",
+     "question": "Who could\nyou back?",
+     "lesson": "Lead and get lost.\nFollow and arrive.",
+     "finding": "SIX YIELDING LINES. ALL FOLLOW.",
+     "caption": "The Receptive’s old image is a mare, strong and at her best when she follows well. Backing someone is its own strength."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "3": {
+   "name": "Difficulty at the Beginning",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Big start, total chaos?",
+     "meaning1": "Difficulty says:\nget organized.",
+     "meaning2": "Boring beats\nbold here.",
+     "question": "What needs\nsorting first?",
+     "lesson": "Don't push yet.\nWin helpers first.",
+     "finding": "STRONG AT THE BASE, BELOW THE WEAK.",
+     "caption": "The image is thunder with no rain yet, and the wise one sorts thread. When the rain comes, there’s something to weave."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "4": {
+   "name": "Youthful Folly",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Asking again for a better answer?",
+     "meaning1": "Youthful Folly\nsays: ask once.",
+     "meaning2": "Asking twice is\njust shopping.",
+     "question": "What’s your\nreal question?",
+     "lesson": "Teachers don't\nchase students.",
+     "finding": "THE YOUTH (5) SEEKS THE TEACHER (2).",
+     "caption": "The image is a spring at the foot of a mountain. It doesn’t know where the sea is, and it moves on anyway."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "5": {
+   "name": "Waiting",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Stuck waiting for your moment?",
+     "meaning1": "Waiting says:\nwait well.",
+     "meaning2": "Eat, rest,\nstay ready.",
+     "question": "How can you\nwait well today?",
+     "lesson": "In the rain?\nEat, rest, wait.",
+     "finding": null,
+     "caption": "The clouds are up and the rain hasn’t come, so the old text says: eat and drink. Waiting well takes energy."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "6": {
+   "name": "Conflict",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Fighting over something you’re right about?",
+     "meaning1": "Conflict says:\nstop halfway.",
+     "meaning2": "Pushing to the end\ncosts you.",
+     "question": "What fight could\nyou leave now?",
+     "lesson": "Being right isn’t\nreason to fight on.",
+     "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+     "caption": "Heaven moves up and water moves down: both right, never meeting. The middle of a fight is the last good place to walk away."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "7": {
+   "name": "The Army",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Leading a team through something hard?",
+     "meaning1": "The Army needs\na grown-up.",
+     "meaning2": "Feed people\nbefore you ask.",
+     "question": "Who’s counting\non you?",
+     "lesson": "Lead upright,\nthe ranks fall in.",
+     "finding": null,
+     "caption": "The image is water under the earth, unseen but everywhere. An army is ordinary people, and they’re there when needed if you look after them."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "8": {
+   "name": "Holding Together",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Keep saying you’ll join later?",
+     "meaning1": "Holding Together\nsays: join now.",
+     "meaning2": "Late arrivals\nmiss out.",
+     "question": "Who’s waiting\nfor your yes?",
+     "lesson": "Choose who you\nstand beside",
+     "finding": null,
+     "caption": "The image is water on the earth, running to the low ground and filling it. People who need to belong come on their own; the ones who come late do badly."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "9": {
+   "name": "Small Taming",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Everything’s ready, nothing happens?",
+     "meaning1": "Small Taming\nsays: not yet.",
+     "meaning2": "Work on yourself\nmeanwhile.",
+     "question": "What can you\nwork on now?",
+     "lesson": "Don’t force a start.\nUse the time to prepare.",
+     "finding": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+     "caption": "Dense clouds, no rain, and wind across the sky with nothing to hold. When the outside won’t move, the inside is the work."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "10": {
+   "name": "Treading",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Working for someone with a temper?",
+     "meaning1": "Treading says:\nmind how you step.",
+     "meaning2": "Stay steady and\nit may pass.",
+     "question": "Who do you tread\ncarefully around?",
+     "lesson": "Near a temper,\nstay steady inside.",
+     "finding": "LINE 2: A LEVEL PATH.\nSTEADY INSIDE, IT GOES WELL.",
+     "caption": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "11": {
+   "name": "Peace",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Good times, now what?",
+     "meaning1": "Peace says:\nkeep it moving.",
+     "meaning2": "Peace is contact,\nnot a vacation.",
+     "question": "Who haven’t you\nreached lately?",
+     "lesson": "High and low talk:\nthat is peace.",
+     "finding": null,
+     "caption": "The image is heaven and earth meeting. In good times the job isn’t to relax but to make sure the good reaches everyone."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "12": {
+   "name": "Standstill",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Everything stuck and no one’s talking?",
+     "meaning1": "Standstill says:\nhold back.",
+     "meaning2": "Don’t take\nthe bad deal.",
+     "question": "What will you\nturn down?",
+     "lesson": "High and low part:\nturn down rewards.",
+     "finding": null,
+     "caption": "Heaven and earth have stopped talking. When a system is broken, taking its rewards endorses it, so pull back."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "13": {
+   "name": "Fellowship",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Same five friends for years?",
+     "meaning1": "Fellowship says:\nkeep it open.",
+     "meaning2": "Let new people\nwalk up.",
+     "question": "Who could you\ninvite in?",
+     "lesson": "Join on principle,\nnot on kinship.",
+     "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+     "caption": "The old text puts fellowship out in the open, where anyone can walk up. Once you close the door and pick who’s in, you’ve left it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "14": {
+   "name": "Great Possession",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Doing better than everyone around you?",
+     "meaning1": "Great Possession\nsays: people see.",
+     "meaning2": "Use it to put\nthings right.",
+     "question": "What would you\nfix first?",
+     "lesson": "Lead by trust,\nnot force.",
+     "finding": "ONE YIELDING LINE. FIVE STRONG ANSWER.",
+     "caption": "The image is fire high in the sky, lighting everything below. When you have a lot, people see what you do with it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "15": {
+   "name": "Modesty",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Always needing credit?",
+     "meaning1": "Modesty says:\nfinish quietly.",
+     "meaning2": "No one stops\nthe quiet ones.",
+     "question": "What could you\ndo without credit?",
+     "lesson": "Having the most,\nstep back.",
+     "finding": null,
+     "caption": "The image is a mountain inside the earth: the biggest thing around, and hidden. It’s the one hexagram where every line is favorable."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "16": {
+   "name": "Enthusiasm",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "All fired up, nowhere to go?",
+     "meaning1": "Enthusiasm says:\ngive it a shape.",
+     "meaning2": "Organize,\nthen move.",
+     "question": "Where will you\naim it?",
+     "lesson": "One clear voice\nmoves the crowd.",
+     "finding": "ONE STRONG LINE. FIVE FOLLOW IT.",
+     "caption": "Thunder breaks out of the ground, and the first thing the old kings did with that energy was make music. Give it form, then direction."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "17": {
+   "name": "Following",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Still at your desk after dark?",
+     "meaning1": "Following says:\ngo with the day.",
+     "meaning2": "Day’s done.\nGo in, rest.",
+     "question": "When will you\nstop today?",
+     "lesson": "To be followed,\nfollow first.",
+     "finding": "THE STRONG GOES BELOW THE WEAK.",
+     "caption": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "18": {
+   "name": "Work on the Decayed",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Something rotting under the surface?",
+     "meaning1": "Decay says:\nit can be fixed.",
+     "meaning2": "Rushed repairs\ndon’t hold.",
+     "question": "What’s overdue\nfor repair?",
+     "lesson": "Found rot?\nClean it out.",
+     "finding": null,
+     "caption": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "19": {
+   "name": "Approach",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Things finally taking off?",
+     "meaning1": "Approach says:\ngo, but plan.",
+     "meaning2": "Every spring has\nan autumn.",
+     "question": "What will you\nprepare now?",
+     "lesson": "Lean down. Care\nfor your people.",
+     "finding": null,
+     "caption": "The judgment opens every door, then names a date: by the eighth month, trouble. Growth comes with the date it turns, so plan for it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "20": {
+   "name": "Contemplation",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Deciding from behind a desk?",
+     "meaning1": "Contemplation:\ngo and look.",
+     "meaning2": "See by going,\nnot by sitting.",
+     "question": "What could you\ngo see?",
+     "lesson": "Look at your people.\nThey show how you lead.",
+     "finding": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
+     "caption": "The image is wind moving over everything. The old kings traveled and looked before they taught."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "21": {
+   "name": "Biting Through",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Something blocking you for weeks?",
+     "meaning1": "Biting Through\nsays: bite down.",
+     "meaning2": "It won’t clear\nby itself.",
+     "question": "What will you\ndeal with now?",
+     "lesson": "Warn clearly,\nthen bite.",
+     "finding": null,
+     "caption": "Lightning, then thunder: first you see it, then you feel it. The old kings made the rules clear before they enforced them."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "22": {
+   "name": "Grace",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Polishing the slides instead of deciding?",
+     "meaning1": "Grace says:\nsmall things only.",
+     "meaning2": "Polish can’t make\nbig decisions.",
+     "question": "What needs more\nthan polish?",
+     "lesson": "Plain is the best\nadornment.",
+     "finding": "AT THE TOP: PLAIN WHITE.",
+     "caption": "Fire at the foot of the mountain is beautiful, but its light only reaches so far. Use grace for small things and substance for the hard ones."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "23": {
+   "name": "Splitting Apart",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Everything falling apart?",
+     "meaning1": "Splitting Apart\nsays: don’t run.",
+     "meaning2": "Stay and help\nthose below you.",
+     "question": "Who depends\non you?",
+     "lesson": "Falling apart?\nShore up the base.",
+     "finding": null,
+     "caption": "The mountain sits on eroding earth, and the old text tells those on top to give to those below. The summit rests on the base."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "24": {
+   "name": "Return",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Coming back after a bad stretch?",
+     "meaning1": "Return says:\nenergy returns.",
+     "meaning2": "Rest. Only rushing\nstops it.",
+     "question": "What are you\nrushing back to?",
+     "lesson": "See your misstep,\nturn back early.",
+     "finding": null,
+     "caption": "Thunder underground is energy returning before it shows, and the old kings stayed still to let it come. Only impatience stops a return."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "25": {
+   "name": "Innocence",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Hiding your real reasons?",
+     "meaning1": "Innocence says:\nbe straight.",
+     "meaning2": "Stop faking,\nand it works.",
+     "question": "Where are you\nperforming?",
+     "lesson": "Do what's right,\nnot what pays.",
+     "finding": "A STRONG LINE COMES IN AT THE BASE.",
+     "caption": "The image is thunder under the sky, everything just being what it is. You don’t make things real; you stop making them fake."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "26": {
+   "name": "Great Accumulation",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Years of practice, nobody’s seen it?",
+     "meaning1": "Great Accumulation\nsays: go public.",
+     "meaning2": "Don’t eat\nat home.",
+     "question": "What have you\nbeen keeping in?",
+     "lesson": "Store up strength,\nthen use it.",
+     "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+     "caption": "The image is heaven held inside a mountain. The old text says don’t eat at home: take what you’ve stored up out into the world."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "27": {
+   "name": "Nourishment",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Said something you regret at dinner?",
+     "meaning1": "Nourishment says:\nwatch your mouth.",
+     "meaning2": "What goes in,\nwhat comes out.",
+     "question": "Which do you\nwatch less?",
+     "lesson": "Guard your mouth:\nfood and words.",
+     "finding": null,
+     "caption": "Thunder under a mountain, and the advice is: careful with words, moderate with food. Both sound easy and trip up almost everyone."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "28": {
+   "name": "Greatness in Excess",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Under too much weight?",
+     "meaning1": "Great Excess\nsays: move now.",
+     "meaning2": "Waiting under it\nisn’t caution.",
+     "question": "What’s bending\nright now?",
+     "lesson": "The ends give way.\nBrace them now.",
+     "finding": null,
+     "caption": "Water above the trees: the normal rules are off. It asks for one thing, the will to stand alone without making a fuss."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "29": {
+   "name": "The Abyss",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "One problem after another?",
+     "meaning1": "The Abyss says:\nkeep moving.",
+     "meaning2": "Like water: fill\nit, flow on.",
+     "question": "What's the next\nsmall step?",
+     "lesson": "Through danger,\nkeep your word.",
+     "finding": null,
+     "caption": "The I-Ching’s image here is water. It fills the hole it meets, then flows on."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "30": {
+   "name": "Clinging Fire",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Brilliant once,\nthen burnt out?",
+     "meaning1": "Fire’s answer:\nkeep it fed.",
+     "meaning2": "Steady care,\nnot big gestures.",
+     "question": "What needs\ntending today?",
+     "lesson": "Like fire, cling\nto what is right.",
+     "finding": null,
+     "caption": "Fire needs something to burn. The old text says to tend a cow: patient, dull, daily care. That’s what keeps the light going."
+    }
+   },
+   "problems": {
+    "current": [
+     "caption: 3 sentences (1 to 2)"
+    ]
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "31": {
+   "name": "Influence",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Listening, but already decided?",
+     "meaning1": "Influence says:\nmake room.",
+     "meaning2": "The full can’t\ntake anything in.",
+     "question": "What have you\nalready decided?",
+     "lesson": "Be moved as you\nmove others.",
+     "finding": "ALL THREE PAIRS ANSWER.",
+     "caption": "A lake sits on top of a mountain because the mountain made room. If you’re already certain, nothing can move you."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "32": {
+   "name": "Duration",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Starting over again and again?",
+     "meaning1": "Duration says:\nshow up again.",
+     "meaning2": "Keep moving, same\ndirection.",
+     "question": "What will you\nkeep doing?",
+     "lesson": "Change shape,\nkeep your course",
+     "finding": null,
+     "caption": "Thunder and wind never stop moving, and together they make duration. Stand firm: keep moving, but don’t change direction."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "33": {
+   "name": "Retreat",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Time to walk away?",
+     "meaning1": "Retreat says:\nleave well.",
+     "meaning2": "No anger,\njust distance.",
+     "question": "What are you\nready to leave?",
+     "lesson": "Go while you still\ncan go freely.",
+     "finding": "TWO YIELDING LINES CREEP UP.",
+     "caption": "A mountain under heaven: heaven stays out of reach. Keep your distance from petty people, but without hate, because hate keeps you attached."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "34": {
+   "name": "Great Power",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Finally in charge?",
+     "meaning1": "Great Power says:\ncheck your aim.",
+     "meaning2": "Mostly, know what\nnot to do.",
+     "question": "What won’t you\ndo with it?",
+     "lesson": "Be strong only\nin what is right.",
+     "finding": "FOUR STRONG LINES PUSH UP.",
+     "caption": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. The power goes into staying off wrong paths."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "35": {
+   "name": "Progress",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Finally getting recognized?",
+     "meaning1": "Progress says:\ncharacter first.",
+     "meaning2": "Not strategy.\nNot network.",
+     "question": "What are you\nlike up close?",
+     "lesson": "Shine,\ndon't push.",
+     "finding": "THE SOFT RISES TO THE TOP CENTRE.",
+     "caption": "The sun rises over the earth, and progress comes with the light. The text says brighten your character, not your strategy."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "36": {
+   "name": "Darkening of the Light",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Your good ideas getting shut down?",
+     "meaning1": "Dark times say:\nlie low.",
+     "meaning2": "Keep your light\ninside.",
+     "question": "What light are\nyou protecting?",
+     "lesson": "Dark times?\nDim your light.",
+     "finding": null,
+     "caption": "The light has sunk into the earth. In a dark time, dim the outside to keep the inside bright."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "37": {
+   "name": "The Family",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Too many rules at home?",
+     "meaning1": "The Family says:\nskip the rules.",
+     "meaning2": "Say real things.\nDo them daily.",
+     "question": "What will you\nfollow through on?",
+     "lesson": "Order at home\nstarts with you.",
+     "finding": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
+     "caption": "Wind born from fire: warmth makes the movement. A family whose words mean something and whose actions last doesn’t need the rules."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "38": {
+   "name": "Opposition",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Can’t agree on anything?",
+     "meaning1": "Opposition says:\nstart small.",
+     "meaning2": "Share something,\nstay different.",
+     "question": "What do you\nboth want?",
+     "lesson": "Lower your guard.\nThey may be an ally.",
+     "finding": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
+     "caption": "Fire rises and water sinks; they’ll never meet. Fix small things first, and find what you share while staying different."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "39": {
+   "name": "Obstruction",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Hit a wall?",
+     "meaning1": "Obstruction says:\nask for help.",
+     "meaning2": "The wall is\nthe lesson.",
+     "question": "Who could you\nask?",
+     "lesson": "Blocked?\nLook at yourself.",
+     "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED.",
+     "caption": "Water on a mountain can’t flow. The old text says turn inward and find the great person: the obstacle tests whether you’ll ask."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "40": {
+   "name": "Deliverance",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "The pressure’s finally off?",
+     "meaning1": "Deliverance says:\nact or rest.",
+     "meaning2": "Then let the\ngrudges go.",
+     "question": "What can you\nforgive?",
+     "lesson": "Out of danger?\nForgive, and move on.",
+     "finding": "LINE 5: THE NOBLE ONE LETS GO.\nEVEN THE PETTY HOLD NO GRUDGE.",
+     "caption": "Thunder and rain clear the air: if there’s work, do it now; if not, go home. Don’t carry grudges into the next round."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "41": {
+   "name": "Decrease",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Having less than before?",
+     "meaning1": "Decrease says:\ngive what you can.",
+     "meaning2": "Cut the anger,\ncut the wants.",
+     "question": "What can you\nlet go of?",
+     "lesson": "Two small baskets\nare enough.",
+     "finding": "THE LOW LINE GIVES TO THE TOP.",
+     "caption": "The old text asks for two small baskets, not a grand offering: when you have less, bring less. Anger and wanting cost the most."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "42": {
+   "name": "Increase",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Door’s open, still hesitating?",
+     "meaning1": "Increase says:\ngo now.",
+     "meaning2": "See good, move\ntoward it.",
+     "question": "What will you\nmove toward?",
+     "lesson": "Let your gain\nspill over",
+     "finding": null,
+     "caption": "Wind and thunder feed each other. The method of increase: see something good and move toward it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "43": {
+   "name": "Breakthrough",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Ready to call something out?",
+     "meaning1": "Breakthrough:\nsay it openly.",
+     "meaning2": "Speak up, but\nno force.",
+     "question": "What needs\nsaying out loud?",
+     "lesson": "Remove the wrong\nopenly, unarmed.",
+     "finding": null,
+     "caption": "The rules in the text: announce it publicly, warn your own people first, and don’t use force. Fight darkness with a sword and you join it."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "44": {
+   "name": "Coming to Meet",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Something shiny just showed up?",
+     "meaning1": "Coming to Meet\nsays: be wary.",
+     "meaning2": "Charm can be\nthe warning.",
+     "question": "What’s too good\nto be true?",
+     "lesson": "Check a bad start\nwhile it's small.",
+     "finding": null,
+     "caption": "Wind under heaven reaches everywhere. When something slips in looking wonderful, don’t chase it; send your own message just as far."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "45": {
+   "name": "Gathering Together",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Hosting family, bracing for arguments?",
+     "meaning1": "Gathering says:\nshare a purpose.",
+     "meaning2": "And plan for\nthe friction.",
+     "question": "What holds your\ngroup together?",
+     "lesson": "Gather people by\nwhat is right.",
+     "finding": "FOUR YIELDING LINES GATHER TO TWO.",
+     "caption": "The king goes to the temple first: without a shared center, a gathering is just a crowd. And where people collect, friction follows."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "46": {
+   "name": "Pushing Upward",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Growing slower than you want?",
+     "meaning1": "Pushing Upward:\ndon’t worry.",
+     "meaning2": "Small steps,\npiled up.",
+     "question": "What can you add\ntoday?",
+     "lesson": "Don’t rush the climb.\nOne step, then the next.",
+     "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+     "caption": "A tree pushes up through the earth, going around the rock instead of jumping. It’s already growing, so stop braking."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "47": {
+   "name": "Oppression",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Speaking up and nobody listens?",
+     "meaning1": "Oppression says:\nhold your purpose.",
+     "meaning2": "Words fail here.\nActions don’t.",
+     "question": "What’s worth\neverything?",
+     "lesson": "Boxed in?\nHold to your aim.",
+     "finding": null,
+     "caption": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "48": {
+   "name": "The Well",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Who maintains what\neveryone uses?",
+     "meaning1": "People come\nand go.",
+     "meaning2": "The well\nremains.",
+     "question": "What do you help\nkeep running?",
+     "lesson": "Care for what\nothers depend on.",
+     "finding": null,
+     "caption": "The town changes; the well doesn’t, and the water is always there. What fails is a rope that’s too short or a bucket that breaks."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "49": {
+   "name": "Revolution",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Making a big change nobody believes in?",
+     "meaning1": "Revolution:\nchange needs trust.",
+     "meaning2": "Explain why.\nHear the doubts.",
+     "question": "What change are\nyou making?",
+     "lesson": "Go over the change\nuntil it is trusted.",
+     "finding": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+     "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. People believe it once it’s done."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "50": {
+   "name": "The Caldron",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Got the ingredients, not the result?",
+     "meaning1": "The Caldron says:\nset it right.",
+     "meaning2": "Get set up\nbefore you start.",
+     "question": "What’s out of\nplace right now?",
+     "lesson": "Set the pot firm,\nthen cook.",
+     "finding": null,
+     "caption": "Wood feeds the fire under the caldron, and it only works if it stands level. Tilted, it spills and the fire misses."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "51": {
+   "name": "The Arousing",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Did something just\nshake you?",
+     "meaning1": "The Arousing says:\nuse the fear.",
+     "meaning2": "Let it show\nwhat to fix.",
+     "question": "What did the\nscare show you?",
+     "lesson": "When shaken,\nexamine yourself.",
+     "finding": null,
+     "caption": "The image is thunder, twice. You scream, then you laugh, and your hands still don’t drop the cup. A good scare is a chance to put things in order."
+    }
+   },
+   "problems": {
+    "current": [
+     "caption: 3 sentences (1 to 2)"
+    ]
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "52": {
+   "name": "Keeping Still",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Can't stop overthinking?",
+     "meaning1": "Keeping Still\nsays: pause.",
+     "meaning2": "Stay with where\nyou are now.",
+     "question": "What can wait?",
+     "lesson": "Stop when it's\ntime to stop.",
+     "finding": "NO PAIR ANSWERS. EACH STANDS STILL.",
+     "caption": "The old text says to keep your back still, so you stop chasing what’s in front of you."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "53": {
+   "name": "Development",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Tempted to skip steps?",
+     "meaning1": "Development says:\ngo step by step.",
+     "meaning2": "Slow growth\nlasts.",
+     "question": "Which step are\nyou skipping?",
+     "lesson": "Earn each place\nbefore the next.",
+     "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+     "caption": "A tree on a mountain grows slowly where everyone can see it. Every shortcut here goes the wrong way."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "54": {
+   "name": "The Marrying Maiden",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "No power, no way out?",
+     "meaning1": "Marrying Maiden\nsays: see the end.",
+     "meaning2": "This part\nwon’t last.",
+     "question": "What does the\nend look like?",
+     "lesson": "Wrong place?\nDon't push.",
+     "finding": "LINES 2 TO 5 ALL OUT OF PLACE.",
+     "caption": "Thunder stirs the lake’s surface while the depths stay still. The text says to look past the middle to how it ends."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "55": {
+   "name": "Abundance",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "At your peak and worried?",
+     "meaning1": "Abundance says:\ndon’t worry.",
+     "meaning2": "Be the sun\nat noon.",
+     "question": "What will you\ndecide now?",
+     "lesson": "At your fullest,\nlight each corner.",
+     "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+     "caption": "The sun at noon is about to set, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "56": {
+   "name": "The Wanderer",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Somewhere new, feeling out of place?",
+     "meaning1": "The Wanderer says:\nkeep it brief.",
+     "meaning2": "You’re a guest.\nAct like one.",
+     "question": "Where are you\na guest?",
+     "lesson": "Far from home,\nbe a good guest",
+     "finding": null,
+     "caption": "Fire on a mountain is bright, seen, and moving on. The traveler gets small wins, so be clear, careful, brief."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "57": {
+   "name": "The Gentle",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Said it once,\nnothing changed?",
+     "meaning1": "The Gentle says:\nsay it again.",
+     "meaning2": "Quiet and steady\ngets through.",
+     "question": "What’s worth\nrepeating today?",
+     "lesson": "People change slowly.\nSay it again, gently.",
+     "finding": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
+     "caption": "The image is wind following wind. One gust changes nothing; a wind that keeps blowing reshapes the land. Say the important thing more than once."
+    }
+   },
+   "problems": {
+    "current": [
+     "caption: 3 sentences (1 to 2)"
+    ]
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "58": {
+   "name": "The Joyous",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Good news, no one to tell?",
+     "meaning1": "The Joyous says:\nshare it.",
+     "meaning2": "Joy kept alone\ndries up.",
+     "question": "Who could you\ncall today?",
+     "lesson": "Laugh and learn\nwith friends.",
+     "finding": null,
+     "caption": "The Joyous is two lakes that keep each other full. Joy kept to yourself dries up."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "59": {
+   "name": "Dispersion",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "People drifting apart?",
+     "meaning1": "Dispersion says:\ndon’t argue.",
+     "meaning2": "Remind them where\nthey come from.",
+     "question": "What do you\nall share?",
+     "lesson": "Bring them back\nto the centre.",
+     "finding": "WIND MOVES OVER WATER.",
+     "caption": "Wind over water scatters the surface, and the old kings built temples. A shared center pulls people back; force only wears you out."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "60": {
+   "name": "Limitation",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "Saying yes to everything?",
+     "meaning1": "Limitation says:\nset limits.",
+     "meaning2": "Firm, but\nnot bitter.",
+     "question": "Where’s your\nlimit?",
+     "lesson": "Set limits\nyou can keep.",
+     "finding": "LINE 5: A SWEET LIMIT.\nIT KEEPS TO THE MIDDLE.",
+     "caption": "A lake holds only so much water, and that’s what makes it a lake. Limits work; harsh limits break."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "61": {
+   "name": "Inner Truth",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Can’t get through to someone?",
+     "meaning1": "Inner Truth says:\nunderstand first.",
+     "meaning2": "Hold off judging\nuntil you do.",
+     "question": "What haven’t you\nasked them yet?",
+     "lesson": "No hidden motive;\nmean what you say.",
+     "finding": null,
+     "caption": "The old text says inner truth reaches even pigs and fishes. The way in is to understand someone before you judge them."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "62": {
+   "name": "Preponderance of the Small",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Big plan stuck for months?",
+     "meaning1": "The Small says:\nno big moves.",
+     "meaning2": "Small done well\nends well.",
+     "question": "What small thing\ncan you do?",
+     "lesson": "Fly low.\nDo small things.",
+     "finding": null,
+     "caption": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "63": {
+   "name": "After Completion",
+   "readout": false,
+   "options": {
+    "current": {
+     "hook": "Just finished something big?",
+     "meaning1": "Completion says:\nstay alert.",
+     "meaning2": "Prepare now,\nwhile it works.",
+     "question": "What could\ngo wrong?",
+     "lesson": "Done? Now guard\nagainst trouble.",
+     "finding": null,
+     "caption": "Water over fire, in balance for now, and the text warns: good start, messy end. Think about what can go wrong while it still works."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  },
+  "64": {
+   "name": "Before Completion",
+   "readout": true,
+   "options": {
+    "current": {
+     "hook": "So close to done?",
+     "meaning1": "Before Completion:\nnot yet.",
+     "meaning2": "Sort things out\nbefore you move.",
+     "question": "What goes\nwhere?",
+     "lesson": "Almost done?\nStay careful to the end.",
+     "finding": "AT THE TOP: HE WETS HIS HEAD.\nNO RESTRAINT AT THE END.",
+     "caption": "The book’s last hexagram is a little fox that gets its tail wet just before the far bank. Sixty-four hexagrams, and the last word is: not yet."
+    }
+   },
+   "problems": {
+    "current": []
+   },
+   "votes": [],
+   "agreed": null
+  }
+ }
+}
