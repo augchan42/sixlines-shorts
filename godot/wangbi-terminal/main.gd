@@ -16,13 +16,13 @@ const ROW_GAP := 45.0  # about one row tall at the 34 px body size, between stac
 # so the log beneath doesn't show through.
 const PAD_COLS := 3
 const PAD_ROWS := 4
-const PAD_CELL_W := 200.0
-const PAD_CELL_H := 120.0
+const PAD_CELL_W := 280.0
+const PAD_CELL_H := 140.0
 const PAD_CELL_GAP := 20.0
-const PAD_MARGIN := 40.0
+const PAD_MARGIN := 30.0
 const PAD_LABELS := ["1", "2", "3", "4", "5", "6", "7", "8", "9", "DEL", "0", "GO"]
 const PAD_AREA_TOP := 960.0
-const PAD_AREA_BOTTOM := 1600.0
+const PAD_AREA_BOTTOM := 1640.0
 
 # Dragging the plot: a horizontal drag turns it about the vertical axis, a vertical drag tilts
 # it a little. A press that moves under TAP_THRESHOLD px is a tap, read on release.
@@ -70,9 +70,11 @@ func label(l: Label, pos: Vector2, size: int, colour: Color) -> void:
 func build_pad() -> void:
 	var grid_w := PAD_COLS * PAD_CELL_W + (PAD_COLS - 1) * PAD_CELL_GAP
 	var grid_h := PAD_ROWS * PAD_CELL_H + (PAD_ROWS - 1) * PAD_CELL_GAP
-	var panel := Rect2(0, 0, grid_w + 2 * PAD_MARGIN, grid_h + 2 * PAD_MARGIN)
+	# The panel spans the frame's inside (x 50 to 1030) so no part of the reading shows beside
+	# the grid; the grid is centred in it.
+	var panel := Rect2(0, 0, 980.0, grid_h + 2 * PAD_MARGIN)
 	panel.position = Vector2(
-		(1080.0 - panel.size.x) / 2.0,
+		50.0,
 		PAD_AREA_TOP + ((PAD_AREA_BOTTOM - PAD_AREA_TOP) - panel.size.y) / 2.0
 	)
 	pad_bg.color = Color(0, 0, 0, 1)
@@ -81,7 +83,7 @@ func build_pad() -> void:
 	pad_bg.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	pad_bg.visible = false
 	add_child(pad_bg)
-	var grid_origin := panel.position + Vector2(PAD_MARGIN, PAD_MARGIN)
+	var grid_origin := panel.position + Vector2((panel.size.x - grid_w) / 2.0, PAD_MARGIN)
 	for idx in PAD_LABELS.size():
 		var row := idx / PAD_COLS
 		var col := idx % PAD_COLS

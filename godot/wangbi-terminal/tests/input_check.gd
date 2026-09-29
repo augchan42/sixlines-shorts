@@ -285,6 +285,14 @@ func _ready() -> void:
 	check(is_equal_approx(main.plot.turn, expected_turn), "dragging kills the running relay tween and drives turn directly")
 	await release(drag2_point + Vector2(100, 0))
 
+	# The pad's opaque panel hides the whole reading under it, even 36's two-line WANG BI row,
+	# and its cells are big enough for a thumb on a phone (at least 130 game px tall).
+	var panel := Rect2(main.pad_bg.position, main.pad_bg.size)
+	check(panel.position.x <= main.log_label.position.x and panel.end.x >= main.log_label.position.x + 960.0, "the pad panel spans the reading's width")
+	check(panel.position.y <= main.log_label.position.y and panel.end.y >= wangbi_bottom, "the pad panel covers the log down to 36's WANG BI row")
+	check(panel.end.y < main.legend.position.y, "the pad panel ends above the legend")
+	check(main.pad_cells[0].size.y >= 130.0, "pad cells are at least 130 px tall")
+
 	print("---")
 	print("%d failed" % failed)
 	get_tree().quit(1 if failed else 0)
