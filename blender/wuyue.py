@@ -310,11 +310,11 @@ def world_map(args, t, m, drawn):
     route("to-japan", start, left_mid(ja[0][1]), 0, 1, HOME, *when("requests"))
     route("back", left_mid(ko[0][1]), start, 1, -1, SEA, *when("back"))
     everything = objs + [lab, nl] + ko_objs + ja_objs + [kl, jl]
-    return glow, lab, lab_glow, (edge, edge_glow), objs, everything, north_end
+    return glow, lab, lab_glow, (edge, edge_glow), objs, everything, (north_end, nl)
 
 
 def exchange(args, t, m, cam):
-    glow, lab, _, _, objs, everything, north_end = world_map(args, t, m, drawn=False)
+    glow, lab, _, _, objs, everything, (north_end, _) = world_map(args, t, m, drawn=False)
     flare(glow, t["flare"])
     first = cam.top(objs + [lab, marker(north_end)])
     cam.pose(0, *first)
@@ -324,15 +324,16 @@ def exchange(args, t, m, cam):
 
 
 def surrender(args, t, m, cam):
-    """978: the map as the exchange left it; Wuyue's border fades, the routes stay lit."""
-    _, _, _, (edge, edge_glow), _, everything, _ = world_map(args, t, m, drawn=True)
+    """978: the map as the exchange left it, framed on Wuyue and the line north to the Song's
+    court; Wuyue's border fades, the routes stay lit."""
+    _, lab, _, (edge, edge_glow), objs, _, (north_end, nl) = world_map(args, t, m, drawn=True)
     fade(edge_glow, *t["border"], REST * 0.4, 0.0)
     for f, hidden in ((0, False), (t["border"][1] + 1, True)):  # unlit, the tube still shows
         edge.hide_render = hidden
         key(edge, "hide_render", f)
-    aim, eye = cam.top(everything)
+    aim, eye = cam.top(objs + [lab, nl, marker(north_end), edge])
     cam.pose(0, aim, eye)
-    cam.pose(t["frames"], aim, aim + (eye - aim) * 0.98)
+    cam.pose(t["frames"], aim, aim + (eye - aim) * 0.96)
 
 
 def end(args, t, m, cam):
@@ -467,13 +468,16 @@ def vault(args, t, m, cam):
     flare(glow, t["flare"], REST * 0.6, PULSE / 5)
     # The hair: a short cyan-white strand in the stupa's body, lit with the last card.
     z = (0.16 + 0.24) * W
-    route("hair", (0, 0, 0), (0.12 * W, 0.02, 0), 0, 1, SEA, t["relic"], t["relic"] + 20, REST * 0.8)[0].location.z = z
+    hair, _ = route("hair", (-0.22 * W, 0, 0), (0.22 * W, 0.02, 0), 0, 1, SEA, t["relic"], t["relic"] + 20, REST * 1.6)
+    hair.location.z = z
+    hair.data.bevel_depth = NEON * 1.4
     cam.pose(0, *whole(cam, 16))
     cam.pose(t["descend"][0], *whole(cam, 14))
     low = Vector((0, 0, 2.3 * W * 0.5))
     near = cam.fit(1.9 * W, 2.3 * W) * 1.25
     cam.pose(t["descend"][1], low, low + cam.toward(4, 14) * near)
-    cam.pose(t["frames"], low, low + cam.toward(-2, 15) * near * 0.97)
+    cam.pose(t["relic"] - 10, low, low + cam.toward(-2, 15) * near * 0.97)
+    cam.pose(t["frames"], low, low + cam.toward(-5, 15) * near * 0.85)  # a little in, on the strand
 
 
 SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": printing, "leifeng": leifeng,

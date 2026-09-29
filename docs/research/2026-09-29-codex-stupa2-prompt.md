@@ -1,0 +1,5 @@
+Second pass. You reviewed the printing and Leifeng shots of our neon Wuyue video (docs/research/2026-09-29-codex-stupa.md: printing 7, Leifeng 6). Claude made every change you listed (commit e55387b; code in blender/wuyue.py, blender/stupa.py, blender/pagoda.py, scripts/wuyue.mjs), and the user asked for "some accent color (cyan?) where appropriate, just a dash": the printed page's columns and the hair relic (a short strand inside the silver stupa, lit with the last card) are now cyan-white, the colour the video keeps for texts and what crosses the sea. Since these strips, the iron case was dimmed to about half the stupa's light.
+
+The attached strips are from the low-quality vertical draft, 43.5 s to 98 s, time left to right: (a) printing; (b) Leifeng dedicated 975, the surrender 978 on the map, the vault shot starting (the tower fades to its platform); (c) the vault: case and silver stupa, the hair card, then the closing sign.
+
+Rate each of printing, leifeng, surrender, vault and end 1-10. For anything below 8, give the one change that would lift it. Say whether the cyan accents work or should go. Plain words, short.
