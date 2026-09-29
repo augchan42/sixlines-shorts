@@ -1,0 +1,155 @@
+{
+  "shorts": [
+    {
+      "number": 1,
+      "verdict": "change",
+      "score": 7,
+      "reason": "“No conditions” contradicts the hidden dragon and the warning against going too far. Keep the strong ending, but distinguish sustained effort from starting regardless of circumstances.",
+      "rewrite": {
+        "meaning2": "Start when ready.\nThen keep going.",
+        "caption": "Six unbroken lines, but the first dragon stays hidden and the last climbs too high. Strength needs timing, not just effort."
+      }
+    },
+    {
+      "number": 2,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The hook and supporting-strength idea work together well. “Follow and arrive” promises success; the replacement makes following an active responsibility.",
+      "rewrite": {
+        "lesson": "LET SOMEONE ELSE LEAD.\nDO YOUR PART WELL."
+      }
+    },
+    {
+      "number": 3,
+      "verdict": "ship",
+      "score": 8,
+      "reason": "“Boring beats bold here” gives practical advice some bite. The bottom line’s position beneath the yielding lines supports winning helpers before pushing ahead."
+    },
+    {
+      "number": 4,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The hook catches answer-shopping, but “ask once” treats every follow-up as a fault. Focus on willingness to learn, which also connects the question to the student seeking the teacher.",
+      "rewrite": {
+        "meaning1": "Youthful Folly\nsays: listen well.",
+        "meaning2": "Don’t shop for\na yes.",
+        "question": "What answer are\nyou avoiding?",
+        "caption": "A spring emerges below a mountain. The learner seeks the teacher because learning starts with admitting there is something you do not know."
+      }
+    },
+    {
+      "number": 5,
+      "verdict": "change",
+      "score": 8,
+      "reason": "Refreshing an inbox gives the hook a recognizable action. The shorter lesson fits its brief appearance and explains rest as preparation for difficulty.",
+      "rewrite": {
+        "hook": "Refreshing your inbox again?",
+        "lesson": "Rest before\nthe hard part.",
+        "caption": "Clouds gather above heaven: danger lies ahead, so strength means holding back. Eat and rest while you wait."
+      }
+    },
+    {
+      "number": 6,
+      "verdict": "change",
+      "score": 9,
+      "reason": "The hook, lost belt, and lesson make a strong sequence. The caption invents a last safe moment to withdraw; the repeated stripping of the belt adds a sharper, supported detail.",
+      "rewrite": {
+        "caption": "Heaven and water pull apart; neither changes course. At the top, a winner receives a belt of rank, then loses it three times in one morning."
+      }
+    },
+    {
+      "number": 7,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The grown-up line has bite, and feeding people makes leadership concrete. Replace the promised obedience with responsibility for the people sent into difficulty.",
+      "rewrite": {
+        "lesson": "Care for those\nyou send in.",
+        "caption": "Water lies within the earth; an army comes from the people. Caring for them is part of leading them, before there is any marching to do."
+      }
+    },
+    {
+      "number": 8,
+      "verdict": "change",
+      "score": 7,
+      "reason": "“Join now” urges commitment before judgment, while the lesson asks viewers to choose their company. Put selection first and keep the pressure against endless postponement.",
+      "rewrite": {
+        "meaning1": "Holding Together\nsays: choose well.",
+        "meaning2": "Then stop\nputting it off.",
+        "caption": "Water gathers on the earth, as people gather around someone they trust. Choose your company carefully, then commit before the group has moved on."
+      }
+    },
+    {
+      "number": 9,
+      "verdict": "change",
+      "score": 7,
+      "reason": "Wang Bi explicitly says line four does not obstruct line one, which advances along its own path. The shipped readout makes that line an example of being held back, so the sequence needs to distinguish a stalled larger change from an available opening.",
+      "rewrite": {
+        "meaning1": "Small Taming\nsays: look closer.",
+        "meaning2": "Not every path\nis blocked.",
+        "question": "Where is there\nroom to move?",
+        "finding": "> LINE 1 ADVANCES. LINE 4 WELCOMES IT.\nITS OWN PATH IS OPEN.",
+        "lesson": "TAKE THE OPEN PATH.\nDON’T FORCE THE BLOCKED ONE.",
+        "caption": "Dense clouds, no rain: the larger change is still held back. But Wang Bi reads the first line as free to advance toward a willing partner."
+      }
+    },
+    {
+      "number": 10,
+      "verdict": "change",
+      "score": 9,
+      "reason": "The temper hook is immediate, but the caption promises control over someone else’s reaction and invents a sleeping tiger. Keep the lesson on governing your own conduct, with the Small Image’s reason made explicit.",
+      "rewrite": {
+        "finding": "> LINE 2: A LEVEL PATH.\nCENTRED; IT DOES NOT UNSETTLE ITSELF.",
+        "lesson": "KEEP YOUR HEAD,\nEVEN WHEN THEY LOSE THEIRS.",
+        "caption": "The tiger’s tail is danger underfoot. The second line keeps a level path because the person walking it does not let fear or ambition throw them off."
+      }
+    },
+    {
+      "number": 11,
+      "verdict": "ship",
+      "score": 10,
+      "reason": "“Peace is contact, not a vacation” is memorable and leads directly into the meeting lines. The caption adds the ruler’s responsibility to extend the benefits rather than repeating the animation."
+    },
+    {
+      "number": 12,
+      "verdict": "ship",
+      "score": 8,
+      "reason": "The separation, bad deal, and refused rewards make one clear argument. Withdrawal has a concrete reason in the Great Image: protecting conduct when the system rewards the wrong things."
+    },
+    {
+      "number": 13,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The marked pair needs its limitation stated: Wang Bi faults line two for belonging only with line five. The caption also overreaches by treating every choice of membership as a failure of fellowship.",
+      "rewrite": {
+        "finding": "> LINE 2 ANSWERS ONLY TO LINE 5.\nFELLOWSHIP STOPS AT ITS OWN CIRCLE.",
+        "caption": "The old text puts fellowship in an open field. Shared principles give people a reason to meet beyond family ties."
+      }
+    },
+    {
+      "number": 14,
+      "verdict": "ship",
+      "score": 7,
+      "reason": "The hook makes success socially uncomfortable, and the fire image explains why conduct becomes visible. The move from fixing things to leading through trust is slightly abrupt, but both follow the supplied text."
+    },
+    {
+      "number": 15,
+      "verdict": "change",
+      "score": 8,
+      "reason": "Quietness does not make someone unstoppable. The third line’s work and care explain modesty more usefully than a blanket claim about favorable lines.",
+      "rewrite": {
+        "meaning2": "Do the work.\nSkip the boasting.",
+        "caption": "A mountain lies inside the earth. The strong third line works for those above and cares for those below; its strength gives it responsibilities, not a reason to boast."
+      }
+    },
+    {
+      "number": 16,
+      "verdict": "change",
+      "score": 7,
+      "reason": "A clear voice alone is not Wang Bi’s reason for people gathering: trust matters. The caption can also explain what the kings’ music honored instead of inventing what they did first.",
+      "rewrite": {
+        "lesson": "GIVE IT DIRECTION.\nTRUST PEOPLE TO JOIN.",
+        "caption": "Thunder comes out of the earth; the old kings made music to honor good conduct. Shared enthusiasm needs something worth coming together for."
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "shorts": [
+    {
+      "number": 49,
+      "verdict": "change",
+      "score": 8,
+      "reason": "Wang Bi reads the three as the upper lines accepting the change. His warning is to stop pushing once sincere words have earned trust.",
+      "rewrite": {
+        "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
+        "lesson": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
+        "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust."
+      }
+    },
+    {
+      "number": 50,
+      "verdict": "ship",
+      "score": 7,
+      "reason": "The setup advice is familiar, but the falling bowl makes it concrete. It fits the Great Image's concern with establishing the proper position."
+    },
+    {
+      "number": 51,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The scare becomes a reason to examine and correct yourself, exactly as the Great Image asks. The steady lines and the cup give that advice a memorable physical form."
+    },
+    {
+      "number": 52,
+      "verdict": "change",
+      "score": 6,
+      "reason": "Line 1 supplies a concrete reason to stop: there is nowhere fitting to go. Naming it improves the finding, although text edits cannot supply the missing line highlight.",
+      "rewrite": {
+        "finding": "LINE 1: TOES HELD STILL.\nNO FITTING WAY FORWARD.",
+        "lesson": "NOWHERE TO GO?\nDON'T FORCE A STEP."
+      }
+    },
+    {
+      "number": 53,
+      "verdict": "change",
+      "score": 7,
+      "reason": "Slow growth does not guarantee lasting results; line 2's earned meal gives the lesson firmer support. The fixed four-line highlight still conflicts with the single-line requirement.",
+      "rewrite": {
+        "meaning2": "Don't skip\nthe work.",
+        "finding": "LINE 2: THE GOOSE EATS ON A ROCK.\nIT HAS EARNED ITS MEAL.",
+        "caption": "A tree on a mountain grows where everyone can see it. Build the character you want others to learn from."
+      }
+    },
+    {
+      "number": 54,
+      "verdict": "change",
+      "score": 6,
+      "reason": "The text does not promise that a powerless position will pass; it asks you to recognize how an arrangement can fail. The revised finding identifies line 3, although the fixed picture still highlights four lines.",
+      "rewrite": {
+        "meaning2": "Check how it\ncould go wrong.",
+        "finding": "LINE 3: THE PLACE IS TAKEN.\nIT RETURNS TO WAIT.",
+        "caption": "The last line has an empty basket and a sheep that gives no blood. Neither side has the support to carry out its part."
+      }
+    },
+    {
+      "number": 55,
+      "verdict": "change",
+      "score": 7,
+      "reason": "Noon begins the sun's decline, so the caption needs that small correction. Line 5 gives the finding a specific subject, although its visual highlight is missing from the fixed picture.",
+      "rewrite": {
+        "finding": "LINE 5: MAKES ITS VIRTUE VISIBLE.\nIT HOLDS THE RULER'S PLACE.",
+        "caption": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
+      }
+    },
+    {
+      "number": 56,
+      "verdict": "change",
+      "score": 8,
+      "reason": "Wang Bi makes the guest's danger specific: taking authority that belongs to the host. That gives the advice more bite and a clearer reason than keeping things brief.",
+      "rewrite": {
+        "meaning1": "The Wanderer:\ndon't take over.",
+        "caption": "A traveler who starts giving orders risks losing the place that shelters him. Being welcomed does not make you the host."
+      }
+    },
+    {
+      "number": 57,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The repeated instruction fits Wang Bi closely. Giving people time explains the repetition without guaranteeing that quiet persistence gets through.",
+      "rewrite": {
+        "meaning2": "Give them time\nto change.",
+        "caption": "Wind follows wind. Wang Bi says to repeat an instruction before and after it takes effect, giving people time to change."
+      }
+    },
+    {
+      "number": 58,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The text does not say solitary joy dries up. Talking and learning together prepares the lesson, while the caption adds the honesty that distinguishes fellowship from flattery.",
+      "rewrite": {
+        "meaning2": "Talk it over.\nLearn together.",
+        "caption": "Two lakes together: friends talking and learning from each other. Enjoy the company without pretending to agree."
+      }
+    },
+    {
+      "number": 59,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The temple gives scattered people a shared focus; it does not establish a blanket ban on argument. The finding now describes the marked fifth line's public call.",
+      "rewrite": {
+        "meaning1": "Dispersion:\nfind a shared aim.",
+        "finding": "LINE 5: THE KING SENDS OUT HIS CALL.\nRIGHTLY PLACED AT THE CENTRE.",
+        "lesson": "BRING THEM BACK\nTO WHAT THEY SHARE.",
+        "caption": "Wind scatters the water’s surface; the old kings built temples. They gave people a place to gather around what they held in common."
+      }
+    },
+    {
+      "number": 60,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The hook, sustainable limits, centred fifth line, and lake all support one practical point. The finding explains why this limit is sweet."
+    },
+    {
+      "number": 61,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The lesson switches abruptly from understanding someone to declaring your own sincerity. Connecting open listening with honest speech makes the sequence clearer, and the caption grounds careful judgment in the Great Image.",
+      "rewrite": {
+        "lesson": "Listen openly.\nSpeak honestly.",
+        "caption": "The old text says trust reaches even pigs and fishes. It also asks judges to examine a case carefully before taking a life."
+      }
+    },
+    {
+      "number": 62,
+      "verdict": "change",
+      "score": 8,
+      "reason": "Small work does not guarantee a good ending, and the bird's call is not located below. The revision gives advice without that promise and restores the Great Image's specific forms of extra care.",
+      "rewrite": {
+        "meaning2": "Give small things\nextra care.",
+        "caption": "The bird calls for somewhere to rest. The text asks for extra respect in conduct, grief in mourning, and thrift in spending."
+      }
+    },
+    {
+      "number": 63,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The completed meal makes the danger of switching off easy to grasp. Preparing for trouble while things still work is the Great Image's exact practical point."
+    },
+    {
+      "number": 64,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The top line's wet head concerns excessive drinking. Naming the drinking preserves Wang Bi's distinction between permitted rest and losing restraint.",
+      "rewrite": {
+        "finding": "LINE 6: DRINKING GOES TOO FAR.\nHE DOES NOT KNOW WHEN TO STOP.",
+        "lesson": "FINISH WITH CARE;\nCELEBRATE WITH RESTRAINT."
+      }
+    }
+  ]
+}

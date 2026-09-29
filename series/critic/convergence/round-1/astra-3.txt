@@ -1,0 +1,149 @@
+{
+  "shorts": [
+    {
+      "number": 33,
+      "verdict": "change",
+      "score": 9,
+      "reason": "The finding counts rising lines without explaining why leaving early matters. The bottom line supplies the reason: danger has already reached the last to retreat.",
+      "rewrite": {
+        "finding": "> BOTTOM LINE: LAST TO RETREAT.\nDANGER HAS ALREADY REACHED IT."
+      }
+    },
+    {
+      "number": 34,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The trapped ram gives restraint a concrete reason where the original finding only counts lines. The caption also removes the unsupported claim about the greatest force in the highest place.",
+      "rewrite": {
+        "finding": "> LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP.",
+        "caption": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing."
+      }
+    },
+    {
+      "number": 35,
+      "verdict": "change",
+      "score": 7,
+      "reason": "Cultivating character does not require rejecting strategy or relationships. The replacement preserves the recognition theme and gives “don’t push” a concrete basis in Wang Bi’s account of line 5.",
+      "rewrite": {
+        "meaning2": "Give people\nreason to trust.",
+        "caption": "The sun rises over the earth. Line 5 leads without taking over other people’s work: let them do their jobs."
+      }
+    },
+    {
+      "number": 36,
+      "verdict": "ship",
+      "score": 8,
+      "reason": "The familiar frustration leads clearly into protecting your convictions while limiting their outward display. The retained light in the animation and the caption keep “dim your light” from meaning surrender."
+    },
+    {
+      "number": 37,
+      "verdict": "change",
+      "score": 9,
+      "reason": "“Skip the rules” contradicts the text’s insistence on household discipline. Making the rule-setter answer to those rules gives the hook bite and follows the top line’s demand for self-examination.",
+      "rewrite": {
+        "hook": "Your house, your rules?",
+        "meaning1": "The Family says:\nfollow them too.",
+        "caption": "Wind comes from fire: conduct at home reaches others. The top line asks you to examine yourself before demanding better from your family."
+      }
+    },
+    {
+      "number": 38,
+      "verdict": "change",
+      "score": 9,
+      "reason": "The lowered bow makes a memorable correction to the viewer’s suspicion. “They’ll never meet” works against both that encounter and the Tuan’s account of cooperation across differences.",
+      "rewrite": {
+        "caption": "Fire rises; lake water sinks. Different directions need not mean different aims: find one small thing you can do together."
+      }
+    },
+    {
+      "number": 39,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The original asks whom to approach, then ends with a different instruction. Line 5 connects personal conduct with receiving help, without implying that being blocked proves personal failure.",
+      "rewrite": {
+        "meaning2": "Keep your\nstandards intact.",
+        "finding": "> LINE 5: IN DANGER, STILL CENTRED.\nFRIENDS COME; ITS STANDARDS HOLD.",
+        "lesson": "ASK FOR HELP.\nKEEP YOUR STANDARDS.",
+        "caption": "Water ahead, a mountain below: pushing on can deepen the trouble. Stop, examine your conduct, and seek someone who can help."
+      }
+    },
+    {
+      "number": 40,
+      "verdict": "ship",
+      "score": 7,
+      "reason": "The relief hook leads naturally into releasing grudges, and Wang Bi explicitly supports the finding’s absence of resentment. “Act or rest” is vague, but the caption supplies the missing distinction."
+    },
+    {
+      "number": 41,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The offering needs sincerity, not just a small quantity. Line 3 gives the readout a reason for restraint, while the caption corrects the baskets to bowls.",
+      "rewrite": {
+        "finding": "> LINE 3: ONE GOES TO ITS PARTNER.\nTHREE TOGETHER WOULD BRING DOUBT.",
+        "lesson": "GIVE WHAT HELPS.\nMORE ISN’T ALWAYS BETTER.",
+        "caption": "Two modest bowls can serve as an offering when the time calls for less, if you mean it. Cut anger and excess wanting, too."
+      }
+    },
+    {
+      "number": 42,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The overflowing bowl pays off well, but sharing arrives only at the lesson. Asking who else benefits connects taking the opportunity with using it to help others.",
+      "rewrite": {
+        "question": "Who else\ncould benefit?"
+      }
+    },
+    {
+      "number": 43,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The public challenge and refusal of force are clear, although the screens repeat the same instruction. The caption can add the Tuan’s reason instead of inventing a claim about joining darkness.",
+      "rewrite": {
+        "caption": "Announce the problem publicly and warn your own people. The text rejects force because making force your answer leads to a dead end."
+      }
+    },
+    {
+      "number": 44,
+      "verdict": "change",
+      "score": 6,
+      "reason": "The caution is understandable, but the caption abruptly switches to broadcasting your own message. Explaining the danger of an unsettled beginning supports the animation and gives the advice a reason.",
+      "rewrite": {
+        "caption": "The first line looks weak but won’t stay still. Set limits at the start, before a passing encounter becomes a lasting commitment."
+      }
+    },
+    {
+      "number": 45,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The original finding makes the gathering sound settled, although Wang Bi describes line 5 lacking trust while line 4 holds the people below. That difficulty gives gathering through right conduct a practical purpose.",
+      "rewrite": {
+        "finding": "> LINE 5: HAS THE POSITION, NOT TRUST.\nLINE 4 HOLDS THE PEOPLE BELOW."
+      }
+    },
+    {
+      "number": 46,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The small-steps argument is clear, but “stop braking” conflicts with the lesson’s emphasis on patience. The finding also needs Wang Bi’s reason for line 5’s ascent: accepting help and entrusting work.",
+      "rewrite": {
+        "finding": "> LINE 5: CLIMBS BY ACCEPTING HELP.\nENTRUSTS WORK; DOES NOT TAKE OVER.",
+        "caption": "Wood grows within the earth: small gains accumulate. Keep taking the next step, and accept help with the climb."
+      }
+    },
+    {
+      "number": 47,
+      "verdict": "change",
+      "score": 8,
+      "reason": "“Actions don’t” promises effectiveness precisely where action can also be obstructed. The replacement preserves the pressure and the commitment to purpose without guaranteeing an escape.",
+      "rewrite": {
+        "meaning2": "Words alone\nwon’t get you out."
+      }
+    },
+    {
+      "number": 48,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The maintenance question gives the ancient image an immediate, concrete use. The caption adds the crucial distinction between an available resource and the equipment needed to deliver it."
+    }
+  ]
+}

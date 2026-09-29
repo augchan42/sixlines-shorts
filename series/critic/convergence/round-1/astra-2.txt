@@ -1,0 +1,163 @@
+{
+  "shorts": [
+    {
+      "number": 17,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The short starts with stopping work, then switches to gaining followers. Wang Bi’s first-line reading supports following the time, which keeps the lesson connected to the hook.",
+      "rewrite": {
+        "meaning1": "Following says:\nfollow the day.",
+        "finding": "LINE 1: NO FIXED TIE ABOVE.\nFREE TO FOLLOW THE TIME.",
+        "lesson": "FOLLOW THE DAY.\nSTOP WHEN IT ENDS."
+      }
+    },
+    {
+      "number": 18,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The rot image is immediate and readable, but meaning1 exceeds six words and the caption guarantees that repairs work. Keep the directness and make preparation and follow-up the advice.",
+      "rewrite": {
+        "meaning1": "Decay says:\nget to work.",
+        "caption": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows."
+      }
+    },
+    {
+      "number": 19,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The lesson introduces caring for people without connecting it to preparing for decline. The revised question supplies that connection, and the caption stops treating growth as having a knowable expiry date.",
+      "rewrite": {
+        "question": "Who needs you\nwhen growth slows?",
+        "caption": "The judgment pairs growth with a warning about the eighth month. While things are going well, build the care your people will need when growth slows."
+      }
+    },
+    {
+      "number": 20,
+      "verdict": "change",
+      "score": 9,
+      "reason": "Meaning2 repeats meaning1 and exceeds six words; the lesson exceeds nine. Looking at how people live adds a step toward line five’s sharper point: their lives reveal your leadership.",
+      "rewrite": {
+        "meaning2": "See how people\nactually live.",
+        "lesson": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD."
+      }
+    },
+    {
+      "number": 21,
+      "verdict": "ship",
+      "score": 10,
+      "reason": "The obstruction becomes a visible bite, and the lesson adds clear warning before enforcement. The caption explains why clarity and force belong together."
+    },
+    {
+      "number": 22,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The hook makes ornament versus judgment concrete. The finding needs Wang Bi’s reason for plain white: adornment has reached its end and returns to simplicity.",
+      "rewrite": {
+        "finding": "TOP LINE: ADORNMENT REACHES ITS END.\nBACK TO PLAIN WHITE."
+      }
+    },
+    {
+      "number": 23,
+      "verdict": "change",
+      "score": 8,
+      "reason": "“Don’t run” turns a warning against advancing into a blanket instruction to stay. Strengthening the base follows the Great Image directly, and the shorter second meaning meets the word limit.",
+      "rewrite": {
+        "meaning1": "Splitting Apart:\nsecure the base.",
+        "meaning2": "Help the people\nunder your care."
+      }
+    },
+    {
+      "number": 24,
+      "verdict": "change",
+      "score": 8,
+      "reason": "“Only rushing stops it” is unsupported, and waiting for energy conflicts with the lesson’s urgent self-correction. Build around the returning bottom line and Wang Bi’s instruction to correct a mistake early.",
+      "rewrite": {
+        "hook": "Made the same mistake again?",
+        "meaning1": "Return says:\nturn back early.",
+        "meaning2": "Catch it near\nthe start.",
+        "question": "What needs\ncorrecting now?",
+        "caption": "The first strong line returns at the bottom. Its Small Image calls this self-correction: turn back before a small mistake takes you further off course."
+      }
+    },
+    {
+      "number": 25,
+      "verdict": "change",
+      "score": 7,
+      "reason": "“Stop faking, and it works” promises success, while the fixed Wang Bi quotation identifies line five, whose lesson concerns unnecessary intervention. That line offers a more concrete situation than the current advice about authenticity.",
+      "rewrite": {
+        "hook": "Making things worse by fixing them?",
+        "meaning1": "Innocence says:\ncheck the cause.",
+        "meaning2": "Some trouble needs\nno interference.",
+        "question": "What needs\nleaving alone?",
+        "finding": "LINE 5: ILLNESS WITHOUT WRONGDOING.\nTHE WRONG MEDICINE ADDS HARM.",
+        "lesson": "DON’T MAKE IT WORSE\nBY FORCING A FIX.",
+        "caption": "Line five describes an illness the person did not cause. Wang Bi warns that adding medicine here makes it worse: action needs a reason."
+      }
+    },
+    {
+      "number": 26,
+      "verdict": "change",
+      "score": 8,
+      "reason": "“Don’t eat at home” sounds like restaurant advice, and “go public” does not explain the highlighted fifth line. Its boar image gives a sharper lesson: restrain what drives the damage.",
+      "rewrite": {
+        "hook": "Fighting the same battle every day?",
+        "meaning1": "Great Accumulation\nsays: curb force.",
+        "meaning2": "Stop what drives\nthe damage.",
+        "question": "What feeds\nthe trouble?",
+        "finding": "LINE 5: A CASTRATED BOAR’S TUSKS.\nTHE TUSKS REMAIN; THE FURY DOES NOT.",
+        "lesson": "CURB THE URGE,\nNOT JUST THE DAMAGE.",
+        "caption": "The boar still has tusks, but its aggression has been checked. Wang Bi reads line five as gentle restraint of force: deal with what drives the trouble."
+      }
+    },
+    {
+      "number": 27,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The dinner hook makes the mouth’s two uses concrete, and the moving jaws support both. Meaning2 exceeds six words; naming food and words also makes the question easier to follow.",
+      "rewrite": {
+        "meaning2": "Food goes in.\nWords come out."
+      }
+    },
+    {
+      "number": 28,
+      "verdict": "change",
+      "score": 9,
+      "reason": "The strained ends make the lesson visible and give the urgency a reason. The caption’s claim that normal rules are off is too broad; Wang Bi’s strong supporting the weak adds something more useful.",
+      "rewrite": {
+        "caption": "The beam sags because its ends are weak. Wang Bi praises strength used to support weakness; standing firm is more than taking on more weight."
+      }
+    },
+    {
+      "number": 29,
+      "verdict": "change",
+      "score": 8,
+      "reason": "The copy says the water fills the hole, but the fixed animation shows it passing through without filling it. Steadiness under pressure connects the repeated danger to keeping your word.",
+      "rewrite": {
+        "meaning2": "Keep your word\nunder pressure.",
+        "caption": "Water keeps flowing through repeated danger without losing its character. The Great Image asks for steady conduct and repeated practice, even here."
+      }
+    },
+    {
+      "number": 30,
+      "verdict": "change",
+      "score": 7,
+      "reason": "The lesson exceeds seven words, and the caption reduces the cow to dull routine. The supplied commentary explains gentleness joined to what is right, which also connects tending the flame to choosing its support.",
+      "rewrite": {
+        "lesson": "Cling to what\nis right.",
+        "caption": "The cow stands for gentleness held to a steady course. Fire needs something to cling to; the question is whether what sustains you is right."
+      }
+    },
+    {
+      "number": 31,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The hook catches a familiar failure to listen, and the lesson adds reciprocity rather than repeating it. Making room follows the Great Image, while the answering pairs support mutual influence."
+    },
+    {
+      "number": 32,
+      "verdict": "ship",
+      "score": 9,
+      "reason": "The changing moon makes lasting commitment visible without equating it with staying motionless. The lesson joins the Tuan’s changing seasons to the Great Image’s steady direction in five readable words."
+    }
+  ]
+}
