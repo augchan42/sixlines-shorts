@@ -1,0 +1,11 @@
+{
+ "name": "chan",
+ "about": "陳 (Chan, the Cantonese spelling of the surname Chen) as a neon sign, a still for the user, 2026-09-29. No small line.",
+ "chars": ["陳"],
+ "layout": "stack",
+ "size": [1080, 1920],
+ "edge": "#ff5ec8",
+ "labelColour": "#a89aa3",
+ "labels": [{ "text": "CHAN", "size": 1.4 }],
+ "fonts": ["pixel", "goudy"]
+}
