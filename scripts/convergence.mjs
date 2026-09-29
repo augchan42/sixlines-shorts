@@ -183,6 +183,12 @@ export const votesOf = (answer, round) =>
 
 const clean = (rw) => Object.fromEntries(Object.entries(rw ?? {}).filter(([k, v]) => FIELDS.includes(k) && typeof v === "string" && v.trim()));
 
+// Each reviewer moved to the option the other chose the round before: they swapped places.
+export const swapped = (votes) => {
+  const [a, b] = votes.slice(-2);
+  return !!(a && b && b.opus.choice === a.astra.choice && b.astra.choice === a.opus.choice && a.opus.choice !== a.astra.choice);
+};
+
 // The first JSON object in a reviewer's answer.
 export const parseAnswer = (text) => {
   const a = text.indexOf("{");
@@ -225,7 +231,10 @@ const roundPrompt = (round, numbers, state, brief) => {
     const history = s.votes
       .map((v) => REVIEWERS.map((w) => (v[w] ? `  round ${v.round}, ${w === "opus" ? "Opus" : "Astra"}: chose ${v[w].choice}, score ${v[w].score}. ${v[w].reason}` : "")).filter(Boolean).join("\n"))
       .join("\n");
-    return `${sections[n]}\nOptions:\n${options}\n\nWhat each reviewer said so far:\n${history}\n`;
+    const swap = swapped(s.votes)
+      ? "\nLast round you swapped places: each of you moved to the option the other had chosen. You are close; settle on one of the two, or one new wording that keeps what each of you gave up.\n"
+      : "";
+    return `${sections[n]}\nOptions:\n${options}\n\nWhat each reviewer said so far:\n${history}\n${swap}`;
   });
   return [
     context,

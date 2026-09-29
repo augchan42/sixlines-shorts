@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { effortOf, parseAnswer, problemsOf, tally, votesOf } from "../scripts/convergence.mjs";
+import { effortOf, parseAnswer, problemsOf, swapped, tally, votesOf } from "../scripts/convergence.mjs";
 
 const copy = {
   hook: "Waiting for a sign to start?",
@@ -77,4 +77,14 @@ test("answers are parsed from the first JSON object, with or without a fence", (
 
 test("rounds 1 and 2 at high effort, round 3 at xhigh", () => {
   assert.deepEqual([1, 2, 3].map(effortOf), ["high", "high", "xhigh"]);
+});
+
+test("a swap is when each reviewer moved to the other's last choice", () => {
+  const votes = [
+    { round: 1, opus: { choice: "opus-1" }, astra: { choice: "current" } },
+    { round: 2, opus: { choice: "current" }, astra: { choice: "opus-1" } },
+  ];
+  assert.equal(swapped(votes), true);
+  assert.equal(swapped(votes.slice(0, 1)), false);
+  assert.equal(swapped([votes[0], { round: 2, opus: { choice: "opus-1" }, astra: { choice: "astra-2" } }]), false);
 });

@@ -1,0 +1,110 @@
+{
+  "shorts": [
+    {
+      "number": 19,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "We agree the question needs to introduce caring for people. Asking who needs you keeps that care from sounding like securing future favors, and the revised caption avoids giving growth a known expiry date."
+    },
+    {
+      "number": 20,
+      "choice": "new",
+      "score": 9,
+      "reason": "Opus's finding explains what the ruler learns from observing people. Combine it with the shorter lesson and a second meaning that advances the point while meeting the word limits.",
+      "rewrite": {
+        "meaning2": "See how people\nactually live.",
+        "finding": "LINE 5: THE RULER SEES HIMSELF\nIN HOW THE PEOPLE LIVE.",
+        "lesson": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD."
+      }
+    },
+    {
+      "number": 21,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Opus convinced me that a repeated boundary violation sets up warning and enforcement more clearly than an unspecified blockage. The new hook keeps the bite and gives the lesson a clear target."
+    },
+    {
+      "number": 22,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The shipped finding identifies plain white but leaves its significance unexplained. Adornment reaching its end supplies Wang Bi's reason for returning to simplicity and makes the lesson follow."
+    },
+    {
+      "number": 23,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The supporting-the-base argument works, but 'don't run' adds a blanket instruction that the warning against advancing does not establish. The revision preserves that argument and brings meaning2 within six words."
+    },
+    {
+      "number": 24,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Opus repairs the change of subject, but leaves the unsupported claim that only rushing can stop a return. Early self-correction follows the returning bottom line and gives the whole short one point."
+    },
+    {
+      "number": 25,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Removing the success promise helps, but the original finding still gives no reason for the lesson about motives. The fixed quotation identifies line five, whose unnecessary remedy supplies a concrete image and a reason to hold back."
+    },
+    {
+      "number": 26,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The practice hook is relatable, but releasing stored skill does not explain the highlighted fifth line. The boar's remaining tusks make its point concrete: restrain what drives the damage."
+    },
+    {
+      "number": 27,
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "I agree the dinner hook and question work. Naming food and words preserves both strengths, removes ambiguity before 'Which,' and fixes the seven-word meaning."
+    },
+    {
+      "number": 28,
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "The on-screen sequence works as Opus describes. The caption still needs changing because 'the normal rules are off' overstates the text, while supporting weakness explains the visible strain."
+    },
+    {
+      "number": 29,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Opus correctly identifies the late arrival of keeping your word, but his option retains filling a hole that the fixed animation never fills. Introducing reliability in meaning2 connects movement through danger to the shipped lesson."
+    },
+    {
+      "number": 30,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The connection through clinging is sound, but the shipped lesson exceeds seven words and the caption exceeds two sentences. The revision also explains the cow through gentleness and right conduct rather than calling its care dull."
+    },
+    {
+      "number": 32,
+      "choice": "current",
+      "score": 9,
+      "reason": "The four-word meaning remains easy to read across that break, and preserving movement helps prepare the changing moon. Daily repetition and a final period do not improve it enough to justify re-rendering."
+    },
+    {
+      "number": 33,
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "The creeping lines establish the situation, but the bottom line explains the cost of leaving late. Naming that danger makes the lesson's timing clear without requiring viewers to supply the connection."
+    },
+    {
+      "number": 34,
+      "choice": "new",
+      "score": 8,
+      "reason": "Opus's ram image gives the vague second meaning a concrete consequence. Combine it with the line-three finding and corrected caption so the terminal explains the trap without claiming thunder represents the greatest force.",
+      "rewrite": {
+        "meaning2": "Butt the fence,\nsnag your horns.",
+        "finding": "LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP.",
+        "caption": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing."
+      }
+    },
+    {
+      "number": 35,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Opus's objection to the invented contrast also applies to 'Not strategy. Not network.' on screen. The revised meaning removes that claim, and the caption gives 'don't push' a concrete basis in line five."
+    }
+  ]
+}

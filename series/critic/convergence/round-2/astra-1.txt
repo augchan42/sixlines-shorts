@@ -1,0 +1,114 @@
+{
+  "shorts": [
+    {
+      "number": 1,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Removing “No conditions” resolves the timing objection without adding “when ready,” which could encourage the hesitation in the hook. Your version connects beginning to sustained effort more directly."
+    },
+    {
+      "number": 2,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shipped ending has more bite, but “follow and arrive” turns finding a leader into guaranteed arrival. Active support keeps the same point without promising the result."
+    },
+    {
+      "number": 4,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The hook makes answer-shopping clear, but “ask once” still gives newcomers the wrong rule about learning. “Don’t shop for a yes” keeps the bite and makes the fault precise."
+    },
+    {
+      "number": 5,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your objection to the repeated “wait well” is right. Combine your instruction and question with the concrete inbox hook and a short lesson that explains why rest matters.",
+      "rewrite": {
+        "hook": "Refreshing your inbox again?",
+        "meaning1": "Waiting says:\ndon't rush in.",
+        "question": "What are you\nforcing too early?",
+        "lesson": "Rest before\nthe hard part.",
+        "caption": "Clouds gather above heaven: danger lies ahead, so strength means holding back. Eat and rest while you wait."
+      }
+    },
+    {
+      "number": 6,
+      "choice": "new",
+      "score": 9,
+      "reason": "You’re right that “taken” leaves winning and losing unclear; the finding can resolve that while retaining the Small Image’s reason. The caption supplies the repeated stripping and removes the invented last safe moment.",
+      "rewrite": {
+        "finding": "AT THE TOP: A BELT WON, THEN LOST.\nWON BY FIGHTING, NO RESPECT.",
+        "caption": "Heaven and water pull apart; neither changes course. At the top, a winner receives a belt of rank, then loses it three times in one morning."
+      }
+    },
+    {
+      "number": 7,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shipped lesson matches the ranks moving, but it promises that upright leadership produces obedience. Care gives the leader a responsibility grounded in the Great Image and Wang Bi, and connects to feeding people."
+    },
+    {
+      "number": 8,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your ending follows the drawing closely, but it strengthens the instruction to join before judging the company. Choosing well and then committing preserves urgency while giving the decision a sound basis."
+    },
+    {
+      "number": 9,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that line four does not block line one, but “turns back” still makes the marked line support waiting. Wang Bi describes an available advance, so the lesson needs to use that opening."
+    },
+    {
+      "number": 10,
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "“It may pass” is appropriately qualified, but the caption still claims your conduct keeps the tiger asleep. The replacement keeps the temper hook and makes the Small Image’s self-command explicit."
+    },
+    {
+      "number": 11,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "“Keep talking” removes a real ambiguity in “keep it moving” and sets up the contact, question and meeting lines. That is a clear improvement with no loss of bite."
+    },
+    {
+      "number": 12,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: “Don’t let them buy you” identifies what makes the deal bad. It also prepares the refusal of paid honours more directly."
+    },
+    {
+      "number": 13,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that the finding needs line two’s narrow allegiance, not just its position. This version states that limitation directly and removes the caption’s claim that choosing any membership defeats fellowship."
+    },
+    {
+      "number": 15,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "“Cannot be surpassed” does not mean quiet people cannot be stopped. The work and care in Wang Bi’s third-line note give modesty a concrete purpose without that promise."
+    },
+    {
+      "number": 16,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The strong line supports leadership, but a clear voice leaves out Wang Bi’s reason for gathering: trust. The revised caption also explains the music’s purpose without inventing what the kings did first."
+    },
+    {
+      "number": 17,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Your lesson resolves the leadership detour and adds something beyond another instruction to stop work. Following the time instead of personal desire is directly supported by Wang Bi."
+    },
+    {
+      "number": 18,
+      "choice": "new",
+      "score": 7,
+      "reason": "You’re right that the repair sequence works; my earlier word-count objection was mistaken, since meaning1 has six words. Keep its possibility of repair and change only the caption’s guarantee into preparation and follow-up.",
+      "rewrite": {
+        "caption": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows."
+      }
+    }
+  ]
+}

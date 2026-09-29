@@ -1,0 +1,125 @@
+{
+  "shorts": [
+    {
+      "number": 36,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Agreed: the lesson itself needs to distinguish hiding the light from extinguishing it. The new ending makes the surviving crescent matter without relying on the caption."
+    },
+    {
+      "number": 37,
+      "choice": "new",
+      "score": 8,
+      "reason": "We agree that the rule-setter must live by the rules; the sharper hook makes that responsibility clear immediately. I also shorten meaning 2 to meet the six-word limit.",
+      "rewrite": {
+        "hook": "Your house, your rules?",
+        "meaning1": "The Family says:\nfollow them too.",
+        "meaning2": "Mean what you say.\nFollow through.",
+        "caption": "Wind comes from fire: conduct at home reaches others. The top line asks you to examine yourself before demanding better from your family."
+      }
+    },
+    {
+      "number": 38,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Your caption adds the strange, memorable image the video leaves out. Distrust turning a possible partner into a threatening apparition gives the lowered bow more meaning than my repeated advice."
+    },
+    {
+      "number": 39,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that line 5 must connect conduct with help. 'Fix yourself' suggests the obstruction proves a personal defect, while 'give help time to come' encourages waiting where the hook and question call for seeking help."
+    },
+    {
+      "number": 40,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: the caption cannot make 'act or rest' useful during its screen time. 'Clear the air' connects the release of pressure to the forgiveness that follows."
+    },
+    {
+      "number": 41,
+      "choice": "new",
+      "score": 8,
+      "reason": "The two-vessel image is stronger than my abstract lesson, so I would preserve it. 'Can be enough' and the caption retain the conditions of timing and sincerity, while line 3 explains why adding more can hurt.",
+      "rewrite": {
+        "lesson": "Two small bowls\ncan be enough.",
+        "finding": "LINE 3: ONE GOES TO ITS PARTNER.\nTHREE TOGETHER WOULD BRING DOUBT.",
+        "caption": "Two modest bowls can serve as an offering when the time calls for less, if you mean it. Cut anger and excess wanting, too."
+      }
+    },
+    {
+      "number": 42,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your caption adds the missing self-correction; my question prepares the viewer for sharing the gain. Both changes improve distinct parts of the short.",
+      "rewrite": {
+        "question": "Who else\ncould benefit?",
+        "caption": "Wind and thunder feed each other. The text pairs two moves: see something good and go toward it, see a fault in yourself and change it."
+      }
+    },
+    {
+      "number": 43,
+      "choice": "new",
+      "score": 8,
+      "reason": "Agreed that warning your own people adds an instruction the screen sequence lacks. I retain my caption because it explains why force fails more clearly than 'Force is what runs out.'",
+      "rewrite": {
+        "meaning2": "Tell your own\npeople first.",
+        "caption": "Announce the problem publicly and warn your own people. The text rejects force because making force your answer leads to a dead end."
+      }
+    },
+    {
+      "number": 44,
+      "choice": "astra-1",
+      "score": 6,
+      "reason": "Broadcasting a message comes from the Great Image, but the caption gives no reason it answers this tempting encounter. The replacement explains why an apparently small beginning needs limits and supports the fixed scene."
+    },
+    {
+      "number": 45,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shared-purpose argument works, but the original finding only counts lines. The replacement explains the difficulty shown by the highlighted pair: holding the leading position does not itself secure people's trust."
+    },
+    {
+      "number": 46,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "We agree that the caption needs changing. The finding also needs the reason behind line 5's ascent—accepting others and entrusting work—which 'step by step' leaves out."
+    },
+    {
+      "number": 47,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "'Actions don’t' still guarantees effectiveness where action can be blocked too. Repeating the aim gives the ending a clear object; 'stay who you are' makes what to preserve less precise."
+    },
+    {
+      "number": 48,
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "The 1.6-second lesson window settles this: the shorter ending is easier to take in as it types. Repair and shared access also add concrete duties to the maintenance question."
+    },
+    {
+      "number": 49,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your question connects the hook to the unresolved doubts more directly. Wang Bi explicitly identifies the three upper lines accepting the change and warns against pressing further, so the finding and lesson still need that correction.",
+      "rewrite": {
+        "question": "Who isn't\nconvinced yet?",
+        "lesson": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
+        "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
+        "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust."
+      }
+    },
+    {
+      "number": 50,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: the spilled meal gives a reason to set the pot right instead of repeating the instruction. The broken leg then lets the caption explain what happens when responsibility exceeds capacity."
+    },
+    {
+      "number": 52,
+      "choice": "current",
+      "score": 6,
+      "reason": "My replacement shifts the problem from overthinking to having nowhere to go and names a line the fixed readout does not highlight. The shipped ending is repetitive, but the alternative is not clearly better for this short."
+    }
+  ]
+}

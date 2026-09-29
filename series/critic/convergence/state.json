@@ -1,6 +1,7 @@
 {
  "rounds": [
-  1
+  1,
+  2
  ],
  "shorts": {
   "1": {
@@ -53,9 +54,22 @@
       "score": 7,
       "reason": "“No conditions” contradicts the hidden dragon and the warning against going too far. Keep the strong ending, but distinguish sustained effort from starting regardless of circumstances."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "I agree that 'No conditions' has to go, and opus-1 removes it. 'Start when ready' gives back the excuse the hook calls out, and a caption about timing works against a lesson that says heaven never rests; 'Then keep going, every day' links starting to 自強不息."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Removing “No conditions” resolves the timing objection without adding “when ready,” which could encourage the hesitation in the hook. Your version connects beginning to sustained effort more directly."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-1"
   },
   "2": {
    "name": "The Receptive",
@@ -96,6 +110,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The hook and supporting-strength idea work together well. “Follow and arrive” promises success; the replacement makes following an active responsibility."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "'Follow and arrive' is the Tuan's own 先迷失道，後順得常: lose the way by going first, find the constant path by following. It is advice drawn from the text, not a promise. The replacement is correct but flat, and the lesson is where the short needs bite."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shipped ending has more bite, but “follow and arrive” turns finding a leader into guaranteed arrival. Active support keeps the same point without promising the result."
      }
     }
    ],
@@ -175,6 +202,19 @@
       "score": 7,
       "reason": "The hook catches answer-shopping, but “ask once” treats every follow-up as a fault. Focus on willingness to learn, which also connects the question to the student seeking the teacher."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "'Ask once' is the Judgment itself (初筮告，再三瀆，瀆則不告), and with the hook it is clearly about asking again to get a better answer, not about honest follow-up questions. 'Listen well' is safer but loses the best line pair in the series."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The hook makes answer-shopping clear, but “ask once” still gives newcomers the wrong rule about learning. “Don’t shop for a yes” keeps the bite and makes the fault precise."
+     }
     }
    ],
    "agreed": null
@@ -209,12 +249,22 @@
      "lesson": "Rest before\nthe hard part.",
      "finding": null,
      "caption": "Clouds gather above heaven: danger lies ahead, so strength means holding back. Eat and rest while you wait."
+    },
+    "astra-2": {
+     "hook": "Refreshing your inbox again?",
+     "meaning1": "Waiting says:\ndon't rush in.",
+     "meaning2": "Eat, rest,\nstay ready.",
+     "question": "What are you\nforcing too early?",
+     "lesson": "Rest before\nthe hard part.",
+     "finding": null,
+     "caption": "Clouds gather above heaven: danger lies ahead, so strength means holding back. Eat and rest while you wait."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -228,6 +278,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "Refreshing an inbox gives the hook a recognizable action. The shorter lesson fits its brief appearance and explains rest as preparation for difficulty."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Moving to yours: the inbox hook is concrete, and 'Rest before the hard part' fixes my main complaint (the lesson repeating meaning 2) and gives 險在前 as the reason. 'Wait well' is still a little circular, but not enough to hold out over."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Your objection to the repeated “wait well” is right. Combine your instruction and question with the concrete inbox hook and a short lesson that explains why rest matters."
      }
     }
    ],
@@ -263,12 +326,22 @@
      "lesson": "Being right isn’t\nreason to fight on.",
      "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
      "caption": "Heaven and water pull apart; neither changes course. At the top, a winner receives a belt of rank, then loses it three times in one morning."
+    },
+    "astra-2": {
+     "hook": "Fighting over something you’re right about?",
+     "meaning1": "Conflict says:\nstop halfway.",
+     "meaning2": "Pushing to the end\ncosts you.",
+     "question": "What fight could\nyou leave now?",
+     "lesson": "Being right isn’t\nreason to fight on.",
+     "finding": "AT THE TOP: A BELT WON, THEN LOST.\nWON BY FIGHTING, NO RESPECT.",
+     "caption": "Heaven and water pull apart; neither changes course. At the top, a winner receives a belt of rank, then loses it three times in one morning."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -282,6 +355,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "The hook, lost belt, and lesson make a strong sequence. The caption invents a last safe moment to withdraw; the repeated stripping of the belt adds a sharper, supported detail."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "The caption's 'middle of a fight' is 中吉，終凶 from the Judgment, so it isn't invented. The belt stripped three times belongs on screen, in the finding, where 'THE BELT IS TAKEN' leaves a newcomer unsure whether it was won or lost. (The finding's leading '>' is the terminal prompt already drawn; drop it when rendering.)"
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 9,
+      "reason": "You’re right that “taken” leaves winning and losing unclear; the finding can resolve that while retaining the Small Image’s reason. The caption supplies the repeated stripping and removes the invented last safe moment."
      }
     }
    ],
@@ -327,6 +413,19 @@
       "score": 8,
       "reason": "The grown-up line has bite, and feeding people makes leadership concrete. Replace the promised obedience with responsibility for the people sent into difficulty."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 7,
+      "reason": "The scene shows the ranks falling in around the upright general, and the Tuan says 能以眾正…民從之, so the lesson describes the scene. It does not promise obedience. 'Care for those you send in' repeats meaning 2 and doesn't match what the lines do."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shipped lesson matches the ranks moving, but it promises that upright leadership produces obedience. Care gives the leader a responsibility grounded in the Great Image and Wang Bi, and connects to feeding people."
+     }
     }
    ],
    "agreed": null
@@ -361,12 +460,22 @@
      "lesson": "Choose who you\nstand beside",
      "finding": null,
      "caption": "Water gathers on the earth, as people gather around someone they trust. Choose your company carefully, then commit before the group has moved on."
+    },
+    "opus-2": {
+     "hook": "Keep saying you’ll join later?",
+     "meaning1": "Holding Together\nsays: join now.",
+     "meaning2": "Late arrivals\nmiss out.",
+     "question": "Who’s waiting\nfor your yes?",
+     "lesson": "Walk over.\nStand beside them.",
+     "finding": null,
+     "caption": "Water gathers on the earth, as people gather around someone they trust. Choose your company carefully, then commit before the group has moved on."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -380,6 +489,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "“Join now” urges commitment before judgment, while the lesson asks viewers to choose their company. Put selection first and keep the pressure against endless postponement."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Keep 'join now' (後夫凶) and a lesson that follows the drawing, so the short makes one point. Your caption carries 原筮, choosing well first, which answers the worry about committing before judging."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your ending follows the drawing closely, but it strengthens the instruction to join before judging the company. Choosing well and then committing preserves urgency while giving the decision a sound basis."
      }
     }
    ],
@@ -415,12 +537,22 @@
      "lesson": "TAKE THE OPEN PATH.\nDON’T FORCE THE BLOCKED ONE.",
      "finding": "> LINE 1 ADVANCES. LINE 4 WELCOMES IT.\nITS OWN PATH IS OPEN.",
      "caption": "Dense clouds, no rain: the larger change is still held back. But Wang Bi reads the first line as free to advance toward a willing partner."
+    },
+    "opus-2": {
+     "hook": "Everything’s ready, nothing happens?",
+     "meaning1": "Small Taming\nsays: not yet.",
+     "meaning2": "Work on yourself\nmeanwhile.",
+     "question": "What can you\nwork on now?",
+     "lesson": "Don’t force the big move.\nTake your own road.",
+     "finding": "AT THE BASE: IT TAKES ITS OWN ROAD.\nLINE 4 DOESN'T BLOCK IT. NO BLAME.",
+     "caption": "Dense clouds, no rain, and wind across the sky with nothing to hold. When the outside won’t move, the inside is the work."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -434,6 +566,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "Wang Bi explicitly says line four does not obstruct line one, which advances along its own path. The shipped readout makes that line an example of being held back, so the sequence needs to distinguish a stalled larger change from an available opening."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "We agree Wang Bi says line 4 doesn't block line 1, which goes by its own road. This keeps the Judgment's 'not yet' and the Great Image's work on yourself for newcomers, and puts line 1's own road in the finding and lesson."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that line four does not block line one, but “turns back” still makes the marked line support waiting. Wang Bi describes an available advance, so the lesson needs to use that opening."
      }
     }
    ],
@@ -479,9 +624,22 @@
       "score": 9,
       "reason": "The temper hook is immediate, but the caption promises control over someone else’s reaction and invents a sleeping tiger. Keep the lesson on governing your own conduct, with the Small Image’s reason made explicit."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Moving to yours: 'keeps it asleep' is invented and implies control over someone else's temper. Your finding gives 中不自亂 as the reason, and the lesson hits harder."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "“It may pass” is appropriately qualified, but the caption still claims your conduct keeps the tiger asleep. The replacement keeps the temper hook and makes the Small Image’s self-command explicit."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "11": {
    "name": "Peace",
@@ -522,6 +680,19 @@
       "choice": "current",
       "score": 10,
       "reason": "“Peace is contact, not a vacation” is memorable and leads directly into the meeting lines. The caption adds the ruler’s responsibility to extend the benefits rather than repeating the animation."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "Moving back to the shipped copy: 'keep it moving' can also read as keeping things flowing (通), so the slang reading isn't a clear enough fault to justify a re-render."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "“Keep talking” removes a real ambiguity in “keep it moving” and sets up the contact, question and meeting lines. That is a clear improvement with no loss of bite."
      }
     }
    ],
@@ -567,6 +738,19 @@
       "score": 8,
       "reason": "The separation, bad deal, and refused rewards make one clear argument. Withdrawal has a concrete reason in the Great Image: protecting conduct when the system rewards the wrong things."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "Moving back to the shipped copy: the lesson and caption already carry 不可榮以祿, and 'them' in my line has no clear referent for a newcomer, so the change is not clearly better."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: “Don’t let them buy you” identifies what makes the deal bad. It also prepares the refusal of paid honours more directly."
+     }
     }
    ],
    "agreed": null
@@ -601,12 +785,22 @@
      "lesson": "Join on principle,\nnot on kinship.",
      "finding": "> LINE 2 ANSWERS ONLY TO LINE 5.\nFELLOWSHIP STOPS AT ITS OWN CIRCLE.",
      "caption": "The old text puts fellowship in an open field. Shared principles give people a reason to meet beyond family ties."
+    },
+    "opus-2": {
+     "hook": "Same five friends for years?",
+     "meaning1": "Fellowship says:\nkeep it open.",
+     "meaning2": "Let new people\nwalk up.",
+     "question": "Who could you\ninvite in?",
+     "lesson": "Join on principle,\nnot on kinship.",
+     "finding": "LINE 2 ANSWERS ONLY TO LINE 5.\nFELLOWSHIP STOPS AT ITS OWN CIRCLE.",
+     "caption": "The old text puts fellowship out in the open, where anyone can walk up. Keep only to your own kind and it shrinks to a clan."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -620,6 +814,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The marked pair needs its limitation stated: Wang Bi faults line two for belonging only with line five. The caption also overreaches by treating every choice of membership as a failure of fellowship."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your finding is cleaner than mine and states 唯同於主. For the caption, I agree 'you've left it' overstates 吝, but your version repeats the lesson; this one keeps the open field and names the fault the text gives, fellowship shrinking to a clan."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that the finding needs line two’s narrow allegiance, not just its position. This version states that limitation directly and removes the caption’s claim that choosing any membership defeats fellowship."
      }
     }
    ],
@@ -699,6 +906,19 @@
       "score": 8,
       "reason": "Quietness does not make someone unstoppable. The third line’s work and care explain modesty more usefully than a blanket claim about favorable lines."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "'No one stops the quiet ones' is the Tuan's 卑而不可踰 (low, yet no one can pass over it), not an invented claim. 'Every line is favorable' is a true and memorable fact about this hexagram. 'Skip the boasting' is correct but flat."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "“Cannot be surpassed” does not mean quiet people cannot be stopped. The work and care in Wang Bi’s third-line note give modesty a concrete purpose without that promise."
+     }
     }
    ],
    "agreed": null
@@ -743,9 +963,22 @@
       "score": 7,
       "reason": "A clear voice alone is not Wang Bi’s reason for people gathering: trust matters. The caption can also explain what the kings’ music honored instead of inventing what they did first."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Moving to yours: 'the first thing the kings did' is invented, while 作樂崇德 is in the text. 'Give it direction' answers the 'nowhere to go' hook, and 'trust people' is Wang Bi's 勿疑，朋盍簪."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The strong line supports leadership, but a clear voice leaves out Wang Bi’s reason for gathering: trust. The revised caption also explains the music’s purpose without inventing what the kings did first."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "17": {
    "name": "Following",
@@ -777,12 +1010,22 @@
      "lesson": "FOLLOW THE DAY.\nSTOP WHEN IT ENDS.",
      "finding": "LINE 1: NO FIXED TIE ABOVE.\nFREE TO FOLLOW THE TIME.",
      "caption": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy."
+    },
+    "opus-2": {
+     "hook": "Still at your desk after dark?",
+     "meaning1": "Following says:\nfollow the day.",
+     "meaning2": "Day’s done.\nGo in, rest.",
+     "question": "When will you\nstop today?",
+     "lesson": "Follow the time,\nnot what you want.",
+     "finding": "LINE 1: NO FIXED TIE ABOVE.\nFREE TO FOLLOW THE TIME.",
+     "caption": "The image is thunder resting inside the lake: at nightfall, you go indoors and rest. Following the day’s rhythm is what gives you tomorrow’s energy."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -796,6 +1039,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "The short starts with stopping work, then switches to gaining followers. Wang Bi’s first-line reading supports following the time, which keeps the lesson connected to the hook."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "I take your meaning 1 and your finding (上无其應，无所偏係 is exact). Your lesson repeats meaning 2, while 'not what you want' adds Wang Bi's reason (隨不以欲) and speaks to the person who stays at the desk."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Your lesson resolves the leadership detour and adds something beyond another instruction to stop work. Following the time instead of personal desire is directly supported by Wang Bi."
      }
     }
    ],
@@ -822,11 +1078,31 @@
      "lesson": "Found rot?\nClean it out.",
      "finding": null,
      "caption": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows."
+    },
+    "opus-2": {
+     "hook": "Something rotting under the surface?",
+     "meaning1": "Decay says:\nit can be fixed.",
+     "meaning2": "Rushed repairs\ndon’t hold.",
+     "question": "What’s overdue\nfor repair?",
+     "lesson": "Found rot?\nClean it out.",
+     "finding": null,
+     "caption": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows."
+    },
+    "astra-2": {
+     "hook": "Something rotting under the surface?",
+     "meaning1": "Decay says:\nit can be fixed.",
+     "meaning2": "Rushed repairs\ndon’t hold.",
+     "question": "What’s overdue\nfor repair?",
+     "lesson": "Found rot?\nClean it out.",
+     "finding": null,
+     "caption": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows."
     }
    },
    "problems": {
     "current": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -841,9 +1117,22 @@
       "score": 7,
       "reason": "The rot image is immediate and readable, but meaning1 exceeds six words and the caption guarantees that repairs work. Keep the directness and make preparation and follow-up the advice."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "'Decay says: it can be fixed' is six words, within the limit, and it is 元亨, so I keep it. I agree the caption's 'the repair works' is a guarantee, and your caption turns the three days into advice."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 7,
+      "reason": "You’re right that the repair sequence works; my earlier word-count objection was mistaken, since meaning1 has six words. Keep its possibility of repair and change only the caption’s guarantee into preparation and follow-up."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-2"
   },
   "19": {
    "name": "Approach",
@@ -897,9 +1186,22 @@
       "score": 7,
       "reason": "The lesson introduces caring for people without connecting it to preparing for decline. The revised question supplies that connection, and the caption stops treating growth as having a knowable expiry date."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "My question was 7 words, over the limit. Yours makes the same link in 6: the lesson now answers the question. The caption also stops treating the eighth month as a known expiry date and ties it to the Great Image's 容保民."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "We agree the question needs to introduce caring for people. Asking who needs you keeps that care from sounding like securing future favors, and the revised caption avoids giving growth a known expiry date."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "20": {
    "name": "Contemplation",
@@ -931,12 +1233,32 @@
      "lesson": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD.",
      "finding": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
      "caption": "The image is wind moving over everything. The old kings traveled and looked before they taught."
+    },
+    "opus-2": {
+     "hook": "Deciding from behind a desk?",
+     "meaning1": "Contemplation:\ngo and look.",
+     "meaning2": "See how people\nactually live.",
+     "question": "What could you\ngo see?",
+     "lesson": "Look at your people.\nThey show how you lead.",
+     "finding": "LINE 5: THE PEOPLE'S WAYS\nSHOW THE RULER'S OWN.",
+     "caption": "The image is wind moving over everything. The old kings traveled and looked before they taught."
+    },
+    "astra-2": {
+     "hook": "Deciding from behind a desk?",
+     "meaning1": "Contemplation:\ngo and look.",
+     "meaning2": "See how people\nactually live.",
+     "question": "What could you\ngo see?",
+     "lesson": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD.",
+     "finding": "LINE 5: THE RULER SEES HIMSELF\nIN HOW THE PEOPLE LIVE.",
+     "caption": "The image is wind moving over everything. The old kings traveled and looked before they taught."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -950,6 +1272,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "Meaning2 repeats meaning1 and exceeds six words; the lesson exceeds nine. Looking at how people live adds a step toward line five’s sharper point: their lives reveal your leadership."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "I take your meaning 2: it stops repeating meaning 1 and brings in 觀民. The current lesson is 9 words, within the readout limit, so I keep it. The finding is still a fragment that says the lesson word for word, so it now gives Wang Bi's reason (上之化下猶風之靡草, 觀民之俗以察己道): the people's ways show the ruler's."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 9,
+      "reason": "Opus's finding explains what the ruler learns from observing people. Combine it with the shorter lesson and a second meaning that advances the point while meeting the word limits."
      }
     }
    ],
@@ -995,6 +1330,19 @@
       "score": 10,
       "reason": "The obstruction becomes a visible bite, and the lesson adds clear warning before enforcement. The caption explains why clarity and force belong together."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 8,
+      "reason": "The blocking hook matches the Tuan's thing caught between the jaws and 'It won’t clear by itself', and the question fits both a person and a thing. The jump to 'Warn clearly' is small, so I give way to the shipped copy."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Opus convinced me that a repeated boundary violation sets up warning and enforcement more clearly than an unspecified blockage. The new hook keeps the bite and gives the lesson a clear target."
+     }
     }
    ],
    "agreed": null
@@ -1039,9 +1387,22 @@
       "score": 8,
       "reason": "The hook makes ornament versus judgment concrete. The finding needs Wang Bi’s reason for plain white: adornment has reached its end and returns to simplicity."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Agreed: the finding should give Wang Bi's reason (飾終反素), and 'adornment reaches its end' does that within two terminal lines."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The shipped finding identifies plain white but leaves its significance unexplained. Adornment reaching its end supplies Wang Bi's reason for returning to simplicity and makes the lesson follow."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "23": {
    "name": "Splitting Apart",
@@ -1083,6 +1444,19 @@
       "score": 8,
       "reason": "“Don’t run” turns a warning against advancing into a blanket instruction to stay. Strengthening the base follows the Great Image directly, and the shorter second meaning meets the word limit."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 7,
+      "reason": "'Don’t run' follows the judgment's 不利有攸往 and the Tuan's 順而止之, which do say stop and stay. 'Stay and help those below you' is 6 words, within the limit. Your meaning 1 says 'base' before the lesson says it again, and it loses the bite."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The supporting-the-base argument works, but 'don't run' adds a blanket instruction that the warning against advancing does not establish. The revision preserves that argument and brings meaning2 within six words."
+     }
     }
    ],
    "agreed": null
@@ -1117,12 +1491,22 @@
      "lesson": "See your misstep,\nturn back early.",
      "finding": null,
      "caption": "The first strong line returns at the bottom. Its Small Image calls this self-correction: turn back before a small mistake takes you further off course."
+    },
+    "opus-2": {
+     "hook": "Coming back after a bad stretch?",
+     "meaning1": "Return says:\nenergy returns.",
+     "meaning2": "Rest first.\nDon’t force it.",
+     "question": "What are you\nrushing back to?",
+     "lesson": "Stay still.\nLet it come back.",
+     "finding": null,
+     "caption": "Thunder underground is energy coming back before it shows. On the solstice the old kings closed the passes and kept still to let it return."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1136,6 +1520,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "“Only rushing stops it” is unsupported, and waiting for energy conflicts with the lesson’s urgent self-correction. Build around the returning bottom line and Wang Bi’s instruction to correct a mistake early."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "You are right that 'Only rushing stops it' is not in the text, and the caption says it too. Both come out, and the lesson now matches the Great Image (至日閉關) and the scene. That keeps one point, rest, instead of switching to line 1. Your version says 'turn back early' twice, and 'the same mistake again' is line 3's 頻復, not line 1."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Opus repairs the change of subject, but leaves the unsupported claim that only rushing can stop a return. Early self-correction follows the returning bottom line and gives the whole short one point."
      }
     }
    ],
@@ -1191,9 +1588,22 @@
       "score": 7,
       "reason": "“Stop faking, and it works” promises success, while the fixed Wang Bi quotation identifies line five, whose lesson concerns unnecessary intervention. That line offers a more concrete situation than the current advice about authenticity."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "You convinced me: the fixed quotation names line 5 as master, and your finding says what that line is (无妄之疾, 勿藥有喜), while the current finding talks about the base. The hook is a concrete situation, and nothing in it promises a result."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Removing the success promise helps, but the original finding still gives no reason for the lesson about motives. The fixed quotation identifies line five, whose unnecessary remedy supplies a concrete image and a reason to hold back."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "26": {
    "name": "Great Accumulation",
@@ -1234,6 +1644,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "“Don’t eat at home” sounds like restaurant advice, and “go public” does not explain the highlighted fifth line. Its boar image gives a sharper lesson: restrain what drives the damage."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 7,
+      "reason": "The shipped copy follows the name, the Great Image (畜其德) and the judgment's 不家食. The finding's mountain is the upper trigram, where the lit line 5 sits, so it matches the readout. Under 'Great Accumulation says: curb force' a newcomer can't connect the name to the advice, and the caption already explains 'Don’t eat at home'."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "The practice hook is relatable, but releasing stored skill does not explain the highlighted fifth line. The boar's remaining tusks make its point concrete: restrain what drives the damage."
      }
     }
    ],
@@ -1279,9 +1702,22 @@
       "score": 8,
       "reason": "The dinner hook makes the mouth’s two uses concrete, and the moving jaws support both. Meaning2 exceeds six words; naming food and words also makes the question easier to follow."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Both meaning 2s are 6 words, but 'what comes out' of a mouth can read as a toilet joke, and naming food and words makes 'Which do you watch less?' clear at once."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "I agree the dinner hook and question work. Naming food and words preserves both strengths, removes ambiguity before 'Which,' and fixes the seven-word meaning."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "28": {
    "name": "Greatness in Excess",
@@ -1304,11 +1740,21 @@
      "lesson": "The ends give way.\nBrace them now.",
      "finding": null,
      "caption": "The beam sags because its ends are weak. Wang Bi praises strength used to support weakness; standing firm is more than taking on more weight."
+    },
+    "opus-2": {
+     "hook": "Under too much weight?",
+     "meaning1": "Great Excess\nsays: move now.",
+     "meaning2": "Waiting under it\nisn’t caution.",
+     "question": "What’s bending\nright now?",
+     "lesson": "The ends give way.\nBrace them now.",
+     "finding": null,
+     "caption": "Water above the trees: the beam sags because both ends are weak. The old text asks the strong to hold up the weak, and to stand alone without fear."
     }
    },
    "problems": {
     "current": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1322,6 +1768,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "The strained ends make the lesson visible and give the urgency a reason. The caption’s claim that normal rules are off is too broad; Wang Bi’s strong supporting the weak adds something more useful."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Agreed that 'the normal rules are off' is too broad. Your second clause is hard to follow, though. This caption keeps your 本末弱 and Wang Bi's strong-supports-weak (以至壯輔至衰) and adds the Great Image's 獨立不懼, which the video leaves out."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "The on-screen sequence works as Opus describes. The caption still needs changing because 'the normal rules are off' overstates the text, while supporting weakness explains the visible strain."
      }
     }
    ],
@@ -1357,12 +1816,22 @@
      "lesson": "Through danger,\nkeep your word.",
      "finding": null,
      "caption": "Water keeps flowing through repeated danger without losing its character. The Great Image asks for steady conduct and repeated practice, even here."
+    },
+    "opus-2": {
+     "hook": "One problem after another?",
+     "meaning1": "The Abyss says:\nkeep moving.",
+     "meaning2": "Like water: pass\nthrough, flow on.",
+     "question": "What's the next\nsmall step?",
+     "lesson": "Through danger,\nstay true.",
+     "finding": null,
+     "caption": "Water runs through pit after pit without filling them and is still water on the other side. The old text calls this going through danger without losing your trust."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1376,6 +1845,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The copy says the water fills the hole, but the fixed animation shows it passing through without filling it. Steadiness under pressure connects the repeated danger to keeping your word."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "You are right that 'fill it' contradicts 水流而不盈 and the scene. Your fix makes meaning 2 and the lesson say 'keep your word' twice. Here the water passes through, the lesson says 'stay true', which covers both the water staying water and 信, and the caption gives the Tuan's reason."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Opus correctly identifies the late arrival of keeping your word, but his option retains filling a hole that the fixed animation never fills. Introducing reliability in meaning2 connects movement through danger to the shipped lesson."
      }
     }
    ],
@@ -1402,13 +1884,23 @@
      "lesson": "Cling to what\nis right.",
      "finding": null,
      "caption": "The cow stands for gentleness held to a steady course. Fire needs something to cling to; the question is whether what sustains you is right."
+    },
+    "opus-2": {
+     "hook": "Brilliant once,\nthen burnt out?",
+     "meaning1": "Fire’s answer:\nkeep it fed.",
+     "meaning2": "Steady care,\nnot big gestures.",
+     "question": "What needs\ntending today?",
+     "lesson": "Like fire, cling\nto what is right.",
+     "finding": null,
+     "caption": "Fire has to cling to something to burn. The old text says raise a gentle cow: patient, daily care, held to what is right."
     }
    },
    "problems": {
     "current": [
      "caption: 3 sentences (1 to 2)"
     ],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1422,6 +1914,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "The lesson exceeds seven words, and the caption reduces the cow to dull routine. The supplied commentary explains gentleness joined to what is right, which also connects tending the flame to choosing its support."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "The shipped caption has 3 sentences, and I agree the cow is more than dull routine (柔麗乎中正). The lesson is exactly 7 words, within the limit, and 'Like fire' ties it to the scene, so I keep it. This caption links 'keep it fed' to 'cling to what is right'."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The connection through clinging is sound, but the shipped lesson exceeds seven words and the caption exceeds two sentences. The revision also explains the cow through gentleness and right conduct rather than calling its care dull."
      }
     }
    ],
@@ -1501,6 +2006,19 @@
       "score": 9,
       "reason": "The changing moon makes lasting commitment visible without equating it with staying motionless. The lesson joins the Tuan’s changing seasons to the Great Image’s steady direction in five readable words."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 7,
+      "reason": "I keep your point: the moon changes and the direction stays, and the lesson is untouched apart from its missing period. But breaking 'same / direction' across two lines is hard to read in 2.4 s, and 'Same direction, every day' says the same thing in one clean phrase."
+     },
+     "astra": {
+      "choice": "current",
+      "score": 9,
+      "reason": "The four-word meaning remains easy to read across that break, and preserving movement helps prepare the changing moon. Daily repetition and a final period do not improve it enough to justify re-rendering."
+     }
     }
    ],
    "agreed": null
@@ -1526,11 +2044,21 @@
      "lesson": "Go while you still\ncan go freely.",
      "finding": "> BOTTOM LINE: LAST TO RETREAT.\nDANGER HAS ALREADY REACHED IT.",
      "caption": "A mountain under heaven: heaven stays out of reach. Keep your distance from petty people, but without hate, because hate keeps you attached."
+    },
+    "opus-2": {
+     "hook": "Time to walk away?",
+     "meaning1": "Retreat says:\nleave well.",
+     "meaning2": "No anger,\njust distance.",
+     "question": "What are you\nready to leave?",
+     "lesson": "Go while you still\ncan go freely.",
+     "finding": "TWO YIELDING LINES CREEP UP.\nTHE LAST TO LEAVE IS IN DANGER.",
+     "caption": "A mountain under heaven: heaven stays out of reach. Keep your distance from petty people, but without hate, because hate keeps you attached."
     }
    },
    "problems": {
     "current": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1544,6 +2072,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "The finding counts rising lines without explaining why leaving early matters. The bottom line supplies the reason: danger has already reached the last to retreat."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "I agree the finding should give the reason for leaving early. The fixed quotation names line 2 as master, though, and both lower lines are lit, so the finding keeps the two creeping lines and adds 遯尾厲 as its second line."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 9,
+      "reason": "The creeping lines establish the situation, but the bottom line explains the cost of leaving late. Naming that danger makes the lesson's timing clear without requiring viewers to supply the connection."
      }
     }
    ],
@@ -1579,12 +2120,32 @@
      "lesson": "Be strong only\nin what is right.",
      "finding": "> LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP.",
      "caption": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing."
+    },
+    "opus-2": {
+     "hook": "Finally in charge?",
+     "meaning1": "Great Power says:\ncheck your aim.",
+     "meaning2": "Know what\nnot to do.",
+     "question": "What won’t you\ndo with it?",
+     "lesson": "Be strong only\nin what is right.",
+     "finding": "LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP.",
+     "caption": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing."
+    },
+    "astra-2": {
+     "hook": "Finally in charge?",
+     "meaning1": "Great Power says:\ncheck your aim.",
+     "meaning2": "Butt the fence,\nsnag your horns.",
+     "question": "What won’t you\ndo with it?",
+     "lesson": "Be strong only\nin what is right.",
+     "finding": "LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP.",
+     "caption": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -1598,6 +2159,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The trapped ram gives restraint a concrete reason where the original finding only counts lines. The caption also removes the unsupported claim about the greatest force in the highest place."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your finding and caption carry the ram better in the readout than my meaning 2, which is cryptic at 2.1 s. So I take both, drop the terminal prompt mark to match the other findings, and only cut the confusing 'Mostly' from meaning 2."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Opus's ram image gives the vague second meaning a concrete consequence. Combine it with the line-three finding and corrected caption so the terminal explains the trap without claiming thunder represents the greatest force."
      }
     }
    ],
@@ -1633,12 +2207,22 @@
      "lesson": "Shine,\ndon't push.",
      "finding": "THE SOFT RISES TO THE TOP CENTRE.",
      "caption": "The sun rises over the earth. Line 5 leads without taking over other people’s work: let them do their jobs."
+    },
+    "opus-2": {
+     "hook": "Finally getting recognized?",
+     "meaning1": "Progress says:\ncharacter first.",
+     "meaning2": "Give people\nreason to trust.",
+     "question": "What are you\nlike up close?",
+     "lesson": "Shine,\ndon't push.",
+     "finding": "THE SOFT RISES TO THE TOP CENTRE.",
+     "caption": "The sun rises over the earth, and progress comes with the light. The text asks one thing of the person rising: brighten your own character."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1652,6 +2236,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "Cultivating character does not require rejecting strategy or relationships. The replacement preserves the recognition theme and gives “don’t push” a concrete basis in Wang Bi’s account of line 5."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "Your meaning 2 fixes the same invented contrast I objected to in the caption, and it has a basis in 罔孚 and 眾允. For the caption I keep the Great Image's 自昭明德, because it ties 'character first' to the lesson's 'Shine'; 'Line 5' in a caption means little to a newcomer."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Opus's objection to the invented contrast also applies to 'Not strategy. Not network.' on screen. The revised meaning removes that claim, and the caption gives 'don't push' a concrete basis in line five."
      }
     }
    ],
@@ -1697,9 +2294,22 @@
       "score": 8,
       "reason": "The familiar frustration leads clearly into protecting your convictions while limiting their outward display. The retained light in the animation and the caption keep “dim your light” from meaning surrender."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "The animation and caption do keep the light, but the on-screen lesson still repeats meaning 1 word for word ('Dark times', 'lie low' / 'dim'). 'Hide your light. Don't put it out.' says the same thing as the crescent that stays lit (明不可息) and adds the one point the viewer hasn't read yet."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Agreed: the lesson itself needs to distinguish hiding the light from extinguishing it. The new ending makes the surviving crescent matter without relying on the caption."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-1"
   },
   "37": {
    "name": "The Family",
@@ -1731,12 +2341,22 @@
      "lesson": "Order at home\nstarts with you.",
      "finding": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
      "caption": "Wind comes from fire: conduct at home reaches others. The top line asks you to examine yourself before demanding better from your family."
+    },
+    "astra-2": {
+     "hook": "Your house, your rules?",
+     "meaning1": "The Family says:\nfollow them too.",
+     "meaning2": "Mean what you say.\nFollow through.",
+     "question": "What will you\nfollow through on?",
+     "lesson": "Order at home\nstarts with you.",
+     "finding": "AT THE TOP: TRUE, DIGNIFIED.\nIT STARTS WITH YOUR CONDUCT.",
+     "caption": "Wind comes from fire: conduct at home reaches others. The top line asks you to examine yourself before demanding better from your family."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -1750,6 +2370,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "“Skip the rules” contradicts the text’s insistence on household discipline. Making the rule-setter answer to those rules gives the hook bite and follows the top line’s demand for self-examination."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your hook puts the viewer in the rule-setter's place, which is where the top line (反身) speaks from, and 'follow them too' has more bite than my 'live it first'. Your caption is plainer than mine and still gives 反身 its reason."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "We agree that the rule-setter must live by the rules; the sharper hook makes that responsibility clear immediately. I also shorten meaning 2 to meet the six-word limit."
      }
     }
    ],
@@ -1785,12 +2418,22 @@
      "lesson": "Lower your guard.\nThey may be an ally.",
      "finding": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
      "caption": "Fire rises; lake water sinks. Different directions need not mean different aims: find one small thing you can do together."
+    },
+    "opus-2": {
+     "hook": "Can’t agree on anything?",
+     "meaning1": "Opposition says:\nstart small.",
+     "meaning2": "Share something,\nstay different.",
+     "question": "What do you\nboth want?",
+     "lesson": "Lower your guard.\nThey may be an ally.",
+     "finding": "AT THE TOP: BOW LOWERED.\nTHE DOUBTS LIFT: NOT A FOE.",
+     "caption": "Fire rises and lake water sinks, yet they can work together. At the height of distrust you see a mud-caked pig and a cart of ghosts: look again, not a raider, a suitor."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1804,6 +2447,19 @@
       "choice": "astra-1",
       "score": 9,
       "reason": "The lowered bow makes a memorable correction to the viewer’s suspicion. “They’ll never meet” works against both that encounter and the Tuan’s account of cooperation across differences."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "I agree 'they'll never meet' has to go and that the Tuan's working together across differences belongs in the caption. Your caption still repeats meanings 1 and 2, so this keeps your point and adds the top line's pig and cart of ghosts, the image the video leaves out."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "Your caption adds the strange, memorable image the video leaves out. Distrust turning a possible partner into a threatening apparition gives the lowered bow more meaning than my repeated advice."
      }
     }
    ],
@@ -1839,12 +2495,22 @@
      "lesson": "ASK FOR HELP.\nKEEP YOUR STANDARDS.",
      "finding": "> LINE 5: IN DANGER, STILL CENTRED.\nFRIENDS COME; ITS STANDARDS HOLD.",
      "caption": "Water ahead, a mountain below: pushing on can deepen the trouble. Stop, examine your conduct, and seek someone who can help."
+    },
+    "opus-2": {
+     "hook": "Hit a wall?",
+     "meaning1": "Obstruction says:\nask for help.",
+     "meaning2": "Stop pushing.\nCheck yourself.",
+     "question": "Who could you\nask?",
+     "lesson": "STUCK? HOLD YOUR CENTER.\nGIVE HELP TIME TO COME.",
+     "finding": "LINE 5: DEEPEST IN THE BLOCK,\nSTILL CENTERED. FRIENDS COME.",
+     "caption": "Water on a mountain can't flow. Line after line the old text says: push on and you're blocked; turn back, check your own conduct, and you find company."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -1858,6 +2524,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The original asks whom to approach, then ends with a different instruction. Line 5 connects personal conduct with receiving help, without implying that being blocked proves personal failure."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "We agree on line 5. Your lesson repeats meanings 1 and 2 word for word, and my 'stop pushing' dropped the shipped 'ask for help'. This keeps 'ask for help', puts your self-examination (反身修德) in meaning 2, and ends on line 5's reason: the one who holds the centre gets help."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree that line 5 must connect conduct with help. 'Fix yourself' suggests the obstruction proves a personal defect, while 'give help time to come' encourages waiting where the hook and question call for seeking help."
      }
     }
    ],
@@ -1903,9 +2582,22 @@
       "score": 7,
       "reason": "The relief hook leads naturally into releasing grudges, and Wang Bi explicitly supports the finding’s absence of resentment. “Act or rest” is vague, but the caption supplies the missing distinction."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 7,
+      "reason": "Viewers read meaning 1 during those 2.4 s, and most never open the caption. They have to read 'act or rest' there and get nothing from it. 'Clear the air' is the thunder and rain, and it leads straight into letting grudges go."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: the caption cannot make 'act or rest' useful during its screen time. 'Clear the air' connects the release of pressure to the forgiveness that follows."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-1"
   },
   "41": {
    "name": "Decrease",
@@ -1928,11 +2620,31 @@
      "lesson": "GIVE WHAT HELPS.\nMORE ISN’T ALWAYS BETTER.",
      "finding": "> LINE 3: ONE GOES TO ITS PARTNER.\nTHREE TOGETHER WOULD BRING DOUBT.",
      "caption": "Two modest bowls can serve as an offering when the time calls for less, if you mean it. Cut anger and excess wanting, too."
+    },
+    "opus-2": {
+     "hook": "Having less than before?",
+     "meaning1": "Decrease says:\ngive what you can.",
+     "meaning2": "Cut the anger,\ncut the wants.",
+     "question": "What can you\nlet go of?",
+     "lesson": "Two small baskets\nare enough.",
+     "finding": "THE LOW LINE GIVES TO THE TOP.",
+     "caption": "The old text asks for two small baskets, not a grand offering: brought in good faith, less is enough. Anger and wanting cost the most."
+    },
+    "astra-2": {
+     "hook": "Having less than before?",
+     "meaning1": "Decrease says:\ngive what you can.",
+     "meaning2": "Cut the anger,\ncut the wants.",
+     "question": "What can you\nlet go of?",
+     "lesson": "Two small bowls\ncan be enough.",
+     "finding": "LINE 3: ONE GOES TO ITS PARTNER.\nTHREE TOGETHER WOULD BRING DOUBT.",
+     "caption": "Two modest bowls can serve as an offering when the time calls for less, if you mean it. Cut anger and excess wanting, too."
     }
    },
    "problems": {
     "current": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -1946,6 +2658,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The offering needs sincerity, not just a small quantity. Line 3 gives the readout a reason for restraint, while the caption corrects the baskets to bowls."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your point about sincerity (有孚) is right and belongs in the caption. Line 3's 'three would bring doubt' breaks the thread from giving to the baskets, and Legge's 'two baskets' is a fair reading of 簋, so the readout stays."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "The two-vessel image is stronger than my abstract lesson, so I would preserve it. 'Can be enough' and the caption retain the conditions of timing and sincerity, while line 3 explains why adding more can hurt."
      }
     }
    ],
@@ -1981,12 +2706,32 @@
      "lesson": "Let your gain\nspill over",
      "finding": null,
      "caption": "Wind and thunder feed each other. The method of increase: see something good and move toward it."
+    },
+    "opus-2": {
+     "hook": "Door’s open, still hesitating?",
+     "meaning1": "Increase says:\ngo now.",
+     "meaning2": "See good, move\ntoward it.",
+     "question": "Who else\ncould benefit?",
+     "lesson": "Let your gain\nspill over",
+     "finding": null,
+     "caption": "Wind and thunder feed each other. The text pairs two moves: see something good and go toward it, see a fault in yourself and change it."
+    },
+    "astra-2": {
+     "hook": "Door’s open, still hesitating?",
+     "meaning1": "Increase says:\ngo now.",
+     "meaning2": "See good, move\ntoward it.",
+     "question": "Who else\ncould benefit?",
+     "lesson": "Let your gain\nspill over",
+     "finding": null,
+     "caption": "Wind and thunder feed each other. The text pairs two moves: see something good and go toward it, see a fault in yourself and change it."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -2001,9 +2746,22 @@
       "score": 8,
       "reason": "The overflowing bowl pays off well, but sharing arrives only at the lesson. Asking who else benefits connects taking the opportunity with using it to help others."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Your question sets up the spilling bowl, so sharing no longer arrives out of nowhere. My caption fixes a separate fault: it repeats meaning 2 and leaves out 有過則改. Both changes go in one re-render."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Your caption adds the missing self-correction; my question prepares the viewer for sharing the gain. Both changes improve distinct parts of the short."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-2"
   },
   "43": {
    "name": "Breakthrough",
@@ -2035,12 +2793,32 @@
      "lesson": "Remove the wrong\nopenly, unarmed.",
      "finding": null,
      "caption": "Announce the problem publicly and warn your own people. The text rejects force because making force your answer leads to a dead end."
+    },
+    "opus-2": {
+     "hook": "Ready to call something out?",
+     "meaning1": "Breakthrough:\nsay it openly.",
+     "meaning2": "Tell your own\npeople first.",
+     "question": "What needs\nsaying out loud?",
+     "lesson": "Remove the wrong\nopenly, unarmed.",
+     "finding": null,
+     "caption": "Name it in the open court and admit the danger. The text rejects force, because relying on force leads to a dead end."
+    },
+    "astra-2": {
+     "hook": "Ready to call something out?",
+     "meaning1": "Breakthrough:\nsay it openly.",
+     "meaning2": "Tell your own\npeople first.",
+     "question": "What needs\nsaying out loud?",
+     "lesson": "Remove the wrong\nopenly, unarmed.",
+     "finding": null,
+     "caption": "Announce the problem publicly and warn your own people. The text rejects force because making force your answer leads to a dead end."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -2054,6 +2832,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "The public challenge and refusal of force are clear, although the screens repeat the same instruction. The caption can add the Tuan’s reason instead of inventing a claim about joining darkness."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "You agree the screens repeat one instruction. Meaning 2 should carry 告自邑, and your plainer reason for rejecting force replaces my wording. The caption then adds the open court and the danger (孚號有厲) rather than repeating meaning 2."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Agreed that warning your own people adds an instruction the screen sequence lacks. I retain my caption because it explains why force fails more clearly than 'Force is what runs out.'"
      }
     }
    ],
@@ -2099,9 +2890,22 @@
       "score": 6,
       "reason": "The caution is understandable, but the caption abruptly switches to broadcasting your own message. Explaining the danger of an unsettled beginning supports the animation and gives the advice a reason."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "You're right that the switch to broadcasting your own message comes out of nowhere. Your caption gives the restless first line as the reason to check it early, and 'passing encounter, lasting commitment' is true to 勿用取女, 不可與長也."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 6,
+      "reason": "Broadcasting a message comes from the Great Image, but the caption gives no reason it answers this tempting encounter. The replacement explains why an apparently small beginning needs limits and supports the fixed scene."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "45": {
    "name": "Gathering Together",
@@ -2143,9 +2947,22 @@
       "score": 7,
       "reason": "The original finding makes the gathering sound settled, although Wang Bi describes line 5 lacking trust while line 4 holds the people below. That difficulty gives gathering through right conduct a practical purpose."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Your finding gives the readout a problem: line 5 has the seat but not the people's trust. That makes 'gather people by what is right' an answer, not a slogan, and it fits a host bracing for arguments."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The shared-purpose argument works, but the original finding only counts lines. The replacement explains the difficulty shown by the highlighted pair: holding the leading position does not itself secure people's trust."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "46": {
    "name": "Pushing Upward",
@@ -2177,12 +2994,22 @@
      "lesson": "Don’t rush the climb.\nOne step, then the next.",
      "finding": "> LINE 5: CLIMBS BY ACCEPTING HELP.\nENTRUSTS WORK; DOES NOT TAKE OVER.",
      "caption": "Wood grows within the earth: small gains accumulate. Keep taking the next step, and accept help with the climb."
+    },
+    "opus-2": {
+     "hook": "Growing slower than you want?",
+     "meaning1": "Pushing Upward:\ndon’t worry.",
+     "meaning2": "Small steps,\npiled up.",
+     "question": "What can you add\ntoday?",
+     "lesson": "Don’t rush the climb.\nOne step, then the next.",
+     "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+     "caption": "A tree grows up out of the earth a little each season. See those who can help and don't worry; the text's warning is for the climber who never stops."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2196,6 +3023,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "The small-steps argument is clear, but “stop braking” conflicts with the lesson’s emphasis on patience. The finding also needs Wang Bi’s reason for line 5’s ascent: accepting help and entrusting work."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "Your finding about accepting help is true to Wang Bi, but it breaks the thread from the stairs to 'one step, then the next'. The caption can carry help (用見大人) along with 'don't worry' and the warning for the climber who never stops."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "We agree that the caption needs changing. The finding also needs the reason behind line 5's ascent—accepting others and entrusting work—which 'step by step' leaves out."
      }
     }
    ],
@@ -2231,12 +3071,22 @@
      "lesson": "Boxed in?\nHold to your aim.",
      "finding": null,
      "caption": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose."
+    },
+    "opus-2": {
+     "hook": "Speaking up and nobody listens?",
+     "meaning1": "Oppression says:\nhold your purpose.",
+     "meaning2": "Words alone\nwon't get you out.",
+     "question": "What’s worth\neverything?",
+     "lesson": "Boxed in?\nStay who you are.",
+     "finding": null,
+     "caption": "The image is a lake with no water: the container is there, the water is gone. The text says stake your life on your purpose."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2250,6 +3100,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "“Actions don’t” promises effectiveness precisely where action can also be obstructed. The replacement preserves the pressure and the commitment to purpose without guaranteeing an escape."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "You're right that 'Actions don't' promises something the text doesn't, so your meaning 2 goes in. The lesson still repeats meaning 1. 'Stay who you are' is the Tuan's 困而不失其所 and fits the tree pressed inside the walls."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "'Actions don’t' still guarantees effectiveness where action can be blocked too. Repeating the aim gives the ending a clear object; 'stay who you are' makes what to preserve less precise."
      }
     }
    ],
@@ -2295,9 +3158,22 @@
       "score": 9,
       "reason": "The maintenance question gives the ancient image an immediate, concrete use. The caption adds the crucial distinction between an available resource and the equipment needed to deliver it."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 7,
+      "reason": "I agree the hook and caption are strong, and I keep them. But no one can read six words typed on in 1.6 s, and they only reword the question. 'Mend it. Share it.' can be read in that time and adds 井甃 and 勿幕."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 9,
+      "reason": "The 1.6-second lesson window settles this: the shorter ending is easier to take in as it types. Repair and shared access also add concrete duties to the maintenance question."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-1"
   },
   "49": {
    "name": "Revolution",
@@ -2329,12 +3205,32 @@
      "lesson": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
      "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
      "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust."
+    },
+    "opus-2": {
+     "hook": "Making a big change nobody believes in?",
+     "meaning1": "Revolution:\nchange needs trust.",
+     "meaning2": "Explain why.\nHear the doubts.",
+     "question": "Who isn't\nconvinced yet?",
+     "lesson": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
+     "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
+     "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust."
+    },
+    "astra-2": {
+     "hook": "Making a big change nobody believes in?",
+     "meaning1": "Revolution:\nchange needs trust.",
+     "meaning2": "Explain why.\nHear the doubts.",
+     "question": "Who isn't\nconvinced yet?",
+     "lesson": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
+     "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
+     "caption": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -2349,9 +3245,22 @@
       "score": 8,
       "reason": "Wang Bi reads the three as the upper lines accepting the change. His warning is to stop pushing once sincere words have earned trust."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "You read Wang Bi correctly: the three upper lines accept, and pressing on after trust is won is what makes it 征凶. I take your lesson, finding and caption. The question is the one generic line left, and asking who still doubts ties the hook to the trust lesson."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Your question connects the hook to the unresolved doubts more directly. Wang Bi explicitly identifies the three upper lines accepting the change and warns against pressing further, so the finding and lesson still need that correction."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-2"
   },
   "50": {
    "name": "The Caldron",
@@ -2393,9 +3302,22 @@
       "score": 7,
       "reason": "The setup advice is familiar, but the falling bowl makes it concrete. It fits the Great Image's concern with establishing the proper position."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-1",
+      "score": 7,
+      "reason": "The falling bowl is concrete, but it comes after two lines that say the same thing ('set it right' / 'get set up'). A tilted pot spilling the meal gives the reason and some bite. The broken leg in the caption (知小謀大) adds what the video leaves out."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Agreed: the spilled meal gives a reason to set the pot right instead of repeating the instruction. The broken leg then lets the caption explain what happens when responsibility exceeds capacity."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "opus-1"
   },
   "51": {
    "name": "The Arousing",
@@ -2473,9 +3395,22 @@
       "score": 6,
       "reason": "Line 1 supplies a concrete reason to stop: there is nowhere fitting to go. Naming it improves the finding, although text edits cannot supply the missing line highlight."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "current",
+      "score": 6,
+      "reason": "A finding that names line 1 while no line is lit would confuse the viewer, and 'nowhere to go' pulls away from the overthinking hook. The shipped finding is the Tuan's 上下敵應, and 'stop when it's time to stop' is 時止則止."
+     },
+     "astra": {
+      "choice": "current",
+      "score": 6,
+      "reason": "My replacement shifts the problem from overthinking to having nowhere to go and names a line the fixed readout does not highlight. The shipped ending is repetitive, but the alternative is not clearly better for this short."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "current"
   },
   "53": {
    "name": "Development",
@@ -2507,12 +3442,22 @@
      "lesson": "Earn each place\nbefore the next.",
      "finding": "LINE 2: THE GOOSE EATS ON A ROCK.\nIT HAS EARNED ITS MEAL.",
      "caption": "A tree on a mountain grows where everyone can see it. Build the character you want others to learn from."
+    },
+    "opus-2": {
+     "hook": "Tempted to skip steps?",
+     "meaning1": "Development says:\ngo step by step.",
+     "meaning2": "Slow growth\nlasts.",
+     "question": "Which step are\nyou skipping?",
+     "lesson": "Earn each place\nbefore the next.",
+     "finding": "LINES 2 TO 5 ALL IN THEIR PLACE.",
+     "caption": "In the old text a wild goose climbs in stages: shore, rock, plain, tree, hill. On the rock it eats its fill, and the text says it has earned the meal."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2526,6 +3471,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "Slow growth does not guarantee lasting results; line 2's earned meal gives the lesson firmer support. The fixed four-line highlight still conflicts with the single-line requirement."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "The fixed picture lights lines 2 to 5, so a finding about line 2 alone would contradict the screen. I keep the shipped finding and move line 2's earned meal (不素飽) into the caption, where it goes with the goose's climb. 'Slow growth lasts' follows the Tuan's 往有功 and 動不窮 without promising more, and 'Don't skip the work' only repeats the question."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The goose adds a useful image, but its stages include dangerous advances, so the caption makes them sound too uniformly sound. The earned meal supports the lesson without promising lasting growth; the fixed four-line highlight remains unresolved."
      }
     }
    ],
@@ -2561,12 +3519,32 @@
      "lesson": "Wrong place?\nDon't push.",
      "finding": "LINE 3: THE PLACE IS TAKEN.\nIT RETURNS TO WAIT.",
      "caption": "The last line has an empty basket and a sheep that gives no blood. Neither side has the support to carry out its part."
+    },
+    "opus-2": {
+     "hook": "No power, no way out?",
+     "meaning1": "Marrying Maiden\nsays: see the end.",
+     "meaning2": "Check how it\ncould go wrong.",
+     "question": "What does the\nend look like?",
+     "lesson": "Wrong place?\nDon't push.",
+     "finding": "LINES 2 TO 5 ALL OUT OF PLACE.",
+     "caption": "The old image is a younger bride with no standing in a new house. Pushing ahead goes badly; the text says keep the end in view and know what wears out."
+    },
+    "astra-2": {
+     "hook": "No power, no way out?",
+     "meaning1": "Marrying Maiden\nsays: see the end.",
+     "meaning2": "See what could\ngo wrong.",
+     "question": "What does the\nend look like?",
+     "lesson": "Wrong place?\nDon't push.",
+     "finding": "LINE 3: THE PLACE IS TAKEN.\nIT RETURNS TO WAIT.",
+     "caption": "The last line has an empty basket and a sheep that gives no blood. Neither side has the support to carry out its part."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -2580,6 +3558,19 @@
       "choice": "astra-1",
       "score": 6,
       "reason": "The text does not promise that a powerless position will pass; it asks you to recognize how an arrangement can fail. The revised finding identifies line 3, although the fixed picture still highlights four lines."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "Astra's meaning 2 is closer to 永終知敝 and leads into the question better than mine, which only repeated the lesson, so I take it. The picture lights four lines, so a line-3 finding would contradict it; the shipped finding matches 位不當 and the lesson. My caption keeps the bride image and the reason pushing goes badly."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 6,
+      "reason": "We agree that the temporary hardship promise and still depths must go. Recognizing possible failure connects the ending question to the lesson, while line 3 explains why pushing is inappropriate."
      }
     }
    ],
@@ -2615,12 +3606,32 @@
      "lesson": "At your fullest,\nlight each corner.",
      "finding": "LINE 5: MAKES ITS VIRTUE VISIBLE.\nIT HOLDS THE RULER'S PLACE.",
      "caption": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
+    },
+    "opus-2": {
+     "hook": "At your peak and worried?",
+     "meaning1": "Abundance says:\ndon’t worry.",
+     "meaning2": "Be the sun\nat noon.",
+     "question": "What corner is\nstill dark?",
+     "lesson": "At your fullest,\nlight each corner.",
+     "finding": "THUNDER AND FIRE AT ONCE: FULL.",
+     "caption": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
+    },
+    "astra-2": {
+     "hook": "At your peak and worried?",
+     "meaning1": "Abundance says:\ndon’t worry.",
+     "meaning2": "Be the sun\nat noon.",
+     "question": "What corner is\nstill dark?",
+     "lesson": "At your fullest,\nlight each corner.",
+     "finding": "LINE 5: MAKES ITS VIRTUE VISIBLE.\nIT HOLDS THE RULER'S PLACE.",
+     "caption": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": [],
+    "astra-2": []
    },
    "votes": [
     {
@@ -2634,6 +3645,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "Noon begins the sun's decline, so the caption needs that small correction. Line 5 gives the finding a specific subject, although its visual highlight is missing from the fixed picture."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "Astra's caption fix is right: 日中則昃 says noon is when the sun starts to sink. No line is lit in this readout, so a line-5 finding would point at nothing, and the question still needs to lead into 'light each corner'."
+     },
+     "astra": {
+      "choice": "astra-2",
+      "score": 8,
+      "reason": "Your question connects the sun image directly to the lesson. I would also retain the noon correction and the specific finding, although text cannot supply the missing line highlight."
      }
     }
    ],
@@ -2669,12 +3693,22 @@
      "lesson": "Far from home,\nbe a good guest",
      "finding": null,
      "caption": "A traveler who starts giving orders risks losing the place that shelters him. Being welcomed does not make you the host."
+    },
+    "opus-2": {
+     "hook": "Somewhere new, feeling out of place?",
+     "meaning1": "The Wanderer:\ndon't take over.",
+     "meaning2": "You’re a guest.\nAct like one.",
+     "question": "Where are you\na guest?",
+     "lesson": "Act like the host,\nlose your room.",
+     "finding": null,
+     "caption": "Fire on a mountain is bright, seen, and moving on. The traveler gets small wins, so be clear, careful, brief."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2688,6 +3722,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "Wang Bi makes the guest's danger specific: taking authority that belongs to the host. That gives the advice more bite and a clearer reason than keeping things brief."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "We agree the point is line 3's guest who takes the host's authority. Astra's meaning 1 states it early. My lesson gives the result (the inn burns) instead of repeating meaning 2. With the lesson carrying that point, the shipped caption can keep the fire-on-the-mountain image."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your lesson has more bite, but it states the loss as certain and gives seven words only 1.8 seconds. Naming the overreach earlier and explaining the risk in the caption makes the advice specific without guaranteeing the consequence."
      }
     }
    ],
@@ -2714,13 +3761,23 @@
      "lesson": "People change slowly.\nSay it again, gently.",
      "finding": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
      "caption": "Wind follows wind. Wang Bi says to repeat an instruction before and after it takes effect, giving people time to change."
+    },
+    "opus-2": {
+     "hook": "Said it once,\nnothing changed?",
+     "meaning1": "The Gentle says:\nsay it again.",
+     "meaning2": "Quiet and steady\ngets through.",
+     "question": "What’s worth\nrepeating today?",
+     "lesson": "People change slowly.\nSay it again, gently.",
+     "finding": "LINE 5: SAY IT, THEN AGAIN.\nPEOPLE CAN'T CHANGE AT ONCE.",
+     "caption": "The image is wind following wind: one gust changes nothing, but a wind that keeps blowing bends the grass. Say the important thing more than once."
     }
    },
    "problems": {
     "current": [
      "caption: 3 sentences (1 to 2)"
     ],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2734,6 +3791,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The repeated instruction fits Wang Bi closely. Giving people time explains the repetition without guaranteeing that quiet persistence gets through."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "The shipped caption breaks the two-sentence rule, so it has to change. 'Give them time to change' repeats both the finding and the lesson, while 'Quiet and steady gets through' reads the Tuan's 志行 as advice, not a promise. I keep the wind image in two sentences."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "I agree that the hook and repeated instruction work well. Giving people time supplies the reason without promising success, and the caption fixes the sentence limit while retaining Wang Bi's explanation."
      }
     }
    ],
@@ -2769,12 +3839,22 @@
      "lesson": "Laugh and learn\nwith friends.",
      "finding": null,
      "caption": "Two lakes together: friends talking and learning from each other. Enjoy the company without pretending to agree."
+    },
+    "opus-2": {
+     "hook": "Good news, no one to tell?",
+     "meaning1": "The Joyous says:\nshare it.",
+     "meaning2": "Joy kept alone\ndries up.",
+     "question": "Who could you\ncall today?",
+     "lesson": "Laugh and learn\nwith friends.",
+     "finding": null,
+     "caption": "Two lakes side by side keep each other full, like friends talking over what they are learning. Share the joy, but don't buy it with flattery."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2788,6 +3868,19 @@
       "choice": "astra-1",
       "score": 7,
       "reason": "The text does not say solitary joy dries up. Talking and learning together prepares the lesson, while the caption adds the honesty that distinguishes fellowship from flattery."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 7,
+      "reason": "'Talk it over. Learn together.' makes meaning 2 say the same thing as the lesson. 'Joy kept alone dries up' comes from the two-lakes image, has bite, and claims nothing about the text. For the caption I combine 朋友講習 with Astra's point about flattery (說不在諂, 來兌凶)."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Your caption supplies the missing connection to learning, but the unsupported claim about solitary joy remains on screen. Preparing the lesson there lets the caption add the distinction between friendship and flattery."
      }
     }
    ],
@@ -2823,12 +3916,22 @@
      "lesson": "BRING THEM BACK\nTO WHAT THEY SHARE.",
      "finding": "LINE 5: THE KING SENDS OUT HIS CALL.\nRIGHTLY PLACED AT THE CENTRE.",
      "caption": "Wind scatters the water’s surface; the old kings built temples. They gave people a place to gather around what they held in common."
+    },
+    "opus-2": {
+     "hook": "People drifting apart?",
+     "meaning1": "Dispersion says:\nbuild a centre.",
+     "meaning2": "Remind them where\nthey come from.",
+     "question": "What do you\nall share?",
+     "lesson": "Bring them back\nto the centre.",
+     "finding": "LINE 5: THE KING SENDS OUT HIS CALL.\nRIGHTLY PLACED AT THE CENTRE.",
+     "caption": "Wind over water scatters the surface, so the old kings built temples: a place everyone comes back to, around what they hold in common."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -2842,6 +3945,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The temple gives scattered people a shared focus; it does not establish a blanket ban on argument. The finding now describes the marked fifth line's public call."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "I take Astra's finding for the lit fifth line. 'Build a centre' fits the temple, 王乃在中 and Wang Bi's 為渙之主 on screen better than 'a shared aim'. The shipped lesson stays on the centre, and the caption uses Astra's 'what they hold in common'."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree on replacing the ban on argument and describing the marked king. Naming what people share makes the centre understandable to a newcomer, while 'stays put' adds a physical instruction Wang Bi does not establish."
      }
     }
    ],
@@ -2931,6 +4047,19 @@
       "score": 8,
       "reason": "The lesson switches abruptly from understanding someone to declaring your own sincerity. Connecting open listening with honest speech makes the sequence clearer, and the caption grounds careful judgment in the Great Image."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Astra has convinced me. The scene shows both the open empty centre and the brightening firm lines, so 'Listen openly. Speak honestly.' matches what is on screen and still follows 'understand first'. 議獄緩死 gives the caption an image the video leaves out."
+     },
+     "astra": {
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Your lesson completes the listening question and matches the opening centre. Adding honest speech is defensible, but it splits attention at the moment the short needs to finish its point."
+     }
     }
    ],
    "agreed": null
@@ -2985,9 +4114,22 @@
       "score": 8,
       "reason": "Small work does not guarantee a good ending, and the bird's call is not located below. The revision gives advice without that promise and restores the Great Image's specific forms of extra care."
      }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Astra is right: 不宜上宜下 is about which way the bird flies, not where its call comes from, and Wang Bi reads the call as seeking a place to rest (哀以求處). 'Small done well ends well' promises an outcome, and 'extra care' matches the Great Image's three excesses."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree on restoring the three specific forms of extra care. The screen also needs to lose its guaranteed good ending, and Wang Bi describes the bird seeking rest without locating its call below."
+     }
     }
    ],
-   "agreed": null
+   "agreed": "astra-1"
   },
   "63": {
    "name": "After Completion",
@@ -3053,12 +4195,22 @@
      "lesson": "FINISH WITH CARE;\nCELEBRATE WITH RESTRAINT.",
      "finding": "LINE 6: DRINKING GOES TOO FAR.\nHE DOES NOT KNOW WHEN TO STOP.",
      "caption": "The book’s last hexagram is a little fox that gets its tail wet just before the far bank. Sixty-four hexagrams, and the last word is: not yet."
+    },
+    "opus-2": {
+     "hook": "So close to done?",
+     "meaning1": "Before Completion:\nnot yet.",
+     "meaning2": "Sort things out\nbefore you move.",
+     "question": "What goes\nwhere?",
+     "lesson": "Almost done?\nStay careful to the end.",
+     "finding": "LINE 6: DRINKING GOES TOO FAR.\nHE DOES NOT KNOW WHEN TO STOP.",
+     "caption": "The book’s last hexagram is a little fox that gets its tail wet just before the far bank. Sixty-four hexagrams, and the last word is: not yet."
     }
    },
    "problems": {
     "current": [],
     "opus-1": [],
-    "astra-1": []
+    "astra-1": [],
+    "opus-2": []
    },
    "votes": [
     {
@@ -3072,6 +4224,19 @@
       "choice": "astra-1",
       "score": 8,
       "reason": "The top line's wet head concerns excessive drinking. Naming the drinking preserves Wang Bi's distinction between permitted rest and losing restraint."
+     }
+    },
+    {
+     "round": 2,
+     "opus": {
+      "choice": "opus-2",
+      "score": 8,
+      "reason": "Astra's finding names the drinking and 不知節 more plainly than mine, so I take it. The shipped lesson ties back to the hook 'So close to done?', and the new finding already carries the restraint point, so Astra's lesson would only be a different wording."
+     },
+     "astra": {
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Naming the wine fixes the confusing finding, but the lesson also needs to distinguish finishing from celebrating. Wang Bi permits rest when responsibilities are properly assigned; the fault is drinking beyond restraint."
      }
     }
    ],

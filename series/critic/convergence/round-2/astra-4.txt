@@ -1,0 +1,74 @@
+{
+  "shorts": [
+    {
+      "number": 53,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "The goose adds a useful image, but its stages include dangerous advances, so the caption makes them sound too uniformly sound. The earned meal supports the lesson without promising lasting growth; the fixed four-line highlight remains unresolved."
+    },
+    {
+      "number": 54,
+      "choice": "new",
+      "score": 6,
+      "reason": "We agree that the temporary hardship promise and still depths must go. Recognizing possible failure connects the ending question to the lesson, while line 3 explains why pushing is inappropriate.",
+      "rewrite": {
+        "meaning2": "See what could\ngo wrong.",
+        "finding": "LINE 3: THE PLACE IS TAKEN.\nIT RETURNS TO WAIT.",
+        "caption": "The last line has an empty basket and a sheep that gives no blood. Neither side has the support to carry out its part."
+      }
+    },
+    {
+      "number": 55,
+      "choice": "new",
+      "score": 8,
+      "reason": "Your question connects the sun image directly to the lesson. I would also retain the noon correction and the specific finding, although text cannot supply the missing line highlight.",
+      "rewrite": {
+        "question": "What corner is\nstill dark?",
+        "finding": "LINE 5: MAKES ITS VIRTUE VISIBLE.\nIT HOLDS THE RULER'S PLACE.",
+        "caption": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon."
+      }
+    },
+    {
+      "number": 56,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Your lesson has more bite, but it states the loss as certain and gives seven words only 1.8 seconds. Naming the overreach earlier and explaining the risk in the caption makes the advice specific without guaranteeing the consequence."
+    },
+    {
+      "number": 57,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "I agree that the hook and repeated instruction work well. Giving people time supplies the reason without promising success, and the caption fixes the sentence limit while retaining Wang Bi's explanation."
+    },
+    {
+      "number": 58,
+      "choice": "astra-1",
+      "score": 7,
+      "reason": "Your caption supplies the missing connection to learning, but the unsupported claim about solitary joy remains on screen. Preparing the lesson there lets the caption add the distinction between friendship and flattery."
+    },
+    {
+      "number": 59,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree on replacing the ban on argument and describing the marked king. Naming what people share makes the centre understandable to a newcomer, while 'stays put' adds a physical instruction Wang Bi does not establish."
+    },
+    {
+      "number": 61,
+      "choice": "opus-1",
+      "score": 8,
+      "reason": "Your lesson completes the listening question and matches the opening centre. Adding honest speech is defensible, but it splits attention at the moment the short needs to finish its point."
+    },
+    {
+      "number": 62,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "We agree on restoring the three specific forms of extra care. The screen also needs to lose its guaranteed good ending, and Wang Bi describes the bird seeking rest without locating its call below."
+    },
+    {
+      "number": 64,
+      "choice": "astra-1",
+      "score": 8,
+      "reason": "Naming the wine fixes the confusing finding, but the lesson also needs to distinguish finishing from celebrating. Wang Bi permits rest when responsibilities are properly assigned; the fault is drinking beyond restraint."
+    }
+  ]
+}
