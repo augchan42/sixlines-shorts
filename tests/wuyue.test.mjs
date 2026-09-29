@@ -1,42 +1,66 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { CUTS, ROUTE, cardsFilter, musicStart } from "../scripts/wuyue.mjs";
+import { BAR, CUTS, REIGNS, SHOTS, cardsFilter, musicStart, timeline } from "../scripts/wuyue.mjs";
 
-test("the route test runs 11 s: out, the far shore, back, then a hold", () => {
-  const s = ROUTE.seconds;
-  assert.equal(ROUTE.frames, 330);
-  assert.ok(s.out[0] < s.out[1] && s.out[1] <= s.shore[0] && s.shore[1] <= s.back[0]);
-  assert.ok(s.back[1] < 11 - 2, "at least 2 s of hold after the line comes home");
-  assert.equal(ROUTE.flare, Math.round(s.back[1] * 30));
+const BANNED = ["oracle", "divination", "fortune", "prediction", "mystical", "magical"];
+
+test("every shot is a whole number of bars and the video runs about 72 s", () => {
+  for (const s of SHOTS) assert.ok(Number.isInteger(s.bars), s.name);
+  const secs = SHOTS.reduce((t, s) => t + s.bars * BAR, 0);
+  assert.ok(secs > 65 && secs < 80, String(secs));
 });
 
-test("the text cards do not overlap and each stays up at least 2 s", () => {
-  const cards = ROUTE.cards;
-  for (const [i, c] of cards.entries()) {
-    assert.ok(c.to - c.from >= 2, c.text);
-    if (i) assert.ok(c.from >= cards[i - 1].to, c.text);
+test("each shot's events fall inside it", () => {
+  for (const s of SHOTS) {
+    const len = s.bars * BAR + 1e-9;
+    for (const [k, v] of Object.entries(s.events)) for (const t of [v].flat()) assert.ok(t >= 0 && t <= len, `${s.name}.${k}`);
   }
-  for (const c of cards) for (const w of ["oracle", "divination", "fortune", "prediction", "mystical", "magical"]) assert.ok(!c.text.toLowerCase().includes(w));
 });
 
-test("each cut sets its frame and puts the far shore where it fits", () => {
+test("cards: inside their shot, in order, at least 2 s each, short lines, plain words", () => {
+  for (const s of SHOTS) {
+    const len = s.bars * BAR + 1e-9;
+    s.cards.forEach((c, i) => {
+      assert.ok(c.from >= 0 && c.to <= len && c.to - c.from >= 2, `${s.name}: ${c.text}`);
+      if (i) assert.ok(c.from >= s.cards[i - 1].to, `${s.name}: ${c.text}`);
+      for (const line of c.text.split("\n")) assert.ok(line.length <= 34, `too long for a phone: ${line}`);
+      for (const w of BANNED) assert.ok(!c.text.toLowerCase().includes(w), c.text);
+    });
+  }
+});
+
+test("the timeline has one span per reign, 907 to 978, each as long as its reign", () => {
+  assert.equal(REIGNS[0][0], 907);
+  assert.equal(REIGNS.at(-1)[1], 978);
+  const spans = timeline(16, 0.25);
+  assert.equal(spans.length, 5);
+  assert.equal(spans[0][0], -8);
+  assert.equal(spans.at(-1)[1].toFixed(6), (8).toFixed(6));
+  const ratio = (spans[4][1] - spans[4][0]) / (spans[0][1] - spans[0][0]);
+  assert.equal(ratio.toFixed(3), ((978 - 948) / (932 - 907)).toFixed(3));
+});
+
+test("each cut sets its frame and a map where Korea is north-east and Japan east of it", () => {
   assert.deepEqual(CUTS.vertical.size, [1080, 1920]);
   assert.deepEqual(CUTS.wide.size, [1920, 1080]);
-  // Korea lies north-east of Hangzhou in both, further east in the wide frame.
-  for (const c of Object.values(CUTS)) assert.ok(c.shore[0] > 0 && c.shore[1] > 0);
-  assert.ok(CUTS.wide.shore[0] / CUTS.wide.shore[1] > CUTS.vertical.shore[0] / CUTS.vertical.shore[1]);
+  for (const c of Object.values(CUTS)) {
+    assert.ok(c.korea[0] > 0 && c.korea[1] > 0);
+    assert.ok(c.japan[0] > c.korea[0] && c.japan[1] < c.korea[1]);
+  }
 });
 
-test("the text is drawn with fades, centred, escaped for ffmpeg", () => {
-  const f = cardsFilter([{ text: "Lost books.", from: 0.3, to: 3 }, { text: "Wuyue ∙ 907–978: it's", from: 3.3, to: 6 }], CUTS.vertical, "/f/goudos.ttf");
-  assert.match(f, /drawtext=fontfile='\/f\/goudos.ttf':text='Lost books.'/);
-  assert.match(f, /x=\(w-text_w\)\/2/);
-  assert.match(f, /enable='between\(t,0.3,3\)'/);
-  assert.match(f, /it\\\\\\'s|it\\u2019s|it’s/);
-  assert.equal(f.split("drawtext").length - 1, 2);
+test("a card's lines are drawn one under another, centred, fading, each read from a file", () => {
+  const { filter, files } = cardsFilter([{ text: "978: Qian Chu surrendered\nWuyue to the Song.", from: 0.3, to: 4.6 }], CUTS.vertical, "/f/goudos.ttf", "/d", 10);
+  assert.equal(filter.split("drawtext").length - 1, 2);
+  assert.deepEqual(files.map(([, t]) => t), ["978: Qian Chu surrendered", "Wuyue to the Song."]);
+  for (const [f] of files) assert.ok(filter.includes(`textfile='${f}'`) && f.startsWith("/d/"));
+  assert.match(filter, /x=\(w-text_w\)\/2/);
+  assert.match(filter, /enable='between\(t,10.3,14.6\)'/);
+  assert.equal(cardsFilter([{ text: "it's", from: 0, to: 2 }], CUTS.vertical, "/f", "/d").files[0][1], "it’s");
 });
 
-test("the music starts so the line comes home on the track's drop", () => {
+test("the music starts so the exchange's flare lands on the drop", () => {
   const m = { start: 158.426, drop: 14.4 };
-  assert.equal(musicStart(m, 8).toFixed(3), (158.426 + 14.4 - 8).toFixed(3));
+  const flareAt = SHOTS.slice(0, 2).reduce((t, s) => t + s.bars * BAR, 0) + SHOTS[2].events.flare;
+  assert.equal((musicStart(m) + flareAt).toFixed(3), (158.426 + 14.4).toFixed(3));
 });

@@ -1,6 +1,9 @@
 # 吳越 Wuyue: a neon history video (treatment)
 
-Status: 2026-09-29, a first treatment for review; nothing built. Asked for by the user: "brainstorm
+Status: 2026-09-29. The first treatment below was reviewed by Astra
+(docs/research/2026-09-29-codex-wuyue-video.md); the user watched an 11 s smoke test of the
+returning route (scripts/wuyue.mjs, first version) and said "looks good, keep going". The
+revised shot list at the end replaces the beats; the rest stands where it does not conflict. Asked for by the user: "brainstorm
 some kind of fun video explaining the history and the Buddhist transmission and the whole story
 of the Kingdom of Wuyue in awesome neon and ... Tron style stuff", then "do both" (a vertical cut
 for Instagram and a wide cut for a friend's site) "and then brainstorm with Astra for
@@ -78,3 +81,31 @@ lands on a bar.
 - Scholarly check of beats 5 and 6 (the JIABS paper "Crossing Ten-Thousand Li of Waves" and the
   MDPI Religions paper on the Baoqieyin prints).
 - Whether the friend wants her site's own title or credit on the wide cut.
+
+## Revised shot list (after Astra and the smoke test)
+
+Five shots, hard cuts on the bar, 100 bpm (a bar is 2.4 s), about 72 s. The wide cut uses the
+same shots framed wide, and ends on a sources card. Timings and cards live in scripts/wuyue.mjs
+(SHOTS); blender/wuyue.py builds each shot.
+
+1. Hook, 4 bars. Low and close on the lit 吳越; a cyan-white line draws in from off frame and the
+   sign flares as it arrives; the camera rises to the whole sign. "Lost books." / "Copies from
+   overseas." / "Wuyue ∙ Hangzhou, China ∙ 907–978".
+2. The Qian family, 5 bars. 錢 (QIAN, THE RULING FAMILY) traces in; below it a line from 907 to
+   978 draws in five spans, one per reign, each as long as the reign. "Qian Liu: salt trader,
+   soldier, ruler." / "Five rulers. One family. Seventy-one years."
+3. The exchange, 9 bars. The map: Hangzhou inside a faint border. A line north (NORTHERN COURTS);
+   高麗 GORYEO (KOREA) and 日本 JAPAN trace in; request lines go out to both; the cyan-white line
+   comes back from Korea only, and the sign flares. "Tribute north. Trade by sea." / "Some
+   Tiantai Buddhist texts were lost in China." / "Qian Chu sent overseas for copies." / "A Korean
+   monk, Chegwan, brought them back."
+4. Printing, 7 bars. One page of light columns traces in; copies appear outward from it in a
+   wave while the camera rises to show the field of them. "Qian Chu had a short Buddhist text
+   printed." / "It is said 84,000 copies were made." / "Copies dated 956, 965 and 975 survive." /
+   "Among the oldest printed pages anywhere."
+5. End, 5 bars. The map as the exchange left it; the border fades while every route stays lit;
+   the camera comes down to the sign, which flares once, and WUYUE / KINGDOM OF WUYUE ∙ 907–978
+   fade in under it. "978: Qian Chu surrendered Wuyue to the Song."
+
+Music: one track, Interstellar Retrowave (100 bpm), started so the drop lands on the exchange's
+flare. Left for later, needing better sources: the seawall, Yanshou and the 36 monks, Leifeng.
