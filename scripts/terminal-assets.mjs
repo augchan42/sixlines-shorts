@@ -7,7 +7,7 @@
 // with it (`pnpm terminal:build` there) — see that directory's README.
 //   npm run terminal:assets [out-dir]
 import { execFileSync } from "node:child_process";
-import { copyFileSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync } from "node:fs";
 import { homedir, tmpdir } from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -43,17 +43,33 @@ function notoWoff2(out, text) {
   rmSync(tmp, { recursive: true });
 }
 
+// The SIL Open Font License text that must travel with the Noto subset; kept beside the Noto
+// source in public/local (gitignored), fetched once if missing.
+function notoLicence() {
+  const ofl = path.join(root, "public/local/fonts/OFL.txt");
+  if (!existsSync(ofl)) {
+    mkdirSync(path.dirname(ofl), { recursive: true });
+    execFileSync("curl", ["-sfL", "-o", ofl, "https://raw.githubusercontent.com/google/fonts/main/ofl/notosanstc/OFL.txt"]);
+  }
+  return ofl;
+}
+
 function woff2(src, out) {
   execFileSync("python3", ["-c", "import sys\nfrom fontTools.ttLib import TTFont\nf = TTFont(sys.argv[1])\nf.flavor = 'woff2'\nf.save(sys.argv[2])", src, out]);
 }
 
 export async function buildAssets(out = DEFAULT_OUT) {
-  rmSync(out, { recursive: true, force: true });
-  for (const d of ["data", "fonts", "sfx"]) mkdirSync(path.join(out, d), { recursive: true });
+  // Only the folders this script makes: the site keeps its own files beside them (characters/,
+  // character-notes.json).
+  for (const d of ["data", "fonts", "sfx"]) {
+    rmSync(path.join(out, d), { recursive: true, force: true });
+    mkdirSync(path.join(out, d), { recursive: true });
+  }
   const dataFile = path.join(root, "godot/wangbi-terminal/data/hexagrams.json");
   copyFileSync(dataFile, path.join(out, "data/hexagrams.json"));
   woff2(path.join(root, "public/fonts/PixelOperator-Bold.ttf"), path.join(out, "fonts/PixelOperator-Bold.woff2"));
   notoWoff2(path.join(out, "fonts/NotoSansTC-subset.woff2"), displayText(JSON.parse(readFileSync(dataFile, "utf8"))));
+  copyFileSync(notoLicence(), path.join(out, "fonts/OFL.txt"));
   for (const s of SOUNDS) {
     makeSfx(s, path.join(out, "sfx", `${s}.ogg`));
     makeSfx(s, path.join(out, "sfx", `${s}.m4a`), AAC);
