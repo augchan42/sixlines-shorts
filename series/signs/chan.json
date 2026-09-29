@@ -7,5 +7,6 @@
  "edge": "#ff5ec8",
  "labelColour": "#a89aa3",
  "labels": [{ "text": "CHAN", "size": 1.4 }],
- "fonts": ["pixel", "goudy"]
+ "fonts": ["pixel", "goudy"],
+ "music": { "hexagram": 2, "why": "The Receptive's track (Analog Dreams, 90 bpm), the user's favourite of the first shorts; calm, for a sign that draws itself in" }
 }

@@ -10,5 +10,6 @@
   { "text": "WUYUE", "size": 1.7 },
   { "text": "KINGDOM OF WUYUE · 907–978", "size": 0.62 }
  ],
- "fonts": ["pixel", "goudy"]
+ "fonts": ["pixel", "goudy"],
+ "music": { "hexagram": 2, "why": "The Receptive's track (Analog Dreams, 90 bpm), the user's favourite of the first shorts; calm, for a sign that draws itself in" }
 }

@@ -1,7 +1,12 @@
 """A still neon sign: one or more characters traced in neon exactly as blender/character.py
 traces a lesson's lying strokes (a hollow tube on each stroke's real outline, over a smoked
 glass body, on the dark glossy floor, under the same sun and bloom), with lines of text under
-them in a muted colour so the neon leads. Nothing moves and nothing else is drawn.
+them in a muted colour so the neon leads. Nothing else is drawn.
+
+As a still, the sign is finished. As a clip (--timing, from scripts/sign.mjs signTiming), each
+stroke traces itself in as a lesson's lying strokes do, its glass body appearing under it; when
+the last is done the neon flares once, as a finished lesson does, and settles; then the label
+lines fade in and it holds. The camera does not move.
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/sign.py -- \
     --data public/local/hanzi/吳.json,public/local/hanzi/越.json --layout stack \
@@ -23,8 +28,8 @@ from mathutils import Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import character  # noqa: E402
-from character import BODY, body, glass, neon  # noqa: E402
-from hexagram import REST, bloom, edge, linear, obsidian, render_settings  # noqa: E402
+from character import BODY, body, draw, glass, neon, show  # noqa: E402
+from hexagram import PULSE, REST, bloom, edge, linear, obsidian, render_settings  # noqa: E402
 
 GAP = 0.9  # metres between two characters' outlines
 LABEL_GAP = 1.1  # metres from the characters to the first label line
@@ -48,6 +53,7 @@ def parse():
     p.add_argument("--width", type=int, default=1080)
     p.add_argument("--height", type=int, default=1920)
     p.add_argument("--samples", type=int, default=64)
+    p.add_argument("--timing", help="a clip's timing as JSON (scripts/sign.mjs signTiming); a still without it")
     p.add_argument("--out", required=True)
     return p.parse_args(argv)
 
@@ -59,21 +65,35 @@ def bounds(objs):
     return min(p.x for p in pts), min(p.y for p in pts), max(p.x for p in pts), max(p.y for p in pts)
 
 
-def sign_char(n, file, glow_mat, smoke):
-    """A character's strokes lying on the floor, finished, under an empty at the origin; returns
-    the empty and its objects."""
+def sign_char(n, file, glow_mat, smoke, colour, clip):
+    """A character's strokes lying on the floor under an empty at the origin; returns the empty,
+    its objects, and, in a clip, each stroke's glow strength. In a still they are finished and
+    share one glow; in a clip each stroke has its own, to trace in at its frame."""
     root = bpy.data.objects.new(f"char{n}", None)
     bpy.context.scene.collection.objects.link(root)
-    objs = []
+    objs, glows = [], []
     for i, d in enumerate(json.load(open(file))["strokes"]):
-        neon(f"neon{n}-{i}", d, BODY + character.NEON, glow_mat, root)
+        at = clip and next(f for c, s, f in clip["strokes"] if (c, s) == (n, i))
+        mat = glow_mat
+        if clip:
+            mat, strength = edge(colour, f"glow{n}-{i}")
+            glows.append(strength)
+            for f, v in ((at - 1, REST), (at + round(clip["draw"] * 1.0), PULSE * 0.4), (at + round(clip["draw"] * 1.75), REST)):
+                strength.default_value = v
+                strength.keyframe_insert("default_value", frame=f + 1)
+        c = neon(f"neon{n}-{i}", d, BODY + character.NEON, mat, root)
         objs.append(bpy.data.objects[f"neon{n}-{i}"])
-        objs.append(body(f"body{n}-{i}", d, BODY, BODY / 2, smoke, root))
-    return root, objs
+        glass_body = body(f"body{n}-{i}", d, BODY, BODY / 2, smoke, root)
+        objs.append(glass_body)
+        if clip:
+            draw(c, at, clip["draw"])
+            show(glass_body, at + clip["draw"])
+    return root, objs, glows
 
 
-def label(n, text, font, size, colour, strength):
-    """A line of flat emissive text lying on the floor, centred at x 0; returns its object."""
+def label(n, text, font, size, colour, strength, fade=None):
+    """A line of flat emissive text lying on the floor, centred at x 0, fading in over `fade`
+    (start frame, length) if given; returns its object."""
     m = bpy.data.materials.new(f"label{n}")
     m.use_nodes = True
     nodes, links = m.node_tree.nodes, m.node_tree.links
@@ -81,6 +101,10 @@ def label(n, text, font, size, colour, strength):
     emit = nodes.new("ShaderNodeEmission")
     emit.inputs["Color"].default_value = linear(colour)
     emit.inputs["Strength"].default_value = strength
+    if fade:
+        for f, v in ((fade[0], 0.0), (fade[0] + fade[1], strength)):
+            emit.inputs["Strength"].default_value = v
+            emit.inputs["Strength"].keyframe_insert("default_value", frame=f + 1)
     links.new(emit.outputs["Emission"], nodes.new("ShaderNodeOutputMaterial").inputs["Surface"])
     curve = bpy.data.curves.new(f"label{n}", "FONT")
     curve.body = text
@@ -91,6 +115,9 @@ def label(n, text, font, size, colour, strength):
     bpy.context.scene.collection.objects.link(o)
     o.location = (0, 0, 0.02)
     o.data.materials.append(m)
+    # Unlit text still shows as dark letters against the floor's glow, so it is hidden until it fades in.
+    if fade:
+        show(o, fade[0])
     return o
 
 
@@ -133,11 +160,12 @@ def main():
     glow_mat, strength = edge(linear(args.edge), "glow")
     strength.default_value = REST * args.glow
     smoke = glass(args.edge)
+    clip = json.loads(args.timing) if args.timing else None
 
     # Each character measured where it is drawn, then moved into its place.
-    chars = [sign_char(n, f, glow_mat, smoke) for n, f in enumerate(args.data.split(","))]
+    chars = [sign_char(n, f, glow_mat, smoke, linear(args.edge), clip) for n, f in enumerate(args.data.split(","))]
     at = 0.0
-    for root, objs in chars:
+    for root, objs, _ in chars:
         x0, y0, x1, y1 = bounds(objs)
         if args.layout == "stack":
             root.location = (-(x0 + x1) / 2, at - y1, 0)
@@ -145,9 +173,9 @@ def main():
         else:
             root.location = (at - x0, -(y0 + y1) / 2, 0)
             at += (x1 - x0) + GAP
-    every = [o for _, objs in chars for o in objs]
+    every = [o for _, objs, _ in chars for o in objs]
     x0, y0, x1, y1 = bounds(every)
-    for root, _ in chars:
+    for root, _, _ in chars:
         root.location.x -= (x0 + x1) / 2
     x0, y0, x1, y1 = bounds(every)
 
@@ -157,7 +185,7 @@ def main():
         raise SystemExit("--labels and --sizes must agree")
     y = y0 - LABEL_GAP
     for n, (text, size) in enumerate(zip(lines, sizes)):
-        o = label(n, text, args.font, size, args.label_colour, args.label_strength)
+        o = label(n, text, args.font, size, args.label_colour, args.label_strength, clip and clip["labels"][n])
         o.location.y = y
         _, low, _, _ = bounds([o])
         y = low - LINE_GAP
@@ -177,12 +205,23 @@ def main():
     bpy.ops.mesh.primitive_plane_add(size=200, location=(0, 0, 0))
     bpy.context.object.data.materials.append(obsidian())
 
-    render_settings(scene, 1, args.out, False)
+    # The finished sign flares once, as a finished lesson does, and settles at the still's glow.
+    if clip:
+        t = clip["flare"]
+        for strength in (g for _, _, glows in chars for g in glows):
+            for f, v in ((t - 1, REST), (t + 2, PULSE), (t + round(clip["draw"] * 1.25), REST * args.glow)):
+                strength.default_value = v
+                strength.keyframe_insert("default_value", frame=f + 1)
+
+    render_settings(scene, clip["frames"] if clip else 1, args.out, False)
     scene.eevee.taa_render_samples = args.samples
     # Before the camera, which measures the sign in this frame.
     scene.render.resolution_x, scene.render.resolution_y = args.width, args.height
     camera(scene, every, args.height / args.width)
     bloom(scene)
+    if clip:
+        bpy.ops.render.render(animation=True)
+        return
     scene.frame_set(1)
     scene.render.image_settings.media_type = "IMAGE"
     scene.render.image_settings.file_format = "PNG"
