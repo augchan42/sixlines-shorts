@@ -28,6 +28,11 @@ var turn := 0.0:
 	set(v):
 		turn = v
 		queue_redraw()
+# A small tilt about the horizontal axis, from a vertical drag (main.gd); 0 outside a drag.
+var tilt := 0.0:
+	set(v):
+		tilt = v
+		queue_redraw()
 var outlines := {}  # line number -> Array of PackedVector2Array, in local px, as last drawn
 
 static func line_z(i: int) -> float:
@@ -48,9 +53,12 @@ func slabs() -> Array:
 
 func project(p: Vector3) -> Vector2:
 	var rx := p.x * cos(turn) - p.y * sin(turn)
-	var ry := p.x * sin(turn) + p.y * cos(turn)
+	var ry0 := p.x * sin(turn) + p.y * cos(turn)
+	# tilt turns the same point a little further, about the horizontal (x) axis.
+	var ry := ry0 * cos(tilt) - p.z * sin(tilt)
+	var rz := ry0 * sin(tilt) + p.z * cos(tilt)
 	var k := DIST / (DIST + ry)
-	return Vector2(rx * k, -p.z * k) * scale_px
+	return Vector2(rx * k, -rz * k) * scale_px
 
 func _draw() -> void:
 	outlines.clear()

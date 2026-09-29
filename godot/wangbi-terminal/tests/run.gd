@@ -38,6 +38,19 @@ func _init() -> void:
 	check(army == [0, 1, 0, 0, 0, 0], "flip leaves its input alone")
 	check(Reading.key(l) == "010010", "three flips give the final lines")
 	check(is_equal_approx(Reading.turn_target(0.0), TAU) and is_equal_approx(Reading.turn_target(TAU * 1.4), TAU * 2), "turns end square")
+	# Feature 2 (drag to turn): a dragged turn settles to the nearest whole turn, forward or back.
+	check(is_equal_approx(Reading.nearest_square(0.35), 0.0), "nearest_square rounds a small angle back to 0")
+	check(is_equal_approx(Reading.nearest_square(TAU - 0.35), TAU), "nearest_square rounds forward to the next whole turn")
+	check(is_equal_approx(Reading.nearest_square(TAU * 2.5), TAU * 3), "nearest_square rounds a half-turn forward")
+	# Plot's projection, with tilt at 0, is unchanged (Feature 1 review: no regression), and a
+	# 90-degree tilt swaps depth and height the way a 90-degree turn swaps depth and width.
+	var plot := Plot.new()
+	var p := Vector3(1.0, 0.0, 2.0)
+	check(plot.project(p) == Vector2(p.x, -p.z) * plot.scale_px * (Plot.DIST / (Plot.DIST + 0.0)), "project with turn=0 tilt=0 is untouched by tilt")
+	plot.tilt = PI / 2.0
+	var tilted := plot.project(Vector3(0.0, 0.0, 2.0))
+	check(absf(tilted.y) < 0.01, "a 90-degree tilt swings a purely vertical point level")
+	check(absf(tilted.x) < 0.01, "tilt alone does not move a point off the vertical axis")
 	# Review Focus 3: several masters, and none.
 	var two := {"masters": [{"line": 2, "zh": "甲之主", "en": "A"}, {"line": 5, "zh": "乙之主", "en": "B"}]}
 	check(Reading.master_lines(two) == [2, 5], "two masters, both amber")

@@ -71,3 +71,8 @@ static func wangbi_rows(entry: Dictionary) -> Array:
 # The next whole turn from any angle, so an interrupted turn still ends square to the viewer.
 static func turn_target(turn: float) -> float:
 	return (floor(turn / TAU + 1e-6) + 1.0) * TAU
+
+# The nearest whole turn to any angle, forward or back: where a drag settles when released
+# (main.gd), unlike turn_target, which always advances (the relay animation's own rule).
+static func nearest_square(turn: float) -> float:
+	return round(turn / TAU) * TAU
