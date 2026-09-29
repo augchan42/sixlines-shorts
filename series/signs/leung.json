@@ -1,0 +1,12 @@
+{
+ "name": "leung",
+ "about": "梁 (Leung, the Hong Kong Cantonese spelling of the surname Liang) as a neon sign, for the user, 2026-09-29. No small line. Strokes in the data's own order.",
+ "chars": ["梁"],
+ "layout": "stack",
+ "size": [1080, 1920],
+ "edge": "#ff5ec8",
+ "labelColour": "#a89aa3",
+ "labels": [{ "text": "LEUNG", "size": 1.4 }],
+ "fonts": ["pixel", "goudy"],
+ "music": { "hexagram": 2, "why": "The Receptive's track (Analog Dreams, 90 bpm), the user's favourite of the first shorts; calm, for a sign that draws itself in" }
+}
