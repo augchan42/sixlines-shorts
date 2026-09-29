@@ -1,6 +1,6 @@
 # Wang Bi terminal in Godot: design
 
-Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md). Built through the web export; not yet on the sites.
+Status: 2026-09-28. The user answered the open questions (see Decisions). Revised after the gpt-6-astra review (docs/research/2026-09-28-codex-terminal-review.md). Live at /terminal on sixlines.day and 8bitoracle.ai since 2026-09-29 (sixlines-site d1cc750, 8bitoracle-brand 5f2371f).
 
 ## What it is
 
