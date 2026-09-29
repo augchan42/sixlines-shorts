@@ -4,10 +4,10 @@ import { BAR, CUTS, REIGNS, SHOTS, cardsFilter, musicStart, timeline } from "../
 
 const BANNED = ["oracle", "divination", "fortune", "prediction", "mystical", "magical"];
 
-test("every shot is a whole number of bars and the video runs about 86 s", () => {
+test("every shot is a whole number of bars and the video runs about 98 s", () => {
   for (const s of SHOTS) assert.ok(Number.isInteger(s.bars), s.name);
   const secs = SHOTS.reduce((t, s) => t + s.bars * BAR, 0);
-  assert.ok(secs > 80 && secs < 95, String(secs));
+  assert.ok(secs > 90 && secs < 105, String(secs));
 });
 
 test("each shot's events fall inside it", () => {

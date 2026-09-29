@@ -73,30 +73,42 @@ export const SHOTS = [
   {
     name: "printing",
     bars: 7,
-    events: { page: [0.3, 2.0], build: [2.2, 6.8], flare: 7.2, orbit: [4.4, 9.6], spread: [9.6, 14.4], rise: [9.6, 15.6] },
+    events: { page: [0.3, 1.8], build: [2.6, 6.6], flare: 7.2, orbit: [4.4, 9.6], spread: [9.6, 14.4], rise: [9.6, 15.6] },
     cards: [
       { text: "Qian Chu had the Baoqieyin\nDharani printed.", from: 0.3, to: 4.3 },
-      { text: "The sutra says a stupa holding it\nbecomes a reliquary.", from: 4.8, to: 9.1 },
+      { text: "The sutra says a stupa with it\nhas the relics of every Buddha.", from: 4.8, to: 9.1 },
       { text: "It is said 84,000 small stupas\nwere made to hold the copies.", from: 9.6, to: 13.2 },
-      { text: "Copies dated 956 and 965\nsurvive, among the oldest prints.", from: 13.6, to: 16.8 },
+      { text: "Copies dated 956 and 965\nsurvive today.", from: 13.6, to: 16.8 },
     ],
   },
   {
     name: "leifeng",
-    bars: 6,
-    events: { rise: [0.3, 4.4], fall: [5.0, 7.4], descend: [6.6, 10.0], case: [7.8, 8.6], build: [8.4, 11.6], flare: 12.0 },
+    bars: 3,
+    events: { rise: [0.3, 3.0] },
+    cards: [{ text: "Leifeng Pagoda, by West Lake,\ndedicated in 975.", from: 0.3, to: 6.8 }],
+  },
+  {
+    name: "surrender",
+    bars: 3,
+    events: { border: [1.0, 4.0] },
+    cards: [{ text: "978: Qian Chu surrendered\nWuyue to the Song.", from: 0.3, to: 6.8 }],
+  },
+  {
+    name: "vault",
+    bars: 7,
+    events: { fade: [1.5, 3.5], descend: [3.0, 7.0], case: [5.5, 6.6], build: [6.0, 9.0], flare: 9.6, relic: 11.0 },
     cards: [
-      { text: "Leifeng Pagoda, by West Lake,\ndedicated in 975.", from: 0.3, to: 4.4 },
-      { text: "It fell in 1924. Copies of the\n975 print were in its bricks.", from: 4.8, to: 8.6 },
-      { text: "In 2001 its vault was opened.\nThis silver stupa was inside.", from: 9.0, to: 12.0 },
-      { text: "Inside it: a strand\nof the Buddha’s hair.", from: 12.2, to: 14.4 },
+      { text: "It collapsed in 1924.", from: 0.3, to: 2.9 },
+      { text: "Copies of the 975 printing\nwere found in its bricks.", from: 3.2, to: 6.4 },
+      { text: "In 2001 its vault was opened.\nA gilt silver stupa was inside.", from: 6.8, to: 10.4 },
+      { text: "A gold casket inside held a hair\nrevered as the Buddha’s.", from: 10.8, to: 16.8 },
     ],
   },
   {
     name: "end",
-    bars: 5,
-    events: { border: [1.0, 4.0], descend: [4.6, 9.0], flare: 9.6, labels: [9.8, 11.0] },
-    cards: [{ text: "978: Qian Chu surrendered\nWuyue to the Song.", from: 0.3, to: 4.6 }],
+    bars: 3,
+    events: { descend: [0.3, 3.6], flare: 4.8, labels: [5.0, 6.2] },
+    cards: [],
   },
 ];
 
@@ -112,7 +124,8 @@ export const SOURCES = [
   "Sources",
   "Encyclopedia of Buddhism: Chegwan",
   "Religions 12.1 (2021): the Baoqieyin prints",
-  "Wikipedia: Wuyue, Qian Liu, Qian Chu, Yue ware",
+  "Zhejiang Provincial Museum: the Leifeng silver stupa",
+  "Wikipedia: Wuyue, Qian Liu, Qian Chu, Leifeng Pagoda",
   "chinaknowledge.de: the rulers of Wu-Yue",
 ];
 
@@ -212,7 +225,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     const card = (cards, c, offset) => {
       const { filter, files } = cardsFilter(cards, c, font, dir, offset);
       for (const [f, text] of files) writeFileSync(f, text);
-      filters.push(filter);
+      if (filter) filters.push(filter);
     };
     for (const s of shots) {
       card(s.cards, cut, at);

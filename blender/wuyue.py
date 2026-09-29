@@ -11,14 +11,13 @@ straight down; nothing shakes or flickers, and each shot has at most one flare.
             one per reign
   exchange  the map: a faint border round Hangzhou; a line north; 高麗 (Goryeo, Korea) and 日本
             (Japan) trace in; lines out to both; the cyan-white line back from Korea; one flare
-  printing  one page of light columns traces in; a stupa (after the silver one from Leifeng's
-            vault) builds round it and flares; copies of the stupa appear outward in a wave while
-            the camera rises over the field of them
-  leifeng   Leifeng Pagoda builds storey by storey, then falls away from the top, leaving its
-            platform; the camera comes down to where its vault was, and the silver stupa found
-            there traces in inside its iron case; one flare
-  end       the map as the exchange left it; the border fades, the routes stay lit; the camera
-            comes down to the sign, which flares, and WUYUE fades in under it
+  printing  one page of light columns traces in; a stupa like Qian Chu's small bronze ones builds
+            round it; copies of it light up outward in a wave while the camera rises over them
+  leifeng   Leifeng Pagoda builds storey by storey and stands
+  surrender the map as the exchange left it; the border fades, the routes stay lit
+  vault     the standing pagoda fades to its platform; the camera comes down to where its vault
+            was, and the iron case and the silver stupa found there trace in; one flare
+  end       down to the sign, which flares, and WUYUE fades in under it
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/wuyue.py -- --shot hook \\
     --hanzi public/local/hanzi --font goudos.ttf --map '{"korea":[24,46],...}' \\
@@ -50,7 +49,7 @@ SETTLED = REST * 1.5  # a finished sign's glow (sign.py's default)
 def parse():
     argv = sys.argv[sys.argv.index("--") + 1 :]
     p = argparse.ArgumentParser()
-    p.add_argument("--shot", required=True, choices=("hook", "family", "exchange", "printing", "leifeng", "end"))
+    p.add_argument("--shot", required=True, choices=("hook", "family", "exchange", "printing", "leifeng", "surrender", "vault", "end"))
     p.add_argument("--hanzi", required=True, help="the folder of stroke data files")
     p.add_argument("--font", required=True)
     p.add_argument("--map", required=True, help="JSON: korea, japan and north, x,y metres from the sign")
@@ -324,12 +323,22 @@ def exchange(args, t, m, cam):
     cam.pose(t["widen"][1], aim, eye)
 
 
-def end(args, t, m, cam):
-    glow, lab, lab_glow, (edge, edge_glow), objs, everything, _ = world_map(args, t, m, drawn=True)
+def surrender(args, t, m, cam):
+    """978: the map as the exchange left it; Wuyue's border fades, the routes stay lit."""
+    _, _, _, (edge, edge_glow), _, everything, _ = world_map(args, t, m, drawn=True)
     fade(edge_glow, *t["border"], REST * 0.4, 0.0)
     for f, hidden in ((0, False), (t["border"][1] + 1, True)):  # unlit, the tube still shows
         edge.hide_render = hidden
         key(edge, "hide_render", f)
+    aim, eye = cam.top(everything)
+    cam.pose(0, aim, eye)
+    cam.pose(t["frames"], aim, aim + (eye - aim) * 0.98)
+
+
+def end(args, t, m, cam):
+    """The map without its border; down to the sign, which flares; WUYUE under it."""
+    glow, lab, lab_glow, (edge, _), objs, everything, _ = world_map(args, t, m, drawn=True)
+    edge.hide_render = True
     fade(lab_glow, t["descend"][0], t["descend"][0] + 30, 1.0, 0.0)
     for f, hidden in ((0, False), (t["descend"][0] + 31, True)):  # gone before WUYUE takes its place
         lab.hide_render = hidden
@@ -345,33 +354,50 @@ def end(args, t, m, cam):
         y = low - 0.55
         labels.append(o)
     aim, eye = cam.top(everything)
-    cam.pose(0, aim, eye)
-    cam.pose(t["descend"][0], aim, eye)
+    cam.pose(0, aim, aim + (eye - aim) * 0.98)
     cam.pose(t["descend"][1], *cam.top(objs + labels))
 
 
+# Where each of the page's seven columns breaks, as fractions of its length: lines of text.
+BREAKS = [(0.0, 0.34, 0.4, 0.62, 0.68, 1.0), (0.0, 0.52, 0.58, 1.0), (0.0, 0.2, 0.26, 0.74, 0.8, 1.0),
+          (0.0, 0.44, 0.5, 0.86), (0.0, 0.3, 0.36, 1.0), (0.0, 0.6, 0.66, 0.92), (0.0, 0.4, 0.46, 0.7)]
+
+
 def printing(args, t, m, cam):
-    # The page: seven columns of light, traced one after another, flat on the floor.
-    cols, gap, tall = 7, 0.14, 1.2
+    # The page: seven columns of light, broken like lines of text, traced one after another,
+    # flat on the floor; cyan-white, as texts are what travel in this story.
+    gap, tall = 0.14, 1.2
     a0, a1 = t["page"]
-    per = (a1 - a0) / cols
+    per = (a1 - a0) / len(BREAKS)
     hero = []
-    for i in range(cols):
-        x = (i - (cols - 1) / 2) * gap
-        o, _ = route(f"col{i}", (x, tall / 2, 0), (x, -tall / 2, 0), 0, 0, HOME, round(a0 + i * per), round(a0 + (i + 1) * per))
-        hero.append(o)
-    # The stupa built round it, in the form of Qian Chu's small bronze ones; one flare.
+    for i, cuts in enumerate(BREAKS):
+        x = (i - (len(BREAKS) - 1) / 2) * gap
+        for j in range(0, len(cuts) - 1, 2):
+            f0, f1 = cuts[j], cuts[j + 1]
+            ya, yb = tall / 2 - f0 * tall, tall / 2 - f1 * tall
+            o, _ = route(f"col{i}-{j}", (x, ya, 0), (x, yb, 0), 0, 0, SEA, round(a0 + (i + f0) * per), round(a0 + (i + f1) * per), REST)
+            hero.append(o)
+    # The stupa built round it, in the form of Qian Chu's small bronze ones; one small flare.
     W, radius = 1.6, NEON * 0.6
     mat, glow = edge(linear(HOME), "stupa")
-    glow.default_value = REST
+    glow.default_value = REST * 0.6
     stupa.build("stupa", "bronze", W, mat, span=t["build"], radius=radius)
-    flare(glow, t["flare"], REST, PULSE / 3)  # a small object: a smaller flare
-    # Its copies: one finished stupa kept out of the scene, instanced over the floor, each
-    # appearing as the wave reaches it. The field stops short of the frame's top, under the text.
+    flare(glow, t["flare"], REST * 0.6, PULSE / 5)
+    # Its copies: one simpler finished stupa kept out of the scene, instanced over the floor,
+    # each lighting up as the wave reaches it (the instancer's "on", 0 to 1, scales the light).
+    # The field stops short of the frame's top, under the text.
     copy = bpy.data.collections.new("copy")
-    dim, dim_glow = edge(linear(HOME), "copy")
-    dim_glow.default_value = REST * 0.5
-    stupa.build("copy", "bronze", W, dim, collection=copy, radius=radius)
+    dim, _ = edge(linear(HOME), "copy")
+    nodes, links = dim.node_tree.nodes, dim.node_tree.links
+    bsdf = nodes["Principled BSDF"]
+    bsdf.inputs["Base Color"].default_value = (0, 0, 0, 1)
+    on = nodes.new("ShaderNodeAttribute")
+    on.attribute_type, on.attribute_name = "INSTANCER", "on"
+    times = nodes.new("ShaderNodeMath")
+    times.operation, times.inputs[1].default_value = "MULTIPLY", REST * 0.35
+    links.new(on.outputs["Fac"], times.inputs[0])
+    links.new(times.outputs["Value"], bsdf.inputs["Emission Strength"])
+    stupa.build("copy", "bronze-simple", W, dim, collection=copy, radius=radius)
     s0, s1 = t["spread"]
     step = 6.0
     spots = [(i * step, j * step) for i in range(-6, 7) for j in range(-7, 2) if (i, j) != (0, 0)]
@@ -382,7 +408,9 @@ def printing(args, t, m, cam):
         bpy.context.scene.collection.objects.link(e)
         e.location = (x, y, 0)
         at = round(s0 + (s1 - s0) * math.hypot(x, y) / far)
-        stupa.keyed_scale(e, ((0, 0.0), (at, 0.0), (at + 10, 1.0)))
+        for f, v in ((0, 0.0), (at, 0.0), (at + 15, 1.0)):
+            e["on"] = v
+            key(e, '["on"]', f)
     # Low over the page; back and round to the whole stupa; up over the field.
     aim, eye = cam.low(hero, back=3.2, up=2.2)
     cam.pose(0, aim, eye)
@@ -396,27 +424,60 @@ def printing(args, t, m, cam):
     cam.pose(t["rise"][1], high, high + cam.toward(-5, 50) * 60)
 
 
+R, STOREY = 6.0, 7.0  # Leifeng: the wall's radius at the foot, and a storey's height
+TALL = 0.08 * STOREY + 7 * STOREY
+
+
+def whole(cam, azimuth):
+    """The camera on the whole pagoda: (aim, eye)."""
+    mid = Vector((0, 0, TALL * 0.5))
+    return mid, mid + cam.toward(azimuth, 8) * cam.fit(2.7 * R, TALL) * 0.92
+
+
 def leifeng(args, t, m, cam):
-    R, storey = 6.0, 7.0
-    mat, _ = edge(linear(HOME), "leifeng")
-    pagoda.build(R, storey, mat, t["rise"], t["fall"], radius=NEON * 1.6)
+    """975: Leifeng Pagoda builds storey by storey, then stands."""
+    tower_mat, tower_glow = edge(linear(HOME), "leifeng")
+    tower_glow.default_value = REST * 0.8
+    base_mat, base_glow = edge(linear(HOME), "platform")
+    base_glow.default_value = REST * 0.8
+    pagoda.build(R, STOREY, tower_mat, base_mat, rise=t["rise"], radius=NEON * 1.6)
+    cam.pose(0, *whole(cam, 24))
+    cam.pose(t["frames"], *whole(cam, 16))
+
+
+def vault(args, t, m, cam):
+    """1924 and 2001: the standing pagoda fades to its platform; the camera comes down to where
+    its vault was, and the iron case and the silver stupa found in it trace in; one small flare."""
+    tower_mat, tower_glow = edge(linear(HOME), "leifeng")
+    base_mat, base_glow = edge(linear(HOME), "platform")
+    base_glow.default_value = REST * 0.4
+    tower, _ = pagoda.build(R, STOREY, tower_mat, base_mat, radius=NEON * 1.6)
+    fade(tower_glow, *t["fade"], REST * 0.8, 0.0)
+    for o in tower:
+        for f, hidden in ((0, False), (t["fade"][1] + 1, True)):
+            o.hide_render = hidden
+            key(o, "hide_render", f)
     W = 1.6
     smat, glow = edge(linear(HOME), "silver")
-    glow.default_value = REST
-    pagoda.case(1.25 * W, 0.35 * W, smat, t["case"], radius=NEON * 0.6)
+    glow.default_value = REST * 0.6
+    iron, iron_glow = edge(linear(HOME), "iron")
+    iron_glow.default_value = REST * 0.3  # dim: rusted iron round the silver
+    pagoda.case(1.2 * W, 0.62 * W, iron, t["case"], radius=NEON * 0.6)
     stupa.build("silver", "silver", W, smat, span=t["build"], radius=NEON * 0.6)
-    flare(glow, t["flare"], REST, PULSE / 3)
-    tall = 0.08 * storey + 7 * storey
-    whole = Vector((0, 0, tall * 0.5))
-    far = cam.fit(2.7 * R, tall) * 0.92
-    cam.pose(0, whole, whole + cam.toward(22, 8) * far)
-    cam.pose(t["descend"][0], whole, whole + cam.toward(12, 9) * far)
+    flare(glow, t["flare"], REST * 0.6, PULSE / 5)
+    # The hair: a short cyan-white strand in the stupa's body, lit with the last card.
+    z = (0.16 + 0.24) * W
+    route("hair", (0, 0, 0), (0.12 * W, 0.02, 0), 0, 1, SEA, t["relic"], t["relic"] + 20, REST * 0.8)[0].location.z = z
+    cam.pose(0, *whole(cam, 16))
+    cam.pose(t["descend"][0], *whole(cam, 14))
     low = Vector((0, 0, 2.3 * W * 0.5))
-    cam.pose(t["descend"][1], low, low + cam.toward(4, 14) * cam.fit(1.9 * W, 2.3 * W) * 1.25)
-    cam.pose(t["frames"], low, low + cam.toward(-2, 15) * cam.fit(1.9 * W, 2.3 * W) * 1.2)
+    near = cam.fit(1.9 * W, 2.3 * W) * 1.25
+    cam.pose(t["descend"][1], low, low + cam.toward(4, 14) * near)
+    cam.pose(t["frames"], low, low + cam.toward(-2, 15) * near * 0.97)
 
 
-SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": printing, "leifeng": leifeng, "end": end}
+SHOTS = {"hook": hook, "family": family, "exchange": exchange, "printing": printing, "leifeng": leifeng,
+         "surrender": surrender, "vault": vault, "end": end}
 
 
 def main():

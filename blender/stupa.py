@@ -96,8 +96,9 @@ def arch(r, z0, tall, turn, n=12):
     return [(x * c, x * s, z) for x, z in pts]
 
 
-def bronze(W):
-    """Qian Chu's stupa: the outline, bottom to top."""
+def bronze(W, simple=False):
+    """Qian Chu's stupa: the outline, bottom to top. `simple` leaves out the panels, medallions
+    and tiers' uprights, and has five rings, for copies seen from afar."""
     out = []
 
     def add(name, frac, polylines):
@@ -105,14 +106,17 @@ def bronze(W):
             out.append((f"{name}{i}", frac, p))
 
     add("base", 0.0, box(0.815 * W, 0, 0.58 * W))
-    add("basepanel", 0.08, panel(1.63 * W, 0, 0.58 * W, 0.12 * W))
+    if not simple:
+        add("basepanel", 0.08, panel(1.63 * W, 0, 0.58 * W, 0.12 * W))
     add("step", 0.12, box(0.675 * W, 0.58 * W, 0.72 * W) + box(0.58 * W, 0.72 * W, 0.84 * W))
     add("body", 0.2, box(W / 2, 0.84 * W, 1.63 * W))
-    add("medallion", 0.3, [face_circle(0.3 * W, 1.235 * W, W / 2 + 0.004 * W, f) for f in range(4)])
+    if not simple:
+        add("medallion", 0.3, [face_circle(0.3 * W, 1.235 * W, W / 2 + 0.004 * W, f) for f in range(4)])
     add("roof", 0.36, box(0.775 * W, 1.63 * W, 1.89 * W))
     z = 1.89 * W
     for k in range(5):
-        add(f"tier{k}-", 0.44 + 0.03 * k, box((0.65 - 0.1 * k) * W, z, z + 0.07 * W))
+        tier = box((0.65 - 0.1 * k) * W, z, z + 0.07 * W)
+        add(f"tier{k}-", 0.44 + 0.03 * k, [tier[-1]] if simple else tier)
         z += 0.07 * W
     for i, (sx, sy) in enumerate(((-1, -1), (1, -1), (1, 1), (-1, 1))):
         turn = math.atan2(sy, sx) + math.pi / 2
@@ -121,7 +125,7 @@ def bronze(W):
     add("dome", 0.6, [circle(0.135 * W, z)] + [arch(0.135 * W, z, 0.29 * W, t) for t in (0, math.pi / 2)])
     add("lotus", 0.66, [circle(0.12 * W, z + 0.29 * W), circle(0.15 * W, z + 0.4 * W)])
     add("mast", 0.66, [[(0, 0, z + 0.29 * W), (0, 0, 3.4 * W)]])
-    for k in range(11):
+    for k in range(0, 11, 2 if simple else 1):
         out.append((f"ring{k}", 0.68 + 0.012 * k, circle(0.11 * W, z + (0.45 + 0.062 * k) * W)))
     add("bud", 0.82, [leaf(3.39 * W, 0.29 * W, 0.2 * W, t) for t in (0, math.pi / 2)])
     return out
@@ -152,7 +156,7 @@ def silver(W):
     return out
 
 
-FORMS = {"bronze": bronze, "silver": silver}
+FORMS = {"bronze": bronze, "bronze-simple": lambda W: bronze(W, simple=True), "silver": silver}
 
 
 def build(name, form, W, material, at=(0, 0, 0), span=None, collection=None, radius=NEON):

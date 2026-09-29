@@ -6,7 +6,8 @@ roof and a spire of rings on top.
 
 `lines(R, storey)` gives the outline as named polylines in trace order, each with its storey
 (0 the platform, 1 to 5, 6 the roof and spire); `build` makes them tubes of light traced in
-storey by storey, and can take them away again from the top down, as the pagoda fell.
+storey by storey (or finished), the platform apart from the tower so the tower can fade and
+leave it, as the pagoda fell and its foundation survived.
 """
 
 import math
@@ -76,51 +77,41 @@ def lines(R, storey):
     return out
 
 
-def build(R, storey, material, rise, fall=None, radius=NEON, keep=("platform",)):
-    """The pagoda traced in storey by storey over `rise` (start, end frames); if `fall` is given,
-    taken away again over it from the top down, all but the `keep` parts. Returns the objects."""
-    objs = []
-    a, b = rise
-    per = (b - a) / (STOREYS + 2)
+def curve(name, pts, material, radius):
+    c = bpy.data.curves.new(name, "CURVE")
+    c.dimensions = "3D"
+    c.bevel_depth, c.bevel_resolution, c.use_fill_caps = radius, 1, True
+    s = c.splines.new("POLY")
+    s.points.add(len(pts) - 1)
+    for p, co in zip(s.points, pts):
+        p.co = (*co, 1)
+    c.materials.append(material)
+    o = bpy.data.objects.new(name, c)
+    bpy.context.scene.collection.objects.link(o)
+    return o
+
+
+def build(R, storey, tower_mat, base_mat, rise=None, radius=NEON):
+    """The pagoda, traced in storey by storey over `rise` (start, end frames), or finished if
+    rise is None. The tower and its platform (what survived the fall) take their own materials,
+    so the tower can fade and leave the platform. Returns (tower objects, platform objects)."""
+    tower, base = [], []
     for name, k, pts in lines(R, storey):
-        c = bpy.data.curves.new(f"leifeng-{name}", "CURVE")
-        c.dimensions = "3D"
-        c.bevel_depth, c.bevel_resolution, c.use_fill_caps = radius, 1, True
-        s = c.splines.new("POLY")
-        s.points.add(len(pts) - 1)
-        for p, co in zip(s.points, pts):
-            p.co = (*co, 1)
-        c.materials.append(material)
-        o = bpy.data.objects.new(f"leifeng-{name}", c)
-        bpy.context.scene.collection.objects.link(o)
-        objs.append(o)
-        draw(c, round(a + k * per), max(1, round(per * 1.4)))
-        if fall and not name.startswith(keep):
-            f0, f1 = fall
-            at = round(f0 + (f1 - f0) * (STOREYS + 1 - k) / (STOREYS + 2))
-            for f, v in ((at, 1.0), (at + round((f1 - f0) / 3), 0.0)):
-                c.bevel_factor_end = v
-                c.keyframe_insert("bevel_factor_end", frame=f + 1)
-    return objs
+        o = curve(f"leifeng-{name}", pts, base_mat if k == 0 else tower_mat, radius)
+        (base if k == 0 else tower).append(o)
+        if rise:
+            a, b = rise
+            per = (b - a) / (STOREYS + 2)
+            draw(o.data, round(a + k * per), max(1, round(per * 1.4)))
+    return tower, base
 
 
 def case(r, tall, material, span, radius=NEON):
-    """The iron case round the vault's stupa: two rings and four uprights, traced in over span."""
-    parts = [ring(r, 0, n=24, turn=0), ring(r, tall, n=24, turn=0)]
-    parts += [[(r * math.cos(a), r * math.sin(a), 0), (r * math.cos(a), r * math.sin(a), tall)] for a in (0.4, 2.0, 3.5, 5.1)]
-    objs = []
-    for i, pts in enumerate(parts):
-        c = bpy.data.curves.new(f"case{i}", "CURVE")
-        c.dimensions = "3D"
-        c.bevel_depth, c.bevel_resolution, c.use_fill_caps = radius, 1, True
-        s = c.splines.new("POLY")
-        s.points.add(len(pts) - 1)
-        for p, co in zip(s.points, pts):
-            p.co = (*co, 1)
-        c.materials.append(material)
-        o = bpy.data.objects.new(f"case{i}", c)
-        bpy.context.scene.collection.objects.link(o)
-        objs.append(o)
-        draw(c, span[0], max(1, span[1] - span[0]))
+    """The iron case round the vault's stupa, after the photograph: a drum as deep as the
+    stupa's plinth and body, three rings and eight staves, traced in over span."""
+    parts = [ring(r, z, n=32, turn=0) for z in (0, tall / 2, tall)]
+    parts += [[(r * math.cos(a), r * math.sin(a), 0), (r * math.cos(a), r * math.sin(a), tall)] for a in (math.pi / 4 * i + 0.2 for i in range(8))]
+    objs = [curve(f"case{i}", pts, material, radius) for i, pts in enumerate(parts)]
+    for o in objs:
+        draw(o.data, span[0], max(1, span[1] - span[0]))
     return objs
-
