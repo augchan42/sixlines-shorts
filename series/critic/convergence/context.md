@@ -56,9 +56,6 @@ fixed. Every change means re-rendering the short, so the shipped copy wins unles
 clearly better on at least one of the three points above and no worse on the others. A
 different wording that is only as good is not a reason to change.
 
-The user has watched shorts 1 to 22 and 35 and marked them good. For those, a change needs a
-clear gain a viewer would notice.
-
 ## Your answer
 
 For each short: **ship** (keep the shipped copy) or **change** (with the rewrite). Also a score
