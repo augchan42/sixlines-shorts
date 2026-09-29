@@ -17,7 +17,7 @@ straight down; nothing shakes or flickers, and each shot has at most one flare.
   surrender the map as the exchange left it; the border fades, the routes stay lit
   vault     the standing pagoda fades to its platform; the camera comes down to where its vault
             was, and the iron case and the silver stupa found there trace in; one flare
-  end       down to the sign, which flares, and WUYUE fades in under it
+  end       the 吳越 sign alone; the camera comes down to it, it flares, and WUYUE fades in
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/wuyue.py -- --shot hook \\
     --hanzi public/local/hanzi --font goudos.ttf --map '{"korea":[24,46],...}' \\
@@ -337,9 +337,8 @@ def surrender(args, t, m, cam):
 
 
 def end(args, t, m, cam):
-    """The map without its border; down to the sign, which flares; WUYUE under it."""
-    glow, lab, lab_glow, (edge, _), objs, everything, _ = world_map(args, t, m, drawn=True)
-    edge.hide_render = True
+    """The 吳越 sign alone; the camera comes down to it, it flares, and WUYUE fades in under it."""
+    _, objs, glow, lab, lab_glow = home(args)
     fade(lab_glow, t["descend"][0], t["descend"][0] + 30, 1.0, 0.0)
     for f, hidden in ((0, False), (t["descend"][0] + 31, True)):  # gone before WUYUE takes its place
         lab.hide_render = hidden
@@ -354,9 +353,9 @@ def end(args, t, m, cam):
         _, low, _, _ = bounds([o])
         y = low - 0.55
         labels.append(o)
-    aim, eye = cam.top(everything)
-    cam.pose(0, aim, aim + (eye - aim) * 0.98)
-    cam.pose(t["descend"][1], *cam.top(objs + labels))
+    aim, eye = cam.top(objs + labels)
+    cam.pose(0, aim, aim + (eye - aim) * 1.6)
+    cam.pose(t["descend"][1], aim, eye)
 
 
 # Where each of the page's seven columns breaks, as fractions of its length: lines of text.

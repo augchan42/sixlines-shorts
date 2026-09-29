@@ -264,7 +264,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", list,
       "-ss", (musicStart(music) + before).toFixed(3), "-i", path.join(root, "public/local/music", music.file),
       "-filter_complex",
-      `[0:v]tpad=stop_duration=${tail}:color=black,${filters.join(",")}[v];` +
+      `[0:v]${[`tpad=stop_duration=${tail}:color=black`, ...filters].join(",")}[v];` +
         `[1:a]atrim=duration=${secs},afade=t=in:st=0:d=${a.shot ? 0.3 : 1},afade=t=out:st=${secs - 3}:d=3[a]`,
       "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-crf", "20", "-preset", "slow", "-pix_fmt", "yuv420p",
       "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", "-t", String(secs), out,
