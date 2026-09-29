@@ -159,6 +159,21 @@ func _ready() -> void:
 	check(main.sound_on == sound_before, "a tap on SOUND toggles sound back")
 	check(not AudioServer.is_bus_mute(master_bus), "a tap on SOUND unmutes the Master bus again")
 
+	# The key legend: shown on a keyboard device (this window has no touchscreen), dim, above the
+	# prompt and clear of the WANG BI block.
+	check(main.legend.visible, "the key legend shows without a touchscreen")
+	check("1-6" in main.legend.text and "G, NUMBER, ENTER" in main.legend.text and "S " in main.legend.text, "the legend names 1-6, G entry and S")
+	check(main.legend.position.y + main.legend.get_combined_minimum_size().y < main.prompt.position.y, "the legend sits above the prompt")
+
+	# 36 has the longest WANG BI row (two lines when wrapped); the legend must still clear it.
+	main.set_lines(Reading.lines_of(main.data, 36))
+	await get_tree().process_frame
+	var shown: int = main.wangbi.visible_characters
+	main.wangbi.visible_characters = main.wangbi.get_total_character_count()
+	var wangbi_bottom: float = main.wangbi.position.y + main.wangbi.get_combined_minimum_size().y
+	main.wangbi.visible_characters = shown
+	check(wangbi_bottom < main.legend.position.y, "36's WANG BI block ends above the legend (%s < %s)" % [wangbi_bottom, main.legend.position.y])
+
 	print("---")
 	print("%d failed" % failed)
 	get_tree().quit(1 if failed else 0)

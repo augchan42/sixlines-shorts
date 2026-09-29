@@ -5,6 +5,7 @@ const GREEN := Color("#7dff8a")
 const DIM := Color(0.49, 1.0, 0.54, 0.45)
 const CYAN := Color("#5ee7ff")
 const PROMPT := "TAP A LINE TO CHANGE IT"
+const LEGEND := "1-6  FLIP A LINE        S  SOUND ON/OFF\nG, NUMBER, ENTER  GO TO A HEXAGRAM"
 const LOG_TOP := 960.0
 const ROW_GAP := 45.0  # about one row tall at the 34 px body size, between stacked blocks
 
@@ -16,6 +17,7 @@ var log_label := Label.new()
 var trigrams := Label.new()
 var wangbi := Label.new()
 var prompt := Label.new()
+var legend := Label.new()  # the keys; hidden on touchscreens and in recordings
 var sound_toggle := Label.new()
 
 func font() -> Font:
@@ -52,6 +54,8 @@ func _ready() -> void:
 	label(log_label, Vector2(60, LOG_TOP), 34, GREEN)
 	label(trigrams, Vector2(60, 1250), 34, DIM)
 	label(wangbi, Vector2(60, 1380), 34, GREEN)
+	label(legend, Vector2(60, 1665), 28, DIM)
+	legend.text = LEGEND
 	label(prompt, Vector2(60, 1770), 38, CYAN)
 	label(sound_toggle, Vector2(760, 1770), 30, DIM)
 	sound_toggle.size = Vector2(260, 0)
@@ -73,6 +77,8 @@ func _ready() -> void:
 		for c in range(key.length()):
 			picked.append(int(key[c]))
 		lines = picked
+	# Keys mean nothing on a phone, and recordings for shorts stay as clean as before.
+	legend.visible = not DisplayServer.is_touchscreen_available() and not ("--record" in args)
 	show_lines(lines)
 	play("sweep")
 	# The first hexagram's own master line(s) count as newly amber too (set_lines' rule), but

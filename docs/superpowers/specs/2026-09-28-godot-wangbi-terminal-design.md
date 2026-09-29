@@ -42,6 +42,9 @@ Screen, top to bottom:
 5. WANG BI: each master line and his words, Chinese with the English beside it
    (`L2  為師之主  Master of the army`). Master lines turn amber.
 6. The prompt, in cyan: `TAP A LINE TO CHANGE IT`. Beside it, in dim green, `SOUND OFF`/`SOUND ON`.
+   Above it, in dim green, a key legend: `1-6  FLIP A LINE  S  SOUND ON/OFF` and
+   `G, NUMBER, ENTER  GO TO A HEXAGRAM`. It is hidden on touchscreens and in recordings
+   (added 2026-09-29 at the user's request).
 
 Labels wrap at a fixed width; the longest title and a hexagram with two masters are
 checked in a still before anything else is built.
