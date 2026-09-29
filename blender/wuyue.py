@@ -17,7 +17,8 @@ straight down; nothing shakes or flickers, and each shot has at most one flare.
   surrender the map as the exchange left it; the border fades, the routes stay lit
   vault     the standing pagoda fades to its platform; the camera comes down to where its vault
             was, and the iron case and the silver stupa found there trace in; one flare
-  end       the 吳越 sign alone; the camera comes down to it, it flares, and WUYUE fades in
+  end       the map as the video left it; its routes and places fade while the camera comes down
+            to the 吳越 sign, which flares, and WUYUE fades in under it
 
   Blender -b --factory-startup --python-exit-code 1 -P blender/wuyue.py -- --shot hook \\
     --hanzi public/local/hanzi --font goudos.ttf --map '{"korea":[24,46],...}' \\
@@ -336,13 +337,27 @@ def surrender(args, t, m, cam):
     cam.pose(t["frames"], aim, aim + (eye - aim) * 0.96)
 
 
+def fade_out(objs, a, b):
+    """Every light on the objects dims to nothing over frames a to b, and they are hidden after."""
+    for o in objs:
+        for slot in o.material_slots:
+            for n in slot.material.node_tree.nodes if slot.material and slot.material.use_nodes else []:
+                inp = n.inputs.get("Emission Strength") if n.type == "BSDF_PRINCIPLED" else n.inputs.get("Strength") if n.type == "EMISSION" else None
+                if inp is not None and not inp.is_linked:
+                    fade(inp, a, b, inp.default_value, 0.0)
+        for f, hidden in ((0, False), (b + 1, True)):  # unlit, a tube still shows
+            o.hide_render = hidden
+            key(o, "hide_render", f)
+
+
 def end(args, t, m, cam):
-    """The 吳越 sign alone; the camera comes down to it, it flares, and WUYUE fades in under it."""
-    _, objs, glow, lab, lab_glow = home(args)
-    fade(lab_glow, t["descend"][0], t["descend"][0] + 30, 1.0, 0.0)
-    for f, hidden in ((0, False), (t["descend"][0] + 31, True)):  # gone before WUYUE takes its place
-        lab.hide_render = hidden
-        key(lab, "hide_render", f)
+    """The map as the video left it, without its border; the routes and places fade while the
+    camera comes down to the 吳越 sign, which flares, and WUYUE fades in under it."""
+    before = set(bpy.data.objects)
+    glow, lab, _, (edge, _), objs, everything, _ = world_map(args, t, m, drawn=True)
+    edge.hide_render = lab.hide_render = True
+    sign = set(objs)
+    fade_out([o for o in set(bpy.data.objects) - before if o not in sign and o.material_slots and o not in (lab, edge)], *t["fade"])
     flare(glow, t["flare"])
     a, b = t["labels"]
     _, y0, _, _ = bounds(objs)
@@ -353,9 +368,8 @@ def end(args, t, m, cam):
         _, low, _, _ = bounds([o])
         y = low - 0.55
         labels.append(o)
-    aim, eye = cam.top(objs + labels)
-    cam.pose(0, aim, aim + (eye - aim) * 1.6)
-    cam.pose(t["descend"][1], aim, eye)
+    cam.pose(0, *cam.top(everything))
+    cam.pose(t["descend"][1], *cam.top(objs + labels))
 
 
 # Where each of the page's seven columns breaks, as fractions of its length: lines of text.

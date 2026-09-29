@@ -107,7 +107,7 @@ export const SHOTS = [
   {
     name: "end",
     bars: 3,
-    events: { descend: [0.3, 3.6], flare: 4.8, labels: [5.0, 6.2] },
+    events: { fade: [0.3, 2.6], descend: [0.3, 3.6], flare: 4.8, labels: [5.0, 6.2] },
     cards: [],
   },
 ];
