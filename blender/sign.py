@@ -121,6 +121,42 @@ def label(n, text, font, size, colour, strength, fade=None):
     return o
 
 
+def arrange(chars, layout):
+    """Moves each character (from sign_char) into its place, top to bottom ("stack") or left to
+    right ("row"), GAP apart, centred on x 0 with the first at the top (or left) at 0; returns
+    all their objects."""
+    at = 0.0
+    for root, objs, _ in chars:
+        x0, y0, x1, y1 = bounds(objs)
+        if layout == "stack":
+            root.location = (-(x0 + x1) / 2, at - y1, 0)
+            at -= (y1 - y0) + GAP
+        else:
+            root.location = (at - x0, -(y0 + y1) / 2, 0)
+            at += (x1 - x0) + GAP
+    every = [o for _, objs, _ in chars for o in objs]
+    x0, y0, x1, y1 = bounds(every)
+    for root, _, _ in chars:
+        root.location.x -= (x0 + x1) / 2
+    return every
+
+
+def stage(scene, floor=200):
+    """character.py's black world, sun and dark glossy floor."""
+    world = bpy.data.worlds.new("black")
+    world.use_nodes = True
+    world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0
+    scene.world = world
+    light = bpy.data.lights.new("key", "SUN")
+    light.energy, light.angle, light.color = 2.0, math.radians(8), (0.85, 1.0, 0.9)
+    light.specular_factor = 0
+    lo = bpy.data.objects.new("key", light)
+    lo.rotation_euler = (math.radians(-55), 0, math.radians(25))
+    scene.collection.objects.link(lo)
+    bpy.ops.mesh.primitive_plane_add(size=floor, location=(0, 0, 0))
+    bpy.context.object.data.materials.append(obsidian())
+
+
 def camera(scene, objs, aspect):
     """Nearly straight down on the sign, as a lesson ends (a few degrees from the front, so the
     floor still reflects), far enough that the sign fits with MARGIN either way, and centred in
@@ -164,19 +200,7 @@ def main():
 
     # Each character measured where it is drawn, then moved into its place.
     chars = [sign_char(n, f, glow_mat, smoke, linear(args.edge), clip) for n, f in enumerate(args.data.split(","))]
-    at = 0.0
-    for root, objs, _ in chars:
-        x0, y0, x1, y1 = bounds(objs)
-        if args.layout == "stack":
-            root.location = (-(x0 + x1) / 2, at - y1, 0)
-            at -= (y1 - y0) + GAP
-        else:
-            root.location = (at - x0, -(y0 + y1) / 2, 0)
-            at += (x1 - x0) + GAP
-    every = [o for _, objs, _ in chars for o in objs]
-    x0, y0, x1, y1 = bounds(every)
-    for root, _, _ in chars:
-        root.location.x -= (x0 + x1) / 2
+    every = arrange(chars, args.layout)
     x0, y0, x1, y1 = bounds(every)
 
     lines = [t for t in args.labels.split("|") if t]
@@ -191,19 +215,7 @@ def main():
         y = low - LINE_GAP
         every.append(o)
 
-    world = bpy.data.worlds.new("black")
-    world.use_nodes = True
-    world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0
-    scene.world = world
-    # character.py's sun and floor.
-    light = bpy.data.lights.new("key", "SUN")
-    light.energy, light.angle, light.color = 2.0, math.radians(8), (0.85, 1.0, 0.9)
-    light.specular_factor = 0
-    lo = bpy.data.objects.new("key", light)
-    lo.rotation_euler = (math.radians(-55), 0, math.radians(25))
-    scene.collection.objects.link(lo)
-    bpy.ops.mesh.primitive_plane_add(size=200, location=(0, 0, 0))
-    bpy.context.object.data.materials.append(obsidian())
+    stage(scene)
 
     # The finished sign flares once, as a finished lesson does, and settles at the still's glow.
     if clip:
