@@ -1,7 +1,7 @@
 {
  "beats": {
   "01": {
-   "text": "The I Ching. Sixty-four situations, with roots about three thousand years old.",
+   "text": "The I-Ching. Sixty-four situations, with roots about three thousand years old.",
    "model": "eleven_v4",
    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
    "settings": {
@@ -10,9 +10,9 @@
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 6.64,
-   "sha256": "93f4081720be5fa3ae830dbd672b18d0ea7c89eb5e717a39291670c1a66f3ea5",
-   "made": "2026-09-30T14:07:39.351Z"
+   "seconds": 6.48,
+   "sha256": "07f8d0ef0188b99fd50866c58b20790ace83b229e9d0abe092c1a7fcb84df3ce",
+   "made": "2026-09-30T14:34:33.567Z"
   },
   "02": {
    "text": "For centuries, people consulted it about the future.",

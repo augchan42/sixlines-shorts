@@ -1,11 +1,11 @@
 {
- "frames": 514,
+ "frames": 509,
  "beats": [
   {
    "n": 1,
    "src": "local/voice/guide-wangbi/01.mp3",
    "from": 42,
-   "to": 241,
+   "to": 236,
    "words": [
     {
      "text": "The",
@@ -13,156 +13,151 @@
      "to": 47
     },
     {
-     "text": "I",
-     "from": 52,
-     "to": 56
-    },
-    {
-     "text": "Ching.",
-     "from": 59,
-     "to": 83
+     "text": "I-Ching.",
+     "from": 49,
+     "to": 80
     },
     {
      "text": "Sixty-four",
-     "from": 92,
-     "to": 112
+     "from": 90,
+     "to": 109
     },
     {
      "text": "situations,",
-     "from": 116,
-     "to": 152
+     "from": 112,
+     "to": 150
     },
     {
      "text": "with",
-     "from": 155,
-     "to": 157
+     "from": 152,
+     "to": 155
     },
     {
      "text": "roots",
-     "from": 160,
-     "to": 169
+     "from": 157,
+     "to": 167
     },
     {
      "text": "about",
-     "from": 172,
-     "to": 181
+     "from": 169,
+     "to": 179
     },
     {
      "text": "three",
-     "from": 186,
-     "to": 191
+     "from": 181,
+     "to": 188
     },
     {
      "text": "thousand",
-     "from": 196,
-     "to": 210
+     "from": 193,
+     "to": 208
     },
     {
      "text": "years",
-     "from": 212,
-     "to": 220
+     "from": 210,
+     "to": 217
     },
     {
      "text": "old.",
-     "from": 222,
-     "to": 241
+     "from": 220,
+     "to": 236
     }
    ]
   },
   {
    "n": 2,
    "src": "local/voice/guide-wangbi/02.mp3",
-   "from": 262,
-   "to": 373,
+   "from": 257,
+   "to": 368,
    "words": [
     {
      "text": "For",
-     "from": 262,
-     "to": 269
+     "from": 257,
+     "to": 265
     },
     {
      "text": "centuries,",
-     "from": 272,
-     "to": 301
+     "from": 267,
+     "to": 296
     },
     {
      "text": "people",
-     "from": 305,
-     "to": 310
+     "from": 301,
+     "to": 305
     },
     {
      "text": "consulted",
-     "from": 317,
-     "to": 329
+     "from": 313,
+     "to": 325
     },
     {
      "text": "it",
-     "from": 332,
-     "to": 334
+     "from": 327,
+     "to": 329
     },
     {
      "text": "about",
-     "from": 337,
-     "to": 344
+     "from": 332,
+     "to": 339
     },
     {
      "text": "the",
-     "from": 345,
-     "to": 346
+     "from": 340,
+     "to": 341
     },
     {
      "text": "future.",
-     "from": 349,
-     "to": 373
+     "from": 344,
+     "to": 368
     }
    ]
   },
   {
    "n": 3,
    "src": "local/voice/guide-wangbi/03.mp3",
-   "from": 394,
-   "to": 478,
+   "from": 389,
+   "to": 473,
    "words": [
     {
      "text": "Wang",
-     "from": 394,
-     "to": 401
+     "from": 389,
+     "to": 396
     },
     {
      "text": "Bi",
-     "from": 403,
-     "to": 413
+     "from": 398,
+     "to": 408
     },
     {
      "text": "offered",
-     "from": 415,
-     "to": 425
+     "from": 410,
+     "to": 420
     },
     {
      "text": "some",
-     "from": 427,
-     "to": 430
+     "from": 422,
+     "to": 425
     },
     {
      "text": "reading",
-     "from": 432,
-     "to": 442
+     "from": 427,
+     "to": 437
     },
     {
      "text": "instructions.",
-     "from": 444,
-     "to": 478
+     "from": 439,
+     "to": 473
     }
    ]
   }
  ],
  "marks": {
   "b1": 42,
-  "b2": 262,
-  "b3": 394,
-  "grid": 92,
-  "years": 160,
-  "future": 349,
-  "wangbi": 394
+  "b2": 257,
+  "b3": 389,
+  "grid": 90,
+  "years": 157,
+  "future": 344,
+  "wangbi": 389
  }
 }

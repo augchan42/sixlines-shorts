@@ -13,8 +13,8 @@
  },
  "narration": [
   {
-   "text": "The I Ching. Sixty-four situations, with roots about three thousand years old.",
-   "picture": "The device lights up: THE I CHING. Sixty-four hexagrams tile in.",
+   "text": "The I-Ching. Sixty-four situations, with roots about three thousand years old.",
+   "picture": "The device lights up: THE I-CHING. Sixty-four hexagrams tile in.",
    "source": "history; the Ten Wings are later (Stanford Encyclopedia, 'Chinese Philosophy of Change')"
   },
   {
@@ -99,5 +99,6 @@
    "word": "Wang",
    "what": "his name card"
   }
- ]
+ ],
+ "spelling": "I-Ching, hyphenated, in this short's narration and on screen (the user, 2026-09-30: 'can we use I-Ching instead of I Ching')."
 }

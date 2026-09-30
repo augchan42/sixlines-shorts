@@ -104,7 +104,7 @@ const Hexagram: React.FC<{ lines: number[]; x: number; y: number; w: number; c: 
 // Line 1: the 64, one after another, each flashing white as it lands; the age on a label.
 const Book: React.FC<{ f: number; m: Record<string, number> }> = ({ f, m }) => (
   <>
-    <Title f={f} at={m.b1} text="THE I CHING" />
+    <Title f={f} at={m.b1} text="THE I-CHING" />
     <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
       {(table as { lines: number[] }[]).map((h, i) => {
         const at = m.grid + i * 0.6;
