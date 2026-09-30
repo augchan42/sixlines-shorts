@@ -1,0 +1,23 @@
+{
+ "short": "out/series/03-zhun/short.mp4",
+ "shortSha256": "c2f54fe01979b4094f695fe3253e965b00699d2ef525debd000d8214e2ea735b",
+ "props": "series/bookend/03.json",
+ "sfx": {
+  "out": {
+   "file": "local/sfx/dragon-studio-tv-static-323620.mp3",
+   "sha256": "130ea6be12981ba75f4ba45890332a40a9ea45b30b53ecc296b1c3f4900a64af"
+  }
+ },
+ "seconds": 31.36,
+ "level": {
+  "gain": 0.1,
+  "limiter": null,
+  "after": {
+   "lufs": -13.75,
+   "phoneLufs": -16.53,
+   "dbtp": -3.11
+  }
+ },
+ "commit": "53578fad726c52576de25809d2caf8b3ec0fb680",
+ "clean": false
+}

@@ -1,0 +1,23 @@
+{
+ "short": "out/series/06-song/short.mp4",
+ "shortSha256": "780a1619e9093bc403b5a6477404e62dbaa5dc9658761c7f9d7e283732c5c310",
+ "props": "series/bookend/06.json",
+ "sfx": {
+  "out": {
+   "file": "local/sfx/dragon-studio-tv-static-323620.mp3",
+   "sha256": "130ea6be12981ba75f4ba45890332a40a9ea45b30b53ecc296b1c3f4900a64af"
+  }
+ },
+ "seconds": 36.245333,
+ "level": {
+  "gain": 0,
+  "limiter": null,
+  "after": {
+   "lufs": -13.76,
+   "phoneLufs": -16.59,
+   "dbtp": -3.02
+  }
+ },
+ "commit": "53578fad726c52576de25809d2caf8b3ec0fb680",
+ "clean": false
+}

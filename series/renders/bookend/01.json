@@ -1,0 +1,23 @@
+{
+ "short": "out/series/01-qian/short.mp4",
+ "shortSha256": "a4676ffe5ea4b14aec21a81b925d1c43af46458702afff432d7036229d4ef1e9",
+ "props": "series/bookend/01.json",
+ "sfx": {
+  "out": {
+   "file": "local/sfx/dragon-studio-tv-static-323620.mp3",
+   "sha256": "130ea6be12981ba75f4ba45890332a40a9ea45b30b53ecc296b1c3f4900a64af"
+  }
+ },
+ "seconds": 29.290667,
+ "level": {
+  "gain": 0,
+  "limiter": null,
+  "after": {
+   "lufs": -13.62,
+   "phoneLufs": -16.57,
+   "dbtp": -4.4
+  }
+ },
+ "commit": "53578fad726c52576de25809d2caf8b3ec0fb680",
+ "clean": false
+}
