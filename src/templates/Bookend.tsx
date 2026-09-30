@@ -13,7 +13,6 @@ export type BookendProps = {
   frames: number; // its length
   hook: string;
   label: string; // "2 · 坤 KŪN · THE RECEPTIVE"
-  lines: (0 | 1)[]; // bottom first
   tagline: string;
   site: string;
   inAt: number; // frame the flicker into the short starts
@@ -34,17 +33,12 @@ const serif = `"${GOUDY}", serif`;
 const IN = [true, false, false, false, true, true, true];
 const OUT = [false, true, true, true, false, false, false];
 
-const Hexagram: React.FC<{ lines: (0 | 1)[]; top: number }> = ({ lines, top }) => (
-  <svg width={1080} height={560} style={{ position: "absolute", left: 0, top }}>
-    {lines.map((l, i) => {
-      const y = 500 - i * 88 - (i >= 3 ? 28 : 0);
-      return l ? <rect key={i} x={270} y={y} width={540} height={46} fill={INK} /> : (
-        <g key={i}>
-          <rect x={270} y={y} width={230} height={46} fill={INK} />
-          <rect x={580} y={y} width={230} height={46} fill={INK} />
-        </g>
-      );
-    })}
+// Six yang bars where the green card's are (measured on Kun's frame 898): x 231-847, 51 high,
+// tops 666, 746, 825 and 964, 1044, 1123.
+const BAR_TOPS = [666, 746, 825, 964, 1044, 1123];
+const Bars: React.FC = () => (
+  <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
+    {BAR_TOPS.map((y) => <rect key={y} x={231} y={y} width={617} height={51} fill={INK} />)}
   </svg>
 );
 
@@ -55,18 +49,23 @@ const Open: React.FC<Pick<BookendProps, "hook" | "label">> = ({ hook, label }) =
   </AbsoluteFill>
 );
 
-const Close: React.FC<Pick<BookendProps, "lines" | "tagline" | "site">> = ({ lines, tagline, site }) => (
+// Matched to the green card: SIX caps at y 367-461, LINES 524-617; tagline caps 1249-1288
+// (EndCard3D's top 1234, 58 px); site 1354-1405.
+const Close: React.FC<Pick<BookendProps, "tagline" | "site">> = ({ tagline, site }) => (
   <AbsoluteFill style={{ background: IVORY, color: INK, fontFamily: serif }}>
-    <div style={{ position: "absolute", top: 300, left: 0, right: 0, textAlign: "center", fontSize: 150, lineHeight: 1.05, letterSpacing: 4 }}>
-      SIX
-      <br />
-      LINES
+    <div style={{ position: "absolute", top: TITLE_TOP, left: 0, right: 0, textAlign: "center", fontSize: TITLE_SIZE, lineHeight: "157px", letterSpacing: TITLE_SPACING, whiteSpace: "pre" }}>
+      {"SIX\nLINES"}
     </div>
-    <Hexagram lines={lines} top={640} />
-    <div style={{ position: "absolute", top: 1250, left: 0, right: 0, textAlign: "center", fontSize: 58, letterSpacing: 3 }}>{tagline}</div>
-    <div style={{ position: "absolute", top: 1360, left: 0, right: 0, textAlign: "center", fontSize: 52 }}>{site}</div>
+    <Bars />
+    <div style={{ position: "absolute", top: 1234, left: 0, right: 0, textAlign: "center", fontSize: 58, lineHeight: "70px" }}>{tagline}</div>
+    <div style={{ position: "absolute", top: SITE_TOP, left: 0, right: 0, textAlign: "center", fontSize: SITE_SIZE, lineHeight: 1 }}>{site}</div>
   </AbsoluteFill>
 );
+const TITLE_TOP = 337;
+const TITLE_SIZE = 136;
+const TITLE_SPACING = -3;
+const SITE_TOP = 1346;
+const SITE_SIZE = 60;
 
 export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
 
@@ -79,7 +78,7 @@ export const Bookend: React.FC<BookendProps> = (p) => {
     <AbsoluteFill style={{ background: "black" }}>
       <OffthreadVideo src={staticFile(p.src)} endAt={p.frames} />
       {open && <Open hook={p.hook} label={p.label} />}
-      {close && <Close lines={p.lines} tagline={p.tagline} site={p.site} />}
+      {close && <Close tagline={p.tagline} site={p.site} />}
       {p.sfx?.in && (
         <Sequence from={p.inAt} layout="none">
           <Audio src={staticFile(p.sfx.in)} volume={p.sfx.inVolume ?? 0.6} />
