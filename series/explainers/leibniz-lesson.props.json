@@ -71,7 +71,7 @@
   },
   {
    "q": "READ IT AS A NUMBER",
-   "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
+   "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nTHE BOTTOM LINE IS THE FIRST DIGIT.",
    "show": {
     "diagram": {
      "kind": "bits",
@@ -79,7 +79,7 @@
      "weights": true,
      "fadePlate": true
     },
-    "hold": 5
+    "hold": 6
    }
   },
   {

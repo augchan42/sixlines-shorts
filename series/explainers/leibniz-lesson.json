@@ -106,7 +106,7 @@
    "pages": [
     {
      "q": "READ IT AS A NUMBER",
-     "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
+     "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nTHE BOTTOM LINE IS THE FIRST DIGIT.",
      "show": {
       "diagram": {
        "kind": "bits",
@@ -114,8 +114,9 @@
        "weights": true,
        "fadePlate": true
       },
-      "hold": 5
-     }
+      "hold": 6
+     },
+     "why": "The user, 2026-09-30, on the first cut: the weights beside the lines (x1 at the top to x32 at the bottom) ran against 'read from the bottom up'. Now the bits are written out in reading order with their place values under them."
     },
     {
      "q": "COUNT THE RING",

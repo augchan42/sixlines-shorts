@@ -124,33 +124,54 @@ const FlatHex: React.FC<{ lines: (0 | 1)[]; x: number; y: number; w: number; rot
   );
 };
 
-// One hexagram lifted out large: its bits on the left, and with `weights` each line's worth on
-// the right, 32 at the bottom to 1 at the top (Leibniz's reading). It rises in over `rise`.
-const LIFT = { x: 500, y: 1080, w: 380 };
-const BigHex: React.FC<{ v: number; sec: number; from: number; weights?: boolean }> = ({ v, sec, from, weights }) => {
+const fade = (sec: number, from: number, len = 0.6) => interpolate(sec, [from, from + len], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+const Label: React.FC<{ top: number; text: string; opacity: number; colour?: string; size?: number }> = ({ top, text, opacity, colour = PHOSPHOR, size = 40 }) => (
+  <div style={{ position: "absolute", left: 0, right: 0, top, textAlign: "center", opacity, fontFamily: fonts.pixel, fontSize: size, color: colour, textShadow: colour === AMBER ? `0 0 12px ${AMBER}` : glow }}>
+    {text}
+  </div>
+);
+
+// One hexagram lifted out large, centred, its bits beside its lines. With `weights` (Leibniz's
+// reading) the bits are then written out in a row as they are read, bottom line first, one by
+// one, each with its worth under it: 32 16 8 4 2 1, as place values in an ordinary number.
+const LIFT = { x: 540, y: 1000, w: 380 };
+const PLACE = { top: 1370, step: 110 };
+const BigHex: React.FC<{ v: number; sec: number; from: number; weights?: boolean; name?: { zh: string; name: string } }> = ({ v, sec, from, weights, name }) => {
   const k = interpolate(sec, [from, from + 1.2], [0, 1], ease);
-  const labels = interpolate(sec, [from + 1.2, from + 1.8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const labels = fade(sec, from + 1.2);
   const gap = LIFT.w * 0.17;
   const y = LIFT.y + 60 * (1 - k);
   const lineY = (i: number) => y + (2.5 - i) * gap;
+  const lines = linesOf(v);
+  const read = (i: number) => fade(sec, from + 2 + i * 0.4, 0.3);
+  const total = fade(sec, from + 2 + 6 * 0.4 + 0.3);
+  const left = LIFT.x - (6 * PLACE.step + 200) / 2;
+  const amber = { fontFamily: fonts.pixel, color: AMBER, textShadow: `0 0 10px ${AMBER}` };
   return (
     <>
       <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
         <g strokeWidth={3} style={{ filter: `drop-shadow(0 0 8px ${AMBER})` }}>
-          <FlatHex lines={linesOf(v)} x={LIFT.x} y={y} w={LIFT.w} colour={AMBER} opacity={k} />
+          <FlatHex lines={lines} x={LIFT.x} y={y} w={LIFT.w} colour={AMBER} opacity={k} />
         </g>
       </svg>
-      {linesOf(v).map((l, i) => (
-        <div key={i} style={{ position: "absolute", top: lineY(i) - 30, left: 0, width: LIFT.x - LIFT.w / 2 - 50, textAlign: "right", opacity: labels, fontFamily: fonts.pixel, fontSize: 48, color: AMBER, textShadow: `0 0 10px ${AMBER}` }}>
+      {lines.map((l, i) => (
+        <div key={i} style={{ position: "absolute", top: lineY(i) - 30, left: 0, width: LIFT.x - LIFT.w / 2 - 40, textAlign: "right", opacity: labels, fontSize: 48, ...amber }}>
           {l}
         </div>
       ))}
-      {weights &&
-        linesOf(v).map((_, i) => (
-          <div key={i} style={{ position: "absolute", top: lineY(i) - 26, left: LIFT.x + LIFT.w / 2 + 50, opacity: labels, fontFamily: fonts.pixel, fontSize: 40, color: PHOSPHOR, textShadow: glow }}>
-            {`x${2 ** (5 - i)}`}
-          </div>
-        ))}
+      {weights && (
+        <>
+          {lines.map((l, i) => (
+            <div key={i} style={{ position: "absolute", top: PLACE.top, left: left + i * PLACE.step, width: PLACE.step, textAlign: "center", opacity: read(i) }}>
+              <div style={{ fontSize: 84, ...amber }}>{l}</div>
+              <div style={{ fontFamily: fonts.pixel, fontSize: 34, color: PHOSPHOR, textShadow: glow, marginTop: 6 }}>{2 ** (5 - i)}</div>
+            </div>
+          ))}
+          <div style={{ position: "absolute", top: PLACE.top, left: left + 6 * PLACE.step + 30, opacity: total, fontSize: 84, ...amber }}>{`= ${v}`}</div>
+          {name && <Label top={1560} text={`${name.zh} ${name.name.toUpperCase()}`} opacity={total} />}
+        </>
+      )}
     </>
   );
 };
@@ -201,12 +222,6 @@ const Tree: React.FC<{ sec: number; start: number; stage: number; morph?: number
 };
 
 const TRIGRAM: Record<number, [string, string]> = { 0: ["地", "EARTH"], 1: ["山", "MOUNTAIN"], 2: ["水", "WATER"], 3: ["風", "WIND"], 4: ["雷", "THUNDER"], 5: ["火", "FIRE"], 6: ["澤", "LAKE"], 7: ["天", "HEAVEN"] };
-const Label: React.FC<{ top: number; text: string; opacity: number; colour?: string; size?: number }> = ({ top, text, opacity, colour = PHOSPHOR, size = 40 }) => (
-  <div style={{ position: "absolute", left: 0, right: 0, top, textAlign: "center", opacity, fontFamily: fonts.pixel, fontSize: size, color: colour, textShadow: colour === AMBER ? `0 0 12px ${AMBER}` : glow }}>
-    {text}
-  </div>
-);
-
 export type DiagramShow = {
   // "count": fly the ring while the counter runs; "overview": the whole ring from above, turning
   // slowly; "bits": one hexagram lifted out (with `fadePlate`, the scan fades to the ring first);
@@ -227,7 +242,6 @@ export type DiagramShow = {
   col?: number;
 };
 
-const fade = (sec: number, from: number, len = 0.6) => interpolate(sec, [from, from + len], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
 export const DiagramPage: React.FC<{ d: DiagramShow; sec: number; secs: number; plate?: string; names?: Record<string, { zh: string; name: string }> }> = ({ d, sec, secs, plate, names }) => {
   const kind = d.kind ?? "count";
@@ -254,8 +268,8 @@ export const DiagramPage: React.FC<{ d: DiagramShow; sec: number; secs: number; 
       <>
         {d.fadePlate && plate && <Plate src={plate} sec={0} secs={1} zoom={[1, 1]} opacity={1 - fade(sec, 0.2, 1.2)} />}
         <Wireframe cam={turning} ring={(x) => (x === d.v ? [AMBER, 1] : [PHOSPHOR, 1])} opacity={0.3 * fade(sec, d.fadePlate ? 0.8 : 0, 1)} />
-        <BigHex v={d.v} sec={sec} from={from} weights={d.weights} />
-        {sec >= from + 2.2 && <Counter v={d.v} name={names?.[d.v]} />}
+        <BigHex v={d.v} sec={sec} from={from} weights={d.weights} name={names?.[d.v]} />
+        {!d.weights && sec >= from + 2.2 && <Counter v={d.v} name={names?.[d.v]} />}
       </>
     );
   }
