@@ -65,6 +65,7 @@ SKY = [(0.0, "#e2782e"), (0.07, "#b8423c"), (0.17, "#4a1f45"), (0.32, "#160e26")
 INK = (0.02, 0.01, 0.02)
 HORIZON = -3.0
 TREAT = "flat"  # set from --treatment in main()
+TINT = False  # urizen.py: let coloured lights tint the toon bands (neon rims)
 FAR = 12.0  # the sky's stars and the sun sit this far back
 
 # The Dragon constellation across the summer sky at dusk, tail up and left, horn down and right
@@ -255,6 +256,19 @@ def toon(name, stops, rim=None):
     nt.links.new(rgb.outputs["Color"], ramp.inputs["Fac"])
     nt.links.new(rgb.outputs["Color"], bw.inputs[0])
     colour = shade_marks(nt, ramp.outputs["Color"], bw.outputs[0])
+    if TINT:
+        # The ramp keeps only brightness; multiply by the light's hue (its colour over its
+        # brightness) so a cyan rim reads cyan.
+        hue = nt.nodes.new("ShaderNodeVectorMath")
+        hue.operation = "DIVIDE"
+        nt.links.new(rgb.outputs["Color"], hue.inputs[0])
+        floor = math_node(nt, "MAXIMUM", bw.outputs[0], 0.02)
+        nt.links.new(floor, hue.inputs[1])
+        tinted = nt.nodes.new("ShaderNodeVectorMath")
+        tinted.operation = "MULTIPLY"
+        nt.links.new(colour, tinted.inputs[0])
+        nt.links.new(hue.outputs[0], tinted.inputs[1])
+        colour = tinted.outputs[0]
     if TREAT in ("airbrush", "cassaday") and rim:
         lw = nt.nodes.new("ShaderNodeLayerWeight")
         lw.inputs["Blend"].default_value = 0.25

@@ -72,3 +72,19 @@ First render: the sky and clouds work; the mesas and floor need stronger facets 
 Why faceted is the Pareto choice for Blender: it is geometry and light, which Blender renders
 exactly, in seconds (EEVEE), and it animates cleanly (camera moves, rigs, shape keys); the look is
 deliberately stylised, so nothing is measured against a hand. Crude modelling reads as style.
+
+## Urizen's talking head (blender/urizen.py)
+
+The user: "let's try your best shot at ... Blake or Urizen's talking head". A faceted head built in
+code (an icosphere shaped into brow, sunken eyes, nose, cheekbones, chin; a mouth slit; decimated;
+a shape key 'open' turns the jaw about a hinge), white hair, beard, moustache and brows as
+triangle shards in three tones, blown to the left as in The Ancient of Days. The beard is its own
+object pivoting on the jaw hinge, so it moves with the jaw.
+
+The user on it: "the Urizen head is spectacular"; "the background can be neon and mostly black
+with some polygon lines ... do it minimal. Don't try to force things. Do what Blender's good at";
+then, of the eyeballs: "with eyes looks [wrong]. Less is more." Eyeballs removed; the sockets
+under the brow carry the look. The neon backdrop: black, Blake's sun as an amber 18-sided outline,
+a faint cyan wire geodesic sphere; a warm key, a cyan rim and a magenta edge; metal.TINT lets the
+light's hue through the toon bands so the rims read as colour. The dusk backdrop is kept as
+--backdrop dusk.
