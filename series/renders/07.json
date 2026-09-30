@@ -1,10 +1,22 @@
 {
  "hexagram": 7,
- "rendered": "2026-09-27T15:33:14.376Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 30.058667,
- "shareKbps": 5993,
+ "rendered": "2026-09-30T04:17:17.760Z",
+ "commit": "908b24f0a9b691a195ab687509b812d57275c9e0",
+ "clean": true,
+ "seconds": 32.042667,
+ "shareKbps": 5614,
+ "loudness": {
+  "measured": {
+   "input_i": "-16.33",
+   "input_tp": "-1.24"
+  },
+  "limiter": -4.3,
+  "target": -14,
+  "output": {
+   "i": "-13.75",
+   "tp": "-1.82"
+  }
+ },
  "props": {
   "hexagram": {
    "number": 7,
@@ -38,7 +50,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Lead upright,\nthe ranks fall in.",
+   "text": "Be the line\nthey form on.",
    "scene": "acts",
    "clip": "assets/3d/acts-7-90bpm-12b-f6hktf.mp4"
   },
@@ -59,7 +71,7 @@
   "assets/3d/acts-7-90bpm-12b-f6hktf.mp4": "0087b65c94fdc0651a348269ea5756ae853871531337a27ed805875d981d8e0a",
   "assets/yilin/stipple-7-50.webp": "241edc92d9e37dcc22741138a0d5bad405e54356f24a262e262ffdb9e4ba7821",
   "assets/yilin/stipple-7-22.webp": "87b43c5e1d4157f0458b50a16fa74cd3e6ec8ae9aa1a2b61899cd79725ad4f81",
-  "out/series/07-shi/short.mp4": "e36cb704fd7d3a64f0bad4cf9f0be89dc46a50251f7223351ad9a6e78ddfda13",
-  "out/series/07-shi/share.mp4": "bcfc9367089f62323727ea42e9f88d555eaf32898b2f2e91687e45a5720adc85"
+  "out/series/07-shi/short.mp4": "1550420eee4eb3ad1846b3181b8e2254cea8a37c92eb597b3b2a7895ce9bae1e",
+  "out/series/07-shi/share.mp4": "d8923a34f4dbd3d5c8d64043eefa915f5e4354baef169fbda123c4e98979f5f3"
  }
 }

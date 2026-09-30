@@ -1,10 +1,22 @@
 {
  "hexagram": 17,
- "rendered": "2026-09-27T16:04:42.862Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 22.549333,
- "shareKbps": 8000,
+ "rendered": "2026-09-30T04:18:46.337Z",
+ "commit": "908b24f0a9b691a195ab687509b812d57275c9e0",
+ "clean": true,
+ "seconds": 24.042667,
+ "shareKbps": 7525,
+ "loudness": {
+  "measured": {
+   "input_i": "-17.56",
+   "input_tp": "-0.06"
+  },
+  "limiter": -5.6,
+  "target": -14.6,
+  "output": {
+   "i": "-14.43",
+   "tp": "-1.61"
+  }
+ },
  "props": {
   "hexagram": {
    "number": 17,
@@ -27,7 +39,7 @@
   "drop": 12,
   "hook": "Still at your desk after dark?",
   "meaning": [
-   "Following says:\ngo with the day.",
+   "Following says:\nfollow the day.",
    "Day’s done.\nGo in, rest."
   ],
   "question": "When will you\nstop today?",
@@ -38,7 +50,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "To be followed,\nfollow first.",
+   "text": "Follow the time,\nnot what you want.",
    "trigrams": [
     {
      "zh": "澤",
@@ -53,7 +65,7 @@
     "mark": [
      0
     ],
-    "finding": "THE STRONG GOES BELOW THE WEAK."
+    "finding": "LINE 1: NO FIXED TIE ABOVE.\nFREE TO FOLLOW THE TIME."
    }
   },
   "pace": "even",
@@ -72,7 +84,7 @@
   "assets/3d/endcard-snap-100110-9b-ref.mp4": "a55cf43dfcf44690581063535a2ab82cad65f6a4bd6ef520c73c3f00016c3573",
   "assets/yilin/stipple-17-60.webp": "64877f416186103e7a0c119b6ca4e947b736923deadb2f4f5900d3ddb880b733",
   "assets/yilin/stipple-17-63.webp": "8b47b493bb7d3dad96244450a4fa526538d467a62a02056536790473da000e24",
-  "out/series/17-sui/short.mp4": "fbd0ac491bef5668224144fa37a3cc7aa11122e7d2928bb88cacde851f47cd7d",
-  "out/series/17-sui/share.mp4": "3b73c4a1adaa9b7e28e52488609bd6263ca24226481aa4f80637671f400a66dc"
+  "out/series/17-sui/short.mp4": "65887a1b9920403e3378b4c9db7af1a44d6cc4ba7fcece55205e292537fe7f53",
+  "out/series/17-sui/share.mp4": "aaf59ffc6c95a323e324397847b2617a720953fb296753424bcc1e8db343c5b9"
  }
 }
