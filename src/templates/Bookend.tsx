@@ -1,5 +1,5 @@
 import { loadFont } from "@remotion/fonts";
-import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 
 // A finished short between two Six Lines cards, Goudy on ivory as on sixlines.day: the short's
 // hook set in Goudy, then a CRT flicker into the green terminal; at the end the green card
@@ -18,6 +18,9 @@ export type BookendProps = {
   inAt: number; // frame the flicker into the short starts
   outAt: number; // frame the flicker back to ivory starts
   tail: number; // frames the ivory card holds past the short
+  // "match": the close matched to the green card (default); "icon": the app icon's layout, the
+  // icon image itself (sixlines-ios AppIcon.png, copied to public/local/bookend/appicon.png).
+  close?: "match" | "icon";
   // Static under each flicker, cut into bursts on the frames the screen changes (BURSTS).
   // inFrom/outFrom: the second in the recording each flicker's slice starts at.
   sfx?: { in?: string; out?: string; inFrom?: number; outFrom?: number; inVolume?: number; outVolume?: number };
@@ -85,6 +88,17 @@ const Static: React.FC<{ src: string; at: number; from: number; volume: number }
   </>
 );
 
+// The icon at 1.205x, so its bars (x 256-767 on 1024) are as wide as the green card's (x 231-847);
+// its title caps start at y 330, its bars end at y 1294.
+const ICON_SCALE = 617 / 512;
+const IconClose: React.FC<Pick<BookendProps, "tagline" | "site">> = ({ tagline, site }) => (
+  <AbsoluteFill style={{ background: IVORY, color: INK, fontFamily: serif }}>
+    <Img src={staticFile("local/bookend/appicon.png")} style={{ position: "absolute", left: 231 - 256 * ICON_SCALE, top: 330 - 129 * ICON_SCALE, width: 1024 * ICON_SCALE }} />
+    <div style={{ position: "absolute", top: 1370, left: 0, right: 0, textAlign: "center", fontSize: 58, lineHeight: "70px" }}>{tagline}</div>
+    <div style={{ position: "absolute", top: 1476, left: 0, right: 0, textAlign: "center", fontSize: SITE_SIZE, lineHeight: 1 }}>{site}</div>
+  </AbsoluteFill>
+);
+
 export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
 
 export const Bookend: React.FC<BookendProps> = (p) => {
@@ -96,7 +110,7 @@ export const Bookend: React.FC<BookendProps> = (p) => {
     <AbsoluteFill style={{ background: "black" }}>
       <OffthreadVideo src={staticFile(p.src)} endAt={p.frames} />
       {open && <Open hook={p.hook} label={p.label} />}
-      {close && <Close tagline={p.tagline} site={p.site} />}
+      {close && (p.close === "icon" ? <IconClose tagline={p.tagline} site={p.site} /> : <Close tagline={p.tagline} site={p.site} />)}
       {p.sfx?.in && <Static src={p.sfx.in} at={p.inAt} from={p.sfx.inFrom ?? 0} volume={p.sfx.inVolume ?? 0.6} />}
       {p.sfx?.out && <Static src={p.sfx.out} at={p.outAt} from={p.sfx.outFrom ?? 0} volume={p.sfx.outVolume ?? 0.6} />}
     </AbsoluteFill>

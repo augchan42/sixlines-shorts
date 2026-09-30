@@ -1,0 +1,19 @@
+{
+ "about": "Smoke test of the Goudy-on-ivory bookends (src/templates/Bookend.tsx) on Kun, week 1's first post. The short is out/series/02-kun/short.mp4 as rendered, copied to public/local/bookend/ by scripts/bookend.mjs. The flicker in lands as the hook turns bold (1.5 s); the flicker out comes once the end card's site line is up. Variant: the close in the app icon's layout (the user, 2026-09-30: 'can we try just replacing with the appicon layout directly and see how it looks?').",
+ "src": "local/bookend/02-kun.mp4",
+ "frames": 961,
+ "hook": "Tired of always having to lead?",
+ "label": "2 · 坤 KŪN · THE RECEPTIVE",
+ "tagline": "REVEAL THE MOMENT",
+ "site": "sixlines.day",
+ "inAt": 36,
+ "outAt": 900,
+ "tail": 30,
+ "sfx": {
+  "out": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "outFrom": 4.0,
+  "outVolume": 0.35
+ },
+ "sfxNote": "Dragon Studio, 'TV Static', Pixabay sound effect 323620 (Pixabay Content License), downloaded by the user 2026-09-30 ('use this ... and chop that'), after 'TV Shutdown' (386167) and 'TV glitch' (6245). 8.1 s of steady hiss at -8.8 LUFS, none below 250 Hz; only on the flicker out ('we only need static at the end'), a slice from 4.0 s at 0.35, heard only for two frames at each screen change.",
+ "close": "icon"
+}

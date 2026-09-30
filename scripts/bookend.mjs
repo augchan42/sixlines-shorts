@@ -1,5 +1,5 @@
 // Renders a short between its Goudy-on-ivory cards (src/templates/Bookend.tsx):
-//   node scripts/bookend.mjs 02
+//   node scripts/bookend.mjs 02        (or a variant, 02-icon: series/bookend/02-icon.json)
 // Reads series/bookend/NN.json; the short is out/series/NN-*/short.mp4 as rendered, copied to
 // public/local/bookend/ (gitignored). Writes out/bookend/NN/ (bookend.mp4, share.mp4,
 // manifest.json) and records the manifest in series/renders/bookend/NN.json. The sound is set to
@@ -18,7 +18,7 @@ const sha256 = (f) => new Promise((ok) => { const h = createHash("sha256"); crea
 
 const propsFile = path.join(root, "series/bookend", `${nn}.json`);
 const props = JSON.parse(readFileSync(propsFile, "utf8"));
-const dirName = readdirSync(path.join(root, "out/series")).find((d) => d.startsWith(`${nn}-`));
+const dirName = readdirSync(path.join(root, "out/series")).find((d) => d.startsWith(`${nn.split("-")[0]}-`));
 const short = path.join(root, "out/series", dirName, "short.mp4");
 mkdirSync(path.dirname(path.join(root, "public", props.src)), { recursive: true });
 copyFileSync(short, path.join(root, "public", props.src));
