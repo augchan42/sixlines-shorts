@@ -134,7 +134,8 @@ def measure(path, start=0.0, dur=None, phone=False):
         "roughness_asper": round(rough, 3),
         "fluct_hz": round(fluct, 2) if fluct else None,
         "level_swing": round(depth, 2),
-        "tnr_db": round(float(t_tnr), 1),
+        # mosqito gives one value per tone when a sound has several (a guqin note, 2026-09-30); the largest.
+        "tnr_db": round(float(np.max(np.atleast_1d(t_tnr))), 1),
         "prominent_tones_hz": tones,
     }
 
