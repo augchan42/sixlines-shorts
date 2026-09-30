@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { BIT_TIMES, bitsOf, diagramCues, linesOf, ringAngle, squareCell, treeNode, value } from "../src/lib/diagram.ts";
+import { BIT_TIMES, TREE_STAGE, bitsOf, diagramCues, linesOf, ringAngle, squareCell, treeNode, value } from "../src/lib/diagram.ts";
 
 // The order of the diagram Bouvet sent Leibniz (docs/superpowers/specs/2026-09-30-leibniz-diagram-design.md),
 // checked against the woodcut and docs/research/2026-09-30-leibniz-diagram.md.
@@ -70,12 +70,15 @@ test("a count clicks once per step, after a sweep and a warble as the camera arr
   assert.deepEqual(cues.filter((c) => c.sound !== "relay").map((c) => c.sound), ["sweep", "warble"]);
 });
 
-test("Bi's page clicks as each digit is written; the tree clicks per stage", () => {
+test("Bi's page clicks as each digit is written; the tree chatters as it grows", () => {
   const bits = diagramCues({ kind: "bits", v: 2, weights: true, fadePlate: true }).filter((c) => c.sound === "relay");
   assert.equal(bits.length, 6);
   assert.deepEqual(bits.map((c) => c.at), BIT_TIMES(1.4));
   assert.equal(diagramCues({ kind: "bits", v: 41 }).filter((c) => c.sound === "relay").length, 0);
-  assert.equal(diagramCues({ kind: "tree", at: 1, morph: 7.5 }).filter((c) => c.sound === "relay").length, 7);
+  // The tree grows under a relay bank's chatter, from its first stage to its last.
+  const tree = diagramCues({ kind: "tree", at: 1, morph: 7.5 });
+  assert.equal(tree.filter((c) => c.sound === "relay").length, 0);
+  assert.deepEqual(tree.find((c) => c.sound === "chatter"), { at: 1, sound: "chatter", secs: 6 * TREE_STAGE + 0.5 });
   // A tree already grown (the next page) makes no sound.
   assert.equal(diagramCues({ kind: "tree", at: -10, dim: 0.35 }).length, 0);
 });

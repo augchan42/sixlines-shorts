@@ -24,11 +24,11 @@ export const treeNode = (depth: number, k: number): Lines => linesOf(k).slice(6 
 
 // When the drawings happen, in seconds from the page's start, and the machine sounds that go with
 // them (src/scenes/Diagram.tsx draws on the same times): a sweep as the ring or the tree's row
-// appears, a warble as the camera arrives, a relay's click at each step of a count, each digit
-// written and each stage of the tree.
+// appears, a warble as the camera arrives, a relay's click at each step of a count and each digit
+// written, and a relay bank's chatter while the tree grows.
 export const BIT_TIMES = (from: number) => [0, 1, 2, 3, 4, 5].map((i) => from + 2 + i * 0.4);
 export const TREE_STAGE = 0.9;
-export type Cue = { at: number; sound: "relay" | "sweep" | "warble" };
+export type Cue = { at: number; sound: "relay" | "sweep" | "warble" | "chatter"; secs?: number };
 type CueShow = { kind?: string; count?: [number, number]; at?: number; secs?: number; weights?: boolean; fadePlate?: boolean; morph?: number };
 export const diagramCues = (d: CueShow): Cue[] => {
   const kind = d.kind ?? "count";
@@ -44,8 +44,9 @@ export const diagramCues = (d: CueShow): Cue[] => {
   if (kind === "bits") return d.weights ? [...(d.fadePlate ? [{ at: 0.4, sound: "sweep" } as Cue] : []), ...BIT_TIMES(d.fadePlate ? 1.4 : 0.2).map((at): Cue => ({ at, sound: "relay" }))] : [];
   if (kind === "tree") {
     const start = d.at ?? 1;
-    const stages = [0, 1, 2, 3, 4, 5, 6].map((s) => start + s * TREE_STAGE).filter((t) => t >= 0);
-    return [...stages.map((at): Cue => ({ at, sound: "relay" })), ...(d.morph !== undefined ? [{ at: d.morph, sound: "sweep" } as Cue] : [])];
+    // A tree already grown when the page opens stays quiet.
+    if (start < 0) return [];
+    return [{ at: start, sound: "chatter", secs: 6 * TREE_STAGE + 0.5 }, ...(d.morph !== undefined ? [{ at: d.morph, sound: "sweep" } as Cue] : [])];
   }
   if (kind === "overview") return [{ at: 0.2, sound: "sweep" }];
   if (kind === "square") return [{ at: 0.3, sound: "sweep" }, { at: (d.at ?? 3) + 5.5, sound: "warble" }];

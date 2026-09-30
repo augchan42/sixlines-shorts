@@ -372,10 +372,11 @@ export const Lesson: React.FC<LessonProps> = (p) => {
       {p.look === "flight" && p.sfx && (
         <>
           <Audio src={staticFile(p.sfx.hum)} loop volume={(f) => (p.mix?.hum ?? 0.55) * machines(f)} />
-          {/* The beacon, as in the Nostromo's landing: a steady beep that rises through a flight page. */}
+          {/* The beacon, as in the Nostromo's landing: a steady beep that rises through a flight page,
+              and through the Leibniz lesson's flights round the ring. */}
           {p.sfx.beacon &&
             pages.flatMap((x, k) =>
-              x.page.show?.approach
+              x.page.show?.approach || x.page.show?.diagram?.count
                 ? [
                     <Sequence key={`beacon-${k}`} from={x.from} durationInFrames={x.frames}>
                       <Audio src={staticFile(p.sfx!.beacon!)} volume={(f) => (p.mix?.beacon ?? 1) * interpolate(f, [0, FPS, x.frames - FPS, x.frames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
@@ -403,7 +404,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
                   ]
                 : []),
               // The Leibniz lesson's diagram: its sounds on the drawing's own times.
-              ...(x.page.show?.diagram ? diagramCues(x.page.show.diagram).map((c, i) => ({ key: `${c.sound}-${i}`, from: Math.round(c.at * FPS), frames: c.sound === "relay" ? 10 : Math.round(1.5 * FPS), src: s[c.sound], volume: p.mix?.[c.sound] ?? (c.sound === "relay" ? 0.8 : c.sound === "sweep" ? 0.7 : 0.5) })) : []),
+              ...(x.page.show?.diagram ? diagramCues(x.page.show.diagram).map((c, i) => ({ key: `${c.sound}-${i}`, from: Math.round(c.at * FPS), frames: c.secs ? Math.round(c.secs * FPS) : c.sound === "relay" ? 10 : Math.round(1.5 * FPS), src: s[c.sound], volume: p.mix?.[c.sound] ?? (c.sound === "relay" ? 0.8 : c.sound === "sweep" ? 0.7 : c.sound === "chatter" ? 0.7 : 0.5) })) : []),
               ...(x.page.show?.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
               ...(last && !x.page.chapter ? [{ key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 }] : []),
             ];
