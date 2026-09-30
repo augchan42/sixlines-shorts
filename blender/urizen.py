@@ -191,11 +191,13 @@ def hair_and_beard(coll, rnd):
         elif (u.z > 0.3 or (u.y > 0.25 and u.z > -0.35)) and len(hair) < 280:
             # Swept back and to the left, nearly level (the user: 'it should not be angled up.
             # It should be more horizontal'): little of the root's own upward direction.
-            d = Vector((u.x * 0.3, u.y * 0.4, u.z * 0.12)) + Vector((-1.0, 0.35, -0.12)) + jit(0.18)
-            hair.append((p - u * 0.04, d, rnd.uniform(0.5, 1.9), rnd.uniform(0.05, 0.1)))
+            d = Vector((u.x * 0.3, u.y * 0.4, u.z * 0.12)) + Vector((-1.0, 0.35, -0.2)) + jit(0.15)
+            hair.append((p - u * 0.04, d, rnd.uniform(0.8, 2.4), rnd.uniform(0.06, 0.11)))
         elif -1.02 < u.z < MOUTH_Z - 0.08 and u.y < 0.15 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2) and len(beard) < 170:
-            d = u * 0.45 + Vector((-0.3, -0.15, -1.0)) + jit(0.22)
-            beard.append((p - u * 0.03, d, rnd.uniform(0.7, 2.4), rnd.uniform(0.06, 0.13)))
+            # In the painting the beard streams left with the hair, one long mass in the wind,
+            # a little below level (the user, with the painting: "See the hair???").
+            d = Vector((u.x * 0.2, u.y * 0.2, u.z * 0.25)) + Vector((-1.0, 0.1, -0.3)) + jit(0.15)
+            beard.append((p - u * 0.03, d, rnd.uniform(0.9, 2.4), rnd.uniform(0.07, 0.14)))
         elif u.y < -0.75 and 0.07 < abs(u.x) < 0.34 and MOUTH_Z + 0.02 < u.z < MOUTH_Z + 0.12 and len(tache) < 40:
             side = math.copysign(1, u.x)
             tache.append((p, Vector((side, -0.4, -0.9)), rnd.uniform(0.45, 0.9), rnd.uniform(0.06, 0.1)))
@@ -205,7 +207,7 @@ def hair_and_beard(coll, rnd):
     hair_and_beard.blown = [(shards("hair", hair, coll, white, left * 0.9, seed=1), 0.22), (shards("crown", crown, coll, white, left * 0.4, seed=5), 0.08), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
     shards("brows", brows, coll, white, left * 0.2, seed=3)
     # The beard hangs from the jaw, so it turns about the jaw's hinge.
-    return shards("beard", beard, coll, white, left * 0.8 + Vector((0, 0, -0.2)), origin=HINGE, seed=4)
+    return shards("beard", beard, coll, white, left * 0.8 + Vector((0, 0, -0.1)), origin=HINGE, seed=4)
 
 
 def backdrop(glow, ink):
@@ -305,7 +307,7 @@ def main():
     cam.sensor_fit = "VERTICAL"
     cam.sensor_height = 36
     co = bpy.data.objects.new("camera", cam)
-    co.location = (0.25, -8.0, -0.45)
+    co.location = (-0.45, -8.0, -0.45)  # the head right of centre, the hair and beard streaming left
     co.rotation_euler = (math.radians(90), 0, 0)
     scene.collection.objects.link(co)
     scene.camera = co
