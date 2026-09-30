@@ -5,3 +5,7 @@ public/local/
 .DS_Store
 __pycache__/
 .playwright-mcp/
+
+# Keys (BUFFER_API_KEY); never committed.
+.env
+.env.*
