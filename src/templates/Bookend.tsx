@@ -18,8 +18,9 @@ export type BookendProps = {
   inAt: number; // frame the flicker into the short starts
   outAt: number; // frame the flicker back to ivory starts
   tail: number; // frames the ivory card holds past the short
-  // "match": the close matched to the green card (default); "icon": the app icon's layout, the
-  // icon image itself (sixlines-ios AppIcon.png, copied to public/local/bookend/appicon.png).
+  // "icon" (default): the app icon's layout, the icon image itself (sixlines-ios AppIcon.png,
+  // copied to public/local/bookend/appicon.png); the user, 2026-09-30: "I love it when it's
+  // flickering into the app icon version." "match": the close matched to the green card.
   close?: "match" | "icon";
   // Static under each flicker, cut into bursts on the frames the screen changes (BURSTS).
   // inFrom/outFrom: the second in the recording each flicker's slice starts at.
@@ -110,7 +111,7 @@ export const Bookend: React.FC<BookendProps> = (p) => {
     <AbsoluteFill style={{ background: "black" }}>
       <OffthreadVideo src={staticFile(p.src)} endAt={p.frames} />
       {open && <Open hook={p.hook} label={p.label} />}
-      {close && (p.close === "icon" ? <IconClose tagline={p.tagline} site={p.site} /> : <Close tagline={p.tagline} site={p.site} />)}
+      {close && (p.close !== "match" ? <IconClose tagline={p.tagline} site={p.site} /> : <Close tagline={p.tagline} site={p.site} />)}
       {p.sfx?.in && <Static src={p.sfx.in} at={p.inAt} from={p.sfx.inFrom ?? 0} volume={p.sfx.inVolume ?? 0.6} />}
       {p.sfx?.out && <Static src={p.sfx.out} at={p.outAt} from={p.sfx.outFrom ?? 0} volume={p.sfx.outVolume ?? 0.6} />}
     </AbsoluteFill>
