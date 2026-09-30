@@ -41,6 +41,13 @@ for (let n = lo; n <= hi; n++) {
     w.to = F(clock + a.character_end_times_seconds[i]);
   });
   if (w) words.push(w);
+  // A line's `say` is only for the voice: the captions show its `text`, word for word.
+  const { text, say } = spec.narration[n - 1];
+  if (say) {
+    const shown = text.split(/\s+/);
+    if (shown.length !== words.length) throw new Error(`line ${n}: text and say differ in word count`);
+    words.forEach((x, i) => (x.text = shown[i]));
+  }
   const end = clock + a.character_end_times_seconds.at(-1);
   const voice = spec.narration[n - 1].voice;
   if (spec.head && voice === spec.head.voice)
