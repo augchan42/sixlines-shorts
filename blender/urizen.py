@@ -65,6 +65,7 @@ def parse():
     p.add_argument("--shift-beard", type=int, default=0)
     p.add_argument("--beard-swing", type=float, default=0.0)
     p.add_argument("--beard-drop", type=float, help="how far below the hair's point the beard's point is")
+    p.add_argument("--fill", default="none", choices=["none", "tache", "cheek"], help="hair above the chin on the side that has none")
     p.add_argument("--beard-point", type=float, help="the beard's point across from the head's centre (x; negative is left as seen)")
     p.add_argument("--beard-left", type=float, help="units to move the beard left, overriding BEARD_LEFT")
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
@@ -352,7 +353,23 @@ def hair_locks(coll, rnd, style):
         even += [Vector((-u.x - 0.08, u.y, u.z - 0.08)).normalized() for u in high]
     beard = [(shape(u) - u * 0.03, u, TAIL + BEARD_TAIL + jit(0.06)) for u in even]
     tache = [(shape(u), u, shape(u) + Vector((-0.5, 0.1, -0.5)) + jit(0.05)) for u in spread(on_lip, 4)]
+    # Hair above the chin on the right side as seen (+x), which had none (the user: 'put a bit of
+    # hair above the chin to even things out as one side has no hair'). tache: the moustache
+    # mirrored, each half hanging down its own side; cheek: a few locks down the right cheek.
+    fill = None
+    if FILL == "tache":
+        # Own random numbers, so the other locks come out as before.
+        r2 = random.Random(5)
+        half = spread([u for u in on_lip if u.x < 0], 3)
+        fill = [(shape(u), u, shape(u) + Vector((math.copysign(0.45, u.x), -0.2, -0.5)) + Vector((r2.gauss(0, 0.05), 0, r2.gauss(0, 0.05)))) for u in half + [Vector((-u.x, u.y, u.z)) for u in half]]
+    elif FILL == "cheek":
+        cheek = [u for u in dirs if 0.45 < u.x < 0.8 and -0.8 < u.y < -0.4 and MOUTH_Z - 0.05 < u.z < 0.1]
+        tache += [(shape(u) - u * 0.03, u, shape(u) + Vector((-0.1, -0.1, -0.7)) + jit(0.05)) for u in spread(cheek, 3)]
     hair_and_beard.blown = [(locks("hair", hair, coll, white, style, rnd), 0.22), (locks("moustache", tache, coll, white, style, rnd), 0.05)]
+    if fill:
+        # The old moustache was built only to draw the same random numbers, so the beard is as before.
+        bpy.data.objects.remove(hair_and_beard.blown[1][0])
+        hair_and_beard.blown[1] = (locks("moustache", fill, coll, white, style, r2), 0.05)
     left = Vector((-1.0, 0.0, 0.0))
     shards("brows", [(shape(u), Vector((math.copysign(1, u.x), -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)) for u in brows], coll, white, left * 0.2, seed=3)
     return locks("beard", beard, coll, white, style, rnd, origin=HINGE)
@@ -433,7 +450,8 @@ def main():
         halo = neon(glow)
     # No eyeballs (the user: 'with eyes looks [wrong]. Less is more'): the sockets under the
     # brow are enough.
-    global SHIFT_BEARD
+    global SHIFT_BEARD, FILL
+    FILL = args.fill
     SHIFT_BEARD = args.shift_beard
     if args.beard_drop is not None:
         BEARD_TAIL.z = -args.beard_drop
@@ -522,6 +540,7 @@ BEARD_TURN = 0.0  # 40 lifted the right side up to the ear ('too much on one sid
 # The beard's point from the hair's: in front of the neck and lower, so the tail hangs down to the
 # left (what turning the beard counterclockwise was for) with the beard centred under the chin.
 BEARD_TAIL = Vector((0.2, -0.45, -0.7))
+FILL = "none"  # hair above the chin on the bare side (--fill)
 SHIFT_BEARD = 0  # beard roots moved from the right side to the left (--shift-beard)
 # Turning the beard about the hinge (above and behind the chin) carries its mass to the right as
 # seen; it moves back left by this much (the user: 'There's too much on one side. Shift it to the
