@@ -61,6 +61,7 @@ def parse():
     p.add_argument("--props")
     # ribbons: the user's pick, 2026-10-01 ("This is best so far"; of a scalp cap: "Cap is dumb").
     p.add_argument("--hair", default="ribbons", choices=["shards", "ribbons", "locks", "cards"])
+    p.add_argument("--beard-turn", type=float, help="degrees counterclockwise, overriding BEARD_TURN")
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
@@ -422,6 +423,7 @@ def main():
     # brow are enough.
     face, _ = head(ink)
     beard = hair_and_beard(ink, rnd) if args.hair == "shards" else hair_locks(ink, rnd, args.hair)
+    beard.rotation_euler.y = -(math.radians(args.beard_turn) if args.beard_turn is not None else BEARD_TURN)
     if args.wind:
         wind([*hair_and_beard.blown, (beard, 0.14)])
 
@@ -491,6 +493,10 @@ def wind(blown):
         d.strength = strength
         d.vertex_group = "tips"
 
+
+# The beard turned counterclockwise as seen, about the jaw's hinge, its tail lower (the user:
+# 'Rotate the beard counterclockwise'); the view looks along +y, so that is a turn about -y.
+BEARD_TURN = math.radians(10)
 
 OPEN = 0.7  # the jaw's widest, as a share of the shape key's (0.24 rad): a full turn reads as a yawn
 
