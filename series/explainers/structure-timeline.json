@@ -1,5 +1,5 @@
 {
- "about": "3,000 years in 40 seconds: structure short 7 (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). A terminal log, the year ticking over, one entry per page; Blender: a slow push along a corridor of dates (blender/searchlight.py). Queued overnight 2026-10-01. Draft 1, copy only.",
+ "about": "3,000 years in 40 seconds: structure short 7 (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). A terminal log, the year ticking over, one entry per page; Blender: a slow push along a corridor of dates (blender/searchlight.py). Queued overnight 2026-10-01. Draft 2: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-structure-timeline.md). Copy only; the Blender scene is a new style and gets a smoke test first.",
  "hexagram": 22,
  "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
  "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
@@ -23,48 +23,48 @@
   "why": "calm, 92 bpm, A# minor, from 8 s as on 4, 22, 26 and 41; no other structure short uses it"
  },
  "endcardRate": 0.75,
- "caption": "How the I Ching travelled: from legend to a 1950 English translation and a 1962 novel.",
+ "caption": "A Chinese book about change, from origin stories to a diagram sent to Leibniz and a novel plotted with its help. A few dates in the I Ching’s history; sixlines.day.",
  "chapters": [
   {
    "pages": [
     {
      "q": "HOW OLD IS THE I CHING",
-     "a": "PARTS ARE ABOUT 3,000 YEARS OLD.\nHERE IS HOW IT TRAVELLED.",
+     "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
      "show": {}
     },
     {
      "q": "LEGEND",
-     "a": "FU XI DRAWS THE EIGHT TRIGRAMS.\nNO DATE. A STORY.",
+     "a": "LEGEND CREDITS FU XI\nWITH EIGHT TRIGRAMS:\nTHREE-LINE PATTERNS.",
      "show": {}
     },
     {
-     "q": "C. 1000 BC",
-     "a": "TRADITION: KING WEN\nWRITES THE 64 TEXTS.",
+     "q": "11TH CENTURY BC",
+     "a": "TRADITION CREDITS KING WEN\nWITH A TEXT FOR EACH OF THE\n64 SIX-LINE PATTERNS.",
      "show": {}
     },
     {
-     "q": "11TH CENTURY",
-     "a": "SHAO YONG ORDERS THE 64\nIN A SQUARE AND A CIRCLE.",
+     "q": "11TH CENTURY AD",
+     "a": "64 PATTERNS, SQUARE AND CIRCLE.\nATTRIBUTED TO SHAO YONG.",
      "show": {}
     },
     {
      "q": "1701",
-     "a": "BOUVET SENDS THAT DIAGRAM\nTO LEIBNIZ IN GERMANY.",
+     "a": "BOUVET SENDS THE DIAGRAM\nTO LEIBNIZ, A MATHEMATICIAN.",
      "show": {}
     },
     {
      "q": "1950",
-     "a": "CARL JUNG WRITES THE FOREWORD\nTO WILHELM'S TRANSLATION\nIN ENGLISH.",
+     "a": "BAYNES'S ENGLISH VERSION\nOF WILHELM'S TRANSLATION\nAPPEARS WITH JUNG'S FOREWORD.",
      "show": {}
     },
     {
-     "q": "1962",
-     "a": "PHILIP K. DICK PUBLISHES\nTHE MAN IN THE HIGH CASTLE,\nPLOTTED WITH THE I CHING.",
+     "q": "1962 // PUBLISHED",
+     "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I CHING\nTO HELP PLOT THE NOVEL.",
      "show": {}
     },
     {
-     "q": "",
-     "a": "3,000 YEARS.\nSTILL READ.",
+     "q": "TODAY",
+     "a": "SIX LINES READS THE BOOK\nTO THINK THROUGH A CHOICE.",
      "show": {}
     }
    ]
