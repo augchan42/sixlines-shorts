@@ -55,6 +55,9 @@ English beside it. `show` names the draw on that page.
 
 1. WHAT IS THIS / A DIAGRAM OF THE 64 HEXAGRAMS,\nPATTERNS OF SIX LINES.\nSENT FROM CHINA IN 1701.
    Show: plate, whole, a slow push.
+1a. WHAT AM I LOOKING AT / 64 HEXAGRAMS ROUND A CIRCLE.\nTHE SAME 64 IN A SQUARE.
+   Show: the plate; the ring's band outlined in amber, then the square. (Added 2026-09-30, the
+   user: "yes please add that", after the diagram was explained.)
 2. WHO SENT IT / JOACHIM BOUVET, A JESUIT\nAT THE KANGXI EMPEROR'S COURT.\nPEKING, 4 NOVEMBER 1701.
    Show: plate, push toward the top of the ring.
 3. WHO GOT IT / GOTTFRIED LEIBNIZ, 1 APRIL 1703.\nHE HAD WRITTEN UP BINARY IN 1679,\nBEFORE HE SAW THIS.
@@ -72,7 +75,8 @@ English beside it. `show` names the draw on that page.
 6. THEN WHAT / AFTER 31, START AT THE BOTTOM LEFT.\nAT 32 THE BOTTOM LINE TURNS SOLID.\nUP THE LEFT HALF TO QIAN, 63.
    Show: 011111 → 100000 (all six lines change), the camera crosses to Fu and climbs to Qian.
 7. WHAT ARE THE SMALL NUMBERS / 0 TO 63.\nATTRIBUTED TO LEIBNIZ.
-   Show: back to the plate, a push onto the numerals (moderate: the scan is soft).
+   Show: back to the plate, a push onto the 4 5 6 7 over the square's top row (豫 晉 萃 否, values 4
+   to 7), ringed in amber, the scan shown softer so the faint digits stay.
 
 **THE ORDER**
 

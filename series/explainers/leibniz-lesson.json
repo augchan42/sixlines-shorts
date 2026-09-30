@@ -48,6 +48,24 @@
      }
     },
     {
+     "q": "WHAT AM I LOOKING AT",
+     "a": "64 HEXAGRAMS ROUND A CIRCLE.\nTHE SAME 64 IN A SQUARE.",
+     "show": {
+      "plate": {
+       "zoom": [
+        1.1,
+        1.1
+       ],
+       "marks": {
+        "ring": 1.7,
+        "square": 3
+       }
+      },
+      "hold": 4
+     },
+     "why": "The user, 2026-09-30, after the diagram was explained: 'yes please add that'."
+    },
+    {
      "q": "WHO SENT IT",
      "a": "JOACHIM BOUVET, A JESUIT\nAT THE KANGXI EMPEROR'S COURT.\nPEKING, 4 NOVEMBER 1701.",
      "show": {
@@ -89,7 +107,15 @@
     {
      "q": "READ IT AS A NUMBER",
      "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "bits",
+       "v": 2,
+       "weights": true,
+       "fadePlate": true
+      },
+      "hold": 5
+     }
     },
     {
      "q": "COUNT THE RING",
@@ -109,7 +135,18 @@
     {
      "q": "THEN WHAT",
      "a": "AFTER 31, START AT THE BOTTOM LEFT.\nAT 32 THE BOTTOM LINE TURNS SOLID.\nUP THE LEFT HALF TO QIAN, 63.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "count": [
+        32,
+        63
+       ],
+       "at": 5,
+       "secs": 10,
+       "before": 31
+      },
+      "hold": 14
+     }
     },
     {
      "q": "WHAT ARE THE SMALL NUMBERS",
@@ -117,20 +154,24 @@
      "show": {
       "plate": {
        "zoom": [
-        1.2,
-        1.8
+        1.4,
+        2.6
        ],
        "at": [
         [
-         0.5,
+         0.6,
          0.3
         ],
         [
-         0.6,
-         0.1
+         0.62,
+         0.21
         ]
-       ]
-      }
+       ],
+       "marks": {
+        "digits": 2.5
+       }
+      },
+      "hold": 4
      }
     }
    ]
@@ -141,22 +182,47 @@
     {
      "q": "WHOSE ORDER IS IT",
      "a": "ATTRIBUTED TO SHAO YONG 邵雍,\nELEVENTH CENTURY.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "overview"
+      }
+     }
     },
     {
      "q": "HOW",
      "a": "EACH PATTERN BRANCHES INTO TWO.\nEACH STAGE ADDS A LINE.\nSIX STAGES: 64 PATTERNS.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "tree",
+       "at": 1,
+       "morph": 7.5
+      },
+      "hold": 9
+     }
     },
     {
      "q": "A FRIEND'S VERDICT",
      "a": "CHENG HAO 程顥:\n\"JUST THE DOUBLING METHOD.\"\n加一倍法",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "tree",
+       "at": -10,
+       "dim": 0.35
+      }
+     }
     },
     {
      "q": "THE SQUARE",
      "a": "THE SAME 64 AS A SQUARE.\nA TRIGRAM IS THREE LINES.\nROWS SHARE THE LOWER ONE,\nCOLUMNS THE UPPER.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "square",
+       "at": 3,
+       "row": 2,
+       "col": 5
+      },
+      "hold": 7
+     }
     }
    ]
   },
@@ -166,17 +232,34 @@
     {
      "q": "DID LEIBNIZ GET BINARY HERE",
      "a": "NO. HE HAD IT BY 1679.\nSHAO YONG DID NOT USE THESE\nPATTERNS AS NUMERALS.\nLEIBNIZ SAW CONFIRMATION.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "pair"
+      }
+     }
     },
     {
      "q": "WHAT DID LEIBNIZ SAY",
      "a": "\"PERHAPS THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
-     "show": {}
+     "show": {
+      "plate": {
+       "zoom": [
+        1,
+        1.08
+       ]
+      }
+     }
     },
     {
      "q": "AND WANG BI",
      "a": "WANG BI, THIRD CENTURY:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
-     "show": {}
+     "show": {
+      "diagram": {
+       "kind": "bits",
+       "v": 41
+      },
+      "hold": 4
+     }
     },
     {
      "q": "",
@@ -186,6 +269,5 @@
    ]
   }
  ],
- "draft": "Pages 4 and 6 onward have no drawings yet (the smoke test is pages 1 and 5); their draws are in the design.",
  "review": "gpt-6.1-sol, 2026-09-30: docs/research/2026-09-30-codex-leibniz-spec.md. All its copy changes taken except page 15, which keeps '64 SITUATIONS': after Wang Bi the lesson turns from patterns to reading them, and it is the approved treatment's last line."
 }
