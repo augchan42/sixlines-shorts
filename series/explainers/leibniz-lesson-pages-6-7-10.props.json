@@ -1,88 +1,6 @@
 {
  "pages": [
   {
-   "chapter": "THE OBJECT"
-  },
-  {
-   "q": "WHAT IS THIS",
-   "a": "A DIAGRAM OF THE 64 HEXAGRAMS,\nPATTERNS OF SIX LINES.\nSENT FROM CHINA IN 1701.",
-   "show": {
-    "plate": {
-     "zoom": [
-      1,
-      1.1
-     ]
-    }
-   }
-  },
-  {
-   "q": "WHAT AM I LOOKING AT",
-   "a": "64 HEXAGRAMS ROUND A CIRCLE.\nTHE SAME 64 IN A SQUARE.",
-   "show": {
-    "plate": {
-     "zoom": [
-      1.1,
-      1.1
-     ],
-     "marks": {
-      "ring": 1.7,
-      "square": 3
-     }
-    },
-    "hold": 4
-   }
-  },
-  {
-   "q": "WHO SENT IT",
-   "a": "JOACHIM BOUVET, A JESUIT\nAT THE KANGXI EMPEROR'S COURT.\nPEKING, 4 NOVEMBER 1701.",
-   "show": {
-    "plate": {
-     "zoom": [
-      1.1,
-      1.35
-     ],
-     "at": [
-      [
-       0.5,
-       0.5
-      ],
-      [
-       0.5,
-       0.12
-      ]
-     ]
-    }
-   }
-  },
-  {
-   "q": "WHO GOT IT",
-   "a": "GOTTFRIED LEIBNIZ, 1 APRIL 1703.\nHE HAD WRITTEN UP BINARY IN 1679,\nBEFORE HE SAW THIS.",
-   "show": {
-    "plate": {
-     "zoom": [
-      1,
-      1.08
-     ]
-    }
-   }
-  },
-  {
-   "chapter": "THE COUNT"
-  },
-  {
-   "q": "READ IT AS A NUMBER",
-   "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nTHE BOTTOM LINE IS THE FIRST DIGIT.",
-   "show": {
-    "diagram": {
-     "kind": "bits",
-     "v": 2,
-     "weights": true,
-     "fadePlate": true
-    },
-    "hold": 6
-   }
-  },
-  {
    "q": "COUNT THE RING",
    "a": "KUN, ALL BROKEN, IS 0.\nUP THE RIGHT HALF TO GOU, 31.",
    "show": {
@@ -110,48 +28,7 @@
      "secs": 10,
      "before": 31
     },
-    "beacon": true,
-    "beaconNote": "the beacon on the second flight only (the user, 2026-09-30: 'play the beacon only on one of the flights, maybe the second one')",
     "hold": 14
-   }
-  },
-  {
-   "q": "WHAT ARE THE SMALL NUMBERS",
-   "a": "0 TO 63.\nATTRIBUTED TO LEIBNIZ.",
-   "show": {
-    "plate": {
-     "zoom": [
-      1.4,
-      2.6
-     ],
-     "at": [
-      [
-       0.6,
-       0.3
-      ],
-      [
-       0.62,
-       0.21
-      ]
-     ],
-     "marks": {
-      "digits": 2.5
-     }
-    },
-    "hold": 4
-   }
-  },
-  {
-   "chapter": "THE ORDER"
-  },
-  {
-   "q": "WHOSE ORDER IS IT",
-   "a": "ATTRIBUTED TO SHAO YONG 邵雍,\nELEVENTH CENTURY.",
-   "show": {
-    "diagram": {
-     "kind": "overview"
-    },
-    "guqin": true
    }
   },
   {
@@ -165,71 +42,6 @@
     },
     "hold": 9
    }
-  },
-  {
-   "q": "A FRIEND'S VERDICT",
-   "a": "CHENG HAO 程顥:\n\"JUST THE DOUBLING METHOD.\"\n加一倍法",
-   "show": {
-    "diagram": {
-     "kind": "tree",
-     "at": -10,
-     "dim": 0.35
-    }
-   }
-  },
-  {
-   "q": "THE SQUARE",
-   "a": "THE SAME 64 AS A SQUARE.\nA TRIGRAM IS THREE LINES.\nROWS SHARE THE LOWER ONE,\nCOLUMNS THE UPPER.",
-   "show": {
-    "diagram": {
-     "kind": "square",
-     "at": 3,
-     "row": 2,
-     "col": 5
-    },
-    "hold": 7
-   }
-  },
-  {
-   "chapter": "WHAT IT MEANT"
-  },
-  {
-   "q": "DID LEIBNIZ GET BINARY HERE",
-   "a": "NO. HE HAD IT BY 1679.\nSHAO YONG DID NOT USE THESE\nPATTERNS AS NUMERALS.\nLEIBNIZ SAW CONFIRMATION.",
-   "show": {
-    "diagram": {
-     "kind": "pair"
-    }
-   }
-  },
-  {
-   "q": "WHAT DID LEIBNIZ SAY",
-   "a": "\"PERHAPS THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
-   "show": {
-    "plate": {
-     "zoom": [
-      1,
-      1.08
-     ]
-    }
-   }
-  },
-  {
-   "q": "AND WANG BI",
-   "a": "WANG BI, THIRD CENTURY:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
-   "show": {
-    "diagram": {
-     "kind": "bits",
-     "v": 41
-    },
-    "hold": 4,
-    "guqin": true
-   }
-  },
-  {
-   "q": "",
-   "a": "SIX LINES. 64 SITUATIONS.",
-   "show": {}
   }
  ],
  "plate": "local/leibniz/plate.jpg",
@@ -510,7 +322,7 @@
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
-  "seconds": 10.435916947494293,
+  "seconds": 0,
   "rate": 0.5749375
  },
  "look": "flight",
@@ -522,7 +334,6 @@
   "sweep": "local/sfx/sweep.wav",
   "chatter": "local/sfx/chatter.wav",
   "warble": "local/sfx/warble.wav",
-  "winddown": "local/sfx/winddown.wav",
-  "guqin": "local/sfx/guqin-b.wav"
+  "winddown": "local/sfx/winddown.wav"
  }
 }

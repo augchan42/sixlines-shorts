@@ -1,94 +1,12 @@
 {
- "explainer": "leibniz-lesson",
- "rendered": "2026-09-30T02:15:07.120Z",
- "commit": "76320812b377245964bfc62490f31fd719acebc8",
+ "explainer": "leibniz-lesson-pages-6-7-10",
+ "rendered": "2026-09-30T01:46:34.686Z",
+ "commit": "8838e7f5d1ba0081c1c26cb0b1464def511c92c1",
  "clean": false,
- "seconds": 167.445333,
- "shareKbps": 970,
+ "seconds": 48.917333,
+ "shareKbps": 3633,
  "props": {
   "pages": [
-   {
-    "chapter": "THE OBJECT"
-   },
-   {
-    "q": "WHAT IS THIS",
-    "a": "A DIAGRAM OF THE 64 HEXAGRAMS,\nPATTERNS OF SIX LINES.\nSENT FROM CHINA IN 1701.",
-    "show": {
-     "plate": {
-      "zoom": [
-       1,
-       1.1
-      ]
-     }
-    }
-   },
-   {
-    "q": "WHAT AM I LOOKING AT",
-    "a": "64 HEXAGRAMS ROUND A CIRCLE.\nTHE SAME 64 IN A SQUARE.",
-    "show": {
-     "plate": {
-      "zoom": [
-       1.1,
-       1.1
-      ],
-      "marks": {
-       "ring": 1.7,
-       "square": 3
-      }
-     },
-     "hold": 4
-    }
-   },
-   {
-    "q": "WHO SENT IT",
-    "a": "JOACHIM BOUVET, A JESUIT\nAT THE KANGXI EMPEROR'S COURT.\nPEKING, 4 NOVEMBER 1701.",
-    "show": {
-     "plate": {
-      "zoom": [
-       1.1,
-       1.35
-      ],
-      "at": [
-       [
-        0.5,
-        0.5
-       ],
-       [
-        0.5,
-        0.12
-       ]
-      ]
-     }
-    }
-   },
-   {
-    "q": "WHO GOT IT",
-    "a": "GOTTFRIED LEIBNIZ, 1 APRIL 1703.\nHE HAD WRITTEN UP BINARY IN 1679,\nBEFORE HE SAW THIS.",
-    "show": {
-     "plate": {
-      "zoom": [
-       1,
-       1.08
-      ]
-     }
-    }
-   },
-   {
-    "chapter": "THE COUNT"
-   },
-   {
-    "q": "READ IT AS A NUMBER",
-    "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nTHE BOTTOM LINE IS THE FIRST DIGIT.",
-    "show": {
-     "diagram": {
-      "kind": "bits",
-      "v": 2,
-      "weights": true,
-      "fadePlate": true
-     },
-     "hold": 6
-    }
-   },
    {
     "q": "COUNT THE RING",
     "a": "KUN, ALL BROKEN, IS 0.\nUP THE RIGHT HALF TO GOU, 31.",
@@ -117,48 +35,7 @@
       "secs": 10,
       "before": 31
      },
-     "beacon": true,
-     "beaconNote": "the beacon on the second flight only (the user, 2026-09-30: 'play the beacon only on one of the flights, maybe the second one')",
      "hold": 14
-    }
-   },
-   {
-    "q": "WHAT ARE THE SMALL NUMBERS",
-    "a": "0 TO 63.\nATTRIBUTED TO LEIBNIZ.",
-    "show": {
-     "plate": {
-      "zoom": [
-       1.4,
-       2.6
-      ],
-      "at": [
-       [
-        0.6,
-        0.3
-       ],
-       [
-        0.62,
-        0.21
-       ]
-      ],
-      "marks": {
-       "digits": 2.5
-      }
-     },
-     "hold": 4
-    }
-   },
-   {
-    "chapter": "THE ORDER"
-   },
-   {
-    "q": "WHOSE ORDER IS IT",
-    "a": "ATTRIBUTED TO SHAO YONG 邵雍,\nELEVENTH CENTURY.",
-    "show": {
-     "diagram": {
-      "kind": "overview"
-     },
-     "guqin": true
     }
    },
    {
@@ -172,71 +49,6 @@
      },
      "hold": 9
     }
-   },
-   {
-    "q": "A FRIEND'S VERDICT",
-    "a": "CHENG HAO 程顥:\n\"JUST THE DOUBLING METHOD.\"\n加一倍法",
-    "show": {
-     "diagram": {
-      "kind": "tree",
-      "at": -10,
-      "dim": 0.35
-     }
-    }
-   },
-   {
-    "q": "THE SQUARE",
-    "a": "THE SAME 64 AS A SQUARE.\nA TRIGRAM IS THREE LINES.\nROWS SHARE THE LOWER ONE,\nCOLUMNS THE UPPER.",
-    "show": {
-     "diagram": {
-      "kind": "square",
-      "at": 3,
-      "row": 2,
-      "col": 5
-     },
-     "hold": 7
-    }
-   },
-   {
-    "chapter": "WHAT IT MEANT"
-   },
-   {
-    "q": "DID LEIBNIZ GET BINARY HERE",
-    "a": "NO. HE HAD IT BY 1679.\nSHAO YONG DID NOT USE THESE\nPATTERNS AS NUMERALS.\nLEIBNIZ SAW CONFIRMATION.",
-    "show": {
-     "diagram": {
-      "kind": "pair"
-     }
-    }
-   },
-   {
-    "q": "WHAT DID LEIBNIZ SAY",
-    "a": "\"PERHAPS THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
-    "show": {
-     "plate": {
-      "zoom": [
-       1,
-       1.08
-      ]
-     }
-    }
-   },
-   {
-    "q": "AND WANG BI",
-    "a": "WANG BI, THIRD CENTURY:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
-    "show": {
-     "diagram": {
-      "kind": "bits",
-      "v": 41
-     },
-     "hold": 4,
-     "guqin": true
-    }
-   },
-   {
-    "q": "",
-    "a": "SIX LINES. 64 SITUATIONS.",
-    "show": {}
    }
   ],
   "plate": "local/leibniz/plate.jpg",
@@ -517,7 +329,7 @@
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
    "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
-   "seconds": 10.435916947494293,
+   "seconds": 0,
    "rate": 0.5749375
   },
   "look": "flight",
@@ -529,8 +341,7 @@
    "sweep": "local/sfx/sweep.wav",
    "chatter": "local/sfx/chatter.wav",
    "warble": "local/sfx/warble.wav",
-   "winddown": "local/sfx/winddown.wav",
-   "guqin": "local/sfx/guqin-b.wav"
+   "winddown": "local/sfx/winddown.wav"
   }
  },
  "files": {
@@ -546,8 +357,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "local/sfx/guqin-b.wav": "d72a93923fc9ecc04971288f3eb2944b0dad7c947fc4d7aabe61d69839fa809f",
-  "out/explainers/leibniz-lesson/short.mp4": "61fd8484f95c16e6e1c4a513041ae219ffef89474c1a9885fe8e982c71445d81",
-  "out/explainers/leibniz-lesson/share.mp4": "56b3080f4afffe1c58f740542df71dc48f07c8ea26fc687d213f81f35a2e3c3b"
+  "out/explainers/leibniz-lesson-pages-6-7-10/short.mp4": "2cf7c9656dbd91f288d1092971cce7453186289018621291035f91355e8fc7ba",
+  "out/explainers/leibniz-lesson-pages-6-7-10/share.mp4": "524bff1a4aea28205aa0a6b74d7b0fa28c5db3cd46687ec1c1b804644831048b"
  }
 }
