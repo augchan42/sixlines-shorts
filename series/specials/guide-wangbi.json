@@ -71,34 +71,110 @@
   "fps": 30,
   "lead": 1.4,
   "gap": 0.7,
-  "tail": 1.2,
-  "note": "lead: the device switches on before the first line; gap: silence between lines; tail: hold after the last."
+  "tail": 0.8,
+  "close": 2.5,
+  "note": "lead: before the first line; gap: between lines; tail: after the last line, before the close flickers in; close: the ivory Six Lines close's hold."
  },
  "marks": [
   {
    "name": "grid",
    "beat": 1,
-   "word": "Sixty-four",
-   "what": "the 64 hexagrams tile in"
+   "word": "Sixty-four"
   },
   {
    "name": "years",
    "beat": 1,
-   "word": "roots",
-   "what": "the age stamp"
+   "word": "roots"
+  },
+  {
+   "name": "consulted",
+   "beat": 2,
+   "word": "consulted"
   },
   {
    "name": "future",
    "beat": 2,
-   "word": "future",
-   "what": "the question mark"
+   "word": "future"
   },
   {
    "name": "wangbi",
    "beat": 3,
-   "word": "Wang",
-   "what": "his name card"
+   "word": "Wang"
+  },
+  {
+   "name": "instructions",
+   "beat": 3,
+   "word": "instructions"
+  },
+  {
+   "name": "young",
+   "beat": 4,
+   "word": "young"
+  },
+  {
+   "name": "standard",
+   "beat": 4,
+   "word": "standard"
+  },
+  {
+   "name": "forget",
+   "beat": 5,
+   "word": "forget"
+  },
+  {
+   "name": "trap",
+   "beat": 6,
+   "word": "trap"
+  },
+  {
+   "name": "catch",
+   "beat": 6,
+   "word": "Catch"
+  },
+  {
+   "name": "put",
+   "beat": 6,
+   "word": "put"
+  },
+  {
+   "name": "strength",
+   "beat": 7,
+   "word": "strength"
+  },
+  {
+   "name": "insist",
+   "beat": 7,
+   "word": "insist"
+  },
+  {
+   "name": "judgment",
+   "beat": 8,
+   "word": "judgment"
+  },
+  {
+   "name": "decisions",
+   "beat": 9,
+   "word": "decisions"
+  },
+  {
+   "name": "not",
+   "beat": 9,
+   "word": "Not"
+  },
+  {
+   "name": "next",
+   "beat": 9,
+   "word": "next"
   }
  ],
- "spelling": "I-Ching, hyphenated, in this short's narration and on screen (the user, 2026-09-30: 'can we use I-Ching instead of I Ching')."
+ "spelling": "I-Ching, hyphenated, in this short's narration and on screen (the user, 2026-09-30: 'can we use I-Ching instead of I Ching').",
+ "close": {
+  "tagline": "REVEAL THE MOMENT",
+  "site": "sixlines.day",
+  "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "sfxFrom": 4,
+  "sfxVolume": 0.35,
+  "note": "The launch bookend's icon close and flicker (series/bookend/02.json)."
+ },
+ "shots": "docs/notes/2026-09-30-guide-wangbi-shots.md (revised after Astra)"
 }

@@ -2,7 +2,7 @@
 //   node scripts/guide-props.mjs series/specials/guide-wangbi.json [--beats 1-3]
 // Each line starts `gap` seconds after the last ends, the first after `lead`; each word gets the
 // frames it is spoken on (from the takes' character timings), and each mark in the spec the frame
-// its word starts. Copies the takes to public/local/voice/<name>/ and writes
+// its word starts; b<n> and e<n> mark each line's start and end, `close` the close's flicker. Copies the takes to public/local/voice/<name>/ and writes
 // series/specials/<name>[-b1-3].props.json.
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -14,7 +14,7 @@ const spec = JSON.parse(readFileSync(path.resolve(root, specPath), "utf8"));
 const name = path.basename(specPath, ".json");
 const range = process.argv.includes("--beats") ? process.argv[process.argv.indexOf("--beats") + 1] : undefined;
 const [lo, hi] = range ? range.split("-").map(Number) : [1, spec.narration.length];
-const { fps, lead, gap, tail } = spec.timing;
+const { fps, lead, gap, tail, close = 0 } = spec.timing;
 const F = (s) => Math.round(s * fps);
 const bare = (w) => w.toLowerCase().replace(/[^a-z0-9-]/g, "");
 
@@ -41,7 +41,7 @@ for (let n = lo; n <= hi; n++) {
   clock = end + gap;
 }
 const marks = {};
-for (const b of beats) marks[`b${b.n}`] = b.from;
+for (const b of beats) Object.assign(marks, { [`b${b.n}`]: b.from, [`e${b.n}`]: b.to });
 for (const m of spec.marks) {
   const b = beats.find((x) => x.n === m.beat);
   if (!b) continue;
@@ -49,7 +49,11 @@ for (const m of spec.marks) {
   if (!w) throw new Error(`mark ${m.name}: no word "${m.word}" in line ${m.beat}`);
   marks[m.name] = w.from;
 }
-const frames = F(clock - gap + tail);
+// The close (spec.close) flickers in `tail` after the last line and holds `close` seconds past its
+// seven-frame flicker; a partial cut (--beats) ends on the tail instead.
+marks.close = F(clock - gap + tail);
+const withClose = spec.close && !range;
+const frames = withClose ? marks.close + 7 + F(close) : marks.close;
 const out = path.join(root, "series/specials", `${name}${range ? `-b${range}` : ""}.props.json`);
-writeFileSync(out, JSON.stringify({ frames, beats, marks }, null, 1) + "\n");
+writeFileSync(out, JSON.stringify({ frames, beats, marks, ...(withClose ? { close: spec.close } : {}) }, null, 1) + "\n");
 console.log(`${path.relative(root, out)}: ${frames} frames (${(frames / fps).toFixed(1)} s)`, marks);

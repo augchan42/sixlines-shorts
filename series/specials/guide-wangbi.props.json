@@ -1,0 +1,584 @@
+{
+ "frames": 1634,
+ "beats": [
+  {
+   "n": 1,
+   "src": "local/voice/guide-wangbi/01.mp3",
+   "from": 42,
+   "to": 236,
+   "words": [
+    {
+     "text": "The",
+     "from": 42,
+     "to": 47
+    },
+    {
+     "text": "I-Ching.",
+     "from": 49,
+     "to": 80
+    },
+    {
+     "text": "Sixty-four",
+     "from": 90,
+     "to": 109
+    },
+    {
+     "text": "situations,",
+     "from": 112,
+     "to": 150
+    },
+    {
+     "text": "with",
+     "from": 152,
+     "to": 155
+    },
+    {
+     "text": "roots",
+     "from": 157,
+     "to": 167
+    },
+    {
+     "text": "about",
+     "from": 169,
+     "to": 179
+    },
+    {
+     "text": "three",
+     "from": 181,
+     "to": 188
+    },
+    {
+     "text": "thousand",
+     "from": 193,
+     "to": 208
+    },
+    {
+     "text": "years",
+     "from": 210,
+     "to": 217
+    },
+    {
+     "text": "old.",
+     "from": 220,
+     "to": 236
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "src": "local/voice/guide-wangbi/02.mp3",
+   "from": 257,
+   "to": 368,
+   "words": [
+    {
+     "text": "For",
+     "from": 257,
+     "to": 265
+    },
+    {
+     "text": "centuries,",
+     "from": 267,
+     "to": 296
+    },
+    {
+     "text": "people",
+     "from": 301,
+     "to": 305
+    },
+    {
+     "text": "consulted",
+     "from": 313,
+     "to": 325
+    },
+    {
+     "text": "it",
+     "from": 327,
+     "to": 329
+    },
+    {
+     "text": "about",
+     "from": 332,
+     "to": 339
+    },
+    {
+     "text": "the",
+     "from": 340,
+     "to": 341
+    },
+    {
+     "text": "future.",
+     "from": 344,
+     "to": 368
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "src": "local/voice/guide-wangbi/03.mp3",
+   "from": 389,
+   "to": 473,
+   "words": [
+    {
+     "text": "Wang",
+     "from": 389,
+     "to": 396
+    },
+    {
+     "text": "Bi",
+     "from": 398,
+     "to": 408
+    },
+    {
+     "text": "offered",
+     "from": 410,
+     "to": 420
+    },
+    {
+     "text": "some",
+     "from": 422,
+     "to": 425
+    },
+    {
+     "text": "reading",
+     "from": 427,
+     "to": 437
+    },
+    {
+     "text": "instructions.",
+     "from": 439,
+     "to": 473
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "src": "local/voice/guide-wangbi/04.mp3",
+   "from": 494,
+   "to": 638,
+   "words": [
+    {
+     "text": "He",
+     "from": 494,
+     "to": 501
+    },
+    {
+     "text": "died",
+     "from": 502,
+     "to": 511
+    },
+    {
+     "text": "young.",
+     "from": 513,
+     "to": 533
+    },
+    {
+     "text": "His",
+     "from": 542,
+     "to": 547
+    },
+    {
+     "text": "commentary",
+     "from": 549,
+     "to": 566
+    },
+    {
+     "text": "became",
+     "from": 568,
+     "to": 575
+    },
+    {
+     "text": "a",
+     "from": 578,
+     "to": 580
+    },
+    {
+     "text": "standard",
+     "from": 589,
+     "to": 597
+    },
+    {
+     "text": "for",
+     "from": 599,
+     "to": 604
+    },
+    {
+     "text": "centuries.",
+     "from": 607,
+     "to": 638
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "src": "local/voice/guide-wangbi/05.mp3",
+   "from": 659,
+   "to": 769,
+   "words": [
+    {
+     "text": "Grasp",
+     "from": 659,
+     "to": 673
+    },
+    {
+     "text": "the",
+     "from": 676,
+     "to": 678
+    },
+    {
+     "text": "meaning.",
+     "from": 680,
+     "to": 703
+    },
+    {
+     "text": "Then",
+     "from": 712,
+     "to": 719
+    },
+    {
+     "text": "forget",
+     "from": 726,
+     "to": 738
+    },
+    {
+     "text": "the",
+     "from": 740,
+     "to": 743
+    },
+    {
+     "text": "image.",
+     "from": 745,
+     "to": 769
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "src": "local/voice/guide-wangbi/06.mp3",
+   "from": 790,
+   "to": 997,
+   "words": [
+    {
+     "text": "Borrowing",
+     "from": 790,
+     "to": 805
+    },
+    {
+     "text": "from",
+     "from": 807,
+     "to": 812
+    },
+    {
+     "text": "Zhuangzi:",
+     "from": 814,
+     "to": 833
+    },
+    {
+     "text": "an",
+     "from": 853,
+     "to": 857
+    },
+    {
+     "text": "image",
+     "from": 860,
+     "to": 874
+    },
+    {
+     "text": "is",
+     "from": 877,
+     "to": 879
+    },
+    {
+     "text": "a",
+     "from": 881,
+     "to": 884
+    },
+    {
+     "text": "fish",
+     "from": 886,
+     "to": 891
+    },
+    {
+     "text": "trap.",
+     "from": 893,
+     "to": 914
+    },
+    {
+     "text": "Catch",
+     "from": 922,
+     "to": 929
+    },
+    {
+     "text": "the",
+     "from": 932,
+     "to": 934
+    },
+    {
+     "text": "fish;",
+     "from": 937,
+     "to": 958
+    },
+    {
+     "text": "put",
+     "from": 961,
+     "to": 963
+    },
+    {
+     "text": "down",
+     "from": 965,
+     "to": 973
+    },
+    {
+     "text": "the",
+     "from": 974,
+     "to": 975
+    },
+    {
+     "text": "trap.",
+     "from": 977,
+     "to": 997
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "src": "local/voice/guide-wangbi/07.mp3",
+   "from": 1018,
+   "to": 1130,
+   "words": [
+    {
+     "text": "If",
+     "from": 1018,
+     "to": 1022
+    },
+    {
+     "text": "the",
+     "from": 1024,
+     "to": 1025
+    },
+    {
+     "text": "meaning",
+     "from": 1027,
+     "to": 1037
+    },
+    {
+     "text": "is",
+     "from": 1040,
+     "to": 1044
+    },
+    {
+     "text": "strength,",
+     "from": 1055,
+     "to": 1075
+    },
+    {
+     "text": "why",
+     "from": 1078,
+     "to": 1082
+    },
+    {
+     "text": "insist",
+     "from": 1085,
+     "to": 1097
+    },
+    {
+     "text": "on",
+     "from": 1099,
+     "to": 1102
+    },
+    {
+     "text": "a",
+     "from": 1103,
+     "to": 1105
+    },
+    {
+     "text": "horse?",
+     "from": 1106,
+     "to": 1130
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "src": "local/voice/guide-wangbi/08.mp3",
+   "from": 1151,
+   "to": 1293,
+   "words": [
+    {
+     "text": "Six",
+     "from": 1151,
+     "to": 1161
+    },
+    {
+     "text": "Lines",
+     "from": 1163,
+     "to": 1175
+    },
+    {
+     "text": "reads",
+     "from": 1180,
+     "to": 1187
+    },
+    {
+     "text": "it",
+     "from": 1190,
+     "to": 1192
+    },
+    {
+     "text": "for",
+     "from": 1195,
+     "to": 1197
+    },
+    {
+     "text": "judgment:",
+     "from": 1199,
+     "to": 1231
+    },
+    {
+     "text": "what",
+     "from": 1233,
+     "to": 1238
+    },
+    {
+     "text": "makes",
+     "from": 1240,
+     "to": 1247
+    },
+    {
+     "text": "sense",
+     "from": 1250,
+     "to": 1259
+    },
+    {
+     "text": "to",
+     "from": 1262,
+     "to": 1264
+    },
+    {
+     "text": "do",
+     "from": 1267,
+     "to": 1271
+    },
+    {
+     "text": "here.",
+     "from": 1274,
+     "to": 1293
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "src": "local/voice/guide-wangbi/09.mp3",
+   "from": 1314,
+   "to": 1528,
+   "words": [
+    {
+     "text": "Recommended",
+     "from": 1314,
+     "to": 1332
+    },
+    {
+     "text": "for:",
+     "from": 1333,
+     "to": 1345
+    },
+    {
+     "text": "making",
+     "from": 1360,
+     "to": 1369
+    },
+    {
+     "text": "decisions.",
+     "from": 1372,
+     "to": 1406
+    },
+    {
+     "text": "Not",
+     "from": 1420,
+     "to": 1422
+    },
+    {
+     "text": "recommended",
+     "from": 1439,
+     "to": 1441
+    },
+    {
+     "text": "for:",
+     "from": 1448,
+     "to": 1465
+    },
+    {
+     "text": "finding",
+     "from": 1475,
+     "to": 1477
+    },
+    {
+     "text": "out",
+     "from": 1482,
+     "to": 1484
+    },
+    {
+     "text": "what",
+     "from": 1489,
+     "to": 1492
+    },
+    {
+     "text": "happens",
+     "from": 1494,
+     "to": 1506
+    },
+    {
+     "text": "next.",
+     "from": 1520,
+     "to": 1528
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "b1": 42,
+  "e1": 236,
+  "b2": 257,
+  "e2": 368,
+  "b3": 389,
+  "e3": 473,
+  "b4": 494,
+  "e4": 638,
+  "b5": 659,
+  "e5": 769,
+  "b6": 790,
+  "e6": 997,
+  "b7": 1018,
+  "e7": 1130,
+  "b8": 1151,
+  "e8": 1293,
+  "b9": 1314,
+  "e9": 1528,
+  "grid": 90,
+  "years": 157,
+  "consulted": 313,
+  "future": 344,
+  "wangbi": 389,
+  "instructions": 439,
+  "young": 513,
+  "standard": 589,
+  "forget": 726,
+  "trap": 893,
+  "catch": 922,
+  "put": 961,
+  "strength": 1055,
+  "insist": 1085,
+  "judgment": 1199,
+  "decisions": 1372,
+  "not": 1420,
+  "next": 1520,
+  "close": 1552
+ },
+ "close": {
+  "tagline": "REVEAL THE MOMENT",
+  "site": "sixlines.day",
+  "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "sfxFrom": 4,
+  "sfxVolume": 0.35,
+  "note": "The launch bookend's icon close and flicker (series/bookend/02.json)."
+ }
+}

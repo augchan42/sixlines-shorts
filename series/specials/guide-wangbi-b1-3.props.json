@@ -1,5 +1,5 @@
 {
- "frames": 509,
+ "frames": 497,
  "beats": [
   {
    "n": 1,
@@ -153,11 +153,17 @@
  ],
  "marks": {
   "b1": 42,
+  "e1": 236,
   "b2": 257,
+  "e2": 368,
   "b3": 389,
+  "e3": 473,
   "grid": 90,
   "years": 157,
+  "consulted": 313,
   "future": 344,
-  "wangbi": 389
+  "wangbi": 389,
+  "instructions": 439,
+  "close": 497
  }
 }

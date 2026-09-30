@@ -16,7 +16,7 @@ import { Demo, demoFrames, type DemoProps } from "./templates/Demo";
 import bookendKun from "../series/bookend/02.json";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Guide, type GuideProps } from "./templates/Guide";
-import guideWangbi from "../series/specials/guide-wangbi-b1-3.props.json";
+import guideWangbi from "../series/specials/guide-wangbi.props.json";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
 import { ReadoutKey, readoutKeyFrames, type ReadoutKeyProps } from "./templates/ReadoutKey";
 import { Series, seriesFrames } from "./templates/Series";

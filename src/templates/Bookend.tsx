@@ -35,12 +35,14 @@ const IVORY = "#FAF9F5";
 const INK = "#1c1a17";
 const GOUDY = "Goudy Old Style";
 let goudy: Promise<void> | undefined;
+// The Goudy the cards are set in; the Guide short's close uses it too.
+export const loadGoudy = () => (goudy ??= loadFont({ family: GOUDY, url: staticFile("local/fonts/goudos.ttf") }));
 const serif = `"${GOUDY}", serif`;
 
 // Frames of each flicker, from its start: true shows the ivory card. Two flashes, 3 frames each,
 // under three a second (no strobe), ending on the side it goes to.
 const IN = [true, false, false, false, true, true, true];
-const OUT = [false, true, true, true, false, false, false];
+export const OUT = [false, true, true, true, false, false, false];
 // The screen changes on frames 1, 4 and 7 of a flicker; the static sounds on each for two frames.
 // Each burst is its own Sequence: a volume curve is smoothed between frames and fills the gaps.
 const BURSTS = [1, 4, 7];
@@ -82,7 +84,7 @@ const TITLE_SPACING = -3;
 const SITE_TOP = 1346;
 const SITE_SIZE = 60;
 
-const Static: React.FC<{ src: string; at: number; from: number; volume: number }> = ({ src, at, from, volume }) => (
+export const Static: React.FC<{ src: string; at: number; from: number; volume: number }> = ({ src, at, from, volume }) => (
   <>
     {BURSTS.map((b) => (
       <Sequence key={b} from={at + b} durationInFrames={BURST_FRAMES} layout="none">
@@ -95,7 +97,7 @@ const Static: React.FC<{ src: string; at: number; from: number; volume: number }
 // The icon at 1.205x, so its bars (x 256-767 on 1024) are as wide as the green card's (x 231-847);
 // its title caps start at y 330, its bars end at y 1294.
 const ICON_SCALE = 617 / 512;
-const IconClose: React.FC<Pick<BookendProps, "tagline" | "site">> = ({ tagline, site }) => (
+export const IconClose: React.FC<Pick<BookendProps, "tagline" | "site">> = ({ tagline, site }) => (
   <AbsoluteFill style={{ background: IVORY, color: INK, fontFamily: serif }}>
     <Img src={staticFile("local/bookend/appicon.png")} style={{ position: "absolute", left: 231 - 256 * ICON_SCALE, top: 330 - 129 * ICON_SCALE, width: 1024 * ICON_SCALE }} />
     <div style={{ position: "absolute", top: 1370, left: 0, right: 0, textAlign: "center", fontSize: 58, lineHeight: "70px" }}>{tagline}</div>
@@ -106,7 +108,7 @@ const IconClose: React.FC<Pick<BookendProps, "tagline" | "site">> = ({ tagline, 
 export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
 
 export const Bookend: React.FC<BookendProps> = (p) => {
-  goudy ??= loadFont({ family: GOUDY, url: staticFile("local/fonts/goudos.ttf") });
+  loadGoudy();
   const f = useCurrentFrame();
   const open = p.open !== false && (f < p.inAt || (f < p.inAt + IN.length && IN[f - p.inAt]));
   const close = f >= p.outAt + OUT.length || (f >= p.outAt && OUT[f - p.outAt]);
