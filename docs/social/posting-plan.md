@@ -45,9 +45,12 @@ hexagram of the solstice month, the light coming back. Post the short and charac
    https://media.sixlines.day (the sixlines.day zone moved to Cloudflare DNS the same day). Upload with
    the R2 S3 keys in ~/projects/local/.env (rclone, provider Cloudflare); one unguessable name per
    file, kept until Buffer reports the post sent, then deleted.
-2. **YouTube title:** the caption's first line (`2 · 坤 Kūn · The Receptive`). No other titles needed.
-3. **isAiGenerated: false.** The videos are drawn with code, the copy is edited by the founder, the
-   music is Pixabay's; YouTube and TikTok require the label for realistic AI images, audio or video.
+2. **YouTube title:** searchable, written when the post is approved:
+   `I Ching Hexagram 2: 坤 Kūn — The Receptive` (media-strategy.md).
+3. **isAiGenerated.** The videos are drawn with code and the copy is edited by the founder, but
+   YouTube also asks for the label on AI-generated music, and coming from Pixabay doesn't settle
+   that. Check each track's Pixabay page (and its licence certificate) for an AI-generated mark; set
+   false only for tracks that have none.
 4. **Profile text** on all three: "I Ching situations and how to judge them. Read through Wang Bi and
    the Ten Wings." and sixlines.day in the profile link (YouTube Shorts descriptions don't link).
 5. **Pin** the Wang Bi teaser, the readout key and Kun on Instagram and TikTok. On YouTube, use the
@@ -55,10 +58,13 @@ hexagram of the solstice month, the light coming back. Post the short and charac
 
 ## Music and YouTube
 
-18 of our 23 Pixabay tracks are "Content ID registered". Under 60 s a claim only takes the ad money;
-over 60 s an active claim blocks a Short. So on YouTube, the long pieces (the Wang Bi teaser and the
-Leibniz lesson use pick13, registered) wait until their claims are cleared through Pixabay, or go up
-as regular videos. The 64 shorts (30-35 s) and the readout key (42 s) are safe to post.
+18 of our 23 Pixabay tracks are "Content ID registered". Over 60 s an active claim blocks a Short,
+and a claim on a shorter one isn't limited to the ad money either: the claimant's policy can block
+it too (Astra, docs/research/2026-09-30-codex-media-strategy-bookend.md). Going up as a regular video
+doesn't remove the claim. So check each YouTube post's copyright status after it goes out, clear
+claims through Pixabay with the licence certificate, and hold the long pieces (the Wang Bi teaser
+and the Leibniz lesson use pick13, registered) until the first shorts show how pick13's claims
+behave.
 
 ## Warm-up
 

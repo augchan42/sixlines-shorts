@@ -7,6 +7,8 @@
 // The result (draft id, media id, links) is written beside the spec as <name>.queued.json.
 // Once that file exists, a run edits the queued draft (text and time) and keeps its video.
 // Media flow as in sixlines-site/scripts/typefully/attach-social-images.mjs (ADR-045).
+// `replies` ({platform: text}, optional) adds a second post in that platform's thread, a reply to
+// the video: the site link goes there on X, not in the post (docs/social/media-strategy.md).
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -37,8 +39,9 @@ const quota = set.publishing_quota;
 console.log(`set ${spec.set} ${set.name}; quota ${quota?.used}/${(quota?.used ?? 0) + (quota?.remaining ?? 0)} used`);
 for (const [p, text] of Object.entries(spec.platforms)) {
   if (!set.platforms?.[p]) throw new Error(`${p} is not connected in set ${spec.set}`);
-  console.log(`${p} (${set.platforms[p].username}): ${text.length} characters`);
+  console.log(`${p} (${set.platforms[p].username}): ${text.length} characters${spec.replies?.[p] ? `, reply: ${spec.replies[p]}` : ""}`);
 }
+for (const p of Object.keys(spec.replies ?? {})) if (!spec.platforms[p]) throw new Error(`reply for ${p}, which the spec doesn't post to`);
 const size = statSync(video).size;
 console.log(`video ${spec.video}, ${(size / 1e6).toFixed(2)} MB; publish at ${spec.publish_at}`);
 // Typefully's free plan refuses a video over 10 MB when the draft is created, after the upload.
@@ -50,7 +53,7 @@ if (!live) {
   process.exit(0);
 }
 
-const postsWith = (media_id) => Object.fromEntries(Object.entries(spec.platforms).map(([p, text]) => [p, { enabled: true, posts: [{ text, media_ids: [media_id] }] }]));
+const postsWith = (media_id) => Object.fromEntries(Object.entries(spec.platforms).map(([p, text]) => [p, { enabled: true, posts: [{ text, media_ids: [media_id] }, ...(spec.replies?.[p] ? [{ text: spec.replies[p] }] : [])] }]));
 if (queued) {
   const draft = await api("PATCH", `/social-sets/${spec.set}/drafts/${queued.draft_id}`, { platforms: postsWith(queued.media_id), draft_title: spec.title, publish_at: spec.publish_at });
   const out = { ...queued, scheduled_date: draft.scheduled_date, status: draft.status, updated_at: draft.updated_at };
