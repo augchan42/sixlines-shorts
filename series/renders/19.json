@@ -1,10 +1,24 @@
 {
  "hexagram": 19,
- "rendered": "2026-09-27T16:10:09.499Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T05:48:01.322Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 32.725333,
- "shareKbps": 5494,
+ "seconds": 34.709333,
+ "shareKbps": 5173,
+ "loudness": {
+  "before": {
+   "lufs": -16.12,
+   "phoneLufs": -20.83,
+   "dbtp": -1.24
+  },
+  "gain": 5.3,
+  "limiter": -8.3,
+  "after": {
+   "lufs": -12.32,
+   "phoneLufs": -17.02,
+   "dbtp": -2.69
+  }
+ },
  "props": {
   "hexagram": {
    "number": 19,
@@ -30,7 +44,7 @@
    "Approach says:\ngo, but plan.",
    "Every spring has\nan autumn."
   ],
-  "question": "What will you\nprepare now?",
+  "question": "Who needs you\nwhen growth slows?",
   "plates": [
    "assets/yilin/stipple-19-11.webp",
    "assets/yilin/stipple-19-32.webp"
@@ -59,7 +73,7 @@
   "assets/3d/character-19-90bpm-16b-1caev3n.mp4": "bbc4e27d1be7f7ad26513c13fb817e09b68463e7fb314a5abd97d1fe720bdb4f",
   "assets/yilin/stipple-19-11.webp": "30bcd1013168802209713c7f9a573b690bdd393ad8da9874109013783067ada3",
   "assets/yilin/stipple-19-32.webp": "eb40001f7731f022c54e550eb46874a62d26045476ed4fa116262cba942cf6df",
-  "out/series/19-lin/short.mp4": "c00a0690e2bb2baac885f7294c6383781569b6d4e68a78ec2915c756640018be",
-  "out/series/19-lin/share.mp4": "2afb5aabb4e138e1ce02ab66cb2068e2e55ba0ad61b285971d43e05fb5d3d0b6"
+  "out/series/19-lin/short.mp4": "436e58b98fe60bb71709d0c7ecf368afa7e73df9161a117a7d84f573bf0a98d4",
+  "out/series/19-lin/share.mp4": "1bad8572a58ebd0cb820b82884c15a15d5953fd6e23b96d8400ceae76272e16f"
  }
 }

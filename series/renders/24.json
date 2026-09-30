@@ -1,10 +1,24 @@
 {
  "hexagram": 24,
- "rendered": "2026-09-27T16:31:08.956Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:01:34.673Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 27.584,
- "shareKbps": 6542,
+ "seconds": 29.589333,
+ "shareKbps": 6090,
+ "loudness": {
+  "before": {
+   "lufs": -10.13,
+   "phoneLufs": -13.47,
+   "dbtp": 0.26
+  },
+  "gain": -2.9,
+  "limiter": -1,
+  "after": {
+   "lufs": -13.28,
+   "phoneLufs": -16.52,
+   "dbtp": -3.58
+  }
+ },
  "props": {
   "hexagram": {
    "number": 24,
@@ -25,12 +39,12 @@
   "music": "local/music/pick17-midnight-synthwave.mp3",
   "musicStart": 0,
   "drop": 13.529,
-  "hook": "Coming back after a bad stretch?",
+  "hook": "Made the same mistake again?",
   "meaning": [
-   "Return says:\nenergy returns.",
-   "Rest. Only rushing\nstops it."
+   "Return says:\nturn back early.",
+   "Catch it near\nthe start."
   ],
-  "question": "What are you\nrushing back to?",
+  "question": "What needs\ncorrecting now?",
   "plates": [
    "assets/yilin/stipple-24-5.webp",
    "assets/yilin/stipple-24-42.webp"
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "See your misstep,\nturn back early.",
+   "text": "See it once.\nDon’t do it twice.",
    "scene": "acts",
    "clip": "assets/3d/acts-24-90bpm-12b-18ln5vy.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/acts-24-90bpm-12b-18ln5vy.mp4": "1e7bc6e53d9569aed9087f652a66f7875e13dbe3ae4b34562de5db582d7a7b8d",
   "assets/yilin/stipple-24-5.webp": "e5b2712019d283395140f5c82cab3adffa99aa75eb7ad4c68a070696ed6ef323",
   "assets/yilin/stipple-24-42.webp": "c1bfe37661fb25b155cee4150f79bae17c872c3ca6017eae07a397d24c341c9f",
-  "out/series/24-fu/short.mp4": "14d686bd85fd183caa163ae719e8493eca3e27cf6347f9967f9b528ed08c4619",
-  "out/series/24-fu/share.mp4": "a886b3787e17a333e90971360301f53a330a26c19c88c35548d7824e37aef48a"
+  "out/series/24-fu/short.mp4": "34d58e4a0ebd78c36556cc83cb7f93492947820c1a41b77129f5c1e0f165d71b",
+  "out/series/24-fu/share.mp4": "ec2884554bf32eb8d963fe5ef1993b91441e05a53cb4234d09a4277ebcc47b9d"
  }
 }

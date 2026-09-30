@@ -1,10 +1,24 @@
 {
  "hexagram": 18,
- "rendered": "2026-09-27T09:36:33.596Z",
- "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
+ "rendered": "2026-09-30T05:44:09.128Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 33.514667,
- "shareKbps": 5362,
+ "seconds": 35.690667,
+ "shareKbps": 5027,
+ "loudness": {
+  "before": {
+   "lufs": -8.16,
+   "phoneLufs": -10.85,
+   "dbtp": 0.37
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -13.81,
+   "phoneLufs": -16.55,
+   "dbtp": -4.08
+  }
+ },
  "props": {
   "hexagram": {
    "number": 18,
@@ -59,7 +73,7 @@
   "assets/3d/character-18-82.5bpm-17b-m0684s.mp4": "214804114a62dc406a09db41fad38ff918acb96e799df233dd87f5d1efa0d168",
   "assets/yilin/stipple-18-31.webp": "1235f9a0db70512f552e7c3928559c319751a7a2c86f097f0c6dbd7d40816528",
   "assets/yilin/stipple-18-52.webp": "23888c9567c460e209cd6cdf67a6b9c28cae4bc114b84a963210d19c3d5b4c27",
-  "out/series/18-gu/short.mp4": "5ec18634fc5142cd7765eadd2fc5491b3f8814ae0200a8cfd5c5b0d7016a3631",
-  "out/series/18-gu/share.mp4": "3f1781f740ff92bea1d87f6ac1b6e10c4002b6db1f837ab1f427004f7ec9ebb9"
+  "out/series/18-gu/short.mp4": "5745211731e389493e8f4d9b84bab18c6c40eeb76d473d9f2eeb626c69b0c774",
+  "out/series/18-gu/share.mp4": "ac5f868d39177d56fa3ba1282b415c827a2d259654a9ce2ddb6f81db6e9ec142"
  }
 }

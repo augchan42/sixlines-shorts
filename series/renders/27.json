@@ -1,10 +1,24 @@
 {
  "hexagram": 27,
- "rendered": "2026-09-27T16:47:05.395Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:08:44.639Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 29.888,
- "shareKbps": 6028,
+ "seconds": 32.042667,
+ "shareKbps": 5614,
+ "loudness": {
+  "before": {
+   "lufs": -8.21,
+   "phoneLufs": -10.86,
+   "dbtp": 0.37
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -13.87,
+   "phoneLufs": -16.56,
+   "dbtp": -4.08
+  }
+ },
  "props": {
   "hexagram": {
    "number": 27,
@@ -28,7 +42,7 @@
   "hook": "Said something you regret at dinner?",
   "meaning": [
    "Nourishment says:\nwatch your mouth.",
-   "What goes in,\nwhat comes out."
+   "Food goes in.\nWords come out."
   ],
   "question": "Which do you\nwatch less?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/acts-27-82.5bpm-12b-18dtuwg.mp4": "48cdf48fef6c4346d6365dbd331155a32fcbfa0f7db34306c0fbb4b32bdc2856",
   "assets/yilin/stipple-27-31.webp": "77f36a4b32aefc35ee2411da8e1064ddf05923c109693b6f10a7966305ecc12d",
   "assets/yilin/stipple-27-51.webp": "d09e382e2b9c4991b9c24c9cf54d715451800e8a6d88bf4680ee3ae04d777382",
-  "out/series/27-yi/short.mp4": "9682b6cb31122d783da9eb9e1566a200dceb71c0f84f98d113f5aed6e077d98b",
-  "out/series/27-yi/share.mp4": "e937a418a9f6e0091117ef22119ae8691a4a23ad421fd49a295a8412c7e3ad85"
+  "out/series/27-yi/short.mp4": "c7e04f4e6234c6a18d2f4a1cc6efdbf0835c4361fc33786e9180675615e74a54",
+  "out/series/27-yi/share.mp4": "6def6b44088c2577824badbcac34e5f642c90187bf32ee065d2f8027d99e85cc"
  }
 }

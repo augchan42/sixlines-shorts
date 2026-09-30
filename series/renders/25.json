@@ -1,10 +1,24 @@
 {
  "hexagram": 25,
- "rendered": "2026-09-27T16:36:10.238Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:03:19.876Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 24.554667,
- "shareKbps": 7365,
+ "seconds": 26.048,
+ "shareKbps": 6935,
+ "loudness": {
+  "before": {
+   "lufs": -10.06,
+   "phoneLufs": -12.67,
+   "dbtp": 0.38
+  },
+  "gain": -3.8,
+  "limiter": null,
+  "after": {
+   "lufs": -13.91,
+   "phoneLufs": -16.54,
+   "dbtp": -2.77
+  }
+ },
  "props": {
   "hexagram": {
    "number": 25,
@@ -25,12 +39,12 @@
   "music": "local/music/pick20-80s-retro-background.mp3",
   "musicStart": 4.023,
   "drop": 12,
-  "hook": "Hiding your real reasons?",
+  "hook": "Making things worse by fixing them?",
   "meaning": [
-   "Innocence says:\nbe straight.",
-   "Stop faking,\nand it works."
+   "Innocence says:\ncheck the cause.",
+   "Some trouble needs\nno interference."
   ],
-  "question": "Where are you\nperforming?",
+  "question": "What needs\nleaving alone?",
   "plates": [
    "assets/yilin/stipple-25-27.webp",
    "assets/yilin/stipple-25-62.webp"
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Do what's right,\nnot what pays.",
+   "text": "DON’T MAKE IT WORSE\nBY FORCING A FIX.",
    "trigrams": [
     {
      "zh": "天",
@@ -54,7 +68,7 @@
      0,
      4
     ],
-    "finding": "A STRONG LINE COMES IN AT THE BASE.",
+    "finding": "LINE 5: ILLNESS WITHOUT WRONGDOING.\nTHE WRONG MEDICINE ADDS HARM.",
     "master": {
      "zh": "為无妄之主",
      "en": "Master of No Falseness"
@@ -78,7 +92,7 @@
   "assets/3d/endcard-flip-100111-9b-ref.mp4": "fd9a507d35d2e5dc93d7ee74f4169689cfaa7f432b88e35cd1262a39bd5e03f3",
   "assets/yilin/stipple-25-27.webp": "c1cd62ff346ff720d2cd2069408d740a862488b280cbe0d22b76a7df67d4d5ea",
   "assets/yilin/stipple-25-62.webp": "9d3ce4c92aff25f17c1788fe4eb3b0d68af8608ddafd2713450c8c576897b3af",
-  "out/series/25-wu-wang/short.mp4": "de9840b6e9fd1ccd891c8d7233a38082e99fe0f253208e110c47b0495063ae57",
-  "out/series/25-wu-wang/share.mp4": "11132db6231828040aa21948b7a8ecfbe0b470a36bf0b38bd3bb73c29172bd9b"
+  "out/series/25-wu-wang/short.mp4": "6af4600c4ec947f4d43b1f5c45b9f764374cfc2b922b7d22bf7b0a4f41e1b7cf",
+  "out/series/25-wu-wang/share.mp4": "110c4025221104f59400f097c41810d926f9f4a7504e4a54bdf1cd6535bf0165"
  }
 }

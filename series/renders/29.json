@@ -1,10 +1,24 @@
 {
  "hexagram": 29,
- "rendered": "2026-09-27T16:57:35.644Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:13:00.800Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -13.1,
+   "phoneLufs": -17.27,
+   "dbtp": 0.04
+  },
+  "gain": 1.6,
+  "limiter": -4.8,
+  "after": {
+   "lufs": -12.82,
+   "phoneLufs": -16.52,
+   "dbtp": -2.98
+  }
+ },
  "props": {
   "hexagram": {
    "number": 29,
@@ -28,7 +42,7 @@
   "hook": "One problem after another?",
   "meaning": [
    "The Abyss says:\nkeep moving.",
-   "Like water: fill\nit, flow on."
+   "Like water: pass\nthrough, flow on."
   ],
   "question": "What's the next\nsmall step?",
   "plates": [
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Through danger,\nkeep your word.",
+   "text": "Through danger,\nstay true.",
    "scene": "abyss",
    "clip": "assets/3d/abyss-29-100bpm-12b-j481fo.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/abyss-29-100bpm-12b-j481fo.mp4": "9c684df6b72c294e975d02e42fd7931748af4dd3695ffc223c94e724cfdf3aac",
   "assets/yilin/stipple-29-31.webp": "aa2c496d339ca7eb44048d57c0ece1d9889bc2176e19052e68a7cf3eaf12b873",
   "assets/yilin/stipple-29-60.webp": "9f78a08fc1f19257fdd88a1edd1cd347b510f1fbac7029cb909b6857433f8c57",
-  "out/series/29-kan/short.mp4": "818c56382305ac13ac309ff6d504c9a65000eefab5ceb1a9b5eb1ad92b58dbc0",
-  "out/series/29-kan/share.mp4": "dee7b6cee0a563d11e389cce184a1b93938d9c90655911085d82d6399f0d1e0f"
+  "out/series/29-kan/short.mp4": "6c1d5b9ce595734083937c25917a60408f4dc52942e16a856630d611aae62e5e",
+  "out/series/29-kan/share.mp4": "e5a73c5a8ed0ef67c0a7bdfce05a8decb293e9308dc0145b49569bfbc2b5bcf2"
  }
 }

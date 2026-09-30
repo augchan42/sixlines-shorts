@@ -1,10 +1,24 @@
 {
  "hexagram": 21,
- "rendered": "2026-09-27T16:20:35.976Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T05:54:37.254Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -6.79,
+   "phoneLufs": -8.62,
+   "dbtp": 1.7
+  },
+  "gain": -7.9,
+  "limiter": null,
+  "after": {
+   "lufs": -14.74,
+   "phoneLufs": -16.59,
+   "dbtp": -5.82
+  }
+ },
  "props": {
   "hexagram": {
    "number": 21,
@@ -25,7 +39,7 @@
   "music": "local/music/pick10-retrowave.mp3",
   "musicStart": 48.023,
   "drop": 14.4,
-  "hook": "Something blocking you for weeks?",
+  "hook": "Someone keeps crossing the line?",
   "meaning": [
    "Biting Through\nsays: bite down.",
    "It won’t clear\nby itself."
@@ -59,7 +73,7 @@
   "assets/3d/bite-21-100bpm-12b-j481fo.mp4": "55cc213b00aaea218cf6189e08f0e2e405d4874f7ac35514bff32b93af72fcf0",
   "assets/yilin/stipple-21-42.webp": "1304bffba57d927907344c213612fba3bf19068aaef374ea293c75d6262c5de5",
   "assets/yilin/stipple-21-53.webp": "69f0dee6875dcbada462ddb7e1e972abd80fb38fe4b5947ab6763a12d4667583",
-  "out/series/21-shi-ke/short.mp4": "895cd1694b0dcf63d2ea7dbdd458fe91199129f6d6b979983975bf2d1ca4dd73",
-  "out/series/21-shi-ke/share.mp4": "6e8e938a9263de33b96f57ce12ad9f4e2f84f518e840b516585fbfa966340a62"
+  "out/series/21-shi-ke/short.mp4": "50bd106436db0547a38040504cdd42420c2fc31a826998bf6bd61f49193a9337",
+  "out/series/21-shi-ke/share.mp4": "726671a153ae6f82faad567b5270f8a0f293df636d3d016c1b7724dd05bd6318"
  }
 }

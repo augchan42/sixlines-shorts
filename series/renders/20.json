@@ -1,10 +1,24 @@
 {
  "hexagram": 20,
- "rendered": "2026-09-28T01:30:05.911Z",
- "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
+ "rendered": "2026-09-30T05:51:08.908Z",
+ "commit": "072de1d92bc0dc02b41253a0db04ad3a89c73a75",
  "clean": false,
  "seconds": 32.896,
  "shareKbps": 5465,
+ "loudness": {
+  "before": {
+   "lufs": -8.43,
+   "phoneLufs": -10.85,
+   "dbtp": 0.48
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -14.07,
+   "phoneLufs": -16.53,
+   "dbtp": -4.55
+  }
+ },
  "props": {
   "hexagram": {
    "number": 20,
@@ -28,7 +42,7 @@
   "hook": "Deciding from behind a desk?",
   "meaning": [
    "Contemplation:\ngo and look.",
-   "See by going,\nnot by sitting."
+   "See how people\nactually live."
   ],
   "question": "What could you\ngo see?",
   "plates": [
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Look at your people.\nThey show how you lead.",
+   "text": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD.",
    "trigrams": [
     {
      "zh": "風",
@@ -53,7 +67,7 @@
     "mark": [
      4
     ],
-    "finding": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
+    "finding": "LINE 5: THE RULER SEES HIMSELF\nIN HOW THE PEOPLE LIVE.",
     "master": {
      "zh": "為觀之主",
      "en": "Master of Contemplation"
@@ -77,7 +91,7 @@
   "assets/3d/endcard-snap-000011-9b-ref.mp4": "ae35030635561421af7225272a3280ad77bc3ae2d32420d13486551efa007127",
   "assets/yilin/stipple-20-19.webp": "932e2b8b718c43b2df00553c8a95eae157e81604f58b58d1a726120b995e4d56",
   "assets/yilin/stipple-20-51.webp": "f78ca88a2d1ee59a546280b10e5353f0981c35dbb41d8b77a26253247216aa9a",
-  "out/series/20-guan/short.mp4": "88896ccde6e455b3d9e458c48b8ef29416f47e9e15b258ee79c53319fad10601",
-  "out/series/20-guan/share.mp4": "fa82adc9eada239a6b948a12d573b33a55bf78e0671682adb3d360eb2099dfee"
+  "out/series/20-guan/short.mp4": "140d6d55291a1a78f40105cf1fe98ca8e761112eb677935a27a63c0b9afc3beb",
+  "out/series/20-guan/share.mp4": "1ca0a9ecc9fac1b244407c17d3e13644bdedca24e065857846295a9b3eafce4b"
  }
 }
