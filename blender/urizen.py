@@ -224,17 +224,17 @@ def hair_and_beard(coll, rnd):
 #   cards: about forty thin wavy strips.
 STYLES = {
     # count of hair and beard locks, root width, cross-section, segments, wave amplitude
-    "ribbons": dict(hair=14, beard=9, width=0.2, section="flat", segments=7, wave=0.1),
+    "ribbons": dict(hair=20, beard=16, width=0.2, section="flat", segments=7, wave=0.1),
     "locks": dict(hair=13, beard=8, width=0.12, section="tube", segments=7, wave=0.08),
     "cards": dict(hair=40, beard=24, width=0.08, section="flat", segments=7, wave=0.07),
 }
 
 
-def lock_path(p, u, tail, rnd, wave, segments, lift=0.35):
+def lock_path(p, u, tail, rnd, wave, segments, lift=0.35, bend=Vector((-0.7, 0.15, 0.0))):
     """Points from a root p (on the head, u its direction) to the tail: out from the scalp, then
     bending into the stream (a quadratic curve), with an S-wave across it that is still at both
     ends."""
-    c = p + u * lift + Vector((-0.7, 0.15, 0.0))
+    c = p + u * lift + bend
     k, phase = rnd.choice((1.5, 2, 2.5)), rnd.uniform(0, math.pi)
     pts = []
     for i in range(segments + 1):
@@ -251,8 +251,19 @@ def locks(name, roots, coll, mats, style, rnd, origin=Vector()):
     st = STYLES[style]
     verts, faces, which, weights = [], [], [], []
     for p, u, tail in roots:
-        pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.1 if name != "hair" else 0.3)
-        w0 = st["width"] * rnd.uniform(0.7, 1.3)
+        if name == "beard":
+            # The beard hangs in front of the chin first, then sweeps left, so it covers both
+            # sides of the face (the user: 'The beard should be full. It should not just be on
+            # one side of the face').
+            pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.2, bend=Vector((0.1, -0.35, -0.7)))
+        elif name == "hair" and u.x > 0.25:
+            # Hair from the right side of the head blows up and over the crown to the left, so
+            # there is hair on both sides, all of it going one way (the user: 'there should be hair
+            # on both sides ... it should be flowing from one side to the other').
+            pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.3, bend=Vector((-0.3, 0.1, 0.75)))
+        else:
+            pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.1 if name != "hair" else 0.3)
+        w0 = st["width"] * rnd.uniform(0.7, 1.3) * (1.3 if name == "beard" else 1.0)
         twist = rnd.uniform(-0.6, 0.6)
         n0 = len(faces)
         rings = []
@@ -306,7 +317,8 @@ def hair_locks(coll, rnd, style):
     jit = lambda s: Vector((rnd.gauss(0, s), rnd.gauss(0, s), rnd.gauss(0, s)))  # noqa: E731
     dirs = [Vector((rnd.gauss(0, 1), rnd.gauss(0, 1), rnd.gauss(0, 1))).normalized() for _ in range(6000)]
     # Hair from the top and back only, so no lock crosses the face.
-    on_scalp = [u for u in dirs if (u.z > 0.45 and u.y > -0.45) or (u.y > 0.15 and u.z > -0.35)]
+    # Hair all round the head but the face: the top, the back and both sides above the jaw.
+    on_scalp = [u for u in dirs if (u.z > 0.45 and u.y > -0.45) or (u.y > 0.15 and u.z > -0.35) or (abs(u.x) > 0.6 and u.z > -0.2 and u.y > -0.35)]
     on_jaw = [u for u in dirs if -1.0 < u.z < MOUTH_Z - 0.08 and u.y < 0.2 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2)]
     on_lip = [u for u in dirs if u.y < -0.75 and 0.07 < abs(u.x) < 0.34 and MOUTH_Z + 0.02 < u.z < MOUTH_Z + 0.12]
     brows = [u for u in dirs if u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34][:30]
@@ -320,7 +332,8 @@ def hair_locks(coll, rnd, style):
 
     # The tail: hair converges a little above the beard's point, the two meeting at the end.
     hair = [(shape(u) - u * 0.03, u, TAIL + Vector((0, 0, 0.12)) + jit(0.06)) for u in spread(on_scalp, st["hair"])]
-    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, 0, -0.12)) + jit(0.06)) for u in spread(on_jaw, st["beard"])]
+    # The beard's point is lower and further forward than the hair's, so it passes in front of the neck.
+    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, -0.45, -0.35)) + jit(0.06)) for u in spread(on_jaw, st["beard"])]
     tache = [(shape(u), u, shape(u) + Vector((-0.5, 0.1, -0.5)) + jit(0.05)) for u in spread(on_lip, 4)]
     hair_and_beard.blown = [(locks("hair", hair, coll, white, style, rnd), 0.22), (locks("moustache", tache, coll, white, style, rnd), 0.05)]
     left = Vector((-1.0, 0.0, 0.0))
