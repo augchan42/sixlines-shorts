@@ -1,10 +1,10 @@
 {
  "explainer": "structure-pairs-pages-2-3",
- "rendered": "2026-09-30T18:22:19.507Z",
- "commit": "6e95ccf797a7ae90c507a2e03f2a3c06ecd64c95",
+ "rendered": "2026-09-30T18:29:26.394Z",
+ "commit": "4e2b18cb54f3f5b668bea5894cd75384f7e92006",
  "clean": false,
- "seconds": 22.229333,
- "shareKbps": 8000,
+ "seconds": 27.221333,
+ "shareKbps": 6631,
  "props": {
   "pages": [
    {
@@ -14,7 +14,7 @@
      "clip": {
       "src": "local/structure/pair-3-4.mp4"
      },
-     "hold": 5
+     "hold": 7
     }
    },
    {
@@ -24,7 +24,7 @@
      "clip": {
       "src": "local/structure/pair-29-30.mp4"
      },
-     "hold": 6
+     "hold": 9
     }
    }
   ],
@@ -74,7 +74,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/structure-pairs-pages-2-3/short.mp4": "75a7e6dced54e9acc27c2c4dd9ce5951c4b5d29110becad4eb2cce7ef750aa8e",
-  "out/explainers/structure-pairs-pages-2-3/share.mp4": "d3555651247b17c2420e51e9d5bba054bbb72ced54c2765609e96a841d8b5f9e"
+  "out/explainers/structure-pairs-pages-2-3/short.mp4": "b5da09c99dcb22393e7285fa7aec12da52555224dae5204e49f09c6438a9a283",
+  "out/explainers/structure-pairs-pages-2-3/share.mp4": "d69cdd558cd8a7e85521e45ca4fe8b699a860f7b6f6e520b8a779e1b6a381b1e"
  }
 }
