@@ -1,0 +1,378 @@
+{
+ "pages": [
+  {
+   "q": "WHAT IS AN I CHING LINE",
+   "a": "THE I CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
+   "show": {
+    "diagram": {
+     "kind": "line",
+     "at": 1
+    },
+    "hold": 6
+   }
+  },
+  {
+   "q": "AND SIX LINES",
+   "a": "2 X 2 X 2 X 2 X 2 X 2 = 64.\nSIX BITS IDENTIFY\nONE OF 64 PATTERNS.",
+   "show": {
+    "diagram": {
+     "kind": "tree",
+     "at": 1,
+     "morph": 7.5
+    },
+    "hold": 11
+   }
+  },
+  {
+   "q": "WHAT DID SHANNON MEASURE",
+   "a": "CLAUDE SHANNON, 1948:\nUNCERTAINTY, IN BITS.",
+   "show": {
+    "diagram": {
+     "kind": "bits",
+     "v": 42,
+     "weights": true
+    },
+    "hold": 6
+   }
+  },
+  {
+   "q": "WHEN IS UNCERTAINTY SIX BITS",
+   "a": "WHEN ALL 64 PATTERNS\nARE EQUALLY LIKELY.",
+   "show": {
+    "diagram": {
+     "kind": "overview"
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "ARE ALL 64 EQUALLY LIKELY",
+   "a": "THREE FAIR COINS: YES.\nYARROW STALKS: YES,\nUSING THE STANDARD ODDS.\nEACH LINE CHOSEN INDEPENDENTLY.",
+   "show": {
+    "diagram": {
+     "kind": "odds",
+     "at": 1
+    },
+    "hold": 8
+   }
+  },
+  {
+   "q": "DID SHANNON READ THE I CHING",
+   "a": "WE DON'T KNOW.\nTHE LINK HERE IS MATHEMATICAL.",
+   "show": {
+    "diagram": {
+     "kind": "overview"
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "WHAT DO SIX BITS TELL ME",
+   "a": "WHICH PATTERN YOU HAVE.\nTHE BOOK ASKS HOW TO ACT.\nYOU STILL HAVE TO JUDGE.",
+   "show": {
+    "diagram": {
+     "kind": "overview",
+     "v": 42
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "",
+   "a": "6 LINES\n6 BITS",
+   "show": {}
+  }
+ ],
+ "plate": "local/leibniz/plate.jpg",
+ "names": {
+  "0": {
+   "zh": "坤",
+   "name": "The Receptive"
+  },
+  "1": {
+   "zh": "剝",
+   "name": "Splitting Apart"
+  },
+  "2": {
+   "zh": "比",
+   "name": "Holding Together"
+  },
+  "3": {
+   "zh": "觀",
+   "name": "Contemplation"
+  },
+  "4": {
+   "zh": "豫",
+   "name": "Enthusiasm"
+  },
+  "5": {
+   "zh": "晉",
+   "name": "Progress"
+  },
+  "6": {
+   "zh": "萃",
+   "name": "Gathering Together"
+  },
+  "7": {
+   "zh": "否",
+   "name": "Standstill"
+  },
+  "8": {
+   "zh": "謙",
+   "name": "Modesty"
+  },
+  "9": {
+   "zh": "艮",
+   "name": "Keeping Still"
+  },
+  "10": {
+   "zh": "蹇",
+   "name": "Obstruction"
+  },
+  "11": {
+   "zh": "漸",
+   "name": "Development"
+  },
+  "12": {
+   "zh": "小過",
+   "name": "Preponderance of the Small"
+  },
+  "13": {
+   "zh": "旅",
+   "name": "The Wanderer"
+  },
+  "14": {
+   "zh": "咸",
+   "name": "Influence"
+  },
+  "15": {
+   "zh": "遯",
+   "name": "Retreat"
+  },
+  "16": {
+   "zh": "師",
+   "name": "The Army"
+  },
+  "17": {
+   "zh": "蒙",
+   "name": "Youthful Folly"
+  },
+  "18": {
+   "zh": "坎",
+   "name": "The Abyss"
+  },
+  "19": {
+   "zh": "渙",
+   "name": "Dispersion"
+  },
+  "20": {
+   "zh": "解",
+   "name": "Deliverance"
+  },
+  "21": {
+   "zh": "未濟",
+   "name": "Before Completion"
+  },
+  "22": {
+   "zh": "困",
+   "name": "Oppression"
+  },
+  "23": {
+   "zh": "訟",
+   "name": "Conflict"
+  },
+  "24": {
+   "zh": "升",
+   "name": "Pushing Upward"
+  },
+  "25": {
+   "zh": "蠱",
+   "name": "Work on the Decayed"
+  },
+  "26": {
+   "zh": "井",
+   "name": "The Well"
+  },
+  "27": {
+   "zh": "巽",
+   "name": "The Gentle"
+  },
+  "28": {
+   "zh": "恆",
+   "name": "Duration"
+  },
+  "29": {
+   "zh": "鼎",
+   "name": "The Caldron"
+  },
+  "30": {
+   "zh": "大過",
+   "name": "Greatness in Excess"
+  },
+  "31": {
+   "zh": "姤",
+   "name": "Coming to Meet"
+  },
+  "32": {
+   "zh": "復",
+   "name": "Return"
+  },
+  "33": {
+   "zh": "頤",
+   "name": "Nourishment"
+  },
+  "34": {
+   "zh": "屯",
+   "name": "Difficulty at the Beginning"
+  },
+  "35": {
+   "zh": "益",
+   "name": "Increase"
+  },
+  "36": {
+   "zh": "震",
+   "name": "The Arousing"
+  },
+  "37": {
+   "zh": "噬嗑",
+   "name": "Biting Through"
+  },
+  "38": {
+   "zh": "隨",
+   "name": "Following"
+  },
+  "39": {
+   "zh": "无妄",
+   "name": "Innocence"
+  },
+  "40": {
+   "zh": "明夷",
+   "name": "Darkening of the Light"
+  },
+  "41": {
+   "zh": "賁",
+   "name": "Grace"
+  },
+  "42": {
+   "zh": "既濟",
+   "name": "After Completion"
+  },
+  "43": {
+   "zh": "家人",
+   "name": "The Family"
+  },
+  "44": {
+   "zh": "豐",
+   "name": "Abundance"
+  },
+  "45": {
+   "zh": "離",
+   "name": "Clinging Fire"
+  },
+  "46": {
+   "zh": "革",
+   "name": "Revolution"
+  },
+  "47": {
+   "zh": "同人",
+   "name": "Fellowship"
+  },
+  "48": {
+   "zh": "臨",
+   "name": "Approach"
+  },
+  "49": {
+   "zh": "損",
+   "name": "Decrease"
+  },
+  "50": {
+   "zh": "節",
+   "name": "Limitation"
+  },
+  "51": {
+   "zh": "中孚",
+   "name": "Inner Truth"
+  },
+  "52": {
+   "zh": "歸妹",
+   "name": "The Marrying Maiden"
+  },
+  "53": {
+   "zh": "睽",
+   "name": "Opposition"
+  },
+  "54": {
+   "zh": "兌",
+   "name": "The Joyous"
+  },
+  "55": {
+   "zh": "履",
+   "name": "Treading"
+  },
+  "56": {
+   "zh": "泰",
+   "name": "Peace"
+  },
+  "57": {
+   "zh": "大畜",
+   "name": "Great Accumulation"
+  },
+  "58": {
+   "zh": "需",
+   "name": "Waiting"
+  },
+  "59": {
+   "zh": "小畜",
+   "name": "Small Taming"
+  },
+  "60": {
+   "zh": "大壯",
+   "name": "Great Power"
+  },
+  "61": {
+   "zh": "大有",
+   "name": "Great Possession"
+  },
+  "62": {
+   "zh": "夬",
+   "name": "Breakthrough"
+  },
+  "63": {
+   "zh": "乾",
+   "name": "The Creative"
+  }
+ },
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick17-midnight-synthwave.mp3",
+ "musicStart": 0,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 10.435916947494293,
+  "rate": 0.5749375
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}

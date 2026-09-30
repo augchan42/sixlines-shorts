@@ -1,0 +1,72 @@
+{
+ "about": "King Wen's order is 32 pairs: structure short 2 (docs/superpowers/specs/2026-09-30-structure-shorts-design.md; the facts tested in tests/structure.test.mjs). Queued overnight 2026-10-01. Draft 2: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-structure-pairs.md). The Blender slabs (blender/hexagram.py) that turn over are a new style and get a smoke test before the full render.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick05-80s-retro-inspiring-synth-pop.mp3",
+  "start": 35,
+  "why": "calm, 82.5 bpm, C major, from 35 s as on 18, 27 and 52; no other structure short uses it"
+ },
+ "endcardRate": 0.75,
+ "caption": "The I Ching’s usual order has 32 pairs of hexagrams, each a six-line pattern. In 28 pairs, the second is the first upside down; in the other 4, every solid line becomes broken and every broken line becomes solid. sixlines.day",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "HOW IS THE I CHING ARRANGED",
+     "a": "THE BOOK HAS 64 HEXAGRAMS.\nEACH HAS SIX LINES:\nSOLID OR BROKEN.\nITS USUAL ORDER HAS 32 PAIRS.",
+     "show": {},
+     "showNote": "the 64 small, in rows of two, each pair bracketed"
+    },
+    {
+     "q": "HOW DOES A PAIR WORK",
+     "a": "IN 28 PAIRS, TURN THE FIRST\nUPSIDE DOWN TO GET THE SECOND.\n3 DIFFICULTY AT THE BEGINNING\n→ 4 YOUTHFUL FOLLY.",
+     "show": {
+      "small": [
+       3,
+       4
+      ]
+     },
+     "showNote": "Blender: 3 as an obsidian slab turns over end to end and becomes 4"
+    },
+    {
+     "q": "WHAT ABOUT THE OTHER 4 PAIRS",
+     "a": "EACH HEXAGRAM STAYS THE SAME\nUPSIDE DOWN.\nSWAP SOLID AND BROKEN INSTEAD.\n29 THE ABYSS → 30 CLINGING FIRE.",
+     "show": {
+      "small": [
+       29,
+       30
+      ]
+     },
+     "showNote": "Blender: 29 turns end to end and stays 29; then each slab flips on its own axis into 30"
+    },
+    {
+     "q": "HOW DO I READ A PAIR",
+     "a": "READ THE TWO TEXTS TOGETHER.\nCOMPARE WHAT EACH SITUATION\nASKS YOU TO DO.",
+     "show": {},
+     "showNote": "the 32 pairs run past fast, each turning"
+    },
+    {
+     "q": "",
+     "a": "32 PAIRS.\n64 HEXAGRAMS.",
+     "show": {}
+    }
+   ]
+  }
+ ]
+}

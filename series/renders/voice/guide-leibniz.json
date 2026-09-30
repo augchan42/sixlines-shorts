@@ -1,0 +1,102 @@
+{
+ "beats": {
+  "01": {
+   "text": "The I-Ching. A book of sixty-four situations, drawn with six solid or broken lines.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.28,
+   "sha256": "4888737685c86e1361ab81c8ba1338ea1875ea61d54a15e4495d48e8b3d60aa2",
+   "made": "2026-09-30T18:04:15.501Z"
+  },
+  "02": {
+   "text": "In seventeen-oh-one, missionary Joachim Boo-vay sent the mathematician Leibniz a diagram from China.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.28,
+   "sha256": "80ad30aa84b32fc2a475a175e75898691f8ac0102d5eb3d4446ad3f883d98aa8",
+   "made": "2026-09-30T18:04:19.332Z"
+  },
+  "03": {
+   "text": "Leibniz already counted using only zeros and ones.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.24,
+   "sha256": "fb4fd029ffbb0b0ec31bdd40d3450ece3a3cd4133746596da5ba8ef174bd98f3",
+   "made": "2026-09-30T18:04:21.407Z"
+  },
+  "04": {
+   "text": "Here, broken means zero; solid means one. The patterns count from zero to sixty-three.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 8.16,
+   "sha256": "05c6993178fc563120e37dd5bc0de008cc57f6ffaa5861df3e256b16108f5d34",
+   "made": "2026-09-30T18:04:26.126Z"
+  },
+  "05": {
+   "text": "He was delighted. His paper credited the figures to the legendary Foo Shee.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 5.68,
+   "sha256": "5a93df8c6eab761a4b33028c610f229c91daa604f5a4e6c13cdd5b0ac567dd15",
+   "made": "2026-09-30T18:04:30.222Z"
+  },
+  "06": {
+   "text": "The order is attributed to Shaow Yong, an eleventh-century scholar.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.48,
+   "sha256": "f5c431d81b0c5f96ff5ac84f77193c6b11f4159859808c03dc4940569f9c38d5",
+   "made": "2026-09-30T18:04:33.382Z"
+  },
+  "07": {
+   "text": "Recommended for: counting. Not recommended for: checking references.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 5.76,
+   "sha256": "7830f382e0e5f0553a92424c1eea77165b3d9eae45832890455586b57d84ad56",
+   "made": "2026-09-30T18:04:36.603Z"
+  }
+ }
+}

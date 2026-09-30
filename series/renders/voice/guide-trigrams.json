@@ -1,0 +1,102 @@
+{
+ "beats": {
+  "01": {
+   "text": "The I-Ching. A book of situations. Each six-line figure has two three-line halves, called trigrams.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 9.36,
+   "sha256": "5b5dd6fa25cf3b6d69c92657f7a1511ad10bd8b753226e749deb418f09efb030",
+   "made": "2026-09-30T18:04:43.585Z"
+  },
+  "02": {
+   "text": "There are eight: every combination of solid and broken lines.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.72,
+   "sha256": "21c95647f8f2409cb986d7d3593344504d38c5eb934dd1469684ed752c6b6ace",
+   "made": "2026-09-30T18:04:46.397Z"
+  },
+  "03": {
+   "text": "One commentary lists their qualities: heaven, strong. Earth, yielding. Thunder, moving. Wind, entering.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 10.88,
+   "sha256": "5fc425649d0bf1b095c80a3dbbf4ca7817d1f47a0b4bc163ddc8d213710a44ee",
+   "made": "2026-09-30T18:04:52.121Z"
+  },
+  "04": {
+   "text": "Water, danger. Fire, clinging. Mountain, stopping. Lake, joy.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 8,
+   "sha256": "a7fdbcdbed08f94230152833701aa4aadf02925745ed97ded4e75eaea0abb91b",
+   "made": "2026-09-30T18:04:56.118Z"
+  },
+  "05": {
+   "text": "It also lists animals: horse, ox, dragon, chicken, pig, pheasant, dog, sheep.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 8.72,
+   "sha256": "12edd3ce78583d6c28da18a5d2cd0a8197ef6f8d3b8207629a81b8a42f17f221",
+   "made": "2026-09-30T18:05:00.316Z"
+  },
+  "06": {
+   "text": "Fire below water: Already Across. The task: guard against trouble.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.56,
+   "sha256": "35d8bfacecc769850d65baf89d8bcd8e9705d5f3affe613c1edaab38e1cf74ca",
+   "made": "2026-09-30T18:05:03.958Z"
+  },
+  "07": {
+   "text": "Recommended for: reading figures in halves. Not recommended for: arguing with the chicken.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.44,
+   "sha256": "1897a2e01c7b2531a7097ab9646b695a0c03d1e93171404f47709f95a2e677c6",
+   "made": "2026-09-30T18:05:08.236Z"
+  }
+ }
+}

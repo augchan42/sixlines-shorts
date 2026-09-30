@@ -1,0 +1,515 @@
+{
+ "frames": 1944,
+ "beats": [
+  {
+   "n": 1,
+   "src": "local/voice/guide-trigrams/01.mp3",
+   "from": 42,
+   "to": 323,
+   "words": [
+    {
+     "text": "The",
+     "from": 42,
+     "to": 47
+    },
+    {
+     "text": "I-Ching.",
+     "from": 49,
+     "to": 79
+    },
+    {
+     "text": "A",
+     "from": 88,
+     "to": 90
+    },
+    {
+     "text": "book",
+     "from": 92,
+     "to": 100
+    },
+    {
+     "text": "of",
+     "from": 102,
+     "to": 107
+    },
+    {
+     "text": "situations.",
+     "from": 109,
+     "to": 148
+    },
+    {
+     "text": "Each",
+     "from": 157,
+     "to": 164
+    },
+    {
+     "text": "six-line",
+     "from": 169,
+     "to": 186
+    },
+    {
+     "text": "figure",
+     "from": 188,
+     "to": 198
+    },
+    {
+     "text": "has",
+     "from": 205,
+     "to": 212
+    },
+    {
+     "text": "two",
+     "from": 217,
+     "to": 227
+    },
+    {
+     "text": "three-line",
+     "from": 232,
+     "to": 248
+    },
+    {
+     "text": "halves,",
+     "from": 251,
+     "to": 275
+    },
+    {
+     "text": "called",
+     "from": 277,
+     "to": 284
+    },
+    {
+     "text": "trigrams.",
+     "from": 292,
+     "to": 323
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "src": "local/voice/guide-trigrams/02.mp3",
+   "from": 344,
+   "to": 485,
+   "words": [
+    {
+     "text": "There",
+     "from": 344,
+     "to": 351
+    },
+    {
+     "text": "are",
+     "from": 353,
+     "to": 356
+    },
+    {
+     "text": "eight:",
+     "from": 362,
+     "to": 385
+    },
+    {
+     "text": "every",
+     "from": 387,
+     "to": 394
+    },
+    {
+     "text": "combination",
+     "from": 397,
+     "to": 416
+    },
+    {
+     "text": "of",
+     "from": 418,
+     "to": 421
+    },
+    {
+     "text": "solid",
+     "from": 425,
+     "to": 437
+    },
+    {
+     "text": "and",
+     "from": 440,
+     "to": 442
+    },
+    {
+     "text": "broken",
+     "from": 447,
+     "to": 459
+    },
+    {
+     "text": "lines.",
+     "from": 461,
+     "to": 485
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "src": "local/voice/guide-trigrams/03.mp3",
+   "from": 506,
+   "to": 833,
+   "words": [
+    {
+     "text": "One",
+     "from": 506,
+     "to": 514
+    },
+    {
+     "text": "commentary",
+     "from": 516,
+     "to": 533
+    },
+    {
+     "text": "lists",
+     "from": 535,
+     "to": 547
+    },
+    {
+     "text": "their",
+     "from": 550,
+     "to": 552
+    },
+    {
+     "text": "qualities:",
+     "from": 554,
+     "to": 593
+    },
+    {
+     "text": "heaven,",
+     "from": 595,
+     "to": 619
+    },
+    {
+     "text": "strong.",
+     "from": 622,
+     "to": 648
+    },
+    {
+     "text": "Earth,",
+     "from": 658,
+     "to": 672
+    },
+    {
+     "text": "yielding.",
+     "from": 684,
+     "to": 703
+    },
+    {
+     "text": "Thunder,",
+     "from": 720,
+     "to": 742
+    },
+    {
+     "text": "moving.",
+     "from": 749,
+     "to": 766
+    },
+    {
+     "text": "Wind,",
+     "from": 780,
+     "to": 800
+    },
+    {
+     "text": "entering.",
+     "from": 806,
+     "to": 833
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "src": "local/voice/guide-trigrams/04.mp3",
+   "from": 854,
+   "to": 1094,
+   "words": [
+    {
+     "text": "Water,",
+     "from": 854,
+     "to": 878
+    },
+    {
+     "text": "danger.",
+     "from": 885,
+     "to": 911
+    },
+    {
+     "text": "Fire,",
+     "from": 921,
+     "to": 940
+    },
+    {
+     "text": "clinging.",
+     "from": 945,
+     "to": 970
+    },
+    {
+     "text": "Mountain,",
+     "from": 979,
+     "to": 998
+    },
+    {
+     "text": "stopping.",
+     "from": 1010,
+     "to": 1029
+    },
+    {
+     "text": "Lake,",
+     "from": 1043,
+     "to": 1058
+    },
+    {
+     "text": "joy.",
+     "from": 1070,
+     "to": 1094
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "src": "local/voice/guide-trigrams/05.mp3",
+   "from": 1115,
+   "to": 1376,
+   "words": [
+    {
+     "text": "It",
+     "from": 1115,
+     "to": 1120
+    },
+    {
+     "text": "also",
+     "from": 1122,
+     "to": 1132
+    },
+    {
+     "text": "lists",
+     "from": 1134,
+     "to": 1146
+    },
+    {
+     "text": "animals:",
+     "from": 1148,
+     "to": 1180
+    },
+    {
+     "text": "horse,",
+     "from": 1182,
+     "to": 1206
+    },
+    {
+     "text": "ox,",
+     "from": 1208,
+     "to": 1230
+    },
+    {
+     "text": "dragon,",
+     "from": 1232,
+     "to": 1259
+    },
+    {
+     "text": "chicken,",
+     "from": 1260,
+     "to": 1283
+    },
+    {
+     "text": "pig,",
+     "from": 1289,
+     "to": 1307
+    },
+    {
+     "text": "pheasant,",
+     "from": 1309,
+     "to": 1333
+    },
+    {
+     "text": "dog,",
+     "from": 1339,
+     "to": 1357
+    },
+    {
+     "text": "sheep.",
+     "from": 1360,
+     "to": 1376
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "src": "local/voice/guide-trigrams/06.mp3",
+   "from": 1397,
+   "to": 1594,
+   "words": [
+    {
+     "text": "Fire",
+     "from": 1397,
+     "to": 1409
+    },
+    {
+     "text": "below",
+     "from": 1414,
+     "to": 1424
+    },
+    {
+     "text": "water:",
+     "from": 1426,
+     "to": 1455
+    },
+    {
+     "text": "Already",
+     "from": 1457,
+     "to": 1469
+    },
+    {
+     "text": "Across.",
+     "from": 1472,
+     "to": 1491
+    },
+    {
+     "text": "The",
+     "from": 1508,
+     "to": 1510
+    },
+    {
+     "text": "task:",
+     "from": 1513,
+     "to": 1541
+    },
+    {
+     "text": "guard",
+     "from": 1544,
+     "to": 1553
+    },
+    {
+     "text": "against",
+     "from": 1556,
+     "to": 1568
+    },
+    {
+     "text": "trouble.",
+     "from": 1573,
+     "to": 1594
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "src": "local/voice/guide-trigrams/07.mp3",
+   "from": 1615,
+   "to": 1838,
+   "words": [
+    {
+     "text": "Recommended",
+     "from": 1615,
+     "to": 1634
+    },
+    {
+     "text": "for:",
+     "from": 1634,
+     "to": 1646
+    },
+    {
+     "text": "reading",
+     "from": 1655,
+     "to": 1671
+    },
+    {
+     "text": "figures",
+     "from": 1673,
+     "to": 1690
+    },
+    {
+     "text": "in",
+     "from": 1692,
+     "to": 1694
+    },
+    {
+     "text": "halves.",
+     "from": 1699,
+     "to": 1727
+    },
+    {
+     "text": "Not",
+     "from": 1738,
+     "to": 1745
+    },
+    {
+     "text": "recommended",
+     "from": 1747,
+     "to": 1764
+    },
+    {
+     "text": "for:",
+     "from": 1766,
+     "to": 1776
+    },
+    {
+     "text": "arguing",
+     "from": 1790,
+     "to": 1805
+    },
+    {
+     "text": "with",
+     "from": 1807,
+     "to": 1810
+    },
+    {
+     "text": "the",
+     "from": 1811,
+     "to": 1812
+    },
+    {
+     "text": "chicken.",
+     "from": 1817,
+     "to": 1838
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "b1": 42,
+  "e1": 323,
+  "b2": 344,
+  "e2": 485,
+  "b3": 506,
+  "e3": 833,
+  "b4": 854,
+  "e4": 1094,
+  "b5": 1115,
+  "e5": 1376,
+  "b6": 1397,
+  "e6": 1594,
+  "b7": 1615,
+  "e7": 1838,
+  "halves": 251,
+  "trigrams": 292,
+  "eight": 362,
+  "solid": 425,
+  "commentary": 516,
+  "heaven": 595,
+  "earth": 658,
+  "thunder": 720,
+  "wind": 780,
+  "water": 854,
+  "fire": 921,
+  "mountain": 979,
+  "lake": 1043,
+  "horse": 1182,
+  "ox": 1208,
+  "dragon": 1232,
+  "chicken": 1260,
+  "pig": 1289,
+  "pheasant": 1309,
+  "dog": 1339,
+  "sheep": 1360,
+  "stack": 1397,
+  "across": 1472,
+  "guard": 1544,
+  "not": 1738,
+  "close": 1862
+ },
+ "close": {
+  "tagline": "REVEAL THE MOMENT",
+  "site": "sixlines.day",
+  "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "sfxFrom": 4,
+  "sfxVolume": 0.35
+ }
+}

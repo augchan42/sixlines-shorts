@@ -1,0 +1,102 @@
+{
+ "beats": {
+  "01": {
+   "text": "I am Urizen. I measure everything.",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.24,
+   "sha256": "71bc3d63dd6dc55ed62def85439321ab46ed5b632b3ef783cfef231e5b074708",
+   "made": "2026-09-30T15:27:18.994Z"
+  },
+  "02": {
+   "text": "Six solid lines. Heaven never rests. Neither do I.",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6,
+   "sha256": "4619f9520568589a3ea05e2f76b666820139071a40c4cb60a6add097da68a7c4",
+   "made": "2026-09-30T15:27:21.633Z"
+  },
+  "03": {
+   "text": "The dragon rose. The dragon flew. And I keep climbing.",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.56,
+   "sha256": "dd07fb2388c282b65f66cbe8399fe022c44788cfc69dd831cffaa123f38631f5",
+   "made": "2026-09-30T15:27:24.533Z"
+  },
+  "04": {
+   "text": "The I Ching. Chyen, top line: the dragon that went too high. There is regret.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.28,
+   "sha256": "d2ddff1042ac95a7613f25de613300825485584c8b47bd808ae8e35027a653c5",
+   "made": "2026-09-30T15:27:27.965Z"
+  },
+  "05": {
+   "text": "An old commentary explains: it knows how to advance, not how to withdraw.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 5.92,
+   "sha256": "f8f10143c7c279631b359730e8ce82286a355f7c2936350cf37f16d290bbf1b2",
+   "made": "2026-09-30T15:27:30.996Z"
+  },
+  "06": {
+   "text": "William Blake's Urizen makes rules for everything.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.84,
+   "sha256": "cae8ab5092af5797a058688a559c1ebeb06b3fa19f76a0cd74b88945287a0114",
+   "made": "2026-09-30T15:27:33.092Z"
+  },
+  "07": {
+   "text": "Withdraw?",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 1.04,
+   "sha256": "2384e5cd593810357d52d8f1194e3c237dab6cdefc37963e28204d6db75d462d",
+   "made": "2026-09-30T15:27:34.195Z"
+  }
+ }
+}

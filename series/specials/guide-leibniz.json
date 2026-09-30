@@ -1,0 +1,121 @@
+{
+  "about": "A Guide entry on Leibniz and the hexagrams in binary order, queued overnight (the user, 2026-10-01: 'please queue up a few more shorts/and ideas'). Same look and voice as guide-wangbi. Draft 2: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-guide-leibniz.md): Leibniz's paper was written in 1703 (printed 1705), the order only attributed to Shao Yong.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+    "name": "hitchiker's guide v1",
+    "note": "the user's designed Guide voice ('love it'); plain, even pace, no emphasis announcing the jokes"
+  },
+  "narration": [
+    {
+      "text": "The I-Ching. A book of sixty-four situations, drawn with six solid or broken lines.",
+      "picture": "THE I-CHING types; an 8×8 grid of small six-line figures."
+    },
+    {
+      "text": "In 1701, missionary Joachim Bouvet sent the mathematician Leibniz a diagram from China.",
+      "say": "In seventeen-oh-one, missionary Joachim Boo-vay sent the mathematician Leibniz a diagram from China.",
+      "picture": "An envelope moves from CHINA / 1701 to LEIBNIZ; it opens onto a circle around an 8×8 square."
+    },
+    {
+      "text": "Leibniz already counted using only zeros and ones.",
+      "picture": "A wig outline beside two columns: 0 1 2 3 4 and 0 1 10 11 100."
+    },
+    {
+      "text": "Here, broken means zero; solid means one. The patterns count from zero to sixty-three.",
+      "picture": "LEIBNIZ'S READING; four examples, bottom line = leftmost digit: all broken 000000 = 0; top solid 000001 = 1; fifth solid 000010 = 2; all solid 111111 = 63."
+    },
+    {
+      "text": "He was delighted. His paper credited the figures to the legendary Fu Xi.",
+      "say": "He was delighted. His paper credited the figures to the legendary Foo Shee.",
+      "picture": "A paper outline: BINARY ARITHMETIC / WRITTEN 1703, then FIGURES: FU XI (LEGEND)."
+    },
+    {
+      "text": "The order is attributed to Shao Yong, an eleventh-century scholar.",
+      "say": "The order is attributed to Shaow Yong, an eleventh-century scholar.",
+      "picture": "The diagram still; ORDER: ATTRIBUTED TO SHAO YONG / 1011–1077. No crossing out."
+    },
+    {
+      "text": "Recommended for: counting. Not recommended for: checking references.",
+      "picture": "SUMMARY, tick and cross."
+    }
+  ],
+  "sources": {
+    "leibniz": "Leibniz, 'Explication de l'Arithmétique Binaire', Mémoires de l'Académie Royale des Sciences, 1703; Bouvet's letter of 4 Nov 1701 with the Xiantian (Earlier Heaven) diagram of Shao Yong (1011-1077). See the Leibniz lesson, series/explainers/leibniz-lesson.json, and docs/superpowers/specs/2026-09-30-leibniz-diagram-design.md."
+  },
+  "timing": {
+    "fps": 30,
+    "lead": 1.4,
+    "gap": 0.7,
+    "tail": 0.8,
+    "close": 2.5
+  },
+  "close": {
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day",
+    "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+    "sfxFrom": 4,
+    "sfxVolume": 0.35
+  },
+  "marks": [
+    {
+      "name": "grid",
+      "beat": 1,
+      "word": "situations,"
+    },
+    {
+      "name": "lines",
+      "beat": 1,
+      "word": "lines."
+    },
+    {
+      "name": "sent",
+      "beat": 2,
+      "word": "sent"
+    },
+    {
+      "name": "china",
+      "beat": 2,
+      "word": "China."
+    },
+    {
+      "name": "binary",
+      "beat": 3,
+      "word": "zeros"
+    },
+    {
+      "name": "broken",
+      "beat": 4,
+      "word": "broken"
+    },
+    {
+      "name": "solid",
+      "beat": 4,
+      "word": "solid"
+    },
+    {
+      "name": "count",
+      "beat": 4,
+      "word": "count"
+    },
+    {
+      "name": "delighted",
+      "beat": 5,
+      "word": "delighted."
+    },
+    {
+      "name": "fuxi",
+      "beat": 5,
+      "word": "Fu"
+    },
+    {
+      "name": "shao",
+      "beat": 6,
+      "word": "Shao"
+    },
+    {
+      "name": "not",
+      "beat": 7,
+      "word": "Not"
+    }
+  ]
+}

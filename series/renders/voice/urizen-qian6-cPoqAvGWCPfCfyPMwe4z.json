@@ -1,0 +1,32 @@
+{
+ "beats": {
+  "01": {
+   "text": "I am Urizen. I measure everything.",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.16,
+   "sha256": "09c80335028ed55a856103c95747cea0d5cdcbb05660676ed8f791ec9a2a72f7",
+   "made": "2026-09-30T15:27:05.890Z"
+  },
+  "07": {
+   "text": "Withdraw?",
+   "model": "eleven_v4",
+   "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 1.12,
+   "sha256": "d6f93b0e9b0ca324de0316bb4eb5c38e6b0aedfe4f1dd9c6730f3d435c0926f4",
+   "made": "2026-09-30T15:27:07.683Z"
+  }
+ }
+}

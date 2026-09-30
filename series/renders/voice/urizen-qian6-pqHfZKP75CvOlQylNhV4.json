@@ -1,0 +1,18 @@
+{
+ "beats": {
+  "01": {
+   "text": "I am Urizen. I measure everything.",
+   "model": "eleven_v4",
+   "voiceId": "pqHfZKP75CvOlQylNhV4",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.6,
+   "sha256": "f7b362a07457f531b945a0662a0bb46c2b5bf95e67a6ace47c5d2c8fbfd88119",
+   "made": "2026-09-30T15:23:54.281Z"
+  }
+ }
+}

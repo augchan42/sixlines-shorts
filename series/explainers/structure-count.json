@@ -1,0 +1,49 @@
+{
+ "about": "Counting from Kun 0 to Qian 63: structure short 4, a loop of about 15 s (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). The Leibniz lesson's ring count (Diagram.tsx 'count'), 0 to 63 in one pass. Queued overnight 2026-10-01. Draft 2: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-structure-count.md).",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick09-synthwave.mp3",
+  "start": 91,
+  "why": "calm, 100 bpm, G# major, from 91 s as on 5, 39 and 60; no other structure short uses it"
+ },
+ "endcard": false,
+ "endcardNote": "a loop: no end card, so the last frame runs back into the first",
+ "caption": "Read the I Ching’s six-line patterns as binary numbers: broken = 0, solid = 1, with the bottom line as the leftmost digit. On the circle attributed to Shao Yong, count up the right half from 0 to 31, then up the left from 32 to 63; sixlines.day.",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "HOW CAN SIX LINES COUNT",
+     "a": "THE I CHING IS A BOOK.\n64 PATTERNS, SIX LINES EACH.\nREAD BROKEN AS 0, SOLID AS 1.\nTHAT GIVES 0 TO 63.",
+     "show": {
+      "diagram": {
+       "count": [
+        0,
+        63
+       ],
+       "at": 5,
+       "secs": 12
+      },
+      "hold": 14
+     }
+    }
+   ]
+  }
+ ]
+}

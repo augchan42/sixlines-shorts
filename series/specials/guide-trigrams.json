@@ -1,0 +1,196 @@
+{
+  "about": "A Guide entry on the eight trigrams, queued overnight (the user, 2026-10-01: 'please queue up a few more shorts/and ideas'). Same look and voice as guide-wangbi. Draft 2: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-guide-trigrams.md), except 63 is named Already Across, as in the converged guide-64 entry.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+    "name": "hitchiker's guide v1",
+    "note": "the user's designed Guide voice ('love it'); plain, even pace, no emphasis announcing the jokes"
+  },
+  "narration": [
+    {
+      "text": "The I-Ching. A book of situations. Each six-line figure has two three-line halves, called trigrams.",
+      "picture": "THE I-CHING types; one six-line figure separates into two halves, each labelled TRIGRAM."
+    },
+    {
+      "text": "There are eight: every combination of solid and broken lines.",
+      "picture": "A solid and a broken line, labelled SOLID and BROKEN; eight trigrams in a still grid; 2 × 2 × 2 = 8."
+    },
+    {
+      "text": "One commentary lists their qualities: heaven, strong. Earth, yielding. Thunder, moving. Wind, entering.",
+      "picture": "說卦 DISCUSSION OF THE TRIGRAMS; four cards: 乾 HEAVEN / STRONG, 坤 EARTH / YIELDING, 震 THUNDER / MOVING, 巽 WIND / ENTERING."
+    },
+    {
+      "text": "Water, danger. Fire, clinging. Mountain, stopping. Lake, joy.",
+      "picture": "The other four: 坎 WATER / DANGER, 離 FIRE / CLINGING, 艮 MOUNTAIN / STOPPING, 兌 LAKE / JOY."
+    },
+    {
+      "text": "It also lists animals: horse, ox, dragon, chicken, pig, pheasant, dog, sheep.",
+      "picture": "The grid again; simple animal outlines beside their trigrams as named; the pheasant with a long tail; the chicken the same size as the rest."
+    },
+    {
+      "text": "Fire below water: Already Across. The task: guard against trouble.",
+      "picture": "Fire stacks below water; 63 既濟 ALREADY ACROSS, then GUARD AGAINST TROUBLE."
+    },
+    {
+      "text": "Recommended for: reading figures in halves. Not recommended for: arguing with the chicken.",
+      "picture": "SUMMARY, tick and cross; the same chicken outline beside the second row, still."
+    }
+  ],
+  "sources": {
+    "shuogua": "說卦 (Discussion of the Trigrams, one of the Ten Wings): 乾健也，坤順也，震動也，巽入也，坎陷也，離麗也，艮止也，兌說也; 乾為馬，坤為牛，震為龍，巽為雞，坎為豕，離為雉，艮為狗，兌為羊. ~/projects/chinese-classics-reference/zhouyi-zhushu/text/67-shuogua-zhuan.md (lines 268-270).",
+    "h63": "既濟: 離 fire below, 坎 water above."
+  },
+  "timing": {
+    "fps": 30,
+    "lead": 1.4,
+    "gap": 0.7,
+    "tail": 0.8,
+    "close": 2.5
+  },
+  "close": {
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day",
+    "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+    "sfxFrom": 4,
+    "sfxVolume": 0.35
+  },
+  "marks": [
+    {
+      "name": "halves",
+      "beat": 1,
+      "word": "halves,"
+    },
+    {
+      "name": "trigrams",
+      "beat": 1,
+      "word": "trigrams."
+    },
+    {
+      "name": "eight",
+      "beat": 2,
+      "word": "eight:"
+    },
+    {
+      "name": "solid",
+      "beat": 2,
+      "word": "solid"
+    },
+    {
+      "name": "commentary",
+      "beat": 3,
+      "word": "commentary"
+    },
+    {
+      "name": "heaven",
+      "beat": 3,
+      "word": "heaven,"
+    },
+    {
+      "name": "earth",
+      "beat": 3,
+      "word": "Earth,"
+    },
+    {
+      "name": "thunder",
+      "beat": 3,
+      "word": "Thunder,"
+    },
+    {
+      "name": "wind",
+      "beat": 3,
+      "word": "Wind,"
+    },
+    {
+      "name": "water",
+      "beat": 4,
+      "word": "Water,"
+    },
+    {
+      "name": "fire",
+      "beat": 4,
+      "word": "Fire,"
+    },
+    {
+      "name": "mountain",
+      "beat": 4,
+      "word": "Mountain,"
+    },
+    {
+      "name": "lake",
+      "beat": 4,
+      "word": "Lake,"
+    },
+    {
+      "name": "horse",
+      "beat": 5,
+      "word": "horse,"
+    },
+    {
+      "name": "ox",
+      "beat": 5,
+      "word": "ox,"
+    },
+    {
+      "name": "dragon",
+      "beat": 5,
+      "word": "dragon,"
+    },
+    {
+      "name": "chicken",
+      "beat": 5,
+      "word": "chicken,"
+    },
+    {
+      "name": "pig",
+      "beat": 5,
+      "word": "pig,"
+    },
+    {
+      "name": "pheasant",
+      "beat": 5,
+      "word": "pheasant,"
+    },
+    {
+      "name": "dog",
+      "beat": 5,
+      "word": "dog,"
+    },
+    {
+      "name": "sheep",
+      "beat": 5,
+      "word": "sheep."
+    },
+    {
+      "name": "stack",
+      "beat": 6,
+      "word": "Fire"
+    },
+    {
+      "name": "across",
+      "beat": 6,
+      "word": "Across."
+    },
+    {
+      "name": "guard",
+      "beat": 6,
+      "word": "guard"
+    },
+    {
+      "name": "not",
+      "beat": 7,
+      "word": "Not"
+    }
+  ],
+  "onScreenChinese": [
+    "說卦 Discussion of the Trigrams",
+    "乾 Heaven",
+    "坤 Earth",
+    "震 Thunder",
+    "巽 Wind",
+    "坎 Water",
+    "離 Fire",
+    "艮 Mountain",
+    "兌 Lake",
+    "既濟 Already Across"
+  ]
+}

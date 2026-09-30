@@ -19,8 +19,12 @@ import { Guide, type GuideProps } from "./templates/Guide";
 import guideWangbi from "../series/specials/guide-wangbi.props.json";
 import guide64 from "../series/specials/guide-64.props.json";
 import guideCords from "../series/specials/guide-cords.props.json";
+import guideLeibniz from "../series/specials/guide-leibniz.props.json";
+import guideTrigrams from "../series/specials/guide-trigrams.props.json";
 import { Guide64 } from "./templates/Guide64";
 import { GuideCords } from "./templates/GuideCords";
+import { GuideLeibniz } from "./templates/GuideLeibniz";
+import { GuideTrigrams } from "./templates/GuideTrigrams";
 import { TalkingHead, type TalkingHeadProps } from "./templates/TalkingHead";
 import urizenQian6 from "../series/specials/urizen-qian6.props.json";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
@@ -150,7 +154,7 @@ export const Root: React.FC = () => (
       calculateMetadata={({ props }: { props: GuideProps }) => ({ durationInFrames: props.frames })}
     />
     {/* Guide entries after Wang Bi: hexagram 64, and Confucius's broken cords. */}
-    {([["Guide64", Guide64, guide64], ["GuideCords", GuideCords, guideCords]] as const).map(([id, component, props]) => (
+    {([["Guide64", Guide64, guide64], ["GuideCords", GuideCords, guideCords], ["GuideLeibniz", GuideLeibniz, guideLeibniz], ["GuideTrigrams", GuideTrigrams, guideTrigrams]] as const).map(([id, component, props]) => (
       <Composition
         key={id}
         id={id}
