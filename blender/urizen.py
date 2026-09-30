@@ -181,11 +181,17 @@ def hair_and_beard(coll, rnd):
     left = Vector((-1.0, 0.0, 0.0))
     # Sample roots on the shaped head from directions on the sphere.
     dirs = [Vector((rnd.gauss(0, 1), rnd.gauss(0, 1), rnd.gauss(0, 1))).normalized() for _ in range(4000)]
-    hair, beard, tache, brows = [], [], [], []
+    hair, beard, tache, brows, crown = [], [], [], [], []
     for u in dirs:
         p = shape(u)
-        if (u.z > 0.3 or (u.y > 0.25 and u.z > -0.35)) and len(hair) < 170:
-            d = u * 0.6 + Vector((-1.0, 0.5, -0.35)) + jit(0.3)
+        if u.z > 0.5 and len(crown) < 140:
+            # The crown: short, wide shards lying flat over the top of the head, so no scalp shows.
+            d = Vector((-1.0, 0.25, -0.25 * u.z)) + jit(0.12)
+            crown.append((p - u * 0.02, d, rnd.uniform(0.4, 1.0), rnd.uniform(0.09, 0.15)))
+        elif (u.z > 0.3 or (u.y > 0.25 and u.z > -0.35)) and len(hair) < 280:
+            # Swept back and to the left, nearly level (the user: 'it should not be angled up.
+            # It should be more horizontal'): little of the root's own upward direction.
+            d = Vector((u.x * 0.3, u.y * 0.4, u.z * 0.12)) + Vector((-1.0, 0.35, -0.12)) + jit(0.18)
             hair.append((p - u * 0.04, d, rnd.uniform(0.5, 1.9), rnd.uniform(0.05, 0.1)))
         elif -1.02 < u.z < MOUTH_Z - 0.08 and u.y < 0.15 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2) and len(beard) < 170:
             d = u * 0.45 + Vector((-0.3, -0.15, -1.0)) + jit(0.22)
@@ -196,7 +202,7 @@ def hair_and_beard(coll, rnd):
         elif u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34 and len(brows) < 30:
             side = math.copysign(1, u.x)
             brows.append((p, Vector((side, -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)))
-    hair_and_beard.blown = [(shards("hair", hair, coll, white, left * 0.9, seed=1), 0.22), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
+    hair_and_beard.blown = [(shards("hair", hair, coll, white, left * 0.9, seed=1), 0.22), (shards("crown", crown, coll, white, left * 0.4, seed=5), 0.08), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
     shards("brows", brows, coll, white, left * 0.2, seed=3)
     # The beard hangs from the jaw, so it turns about the jaw's hinge.
     return shards("beard", beard, coll, white, left * 0.8 + Vector((0, 0, -0.2)), origin=HINGE, seed=4)

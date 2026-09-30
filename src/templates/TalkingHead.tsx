@@ -35,7 +35,7 @@ const lettersOf = (words: GuideWord[]) =>
 const Typed: React.FC<{ f: number; words: GuideWord[]; colour: string }> = ({ f, words, colour }) => {
   const shown = lettersOf(words).filter((c) => c.at <= f);
   return (
-    <div style={{ position: "absolute", left: 80, right: 80, top: 96, fontFamily: sans, fontWeight: 700, fontSize: 50, lineHeight: 1.36, letterSpacing: 3, color: colour, filter: glow(colour, 6) }}>
+    <div style={{ position: "absolute", left: 80, right: 80, top: 96, fontFamily: sans, fontWeight: 700, fontSize: 46, lineHeight: 1.36, letterSpacing: 3, color: colour, filter: glow(colour, 6) }}>
       {shown.map((c, i) => <span key={i} style={i === shown.length - 1 && f - c.at < 4 ? { color: C.white } : undefined}>{c.ch}</span>)}
     </div>
   );
@@ -84,9 +84,9 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({ video, beats, marks: m
       <Hexagram f={f} at={m.hexagram} top={m.top} />
       <Label f={f} at={m.top} x={X + BAR + 18} y={TOP - 4} lines={["TOP"]} colour={C.amber} size={26} />
       {f >= m.quote && (
-        <div style={{ position: "absolute", left: X, top: TOP + 330, width: 330, color: C.green, filter: glow(C.green, 5) }}>
+        <div style={{ position: "absolute", left: X, top: TOP + 330, width: 380, color: C.green, filter: glow(C.green, 5) }}>
           <div style={{ fontFamily: fonts.serif, fontSize: 44, letterSpacing: 4 }}>知進而不知退</div>
-          <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 24, lineHeight: 1.3, letterSpacing: 2, marginTop: 8 }}>KNOWS HOW TO ADVANCE,<br />NOT HOW TO WITHDRAW</div>
+          <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 22, lineHeight: 1.3, letterSpacing: 1.5, marginTop: 8 }}>KNOWS HOW TO ADVANCE,<br />NOT HOW TO WITHDRAW</div>
         </div>
       )}
       {ivory && close && <IconClose tagline={close.tagline} site={close.site} />}
