@@ -20,17 +20,20 @@ the Remotion wireframes (src/scenes/Diagram.tsx) where they already exist (tree,
 
 Borrowed from 8bitoracle-brand (src/app/globals.css): `crt-tune-in`, a 150 ms power-on flicker
 (opacity 0, 0.85, 0.3, 1) at each short's start; `hex-line-cast`, lines cast bottom to top 80 ms
-apart, for a hexagram drawn beside a corner. Neither repo has 3D; the Blender scenes are new.
+apart, for a hexagram drawn beside a vertex. Neither repo has 3D; the Blender scenes are new.
 
 Order of making: 1 the cube, first, as the smoke test for Blender in the terminal; then 2, 7, 5,
 3 and 4, 6.
 
-## 1. The 64 are corners of a six-dimensional cube
+## 1. The 64 are vertices of a six-dimensional cube
+
+The user, 2026-09-30, on "corner": "I think corner just makes it ambiguous, or it makes it specific to the
+edge, which is not correct." So vertex and vertices, on screen and in the caption.
 
 Facts (tested in tests/structure.test.mjs):
 - Changing one line of a hexagram gives another hexagram. Each has exactly six such neighbours.
-- So the 64 are the corners of a six-dimensional cube: 64 corners, 192 edges, six at each corner.
-- Changing all six lines reaches the opposite corner, six steps away: Qian 乾 (The Creative) to
+- So the 64 are the vertices of a six-dimensional cube: 64 vertices, 192 edges, six at each vertex.
+- Changing all six lines reaches the opposite vertex, six steps away: Qian 乾 (The Creative) to
   Kun 坤 (The Receptive).
 - The Zuo zhuan (左傳, 4th century BCE) names a changing line by the hexagram it turns into:
   "Guan zhi Pi" (觀之否, Contemplation going to Standstill) is line 4 of Guan. The one-line
@@ -39,20 +42,20 @@ Facts (tested in tests/structure.test.mjs):
 
 Pages:
 1. WHAT SHAPE ARE THE 64 / A CUBE.\nIN SIX DIMENSIONS.
-   Clip: the cube turning slowly, all 64 corners dim green.
-2. WHAT IS A CORNER / ONE HEXAGRAM.\nNEIGHBOURS DIFFER BY ONE LINE.
-   Clip: one corner amber, its six edges and neighbours lit; the hexagram drawn beside it.
+   Clip: the cube turning slowly, all 64 vertices dim green.
+2. WHAT IS A VERTEX / ONE HEXAGRAM.\nNEIGHBOURS DIFFER BY ONE LINE.
+   Clip: one vertex amber, its six edges and neighbours lit; the hexagram drawn beside it.
 3. HOW FAR IS THE OPPOSITE / SIX STEPS.\nEVERY LINE CHANGED.\n乾 THE CREATIVE TO 坤 THE RECEPTIVE.
    Clip: a path from Qian to Kun, one edge at a time, a relay click at each step.
 4. WHO READ IT THIS WAY / THE ZUO ZHUAN, 4TH CENTURY BCE:\nA LINE IS NAMED BY WHERE IT LEADS.
    Clip: Guan and Pi, one edge between them lit amber.
-5. 64 CORNERS\n6 WAYS OUT OF EACH
+5. 64 VERTICES\n6 WAYS OUT OF EACH
 
 The Blender scene (blender/hypercube.py): the six-dimensional cube projected to 3D along six
 directions spread evenly (the icosahedron's six axes), so the whole cube shows as a round,
-even lattice (its outline a rhombic triacontahedron); edges as thin neon tubes, corners as small
+even lattice (its outline a rhombic triacontahedron); edges as thin neon tubes, vertices as small
 glowing beads, over black with a little haze; the camera orbits slowly. Flags choose what is lit:
-`--focus V` (a corner amber, its six edges and neighbours bright), `--path V,V,...` (edges lit in
+`--focus V` (a vertex amber, its six edges and neighbours bright), `--path V,V,...` (edges lit in
 turn at given seconds). Eevee, bloom on.
 
 ## 2. King Wen's order is 32 pairs
@@ -117,5 +120,5 @@ series/music-audit.json; each named in its script's json with the reason.
 
 ## Smoke test
 
-The cube's pages 2 and 3: the Blender scene in the terminal, one corner and its neighbours, then
+The cube's pages 2 and 3: the Blender scene in the terminal, one vertex and its neighbours, then
 the path. The user views them before the rest.

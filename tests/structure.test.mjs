@@ -92,3 +92,10 @@ test("the cube short's copy has none of the banned words", () => {
   const copy = `${JSON.stringify(cube.chapters)} ${cube.caption}`.toLowerCase();
   for (const w of BANNED) assert.ok(!copy.includes(w), w);
 });
+
+// The user, 2026-09-30: "corner just makes it ambiguous, or it makes it specific to the edge".
+test("the cube short says vertex, never corner", () => {
+  const copy = `${JSON.stringify(cube.chapters)} ${cube.caption}`.toLowerCase();
+  assert.ok(!copy.includes("corner"));
+  assert.ok(copy.includes("vertex") && copy.includes("vertices"));
+});
