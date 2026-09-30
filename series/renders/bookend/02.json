@@ -1,0 +1,18 @@
+{
+ "short": "out/series/02-kun/short.mp4",
+ "shortSha256": "6c7ee832b9717c3e85ff986cfe54e9c2340e847387449d18751b7868fb1e77a3",
+ "props": "series/bookend/02.json",
+ "sfx": {},
+ "seconds": 33.088,
+ "level": {
+  "gain": -0.1,
+  "limiter": null,
+  "after": {
+   "lufs": -13.42,
+   "phoneLufs": -16.51,
+   "dbtp": -3.24
+  }
+ },
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
+ "clean": false
+}

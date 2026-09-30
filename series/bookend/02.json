@@ -1,0 +1,13 @@
+{
+ "about": "Smoke test of the Goudy-on-ivory bookends (src/templates/Bookend.tsx) on Kun, week 1's first post. The short is out/series/02-kun/short.mp4 as rendered, copied to public/local/bookend/ by scripts/bookend.mjs. The flicker in lands as the hook turns bold (1.5 s); the flicker out comes once the end card's site line is up.",
+ "src": "local/bookend/02-kun.mp4",
+ "frames": 961,
+ "hook": "Tired of always having to lead?",
+ "label": "2 · 坤 KŪN · THE RECEPTIVE",
+ "lines": [0, 0, 0, 0, 0, 0],
+ "tagline": "REVEAL THE MOMENT",
+ "site": "sixlines.day",
+ "inAt": 36,
+ "outAt": 900,
+ "tail": 30
+}

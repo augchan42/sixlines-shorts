@@ -11,7 +11,9 @@ import { plan, Short } from "./Short";
 import { qian } from "./specs/qian";
 import { gotchuQian } from "./specs/gotchu-qian";
 import { qianGlowline } from "./specs/qian-glowline";
+import { Bookend, bookendFrames, type BookendProps } from "./templates/Bookend";
 import { Demo, demoFrames, type DemoProps } from "./templates/Demo";
+import bookendKun from "../series/bookend/02.json";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
 import { ReadoutKey, readoutKeyFrames, type ReadoutKeyProps } from "./templates/ReadoutKey";
@@ -116,6 +118,17 @@ export const Root: React.FC = () => (
       fps={FPS}
       durationInFrames={1}
       calculateMetadata={({ props }: { props: DemoProps }) => ({ durationInFrames: demoFrames(props, FPS) })}
+    />
+    {/* A short between Goudy-on-ivory cards (series/bookend/NN.json), rendered by scripts/bookend.mjs. */}
+    <Composition
+      id="Bookend"
+      component={Bookend}
+      defaultProps={bookendKun as unknown as BookendProps}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={1}
+      calculateMetadata={({ props }: { props: BookendProps }) => ({ durationInFrames: bookendFrames(props) })}
     />
     <Composition
       id="ReadoutKey"
