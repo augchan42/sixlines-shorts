@@ -80,3 +80,27 @@ What we take from it:
 3. One small moving gag per shot, like the raspberry: Wang Bi's eyebrow rising on "instructions";
    the trap slumping when it is put down.
 4. The voice stays flat; the picture carries the busyness.
+
+## Revised after Astra (docs/research/2026-09-30-codex-guide-wangbi-shots.md)
+
+Astra: keep the look and narration; cut the moves from seven to four (the drawing-on, counting,
+typing and labels already move); simplify shots 3 and 5; 653, not 642. Merged with the research
+above: angular drawings; small print only where a shot has room (not 3 or 5), never needed to
+follow the point; one small gag per shot at most.
+
+| # | Line | Picture and action | Camera | Labels and on-screen text |
+|---|---|---|---|---|
+| 1 | The I-Ching... | The 64 land one by one; the full grid holds. | Still | THE I-CHING; ROOTS: ABOUT 3,000 YEARS |
+| 2 | For centuries... | Stalks counted into piles; the person revealed; ? on "future". Small print on the bundle: STALK 37 OF 49. | Pull back through "consulted", then hold | YARROW STALKS; PERSON WITH A QUESTION |
+| 3 | Wang Bi... | His angular figure draws on fast and holds. Gag: one eyebrow rises on "instructions". | Still | WANG BI 王弼; AD 226–249 under the name; EXPRESSION: NOT RECORDED |
+| 4 | He died young... | The candle goes out and stays in view; the stack of pages grows beside it. Small print: PAGE 1 OF MANY. | Small tilt up with the stack, then hold | 周易注 COMMENTARY ON THE CHANGES; OFFICIAL STANDARD: AD 653 |
+| 5 | Grasp the meaning... | Dragon, horse and cart already in frame; all three dim together on "forget". | Still | 得意忘象 GRASP THE MEANING, FORGET THE IMAGE, from the start |
+| 6 | Zhuangzi, fish trap... | Side view of a wicker trap, an ordinary fish seen through it (no cutaway anatomy). A hand lifts the fish out and keeps it; the trap is set aside and dims. Gag: the trap slumps. | Still, then a short track sideways with the fish, then hold | 筌 FISH TRAP = IMAGE; FISH = MEANING; ANALOGY: ZHUANGZI, CH. 26 |
+| 7 | Why insist on a horse? | The same horse. 健 STRENGTH appears first; the horse then fades. | Still | 健 STRENGTH |
+| 8 | Six Lines reads it... | The same person, same label position, at a fork, a small open Six Lines page beside them; no road taken. | Push 1.0 → 1.10 toward the fork, settling before the cut | SIX LINES (page title); PERSON WITH A DECISION |
+| 9 | Recommended for... | The two recommendation rows type in as the narration (shown once); a small tick, then a small cross. | Still | the two rows |
+| 10 | (close) | The ivory Six Lines close with sixlines.day, about 2.5 s. | Still | tagline; sixlines.day |
+
+Moves: 2 pull back, 4 tilt up, 6 track sideways, 8 push in. Each ends about half a second before
+its cut; the speed limit applies to the fastest part of the eased move. Total about 53.4 s
+(43.9 s of speech, lead, eight gaps, the close).
