@@ -1,10 +1,24 @@
 {
  "hexagram": 59,
- "rendered": "2026-09-27T19:08:23.834Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:10:37.405Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 30.976,
- "shareKbps": 5812,
+ "seconds": 32.896,
+ "shareKbps": 5465,
+ "loudness": {
+  "before": {
+   "lufs": -8.43,
+   "phoneLufs": -10.85,
+   "dbtp": 0.48
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -14.07,
+   "phoneLufs": -16.53,
+   "dbtp": -4.55
+  }
+ },
  "props": {
   "hexagram": {
    "number": 59,
@@ -27,7 +41,7 @@
   "drop": 15.16,
   "hook": "People drifting apart?",
   "meaning": [
-   "Dispersion says:\ndon’t argue.",
+   "Dispersion says:\nbuild a centre.",
    "Remind them where\nthey come from."
   ],
   "question": "What do you\nall share?",
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Bring them back\nto the centre.",
+   "text": "Bring them back\nto what they share.",
    "trigrams": [
     {
      "zh": "風",
@@ -53,7 +67,7 @@
     "mark": [
      4
     ],
-    "finding": "WIND MOVES OVER WATER.",
+    "finding": "LINE 5: THE KING SENDS OUT HIS CALL.\nRIGHTLY PLACED AT THE CENTRE.",
     "master": {
      "zh": "為渙之主",
      "en": "Master of Dispersion"
@@ -77,7 +91,7 @@
   "assets/3d/endcard-snap-010011-9b-ref.mp4": "382885a5099c80fad596ee92d2d36608fbdcc57e8db9cd5843eb4f38f3fcc64e",
   "assets/yilin/stipple-59-3.webp": "646edf66afc80a05219b720d68585e642bd6a5409ac8c89cd00b11b5d48e8cf4",
   "assets/yilin/stipple-59-17.webp": "ce6e023e9e6b196376957f16ca09769cc5a9ee2d4a034ca7e09e1f193ea28662",
-  "out/series/59-huan/short.mp4": "d1e973b692998dbc20ace47b8ef9eb141a88dee78c7e9ddecc5144f201d10ef4",
-  "out/series/59-huan/share.mp4": "70b0bc5aa4c947492e78605fb4b747afac9fca08794e653536b53584322bd7ae"
+  "out/series/59-huan/short.mp4": "aed477c326b3b2e85466b39cb8b63130b35e93a8efe06cf3be9c0cd5c9bb4558",
+  "out/series/59-huan/share.mp4": "84769cd19c072870d1dfe391c5e89effefc70088845e63f44cb1ca969dc15b1d"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 61,
- "rendered": "2026-09-27T19:18:56.836Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:31:48.626Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -7.7,
+   "phoneLufs": -9.32,
+   "dbtp": 0.07
+  },
+  "gain": -7.2,
+  "limiter": null,
+  "after": {
+   "lufs": -14.93,
+   "phoneLufs": -16.56,
+   "dbtp": -6.05
+  }
+ },
  "props": {
   "hexagram": {
    "number": 61,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "No hidden motive;\nmean what you say.",
+   "text": "Make room\nto hear them.",
    "scene": "acts",
    "clip": "assets/3d/acts-61-100bpm-12b-s6slxn.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/acts-61-100bpm-12b-s6slxn.mp4": "195ce66b248714b7308e3fe019a4e381d0b5537407d6408c1028814c8354a899",
   "assets/yilin/stipple-61-10.webp": "9baaaa609d6e1d6a6e7f1435952dc5872141380af532405642c31ec0138f5a95",
   "assets/yilin/stipple-61-8.webp": "97ba4b5b20391715206fc623c2a3866ffbdb7f15117038cf5f04755a6539a2eb",
-  "out/series/61-zhong-fu/short.mp4": "910921086df2058ab7dc33b066570c4883dd8a772d80ae26527fe0800b9bcb3e",
-  "out/series/61-zhong-fu/share.mp4": "709093895145ab02ea7bd5df5c673643171999f81ea846a33c0540afade6df22"
+  "out/series/61-zhong-fu/short.mp4": "378dad302e0394e33dc5ed2d2787c1ae9d08997ec1f620758b19fd0fcbd36244",
+  "out/series/61-zhong-fu/share.mp4": "6879449ac761b34c45df73b5ef554980010ffc0a02d296f5e0ef49829c9828a0"
  }
 }

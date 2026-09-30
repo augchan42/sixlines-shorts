@@ -1,10 +1,24 @@
 {
  "hexagram": 53,
- "rendered": "2026-09-27T18:37:11.398Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:59:01.995Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -7.7,
+   "phoneLufs": -9.32,
+   "dbtp": 0.07
+  },
+  "gain": -7.2,
+  "limiter": null,
+  "after": {
+   "lufs": -14.93,
+   "phoneLufs": -16.56,
+   "dbtp": -6.05
+  }
+ },
  "props": {
   "hexagram": {
    "number": 53,
@@ -28,7 +42,7 @@
   "hook": "Tempted to skip steps?",
   "meaning": [
    "Development says:\ngo step by step.",
-   "Slow growth\nlasts."
+   "Do the work\nat each step."
   ],
   "question": "Which step are\nyou skipping?",
   "plates": [
@@ -56,7 +70,7 @@
      3,
      4
     ],
-    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+    "finding": "LINES 2–5 EACH HOLD THEIR PLACE.\nLINE 2: THE GOOSE HAS EARNED ITS MEAL."
    }
   },
   "pace": "even",
@@ -75,7 +89,7 @@
   "assets/3d/endcard-snap-001011-9b-ref.mp4": "64098957fed75dba969ed2ec2a93b053c299952948d9a13078f73a9536e81025",
   "assets/yilin/stipple-53-23.webp": "c1ad1ad31fbbd7b2aa0edd12ccd6ae997fe3cb15aa591e81c4b60e38a4ad5b8d",
   "assets/yilin/stipple-53-56.webp": "491334b6417c0ae3f4b1857337c8d9ea0ea67fd990ce3b79c47dbdaddaa2cefd",
-  "out/series/53-jian/short.mp4": "9551f0c5dcdbd8d0a35099c3f7f28d2f4427b385eadfdc17931df066ce8f2664",
-  "out/series/53-jian/share.mp4": "82b9f66058cd691a31c251b7fcb931f9d134cf3efa8a54d14011eaf363bd6358"
+  "out/series/53-jian/short.mp4": "bdad8fef3ee4e8a823ceae35c99316593069d02834c519c1865970b21298a79a",
+  "out/series/53-jian/share.mp4": "bdb22a0f97f401c7f5983d17a844780ca1ddfac186f733976346037b8b986c47"
  }
 }

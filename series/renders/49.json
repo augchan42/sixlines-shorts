@@ -1,10 +1,24 @@
 {
  "hexagram": 49,
- "rendered": "2026-09-28T02:13:56.746Z",
- "commit": "ba5a69ffbf11719f757fa08a44bce55758f01d4c",
+ "rendered": "2026-09-30T06:52:45.606Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
  "seconds": 35.712,
  "shareKbps": 5024,
+ "loudness": {
+  "before": {
+   "lufs": -12.8,
+   "phoneLufs": -14.26,
+   "dbtp": -0.69
+  },
+  "gain": -2.2,
+  "limiter": -1.8,
+  "after": {
+   "lufs": -15.02,
+   "phoneLufs": -16.49,
+   "dbtp": -3.89
+  }
+ },
  "props": {
   "hexagram": {
    "number": 49,
@@ -30,7 +44,7 @@
    "Revolution:\nchange needs trust.",
    "Explain why.\nHear the doubts."
   ],
-  "question": "What change are\nyou making?",
+  "question": "Who isn't\nconvinced yet?",
   "plates": [
    "assets/yilin/stipple-49-15.webp",
    "assets/yilin/stipple-49-36.webp"
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Go over the change\nuntil it is trusted.",
+   "text": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
    "trigrams": [
     {
      "zh": "澤",
@@ -53,7 +67,7 @@
     "mark": [
      2
     ],
-    "finding": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+    "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
     "timed": true
    },
    "beats": 19
@@ -74,7 +88,7 @@
   "assets/3d/endcard-snap-101110-9b-ref.mp4": "2d4b4355d7fc92f7f48636eadb828ca9246aa6bf8144ec08108c0fda6e5797bb",
   "assets/yilin/stipple-49-15.webp": "71187d2f6741bc2194f013588556d66567c16b538380e9dc17699395f02fc1b1",
   "assets/yilin/stipple-49-36.webp": "a7742746890080e9a75bc29c41ebc2e201e29e6cd3dcf3f8ab4bd092cdfb3641",
-  "out/series/49-ge/short.mp4": "1ff1329648bcceb3358311be51ba0a4550d4d7cb96ec7e95538be4b507d6cc47",
-  "out/series/49-ge/share.mp4": "7887cdbad3fe4c5c1255a878b333034856792d1fe52c05ca9863f0a156e20fb4"
+  "out/series/49-ge/short.mp4": "f10798c5f6fdadb39188e887b1f73a4d7517761bb29dd0bbba13636a1d533cf9",
+  "out/series/49-ge/share.mp4": "08a41191213309a334d6d2fb885a2977e32a41f1c1a57168d489b5aec406aba8"
  }
 }

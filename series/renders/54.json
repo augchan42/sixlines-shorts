@@ -1,10 +1,24 @@
 {
  "hexagram": 54,
- "rendered": "2026-09-27T18:42:11.256Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:00:27.494Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 24.149333,
- "shareKbps": 7491,
+ "seconds": 25.749333,
+ "shareKbps": 7017,
+ "loudness": {
+  "before": {
+   "lufs": -13.98,
+   "phoneLufs": -15.77,
+   "dbtp": 0.04
+  },
+  "gain": -0.4,
+  "limiter": -3.3,
+  "after": {
+   "lufs": -14.75,
+   "phoneLufs": -16.55,
+   "dbtp": -3.23
+  }
+ },
  "props": {
   "hexagram": {
    "number": 54,
@@ -28,7 +42,7 @@
   "hook": "No power, no way out?",
   "meaning": [
    "Marrying Maiden\nsays: see the end.",
-   "This part\nwon’t last."
+   "See what could\ngo wrong."
   ],
   "question": "What does the\nend look like?",
   "plates": [
@@ -75,7 +89,7 @@
   "assets/3d/endcard-snap-110100-9b-ref.mp4": "3172c02949869ea1f8ccf769014ec62c78ea9fc573dd980328494a0558e298e7",
   "assets/yilin/stipple-54-18.webp": "6cf21b5f6ba1a046161febcb38e07925c1bebe3b13898a757d26b38ea8e5f303",
   "assets/yilin/stipple-54-55.webp": "7d9bf5d229de1d1717aaffb9f894e294d1f58c4be8111eb5e5948beb49ec48b7",
-  "out/series/54-gui-mei/short.mp4": "46e56cad5ec1ae77ffc967aa6ae565511bc29fe029a383bcc13c97fe10e5f769",
-  "out/series/54-gui-mei/share.mp4": "fbeb6af13ab67265d2dc7417437aac6aadc6ccccb83152f5f5ce8bc6befebadb"
+  "out/series/54-gui-mei/short.mp4": "26335f8646785ae45a593d0602353f07d49d12b379939a1cd64d5f6de8e0777f",
+  "out/series/54-gui-mei/share.mp4": "0bd641cdc4c28797dff6ccb74b080de99cdd7cfc1587df58d529dcd75502a28e"
  }
 }

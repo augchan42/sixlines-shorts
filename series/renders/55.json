@@ -1,10 +1,24 @@
 {
  "hexagram": 55,
- "rendered": "2026-09-27T18:47:19.348Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:01:59.361Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -10.04,
+   "phoneLufs": -11.8,
+   "dbtp": 0.01
+  },
+  "gain": -4.7,
+  "limiter": null,
+  "after": {
+   "lufs": -14.76,
+   "phoneLufs": -16.51,
+   "dbtp": -4.72
+  }
+ },
  "props": {
   "hexagram": {
    "number": 55,
@@ -30,7 +44,7 @@
    "Abundance says:\ndon’t worry.",
    "Be the sun\nat noon."
   ],
-  "question": "What will you\ndecide now?",
+  "question": "What corner is\nstill dark?",
   "plates": [
    "assets/yilin/stipple-55-45.webp",
    "assets/yilin/stipple-55-44.webp"
@@ -70,7 +84,7 @@
   "assets/3d/endcard-snap-101100-9b-ref.mp4": "677f190bf5d970252b8af55a3b4a30ce9c3a3c7b00a91527ef8960753441257b",
   "assets/yilin/stipple-55-45.webp": "ebfe35361e81df2e0456366adc31724e29424ce40729c2283113c0697dcb058b",
   "assets/yilin/stipple-55-44.webp": "37a951a343922ace165d67cb4168ebc4f142ab74a82fd901f83e0deb4b70ea22",
-  "out/series/55-feng/short.mp4": "6d008a95df94b211519604629f32c0fe46806c6b8034d4e24def1723e6106fa3",
-  "out/series/55-feng/share.mp4": "16173849e02a0744c80673e2cb0b1127443c439c2c65ecc4ee0a4edfde4365fa"
+  "out/series/55-feng/short.mp4": "512b0de5e8cd4275bb9a05881a34c5bfda99377acdd35ae6d4d6cbafbcd07967",
+  "out/series/55-feng/share.mp4": "16ff39ad180ba1fd0187fee440965b3d21c9e750884e7cf20538d99aeb1a3071"
  }
 }

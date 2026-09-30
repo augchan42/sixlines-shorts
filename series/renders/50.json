@@ -1,10 +1,24 @@
 {
  "hexagram": 50,
- "rendered": "2026-09-27T18:21:33.792Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:54:21.968Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 29.290667,
- "shareKbps": 6153,
+ "seconds": 31.082667,
+ "shareKbps": 5791,
+ "loudness": {
+  "before": {
+   "lufs": -9.45,
+   "phoneLufs": -11.99,
+   "dbtp": 0.1
+  },
+  "gain": -4.5,
+  "limiter": null,
+  "after": {
+   "lufs": -13.99,
+   "phoneLufs": -16.55,
+   "dbtp": -4.45
+  }
+ },
  "props": {
   "hexagram": {
    "number": 50,
@@ -28,7 +42,7 @@
   "hook": "Got the ingredients, not the result?",
   "meaning": [
    "The Caldron says:\nset it right.",
-   "Get set up\nbefore you start."
+   "A tilted pot\nspills the meal."
   ],
   "question": "What’s out of\nplace right now?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/character-50-100.58bpm-16b-ys94jc.mp4": "2455449ce1661d689ddc7665ac490bf335696396768e629fd92ce8595a4a2439",
   "assets/yilin/stipple-50-6.webp": "e15df552055c61f8c512d4cb812a77db93c930b49e91fefc9becae83e52cd17a",
   "assets/yilin/stipple-50-8.webp": "f49f011a26ac1e4abac713ed5618302fa2ecf83274c0468a72e260fefbe5ea8f",
-  "out/series/50-ding/short.mp4": "8257b68f88255c3a78b51b678f8b587d1c1024d0c233c2c589076c591a8b58d7",
-  "out/series/50-ding/share.mp4": "9a16e1773443e4785820b292796737180b17711038d9994aeec3c216541a4f49"
+  "out/series/50-ding/short.mp4": "8a30c4441ebcf68566c6a71544f048043a90af54a3291ac65c86a445e87ce355",
+  "out/series/50-ding/share.mp4": "81cd36f0e26a493af042a59121f8218091ad1e70719b8724de87231269894c04"
  }
 }

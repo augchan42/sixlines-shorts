@@ -1,10 +1,24 @@
 {
  "hexagram": 57,
- "rendered": "2026-09-27T23:51:50.800Z",
- "commit": "b3f63d1e7c8c2152a490fe24a67c26bbce661f8b",
+ "rendered": "2026-09-30T07:05:15.214Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 32.256,
- "shareKbps": 5576,
+ "seconds": 34.154667,
+ "shareKbps": 5259,
+ "loudness": {
+  "before": {
+   "lufs": -8.36,
+   "phoneLufs": -10.81,
+   "dbtp": 0.48
+  },
+  "gain": -5.7,
+  "limiter": null,
+  "after": {
+   "lufs": -14.12,
+   "phoneLufs": -16.59,
+   "dbtp": -4.54
+  }
+ },
  "props": {
   "hexagram": {
    "number": 57,
@@ -28,7 +42,7 @@
   "hook": "Said it once,\nnothing changed?",
   "meaning": [
    "The Gentle says:\nsay it again.",
-   "Quiet and steady\ngets through."
+   "Don't just\nsay it louder."
   ],
   "question": "What’s worth\nrepeating today?",
   "plates": [
@@ -74,7 +88,7 @@
   "assets/3d/endcard-snap-011011-9b-ref.mp4": "d6bd546a37e6c79014a42ff2d9dfa8668a07c4aa13f1230e3927415137e2063f",
   "assets/yilin/stipple-57-48.webp": "d725503d82b36cbd3708a29533391f2ef9a6e02348fef1cf7aa57a9d7c766a9b",
   "assets/yilin/stipple-57-64.webp": "f2f25217c450f64648954b4dfae25c48208119440d5d7618565d5c1d750e0745",
-  "out/series/57-xun/short.mp4": "46919475e10e8957c2c3b1c48ee2310b2906f18c877b5c4f78819ef491660e69",
-  "out/series/57-xun/share.mp4": "2904589d55d82f87c8cadb98124259b72770c1d380ed0d206774957fbcac2a17"
+  "out/series/57-xun/short.mp4": "2ec89ced36e291cdfe87d4488851d307fba1caa25ef167b97f23ff23582eb6d6",
+  "out/series/57-xun/share.mp4": "acefc5aabd286f86e6de741b0e5176a2608695b1dc2378b006c4ad665c43659b"
  }
 }

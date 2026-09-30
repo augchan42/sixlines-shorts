@@ -1,10 +1,24 @@
 {
  "hexagram": 56,
- "rendered": "2026-09-27T18:52:31.349Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:03:36.756Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 29.461333,
- "shareKbps": 6117,
+ "seconds": 31.253333,
+ "shareKbps": 5759,
+ "loudness": {
+  "before": {
+   "lufs": -6.74,
+   "phoneLufs": -8.55,
+   "dbtp": 1.7
+  },
+  "gain": -7.9,
+  "limiter": null,
+  "after": {
+   "lufs": -14.69,
+   "phoneLufs": -16.52,
+   "dbtp": -5.51
+  }
+ },
  "props": {
   "hexagram": {
    "number": 56,
@@ -27,7 +41,7 @@
   "drop": 14.4,
   "hook": "Somewhere new, feeling out of place?",
   "meaning": [
-   "The Wanderer says:\nkeep it brief.",
+   "The Wanderer:\ndon't take over.",
    "You’re a guest.\nAct like one."
   ],
   "question": "Where are you\na guest?",
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Far from home,\nbe a good guest",
+   "text": "Play the host,\nrisk your room.",
    "beats": 16,
    "clip": "assets/3d/character-56-100bpm-16b-1e8wcef.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/character-56-100bpm-16b-1e8wcef.mp4": "2e85f02992d0e03d50ce886cf45e513090b351f3ceb8c7dbd7d08ef00d3bfa78",
   "assets/yilin/stipple-56-17.webp": "5b7b19e5011cba312bec22a34458c82353456b0e155d8af75187ee4225dab477",
   "assets/yilin/stipple-56-55.webp": "36880f84e8aad51dabbc0a1e06ae6aa878dfaf9f864641a779a0e14bed1fe260",
-  "out/series/56-lu/short.mp4": "ef2a323bb2de23abf38920232572bb488f4c5c5608b24e62751d58613f722836",
-  "out/series/56-lu/share.mp4": "ef8eed2bbb58971e36f8e0b6795f4e91aa47a206f6b6c2fbb3148e3cc877a0e2"
+  "out/series/56-lu/short.mp4": "3270f3d11c23770804fbacf49e049901576e8ed9fb9767246c917109896af31a",
+  "out/series/56-lu/share.mp4": "5eefa8d7217c9d422ef1b080d78a14e6f73c974bccd6cf8ae7f7a772c4149ec1"
  }
 }

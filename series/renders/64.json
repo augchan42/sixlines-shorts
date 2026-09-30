@@ -1,10 +1,24 @@
 {
  "hexagram": 64,
- "rendered": "2026-09-27T15:04:29.709Z",
- "commit": "03e23ef2112ad11dd692b940502ca983b11b3994",
+ "rendered": "2026-09-30T12:16:47.841Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 33.386667,
- "shareKbps": 5383,
+ "seconds": 35.392,
+ "shareKbps": 5070,
+ "loudness": {
+  "before": {
+   "lufs": -9.81,
+   "phoneLufs": -12.57,
+   "dbtp": 0.13
+  },
+  "gain": -3.9,
+  "limiter": null,
+  "after": {
+   "lufs": -13.73,
+   "phoneLufs": -16.5,
+   "dbtp": -3.63
+  }
+ },
  "props": {
   "hexagram": {
    "number": 64,
@@ -53,7 +67,7 @@
     "mark": [
      5
     ],
-    "finding": "AT THE TOP: HE WETS HIS HEAD.\nNO RESTRAINT AT THE END.",
+    "finding": "LINE 6: DRINKING GOES TOO FAR.\nHE DOES NOT KNOW WHEN TO STOP.",
     "timed": true
    },
    "beats": 17
@@ -74,7 +88,7 @@
   "assets/3d/endcard-flip-010101-9b-ref.mp4": "a5b93e809663d14d7eb9dfd51aa4c5c8be5eeebaf3dc9041a1dae79df9312a73",
   "assets/yilin/stipple-64-3.webp": "d73457ee3e62fb355cf1113b6dd8462b382be26fb11db828d83418d1e000b169",
   "assets/yilin/stipple-64-36.webp": "42ca0ed8e4e49a2702e347af74cc881b64ff51d1a1c381ffaa7511e1d4065ae2",
-  "out/series/64-wei-ji/short.mp4": "ca4f8f4eac1e14413109dde3b2fe1185feef32b94828b184c2aaac66b27503db",
-  "out/series/64-wei-ji/share.mp4": "59d7f6a5ec93e3db7850f9a2c55aeacdde72295ce787babd2f9cf71cc9d04ec1"
+  "out/series/64-wei-ji/short.mp4": "5f6d0df8be1b285a8d3eed240d95bad0d27a5ccff0a4915ad16f5fdf421a7072",
+  "out/series/64-wei-ji/share.mp4": "961509ecac14c5163add9f1f6b68feedb25ccdba6e3ae936f9901a25125c4f6c"
  }
 }

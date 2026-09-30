@@ -1,10 +1,24 @@
 {
  "hexagram": 58,
- "rendered": "2026-09-27T19:03:04.891Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T07:07:17.221Z",
+ "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
  "clean": false,
- "seconds": 26.048,
- "shareKbps": 6935,
+ "seconds": 27.562667,
+ "shareKbps": 6547,
+ "loudness": {
+  "before": {
+   "lufs": -13.56,
+   "phoneLufs": -16.36,
+   "dbtp": 0.08
+  },
+  "gain": 0.5,
+  "limiter": -3.9,
+  "after": {
+   "lufs": -13.81,
+   "phoneLufs": -16.6,
+   "dbtp": -2.66
+  }
+ },
  "props": {
   "hexagram": {
    "number": 58,
@@ -28,7 +42,7 @@
   "hook": "Good news, no one to tell?",
   "meaning": [
    "The Joyous says:\nshare it.",
-   "Joy kept alone\ndries up."
+   "Share more\nthan good news."
   ],
   "question": "Who could you\ncall today?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/character-58-120bpm-15b-1w6ytv7.mp4": "ee703052240245f786db23235f94d42ac4b9872e1823c06c6d5b917282f104ff",
   "assets/yilin/stipple-58-19.webp": "bd65935c580b3c8625cf13dde5f5621fa9b969aeaa0a1ee31cb569fdee4278d5",
   "assets/yilin/stipple-58-24.webp": "8e6fad91c2f0ebd3c25efda6f07f1c4e88d4f1ceb4d8d23ef2d86f9ce6bbd572",
-  "out/series/58-dui/short.mp4": "81b740f0b2fe498d2e5e34f2070e39bbd435ae2db8882dce9a652fa943b02bc2",
-  "out/series/58-dui/share.mp4": "f963075f5f666fa9c53988a547fe88c58d02e9698455c1a27b44d5063dd0ae11"
+  "out/series/58-dui/short.mp4": "c61df4ee6345a82abd0fab960970e7b790716e5f6713ea18a3576a27c904c491",
+  "out/series/58-dui/share.mp4": "0e755336eb214f9265b382d91471ae3cd79b5f9945d89f7e65e21a14378b1baa"
  }
 }
