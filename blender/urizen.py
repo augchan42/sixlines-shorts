@@ -65,7 +65,7 @@ def parse():
     p.add_argument("--shift-beard", type=int, default=0)
     p.add_argument("--beard-swing", type=float, default=0.0)
     p.add_argument("--beard-drop", type=float, help="how far below the hair's point the beard's point is")
-    p.add_argument("--fill", default="none", choices=["none", "tache", "cheek"], help="hair above the chin on the side that has none")
+    p.add_argument("--fill", default="tache", choices=["none", "tache", "cheek"], help="hair above the chin on the side that has none")
     p.add_argument("--beard-point", type=float, help="the beard's point across from the head's centre (x; negative is left as seen)")
     p.add_argument("--beard-left", type=float, help="units to move the beard left, overriding BEARD_LEFT")
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
