@@ -22,6 +22,9 @@ export type BookendProps = {
   // copied to public/local/bookend/appicon.png); the user, 2026-09-30: "I love it when it's
   // flickering into the app icon version." "match": the close matched to the green card.
   close?: "match" | "icon";
+  // false: no ivory open card, the short starts as rendered (Astra, 2026-09-30: test the ivory
+  // open against the terminal open on the launch shorts, docs/research/2026-09-30-codex-media-strategy-bookend.md).
+  open?: boolean;
   // Static under each flicker, cut into bursts on the frames the screen changes (BURSTS).
   // inFrom/outFrom: the second in the recording each flicker's slice starts at.
   sfx?: { in?: string; out?: string; inFrom?: number; outFrom?: number; inVolume?: number; outVolume?: number };
@@ -105,7 +108,7 @@ export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
 export const Bookend: React.FC<BookendProps> = (p) => {
   goudy ??= loadFont({ family: GOUDY, url: staticFile("local/fonts/goudos.ttf") });
   const f = useCurrentFrame();
-  const open = f < p.inAt || (f < p.inAt + IN.length && IN[f - p.inAt]);
+  const open = p.open !== false && (f < p.inAt || (f < p.inAt + IN.length && IN[f - p.inAt]));
   const close = f >= p.outAt + OUT.length || (f >= p.outAt && OUT[f - p.outAt]);
   return (
     <AbsoluteFill style={{ background: "black" }}>

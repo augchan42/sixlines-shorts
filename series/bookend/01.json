@@ -1,13 +1,13 @@
 {
- "about": "Launch bookend for 2 Kūn, with the ivory open card (Astra's test of the open, docs/research/2026-09-30-codex-media-strategy-bookend.md). Written by scripts/bookend-props.mjs.",
- "src": "local/bookend/02-kun.mp4",
- "frames": 961,
- "hook": "Tired of always having to lead?",
- "label": "2 · 坤 KŪN · THE RECEPTIVE",
+ "about": "Launch bookend for 1 Qián, without the ivory open card (Astra's test of the open, docs/research/2026-09-30-codex-media-strategy-bookend.md). Written by scripts/bookend-props.mjs.",
+ "src": "local/bookend/01-qian.mp4",
+ "frames": 847,
+ "hook": "Waiting for a sign to start?",
+ "label": "1 · 乾 QIÁN · THE CREATIVE",
  "tagline": "REVEAL THE MOMENT",
  "site": "sixlines.day",
- "inAt": 36,
- "outAt": 900,
+ "inAt": 31,
+ "outAt": 793,
  "tail": 30,
  "sfx": {
   "out": "local/sfx/dragon-studio-tv-static-323620.mp3",
@@ -15,5 +15,5 @@
   "outVolume": 0.35
  },
  "sfxNote": "Dragon Studio, 'TV Static', Pixabay sound effect 323620 (Pixabay Content License), downloaded by the user 2026-09-30 ('use this ... and chop that'), after 'TV Shutdown' (386167) and 'TV glitch' (6245). 8.1 s of steady hiss at -8.8 LUFS, none below 250 Hz; only on the flicker out ('we only need static at the end'), a slice from 4.0 s at 0.35, heard only for two frames at each screen change.",
- "open": true
+ "open": false
 }

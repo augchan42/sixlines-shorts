@@ -30,7 +30,7 @@ const dir = path.join(root, "out/bookend", nn);
 mkdirSync(dir, { recursive: true });
 const raw = path.join(dir, "bookend.mp4");
 const share = path.join(dir, "share.mp4");
-run("npx", ["remotion", "render", "src/index.ts", "Bookend", raw, `--props=${propsFile}`, "--log=error"]);
+run("npx", ["remotion", "render", "src/index.ts", "Bookend", raw, `--props=${propsFile}`, "--timeout=120000", "--log=error"]);
 
 // As scripts/series.mjs's level(): measured above 250 Hz, a limiter first if the gain needs room.
 const loudnormJson = (input, af) => {
