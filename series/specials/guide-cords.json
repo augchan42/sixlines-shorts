@@ -1,0 +1,140 @@
+{
+  "about": "A Guide-style short on Confucius reading the I-Ching until the cords of the bamboo strips broke three times (韋編三絕). The user, 2026-10-01: 'i think some hitchhikers shorts would be great ... for 1 and 2 - review and converge with astra then execute'. Same look and voice as guide-wangbi. Draft 1. Draft 2: Astra's revision (docs/research/2026-10-01-codex-guide-cords.md), adopted as is by Opus, so round 1 converged.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+    "name": "hitchiker's guide v1",
+    "note": "the user's designed Guide voice ('love it'); plain, even pace, no emphasis announcing the jokes"
+  },
+  "narration": [
+    {
+      "text": "The I-Ching. A Chinese book about change.",
+      "picture": "Title THE I-CHING beside a simple book outline."
+    },
+    {
+      "text": "A later historian, Sima Qian, says the philosopher Confucius studied it in old age.",
+      "picture": "A bearded figure beside the book; label 孔子 CONFUCIUS; small label SIMA QIAN'S ACCOUNT.",
+      "say": "A later historian, Sih-mah Chyen, says the philosopher Confucius studied it in old age."
+    },
+    {
+      "text": "His copy was bamboo strips tied with leather cords. The cords wore through. Three times.",
+      "picture": "Strips joined by two cords; a small break-and-repair as a counter goes 1, 2, 3. Label 韋編三絕 THE CORDS BROKE THREE TIMES."
+    },
+    {
+      "text": "His collected sayings record a hope: more study, fewer serious mistakes.",
+      "picture": "Typed: ANALECTS · COLLECTED SAYINGS · 7.17, then MORE STUDY / FEWER SERIOUS MISTAKES."
+    },
+    {
+      "text": "Tradition credits him with the Ten Wings: explanations probably written later.",
+      "picture": "Ten numbered tabs beside the book; labels TEN WINGS and AUTHOR: DISPUTED."
+    },
+    {
+      "text": "Six Lines reads it for judgment: what makes sense to do here.",
+      "picture": "A small figure pauses at a fork in a road; WHAT TO DO HERE."
+    },
+    {
+      "text": "Recommended for: rereading. Not recommended for: your last set of cords.",
+      "picture": "The two summary rows; a spare pair of cords beside the book."
+    }
+  ],
+  "onScreenChinese": [
+    "韋編三絕 the cords broke three times",
+    "孔子 Confucius"
+  ],
+  "sources": {
+    "shiji": "史記·孔子世家: 孔子晚而喜易，序彖、繫、象、說卦、文言。讀易，韋編三絕。曰：「假我數年，若是，我於易則彬彬矣。」 ~/projects/chinese-classics-reference/shiji/text/47-kongzi-shijia.md",
+    "analects": "論語 7.17: 子曰：加我數年，五十以學易，可以無大過矣 (give me a few more years, to study the Yi at fifty, and I might be free of great mistakes). Zhu Xi notes 五十 may be a copying error for 卒 (to finish). lunyu-jizhu/text/07-shu-er.md",
+    "tenWings": "The Ten Wings were traditionally attributed to Confucius (Sima Qian lists him ordering the Tuan, Xici, Xiang, Shuogua, Wenyan); since Ouyang Xiu (11th c.) and in modern scholarship they are held to be later, Warring States to Han."
+  },
+  "timing": {
+    "fps": 30,
+    "lead": 1.4,
+    "gap": 0.7,
+    "tail": 0.8,
+    "close": 2.5
+  },
+  "close": {
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day",
+    "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+    "sfxFrom": 4,
+    "sfxVolume": 0.35
+  },
+  "marks": [
+    {
+      "name": "book",
+      "beat": 1,
+      "word": "book"
+    },
+    {
+      "name": "historian",
+      "beat": 2,
+      "word": "historian,"
+    },
+    {
+      "name": "confucius",
+      "beat": 2,
+      "word": "Confucius"
+    },
+    {
+      "name": "old",
+      "beat": 2,
+      "word": "old"
+    },
+    {
+      "name": "strips",
+      "beat": 3,
+      "word": "strips"
+    },
+    {
+      "name": "cords",
+      "beat": 3,
+      "word": "cords."
+    },
+    {
+      "name": "wore",
+      "beat": 3,
+      "word": "wore"
+    },
+    {
+      "name": "three",
+      "beat": 3,
+      "word": "Three"
+    },
+    {
+      "name": "sayings",
+      "beat": 4,
+      "word": "sayings"
+    },
+    {
+      "name": "study",
+      "beat": 4,
+      "word": "study,"
+    },
+    {
+      "name": "mistakes",
+      "beat": 4,
+      "word": "mistakes."
+    },
+    {
+      "name": "wings",
+      "beat": 5,
+      "word": "Wings:"
+    },
+    {
+      "name": "later",
+      "beat": 5,
+      "word": "later."
+    },
+    {
+      "name": "judgment",
+      "beat": 6,
+      "word": "judgment:"
+    },
+    {
+      "name": "not",
+      "beat": 7,
+      "word": "Not"
+    }
+  ]
+}

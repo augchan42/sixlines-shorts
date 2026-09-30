@@ -1,0 +1,145 @@
+{
+  "about": "A Guide-style short on hexagram 64, the book's last, Not Yet Across (the user, 2026-10-01: 'i think some hitchhikers shorts would be great ... for 1 and 2 - review and converge with astra then execute'). Same look and voice as guide-wangbi: black screen, neon outlines drawing on, green labels on leader lines, blue title, narration typed in blue capitals. Draft 1. Draft 2: Astra's revision (docs/research/2026-10-01-codex-guide-64.md), adopted as is by Opus, so round 1 converged.",
+  "voice": {
+    "provider": "ElevenLabs",
+    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+    "name": "hitchiker's guide v1",
+    "note": "the user's designed Guide voice ('love it'); plain, even pace, no emphasis announcing the jokes"
+  },
+  "narration": [
+    {
+      "text": "The I-Ching. Sixty-four situations. Number sixty-three: Already Across.",
+      "picture": "Title THE I-CHING; label 64 SITUATIONS. 63 draws on bottom first (solid, broken, solid, broken, solid, broken); six green ticks; label 既濟 ALREADY ACROSS."
+    },
+    {
+      "text": "The text warns: good at first, disorder at the end.",
+      "picture": "The diagram stays; label 初吉終亂 GOOD AT FIRST, DISORDER AT THE END."
+    },
+    {
+      "text": "A sensible book would stop there.",
+      "picture": "The device starts to close at entry 63, then opens to entry 64."
+    },
+    {
+      "text": "Sixty-four: Not Yet Across. A small fox wets its tail. Too tired to finish.",
+      "picture": "64 draws on bottom first (broken, solid, ...); label 未濟 NOT YET ACROSS. A small angular fox pauses in the water short of the bank; its tail dips; label TAIL: WET."
+    },
+    {
+      "text": "A commentary explains: things cannot come to an end. So it ends on Not Yet.",
+      "picture": "Page counter 64 / 64. Label 序卦 SEQUENCE OF THE HEXAGRAMS, then 物不可窮也 THINGS CANNOT COME TO AN END. A cursor blinks under the last entry."
+    },
+    {
+      "text": "The advice: tell things apart. Put each where it belongs.",
+      "picture": "A simple figure looks at a circle, a triangle and a square, then puts each in its matching space."
+    },
+    {
+      "text": "Recommended for: the nearly finished. Not recommended for: anyone who thinks they are done.",
+      "picture": "SUMMARY, the two rows with a tick and a cross."
+    }
+  ],
+  "onScreenChinese": [
+    "既濟 already across",
+    "未濟 not yet across",
+    "物不可窮也 things cannot come to an end"
+  ],
+  "sources": {
+    "63": "既濟，亨小，利貞，初吉終亂 (good at first, disorder at the end); every line in its proper place (odd lines yang, even lines yin). ~/projects/chinese-classics-reference/zhouyi-zhushu/text/63-jiji.md",
+    "64": "未濟，亨，小狐汔濟，濡其尾，无攸利 (the young fox, nearly across, wets its tail). Image: 火在水上，未濟，君子以慎辨物居方 (the noble one carefully distinguishes things and puts each in its place). zhouyi-zhushu/text/64-weiji.md",
+    "xugua": "序卦 (Sequence of the Hexagrams, one of the Ten Wings): 物不可窮也，故受之以未濟，終焉. zhouyi-zhushu/text/68-xugua-zhuan.md"
+  },
+  "timing": {
+    "fps": 30,
+    "lead": 1.4,
+    "gap": 0.7,
+    "tail": 0.8,
+    "close": 2.5
+  },
+  "close": {
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day",
+    "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+    "sfxFrom": 4,
+    "sfxVolume": 0.35
+  },
+  "marks": [
+    {
+      "name": "situations",
+      "beat": 1,
+      "word": "situations."
+    },
+    {
+      "name": "h63",
+      "beat": 1,
+      "word": "sixty-three:"
+    },
+    {
+      "name": "across63",
+      "beat": 1,
+      "word": "Across."
+    },
+    {
+      "name": "warns",
+      "beat": 2,
+      "word": "good"
+    },
+    {
+      "name": "disorder",
+      "beat": 2,
+      "word": "disorder"
+    },
+    {
+      "name": "stop",
+      "beat": 3,
+      "word": "stop"
+    },
+    {
+      "name": "h64",
+      "beat": 4,
+      "word": "Not"
+    },
+    {
+      "name": "fox",
+      "beat": 4,
+      "word": "fox"
+    },
+    {
+      "name": "tail",
+      "beat": 4,
+      "word": "tail."
+    },
+    {
+      "name": "tired",
+      "beat": 4,
+      "word": "tired"
+    },
+    {
+      "name": "commentary",
+      "beat": 5,
+      "word": "commentary"
+    },
+    {
+      "name": "end",
+      "beat": 5,
+      "word": "end."
+    },
+    {
+      "name": "notyet",
+      "beat": 5,
+      "word": "Yet."
+    },
+    {
+      "name": "apart",
+      "beat": 6,
+      "word": "apart."
+    },
+    {
+      "name": "put",
+      "beat": 6,
+      "word": "Put"
+    },
+    {
+      "name": "not",
+      "beat": 7,
+      "word": "Not"
+    }
+  ]
+}

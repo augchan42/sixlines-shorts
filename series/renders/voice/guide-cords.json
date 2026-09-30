@@ -1,0 +1,102 @@
+{
+ "beats": {
+  "01": {
+   "text": "The I-Ching. A Chinese book about change.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.08,
+   "sha256": "c705c4a329b09f57ef37ebaa29e3cfa024862c9103a1f4fcb421bc11c7985955",
+   "made": "2026-09-30T17:31:44.949Z"
+  },
+  "02": {
+   "text": "A later historian, Sih-mah Chyen, says the philosopher Confucius studied it in old age.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.64,
+   "sha256": "d83b3072377cbbd84c9b1089ed6197410e7bc38d0b424cd20937e3043022bc33",
+   "made": "2026-09-30T17:31:51.075Z"
+  },
+  "03": {
+   "text": "His copy was bamboo strips tied with leather cords. The cords wore through. Three times.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.2,
+   "sha256": "569d9825c71d5bc1b4b60aa2dc6308c93f29d0091e0203d91cedeaa623716dd7",
+   "made": "2026-09-30T17:31:56.751Z"
+  },
+  "04": {
+   "text": "His collected sayings record a hope: more study, fewer serious mistakes.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.32,
+   "sha256": "324feef771c7cee672179844813b05475ef1cc993be882d54231727ae6690643",
+   "made": "2026-09-30T17:32:01.405Z"
+  },
+  "05": {
+   "text": "Tradition credits him with the Ten Wings: explanations probably written later.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 5.68,
+   "sha256": "211fed488986223263b272e4522fcd470797745bb1b311366500d71dbcc8b5d6",
+   "made": "2026-09-30T17:32:06.859Z"
+  },
+  "06": {
+   "text": "Six Lines reads it for judgment: what makes sense to do here.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.72,
+   "sha256": "9400209f5d9d6c82eed51e3c154bc01eccc08d3c9fff724da5b872f4f53c2aa2",
+   "made": "2026-09-30T17:32:10.679Z"
+  },
+  "07": {
+   "text": "Recommended for: rereading. Not recommended for: your last set of cords.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.48,
+   "sha256": "71b54af9aac226c3bea8656577baa52e1b94d302d0a62dc14c9f45de1c7cadba",
+   "made": "2026-09-30T17:32:16.575Z"
+  }
+ }
+}

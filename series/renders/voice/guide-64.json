@@ -1,0 +1,102 @@
+{
+ "beats": {
+  "01": {
+   "text": "The I-Ching. Sixty-four situations. Number sixty-three: Already Across.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.28,
+   "sha256": "4434eed4f389f1dc1ceb998ea859a99f263623dabc60d9dafb727fb77d4d8ded",
+   "made": "2026-09-30T17:31:05.647Z"
+  },
+  "02": {
+   "text": "The text warns: good at first, disorder at the end.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.72,
+   "sha256": "6859bb75542770ca9730e08ccf9aeaa4b0a868052bb9a8d9e72bd6a705a6c524",
+   "made": "2026-09-30T17:31:13.252Z"
+  },
+  "03": {
+   "text": "A sensible book would stop there.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 2.32,
+   "sha256": "e9c541f2b400749aab5424e043b16e22e5177f5b6a77de3977b6696273e8c691",
+   "made": "2026-09-30T17:31:17.571Z"
+  },
+  "04": {
+   "text": "Sixty-four: Not Yet Across. A small fox wets its tail. Too tired to finish.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.68,
+   "sha256": "56c56b8b057925ae870e1633fb2ef131e7b983c9ad4313ec86ec385e8e3eaa5a",
+   "made": "2026-09-30T17:31:23.949Z"
+  },
+  "05": {
+   "text": "A commentary explains: things cannot come to an end. So it ends on Not Yet.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.96,
+   "sha256": "56f9d7ae36781e920f45e1cce98353e50271cfe520713c96237c74c11fde071c",
+   "made": "2026-09-30T17:31:29.208Z"
+  },
+  "06": {
+   "text": "The advice: tell things apart. Put each where it belongs.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 5.12,
+   "sha256": "7edd85193325aa3998d2dde61e2871b0948a9c2294bec4f74f3c1584b2175db4",
+   "made": "2026-09-30T17:31:33.237Z"
+  },
+  "07": {
+   "text": "Recommended for: the nearly finished. Not recommended for: anyone who thinks they are done.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.2,
+   "sha256": "f7b3d3681b64cf72fd3f897b7c0de26493ee93fb9de333b7e0e93ae5a09d55dc",
+   "made": "2026-09-30T17:31:38.217Z"
+  }
+ }
+}

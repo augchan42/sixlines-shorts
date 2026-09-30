@@ -1,0 +1,486 @@
+{
+ "frames": 1512,
+ "beats": [
+  {
+   "n": 1,
+   "src": "local/voice/guide-64/01.mp3",
+   "from": 42,
+   "to": 260,
+   "words": [
+    {
+     "text": "The",
+     "from": 42,
+     "to": 47
+    },
+    {
+     "text": "I-Ching.",
+     "from": 49,
+     "to": 79
+    },
+    {
+     "text": "Sixty-four",
+     "from": 88,
+     "to": 107
+    },
+    {
+     "text": "situations.",
+     "from": 109,
+     "to": 149
+    },
+    {
+     "text": "Number",
+     "from": 160,
+     "to": 167
+    },
+    {
+     "text": "sixty-three:",
+     "from": 169,
+     "to": 203
+    },
+    {
+     "text": "Already",
+     "from": 212,
+     "to": 227
+    },
+    {
+     "text": "Across.",
+     "from": 232,
+     "to": 260
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "src": "local/voice/guide-64/02.mp3",
+   "from": 281,
+   "to": 423,
+   "words": [
+    {
+     "text": "The",
+     "from": 281,
+     "to": 286
+    },
+    {
+     "text": "text",
+     "from": 292,
+     "to": 298
+    },
+    {
+     "text": "warns:",
+     "from": 301,
+     "to": 317
+    },
+    {
+     "text": "good",
+     "from": 334,
+     "to": 339
+    },
+    {
+     "text": "at",
+     "from": 341,
+     "to": 344
+    },
+    {
+     "text": "first,",
+     "from": 346,
+     "to": 370
+    },
+    {
+     "text": "disorder",
+     "from": 373,
+     "to": 392
+    },
+    {
+     "text": "at",
+     "from": 394,
+     "to": 397
+    },
+    {
+     "text": "the",
+     "from": 399,
+     "to": 401
+    },
+    {
+     "text": "end.",
+     "from": 404,
+     "to": 423
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "src": "local/voice/guide-64/03.mp3",
+   "from": 444,
+   "to": 514,
+   "words": [
+    {
+     "text": "A",
+     "from": 444,
+     "to": 449
+    },
+    {
+     "text": "sensible",
+     "from": 450,
+     "to": 463
+    },
+    {
+     "text": "book",
+     "from": 466,
+     "to": 475
+    },
+    {
+     "text": "would",
+     "from": 479,
+     "to": 482
+    },
+    {
+     "text": "stop",
+     "from": 487,
+     "to": 492
+    },
+    {
+     "text": "there.",
+     "from": 498,
+     "to": 514
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "src": "local/voice/guide-64/04.mp3",
+   "from": 535,
+   "to": 765,
+   "words": [
+    {
+     "text": "Sixty-four:",
+     "from": 535,
+     "to": 575
+    },
+    {
+     "text": "Not",
+     "from": 580,
+     "to": 585
+    },
+    {
+     "text": "Yet",
+     "from": 590,
+     "to": 595
+    },
+    {
+     "text": "Across.",
+     "from": 604,
+     "to": 616
+    },
+    {
+     "text": "A",
+     "from": 635,
+     "to": 638
+    },
+    {
+     "text": "small",
+     "from": 647,
+     "to": 652
+    },
+    {
+     "text": "fox",
+     "from": 664,
+     "to": 669
+    },
+    {
+     "text": "wets",
+     "from": 673,
+     "to": 679
+    },
+    {
+     "text": "its",
+     "from": 683,
+     "to": 686
+    },
+    {
+     "text": "tail.",
+     "from": 698,
+     "to": 715
+    },
+    {
+     "text": "Too",
+     "from": 719,
+     "to": 724
+    },
+    {
+     "text": "tired",
+     "from": 729,
+     "to": 736
+    },
+    {
+     "text": "to",
+     "from": 739,
+     "to": 741
+    },
+    {
+     "text": "finish.",
+     "from": 755,
+     "to": 765
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "src": "local/voice/guide-64/05.mp3",
+   "from": 786,
+   "to": 995,
+   "words": [
+    {
+     "text": "A",
+     "from": 786,
+     "to": 791
+    },
+    {
+     "text": "commentary",
+     "from": 793,
+     "to": 808
+    },
+    {
+     "text": "explains:",
+     "from": 810,
+     "to": 838
+    },
+    {
+     "text": "things",
+     "from": 846,
+     "to": 856
+    },
+    {
+     "text": "cannot",
+     "from": 858,
+     "to": 870
+    },
+    {
+     "text": "come",
+     "from": 872,
+     "to": 877
+    },
+    {
+     "text": "to",
+     "from": 880,
+     "to": 882
+    },
+    {
+     "text": "an",
+     "from": 884,
+     "to": 887
+    },
+    {
+     "text": "end.",
+     "from": 889,
+     "to": 907
+    },
+    {
+     "text": "So",
+     "from": 916,
+     "to": 923
+    },
+    {
+     "text": "it",
+     "from": 930,
+     "to": 932
+    },
+    {
+     "text": "ends",
+     "from": 935,
+     "to": 944
+    },
+    {
+     "text": "on",
+     "from": 948,
+     "to": 952
+    },
+    {
+     "text": "Not",
+     "from": 964,
+     "to": 971
+    },
+    {
+     "text": "Yet.",
+     "from": 973,
+     "to": 995
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "src": "local/voice/guide-64/06.mp3",
+   "from": 1016,
+   "to": 1169,
+   "words": [
+    {
+     "text": "The",
+     "from": 1016,
+     "to": 1021
+    },
+    {
+     "text": "advice:",
+     "from": 1023,
+     "to": 1049
+    },
+    {
+     "text": "tell",
+     "from": 1059,
+     "to": 1066
+    },
+    {
+     "text": "things",
+     "from": 1069,
+     "to": 1076
+    },
+    {
+     "text": "apart.",
+     "from": 1078,
+     "to": 1102
+    },
+    {
+     "text": "Put",
+     "from": 1109,
+     "to": 1117
+    },
+    {
+     "text": "each",
+     "from": 1119,
+     "to": 1129
+    },
+    {
+     "text": "where",
+     "from": 1131,
+     "to": 1136
+    },
+    {
+     "text": "it",
+     "from": 1138,
+     "to": 1141
+    },
+    {
+     "text": "belongs.",
+     "from": 1150,
+     "to": 1169
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "src": "local/voice/guide-64/07.mp3",
+   "from": 1190,
+   "to": 1406,
+   "words": [
+    {
+     "text": "Recommended",
+     "from": 1190,
+     "to": 1209
+    },
+    {
+     "text": "for:",
+     "from": 1210,
+     "to": 1222
+    },
+    {
+     "text": "the",
+     "from": 1224,
+     "to": 1238
+    },
+    {
+     "text": "nearly",
+     "from": 1243,
+     "to": 1253
+    },
+    {
+     "text": "finished.",
+     "from": 1258,
+     "to": 1285
+    },
+    {
+     "text": "Not",
+     "from": 1298,
+     "to": 1301
+    },
+    {
+     "text": "recommended",
+     "from": 1318,
+     "to": 1320
+    },
+    {
+     "text": "for:",
+     "from": 1327,
+     "to": 1349
+    },
+    {
+     "text": "anyone",
+     "from": 1354,
+     "to": 1358
+    },
+    {
+     "text": "who",
+     "from": 1363,
+     "to": 1366
+    },
+    {
+     "text": "thinks",
+     "from": 1369,
+     "to": 1375
+    },
+    {
+     "text": "they",
+     "from": 1378,
+     "to": 1380
+    },
+    {
+     "text": "are",
+     "from": 1382,
+     "to": 1385
+    },
+    {
+     "text": "done.",
+     "from": 1397,
+     "to": 1406
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "b1": 42,
+  "e1": 260,
+  "b2": 281,
+  "e2": 423,
+  "b3": 444,
+  "e3": 514,
+  "b4": 535,
+  "e4": 765,
+  "b5": 786,
+  "e5": 995,
+  "b6": 1016,
+  "e6": 1169,
+  "b7": 1190,
+  "e7": 1406,
+  "situations": 109,
+  "h63": 169,
+  "across63": 232,
+  "warns": 334,
+  "disorder": 373,
+  "stop": 487,
+  "h64": 580,
+  "fox": 664,
+  "tail": 698,
+  "tired": 729,
+  "commentary": 793,
+  "end": 889,
+  "notyet": 973,
+  "apart": 1078,
+  "put": 1109,
+  "not": 1298,
+  "close": 1430
+ },
+ "close": {
+  "tagline": "REVEAL THE MOMENT",
+  "site": "sixlines.day",
+  "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "sfxFrom": 4,
+  "sfxVolume": 0.35
+ }
+}

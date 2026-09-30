@@ -1,0 +1,505 @@
+{
+ "frames": 1508,
+ "beats": [
+  {
+   "n": 1,
+   "src": "local/voice/guide-cords/01.mp3",
+   "from": 42,
+   "to": 164,
+   "words": [
+    {
+     "text": "The",
+     "from": 42,
+     "to": 47
+    },
+    {
+     "text": "I-Ching.",
+     "from": 52,
+     "to": 73
+    },
+    {
+     "text": "A",
+     "from": 90,
+     "to": 92
+    },
+    {
+     "text": "Chinese",
+     "from": 95,
+     "to": 109
+    },
+    {
+     "text": "book",
+     "from": 112,
+     "to": 119
+    },
+    {
+     "text": "about",
+     "from": 124,
+     "to": 133
+    },
+    {
+     "text": "change.",
+     "from": 138,
+     "to": 164
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "src": "local/voice/guide-cords/02.mp3",
+   "from": 185,
+   "to": 385,
+   "words": [
+    {
+     "text": "A",
+     "from": 185,
+     "to": 190
+    },
+    {
+     "text": "later",
+     "from": 195,
+     "to": 200
+    },
+    {
+     "text": "historian,",
+     "from": 202,
+     "to": 229
+    },
+    {
+     "text": "Sima",
+     "from": 231,
+     "to": 243
+    },
+    {
+     "text": "Qian,",
+     "from": 245,
+     "to": 267
+    },
+    {
+     "text": "says",
+     "from": 269,
+     "to": 277
+    },
+    {
+     "text": "the",
+     "from": 278,
+     "to": 279
+    },
+    {
+     "text": "philosopher",
+     "from": 281,
+     "to": 296
+    },
+    {
+     "text": "Confucius",
+     "from": 298,
+     "to": 325
+    },
+    {
+     "text": "studied",
+     "from": 327,
+     "to": 337
+    },
+    {
+     "text": "it",
+     "from": 339,
+     "to": 344
+    },
+    {
+     "text": "in",
+     "from": 346,
+     "to": 351
+    },
+    {
+     "text": "old",
+     "from": 353,
+     "to": 361
+    },
+    {
+     "text": "age.",
+     "from": 363,
+     "to": 385
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "src": "local/voice/guide-cords/03.mp3",
+   "from": 406,
+   "to": 622,
+   "words": [
+    {
+     "text": "His",
+     "from": 406,
+     "to": 413
+    },
+    {
+     "text": "copy",
+     "from": 415,
+     "to": 425
+    },
+    {
+     "text": "was",
+     "from": 427,
+     "to": 434
+    },
+    {
+     "text": "bamboo",
+     "from": 439,
+     "to": 449
+    },
+    {
+     "text": "strips",
+     "from": 451,
+     "to": 466
+    },
+    {
+     "text": "tied",
+     "from": 468,
+     "to": 478
+    },
+    {
+     "text": "with",
+     "from": 480,
+     "to": 482
+    },
+    {
+     "text": "leather",
+     "from": 485,
+     "to": 492
+    },
+    {
+     "text": "cords.",
+     "from": 497,
+     "to": 514
+    },
+    {
+     "text": "The",
+     "from": 528,
+     "to": 530
+    },
+    {
+     "text": "cords",
+     "from": 533,
+     "to": 545
+    },
+    {
+     "text": "wore",
+     "from": 547,
+     "to": 554
+    },
+    {
+     "text": "through.",
+     "from": 560,
+     "to": 569
+    },
+    {
+     "text": "Three",
+     "from": 586,
+     "to": 593
+    },
+    {
+     "text": "times.",
+     "from": 595,
+     "to": 622
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "src": "local/voice/guide-cords/04.mp3",
+   "from": 643,
+   "to": 832,
+   "words": [
+    {
+     "text": "His",
+     "from": 643,
+     "to": 650
+    },
+    {
+     "text": "collected",
+     "from": 652,
+     "to": 664
+    },
+    {
+     "text": "sayings",
+     "from": 667,
+     "to": 683
+    },
+    {
+     "text": "record",
+     "from": 691,
+     "to": 698
+    },
+    {
+     "text": "a",
+     "from": 700,
+     "to": 703
+    },
+    {
+     "text": "hope:",
+     "from": 705,
+     "to": 734
+    },
+    {
+     "text": "more",
+     "from": 736,
+     "to": 743
+    },
+    {
+     "text": "study,",
+     "from": 746,
+     "to": 770
+    },
+    {
+     "text": "fewer",
+     "from": 772,
+     "to": 784
+    },
+    {
+     "text": "serious",
+     "from": 789,
+     "to": 801
+    },
+    {
+     "text": "mistakes.",
+     "from": 803,
+     "to": 832
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "src": "local/voice/guide-cords/05.mp3",
+   "from": 853,
+   "to": 1024,
+   "words": [
+    {
+     "text": "Tradition",
+     "from": 853,
+     "to": 870
+    },
+    {
+     "text": "credits",
+     "from": 872,
+     "to": 884
+    },
+    {
+     "text": "him",
+     "from": 888,
+     "to": 892
+    },
+    {
+     "text": "with",
+     "from": 894,
+     "to": 896
+    },
+    {
+     "text": "the",
+     "from": 898,
+     "to": 899
+    },
+    {
+     "text": "Ten",
+     "from": 904,
+     "to": 911
+    },
+    {
+     "text": "Wings:",
+     "from": 916,
+     "to": 944
+    },
+    {
+     "text": "explanations",
+     "from": 947,
+     "to": 973
+    },
+    {
+     "text": "probably",
+     "from": 976,
+     "to": 990
+    },
+    {
+     "text": "written",
+     "from": 995,
+     "to": 1000
+    },
+    {
+     "text": "later.",
+     "from": 1002,
+     "to": 1024
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "src": "local/voice/guide-cords/06.mp3",
+   "from": 1045,
+   "to": 1186,
+   "words": [
+    {
+     "text": "Six",
+     "from": 1045,
+     "to": 1054
+    },
+    {
+     "text": "Lines",
+     "from": 1057,
+     "to": 1069
+    },
+    {
+     "text": "reads",
+     "from": 1073,
+     "to": 1081
+    },
+    {
+     "text": "it",
+     "from": 1083,
+     "to": 1085
+    },
+    {
+     "text": "for",
+     "from": 1088,
+     "to": 1090
+    },
+    {
+     "text": "judgment:",
+     "from": 1093,
+     "to": 1124
+    },
+    {
+     "text": "what",
+     "from": 1126,
+     "to": 1131
+    },
+    {
+     "text": "makes",
+     "from": 1133,
+     "to": 1141
+    },
+    {
+     "text": "sense",
+     "from": 1143,
+     "to": 1153
+    },
+    {
+     "text": "to",
+     "from": 1155,
+     "to": 1157
+    },
+    {
+     "text": "do",
+     "from": 1160,
+     "to": 1165
+    },
+    {
+     "text": "here.",
+     "from": 1167,
+     "to": 1186
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "src": "local/voice/guide-cords/07.mp3",
+   "from": 1207,
+   "to": 1402,
+   "words": [
+    {
+     "text": "Recommended",
+     "from": 1207,
+     "to": 1226
+    },
+    {
+     "text": "for:",
+     "from": 1226,
+     "to": 1238
+    },
+    {
+     "text": "rereading.",
+     "from": 1241,
+     "to": 1286
+    },
+    {
+     "text": "Not",
+     "from": 1296,
+     "to": 1301
+    },
+    {
+     "text": "recommended",
+     "from": 1303,
+     "to": 1320
+    },
+    {
+     "text": "for:",
+     "from": 1322,
+     "to": 1344
+    },
+    {
+     "text": "your",
+     "from": 1346,
+     "to": 1351
+    },
+    {
+     "text": "last",
+     "from": 1354,
+     "to": 1363
+    },
+    {
+     "text": "set",
+     "from": 1366,
+     "to": 1368
+    },
+    {
+     "text": "of",
+     "from": 1370,
+     "to": 1375
+    },
+    {
+     "text": "cords.",
+     "from": 1376,
+     "to": 1402
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "b1": 42,
+  "e1": 164,
+  "b2": 185,
+  "e2": 385,
+  "b3": 406,
+  "e3": 622,
+  "b4": 643,
+  "e4": 832,
+  "b5": 853,
+  "e5": 1024,
+  "b6": 1045,
+  "e6": 1186,
+  "b7": 1207,
+  "e7": 1402,
+  "book": 112,
+  "historian": 202,
+  "confucius": 298,
+  "old": 353,
+  "strips": 451,
+  "cords": 497,
+  "wore": 547,
+  "three": 586,
+  "sayings": 667,
+  "study": 746,
+  "mistakes": 803,
+  "wings": 916,
+  "later": 1002,
+  "judgment": 1093,
+  "not": 1296,
+  "close": 1426
+ },
+ "close": {
+  "tagline": "REVEAL THE MOMENT",
+  "site": "sixlines.day",
+  "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "sfxFrom": 4,
+  "sfxVolume": 0.35
+ }
+}

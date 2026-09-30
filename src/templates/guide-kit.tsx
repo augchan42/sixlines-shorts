@@ -193,3 +193,25 @@ export const GuideShort: React.FC<GuideProps & { pages: [string, Page][]; summar
     </AbsoluteFill>
   );
 };
+
+// A hexagram drawn on bottom line first, a line every `step` frames: each bar's outline draws
+// on, then fills. lines[0] is the bottom line, 1 solid, 0 broken.
+export const DrawnHexagram: React.FC<{ f: number; at: number; lines: number[]; x: number; y: number; w: number; c: string; step?: number }> = ({ f, at, lines, x, y, w, c, step = 5 }) => {
+  const bar = w * 0.11, gap = w * 0.07, h = 6 * bar + 5 * gap;
+  const rect = (rx: number, ry: number, rw: number) => poly([[rx, ry], [rx + rw, ry], [rx + rw, ry + bar], [rx, ry + bar]]);
+  return (
+    <>
+      {lines.map((l, i) => {
+        const yy = y + h - bar - i * (bar + gap), a = at + i * step;
+        return l ? <Line key={i} f={f} at={a} c={c} w={5} d={rect(x, yy, w)} fill={c} fillAt={a + 10} dur={10} /> : (
+          <g key={i}>
+            <Line f={f} at={a} c={c} w={5} d={rect(x, yy, w * 0.42)} fill={c} fillAt={a + 10} dur={10} />
+            <Line f={f} at={a} c={c} w={5} d={rect(x + w * 0.58, yy, w * 0.42)} fill={c} fillAt={a + 10} dur={10} />
+          </g>
+        );
+      })}
+    </>
+  );
+};
+// Where DrawnHexagram puts line i (0 the bottom): its top edge and height.
+export const barY = (y: number, w: number, i: number) => y + 6 * w * 0.11 + 5 * w * 0.07 - w * 0.11 - i * (w * 0.18);

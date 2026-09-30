@@ -17,6 +17,10 @@ import bookendKun from "../series/bookend/02.json";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Guide, type GuideProps } from "./templates/Guide";
 import guideWangbi from "../series/specials/guide-wangbi.props.json";
+import guide64 from "../series/specials/guide-64.props.json";
+import guideCords from "../series/specials/guide-cords.props.json";
+import { Guide64 } from "./templates/Guide64";
+import { GuideCords } from "./templates/GuideCords";
 import { TalkingHead, type TalkingHeadProps } from "./templates/TalkingHead";
 import urizenQian6 from "../series/specials/urizen-qian6.props.json";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
@@ -145,6 +149,20 @@ export const Root: React.FC = () => (
       durationInFrames={1}
       calculateMetadata={({ props }: { props: GuideProps }) => ({ durationInFrames: props.frames })}
     />
+    {/* Guide entries after Wang Bi: hexagram 64, and Confucius's broken cords. */}
+    {([["Guide64", Guide64, guide64], ["GuideCords", GuideCords, guideCords]] as const).map(([id, component, props]) => (
+      <Composition
+        key={id}
+        id={id}
+        component={component}
+        defaultProps={props as GuideProps}
+        width={1080}
+        height={1920}
+        fps={FPS}
+        durationInFrames={1}
+        calculateMetadata={({ props }: { props: GuideProps }) => ({ durationInFrames: props.frames })}
+      />
+    ))}
     {/* Urizen's talking head on Qian's top line; blender/urizen.py renders the head. */}
     <Composition
       id="TalkingHead"
