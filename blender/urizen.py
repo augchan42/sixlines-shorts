@@ -59,7 +59,8 @@ def parse():
     p.add_argument("--preview", action="store_true")
     p.add_argument("--backdrop", default="neon", choices=["neon", "dusk"])
     p.add_argument("--props")
-    p.add_argument("--hair", default="shards", choices=["shards", "ribbons", "locks", "cards"])
+    # ribbons: the user's pick, 2026-10-01 ("This is best so far"; of a scalp cap: "Cap is dumb").
+    p.add_argument("--hair", default="ribbons", choices=["shards", "ribbons", "locks", "cards"])
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
@@ -223,9 +224,9 @@ def hair_and_beard(coll, rnd):
 #   cards: about forty thin wavy strips.
 STYLES = {
     # count of hair and beard locks, root width, cross-section, segments, wave amplitude
-    "ribbons": dict(hair=14, beard=14, width=0.2, section="flat", segments=7, wave=0.1),
-    "locks": dict(hair=13, beard=14, width=0.12, section="tube", segments=7, wave=0.08),
-    "cards": dict(hair=40, beard=40, width=0.08, section="flat", segments=7, wave=0.07),
+    "ribbons": dict(hair=14, beard=9, width=0.2, section="flat", segments=7, wave=0.1),
+    "locks": dict(hair=13, beard=8, width=0.12, section="tube", segments=7, wave=0.08),
+    "cards": dict(hair=40, beard=24, width=0.08, section="flat", segments=7, wave=0.07),
 }
 
 
@@ -298,41 +299,14 @@ def locks(name, roots, coll, mats, style, rnd, origin=Vector()):
     return o
 
 
-def scalp_cap(coll, mats, rnd):
-    """A shell over the top and back of the head, as stylized hair sits on a cap: the head's own
-    faces there, pushed out a little, so the locks grow out of hair and no scalp shows."""
-    import bmesh
-    head = bpy.data.objects["head"]
-    bm = bmesh.new()
-    bm.from_mesh(head.data)
-    # Down to a hairline just above the brows (they sit at 0.25-0.34), and over the back.
-    keep = lambda v: v.co.normalized().z > 0.42 or (v.co.normalized().y > 0.2 and v.co.normalized().z > -0.3)  # noqa: E731
-    bmesh.ops.delete(bm, geom=[f for f in bm.faces if not all(keep(v) for v in f.verts)], context="FACES")
-    for v in bm.verts:
-        v.co *= 1.045
-    me = bpy.data.meshes.new("cap")
-    bm.to_mesh(me)
-    bm.free()
-    o = bpy.data.objects.new("cap", me)
-    for mt in mats:
-        me.materials.append(mt)
-    # Each face one of the hair tones, and the shell roughened into facets, so it reads as hair.
-    for poly in me.polygons:
-        poly.material_index = rnd.randrange(len(mats))
-    coll.objects.link(o)
-    metal.facets(o, 0.07, 0, seed=7)
-    return o
-
-
 def hair_locks(coll, rnd, style):
     """Hair, beard and moustache as locks flowing into the tail; the brows stay shards."""
     white = [toon("white", WHITE), toon("grey", [(0.0, "#2a2640"), (0.3, "#8a86a8"), (0.7, "#e8e4f0")]), toon("warm", [(0.0, "#40303a"), (0.3, "#b0a098"), (0.7, "#fff0dc")])]
     st = STYLES[style]
-    scalp_cap(coll, white, rnd)
     jit = lambda s: Vector((rnd.gauss(0, s), rnd.gauss(0, s), rnd.gauss(0, s)))  # noqa: E731
     dirs = [Vector((rnd.gauss(0, 1), rnd.gauss(0, 1), rnd.gauss(0, 1))).normalized() for _ in range(6000)]
     # Hair from the top and back only, so no lock crosses the face.
-    on_scalp = [u for u in dirs if (u.z > 0.45 and u.y > -0.5) or (u.y > 0.15 and u.z > -0.35)]
+    on_scalp = [u for u in dirs if (u.z > 0.45 and u.y > -0.45) or (u.y > 0.15 and u.z > -0.35)]
     on_jaw = [u for u in dirs if -1.0 < u.z < MOUTH_Z - 0.08 and u.y < 0.2 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2)]
     on_lip = [u for u in dirs if u.y < -0.75 and 0.07 < abs(u.x) < 0.34 and MOUTH_Z + 0.02 < u.z < MOUTH_Z + 0.12]
     brows = [u for u in dirs if u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34][:30]
