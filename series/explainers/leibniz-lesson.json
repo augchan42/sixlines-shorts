@@ -140,6 +140,8 @@
        "secs": 10,
        "before": 31
       },
+      "beacon": true,
+      "beaconNote": "the beacon on the second flight only (the user, 2026-09-30: 'play the beacon only on one of the flights, maybe the second one')",
       "hold": 14
      }
     },

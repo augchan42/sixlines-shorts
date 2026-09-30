@@ -44,6 +44,8 @@ type Show = {
   // or the wireframe diagram (DiagramShow names its kinds).
   plate?: { zoom?: [number, number]; at?: [[number, number], [number, number]]; marks?: PlateMarks };
   diagram?: DiagramShow;
+  // The beacon on a page that isn't an approach (the Leibniz lesson's second flight round the ring).
+  beacon?: boolean;
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -373,10 +375,10 @@ export const Lesson: React.FC<LessonProps> = (p) => {
         <>
           <Audio src={staticFile(p.sfx.hum)} loop volume={(f) => (p.mix?.hum ?? 0.55) * machines(f)} />
           {/* The beacon, as in the Nostromo's landing: a steady beep that rises through a flight page,
-              and through the Leibniz lesson's flights round the ring. */}
+              or a page that asks for it. */}
           {p.sfx.beacon &&
             pages.flatMap((x, k) =>
-              x.page.show?.approach || x.page.show?.diagram?.count
+              x.page.show?.approach || x.page.show?.beacon
                 ? [
                     <Sequence key={`beacon-${k}`} from={x.from} durationInFrames={x.frames}>
                       <Audio src={staticFile(p.sfx!.beacon!)} volume={(f) => (p.mix?.beacon ?? 1) * interpolate(f, [0, FPS, x.frames - FPS, x.frames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
