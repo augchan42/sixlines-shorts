@@ -56,6 +56,7 @@ def parse():
     p.add_argument("--preview", action="store_true")
     p.add_argument("--backdrop", default="neon", choices=["neon", "dusk"])
     p.add_argument("--props")
+    p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
 
@@ -165,6 +166,12 @@ def shards(name, roots, coll, mats, wind, origin=Vector(), seed=0):
     o = bpy.data.objects.new(name, mesh)
     o.location = origin
     coll.objects.link(o)
+    # How far each vertex moves in the wind: roots fixed, the middle ring a little, tips most.
+    g = o.vertex_groups.new(name="tips")
+    for k in range(0, len(verts), 7):
+        g.add([k, k + 1, k + 2], 0.0, "REPLACE")
+        g.add([k + 3, k + 4, k + 5], 0.35, "REPLACE")
+        g.add([k + 6], 1.0, "REPLACE")
     return o
 
 
@@ -189,8 +196,7 @@ def hair_and_beard(coll, rnd):
         elif u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34 and len(brows) < 30:
             side = math.copysign(1, u.x)
             brows.append((p, Vector((side, -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)))
-    shards("hair", hair, coll, white, left * 0.9, seed=1)
-    shards("moustache", tache, coll, white, left * 0.3, seed=2)
+    hair_and_beard.blown = [(shards("hair", hair, coll, white, left * 0.9, seed=1), 0.22), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
     shards("brows", brows, coll, white, left * 0.2, seed=3)
     # The beard hangs from the jaw, so it turns about the jaw's hinge.
     return shards("beard", beard, coll, white, left * 0.8 + Vector((0, 0, -0.2)), origin=HINGE, seed=4)
@@ -273,6 +279,8 @@ def main():
     # brow are enough.
     face, _ = head(ink)
     beard = hair_and_beard(ink, rnd)
+    if args.wind:
+        wind([*hair_and_beard.blown, (beard, 0.14)])
 
     # A warm key from the front left and above, the sun's rim from behind, a cool fill right.
     lights = [("key", 3.2, "#ffd8b0", (55, 0, -35)), ("rim", 5.0, "#ff9a50", (-70, 0, 15)), ("fill", 0.9, "#5a7ab0", (70, 0, 60))]
@@ -309,6 +317,36 @@ def main():
         bpy.ops.render.render(animation=True)
     else:
         bpy.ops.render.render(write_still=True)
+
+
+def wind(blown):
+    """The wind in The Ancient of Days blows his hair and beard to the left. Here a field of
+    coloured noise drifts leftward through them, a unit a second (--wind): each shard's tip moves
+    with the colour it sits in (x, y, z from r, g, b), its root not at all, so gusts pass along the
+    locks rather than the whole head swaying. The user, 2026-09-30: "does the hair flow? ...
+    clearly in the original artwork, the wind is blowing"."""
+    tex = bpy.data.textures.new("gust", "CLOUDS")
+    tex.cloud_type = "COLOR"
+    tex.noise_scale = 0.9
+    tex.noise_depth = 1
+    field = bpy.data.objects.new("gust", None)
+    bpy.context.scene.collection.objects.link(field)
+    field.location = (0.0, 0.0, 0.0)
+    field.keyframe_insert("location", index=0, frame=1)
+    field.location.x = -60.0
+    field.keyframe_insert("location", index=0, frame=1800)
+    for fc in field.animation_data.action.layers[0].strips[0].channelbags[0].fcurves if hasattr(field.animation_data.action, "layers") else field.animation_data.action.fcurves:
+        for k in fc.keyframe_points:
+            k.interpolation = "LINEAR"
+    for o, strength in blown:
+        d = o.modifiers.new("wind", "DISPLACE")
+        d.texture = tex
+        d.texture_coords = "OBJECT"
+        d.texture_coords_object = field
+        d.direction = "RGB_TO_XYZ"
+        d.mid_level = 0.5
+        d.strength = strength
+        d.vertex_group = "tips"
 
 
 OPEN = 0.7  # the jaw's widest, as a share of the shape key's (0.24 rad): a full turn reads as a yawn
