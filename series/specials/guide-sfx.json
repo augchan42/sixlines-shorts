@@ -1,0 +1,347 @@
+{
+ "made": "scripts/guide-sfx.mjs",
+ "sounds": [
+  {
+   "n": 1,
+   "name": "boot-arp",
+   "role": "boot",
+   "what": "rising triangle arpeggio C5 E5 G5 C6, a cheerful ready",
+   "seconds": 1.2,
+   "audition": 0.79,
+   "sha256": "76ab943340991cf907e210bf5f21b886a18100dd118677aea7112028274cb354"
+  },
+  {
+   "n": 2,
+   "name": "boot-bells",
+   "role": "boot",
+   "what": "soft FM bells, the same arpeggio as a chord that blooms",
+   "seconds": 1.6,
+   "audition": 3.69,
+   "sha256": "0fd81e14a286d999b1abbf76151602886e77238b02fbf8106f7a904a96a45257"
+  },
+  {
+   "n": 3,
+   "name": "boot-sweep",
+   "role": "boot",
+   "what": "a sine that rises 300 to 900 Hz with a slight shimmer, then settles",
+   "seconds": 1.2,
+   "audition": 7.1,
+   "sha256": "2e56eb6a18fbde231ef450aef50c234b04001ef6272f3b31d0ca11bb3b3b9a0f"
+  },
+  {
+   "n": 4,
+   "name": "boot-thunk-hum",
+   "role": "boot",
+   "what": "a relay thunk, then a hum that swells in at 330 Hz with its harmonics",
+   "seconds": 1.5,
+   "audition": 10.06,
+   "sha256": "5d66f0a7671b40a0887b1cafe52d2050c966c8c96a70e585ce31b79fbcc380ad"
+  },
+  {
+   "n": 5,
+   "name": "boot-flutter",
+   "role": "boot",
+   "what": "a flurry of random notes that settles on a chord: the machine thinking, then ready",
+   "seconds": 1.6,
+   "audition": 13.3,
+   "sha256": "d85749655abd87c7d90aeeacabda7cda2baffaa58cf0c72ceeea0ed5031d9e2a"
+  },
+  {
+   "n": 6,
+   "name": "boot-pluck",
+   "role": "boot",
+   "what": "three plucked notes, wooden and warm",
+   "seconds": 1.2,
+   "audition": 16.74,
+   "sha256": "7bfdd03cfb5b973e9b91f067e05d7be0daa01c6f10e5dd4f0072b8b89dd0e2d2"
+  },
+  {
+   "n": 7,
+   "name": "blip-hi",
+   "role": "blip",
+   "what": "short sine at 1320 Hz",
+   "seconds": 0.15,
+   "audition": 19.8,
+   "sha256": "e5d939fb838ac45024c72526a3f5638d0d105aef6ad7dca3bd5dc3599dbd6cac"
+  },
+  {
+   "n": 8,
+   "name": "blip-mid",
+   "role": "blip",
+   "what": "short sine at 880 Hz",
+   "seconds": 0.15,
+   "audition": 21.54,
+   "sha256": "afcee6c92a087d2cac91322bf7b4a5ae686cf84bf14eafec92ba2340495ba3e3"
+  },
+  {
+   "n": 9,
+   "name": "blip-lo",
+   "role": "blip",
+   "what": "short sine at 587 Hz",
+   "seconds": 0.18,
+   "audition": 23.48,
+   "sha256": "ab9918f47a0e86b8c18126ca1883c87e2580fc2a21ae0cc78ab8373c15455546"
+  },
+  {
+   "n": 10,
+   "name": "blip-tri",
+   "role": "blip",
+   "what": "short triangle at 740 Hz, a little reedier",
+   "seconds": 0.15,
+   "audition": 25.37,
+   "sha256": "d47e789a6c2de8442d02f276be049cacf250cf856480b84bab6499a79d2be8b7"
+  },
+  {
+   "n": 11,
+   "name": "blip-droplet",
+   "role": "blip",
+   "what": "a droplet: pitch falls 1400 to 600 Hz in 60 ms",
+   "seconds": 0.12,
+   "audition": 27.35,
+   "sha256": "4dbd83ddf2200e690b9d4f78897cc24c55441d526214ad94d7140804e74dcee0"
+  },
+  {
+   "n": 12,
+   "name": "blip-up",
+   "role": "blip",
+   "what": "two notes up, 660 then 990 Hz: yes",
+   "seconds": 0.25,
+   "audition": 29.24,
+   "sha256": "b119bedb9d7631a0aff87d59cd59c47cc5212f49f2c50f14c647916460b56ce4"
+  },
+  {
+   "n": 13,
+   "name": "blip-down",
+   "role": "blip",
+   "what": "two notes down, 990 then 660 Hz: done",
+   "seconds": 0.25,
+   "audition": 31.42,
+   "sha256": "47428b07791297f1451433198efb9a34866e2db43b3048ba5eb61f4bee2bd6e4"
+  },
+  {
+   "n": 14,
+   "name": "blip-bell",
+   "role": "blip",
+   "what": "a small FM bell at E5",
+   "seconds": 0.5,
+   "audition": 33.62,
+   "sha256": "226e01bca0b0456028e087f15dc67dc1d3f3a24d744a064ac408be3d81c523ed"
+  },
+  {
+   "n": 15,
+   "name": "blip-pluck",
+   "role": "blip",
+   "what": "a plucked C5, wooden",
+   "seconds": 0.4,
+   "audition": 36.14,
+   "sha256": "b738c6f72ab19a74ddd30c338822ad457dd0f41db7350138d0a52c03edc64aaf"
+  },
+  {
+   "n": 16,
+   "name": "blip-wood",
+   "role": "blip",
+   "what": "a woodblock knock, resonant noise at 1 kHz",
+   "seconds": 0.12,
+   "audition": 38.61,
+   "sha256": "389de3aa29da261598c8ab79239b188e15b09c1d3911467f40f9b6fc8e4020e2"
+  },
+  {
+   "n": 17,
+   "name": "blip-pop",
+   "role": "blip",
+   "what": "a soft pop: a sine that jumps up 400 to 900 Hz in 30 ms",
+   "seconds": 0.1,
+   "audition": 40.83,
+   "sha256": "d8b8cdccd88ceb77a8f7c89802221740f07f3a1e57be24f4ef825a9903bd321d"
+  },
+  {
+   "n": 18,
+   "name": "tick-soft",
+   "role": "tick",
+   "what": "a soft click, noise at 1.6 kHz for 8 ms",
+   "seconds": 0.05,
+   "audition": 42.82,
+   "sha256": "b2a9d5a9bc82712c9bef7d142510e28552136d7410218fbea6e2eb28e95d5d52"
+  },
+  {
+   "n": 19,
+   "name": "tick-key",
+   "role": "tick",
+   "what": "a keyboard key: press and release",
+   "seconds": 0.12,
+   "audition": 44.85,
+   "sha256": "262bf6271e00f58795881eb02663aca54508df0e5a0d1b8159ae3c44fccfdbe3"
+  },
+  {
+   "n": 20,
+   "name": "type-soft",
+   "role": "tick",
+   "what": "two seconds of unhurried typing",
+   "seconds": 2,
+   "audition": 46.82,
+   "sha256": "41dae3a94c899ac903e3fcb98e38c6ac36b5297e7fa0cd26687d6754d07d8552"
+  },
+  {
+   "n": 21,
+   "name": "type-teleprinter",
+   "role": "tick",
+   "what": "a teleprinter line at ten characters a second, then its bell",
+   "seconds": 1.8,
+   "audition": 50.9,
+   "sha256": "e19a746aaca097d238c7bc79b29e79ad4010132ca43f953a29cc07b2af90e506"
+  },
+  {
+   "n": 22,
+   "name": "chatter-bleeps",
+   "role": "chatter",
+   "what": "three seconds of quiet random pentatonic bleeps, ten a second",
+   "seconds": 3,
+   "audition": 54.8,
+   "sha256": "2c84d920e791c9c88745ce9deb8b25109e377e650b98776139f4f1e93c60f8df"
+  },
+  {
+   "n": 23,
+   "name": "chatter-droplets",
+   "role": "chatter",
+   "what": "three seconds of scattered droplets",
+   "seconds": 3,
+   "audition": 60,
+   "sha256": "b1c3bd1b4a6c7ecd24e347720eb9d7a9e0ad70a09a5ecd98909ed0f45808bf64"
+  },
+  {
+   "n": 24,
+   "name": "chatter-relays",
+   "role": "chatter",
+   "what": "three seconds of relay clicks in bursts",
+   "seconds": 3,
+   "audition": 65.15,
+   "sha256": "0bd20c3a44a8d3bf455abeb024e90599a7c724720f34262cccf0919f23428e93"
+  },
+  {
+   "n": 25,
+   "name": "compute-sequence",
+   "role": "chatter",
+   "what": "a small sequencer, eight notes a second, a 1970s computer at work",
+   "seconds": 3,
+   "audition": 70.28,
+   "sha256": "f424a846db800b53ab3b80d90e3c98c4c9af3d0d4f855893a29f7953ee9c7849"
+  },
+  {
+   "n": 26,
+   "name": "hum-bed",
+   "role": "chatter",
+   "what": "a soft hum at 330 and 495 Hz with a slow drift, to go under a scene",
+   "seconds": 4,
+   "audition": 75.49,
+   "sha256": "0eae8f8c6fb1ca48fa401291db488bb68fc7de429fb6e242c0c28d6767a3e6aa"
+  },
+  {
+   "n": 27,
+   "name": "chime-page",
+   "role": "chime",
+   "what": "three rising notes: a new page",
+   "seconds": 1,
+   "audition": 81.71,
+   "sha256": "406595314cdbd205f14d8c684780e703f901323357e89bc14627a2ea7768e0e5"
+  },
+  {
+   "n": 28,
+   "name": "chime-ding",
+   "role": "chime",
+   "what": "one FM ding at C6: an entry found",
+   "seconds": 1.2,
+   "audition": 84.72,
+   "sha256": "93e98a6dd4489cbe6f99d7d5875297945d46593ed04cc28f1100ce41fab2a17c"
+  },
+  {
+   "n": 29,
+   "name": "chime-question",
+   "role": "chime",
+   "what": "a glide up, like a raised eyebrow",
+   "seconds": 0.5,
+   "audition": 88.07,
+   "sha256": "6ebb4c74cf29b2ca60ed4d3909a54018f6c369a3db31a194dadd37e232828f70"
+  },
+  {
+   "n": 30,
+   "name": "chime-hmm",
+   "role": "chime",
+   "what": "two notes, down then up: well, well",
+   "seconds": 0.7,
+   "audition": 90.4,
+   "sha256": "547ef5e503dbb3e06537bb0d2defa83c5baacd055b271877e66538126ae7889b"
+  },
+  {
+   "n": 31,
+   "name": "error-buzz",
+   "role": "chime",
+   "what": "two soft buzzes at 330 Hz: not recommended",
+   "seconds": 0.5,
+   "audition": 93.12,
+   "sha256": "a1fdae7c816da00067372df6a2c1714652c5dd009840e38e5b13f030264d4923"
+  },
+  {
+   "n": 32,
+   "name": "error-boing",
+   "role": "chime",
+   "what": "a cartoon boing, falling 700 to 280 Hz with a wobble",
+   "seconds": 0.6,
+   "audition": 95.64,
+   "sha256": "2dfdf9e944626d67f342bc093c69ffbd0684b28e4eadb646bbb7ac91ded35b02"
+  },
+  {
+   "n": 33,
+   "name": "whoosh-up",
+   "role": "whoosh",
+   "what": "noise that sweeps up, 500 Hz to 4 kHz",
+   "seconds": 0.45,
+   "audition": 98.37,
+   "sha256": "c4f0ecab108a067cc845aa339db5b7834735de28bcc76c92be2ce684751440ad"
+  },
+  {
+   "n": 34,
+   "name": "whoosh-down",
+   "role": "whoosh",
+   "what": "noise that sweeps down, 4 kHz to 500 Hz",
+   "seconds": 0.45,
+   "audition": 100.9,
+   "sha256": "302a6df2990b7ca18324ec15f2e4e0c590b71bbcefa75e9ba71a667713452af1"
+  },
+  {
+   "n": 35,
+   "name": "zip",
+   "role": "whoosh",
+   "what": "a fast sine zip, 400 Hz to 2 kHz in 70 ms",
+   "seconds": 0.12,
+   "audition": 103.41,
+   "sha256": "1f15891d18322494151cd728926f77eff7074f66eb0ee126e3bf3066c5b6870b"
+  },
+  {
+   "n": 36,
+   "name": "slide",
+   "role": "whoosh",
+   "what": "a slow glide 600 to 900 Hz, for something sliding in",
+   "seconds": 0.35,
+   "audition": 105.68,
+   "sha256": "15ebddeda075e296b1e6730688f008dc964e87bffa8f2a3c1f5c74e1376ce851"
+  },
+  {
+   "n": 37,
+   "name": "off-drop",
+   "role": "off",
+   "what": "a falling sine, 900 to 250 Hz, then a click",
+   "seconds": 0.7,
+   "audition": 108.18,
+   "sha256": "fabb9fb717384ec74ab75021d9806108790ee8fe10c44f658ea04b1f77c2976f"
+  },
+  {
+   "n": 38,
+   "name": "off-arp",
+   "role": "off",
+   "what": "the boot arpeggio falling back down",
+   "seconds": 1,
+   "audition": 110.82,
+   "sha256": "95dbb561431c9c1d598f4b73c1aeff60dcfbe7275e5dacdf71741b20f90c43e6"
+  }
+ ]
+}
