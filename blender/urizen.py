@@ -59,6 +59,7 @@ def parse():
     p.add_argument("--preview", action="store_true")
     p.add_argument("--backdrop", default="neon", choices=["neon", "dusk"])
     p.add_argument("--props")
+    p.add_argument("--hair", default="shards", choices=["shards", "ribbons", "locks", "cards"])
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
@@ -214,6 +215,145 @@ def hair_and_beard(coll, rnd):
     return shards("beard", beard, coll, white, Vector(), origin=HINGE, seed=4)
 
 
+# Hair as locks, the way stylized hair is modelled (hair cards: a few tapered strips, one per
+# clump, bent in 3-6 segments), not hundreds of spikes. The user, 2026-10-01, after the shards:
+# "Does it look right still?" -- they read as bristles. Three styles to compare as stills:
+#   ribbons: about a dozen wide, flat, wavy bands, like the painting's broad strokes;
+#   locks: about a dozen thick three-sided tubes, faceted, waving and tapering;
+#   cards: about forty thin wavy strips.
+STYLES = {
+    # count of hair and beard locks, root width, cross-section, segments, wave amplitude
+    "ribbons": dict(hair=14, beard=14, width=0.2, section="flat", segments=7, wave=0.1),
+    "locks": dict(hair=13, beard=14, width=0.12, section="tube", segments=7, wave=0.08),
+    "cards": dict(hair=40, beard=40, width=0.08, section="flat", segments=7, wave=0.07),
+}
+
+
+def lock_path(p, u, tail, rnd, wave, segments, lift=0.35):
+    """Points from a root p (on the head, u its direction) to the tail: out from the scalp, then
+    bending into the stream (a quadratic curve), with an S-wave across it that is still at both
+    ends."""
+    c = p + u * lift + Vector((-0.7, 0.15, 0.0))
+    k, phase = rnd.choice((1.5, 2, 2.5)), rnd.uniform(0, math.pi)
+    pts = []
+    for i in range(segments + 1):
+        t = i / segments
+        q = (1 - t) ** 2 * p + 2 * t * (1 - t) * c + t * t * tail
+        pts.append(q + Vector((0, 0, 1)) * wave * math.sin(math.pi * k * t + phase) * math.sin(math.pi * t))
+    return pts
+
+
+def locks(name, roots, coll, mats, style, rnd, origin=Vector()):
+    """One mesh of locks: each root's path swept with a flat or three-sided section that narrows
+    to a point at the tail; each lock one material, faces flat-shaded; vertex group 'tips' weights
+    each ring by how far along the lock it is, for the wind."""
+    st = STYLES[style]
+    verts, faces, which, weights = [], [], [], []
+    for p, u, tail in roots:
+        pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.1 if name != "hair" else 0.3)
+        w0 = st["width"] * rnd.uniform(0.7, 1.3)
+        twist = rnd.uniform(-0.6, 0.6)
+        n0 = len(faces)
+        rings = []
+        for i, q in enumerate(pts[:-1]):
+            t = i / st["segments"]
+            tan = (pts[i + 1] - q).normalized()
+            # Across the lock: mostly up and down on screen, turning a little along it.
+            a = tan.cross(Vector((0, 1, 0))).normalized()
+            b = tan.cross(a).normalized()
+            ang = twist * t
+            a, b = a * math.cos(ang) + b * math.sin(ang), b * math.cos(ang) - a * math.sin(ang)
+            r = w0 * (1 - t) ** 0.7
+            if st["section"] == "flat":
+                ring = [q + a * r, q - a * r]
+            else:
+                ring = [q + (a * math.cos(g) + b * math.sin(g)) * r for g in (0, 2.1, 4.2)]
+            rings.append([len(verts) + j for j in range(len(ring))])
+            verts += [v - origin for v in ring]
+            weights += [t] * len(ring)
+        tip = len(verts)
+        verts.append(pts[-1] - origin)
+        weights.append(1.0)
+        m = len(rings[0])
+        for r0, r1 in zip(rings, rings[1:]):
+            for j in range(m if m > 2 else 1):
+                j2 = (j + 1) % m
+                faces += [(r0[j], r0[j2], r1[j2]), (r0[j], r1[j2], r1[j])]
+        last = rings[-1]
+        for j in range(m if m > 2 else 1):
+            faces.append((last[j], last[(j + 1) % m], tip))
+        which += [rnd.randrange(len(mats))] * (len(faces) - n0)
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata([tuple(v) for v in verts], [], faces)
+    for mt in mats:
+        mesh.materials.append(mt)
+    for poly, w in zip(mesh.polygons, which):
+        poly.material_index = w
+    o = bpy.data.objects.new(name, mesh)
+    o.location = origin
+    coll.objects.link(o)
+    g = o.vertex_groups.new(name="tips")
+    for i, w in enumerate(weights):
+        g.add([i], w, "REPLACE")
+    return o
+
+
+def scalp_cap(coll, mats, rnd):
+    """A shell over the top and back of the head, as stylized hair sits on a cap: the head's own
+    faces there, pushed out a little, so the locks grow out of hair and no scalp shows."""
+    import bmesh
+    head = bpy.data.objects["head"]
+    bm = bmesh.new()
+    bm.from_mesh(head.data)
+    # Down to a hairline just above the brows (they sit at 0.25-0.34), and over the back.
+    keep = lambda v: v.co.normalized().z > 0.42 or (v.co.normalized().y > 0.2 and v.co.normalized().z > -0.3)  # noqa: E731
+    bmesh.ops.delete(bm, geom=[f for f in bm.faces if not all(keep(v) for v in f.verts)], context="FACES")
+    for v in bm.verts:
+        v.co *= 1.045
+    me = bpy.data.meshes.new("cap")
+    bm.to_mesh(me)
+    bm.free()
+    o = bpy.data.objects.new("cap", me)
+    for mt in mats:
+        me.materials.append(mt)
+    # Each face one of the hair tones, and the shell roughened into facets, so it reads as hair.
+    for poly in me.polygons:
+        poly.material_index = rnd.randrange(len(mats))
+    coll.objects.link(o)
+    metal.facets(o, 0.07, 0, seed=7)
+    return o
+
+
+def hair_locks(coll, rnd, style):
+    """Hair, beard and moustache as locks flowing into the tail; the brows stay shards."""
+    white = [toon("white", WHITE), toon("grey", [(0.0, "#2a2640"), (0.3, "#8a86a8"), (0.7, "#e8e4f0")]), toon("warm", [(0.0, "#40303a"), (0.3, "#b0a098"), (0.7, "#fff0dc")])]
+    st = STYLES[style]
+    scalp_cap(coll, white, rnd)
+    jit = lambda s: Vector((rnd.gauss(0, s), rnd.gauss(0, s), rnd.gauss(0, s)))  # noqa: E731
+    dirs = [Vector((rnd.gauss(0, 1), rnd.gauss(0, 1), rnd.gauss(0, 1))).normalized() for _ in range(6000)]
+    # Hair from the top and back only, so no lock crosses the face.
+    on_scalp = [u for u in dirs if (u.z > 0.45 and u.y > -0.5) or (u.y > 0.15 and u.z > -0.35)]
+    on_jaw = [u for u in dirs if -1.0 < u.z < MOUTH_Z - 0.08 and u.y < 0.2 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2)]
+    on_lip = [u for u in dirs if u.y < -0.75 and 0.07 < abs(u.x) < 0.34 and MOUTH_Z + 0.02 < u.z < MOUTH_Z + 0.12]
+    brows = [u for u in dirs if u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34][:30]
+
+    def spread(cands, n):
+        """n roots spread out: each the candidate farthest from those already chosen."""
+        out = [cands[0]]
+        while len(out) < min(n, len(cands)):
+            out.append(max(cands[:600], key=lambda c: min((c - o).length for o in out)))
+        return out
+
+    # The tail: hair converges a little above the beard's point, the two meeting at the end.
+    hair = [(shape(u) - u * 0.03, u, TAIL + Vector((0, 0, 0.12)) + jit(0.06)) for u in spread(on_scalp, st["hair"])]
+    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, 0, -0.12)) + jit(0.06)) for u in spread(on_jaw, st["beard"])]
+    tache = [(shape(u), u, shape(u) + Vector((-0.5, 0.1, -0.5)) + jit(0.05)) for u in spread(on_lip, 4)]
+    hair_and_beard.blown = [(locks("hair", hair, coll, white, style, rnd), 0.22), (locks("moustache", tache, coll, white, style, rnd), 0.05)]
+    left = Vector((-1.0, 0.0, 0.0))
+    shards("brows", [(shape(u), Vector((math.copysign(1, u.x), -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)) for u in brows], coll, white, left * 0.2, seed=3)
+    return locks("beard", beard, coll, white, style, rnd, origin=HINGE)
+
+
 def backdrop(glow, ink):
     """Blake's sun disc behind the head like a halo, its rays, the triangle sky, dark clouds."""
     metal.HORIZON = -9.0
@@ -290,7 +430,7 @@ def main():
     # No eyeballs (the user: 'with eyes looks [wrong]. Less is more'): the sockets under the
     # brow are enough.
     face, _ = head(ink)
-    beard = hair_and_beard(ink, rnd)
+    beard = hair_and_beard(ink, rnd) if args.hair == "shards" else hair_locks(ink, rnd, args.hair)
     if args.wind:
         wind([*hair_and_beard.blown, (beard, 0.14)])
 
