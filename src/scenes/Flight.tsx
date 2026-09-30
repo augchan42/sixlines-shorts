@@ -8,7 +8,7 @@ import { DEPTH, LINE_H, lineZ, PHOSPHOR, slabsOf } from "./Readout";
 //
 // World units as the plot's: x across a line, y into the screen, z up the stack.
 
-type V = [number, number, number];
+export type V = [number, number, number];
 const sub = (a: V, b: V): V => [a[0] - b[0], a[1] - b[1], a[2] - b[2]];
 const dot = (a: V, b: V) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
 const cross = (a: V, b: V): V => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]];
@@ -20,7 +20,7 @@ const norm = (a: V): V => {
 // A camera `dist` from `target`, `az` degrees round it and `el` degrees above it.
 export type Cam = { target: V; dist: number; az: number; el: number };
 
-const project = (cam: Cam, focal: number, cx: number, cy: number) => {
+export const project = (cam: Cam, focal: number, cx: number, cy: number) => {
   const r = (Math.PI / 180);
   const pos: V = [
     cam.target[0] + cam.dist * Math.sin(cam.az * r) * Math.cos(cam.el * r),

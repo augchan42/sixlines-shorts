@@ -1,0 +1,190 @@
+{
+ "about": "The diagram Bouvet sent Leibniz in 1701, as one vertical terminal lesson of about 2 min. The user, 2026-09-30, with the woodcut: 'yes a nostromo style tutorial/raadout of this diagram!!! with flythrough and explations'. Design: docs/superpowers/specs/2026-09-30-leibniz-diagram-design.md; facts: docs/research/2026-09-30-leibniz-diagram.md. The plate is fetched by scripts/leibniz-plate.mjs.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the Wang Bi lesson, so the two lessons end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0,
+  "musicUp": [
+   "end"
+  ]
+ },
+ "cues": true,
+ "beacon": "level",
+ "music": {
+  "file": "pick13-synthwave-the-mountain.mp3",
+  "start": 0.023,
+  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
+ },
+ "endcardRate": 0.75,
+ "endMusic": {
+  "at": 80.06,
+  "lead": 2.75
+ },
+ "caption": "The diagram of the 64 hexagrams that a Jesuit in Peking sent Leibniz in 1701, read as binary: Kun 0, Qian 63.",
+ "chapters": [
+  {
+   "page": "THE OBJECT",
+   "pages": [
+    {
+     "q": "WHAT IS THIS",
+     "a": "A DIAGRAM OF THE 64 HEXAGRAMS.\nIT WENT FROM CHINA TO EUROPE IN 1701.",
+     "show": {
+      "plate": {
+       "zoom": [
+        1,
+        1.1
+       ]
+      }
+     }
+    },
+    {
+     "q": "WHO SENT IT",
+     "a": "JOACHIM BOUVET, A JESUIT\nAT THE KANGXI EMPEROR'S COURT.\nPEKING, 4 NOVEMBER 1701.",
+     "show": {
+      "plate": {
+       "zoom": [
+        1.1,
+        1.35
+       ],
+       "at": [
+        [
+         0.5,
+         0.5
+        ],
+        [
+         0.5,
+         0.12
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "q": "WHO GOT IT",
+     "a": "GOTTFRIED LEIBNIZ, 1 APRIL 1703.\nHE HAD WRITTEN UP BINARY IN 1679,\nBEFORE HE SAW THIS.",
+     "show": {
+      "plate": {
+       "zoom": [
+        1,
+        1.08
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "page": "THE COUNT",
+   "pages": [
+    {
+     "q": "READ A LINE AS A BIT",
+     "a": "BROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
+     "show": {}
+    },
+    {
+     "q": "COUNT THE RING",
+     "a": "KUN, ALL BROKEN, IS 0.\nQIAN, ALL SOLID, IS 63.",
+     "show": {
+      "diagram": {
+       "count": [
+        0,
+        31
+       ],
+       "at": 5,
+       "secs": 10
+      },
+      "hold": 12
+     }
+    },
+    {
+     "q": "WHY DOES IT JUMP",
+     "a": "AT 31 THE RIGHT HALF IS FULL.\n32 SETS THE BOTTOM LINE,\nAND THE COUNT CLIMBS THE LEFT.",
+     "show": {}
+    },
+    {
+     "q": "WHAT ARE THE SMALL NUMBERS",
+     "a": "LEIBNIZ WROTE THEM IN:\n0 TO 63.",
+     "show": {
+      "plate": {
+       "zoom": [
+        1.2,
+        1.8
+       ],
+       "at": [
+        [
+         0.5,
+         0.3
+        ],
+        [
+         0.6,
+         0.1
+        ]
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "page": "WHO DREW IT",
+   "pages": [
+    {
+     "q": "WHO MADE THIS ORDER",
+     "a": "SHAO YONG 邵雍,\nELEVENTH CENTURY.",
+     "show": {}
+    },
+    {
+     "q": "HOW",
+     "a": "BY HALVING:\nONE, TWO, FOUR ... SIXTY-FOUR.\nEACH SPLIT ADDS A LINE.",
+     "show": {}
+    },
+    {
+     "q": "A FRIEND'S VERDICT",
+     "a": "CHENG HAO 程顥:\n\"JUST THE DOUBLING METHOD.\"\n加一倍法",
+     "show": {}
+    },
+    {
+     "q": "THE SQUARE",
+     "a": "THE SAME 64 AS A SQUARE.\nEACH ROW SHARES ITS LOWER TRIGRAM,\nEACH COLUMN ITS UPPER.",
+     "show": {}
+    }
+   ]
+  },
+  {
+   "page": "WHAT IT MEANT",
+   "pages": [
+    {
+     "q": "DID CHINA INVENT BINARY",
+     "a": "SHAO YONG ORDERED THE 64 BY HALVING.\nHE DID NO SUMS WITH THEM.\nLEIBNIZ SAW CONFIRMATION, NOT A SOURCE.",
+     "show": {}
+    },
+    {
+     "q": "WHAT DID LEIBNIZ SAY",
+     "a": "\"THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
+     "show": {}
+    },
+    {
+     "q": "AND WANG BI",
+     "a": "WANG BI, 800 YEARS EARLIER:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
+     "show": {}
+    },
+    {
+     "q": "",
+     "a": "SIX LINES. 64 SITUATIONS.",
+     "show": {}
+    }
+   ]
+  }
+ ],
+ "draft": "Pages 4 and 6 onward have no drawings yet (the smoke test is pages 1 and 5); their draws are in the design."
+}

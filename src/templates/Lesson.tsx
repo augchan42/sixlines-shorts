@@ -3,6 +3,7 @@ import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
+import { Counter, countCam, Plate, Wireframe } from "../scenes/Diagram";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
 import { cameraStart } from "../lib/lessonCam";
 import { readBeforeCut } from "../lib/lessonRead";
@@ -38,12 +39,20 @@ type Show = {
   approach?: number;
   fly?: number;
   hold?: number;
+  // The Leibniz lesson (src/scenes/Diagram.tsx): the scan, pushed in on slowly; or the wireframe
+  // ring, flown along while a counter runs through `count`, starting `at` seconds into the page
+  // and taking `secs`.
+  plate?: { zoom?: [number, number]; at?: [[number, number], [number, number]] };
+  diagram?: { count: [number, number]; at?: number; secs?: number };
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
 export type LessonProps = {
   pages: Page[];
   hexagrams: Record<string, Hex>;
+  // The Leibniz lesson's scan, and every hexagram's name by its value (Kun 0, Qian 63).
+  plate?: string;
+  names?: Record<string, { zh: string; name: string }>;
   readouts: Record<string, Full>;
   music: string | null;
   musicStart: number;
@@ -261,7 +270,20 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
   );
 };
 
-const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: Record<string, Full>; now: number; turn: number; flight?: boolean }> = ({ t, hexagrams, readouts, now, turn, flight }) => {
+// The ring flown along with its counter; the hexagram the count has reached is amber.
+const DiagramView: React.FC<{ diagram: NonNullable<Show["diagram"]>; sec: number; names?: LessonProps["names"] }> = ({ diagram, sec, names }) => {
+  const { cam, c } = countCam(sec, { count: diagram.count, at: diagram.at ?? 5, secs: diagram.secs ?? 10 });
+  const v = Math.round(c);
+  const counting = sec >= (diagram.at ?? 5) - 0.5;
+  return (
+    <>
+      <Wireframe cam={cam} amber={counting ? v : undefined} reached={counting ? v : undefined} />
+      {counting && <Counter v={v} name={names?.[v]} />}
+    </>
+  );
+};
+
+const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: Record<string, Full>; now: number; turn: number; flight?: boolean; plate?: string; names?: LessonProps["names"] }> = ({ t, hexagrams, readouts, now, turn, flight, plate, names }) => {
   const f = now - t.from;
   const { page } = t;
   if (page.chapter) {
@@ -307,6 +329,8 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
           <Line key={i} text={l} frame={f} at={t.lineAt[i]} rate={A_RATE} size={textOnly ? 58 : 46} cursor={i === lines.length - 1 && f >= lastLine} />
         ))}
       </div>
+      {show.plate && plate && <Plate src={plate} sec={f / FPS} secs={t.frames / FPS} {...show.plate} />}
+      {show.diagram && <DiagramView diagram={show.diagram} sec={f / FPS} names={names} />}
       <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={logFade} />
       {show.lesson && f >= lastLine + 15 && (
         <div style={{ position: "absolute", left: 80, right: 80, top: 1520 }}>
@@ -422,7 +446,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
         {/* In the flight look the screen is a tube the camera pushes in on, slowly. */}
         <AbsoluteFill style={{ opacity: flicker, transform: p.look === "flight" ? `scale(${interpolate(now, [0, end], [1, 1.07])}) translateY(${interpolate(now, [0, end], [0, -18])}px)` : undefined }}>
           <Frame now={now} />
-          {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} flight={p.look === "flight"} />}
+          {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} flight={p.look === "flight"} plate={p.plate} names={p.names} />}
           <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0px, rgba(0,0,0,0.28) 2px, transparent 2px, transparent 5px)", pointerEvents: "none" }} />
           <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.75) 100%)", pointerEvents: "none" }} />
         </AbsoluteFill>

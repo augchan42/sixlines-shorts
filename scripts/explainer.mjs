@@ -1,5 +1,7 @@
 // Renders an explainer (series/explainers/<name>.json; readout-key by default):
-//   node scripts/explainer.mjs [name]
+//   node scripts/explainer.mjs [name] [--pages 1,5]
+// --pages renders only those pages (counted from 1, chapter pages not counted) and no end card, as
+// <name>-pages-1-5, for a smoke test.
 // A script with chapters (wangbi-lesson) is the Lesson composition; otherwise ReadoutKey.
 // Its props are built from the script and the example hexagram's series props (music, end
 // card, readout) and written to series/explainers/<name>.props.json, which the studio opens.
@@ -27,8 +29,12 @@ const loudnormJson = (args) => {
 // The end card holds 3 beats past its 9 while the music fades, as in the shorts (the user, on the
 // lesson, 2026-09-27: "the end credit ends too abruptly").
 const END_HOLD_BEATS = 3;
-const name = process.argv.slice(2).find((a) => !a.startsWith("--")) ?? "readout-key";
-const script = JSON.parse(readFileSync(path.join(root, "series/explainers", `${name}.json`), "utf8"));
+const argv = process.argv.slice(2);
+const pagesArg = argv.includes("--pages") ? argv[argv.indexOf("--pages") + 1] : undefined;
+const scriptName = argv.find((a) => !a.startsWith("--") && a !== pagesArg) ?? "readout-key";
+const script = JSON.parse(readFileSync(path.join(root, "series/explainers", `${scriptName}.json`), "utf8"));
+const only = pagesArg?.split(",").map(Number);
+const name = only ? `${scriptName}-pages-${only.join("-")}` : scriptName;
 const rows = JSON.parse(readFileSync(path.join(root, "series/hexagrams.json"), "utf8"));
 const row = rows.find((r) => r.number === script.hexagram);
 const sp = seriesProps(row, overrides[row.number]);
@@ -75,8 +81,13 @@ const endcardClip = (clip, text) => {
   const timing = JSON.parse(readFileSync(pub(notext.replace(/\.mp4$/, ".json")), "utf8"));
   return { clip: notext, text: { rise: timing.rise, beat: timing.beat, frames: timing.frames, tagline: "REVEAL THE MOMENT", site: "sixlines.day" } };
 };
+const allPages = script.chapters?.flatMap((c) => [...(c.page ? [{ chapter: c.page }] : []), ...c.pages.map(({ q, a, show }) => ({ q, a, show }))]);
+const usesDiagram = script.chapters?.some((c) => c.pages.some((p) => p.show?.plate || p.show?.diagram));
+// Every hexagram's name by its value, the bottom line the most significant bit (src/lib/diagram.ts).
+const byValue = Object.fromEntries(rows.map((r) => [r.lines.reduce((v, l) => v * 2 + l, 0), { zh: r.zh, name: r.name }]));
 const lesson = script.chapters && {
-  pages: script.chapters.flatMap((c) => [...(c.page ? [{ chapter: c.page }] : []), ...c.pages.map(({ q, a, show }) => ({ q, a, show }))]),
+  pages: only ? allPages.filter((p) => !p.chapter).filter((_, i) => only.includes(i + 1)) : allPages,
+  ...(usesDiagram ? { plate: "local/leibniz/plate.jpg", names: byValue } : {}),
   hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
   readouts: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => (p.show?.full ?? []).map((f) => f.n))))].map((n) => [n, readout(n)])),
   // "music": null leaves only the machine sounds; "mix" sets their volumes.
@@ -88,7 +99,7 @@ const lesson = script.chapters && {
   // (a slower reveal, longer for the music); "endMusic" lands the music's `at` second on the cut
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
   // A tempo-independent card (sp.endcard.rate) plays at its own rate times endcardRate.
-  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false ? 0 : ((9 + END_HOLD_BEATS) * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
+  endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false || only ? 0 : ((9 + END_HOLD_BEATS) * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
   ...(script.endMusic ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
@@ -113,7 +124,7 @@ if (process.argv.includes("--props-only")) process.exit(0);
 
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
-const inputs = [...(props.music ? [props.music] : []), props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
+const inputs = [...(props.music ? [props.music] : []), ...(props.plate ? [props.plate] : []), props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
 const missing = inputs.filter((f) => !existsSync(pub(f)));
 if (missing.length) throw new Error(`missing: ${missing.join(", ")}`);
 
