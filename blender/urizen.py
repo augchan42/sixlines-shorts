@@ -571,10 +571,15 @@ def talk(scene, args, face, beard, halo, camera):
         key.keyframe_insert("value", frame=f + 1)
         beard.rotation_euler.x = 0.24 * OPEN * v
         beard.keyframe_insert("rotation_euler", index=0, frame=f + 1)
-    # A slow push-in over the whole short, eased at both ends.
-    camera.keyframe_insert("location", index=1, frame=1)
-    camera.location.y += 0.9
-    camera.keyframe_insert("location", index=1, frame=last)
+    # A slow push-in while Urizen speaks, held still while the Guide narrator shows him as an entry
+    # card (TalkingHead.tsx; Astra: 'Hold the head camera during the Guide section', after the
+    # user: 'Urizen with the guide is a bit flat ... needs some more movement or a transition'),
+    # then a little more for 'Withdraw?'. Each move eased at both ends.
+    m = props["marks"]
+    y0 = camera.location.y
+    for frame, dy in [(1, 0.0), (m["b4"] + 1, 0.55), (m["b7"] + 1, 0.55), (last, 0.8)]:
+        camera.location.y = y0 + dy
+        camera.keyframe_insert("location", index=1, frame=frame)
     # The sun outline goes out at once when "Withdraw?" ends.
     if halo:
         strength = halo.data.materials[0].node_tree.nodes["Emission"].inputs["Strength"]
