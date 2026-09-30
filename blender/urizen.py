@@ -65,6 +65,7 @@ def parse():
     p.add_argument("--shift-beard", type=int, default=0)
     p.add_argument("--beard-swing", type=float, default=0.0)
     p.add_argument("--beard-drop", type=float, help="how far below the hair's point the beard's point is")
+    p.add_argument("--beard-point", type=float, help="the beard's point across from the head's centre (x; negative is left as seen)")
     p.add_argument("--beard-left", type=float, help="units to move the beard left, overriding BEARD_LEFT")
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
@@ -436,6 +437,8 @@ def main():
     SHIFT_BEARD = args.shift_beard
     if args.beard_drop is not None:
         BEARD_TAIL.z = -args.beard_drop
+    if args.beard_point is not None:
+        BEARD_TAIL.x = args.beard_point - TAIL.x
     face, _ = head(ink)
     beard = hair_and_beard(ink, rnd) if args.hair == "shards" else hair_locks(ink, rnd, args.hair)
     beard.rotation_euler.y = -(math.radians(args.beard_turn) if args.beard_turn is not None else BEARD_TURN)
