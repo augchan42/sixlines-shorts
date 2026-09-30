@@ -19,7 +19,7 @@
  "cues": true,
  "beacon": "level",
  "guqin": "local/sfx/guqin-b.wav",
- "guqinNote": "one note of xserra's Guqin-1 (Freesound 161908, CC BY 4.0), cut by scripts/guqin-note.mjs; b, the G that rings ~3 s. The user, 2026-09-30: 'of the guqin sounds i like the xserra one the most', then 'ok recut with this sound'",
+ "guqinNote": "one note of xserra's Guqin-1 (Freesound 161908, CC BY 4.0), cut by scripts/guqin-note.mjs; b, the G that rings ~3 s. The user, 2026-09-30: 'of the guqin sounds i like the xserra one the most', then 'ok recut with this sound'. Then 'use the guqin only once': on Wang Bi's page only.",
  "music": {
   "file": "pick13-synthwave-the-mountain.mp3",
   "start": 0.023,
@@ -184,8 +184,7 @@
      "show": {
       "diagram": {
        "kind": "overview"
-      },
-      "guqin": true
+      }
      }
     },
     {
@@ -264,7 +263,7 @@
     },
     {
      "q": "",
-     "a": "SIX LINES. 64 SITUATIONS.",
+     "a": "6 LINES\n64 SITUATIONS",
      "show": {}
     }
    ]

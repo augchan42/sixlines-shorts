@@ -99,7 +99,7 @@ English beside it. `show` names the draw on that page.
     Show: plate.
 14. AND WANG BI / WANG BI, THIRD CENTURY:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.
     Show: the wireframe ring, one hexagram amber, its lines lifting out as in the Wang Bi lesson.
-15. SIX LINES. 64 SITUATIONS.
+15. 6 LINES / 64 SITUATIONS, on two lines, no full stops (the user, 2026-09-30).
     Then the end card. (The review suggested "64 PATTERNS"; kept "SITUATIONS", since after Wang Bi
     the lesson turns from the patterns to reading them.)
 

@@ -46,7 +46,7 @@ type Show = {
   diagram?: DiagramShow;
   // The beacon on a page that isn't an approach (the Leibniz lesson's second flight round the ring).
   beacon?: boolean;
-  // A guqin note as the answer starts (the Leibniz lesson: Shao Yong, and Wang Bi).
+  // A guqin note as the answer starts (the Leibniz lesson: Wang Bi).
   guqin?: boolean;
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
