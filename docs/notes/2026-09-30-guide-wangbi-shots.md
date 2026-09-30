@@ -56,3 +56,27 @@ Moves: push-in, pull-back, tilt down, tilt up, pan, push-in, still, push-in, sti
 - The labels carry the jokes (UNIMPRESSED, PERSON WITH A DECISION). Too many, or too few?
 - The look borrows the BBC Guide's manner. Does any shot come too close to a specific BBC drawing
   (the Babel fish cutaway) rather than the register?
+
+## What made the BBC Guide sequences work (web search, 2026-09-30)
+
+The user asked for "a websearch on what made the hitchhikers guide shorts so memorable and fun".
+
+- Hand-drawn cel animation imitating computer graphics; Pearce Studios, Rod Lord; six people, about
+  45 minutes in about three months; a BAFTA
+  ([Wikipedia](https://en.wikipedia.org/wiki/The_Hitchhiker's_Guide_to_the_Galaxy_(TV_series)),
+  [Comedy Rewind](https://www.comedy.co.uk/features/comedy-rewind/hitchhikers-guide-to-the-galaxy-tv-series/)).
+- Angular, not cartoony: Rod Lord chose shapes "more angular and with more lines" to look
+  electronic; back-lit lithographic film for "a much cleaner and more vivid result"
+  ([interview](https://douglasadams.eu/interview-with-rod-lord/)).
+- Drawn to the voice: the voice track broken down onto dope sheets first, then "block in the main
+  items needed to support the voice"; all the narration Letraset and revealed a letter at a time.
+- Busy, with in-jokes: "extra 'bits' for busyness and in jokes"; "crammed with intricate drawings
+  and in-jokes", readable only with a freeze-frame recorder. Adams's zero that blows a raspberry.
+- Deadpan against absurdity: Peter Jones's dry narration over the busy pictures.
+
+What we take from it:
+1. Angular drawings: polygon faces and bodies, not circles and rounded boxes.
+2. Small print that rewards a pause (and a rewatch): e.g. STALK 37 OF 49, PAGE 1 OF MANY.
+3. One small moving gag per shot, like the raspberry: Wang Bi's eyebrow rising on "instructions";
+   the trap slumping when it is put down.
+4. The voice stays flat; the picture carries the busyness.
