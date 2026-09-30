@@ -41,9 +41,10 @@ hexagram of the solstice month, the light coming back. Post the short and charac
 ## Before the first post
 
 1. **Hosting.** Buffer's API takes a video by public URL only ("there's no upload endpoint"); Buffer
-   fetches it when the post goes out. A public Cloudflare R2 bucket, one unguessable name per file,
-   kept until Buffer reports the post sent, then deleted. The alternative is dragging the file into
-   Buffer's web app onto a draft the API made.
+   fetches it when the post goes out. Set up 2026-09-30: R2 bucket `sixlines-media` (APAC), served at
+   https://media.sixlines.day (the sixlines.day zone moved to Cloudflare DNS the same day). Upload with
+   the R2 S3 keys in ~/projects/local/.env (rclone, provider Cloudflare); one unguessable name per
+   file, kept until Buffer reports the post sent, then deleted.
 2. **YouTube title:** the caption's first line (`2 · 坤 Kūn · The Receptive`). No other titles needed.
 3. **isAiGenerated: false.** The videos are drawn with code, the copy is edited by the founder, the
    music is Pixabay's; YouTube and TikTok require the label for realistic AI images, audio or video.
