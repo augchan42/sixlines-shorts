@@ -10,12 +10,9 @@
  "outAt": 900,
  "tail": 30,
  "sfx": {
-  "in": "local/sfx/freesound_community-tv-glitch-6245.mp3",
-  "out": "local/sfx/freesound_community-tv-glitch-6245.mp3",
-  "inFrom": 0.5,
-  "outFrom": 3.0,
-  "inVolume": 0.6,
-  "outVolume": 0.6
+  "out": "local/sfx/dragon-studio-tv-static-323620.mp3",
+  "outFrom": 4.0,
+  "outVolume": 0.35
  },
- "sfxNote": "'TV glitch' by freesound_community, Pixabay sound effect 6245 (Pixabay Content License), downloaded by the user 2026-09-30 after 'TV Shutdown' (386167): 'that doesn't sound right... we want like choppy static'. 7.4 s of steady glitch noise, 1% below 250 Hz; slices from 0.5 s and 3.0 s, heard only for two frames at each screen change."
+ "sfxNote": "Dragon Studio, 'TV Static', Pixabay sound effect 323620 (Pixabay Content License), downloaded by the user 2026-09-30 ('use this ... and chop that'), after 'TV Shutdown' (386167) and 'TV glitch' (6245). 8.1 s of steady hiss at -8.8 LUFS, none below 250 Hz; only on the flicker out ('we only need static at the end'), a slice from 4.0 s at 0.35, heard only for two frames at each screen change."
 }

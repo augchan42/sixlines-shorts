@@ -35,16 +35,18 @@ const serif = `"${GOUDY}", serif`;
 const IN = [true, false, false, false, true, true, true];
 const OUT = [false, true, true, true, false, false, false];
 // The screen changes on frames 1, 4 and 7 of a flicker; the static sounds on each for two frames.
-const BURSTS = [1, 2, 4, 5, 7, 8];
-const BURST_FRAMES = 9;
+// Each burst is its own Sequence: a volume curve is smoothed between frames and fills the gaps.
+const BURSTS = [1, 4, 7];
+const BURST_FRAMES = 2;
 const FPS = 30;
 
 // Six yang bars where the green card's are (measured on Kun's frame 898): x 231-847, 51 high,
-// tops 666, 746, 825 and 964, 1044, 1123.
+// tops 666, 746, 825 and 964, 1044, 1123. Corners rounded like the app icon's (5 px on its 512 px
+// bars, sixlines-ios AppIcon.png), 6 px here.
 const BAR_TOPS = [666, 746, 825, 964, 1044, 1123];
 const Bars: React.FC = () => (
   <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
-    {BAR_TOPS.map((y) => <rect key={y} x={231} y={y} width={617} height={51} fill={INK} />)}
+    {BAR_TOPS.map((y) => <rect key={y} x={231} y={y} width={617} height={51} rx={6} fill={INK} />)}
   </svg>
 );
 
@@ -74,9 +76,13 @@ const SITE_TOP = 1346;
 const SITE_SIZE = 60;
 
 const Static: React.FC<{ src: string; at: number; from: number; volume: number }> = ({ src, at, from, volume }) => (
-  <Sequence from={at} durationInFrames={BURST_FRAMES} layout="none">
-    <Audio src={staticFile(src)} trimBefore={Math.round(from * FPS)} volume={(f) => (BURSTS.includes(f) ? volume : 0)} />
-  </Sequence>
+  <>
+    {BURSTS.map((b) => (
+      <Sequence key={b} from={at + b} durationInFrames={BURST_FRAMES} layout="none">
+        <Audio src={staticFile(src)} trimBefore={Math.round(from * FPS) + b} volume={volume} />
+      </Sequence>
+    ))}
+  </>
 );
 
 export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
