@@ -1,0 +1,57 @@
+{
+ "pages": [
+  {
+   "q": "HOW DOES A PAIR WORK",
+   "a": "IN 28 PAIRS, TURN THE FIRST\nUPSIDE DOWN TO GET THE SECOND.\n3 DIFFICULTY AT THE BEGINNING\n→ 4 YOUTHFUL FOLLY.",
+   "show": {
+    "clip": {
+     "src": "local/structure/pair-3-4.mp4"
+    },
+    "hold": 5
+   }
+  },
+  {
+   "q": "WHAT ABOUT THE OTHER 4 PAIRS",
+   "a": "EACH HEXAGRAM STAYS THE SAME\nUPSIDE DOWN.\nSWAP SOLID AND BROKEN INSTEAD.\n29 THE ABYSS → 30 CLINGING FIRE.",
+   "show": {
+    "clip": {
+     "src": "local/structure/pair-29-30.mp4"
+    },
+    "hold": 6
+   }
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+ "musicStart": 35,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 0,
+  "rate": 0.5749375
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}

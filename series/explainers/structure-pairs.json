@@ -40,9 +40,9 @@
       "clip": {
        "src": "local/structure/pair-3-4.mp4"
       },
-      "hold": 5
+      "hold": 7
      },
-     "showNote": "blender/pairs.py --lines 100010 --mode turn: 3 turns end over end into 4"
+     "showNote": "blender/pairs.py --lines 100010 --mode turn: 3 turns end over end into 4; --at 5 --secs 9, so the turn follows the typed answer"
     },
     {
      "q": "WHAT ABOUT THE OTHER 4 PAIRS",
@@ -51,9 +51,9 @@
       "clip": {
        "src": "local/structure/pair-29-30.mp4"
       },
-      "hold": 6
+      "hold": 9
      },
-     "showNote": "blender/pairs.py --lines 010010 --mode flip: 29 turns and stays 29, then each line flips, bottom first, into 30"
+     "showNote": "blender/pairs.py --lines 010010 --mode flip: 29 turns and stays 29, then each line flips, bottom first, into 30; --at 4.5 --secs 12"
     },
     {
      "q": "HOW DO I READ A PAIR",

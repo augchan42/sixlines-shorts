@@ -1,0 +1,80 @@
+{
+ "explainer": "structure-pairs-pages-2-3",
+ "rendered": "2026-09-30T18:22:19.507Z",
+ "commit": "6e95ccf797a7ae90c507a2e03f2a3c06ecd64c95",
+ "clean": false,
+ "seconds": 22.229333,
+ "shareKbps": 8000,
+ "props": {
+  "pages": [
+   {
+    "q": "HOW DOES A PAIR WORK",
+    "a": "IN 28 PAIRS, TURN THE FIRST\nUPSIDE DOWN TO GET THE SECOND.\n3 DIFFICULTY AT THE BEGINNING\n→ 4 YOUTHFUL FOLLY.",
+    "show": {
+     "clip": {
+      "src": "local/structure/pair-3-4.mp4"
+     },
+     "hold": 5
+    }
+   },
+   {
+    "q": "WHAT ABOUT THE OTHER 4 PAIRS",
+    "a": "EACH HEXAGRAM STAYS THE SAME\nUPSIDE DOWN.\nSWAP SOLID AND BROKEN INSTEAD.\n29 THE ABYSS → 30 CLINGING FIRE.",
+    "show": {
+     "clip": {
+      "src": "local/structure/pair-29-30.mp4"
+     },
+     "hold": 6
+    }
+   }
+  ],
+  "hexagrams": {},
+  "readouts": {},
+  "music": "local/music/pick05-80s-retro-inspiring-synth-pop.mp3",
+  "musicStart": 35,
+  "mix": {
+   "hum": 1,
+   "beacon": 1,
+   "printer": 1,
+   "ticks": 0.8,
+   "sweep": 0.7,
+   "chatter": 0.7,
+   "warble": 0.5,
+   "winddown": 0.6,
+   "music": 0.3,
+   "relay": 0.55
+  },
+  "ticks": "local/sfx/teletype.wav",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+   "seconds": 0,
+   "rate": 0.5749375
+  },
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
+  }
+ },
+ "files": {
+  "local/music/pick05-80s-retro-inspiring-synth-pop.mp3": "9c78ed3512d7941b0e2215d255447a6f300b1889e18820c854770befd552f0eb",
+  "assets/3d/endcard-join-101001-9b-ref.mp4": "4766e47ec4e3544adb000bacfa64bd28bc0ac1910e62e3fd675603a684ca52c0",
+  "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon.wav": "c32fb7477871dffb3f0fe1d4a4ff575ecb27e3f5ce03da23e50438e9e4c3fc55",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/structure-pairs-pages-2-3/short.mp4": "75a7e6dced54e9acc27c2c4dd9ce5951c4b5d29110becad4eb2cce7ef750aa8e",
+  "out/explainers/structure-pairs-pages-2-3/share.mp4": "d3555651247b17c2420e51e9d5bba054bbb72ced54c2765609e96a841d8b5f9e"
+ }
+}

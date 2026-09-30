@@ -1,0 +1,68 @@
+{
+ "pages": [
+  {
+   "q": "DOES DNA MATCH THE I CHING",
+   "a": "DNA HAS 64 POSSIBLE CODONS.\nEACH IS THREE LETTERS LONG.\nTHE LETTERS ARE A, C, G, T.",
+   "show": {
+    "big": "64\nA C G T"
+   }
+  },
+  {
+   "q": "WHAT IS THE I CHING",
+   "a": "A BOOK WITH 64 HEXAGRAMS.\nEACH IS A SIX-LINE PATTERN:\nYIN IS BROKEN; YANG IS SOLID.",
+   "show": {
+    "big": "64\nYIN YANG"
+   }
+  },
+  {
+   "q": "HOW DO BOTH REACH 64",
+   "a": "CODONS: 4 X 4 X 4 = 64.\nHEXAGRAMS:\n2 X 2 X 2 X 2 X 2 X 2 = 64.",
+   "show": {
+    "big": "64\n4X4X4 = 2X2X2X2X2X2"
+   }
+  },
+  {
+   "q": "DOES THIS SHOW A SHARED ORIGIN",
+   "a": "NO. THE COUNT ALONE\nDOES NOT SHOW A SHARED ORIGIN.",
+   "show": {}
+  },
+  {
+   "q": "",
+   "a": "SAME NUMBER.\nNOT THE SAME CODE.",
+   "show": {}
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick07-interstellar-retrowave.mp3",
+ "musicStart": 5,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 10.435916947494293,
+  "rate": 0.5749375
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}

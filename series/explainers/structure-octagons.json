@@ -1,0 +1,58 @@
+{
+ "about": "Heaven before and after: structure short 5 (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). Blender: two octagons of glowing trigrams; the trigrams move from one arrangement to the other. Queued overnight 2026-10-01. Draft 1, copy only.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick22-cinematic-dark-synthwave.mp3",
+  "start": 127,
+  "why": "100 bpm, G minor, from 127 s as on 28; serious rather than bright, no other structure short uses it"
+ },
+ "endcardRate": 0.75,
+ "caption": "The eight trigrams have two classic circles: Earlier Heaven, where opposites face each other, and Later Heaven, which follows the seasons.",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "HOW ARE THE EIGHT TRIGRAMS ARRANGED",
+     "a": "TWO CLASSIC CIRCLES.\nEARLIER HEAVEN 先天\nAND LATER HEAVEN 後天.",
+     "show": {}
+    },
+    {
+     "q": "WHO DREW THEM",
+     "a": "TRADITION: FU XI AND KING WEN.\nAS DIAGRAMS: THE SONG DYNASTY,\nAFTER 960.",
+     "show": {}
+    },
+    {
+     "q": "WHAT IS EARLIER HEAVEN",
+     "a": "OPPOSITES FACE EACH OTHER.\nHEAVEN 天 ACROSS FROM EARTH 地.\nEVERY LINE CHANGED.",
+     "show": {}
+    },
+    {
+     "q": "WHAT IS LATER HEAVEN",
+     "a": "THE YEAR GOING ROUND.\nTHUNDER 雷 IN THE EAST,\nWHERE SPRING STARTS.",
+     "show": {}
+    },
+    {
+     "q": "",
+     "a": "ONE CIRCLE OF BALANCE.\nONE CIRCLE OF TIME.",
+     "show": {}
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,160 @@
+{
+ "explainer": "structure-cube",
+ "rendered": "2026-09-30T18:15:25.118Z",
+ "commit": "6c66a8270b7278fd10f292ac7ee6566c2b070377",
+ "clean": false,
+ "seconds": 58.581333,
+ "shareKbps": 3012,
+ "props": {
+  "pages": [
+   {
+    "q": "HOW CAN THE I CHING FORM A CUBE",
+    "a": "THE BOOK HAS 64 HEXAGRAMS.\nEACH IS A PATTERN OF SIX LINES:\nSOLID OR BROKEN.",
+    "show": {
+     "clip": {
+      "src": "local/structure/cube-all.mp4",
+      "scene": {
+       "secs": 10
+      }
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "WHAT IS A VERTEX",
+    "a": "ONE HEXAGRAM IN THIS MODEL.\nJOIN PAIRS THAT DIFFER BY ONE LINE.\nTHE CUBE HAS SIX DIMENSIONS.",
+    "show": {
+     "clip": {
+      "src": "local/structure/cube-focus-42.mp4",
+      "scene": {
+       "focus": 42,
+       "at": 3,
+       "secs": 12
+      }
+     },
+     "hold": 5,
+     "mark": 63
+    }
+   },
+   {
+    "q": "HOW FAR IS THE OPPOSITE",
+    "a": "SIX STEPS, ONE LINE PER STEP.\nALL SOLID → ALL BROKEN.\n乾 THE CREATIVE → 坤 THE RECEPTIVE.",
+    "show": {
+     "clip": {
+      "src": "local/structure/cube-path-63-0.mp4",
+      "scene": {
+       "path": [
+        63,
+        31,
+        15,
+        7,
+        3,
+        1,
+        0
+       ],
+       "at": 3,
+       "gap": 0.9,
+       "secs": 14
+      }
+     },
+     "hold": 9
+    }
+   },
+   {
+    "q": "IS THIS ONE-LINE LINK OLD",
+    "a": "THE ZUO ZHUAN RECORDS\nCONTEMPLATION → STANDSTILL.\nONLY LINE 4 FROM THE BOTTOM CHANGES.",
+    "show": {
+     "clip": {
+      "src": "local/structure/cube-path-3-7.mp4",
+      "scene": {
+       "path": [
+        3,
+        7
+       ],
+       "at": 3,
+       "gap": 1,
+       "secs": 12
+      }
+     },
+     "hold": 5
+    }
+   },
+   {
+    "q": "",
+    "a": "64 VERTICES.\n6 NEIGHBOURS EACH.\nONE LINE CHANGES PER STEP.",
+    "show": {}
+   }
+  ],
+  "hexagrams": {
+   "63": {
+    "number": 63,
+    "name": "After Completion",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "trigrams": [
+     {
+      "zh": "水",
+      "name": "WATER"
+     },
+     {
+      "zh": "火",
+      "name": "FIRE"
+     }
+    ]
+   }
+  },
+  "readouts": {},
+  "music": "local/music/pick18-dreamy-synthwave.mp3",
+  "musicStart": 52.977,
+  "mix": {
+   "hum": 1,
+   "beacon": 1,
+   "printer": 1,
+   "ticks": 0.8,
+   "sweep": 0.7,
+   "chatter": 0.7,
+   "warble": 0.5,
+   "winddown": 0.6,
+   "music": 0.3,
+   "relay": 0.55
+  },
+  "ticks": "local/sfx/teletype.wav",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+   "seconds": 10.435916947494293,
+   "rate": 0.5749375
+  },
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
+  }
+ },
+ "files": {
+  "local/music/pick18-dreamy-synthwave.mp3": "0e1b263b2619a6843dce8c5d5f7bf54cf6521fe540204561f877420ffa213ab8",
+  "assets/3d/endcard-join-101001-9b-ref.mp4": "4766e47ec4e3544adb000bacfa64bd28bc0ac1910e62e3fd675603a684ca52c0",
+  "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon.wav": "c32fb7477871dffb3f0fe1d4a4ff575ecb27e3f5ce03da23e50438e9e4c3fc55",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/structure-cube/short.mp4": "d94758191bdf1e38c7d769da8ff24b7e13f05501bae4081a1369515f8655d82c",
+  "out/explainers/structure-cube/share.mp4": "e7848980c169b0d9c15b1649460ea7f0f412c914b179e4a9be6399a272e4526d"
+ }
+}

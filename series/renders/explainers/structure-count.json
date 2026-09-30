@@ -1,0 +1,335 @@
+{
+ "explainer": "structure-count",
+ "rendered": "2026-09-30T18:18:41.435Z",
+ "commit": "6e95ccf797a7ae90c507a2e03f2a3c06ecd64c95",
+ "clean": false,
+ "seconds": 19.456,
+ "shareKbps": 8000,
+ "props": {
+  "pages": [
+   {
+    "q": "HOW CAN SIX LINES COUNT",
+    "a": "THE I CHING IS A BOOK.\n64 PATTERNS, SIX LINES EACH.\nREAD BROKEN AS 0, SOLID AS 1.\nTHAT GIVES 0 TO 63.",
+    "show": {
+     "diagram": {
+      "count": [
+       0,
+       63
+      ],
+      "at": 5,
+      "secs": 12
+     },
+     "hold": 14
+    }
+   }
+  ],
+  "plate": "local/leibniz/plate.jpg",
+  "names": {
+   "0": {
+    "zh": "坤",
+    "name": "The Receptive"
+   },
+   "1": {
+    "zh": "剝",
+    "name": "Splitting Apart"
+   },
+   "2": {
+    "zh": "比",
+    "name": "Holding Together"
+   },
+   "3": {
+    "zh": "觀",
+    "name": "Contemplation"
+   },
+   "4": {
+    "zh": "豫",
+    "name": "Enthusiasm"
+   },
+   "5": {
+    "zh": "晉",
+    "name": "Progress"
+   },
+   "6": {
+    "zh": "萃",
+    "name": "Gathering Together"
+   },
+   "7": {
+    "zh": "否",
+    "name": "Standstill"
+   },
+   "8": {
+    "zh": "謙",
+    "name": "Modesty"
+   },
+   "9": {
+    "zh": "艮",
+    "name": "Keeping Still"
+   },
+   "10": {
+    "zh": "蹇",
+    "name": "Obstruction"
+   },
+   "11": {
+    "zh": "漸",
+    "name": "Development"
+   },
+   "12": {
+    "zh": "小過",
+    "name": "Preponderance of the Small"
+   },
+   "13": {
+    "zh": "旅",
+    "name": "The Wanderer"
+   },
+   "14": {
+    "zh": "咸",
+    "name": "Influence"
+   },
+   "15": {
+    "zh": "遯",
+    "name": "Retreat"
+   },
+   "16": {
+    "zh": "師",
+    "name": "The Army"
+   },
+   "17": {
+    "zh": "蒙",
+    "name": "Youthful Folly"
+   },
+   "18": {
+    "zh": "坎",
+    "name": "The Abyss"
+   },
+   "19": {
+    "zh": "渙",
+    "name": "Dispersion"
+   },
+   "20": {
+    "zh": "解",
+    "name": "Deliverance"
+   },
+   "21": {
+    "zh": "未濟",
+    "name": "Before Completion"
+   },
+   "22": {
+    "zh": "困",
+    "name": "Oppression"
+   },
+   "23": {
+    "zh": "訟",
+    "name": "Conflict"
+   },
+   "24": {
+    "zh": "升",
+    "name": "Pushing Upward"
+   },
+   "25": {
+    "zh": "蠱",
+    "name": "Work on the Decayed"
+   },
+   "26": {
+    "zh": "井",
+    "name": "The Well"
+   },
+   "27": {
+    "zh": "巽",
+    "name": "The Gentle"
+   },
+   "28": {
+    "zh": "恆",
+    "name": "Duration"
+   },
+   "29": {
+    "zh": "鼎",
+    "name": "The Caldron"
+   },
+   "30": {
+    "zh": "大過",
+    "name": "Greatness in Excess"
+   },
+   "31": {
+    "zh": "姤",
+    "name": "Coming to Meet"
+   },
+   "32": {
+    "zh": "復",
+    "name": "Return"
+   },
+   "33": {
+    "zh": "頤",
+    "name": "Nourishment"
+   },
+   "34": {
+    "zh": "屯",
+    "name": "Difficulty at the Beginning"
+   },
+   "35": {
+    "zh": "益",
+    "name": "Increase"
+   },
+   "36": {
+    "zh": "震",
+    "name": "The Arousing"
+   },
+   "37": {
+    "zh": "噬嗑",
+    "name": "Biting Through"
+   },
+   "38": {
+    "zh": "隨",
+    "name": "Following"
+   },
+   "39": {
+    "zh": "无妄",
+    "name": "Innocence"
+   },
+   "40": {
+    "zh": "明夷",
+    "name": "Darkening of the Light"
+   },
+   "41": {
+    "zh": "賁",
+    "name": "Grace"
+   },
+   "42": {
+    "zh": "既濟",
+    "name": "After Completion"
+   },
+   "43": {
+    "zh": "家人",
+    "name": "The Family"
+   },
+   "44": {
+    "zh": "豐",
+    "name": "Abundance"
+   },
+   "45": {
+    "zh": "離",
+    "name": "Clinging Fire"
+   },
+   "46": {
+    "zh": "革",
+    "name": "Revolution"
+   },
+   "47": {
+    "zh": "同人",
+    "name": "Fellowship"
+   },
+   "48": {
+    "zh": "臨",
+    "name": "Approach"
+   },
+   "49": {
+    "zh": "損",
+    "name": "Decrease"
+   },
+   "50": {
+    "zh": "節",
+    "name": "Limitation"
+   },
+   "51": {
+    "zh": "中孚",
+    "name": "Inner Truth"
+   },
+   "52": {
+    "zh": "歸妹",
+    "name": "The Marrying Maiden"
+   },
+   "53": {
+    "zh": "睽",
+    "name": "Opposition"
+   },
+   "54": {
+    "zh": "兌",
+    "name": "The Joyous"
+   },
+   "55": {
+    "zh": "履",
+    "name": "Treading"
+   },
+   "56": {
+    "zh": "泰",
+    "name": "Peace"
+   },
+   "57": {
+    "zh": "大畜",
+    "name": "Great Accumulation"
+   },
+   "58": {
+    "zh": "需",
+    "name": "Waiting"
+   },
+   "59": {
+    "zh": "小畜",
+    "name": "Small Taming"
+   },
+   "60": {
+    "zh": "大壯",
+    "name": "Great Power"
+   },
+   "61": {
+    "zh": "大有",
+    "name": "Great Possession"
+   },
+   "62": {
+    "zh": "夬",
+    "name": "Breakthrough"
+   },
+   "63": {
+    "zh": "乾",
+    "name": "The Creative"
+   }
+  },
+  "hexagrams": {},
+  "readouts": {},
+  "music": "local/music/pick09-synthwave.mp3",
+  "musicStart": 91,
+  "mix": {
+   "hum": 1,
+   "beacon": 1,
+   "printer": 1,
+   "ticks": 0.8,
+   "sweep": 0.7,
+   "chatter": 0.7,
+   "warble": 0.5,
+   "winddown": 0.6,
+   "music": 0.3,
+   "relay": 0.55
+  },
+  "ticks": "local/sfx/teletype.wav",
+  "endcard": {
+   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+   "seconds": 0,
+   "rate": 0.7665833333333333
+  },
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
+  }
+ },
+ "files": {
+  "local/music/pick09-synthwave.mp3": "deaf05eee27604dd049f29778195dcd442c710d1ca98f2b809893a279eac9706",
+  "local/leibniz/plate.jpg": "8e91a19be102f11b29497cd899921a022cf8cf9929ce2298680e9d93e97bfd68",
+  "assets/3d/endcard-join-101001-9b-ref.mp4": "4766e47ec4e3544adb000bacfa64bd28bc0ac1910e62e3fd675603a684ca52c0",
+  "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon.wav": "c32fb7477871dffb3f0fe1d4a4ff575ecb27e3f5ce03da23e50438e9e4c3fc55",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/structure-count/short.mp4": "56d1ac1095abbe9c20ab5b86a0ea09b38e0ea8f24d2495fb1c1fed4963a89cac",
+  "out/explainers/structure-count/share.mp4": "69d45a698b46461822b437b5216948ae5de5aa4881ea5826bfc47602311a8a44"
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "about": "3,000 years in 40 seconds: structure short 7 (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). A terminal log, the year ticking over, one entry per page; Blender: a slow push along a corridor of dates (blender/searchlight.py). Queued overnight 2026-10-01. Draft 1, copy only.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick14-lofi-synthwave.mp3",
+  "start": 8,
+  "why": "calm, 92 bpm, A# minor, from 8 s as on 4, 22, 26 and 41; no other structure short uses it"
+ },
+ "endcardRate": 0.75,
+ "caption": "How the I Ching travelled: from legend to a 1950 English translation and a 1962 novel.",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "HOW OLD IS THE I CHING",
+     "a": "PARTS ARE ABOUT 3,000 YEARS OLD.\nHERE IS HOW IT TRAVELLED.",
+     "show": {}
+    },
+    {
+     "q": "LEGEND",
+     "a": "FU XI DRAWS THE EIGHT TRIGRAMS.\nNO DATE. A STORY.",
+     "show": {}
+    },
+    {
+     "q": "C. 1000 BC",
+     "a": "TRADITION: KING WEN\nWRITES THE 64 TEXTS.",
+     "show": {}
+    },
+    {
+     "q": "11TH CENTURY",
+     "a": "SHAO YONG ORDERS THE 64\nIN A SQUARE AND A CIRCLE.",
+     "show": {}
+    },
+    {
+     "q": "1701",
+     "a": "BOUVET SENDS THAT DIAGRAM\nTO LEIBNIZ IN GERMANY.",
+     "show": {}
+    },
+    {
+     "q": "1950",
+     "a": "CARL JUNG WRITES THE FOREWORD\nTO WILHELM'S TRANSLATION\nIN ENGLISH.",
+     "show": {}
+    },
+    {
+     "q": "1962",
+     "a": "PHILIP K. DICK PUBLISHES\nTHE MAN IN THE HIGH CASTLE,\nPLOTTED WITH THE I CHING.",
+     "show": {}
+    },
+    {
+     "q": "",
+     "a": "3,000 YEARS.\nSTILL READ.",
+     "show": {}
+    }
+   ]
+  }
+ ]
+}
