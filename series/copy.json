@@ -10,8 +10,8 @@
     "source": "commentary/en/1.json#judgment.synthesis"
    },
    {
-    "text": "No conditions.\nJust mean it.",
-    "source": "commentary/en/1.json#judgment.synthesis"
+    "text": "Then keep going,\nevery day.",
+    "source": "series/critic/convergence/state.json#1 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -23,8 +23,8 @@
    "1-27"
   ],
   "caption": {
-   "text": "The Creative is six unbroken lines: a start with nothing held back. It asks for no conditions, only that you mean it.",
-   "source": "commentary/en/1.json#judgment.synthesis"
+   "text": "The old image: heaven moves and never stops, and the wise one keeps building strength the same way. A start counts for little without the next day.",
+   "source": "series/critic/convergence/state.json#1 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -67,8 +67,8 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Lead and get lost.\nFollow and arrive.",
-   "source": "series/critic/readouts/drafts.json#2",
+   "text": "Lead and lose the way.\nFollow and find it.",
+   "source": "series/critic/convergence/state.json#2 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [],
     "finding": "SIX YIELDING LINES. ALL FOLLOW."
@@ -162,13 +162,13 @@
  },
  "5": {
   "hook": {
-   "text": "Stuck waiting for your moment?",
-   "source": "commentary/en/5.json#judgment.synthesis"
+   "text": "Refreshing your inbox again?",
+   "source": "series/critic/convergence/state.json#5 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
-    "text": "Waiting says:\nwait well.",
-    "source": "commentary/en/5.json#judgment.synthesis"
+    "text": "Waiting says:\ndon't rush in.",
+    "source": "series/critic/convergence/state.json#5 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Eat, rest,\nstay ready.",
@@ -176,21 +176,21 @@
    }
   ],
   "question": {
-   "text": "How can you\nwait well today?",
-   "source": "written"
+   "text": "What are you\nforcing too early?",
+   "source": "series/critic/convergence/state.json#5 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "5-41",
    "5-34"
   ],
   "caption": {
-   "text": "The clouds are up and the rain hasn’t come, so the old text says: eat and drink. Waiting well takes energy.",
-   "source": "commentary/en/5.json#image.synthesis"
+   "text": "Clouds gather above heaven: danger lies ahead, so strength means holding back. Eat and rest while you wait.",
+   "source": "series/critic/convergence/state.json#5 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
-   "text": "In the rain?\nEat, rest, wait.",
-   "source": "series/characters.json#5: A figure stands; a cloud forms above and rain falls on it; it waits; the rain stops, the cloud comes down and the figure lies down under it.",
+   "text": "Rest before\nthe hard part.",
+   "source": "series/critic/convergence/state.json#5 (the user's verdict, series/review/copy-verdicts.json)",
    "character": {
     "char": "需",
     "beats": 12,
@@ -258,8 +258,8 @@
    "6-24"
   ],
   "caption": {
-   "text": "Heaven moves up and water moves down: both right, never meeting. The middle of a fight is the last good place to walk away.",
-   "source": "commentary/en/6.json#image.synthesis"
+   "text": "Heaven and water pull apart; neither changes course. At the top, a winner receives a belt of rank, then loses it three times in one morning.",
+   "source": "series/critic/convergence/state.json#6 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -269,7 +269,7 @@
     "mark": [
      5
     ],
-    "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+    "finding": "AT THE TOP: A BELT WON, THEN LOST.\nWON BY FIGHTING, NO RESPECT.",
     "timed": true
    },
    "readout_source": "上九 或錫之鞶帶，終朝三褫之 (given a belt of honour, stripped three times in a morning); Small Image 以訟受服，亦不足敬也. The master (line 5) is dropped so amber marks only the line the finding is about."
@@ -305,8 +305,8 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Lead upright,\nthe ranks fall in.",
-   "source": "Tuan on 7: 能以眾正 (able to make the many upright); Image: embraces the people",
+   "text": "Be the line\nthey form on.",
+   "source": "series/critic/convergence/state.json#7 (the user's verdict, series/review/copy-verdicts.json)",
    "scene": {
     "script": "acts",
     "args": {
@@ -324,12 +324,12 @@
   },
   "meaning": [
    {
-    "text": "Holding Together\nsays: join now.",
-    "source": "commentary/en/8.json#judgment.synthesis"
+    "text": "Holding Together\nsays: choose well.",
+    "source": "series/critic/convergence/state.json#8 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
-    "text": "Late arrivals\nmiss out.",
-    "source": "commentary/en/8.json#judgment.synthesis"
+    "text": "Then stop\nputting it off.",
+    "source": "series/critic/convergence/state.json#8 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -341,13 +341,13 @@
    "8-50"
   ],
   "caption": {
-   "text": "The image is water on the earth, running to the low ground and filling it. People who need to belong come on their own; the ones who come late do badly.",
-   "source": "commentary/en/8.json#image.synthesis"
+   "text": "Water gathers on the earth, as people gather around someone they trust. Choose your company carefully, then commit before the group has moved on.",
+   "source": "series/critic/convergence/state.json#8 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
-   "text": "Choose who you\nstand beside",
-   "source": "series/characters.json#8: One figure stands; a second stands behind it, then walks up in three hops to stand close beside it; they lie down together as the character.",
+   "text": "Walk over.\nStand beside them.",
+   "source": "series/critic/convergence/state.json#8 (the user's verdict, series/review/copy-verdicts.json)",
    "character": {
     "char": "比",
     "beats": 11,
@@ -381,35 +381,35 @@
   },
   "meaning": [
    {
-    "text": "Small Taming\nsays: not yet.",
-    "source": "commentary/en/9.json#judgment.synthesis"
+    "text": "Small Taming\nsays: look closer.",
+    "source": "series/critic/convergence/state.json#9 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
-    "text": "Work on yourself\nmeanwhile.",
-    "source": "commentary/en/9.json#image.synthesis"
+    "text": "Not every path\nis blocked.",
+    "source": "series/critic/convergence/state.json#9 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
-   "text": "What can you\nwork on now?",
-   "source": "written"
+   "text": "Where is there\nroom to move?",
+   "source": "series/critic/convergence/state.json#9 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "9-40",
    "9-47"
   ],
   "caption": {
-   "text": "Dense clouds, no rain, and wind across the sky with nothing to hold. When the outside won’t move, the inside is the work.",
-   "source": "commentary/en/9.json#image.synthesis"
+   "text": "Dense clouds, no rain: the larger change is still held back. But Wang Bi reads the first line as free to advance toward a willing partner.",
+   "source": "series/critic/convergence/state.json#9 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Don’t force a start.\nUse the time to prepare.",
-   "source": "docs/research/2026-09-27-codex-rewrite-options.md; line 1 復自道 (returns by its own path); Great Image 君子以懿文德 (the noble one refines their conduct); the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
+   "text": "TAKE THE OPEN PATH.\nDON’T FORCE THE BLOCKED ONE.",
+   "source": "series/critic/convergence/state.json#9 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      0
     ],
-    "finding": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+    "finding": "> LINE 1 ADVANCES. LINE 4 WELCOMES IT.\nITS OWN PATH IS OPEN.",
     "timed": true
    },
    "readout_source": "初九 復自道，何其咎 (returns by its own path, what blame?); Wang Bi 順而无違，何所犯咎 (it goes along and does not resist, so incurs no fault)"
@@ -440,18 +440,18 @@
    "10-34"
   ],
   "caption": {
-   "text": "The old text: you step on the tiger’s tail and it doesn’t bite. You are already in the danger, and how you conduct yourself keeps it asleep.",
-   "source": "commentary/en/10.json#judgment.synthesis"
+   "text": "The tiger’s tail is danger underfoot. The second line keeps a level path because the person walking it does not let fear or ambition throw them off.",
+   "source": "series/critic/convergence/state.json#10 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Near a temper,\nstay steady inside.",
-   "source": "the user, 2026-09-27: 'it's about being unseen as if you aren't there', then 'there's got to be more than that than just staying quiet'; line 2's Small Image 中不自亂 (steady within, not thrown into disorder)",
+   "text": "KEEP YOUR HEAD,\nEVEN WHEN THEY LOSE THEIRS.",
+   "source": "series/critic/convergence/state.json#10 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      1
     ],
-    "finding": "LINE 2: A LEVEL PATH.\nSTEADY INSIDE, IT GOES WELL.",
+    "finding": "> LINE 2: A LEVEL PATH.\nCENTRED; IT DOES NOT UNSETTLE ITSELF.",
     "timed": true
    },
    "readout_source": "Line 2: 履道坦坦，幽人貞吉 (a level path, the quiet one does well); Small Image: 中不自亂 (steady within); Wang Bi: 履道尚謙…惡夫外飾 (treading values humility, dislikes display). Was the Tuan's soft line treading on the strong, master line 3."
@@ -465,8 +465,8 @@
   },
   "meaning": [
    {
-    "text": "Peace says:\nkeep it moving.",
-    "source": "commentary/en/11.json#judgment.synthesis"
+    "text": "Peace says:\nkeep talking.",
+    "source": "series/critic/convergence/state.json#11 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Peace is contact,\nnot a vacation.",
@@ -510,8 +510,8 @@
     "source": "commentary/en/12.json#judgment.synthesis"
    },
    {
-    "text": "Don’t take\nthe bad deal.",
-    "source": "commentary/en/12.json#image.synthesis"
+    "text": "Don't let them\nbuy you.",
+    "source": "series/critic/convergence/state.json#12 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -564,8 +564,8 @@
    "13-47"
   ],
   "caption": {
-   "text": "The old text puts fellowship out in the open, where anyone can walk up. Once you close the door and pick who’s in, you’ve left it.",
-   "source": "commentary/en/13.json#judgment.synthesis"
+   "text": "The old text puts fellowship in an open field. Shared principles give people a reason to meet beyond family ties.",
+   "source": "series/critic/convergence/state.json#13 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -576,7 +576,7 @@
      1,
      4
     ],
-    "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+    "finding": "> LINE 2 ANSWERS ONLY TO LINE 5.\nFELLOWSHIP STOPS AT ITS OWN CIRCLE.",
     "master": {
      "zh": "二為同人之主",
      "en": "Line two, master of Fellowship"
@@ -642,8 +642,8 @@
     "source": "commentary/en/15.json#judgment.synthesis"
    },
    {
-    "text": "No one stops\nthe quiet ones.",
-    "source": "commentary/en/15.json#judgment.synthesis"
+    "text": "Do the work.\nSkip the boasting.",
+    "source": "series/critic/convergence/state.json#15 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -655,8 +655,8 @@
    "15-25"
   ],
   "caption": {
-   "text": "The image is a mountain inside the earth: the biggest thing around, and hidden. It’s the one hexagram where every line is favorable.",
-   "source": "commentary/en/15.json#image.synthesis"
+   "text": "A mountain lies inside the earth. The strong third line works for those above and cares for those below; its strength gives it responsibilities, not a reason to boast.",
+   "source": "series/critic/convergence/state.json#15 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -696,13 +696,13 @@
    "16-33"
   ],
   "caption": {
-   "text": "Thunder breaks out of the ground, and the first thing the old kings did with that energy was make music. Give it form, then direction.",
-   "source": "commentary/en/16.json#image.synthesis"
+   "text": "Thunder comes out of the earth; the old kings made music to honor good conduct. Shared enthusiasm needs something worth coming together for.",
+   "source": "series/critic/convergence/state.json#16 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "One clear voice\nmoves the crowd.",
-   "source": "series/critic/readouts/drafts.json#16",
+   "text": "GIVE IT DIRECTION.\nTRUST PEOPLE TO JOIN.",
+   "source": "series/critic/convergence/state.json#16 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      3
@@ -724,8 +724,8 @@
   },
   "meaning": [
    {
-    "text": "Following says:\ngo with the day.",
-    "source": "commentary/en/17.json#image.synthesis"
+    "text": "Following says:\nfollow the day.",
+    "source": "series/critic/convergence/state.json#17 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Day’s done.\nGo in, rest.",
@@ -746,13 +746,13 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "To be followed,\nfollow first.",
-   "source": "series/critic/readouts/drafts.json#17",
+   "text": "Follow the time,\nnot what you want.",
+   "source": "series/critic/convergence/state.json#17 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      0
     ],
-    "finding": "THE STRONG GOES BELOW THE WEAK."
+    "finding": "LINE 1: NO FIXED TIE ABOVE.\nFREE TO FOLLOW THE TIME."
    },
    "readout_source": "Wang Bi on the judgment: the firm places itself below the yielding"
   },
@@ -782,8 +782,8 @@
    "18-52"
   ],
   "caption": {
-   "text": "The judgment says three days before the turn and three days after: think on both sides of it. The repair works; the rush job doesn’t.",
-   "source": "commentary/en/18.json#judgment.synthesis"
+   "text": "The judgment puts three days before the turn and three after it: prepare the repair, then check what follows.",
+   "source": "series/critic/convergence/state.json#18 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
@@ -867,16 +867,16 @@
    }
   ],
   "question": {
-   "text": "What will you\nprepare now?",
-   "source": "written"
+   "text": "Who needs you\nwhen growth slows?",
+   "source": "series/critic/convergence/state.json#19 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "19-11",
    "19-32"
   ],
   "caption": {
-   "text": "The judgment opens every door, then names a date: by the eighth month, trouble. Growth comes with the date it turns, so plan for it.",
-   "source": "commentary/en/19.json#judgment.synthesis"
+   "text": "The judgment pairs growth with a warning about the eighth month. While things are going well, build the care your people will need when growth slows.",
+   "source": "series/critic/convergence/state.json#19 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
@@ -940,8 +940,8 @@
     "source": "commentary/en/20.json#image.synthesis"
    },
    {
-    "text": "See by going,\nnot by sitting.",
-    "source": "commentary/en/20.json#image.synthesis"
+    "text": "See how people\nactually live.",
+    "source": "series/critic/convergence/state.json#20 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -958,13 +958,13 @@
   },
   "lesson": {
    "kind": "lines",
-   "text": "Look at your people.\nThey show how you lead.",
-   "source": "series/critic/depth/review.json#20, less 'Go' to fit 9 words; Small Image 觀我生，觀民也 (to look at my life is to look at the people); Wang Bi 觀民之俗，以察己道; the user, 2026-09-28: 'sure keep reviewers where you think it's right, take codex on 6 and 9.'",
+   "text": "LOOK AT YOUR PEOPLE.\nSEE HOW YOU LEAD.",
+   "source": "series/critic/convergence/state.json#20 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      4
     ],
-    "finding": "LINE 5: LOOK AT YOUR OWN LIFE.\nBY LOOKING AT YOUR PEOPLE.",
+    "finding": "LINE 5: THE RULER SEES HIMSELF\nIN HOW THE PEOPLE LIVE.",
     "master": {
      "zh": "為觀之主",
      "en": "Master of Contemplation"
@@ -976,8 +976,8 @@
  },
  "21": {
   "hook": {
-   "text": "Something blocking you for weeks?",
-   "source": "commentary/en/21.json#judgment.synthesis"
+   "text": "Someone keeps crossing the line?",
+   "source": "series/critic/convergence/state.json#21 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
@@ -1050,7 +1050,7 @@
     "mark": [
      5
     ],
-    "finding": "AT THE TOP: PLAIN WHITE.",
+    "finding": "TOP LINE: ADORNMENT REACHES ITS END.\nBACK TO PLAIN WHITE.",
     "timed": true
    },
    "readout_source": "Line 6: 白賁 plain white, no blame; Wang Bi: 飾終反素, at the end adornment returns to plain (2026-09-27, was Tuan 柔來而文剛 with the master on line 5)"
@@ -1124,35 +1124,35 @@
  },
  "24": {
   "hook": {
-   "text": "Coming back after a bad stretch?",
-   "source": "commentary/en/24.json#judgment.synthesis"
+   "text": "Made the same mistake again?",
+   "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
-    "text": "Return says:\nenergy returns.",
-    "source": "commentary/en/24.json#image.synthesis"
+    "text": "Return says:\nturn back early.",
+    "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
-    "text": "Rest. Only rushing\nstops it.",
-    "source": "commentary/en/24.json#image.synthesis"
+    "text": "Catch it near\nthe start.",
+    "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
-   "text": "What are you\nrushing back to?",
-   "source": "written"
+   "text": "What needs\ncorrecting now?",
+   "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "24-5",
    "24-42"
   ],
   "caption": {
-   "text": "Thunder underground is energy returning before it shows, and the old kings stayed still to let it come. Only impatience stops a return.",
-   "source": "commentary/en/24.json#image.synthesis"
+   "text": "In the Ten Wings, Confucius ties Return’s first line to his student Yan Hui, who always saw his faults and never repeated one.",
+   "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "See your misstep,\nturn back early.",
-   "source": "Line 1 of 24: 不遠復 (returning from not far); its Image commentary: 以脩身也 (cultivating the self)",
+   "text": "See it once.\nDon’t do it twice.",
+   "source": "series/critic/convergence/state.json#24 (the user's verdict, series/review/copy-verdicts.json)",
    "scene": {
     "script": "acts",
     "args": {
@@ -1165,41 +1165,41 @@
  },
  "25": {
   "hook": {
-   "text": "Hiding your real reasons?",
-   "source": "commentary/en/25.json#judgment.synthesis"
+   "text": "Making things worse by fixing them?",
+   "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
-    "text": "Innocence says:\nbe straight.",
-    "source": "commentary/en/25.json#judgment.synthesis"
+    "text": "Innocence says:\ncheck the cause.",
+    "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
-    "text": "Stop faking,\nand it works.",
-    "source": "commentary/en/25.json#image.synthesis"
+    "text": "Some trouble needs\nno interference.",
+    "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
-   "text": "Where are you\nperforming?",
-   "source": "written"
+   "text": "What needs\nleaving alone?",
+   "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "25-27",
    "25-62"
   ],
   "caption": {
-   "text": "The image is thunder under the sky, everything just being what it is. You don’t make things real; you stop making them fake.",
-   "source": "commentary/en/25.json#image.synthesis"
+   "text": "Line five describes an illness the person did not cause. Wang Bi warns that adding medicine here makes it worse: action needs a reason.",
+   "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Do what's right,\nnot what pays.",
-   "source": "series/critic/readouts/drafts.json#25",
+   "text": "DON’T MAKE IT WORSE\nBY FORCING A FIX.",
+   "source": "series/critic/convergence/state.json#25 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      0,
      4
     ],
-    "finding": "A STRONG LINE COMES IN AT THE BASE.",
+    "finding": "LINE 5: ILLNESS WITHOUT WRONGDOING.\nTHE WRONG MEDICINE ADDS HARM.",
     "master": {
      "zh": "為无妄之主",
      "en": "Master of No Falseness"
@@ -1211,40 +1211,40 @@
  },
  "26": {
   "hook": {
-   "text": "Years of practice, nobody’s seen it?",
-   "source": "commentary/en/26.json#judgment.synthesis"
+   "text": "Fighting the same battle every day?",
+   "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
-    "text": "Great Accumulation\nsays: go public.",
-    "source": "commentary/en/26.json#judgment.synthesis"
+    "text": "Great Accumulation\nsays: curb force.",
+    "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
-    "text": "Don’t eat\nat home.",
-    "source": "commentary/en/26.json#judgment.synthesis"
+    "text": "Stop what drives\nthe damage.",
+    "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
-   "text": "What have you\nbeen keeping in?",
-   "source": "written"
+   "text": "What feeds\nthe trouble?",
+   "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "26-37",
    "26-59"
   ],
   "caption": {
-   "text": "The image is heaven held inside a mountain. The old text says don’t eat at home: take what you’ve stored up out into the world.",
-   "source": "commentary/en/26.json#judgment.synthesis"
+   "text": "The boar still has tusks, but its aggression has been checked. Wang Bi reads line five as gentle restraint of force: deal with what drives the trouble.",
+   "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Store up strength,\nthen use it.",
-   "source": "series/critic/readouts/drafts.json#26",
+   "text": "CURB THE URGE,\nNOT JUST THE DAMAGE.",
+   "source": "series/critic/convergence/state.json#26 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      4
     ],
-    "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+    "finding": "LINE 5: A GELDED BOAR KEEPS ITS TUSKS.\nTHE FORCE IS HELD, NOT LOST.",
     "master": {
      "zh": "為畜之主",
      "en": "Master of Accumulation"
@@ -1265,8 +1265,8 @@
     "source": "commentary/en/27.json#image.synthesis"
    },
    {
-    "text": "What goes in,\nwhat comes out.",
-    "source": "commentary/en/27.json#judgment.synthesis"
+    "text": "Food goes in.\nWords come out.",
+    "source": "series/critic/convergence/state.json#27 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1319,8 +1319,8 @@
    "28-18"
   ],
   "caption": {
-   "text": "Water above the trees: the normal rules are off. It asks for one thing, the will to stand alone without making a fuss.",
-   "source": "commentary/en/28.json#image.synthesis"
+   "text": "Water above the trees: the beam sags because both ends are weak. The old text asks the strong to hold up the weak, and to stand alone without fear.",
+   "source": "series/critic/convergence/state.json#28 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1347,8 +1347,8 @@
     "source": "commentary/en/29.json#judgment.synthesis"
    },
    {
-    "text": "Like water: fill\nit, flow on.",
-    "source": "commentary/en/29.json#image.synthesis"
+    "text": "Like water: pass\nthrough, flow on.",
+    "source": "series/critic/convergence/state.json#29 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1360,13 +1360,13 @@
    "29-60"
   ],
   "caption": {
-   "text": "The I-Ching’s image here is water. It fills the hole it meets, then flows on.",
-   "source": "commentary/en/29.json#image.synthesis"
+   "text": "Water runs through pit after pit without filling them and is still water on the other side. The old text calls this going through danger without losing your trust.",
+   "source": "series/critic/convergence/state.json#29 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Through danger,\nkeep your word.",
-   "source": "Tuan Zhuan on 29: 行險而不失其信 (goes through danger and does not lose its trust)",
+   "text": "Through danger,\nstay true.",
+   "source": "series/critic/convergence/state.json#29 (the user's verdict, series/review/copy-verdicts.json)",
    "scene": {
     "script": "abyss",
     "args": {
@@ -1400,8 +1400,8 @@
    "30-47"
   ],
   "caption": {
-   "text": "Fire needs something to burn. The old text says to tend a cow: patient, dull, daily care. That’s what keeps the light going.",
-   "source": "commentary/en/30.json#judgment.synthesis"
+   "text": "Fire has to cling to something to burn. The old text says raise a gentle cow: patient, daily care, held to what is right.",
+   "source": "series/critic/convergence/state.json#30 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1553,7 +1553,7 @@
      0,
      1
     ],
-    "finding": "TWO YIELDING LINES CREEP UP.",
+    "finding": "TWO YIELDING LINES CREEP UP.\nTHE LAST TO LEAVE IS IN DANGER.",
     "master": {
      "zh": "為遯之主",
      "en": "Master of Retreat"
@@ -1574,8 +1574,8 @@
     "source": "commentary/en/34.json#judgment.synthesis"
    },
    {
-    "text": "Mostly, know what\nnot to do.",
-    "source": "commentary/en/34.json#image.synthesis"
+    "text": "Know what\nnot to do.",
+    "source": "series/critic/convergence/state.json#34 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1587,8 +1587,8 @@
    "34-38"
   ],
   "caption": {
-   "text": "Thunder above heaven is the most force in the highest place, and the old text only says where not to walk. The power goes into staying off wrong paths.",
-   "source": "commentary/en/34.json#image.synthesis"
+   "text": "Thunder above heaven: power does not excuse a wrong step. The ram drives its horns into a fence and traps itself by pushing.",
+   "source": "series/critic/convergence/state.json#34 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1596,7 +1596,7 @@
    "source": "series/critic/readouts/drafts.json#34",
    "readout": {
     "mark": [],
-    "finding": "FOUR STRONG LINES PUSH UP."
+    "finding": "LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP."
    },
    "readout_source": "image: does not tread where improper"
   },
@@ -1613,8 +1613,8 @@
     "source": "commentary/en/35.json#image.synthesis"
    },
    {
-    "text": "Not strategy.\nNot network.",
-    "source": "commentary/en/35.json#image.synthesis"
+    "text": "Give people\nreason to trust.",
+    "source": "series/critic/convergence/state.json#35 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1626,8 +1626,8 @@
    "35-56"
   ],
   "caption": {
-   "text": "The sun rises over the earth, and progress comes with the light. The text says brighten your character, not your strategy.",
-   "source": "commentary/en/35.json#image.synthesis"
+   "text": "The sun rises over the earth. Show your character in how you lead: give others room to do their work.",
+   "source": "series/critic/convergence/state.json#35 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1672,8 +1672,8 @@
   },
   "lesson": {
    "kind": "character",
-   "text": "Dark times?\nDim your light.",
-   "source": "series/characters.json#36: A window rises; beside it a full moon shines, then wanes to a thin crescent that stays lit, and sets into the moon's strokes.",
+   "text": "Hide your light.\nDon't put it out.",
+   "source": "series/critic/convergence/state.json#36 (the user's verdict, series/review/copy-verdicts.json)",
    "character": {
     "char": "明",
     "beats": 12,
@@ -1708,13 +1708,13 @@
  },
  "37": {
   "hook": {
-   "text": "Too many rules at home?",
-   "source": "commentary/en/37.json#image.synthesis"
+   "text": "Your house, your rules?",
+   "source": "series/critic/convergence/state.json#37 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "meaning": [
    {
-    "text": "The Family says:\nskip the rules.",
-    "source": "commentary/en/37.json#image.synthesis"
+    "text": "The Family says:\nfollow them too.",
+    "source": "series/critic/convergence/state.json#37 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Say real things.\nDo them daily.",
@@ -1730,8 +1730,8 @@
    "37-57"
   ],
   "caption": {
-   "text": "Wind born from fire: warmth makes the movement. A family whose words mean something and whose actions last doesn’t need the rules.",
-   "source": "commentary/en/37.json#image.synthesis"
+   "text": "Wind comes from fire: conduct at home reaches others. The top line asks you to examine yourself before demanding better from your family.",
+   "source": "series/critic/convergence/state.json#37 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1772,8 +1772,8 @@
    "38-44"
   ],
   "caption": {
-   "text": "Fire rises and water sinks; they’ll never meet. Fix small things first, and find what you share while staying different.",
-   "source": "commentary/en/38.json#image.synthesis"
+   "text": "At the height of distrust you see a mud-caked pig and a cart full of ghosts, and draw your bow. Look again: not a raider, a suitor.",
+   "source": "series/critic/convergence/state.json#38 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1801,8 +1801,8 @@
     "source": "commentary/en/39.json#judgment.synthesis"
    },
    {
-    "text": "The wall is\nthe lesson.",
-    "source": "commentary/en/39.json#image.synthesis"
+    "text": "Stop pushing.\nCheck yourself.",
+    "source": "series/critic/convergence/state.json#39 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1814,18 +1814,18 @@
    "39-29"
   ],
   "caption": {
-   "text": "Water on a mountain can’t flow. The old text says turn inward and find the great person: the obstacle tests whether you’ll ask.",
-   "source": "commentary/en/39.json#judgment.synthesis"
+   "text": "Water ahead, a mountain below: pushing on can deepen the trouble. Stop, examine your conduct, and seek someone who can help.",
+   "source": "series/critic/convergence/state.json#39 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Blocked?\nLook at yourself.",
-   "source": "series/critic/readouts/drafts.json#39",
+   "text": "ASK FOR HELP.\nKEEP YOUR STANDARDS.",
+   "source": "series/critic/convergence/state.json#39 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      4
     ],
-    "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED."
+    "finding": "LINE 5: IN DANGER, STILL CENTRED.\nITS STEADY CONDUCT DRAWS FRIENDS."
    },
    "readout_source": "Wang Bi: the lines all occupy their positions; image: turns inward"
   },
@@ -1838,8 +1838,8 @@
   },
   "meaning": [
    {
-    "text": "Deliverance says:\nact or rest.",
-    "source": "commentary/en/40.json#judgment.synthesis"
+    "text": "Deliverance says:\nclear the air.",
+    "source": "series/critic/convergence/state.json#40 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Then let the\ngrudges go.",
@@ -1897,8 +1897,8 @@
    "41-24"
   ],
   "caption": {
-   "text": "The old text asks for two small baskets, not a grand offering: when you have less, bring less. Anger and wanting cost the most.",
-   "source": "commentary/en/41.json#judgment.synthesis"
+   "text": "The old text asks for two small baskets, not a grand offering: brought in good faith, less is enough. Anger and wanting cost the most.",
+   "source": "series/critic/convergence/state.json#41 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -1931,16 +1931,16 @@
    }
   ],
   "question": {
-   "text": "What will you\nmove toward?",
-   "source": "written"
+   "text": "Who else\ncould benefit?",
+   "source": "series/critic/convergence/state.json#42 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "42-33",
    "42-1"
   ],
   "caption": {
-   "text": "Wind and thunder feed each other. The method of increase: see something good and move toward it.",
-   "source": "commentary/en/42.json#image.synthesis"
+   "text": "Wind and thunder feed each other. The text pairs two moves: see something good and go toward it, see a fault in yourself and change it.",
+   "source": "series/critic/convergence/state.json#42 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
@@ -1984,8 +1984,8 @@
     "source": "commentary/en/43.json#judgment.synthesis"
    },
    {
-    "text": "Speak up, but\nno force.",
-    "source": "commentary/en/43.json#judgment.synthesis"
+    "text": "Tell your own\npeople first.",
+    "source": "series/critic/convergence/state.json#43 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -1997,8 +1997,8 @@
    "43-1"
   ],
   "caption": {
-   "text": "The rules in the text: announce it publicly, warn your own people first, and don’t use force. Fight darkness with a sword and you join it.",
-   "source": "commentary/en/43.json#judgment.synthesis"
+   "text": "Name it in the open court and admit the danger. The text rejects force, because relying on force leads to a dead end.",
+   "source": "series/critic/convergence/state.json#43 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2038,8 +2038,8 @@
    "44-25"
   ],
   "caption": {
-   "text": "Wind under heaven reaches everywhere. When something slips in looking wonderful, don’t chase it; send your own message just as far.",
-   "source": "commentary/en/44.json#image.synthesis"
+   "text": "The first line looks weak but won’t stay still. Set limits at the start, before a passing encounter becomes a lasting commitment.",
+   "source": "series/critic/convergence/state.json#44 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2091,7 +2091,7 @@
      3,
      4
     ],
-    "finding": "FOUR YIELDING LINES GATHER TO TWO."
+    "finding": "> LINE 5: HAS THE POSITION, NOT TRUST.\nLINE 4 HOLDS THE PEOPLE BELOW."
    },
    "readout_source": "image: guards against the unexpected"
   },
@@ -2121,8 +2121,8 @@
    "46-54"
   ],
   "caption": {
-   "text": "A tree pushes up through the earth, going around the rock instead of jumping. It’s already growing, so stop braking.",
-   "source": "commentary/en/46.json#image.synthesis"
+   "text": "Wood grows within the earth: small gains accumulate. The text also warns against climbing on blindly, unable to stop.",
+   "source": "series/critic/convergence/state.json#46 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2132,7 +2132,7 @@
     "mark": [
      4
     ],
-    "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+    "finding": "LINE 5: HE CLIMBS THE STAIRS.\nACCEPTS HELP; ENTRUSTS THE WORK.",
     "timed": true
    },
    "readout_source": "六五 貞吉，升階 (steady and right, it goes well: he climbs the stairs)"
@@ -2150,8 +2150,8 @@
     "source": "commentary/en/47.json#image.synthesis"
    },
    {
-    "text": "Words fail here.\nActions don’t.",
-    "source": "commentary/en/47.json#judgment.synthesis"
+    "text": "Words alone\nwon’t get you out.",
+    "source": "series/critic/convergence/state.json#47 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2223,8 +2223,8 @@
   },
   "lesson": {
    "kind": "character",
-   "text": "Care for what\nothers depend on.",
-   "source": "series/characters.json#48: Four beams rise as the well's frame; the water in the middle ripples on every beat.",
+   "text": "Mend it.\nShare it.",
+   "source": "series/critic/convergence/state.json#48 (the user's verdict, series/review/copy-verdicts.json)",
    "character": {
     "char": "井",
     "beats": 10,
@@ -2268,26 +2268,26 @@
    }
   ],
   "question": {
-   "text": "What change are\nyou making?",
-   "source": "written"
+   "text": "Who isn't\nconvinced yet?",
+   "source": "series/critic/convergence/state.json#49 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "49-15",
    "49-36"
   ],
   "caption": {
-   "text": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. People believe it once it’s done.",
-   "source": "commentary/en/49.json#image.synthesis"
+   "text": "Fire inside a lake, and the response is to set the calendar: name when one season ends and the next begins. Give change time to earn trust.",
+   "source": "series/critic/convergence/state.json#49 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Go over the change\nuntil it is trusted.",
-   "source": "series/critic/depth/review.json#49; the user, 2026-09-28: 'yes i like what your reviewers proposed vs now. the current wording is a bit dense/confusing'",
+   "text": "ONCE THE CHANGE IS TRUSTED,\nSTOP PUSHING.",
+   "source": "series/critic/convergence/state.json#49 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      2
     ],
-    "finding": "LINE 3: TALKED OVER THRICE.\nSPOKEN TRUE, SO TRUSTED.",
+    "finding": "LINE 3: ALL THREE ABOVE ACCEPT.\nSINCERE WORDS HAVE WON TRUST.",
     "timed": true
    },
    "readout_source": "九三 革言三就，有孚 (the change talked over three times, then trusted); Wang Bi 其言實誠 (its words are true)"
@@ -2305,8 +2305,8 @@
     "source": "commentary/en/50.json#image.synthesis"
    },
    {
-    "text": "Get set up\nbefore you start.",
-    "source": "commentary/en/50.json#image.synthesis"
+    "text": "A tilted pot\nspills the meal.",
+    "source": "series/critic/convergence/state.json#50 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2318,8 +2318,8 @@
    "50-8"
   ],
   "caption": {
-   "text": "Wood feeds the fire under the caldron, and it only works if it stands level. Tilted, it spills and the fire misses.",
-   "source": "commentary/en/50.json#image.synthesis"
+   "text": "Wood feeds the fire under the caldron. In its worst line a leg snaps and the duke’s stew spills: a load too heavy for what holds it up.",
+   "source": "series/critic/convergence/state.json#50 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
@@ -2452,8 +2452,8 @@
     "source": "commentary/en/53.json#judgment.synthesis"
    },
    {
-    "text": "Slow growth\nlasts.",
-    "source": "commentary/en/53.json#image.synthesis"
+    "text": "Do the work\nat each step.",
+    "source": "series/critic/convergence/state.json#53 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2465,8 +2465,8 @@
    "53-56"
   ],
   "caption": {
-   "text": "A tree on a mountain grows slowly where everyone can see it. Every shortcut here goes the wrong way.",
-   "source": "commentary/en/53.json#image.synthesis"
+   "text": "A tree on a mountain grows where everyone can see it. Build the character you want others to learn from.",
+   "source": "series/critic/convergence/state.json#53 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2479,7 +2479,7 @@
      3,
      4
     ],
-    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+    "finding": "LINES 2–5 EACH HOLD THEIR PLACE.\nLINE 2: THE GOOSE HAS EARNED ITS MEAL."
    },
    "readout_source": "image"
   },
@@ -2496,8 +2496,8 @@
     "source": "commentary/en/54.json#image.synthesis"
    },
    {
-    "text": "This part\nwon’t last.",
-    "source": "commentary/en/54.json#image.synthesis"
+    "text": "See what could\ngo wrong.",
+    "source": "series/critic/convergence/state.json#54 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2509,8 +2509,8 @@
    "54-55"
   ],
   "caption": {
-   "text": "Thunder stirs the lake’s surface while the depths stay still. The text says to look past the middle to how it ends.",
-   "source": "commentary/en/54.json#image.synthesis"
+   "text": "The old image is a young bride who arrives while the first wife still runs the house. She goes back and waits her turn; the text warns against pushing ahead.",
+   "source": "series/critic/convergence/state.json#54 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2545,16 +2545,16 @@
    }
   ],
   "question": {
-   "text": "What will you\ndecide now?",
-   "source": "written"
+   "text": "What corner is\nstill dark?",
+   "source": "series/critic/convergence/state.json#55 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "plates": [
    "55-45",
    "55-44"
   ],
   "caption": {
-   "text": "The sun at noon is about to set, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon.",
-   "source": "commentary/en/55.json#judgment.synthesis"
+   "text": "Noon is when the sun starts to sink, and the text still says don’t worry. Waste noon worrying about the afternoon and you never have a noon.",
+   "source": "series/critic/convergence/state.json#55 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2575,8 +2575,8 @@
   },
   "meaning": [
    {
-    "text": "The Wanderer says:\nkeep it brief.",
-    "source": "commentary/en/56.json#image.synthesis"
+    "text": "The Wanderer:\ndon't take over.",
+    "source": "series/critic/convergence/state.json#56 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "You’re a guest.\nAct like one.",
@@ -2592,13 +2592,13 @@
    "56-55"
   ],
   "caption": {
-   "text": "Fire on a mountain is bright, seen, and moving on. The traveler gets small wins, so be clear, careful, brief.",
-   "source": "commentary/en/56.json#image.synthesis"
+   "text": "In the old text, a traveler who plays the host loses the inn to fire and the servants with it. Fire on a mountain moves on, and so does a guest.",
+   "source": "series/critic/convergence/state.json#56 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
-   "text": "Far from home,\nbe a good guest",
-   "source": "series/characters.json#56: People under a flag are drawn standing far off; they walk toward you in four hops, then lie down as the character.",
+   "text": "Play the host,\nrisk your room.",
+   "source": "series/critic/convergence/state.json#56 (the user's verdict, series/review/copy-verdicts.json)",
    "character": {
     "char": "旅",
     "beats": 12,
@@ -2638,8 +2638,8 @@
     "source": "commentary/en/57.json#image.synthesis"
    },
    {
-    "text": "Quiet and steady\ngets through.",
-    "source": "commentary/en/57.json#judgment.synthesis"
+    "text": "Don't just\nsay it louder.",
+    "source": "series/critic/convergence/state.json#57 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2651,8 +2651,8 @@
    "57-64"
   ],
   "caption": {
-   "text": "The image is wind following wind. One gust changes nothing; a wind that keeps blowing reshapes the land. Say the important thing more than once.",
-   "source": "commentary/en/57.json#image.synthesis"
+   "text": "Wind follows wind. Wang Bi says to repeat an instruction before and after it takes effect, giving people time to change.",
+   "source": "series/critic/convergence/state.json#57 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -2680,8 +2680,8 @@
     "source": "commentary/en/58.json#image.synthesis"
    },
    {
-    "text": "Joy kept alone\ndries up.",
-    "source": "commentary/en/58.json#image.synthesis"
+    "text": "Share more\nthan good news.",
+    "source": "series/critic/convergence/state.json#58 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2693,8 +2693,8 @@
    "58-24"
   ],
   "caption": {
-   "text": "The Joyous is two lakes that keep each other full. Joy kept to yourself dries up.",
-   "source": "commentary/en/58.json#image.synthesis"
+   "text": "Two lakes together: friends talking and learning from each other. Enjoy the company without pretending to agree.",
+   "source": "series/critic/convergence/state.json#58 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "character",
@@ -2741,8 +2741,8 @@
   },
   "meaning": [
    {
-    "text": "Dispersion says:\ndon’t argue.",
-    "source": "commentary/en/59.json#judgment.synthesis"
+    "text": "Dispersion says:\nbuild a centre.",
+    "source": "series/critic/convergence/state.json#59 (the user's verdict, series/review/copy-verdicts.json)"
    },
    {
     "text": "Remind them where\nthey come from.",
@@ -2758,18 +2758,18 @@
    "59-17"
   ],
   "caption": {
-   "text": "Wind over water scatters the surface, and the old kings built temples. A shared center pulls people back; force only wears you out.",
-   "source": "commentary/en/59.json#image.synthesis"
+   "text": "Wind over water scatters the surface, so the old kings built temples: a place everyone comes back to, around what they hold in common.",
+   "source": "series/critic/convergence/state.json#59 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "Bring them back\nto the centre.",
-   "source": "series/critic/readouts/drafts.json#59",
+   "text": "Bring them back\nto what they share.",
+   "source": "series/critic/convergence/state.json#59 (the user's verdict, series/review/copy-verdicts.json)",
    "readout": {
     "mark": [
      4
     ],
-    "finding": "WIND MOVES OVER WATER.",
+    "finding": "LINE 5: THE KING SENDS OUT HIS CALL.\nRIGHTLY PLACED AT THE CENTRE.",
     "master": {
      "zh": "為渙之主",
      "en": "Master of Dispersion"
@@ -2848,13 +2848,13 @@
    "61-8"
   ],
   "caption": {
-   "text": "The old text says inner truth reaches even pigs and fishes. The way in is to understand someone before you judge them.",
-   "source": "commentary/en/61.json#judgment.synthesis"
+   "text": "The old text says trust reaches even pigs and fishes. It also asks judges to examine a case carefully before taking a life.",
+   "source": "series/critic/convergence/state.json#61 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
-   "text": "No hidden motive;\nmean what you say.",
-   "source": "Line 1 of 61: 有它不燕 (having another aim, no peace); Tuan 柔在內而剛得中, Wang Bi: 直而正 (straight and upright)",
+   "text": "Make room\nto hear them.",
+   "source": "series/critic/convergence/state.json#61 (the user's verdict, series/review/copy-verdicts.json)",
    "scene": {
     "script": "acts",
     "args": {
@@ -2876,8 +2876,8 @@
     "source": "commentary/en/62.json#judgment.synthesis"
    },
    {
-    "text": "Small done well\nends well.",
-    "source": "commentary/en/62.json#judgment.synthesis"
+    "text": "Give small things\nextra care.",
+    "source": "series/critic/convergence/state.json#62 (the user's verdict, series/review/copy-verdicts.json)"
    }
   ],
   "question": {
@@ -2889,8 +2889,8 @@
    "62-59"
   ],
   "caption": {
-   "text": "The bird’s call comes from below: descend, don’t climb. The text allows one excess only: more humble, more careful, more frugal.",
-   "source": "commentary/en/62.json#image.synthesis"
+   "text": "The bird calls for somewhere to rest. The text asks for extra respect in conduct, grief in mourning, and thrift in spending.",
+   "source": "series/critic/convergence/state.json#62 (the user's verdict, series/review/copy-verdicts.json)"
   },
   "lesson": {
    "kind": "lines",
@@ -3008,7 +3008,7 @@
     "mark": [
      5
     ],
-    "finding": "AT THE TOP: HE WETS HIS HEAD.\nNO RESTRAINT AT THE END.",
+    "finding": "LINE 6: DRINKING GOES TOO FAR.\nHE DOES NOT KNOW WHEN TO STOP.",
     "timed": true
    },
    "readout_source": "Line 6: 有孚于飲酒，无咎。濡其首，有孚失是 (drinking wine in confidence is fine; soaking the head, the confidence is lost); Small Image 飲酒濡首，亦不知節也 (no restraint). Was the structural finding with master line 5."
