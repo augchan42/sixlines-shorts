@@ -47,6 +47,9 @@ type Show = {
   diagram?: DiagramShow;
   // The beacon on a page that isn't an approach (the Leibniz lesson's second flight round the ring).
   beacon?: boolean;
+  // A cube page (the structure shorts): the hexagram at the lit corner, drawn small in the window's
+  // top right as the corner lights (its clip's `at`), lines cast bottom to top.
+  mark?: number;
   // A guqin note as the answer starts (the Leibniz lesson: Wang Bi).
   guqin?: boolean;
   // A Blender clip in the window, from the page's start (the structure shorts; the cube's clips
@@ -165,6 +168,24 @@ const Plot: React.FC<{ lines: (0 | 1)[]; turn: number; cx: number; cy: number; s
     })}
   </g>
 );
+
+// The hexagram at a cube clip's lit corner: amber, like the corner, its lines cast 80 ms apart
+// (8bitoracle-brand's hex-line-cast), its number and name under it.
+const Mark: React.FC<{ h: Hex; at: number; turn: number }> = ({ h, at, turn }) => {
+  const f = useCurrentFrame();
+  const drawn = interpolate(f, [at * FPS, at * FPS + 6 * 0.08 * FPS], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const [cx, cy] = [WINDOW.x + WINDOW.w - 110, WINDOW.y + 190];
+  return (
+    <>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+        <Plot lines={h.lines} turn={turn} cx={cx} cy={cy} scale={26} drawn={drawn} amber={[0, 1, 2, 3, 4, 5]} />
+      </svg>
+      <div style={{ position: "absolute", right: 1080 - WINDOW.x - WINDOW.w + 20, top: cy + 90, fontFamily: fonts.pixel, fontSize: 30, color: AMBER, textShadow: `0 0 10px ${AMBER}`, opacity: drawn >= 1 ? 1 : 0, textAlign: "right" }}>
+        {`${h.number} ${h.name.toUpperCase()}`}
+      </div>
+    </>
+  );
+};
 
 // A clip in the terminal's window, fading up over a third of a second; its black drops out
 // against the screen's.
@@ -338,6 +359,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
       {show.clip && (
         <Sequence from={t.from} durationInFrames={t.frames} layout="none">
           <ClipWindow src={show.clip.src} />
+          {show.mark !== undefined && hexagrams[show.mark] && <Mark h={hexagrams[show.mark]} at={show.clip.scene?.at ?? 1} turn={turn} />}
         </Sequence>
       )}
       {show.plate && plate && <Plate src={plate} sec={f / FPS} secs={t.frames / FPS} {...show.plate} />}

@@ -77,6 +77,16 @@ test("the cube short's paths run along edges, and every edge lights inside its c
   assert.deepEqual(scenes[3].path, [v(20), v(12)]);
 });
 
+test("a marked corner draws its own hexagram, and the finished path stays up at least 3 s", () => {
+  const pages = cube.chapters.flatMap((c) => c.pages);
+  const marked = pages.filter((p) => p.show?.mark !== undefined);
+  assert.ok(marked.length >= 1);
+  for (const p of marked) assert.equal(v(p.show.mark), p.show.clip.scene.focus);
+  // Page 3: its last edge lights at pathTimes' end; the page holds past it (hold counts from the typed answer).
+  const p3 = pages[2].show;
+  assert.ok(p3.hold >= 9, `hold ${p3.hold}`);
+});
+
 const BANNED = ["oracle", "divination", "fortune", "prediction", "mystical", "magical", "預測", "预测", "占卜", "算命", "神諭"];
 test("the cube short's copy has none of the banned words", () => {
   const copy = `${JSON.stringify(cube.chapters)} ${cube.caption}`.toLowerCase();

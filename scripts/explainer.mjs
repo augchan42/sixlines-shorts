@@ -94,7 +94,7 @@ const byValue = Object.fromEntries(rows.map((r) => [r.lines.reduce((v, l) => v *
 const lesson = script.chapters && {
   pages: only ? allPages.filter((p) => !p.chapter).filter((_, i) => only.includes(i + 1)) : allPages,
   ...(usesDiagram ? { plate: "local/leibniz/plate.jpg", names: byValue } : {}),
-  hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
+  hexagrams: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => [p.show?.hex, p.show?.mark, ...(p.show?.small ?? [])])).filter((n) => typeof n === "number"))].map((n) => [n, hexagram(n)])),
   readouts: Object.fromEntries([...new Set(script.chapters.flatMap((c) => c.pages.flatMap((p) => (p.show?.full ?? []).map((f) => f.n))))].map((n) => [n, readout(n)])),
   // "music": null leaves only the machine sounds; "mix" sets their volumes.
   music: script.music ? `local/music/${script.music.file}` : null,
