@@ -74,7 +74,7 @@ Each post does one of three things: shows a hexagram's situation, teaches how to
 
 | Account | Posts | Rhythm |
 | --- | --- | --- |
-| Six Lines (@sixlinesapp) | The 64 shorts in King Wen order; terminal lessons; structure shorts; the daily hexagram (already tweeted by the site's cron) | One short a day; a lesson or structure short once a week, posted here first and pinned |
+| Six Lines (@sixlinesapp) | The 64 shorts in King Wen order; terminal lessons; structure shorts; the daily hexagram (already tweeted by the site's cron) | Three shorts a week on Instagram, TikTok and YouTube Shorts, through Buffer, in the slots Buffer set for each channel (Asia/Tokyo); now and then one of them a lesson or structure short, pinned |
 | 8-Bit Oracle | The app and the method as code and logic, matter of fact; reposts of Six Lines shorts that show app screens | About two hours after Six Lines on the same piece; two or three a week |
 | Personal (X, LinkedIn) | The founder's own notes on building it | The day after a lesson; an agent drafts, never posts |
 
@@ -127,8 +127,8 @@ An agent carrying this out works as a drafter. The founder approves every post.
 **Tools**
 
 - Typefully, through its API, for X, Threads, LinkedIn and Bluesky. Social sets: 310894 Six Lines, 310318 8-Bit Oracle, 309387 personal.
-- Buffer, for Instagram, TikTok and YouTube Shorts. The founder approves a batch of posts; Buffer then publishes them on its schedule. Video there: the full 1080x1920 share.mp4 (yuv420p, faststart, under 25 MB).
-- The keys are in sixlines-site/.env, 8bitoracle-next/.env.local and augustinchan.dev/.env.local (and wherever the founder puts Buffer's). Load them from the file; never print, log, paste or commit them.
+- Buffer, for Instagram, TikTok and YouTube Shorts. Three posts a week per channel. The founder approves a batch of posts; Buffer then publishes them in its queue slots. Its API is GraphQL at api.buffer.com (the old REST API refuses the key). Buffer takes video by public URL, not upload, so the full 1080x1920 share.mp4 (yuv420p, faststart, under 25 MB) goes to our own storage first.
+- The keys are in sixlines-site/.env, 8bitoracle-next/.env.local and augustinchan.dev/.env.local (Typefully) and sixlines-shorts/.env (BUFFER\_API\_KEY). Load them from the file; never print, log, paste or commit them.
 - A browser, for grokbot only: warming up the accounts, finding posts to reply to, and liking and viewing posts (below).
 
 **Browser (grokbot)**
@@ -153,13 +153,13 @@ It must not:
 
 **Always**
 
-- Save posts as Typefully drafts. Never schedule or publish without the founder's yes for that post.
+- Save posts as drafts (Typefully drafts; Buffer posts with saveToDraft). Never schedule or publish without the founder's yes for that post.
 - Take the text from series/renders/NN.txt and NN.linkedin.txt as written. Leave `[your note]` for the founder.
 - Before saving a draft, check it for the banned words: oracle, divination, fortune, prediction, mystical, magical, 預測, 预测, 占卜, 算命, 神諭. The only exception is the name 8-Bit Oracle.
 - Put English beside any Chinese.
 - Write the domain as sixlines.day. The older sixlines-site docs (docs/social-posts/, including divination/) use sixlines.online and banned words; take formats from them, never copy.
 - On the site and in long posts, write "I-Ching" and BC/AD, as sixlines-site's CLAUDE.md says; the shorts' own text is used as it is.
-- Keep a log of each draft: date, account, file, text, Typefully draft id.
+- Keep a log of each draft: date, account, file, text, Typefully draft id or Buffer post id.
 
 **Never**
 
