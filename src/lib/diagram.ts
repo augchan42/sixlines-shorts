@@ -29,6 +29,10 @@ export const treeNode = (depth: number, k: number): Lines => linesOf(k).slice(6 
 export const BIT_TIMES = (from: number) => [0, 1, 2, 3, 4, 5].map((i) => from + 2 + i * 0.4);
 export const TREE_STAGE = 0.9;
 export type Cue = { at: number; sound: "relay" | "sweep" | "warble" | "chatter"; secs?: number };
+// The Six Bits short: one line flipping like a tossed coin, slower each time, 1 s after `from`;
+// and the yarrow odds, four bars growing one after another, then the level they share.
+export const LINE_FLIPS = (from: number) => [0, 0.22, 0.46, 0.74, 1.08, 1.5, 2.02, 2.66].map((t) => from + t);
+export const ODDS_TIMES = (from: number) => [0, 1.2, 2.4, 3.6, 5].map((t) => from + t);
 type CueShow = { kind?: string; count?: [number, number]; at?: number; secs?: number; weights?: boolean; fadePlate?: boolean; morph?: number };
 export const diagramCues = (d: CueShow): Cue[] => {
   const kind = d.kind ?? "count";
@@ -47,6 +51,11 @@ export const diagramCues = (d: CueShow): Cue[] => {
     // A tree already grown when the page opens stays quiet.
     if (start < 0) return [];
     return [{ at: start, sound: "chatter", secs: 6 * TREE_STAGE + 0.5 }, ...(d.morph !== undefined ? [{ at: d.morph, sound: "sweep" } as Cue] : [])];
+  }
+  if (kind === "line") return LINE_FLIPS(d.at ?? 1).map((at): Cue => ({ at, sound: "relay" }));
+  if (kind === "odds") {
+    const t = ODDS_TIMES(d.at ?? 1);
+    return [...t.slice(0, 4).map((at): Cue => ({ at, sound: "relay" })), { at: t[4], sound: "warble" }];
   }
   if (kind === "overview") return [{ at: 0.2, sound: "sweep" }];
   if (kind === "square") return [{ at: 0.3, sound: "sweep" }, { at: (d.at ?? 3) + 5.5, sound: "warble" }];

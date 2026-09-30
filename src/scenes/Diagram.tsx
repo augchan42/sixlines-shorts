@@ -1,6 +1,6 @@
 import { Easing, Img, interpolate, staticFile } from "remotion";
 import { fonts } from "../lib/fonts";
-import { BIT_TIMES, bitsOf, linesOf, ringAngle, squareCell, TREE_STAGE, treeNode } from "../lib/diagram";
+import { BIT_TIMES, bitsOf, LINE_FLIPS, ODDS_TIMES, linesOf, ringAngle, squareCell, TREE_STAGE, treeNode } from "../lib/diagram";
 import { project, type Cam, type V } from "./Flight";
 import { DIM, glow, PHOSPHOR } from "./Readout";
 
@@ -221,13 +221,75 @@ const Tree: React.FC<{ sec: number; start: number; stage: number; morph?: number
   );
 };
 
+// The Six Bits short. One line, large, flipping between broken and solid like a tossed coin, its
+// bit beside it; held solid after the last flip, then "1 BIT".
+const OneLine: React.FC<{ sec: number; at: number }> = ({ sec, at }) => {
+  const flips = LINE_FLIPS(at);
+  const l = (flips.filter((t) => sec >= t).length % 2 === 0 ? 1 : 0) as 0 | 1;
+  const done = flips[flips.length - 1];
+  const w = 560;
+  const amber = { fontFamily: fonts.pixel, color: AMBER, textShadow: `0 0 12px ${AMBER}` };
+  return (
+    <>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0, opacity: fade(sec, 0) }}>
+        <g strokeWidth={3} style={{ filter: `drop-shadow(0 0 8px ${AMBER})` }}>
+          <FlatHex lines={[l]} x={540} y={1080} w={w} colour={AMBER} fill={sec >= done} />
+        </g>
+      </svg>
+      <div style={{ position: "absolute", top: 1030, left: 0, width: 540 - w / 2 - 50, textAlign: "right", opacity: fade(sec, 0), fontSize: 84, ...amber }}>{l}</div>
+      <Label top={1200} text="BROKEN 0 · SOLID 1" opacity={fade(sec, at)} />
+      <Label top={1330} text="1 BIT" opacity={fade(sec, done + 0.7)} colour={AMBER} size={96} />
+    </>
+  );
+};
+
+// The yarrow odds in sixteenths: yin 1 + 7 on the left, yang 5 + 3 on the right, each bar growing
+// in turn, then the level the two stacks share, in amber.
+const ODDS = { base: 1580, unit: 44, w: 200, x: [360, 720] };
+const Odds: React.FC<{ sec: number; at: number }> = ({ sec, at }) => {
+  const t = ODDS_TIMES(at);
+  // Bottom to top of each stack, in the order they grow: yin 1, yang 5, yin 7, yang 3.
+  const bars = [{ side: 0, from: 0, n: 1, t: t[0] }, { side: 1, from: 0, n: 5, t: t[1] }, { side: 0, from: 1, n: 7, t: t[2] }, { side: 1, from: 5, n: 3, t: t[3] }];
+  const level = fade(sec, t[4]);
+  const top = ODDS.base - 8 * ODDS.unit;
+  return (
+    <>
+      <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+        <g fill="none" strokeWidth={3} stroke={PHOSPHOR} style={{ filter: `drop-shadow(0 0 5px ${PHOSPHOR})` }}>
+          {bars.map((b, i) => {
+            const k = interpolate(sec, [b.t, b.t + 0.8], [0, 1], ease);
+            if (k <= 0) return null;
+            const h = b.n * ODDS.unit * k;
+            const y = ODDS.base - b.from * ODDS.unit - h;
+            return <rect key={i} x={ODDS.x[b.side] - ODDS.w / 2} y={y} width={ODDS.w} height={h} fill={PHOSPHOR} fillOpacity={0.18} />;
+          })}
+        </g>
+        <line x1={160} x2={920} y1={top} y2={top} stroke={AMBER} strokeWidth={4} strokeDasharray="14 10" opacity={level} style={{ filter: `drop-shadow(0 0 8px ${AMBER})` }} />
+      </svg>
+      {bars.map((b, i) => (
+        <div key={i} style={{ position: "absolute", top: ODDS.base - (b.from + b.n / 2) * ODDS.unit - 22, left: b.side ? ODDS.x[1] + ODDS.w / 2 + 24 : 0, width: b.side ? undefined : ODDS.x[0] - ODDS.w / 2 - 24, textAlign: b.side ? "left" : "right", opacity: fade(sec, b.t + 0.6), fontFamily: fonts.pixel, fontSize: 40, color: PHOSPHOR, textShadow: glow }}>
+          {`${b.n}/16`}
+        </div>
+      ))}
+      <Label top={1010} text="YARROW, IN SIXTEENTHS" opacity={fade(sec, 0.2)} />
+      {["YIN", "YANG"].map((w, i) => (
+        <div key={w} style={{ position: "absolute", top: ODDS.base + 20, left: ODDS.x[i] - ODDS.w / 2, width: ODDS.w, textAlign: "center", opacity: fade(sec, 0.2), fontFamily: fonts.pixel, fontSize: 44, color: PHOSPHOR, textShadow: glow }}>
+          {w}
+        </div>
+      ))}
+      <Label top={top - 72} text="8/16 = 8/16" opacity={level} colour={AMBER} size={56} />
+    </>
+  );
+};
+
 const TRIGRAM: Record<number, [string, string]> = { 0: ["地", "EARTH"], 1: ["山", "MOUNTAIN"], 2: ["水", "WATER"], 3: ["風", "WIND"], 4: ["雷", "THUNDER"], 5: ["火", "FIRE"], 6: ["澤", "LAKE"], 7: ["天", "HEAVEN"] };
 export type DiagramShow = {
   // "count": fly the ring while the counter runs; "overview": the whole ring from above, turning
   // slowly; "bits": one hexagram lifted out (with `fadePlate`, the scan fades to the ring first);
   // "tree": the doubling tree; "square": down into the square, a row then a column in amber;
-  // "pair": the scan above, the ring below, both dim.
-  kind?: "count" | "overview" | "bits" | "tree" | "square" | "pair";
+  // "pair": the scan above, the ring below, both dim. For the Six Bits short: "line", one line
+  // flipping like a coin; "odds", the yarrow odds as two stacks that end level.
+  kind?: "count" | "overview" | "bits" | "tree" | "square" | "pair" | "line" | "odds";
   count?: [number, number];
   at?: number;
   secs?: number;
@@ -297,6 +359,8 @@ export const DiagramPage: React.FC<{ d: DiagramShow; sec: number; secs: number; 
       </>
     );
   }
+  if (kind === "line") return <OneLine sec={sec} at={d.at ?? 1} />;
+  if (kind === "odds") return <Odds sec={sec} at={d.at ?? 1} />;
   if (kind === "pair") {
     return (
       <>

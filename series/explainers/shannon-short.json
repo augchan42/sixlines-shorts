@@ -1,0 +1,115 @@
+{
+ "about": "Six Bits: a terminal short on Shannon and the six lines, about 60 s. The user, 2026-09-30: 'shannon information theory does have relation to the i-ching, in the sense that the bits contain information and the 6 bits describe things with max entropy/efficiency', then 'yes please write up the shannon short' and 'spec looks good'. Design: docs/superpowers/specs/2026-09-30-shannon-six-bits-design.md.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick17-midnight-synthwave.mp3",
+  "start": 0,
+  "why": "calm, 90 bpm, G major, from 0 s as on 24 (Return); apart from the lessons' The Mountain"
+ },
+ "endcardRate": 0.75,
+ "caption": "Six lines, each yin or yang: six bits, 64 patterns. Claude Shannon measured information in bits in 1948.",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "HOW MUCH CAN ONE LINE SAY",
+     "a": "YIN OR YANG.\nONE CHOICE OF TWO.\nONE BIT.",
+     "show": {
+      "diagram": {
+       "kind": "line",
+       "at": 1
+      },
+      "hold": 6
+     }
+    },
+    {
+     "q": "AND SIX LINES",
+     "a": "2 X 2 X 2 X 2 X 2 X 2 = 64.\nSIX BITS. 64 PATTERNS.",
+     "show": {
+      "diagram": {
+       "kind": "tree",
+       "at": 1,
+       "morph": 7.5
+      },
+      "hold": 11
+     }
+    },
+    {
+     "q": "WHO MEASURED THIS",
+     "a": "CLAUDE SHANNON, 1948.\nINFORMATION, COUNTED IN BITS.",
+     "show": {
+      "diagram": {
+       "kind": "bits",
+       "v": 42,
+       "weights": true
+      },
+      "hold": 6
+     }
+    },
+    {
+     "q": "IS SIX THE MOST",
+     "a": "ONLY IF ALL 64\nARE EQUALLY LIKELY.",
+     "show": {
+      "diagram": {
+       "kind": "overview"
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "ARE THEY",
+     "a": "COINS: YIN OR YANG, HALF AND HALF.\nYARROW: 8 IN 16 EACH WAY.\nSIX FULL BITS EITHER WAY.",
+     "show": {
+      "diagram": {
+       "kind": "odds",
+       "at": 1
+      },
+      "hold": 8
+     }
+    },
+    {
+     "q": "DID SHANNON READ THE I CHING",
+     "a": "NOT THAT WE CAN FIND.\nTHE STRUCTURE IS SHARED,\nNOT BORROWED.",
+     "show": {
+      "diagram": {
+       "kind": "overview"
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "SO WHAT DO SIX BITS HOLD",
+     "a": "ONE SITUATION OUT OF 64.\nWHAT TO DO IN IT\nIS JUDGMENT.",
+     "show": {
+      "diagram": {
+       "kind": "overview",
+       "v": 42
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "",
+     "a": "6 LINES\n6 BITS",
+     "show": {}
+    }
+   ]
+  }
+ ]
+}
