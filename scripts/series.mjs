@@ -6,14 +6,14 @@
 // Per short, out/series/NN-pinyin/ gets short.mp4, share.mp4, caption.txt, props.json and
 // manifest.json; the manifest and caption are also copied to series/renders/ for committing.
 // An earlier render there moves to out/series/versions/NN-pinyin/<time>-<commit>/ first.
-import { execFileSync } from "node:child_process";
+import { execFileSync, spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readFileSync, renameSync, unlinkSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { overrides } from "../src/series/overrides.ts";
 import { seriesProps } from "../src/series/props.ts";
 import { linkedinCaption, postCaption } from "./series/caption.mjs";
-import { missingAssets, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
+import { limiterCeiling, loudnessTarget, missingAssets, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const pub = (f) => path.join(root, "public", f);
@@ -29,6 +29,26 @@ const numbers = wanted === "all" ? rows.filter((r) => r.copy).map((r) => r.numbe
 // records the commit and cleanliness of the tree it was actually rendered from.
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
+
+// Every short at one level (scripts/series/render-lib.mjs, SERIES_LUFS): loudnorm measures, a
+// limiter holds the peaks first if the gain needs room, and one linear gain does the rest; the
+// video is copied as rendered.
+const loudnormJson = (input, af) => {
+  const { stderr } = spawnSync("ffmpeg", ["-nostdin", "-hide_banner", "-i", input, "-vn", "-af", `${af}print_format=json`, "-f", "null", "-"], { cwd: root, encoding: "utf8" });
+  return JSON.parse(stderr.slice(stderr.lastIndexOf("{"), stderr.lastIndexOf("}") + 1));
+};
+const level = (raw, out) => {
+  const first = loudnormJson(raw, "loudnorm=I=-14:TP=-1.5:");
+  const limiter = limiterCeiling(first);
+  const pre = limiter === null ? "" : `alimiter=limit=${(10 ** (limiter / 20)).toFixed(4)}:attack=5:release=50:level=false,`;
+  const m = limiter === null ? first : loudnormJson(raw, `${pre}loudnorm=I=-14:TP=-1.5:`);
+  const target = loudnessTarget(m);
+  const norm = `loudnorm=I=${target}:TP=-1.5:LRA=20:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true:`;
+  const check = loudnormJson(raw, pre + norm);
+  if (check.normalization_type !== "linear") throw new Error(`loudnorm fell back to ${check.normalization_type}`);
+  run("ffmpeg", ["-v", "error", "-y", "-i", raw, "-c:v", "copy", "-af", (pre + norm).replace(/:$/, ""), "-ar", "48000", "-c:a", "aac", "-b:a", "256k", out]);
+  return { measured: { input_i: first.input_i, input_tp: first.input_tp }, limiter, target, output: { i: check.output_i, tp: check.output_tp } };
+};
 
 const renderOne = async (n) => {
   const found = rows.find((r) => r.number === n);
@@ -56,7 +76,11 @@ const renderOne = async (n) => {
   const short = path.join(dir, "short.mp4");
   const share = path.join(dir, "share.mp4");
   console.log(`[${n}] rendering`);
-  run("npx", ["remotion", "render", "src/index.ts", "Series", short, `--props=${propsFile}`, "--log=error"]);
+  const raw = path.join(dir, "raw.mp4");
+  run("npx", ["remotion", "render", "src/index.ts", "Series", raw, `--props=${propsFile}`, "--log=error"]);
+  const loudness = level(raw, short);
+  unlinkSync(raw);
+  console.log(`[${n}] loudness ${loudness.measured.input_i} LUFS, ${loudness.measured.input_tp} dBTP -> ${loudness.target} LUFS${loudness.limiter !== null ? ` (peaks limited to ${loudness.limiter} dBFS)` : ""}`);
 
   const seconds = Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", short]).trim());
   const kbps = shareBitrate(seconds);
@@ -76,7 +100,7 @@ const renderOne = async (n) => {
   );
   files[`${outBase}/${name}/short.mp4`] = shaAbs(short);
   files[`${outBase}/${name}/share.mp4`] = shaAbs(share);
-  const manifest = { hexagram: n, ...(special ? { special } : {}), rendered: new Date().toISOString(), commit, clean, seconds, shareKbps: kbps, props, files };
+  const manifest = { hexagram: n, ...(special ? { special } : {}), rendered: new Date().toISOString(), commit, clean, seconds, shareKbps: kbps, loudness, props, files };
   writeFileSync(path.join(dir, "manifest.json"), `${JSON.stringify(manifest, null, 1)}\n`);
   mkdirSync(records, { recursive: true });
   copyFileSync(path.join(dir, "manifest.json"), path.join(records, `${record}.json`));

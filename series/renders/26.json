@@ -1,10 +1,10 @@
 {
  "hexagram": 26,
- "rendered": "2026-09-27T16:41:45.673Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 32.021333,
- "shareKbps": 5618,
+ "rendered": "2026-09-30T04:11:52.570Z",
+ "commit": "d93375d5db3eddd0a89cf0668db1b506214fee32",
+ "clean": true,
+ "seconds": 33.984,
+ "shareKbps": 5286,
  "props": {
   "hexagram": {
    "number": 26,
@@ -25,12 +25,12 @@
   "music": "local/music/pick14-lofi-synthwave.mp3",
   "musicStart": 8.059,
   "drop": 15.654,
-  "hook": "Years of practice, nobody’s seen it?",
+  "hook": "Fighting the same battle every day?",
   "meaning": [
-   "Great Accumulation\nsays: go public.",
-   "Don’t eat\nat home."
+   "Great Accumulation\nsays: curb force.",
+   "Stop what drives\nthe damage."
   ],
-  "question": "What have you\nbeen keeping in?",
+  "question": "What feeds\nthe trouble?",
   "plates": [
    "assets/yilin/stipple-26-37.webp",
    "assets/yilin/stipple-26-59.webp"
@@ -38,7 +38,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Store up strength,\nthen use it.",
+   "text": "CURB THE URGE,\nNOT JUST THE DAMAGE.",
    "trigrams": [
     {
      "zh": "山",
@@ -53,7 +53,7 @@
     "mark": [
      4
     ],
-    "finding": "THE MOUNTAIN HOLDS HEAVEN IN.",
+    "finding": "LINE 5: A GELDED BOAR KEEPS ITS TUSKS.\nTHE FORCE IS HELD, NOT LOST.",
     "master": {
      "zh": "為畜之主",
      "en": "Master of Accumulation"
@@ -77,7 +77,7 @@
   "assets/3d/endcard-join-111001-9b-ref.mp4": "723ab10aac618226f91cc5c6941c691e732e5bcb0c7d987845a7c6fc30ee7e07",
   "assets/yilin/stipple-26-37.webp": "176c1a5d781f56ff50b606673e6b3b1e2e2772be92b7055271b8f3c70f2ad976",
   "assets/yilin/stipple-26-59.webp": "92569c84693651c98592f53787113d15a959670ff8afd022464036e1232c8361",
-  "out/series/26-da-chu/short.mp4": "28daba9675311ce543f76ed77fc3dfa9c136a401fc6a0fca7415408db74e4b20",
-  "out/series/26-da-chu/share.mp4": "87a46c5efd004fd61960dae0e86c0f728dbaaafceb47537f2f9c2674634e3914"
+  "out/series/26-da-chu/short.mp4": "1fe83275f0b2c7f9632d4d14eb359608bab0f950bde163eee0d0ed3d8214fa2e",
+  "out/series/26-da-chu/share.mp4": "4ecbddd455f2c4480d5f2673223dadd4ca01f76b51d053d7f7684c9d4d1babc2"
  }
 }

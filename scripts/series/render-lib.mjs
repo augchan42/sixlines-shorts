@@ -96,3 +96,22 @@ export const renderAll = async (numbers, renderOne) => {
 // named by its manifest's render time and the commit it was rendered from.
 export const versionDir = (series, name, manifest) =>
   `${series}/versions/${name}/${manifest.rendered.replace(/\.\d+Z$/, "Z").replaceAll(":", "-")}-${manifest.commit.slice(0, 7)}`;
+
+// Loudness: every short at one level, by one gain, so its own mix is kept (the user, 2026-09-30,
+// on 7: "sound is a bit low for some reason?"; the 64 then measured -17.3 to -6.9 LUFS, most over
+// 0 dBTP). -14 LUFS and -1.5 dBTP, as Reels and YouTube play. `m` is loudnorm's first-pass JSON.
+export const SERIES_LUFS = -14;
+const TP = -1.5;
+// Where a short's gain would push its peaks past TP, a limiter first holds them at this many dBFS
+// (half a dB spare for the true peak); null when there is room.
+export const limiterCeiling = (m) => {
+  const gain = SERIES_LUFS - Number(m.input_i);
+  return Number(m.input_tp) + gain <= TP ? null : Math.round((TP - gain - 0.5) * 10) / 10;
+};
+// The level loudnorm's linear mode can reach: the series level, or lower if the peaks would pass
+// TP (to a tenth, and a tenth below that, or loudnorm falls back to dynamic mode, as found
+// on the explainers, 2026-09-27).
+export const loudnessTarget = (m) => {
+  const room = Math.round((Number(m.input_i) + TP - Number(m.input_tp)) * 10) / 10;
+  return room >= SERIES_LUFS ? SERIES_LUFS : Math.round((room - 0.1) * 10) / 10;
+};
