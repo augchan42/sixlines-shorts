@@ -17,6 +17,8 @@ import bookendKun from "../series/bookend/02.json";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
 import { Guide, type GuideProps } from "./templates/Guide";
 import guideWangbi from "../series/specials/guide-wangbi.props.json";
+import { TalkingHead, type TalkingHeadProps } from "./templates/TalkingHead";
+import urizenQian6 from "../series/specials/urizen-qian6.props.json";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
 import { ReadoutKey, readoutKeyFrames, type ReadoutKeyProps } from "./templates/ReadoutKey";
 import { Series, seriesFrames } from "./templates/Series";
@@ -142,6 +144,17 @@ export const Root: React.FC = () => (
       fps={FPS}
       durationInFrames={1}
       calculateMetadata={({ props }: { props: GuideProps }) => ({ durationInFrames: props.frames })}
+    />
+    {/* Urizen's talking head on Qian's top line; blender/urizen.py renders the head. */}
+    <Composition
+      id="TalkingHead"
+      component={TalkingHead}
+      defaultProps={urizenQian6 as TalkingHeadProps}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={1}
+      calculateMetadata={({ props }: { props: TalkingHeadProps }) => ({ durationInFrames: props.frames })}
     />
     <Composition
       id="ReadoutKey"

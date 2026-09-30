@@ -16,9 +16,17 @@ mostly black with some polygon lines ... do it minimal. Don't try to force thing
 Blender's good at." So the default backdrop is neon: black, Blake's sun as a thin amber polygon
 outline behind the head, a faint cyan wire geodesic sphere, neon rim light. The first backdrop
 (the dusk sky of triangles, sun disc, rays, clouds) is kept as --backdrop dusk.
+
+Talking: --props series/specials/urizen-qian6.props.json (scripts/guide-props.mjs) renders the
+frames of a short to --out's folder as 0001.png ...: the jaw opens with the voice (props `jaw`,
+the beard turning with it), the camera pushes in slowly, and the sun outline goes out when he
+has said "Withdraw?" (marks e7). Frames stop at the close's flicker, which covers the rest.
+  Blender -b --factory-startup --python-exit-code 1 -P blender/urizen.py -- \
+    --out out/urizen/qian6/ --props series/specials/urizen-qian6.props.json [--preview] [--frames 1-300]
 """
 
 import argparse
+import json
 import math
 import os
 import random
@@ -47,6 +55,8 @@ def parse():
     p.add_argument("--out", required=True)
     p.add_argument("--preview", action="store_true")
     p.add_argument("--backdrop", default="neon", choices=["neon", "dusk"])
+    p.add_argument("--props")
+    p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
 
 
@@ -239,6 +249,7 @@ def neon(glow):
     geo.rotation_euler = (0.3, 0.2, 0.1)
     put(geo, glow)
     wire(geo, 0.025, emission("geodesic", "#30e0ff", 0.35))
+    return halo
 
 
 def main():
@@ -253,14 +264,15 @@ def main():
     scene.world = world
     glow, ink = metal.collection("glow"), metal.collection("ink")
     rnd = random.Random(11)
+    halo = None
     if args.backdrop == "dusk":
         backdrop(glow, ink)
     else:
-        neon(glow)
+        halo = neon(glow)
     # No eyeballs (the user: 'with eyes looks [wrong]. Less is more'): the sockets under the
     # brow are enough.
-    head(ink)
-    hair_and_beard(ink, rnd)
+    face, _ = head(ink)
+    beard = hair_and_beard(ink, rnd)
 
     # A warm key from the front left and above, the sun's rim from behind, a cool fill right.
     lights = [("key", 3.2, "#ffd8b0", (55, 0, -35)), ("rim", 5.0, "#ff9a50", (-70, 0, 15)), ("fill", 0.9, "#5a7ab0", (70, 0, 60))]
@@ -290,9 +302,43 @@ def main():
     scene.render.resolution_x, scene.render.resolution_y = (540, 960) if args.preview else (1080, 1920)
     scene.view_settings.view_transform = "Standard"
     scene.render.image_settings.file_format = "PNG"
-    scene.render.filepath = os.path.abspath(args.out)
+    scene.render.filepath = os.path.abspath(args.out) + ("/" if args.out.endswith("/") else "")
     os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
-    bpy.ops.render.render(write_still=True)
+    if args.props:
+        talk(scene, args, face, beard, halo, co)
+        bpy.ops.render.render(animation=True)
+    else:
+        bpy.ops.render.render(write_still=True)
+
+
+OPEN = 0.7  # the jaw's widest, as a share of the shape key's (0.24 rad): a full turn reads as a yawn
+
+
+def talk(scene, args, face, beard, halo, camera):
+    """Keys a short's frames from its props: frame f of the short is Blender's frame f + 1."""
+    props = json.load(open(args.props))
+    fps = 30
+    last = props["marks"]["close"] + 7  # the ivory close covers the head from here
+    scene.render.fps = fps
+    lo, hi = (int(x) for x in args.frames.split("-")) if args.frames else (1, last)
+    scene.frame_start, scene.frame_end = lo, min(hi, last)
+    key = face.data.shape_keys.key_blocks["open"]
+    for f, v in enumerate(props["jaw"][:last]):
+        key.value = OPEN * v
+        key.keyframe_insert("value", frame=f + 1)
+        beard.rotation_euler.x = 0.24 * OPEN * v
+        beard.keyframe_insert("rotation_euler", index=0, frame=f + 1)
+    # A slow push-in over the whole short, eased at both ends.
+    camera.keyframe_insert("location", index=1, frame=1)
+    camera.location.y += 0.9
+    camera.keyframe_insert("location", index=1, frame=last)
+    # The sun outline goes out at once when "Withdraw?" ends.
+    if halo:
+        strength = halo.data.materials[0].node_tree.nodes["Emission"].inputs["Strength"]
+        off = props["marks"]["e7"] + 1
+        for frame, value in ((off - 1, 4.0), (off, 0.0)):
+            strength.default_value = value
+            strength.keyframe_insert("default_value", frame=frame)
 
 
 if __name__ == "__main__":

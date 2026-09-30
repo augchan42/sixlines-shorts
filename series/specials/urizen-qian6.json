@@ -3,9 +3,8 @@
   "voices": {
     "urizen": {
       "provider": "elevenlabs",
-      "voiceId": "WdZjiN0nNcik2LBjOHiv",
-      "name": "David - Raspy and Soft",
-      "note": "old, raspy British; tried for the Guide before the user's designed voice; a smoke-test choice for Urizen, not yet the user's"
+      "voiceId": "cPoqAvGWCPfCfyPMwe4z",
+      "note": "the user's pick, 2026-09-30 ('try this voice id for urizen'); audition of David, Anthony Brownstone and Bill in out/voice/urizen-audition"
     },
     "guide": {
       "provider": "elevenlabs",
@@ -34,7 +33,8 @@
     {
       "voice": "guide",
       "text": "The I Ching. Qián, top line: the dragon that went too high. There is regret.",
-      "say": "The I Ching. Chyen, top line: the dragon that went too high. There is regret."
+      "say": "The I Ching. Chyen, top line: the dragon that went too high. There is regret.",
+      "pause": 0.9
     },
     {
       "voice": "guide",
@@ -47,7 +47,8 @@
     {
       "voice": "urizen",
       "text": "Withdraw?",
-      "direction": "baffled disbelief; the sun outline goes out at once"
+      "direction": "baffled disbelief; the sun outline goes out at once",
+      "pause": 1.1
     }
   ],
   "onScreen": {
@@ -77,5 +78,33 @@
     "sfxFrom": 4,
     "sfxVolume": 0.35
   },
-  "review": "Astra (gpt-6.1-sol, high), docs/research/2026-09-30-codex-urizen-qian6.md: change; Opus agreed with every change, so round 1 converged."
+  "review": "Astra (gpt-6.1-sol, high), docs/research/2026-09-30-codex-urizen-qian6.md: change; Opus agreed with every change, so round 1 converged.",
+  "head": {
+    "voice": "urizen",
+    "render": "out/urizen/qian6/####.png",
+    "note": "blender/urizen.py --props series/specials/urizen-qian6.props.json renders the head with this jaw",
+    "video": "local/urizen/qian6.mp4"
+  },
+  "marks": [
+    {
+      "name": "hexagram",
+      "beat": 4,
+      "word": "Chyen,"
+    },
+    {
+      "name": "top",
+      "beat": 4,
+      "word": "top"
+    },
+    {
+      "name": "quote",
+      "beat": 5,
+      "word": "advance,"
+    },
+    {
+      "name": "withdraw",
+      "beat": 7,
+      "word": "Withdraw?"
+    }
+  ]
 }

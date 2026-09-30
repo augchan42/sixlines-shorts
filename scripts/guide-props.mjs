@@ -4,6 +4,9 @@
 // frames it is spoken on (from the takes' character timings), and each mark in the spec the frame
 // its word starts; b<n> and e<n> mark each line's start and end, `close` the close's flicker. Copies the takes to public/local/voice/<name>/ and writes
 // series/specials/<name>[-b1-3].props.json.
+// A line's `pause` replaces the gap before it. With spec.head ({voice}), the lines in that voice
+// move a talking head's jaw: `jaw` has its opening (0 shut, 1 open) on every frame, from the
+// letters as spoken (vowels open, m/b/p shut, other letters half), eased over two frames.
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
@@ -20,8 +23,10 @@ const bare = (w) => w.toLowerCase().replace(/[^a-z0-9-]/g, "");
 
 mkdirSync(path.join(root, "public/local/voice", name), { recursive: true });
 const beats = [];
+const jaw = [];
 let clock = lead;
 for (let n = lo; n <= hi; n++) {
+  if (n > lo && spec.narration[n - 1].pause != null) clock += spec.narration[n - 1].pause - gap;
   const nn = String(n).padStart(2, "0");
   const a = JSON.parse(readFileSync(path.join(root, "out/voice", name, `${nn}.json`), "utf8"));
   const src = `local/voice/${name}/${nn}.mp3`;
@@ -37,7 +42,13 @@ for (let n = lo; n <= hi; n++) {
   });
   if (w) words.push(w);
   const end = clock + a.character_end_times_seconds.at(-1);
-  beats.push({ n, src, from: F(clock), to: F(end), words });
+  const voice = spec.narration[n - 1].voice;
+  if (spec.head && voice === spec.head.voice)
+    a.characters.forEach((c, i) => {
+      const open = /[aeiouy]/i.test(c) ? 1 : /[mbp]/i.test(c) ? 0 : /[a-z]/i.test(c) ? 0.45 : 0.1;
+      for (let f = F(clock + a.character_start_times_seconds[i]); f < F(clock + a.character_end_times_seconds[i]); f++) jaw[f] = open;
+    });
+  beats.push({ n, src, from: F(clock), to: F(end), words, ...(voice ? { voice } : {}) });
   clock = end + gap;
 }
 const marks = {};
@@ -54,6 +65,9 @@ for (const m of spec.marks) {
 marks.close = F(clock - gap + tail);
 const withClose = spec.close && !range;
 const frames = withClose ? marks.close + 7 + F(close) : marks.close;
+// Silent frames shut; each frame the mean of itself and the one before, so the jaw eases.
+const raw = Array.from({ length: frames }, (_, f) => jaw[f] ?? 0);
+const jawOut = spec.head ? { video: spec.head.video, jaw: raw.map((v, f) => +((v + (raw[f - 1] ?? 0)) / 2).toFixed(2)) } : {};
 const out = path.join(root, "series/specials", `${name}${range ? `-b${range}` : ""}.props.json`);
-writeFileSync(out, JSON.stringify({ frames, beats, marks, ...(withClose ? { close: spec.close } : {}) }, null, 1) + "\n");
+writeFileSync(out, JSON.stringify({ frames, beats, marks, ...jawOut, ...(withClose ? { close: spec.close } : {}) }, null, 1) + "\n");
 console.log(`${path.relative(root, out)}: ${frames} frames (${(frames / fps).toFixed(1)} s)`, marks);
