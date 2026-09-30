@@ -1,5 +1,5 @@
 import { loadFont as loadMontserrat } from "@remotion/google-fonts/Montserrat";
-import { AbsoluteFill, Audio, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Audio, Easing, OffthreadVideo, Sequence, staticFile, useCurrentFrame } from "remotion";
 import { fonts } from "../lib/fonts";
 import { IconClose, loadGoudy, OUT, Static } from "./Bookend";
 import type { GuideWord } from "./Guide";
@@ -10,6 +10,10 @@ import type { GuideWord } from "./Guide";
 // typed in ivory, the Guide narrator's in the Guide's blue; green labels as the Guide's; the
 // hexagram's top line turns amber when the narrator names it (amber marks the line to look at).
 // scripts/guide-props.mjs writes the props, the head's jaw included.
+// When the narrator takes over, the head eases into a framed entry card, middle left, and the
+// hexagram draws on beside it; on "Withdraw?" it cuts back to full screen (Astra's brainstorm,
+// docs/research/2026-10-01-codex-urizen-motion.md, after the user: 'Urizen with the guide is a bit
+// flat, i feel like it needs some more movement or a transition between urizen and the narrator').
 
 export type TalkingHeadProps = {
   frames: number;
@@ -24,6 +28,28 @@ const sans = loadMontserrat("normal", { weights: ["700", "800"], subsets: ["lati
 const SFX = (name: string) => staticFile(`local/sfx/guide/${name}.wav`);
 const glow = (c: string, r = 8) => `drop-shadow(0 0 ${r / 2}px ${c}) drop-shadow(0 0 ${r * 2}px ${c}99)`;
 const t01 = (f: number, a: number, d: number) => Math.min(1, Math.max(0, (f - a) / d));
+const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
+
+// The entry card: the head scaled by CARD.k about the top left, so the face (FACE, in the video)
+// sits in the middle of the card's rectangle; eased in over CARD.ease frames.
+const CARD = { x: 40, y: 360, w: 620, h: 880, k: 0.75, ease: 40 };
+const FACE = { x: 640, y: 820 };
+const Head: React.FC<{ video: string; t: number }> = ({ video, t }) => {
+  const k = lerp(1, CARD.k, t);
+  const tx = lerp(0, CARD.x + CARD.w / 2 - CARD.k * FACE.x, t);
+  const ty = lerp(0, CARD.y + CARD.h / 2 - CARD.k * FACE.y, t);
+  const [x, y, w, h] = [lerp(0, CARD.x, t), lerp(0, CARD.y, t), lerp(1080, CARD.w, t), lerp(1920, CARD.h, t)];
+  return (
+    <>
+      <AbsoluteFill style={{ clipPath: `inset(${y}px ${1080 - x - w}px ${1920 - y - h}px ${x}px)` }}>
+        <AbsoluteFill style={{ transformOrigin: "0 0", transform: `translate(${tx}px, ${ty}px) scale(${k})` }}>
+          <OffthreadVideo src={staticFile(video)} muted />
+        </AbsoluteFill>
+      </AbsoluteFill>
+      {t > 0 && <div style={{ position: "absolute", left: x, top: y, width: w, height: h, border: `4px solid ${C.green}`, opacity: t, filter: glow(C.green, 5), boxSizing: "border-box" }} />}
+    </>
+  );
+};
 
 // Each letter at its share of its word's spoken frames.
 const lettersOf = (words: GuideWord[]) =>
@@ -75,19 +101,31 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({ video, beats, marks: m
   const cue = (name: string, at: number, volume: number) => <Sequence key={`${name}${at}`} from={Math.round(at)} layout="none"><Audio src={SFX(name)} volume={volume} /></Sequence>;
   return (
     <AbsoluteFill style={{ background: "black" }}>
-      <OffthreadVideo src={staticFile(video)} muted />
+      <Head video={video} t={f >= m.b7 ? 0 : Easing.inOut(Easing.sin)(t01(f, m.b4, CARD.ease))} />
       {/* A dark band under the captions, so they read over the hair. */}
       <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.75) 0px, rgba(0,0,0,0.5) 300px, transparent 420px)" }} />
       {f >= current.from - 2 && f < m.close && <Typed f={f} words={current.words} colour={guide ? C.blue : C.ivory} />}
-      {f < m.hexagram && <Label f={f} at={m.b1 + 20} x={X} y={1330} lines={["SUBJECT: URIZEN", "OCCUPATION:", "MEASURING"]} />}
-      <Label f={f} at={m.hexagram} x={X} y={TOP - 64} lines={["乾 QIÁN"]} />
-      <Hexagram f={f} at={m.hexagram} top={m.top} />
-      <Label f={f} at={m.top} x={X + BAR + 18} y={TOP - 4} lines={["TOP"]} colour={C.amber} size={26} />
-      {f >= m.quote && (
-        <div style={{ position: "absolute", left: X, top: TOP + 330, width: 380, color: C.green, filter: glow(C.green, 5) }}>
-          <div style={{ fontFamily: fonts.serif, fontSize: 44, letterSpacing: 4 }}>知進而不知退</div>
-          <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 22, lineHeight: 1.3, letterSpacing: 1.5, marginTop: 8 }}>KNOWS HOW TO ADVANCE,<br />NOT HOW TO WITHDRAW</div>
-        </div>
+      <Label f={f} at={m.b1 + 20} x={X} y={1330} lines={f < m.b4 ? ["SUBJECT: URIZEN"] : []} />
+      {f >= m.b4 && f < m.b7 && (
+        <>
+          <Label f={f} at={m.b4 + CARD.ease} x={CARD.x} y={CARD.y - 48} lines={["ENTRY: URIZEN"]} size={28} />
+          <Label f={f} at={m.hexagram} x={X} y={TOP - 64} lines={["乾 QIÁN"]} />
+          <Hexagram f={f} at={m.hexagram} top={m.top} />
+          <Label f={f} at={m.top} x={X + BAR + 18} y={TOP - 4} lines={["TOP"]} colour={C.amber} size={26} />
+          {f >= m.quote && (
+            <div style={{ position: "absolute", left: X, top: TOP + 330, width: 380, color: C.green, filter: glow(C.green, 5) }}>
+              <div style={{ fontFamily: fonts.serif, fontSize: 44, letterSpacing: 4 }}>知進而不知退</div>
+              <div style={{ fontFamily: sans, fontWeight: 800, fontSize: 22, lineHeight: 1.3, letterSpacing: 1.5, marginTop: 8 }}>KNOWS HOW TO ADVANCE,<br />NOT HOW TO WITHDRAW</div>
+            </div>
+          )}
+          {/* On "makes rules": a leader from the card to what he does. */}
+          {f >= m.rules && (
+            <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
+              <line x1={CARD.x + CARD.w} y1={960} x2={X - 10} y2={1000} stroke={C.green} strokeWidth={3} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t01(f, m.rules, 5)} style={{ filter: glow(C.green, 5) }} />
+            </svg>
+          )}
+          <Label f={f} at={m.rules + 4} x={X} y={985} lines={["OCCUPATION:", "MEASURING"]} />
+        </>
       )}
       {ivory && close && <IconClose tagline={close.tagline} site={close.site} />}
 
