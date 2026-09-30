@@ -1,10 +1,24 @@
 {
  "hexagram": 62,
- "rendered": "2026-09-27T19:24:04.464Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T12:18:28.140Z",
+ "commit": "bb7db7c1e99f73d61a2f282c52864e9ffcf566d9",
  "clean": false,
- "seconds": 24.149333,
- "shareKbps": 7491,
+ "seconds": 25.749333,
+ "shareKbps": 7017,
+ "loudness": {
+  "before": {
+   "lufs": -13.98,
+   "phoneLufs": -15.77,
+   "dbtp": 0.04
+  },
+  "gain": -0.4,
+  "limiter": -3.3,
+  "after": {
+   "lufs": -14.75,
+   "phoneLufs": -16.55,
+   "dbtp": -3.23
+  }
+ },
  "props": {
   "hexagram": {
    "number": 62,
@@ -28,7 +42,7 @@
   "hook": "Big plan stuck for months?",
   "meaning": [
    "The Small says:\nno big moves.",
-   "Small done well\nends well."
+   "Give small things\nextra care."
   ],
   "question": "What small thing\ncan you do?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/bird-62-112bpm-12b-j481fo.mp4": "0d73562d57a7eaa134d816edb5b4a5345d0afcc2ef8ccefdbf7de6c442a357b1",
   "assets/yilin/stipple-62-26.webp": "46c613ac3a4c167190ee5ffafec404b4f05929159b8686e6c6ce6b3a0cbe94a9",
   "assets/yilin/stipple-62-59.webp": "3ff3c3f7f58718c3c59e908416ec5cadf21a1c576e79da331131a859da9dbe6f",
-  "out/series/62-xiao-guo/short.mp4": "f22f98bcb3f45ed9149bf9c4301adc822152cf134ac245f8031b4b577ad21e12",
-  "out/series/62-xiao-guo/share.mp4": "ac5c00f7e2365673f72f5b1f589bb204c1e6a7e6cb32fbea798ba58f4dfde633"
+  "out/series/62-xiao-guo/short.mp4": "4158632af62da30fcceb75e9a900e91fb4b79a007094fffdcb5c0cf0ffd5fc80",
+  "out/series/62-xiao-guo/share.mp4": "1b8abad595f1203d206d6b1021bbc4580fbf14eab1367f93c3e7c2cb14f92420"
  }
 }
