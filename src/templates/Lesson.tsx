@@ -5,6 +5,7 @@ import { fonts } from "../lib/fonts";
 import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
 import { DiagramPage, Plate, type DiagramShow, type PlateMarks } from "../scenes/Diagram";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
+import { diagramCues } from "../lib/diagram";
 import { cameraStart } from "../lib/lessonCam";
 import { readBeforeCut } from "../lib/lessonRead";
 import { boxEdges, DIM, DOES, glow, Line, LINE_H, LINE_W, LogRowView, lineZ, PHOSPHOR, Readout, slabsOf, type Trigram } from "../scenes/Readout";
@@ -401,6 +402,8 @@ export const Lesson: React.FC<LessonProps> = (p) => {
                     { key: "sweep", from: 0, frames: FPS, src: s.sweep, volume: p.mix?.sweep ?? 0.7 },
                   ]
                 : []),
+              // The Leibniz lesson's diagram: its sounds on the drawing's own times.
+              ...(x.page.show?.diagram ? diagramCues(x.page.show.diagram).map((c, i) => ({ key: `${c.sound}-${i}`, from: Math.round(c.at * FPS), frames: c.sound === "relay" ? 10 : Math.round(1.5 * FPS), src: s[c.sound], volume: p.mix?.[c.sound] ?? (c.sound === "relay" ? 0.8 : c.sound === "sweep" ? 0.7 : 0.5) })) : []),
               ...(x.page.show?.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
               ...(last && !x.page.chapter ? [{ key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 }] : []),
             ];

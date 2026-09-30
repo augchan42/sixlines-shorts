@@ -13,10 +13,8 @@
   "chatter": 0.7,
   "warble": 0.5,
   "winddown": 0.6,
-  "music": 0,
-  "musicUp": [
-   "end"
-  ]
+  "music": 0.3,
+  "relay": 0.55
  },
  "cues": true,
  "beacon": "level",
@@ -26,10 +24,6 @@
   "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
  },
  "endcardRate": 0.75,
- "endMusic": {
-  "at": 80.06,
-  "lead": 2.75
- },
  "caption": "The diagram of the 64 hexagrams that a Jesuit in Peking sent Leibniz in 1701, read as binary: Kun 0, Qian 63.",
  "chapters": [
   {
@@ -270,5 +264,6 @@
    ]
   }
  ],
- "review": "gpt-6.1-sol, 2026-09-30: docs/research/2026-09-30-codex-leibniz-spec.md. All its copy changes taken except page 15, which keeps '64 SITUATIONS': after Wang Bi the lesson turns from patterns to reading them, and it is the approved treatment's last line."
+ "review": "gpt-6.1-sol, 2026-09-30: docs/research/2026-09-30-codex-leibniz-spec.md. All its copy changes taken except page 15, which keeps '64 SITUATIONS': after Wang Bi the lesson turns from patterns to reading them, and it is the approved treatment's last line.",
+ "soundNote": "2026-09-30, the user: 'can we make the sound a bit more interesting somehow?' The Mountain under the whole lesson at 0.3, up to full on the first 3 s, the chapter pages and the end card; the machine sounds follow the diagram (src/lib/diagram.ts diagramCues)."
 }

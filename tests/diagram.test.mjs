@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { bitsOf, linesOf, ringAngle, squareCell, treeNode, value } from "../src/lib/diagram.ts";
+import { BIT_TIMES, bitsOf, diagramCues, linesOf, ringAngle, squareCell, treeNode, value } from "../src/lib/diagram.ts";
 
 // The order of the diagram Bouvet sent Leibniz (docs/superpowers/specs/2026-09-30-leibniz-diagram-design.md),
 // checked against the woodcut and docs/research/2026-09-30-leibniz-diagram.md.
@@ -58,4 +58,24 @@ test("the lesson's copy has none of the banned words", () => {
   const script = JSON.parse(readFileSync(new URL("../series/explainers/leibniz-lesson.json", import.meta.url), "utf8"));
   const copy = JSON.stringify(script.chapters).toLowerCase();
   for (const w of BANNED) assert.ok(!copy.includes(w), w);
+});
+
+// Sounds tied to what the diagram does (the user, 2026-09-30: "can we make the sound a bit more
+// interesting somehow?").
+test("a count clicks once per step, after a sweep and a warble as the camera arrives", () => {
+  const cues = diagramCues({ count: [0, 31], at: 5, secs: 10 });
+  const clicks = cues.filter((c) => c.sound === "relay");
+  assert.equal(clicks.length, 31);
+  assert.ok(clicks.every((c) => c.at > 5 && c.at < 15));
+  assert.deepEqual(cues.filter((c) => c.sound !== "relay").map((c) => c.sound), ["sweep", "warble"]);
+});
+
+test("Bi's page clicks as each digit is written; the tree clicks per stage", () => {
+  const bits = diagramCues({ kind: "bits", v: 2, weights: true, fadePlate: true }).filter((c) => c.sound === "relay");
+  assert.equal(bits.length, 6);
+  assert.deepEqual(bits.map((c) => c.at), BIT_TIMES(1.4));
+  assert.equal(diagramCues({ kind: "bits", v: 41 }).filter((c) => c.sound === "relay").length, 0);
+  assert.equal(diagramCues({ kind: "tree", at: 1, morph: 7.5 }).filter((c) => c.sound === "relay").length, 7);
+  // A tree already grown (the next page) makes no sound.
+  assert.equal(diagramCues({ kind: "tree", at: -10, dim: 0.35 }).length, 0);
 });

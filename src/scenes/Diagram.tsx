@@ -1,6 +1,6 @@
 import { Easing, Img, interpolate, staticFile } from "remotion";
 import { fonts } from "../lib/fonts";
-import { bitsOf, linesOf, ringAngle, squareCell, treeNode } from "../lib/diagram";
+import { BIT_TIMES, bitsOf, linesOf, ringAngle, squareCell, TREE_STAGE, treeNode } from "../lib/diagram";
 import { project, type Cam, type V } from "./Flight";
 import { DIM, glow, PHOSPHOR } from "./Readout";
 
@@ -144,8 +144,8 @@ const BigHex: React.FC<{ v: number; sec: number; from: number; weights?: boolean
   const y = LIFT.y + 60 * (1 - k);
   const lineY = (i: number) => y + (2.5 - i) * gap;
   const lines = linesOf(v);
-  const read = (i: number) => fade(sec, from + 2 + i * 0.4, 0.3);
-  const total = fade(sec, from + 2 + 6 * 0.4 + 0.3);
+  const read = (i: number) => fade(sec, BIT_TIMES(from)[i], 0.3);
+  const total = fade(sec, BIT_TIMES(from)[5] + 0.7);
   const left = LIFT.x - (6 * PLACE.step + 200) / 2;
   const amber = { fontFamily: fonts.pixel, color: AMBER, textShadow: `0 0 10px ${AMBER}` };
   return (
@@ -273,7 +273,7 @@ export const DiagramPage: React.FC<{ d: DiagramShow; sec: number; secs: number; 
       </>
     );
   }
-  if (kind === "tree") return <Tree sec={sec} start={d.at ?? 1} stage={0.9} morph={d.morph} dim={d.dim} />;
+  if (kind === "tree") return <Tree sec={sec} start={d.at ?? 1} stage={TREE_STAGE} morph={d.morph} dim={d.dim} />;
   if (kind === "square") {
     const row = d.row ?? 2;
     const col = d.col ?? 5;
