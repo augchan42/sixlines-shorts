@@ -50,3 +50,25 @@ the shapes of the blacks, chosen by hand, and his figures. A procedural scene ge
 the draughtsmanship. The nearest code-only step up is to design the black shapes (model shadows
 as shapes, not only light thresholds) and hand-place key lines; hand-drawn Grease Pencil strokes
 would need the user or an artist to draw them.
+
+## Painted and faceted (later the same evening)
+
+The user sent a Heavy Metal 282 cover (a painted creature and heroine) and asked "Is something like
+this possible". Answer given: the light and atmosphere yes; a creature or figure needs a sculpted
+model (not code-drawn); the painter's hand no. `painted` tried it: lit textured rock, volumetric
+clouds and ground fog, warm key and teal fill, gold dividers, anisotropic Kuwahara as an oil-paint
+filter. First render: murky; the clouds read as dark smoke and the Kuwahara barely shows.
+
+The user then: "maybe we need to come up with a style that's best suited for Blender. Is there
+something Pareto optimal possible? ... if hand-drawn isn't possible, then we'll stick to polygons
+and do something fun with those. Or maybe something like vectors with lots of triangles ... like a
+talking head with lots of vectors and triangles."
+
+`faceted`: everything triangulated and flat shaded, one colour per face; the sky a field of
+jittered triangles, each coloured from the dusk ramp at its height (a face-corner colour
+attribute); clouds as heaps of jittered icospheres; 14-sided sun; six-sided dividers; no ink.
+First render: the sky and clouds work; the mesas and floor need stronger facets and more light.
+
+Why faceted is the Pareto choice for Blender: it is geometry and light, which Blender renders
+exactly, in seconds (EEVEE), and it animates cleanly (camera moves, rigs, shape keys); the look is
+deliberately stylised, so nothing is measured against a hand. Crude modelling reads as style.
