@@ -1,10 +1,24 @@
 {
  "hexagram": 16,
- "rendered": "2026-09-27T11:02:36.350Z",
- "commit": "a75acdf43fca418b4757cc391488859daacb683e",
- "clean": false,
- "seconds": 26.325333,
- "shareKbps": 6861,
+ "rendered": "2026-09-30T05:41:34.677Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 27.925333,
+ "shareKbps": 6460,
+ "loudness": {
+  "before": {
+   "lufs": -13.79,
+   "phoneLufs": -15.61,
+   "dbtp": 0.04
+  },
+  "gain": -0.6,
+  "limiter": -3.1,
+  "after": {
+   "lufs": -14.75,
+   "phoneLufs": -16.55,
+   "dbtp": -3.42
+  }
+ },
  "props": {
   "hexagram": {
    "number": 16,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "One clear voice\nmoves the crowd.",
+   "text": "GIVE IT DIRECTION.\nTRUST PEOPLE TO JOIN.",
    "trigrams": [
     {
      "zh": "雷",
@@ -77,7 +91,7 @@
   "assets/3d/endcard-snap-000100-9b-ref.mp4": "633deebf26db8bf799a9ea5aa11a2154fcb47260c544b893c90f24b654ae8a70",
   "assets/yilin/stipple-16-40.webp": "c5e9a7daf6a7f1a3b20369a93b7a0ddd2e45d1308074c100f32672f7b012f6db",
   "assets/yilin/stipple-16-33.webp": "c6102e095b68f6d07884ea75b427fbea61679e9a888da5cf9bd50609d7ea609e",
-  "out/series/16-yu/short.mp4": "ec328c9338628e4ebd134bbb5ad60e81342305300a8bc9d89ccae393b21b1a76",
-  "out/series/16-yu/share.mp4": "5a36b59982fb5adff7f81adf335896063278388235b6323ce06bc8521110df22"
+  "out/series/16-yu/short.mp4": "36996cc84bdaa67e770fd40a91eccf5d155c139318b27deace9e48f9c9910340",
+  "out/series/16-yu/share.mp4": "ee97188014c29f02ca788b8156d763d50a0c7a5cab73aea7cc592cb7210673be"
  }
 }

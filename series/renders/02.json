@@ -1,10 +1,24 @@
 {
  "hexagram": 2,
- "rendered": "2026-09-27T09:39:16.278Z",
- "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
- "clean": false,
- "seconds": 30.08,
- "shareKbps": 5989,
+ "rendered": "2026-09-30T05:15:17.433Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 32.085333,
+ "shareKbps": 5606,
+ "loudness": {
+  "before": {
+   "lufs": -12.7,
+   "phoneLufs": -15.83,
+   "dbtp": 0.11
+  },
+  "gain": -0.1,
+  "limiter": -3.3,
+  "after": {
+   "lufs": -13.36,
+   "phoneLufs": -16.49,
+   "dbtp": -3.25
+  }
+ },
  "props": {
   "hexagram": {
    "number": 2,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Lead and get lost.\nFollow and arrive.",
+   "text": "Lead and lose the way.\nFollow and find it.",
    "trigrams": [
     {
      "zh": "地",
@@ -70,7 +84,7 @@
   "assets/3d/endcard-join-000000-9b-ref.mp4": "9577f655217566ebf4f01159b6a8ab20919f1c441896d6743600f787c93da155",
   "assets/yilin/stipple-2-57.webp": "076581bfd3a780cfc92f6630bab1ebd3264035ed5df069e0862f3ea689c45d81",
   "assets/yilin/stipple-2-32.webp": "e9d8fc07b3a0b76bdb1e70056f9c9386c74137c12c6c9f189a53757c3af66a77",
-  "out/series/02-kun/short.mp4": "a73486cf39b60fd35f59cd32f529e28039f10dc81cdde31d04997afa1f5acf89",
-  "out/series/02-kun/share.mp4": "1a08fad06ceb96251e97174abad5af80a8a75c884359a5715b2cadfbba389fef"
+  "out/series/02-kun/short.mp4": "6c7ee832b9717c3e85ff986cfe54e9c2340e847387449d18751b7868fb1e77a3",
+  "out/series/02-kun/share.mp4": "9d0e77aedd335636e9be4386cda5cd7433dfe92f817832e45ed65f78a26c285c"
  }
 }

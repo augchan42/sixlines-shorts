@@ -1,10 +1,24 @@
 {
  "hexagram": 6,
- "rendered": "2026-09-28T01:27:06.884Z",
- "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
- "clean": false,
+ "rendered": "2026-09-30T05:23:19.273Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
  "seconds": 35.242667,
  "shareKbps": 5092,
+ "loudness": {
+  "before": {
+   "lufs": -10.09,
+   "phoneLufs": -12.91,
+   "dbtp": 0.08
+  },
+  "gain": -3.6,
+  "limiter": null,
+  "after": {
+   "lufs": -13.73,
+   "phoneLufs": -16.58,
+   "dbtp": -3.14
+  }
+ },
  "props": {
   "hexagram": {
    "number": 6,
@@ -53,7 +67,7 @@
     "mark": [
      5
     ],
-    "finding": "AT THE TOP: THE BELT IS TAKEN.\nWON BY FIGHTING, NO RESPECT.",
+    "finding": "AT THE TOP: A BELT WON, THEN LOST.\nWON BY FIGHTING, NO RESPECT.",
     "timed": true
    },
    "beats": 19
@@ -74,7 +88,7 @@
   "assets/3d/endcard-flip-010111-9b-ref.mp4": "c7db1c20f36347cc4918e71ed1fe5cc2e440198709979a01a641f7cba1fc3cae",
   "assets/yilin/stipple-6-41.webp": "df591f0c1f471f6c007bc35f3a92b1c4daa48b0469eda3cd1220cc09e077f4ba",
   "assets/yilin/stipple-6-24.webp": "6727ae190f99ba272f86ec7ee5f380c8e470c91b46db4ffccf14b09c70d77903",
-  "out/series/06-song/short.mp4": "ee8575cbf22d736720074e460948ba6c8ca4868fa6367d0e3df286c7f864db6e",
-  "out/series/06-song/share.mp4": "4e66eaa2a3d1c5de75efee8c268ff1787394b930f98884ea8d678a811c68a677"
+  "out/series/06-song/short.mp4": "780a1619e9093bc403b5a6477404e62dbaa5dc9658761c7f9d7e283732c5c310",
+  "out/series/06-song/share.mp4": "e864655a6bf2c655338084c21a7011dd8354bf5d8d29b59100faaf2ff5977a38"
  }
 }

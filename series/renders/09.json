@@ -1,10 +1,24 @@
 {
  "hexagram": 9,
- "rendered": "2026-09-28T01:28:35.359Z",
- "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
- "clean": false,
+ "rendered": "2026-09-30T05:27:11.718Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
  "seconds": 33.045333,
  "shareKbps": 5440,
+ "loudness": {
+  "before": {
+   "lufs": -7.62,
+   "phoneLufs": -9.3,
+   "dbtp": 0.07
+  },
+  "gain": -7.2,
+  "limiter": null,
+  "after": {
+   "lufs": -14.86,
+   "phoneLufs": -16.54,
+   "dbtp": -5.39
+  }
+ },
  "props": {
   "hexagram": {
    "number": 9,
@@ -27,10 +41,10 @@
   "drop": 14.4,
   "hook": "Everything’s ready, nothing happens?",
   "meaning": [
-   "Small Taming\nsays: not yet.",
-   "Work on yourself\nmeanwhile."
+   "Small Taming\nsays: look closer.",
+   "Not every path\nis blocked."
   ],
-  "question": "What can you\nwork on now?",
+  "question": "Where is there\nroom to move?",
   "plates": [
    "assets/yilin/stipple-9-40.webp",
    "assets/yilin/stipple-9-47.webp"
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Don’t force a start.\nUse the time to prepare.",
+   "text": "TAKE THE OPEN PATH.\nDON’T FORCE THE BLOCKED ONE.",
    "trigrams": [
     {
      "zh": "風",
@@ -53,7 +67,7 @@
     "mark": [
      0
     ],
-    "finding": "AT THE BASE: HELD, IT RETURNS.\nIT DOESN'T FORCE IT. NO BLAME.",
+    "finding": "> LINE 1 ADVANCES. LINE 4 WELCOMES IT.\nITS OWN PATH IS OPEN.",
     "timed": true
    },
    "beats": 19
@@ -74,7 +88,7 @@
   "assets/3d/endcard-snap-111011-9b-ref.mp4": "aec575d05a158a19e7335ca1e1f272479f4283598061973d756b25d6a2cd2ade",
   "assets/yilin/stipple-9-40.webp": "0c3e7f9ab23871a6196b03c8b532ef462c06dcc5b9cd5f39d5c38d4a32cb082a",
   "assets/yilin/stipple-9-47.webp": "0b671ebe587c5ce56c7359c91602094123ab1d669c557688fe9d7e86a7340784",
-  "out/series/09-xiao-chu/short.mp4": "fdb1694bd501bdf9e52bc7c26e1e4a45501b502989d1434a7b94dbd8a6ec0bcb",
-  "out/series/09-xiao-chu/share.mp4": "fad4a7a6de06700ea15043b82d68fff8fde546595f6e75c13744a8696fa2c2c7"
+  "out/series/09-xiao-chu/short.mp4": "7115c219b69b3e6c2be9fb454045c9ec67873b8b4eccaf31cb2f9a84a2ab0608",
+  "out/series/09-xiao-chu/share.mp4": "afa8d51f1f6c28d9f4e5e97a03029fa4ec21c76f713ce171bd4dda873b94d517"
  }
 }

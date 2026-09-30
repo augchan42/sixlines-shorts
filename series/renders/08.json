@@ -1,10 +1,24 @@
 {
  "hexagram": 8,
- "rendered": "2026-09-27T11:07:47.838Z",
- "commit": "97dc1dff22dcf69ee572fa0cf3b3edd4e3fadd4b",
- "clean": false,
- "seconds": 25.088,
- "shareKbps": 7206,
+ "rendered": "2026-09-30T05:25:06.264Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 26.645333,
+ "shareKbps": 6777,
+ "loudness": {
+  "before": {
+   "lufs": -12.14,
+   "phoneLufs": -14.1,
+   "dbtp": 0.15
+  },
+  "gain": -2.2,
+  "limiter": -1.6,
+  "after": {
+   "lufs": -14.58,
+   "phoneLufs": -16.53,
+   "dbtp": -3.25
+  }
+ },
  "props": {
   "hexagram": {
    "number": 8,
@@ -27,8 +41,8 @@
   "drop": 12.522,
   "hook": "Keep saying you’ll join later?",
   "meaning": [
-   "Holding Together\nsays: join now.",
-   "Late arrivals\nmiss out."
+   "Holding Together\nsays: choose well.",
+   "Then stop\nputting it off."
   ],
   "question": "Who’s waiting\nfor your yes?",
   "plates": [
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Choose who you\nstand beside",
+   "text": "Walk over.\nStand beside them.",
    "beats": 15,
    "clip": "assets/3d/character-8-115bpm-15b-mgcsk.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/character-8-115bpm-15b-mgcsk.mp4": "18c315b86fbbdb1d940f9aed82d0a95e82a604ef7f16c1f815e24be1cbad296c",
   "assets/yilin/stipple-8-35.webp": "c3023b3859b6aadf5cf3fc44ee3744d3903094f5fcd3194e19d13b071b63318b",
   "assets/yilin/stipple-8-50.webp": "261c28bf7742088dd5dcf08c23768d5a54d1171a12d44c5f1215a3077f5d0e7e",
-  "out/series/08-bi/short.mp4": "afa1484574ec97ad210e9352489ce28f9ea52f99f48eee964b16fb34cbcc01d7",
-  "out/series/08-bi/share.mp4": "909d4ebfb265626f92ca7fbbff88d3b7441db8fd9d810314a04b46b3d073973e"
+  "out/series/08-bi/short.mp4": "d3349115d1a8d06145951b3520c4e650a550af78755324e620555b9ed1d6d763",
+  "out/series/08-bi/share.mp4": "71907c1b003adc5c681c20f8045007fbdbd5bd4e8acba37a1e44aa5304ba40c4"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 12,
- "rendered": "2026-09-27T15:48:56.051Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 29.482667,
- "shareKbps": 6112,
+ "rendered": "2026-09-30T05:33:12.627Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 31.296,
+ "shareKbps": 5751,
+ "loudness": {
+  "before": {
+   "lufs": -6.7,
+   "phoneLufs": -8.67,
+   "dbtp": 1.42
+  },
+  "gain": -7.8,
+  "limiter": null,
+  "after": {
+   "lufs": -14.57,
+   "phoneLufs": -16.54,
+   "dbtp": -5.83
+  }
+ },
  "props": {
   "hexagram": {
    "number": 12,
@@ -28,7 +42,7 @@
   "hook": "Everything stuck and no one’s talking?",
   "meaning": [
    "Standstill says:\nhold back.",
-   "Don’t take\nthe bad deal."
+   "Don't let them\nbuy you."
   ],
   "question": "What will you\nturn down?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/acts-12-100bpm-12b-12ta1xi.mp4": "5ab0b986a6da15cf3d556bba2fd6768c6bb2822dffa2ff5b8bd99504cfac5cf2",
   "assets/yilin/stipple-12-11.webp": "812d0d69446a0b18580ee311edaf2e82de32693dd0b2d0d1f26daf25e7f3f90b",
   "assets/yilin/stipple-12-10.webp": "26e05f7d1202373fce1fe291a48c023425b38e16d196d84e808658057b8237d8",
-  "out/series/12-pi/short.mp4": "7ec7d59cb22fb86c0a79967207116776a0658056c03ffa520703d1779354edf0",
-  "out/series/12-pi/share.mp4": "a0bd9f908bf4e1c598ac2e5c5bbe4bfe9bc3985f4958b5364c9bc821e76d4c07"
+  "out/series/12-pi/short.mp4": "32c853f0d387e6d84c1508ad1ddf0c220c79ea3407c9da7259063eb173e0fe16",
+  "out/series/12-pi/share.mp4": "966ea31257f58b4d97410e8fe15adf0424307dd20c480dbf6fd6bd8e8e4ccb14"
  }
 }

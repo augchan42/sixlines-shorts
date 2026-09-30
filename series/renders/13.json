@@ -1,10 +1,24 @@
 {
  "hexagram": 13,
- "rendered": "2026-09-27T15:54:20.920Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 31.68,
- "shareKbps": 5680,
+ "rendered": "2026-09-30T05:35:21.571Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 33.493333,
+ "shareKbps": 5365,
+ "loudness": {
+  "before": {
+   "lufs": -10.18,
+   "phoneLufs": -12.8,
+   "dbtp": 0.08
+  },
+  "gain": -3.7,
+  "limiter": null,
+  "after": {
+   "lufs": -13.92,
+   "phoneLufs": -16.57,
+   "dbtp": -3.12
+  }
+ },
  "props": {
   "hexagram": {
    "number": 13,
@@ -54,7 +68,7 @@
      1,
      4
     ],
-    "finding": "2 AND 5 ANSWER, BOTH CENTRED.",
+    "finding": "> LINE 2 ANSWERS ONLY TO LINE 5.\nFELLOWSHIP STOPS AT ITS OWN CIRCLE.",
     "master": {
      "zh": "二為同人之主",
      "en": "Line two, master of Fellowship"
@@ -78,7 +92,7 @@
   "assets/3d/endcard-flip-101111-9b-ref.mp4": "65207ab9984b1bb3c160df2c7fa58e415d045aa8adbbca06e4935255e9809bc6",
   "assets/yilin/stipple-13-43.webp": "6d8ef2f13b0d0f0f2ec457a54e480f05e1bafdff4924b8427c04b569c4064cea",
   "assets/yilin/stipple-13-47.webp": "fd0570026d29fb5cb5df7c1431de9b5c3903b8d4fbaf9866e9f3517f385e17b5",
-  "out/series/13-tong-ren/short.mp4": "e33e4b0b472daf1450fd3cc562e6708c383944ed3ca2e1c3af71b915b9326e76",
-  "out/series/13-tong-ren/share.mp4": "b0ddc9348275c41f69f8310e9089f401ee1e3b84c4421093bd6cfb710f78a725"
+  "out/series/13-tong-ren/short.mp4": "af0f4157929432553a921f8eb7b40757ce3a61f461e250b07d05841110b24dba",
+  "out/series/13-tong-ren/share.mp4": "1f58b73fbee9b090b6555f168f147a3a700c8feb772804009f97988238d477cc"
  }
 }

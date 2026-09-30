@@ -1,10 +1,24 @@
 {
  "hexagram": 11,
- "rendered": "2026-09-27T15:43:38.366Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 27.584,
- "shareKbps": 6542,
+ "rendered": "2026-09-30T05:30:58.048Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 29.589333,
+ "shareKbps": 6090,
+ "loudness": {
+  "before": {
+   "lufs": -10.13,
+   "phoneLufs": -13.47,
+   "dbtp": 0.26
+  },
+  "gain": -2.9,
+  "limiter": -1,
+  "after": {
+   "lufs": -13.28,
+   "phoneLufs": -16.52,
+   "dbtp": -3.58
+  }
+ },
  "props": {
   "hexagram": {
    "number": 11,
@@ -27,7 +41,7 @@
   "drop": 13.529,
   "hook": "Good times, now what?",
   "meaning": [
-   "Peace says:\nkeep it moving.",
+   "Peace says:\nkeep talking.",
    "Peace is contact,\nnot a vacation."
   ],
   "question": "Who haven’t you\nreached lately?",
@@ -59,7 +73,7 @@
   "assets/3d/acts-11-90bpm-12b-1nf1f06.mp4": "ef5ad403633d98568f82ba6d88266df27ee5289618ee77e12a974fc47571befd",
   "assets/yilin/stipple-11-37.webp": "949b51430080c0c4ce2532b9d8a330e0cb676e5ad8b4b24efbf3423e7a939cf5",
   "assets/yilin/stipple-11-61.webp": "254ffcd95b0eefd4bf6fed02e7ecde3aaabd83b5fe31508a78d13b830574f64a",
-  "out/series/11-tai/short.mp4": "1314882a318fd683b263403b89f337613317f9ed7fd5b7393aefcaff28423b24",
-  "out/series/11-tai/share.mp4": "c295edfe1be545d7329f4492d90b10f0754c088515410b8bf07ac84ad1207bc6"
+  "out/series/11-tai/short.mp4": "896a6ebfa7c329daa8095b0f07c1477893d61192fee002d9985d94d87289daef",
+  "out/series/11-tai/share.mp4": "7f5500914fd12bcc69d69d5f1ec64aa79cfae39046a29db9ed07f26f80be13d8"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 5,
- "rendered": "2026-09-27T15:27:50.081Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 29.461333,
- "shareKbps": 6117,
+ "rendered": "2026-09-30T05:21:14.688Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 31.253333,
+ "shareKbps": 5759,
+ "loudness": {
+  "before": {
+   "lufs": -7.52,
+   "phoneLufs": -8.88,
+   "dbtp": 1.72
+  },
+  "gain": -7.6,
+  "limiter": null,
+  "after": {
+   "lufs": -15.15,
+   "phoneLufs": -16.52,
+   "dbtp": -5.65
+  }
+ },
  "props": {
   "hexagram": {
    "number": 5,
@@ -25,12 +39,12 @@
   "music": "local/music/pick09-synthwave.mp3",
   "musicStart": 91.223,
   "drop": 14.4,
-  "hook": "Stuck waiting for your moment?",
+  "hook": "Refreshing your inbox again?",
   "meaning": [
-   "Waiting says:\nwait well.",
+   "Waiting says:\ndon't rush in.",
    "Eat, rest,\nstay ready."
   ],
-  "question": "How can you\nwait well today?",
+  "question": "What are you\nforcing too early?",
   "plates": [
    "assets/yilin/stipple-5-41.webp",
    "assets/yilin/stipple-5-34.webp"
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "In the rain?\nEat, rest, wait.",
+   "text": "Rest before\nthe hard part.",
    "beats": 16,
    "clip": "assets/3d/character-5-100bpm-16b-1nj2qu2.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/character-5-100bpm-16b-1nj2qu2.mp4": "785cd2da205a9324370a2bf582fb3c3c717795f728b28a1e0d18d79d3cab5347",
   "assets/yilin/stipple-5-41.webp": "a5267dd9b8da456822b834a0efcf96ea843c8b4c810dd638ce6f67ca0cc5746b",
   "assets/yilin/stipple-5-34.webp": "c3aaa1314f79ef6d31322d609a09ebb1b9625d5509b25e27a4c99f76bd068c18",
-  "out/series/05-xu/short.mp4": "610727a4dbcdcfc5403bf0d803af00bf4e1e69c3f343fc09c60c6a09ee0bae6a",
-  "out/series/05-xu/share.mp4": "e1d5e2fddaf804c2380571d929ae417ad83b46bfe90e31c0c0c46c2e91c8676a"
+  "out/series/05-xu/short.mp4": "e50a0080fa1f272bdfc1fe3afab2c061a1948bfe71f5d43d91c48d8d08b0f7ff",
+  "out/series/05-xu/share.mp4": "35b6d89b7403e8acbc2ba73073400fba6d253326e6071819de659ee2943d7ad6"
  }
 }

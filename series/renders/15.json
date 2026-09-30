@@ -1,10 +1,24 @@
 {
  "hexagram": 15,
- "rendered": "2026-09-27T15:59:49.532Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
- "clean": false,
- "seconds": 30.08,
- "shareKbps": 5989,
+ "rendered": "2026-09-30T05:39:36.707Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 32.085333,
+ "shareKbps": 5606,
+ "loudness": {
+  "before": {
+   "lufs": -12.7,
+   "phoneLufs": -15.83,
+   "dbtp": 0.11
+  },
+  "gain": -0.1,
+  "limiter": -3.3,
+  "after": {
+   "lufs": -13.36,
+   "phoneLufs": -16.49,
+   "dbtp": -3.25
+  }
+ },
  "props": {
   "hexagram": {
    "number": 15,
@@ -28,7 +42,7 @@
   "hook": "Always needing credit?",
   "meaning": [
    "Modesty says:\nfinish quietly.",
-   "No one stops\nthe quiet ones."
+   "Do the work.\nSkip the boasting."
   ],
   "question": "What could you\ndo without credit?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/acts-15-90bpm-12b-rldbo9.mp4": "53d6b57836eb43cc96dead77e62132e0ea72e89d79f10f4f7cc860081e315177",
   "assets/yilin/stipple-15-6.webp": "48eb229ea2c291d7c2ee5d03e6cec7a27d87a01946414e1801ada132198a748d",
   "assets/yilin/stipple-15-25.webp": "dc0ec24787ad859da5cc0c7f4aaaa3754d6442248ff8aa07a030ffad774d9654",
-  "out/series/15-qian/short.mp4": "c3b0a9d9c88b0801f50740caab88561e230c9116cbc1cb0e161effaf4d8c556c",
-  "out/series/15-qian/share.mp4": "4a378e7684b627889caa22bb2d36cb7526bb768e76e62aa4dbe79a246c09693e"
+  "out/series/15-qian/short.mp4": "23b335cfbd647572e4c202c03ccd6c315e96f299d474f6d5318dcb1e1492f357",
+  "out/series/15-qian/share.mp4": "62d6926cea1235e22ff3915cf51a9ee9f6abf5ca149b43cef678150efdcdd73c"
  }
 }

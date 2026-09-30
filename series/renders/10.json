@@ -1,10 +1,24 @@
 {
  "hexagram": 10,
- "rendered": "2026-09-27T15:16:45.577Z",
- "commit": "b308de7230b1aaebb8909b89bbd76414e0f4ab21",
- "clean": false,
- "seconds": 27.562667,
- "shareKbps": 6547,
+ "rendered": "2026-09-30T05:28:56.302Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 29.056,
+ "shareKbps": 6204,
+ "loudness": {
+  "before": {
+   "lufs": -9.71,
+   "phoneLufs": -12.5,
+   "dbtp": 0.38
+  },
+  "gain": -4,
+  "limiter": null,
+  "after": {
+   "lufs": -13.75,
+   "phoneLufs": -16.56,
+   "dbtp": -3.11
+  }
+ },
  "props": {
   "hexagram": {
    "number": 10,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Near a temper,\nstay steady inside.",
+   "text": "KEEP YOUR HEAD,\nEVEN WHEN THEY LOSE THEIRS.",
    "trigrams": [
     {
      "zh": "天",
@@ -53,7 +67,7 @@
     "mark": [
      1
     ],
-    "finding": "LINE 2: A LEVEL PATH.\nSTEADY INSIDE, IT GOES WELL.",
+    "finding": "> LINE 2: A LEVEL PATH.\nCENTRED; IT DOES NOT UNSETTLE ITSELF.",
     "timed": true
    },
    "beats": 22
@@ -74,7 +88,7 @@
   "assets/3d/endcard-flip-110111-9b-ref.mp4": "72576e4d1e7424db4f873d94476c6151901d827ee639e932c27b44dd11c6ad85",
   "assets/yilin/stipple-10-62.webp": "0011d203a0ebbbe8c6032cb1ecc0b7e905e37f86125fbc30dda58a15309f3538",
   "assets/yilin/stipple-10-34.webp": "1f78f2bc7aa48c614f0c6843c66c34c1f2b6da4df03e0fe53ae6cf1c49c8b2ac",
-  "out/series/10-lu/short.mp4": "92665475f4359612c004453f23ee4fb085132d398f10dd18b6b16ab5ba8f1bc3",
-  "out/series/10-lu/share.mp4": "de1e78d03dc86d19c33ccdbb5c9f75ce27be19ed41882ef3acbaa7408dd40031"
+  "out/series/10-lu/short.mp4": "5f262baa474cc02fd8885ce9ccae8f324ce5f240556a0eca2c352526ab2ec159",
+  "out/series/10-lu/share.mp4": "133c97214e4ff20c17e77c4677f736aade775e63f66f36608c61bc683a659422"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 1,
- "rendered": "2026-09-27T09:40:37.552Z",
- "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
- "clean": false,
- "seconds": 26.517333,
- "shareKbps": 6810,
+ "rendered": "2026-09-30T05:13:17.832Z",
+ "commit": "bb1724d44b99f391179b168cd727e42c4e9061f8",
+ "clean": true,
+ "seconds": 28.288,
+ "shareKbps": 6376,
+ "loudness": {
+  "before": {
+   "lufs": -7.94,
+   "phoneLufs": -10.85,
+   "dbtp": 0.53
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -13.61,
+   "phoneLufs": -16.56,
+   "dbtp": -4.61
+  }
+ },
  "props": {
   "hexagram": {
    "number": 1,
@@ -28,7 +42,7 @@
   "hook": "Waiting for a sign to start?",
   "meaning": [
    "The Creative\nsays: begin.",
-   "No conditions.\nJust mean it."
+   "Then keep going,\nevery day."
   ],
   "question": "What would you\nstart today?",
   "plates": [
@@ -70,7 +84,7 @@
   "assets/3d/endcard-flip-111111-9b-ref.mp4": "765f1a30c0dce328e036cd2365c9b4096eb4b114eba1317e797c284853e7def9",
   "assets/yilin/stipple-1-11.webp": "8a4a752284b0667154921dd98554db79544c0d8256b0d4b305ec586c2f2f0d98",
   "assets/yilin/stipple-1-27.webp": "4970c5edcb4dcc62a2508757b0c71534b6eeb1fe846a6756573882f7af528161",
-  "out/series/01-qian/short.mp4": "1b5de3a740359b9b80373f17b669c9ffae7ccc3b53bcba02d7baf7c119ef4950",
-  "out/series/01-qian/share.mp4": "5d2c50b1bd900476e1405e9c80da2b414e45f5dc419e6fc5756447cbb59fea32"
+  "out/series/01-qian/short.mp4": "a4676ffe5ea4b14aec21a81b925d1c43af46458702afff432d7036229d4ef1e9",
+  "out/series/01-qian/share.mp4": "a8f3a1996755b63bc815d0ec74d4cbe86f0876bb80d82808fe9ca617d00cdc9e"
  }
 }
