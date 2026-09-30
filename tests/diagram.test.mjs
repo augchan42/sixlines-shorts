@@ -82,3 +82,13 @@ test("Bi's page clicks as each digit is written; the tree chatters as it grows",
   // A tree already grown (the next page) makes no sound.
   assert.equal(diagramCues({ kind: "tree", at: -10, dim: 0.35 }).length, 0);
 });
+
+// The guqin (xserra, Freesound 161908, CC BY 4.0; scripts/guqin-note.mjs) sounds twice: on Shao
+// Yong and on Wang Bi, and the caption credits it.
+test("the guqin sounds on Shao Yong's and Wang Bi's pages, and the caption credits it", () => {
+  const script = JSON.parse(readFileSync(new URL("../series/explainers/leibniz-lesson.json", import.meta.url), "utf8"));
+  const pages = script.chapters.flatMap((c) => c.pages ?? []);
+  assert.deepEqual(pages.filter((p) => p.show?.guqin).map((p) => p.q), ["WHOSE ORDER IS IT", "AND WANG BI"]);
+  assert.match(script.guqin, /^local\/sfx\/guqin-[abc]\.wav$/);
+  assert.ok(script.caption.includes("Guqin: xserra, Freesound, CC BY 4.0"));
+});

@@ -46,6 +46,8 @@ type Show = {
   diagram?: DiagramShow;
   // The beacon on a page that isn't an approach (the Leibniz lesson's second flight round the ring).
   beacon?: boolean;
+  // A guqin note as the answer starts (the Leibniz lesson: Shao Yong, and Wang Bi).
+  guqin?: boolean;
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -68,9 +70,9 @@ export type LessonProps = {
   // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
   // answer types (docs/research/2026-09-27-nostromo-screens.md).
   look?: "flight";
-  sfx?: { hum: string; beacon?: string; relay: string; printer: string; sweep?: string; chatter?: string; warble?: string; winddown?: string };
+  sfx?: { hum: string; beacon?: string; relay: string; printer: string; sweep?: string; chatter?: string; warble?: string; winddown?: string; guqin?: string };
   // Volumes (0..1) of the music and each sound, where a script sets them.
-  mix?: { music?: number; hum?: number; beacon?: number; relay?: number; printer?: number; ticks?: number; sweep?: number; chatter?: number; warble?: number; winddown?: number; musicUp?: ("start" | "chapters" | "end")[] };
+  mix?: { music?: number; hum?: number; beacon?: number; relay?: number; printer?: number; ticks?: number; sweep?: number; chatter?: number; warble?: number; winddown?: number; guqin?: number; musicUp?: ("start" | "chapters" | "end")[] };
 };
 
 const FPS = 30;
@@ -407,6 +409,7 @@ export const Lesson: React.FC<LessonProps> = (p) => {
                 : []),
               // The Leibniz lesson's diagram: its sounds on the drawing's own times.
               ...(x.page.show?.diagram ? diagramCues(x.page.show.diagram).map((c, i) => ({ key: `${c.sound}-${i}`, from: Math.round(c.at * FPS), frames: c.secs ? Math.round(c.secs * FPS) : c.sound === "relay" ? 10 : Math.round(1.5 * FPS), src: s[c.sound], volume: p.mix?.[c.sound] ?? (c.sound === "relay" ? 0.8 : c.sound === "sweep" ? 0.7 : c.sound === "chatter" ? 0.7 : 0.5) })) : []),
+              ...(x.page.show?.guqin ? [{ key: "guqin", from: x.aAt, frames: 3 * FPS, src: s.guqin, volume: p.mix?.guqin ?? 0.8 }] : []),
               ...(x.page.show?.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
               ...(last && !x.page.chapter ? [{ key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 }] : []),
             ];

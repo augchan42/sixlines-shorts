@@ -18,13 +18,15 @@
  },
  "cues": true,
  "beacon": "level",
+ "guqin": "local/sfx/guqin-b.wav",
+ "guqinNote": "one note of xserra's Guqin-1 (Freesound 161908, CC BY 4.0), cut by scripts/guqin-note.mjs; b, the G that rings ~3 s. The user, 2026-09-30: 'of the guqin sounds i like the xserra one the most', then 'ok recut with this sound'",
  "music": {
   "file": "pick13-synthwave-the-mountain.mp3",
   "start": 0.023,
   "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
  },
  "endcardRate": 0.75,
- "caption": "The diagram of the 64 hexagrams that a Jesuit in Peking sent Leibniz in 1701, read as binary: Kun 0, Qian 63.",
+ "caption": "The diagram of the 64 hexagrams that a Jesuit in Peking sent Leibniz in 1701, read as binary: Kun 0, Qian 63.\n\nGuqin: xserra, Freesound, CC BY 4.0",
  "chapters": [
   {
    "page": "THE OBJECT",
@@ -182,7 +184,8 @@
      "show": {
       "diagram": {
        "kind": "overview"
-      }
+      },
+      "guqin": true
      }
     },
     {
@@ -255,7 +258,8 @@
        "kind": "bits",
        "v": 41
       },
-      "hold": 4
+      "hold": 4,
+      "guqin": true
      }
     },
     {

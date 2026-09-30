@@ -71,6 +71,12 @@ const sfx = {
 if (script.look === "flight")
   for (const f of Object.values(sfx))
     if (!existsSync(pub(f))) makeSfx(path.basename(f, ".wav"), pub(f));
+// "guqin": a recorded note (scripts/guqin-note.mjs cuts it from a download), played on pages
+// whose show has `guqin`. Recorded, so never generated here.
+if (script.guqin) {
+  if (!existsSync(pub(script.guqin))) throw new Error(`${script.guqin} is missing: run node scripts/guqin-note.mjs`);
+  sfx.guqin = script.guqin;
+}
 
 // "endcardText": true plays the end card clip rendered without its tagline and site
 // (<clip>-notext.mp4, blender/endcard.py --no-text) and has Remotion draw them, on the timing
