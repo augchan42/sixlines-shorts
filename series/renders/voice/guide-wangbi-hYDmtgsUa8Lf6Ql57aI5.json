@@ -1,0 +1,130 @@
+{
+ "beats": {
+  "01": {
+   "text": "The I Ching. Sixty-four situations, with roots about three thousand years old.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.64,
+   "sha256": "93f4081720be5fa3ae830dbd672b18d0ea7c89eb5e717a39291670c1a66f3ea5",
+   "made": "2026-09-30T14:07:39.351Z"
+  },
+  "02": {
+   "text": "For centuries, people consulted it about the future.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.68,
+   "sha256": "5257e63d902082dd4c0d340708efb01b0e4e1d4039cc8a26635c5401ca99c16e",
+   "made": "2026-09-30T14:07:41.755Z"
+  },
+  "03": {
+   "text": "Wang Bi offered some reading instructions.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 2.8,
+   "sha256": "1b9fa2a96ec127bbdb3107352b651fb318adc412d0dec197c7b5d5b6171a80c8",
+   "made": "2026-09-30T14:07:43.552Z"
+  },
+  "04": {
+   "text": "He died young. His commentary became a standard for centuries.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.8,
+   "sha256": "af4403d51a682567d87b6f74d1a52481ceb1b2d572f92f522f197e86e6eab3de",
+   "made": "2026-09-30T14:07:46.103Z"
+  },
+  "05": {
+   "text": "Grasp the meaning. Then forget the image.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.68,
+   "sha256": "dc4220c900ba3001055b6688962938bfd220c3d724e04606c97355d52ec88c7f",
+   "made": "2026-09-30T14:07:48.248Z"
+  },
+  "06": {
+   "text": "Borrowing from Zhuangzi: an image is a fish trap. Catch the fish; put down the trap.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 6.88,
+   "sha256": "adb7f67cdbe63ca590b9a578bfa61bc469e7114eb7c645dc41da3919f814bf80",
+   "made": "2026-09-30T14:07:51.119Z"
+  },
+  "07": {
+   "text": "If the meaning is strength, why insist on a horse?",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.76,
+   "sha256": "a911a0e4a83506ccbae9c915abfbf13be15cbba5fb4e501bf802bee6e4e39db6",
+   "made": "2026-09-30T14:07:53.095Z"
+  },
+  "08": {
+   "text": "Six Lines reads it for judgment: what makes sense to do here.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.72,
+   "sha256": "1853ae57aa1c4e2f0e5819fbeccd7adf9744a121c1b0bafb1bcfeb0aa13e85ac",
+   "made": "2026-09-30T14:07:55.717Z"
+  },
+  "09": {
+   "text": "Recommended for: making decisions. Not recommended for: finding out what happens next.",
+   "model": "eleven_v4",
+   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 7.12,
+   "sha256": "30c68b7c54705403eb428a7928af723201d9227a30eff34342f6f03ce2d2ef44",
+   "made": "2026-09-30T14:07:59.000Z"
+  }
+ }
+}
