@@ -15,6 +15,8 @@ import { Bookend, bookendFrames, type BookendProps } from "./templates/Bookend";
 import { Demo, demoFrames, type DemoProps } from "./templates/Demo";
 import bookendKun from "../series/bookend/02.json";
 import { Gotchu, gotchuPlan } from "./templates/Gotchu";
+import { Guide, type GuideProps } from "./templates/Guide";
+import guideWangbi from "../series/specials/guide-wangbi-b1-3.props.json";
 import { Lesson, lessonFrames, type LessonProps } from "./templates/Lesson";
 import { ReadoutKey, readoutKeyFrames, type ReadoutKeyProps } from "./templates/ReadoutKey";
 import { Series, seriesFrames } from "./templates/Series";
@@ -129,6 +131,17 @@ export const Root: React.FC = () => (
       fps={FPS}
       durationInFrames={1}
       calculateMetadata={({ props }: { props: BookendProps }) => ({ durationInFrames: bookendFrames(props) })}
+    />
+    {/* The Guide-style Wang Bi short; scripts/guide-props.mjs writes its props. */}
+    <Composition
+      id="Guide"
+      component={Guide}
+      defaultProps={guideWangbi as GuideProps}
+      width={1080}
+      height={1920}
+      fps={FPS}
+      durationInFrames={1}
+      calculateMetadata={({ props }: { props: GuideProps }) => ({ durationInFrames: props.frames })}
     />
     <Composition
       id="ReadoutKey"

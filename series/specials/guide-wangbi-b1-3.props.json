@@ -1,0 +1,168 @@
+{
+ "frames": 514,
+ "beats": [
+  {
+   "n": 1,
+   "src": "local/voice/guide-wangbi/01.mp3",
+   "from": 42,
+   "to": 241,
+   "words": [
+    {
+     "text": "The",
+     "from": 42,
+     "to": 47
+    },
+    {
+     "text": "I",
+     "from": 52,
+     "to": 56
+    },
+    {
+     "text": "Ching.",
+     "from": 59,
+     "to": 83
+    },
+    {
+     "text": "Sixty-four",
+     "from": 92,
+     "to": 112
+    },
+    {
+     "text": "situations,",
+     "from": 116,
+     "to": 152
+    },
+    {
+     "text": "with",
+     "from": 155,
+     "to": 157
+    },
+    {
+     "text": "roots",
+     "from": 160,
+     "to": 169
+    },
+    {
+     "text": "about",
+     "from": 172,
+     "to": 181
+    },
+    {
+     "text": "three",
+     "from": 186,
+     "to": 191
+    },
+    {
+     "text": "thousand",
+     "from": 196,
+     "to": 210
+    },
+    {
+     "text": "years",
+     "from": 212,
+     "to": 220
+    },
+    {
+     "text": "old.",
+     "from": 222,
+     "to": 241
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "src": "local/voice/guide-wangbi/02.mp3",
+   "from": 262,
+   "to": 373,
+   "words": [
+    {
+     "text": "For",
+     "from": 262,
+     "to": 269
+    },
+    {
+     "text": "centuries,",
+     "from": 272,
+     "to": 301
+    },
+    {
+     "text": "people",
+     "from": 305,
+     "to": 310
+    },
+    {
+     "text": "consulted",
+     "from": 317,
+     "to": 329
+    },
+    {
+     "text": "it",
+     "from": 332,
+     "to": 334
+    },
+    {
+     "text": "about",
+     "from": 337,
+     "to": 344
+    },
+    {
+     "text": "the",
+     "from": 345,
+     "to": 346
+    },
+    {
+     "text": "future.",
+     "from": 349,
+     "to": 373
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "src": "local/voice/guide-wangbi/03.mp3",
+   "from": 394,
+   "to": 478,
+   "words": [
+    {
+     "text": "Wang",
+     "from": 394,
+     "to": 401
+    },
+    {
+     "text": "Bi",
+     "from": 403,
+     "to": 413
+    },
+    {
+     "text": "offered",
+     "from": 415,
+     "to": 425
+    },
+    {
+     "text": "some",
+     "from": 427,
+     "to": 430
+    },
+    {
+     "text": "reading",
+     "from": 432,
+     "to": 442
+    },
+    {
+     "text": "instructions.",
+     "from": 444,
+     "to": 478
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "b1": 42,
+  "b2": 262,
+  "b3": 394,
+  "grid": 92,
+  "years": 160,
+  "future": 349,
+  "wangbi": 394
+ }
+}

@@ -2,9 +2,14 @@
  "about": "A Guide-style short on Wang Bi (the user, 2026-09-30: \"can you help come up with a Wang Bi 'hitchhikers guide to the universe' style short? that might be fun.\"). A handheld book-device shows its entry on the I Ching in flat, cheerful animation; a narrator reads it dry. Our own device and lines: no DON'T PANIC, towels or Guide logo. Draft 2: Astra's revision (docs/research/2026-09-30-codex-guide-wangbi.md), ~93 words, ~40 s of speech.",
  "voice": {
   "provider": "ElevenLabs",
-  "voiceId": "WdZjiN0nNcik2LBjOHiv",
-  "name": "David",
-  "note": "Picked by the user 2026-09-30 (https://elevenlabs.io/voices/WdZjiN0nNcik2LBjOHiv): 'a classic nature narrator'. A synthetic voice: this short carries the AI-content label on YouTube and TikTok. Astra advises another voice: this one's marketing ('David', 'national treasure', 'classic nature narrator') invites an Attenborough comparison, and he objected publicly to AI copies of his voice in November 2024. The founder's call. Direction either way: plain, even pace; short pauses; no wonder or reverence, no emphasis announcing the jokes. The founder, 2026-09-30, after Astra's advice: 'Lets keep David for now.' Takes need a paid ElevenLabs plan: the API refuses library voices on the free plan (402 paid_plan_required), and free output has no commercial licence."
+  "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+  "name": "hitchiker's guide v1",
+  "note": "Designed by the user with ElevenLabs Voice Design, 2026-09-30, from a description of the register (a dry English reference-book reader), naming no one; the user on its first takes: 'love it.' Our own voice, so Astra's Attenborough concern about David no longer applies. Direction: plain, even pace; short pauses; no wonder or reverence, no emphasis announcing the jokes.",
+  "previous": {
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
+   "name": "David",
+   "note": "Picked by the user 2026-09-30 (https://elevenlabs.io/voices/WdZjiN0nNcik2LBjOHiv): 'a classic nature narrator'. A synthetic voice: this short carries the AI-content label on YouTube and TikTok. Astra advises another voice: this one's marketing ('David', 'national treasure', 'classic nature narrator') invites an Attenborough comparison, and he objected publicly to AI copies of his voice in November 2024. The founder's call. Direction either way: plain, even pace; short pauses; no wonder or reverence, no emphasis announcing the jokes. The founder, 2026-09-30, after Astra's advice: 'Lets keep David for now.' Takes need a paid ElevenLabs plan: the API refuses library voices on the free plan (402 paid_plan_required), and free output has no commercial licence. His takes: series/renders/voice/guide-wangbi-WdZjiN0nNcik2LBjOHiv.json."
+  }
  },
  "narration": [
   {
@@ -61,5 +66,38 @@
  "sources": {
   "mingxiang": "~/projects/chinese-classics-reference/zhouyi-lueli/text/04-mingxiang.md",
   "shaughnessy": "~/projects/chinese-classics-reference/shaugnessy/"
- }
+ },
+ "timing": {
+  "fps": 30,
+  "lead": 1.4,
+  "gap": 0.7,
+  "tail": 1.2,
+  "note": "lead: the device switches on before the first line; gap: silence between lines; tail: hold after the last."
+ },
+ "marks": [
+  {
+   "name": "grid",
+   "beat": 1,
+   "word": "Sixty-four",
+   "what": "the 64 hexagrams tile in"
+  },
+  {
+   "name": "years",
+   "beat": 1,
+   "word": "roots",
+   "what": "the age stamp"
+  },
+  {
+   "name": "future",
+   "beat": 2,
+   "word": "future",
+   "what": "the question mark"
+  },
+  {
+   "name": "wangbi",
+   "beat": 3,
+   "word": "Wang",
+   "what": "his name card"
+  }
+ ]
 }

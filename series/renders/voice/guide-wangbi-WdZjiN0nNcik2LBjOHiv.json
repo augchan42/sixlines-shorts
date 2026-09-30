@@ -3,21 +3,63 @@
   "01": {
    "text": "The I Ching. Sixty-four situations, with roots about three thousand years old.",
    "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
    "settings": {
     "stability": 0.5,
     "similarity_boost": 0.75,
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 6.64,
-   "sha256": "93f4081720be5fa3ae830dbd672b18d0ea7c89eb5e717a39291670c1a66f3ea5",
-   "made": "2026-09-30T14:07:39.351Z"
+   "seconds": 6.56,
+   "sha256": "655408d8e9dccda198955db0248899c6eb2b8e786f424f81c80a17fa326efa91",
+   "made": "2026-09-30T14:02:35.959Z"
   },
   "02": {
    "text": "For centuries, people consulted it about the future.",
    "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.92,
+   "sha256": "8126a4e287d350acb62205951784f79eb9762d516072d75b18315312d65e78e1",
+   "made": "2026-09-30T14:02:38.131Z"
+  },
+  "03": {
+   "text": "Wang Bi offered some reading instructions.",
+   "model": "eleven_v4",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 2.96,
+   "sha256": "66c7acac62326b5261b7ee839b3b1a2a184a403df9176404d6ac8a9b7644fa8e",
+   "made": "2026-09-30T14:02:39.941Z"
+  },
+  "04": {
+   "text": "He died young. His commentary became a standard for centuries.",
+   "model": "eleven_v4",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 4.96,
+   "sha256": "5adf1350b643a12bea90a0cbbaa8b1aee13e9b7753a51056bffc4bbb67c54d5b",
+   "made": "2026-09-30T14:02:42.375Z"
+  },
+  "05": {
+   "text": "Grasp the meaning. Then forget the image.",
+   "model": "eleven_v4",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
    "settings": {
     "stability": 0.5,
     "similarity_boost": 0.75,
@@ -25,27 +67,41 @@
     "use_speaker_boost": true
    },
    "seconds": 3.68,
-   "sha256": "5257e63d902082dd4c0d340708efb01b0e4e1d4039cc8a26635c5401ca99c16e",
-   "made": "2026-09-30T14:07:41.755Z"
+   "sha256": "a82d340a5103b48f68d295dad44d480fbfaa3476bb9b4b9bd2ca3505657756a7",
+   "made": "2026-09-30T14:02:44.393Z"
   },
-  "03": {
-   "text": "Wang Bi offered some reading instructions.",
+  "06": {
+   "text": "Borrowing from Zhuangzi: an image is a fish trap. Catch the fish; put down the trap.",
    "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
    "settings": {
     "stability": 0.5,
     "similarity_boost": 0.75,
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 2.8,
-   "sha256": "1b9fa2a96ec127bbdb3107352b651fb318adc412d0dec197c7b5d5b6171a80c8",
-   "made": "2026-09-30T14:07:43.552Z"
+   "seconds": 7.2,
+   "sha256": "f00e0bc35db18a657886e497a5c2043e4ee155e7d6686c7ee4f99588fb358c81",
+   "made": "2026-09-30T14:02:47.499Z"
   },
-  "04": {
-   "text": "He died young. His commentary became a standard for centuries.",
+  "07": {
+   "text": "If the meaning is strength, why insist on a horse?",
    "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
+   "settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0,
+    "use_speaker_boost": true
+   },
+   "seconds": 3.84,
+   "sha256": "ec3d7285b74363340f5a6abcec3706be98ba0fda679948ac6d01ddbe82597ae5",
+   "made": "2026-09-30T14:02:49.822Z"
+  },
+  "08": {
+   "text": "Six Lines reads it for judgment: what makes sense to do here.",
+   "model": "eleven_v4",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
    "settings": {
     "stability": 0.5,
     "similarity_boost": 0.75,
@@ -53,69 +109,13 @@
     "use_speaker_boost": true
    },
    "seconds": 4.8,
-   "sha256": "af4403d51a682567d87b6f74d1a52481ceb1b2d572f92f522f197e86e6eab3de",
-   "made": "2026-09-30T14:07:46.103Z"
-  },
-  "05": {
-   "text": "Grasp the meaning. Then forget the image.",
-   "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
-   "settings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0,
-    "use_speaker_boost": true
-   },
-   "seconds": 3.68,
-   "sha256": "dc4220c900ba3001055b6688962938bfd220c3d724e04606c97355d52ec88c7f",
-   "made": "2026-09-30T14:07:48.248Z"
-  },
-  "06": {
-   "text": "Borrowing from Zhuangzi: an image is a fish trap. Catch the fish; put down the trap.",
-   "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
-   "settings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0,
-    "use_speaker_boost": true
-   },
-   "seconds": 6.88,
-   "sha256": "adb7f67cdbe63ca590b9a578bfa61bc469e7114eb7c645dc41da3919f814bf80",
-   "made": "2026-09-30T14:07:51.119Z"
-  },
-  "07": {
-   "text": "If the meaning is strength, why insist on a horse?",
-   "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
-   "settings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0,
-    "use_speaker_boost": true
-   },
-   "seconds": 3.76,
-   "sha256": "a911a0e4a83506ccbae9c915abfbf13be15cbba5fb4e501bf802bee6e4e39db6",
-   "made": "2026-09-30T14:07:53.095Z"
-  },
-  "08": {
-   "text": "Six Lines reads it for judgment: what makes sense to do here.",
-   "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
-   "settings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0,
-    "use_speaker_boost": true
-   },
-   "seconds": 4.72,
-   "sha256": "1853ae57aa1c4e2f0e5819fbeccd7adf9744a121c1b0bafb1bcfeb0aa13e85ac",
-   "made": "2026-09-30T14:07:55.717Z"
+   "sha256": "7e6644c4e7e377d219e0b53b49fd039bc773a82735265509ce7381bf35d48d6c",
+   "made": "2026-09-30T14:02:52.268Z"
   },
   "09": {
    "text": "Recommended for: making decisions. Not recommended for: finding out what happens next.",
    "model": "eleven_v4",
-   "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+   "voiceId": "WdZjiN0nNcik2LBjOHiv",
    "settings": {
     "stability": 0.5,
     "similarity_boost": 0.75,
@@ -123,8 +123,8 @@
     "use_speaker_boost": true
    },
    "seconds": 7.12,
-   "sha256": "30c68b7c54705403eb428a7928af723201d9227a30eff34342f6f03ce2d2ef44",
-   "made": "2026-09-30T14:07:59.000Z"
+   "sha256": "43561c525c7c10b07547a9c0b2b584d709dcfc687dee4bf278c4e1da6b95ee43",
+   "made": "2026-09-30T14:02:54.898Z"
   }
  }
 }
