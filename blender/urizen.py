@@ -333,7 +333,11 @@ def hair_locks(coll, rnd, style):
     # The tail: hair converges a little above the beard's point, the two meeting at the end.
     hair = [(shape(u) - u * 0.03, u, TAIL + Vector((0, 0, 0.12)) + jit(0.06)) for u in spread(on_scalp, st["hair"])]
     # The beard's point is lower and further forward than the hair's, so it passes in front of the neck.
-    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, -0.45, -0.35)) + jit(0.06)) for u in spread(on_jaw, st["beard"])]
+    # Roots chosen on one side of the jaw and mirrored, so the beard line is even on both sides
+    # (the user: 'Why is the beard uneven? One side is higher than the other').
+    half = spread([u for u in on_jaw if u.x >= 0], st["beard"] // 2)
+    even = half + [Vector((-u.x, u.y, u.z)) for u in half]
+    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, -0.45, -0.35)) + jit(0.06)) for u in even]
     tache = [(shape(u), u, shape(u) + Vector((-0.5, 0.1, -0.5)) + jit(0.05)) for u in spread(on_lip, 4)]
     hair_and_beard.blown = [(locks("hair", hair, coll, white, style, rnd), 0.22), (locks("moustache", tache, coll, white, style, rnd), 0.05)]
     left = Vector((-1.0, 0.0, 0.0))
