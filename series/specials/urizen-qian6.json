@@ -1,0 +1,81 @@
+{
+  "about": "Urizen's talking head on Qián (1), line 6. Urizen, Blake's measurer from The Ancient of Days (the app's painting for hexagram 1), speaks as pure creative force; the Guide's narrator gives line 6's turn. The user, 2026-09-30: 'the guide shorts are a real format ... let's go ahead and do a short with the Urizen talking head with the line six'. Head: blender/urizen.py (faceted, neon backdrop, no eyeballs). Notes: docs/notes/2026-09-30-metal-treatments.md.",
+  "voices": {
+    "urizen": {
+      "provider": "elevenlabs",
+      "voiceId": "WdZjiN0nNcik2LBjOHiv",
+      "name": "David - Raspy and Soft",
+      "note": "old, raspy British; tried for the Guide before the user's designed voice; a smoke-test choice for Urizen, not yet the user's"
+    },
+    "guide": {
+      "provider": "elevenlabs",
+      "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
+      "name": "hitchiker's guide v1",
+      "note": "the user's designed Guide voice ('love it')"
+    }
+  },
+  "voice": {
+    "provider": "elevenlabs",
+    "voiceId": "hYDmtgsUa8Lf6Ql57aI5"
+  },
+  "narration": [
+    {
+      "voice": "urizen",
+      "text": "I am Urizen. I measure everything."
+    },
+    {
+      "voice": "urizen",
+      "text": "Six solid lines. Heaven never rests. Neither do I."
+    },
+    {
+      "voice": "urizen",
+      "text": "The dragon rose. The dragon flew. And I keep climbing."
+    },
+    {
+      "voice": "guide",
+      "text": "The I Ching. Qián, top line: the dragon that went too high. There is regret.",
+      "say": "The I Ching. Chyen, top line: the dragon that went too high. There is regret."
+    },
+    {
+      "voice": "guide",
+      "text": "An old commentary explains: it knows how to advance, not how to withdraw."
+    },
+    {
+      "voice": "guide",
+      "text": "William Blake's Urizen makes rules for everything."
+    },
+    {
+      "voice": "urizen",
+      "text": "Withdraw?",
+      "direction": "baffled disbelief; the sun outline goes out at once"
+    }
+  ],
+  "onScreen": {
+    "label": "SUBJECT: URIZEN / OCCUPATION: MEASURING",
+    "hexagram": "Qián 乾 (The Creative): six solid lines, line 6 (the top) lit amber on beat 4",
+    "quote": "知進而不知退 KNOWS HOW TO ADVANCE, NOT HOW TO WITHDRAW (beat 5)"
+  },
+  "sources": {
+    "line6": "上九：亢龍有悔 (Top Nine: the arrogant, over-high dragon has regret).",
+    "smallImage": "亢龍有悔，盈不可久也 (what is full cannot last).",
+    "wenyan": "亢之為言也，知進而不知退，知存而不知亡，知得而不知喪 (Wenyan, one of the Ten Wings: 'lofty' means knowing to advance but not to withdraw, to keep but not to lose, to gain but not to let go).",
+    "wangBi": "On line 2: 上則過亢 ('in the top position one is excessively lofty'), 8bitoracle-next/src/constants/wangBiZhu.ts.",
+    "qian": "Six yang lines; Image: 天行健，君子以自強不息 (heaven moves strongly; the noble one strengthens himself without rest). Lines 1-5: hidden dragon, dragon in the field, ceaselessly active, perhaps leaping, flying dragon in heaven.",
+    "blake": "Urizen in Blake's mythology is the figure of limiting reason and law; The Ancient of Days (1794) is the frontispiece to Europe: A Prophecy. The app's commentary (sixlines-ios, artwork_treatises_01-08.json) reads the figure as the creative force."
+  },
+  "timing": {
+    "fps": 30,
+    "lead": 1.0,
+    "gap": 0.6,
+    "tail": 0.8,
+    "close": 2.5
+  },
+  "close": {
+    "tagline": "REVEAL THE MOMENT",
+    "site": "sixlines.day",
+    "sfx": "local/sfx/dragon-studio-tv-static-323620.mp3",
+    "sfxFrom": 4,
+    "sfxVolume": 0.35
+  },
+  "review": "Astra (gpt-6.1-sol, high), docs/research/2026-09-30-codex-urizen-qian6.md: change; Opus agreed with every change, so round 1 converged."
+}

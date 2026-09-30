@@ -2,6 +2,7 @@
 // (series/specials/<name>.json), one mp3 per beat with the time of every character, so the
 // picture can land on the words:
 //   node --env-file=.env scripts/voice.mjs series/specials/guide-wangbi.json [--beat 3] [--model eleven_v4] [--voice ID]
+// A beat's `voice` names one of spec.voices (two speakers); otherwise spec.voice speaks it.
 // --voice tries another voice: its takes go to out/voice/<name>-<ID>/ and series/renders/voice/<name>-<ID>.json.
 // Writes out/voice/<name>/NN.mp3 and NN.json (alignment); records text, voice, model, settings and
 // hashes in series/renders/voice/<name>.json. The key (ELEVENLABS_API_KEY) is never printed.
@@ -16,8 +17,7 @@ const arg = (flag) => (process.argv.includes(flag) ? process.argv[process.argv.i
 const key = process.env.ELEVENLABS_API_KEY;
 if (!key) throw new Error("ELEVENLABS_API_KEY is not set (node --env-file=.env)");
 const spec = JSON.parse(readFileSync(path.resolve(root, specPath), "utf8"));
-const voiceId = arg("--voice") ?? spec.voice.voiceId;
-const name = path.basename(specPath, ".json") + (arg("--voice") ? `-${voiceId}` : "");
+const name = path.basename(specPath, ".json") + (arg("--voice") ? `-${arg("--voice")}` : "");
 const model = arg("--model") ?? spec.voice.model ?? "eleven_v4";
 const settings = spec.voice.settings ?? { stability: 0.5, similarity_boost: 0.75, style: 0, use_speaker_boost: true };
 const only = arg("--beat") ? [Number(arg("--beat"))] : spec.narration.map((_, i) => i + 1);
@@ -32,6 +32,7 @@ for (const n of only) {
   const beat = spec.narration[n - 1];
   // `say` is the text as spoken (phonetic spellings for Chinese names); `text` is what is shown.
   const text = beat.say ?? beat.text;
+  const voiceId = arg("--voice") ?? (beat.voice ? spec.voices[beat.voice].voiceId : spec.voice.voiceId);
   const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/with-timestamps?output_format=mp3_44100_128`, {
     method: "POST",
     headers: { "xi-api-key": key, "Content-Type": "application/json" },
