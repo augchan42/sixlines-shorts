@@ -59,8 +59,10 @@ Answers in capitals, as in the lessons. `show` names the drawing.
 8. 6 LINES\n6 BITS
    Then the end card.
 
-Optional page between 5 and 6, only if the user wants the extra fact:
-WHAT ABOUT MOVING LINES / THEN A LINE HAS FOUR ANSWERS.\nCOINS: ABOUT 10.9 BITS A CAST.\nYARROW: ABOUT 10.5.
+Moving lines are left out. The user, 2026-09-30: "i think adding moving lines might confuse people?
+add it if you think is very interesting and if there's an elegant shannon based explanation for it".
+The Shannon point there (yarrow's four unequal outcomes carry 1.75 bits a line, not 2) is page 4's
+point again, and it needs moving lines explained first. A candidate for a later short.
 
 Banned words (oracle, divination, fortune, prediction, mystical, magical) appear nowhere; a test
 checks the copy, as for the Leibniz lesson.
