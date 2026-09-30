@@ -1,0 +1,25 @@
+{
+ "about": "A Guide-style short on Wang Bi (the user, 2026-09-30: \"can you help come up with a Wang Bi 'hitchhikers guide to the universe' style short? that might be fun.\"). A handheld book-device shows its entry on the I Ching in flat, cheerful animation; a narrator reads it dry. Our own device and lines: no DON'T PANIC, towels or Guide logo. Draft 1, for Astra's review.",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voiceId": "WdZjiN0nNcik2LBjOHiv",
+  "name": "David",
+  "note": "Picked by the user 2026-09-30 (https://elevenlabs.io/voices/WdZjiN0nNcik2LBjOHiv): 'a classic nature narrator'. A synthetic voice: this short carries the AI-content label on YouTube and TikTok."
+ },
+ "narration": [
+  { "text": "The I Ching. A book of sixty-four situations, about three thousand years old.", "picture": "The device lights up: THE I CHING. Sixty-four hexagrams tile in.", "source": "history" },
+  { "text": "For most of that time, people used it to ask about the future.", "picture": "A tiny figure shakes a pot of yarrow stalks; a question mark floats up.", "source": "history (Shaughnessy 1983, ch. 2)" },
+  { "text": "This annoyed a young man called Wang Bi.", "picture": "A small flat scholar, arms folded. WANG BI 王弼, 226–249.", "source": "Sanguozhi 28, Pei Songzhi's note (He Shao's biography)" },
+  { "text": "He died at twenty-three. By then he had written the commentary China read the book through for centuries.", "picture": "A candle burns down beside a growing stack of pages.", "source": "Zhouyi zhu; Kong Yingda's Zhouyi zhengyi (642) is built on it" },
+  { "text": "His advice: stop staring at the pictures.", "picture": "The device zooms into Qian: a dragon, a horse, a cart losing its spokes.", "source": "Zhouyi lüeli, Ming xiang" },
+  { "text": "A picture, he said, is a fish trap. It is there to catch the fish. Once you have the fish, you can put the trap down.", "picture": "A wicker trap, a fish; the fish is lifted out, the trap set aside.", "source": "Zhouyi lüeli, Ming xiang: 象者，意之筌也 (the image is the fish trap of the meaning), after Zhuangzi 26" },
+  { "text": "If the meaning is strength, what do you need the horse for?", "picture": "The horse fades; the word STRENGTH stays.", "source": "Zhouyi lüeli, Ming xiang: 義苟在健，何必馬乎" },
+  { "text": "The fish, in this case, is judgment: what a sensible person does in the situation in front of them.", "picture": "The tiny figure from before, now at a fork in a road, thinking.", "source": "written" },
+  { "text": "Recommended for: anyone about to decide something. Not recommended for: finding out what happens next.", "picture": "The entry's footer, typed. Then the ivory close.", "source": "written" }
+ ],
+ "onScreenChinese": ["王弼 Wang Bi", "得意忘象 grasp the meaning, forget the image", "筌 fish trap"],
+ "sources": {
+  "mingxiang": "~/projects/chinese-classics-reference/zhouyi-lueli/text/04-mingxiang.md",
+  "shaughnessy": "~/projects/chinese-classics-reference/shaugnessy/"
+ }
+}
