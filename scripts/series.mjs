@@ -13,7 +13,7 @@ import path from "node:path";
 import { overrides } from "../src/series/overrides.ts";
 import { seriesProps } from "../src/series/props.ts";
 import { linkedinCaption, postCaption } from "./series/caption.mjs";
-import { limiterCeiling, loudnessTarget, missingAssets, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
+import { limitedGain, limiterCeiling, missingAssets, phoneGain, parseNumbers, renderAll, shareBitrate, slug, versionDir } from "./series/render-lib.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
 const pub = (f) => path.join(root, "public", f);
@@ -30,24 +30,24 @@ const numbers = wanted === "all" ? rows.filter((r) => r.copy).map((r) => r.numbe
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
 
-// Every short at one level (scripts/series/render-lib.mjs, SERIES_LUFS): loudnorm measures, a
-// limiter holds the peaks first if the gain needs room, and one linear gain does the rest; the
+// Every short at one level on a phone (scripts/series/render-lib.mjs, PHONE_LUFS): measured
+// above 250 Hz, a limiter holds the peaks first if the gain needs room, then one gain; the
 // video is copied as rendered.
 const loudnormJson = (input, af) => {
-  const { stderr } = spawnSync("ffmpeg", ["-nostdin", "-hide_banner", "-i", input, "-vn", "-af", `${af}print_format=json`, "-f", "null", "-"], { cwd: root, encoding: "utf8" });
+  const { stderr } = spawnSync("ffmpeg", ["-nostdin", "-hide_banner", "-i", input, "-vn", "-af", `${af}loudnorm=print_format=json`, "-f", "null", "-"], { cwd: root, encoding: "utf8" });
   return JSON.parse(stderr.slice(stderr.lastIndexOf("{"), stderr.lastIndexOf("}") + 1));
 };
 const level = (raw, out) => {
-  const first = loudnormJson(raw, "loudnorm=I=-14:TP=-1.5:");
-  const limiter = limiterCeiling(first);
+  const full = loudnormJson(raw, "");
+  const phone = loudnormJson(raw, "highpass=f=250,");
+  let gain = phoneGain(Number(phone.input_i));
+  const limiter = limiterCeiling(Number(full.input_tp), gain);
   const pre = limiter === null ? "" : `alimiter=limit=${(10 ** (limiter / 20)).toFixed(4)}:attack=5:release=50:level=false,`;
-  const m = limiter === null ? first : loudnormJson(raw, `${pre}loudnorm=I=-14:TP=-1.5:`);
-  const target = loudnessTarget(m);
-  const norm = `loudnorm=I=${target}:TP=-1.5:LRA=20:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true:`;
-  const check = loudnormJson(raw, pre + norm);
-  if (check.normalization_type !== "linear") throw new Error(`loudnorm fell back to ${check.normalization_type}`);
-  run("ffmpeg", ["-v", "error", "-y", "-i", raw, "-c:v", "copy", "-af", (pre + norm).replace(/:$/, ""), "-ar", "48000", "-c:a", "aac", "-b:a", "256k", out]);
-  return { measured: { input_i: first.input_i, input_tp: first.input_tp }, limiter, target, output: { i: check.output_i, tp: check.output_tp } };
+  if (pre) gain = limitedGain(Number(loudnormJson(raw, `${pre}highpass=f=250,`).input_i), Number(loudnormJson(raw, pre).input_tp));
+  const af = `${pre}volume=${gain}dB`;
+  run("ffmpeg", ["-v", "error", "-y", "-i", raw, "-c:v", "copy", "-af", af, "-ar", "48000", "-c:a", "aac", "-b:a", "256k", out]);
+  const [outFull, outPhone] = [loudnormJson(out, ""), loudnormJson(out, "highpass=f=250,")];
+  return { before: { lufs: Number(full.input_i), phoneLufs: Number(phone.input_i), dbtp: Number(full.input_tp) }, gain, limiter, after: { lufs: Number(outFull.input_i), phoneLufs: Number(outPhone.input_i), dbtp: Number(outFull.input_tp) } };
 };
 
 const renderOne = async (n) => {
@@ -80,7 +80,7 @@ const renderOne = async (n) => {
   run("npx", ["remotion", "render", "src/index.ts", "Series", raw, `--props=${propsFile}`, "--log=error"]);
   const loudness = level(raw, short);
   unlinkSync(raw);
-  console.log(`[${n}] loudness ${loudness.measured.input_i} LUFS, ${loudness.measured.input_tp} dBTP -> ${loudness.target} LUFS${loudness.limiter !== null ? ` (peaks limited to ${loudness.limiter} dBFS)` : ""}`);
+  console.log(`[${n}] loudness on a phone ${loudness.before.phoneLufs} -> ${loudness.after.phoneLufs} LUFS (${loudness.gain} dB${loudness.limiter !== null ? `, peaks limited to ${loudness.limiter} dBFS` : ""}); in full ${loudness.after.lufs} LUFS, ${loudness.after.dbtp} dBTP`);
 
   const seconds = Number(run("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", short]).trim());
   const kbps = shareBitrate(seconds);
