@@ -251,7 +251,7 @@ def lock_path(p, u, tail, rnd, wave, segments, lift=0.35, bend=Vector((-0.7, 0.1
     return pts
 
 
-def locks(name, roots, coll, mats, style, rnd, origin=Vector()):
+def locks(name, roots, coll, mats, style, rnd, origin=Vector(), bend=None):
     """One mesh of locks: each root's path swept with a flat or three-sided section that narrows
     to a point at the tail; each lock one material, faces flat-shaded; vertex group 'tips' weights
     each ring by how far along the lock it is, for the wind."""
@@ -268,6 +268,8 @@ def locks(name, roots, coll, mats, style, rnd, origin=Vector()):
             # there is hair on both sides, all of it going one way (the user: 'there should be hair
             # on both sides ... it should be flowing from one side to the other').
             pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.3, bend=Vector((-0.3, 0.1, 0.75)))
+        elif bend is not None:
+            pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.1, bend=bend)
         else:
             pts = lock_path(p, u, tail, rnd, st["wave"], st["segments"], lift=0.1 if name != "hair" else 0.3)
         w0 = st["width"] * rnd.uniform(0.7, 1.3) * (1.3 if name == "beard" else 1.0)
@@ -358,10 +360,10 @@ def hair_locks(coll, rnd, style):
     # mirrored, each half hanging down its own side; cheek: a few locks down the right cheek.
     fill = None
     if FILL == "tache":
-        # Own random numbers, so the other locks come out as before.
+        # The left half (as seen) only; it is mirrored below, so both halves match. Own random
+        # numbers, so the other locks come out as before.
         r2 = random.Random(5)
-        half = spread([u for u in on_lip if u.x < 0], 3)
-        fill = [(shape(u), u, shape(u) + Vector((math.copysign(0.45, u.x), -0.2, -0.5)) + Vector((r2.gauss(0, 0.05), 0, r2.gauss(0, 0.05)))) for u in half + [Vector((-u.x, u.y, u.z)) for u in half]]
+        fill = [(shape(u), u, shape(u) + Vector((-0.45, -0.2, -0.5)) + Vector((r2.gauss(0, 0.05), 0, r2.gauss(0, 0.05)))) for u in spread([u for u in on_lip if u.x < 0], 3)]
     elif FILL == "cheek":
         cheek = [u for u in dirs if 0.45 < u.x < 0.8 and -0.8 < u.y < -0.4 and MOUTH_Z - 0.05 < u.z < 0.1]
         tache += [(shape(u) - u * 0.03, u, shape(u) + Vector((-0.1, -0.1, -0.7)) + jit(0.05)) for u in spread(cheek, 3)]
@@ -369,7 +371,11 @@ def hair_locks(coll, rnd, style):
     if fill:
         # The old moustache was built only to draw the same random numbers, so the beard is as before.
         bpy.data.objects.remove(hair_and_beard.blown[1][0])
-        hair_and_beard.blown[1] = (locks("moustache", fill, coll, white, style, r2), 0.05)
+        # Bent down, not into the stream, and mirrored across the face (the user: 'the mustache is
+        # uneven'; the stream's bend to the left had pulled the right half out flat to the cheek).
+        tache = locks("moustache", fill, coll, white, style, r2, bend=Vector((-0.1, -0.1, -0.15)))
+        tache.modifiers.new("even", "MIRROR").use_axis[0] = True
+        hair_and_beard.blown[1] = (tache, 0.05)
     left = Vector((-1.0, 0.0, 0.0))
     shards("brows", [(shape(u), Vector((math.copysign(1, u.x), -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)) for u in brows], coll, white, left * 0.2, seed=3)
     return locks("beard", beard, coll, white, style, rnd, origin=HINGE)
