@@ -150,8 +150,7 @@
    "show": {
     "diagram": {
      "kind": "overview"
-    },
-    "guqin": true
+    }
    }
   },
   {
@@ -228,7 +227,7 @@
   },
   {
    "q": "",
-   "a": "SIX LINES. 64 SITUATIONS.",
+   "a": "6 LINES\n64 SITUATIONS",
    "show": {}
   }
  ],

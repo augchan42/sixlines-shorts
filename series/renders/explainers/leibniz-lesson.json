@@ -1,9 +1,9 @@
 {
  "explainer": "leibniz-lesson",
- "rendered": "2026-09-30T02:15:07.120Z",
- "commit": "76320812b377245964bfc62490f31fd719acebc8",
+ "rendered": "2026-09-30T02:38:01.861Z",
+ "commit": "28a409d37e456dfb058a7a832d087789e7f2b35a",
  "clean": false,
- "seconds": 167.445333,
+ "seconds": 167.488,
  "shareKbps": 970,
  "props": {
   "pages": [
@@ -157,8 +157,7 @@
     "show": {
      "diagram": {
       "kind": "overview"
-     },
-     "guqin": true
+     }
     }
    },
    {
@@ -235,7 +234,7 @@
    },
    {
     "q": "",
-    "a": "SIX LINES. 64 SITUATIONS.",
+    "a": "6 LINES\n64 SITUATIONS",
     "show": {}
    }
   ],
@@ -547,7 +546,7 @@
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
   "local/sfx/guqin-b.wav": "d72a93923fc9ecc04971288f3eb2944b0dad7c947fc4d7aabe61d69839fa809f",
-  "out/explainers/leibniz-lesson/short.mp4": "61fd8484f95c16e6e1c4a513041ae219ffef89474c1a9885fe8e982c71445d81",
-  "out/explainers/leibniz-lesson/share.mp4": "56b3080f4afffe1c58f740542df71dc48f07c8ea26fc687d213f81f35a2e3c3b"
+  "out/explainers/leibniz-lesson/short.mp4": "d87bc60a9fb2d05f630a2165d6431119ef8eabe9e968ae694ed8d9fd456e28f9",
+  "out/explainers/leibniz-lesson/share.mp4": "1de388b5e7cd74753d6388f5c1cea4dd6e42b526205b4b73b72f75ad006ec014"
  }
 }
