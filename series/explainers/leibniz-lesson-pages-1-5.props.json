@@ -2,7 +2,7 @@
  "pages": [
   {
    "q": "WHAT IS THIS",
-   "a": "A DIAGRAM OF THE 64 HEXAGRAMS.\nIT WENT FROM CHINA TO EUROPE IN 1701.",
+   "a": "A DIAGRAM OF THE 64 HEXAGRAMS,\nPATTERNS OF SIX LINES.\nSENT FROM CHINA IN 1701.",
    "show": {
     "plate": {
      "zoom": [
@@ -14,7 +14,7 @@
   },
   {
    "q": "COUNT THE RING",
-   "a": "KUN, ALL BROKEN, IS 0.\nQIAN, ALL SOLID, IS 63.",
+   "a": "KUN, ALL BROKEN, IS 0.\nUP THE RIGHT HALF TO GOU, 31.",
    "show": {
     "diagram": {
      "count": [
@@ -24,7 +24,7 @@
      "at": 5,
      "secs": 10
     },
-    "hold": 12
+    "hold": 14
    }
   }
  ],
@@ -310,10 +310,6 @@
   "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
   "seconds": 0,
   "rate": 0.5749375
- },
- "endMusic": {
-  "at": 80.06,
-  "lead": 2.75
  },
  "look": "flight",
  "sfx": {

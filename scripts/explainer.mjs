@@ -100,7 +100,7 @@ const lesson = script.chapters && {
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
   // A tempo-independent card (sp.endcard.rate) plays at its own rate times endcardRate.
   endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false || only ? 0 : ((9 + END_HOLD_BEATS) * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
-  ...(script.endMusic ? { endMusic: script.endMusic } : {}),
+  ...(script.endMusic && !only ? { endMusic: script.endMusic } : {}),
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
 

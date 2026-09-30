@@ -37,7 +37,7 @@
    "pages": [
     {
      "q": "WHAT IS THIS",
-     "a": "A DIAGRAM OF THE 64 HEXAGRAMS.\nIT WENT FROM CHINA TO EUROPE IN 1701.",
+     "a": "A DIAGRAM OF THE 64 HEXAGRAMS,\nPATTERNS OF SIX LINES.\nSENT FROM CHINA IN 1701.",
      "show": {
       "plate": {
        "zoom": [
@@ -87,13 +87,13 @@
    "page": "THE COUNT",
    "pages": [
     {
-     "q": "READ A LINE AS A BIT",
-     "a": "BROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
+     "q": "READ IT AS A NUMBER",
+     "a": "LEIBNIZ'S READING:\nBROKEN IS 0. SOLID IS 1.\nREAD FROM THE BOTTOM UP.",
      "show": {}
     },
     {
      "q": "COUNT THE RING",
-     "a": "KUN, ALL BROKEN, IS 0.\nQIAN, ALL SOLID, IS 63.",
+     "a": "KUN, ALL BROKEN, IS 0.\nUP THE RIGHT HALF TO GOU, 31.",
      "show": {
       "diagram": {
        "count": [
@@ -103,17 +103,17 @@
        "at": 5,
        "secs": 10
       },
-      "hold": 12
+      "hold": 14
      }
     },
     {
-     "q": "WHY DOES IT JUMP",
-     "a": "AT 31 THE RIGHT HALF IS FULL.\n32 SETS THE BOTTOM LINE,\nAND THE COUNT CLIMBS THE LEFT.",
+     "q": "THEN WHAT",
+     "a": "AFTER 31, START AT THE BOTTOM LEFT.\nAT 32 THE BOTTOM LINE TURNS SOLID.\nUP THE LEFT HALF TO QIAN, 63.",
      "show": {}
     },
     {
      "q": "WHAT ARE THE SMALL NUMBERS",
-     "a": "LEIBNIZ WROTE THEM IN:\n0 TO 63.",
+     "a": "0 TO 63.\nATTRIBUTED TO LEIBNIZ.",
      "show": {
       "plate": {
        "zoom": [
@@ -136,16 +136,16 @@
    ]
   },
   {
-   "page": "WHO DREW IT",
+   "page": "THE ORDER",
    "pages": [
     {
-     "q": "WHO MADE THIS ORDER",
-     "a": "SHAO YONG 邵雍,\nELEVENTH CENTURY.",
+     "q": "WHOSE ORDER IS IT",
+     "a": "ATTRIBUTED TO SHAO YONG 邵雍,\nELEVENTH CENTURY.",
      "show": {}
     },
     {
      "q": "HOW",
-     "a": "BY HALVING:\nONE, TWO, FOUR ... SIXTY-FOUR.\nEACH SPLIT ADDS A LINE.",
+     "a": "EACH PATTERN BRANCHES INTO TWO.\nEACH STAGE ADDS A LINE.\nSIX STAGES: 64 PATTERNS.",
      "show": {}
     },
     {
@@ -155,7 +155,7 @@
     },
     {
      "q": "THE SQUARE",
-     "a": "THE SAME 64 AS A SQUARE.\nEACH ROW SHARES ITS LOWER TRIGRAM,\nEACH COLUMN ITS UPPER.",
+     "a": "THE SAME 64 AS A SQUARE.\nA TRIGRAM IS THREE LINES.\nROWS SHARE THE LOWER ONE,\nCOLUMNS THE UPPER.",
      "show": {}
     }
    ]
@@ -164,18 +164,18 @@
    "page": "WHAT IT MEANT",
    "pages": [
     {
-     "q": "DID CHINA INVENT BINARY",
-     "a": "SHAO YONG ORDERED THE 64 BY HALVING.\nHE DID NO SUMS WITH THEM.\nLEIBNIZ SAW CONFIRMATION, NOT A SOURCE.",
+     "q": "DID LEIBNIZ GET BINARY HERE",
+     "a": "NO. HE HAD IT BY 1679.\nSHAO YONG DID NOT USE THESE\nPATTERNS AS NUMERALS.\nLEIBNIZ SAW CONFIRMATION.",
      "show": {}
     },
     {
      "q": "WHAT DID LEIBNIZ SAY",
-     "a": "\"THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
+     "a": "\"PERHAPS THE MOST ANCIENT\nMONUMENT OF SCIENCE.\"",
      "show": {}
     },
     {
      "q": "AND WANG BI",
-     "a": "WANG BI, 800 YEARS EARLIER:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
+     "a": "WANG BI, THIRD CENTURY:\nONCE YOU HAVE THE MEANING,\nFORGET THE IMAGE.",
      "show": {}
     },
     {
@@ -186,5 +186,6 @@
    ]
   }
  ],
- "draft": "Pages 4 and 6 onward have no drawings yet (the smoke test is pages 1 and 5); their draws are in the design."
+ "draft": "Pages 4 and 6 onward have no drawings yet (the smoke test is pages 1 and 5); their draws are in the design.",
+ "review": "gpt-6.1-sol, 2026-09-30: docs/research/2026-09-30-codex-leibniz-spec.md. All its copy changes taken except page 15, which keeps '64 SITUATIONS': after Wang Bi the lesson turns from patterns to reading them, and it is the approved treatment's last line."
 }
