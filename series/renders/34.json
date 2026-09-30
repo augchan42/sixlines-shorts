@@ -1,10 +1,24 @@
 {
  "hexagram": 34,
- "rendered": "2026-09-27T17:18:19.148Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:22:51.868Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 24.149333,
- "shareKbps": 7491,
+ "seconds": 25.749333,
+ "shareKbps": 7017,
+ "loudness": {
+  "before": {
+   "lufs": -13.98,
+   "phoneLufs": -15.77,
+   "dbtp": 0.04
+  },
+  "gain": -0.4,
+  "limiter": -3.3,
+  "after": {
+   "lufs": -14.75,
+   "phoneLufs": -16.55,
+   "dbtp": -3.23
+  }
+ },
  "props": {
   "hexagram": {
    "number": 34,
@@ -28,7 +42,7 @@
   "hook": "Finally in charge?",
   "meaning": [
    "Great Power says:\ncheck your aim.",
-   "Mostly, know what\nnot to do."
+   "Know what\nnot to do."
   ],
   "question": "What won’t you\ndo with it?",
   "plates": [
@@ -51,7 +65,7 @@
    ],
    "readout": {
     "mark": [],
-    "finding": "FOUR STRONG LINES PUSH UP."
+    "finding": "LINE 3: THE RAM’S HORNS ARE CAUGHT.\nFORCE HAS BECOME ITS OWN TRAP."
    }
   },
   "pace": "even",
@@ -70,7 +84,7 @@
   "assets/3d/endcard-snap-111100-9b-ref.mp4": "a64ec8ed3c83d2860c8c258d985ce8cab0dc81755db6325dafb9de39c4e45cd7",
   "assets/yilin/stipple-34-36.webp": "c37b5851c61e1976ccc3e6f0e5d73c921867135ad987543c55ec7735f7d5a276",
   "assets/yilin/stipple-34-38.webp": "9e424a4a94d04f1d62cc4680c93bc1992cff35fbc1a2b413e40f78a6cc69d6e9",
-  "out/series/34-da-zhuang/short.mp4": "fec5166fbc80741d8c20e2dc917a66254d2c9ca62d6a3fe6d54aec2d48f3ea42",
-  "out/series/34-da-zhuang/share.mp4": "744f5750cce84373c5cded78236d235921a8d7c2e1a2a14b6cc0f3688e56226e"
+  "out/series/34-da-zhuang/short.mp4": "a795169d510cc941ff2d3819ff1c0cedd22b36c4bc8fea04847518c62cb32273",
+  "out/series/34-da-zhuang/share.mp4": "e4321ae0495567addaeb97230e3828efcd6ac15d1bc2422cc72d3837d51c18c1"
  }
 }

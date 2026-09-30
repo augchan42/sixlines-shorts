@@ -1,10 +1,24 @@
 {
  "hexagram": 38,
- "rendered": "2026-09-28T01:33:01.457Z",
- "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
+ "rendered": "2026-09-30T06:31:22.122Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
  "seconds": 33.045333,
  "shareKbps": 5440,
+ "loudness": {
+  "before": {
+   "lufs": -6.7,
+   "phoneLufs": -8.54,
+   "dbtp": 1.7
+  },
+  "gain": -8,
+  "limiter": null,
+  "after": {
+   "lufs": -14.75,
+   "phoneLufs": -16.61,
+   "dbtp": -5.17
+  }
+ },
  "props": {
   "hexagram": {
    "number": 38,
@@ -74,7 +88,7 @@
   "assets/3d/endcard-flip-110101-9b-ref.mp4": "fc6d0362a838e45a6f27f4233bfb2e7aa418361c70a826d57457accda42d6695",
   "assets/yilin/stipple-38-17.webp": "c8ac0e3f8863005170e40f19b48e973cec93fc7c6541632c923aaa4fa8de20c9",
   "assets/yilin/stipple-38-44.webp": "816dde2ace1b736b153475253b802b066c3ecc0a9e84191773f3a214eecbc5fc",
-  "out/series/38-kui/short.mp4": "b10eb0a2491cf70ef9f6c86454e8e054cfbd6eb5cbf064bb078912d9772e5eec",
-  "out/series/38-kui/share.mp4": "28857041667d16ed5b338777d1161f9340fc47ae788b36403c299c7b650ba875"
+  "out/series/38-kui/short.mp4": "0579def13f778b43b422734a638338040f55af69d24da8b624a5106e1fe6bd8c",
+  "out/series/38-kui/share.mp4": "97708d7a6e4515fda09afc0ee7e9956f9bec3da5e96e7cea3eaadd3900e7a4bd"
  }
 }

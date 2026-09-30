@@ -1,10 +1,24 @@
 {
  "hexagram": 35,
- "rendered": "2026-09-27T23:59:58.415Z",
- "commit": "028db02d3fb72a000576ed262d16f95f22e776e3",
+ "rendered": "2026-09-30T06:25:06.150Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
  "seconds": 33.194667,
  "shareKbps": 5415,
+ "loudness": {
+  "before": {
+   "lufs": -10.15,
+   "phoneLufs": -13.67,
+   "dbtp": 0.47
+  },
+  "gain": -2.5,
+  "limiter": -1.2,
+  "after": {
+   "lufs": -13.13,
+   "phoneLufs": -16.62,
+   "dbtp": -2.86
+  }
+ },
  "props": {
   "hexagram": {
    "number": 35,
@@ -28,7 +42,7 @@
   "hook": "Finally getting recognized?",
   "meaning": [
    "Progress says:\ncharacter first.",
-   "Not strategy.\nNot network."
+   "Give people\nreason to trust."
   ],
   "question": "What are you\nlike up close?",
   "plates": [
@@ -72,7 +86,7 @@
   "assets/3d/endcard-flip-000101-9b-ref.mp4": "2bde7a018457f256209386577323594ecaebb60a1be228edf877e48e76cd1288",
   "assets/yilin/stipple-35-19.webp": "f2b6a9faf90bfef1fb195c72d85e833c6704325ede2a51d73606cf556be9c9b6",
   "assets/yilin/stipple-35-56.webp": "3066700d609b62af21917eb6986ee15f3eb77f9ebcab892e1569153cfb6d258f",
-  "out/series/35-jin/short.mp4": "63c88ba3967904aa421f685bb07a5e080492cf523bed9bc1a221e1080ca1c42a",
-  "out/series/35-jin/share.mp4": "8237f347415e6ab3c6c310e177f44b2d92839700aba215f9820d0bc0139a0e54"
+  "out/series/35-jin/short.mp4": "c3c27b19dafa4ad390908c0ccfe64a3621f3b91c9eee653494eca3cd44671ba5",
+  "out/series/35-jin/share.mp4": "db6a20a613a7856f9c81044051cd81173fd1241500e36744a48c84eb3e17da95"
  }
 }

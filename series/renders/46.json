@@ -1,10 +1,24 @@
 {
  "hexagram": 46,
- "rendered": "2026-09-27T23:19:25.672Z",
- "commit": "627fb9efcc8c21c7b0bf98ab903389abc0be28d0",
+ "rendered": "2026-09-30T06:47:39.479Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 33.386667,
- "shareKbps": 5383,
+ "seconds": 35.392,
+ "shareKbps": 5070,
+ "loudness": {
+  "before": {
+   "lufs": -16.06,
+   "phoneLufs": -20.85,
+   "dbtp": -1.24
+  },
+  "gain": 5.4,
+  "limiter": -8.4,
+  "after": {
+   "lufs": -12.21,
+   "phoneLufs": -16.89,
+   "dbtp": -2.57
+  }
+ },
  "props": {
   "hexagram": {
    "number": 46,
@@ -53,7 +67,7 @@
     "mark": [
      4
     ],
-    "finding": "LINE 5: HE CLIMBS THE STAIRS.\nSTEADY, RIGHT, STEP BY STEP.",
+    "finding": "LINE 5: HE CLIMBS THE STAIRS.\nACCEPTS HELP; ENTRUSTS THE WORK.",
     "timed": true
    },
    "beats": 17
@@ -74,7 +88,7 @@
   "assets/3d/endcard-join-011000-9b-ref.mp4": "73d84b4df2f1250f9aee066edf8bb78469f2c4bb199ddc282352a5d0e6a4bf75",
   "assets/yilin/stipple-46-2.webp": "5102518631bafea2f0578a17bef7285052372ec92af0c5a2edd0d60945eb2537",
   "assets/yilin/stipple-46-54.webp": "9e21adbb070262a7ae0db1dbcfe18ef21191ea37a7b7e9364aa569716ab8ea82",
-  "out/series/46-sheng/short.mp4": "3a1dc2c7da50cff675e074a03afaa525ca0080abc5e402143cbd5245871c85cb",
-  "out/series/46-sheng/share.mp4": "890b9d4f6b5c36b705e6f3f2a403e54ddeee642d9a76fb7e7b4511fde830cfe2"
+  "out/series/46-sheng/short.mp4": "b9d2bcbe31a002d24b395193a7ecefdf3e66b2912fc7c2d9458e9224c3f2752b",
+  "out/series/46-sheng/share.mp4": "4e7d6dcb963a4ac606a12785ea52322cd330bf8aa4f103dd46d5273dfa30fffb"
  }
 }

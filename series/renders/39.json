@@ -1,10 +1,24 @@
 {
  "hexagram": 39,
- "rendered": "2026-09-27T17:39:39.852Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:33:20.676Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 27.050667,
- "shareKbps": 6674,
+ "seconds": 28.842667,
+ "shareKbps": 6251,
+ "loudness": {
+  "before": {
+   "lufs": -7.63,
+   "phoneLufs": -8.89,
+   "dbtp": 1.72
+  },
+  "gain": -7.6,
+  "limiter": null,
+  "after": {
+   "lufs": -15.26,
+   "phoneLufs": -16.52,
+   "dbtp": -5.65
+  }
+ },
  "props": {
   "hexagram": {
    "number": 39,
@@ -28,7 +42,7 @@
   "hook": "Hit a wall?",
   "meaning": [
    "Obstruction says:\nask for help.",
-   "The wall is\nthe lesson."
+   "Stop pushing.\nCheck yourself."
   ],
   "question": "Who could you\nask?",
   "plates": [
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "lines",
-   "text": "Blocked?\nLook at yourself.",
+   "text": "ASK FOR HELP.\nKEEP YOUR STANDARDS.",
    "trigrams": [
     {
      "zh": "水",
@@ -53,7 +67,7 @@
     "mark": [
      4
     ],
-    "finding": "LINES 2–5 IN POSITION.\nSTILL BLOCKED."
+    "finding": "LINE 5: IN DANGER, STILL CENTRED.\nITS STEADY CONDUCT DRAWS FRIENDS."
    }
   },
   "pace": "even",
@@ -72,7 +86,7 @@
   "assets/3d/endcard-snap-001010-9b-ref.mp4": "d8e39bff2f20aa17c6a01eb644798391ddbafd87c4dfcf03becd40a238f94e73",
   "assets/yilin/stipple-39-28.webp": "b308abd4b5271f7cd9d03a317a44fdb6972bee49e1aec2050c470d5c6c538614",
   "assets/yilin/stipple-39-29.webp": "676b2581f8e3f620e0ecec8bb959a50a5f82700625fbf4a2e10c8719fcf31f19",
-  "out/series/39-jian/short.mp4": "9aa063d4cab63f22276e63c4f3570f21521186c0fd477249d789d0712c83b38e",
-  "out/series/39-jian/share.mp4": "f3d46ba4247dd82b29b0328126023cebe6293056e03f1547bbe5023866c93ee5"
+  "out/series/39-jian/short.mp4": "a093f82ea99d9bd41270e30b3bb4f0a285fc7ae15cfe3fb1cd4baf894ba846ae",
+  "out/series/39-jian/share.mp4": "04857dda74c993b52ece83031bfb56f11c338820ee252f372a4f3a57cdc8b0e9"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 43,
- "rendered": "2026-09-27T09:37:48.513Z",
- "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
+ "rendered": "2026-09-30T06:41:56.174Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 22.549333,
- "shareKbps": 8000,
+ "seconds": 24.042667,
+ "shareKbps": 7525,
+ "loudness": {
+  "before": {
+   "lufs": -8.26,
+   "phoneLufs": -11.21,
+   "dbtp": 0.42
+  },
+  "gain": -5.3,
+  "limiter": null,
+  "after": {
+   "lufs": -13.61,
+   "phoneLufs": -16.6,
+   "dbtp": -3.52
+  }
+ },
  "props": {
   "hexagram": {
    "number": 43,
@@ -28,7 +42,7 @@
   "hook": "Ready to call something out?",
   "meaning": [
    "Breakthrough:\nsay it openly.",
-   "Speak up, but\nno force."
+   "Tell your own\npeople first."
   ],
   "question": "What needs\nsaying out loud?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/acts-43-120bpm-12b-1s1e5ds.mp4": "5511057f6bb0b48441049e206e9c61b982e27a199ce9a3f4c6caf816f0edfa9f",
   "assets/yilin/stipple-43-3.webp": "a8085ed30d027a645d2e0af2d9c1f95fde8ecf4fce70879fcf3ea7caab3701a4",
   "assets/yilin/stipple-43-1.webp": "5fbaf0c8c833addc70cdc8884b4ee35fa2923c83c575eb9fb9254e2c634a8fe5",
-  "out/series/43-guai/short.mp4": "b3b9855c8b5c181c651d73effa87def532da61621ce0e28f7eeb105d6694a08a",
-  "out/series/43-guai/share.mp4": "494d70f501f4ee5d3341fa83c8717c320b743005913985c0b9fd421986f5ae15"
+  "out/series/43-guai/short.mp4": "ffed77346f74d87e1c8e052949f5054f92f761c37ae7ecc512dc57c9dfb67408",
+  "out/series/43-guai/share.mp4": "21393c11c03c8ec4b1428eeeb05028ab8ee29d8b8c4ad6645d81e2a3a75395c9"
  }
 }

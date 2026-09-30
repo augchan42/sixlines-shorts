@@ -1,10 +1,24 @@
 {
  "hexagram": 45,
- "rendered": "2026-09-27T18:05:37.902Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:45:39.045Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 22.549333,
- "shareKbps": 8000,
+ "seconds": 24.042667,
+ "shareKbps": 7525,
+ "loudness": {
+  "before": {
+   "lufs": -13.25,
+   "phoneLufs": -16.08,
+   "dbtp": -0.03
+  },
+  "gain": 0.2,
+  "limiter": -3.6,
+  "after": {
+   "lufs": -13.72,
+   "phoneLufs": -16.59,
+   "dbtp": -2.72
+  }
+ },
  "props": {
   "hexagram": {
    "number": 45,
@@ -54,7 +68,7 @@
      3,
      4
     ],
-    "finding": "FOUR YIELDING LINES GATHER TO TWO."
+    "finding": "> LINE 5: HAS THE POSITION, NOT TRUST.\nLINE 4 HOLDS THE PEOPLE BELOW."
    }
   },
   "pace": "even",
@@ -73,7 +87,7 @@
   "assets/3d/endcard-snap-000110-9b-ref.mp4": "ef0628d03b1b61f7145a16df0bbe309fdefd0e47eb6811f72fe28cc3525c7763",
   "assets/yilin/stipple-45-48.webp": "4d52abb914d1e28eec4432af8dfc083d90f727be9f9eaaafe4a4e5e32cdab44d",
   "assets/yilin/stipple-45-58.webp": "cc71fe98f490252381f8850d1c143d4d492a1db372e2db1aad5fa28d6c136bce",
-  "out/series/45-cui/short.mp4": "d24c5489dfe655c27861abca5e317ad4f185754ef47fa66be3592a810638a24b",
-  "out/series/45-cui/share.mp4": "117f5011fcdf5d556d7703e6b13ed506d82e0911ddc469608090259e2e5d396c"
+  "out/series/45-cui/short.mp4": "e947915979e636aba1a38048ba2019fef931871cc5fbe68611a15f27ff2e24af",
+  "out/series/45-cui/share.mp4": "af6cb5930df5244388db8bc6312d82b7af7931ab4e8a85c2527e19554160a161"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 47,
- "rendered": "2026-09-27T09:43:39.447Z",
- "commit": "8f350ed4146c7563ad4637ffe3419fcd7ec37c46",
+ "rendered": "2026-09-30T06:49:33.431Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 31.381333,
- "shareKbps": 5735,
+ "seconds": 33.386667,
+ "shareKbps": 5383,
+ "loudness": {
+  "before": {
+   "lufs": -15.62,
+   "phoneLufs": -20.21,
+   "dbtp": -0.58
+  },
+  "gain": 4.7,
+  "limiter": -7.7,
+  "after": {
+   "lufs": -12.42,
+   "phoneLufs": -16.89,
+   "dbtp": -2.41
+  }
+ },
  "props": {
   "hexagram": {
    "number": 47,
@@ -28,7 +42,7 @@
   "hook": "Speaking up and nobody listens?",
   "meaning": [
    "Oppression says:\nhold your purpose.",
-   "Words fail here.\nActions don’t."
+   "Words alone\nwon’t get you out."
   ],
   "question": "What’s worth\neverything?",
   "plates": [
@@ -59,7 +73,7 @@
   "assets/3d/character-47-90bpm-14b-1vzav8o.mp4": "d63e7529d83d9799f7686ea62bdbea1ca7930b74b216aa89a1307cf07ba2549e",
   "assets/yilin/stipple-47-11.webp": "88050276236ac276667ae8593ba63c1b531b871c615261b98ce09c07d7c620d5",
   "assets/yilin/stipple-47-42.webp": "c0b81e87ad6e53e36d3a70ee79fc0b9c40786963720d5edf3ad53cb7c4e45c5c",
-  "out/series/47-kun/short.mp4": "a1d3fd150f96b148cf52cb07022ad90b084de0e70cc4c48c76b91821dbc34df7",
-  "out/series/47-kun/share.mp4": "5a59b0ca0b71d8a359723f538b84911ea0ae8cda16a2e5affeaf16243890d4db"
+  "out/series/47-kun/short.mp4": "312f01654954ae1ad2e235c4f4ab9c5b1e1ca77eceef10f3e48bbc45870736e9",
+  "out/series/47-kun/share.mp4": "048b69c802abbc13cb42676e1e26240d1404bcfc95862fdf36ecec98c81db86f"
  }
 }

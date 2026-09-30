@@ -1,10 +1,24 @@
 {
  "hexagram": 40,
- "rendered": "2026-09-27T23:49:40.001Z",
- "commit": "b3f63d1e7c8c2152a490fe24a67c26bbce661f8b",
+ "rendered": "2026-09-30T06:35:31.436Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 31.253333,
- "shareKbps": 5759,
+ "seconds": 33.045333,
+ "shareKbps": 5440,
+ "loudness": {
+  "before": {
+   "lufs": -9.85,
+   "phoneLufs": -11.64,
+   "dbtp": 0.01
+  },
+  "gain": -4.9,
+  "limiter": null,
+  "after": {
+   "lufs": -14.74,
+   "phoneLufs": -16.55,
+   "dbtp": -4.93
+  }
+ },
  "props": {
   "hexagram": {
    "number": 40,
@@ -27,7 +41,7 @@
   "drop": 14.394,
   "hook": "The pressure’s finally off?",
   "meaning": [
-   "Deliverance says:\nact or rest.",
+   "Deliverance says:\nclear the air.",
    "Then let the\ngrudges go."
   ],
   "question": "What can you\nforgive?",
@@ -74,7 +88,7 @@
   "assets/3d/endcard-snap-010100-9b-ref.mp4": "d13574204d1cab7a86ce93d075c1f60fdebae3a9e7d4d5a77d7eb1a05664c9c6",
   "assets/yilin/stipple-40-50.webp": "26d259ecda9eb7e0b6213c185d2883bcec7a23b4f3f927c4dfd8ba20bd0b34c8",
   "assets/yilin/stipple-40-17.webp": "c8acf261ed546ced84ce8a675f38129c9c6397413cb1be79a81eff3673c93ee6",
-  "out/series/40-xie/short.mp4": "8703e44a81681b0b7bd84f02dc134329b4797d8cb89a9dc9e7375d7cc61df449",
-  "out/series/40-xie/share.mp4": "8d831e875e73e5b7966d2b948398798c8f641d3631dfaa5c215b8167bc172ba3"
+  "out/series/40-xie/short.mp4": "2b225f9a2c891f2878ec270cced32745ec90c7f0b64369c576b02bbc66596c53",
+  "out/series/40-xie/share.mp4": "9afaf2207031fe3aa51aee9813d645b02d659bb387fb01e6aeabf85356e3cf61"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 33,
- "rendered": "2026-09-27T17:13:15.985Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:21:05.463Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 28.885333,
- "shareKbps": 6242,
+ "seconds": 30.656,
+ "shareKbps": 5874,
+ "loudness": {
+  "before": {
+   "lufs": -7.97,
+   "phoneLufs": -10.91,
+   "dbtp": 0.53
+  },
+  "gain": -5.6,
+  "limiter": null,
+  "after": {
+   "lufs": -13.64,
+   "phoneLufs": -16.65,
+   "dbtp": -4.47
+  }
+ },
  "props": {
   "hexagram": {
    "number": 33,
@@ -54,7 +68,7 @@
      0,
      1
     ],
-    "finding": "TWO YIELDING LINES CREEP UP.",
+    "finding": "TWO YIELDING LINES CREEP UP.\nTHE LAST TO LEAVE IS IN DANGER.",
     "master": {
      "zh": "為遯之主",
      "en": "Master of Retreat"
@@ -78,7 +92,7 @@
   "assets/3d/endcard-flip-001111-9b-ref.mp4": "05790b78aef46b67e286da34cd2c398f47ffa3a95397b2473f133003edc91b1f",
   "assets/yilin/stipple-33-20.webp": "2de9320736bec0010c59efc47481371d9b1f857f5d8ff3e2f426c2b2376b98aa",
   "assets/yilin/stipple-33-24.webp": "0b466dbea0a7560ef97211f21502961f25bcd78ed89554f3e087e2ee8655a2e1",
-  "out/series/33-dun/short.mp4": "4189273321e3f8ef1d609ab806ddcd1cef29e928f9a67a4463fd2afcea31f819",
-  "out/series/33-dun/share.mp4": "21242416da33e94747493db98eef82d76d09c198962a50b5ed603c8f877e1ca3"
+  "out/series/33-dun/short.mp4": "e9b72800447d06e1994528b32c8179572d5db9d7ba2f86d6f4462a675146cdf6",
+  "out/series/33-dun/share.mp4": "bd3025bc0cd9153e5da574d2322e82ba0cc989d9cc01c8b9a1d17017c0f3e435"
  }
 }

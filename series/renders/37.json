@@ -1,10 +1,24 @@
 {
  "hexagram": 37,
- "rendered": "2026-09-28T01:31:33.626Z",
- "commit": "1c867ce637e808ce78a82e4d3b1c518ac4b21f83",
+ "rendered": "2026-09-30T06:29:19.293Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
  "seconds": 33.045333,
  "shareKbps": 5440,
+ "loudness": {
+  "before": {
+   "lufs": -7.62,
+   "phoneLufs": -9.3,
+   "dbtp": 0.07
+  },
+  "gain": -7.2,
+  "limiter": null,
+  "after": {
+   "lufs": -14.86,
+   "phoneLufs": -16.54,
+   "dbtp": -5.39
+  }
+ },
  "props": {
   "hexagram": {
    "number": 37,
@@ -25,9 +39,9 @@
   "music": "local/music/pick18-dreamy-synthwave.mp3",
   "musicStart": 52.977,
   "drop": 14.4,
-  "hook": "Too many rules at home?",
+  "hook": "Your house, your rules?",
   "meaning": [
-   "The Family says:\nskip the rules.",
+   "The Family says:\nfollow them too.",
    "Say real things.\nDo them daily."
   ],
   "question": "What will you\nfollow through on?",
@@ -74,7 +88,7 @@
   "assets/3d/endcard-snap-101011-9b-ref.mp4": "51209d400ef95cb0f35cda7124691ea140248b2819f2608392891bc28562af09",
   "assets/yilin/stipple-37-41.webp": "e3ab8349022d9f91b42a8da5f6a467c7eafe199f0476701e4501873766a9adf8",
   "assets/yilin/stipple-37-57.webp": "75b07548c1e5fb786cae1e3ea118e7a70a8649996f59d0360b22101d7ebf4429",
-  "out/series/37-jia-ren/short.mp4": "9138e4b37da7148f769c5dfba24c38cb71d70590857d7c4fa688d87150c09dc4",
-  "out/series/37-jia-ren/share.mp4": "9a2f1f87bae94f03f269f40b0e7ad61d702b42d3bbb2c5c172813566dd594dbc"
+  "out/series/37-jia-ren/short.mp4": "60a97a0cc3961f5f97afd3a0670d272771bb75621b9cd427069b08bca09fb448",
+  "out/series/37-jia-ren/share.mp4": "d88bdb096b9d348cb32ce12263e6a374d9e2d9e743d3773dd8fce588168cbde7"
  }
 }

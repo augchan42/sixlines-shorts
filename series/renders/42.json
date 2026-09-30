@@ -1,10 +1,24 @@
 {
  "hexagram": 42,
- "rendered": "2026-09-27T17:55:22.317Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:40:09.015Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 30.357333,
- "shareKbps": 5933,
+ "seconds": 32.256,
+ "shareKbps": 5576,
+ "loudness": {
+  "before": {
+   "lufs": -8.45,
+   "phoneLufs": -10.81,
+   "dbtp": 0.48
+  },
+  "gain": -5.7,
+  "limiter": null,
+  "after": {
+   "lufs": -14.2,
+   "phoneLufs": -16.58,
+   "dbtp": -4.54
+  }
+ },
  "props": {
   "hexagram": {
    "number": 42,
@@ -30,7 +44,7 @@
    "Increase says:\ngo now.",
    "See good, move\ntoward it."
   ],
-  "question": "What will you\nmove toward?",
+  "question": "Who else\ncould benefit?",
   "plates": [
    "assets/yilin/stipple-42-33.webp",
    "assets/yilin/stipple-42-1.webp"
@@ -59,7 +73,7 @@
   "assets/3d/character-42-95bpm-15b-1gs0k97.mp4": "c9e4f290a09b32a037b6c169251478a751fd69f4216f0a597ee0761eaff13a13",
   "assets/yilin/stipple-42-33.webp": "5526d5774d920fda50f3efe7a1b567651b12e67a91ed86d31976ced85029c95a",
   "assets/yilin/stipple-42-1.webp": "25e57ec0c1a8d0e3df893bff4dd8540a4fdf9bc8aa519d2f90a40b3e6eb7643f",
-  "out/series/42-yi/short.mp4": "d75c28c5b7da0d6734bff9847b799f31b830c72a3ee551ceb1c26430d37028f3",
-  "out/series/42-yi/share.mp4": "f04b8ec547103960df0cfb0eecbec3f79b0e1779df6d1f0c50d1dab29179e1c1"
+  "out/series/42-yi/short.mp4": "4e32010d6940c5aba6ed239ee01545aef15d4e4c07d5115b59aa9b8e8c95d752",
+  "out/series/42-yi/share.mp4": "d6298fe91904d67427334ab56a0e82017373db6ccdd88016d2f5150962694bc3"
  }
 }

@@ -1,10 +1,24 @@
 {
  "hexagram": 48,
- "rendered": "2026-09-27T15:15:58.144Z",
- "commit": "b308de7230b1aaebb8909b89bbd76414e0f4ab21",
+ "rendered": "2026-09-30T06:50:58.751Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 24.576,
- "shareKbps": 7358,
+ "seconds": 26.154667,
+ "shareKbps": 6907,
+ "loudness": {
+  "before": {
+   "lufs": -12.18,
+   "phoneLufs": -14.14,
+   "dbtp": 0.15
+  },
+  "gain": -2.2,
+  "limiter": -1.6,
+  "after": {
+   "lufs": -14.6,
+   "phoneLufs": -16.55,
+   "dbtp": -3.25
+  }
+ },
  "props": {
   "hexagram": {
    "number": 48,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Care for what\nothers depend on.",
+   "text": "Mend it.\nShare it.",
    "beats": 14,
    "clip": "assets/3d/character-48-115bpm-14b-hgct5l.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/character-48-115bpm-14b-hgct5l.mp4": "8d5d40ffb13427bf11420b678cf8475ea5503f95ff4df4d489c71e47f79499ea",
   "assets/yilin/stipple-48-10.webp": "f432087bf5511242d6465bc6368842373c08773bcc8400411b3bb526aa63959d",
   "assets/yilin/stipple-48-57.webp": "d2bc448a0ccd620988479852921def8ee91b8cf09808b5d2320ab5e82b225b60",
-  "out/series/48-jing/short.mp4": "85d725eaa056c07623b5b51b4131ded9c61145c4e8eca5216d77748be2f4ec87",
-  "out/series/48-jing/share.mp4": "01fbe8f3e784661403d6946236c4c2601b2148dfeeb935320f93da19e73623f4"
+  "out/series/48-jing/short.mp4": "4ce1d267966fd2e31c260a95d8e320a56c2a04d89ea5c49afbfa332cf8166c2f",
+  "out/series/48-jing/share.mp4": "eda88609d7c688d02bf2f453c3a21837e29fbb724bae3e616f0cd8e9010eb412"
  }
 }

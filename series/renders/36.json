@@ -1,10 +1,24 @@
 {
  "hexagram": 36,
- "rendered": "2026-09-27T17:23:43.937Z",
- "commit": "e23cacb1fe2c2ec27d0b8d3dd06564f260636836",
+ "rendered": "2026-09-30T06:27:19.980Z",
+ "commit": "9eadfd22e4e6ba4144799e18fee8649ec6332e89",
  "clean": false,
- "seconds": 32.746667,
- "shareKbps": 5490,
+ "seconds": 34.752,
+ "shareKbps": 5166,
+ "loudness": {
+  "before": {
+   "lufs": -12.66,
+   "phoneLufs": -15.89,
+   "dbtp": 0.11
+  },
+  "gain": 0,
+  "limiter": -3.4,
+  "after": {
+   "lufs": -13.3,
+   "phoneLufs": -16.47,
+   "dbtp": -3.25
+  }
+ },
  "props": {
   "hexagram": {
    "number": 36,
@@ -38,7 +52,7 @@
   "screens": [],
   "lesson": {
    "kind": "character",
-   "text": "Dark times?\nDim your light.",
+   "text": "Hide your light.\nDon't put it out.",
    "beats": 16,
    "clip": "assets/3d/character-36-90bpm-16b-17vj3g7.mp4"
   },
@@ -59,7 +73,7 @@
   "assets/3d/character-36-90bpm-16b-17vj3g7.mp4": "5f727d152633c03850c58c211cc502fd0f9826c26e4d0836bfc0efd8215607c9",
   "assets/yilin/stipple-36-44.webp": "b6b13e2619c969717c403f384dc0faef1b01e1015adba7e7ac70ee8142bb5463",
   "assets/yilin/stipple-36-5.webp": "59c9015f60b801c3959efb6e699f4821356acbb9236c02b076c53d5968b7f131",
-  "out/series/36-ming-yi/short.mp4": "684227c6fa1b786482a174aea7930e93ffbed955f579a9d90d346facb97f58d8",
-  "out/series/36-ming-yi/share.mp4": "6f058997fcc538b35e1763d6d79d4577de3067cecd8db4f3a2942bc8dd8e511c"
+  "out/series/36-ming-yi/short.mp4": "6db1ad5b2842cda266fcdb3fb00a96eda06c7a73e5ea6d1339e35fb1722328cf",
+  "out/series/36-ming-yi/share.mp4": "d18f7496a142cd5c109d5752166655d4e7be5242a8a8ee0927f7817c2ed305c0"
  }
 }
