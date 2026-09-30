@@ -1,9 +1,10 @@
-import { AbsoluteFill, Audio, Easing, interpolate, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Audio, Easing, interpolate, OffthreadVideo, random, Sequence, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Grain } from "../fx/Glitch";
 import { Soundtrack } from "../fx/Soundtrack";
 import { fonts } from "../lib/fonts";
 import { EndCard3D, type EndCardText } from "../scenes/EndCard3D";
-import { DiagramPage, Plate, type DiagramShow, type PlateMarks } from "../scenes/Diagram";
+import { DiagramPage, Plate, WINDOW, type DiagramShow, type PlateMarks } from "../scenes/Diagram";
+import { pathTimes, type CubeScene } from "../lib/cube";
 import { CAM_FAR, camEnd, descended, flightCam, FlightPlot, type Cam, type CamStart } from "../scenes/Flight";
 import { diagramCues } from "../lib/diagram";
 import { cameraStart } from "../lib/lessonCam";
@@ -48,6 +49,9 @@ type Show = {
   beacon?: boolean;
   // A guqin note as the answer starts (the Leibniz lesson: Wang Bi).
   guqin?: boolean;
+  // A Blender clip in the window, from the page's start (the structure shorts; the cube's clips
+  // are rendered from `scene` by scripts/hypercube.mjs, and click as their edges light).
+  clip?: { src: string; scene?: CubeScene };
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -161,6 +165,17 @@ const Plot: React.FC<{ lines: (0 | 1)[]; turn: number; cx: number; cy: number; s
     })}
   </g>
 );
+
+// A clip in the terminal's window, fading up over a third of a second; its black drops out
+// against the screen's.
+const ClipWindow: React.FC<{ src: string }> = ({ src }) => {
+  const f = useCurrentFrame();
+  return (
+    <div style={{ position: "absolute", left: WINDOW.x, top: WINDOW.y, width: WINDOW.w, height: WINDOW.h, overflow: "hidden", opacity: interpolate(f, [0, 10], [0, 1], { extrapolateRight: "clamp" }), mixBlendMode: "screen" }}>
+      <OffthreadVideo src={staticFile(src)} muted style={{ width: WINDOW.w, height: WINDOW.h }} />
+    </div>
+  );
+};
 
 const place = (lines: (0 | 1)[], i: number) => (i === 0 || i === 5 ? "" : lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT");
 
@@ -320,6 +335,11 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
           <Line key={i} text={l} frame={f} at={t.lineAt[i]} rate={A_RATE} size={textOnly ? 58 : 46} cursor={i === lines.length - 1 && f >= lastLine} />
         ))}
       </div>
+      {show.clip && (
+        <Sequence from={t.from} durationInFrames={t.frames} layout="none">
+          <ClipWindow src={show.clip.src} />
+        </Sequence>
+      )}
       {show.plate && plate && <Plate src={plate} sec={f / FPS} secs={t.frames / FPS} {...show.plate} />}
       {show.diagram && <DiagramPage d={show.diagram} sec={f / FPS} secs={t.frames / FPS} plate={plate} names={names} />}
       <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={logFade} />
@@ -409,6 +429,10 @@ export const Lesson: React.FC<LessonProps> = (p) => {
                 : []),
               // The Leibniz lesson's diagram: its sounds on the drawing's own times.
               ...(x.page.show?.diagram ? diagramCues(x.page.show.diagram).map((c, i) => ({ key: `${c.sound}-${i}`, from: Math.round(c.at * FPS), frames: c.secs ? Math.round(c.secs * FPS) : c.sound === "relay" ? 10 : Math.round(1.5 * FPS), src: s[c.sound], volume: p.mix?.[c.sound] ?? (c.sound === "relay" ? 0.8 : c.sound === "sweep" ? 0.7 : c.sound === "chatter" ? 0.7 : 0.5) })) : []),
+              // The cube: a click as the corner lights, or as each edge of the path lights.
+              ...(x.page.show?.clip?.scene
+                ? (x.page.show.clip.scene.path ? pathTimes(x.page.show.clip.scene) : x.page.show.clip.scene.focus !== undefined ? [x.page.show.clip.scene.at ?? 1] : []).map((at, i) => ({ key: `relay-clip-${i}`, from: Math.round(at * FPS), frames: 10, src: s.relay, volume: p.mix?.relay ?? 0.8 }))
+                : []),
               ...(x.page.show?.guqin ? [{ key: "guqin", from: x.aAt, frames: 3 * FPS, src: s.guqin, volume: p.mix?.guqin ?? 0.8 }] : []),
               ...(x.page.show?.fly !== undefined ? [{ key: "warble", from: x.aAt + 4 * FPS, frames: Math.round(1.5 * FPS), src: s.warble, volume: p.mix?.warble ?? 0.5 }] : []),
               ...(last && !x.page.chapter ? [{ key: "winddown", from: typed, frames: Math.round(2.3 * FPS), src: s.winddown, volume: p.mix?.winddown ?? 0.6 }] : []),

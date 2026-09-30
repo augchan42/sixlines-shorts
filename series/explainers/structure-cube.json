@@ -1,0 +1,109 @@
+{
+ "about": "The 64 as corners of a six-dimensional cube, the first structure short and the smoke test for Blender in the terminal (docs/superpowers/specs/2026-09-30-structure-shorts-design.md). The user, 2026-09-30: \"work on a similar nostromo style short for the following. maybe try to add some more blender graphics where appropriate.\" Page 4 (the Zuo zhuan) is checked in docs/research before the copy is final.",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "cues": true,
+ "music": {
+  "file": "pick18-dreamy-synthwave.mp3",
+  "start": 52.977,
+  "why": "calm, 100 bpm, G minor, from 53 s as on 9, 37, 53 and 61 (all calm); not used by the other terminal pieces"
+ },
+ "endcardRate": 0.75,
+ "caption": "Change one line of a hexagram and you get another. Joined that way, the 64 are the corners of a six-dimensional cube.",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "WHAT SHAPE ARE THE 64",
+     "a": "A CUBE.\nIN SIX DIMENSIONS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/cube-all.mp4",
+       "scene": {
+        "secs": 10
+       }
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "WHAT IS A CORNER",
+     "a": "ONE HEXAGRAM.\nNEIGHBOURS DIFFER BY ONE LINE.",
+     "show": {
+      "clip": {
+       "src": "local/structure/cube-focus-42.mp4",
+       "scene": {
+        "focus": 42,
+        "at": 3,
+        "secs": 12
+       }
+      },
+      "hold": 5
+     }
+    },
+    {
+     "q": "HOW FAR IS THE OPPOSITE",
+     "a": "SIX STEPS.\nEVERY LINE CHANGED.\n乾 THE CREATIVE TO 坤 THE RECEPTIVE.",
+     "show": {
+      "clip": {
+       "src": "local/structure/cube-path-63-0.mp4",
+       "scene": {
+        "path": [
+         63,
+         31,
+         15,
+         7,
+         3,
+         1,
+         0
+        ],
+        "at": 3,
+        "gap": 0.9,
+        "secs": 14
+       }
+      },
+      "hold": 6
+     }
+    },
+    {
+     "q": "WHO READ IT THIS WAY",
+     "a": "THE ZUO ZHUAN, 4TH CENTURY BC:\nA LINE IS NAMED BY WHERE IT LEADS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/cube-path-3-7.mp4",
+       "scene": {
+        "path": [
+         3,
+         7
+        ],
+        "at": 3,
+        "gap": 1,
+        "secs": 12
+       }
+      },
+      "hold": 5
+     }
+    },
+    {
+     "q": "",
+     "a": "64 CORNERS\n6 WAYS OUT OF EACH",
+     "show": {}
+    }
+   ]
+  }
+ ]
+}
