@@ -1,5 +1,5 @@
 {
- "about": "Six Bits: a terminal short on Shannon and the six lines, about 60 s. The user, 2026-09-30: 'shannon information theory does have relation to the i-ching, in the sense that the bits contain information and the 6 bits describe things with max entropy/efficiency', then 'yes please write up the shannon short' and 'spec looks good'. Design: docs/superpowers/specs/2026-09-30-shannon-six-bits-design.md.",
+ "about": "Six Bits: a terminal short on Shannon and the six lines, about 60 s. The user, 2026-09-30: 'shannon information theory does have relation to the i-ching, in the sense that the bits contain information and the 6 bits describe things with max entropy/efficiency', then 'yes please write up the shannon short' and 'spec looks good'. Design: docs/superpowers/specs/2026-09-30-shannon-six-bits-design.md. Copy: Astra's revision adopted as is, round 1 (docs/research/2026-10-01-codex-shannon-short.md), with the odds heading YARROW: STANDARD ODDS.",
  "hexagram": 22,
  "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
  "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
@@ -28,8 +28,8 @@
   {
    "pages": [
     {
-     "q": "HOW MUCH CAN ONE LINE SAY",
-     "a": "YIN OR YANG.\nONE CHOICE OF TWO.\nONE BIT.",
+     "q": "WHAT IS AN I CHING LINE",
+     "a": "THE I CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
      "show": {
       "diagram": {
        "kind": "line",
@@ -40,7 +40,7 @@
     },
     {
      "q": "AND SIX LINES",
-     "a": "2 X 2 X 2 X 2 X 2 X 2 = 64.\nSIX BITS. 64 PATTERNS.",
+     "a": "2 X 2 X 2 X 2 X 2 X 2 = 64.\nSIX BITS IDENTIFY\nONE OF 64 PATTERNS.",
      "show": {
       "diagram": {
        "kind": "tree",
@@ -51,8 +51,8 @@
      }
     },
     {
-     "q": "WHO MEASURED THIS",
-     "a": "CLAUDE SHANNON, 1948.\nINFORMATION, COUNTED IN BITS.",
+     "q": "WHAT DID SHANNON MEASURE",
+     "a": "CLAUDE SHANNON, 1948:\nUNCERTAINTY, IN BITS.",
      "show": {
       "diagram": {
        "kind": "bits",
@@ -63,8 +63,8 @@
      }
     },
     {
-     "q": "IS SIX THE MOST",
-     "a": "ONLY IF ALL 64\nARE EQUALLY LIKELY.",
+     "q": "WHEN IS UNCERTAINTY SIX BITS",
+     "a": "WHEN ALL 64 PATTERNS\nARE EQUALLY LIKELY.",
      "show": {
       "diagram": {
        "kind": "overview"
@@ -73,8 +73,8 @@
      }
     },
     {
-     "q": "ARE THEY",
-     "a": "COINS: YIN OR YANG, HALF AND HALF.\nYARROW: 8 IN 16 EACH WAY.\nSIX FULL BITS EITHER WAY.",
+     "q": "ARE ALL 64 EQUALLY LIKELY",
+     "a": "THREE FAIR COINS: YES.\nYARROW STALKS: YES,\nUSING THE STANDARD ODDS.\nEACH LINE CHOSEN INDEPENDENTLY.",
      "show": {
       "diagram": {
        "kind": "odds",
@@ -85,7 +85,7 @@
     },
     {
      "q": "DID SHANNON READ THE I CHING",
-     "a": "NOT THAT WE CAN FIND.\nTHE STRUCTURE IS SHARED,\nNOT BORROWED.",
+     "a": "WE DON'T KNOW.\nTHE LINK HERE IS MATHEMATICAL.",
      "show": {
       "diagram": {
        "kind": "overview"
@@ -94,8 +94,8 @@
      }
     },
     {
-     "q": "SO WHAT DO SIX BITS HOLD",
-     "a": "ONE SITUATION OUT OF 64.\nWHAT TO DO IN IT\nIS JUDGMENT.",
+     "q": "WHAT DO SIX BITS TELL ME",
+     "a": "WHICH PATTERN YOU HAVE.\nTHE BOOK ASKS HOW TO ACT.\nYOU STILL HAVE TO JUDGE.",
      "show": {
       "diagram": {
        "kind": "overview",

@@ -271,7 +271,7 @@ const Odds: React.FC<{ sec: number; at: number }> = ({ sec, at }) => {
           {`${b.n}/16`}
         </div>
       ))}
-      <Label top={1010} text="YARROW, IN SIXTEENTHS" opacity={fade(sec, 0.2)} />
+      <Label top={1010} text="YARROW: STANDARD ODDS" opacity={fade(sec, 0.2)} />
       {["YIN", "YANG"].map((w, i) => (
         <div key={w} style={{ position: "absolute", top: ODDS.base + 20, left: ODDS.x[i] - ODDS.w / 2, width: ODDS.w, textAlign: "center", opacity: fade(sec, 0.2), fontFamily: fonts.pixel, fontSize: 44, color: PHOSPHOR, textShadow: glow }}>
           {w}

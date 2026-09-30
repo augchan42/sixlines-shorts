@@ -66,10 +66,14 @@ test("a lesson's sentence follows the same rules as the meaning lines, when ther
   assert.deepEqual(copyProblems(52, entry({ lesson: lesson("Unseen water\nunder the earth.") })), []);
 });
 
+// Plate shorts carry `copy`; the Guide and Urizen shorts carry spoken `narration` instead, which
+// is held to the banned words (props files are built from their scripts and skipped).
+const BANNED = /oracle|divination|fortune|prediction|mystical|magical|預測|预测|占卜|算命|神諭/i;
 test("every special in series/specials passes", () => {
-  for (const f of readdirSync("series/specials")) {
+  for (const f of readdirSync("series/specials").filter((f) => !f.endsWith(".props.json"))) {
     const s = JSON.parse(readFileSync(`series/specials/${f}`, "utf8"));
-    assert.deepEqual(copyProblems(s.hexagram, s.copy), [], f);
+    if (s.copy) assert.deepEqual(copyProblems(s.hexagram, s.copy), [], f);
+    for (const { text } of s.narration ?? []) assert.doesNotMatch(text, BANNED, f);
   }
 });
 

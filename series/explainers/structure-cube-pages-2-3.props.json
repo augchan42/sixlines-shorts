@@ -1,0 +1,100 @@
+{
+ "pages": [
+  {
+   "q": "WHAT IS A CORNER",
+   "a": "ONE HEXAGRAM.\nNEIGHBOURS DIFFER BY ONE LINE.",
+   "show": {
+    "clip": {
+     "src": "local/structure/cube-focus-42.mp4",
+     "scene": {
+      "focus": 42,
+      "at": 3,
+      "secs": 12
+     }
+    },
+    "hold": 5,
+    "mark": 63
+   }
+  },
+  {
+   "q": "HOW FAR IS THE OPPOSITE",
+   "a": "SIX STEPS.\nEVERY LINE CHANGED.\n乾 THE CREATIVE TO 坤 THE RECEPTIVE.",
+   "show": {
+    "clip": {
+     "src": "local/structure/cube-path-63-0.mp4",
+     "scene": {
+      "path": [
+       63,
+       31,
+       15,
+       7,
+       3,
+       1,
+       0
+      ],
+      "at": 3,
+      "gap": 0.9,
+      "secs": 14
+     }
+    },
+    "hold": 9
+   }
+  }
+ ],
+ "hexagrams": {
+  "63": {
+   "number": 63,
+   "name": "After Completion",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "trigrams": [
+    {
+     "zh": "水",
+     "name": "WATER"
+    },
+    {
+     "zh": "火",
+     "name": "FIRE"
+    }
+   ]
+  }
+ },
+ "readouts": {},
+ "music": "local/music/pick18-dreamy-synthwave.mp3",
+ "musicStart": 52.977,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 0,
+  "rate": 0.5749375
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
