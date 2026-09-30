@@ -47,6 +47,9 @@ WHITE = [(0.0, "#3a3452"), (0.3, "#a8a4c4"), (0.7, "#fffaf0")]
 # The jaw turns about this hinge (just in front of the ears, below the eyes).
 HINGE = Vector((0.0, 0.2, -0.15))
 MOUTH_Z = -0.43  # the mouth line on the unit sphere, before shaping
+# Where the hair and beard converge: left of the head, a little below the eyes, behind the face,
+# inside the frame so the point shows.
+TAIL = Vector((-2.0, 0.5, -0.3))
 
 
 def parse():
@@ -189,25 +192,26 @@ def hair_and_beard(coll, rnd):
             d = Vector((-1.0, 0.25, -0.25 * u.z)) + jit(0.12)
             crown.append((p - u * 0.02, d, rnd.uniform(0.4, 1.0), rnd.uniform(0.09, 0.15)))
         elif (u.z > 0.3 or (u.y > 0.25 and u.z > -0.35)) and len(hair) < 280:
-            # Swept back and to the left, nearly level (the user: 'it should not be angled up.
-            # It should be more horizontal'): little of the root's own upward direction.
-            d = Vector((u.x * 0.3, u.y * 0.4, u.z * 0.12)) + Vector((-1.0, 0.35, -0.2)) + jit(0.15)
-            hair.append((p - u * 0.04, d, rnd.uniform(0.8, 2.4), rnd.uniform(0.06, 0.11)))
+            # Every lock of hair and beard runs to one point left of the head, so the mass
+            # narrows to a tail as in the painting (the user: 'flowing and then converging at a
+            # point ... Yours is sort of an inverse of that').
+            d = TAIL + jit(0.12) - p
+            hair.append((p - u * 0.04, d, d.length * rnd.uniform(0.8, 1.0), rnd.uniform(0.06, 0.11)))
         elif -1.02 < u.z < MOUTH_Z - 0.08 and u.y < 0.15 and not (abs(u.x) < 0.2 and u.z > MOUTH_Z - 0.2) and len(beard) < 170:
-            # In the painting the beard streams left with the hair, one long mass in the wind,
-            # a little below level (the user, with the painting: "See the hair???").
-            d = Vector((u.x * 0.2, u.y * 0.2, u.z * 0.25)) + Vector((-1.0, 0.1, -0.3)) + jit(0.15)
-            beard.append((p - u * 0.03, d, rnd.uniform(0.9, 2.4), rnd.uniform(0.07, 0.14)))
+            # In the painting the beard streams left with the hair, one long mass in the wind
+            # (the user, with the painting: "See the hair???").
+            d = TAIL + jit(0.12) - p
+            beard.append((p - u * 0.03, d, d.length * rnd.uniform(0.8, 1.0), rnd.uniform(0.07, 0.14)))
         elif u.y < -0.75 and 0.07 < abs(u.x) < 0.34 and MOUTH_Z + 0.02 < u.z < MOUTH_Z + 0.12 and len(tache) < 40:
             side = math.copysign(1, u.x)
             tache.append((p, Vector((side, -0.4, -0.9)), rnd.uniform(0.45, 0.9), rnd.uniform(0.06, 0.1)))
         elif u.y < -0.7 and 0.14 < abs(u.x) < 0.56 and 0.25 < u.z < 0.34 and len(brows) < 30:
             side = math.copysign(1, u.x)
             brows.append((p, Vector((side, -0.5, 0.35)), rnd.uniform(0.22, 0.42), rnd.uniform(0.05, 0.08)))
-    hair_and_beard.blown = [(shards("hair", hair, coll, white, left * 0.9, seed=1), 0.22), (shards("crown", crown, coll, white, left * 0.4, seed=5), 0.08), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
+    hair_and_beard.blown = [(shards("hair", hair, coll, white, Vector(), seed=1), 0.22), (shards("crown", crown, coll, white, left * 0.4, seed=5), 0.08), (shards("moustache", tache, coll, white, left * 0.3, seed=2), 0.06)]
     shards("brows", brows, coll, white, left * 0.2, seed=3)
     # The beard hangs from the jaw, so it turns about the jaw's hinge.
-    return shards("beard", beard, coll, white, left * 0.8 + Vector((0, 0, -0.1)), origin=HINGE, seed=4)
+    return shards("beard", beard, coll, white, Vector(), origin=HINGE, seed=4)
 
 
 def backdrop(glow, ink):
