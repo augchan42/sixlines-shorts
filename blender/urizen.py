@@ -62,6 +62,10 @@ def parse():
     # ribbons: the user's pick, 2026-10-01 ("This is best so far"; of a scalp cap: "Cap is dumb").
     p.add_argument("--hair", default="ribbons", choices=["shards", "ribbons", "locks", "cards"])
     p.add_argument("--beard-turn", type=float, help="degrees counterclockwise, overriding BEARD_TURN")
+    p.add_argument("--shift-beard", type=int, default=0)
+    p.add_argument("--beard-swing", type=float, default=0.0)
+    p.add_argument("--beard-drop", type=float, help="how far below the hair's point the beard's point is")
+    p.add_argument("--beard-left", type=float, help="units to move the beard left, overriding BEARD_LEFT")
     p.add_argument("--wind", action="store_true", help="the hair and beard move in a wind from the right")
     p.add_argument("--frames", help="first-last, 1-based, to render part of a short")
     return p.parse_args(argv)
@@ -338,7 +342,14 @@ def hair_locks(coll, rnd, style):
     # (the user: 'Why is the beard uneven? One side is higher than the other').
     half = spread([u for u in on_jaw if u.x >= 0], st["beard"] // 2)
     even = half + [Vector((-u.x, u.y, u.z)) for u in half]
-    beard = [(shape(u) - u * 0.03, u, TAIL + Vector((0, -0.45, -0.35)) + jit(0.06)) for u in even]
+    if SHIFT_BEARD:
+        # Some of the beard moved from the right side (as seen) to the left: the right side's
+        # highest roots go across to the left, near their mirror images (the user: 'shift some
+        # ... from the right side facing me to the left side').
+        high = sorted(half, key=lambda u: -u.z)[:SHIFT_BEARD]
+        even = [u for u in even if all((u - h).length > 1e-6 for h in high)]
+        even += [Vector((-u.x - 0.08, u.y, u.z - 0.08)).normalized() for u in high]
+    beard = [(shape(u) - u * 0.03, u, TAIL + BEARD_TAIL + jit(0.06)) for u in even]
     tache = [(shape(u), u, shape(u) + Vector((-0.5, 0.1, -0.5)) + jit(0.05)) for u in spread(on_lip, 4)]
     hair_and_beard.blown = [(locks("hair", hair, coll, white, style, rnd), 0.22), (locks("moustache", tache, coll, white, style, rnd), 0.05)]
     left = Vector((-1.0, 0.0, 0.0))
@@ -421,9 +432,16 @@ def main():
         halo = neon(glow)
     # No eyeballs (the user: 'with eyes looks [wrong]. Less is more'): the sockets under the
     # brow are enough.
+    global SHIFT_BEARD
+    SHIFT_BEARD = args.shift_beard
+    if args.beard_drop is not None:
+        BEARD_TAIL.z = -args.beard_drop
     face, _ = head(ink)
     beard = hair_and_beard(ink, rnd) if args.hair == "shards" else hair_locks(ink, rnd, args.hair)
     beard.rotation_euler.y = -(math.radians(args.beard_turn) if args.beard_turn is not None else BEARD_TURN)
+    # Seen from the front, a turn about +z carries the front of the beard to the right; so minus.
+    beard.rotation_euler.z = -math.radians(args.beard_swing)
+    beard.location.x -= args.beard_left if args.beard_left is not None else BEARD_LEFT
     if args.wind:
         wind([*hair_and_beard.blown, (beard, 0.14)])
 
@@ -496,7 +514,17 @@ def wind(blown):
 
 # The beard turned counterclockwise as seen, about the jaw's hinge, its tail lower (the user:
 # 'Rotate the beard counterclockwise'); the view looks along +y, so that is a turn about -y.
-BEARD_TURN = math.radians(10)
+BEARD_TURN = 0.0  # 40 lifted the right side up to the ear ('too much on one side'); BEARD_TAIL lowers the tail instead
+
+# The beard's point from the hair's: in front of the neck and lower, so the tail hangs down to the
+# left (what turning the beard counterclockwise was for) with the beard centred under the chin.
+BEARD_TAIL = Vector((0.2, -0.45, -0.7))
+SHIFT_BEARD = 0  # beard roots moved from the right side to the left (--shift-beard)
+# Turning the beard about the hinge (above and behind the chin) carries its mass to the right as
+# seen; it moves back left by this much (the user: 'There's too much on one side. Shift it to the
+# other side').
+BEARD_LEFT = 0.0
+BEARD_SWING = 0.0  # radians the beard swings to the left about the vertical (--beard-swing, degrees)
 
 OPEN = 0.7  # the jaw's widest, as a share of the shape key's (0.24 rad): a full turn reads as a yawn
 
