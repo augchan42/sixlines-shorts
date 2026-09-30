@@ -18,9 +18,9 @@ export type BookendProps = {
   inAt: number; // frame the flicker into the short starts
   outAt: number; // frame the flicker back to ivory starts
   tail: number; // frames the ivory card holds past the short
-  // cut: the second in each recording where the sound switches off; it lands on the frame the
-  // flicker settles (SETTLE frames after inAt or outAt).
-  sfx?: { in?: string; out?: string; inCut?: number; outCut?: number; inVolume?: number; outVolume?: number };
+  // Static under each flicker, cut into bursts on the frames the screen changes (BURSTS).
+  // inFrom/outFrom: the second in the recording each flicker's slice starts at.
+  sfx?: { in?: string; out?: string; inFrom?: number; outFrom?: number; inVolume?: number; outVolume?: number };
 };
 
 // sixlines-site's --background and --ink.
@@ -34,7 +34,9 @@ const serif = `"${GOUDY}", serif`;
 // under three a second (no strobe), ending on the side it goes to.
 const IN = [true, false, false, false, true, true, true];
 const OUT = [false, true, true, true, false, false, false];
-const SETTLE = IN.length;
+// The screen changes on frames 1, 4 and 7 of a flicker; the static sounds on each for two frames.
+const BURSTS = [1, 2, 4, 5, 7, 8];
+const BURST_FRAMES = 9;
 const FPS = 30;
 
 // Six yang bars where the green card's are (measured on Kun's frame 898): x 231-847, 51 high,
@@ -71,6 +73,12 @@ const TITLE_SPACING = -3;
 const SITE_TOP = 1346;
 const SITE_SIZE = 60;
 
+const Static: React.FC<{ src: string; at: number; from: number; volume: number }> = ({ src, at, from, volume }) => (
+  <Sequence from={at} durationInFrames={BURST_FRAMES} layout="none">
+    <Audio src={staticFile(src)} trimBefore={Math.round(from * FPS)} volume={(f) => (BURSTS.includes(f) ? volume : 0)} />
+  </Sequence>
+);
+
 export const bookendFrames = (p: BookendProps) => p.frames + p.tail;
 
 export const Bookend: React.FC<BookendProps> = (p) => {
@@ -83,16 +91,8 @@ export const Bookend: React.FC<BookendProps> = (p) => {
       <OffthreadVideo src={staticFile(p.src)} endAt={p.frames} />
       {open && <Open hook={p.hook} label={p.label} />}
       {close && <Close tagline={p.tagline} site={p.site} />}
-      {p.sfx?.in && (
-        <Sequence from={p.inAt + SETTLE - Math.round((p.sfx.inCut ?? 0) * FPS)} layout="none">
-          <Audio src={staticFile(p.sfx.in)} volume={p.sfx.inVolume ?? 0.6} />
-        </Sequence>
-      )}
-      {p.sfx?.out && (
-        <Sequence from={p.outAt + SETTLE - Math.round((p.sfx.outCut ?? 0) * FPS)} layout="none">
-          <Audio src={staticFile(p.sfx.out)} volume={p.sfx.outVolume ?? 0.6} />
-        </Sequence>
-      )}
+      {p.sfx?.in && <Static src={p.sfx.in} at={p.inAt} from={p.sfx.inFrom ?? 0} volume={p.sfx.inVolume ?? 0.6} />}
+      {p.sfx?.out && <Static src={p.sfx.out} at={p.outAt} from={p.sfx.outFrom ?? 0} volume={p.sfx.outVolume ?? 0.6} />}
     </AbsoluteFill>
   );
 };

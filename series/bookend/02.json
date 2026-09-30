@@ -10,12 +10,12 @@
  "outAt": 900,
  "tail": 30,
  "sfx": {
-  "in": "local/sfx/dragon-studio-tv-shutdown-386167.mp3",
-  "out": "local/sfx/dragon-studio-tv-shutdown-386167.mp3",
-  "inCut": 0.82,
-  "outCut": 0.82,
+  "in": "local/sfx/freesound_community-tv-glitch-6245.mp3",
+  "out": "local/sfx/freesound_community-tv-glitch-6245.mp3",
+  "inFrom": 0.5,
+  "outFrom": 3.0,
   "inVolume": 0.6,
   "outVolume": 0.6
  },
- "sfxNote": "Dragon Studio, 'TV Shutdown', Pixabay sound effect 386167 (Pixabay Content License), downloaded by the user 2026-09-30. A hum from 0.1 s that cuts off at 0.82 s; the cut lands where each flicker settles. Phone check: 0.3% below 250 Hz."
+ "sfxNote": "'TV glitch' by freesound_community, Pixabay sound effect 6245 (Pixabay Content License), downloaded by the user 2026-09-30 after 'TV Shutdown' (386167): 'that doesn't sound right... we want like choppy static'. 7.4 s of steady glitch noise, 1% below 250 Hz; slices from 0.5 s and 3.0 s, heard only for two frames at each screen change."
 }
