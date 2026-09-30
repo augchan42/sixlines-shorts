@@ -4,7 +4,7 @@
   "provider": "ElevenLabs",
   "voiceId": "WdZjiN0nNcik2LBjOHiv",
   "name": "David",
-  "note": "Picked by the user 2026-09-30 (https://elevenlabs.io/voices/WdZjiN0nNcik2LBjOHiv): 'a classic nature narrator'. A synthetic voice: this short carries the AI-content label on YouTube and TikTok. Astra advises another voice: this one's marketing ('David', 'national treasure', 'classic nature narrator') invites an Attenborough comparison, and he objected publicly to AI copies of his voice in November 2024. The founder's call. Direction either way: plain, even pace; short pauses; no wonder or reverence, no emphasis announcing the jokes."
+  "note": "Picked by the user 2026-09-30 (https://elevenlabs.io/voices/WdZjiN0nNcik2LBjOHiv): 'a classic nature narrator'. A synthetic voice: this short carries the AI-content label on YouTube and TikTok. Astra advises another voice: this one's marketing ('David', 'national treasure', 'classic nature narrator') invites an Attenborough comparison, and he objected publicly to AI copies of his voice in November 2024. The founder's call. Direction either way: plain, even pace; short pauses; no wonder or reverence, no emphasis announcing the jokes. The founder, 2026-09-30, after Astra's advice: 'Lets keep David for now.' Takes need a paid ElevenLabs plan: the API refuses library voices on the free plan (402 paid_plan_required), and free output has no commercial licence."
  },
  "narration": [
   {
