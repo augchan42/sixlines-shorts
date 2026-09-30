@@ -45,7 +45,7 @@
      "q": "HOW DO BOTH REACH 64",
      "a": "CODONS: 4 X 4 X 4 = 64.\nHEXAGRAMS:\n2 X 2 X 2 X 2 X 2 X 2 = 64.",
      "show": {
-      "big": "4³ = 2⁶"
+      "big": "64\n4X4X4 = 2X2X2X2X2X2"
      }
     },
     {

@@ -37,23 +37,23 @@
      "q": "HOW DOES A PAIR WORK",
      "a": "IN 28 PAIRS, TURN THE FIRST\nUPSIDE DOWN TO GET THE SECOND.\n3 DIFFICULTY AT THE BEGINNING\n→ 4 YOUTHFUL FOLLY.",
      "show": {
-      "small": [
-       3,
-       4
-      ]
+      "clip": {
+       "src": "local/structure/pair-3-4.mp4"
+      },
+      "hold": 5
      },
-     "showNote": "Blender: 3 as an obsidian slab turns over end to end and becomes 4"
+     "showNote": "blender/pairs.py --lines 100010 --mode turn: 3 turns end over end into 4"
     },
     {
      "q": "WHAT ABOUT THE OTHER 4 PAIRS",
      "a": "EACH HEXAGRAM STAYS THE SAME\nUPSIDE DOWN.\nSWAP SOLID AND BROKEN INSTEAD.\n29 THE ABYSS → 30 CLINGING FIRE.",
      "show": {
-      "small": [
-       29,
-       30
-      ]
+      "clip": {
+       "src": "local/structure/pair-29-30.mp4"
+      },
+      "hold": 6
      },
-     "showNote": "Blender: 29 turns end to end and stays 29; then each slab flips on its own axis into 30"
+     "showNote": "blender/pairs.py --lines 010010 --mode flip: 29 turns and stays 29, then each line flips, bottom first, into 30"
     },
     {
      "q": "HOW DO I READ A PAIR",
