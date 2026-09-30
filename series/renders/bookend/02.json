@@ -2,17 +2,26 @@
  "short": "out/series/02-kun/short.mp4",
  "shortSha256": "6c7ee832b9717c3e85ff986cfe54e9c2340e847387449d18751b7868fb1e77a3",
  "props": "series/bookend/02.json",
- "sfx": {},
+ "sfx": {
+  "in": {
+   "file": "local/sfx/dragon-studio-tv-shutdown-386167.mp3",
+   "sha256": "532c12c80f5180bc871d838c6d85a45ed6a09f8e82a4f04c570d92ad2282b12e"
+  },
+  "out": {
+   "file": "local/sfx/dragon-studio-tv-shutdown-386167.mp3",
+   "sha256": "532c12c80f5180bc871d838c6d85a45ed6a09f8e82a4f04c570d92ad2282b12e"
+  }
+ },
  "seconds": 33.088,
  "level": {
   "gain": -0.1,
-  "limiter": null,
+  "limiter": -3.8,
   "after": {
-   "lufs": -13.42,
-   "phoneLufs": -16.51,
-   "dbtp": -3.24
+   "lufs": -13.48,
+   "phoneLufs": -16.55,
+   "dbtp": -3.19
   }
  },
- "commit": "7d82b4f10c67b6b10e8f79cf96c3261916914f1c",
+ "commit": "23f4b045a45c07ec8010bb04a2e43216f2bc4fb5",
  "clean": false
 }

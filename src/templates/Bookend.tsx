@@ -18,7 +18,9 @@ export type BookendProps = {
   inAt: number; // frame the flicker into the short starts
   outAt: number; // frame the flicker back to ivory starts
   tail: number; // frames the ivory card holds past the short
-  sfx?: { in?: string; out?: string; inVolume?: number; outVolume?: number };
+  // cut: the second in each recording where the sound switches off; it lands on the frame the
+  // flicker settles (SETTLE frames after inAt or outAt).
+  sfx?: { in?: string; out?: string; inCut?: number; outCut?: number; inVolume?: number; outVolume?: number };
 };
 
 // sixlines-site's --background and --ink.
@@ -32,6 +34,8 @@ const serif = `"${GOUDY}", serif`;
 // under three a second (no strobe), ending on the side it goes to.
 const IN = [true, false, false, false, true, true, true];
 const OUT = [false, true, true, true, false, false, false];
+const SETTLE = IN.length;
+const FPS = 30;
 
 // Six yang bars where the green card's are (measured on Kun's frame 898): x 231-847, 51 high,
 // tops 666, 746, 825 and 964, 1044, 1123.
@@ -80,12 +84,12 @@ export const Bookend: React.FC<BookendProps> = (p) => {
       {open && <Open hook={p.hook} label={p.label} />}
       {close && <Close tagline={p.tagline} site={p.site} />}
       {p.sfx?.in && (
-        <Sequence from={p.inAt} layout="none">
+        <Sequence from={p.inAt + SETTLE - Math.round((p.sfx.inCut ?? 0) * FPS)} layout="none">
           <Audio src={staticFile(p.sfx.in)} volume={p.sfx.inVolume ?? 0.6} />
         </Sequence>
       )}
       {p.sfx?.out && (
-        <Sequence from={p.outAt} layout="none">
+        <Sequence from={p.outAt + SETTLE - Math.round((p.sfx.outCut ?? 0) * FPS)} layout="none">
           <Audio src={staticFile(p.sfx.out)} volume={p.sfx.outVolume ?? 0.6} />
         </Sequence>
       )}
