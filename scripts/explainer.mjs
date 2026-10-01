@@ -144,7 +144,7 @@ if (process.argv.includes("--props-only")) process.exit(0);
 
 const commit = run("git", ["rev-parse", "HEAD"]).trim();
 const clean = run("git", ["status", "--porcelain"]).trim() === "";
-const inputs = [...(props.music ? [props.music] : []), ...(props.plate ? [props.plate] : []), props.endcard.clip, ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
+const inputs = [...(props.music ? [props.music] : []), ...(props.plate ? [props.plate] : []), ...(props.endcard.clip ? [props.endcard.clip] : []), ...(lesson ? [ticks] : []), ...(props.sfx ? Object.values(props.sfx) : [])];
 const missing = inputs.filter((f) => !existsSync(pub(f)));
 if (missing.length) throw new Error(`missing: ${missing.join(", ")}`);
 
