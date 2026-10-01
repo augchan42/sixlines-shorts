@@ -1,0 +1,1234 @@
+{
+ "generated": "2026-10-01",
+ "about": "Inventory for the experiments tracker artifact; built from the repo and chat history.",
+ "groups": [
+  {
+   "id": "guides",
+   "title": "Guide shorts"
+  },
+  {
+   "id": "structure",
+   "title": "Structure shorts"
+  },
+  {
+   "id": "lessons",
+   "title": "Lessons & explainers"
+  },
+  {
+   "id": "characters",
+   "title": "Character lessons & neon signs"
+  },
+  {
+   "id": "specials",
+   "title": "Specials"
+  },
+  {
+   "id": "styletests",
+   "title": "Style tests"
+  },
+  {
+   "id": "blender",
+   "title": "Blender scenes & end cards"
+  },
+  {
+   "id": "tools",
+   "title": "Tools, sound & music"
+  }
+ ],
+ "items": [
+  {
+   "id": "guide-wangbi",
+   "group": "guides",
+   "title": "Guide: Wang Bi",
+   "what": "A Hitchhiker's Guide-style short: a book-device entry on Wang Bi, read by a dry narrator, in the 1981 BBC neon-outline look.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict on the full cut.",
+   "files": [
+    "series/specials/guide-wangbi.json",
+    "out/guide/guide-wangbi-720.mp4",
+    "docs/notes/2026-09-30-guide-wangbi-shots.md",
+    "docs/research/2026-09-30-codex-guide-wangbi.md"
+   ],
+   "commit": "4c55f2c",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "I think the guide shorts are a real format. Um, but yeah, maybe we need a few more smoke tests to refine it.",
+   "notes": [
+    "Full short 54.5 s; nine shots, four camera moves after Astra's shot review.",
+    "Smoke tests: lines 1-3 flat mustard style, then retro restyle after the BBC references ('the style is funny but not retro enough').",
+    "On the retro smoke test: 'can we use I-Ching instead of I Ching. and it looks good.'",
+    "Draft 2 is Astra's revision."
+   ]
+  },
+  {
+   "id": "guide-64",
+   "group": "guides",
+   "title": "Guide: 64 Not Yet Across",
+   "what": "Guide entry on hexagram 64, the book's last.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/specials/guide-64.json",
+    "out/guide/guide-64-720.mp4",
+    "docs/research/2026-10-01-codex-guide-64.md"
+   ],
+   "commit": "14918d5",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "51 s. Script converged with Astra in round 1.",
+    "The user plans to look at the guides (2026-10-01)."
+   ]
+  },
+  {
+   "id": "guide-cords",
+   "group": "guides",
+   "title": "Guide: Confucius's broken cords",
+   "what": "Guide entry on Confucius reading the I-Ching until the bamboo cords broke three times (韋編三絕, the leather cords broke three times).",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/specials/guide-cords.json",
+    "out/guide/guide-cords-720.mp4",
+    "docs/research/2026-10-01-codex-guide-cords.md"
+   ],
+   "commit": "14918d5",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "50 s. Script converged with Astra in round 1."
+   ]
+  },
+  {
+   "id": "guide-leibniz",
+   "group": "guides",
+   "title": "Guide: Leibniz",
+   "what": "Guide entry on Leibniz and the hexagrams in binary order.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/specials/guide-leibniz.json",
+    "out/guide/guide-leibniz-720.mp4",
+    "docs/research/2026-10-01-codex-guide-leibniz.md"
+   ],
+   "commit": "41c7189",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "52 s. Astra's revision: paper written 1703, order only attributed to Shao Yong."
+   ]
+  },
+  {
+   "id": "guide-trigrams",
+   "group": "guides",
+   "title": "Guide: the eight trigrams",
+   "what": "Guide entry on the eight trigrams, their qualities and animals from the Discussion of the Trigrams (說卦, Discussion of the Trigrams).",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/specials/guide-trigrams.json",
+    "out/guide/guide-trigrams-720.mp4",
+    "docs/research/2026-10-01-codex-guide-trigrams.md"
+   ],
+   "commit": "41c7189",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "65 s. Astra's revision adopted, except 63 named Already Across."
+   ]
+  },
+  {
+   "id": "urizen-qian6",
+   "group": "guides",
+   "title": "Urizen on Qián line 6",
+   "what": "A talking-head short: Blake's Urizen speaks as pure creative force, then the Guide narrator gives line 6's turn.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict on the entry-card version.",
+   "files": [
+    "series/specials/urizen-qian6.json",
+    "out/urizen/urizen-qian6-card-720.mp4",
+    "blender/urizen.py",
+    "docs/research/2026-10-01-codex-urizen-motion.md"
+   ],
+   "commit": "427afbd",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "Urizen with the guide is a bit flat, i feel like it needs some more movement or a transition between urizen and the narrator.",
+   "notes": [
+    "That comment was on the first cut; the latest cut adds Astra's transition: ENTRY: URIZEN card, OCCUPATION: MEASURING, hard cut back.",
+    "Earlier cuts: urizen-qian6-720.mp4 (mirrored moustache, wind), urizen-qian6-chyen-720.mp4 (caption read CHYEN).",
+    "Voice auditions in out/voice/urizen-audition."
+   ]
+  },
+  {
+   "id": "structure-cube",
+   "group": "structure",
+   "title": "Structure: the 6D cube",
+   "what": "The 64 hexagrams as vertices of a six-dimensional cube, with Blender clips in the terminal.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/explainers/structure-cube.json",
+    "out/explainers/structure-cube/structure-cube-720.mp4",
+    "blender/hypercube.py",
+    "docs/research/2026-10-01-codex-structure-cube.md"
+   ],
+   "commit": "59e8daf",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "corner just makes it ambiguous, or it, it, it, it makes it specific to the edge, which is not correct.",
+   "notes": [
+    "59 s. Smoke test of pages 2-3 sent twice on 2026-09-30.",
+    "After the user's comment, 'corner' became 'vertex' throughout.",
+    "Copy: Astra's revision, round 1."
+   ]
+  },
+  {
+   "id": "structure-pairs",
+   "group": "structure",
+   "title": "Structure: King Wen's pairs",
+   "what": "King Wen's order as 32 pairs, shown with Blender obsidian slabs that turn over or flip line by line.",
+   "stage": "smoke-test",
+   "next": "If the user likes the slab style, render the full short.",
+   "files": [
+    "series/explainers/structure-pairs.json",
+    "blender/pairs.py",
+    "out/explainers/structure-pairs-pages-2-3/pairs-smoke-fixed-720.mp4",
+    "docs/research/2026-10-01-codex-structure-pairs.md"
+   ],
+   "commit": "91829a6",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Smoke test pages 2-3: 3 turns into 4; 29 turns, stays 29, then each line flips into 30.",
+    "Fixed version: each turn starts after its answer is typed.",
+    "Copy: Astra's revision, round 1."
+   ]
+  },
+  {
+   "id": "structure-splits",
+   "group": "structure",
+   "title": "Structure: one becomes 64",
+   "what": "A 12 s loop: the doubling tree splits six times and closes into the ring of 64.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/explainers/structure-splits.json",
+    "out/explainers/structure-splits/structure-splits-720.mp4",
+    "docs/research/2026-10-01-codex-structure-splits.md"
+   ],
+   "commit": "59e8daf",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Hold cut from 11 to 6 s so the ring doesn't sit. No end card, so it loops."
+   ]
+  },
+  {
+   "id": "structure-count",
+   "group": "structure",
+   "title": "Structure: counting 0 to 63",
+   "what": "A 20 s loop counting from Kun 0 to Qian 63 round Shao Yong's circle.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/explainers/structure-count.json",
+    "out/explainers/structure-count/structure-count-720.mp4",
+    "docs/research/2026-10-01-codex-structure-count.md"
+   ],
+   "commit": "59e8daf",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "No end card, so it loops."
+   ]
+  },
+  {
+   "id": "structure-codons",
+   "group": "structure",
+   "title": "Structure: 64 codons",
+   "what": "A plain terminal short comparing the 64 hexagrams with the 64 codons; ends 'Same number. Not the same code.'",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/explainers/structure-codons.json",
+    "out/explainers/structure-codons/structure-codons-720.mp4",
+    "docs/research/2026-10-01-codex-structure-codons.md"
+   ],
+   "commit": "59e8daf",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "51 s. Remotion only."
+   ]
+  },
+  {
+   "id": "structure-timeline",
+   "group": "structure",
+   "title": "Structure: 3,000 years in 40 seconds",
+   "what": "A terminal log of dates, one entry per page, over a Blender push along a corridor of dates.",
+   "stage": "smoke-test",
+   "next": "Your view on the corridor style; then render all 8 pages.",
+   "files": [
+    "series/explainers/structure-timeline.json",
+    "blender/timeline.py",
+    "scripts/timeline.mjs",
+    "docs/research/2026-10-01-codex-structure-timeline.md"
+   ],
+   "commit": "7767909",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Smoke test on pages 1 and 5 rendering now (out/timeline/).",
+    "Each page pushes up to its date, which turns amber as the camera arrives at 2.5 s.",
+    "Copy: Astra's revision, round 1.",
+    "Smoke test of pages 1 and 5 sent 2026-10-01."
+   ]
+  },
+  {
+   "id": "structure-octagons",
+   "group": "structure",
+   "title": "Structure: heaven before and after",
+   "what": "Two octagons of glowing trigrams; the trigrams move from one arrangement to the other.",
+   "stage": "drafted",
+   "next": "Build the Blender octagons scene and smoke-test it.",
+   "files": [
+    "series/explainers/structure-octagons.json",
+    "docs/research/2026-10-01-codex-structure-octagons.md",
+    "docs/superpowers/specs/2026-09-30-structure-shorts-design.md"
+   ],
+   "commit": "4e2b18c",
+   "date": "2026-10-01",
+   "sent": false,
+   "userSaid": "",
+   "notes": [
+    "Copy converged with Astra in round 1; no Blender scene yet."
+   ]
+  },
+  {
+   "id": "wangbi-lesson",
+   "group": "lessons",
+   "title": "Wang Bi lesson",
+   "what": "How Wang Bi reads a hexagram: a terminal-inquiry lesson of about 3.8 min in the flight look with machine sounds.",
+   "stage": "posted",
+   "next": "",
+   "files": [
+    "series/explainers/wangbi-lesson.json",
+    "out/explainers/wangbi-lesson/share.mp4",
+    "series/social/2026-09-28-wangbi-lesson.json"
+   ],
+   "commit": "d66a1d5",
+   "date": "2026-09-28",
+   "sent": true,
+   "userSaid": "love it.",
+   "notes": [
+    "Posted on Six Lines (X, Threads) and 8-Bit Oracle (X); 8-Bit Oracle's other two posts a week later.",
+    "Review board verdict 'change': 'read the amber finding... shows on the screen way too fast ... the end credit ends too abruptly'; fixed (228.4 s).",
+    "Replaced the 42 s readout-key explainer."
+   ]
+  },
+  {
+   "id": "wangbi-teaser",
+   "group": "lessons",
+   "title": "Wang Bi teaser",
+   "what": "A 73 s cut of the Wang Bi lesson for Instagram, ending on 7 The Army as a quiz.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict; post to Instagram by hand.",
+   "files": [
+    "series/explainers/wangbi-teaser.json",
+    "out/explainers/wangbi-teaser/share.mp4"
+   ],
+   "commit": "47cf8d9",
+   "date": "2026-09-28",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Made because Instagram Reels stop at 3 min."
+   ]
+  },
+  {
+   "id": "wangbi-flight-tests",
+   "group": "lessons",
+   "title": "Wang Bi flight-look tests",
+   "what": "One page of the Wang Bi lesson used to test the camera flight, machine sounds, background bed and end music.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/explainers/wangbi-flight-test.json",
+    "series/explainers/wangbi-flight-cues-endmusic.json",
+    "series/explainers/wangbi-flight-smoke.json",
+    "out/explainers/wangbi-flight-cues-endmusic/preview.mp4"
+   ],
+   "commit": "02e2ae3",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "Love the new direction. Can we maybe do a couple more?",
+   "notes": [
+    "Variants: flight-test (rounds 1-7), flight-test-music, flight-cues (no music), flight-cues-endmusic (rounds 8-10), flight-smoke (five pages, 54 s).",
+    "On round 2 chirps: 'Those chirps are very annoying.'",
+    "Smoke test feedback led to 'position' not 'place' and one amber line at a time.",
+    "Adopted into the full lesson."
+   ]
+  },
+  {
+   "id": "wangbi-hud",
+   "group": "lessons",
+   "title": "Nostromo HUD",
+   "what": "A HUD after the Nostromo navigation screens: title with boxed tags, crosshairs and a column of values.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "docs/research/2026-09-27-nostromo-screens.md"
+   ],
+   "commit": "e03c598",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "It seems to just add clutter without flavor.",
+   "notes": [
+    "Tried on the Wang Bi lesson and 22; reverted."
+   ]
+  },
+  {
+   "id": "readout-key",
+   "group": "lessons",
+   "title": "Readout explainer (42 s)",
+   "what": "A short that shows how to read the readout, with 22 Grace as the example.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "series/explainers/readout-key.json",
+    "out/explainers/readout-key/preview.mp4"
+   ],
+   "commit": "fdc330b",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "i feel like we shouldn't need to be restricted to a short of 42 seconds, this is actually a full wang bi lesson. i find it hard to follow whats going on.",
+   "notes": [
+    "Replaced by the Wang Bi lesson."
+   ]
+  },
+  {
+   "id": "leibniz-lesson",
+   "group": "lessons",
+   "title": "Leibniz diagram lesson",
+   "what": "The diagram Bouvet sent Leibniz in 1701, as a terminal lesson with flythroughs (The Letter from Beijing).",
+   "stage": "sent",
+   "next": "Wait for the user's verdict on the 167 s cut.",
+   "files": [
+    "series/explainers/leibniz-lesson.json",
+    "out/explainers/leibniz-lesson/share.mp4",
+    "docs/superpowers/specs/2026-09-30-leibniz-diagram-design.md",
+    "docs/research/2026-09-30-leibniz-diagram.md"
+   ],
+   "commit": "fe705eb",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "reads right. can we make the sound a bit more itneresting somehow?",
+   "notes": [
+    "Smoke tests: pages 1-5, sound samples on pages 5-6 and 6-7-10.",
+    "Guqin note from xserra (Freesound 161908, CC BY 4.0), the user's pick; beacon on the second flight only.",
+    "Ends 6 LINES / 64 SITUATIONS, as the user asked."
+   ]
+  },
+  {
+   "id": "shannon-short",
+   "group": "lessons",
+   "title": "Six Bits (Shannon)",
+   "what": "A terminal short on Shannon and the six lines: six bits describe 64 equally likely cases.",
+   "stage": "sent",
+   "next": "Wait for the user's verdict.",
+   "files": [
+    "series/explainers/shannon-short.json",
+    "out/explainers/shannon-short/shannon-short-720.mp4",
+    "docs/superpowers/specs/2026-09-30-shannon-six-bits-design.md",
+    "docs/research/2026-10-01-codex-shannon-short.md"
+   ],
+   "commit": "6c66a82",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Full cut 86 s; smoke test pages 1 and 5 sent 2026-09-30 (user: 'yes push it').",
+    "Moving lines left out, with the user's agreement."
+   ]
+  },
+  {
+   "id": "demo-walkthrough",
+   "group": "lessons",
+   "title": "App demo walkthrough",
+   "what": "A 50 s walkthrough of the Six Lines app from simulator takes, in English, Simplified and Traditional Chinese.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "out/demo/walkthrough/share.mp4",
+    "out/demo/walkthrough-zh-hans/share.mp4",
+    "out/demo/walkthrough-zh-hant/share.mp4",
+    "docs/notes/2026-09-25-demo-walkthrough-plans.md"
+   ],
+   "commit": "7f14cbc",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "for the captions, can we make sure they don't obstruct the 3d drawing of the character, both english and chinese",
+   "notes": [
+    "English went through twelve cuts; Simplified four; Traditional one.",
+    "Chinese wording from a Chinese-speaking tester; the user: 'ok follow your recs'.",
+    "Led to sixlines-ios PR #194 (Judgment card, 'What Would Prove This Wrong')."
+   ]
+  },
+  {
+   "id": "character-specials",
+   "group": "characters",
+   "title": "Character lesson shorts (5, 18, 42, 47, 58)",
+   "what": "Series shorts with the lesson replaced by a neon Blender drawing of the hexagram's character.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/character-42.json",
+    "out/specials/character-42/share.mp4",
+    "blender/character.py",
+    "series/characters.json"
+   ],
+   "commit": "29e4c8f",
+   "date": "2026-09-25",
+   "sent": true,
+   "userSaid": "No, I like let your gain spill over. I think these character lessons are good.",
+   "notes": [
+    "Variants: character-5, -18, -42, -47, -58.",
+    "On the hold at the end: 'that amount of hold is good.'",
+    "The style went into 14 series shorts."
+   ]
+  },
+  {
+   "id": "character-drawings",
+   "group": "characters",
+   "title": "Neon character drawings",
+   "what": "Neon Blender drawings of 21 hexagram characters, each acting out its meaning (困, 益, 蠱, 井, 屯, 明, 鼎, 解, 恆, 需, 臨, 艮, 剝, 旅, 兌, 比, 同, 既, 復, 履, 頤).",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/character.py",
+    "out/characters/",
+    "series/characters.json",
+    "docs/notes/2026-09-25-what-makes-a-lesson.md"
+   ],
+   "commit": "e554fbb",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "Keep going. Love this series so far",
+   "notes": [
+    "First try (困 drawn plain) was rejected: 'The characters look like they were drawn by a child.' Redone as neon tubes.",
+    "Also sent: 困 alone, 9 s silent (out/characters/47-kun-character.mp4).",
+    "Characters: 困 hardship, 益 increase, 蠱 decay, 井 well, 屯 sprouting, 明 bright, 鼎 cauldron, 解 release, 恆 constancy, 需 waiting, 臨 approach, 艮 stillness, 剝 stripping, 旅 travel, 兌 joy, 比 together, 同 same, 既 already, 復 return, 履 tread, 頤 jaws."
+   ]
+  },
+  {
+   "id": "horse-2",
+   "group": "characters",
+   "title": "Horse (馬, horse) on 2",
+   "what": "Series short 2 The Receptive with its lesson replaced by 馬 (horse) in neon, walking toward you.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "series/specials/horse-2.json",
+    "out/specials/horse-2/share.mp4",
+    "out/specials/horse-2/neon-ma-hold.mp4"
+   ],
+   "commit": "266bcd9",
+   "date": "2026-09-28",
+   "sent": true,
+   "userSaid": "Give a longer hold",
+   "notes": [
+    "34.8 s short; then the character alone (10.7 s) and with a longer hold (18.7 s), as asked."
+   ]
+  },
+  {
+   "id": "neon-forms",
+   "group": "characters",
+   "title": "Neon script forms",
+   "what": "Characters traced through their historical scripts in neon: oracle bone, bronze, seal and regular script.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "blender/forms.py",
+    "out/forms/馬-share.mp4",
+    "out/forms/困-share.mp4",
+    "out/forms/革-share.mp4"
+   ],
+   "commit": "5c4b37d",
+   "date": "2026-09-28",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Variants: 馬 horse, 困 hardship, 鼎 cauldron, 井 well, 家 family, 革 revolution/molting. 11-15 s each, no music."
+   ]
+  },
+  {
+   "id": "neon-signs",
+   "group": "characters",
+   "title": "Neon name signs",
+   "what": "Still and animated neon signs of characters with Goudy labels, drawn in standard stroke order to Kun's music.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/sign.py",
+    "out/signs/wuyue-goudy.mp4",
+    "out/signs/fung-goudy.mp4",
+    "out/signs/leung-goudy.mp4"
+   ],
+   "commit": "6b864e8",
+   "date": "2026-09-29",
+   "sent": true,
+   "userSaid": "These are spectacular.",
+   "notes": [
+    "Variants: 吳越 WUYUE, 馮 FUNG, 陳 CHAN, 梁 LEUNG; Goudy labels chosen over pixel font.",
+    "Fung first drew 馬 before 冫; the user: 'You're reading way too much into things' (keep standard stroke order). Redone."
+   ]
+  },
+  {
+   "id": "mid-autumn-2026",
+   "group": "specials",
+   "title": "Mid-Autumn 2026",
+   "what": "A Mid-Autumn Festival short on 20 Contemplation (觀, to look), with a Blender polygon moon rising behind the lines.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/mid-autumn-2026-b.json",
+    "out/specials/mid-autumn-2026-b/share.mp4",
+    "series/specials/mid-autumn-2026.json",
+    "blender/moon.py"
+   ],
+   "commit": "e114330",
+   "date": "2026-09-25",
+   "sent": true,
+   "userSaid": "I like look like a guest, not an inspector",
+   "notes": [
+    "Version A: line texts light up as the moon rises. Version B: the moon alone, no labels; B was the one sent again for posting.",
+    "LinkedIn caption written for B; the user asked about posting it on LinkedIn. Not recorded as posted."
+   ]
+  },
+  {
+   "id": "wuyue-video",
+   "group": "specials",
+   "title": "Wuyue Kingdom video",
+   "what": "A neon history of the Wuyue Kingdom and its Buddhist transmission (printing, Leifeng Pagoda, the stupas), with a real map.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "out/wuyue/wuyue-vertical.mp4",
+    "out/wuyue/wuyue-wide-24mb.mp4",
+    "docs/superpowers/specs/2026-09-29-wuyue-video-treatment.md",
+    "blender/wuyue.py"
+   ],
+   "commit": "dad4020",
+   "date": "2026-09-29",
+   "sent": true,
+   "userSaid": "well whats missing is a sense of geography because there's no map.",
+   "notes": [
+    "Vertical cut 98 s, 23.7 MB; wide cut 104 s with a sources card.",
+    "11 s route smoke test: 'looks good. Keep going.'",
+    "Ending changed twice: 吳越 alone, map lines fading, no HANGZHOU.",
+    "Astra reviewed the treatment and stupa shots (docs/research/2026-09-29-codex-*.md)."
+   ]
+  },
+  {
+   "id": "glowline-qian",
+   "group": "specials",
+   "title": "Qian cut to Glowline (Gotchu)",
+   "what": "The first proof of concept: hexagram 1 cut to the structure of the user's daughter's short, set to Glowline's Syncopation Heaven.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "out/gotchu-qian-preview.mp4",
+    "out/compare-gotchu.mp4",
+    "out/sixlines-glowline-720p.mp4"
+   ],
+   "commit": "9f1bca1",
+   "date": "2026-09-24",
+   "sent": true,
+   "userSaid": "yes get rid of rthe icon and caption on those specific hits, but otherwise excellent. thank you!!!!",
+   "notes": [
+    "Shared with Glowline only, not for posting without their permission.",
+    "Instagram DM versions: yuv420p, faststart, under 25 MB; 720p and a 15 s cut."
+   ]
+  },
+  {
+   "id": "bookend-kun",
+   "group": "specials",
+   "title": "Ivory bookend (Kun smoke test)",
+   "what": "Kun opens on Goudy ivory, flickers into the green terminal, and flickers back out into the app icon layout.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "out/bookend/02-icon/",
+    "out/bookend/02/",
+    "src/templates/Bookend.tsx",
+    "series/bookend/02-icon.json"
+   ],
+   "commit": "6f9c4bf",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "Perfect. I love it when it's flickering into the app icon version.",
+   "notes": [
+    "Flicker sound: TV Shutdown rejected ('that doesn't sound right... we want like choppy static'); now Dragon Studio TV Static on the closing flicker only.",
+    "Bars rounded like the app icon's."
+   ]
+  },
+  {
+   "id": "bookend-launch",
+   "group": "specials",
+   "title": "Launch bookends (1, 2, 3, 5, 6, 23)",
+   "what": "Bookend versions of six launch shorts: ivory open for 2, 3, 5; terminal open with the ivory close for 1, 23, 6.",
+   "stage": "rendered",
+   "next": "Send to the user to check the open card.",
+   "files": [
+    "out/bookend/01/share.mp4",
+    "out/bookend/23/share.mp4",
+    "series/bookend/",
+    "docs/research/2026-09-30-codex-media-strategy-bookend.md"
+   ],
+   "commit": "813aaed",
+   "date": "2026-09-30",
+   "sent": false,
+   "userSaid": "i actually don't think the close needs to be shortened at all?",
+   "notes": [
+    "Tests Astra's suggestion on the open card; the user kept the close as it is."
+   ]
+  },
+  {
+   "id": "metal-qian",
+   "group": "specials",
+   "title": "Heavy Metal Qian",
+   "what": "A Heavy Metal comic look for hexagram 1: Blake's Ancient of Days sun and dividers over the Dragon constellation.",
+   "stage": "parked",
+   "next": "",
+   "files": [
+    "blender/metal.py",
+    "out/metal/treat-sheet.png",
+    "out/metal/painted-faceted.png",
+    "docs/notes/2026-09-30-metal-treatments.md"
+   ],
+   "commit": "0127c6b",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "the one you had previously was a bit too flat.",
+   "notes": [
+    "Still treatments: flat, airbrush, ink, print, Cassaday, painted, faceted.",
+    "Work moved to the faceted Urizen head and the talking-head short."
+   ]
+  },
+  {
+   "id": "trigram-60-tests",
+   "group": "styletests",
+   "title": "Trigram lesson styles on 60",
+   "what": "Five ways to show the trigrams of 60 Limitation as the lesson.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "series/specials/trigram-bars-60.json",
+    "series/specials/trigram-focus-60.json",
+    "blender/trigram.py",
+    "blender/focus.py"
+   ],
+   "commit": "5eea2f6",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "Yeah, all those symbols and the words, they're all really cheesy looking. The spotlight as well.",
+   "notes": [
+    "Variants: trigram-3d-60 (Blender lake filling, called cheesy), trigram-bars-60, trigram-2d-60, trigram-signs-60, trigram-focus-60 (quiet camera move).",
+    "After the quiet version: 'still the original stuff that we had was the best.'"
+   ]
+  },
+  {
+   "id": "judgment-3d-10",
+   "group": "styletests",
+   "title": "Judgment in Blender (10)",
+   "what": "The Judgment's six characters written in neon with glosses, 不咥人 (does not bite the man) turning amber.",
+   "stage": "parked",
+   "next": "",
+   "files": [
+    "series/specials/judgment-3d-10.json",
+    "out/specials/judgment-3d-10/share.mp4",
+    "blender/glyphs.py"
+   ],
+   "commit": "fddc885",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "The judgment I'm shaky on.",
+   "notes": [
+    "That comment was on the Judgment style in general, before this test. No direct verdict on this test found."
+   ]
+  },
+  {
+   "id": "collapse-3d-23",
+   "group": "styletests",
+   "title": "House collapse (23)",
+   "what": "The house of 23 falls in on itself in Blender, the one yang line landing on top, under a searchlight.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "series/specials/collapse-3d-23.json",
+    "out/specials/collapse-3d-23/share.mp4",
+    "blender/collapse.py"
+   ],
+   "commit": "97e53f3",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "The 23 collapses, it's okay. It's nothing great.",
+   "notes": [
+    "The user: 'maybe because it doesn't actually collapse at all.'"
+   ]
+  },
+  {
+   "id": "bite-21",
+   "group": "styletests",
+   "title": "Bite (21)",
+   "what": "The lines act the Ten Wings picture of 21: the jaws bite the fourth line into a yin line, leaving 27.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/bite-21.json",
+    "out/specials/bite-21/preview.mp4",
+    "blender/bite.py"
+   ],
+   "commit": "f595c6f",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "They're both really great.",
+   "notes": [
+    "Said of bite-21 and readout-21 together.",
+    "Taken into series short 21."
+   ]
+  },
+  {
+   "id": "readout-21",
+   "group": "styletests",
+   "title": "Nostromo readout (21)",
+   "what": "The lesson as a ship's computer readout: lines plotted and logged, trigrams named, the answer typed.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/readout-21.json",
+    "out/specials/readout-21/preview.mp4",
+    "src/scenes/Readout.tsx"
+   ],
+   "commit": "f595c6f",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "They're both really great.",
+   "notes": [
+    "Became the readout style used by 35 series shorts."
+   ]
+  },
+  {
+   "id": "readout-14",
+   "group": "styletests",
+   "title": "Readout with Wang Bi (14)",
+   "what": "The readout with Wang Bi's reading: places, centres, answering lines, and line 5 marked as ruler.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/readout-14.json",
+    "out/specials/readout-14/preview.mp4"
+   ],
+   "commit": "503a7e2",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "the readouts are all good.",
+   "notes": [
+    "Taken into series short 14."
+   ]
+  },
+  {
+   "id": "bird-62",
+   "group": "styletests",
+   "title": "Bird (62)",
+   "what": "The yin halves of 62 are a bird's wings; it beats them, lifts a little, then glides down.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "series/specials/bird-62.json",
+    "out/specials/bird-62/preview.mp4",
+    "blender/bird.py"
+   ],
+   "commit": "503a7e2",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "I thought the bird graphic was quite well done.",
+   "notes": [
+    "Lesson line shortened to 'Fly low. / Do small things.' Taken into series short 62."
+   ]
+  },
+  {
+   "id": "painting-lesson",
+   "group": "styletests",
+   "title": "Painting lesson (8, Renoir)",
+   "what": "A lesson that shows the app's painting for the hexagram full-frame on the drop.",
+   "stage": "parked",
+   "next": "",
+   "files": [
+    "out/series/versions/08-bi/",
+    "series/paintings.json"
+   ],
+   "commit": "dffb347",
+   "date": "2026-09-25",
+   "sent": true,
+   "userSaid": "I think the transition is better now, but what do you think about the whole concept of associating artwork to a hexagram? Is it a bit too much of a reach?",
+   "notes": [
+    "First cut: 'it seems a bit funny. The pacing'.",
+    "Blind rating of 62 painting pairings; 18 approved, alternatives searched for 46."
+   ]
+  },
+  {
+   "id": "transitions-v2",
+   "group": "styletests",
+   "title": "Energy-based transitions",
+   "what": "Cuts set by each track's energy (whips, dips, glitches) and boxed screen titles.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "docs/research/2026-09-24-transitions.md",
+    "out/compare/01-qian.mp4"
+   ],
+   "commit": "5ff1dc4",
+   "date": "2026-09-24",
+   "sent": true,
+   "userSaid": "we need to trust the audience more. no need to black out the background behind the title ... i think just keep the original renders.",
+   "notes": [
+    "Also: 'my daughter likes the old render better'."
+   ]
+  },
+  {
+   "id": "blender-hexagram",
+   "group": "blender",
+   "title": "3D hexagram build",
+   "what": "The Blender build of the hexagram: thin green polygon slabs landing over out-of-focus glyph rain.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/hexagram.py",
+    "docs/superpowers/specs/2026-09-24-blender-hexagram-design.md",
+    "out/hex-2d-vs-3d.mp4"
+   ],
+   "commit": "82f320a",
+   "date": "2026-09-24",
+   "sent": true,
+   "userSaid": "i love the hexagram bars and how you did that in blender.",
+   "notes": [
+    "Used in all 64 shorts. Later: 'The current way the hexagrams are presented with the sort of camera movement, those are all really good.'"
+   ]
+  },
+  {
+   "id": "blender-acts",
+   "group": "blender",
+   "title": "Picture scenes (acts)",
+   "what": "Blender scenes where the lines act out the hexagram's picture, for 7, 11, 12, 15, 24, 27, 28, 29, 30, 43, 44, 51, 61.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/acts.py",
+    "blender/abyss.py",
+    "out/acts/final/approve-1.jpg",
+    "series/critic/acts/"
+   ],
+   "commit": "58757c9",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "approve them all, please render and i'll review when ready.",
+   "notes": [
+    "29's abyss was the sample: 'all samples pass'.",
+    "Each passed a critic at 8 or above before approval."
+   ]
+  },
+  {
+   "id": "blender-searchlight",
+   "group": "blender",
+   "title": "Blade Runner searchlight",
+   "what": "A slow Blender searchlight sweeping the scene in place of the beat punch.",
+   "stage": "parked",
+   "next": "",
+   "files": [
+    "blender/searchlight.py",
+    "out/searchlight/strip.png"
+   ],
+   "commit": "8d83b00",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "The spotlight as well.",
+   "notes": [
+    "Called cheesy on the trigram tests; a slow searchlight returns in the timeline corridor."
+   ]
+  },
+  {
+   "id": "blender-urizen-head",
+   "group": "blender",
+   "title": "Urizen head",
+   "what": "A faceted low-poly head of Blake's Urizen with ribbon hair and beard flowing to one point, jaw keyed to speech, wind in the hair.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/urizen.py",
+    "out/urizen/hair-styles-labelled.png",
+    "out/urizen/fill-grid.png"
+   ],
+   "commit": "51afdbf",
+   "date": "2026-10-01",
+   "sent": true,
+   "userSaid": "ok better, mnot great but much better than before. go with this with the fill-tache",
+   "notes": [
+    "Hair styles tried: shards, ribbons, locks, cards; ribbons chosen ('This is best so far'), scalp cap removed ('Cap is dumb').",
+    "Many beard and moustache rounds."
+   ]
+  },
+  {
+   "id": "endcards",
+   "group": "blender",
+   "title": "End cards",
+   "what": "The Blender end card: the hexagram turns into six yang lines under SIX LINES and the tagline REVEAL THE MOMENT.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "blender/endcard.py",
+    "out/endcards/",
+    "scripts/endcards-ref"
+   ],
+   "commit": "63ef339",
+   "date": "2026-09-28",
+   "sent": true,
+   "userSaid": "I like the first one of the 4 the most in terms of type. The health bar fill is a bit underwhelming though compared to the others. Goudy caps is best for typeface though",
+   "notes": [
+    "Transitions join, flip, snap set by track; fill dropped.",
+    "Tempo-independent card (120 bpm, 60 fps, slowed per track) on all 64: 'I can't tell anything wrong with these.'",
+    "No period after the tagline; Remotion text tried and rejected ('the blender text looks much better').",
+    "~DISNEYFAN credit dropped 2026-09-26."
+   ]
+  },
+  {
+   "id": "terminal-godot",
+   "group": "tools",
+   "title": "Godot Wang Bi terminal",
+   "what": "An interactive Wang Bi terminal built in Godot with a web export.",
+   "stage": "dropped",
+   "next": "",
+   "files": [
+    "godot/",
+    "docs/superpowers/specs/2026-09-28-godot-wangbi-terminal-design.md",
+    "out/terminal/7-army-share.mp4"
+   ],
+   "commit": "c5bd60d",
+   "date": "2026-09-29",
+   "sent": true,
+   "userSaid": "well i can't tell difference between godot and regular page, so stick with page.",
+   "notes": [
+    "Terminal clip of 7 師 with sound (26 s) sent; stills: 'looks good. i hope the sound effects and ambient sound are good'.",
+    "Spec reviewed by Astra."
+   ]
+  },
+  {
+   "id": "terminal-web",
+   "group": "tools",
+   "title": "Plain web terminal",
+   "what": "The terminal as a plain web page: flip lines, number pad, drag or WASD to turn the plot, the lesson's sounds.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "web/",
+    "docs/superpowers/specs/2026-09-29-plain-web-terminal.md"
+   ],
+   "commit": "2a86939",
+   "date": "2026-09-29",
+   "sent": true,
+   "userSaid": "stick with page.",
+   "notes": [
+    "Live at sixlines.day; page code moved to sixlines-site, asset generation stays here."
+   ]
+  },
+  {
+   "id": "terminal-neon-panel",
+   "group": "tools",
+   "title": "Terminal neon character panel",
+   "what": "The neon character drawing shown beside the terminal (CHARACTER tab on phones).",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "docs/research/2026-09-29-codex-neon-panel.md"
+   ],
+   "commit": "dd2315d",
+   "date": "2026-09-29",
+   "sent": true,
+   "userSaid": "Yes and i like magenta side by side",
+   "notes": [
+    "Colour tries: red-orange, warm white with coral; magenta kept."
+   ]
+  },
+  {
+   "id": "sound-research",
+   "group": "tools",
+   "title": "Sound measures and Nostromo references",
+   "what": "A command-line sound check and measured references (Nostromo, MUTHUR, Blade Runner, Eno) used to build the background bed and machine sounds.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "docs/research/2026-09-27-sound-measures.md",
+    "docs/research/nostromo-boot-inventory.json",
+    "docs/research/sound-references.jsonl",
+    "scripts/sfx.mjs"
+   ],
+   "commit": "f64e448",
+   "date": "2026-09-27",
+   "sent": true,
+   "userSaid": "Love the new direction.",
+   "notes": [
+    "Led to the round-7 bed and the four Nostromo-style cues in the Wang Bi lesson."
+   ]
+  },
+  {
+   "id": "guide-sfx",
+   "group": "tools",
+   "title": "Guide device sound inventory",
+   "what": "38 synthesised device sounds (boot, blips, keys, chatter, chimes, whooshes, off) with a numbered audition file.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "series/specials/guide-sfx.json",
+    "scripts/guide-sfx.mjs",
+    "out/sfx/guide/audition.m4a"
+   ],
+   "commit": "6e228e5",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "",
+   "notes": [
+    "Made after the user allowed synthesised sounds if picked from a full inventory."
+   ]
+  },
+  {
+   "id": "guide-voice",
+   "group": "tools",
+   "title": "Guide narrator voice",
+   "what": "ElevenLabs takes for the Guide narrator: David first, then the user's own Voice Design voice.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "scripts/voice.mjs",
+    "out/voice/guide-wangbi/"
+   ],
+   "commit": "475d5cb",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "love it. can we render the short, or at least a bit of a smoke test",
+   "notes": [
+    "Voice id hYDmtgsUa8Lf6Ql57aI5 ('hitchiker's guide v1'). Astra had advised against David (Attenborough resemblance)."
+   ]
+  },
+  {
+   "id": "music-picks",
+   "group": "tools",
+   "title": "Music picks and previews",
+   "what": "Pixabay synthwave tracks auditioned per trigram, plus 12 more tracks for variety.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "out/audition/",
+    "out/music-previews/all.mp3",
+    "music/"
+   ],
+   "commit": "b6b76d9",
+   "date": "2026-09-24",
+   "sent": true,
+   "userSaid": "i like them all, just use them as variety",
+   "notes": [
+    "Trigram sections: Dui and Qian swapped; Kun took pick04.",
+    "Arcade Retro Nights (pick15) taken out: too fast. Tempo limit 120 bpm."
+   ]
+  },
+  {
+   "id": "music-review",
+   "group": "tools",
+   "title": "Darker music review",
+   "what": "A spoken review file comparing each flagged hexagram's music with a darker section; also 47 and 64 options.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "out/music-review/all.mp3",
+    "out/music-review-64/all.mp3",
+    "series/music-audit.json"
+   ],
+   "commit": "2e37590",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "for 64 option 1. all samples pass",
+   "notes": [
+    "Proposed sections taken for 3, 12, 23, 28, 29, 43; kept for 36, 39, 54, 60, 63.",
+    "47 took pick13 from 2:40.",
+    "Guitar part for 40 and 55: 'i like the celebratory guitar for both 55 or 40'."
+   ]
+  },
+  {
+   "id": "style-reels",
+   "group": "tools",
+   "title": "Style reels",
+   "what": "Back-to-back reels of the series by lesson style: characters, pictures, readouts.",
+   "stage": "sent",
+   "next": "",
+   "files": [
+    "out/reels/characters.mp4",
+    "out/reels/pictures-21-29-62.mp4",
+    "out/reels/readouts-1.mp4"
+   ],
+   "commit": "58757c9",
+   "date": "2026-09-26",
+   "sent": true,
+   "userSaid": "",
+   "notes": []
+  },
+  {
+   "id": "review-board",
+   "group": "tools",
+   "title": "Review board",
+   "what": "One artifact page with a verdict and comment per short and the other review items.",
+   "stage": "approved",
+   "next": "",
+   "files": [
+    "scripts/review-board.py",
+    "series/review/board.json",
+    "series/review/copy-verdicts.json"
+   ],
+   "commit": "627fb9e",
+   "date": "2026-09-30",
+   "sent": true,
+   "userSaid": "for the artifact, when i full screen the wang bi lesson, it seems the top and bottom are clipped",
+   "notes": [
+    "Fixed to show whole frames. Verdicts live in the artifact's 'reviews' collection."
+   ]
+  },
+  {
+   "id": "media-strategy",
+   "group": "tools",
+   "title": "Media strategy and posting plan",
+   "what": "Posting plan for Instagram, TikTok and YouTube Shorts through Buffer, and X through Typefully, with an engagement style guide.",
+   "stage": "approved",
+   "next": "Start posting three a week, launching with Kun.",
+   "files": [
+    "docs/notes/2026-09-30-posting-strategy-draft.md",
+    "docs/research/2026-09-30-codex-posting-strategy.md",
+    "docs/research/2026-09-30-codex-media-strategy-bookend.md"
+   ],
+   "commit": "53578fa",
+   "date": "2026-09-30",
+   "sent": false,
+   "userSaid": "i'm ok with 3 a week for now, as that's what buffer recommends",
+   "notes": [
+    "Corrected after Astra's review. Video hosting at media.sixlines.day (R2)."
+   ]
+  }
+ ]
+}
