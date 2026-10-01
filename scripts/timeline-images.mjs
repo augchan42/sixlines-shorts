@@ -25,6 +25,10 @@ export const IMAGES = [
   { name: "jung", page: 5, title: "Carl Jung", url: `${C}/6/65/Carl-Jung-mod.jpg`, sha1: "df3cd8a7ac3ae66fbbc1cb3dbbf1e79ab1659cdb", licence: "public domain" },
   { name: "dick", page: 6, title: "Philip K. Dick in the early 1960s, photo by Arthur Knight", url: `${C}/2/2c/Philip_K_Dick_in_early_1960s_%28photo_by_Arthur_Knight%29_02_%28cropped%29.jpg`, sha1: "fe68617f2d51382d5594144cd54b74fd7da2f1a7", licence: "public domain" },
   { name: "turing", page: 2, title: "Alan Turing aged 16 (1928-29), possibly by Arthur Reginald Chaffin", url: `${C}/a/a1/Alan_Turing_Aged_16.jpg`, sha1: "b7af1fbf2563cb09a4309c4b62bbda362eca6b8d", licence: "public domain" },
+  // Supplied by the user, 2026-10-01 ("for voight-kampff use a still from the bladerunner movie"):
+  // Holden at the Voight-Kampff machine, Blade Runner (1982). Kept in public/local/timeline-src;
+  // sha1 a5095939506ff7d2a30d38536416604f3b70c69d (900x600 webp).
+  { name: "voight-kampff", page: 0, title: "Blade Runner (1982), Holden at the Voight-Kampff machine", file: "public/local/timeline-src/voight-kampff.webp", crop: "480x600+290+0", licence: "film still, Warner Bros.", credit: "Blade Runner (1982), Warner Bros." },
   // 8-Bit Oracle's reading screen (8bitoracle-brand public/img-demo), for the paths shorts on its account.
   { name: "8bo", page: 0, title: "8-Bit Oracle, the reading screen", file: "../8bitoracle-brand/public/img-demo/reading.png", crop: "1440x1800+0+0", licence: "ours" },
   // Ours: the app's reading screen (public/local/tour, from the store listing).
