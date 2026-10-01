@@ -71,7 +71,11 @@ export type LessonProps = {
   musicStart: number;
   ticks: string;
   // `text`: the clip has no tagline or site and EndCard3D draws them (src/scenes/EndCard3D.tsx).
-  endcard: { clip: string; seconds: number; rate?: number; text?: EndCardText };
+  // `brand`: another account's card, drawn here in the terminal's type in place of the Blender
+  // card (the timeline paths shorts, for 8-Bit Oracle).
+  endcard: { clip: string; seconds: number; rate?: number; text?: EndCardText; brand?: Brand };
+  // The terminal's header before "// READY FOR INQUIRY": SIX LINES unless another account's.
+  header?: string | null;
   // The music only for the end card, its `at` second landing on the cut, faded in over `lead`
   // seconds as the machine sounds fall away.
   endMusic?: { at: number; lead: number } | null;
@@ -146,11 +150,34 @@ const showAt = (show: Show, sec: number): Show => {
   return s;
 };
 
-const Frame: React.FC<{ now: number }> = ({ now }) => (
+type Brand = { name: string; tagline: string; site: string };
+
+// Another account's end card: its name, the tagline typed under it a character a frame with a
+// block cursor, then the site, as the Blender card times them.
+const BrandCard: React.FC<Brand> = ({ name, tagline, site }) => {
+  const f = useCurrentFrame();
+  const typedAt = 18;
+  const typed = Math.max(0, Math.min(tagline.length, f - typedAt + 1));
+  const siteAt = typedAt + tagline.length + 15;
+  return (
+    <AbsoluteFill style={{ backgroundColor: "#000", alignItems: "center", justifyContent: "center", textAlign: "center" }}>
+      <div style={{ fontFamily: fonts.pixel, fontSize: 132, color: PHOSPHOR, textShadow: glow, opacity: interpolate(f, [0, 12], [0, 1], { extrapolateRight: "clamp" }) }}>{name}</div>
+      <div style={{ height: 60 }} />
+      <div style={{ fontFamily: fonts.pixel, fontSize: 50, color: PHOSPHOR, minHeight: 60 }}>
+        {tagline.slice(0, typed)}
+        <span style={{ opacity: Math.floor(f / 15) % 2 ? 0 : 1 }}>{"\u2588"}</span>
+      </div>
+      <div style={{ height: 40 }} />
+      <div style={{ fontFamily: fonts.pixel, fontSize: 70, color: AMBER, textShadow: `0 0 14px ${AMBER}`, opacity: interpolate(f, [siteAt, siteAt + 15], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) }}>{site}</div>
+    </AbsoluteFill>
+  );
+};
+
+const Frame: React.FC<{ now: number; header?: string | null }> = ({ now, header }) => (
   <>
     <div style={{ position: "absolute", inset: "150px 50px 200px", border: `3px solid ${DIM}`, boxShadow: "inset 0 0 40px rgba(125,255,138,0.08)" }} />
     <div style={{ position: "absolute", left: 50, right: 50, top: 150, height: 90, borderBottom: `3px solid ${DIM}` }} />
-    <div style={{ position: "absolute", left: 80, top: 172, fontFamily: fonts.pixel, fontSize: 44, color: PHOSPHOR, textShadow: glow }}>SIX LINES // READY FOR INQUIRY</div>
+    <div style={{ position: "absolute", left: 80, top: 172, fontFamily: fonts.pixel, fontSize: 44, color: PHOSPHOR, textShadow: glow }}>{`${header ?? "SIX LINES"} // READY FOR INQUIRY`}</div>
     <div style={{ position: "absolute", right: 80, top: 250, fontFamily: fonts.pixel, fontSize: 26, color: DIM }}>{`SYS ${(76.75 + ((now * 7.31) % 23)).toFixed(2)}`}</div>
   </>
 );
@@ -488,14 +515,14 @@ export const Lesson: React.FC<LessonProps> = (p) => {
       <Sequence durationInFrames={end}>
         {/* In the flight look the screen is a tube the camera pushes in on, slowly. */}
         <AbsoluteFill style={{ opacity: flicker, transform: p.look === "flight" ? `scale(${interpolate(now, [0, end], [1, 1.07])}) translateY(${interpolate(now, [0, end], [0, -18])}px)` : undefined }}>
-          <Frame now={now} />
+          <Frame now={now} header={p.header} />
           {t && <PageView t={t} hexagrams={p.hexagrams} readouts={p.readouts} now={now} turn={turn} flight={p.look === "flight"} plate={p.plate} names={p.names} />}
           <AbsoluteFill style={{ background: "repeating-linear-gradient(0deg, rgba(0,0,0,0.28) 0px, rgba(0,0,0,0.28) 2px, transparent 2px, transparent 5px)", pointerEvents: "none" }} />
           <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.75) 100%)", pointerEvents: "none" }} />
         </AbsoluteFill>
       </Sequence>
       <Sequence from={end}>
-        <EndCard3D clip={p.endcard.clip} rate={p.endcard.rate} text={p.endcard.text} />
+        {p.endcard.brand ? <BrandCard {...p.endcard.brand} /> : <EndCard3D clip={p.endcard.clip} rate={p.endcard.rate} text={p.endcard.text} />}
       </Sequence>
       {/* Film grain, scan lines and dark corners over everything, the end card too, as in the shorts. */}
       <Grain />

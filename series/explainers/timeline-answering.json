@@ -2,7 +2,6 @@
  "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 1, with Astra (docs/research/2026-10-01-codex-timeline-paths.md).",
  "path": "answering",
  "hexagram": 22,
- "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
  "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
  "look": "flight",
  "mix": {
@@ -95,7 +94,7 @@
      }
     },
     {
-     "q": "SIX LINES",
+     "q": "8-BIT ORACLE",
      "a": "HOLDS EACH READING TO\nTHE LINES AND TO WANG BI,\nWHO READ THEM AS POSITIONS.",
      "show": {
       "clip": {
@@ -107,5 +106,13 @@
     }
    ]
   }
- ]
+ ],
+ "brand": {
+  "header": "8-BIT ORACLE",
+  "name": "8-BIT ORACLE",
+  "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+  "site": "8bitoracle.ai",
+  "seconds": 4.5,
+  "why": "for the 8-Bit Oracle account (the user, 2026-10-01: '8-Bit Oracle please'); name, tagline and site from 8bitoracle-brand messages/en.json HomePage"
+ }
 }

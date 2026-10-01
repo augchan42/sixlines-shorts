@@ -1,5 +1,5 @@
 {
- "about": "The three paths of the timeline shorts (the user, 2026-10-01: 'three thread shorts, but we should show in the begginning that there are three parallel paths in total and this specific short is going down 1'). From the user's brand timeline (8bitoracle-brand messages/en.json `Timeline`), read as threads in docs/research/2026-10-01-timeline-brainstorm.md. Each short draws all three corridors side by side in blender/timeline.py and flies down its own. `dates[k-1]` is page k's sign, [name, date]: the name stands, the date is on the floor in front (the user, 2026-10-01: 'it should show the Person or Concept then the date in Parenthesis or maybe the date on the floor somehow') (page 1 is the opening over all three); `pictures` by page, from scripts/timeline-images.mjs. Provisional until Astra's check (docs/research/2026-10-01-codex-timeline-paths.md).",
+ "about": "The three paths of the timeline shorts (the user, 2026-10-01: 'three thread shorts, but we should show in the begginning that there are three parallel paths in total and this specific short is going down 1'). From the user's brand timeline (8bitoracle-brand messages/en.json `Timeline`), read as threads in docs/research/2026-10-01-timeline-brainstorm.md. Each short draws all three corridors side by side in blender/timeline.py and flies down its own. `dates[k-1]` is page k's sign, [name, date]: the name stands, the date is on the floor in front (the user, 2026-10-01: 'it should show the Person or Concept then the date in Parenthesis or maybe the date on the floor somehow') (page 1 is the opening over all three); `pictures` by page, from scripts/timeline-images.mjs. Provisional until Astra's check (docs/research/2026-10-01-codex-timeline-paths.md). On the 8-Bit Oracle account (the user, 2026-10-01), so each path ends at 8-Bit Oracle.",
  "paths": [
   {
    "key": "binary",
@@ -34,7 +34,7 @@
      "1982"
     ],
     [
-     "SIX LINES",
+     "8-BIT ORACLE",
      "TODAY"
     ]
    ],
@@ -47,6 +47,12 @@
     ],
     "3": [
      "bouvet"
+    ],
+    "5": [
+     "turing"
+    ],
+    "8": [
+     "8bo"
     ]
    }
   },
@@ -83,7 +89,7 @@
      "2009"
     ],
     [
-     "SIX LINES",
+     "8-BIT ORACLE",
      "TODAY"
     ]
    ],
@@ -93,6 +99,9 @@
     ],
     "4": [
      "wilhelm"
+    ],
+    "8": [
+     "8bo"
     ]
    }
   },
@@ -121,7 +130,7 @@
      "TODAY"
     ],
     [
-     "SIX LINES",
+     "8-BIT ORACLE",
      "TODAY"
     ]
    ],
@@ -133,7 +142,10 @@
      "dick"
     ],
     "6": [
-     "app"
+     "8bo"
+    ],
+    "2": [
+     "turing"
     ]
    }
   }

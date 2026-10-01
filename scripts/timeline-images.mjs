@@ -24,6 +24,9 @@ export const IMAGES = [
   { name: "wilhelm", page: 5, title: "Richard Wilhelm, Bundesarchiv Bild 146-2006-0022", url: `${C}/c/c2/Bundesarchiv_Bild_146-2006-0022%2C_Richard_Wilhelm.jpg`, sha1: "5ff97cc07a3f8e9fc1985931724cb6323175e749", licence: "CC BY-SA 3.0 de", credit: "Richard Wilhelm: Bundesarchiv, Bild 146-2006-0022, CC BY-SA 3.0 de" },
   { name: "jung", page: 5, title: "Carl Jung", url: `${C}/6/65/Carl-Jung-mod.jpg`, sha1: "df3cd8a7ac3ae66fbbc1cb3dbbf1e79ab1659cdb", licence: "public domain" },
   { name: "dick", page: 6, title: "Philip K. Dick in the early 1960s, photo by Arthur Knight", url: `${C}/2/2c/Philip_K_Dick_in_early_1960s_%28photo_by_Arthur_Knight%29_02_%28cropped%29.jpg`, sha1: "fe68617f2d51382d5594144cd54b74fd7da2f1a7", licence: "public domain" },
+  { name: "turing", page: 2, title: "Alan Turing aged 16 (1928-29), possibly by Arthur Reginald Chaffin", url: `${C}/a/a1/Alan_Turing_Aged_16.jpg`, sha1: "b7af1fbf2563cb09a4309c4b62bbda362eca6b8d", licence: "public domain" },
+  // 8-Bit Oracle's reading screen (8bitoracle-brand public/img-demo), for the paths shorts on its account.
+  { name: "8bo", page: 0, title: "8-Bit Oracle, the reading screen", file: "../8bitoracle-brand/public/img-demo/reading.png", crop: "1440x1800+0+0", licence: "ours" },
   // Ours: the app's reading screen (public/local/tour, from the store listing).
   { name: "app", page: 7, title: "Six Lines, the reading screen", file: "public/local/tour/03_Reading.png", licence: "ours" },
 ];
