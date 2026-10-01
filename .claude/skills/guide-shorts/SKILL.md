@@ -129,7 +129,7 @@ npx remotion render src/index.ts Guide<Name> out/guide/guide-<slug>-b1-3.mp4 \
 ```sh
 ffmpeg -y -i out/guide/guide-<slug>.mp4 \
   -vf "scale=720:1280:in_range=full:out_range=tv,format=yuv420p" -c:v libx264 -crf 23 -preset slow \
-  -af loudnorm=I=-16:TP=-1.5:LRA=11 -ar 44100 -c:a aac -b:a 128k -movflags +faststart \
+  -af loudnorm=I=-16:TP=-1.5:LRA=11 -ar 48000 -c:a aac -b:a 128k -movflags +faststart \
   out/guide/guide-<slug>-720.mp4
 ffmpeg -hide_banner -i out/guide/guide-<slug>-720.mp4 -af loudnorm=print_format=summary -f null - 2>&1 | grep "Input Integrated"
 ```
