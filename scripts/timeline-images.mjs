@@ -35,7 +35,7 @@ export const IMAGES = [
   // Supplied by the user, 2026-10-01 ("for voight-kampff use a still from the bladerunner movie"):
   // Holden at the Voight-Kampff machine, Blade Runner (1982). Kept in public/local/timeline-src;
   // sha1 a5095939506ff7d2a30d38536416604f3b70c69d (900x600 webp).
-  { name: "voight-kampff", page: 0, title: "Blade Runner (1982), Holden at the Voight-Kampff machine", file: "public/local/timeline-src/voight-kampff.webp", crop: "480x600+290+0", licence: "film still, Warner Bros.", credit: "Blade Runner (1982), Warner Bros." },
+  { name: "voight-kampff", page: 0, title: "Blade Runner (1982), Holden at the Voight-Kampff machine", file: "public/local/timeline-src/voight-kampff.webp", crop: "840x600+60+0", licence: "film still, Warner Bros.", credit: "Blade Runner (1982), Warner Bros." },
   // Supplied by the user, 2026-10-01, for AI: the "Shoggoth with smiley face" meme, labelled
   // Unsupervised Learning / Supervised Fine-tuning / RLHF. Usually credited to @TetraspaceWest
   // (2022); the labelled version's author is not checked. `post` thickens and darkens the lines and
