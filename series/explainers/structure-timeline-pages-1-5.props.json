@@ -1,0 +1,67 @@
+{
+ "pages": [
+  {
+   "q": "HOW OLD IS THE I CHING",
+   "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-0.mp4",
+     "scene": {
+      "page": 0,
+      "secs": 9,
+      "at": 2.5
+     }
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1701",
+   "a": "BOUVET SENDS THE DIAGRAM\nTO LEIBNIZ, A MATHEMATICIAN.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-4.mp4",
+     "scene": {
+      "page": 4,
+      "secs": 9,
+      "at": 2.5
+     }
+    },
+    "hold": 4
+   }
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick14-lofi-synthwave.mp3",
+ "musicStart": 8,
+ "mix": {
+  "hum": 1,
+  "beacon": 1,
+  "printer": 1,
+  "ticks": 0.8,
+  "sweep": 0.7,
+  "chatter": 0.7,
+  "warble": 0.5,
+  "winddown": 0.6,
+  "music": 0.3,
+  "relay": 0.55
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 0,
+  "rate": 0.5749375
+ },
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
