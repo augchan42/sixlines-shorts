@@ -7,7 +7,8 @@
 //
 // The files are not committed; the URLs and Commons's sha1s are their provenance. A file Commons
 // serves as a thumbnail (the originals are too big) has no sha1 to check. `crop` is ImageMagick
-// geometry on the downloaded file, `credit` what a caption must say for a licence that asks.
+// geometry on the downloaded file, `post` further ImageMagick options after the crop, `credit` what
+// a caption must say for a licence that asks.
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
@@ -33,8 +34,9 @@ export const IMAGES = [
   { name: "voight-kampff", page: 0, title: "Blade Runner (1982), Holden at the Voight-Kampff machine", file: "public/local/timeline-src/voight-kampff.webp", crop: "480x600+290+0", licence: "film still, Warner Bros.", credit: "Blade Runner (1982), Warner Bros." },
   // Supplied by the user, 2026-10-01, for AI: the "Shoggoth with smiley face" meme, labelled
   // Unsupervised Learning / Supervised Fine-tuning / RLHF. Usually credited to @TetraspaceWest
-  // (2022); the labelled version's author is not checked. sha1 83835ea83b74eacac8d0042f0da3b42c085d74fd.
-  { name: "shoggoth", page: 0, title: "Shoggoth with smiley face (the RLHF meme)", file: "public/local/timeline-src/shoggoth.webp", crop: "1000x758+110+0", licence: "meme, author unchecked", credit: "Shoggoth with smiley face, after @TetraspaceWest" },
+  // (2022); the labelled version's author is not checked. `post` thickens and darkens the lines and
+  // greys the page: the user, 2026-10-01, "the shoggoth is hard to see, the lines need to be darkened". sha1 83835ea83b74eacac8d0042f0da3b42c085d74fd.
+  { name: "shoggoth", page: 0, title: "Shoggoth with smiley face (the RLHF meme)", file: "public/local/timeline-src/shoggoth.webp", crop: "1000x758+110+0", post: ["-morphology", "Erode", "Disk:2", "-level", "0%,100%,0.6", "+level", "0%,50%"], licence: "meme, author unchecked", credit: "Shoggoth with smiley face, after @TetraspaceWest" },
   // 8-Bit Oracle's reading screen (8bitoracle-brand public/img-demo), for the paths shorts on its account.
   { name: "8bo", page: 0, title: "8-Bit Oracle, the reading screen", file: "../8bitoracle-brand/public/img-demo/reading.png", crop: "1440x1800+0+0", licence: "ours" },
   // Ours: the app's reading screen (public/local/tour, from the store listing).
@@ -57,7 +59,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     }
     // Cropped and at most 1024 px tall: enough for a picture a third of the window high.
     const out = path.join(dir, `${im.name}.jpg`);
-    execFileSync("magick", [raw, ...(im.crop ? ["-crop", im.crop, "+repage"] : []), "-resize", "1024x1024>", "-quality", "90", out]);
+    execFileSync("magick", [raw, ...(im.crop ? ["-crop", im.crop, "+repage"] : []), ...(im.post ?? []), "-resize", "1024x1024>", "-quality", "90", out]);
     console.log(`wrote ${path.relative(root, out)}`);
   }
 }
