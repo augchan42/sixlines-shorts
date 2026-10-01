@@ -1,8 +1,8 @@
 {
- "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 1, with Astra (docs/research/2026-10-01-codex-timeline-paths.md).",
+ "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 2: Astra's rewrite (docs/research/2026-10-01-codex-timeline-paths.md), with page 7 and the caption moved from Six Lines to 8-Bit Oracle.",
  "path": "answering",
  "hexagram": 22,
- "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "style": "The header reads '8-BIT ORACLE // READY FOR INQUIRY' throughout (brand.header). Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
  "look": "flight",
  "mix": {
   "hum": 0.5,
@@ -23,13 +23,13 @@
   "why": "provisional: the track the user heard on the timeline flight; a track per path to choose"
  },
  "endcardRate": 0.75,
- "caption": "",
+ "caption": "Who is answering when a machine reads the I Ching? 8-Bit Oracle reads it with Wang Bi's commentary: 8bitoracle.ai",
  "chapters": [
   {
    "pages": [
     {
      "q": "AN OLD BOOK AND A NEW MACHINE",
-     "a": "THREE PATHS JOIN THEM:\nBINARY, CORRESPONDENCE,\nAND WHO IS ANSWERING.\nTHIS ONE: WHO IS ANSWERING.",
+     "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE THIRD PATH.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -40,7 +40,7 @@
     },
     {
      "q": "1949",
-     "a": "JUNG ASKS THE I CHING\nABOUT ITS NEW EDITION\nAND READS THE REPLY\nAS THE BOOK SPEAKING.",
+     "a": "JUNG ASKS THE I CHING\nABOUT HIS FOREWORD.\nHE TREATS THE BOOK AS SPEAKING.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -50,8 +50,8 @@
      }
     },
     {
-     "q": "1950",
-     "a": "TURING ASKS: CAN A MACHINE\nPASS FOR A PERSON?\nTHAT YEAR THE I CHING\nCOMES OUT IN ENGLISH.",
+     "q": "1950: A MACHINE OR A HUMAN?",
+     "a": "TURING PROPOSES A TEXT TEST.\nWILHELM'S I CHING APPEARS\nIN ENGLISH, VIA CARY BAYNES.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -61,8 +61,8 @@
      }
     },
     {
-     "q": "1962",
-     "a": "IN THE MAN IN THE HIGH CASTLE,\nA CHARACTER ASKS THE BOOK\nWHY IT WROTE THE NOVEL.",
+     "q": "1962: PHILIP K. DICK",
+     "a": "IN THE MAN IN THE HIGH CASTLE,\nJULIANA ASKS WHY THE I CHING\nWROTE THE NOVEL INSIDE IT.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -73,7 +73,7 @@
     },
     {
      "q": "1968",
-     "a": "DICK'S ANDROIDS FACE A TEST\nBUILT TO CATCH A MACHINE\nPASSING FOR HUMAN.",
+     "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -83,8 +83,8 @@
      }
     },
     {
-     "q": "TODAY",
-     "a": "A MACHINE READS THE BOOK.\nTHE TEST NOW: DOES IT\nREAD IT WELL?",
+     "q": "TODAY: WHO IS READING?",
+     "a": "A MACHINE READS THE I CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -94,8 +94,8 @@
      }
     },
     {
-     "q": "8-BIT ORACLE",
-     "a": "HOLDS EACH READING TO\nTHE LINES AND TO WANG BI,\nWHO READ THEM AS POSITIONS.",
+     "q": "8-BIT ORACLE: HOW IT READS",
+     "a": "IT USES WANG BI'S COMMENTARY:\nLINES TAKE MEANING FROM\nTHEIR PLACE IN A SITUATION.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
