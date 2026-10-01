@@ -24,48 +24,139 @@
  },
  "endcardRate": 0.75,
  "caption": "A Chinese book about change, from origin stories to a diagram sent to Leibniz and a novel plotted with its help. A few dates in the I Ching’s history; sixlines.day.",
+ "dates": [
+  "3,000 YEARS",
+  "LEGEND",
+  "11TH C. BC",
+  "11TH C. AD",
+  "1701",
+  "1950",
+  "1962",
+  "TODAY"
+ ],
+ "datesNote": "Signs on the corridor floor in blender/timeline.py, one per page; page 1 looks down them all.",
  "chapters": [
   {
    "pages": [
     {
      "q": "HOW OLD IS THE I CHING",
      "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-0.mp4",
+       "scene": {
+        "page": 0,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "LEGEND",
      "a": "LEGEND CREDITS FU XI\nWITH EIGHT TRIGRAMS:\nTHREE-LINE PATTERNS.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-1.mp4",
+       "scene": {
+        "page": 1,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "11TH CENTURY BC",
      "a": "TRADITION CREDITS KING WEN\nWITH A TEXT FOR EACH OF THE\n64 SIX-LINE PATTERNS.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-2.mp4",
+       "scene": {
+        "page": 2,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "11TH CENTURY AD",
      "a": "64 PATTERNS, SQUARE AND CIRCLE.\nATTRIBUTED TO SHAO YONG.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-3.mp4",
+       "scene": {
+        "page": 3,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "1701",
      "a": "BOUVET SENDS THE DIAGRAM\nTO LEIBNIZ, A MATHEMATICIAN.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-4.mp4",
+       "scene": {
+        "page": 4,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "1950",
      "a": "BAYNES'S ENGLISH VERSION\nOF WILHELM'S TRANSLATION\nAPPEARS WITH JUNG'S FOREWORD.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-5.mp4",
+       "scene": {
+        "page": 5,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "1962 // PUBLISHED",
      "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I CHING\nTO HELP PLOT THE NOVEL.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-6.mp4",
+       "scene": {
+        "page": 6,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     },
     {
      "q": "TODAY",
      "a": "SIX LINES READS THE BOOK\nTO THINK THROUGH A CHOICE.",
-     "show": {}
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-7.mp4",
+       "scene": {
+        "page": 7,
+        "secs": 9,
+        "at": 2.5
+       }
+      },
+      "hold": 4
+     }
     }
    ]
   }
