@@ -23,7 +23,7 @@
   "why": "calm, 90 bpm, G major, from 0 s as on 24 (Return); apart from the lessons' The Mountain"
  },
  "endcardRate": 0.75,
- "caption": "Six lines, each yin or yang: six bits, 64 patterns. Claude Shannon measured information in bits in 1948.",
+ "caption": "Six lines, each yin or yang: six bits, 64 patterns. Claude Shannon measured information in bits in 1948. Photo: Tekniska museet, CC BY 2.0.",
  "chapters": [
   {
    "pages": [
@@ -59,7 +59,10 @@
        "v": 42,
        "weights": true
       },
-      "hold": 6
+      "hold": 6,
+      "portrait": {
+       "src": "local/timeline/shannon.jpg"
+      }
      }
     },
     {

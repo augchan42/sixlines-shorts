@@ -57,6 +57,9 @@ type Show = {
   // `flight`: one fly-through clip under the whole lesson (the timeline); the page plays it from
   // `from`, its own start in the full lesson (written by scripts/explainer.mjs), with no fade.
   clip?: { src: string; scene?: CubeScene; flight?: boolean; from?: number };
+  // A photo of the person the answer names, small at the top right beside the text, fading in as
+  // the answer starts (the Shannon short: the user, 2026-10-01, "show an image of claude shannon").
+  portrait?: { src: string };
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -227,6 +230,12 @@ const ClipWindow: React.FC<{ src: string; from?: number }> = ({ src, from }) => 
   );
 };
 
+const Portrait: React.FC<{ src: string; at: number; f: number }> = ({ src, at, f }) => (
+  <div style={{ position: "absolute", left: 770, top: 300, width: 230, height: 288, border: `2px solid ${PHOSPHOR}`, boxShadow: `0 0 12px ${PHOSPHOR}`, opacity: interpolate(f, [at, at + 12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), overflow: "hidden" }}>
+    <img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+  </div>
+);
+
 const place = (lines: (0 | 1)[], i: number) => (i === 0 || i === 5 ? "" : lines[i] === (i % 2 === 0 ? 1 : 0) ? "IN " : "OUT");
 
 const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: number; drawn: number; cam?: Cam; logFade?: number }> = ({ show, hexagrams, turn, drawn, cam, logFade = 1 }) => {
@@ -392,6 +401,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
         </Sequence>
       )}
       {show.plate && plate && <Plate src={plate} sec={f / FPS} secs={t.frames / FPS} {...show.plate} />}
+      {show.portrait && <Portrait src={show.portrait.src} at={t.lineAt[0] ?? 0} f={f} />}
       {show.diagram && <DiagramPage d={show.diagram} sec={f / FPS} secs={t.frames / FPS} plate={plate} names={names} />}
       <Drawing show={show} hexagrams={hexagrams} turn={turn} drawn={drawn} cam={cam} logFade={logFade} />
       {show.lesson && f >= lastLine + 15 && (
