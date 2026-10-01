@@ -58,6 +58,12 @@
     "Smoke tests: lines 1-3 flat mustard style, then retro restyle after the BBC references ('the style is funny but not retro enough').",
     "On the retro smoke test: 'can we use I-Ching instead of I Ching. and it looks good.'",
     "Draft 2 is Astra's revision."
+   ],
+   "videos": [
+    {
+     "path": "out/guide/guide-wangbi-720.mp4",
+     "url": "/_blob/dd1530829abc2be6818ed1f00fb1ba80"
+    }
    ]
   },
   {
@@ -79,6 +85,12 @@
    "notes": [
     "51 s. Script converged with Astra in round 1.",
     "The user plans to look at the guides (2026-10-01)."
+   ],
+   "videos": [
+    {
+     "path": "out/guide/guide-64-720.mp4",
+     "url": "/_blob/8445319e860dc28b3c75e4c0d5eaf559"
+    }
    ]
   },
   {
@@ -99,6 +111,12 @@
    "userSaid": "",
    "notes": [
     "50 s. Script converged with Astra in round 1."
+   ],
+   "videos": [
+    {
+     "path": "out/guide/guide-cords-720.mp4",
+     "url": "/_blob/a8badd9eecf1956eb9389311f29497f4"
+    }
    ]
   },
   {
@@ -119,6 +137,12 @@
    "userSaid": "",
    "notes": [
     "52 s. Astra's revision: paper written 1703, order only attributed to Shao Yong."
+   ],
+   "videos": [
+    {
+     "path": "out/guide/guide-leibniz-720.mp4",
+     "url": "/_blob/c5c0604f59c43060539c23eee6ea5ddd"
+    }
    ]
   },
   {
@@ -139,6 +163,12 @@
    "userSaid": "",
    "notes": [
     "65 s. Astra's revision adopted, except 63 named Already Across."
+   ],
+   "videos": [
+    {
+     "path": "out/guide/guide-trigrams-720.mp4",
+     "url": "/_blob/86fc06267511b7fd6692bd931d287079"
+    }
    ]
   },
   {
@@ -162,6 +192,12 @@
     "That comment was on the first cut; the latest cut adds Astra's transition: ENTRY: URIZEN card, OCCUPATION: MEASURING, hard cut back.",
     "Earlier cuts: urizen-qian6-720.mp4 (mirrored moustache, wind), urizen-qian6-chyen-720.mp4 (caption read CHYEN).",
     "Voice auditions in out/voice/urizen-audition."
+   ],
+   "videos": [
+    {
+     "path": "out/urizen/urizen-qian6-card-720.mp4",
+     "url": "/_blob/ecfae7b66f0881d4b13d1dbf7efa2107"
+    }
    ]
   },
   {
@@ -185,6 +221,12 @@
     "59 s. Smoke test of pages 2-3 sent twice on 2026-09-30.",
     "After the user's comment, 'corner' became 'vertex' throughout.",
     "Copy: Astra's revision, round 1."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/structure-cube/structure-cube-720.mp4",
+     "url": "/_blob/b5ef6c475cbfcb82c1c6321408ab8e72"
+    }
    ]
   },
   {
@@ -208,6 +250,12 @@
     "Smoke test pages 2-3: 3 turns into 4; 29 turns, stays 29, then each line flips into 30.",
     "Fixed version: each turn starts after its answer is typed.",
     "Copy: Astra's revision, round 1."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/structure-pairs-pages-2-3/pairs-smoke-fixed-720.mp4",
+     "url": "/_blob/d56d952d1964d8419d4c421f27526f9d"
+    }
    ]
   },
   {
@@ -228,6 +276,12 @@
    "userSaid": "",
    "notes": [
     "Hold cut from 11 to 6 s so the ring doesn't sit. No end card, so it loops."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/structure-splits/structure-splits-720.mp4",
+     "url": "/_blob/f8cc51319d0915edc04e2214ce84fc63"
+    }
    ]
   },
   {
@@ -248,6 +302,12 @@
    "userSaid": "",
    "notes": [
     "No end card, so it loops."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/structure-count/structure-count-720.mp4",
+     "url": "/_blob/eede1be7b49219f33b725ef912fd8534"
+    }
    ]
   },
   {
@@ -268,6 +328,12 @@
    "userSaid": "",
    "notes": [
     "51 s. Remotion only."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/structure-codons/structure-codons-720.mp4",
+     "url": "/_blob/3220a56487dcb7d1c86759b2160901a6"
+    }
    ]
   },
   {
@@ -280,8 +346,7 @@
    "files": [
     "series/explainers/structure-timeline.json",
     "blender/timeline.py",
-    "scripts/timeline.mjs",
-    "docs/research/2026-10-01-codex-structure-timeline.md"
+    "out/timeline/structure-timeline-smoke-720p.mp4"
    ],
    "commit": "7767909",
    "date": "2026-10-01",
@@ -291,6 +356,12 @@
     "Smoke test of pages 1 and 5 sent 2026-10-01.",
     "Each page pushes up to its date, which turns amber as the camera arrives at 2.5 s.",
     "Copy: Astra's revision, round 1."
+   ],
+   "videos": [
+    {
+     "path": "out/timeline/structure-timeline-smoke-720p.mp4",
+     "url": "/_blob/d7ed896222c8c5ed65948dd1d5a5dfa1"
+    }
    ]
   },
   {
@@ -333,6 +404,12 @@
     "Posted on Six Lines (X, Threads) and 8-Bit Oracle (X); 8-Bit Oracle's other two posts a week later.",
     "Review board verdict 'change': 'read the amber finding... shows on the screen way too fast ... the end credit ends too abruptly'; fixed (228.4 s).",
     "Replaced the 42 s readout-key explainer."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/wangbi-lesson/share.mp4",
+     "url": "/_blob/cbe56c4eac85ef458658714eba876394"
+    }
    ]
   },
   {
@@ -352,6 +429,12 @@
    "userSaid": "",
    "notes": [
     "Made because Instagram Reels stop at 3 min."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/wangbi-teaser/share.mp4",
+     "url": "/_blob/82ac189d5110e224eddd638dc0deef11"
+    }
    ]
   },
   {
@@ -376,6 +459,12 @@
     "On round 2 chirps: 'Those chirps are very annoying.'",
     "Smoke test feedback led to 'position' not 'place' and one amber line at a time.",
     "Adopted into the full lesson."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/wangbi-flight-cues-endmusic/preview.mp4",
+     "url": "/_blob/12dd939986785d76969cd0865a15eeea"
+    }
    ]
   },
   {
@@ -413,6 +502,12 @@
    "userSaid": "i feel like we shouldn't need to be restricted to a short of 42 seconds, this is actually a full wang bi lesson. i find it hard to follow whats going on.",
    "notes": [
     "Replaced by the Wang Bi lesson."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/readout-key/preview.mp4",
+     "url": "/_blob/271677e0b94732aa4ac674e7b021753e"
+    }
    ]
   },
   {
@@ -436,6 +531,12 @@
     "Smoke tests: pages 1-5, sound samples on pages 5-6 and 6-7-10.",
     "Guqin note from xserra (Freesound 161908, CC BY 4.0), the user's pick; beacon on the second flight only.",
     "Ends 6 LINES / 64 SITUATIONS, as the user asked."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/leibniz-lesson/share.mp4",
+     "url": "/_blob/ec3cf5c9335822e84b3a8d886d34e6f1"
+    }
    ]
   },
   {
@@ -458,6 +559,12 @@
    "notes": [
     "Full cut 86 s; smoke test pages 1 and 5 sent 2026-09-30 (user: 'yes push it').",
     "Moving lines left out, with the user's agreement."
+   ],
+   "videos": [
+    {
+     "path": "out/explainers/shannon-short/shannon-short-720.mp4",
+     "url": "/_blob/f818115b12699122382f755678dc6fb3"
+    }
    ]
   },
   {
@@ -481,6 +588,20 @@
     "English went through twelve cuts; Simplified four; Traditional one.",
     "Chinese wording from a Chinese-speaking tester; the user: 'ok follow your recs'.",
     "Led to sixlines-ios PR #194 (Judgment card, 'What Would Prove This Wrong')."
+   ],
+   "videos": [
+    {
+     "path": "out/demo/walkthrough/share.mp4",
+     "url": "/_blob/93bb0b0df7f43fd394a373abc3cb77b5"
+    },
+    {
+     "path": "out/demo/walkthrough-zh-hans/share.mp4",
+     "url": "/_blob/d0c44ec73e2005af03ff15f83f53a2ce"
+    },
+    {
+     "path": "out/demo/walkthrough-zh-hant/share.mp4",
+     "url": "/_blob/6e64b37b52ac056130ed7a5305e24f88"
+    }
    ]
   },
   {
@@ -504,6 +625,12 @@
     "Variants: character-5, -18, -42, -47, -58.",
     "On the hold at the end: 'that amount of hold is good.'",
     "The style went into 14 series shorts."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/character-42/share.mp4",
+     "url": "/_blob/54462a6c6f5afa7afd2b0acc5f25dbb9"
+    }
    ]
   },
   {
@@ -547,6 +674,16 @@
    "userSaid": "Give a longer hold",
    "notes": [
     "34.8 s short; then the character alone (10.7 s) and with a longer hold (18.7 s), as asked."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/horse-2/share.mp4",
+     "url": "/_blob/33d1619e1c8ea2776d3c63adaceb239f"
+    },
+    {
+     "path": "out/specials/horse-2/neon-ma-hold.mp4",
+     "url": "/_blob/ba3f40270766ae24f80b82f5288933e6"
+    }
    ]
   },
   {
@@ -568,6 +705,20 @@
    "userSaid": "",
    "notes": [
     "Variants: 馬 horse, 困 hardship, 鼎 cauldron, 井 well, 家 family, 革 revolution/molting. 11-15 s each, no music."
+   ],
+   "videos": [
+    {
+     "path": "out/forms/馬-share.mp4",
+     "url": "/_blob/9112b247d9f48591d78babada9f994f7"
+    },
+    {
+     "path": "out/forms/困-share.mp4",
+     "url": "/_blob/c3eabe9eaef250a20c78f0d93013b34b"
+    },
+    {
+     "path": "out/forms/革-share.mp4",
+     "url": "/_blob/12bbe16f6a29f0fd25382bc09378cacb"
+    }
    ]
   },
   {
@@ -590,6 +741,20 @@
    "notes": [
     "Variants: 吳越 WUYUE, 馮 FUNG, 陳 CHAN, 梁 LEUNG; Goudy labels chosen over pixel font.",
     "Fung first drew 馬 before 冫; the user: 'You're reading way too much into things' (keep standard stroke order). Redone."
+   ],
+   "videos": [
+    {
+     "path": "out/signs/wuyue-goudy.mp4",
+     "url": "/_blob/0e00094d30b41d9655fb927610e386ef"
+    },
+    {
+     "path": "out/signs/fung-goudy.mp4",
+     "url": "/_blob/eeb24ceb7a13b3a5e8217cd05689a801"
+    },
+    {
+     "path": "out/signs/leung-goudy.mp4",
+     "url": "/_blob/9010528c0e27741b7f43d1c814da5c4a"
+    }
    ]
   },
   {
@@ -612,6 +777,12 @@
    "notes": [
     "Version A: line texts light up as the moon rises. Version B: the moon alone, no labels; B was the one sent again for posting.",
     "LinkedIn caption written for B; the user asked about posting it on LinkedIn. Not recorded as posted."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/mid-autumn-2026-b/share.mp4",
+     "url": "/_blob/85f27c8fcc7becb0d9d65c2c013cc8c9"
+    }
    ]
   },
   {
@@ -636,6 +807,16 @@
     "11 s route smoke test: 'looks good. Keep going.'",
     "Ending changed twice: 吳越 alone, map lines fading, no HANGZHOU.",
     "Astra reviewed the treatment and stupa shots (docs/research/2026-09-29-codex-*.md)."
+   ],
+   "videos": [
+    {
+     "path": "out/wuyue/wuyue-vertical.mp4",
+     "url": "/_blob/b3c3c50eaffbe3e026e1e0b2f475b59e"
+    },
+    {
+     "path": "out/wuyue/wuyue-wide-24mb.mp4",
+     "url": "/_blob/6d28339264675acdfb82b04e7fcf170b"
+    }
    ]
   },
   {
@@ -657,6 +838,20 @@
    "notes": [
     "Shared with Glowline only, not for posting without their permission.",
     "Instagram DM versions: yuv420p, faststart, under 25 MB; 720p and a 15 s cut."
+   ],
+   "videos": [
+    {
+     "path": "out/gotchu-qian-preview.mp4",
+     "url": "/_blob/04b54d2575e0a9d7f4024563dba66fbe"
+    },
+    {
+     "path": "out/compare-gotchu.mp4",
+     "url": "/_blob/2c871c65bb7a20fb7b77add33bac7a4c"
+    },
+    {
+     "path": "out/sixlines-glowline-720p.mp4",
+     "url": "/_blob/c543729c5317461385c4b410c56a3371"
+    }
    ]
   },
   {
@@ -700,6 +895,16 @@
    "userSaid": "i actually don't think the close needs to be shortened at all?",
    "notes": [
     "Tests Astra's suggestion on the open card; the user kept the close as it is."
+   ],
+   "videos": [
+    {
+     "path": "out/bookend/01/share.mp4",
+     "url": "/_blob/1429ee38f1926518e4447af94cea335c"
+    },
+    {
+     "path": "out/bookend/23/share.mp4",
+     "url": "/_blob/500a0eb7cf542e46b9a93d2293f5c5e6"
+    }
    ]
   },
   {
@@ -764,6 +969,12 @@
    "userSaid": "The judgment I'm shaky on.",
    "notes": [
     "That comment was on the Judgment style in general, before this test. No direct verdict on this test found."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/judgment-3d-10/share.mp4",
+     "url": "/_blob/62b2a685ebdae840d61047875bda6772"
+    }
    ]
   },
   {
@@ -784,6 +995,12 @@
    "userSaid": "The 23 collapses, it's okay. It's nothing great.",
    "notes": [
     "The user: 'maybe because it doesn't actually collapse at all.'"
+   ],
+   "videos": [
+    {
+     "path": "out/specials/collapse-3d-23/share.mp4",
+     "url": "/_blob/f56c7c29bddfca08c9c8c66e426e6794"
+    }
    ]
   },
   {
@@ -805,6 +1022,12 @@
    "notes": [
     "Said of bite-21 and readout-21 together.",
     "Taken into series short 21."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/bite-21/preview.mp4",
+     "url": "/_blob/48723a566a02315bbb27e85e265ab455"
+    }
    ]
   },
   {
@@ -825,6 +1048,12 @@
    "userSaid": "They're both really great.",
    "notes": [
     "Became the readout style used by 35 series shorts."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/readout-21/preview.mp4",
+     "url": "/_blob/6939b1e174e33c517c190a0e2f53f5d0"
+    }
    ]
   },
   {
@@ -844,6 +1073,12 @@
    "userSaid": "the readouts are all good.",
    "notes": [
     "Taken into series short 14."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/readout-14/preview.mp4",
+     "url": "/_blob/afe64b5efe83d35bd69ed778ace7f27b"
+    }
    ]
   },
   {
@@ -864,6 +1099,12 @@
    "userSaid": "I thought the bird graphic was quite well done.",
    "notes": [
     "Lesson line shortened to 'Fly low. / Do small things.' Taken into series short 62."
+   ],
+   "videos": [
+    {
+     "path": "out/specials/bird-62/preview.mp4",
+     "url": "/_blob/6af445ac3d45de5ae7a9f38e402f5827"
+    }
    ]
   },
   {
@@ -903,6 +1144,12 @@
    "userSaid": "we need to trust the audience more. no need to black out the background behind the title ... i think just keep the original renders.",
    "notes": [
     "Also: 'my daughter likes the old render better'."
+   ],
+   "videos": [
+    {
+     "path": "out/compare/01-qian.mp4",
+     "url": "/_blob/1cdb4f7c4ccf29073786995786c1d1cf"
+    }
    ]
   },
   {
@@ -923,6 +1170,12 @@
    "userSaid": "i love the hexagram bars and how you did that in blender.",
    "notes": [
     "Used in all 64 shorts. Later: 'The current way the hexagrams are presented with the sort of camera movement, those are all really good.'"
+   ],
+   "videos": [
+    {
+     "path": "out/hex-2d-vs-3d.mp4",
+     "url": "/_blob/83f9dff9194b996712ad193bbfbb1084"
+    }
    ]
   },
   {
@@ -1029,6 +1282,12 @@
    "notes": [
     "Terminal clip of 7 師 with sound (26 s) sent; stills: 'looks good. i hope the sound effects and ambient sound are good'.",
     "Spec reviewed by Astra."
+   ],
+   "videos": [
+    {
+     "path": "out/terminal/7-army-share.mp4",
+     "url": "/_blob/a4fec16e73daf07a895e276ab626e7ee"
+    }
    ]
   },
   {
@@ -1187,7 +1446,21 @@
    "date": "2026-09-26",
    "sent": true,
    "userSaid": "",
-   "notes": []
+   "notes": [],
+   "videos": [
+    {
+     "path": "out/reels/characters.mp4",
+     "url": "/_blob/7ab937580e2c96f4e8bb623c2731816e"
+    },
+    {
+     "path": "out/reels/pictures-21-29-62.mp4",
+     "url": "/_blob/6e4361526ce2df37730cc9a1b5b6cbf8"
+    },
+    {
+     "path": "out/reels/readouts-1.mp4",
+     "url": "/_blob/b22b953ebbd2f66b0bdc392fbeb03146"
+    }
+   ]
   },
   {
    "id": "review-board",

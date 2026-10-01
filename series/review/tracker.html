@@ -59,6 +59,13 @@ section h2 small { color: var(--dim); font-weight: 400; letter-spacing: 0.04em; 
 .verdicts button[aria-pressed="true"].drop { color: var(--bg); background: var(--red); border-color: var(--red); }
 textarea { width: 100%; box-sizing: border-box; min-height: 54px; resize: vertical; background: var(--panel); color: var(--fg); border: 1px solid var(--rule); border-radius: 3px; padding: 6px 8px; font: 13px var(--body); }
 .saved { font: 11px var(--mono); color: var(--dim); min-height: 1em; }
+.videos { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 2px; }
+.videos figure { margin: 0; display: grid; gap: 4px; width: 220px; max-width: 100%; }
+.videos video { width: 100%; aspect-ratio: 9 / 16; background: #000; border: 1px solid var(--rule); border-radius: 3px; }
+.videos figcaption { display: grid; gap: 2px; }
+.videos code { font: 11px var(--mono); color: var(--dim); overflow-wrap: anywhere; user-select: all; }
+.copy { justify-self: start; font: 11px var(--mono); padding: 2px 8px; border-radius: 3px; border: 1px solid var(--rule); background: var(--panel); color: var(--cyan); cursor: pointer; }
+.norender { font: 12px var(--mono); color: var(--dim); }
 .empty { border: 1px dashed var(--rule); padding: 24px; color: var(--dim); max-width: 65ch; }
 .filters { display: flex; flex-wrap: wrap; gap: 6px; }
 .filters button { font: 12px var(--mono); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule); background: transparent; color: var(--dim); cursor: pointer; }
@@ -138,48 +145,100 @@ function matches(it) {
   return it.stage === f;
 }
 
+const ROOT = "/Users/auchan/projects/sixlines-shorts/";
+const rows = new Map();  // item id -> its row's live parts, so a verdict repaints one row only
+
 async function save(id, patch) {
   const db = state.db;
   if (!db) return;
-  const prev = state.reviews[id] || {};
-  const next = { ...prev, ...patch, at: new Date().toISOString() };
+  const next = { ...(state.reviews[id] || {}), ...patch, at: new Date().toISOString() };
   state.reviews[id] = next;
-  const note = document.querySelector(`[data-saved="${id}"]`);
+  paint(id);
+  const row = rows.get(id);
   try {
     await db.collection("reviews").doc(id).set(next);
-    if (note) note.textContent = "saved";
+    if (row) row.saved.textContent = stamp(next) + " · saved";
   } catch (e) {
-    if (e && e.code === "invalid_argument") { state.writable = false; render(); }
-    if (note) note.textContent = "not saved: " + (e && e.message ? e.message : "try again");
+    if (e && e.code === "invalid_argument") state.writable = false;
+    if (row) row.saved.textContent = "not saved: " + (e && e.message ? e.message : "try again");
   }
 }
 
+const stamp = (r) => r.at ? `${r.verdict ? r.verdict + ", " : ""}${new Date(r.at).toLocaleDateString(undefined, { day: "numeric", month: "short" })}` : "";
+
+// Repaint one row's review state in place: no re-sort, no redraw, so nothing moves and a
+// playing video keeps playing.
+function paint(id) {
+  const row = rows.get(id);
+  if (!row) return;
+  const r = state.reviews[id] || {};
+  for (const [v, b] of Object.entries(row.buttons)) { b.setAttribute("aria-pressed", String(r.verdict === v)); b.disabled = !state.writable; }
+  if (document.activeElement !== row.ta && drafts[id] === undefined) row.ta.value = r.comment || "";
+  row.saved.textContent = stamp(r);
+  row.el.classList.toggle("flag", needsReview(row.it));
+  counts();
+}
+
+function copyPath(text, btn) {
+  const done = () => { btn.textContent = "copied"; setTimeout(() => { btn.textContent = "copy path"; }, 1500); };
+  try {
+    navigator.clipboard.writeText(text).then(done, () => select(btn));
+  } catch { select(btn); }
+}
+function select(btn) {
+  const code = btn.previousElementSibling;
+  const range = document.createRange();
+  range.selectNodeContents(code);
+  const sel = getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+}
+
+function videos(it) {
+  const vs = it.videos || [];
+  if (!vs.length) return null;
+  return el("div", { class: "videos" }, vs.map((v) => el("figure", {},
+    v.url ? el("video", { src: v.url, controls: "", preload: "metadata", playsinline: "" }) : null,
+    el("figcaption", {}, el("code", {}, ROOT + v.path), el("button", { class: "copy", onclick: (e) => copyPath(ROOT + v.path, e.currentTarget) }, "copy path")))));
+}
+
 function item(it) {
-  const r = state.reviews[it.id] || {};
-  const verdict = (v, label) => el("button", { class: v, "aria-pressed": String(r.verdict === v), disabled: state.writable ? null : "", onclick: () => save(it.id, { verdict: r.verdict === v ? "" : v, comment: drafts[it.id] ?? r.comment ?? "" }).then(render) }, label);
-  const ta = el("textarea", { id: `c-${it.id}`, "aria-label": `Comment on ${it.title}`, placeholder: "Comment", oninput: (e) => { drafts[it.id] = e.target.value; }, onblur: (e) => { if ((r.comment || "") !== e.target.value) save(it.id, { comment: e.target.value }); } });
-  ta.value = drafts[it.id] ?? r.comment ?? "";
+  const buttons = {};
+  const verdict = (v) => (buttons[v] = el("button", { class: v, onclick: () => {
+    const r = state.reviews[it.id] || {};
+    save(it.id, { verdict: r.verdict === v ? "" : v, comment: drafts[it.id] ?? r.comment ?? "" });
+  } }, v));
+  const ta = el("textarea", { id: `c-${it.id}`, "aria-label": `Comment on ${it.title}`, placeholder: "Comment", oninput: (e) => { drafts[it.id] = e.target.value; }, onblur: (e) => {
+    const r = state.reviews[it.id] || {};
+    delete drafts[it.id];
+    if ((r.comment || "") !== e.target.value) save(it.id, { comment: e.target.value });
+  } });
   if (!state.writable) ta.setAttribute("readonly", "");
-  const when = r.at ? `${r.verdict ? r.verdict + ", " : ""}${new Date(r.at).toLocaleDateString(undefined, { day: "numeric", month: "short" })}` : "";
-  const files = (it.files || []).slice(0, 4);
-  return el("div", { class: `item ${needsReview(it) ? "flag" : ""}` },
+  const saved = el("span", { class: "saved" });
+  const files = (it.files || []).filter((f) => !f.endsWith(".mp4")).slice(0, 4);
+  const row = el("div", { class: "item" },
     el("span", { class: `stage s-${it.stage}` }, LABEL[it.stage] || it.stage),
     el("div", { class: "main" },
       el("h3", {}, it.title),
       it.what ? el("p", {}, it.what) : null,
       it.next ? el("p", { class: "next" }, it.next) : null,
       it.userSaid ? el("p", { class: "said" }, `“${it.userSaid}”`) : null,
+      videos(it) || el("p", { class: "norender" }, "No video: nothing rendered for this one."),
       it.notes && it.notes.length ? el("ul", { class: "notes" }, it.notes.map((n) => el("li", {}, n))) : null,
       el("div", { class: "meta" }, it.date ? el("span", {}, it.date) : null, it.commit ? el("span", {}, it.commit) : null, files.map((f) => el("span", {}, f)))),
     el("div", { class: "rev" },
-      el("div", { class: "verdicts" }, verdict("good", "good"), verdict("change", "change"), verdict("drop", "drop")),
+      el("div", { class: "verdicts" }, verdict("good"), verdict("change"), verdict("drop")),
       ta,
-      el("span", { class: "saved", "data-saved": it.id }, when)));
+      saved));
+  rows.set(it.id, { el: row, it, buttons, ta, saved });
+  paint(it.id);
+  return row;
 }
 
 function render() {
   counts();
   filters();
+  rows.clear();
   const box = document.getElementById("groups");
   if (!state.items.length) {
     box.replaceChildren(el("div", { class: "empty" }, state.db === null ? "The tracker's data isn't available in this view. Open it on claude.ai while signed in." : "No experiments yet. Claude adds them here as they are made."));
@@ -187,10 +246,10 @@ function render() {
   }
   const order = state.groups.length ? state.groups : [...new Set(state.items.map((i) => i.group))].map((id) => ({ id, title: id }));
   const sections = order.map((g) => {
-    const rows = state.items.filter((i) => i.group === g.id && matches(i))
-      .sort((a, b) => (needsReview(b) - needsReview(a)) || (b.date || "").localeCompare(a.date || ""));
-    if (!rows.length) return null;
-    return el("section", {}, el("h2", {}, g.title, el("small", {}, `${rows.length}`)), rows.map(item));
+    const list = state.items.filter((i) => i.group === g.id && matches(i))
+      .sort((a, b) => (b.date || "").localeCompare(a.date || "") || a.id.localeCompare(b.id));
+    if (!list.length) return null;
+    return el("section", {}, el("h2", {}, g.title, el("small", {}, `${list.length}`)), list.map(item));
   }).filter(Boolean);
   box.replaceChildren(...(sections.length ? sections : [el("div", { class: "empty" }, "Nothing matches this filter.")]));
 }
@@ -211,7 +270,7 @@ function render() {
     const next = {};
     for (const d of s.docs) next[d.id] = d.data();
     state.reviews = next;
-    render();
+    for (const id of rows.keys()) paint(id);
   });
 })();
 </script>
