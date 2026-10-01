@@ -255,14 +255,11 @@ const Drawing: React.FC<{ show: Show; hexagrams: Record<string, Hex>; turn: numb
           {show.small.map((n, k) => {
             const h = hexagrams[n];
             const lone = h.lines.findIndex((l) => h.lines.filter((m) => m === l).length === 1);
-            const partner = (lone + 3) % 6;
-            const cx = k ? 780 : 300;
-            const x = cx - (LINE_W / 2) * 50 - 26;
-            const [ya, yb] = [CY - lineZ(Math.min(lone, partner)) * 50, CY - lineZ(Math.max(lone, partner)) * 50];
+            // Only the lone line is lit: its answer line and a bracket to it raised a question the
+            // page does not answer (the user, 2026-10-01: "why are these lines highlighted in green").
             return (
               <g key={n}>
-                <Plot lines={h.lines} turn={turn} cx={cx} cy={CY} scale={50} drawn={drawn} amber={[lone]} lit={[lone, partner]} />
-                {drawn >= 1 && <path d={`M${x + 16},${ya}H${x}V${yb}H${x + 16}`} fill="none" stroke={PHOSPHOR} strokeWidth={3} />}
+                <Plot lines={h.lines} turn={turn} cx={k ? 780 : 300} cy={CY} scale={50} drawn={drawn} amber={[lone]} lit={[lone]} />
               </g>
             );
           })}
