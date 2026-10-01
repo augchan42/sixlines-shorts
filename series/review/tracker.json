@@ -348,12 +348,12 @@
     "blender/timeline.py",
     "out/timeline/structure-timeline-smoke-720p.mp4"
    ],
-   "commit": "56050e7",
+   "commit": "bbc318a",
    "date": "2026-10-01",
    "sent": true,
-   "userSaid": "Pictures: \"this timeline looks more promising, maybe some background music\"",
+   "userSaid": "Pictures: \"this timeline looks more promising, maybe some background music\". First music version: \"still don't hear any music until near the end\"",
    "notes": [
-    "Music version sent 2026-10-01: lofi synthwave (92 bpm) at 0.8, machine sounds pulled back.",
+    "Music fixed 2026-10-01 (bbc318a): props leaked the Wang Bi lesson's endMusic, so music played only at the end. Re-sent with music throughout.",
     "Pictures smoke test (pages 1, 2, 5, 6) sent 2026-10-01: Fu Xi by Ma Lin, King Wen, Shao Yong, Bouvet's 1701 diagram, Wilhelm and Jung, Philip K. Dick, the app.",
     "First smoke test (numerals only, pages 1 and 5): the user found it sparse.",
     "Wilhelm's photo is CC BY-SA 3.0 de: credit the Bundesarchiv in the caption."
@@ -361,7 +361,7 @@
    "videos": [
     {
      "path": "out/timeline/structure-timeline-music-720p.mp4",
-     "url": "/_blob/41dbae84dbb5217c7fb91c7eacf6e00e"
+     "url": "/_blob/c35c63bead5950f9cefa61ef25bc4e85"
     },
     {
      "path": "out/timeline/structure-timeline-pictures-720p.mp4",
