@@ -1,7 +1,7 @@
 {
  "explainer": "structure-timeline-pages-1-2-5-6",
- "rendered": "2026-10-01T02:35:14.582Z",
- "commit": "1ba9b2a75951191b92dcf4003d6cf90bcc6ad322",
+ "rendered": "2026-10-01T02:43:40.354Z",
+ "commit": "2436ff407ea0808cd72ea984665b63cae83cd698",
  "clean": false,
  "seconds": 30.016,
  "shareKbps": 6002,
@@ -73,16 +73,16 @@
   "music": "local/music/pick14-lofi-synthwave.mp3",
   "musicStart": 8,
   "mix": {
-   "hum": 1,
-   "beacon": 1,
-   "printer": 1,
-   "ticks": 0.8,
-   "sweep": 0.7,
-   "chatter": 0.7,
-   "warble": 0.5,
+   "hum": 0.5,
+   "beacon": 0.6,
+   "printer": 0.6,
+   "ticks": 0.5,
+   "sweep": 0.4,
+   "chatter": 0.35,
+   "warble": 0.3,
    "winddown": 0.6,
-   "music": 0.3,
-   "relay": 0.55
+   "music": 0.8,
+   "relay": 0.4
   },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
@@ -114,7 +114,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/structure-timeline-pages-1-2-5-6/short.mp4": "f412e4355622aa0419f17db9561fb66653ea714a8992e8d5d3f8798ea616294a",
-  "out/explainers/structure-timeline-pages-1-2-5-6/share.mp4": "b706c34b5c0dbc57f941df21d9501f5f932990926577fcf7f46d240ac9507e03"
+  "out/explainers/structure-timeline-pages-1-2-5-6/short.mp4": "3231d0c6da52a40f4b7092b569c3edf69f3cd3f531bb6158bf832326ef0e1d88",
+  "out/explainers/structure-timeline-pages-1-2-5-6/share.mp4": "cf0e7e59cbc5084c0e0ea91b3644784093693e015a7d9dba98f59962ac5e74d6"
  }
 }
