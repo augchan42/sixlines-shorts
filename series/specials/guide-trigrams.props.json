@@ -1,5 +1,5 @@
 {
- "frames": 1944,
+ "frames": 1942,
  "beats": [
   {
    "n": 1,
@@ -335,7 +335,7 @@
    "n": 6,
    "src": "local/voice/guide-trigrams/06.mp3",
    "from": 1397,
-   "to": 1594,
+   "to": 1592,
    "words": [
     {
      "text": "Fire",
@@ -344,23 +344,23 @@
     },
     {
      "text": "below",
-     "from": 1414,
-     "to": 1424
+     "from": 1412,
+     "to": 1421
     },
     {
      "text": "water:",
      "from": 1426,
-     "to": 1455
+     "to": 1449
     },
     {
-     "text": "Already",
+     "text": "After",
      "from": 1457,
-     "to": 1469
+     "to": 1467
     },
     {
-     "text": "Across.",
-     "from": 1472,
-     "to": 1491
+     "text": "Completion.",
+     "from": 1469,
+     "to": 1498
     },
     {
      "text": "The",
@@ -375,90 +375,90 @@
     {
      "text": "guard",
      "from": 1544,
-     "to": 1553
+     "to": 1551
     },
     {
      "text": "against",
-     "from": 1556,
-     "to": 1568
+     "from": 1553,
+     "to": 1565
     },
     {
      "text": "trouble.",
-     "from": 1573,
-     "to": 1594
+     "from": 1570,
+     "to": 1592
     }
    ]
   },
   {
    "n": 7,
    "src": "local/voice/guide-trigrams/07.mp3",
-   "from": 1615,
-   "to": 1838,
+   "from": 1613,
+   "to": 1836,
    "words": [
     {
      "text": "Recommended",
-     "from": 1615,
-     "to": 1634
+     "from": 1613,
+     "to": 1631
     },
     {
      "text": "for:",
-     "from": 1634,
-     "to": 1646
+     "from": 1632,
+     "to": 1644
     },
     {
      "text": "reading",
-     "from": 1655,
-     "to": 1671
+     "from": 1652,
+     "to": 1669
     },
     {
      "text": "figures",
-     "from": 1673,
-     "to": 1690
+     "from": 1670,
+     "to": 1687
     },
     {
      "text": "in",
-     "from": 1692,
-     "to": 1694
+     "from": 1690,
+     "to": 1692
     },
     {
      "text": "halves.",
-     "from": 1699,
-     "to": 1727
+     "from": 1697,
+     "to": 1724
     },
     {
      "text": "Not",
-     "from": 1738,
-     "to": 1745
+     "from": 1735,
+     "to": 1742
     },
     {
      "text": "recommended",
-     "from": 1747,
-     "to": 1764
+     "from": 1745,
+     "to": 1762
     },
     {
      "text": "for:",
-     "from": 1766,
-     "to": 1776
+     "from": 1764,
+     "to": 1774
     },
     {
      "text": "arguing",
-     "from": 1790,
-     "to": 1805
+     "from": 1788,
+     "to": 1802
     },
     {
      "text": "with",
-     "from": 1807,
-     "to": 1810
+     "from": 1805,
+     "to": 1807
     },
     {
      "text": "the",
-     "from": 1811,
-     "to": 1812
+     "from": 1808,
+     "to": 1810
     },
     {
      "text": "chicken.",
-     "from": 1817,
-     "to": 1838
+     "from": 1814,
+     "to": 1836
     }
    ]
   }
@@ -475,9 +475,9 @@
   "b5": 1115,
   "e5": 1376,
   "b6": 1397,
-  "e6": 1594,
-  "b7": 1615,
-  "e7": 1838,
+  "e6": 1592,
+  "b7": 1613,
+  "e7": 1836,
   "halves": 251,
   "trigrams": 292,
   "eight": 362,
@@ -500,10 +500,10 @@
   "dog": 1339,
   "sheep": 1360,
   "stack": 1397,
-  "across": 1472,
+  "across": 1469,
   "guard": 1544,
-  "not": 1738,
-  "close": 1862
+  "not": 1735,
+  "close": 1860
  },
  "close": {
   "tagline": "REVEAL THE MOMENT",

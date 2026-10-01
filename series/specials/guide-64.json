@@ -1,5 +1,5 @@
 {
-  "about": "A Guide-style short on hexagram 64, the book's last, Not Yet Across (the user, 2026-10-01: 'i think some hitchhikers shorts would be great ... for 1 and 2 - review and converge with astra then execute'). Same look and voice as guide-wangbi: black screen, neon outlines drawing on, green labels on leader lines, blue title, narration typed in blue capitals. Draft 1. Draft 2: Astra's revision (docs/research/2026-10-01-codex-guide-64.md), adopted as is by Opus, so round 1 converged.",
+  "about": "A Guide-style short on hexagram 64, the book's last, Before Completion (the user, 2026-10-01: 'i think some hitchhikers shorts would be great ... for 1 and 2 - review and converge with astra then execute'). Same look and voice as guide-wangbi: black screen, neon outlines drawing on, green labels on leader lines, blue title, narration typed in blue capitals. Draft 1. Draft 2: Astra's revision (docs/research/2026-10-01-codex-guide-64.md), adopted as is by Opus, so round 1 converged. Draft 3: 63 and 64 renamed After Completion and Before Completion (the user, review board 2026-10-01: 'they are better known as before completion and after completion, change to use this terminology'); line 5 ends 'So it ends before completion.'",
   "voice": {
     "provider": "ElevenLabs",
     "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
@@ -8,8 +8,8 @@
   },
   "narration": [
     {
-      "text": "The I-Ching. Sixty-four situations. Number sixty-three: Already Across.",
-      "picture": "Title THE I-CHING; label 64 SITUATIONS. 63 draws on bottom first (solid, broken, solid, broken, solid, broken); six green ticks; label 既濟 ALREADY ACROSS."
+      "text": "The I-Ching. Sixty-four situations. Number sixty-three: After Completion.",
+      "picture": "Title THE I-CHING; label 64 SITUATIONS. 63 draws on bottom first (solid, broken, solid, broken, solid, broken); six green ticks; label 既濟 AFTER COMPLETION."
     },
     {
       "text": "The text warns: good at first, disorder at the end.",
@@ -20,11 +20,11 @@
       "picture": "The device starts to close at entry 63, then opens to entry 64."
     },
     {
-      "text": "Sixty-four: Not Yet Across. A small fox wets its tail. Too tired to finish.",
-      "picture": "64 draws on bottom first (broken, solid, ...); label 未濟 NOT YET ACROSS. A small angular fox pauses in the water short of the bank; its tail dips; label TAIL: WET."
+      "text": "Sixty-four: Before Completion. A small fox wets its tail. Too tired to finish.",
+      "picture": "64 draws on bottom first (broken, solid, ...); label 未濟 BEFORE COMPLETION. A small angular fox pauses in the water short of the bank; its tail dips; label TAIL: WET."
     },
     {
-      "text": "A commentary explains: things cannot come to an end. So it ends on Not Yet.",
+      "text": "A commentary explains: things cannot come to an end. So it ends before completion.",
       "picture": "Page counter 64 / 64. Label 序卦 SEQUENCE OF THE HEXAGRAMS, then 物不可窮也 THINGS CANNOT COME TO AN END. A cursor blinks under the last entry."
     },
     {
@@ -37,8 +37,8 @@
     }
   ],
   "onScreenChinese": [
-    "既濟 already across",
-    "未濟 not yet across",
+    "既濟 after completion",
+    "未濟 before completion",
     "物不可窮也 things cannot come to an end"
   ],
   "sources": {
@@ -74,7 +74,7 @@
     {
       "name": "across63",
       "beat": 1,
-      "word": "Across."
+      "word": "Completion."
     },
     {
       "name": "warns",
@@ -94,7 +94,7 @@
     {
       "name": "h64",
       "beat": 4,
-      "word": "Not"
+      "word": "Before"
     },
     {
       "name": "fox",
@@ -124,7 +124,7 @@
     {
       "name": "notyet",
       "beat": 5,
-      "word": "Yet."
+      "word": "completion."
     },
     {
       "name": "apart",

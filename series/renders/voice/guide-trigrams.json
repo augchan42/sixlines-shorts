@@ -71,7 +71,7 @@
    "made": "2026-09-30T18:05:00.316Z"
   },
   "06": {
-   "text": "Fire below water: Already Across. The task: guard against trouble.",
+   "text": "Fire below water: After Completion. The task: guard against trouble.",
    "model": "eleven_v4",
    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
    "settings": {
@@ -80,9 +80,9 @@
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 6.56,
-   "sha256": "35d8bfacecc769850d65baf89d8bcd8e9705d5f3affe613c1edaab38e1cf74ca",
-   "made": "2026-09-30T18:05:03.958Z"
+   "seconds": 6.48,
+   "sha256": "2a60c1b3214186642924f989c9623b55280d87bfed7652a55aca50c6dd61a8c0",
+   "made": "2026-10-01T05:10:08.526Z"
   },
   "07": {
    "text": "Recommended for: reading figures in halves. Not recommended for: arguing with the chicken.",

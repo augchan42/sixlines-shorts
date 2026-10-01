@@ -24,12 +24,12 @@
  },
  "endcard": false,
  "endcardNote": "a loop: no end card, so the last frame runs back into the first",
- "caption": "The I Ching has 64 six-line patterns, with each line broken or solid. Read the book for judgment at sixlines.day.",
+ "caption": "The I-Ching has 64 six-line patterns, with each line broken or solid. Read the book for judgment at sixlines.day.",
  "chapters": [
   {
    "pages": [
     {
-     "q": "WHY 64 PATTERNS IN THE I CHING",
+     "q": "WHY 64 PATTERNS IN THE I-CHING",
      "a": "THE BOOK USES SIX-LINE PATTERNS.\nEACH LINE: BROKEN OR SOLID.\nADD A LINE. DOUBLE THE COUNT.\n2 → 4 → 8 → 16 → 32 → 64.",
      "show": {
       "diagram": {

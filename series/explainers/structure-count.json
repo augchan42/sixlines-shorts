@@ -24,13 +24,13 @@
  },
  "endcard": false,
  "endcardNote": "a loop: no end card, so the last frame runs back into the first",
- "caption": "Read the I Ching’s six-line patterns as binary numbers: broken = 0, solid = 1, with the bottom line as the leftmost digit. On the circle attributed to Shao Yong, count up the right half from 0 to 31, then up the left from 32 to 63; sixlines.day.",
+ "caption": "Read the I-Ching’s six-line patterns as binary numbers: broken = 0, solid = 1, with the bottom line as the leftmost digit. On the circle attributed to Shao Yong, count up the right half from 0 to 31, then up the left from 32 to 63; sixlines.day.",
  "chapters": [
   {
    "pages": [
     {
      "q": "HOW CAN SIX LINES COUNT",
-     "a": "THE I CHING IS A BOOK.\n64 PATTERNS, SIX LINES EACH.\nREAD BROKEN AS 0, SOLID AS 1.\nTHAT GIVES 0 TO 63.",
+     "a": "THE I-CHING IS A BOOK.\n64 PATTERNS, SIX LINES EACH.\nREAD BROKEN AS 0, SOLID AS 1.\nTHAT GIVES 0 TO 63.",
      "show": {
       "diagram": {
        "count": [

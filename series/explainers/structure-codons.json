@@ -28,14 +28,14 @@
   {
    "pages": [
     {
-     "q": "DOES DNA MATCH THE I CHING",
+     "q": "DOES DNA MATCH THE I-CHING",
      "a": "DNA HAS 64 POSSIBLE CODONS.\nEACH IS THREE LETTERS LONG.\nTHE LETTERS ARE A, C, G, T.",
      "show": {
       "big": "64\nA C G T"
      }
     },
     {
-     "q": "WHAT IS THE I CHING",
+     "q": "WHAT IS THE I-CHING",
      "a": "A BOOK WITH 64 HEXAGRAMS.\nEACH IS A SIX-LINE PATTERN:\nYIN IS BROKEN; YANG IS SOLID.",
      "show": {
       "big": "64\nYIN YANG"

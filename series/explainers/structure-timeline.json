@@ -23,7 +23,7 @@
   "why": "calm, 92 bpm, A# minor, from 8 s as on 4, 22, 26 and 41; no other structure short uses it"
  },
  "endcardRate": 0.75,
- "caption": "A Chinese book about change, from origin stories to a diagram sent to Leibniz and a novel plotted with its help. A few dates in the I Ching’s history; sixlines.day.",
+ "caption": "A Chinese book about change, from origin stories to a diagram sent to Leibniz and a novel plotted with its help. A few dates in the I-Ching’s history; sixlines.day.",
  "dates": [
   "3,000 YEARS",
   "LEGEND",
@@ -64,7 +64,7 @@
   {
    "pages": [
     {
-     "q": "HOW OLD IS THE I CHING",
+     "q": "HOW OLD IS THE I-CHING",
      "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
      "show": {
       "clip": {
@@ -131,7 +131,7 @@
     },
     {
      "q": "1962 // PUBLISHED",
-     "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I CHING\nTO HELP PLOT THE NOVEL.",
+     "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I-CHING\nTO HELP PLOT THE NOVEL.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-flight.mp4",

@@ -28,8 +28,8 @@
   {
    "pages": [
     {
-     "q": "WHAT IS AN I CHING LINE",
-     "a": "THE I CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
+     "q": "WHAT IS AN I-CHING LINE",
+     "a": "THE I-CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
      "show": {
       "diagram": {
        "kind": "line",
@@ -84,7 +84,7 @@
      }
     },
     {
-     "q": "DID SHANNON READ THE I CHING",
+     "q": "DID SHANNON READ THE I-CHING",
      "a": "WE DON'T KNOW.\nTHE LINK HERE IS MATHEMATICAL.",
      "show": {
       "diagram": {

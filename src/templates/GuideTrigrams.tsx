@@ -172,7 +172,7 @@ const Animals: Page = ({ f, m }) => (
   </>
 );
 
-// Line 6: fire slides up under water: 63, Already Across; the Image's warning.
+// Line 6: fire slides up under water: 63, After Completion; the Image's warning.
 const Stack: Page = ({ f, m }) => {
   const w = 300, x = 390, y = 440;
   const fy = y + triH(w) + w * 0.07;
@@ -191,7 +191,7 @@ const Stack: Page = ({ f, m }) => {
             <tspan fontFamily={fonts.serif} fontWeight={500}>離</tspan> FIRE
           </text>
           <text x={540} y={1000} textAnchor="middle" {...TEXT} fontSize={52} fill={C.yellow} style={{ filter: glow(C.yellow, 6) }} opacity={t01(f, m.across - 6, 4)}>
-            63 <tspan fontFamily={fonts.serif} fontWeight={500}>既濟</tspan> ALREADY ACROSS
+            63 <tspan fontFamily={fonts.serif} fontWeight={500}>既濟</tspan> AFTER COMPLETION
           </text>
           <text x={540} y={1120} textAnchor="middle" {...TEXT} fontSize={44} fill={C.green} style={{ filter: glow(C.green, 5) }} opacity={t01(f, m.guard, 4)}>GUARD AGAINST TROUBLE</text>
         </Pic>

@@ -86,9 +86,12 @@ export const Small: React.FC<{ f: number; at: number; x: number; y: number; text
 // The page title, typed in at two frames a letter; an optional line under it.
 export const Title: React.FC<{ f: number; at: number; text: string; zh?: string; sub?: string }> = ({ f, at, text, zh, sub }) => {
   const n = Math.max(0, Math.floor((f - at) / 2));
+  // 100 px unless the title and its Chinese would run past the right edge (BEFORE COMPLETION 未濟):
+  // about 0.68 em a letter with the spacing, 1 em a character.
+  const size = Math.min(100, Math.floor(930 / (text.length * 0.68 + (zh ? zh.length + 0.3 : 0))));
   return (
     <>
-      <div style={{ position: "absolute", left: 90, top: 120, color: C.blue, fontFamily: sans, fontWeight: 800, fontSize: 100, letterSpacing: 4, filter: glow(C.blue, 10), whiteSpace: "nowrap" }}>
+      <div style={{ position: "absolute", left: 90, top: 120, color: C.blue, fontFamily: sans, fontWeight: 800, fontSize: size, letterSpacing: 4, filter: glow(C.blue, 10), whiteSpace: "nowrap" }}>
         {text.slice(0, n)}
         {zh && n > text.length && <span style={{ fontFamily: fonts.serif, fontWeight: 500, marginLeft: 28 }}>{zh}</span>}
       </div>

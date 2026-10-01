@@ -1,6 +1,6 @@
 import { barY, C, Camera, cue, DrawnHexagram, eased, glow, GuideShort, Label, lerp, Line, ngon, Pic, poly, sans, Small, Still, t01, Title, type GuideProps, type P, type Page } from "./guide-kit";
 
-// The Guide entry on hexagram 64, the book's last: Not Yet Across (the user, 2026-10-01: "i think
+// The Guide entry on hexagram 64, the book's last: Before Completion (the user, 2026-10-01: "i think
 // some hitchhikers shorts would be great ... review and converge with astra then execute").
 // Narration and picture notes: series/specials/guide-64.json (draft 2, Astra's revision, round 1
 // converged). One camera move (the push toward the fox); the other pages hold still.
@@ -24,7 +24,7 @@ const Entry63: Page = ({ f, m }) => (
         <Small f={f} at={m.situations} x={540} y={640} text="64 SITUATIONS" anchor="middle" />
         <DrawnHexagram f={f} at={m.h63 + 6} lines={H63} x={HX} y={HY} w={HW} c={C.yellow} />
         <Ticks f={f} at={m.h63 + 16} />
-        <Label f={f} at={m.across63} text="既濟 ALREADY ACROSS" x1={540} y1={1110} x2={540} y2={1160} anchor="middle" />
+        <Label f={f} at={m.across63} text="既濟 AFTER COMPLETION" x1={540} y1={1110} x2={540} y2={1160} anchor="middle" />
       </Pic>
     </Still>
   </>
@@ -48,7 +48,7 @@ const Warns: Page = ({ f, m }) => (
       <Pic>
         <DrawnHexagram f={f} at={-999} lines={H63} x={HX} y={HY} w={HW} c={C.yellow} />
         <Ticks f={f} at={-999} dim={m.disorder} />
-        <Label f={f} at={-999} text="既濟 ALREADY ACROSS" x1={540} y1={1110} x2={540} y2={1160} anchor="middle" />
+        <Label f={f} at={-999} text="既濟 AFTER COMPLETION" x1={540} y1={1110} x2={540} y2={1160} anchor="middle" />
         {/* Above the diagram, no leader: a Label's text hangs below its line, which would cross it. */}
         {f >= m.warns && (
           <text x={540} y={430} textAnchor="middle" fontFamily={sans} fontWeight={800} fontSize={38} letterSpacing={3} fill={C.green} style={{ filter: glow(C.green, 5) }}>
@@ -89,7 +89,7 @@ const Fox: Page = ({ f, m }) => {
   const fx = 430, fy = 930, k = 1.8;
   return (
     <>
-      <Title f={f} at={m.b4} text="NOT YET ACROSS" zh="未濟" />
+      <Title f={f} at={m.b4} text="BEFORE COMPLETION" zh="未濟" />
       <Camera f={f} a={m.fox} b={m.e4 - 10} from={{ s: 1 }} to={{ s: 1.12 }} ox={600} oy={960}>
         <Pic>
           <DrawnHexagram f={f} at={m.h64} lines={H64} x={740} y={330} w={200} c={C.yellow} step={3} />
@@ -112,7 +112,7 @@ const Fox: Page = ({ f, m }) => {
 // Line 5: the page counter at 64 / 64; the Sequence's reason; a cursor blinks under the last entry.
 const Sequence: Page = ({ f, m }) => (
   <>
-    <Title f={f} at={m.b5} text="NOT YET ACROSS" zh="未濟" />
+    <Title f={f} at={m.b5} text="BEFORE COMPLETION" zh="未濟" />
     <Still>
       <Pic>
         <text x={540} y={560} textAnchor="middle" fontFamily={sans} fontWeight={800} fontSize={150} letterSpacing={6} fill={C.yellow} style={{ filter: glow(C.yellow, 10) }} opacity={t01(f, m.b5 + 4, 4)}>64 / 64</text>

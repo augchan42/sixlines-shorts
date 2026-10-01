@@ -1,7 +1,7 @@
 {
  "beats": {
   "01": {
-   "text": "The I-Ching. Sixty-four situations. Number sixty-three: Already Across.",
+   "text": "The I-Ching. Sixty-four situations. Number sixty-three: After Completion.",
    "model": "eleven_v4",
    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
    "settings": {
@@ -10,9 +10,9 @@
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 7.28,
-   "sha256": "4434eed4f389f1dc1ceb998ea859a99f263623dabc60d9dafb727fb77d4d8ded",
-   "made": "2026-09-30T17:31:05.647Z"
+   "seconds": 7.12,
+   "sha256": "de39e2017abfa632963d80d00d30cb81d6607d78f2678a47c41430ee14a5d84f",
+   "made": "2026-10-01T05:09:57.238Z"
   },
   "02": {
    "text": "The text warns: good at first, disorder at the end.",
@@ -43,7 +43,7 @@
    "made": "2026-09-30T17:31:17.571Z"
   },
   "04": {
-   "text": "Sixty-four: Not Yet Across. A small fox wets its tail. Too tired to finish.",
+   "text": "Sixty-four: Before Completion. A small fox wets its tail. Too tired to finish.",
    "model": "eleven_v4",
    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
    "settings": {
@@ -52,12 +52,12 @@
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 7.68,
-   "sha256": "56c56b8b057925ae870e1633fb2ef131e7b983c9ad4313ec86ec385e8e3eaa5a",
-   "made": "2026-09-30T17:31:23.949Z"
+   "seconds": 7.84,
+   "sha256": "fa54f858d5d6407ffa64d61a19ea419a6a39be19f67fd3f1118fab827c6e305b",
+   "made": "2026-10-01T05:10:02.361Z"
   },
   "05": {
-   "text": "A commentary explains: things cannot come to an end. So it ends on Not Yet.",
+   "text": "A commentary explains: things cannot come to an end. So it ends before completion.",
    "model": "eleven_v4",
    "voiceId": "hYDmtgsUa8Lf6Ql57aI5",
    "settings": {
@@ -66,9 +66,9 @@
     "style": 0,
     "use_speaker_boost": true
    },
-   "seconds": 6.96,
-   "sha256": "56f9d7ae36781e920f45e1cce98353e50271cfe520713c96237c74c11fde071c",
-   "made": "2026-09-30T17:31:29.208Z"
+   "seconds": 7.12,
+   "sha256": "7aaeb65e4b862ca71e7b67f40a11da4c3cd41a69727dd673f25ece2654793659",
+   "made": "2026-10-01T05:10:05.613Z"
   },
   "06": {
    "text": "The advice: tell things apart. Put each where it belongs.",

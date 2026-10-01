@@ -23,12 +23,12 @@
   "why": "calm, 82.5 bpm, C major, from 35 s as on 18, 27 and 52; no other structure short uses it"
  },
  "endcardRate": 0.75,
- "caption": "The I Ching’s usual order has 32 pairs of hexagrams, each a six-line pattern. In 28 pairs, the second is the first upside down; in the other 4, every solid line becomes broken and every broken line becomes solid. sixlines.day",
+ "caption": "The I-Ching’s usual order has 32 pairs of hexagrams, each a six-line pattern. In 28 pairs, the second is the first upside down; in the other 4, every solid line becomes broken and every broken line becomes solid. sixlines.day",
  "chapters": [
   {
    "pages": [
     {
-     "q": "HOW IS THE I CHING ARRANGED",
+     "q": "HOW IS THE I-CHING ARRANGED",
      "a": "THE BOOK HAS 64 HEXAGRAMS.\nEACH HAS SIX LINES:\nSOLID OR BROKEN.\nITS USUAL ORDER HAS 32 PAIRS.",
      "show": {},
      "showNote": "the 64 small, in rows of two, each pair bracketed"
