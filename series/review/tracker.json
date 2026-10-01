@@ -288,10 +288,9 @@
    "sent": true,
    "userSaid": "",
    "notes": [
-    "Smoke test on pages 1 and 5 rendering now (out/timeline/).",
+    "Smoke test of pages 1 and 5 sent 2026-10-01.",
     "Each page pushes up to its date, which turns amber as the camera arrives at 2.5 s.",
-    "Copy: Astra's revision, round 1.",
-    "Smoke test of pages 1 and 5 sent 2026-10-01."
+    "Copy: Astra's revision, round 1."
    ]
   },
   {
