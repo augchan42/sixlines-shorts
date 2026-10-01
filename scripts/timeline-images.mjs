@@ -25,6 +25,8 @@ export const IMAGES = [
   { name: "jung", page: 5, title: "Carl Jung", url: `${C}/6/65/Carl-Jung-mod.jpg`, sha1: "df3cd8a7ac3ae66fbbc1cb3dbbf1e79ab1659cdb", licence: "public domain" },
   { name: "dick", page: 6, title: "Philip K. Dick in the early 1960s, photo by Arthur Knight", url: `${C}/2/2c/Philip_K_Dick_in_early_1960s_%28photo_by_Arthur_Knight%29_02_%28cropped%29.jpg`, sha1: "fe68617f2d51382d5594144cd54b74fd7da2f1a7", licence: "public domain" },
   { name: "turing", page: 2, title: "Alan Turing aged 16 (1928-29), possibly by Arthur Reginald Chaffin", url: `${C}/a/a1/Alan_Turing_Aged_16.jpg`, sha1: "b7af1fbf2563cb09a4309c4b62bbda362eca6b8d", licence: "public domain" },
+  { name: "weizenbaum", page: 0, title: "Joseph Weizenbaum, 1982 (Rochester Institute of Technology, News & Events)", url: `${C}/f/fd/Weizenbaum_1982.jpg`, sha1: "7ff9a095cb58b5feba4ee114596ed5360a8a76ef", licence: "public domain" },
+  { name: "eliza", page: 0, title: "A conversation with ELIZA (the DOCTOR script)", url: `${C}/7/79/ELIZA_conversation.png`, sha1: "9f494db4f284196d90d82081807b67d88b3f6b3b", licence: "public domain" },
   // Supplied by the user, 2026-10-01 ("for voight-kampff use a still from the bladerunner movie"):
   // Holden at the Voight-Kampff machine, Blade Runner (1982). Kept in public/local/timeline-src;
   // sha1 a5095939506ff7d2a30d38536416604f3b70c69d (900x600 webp).

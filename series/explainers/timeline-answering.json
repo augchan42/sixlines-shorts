@@ -1,5 +1,5 @@
 {
- "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 2: Astra's rewrite (docs/research/2026-10-01-codex-timeline-paths.md), with page 7 and the caption moved from Six Lines to 8-Bit Oracle.",
+ "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 3 (ELIZA 1966 and ChatGPT 2022 added by the user; ELIZA page by Astra, docs/research/2026-10-01-codex-timeline-eliza.md). Draft 2: Astra's rewrite (docs/research/2026-10-01-codex-timeline-paths.md), with page 7 and the caption moved from Six Lines to 8-Bit Oracle.",
  "path": "answering",
  "hexagram": 22,
  "style": "The header reads '8-BIT ORACLE // READY FOR INQUIRY' throughout (brand.header). Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
@@ -72,6 +72,17 @@
      }
     },
     {
+     "q": "1966: ELIZA",
+     "a": "A PROGRAM MIMICS A THERAPIST.\nSOME USERS CONFIDE IN IT\nAS IF SOMEONE WERE THERE.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
      "q": "1968",
      "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
      "show": {
@@ -83,7 +94,7 @@
      }
     },
     {
-     "q": "TODAY: WHO IS READING?",
+     "q": "2022: WHO IS READING?",
      "a": "A MACHINE READS THE I-CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
      "show": {
       "clip": {

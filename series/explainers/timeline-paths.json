@@ -122,12 +122,16 @@
      "1962"
     ],
     [
+     "ELIZA",
+     "1966"
+    ],
+    [
      "VOIGT-KAMPFF",
      "1968"
     ],
     [
-     "AI",
-     "TODAY"
+     "CHATGPT",
+     "2022"
     ],
     [
      "8-BIT ORACLE",
@@ -144,14 +148,18 @@
     "3": [
      "dick"
     ],
-    "6": [
-     "8bo"
-    ],
     "4": [
-     "voight-kampff"
+     "weizenbaum",
+     "eliza"
     ],
     "5": [
+     "voight-kampff"
+    ],
+    "6": [
      "shoggoth"
+    ],
+    "7": [
+     "8bo"
     ]
    }
   }
