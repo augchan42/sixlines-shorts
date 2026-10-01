@@ -2,7 +2,7 @@
  "pages": [
   {
    "q": "AN OLD BOOK AND A NEW MACHINE",
-   "a": "THREE PATHS JOIN THEM:\nBINARY, CORRESPONDENCE,\nAND WHO IS ANSWERING.\nTHIS ONE: WHO IS ANSWERING.",
+   "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE THIRD PATH.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
@@ -14,72 +14,72 @@
   },
   {
    "q": "1949",
-   "a": "JUNG ASKS THE I CHING\nABOUT ITS NEW EDITION\nAND READS THE REPLY\nAS THE BOOK SPEAKING.",
+   "a": "JUNG ASKS THE I-CHING\nABOUT HIS FOREWORD.\nHE TREATS THE BOOK AS SPEAKING.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 284
+     "from": 250
     },
     "hold": 4
    }
   },
   {
-   "q": "1950",
-   "a": "TURING ASKS: CAN A MACHINE\nPASS FOR A PERSON?\nTHAT YEAR THE I CHING\nCOMES OUT IN ENGLISH.",
+   "q": "1950: A MACHINE OR A HUMAN?",
+   "a": "TURING PROPOSES A TEXT TEST.\nWILHELM'S I-CHING APPEARS\nIN ENGLISH, VIA CARY BAYNES.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 531
+     "from": 481
     },
     "hold": 4
    }
   },
   {
-   "q": "1962",
-   "a": "IN THE MAN IN THE HIGH CASTLE,\nA CHARACTER ASKS THE BOOK\nWHY IT WROTE THE NOVEL.",
+   "q": "1962: PHILIP K. DICK",
+   "a": "IN THE MAN IN THE HIGH CASTLE,\nJULIANA ASKS WHY THE I-CHING\nWROTE THE NOVEL INSIDE IT.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 781
+     "from": 746
     },
     "hold": 4
    }
   },
   {
    "q": "1968",
-   "a": "DICK'S ANDROIDS FACE A TEST\nBUILT TO CATCH A MACHINE\nPASSING FOR HUMAN.",
+   "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 1019
+     "from": 1005
     },
     "hold": 4
    }
   },
   {
-   "q": "TODAY",
-   "a": "A MACHINE READS THE BOOK.\nTHE TEST NOW: DOES IT\nREAD IT WELL?",
+   "q": "TODAY: WHO IS READING?",
+   "a": "A MACHINE READS THE I-CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 1248
+     "from": 1245
     },
     "hold": 4
    }
   },
   {
-   "q": "8-BIT ORACLE",
-   "a": "HOLDS EACH READING TO\nTHE LINES AND TO WANG BI,\nWHO READ THEM AS POSITIONS.",
+   "q": "8-BIT ORACLE: HOW IT READS",
+   "a": "IT USES WANG BI'S COMMENTARY:\nLINES TAKE MEANING FROM\nTHEIR PLACE IN A SITUATION.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 1470
+     "from": 1495
     },
     "hold": 4
    }
