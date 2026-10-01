@@ -1,0 +1,134 @@
+{
+ "pages": [
+  {
+   "q": "HOW OLD IS THE I CHING",
+   "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 0
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "LEGEND",
+   "a": "LEGEND CREDITS FU XI\nWITH EIGHT TRIGRAMS:\nTHREE-LINE PATTERNS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 231
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "11TH CENTURY BC",
+   "a": "TRADITION CREDITS KING WEN\nWITH A TEXT FOR EACH OF THE\n64 SIX-LINE PATTERNS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 454
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "11TH CENTURY AD",
+   "a": "64 PATTERNS, SQUARE AND CIRCLE.\nATTRIBUTED TO SHAO YONG.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 699
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1701",
+   "a": "BOUVET SENDS THE DIAGRAM\nTO LEIBNIZ, A MATHEMATICIAN.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 922
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1950",
+   "a": "BAYNES'S ENGLISH VERSION\nOF WILHELM'S TRANSLATION\nAPPEARS WITH JUNG'S FOREWORD.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 1130
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1962 // PUBLISHED",
+   "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I CHING\nTO HELP PLOT THE NOVEL.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 1367
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "TODAY",
+   "a": "SIX LINES READS THE BOOK\nTO THINK THROUGH A CHOICE.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-flight.mp4",
+     "flight": true,
+     "from": 1621
+    },
+    "hold": 4
+   }
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick14-lofi-synthwave.mp3",
+ "musicStart": 8,
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "assets/3d/endcard-join-101001-9b-ref.mp4",
+  "seconds": 10.435916947494293,
+  "rate": 0.5749375
+ },
+ "endMusic": null,
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
