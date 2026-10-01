@@ -1,15 +1,15 @@
 {
  "explainer": "wangbi-teaser",
- "rendered": "2026-09-28T08:12:20.804Z",
- "commit": "d66a1d563a1d29c112f9b3e93ca04529c20216dc",
+ "rendered": "2026-10-01T05:58:10.476Z",
+ "commit": "f7217078858edb67199f82bcc609d0bd8bd039d4",
  "clean": false,
- "seconds": 73.216,
- "shareKbps": 2385,
+ "seconds": 72.96,
+ "shareKbps": 2393,
  "props": {
   "pages": [
    {
     "q": "WHO WAS WANG BI",
-    "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+    "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I-CHING\nSHAPED HOW IT IS READ.",
     "show": {}
    },
    {
@@ -165,18 +165,16 @@
   "music": "local/music/pick13-synthwave-the-mountain.mp3",
   "musicStart": 0.023,
   "mix": {
-   "hum": 1,
-   "beacon": 1,
-   "printer": 1,
-   "ticks": 0.8,
-   "sweep": 0.7,
-   "chatter": 0.7,
-   "warble": 0.5,
+   "hum": 0.5,
+   "beacon": 0.6,
+   "printer": 0.6,
+   "ticks": 0.5,
+   "sweep": 0.4,
+   "chatter": 0.35,
+   "warble": 0.3,
    "winddown": 0.6,
-   "music": 0,
-   "musicUp": [
-    "end"
-   ]
+   "music": 0.8,
+   "relay": 0.4
   },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
@@ -184,10 +182,8 @@
    "seconds": 10.435916947494293,
    "rate": 0.5749375
   },
-  "endMusic": {
-   "at": 80.06,
-   "lead": 2.75
-  },
+  "endMusic": null,
+  "header": null,
   "look": "flight",
   "sfx": {
    "hum": "local/sfx/bed.wav",
@@ -212,7 +208,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-teaser/short.mp4": "e56260b2fea2259bd0c1360815d4802212ce958868e4a1ad434a139634331e4f",
-  "out/explainers/wangbi-teaser/share.mp4": "bb0b9568b3dbcb47af2ccb86e81afe0a5de32e8307bde103f072af036aa232ef"
+  "out/explainers/wangbi-teaser/short.mp4": "33cb3adb778bb1cf20becfa28d8ca0970678b7dd1b023fa08af07f43955e8510",
+  "out/explainers/wangbi-teaser/share.mp4": "816870a31a9267895b739ef9cb7ea9e79bad2e672816c59e8deae80f671368df"
  }
 }

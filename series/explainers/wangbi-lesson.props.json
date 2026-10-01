@@ -2,7 +2,7 @@
  "pages": [
   {
    "q": "WHO WAS WANG BI",
-   "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+   "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I-CHING\nSHAPED HOW IT IS READ.",
    "show": {}
   },
   {
@@ -346,7 +346,7 @@
   },
   {
    "q": "WHY IS L2 MARKED TOO",
-   "a": "OLD NOTES IN THE I CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
+   "a": "OLD NOTES IN THE I-CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
    "show": {
     "hex": 22,
     "log": [
@@ -659,24 +659,22 @@
     3,
     4
    ],
-   "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+   "finding": "LINES 2–5 EACH HOLD THEIR PLACE.\nLINE 2: THE GOOSE HAS EARNED ITS MEAL."
   }
  },
  "music": "local/music/pick13-synthwave-the-mountain.mp3",
  "musicStart": 0.023,
  "mix": {
-  "hum": 1,
-  "beacon": 1,
-  "printer": 1,
-  "ticks": 0.8,
-  "sweep": 0.7,
-  "chatter": 0.7,
-  "warble": 0.5,
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
   "winddown": 0.6,
-  "music": 0,
-  "musicUp": [
-   "end"
-  ]
+  "music": 0.8,
+  "relay": 0.4
  },
  "ticks": "local/sfx/teletype.wav",
  "endcard": {
@@ -684,10 +682,8 @@
   "seconds": 10.435916947494293,
   "rate": 0.5749375
  },
- "endMusic": {
-  "at": 80.06,
-  "lead": 2.75
- },
+ "endMusic": null,
+ "header": null,
  "look": "flight",
  "sfx": {
   "hum": "local/sfx/bed.wav",

@@ -1,8 +1,8 @@
 {
  "pages": [
   {
-   "q": "WHAT IS AN I CHING LINE",
-   "a": "THE I CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
+   "q": "WHAT IS AN I-CHING LINE",
+   "a": "THE I-CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
    "show": {
     "diagram": {
      "kind": "line",
@@ -32,7 +32,10 @@
      "v": 42,
      "weights": true
     },
-    "hold": 6
+    "hold": 6,
+    "portrait": {
+     "src": "local/timeline/shannon.jpg"
+    }
    }
   },
   {
@@ -57,7 +60,7 @@
    }
   },
   {
-   "q": "DID SHANNON READ THE I CHING",
+   "q": "DID SHANNON READ THE I-CHING",
    "a": "WE DON'T KNOW.\nTHE LINK HERE IS MATHEMATICAL.",
    "show": {
     "diagram": {
@@ -364,6 +367,8 @@
   "seconds": 10.435916947494293,
   "rate": 0.5749375
  },
+ "endMusic": null,
+ "header": null,
  "look": "flight",
  "sfx": {
   "hum": "local/sfx/bed.wav",

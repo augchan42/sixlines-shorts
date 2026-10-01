@@ -1,15 +1,15 @@
 {
  "explainer": "wangbi-lesson",
- "rendered": "2026-09-28T00:08:45.187Z",
- "commit": "028db02d3fb72a000576ed262d16f95f22e776e3",
+ "rendered": "2026-10-01T06:05:02.610Z",
+ "commit": "f7217078858edb67199f82bcc609d0bd8bd039d4",
  "clean": false,
- "seconds": 228.416,
- "shareKbps": 677,
+ "seconds": 227.882667,
+ "shareKbps": 679,
  "props": {
   "pages": [
    {
     "q": "WHO WAS WANG BI",
-    "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I CHING\nSHAPED HOW IT IS READ.",
+    "a": "A THINKER, AD 226–249.\nHE DIED AT 23.\nHIS NOTES ON THE I-CHING\nSHAPED HOW IT IS READ.",
     "show": {}
    },
    {
@@ -353,7 +353,7 @@
    },
    {
     "q": "WHY IS L2 MARKED TOO",
-    "a": "OLD NOTES IN THE I CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
+    "a": "OLD NOTES IN THE I-CHING\n(THE TEN WINGS): THE SOFT\nCOMES TO ADORN THE STRONG.\nWANG BI: THAT IS L2.",
     "show": {
      "hex": 22,
      "log": [
@@ -666,24 +666,22 @@
      3,
      4
     ],
-    "finding": "LINES 2 TO 5 ALL IN THEIR PLACE."
+    "finding": "LINES 2–5 EACH HOLD THEIR PLACE.\nLINE 2: THE GOOSE HAS EARNED ITS MEAL."
    }
   },
   "music": "local/music/pick13-synthwave-the-mountain.mp3",
   "musicStart": 0.023,
   "mix": {
-   "hum": 1,
-   "beacon": 1,
-   "printer": 1,
-   "ticks": 0.8,
-   "sweep": 0.7,
-   "chatter": 0.7,
-   "warble": 0.5,
+   "hum": 0.5,
+   "beacon": 0.6,
+   "printer": 0.6,
+   "ticks": 0.5,
+   "sweep": 0.4,
+   "chatter": 0.35,
+   "warble": 0.3,
    "winddown": 0.6,
-   "music": 0,
-   "musicUp": [
-    "end"
-   ]
+   "music": 0.8,
+   "relay": 0.4
   },
   "ticks": "local/sfx/teletype.wav",
   "endcard": {
@@ -691,10 +689,8 @@
    "seconds": 10.435916947494293,
    "rate": 0.5749375
   },
-  "endMusic": {
-   "at": 80.06,
-   "lead": 2.75
-  },
+  "endMusic": null,
+  "header": null,
   "look": "flight",
   "sfx": {
    "hum": "local/sfx/bed.wav",
@@ -719,7 +715,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/wangbi-lesson/short.mp4": "e4afcd59dc3200992081578f8f61af7b2d9a04c671917451f6eba38b660b669a",
-  "out/explainers/wangbi-lesson/share.mp4": "5715b9bbd11a22f3a959408c021a845ce21c086ee4d83d97354a9f2a181ff2ec"
+  "out/explainers/wangbi-lesson/short.mp4": "11b8f87adb473f59a3b6aee76c9d4f60808ef051fe6ce98613680c6c87f1bd23",
+  "out/explainers/wangbi-lesson/share.mp4": "153b3d258f065f4926c19bbb863b494d56e46b4464a753b7aa4d030e9f651c2c"
  }
 }

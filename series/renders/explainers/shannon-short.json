@@ -1,15 +1,15 @@
 {
  "explainer": "shannon-short",
- "rendered": "2026-09-30T18:08:16.259Z",
- "commit": "427afbd3dbccd8116c0410cd10f94298f8e43bd4",
+ "rendered": "2026-10-01T05:55:32.002Z",
+ "commit": "9df1ea4f8197411bf323187596f675c865c89802",
  "clean": false,
  "seconds": 86.378667,
  "shareKbps": 2002,
  "props": {
   "pages": [
    {
-    "q": "WHAT IS AN I CHING LINE",
-    "a": "THE I CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
+    "q": "WHAT IS AN I-CHING LINE",
+    "a": "THE I-CHING IS A CHINESE BOOK.\nBROKEN IS YIN. SOLID IS YANG.\nEACH LINE FITS IN ONE BIT.",
     "show": {
      "diagram": {
       "kind": "line",
@@ -39,7 +39,10 @@
       "v": 42,
       "weights": true
      },
-     "hold": 6
+     "hold": 6,
+     "portrait": {
+      "src": "local/timeline/shannon.jpg"
+     }
     }
    },
    {
@@ -64,7 +67,7 @@
     }
    },
    {
-    "q": "DID SHANNON READ THE I CHING",
+    "q": "DID SHANNON READ THE I-CHING",
     "a": "WE DON'T KNOW.\nTHE LINK HERE IS MATHEMATICAL.",
     "show": {
      "diagram": {
@@ -371,6 +374,8 @@
    "seconds": 10.435916947494293,
    "rate": 0.5749375
   },
+  "endMusic": null,
+  "header": null,
   "look": "flight",
   "sfx": {
    "hum": "local/sfx/bed.wav",
@@ -396,7 +401,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/shannon-short/short.mp4": "24b084f2e295a620b38a0c017a129db65beaaa33a0a11d7c0c25dca6b966edb5",
-  "out/explainers/shannon-short/share.mp4": "60fdac8dc60068b49ddf2b11bd33416c46b7005278a458ec83fb1c6a0375ffae"
+  "out/explainers/shannon-short/short.mp4": "b01a2cb6f65c8930d38d5c964bd56668f1adb73153ca5d84722b10b04868829e",
+  "out/explainers/shannon-short/share.mp4": "b6c97936c6b69afdf4b2bd302e7981d878f876f86d990fac40cf88a0764ca970"
  }
 }
