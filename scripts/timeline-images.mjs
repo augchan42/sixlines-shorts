@@ -30,8 +30,9 @@ export const IMAGES = [
   { name: "eliza", page: 0, title: "A conversation with ELIZA (the DOCTOR script)", url: `${C}/7/79/ELIZA_conversation.png`, sha1: "9f494db4f284196d90d82081807b67d88b3f6b3b", licence: "public domain" },
   // For the Shannon short (the user, review board 2026-10-01: "show an image of claude shannon, use the
   // one i use from 8bitoracle-brand in green tint"): the brand timeline's copy of the Commons photo
-  // (C.E._Shannon._Tekniska_museet_43069_(cropped).jpg, CC BY 2.0), tinted the terminal's green.
-  { name: "shannon", page: 0, title: "Claude Shannon, Tekniska museet 43069", file: "../8bitoracle-brand/public/img-timeline/C.E._Shannon._Tekniska_museet_43069_(cropped).jpg", post: ["-colorspace", "Gray", "-level", "8%,92%", "+level-colors", "#000000,#7dff8a"], licence: "CC BY 2.0", credit: "Claude Shannon: Tekniska museet, CC BY 2.0" },
+  // (C.E._Shannon._Tekniska_museet_43069_(cropped).jpg, CC BY 2.0). First tinted green; then black and
+  // white, as the original (the user, 2026-10-01: "Shannon, black and white").
+  { name: "shannon", page: 0, title: "Claude Shannon, Tekniska museet 43069", file: "../8bitoracle-brand/public/img-timeline/C.E._Shannon._Tekniska_museet_43069_(cropped).jpg", post: ["-colorspace", "Gray"], licence: "CC BY 2.0", credit: "Claude Shannon: Tekniska museet, CC BY 2.0" },
   // Supplied by the user, 2026-10-01 ("for voight-kampff use a still from the bladerunner movie"):
   // Holden at the Voight-Kampff machine, Blade Runner (1982). Kept in public/local/timeline-src;
   // sha1 a5095939506ff7d2a30d38536416604f3b70c69d (900x600 webp).
