@@ -1,6 +1,7 @@
 // Renders the corridor clips the timeline short asks for (blender/timeline.py): each page whose
 // `show.clip` has a `scene` gets its clip at public/<clip.src> (public/local/ is gitignored).
-// The dates on the floor are the script's `dates`, one per page.
+// The dates on the floor are the script's `dates`, one per page; the pictures above them are its
+// `pictures` (page -> names in public/local/timeline, from scripts/timeline-images.mjs).
 //
 //   node scripts/timeline.mjs [structure-timeline] [--pages 2,3] [--still 60] [--preview] [--force]
 //
@@ -34,7 +35,7 @@ for (const [i, page] of pages.entries()) {
     console.log(`page ${i + 1}: ${path.relative(root, target)} is there (--force to render again)`);
     continue;
   }
-  const scene = { ...clip.scene, dates: script.dates };
+  const scene = { ...clip.scene, dates: script.dates, pictures: script.pictures ?? {}, pictures_dir: path.join(root, "public/local/timeline") };
   const sceneFile = path.join(root, "out", "timeline", `${path.basename(out, ".mp4")}.json`);
   const partial = path.join(root, "out", "timeline", path.basename(target));
   mkdirSync(path.dirname(sceneFile), { recursive: true });

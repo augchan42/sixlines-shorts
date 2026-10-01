@@ -35,6 +35,31 @@
   "TODAY"
  ],
  "datesNote": "Signs on the corridor floor in blender/timeline.py, one per page; page 1 looks down them all.",
+ "pictures": {
+  "1": [
+   "fuxi"
+  ],
+  "2": [
+   "king-wen"
+  ],
+  "3": [
+   "shao-yong"
+  ],
+  "4": [
+   "bouvet"
+  ],
+  "5": [
+   "wilhelm",
+   "jung"
+  ],
+  "6": [
+   "dick"
+  ],
+  "7": [
+   "app"
+  ]
+ },
+ "picturesNote": "Above each date (the user, 2026-10-01). Sources and licences in scripts/timeline-images.mjs; Wilhelm's photo is CC BY-SA 3.0 de and needs the credit in the caption.",
  "chapters": [
   {
    "pages": [

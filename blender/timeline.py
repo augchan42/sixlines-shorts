@@ -29,6 +29,7 @@ from searchlight import haze, searchlight, wet  # noqa: E402
 
 W, H = 980, 1160
 GREEN, AMBER = "#6cff7a", "#ffb347"  # AMBER as in src/scenes/Diagram.tsx
+PIC_Z, PIC_H = 0.95, 2.1  # the pictures stand above the dates: bottom edge, height
 STEP = 10.0  # metres between dates along the corridor
 SIDE = 2.2  # how far left or right of the middle each date stands
 FONT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "public", "fonts", "PixelOperator-Bold.ttf")
@@ -65,10 +66,48 @@ def date_sign(k, text, font):
     o = bpy.data.objects.new(f"date{k}", curve)
     bpy.context.scene.collection.objects.link(o)
     side = -1 if k % 2 else 1
-    o.location = (side * SIDE, k * STEP, 0.05)
-    # Upright, facing -y, turned a little towards the middle of the corridor.
-    o.rotation_euler = (math.radians(90), 0, math.radians(side * 18))
-    return o
+    # A holder facing -y, turned a little towards the middle of the corridor; the date stands
+    # upright in it, the pictures above.
+    holder = bpy.data.objects.new(f"stand{k}", None)
+    bpy.context.scene.collection.objects.link(holder)
+    holder.location = (side * SIDE, k * STEP, 0)
+    holder.rotation_euler = (0, 0, math.radians(side * 18))
+    o.parent = holder
+    o.location = (0, 0, 0.05)
+    o.rotation_euler = (math.radians(90), 0, 0)
+    return o, holder
+
+
+def picture(name, path, parent, x, height, frame_colour):
+    """A picture standing above a date: the image lit by itself, in a thin green frame."""
+    img = bpy.data.images.load(path, check_existing=True)
+    w = height * img.size[0] / img.size[1]
+    bpy.ops.mesh.primitive_plane_add(size=1)
+    o = bpy.context.object
+    o.name = name
+    o.scale = (w, height, 1)
+    o.rotation_euler = (math.radians(90), 0, 0)
+    o.location = (x, -0.02, PIC_Z + height / 2)
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    nodes, links = m.node_tree.nodes, m.node_tree.links
+    b = nodes["Principled BSDF"]
+    tex = nodes.new("ShaderNodeTexImage")
+    tex.image = img
+    b.inputs["Base Color"].default_value = (0, 0, 0, 1)
+    links.new(tex.outputs["Color"], b.inputs["Emission Color"])
+    b.inputs["Emission Strength"].default_value = 0.9
+    o.data.materials.append(m)
+    o.parent = parent
+    frame, glow = emission(name + "-frame", frame_colour, 2.5)
+    bpy.ops.mesh.primitive_plane_add(size=1)
+    f = bpy.context.object
+    f.scale = (w + 0.06, height + 0.06, 1)
+    f.rotation_euler = (math.radians(90), 0, 0)
+    f.location = (x, 0.0, PIC_Z + height / 2)
+    f.data.materials.append(frame)
+    f.parent = parent
+    return glow
 
 
 def corridor(scene):
@@ -101,8 +140,10 @@ def camera(scene, frames, page, at):
     else:
         side = -1 if page % 2 else 1
         y = page * STEP
-        aim = (side * SIDE * 0.6, y, 1.0)
-        moves = [(0, (0, y - 12.0, 2.6), (side * SIDE * 0.3, y, 0.8)), (arrive, (0, y - 6.5, 2.2), aim), (frames - 1, (0, y - 5.5, 2.1), aim)]
+        # Aimed a little above the middle of picture and date, so they sit below the
+        # terminal's text at the top of the window.
+        aim = (side * SIDE * 0.7, y, 1.9)
+        moves = [(0, (0, y - 13.0, 2.6), (side * SIDE * 0.3, y, 1.6)), (arrive, (0, y - 7.5, 2.2), aim), (frames - 1, (0, y - 6.6, 2.1), aim)]
     for frame, loc, aim in moves:
         cam.location = loc
         key(cam, "location", frame)
@@ -128,16 +169,30 @@ def main():
     for k, text in enumerate(dates):
         if k == 0:
             continue
-        o = date_sign(k, text, font)
+        o, holder = date_sign(k, text, font)
+        pics = [os.path.join(spec["pictures_dir"], f"{n}.jpg") for n in spec.get("pictures", {}).get(str(k), [])]
+        widths, x = [], 0.0
+        if pics:
+            # Side by side, centred over the date, with a small gap.
+            sizes = [bpy.data.images.load(p, check_existing=True).size for p in pics]
+            widths = [PIC_H * w / h for w, h in sizes]
+            gap = 0.25
+            x = -(sum(widths) + gap * (len(widths) - 1)) / 2
+        glows = []
+        if pics:
+            for n, (path, w) in enumerate(zip(pics, widths)):
+                glows.append(picture(f"pic{k}-{n}", path, holder, x + w / 2, PIC_H, GREEN))
+                x += w + gap
         m, b = emission(f"date{k}-glow", GREEN, 3.0)
         o.data.materials.append(m)
         if k == page:
-            # Green until the camera arrives, then amber: the date to look at.
-            colour = b.inputs["Emission Color"]
-            colour.default_value = linear(GREEN)
-            colour.keyframe_insert("default_value", frame=round(at * FPS) - 6 + 1)
-            colour.default_value = linear(AMBER)
-            colour.keyframe_insert("default_value", frame=round(at * FPS) + 6 + 1)
+            # Green until the camera arrives, then amber: the date and its frames to look at.
+            for g in [b, *glows]:
+                colour = g.inputs["Emission Color"]
+                colour.default_value = linear(GREEN)
+                colour.keyframe_insert("default_value", frame=round(at * FPS) - 6 + 1)
+                colour.default_value = linear(AMBER)
+                colour.keyframe_insert("default_value", frame=round(at * FPS) + 6 + 1)
 
     camera(scene, frames, page, at)
     haze(scene, density=0.01)
