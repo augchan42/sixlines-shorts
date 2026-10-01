@@ -342,22 +342,27 @@
    "title": "Structure: 3,000 years in 40 seconds",
    "what": "A terminal log of dates, one entry per page, over a Blender push along a corridor of dates.",
    "stage": "smoke-test",
-   "next": "Your view on the pictures over the dates; then render all 8 pages.",
+   "next": "Your view on the music level; then render all 8 pages.",
    "files": [
     "series/explainers/structure-timeline.json",
     "blender/timeline.py",
     "out/timeline/structure-timeline-smoke-720p.mp4"
    ],
-   "commit": "49956ea",
+   "commit": "56050e7",
    "date": "2026-10-01",
    "sent": true,
-   "userSaid": "",
+   "userSaid": "Pictures: \"this timeline looks more promising, maybe some background music\"",
    "notes": [
+    "Music version sent 2026-10-01: lofi synthwave (92 bpm) at 0.8, machine sounds pulled back.",
     "Pictures smoke test (pages 1, 2, 5, 6) sent 2026-10-01: Fu Xi by Ma Lin, King Wen, Shao Yong, Bouvet's 1701 diagram, Wilhelm and Jung, Philip K. Dick, the app.",
     "First smoke test (numerals only, pages 1 and 5): the user found it sparse.",
     "Wilhelm's photo is CC BY-SA 3.0 de: credit the Bundesarchiv in the caption."
    ],
    "videos": [
+    {
+     "path": "out/timeline/structure-timeline-music-720p.mp4",
+     "url": "/_blob/41dbae84dbb5217c7fb91c7eacf6e00e"
+    },
     {
      "path": "out/timeline/structure-timeline-pictures-720p.mp4",
      "url": "/_blob/12593387ec386daf4c52f5dceea8393a"
