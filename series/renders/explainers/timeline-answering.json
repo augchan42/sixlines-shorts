@@ -1,10 +1,10 @@
 {
  "explainer": "timeline-answering",
- "rendered": "2026-10-01T04:03:54.967Z",
- "commit": "81815602546dbfd0a08b3ff1b6bdbde4f34b55b9",
+ "rendered": "2026-10-01T04:42:45.873Z",
+ "commit": "d065f52aca9fa74c9780613972d24ab58cb2c5b8",
  "clean": false,
- "seconds": 63.125333,
- "shareKbps": 2786,
+ "seconds": 71.253333,
+ "shareKbps": 2454,
  "props": {
   "pages": [
    {
@@ -56,8 +56,8 @@
     }
    },
    {
-    "q": "1968",
-    "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
+    "q": "1966: ELIZA",
+    "a": "A PROGRAM MIMICS A THERAPIST.\nSOME USERS CONFIDE IN IT\nAS IF SOMEONE WERE THERE.",
     "show": {
      "clip": {
       "src": "local/structure/timeline-answering.mp4",
@@ -68,13 +68,25 @@
     }
    },
    {
-    "q": "TODAY: WHO IS READING?",
+    "q": "1968",
+    "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-answering.mp4",
+      "flight": true,
+      "from": 1250
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "2022: WHO IS READING?",
     "a": "A MACHINE READS THE I-CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
     "show": {
      "clip": {
       "src": "local/structure/timeline-answering.mp4",
       "flight": true,
-      "from": 1245
+      "from": 1490
      },
      "hold": 4
     }
@@ -86,7 +98,7 @@
      "clip": {
       "src": "local/structure/timeline-answering.mp4",
       "flight": true,
-      "from": 1495
+      "from": 1739
      },
      "hold": 4
     }
@@ -143,7 +155,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/timeline-answering/short.mp4": "f8c457b89f57612653fb6c63183ac27f11785cb81082d9adfb4d2e3b63014d1f",
-  "out/explainers/timeline-answering/share.mp4": "e400d08c98001ee16b966df932db8fd48f28fc6f790f741eb9ea5c1aa6d14218"
+  "out/explainers/timeline-answering/short.mp4": "b309da86f890b8db648cb6ad46b1127fc91ce10e818b5c862c92270abefecc61",
+  "out/explainers/timeline-answering/share.mp4": "047df7bd1f0be707de0b2c0ab57a7014754ba948fedfab5da23b5feea98f19b5"
  }
 }

@@ -49,8 +49,8 @@
    }
   },
   {
-   "q": "1968",
-   "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
+   "q": "1966: ELIZA",
+   "a": "A PROGRAM MIMICS A THERAPIST.\nSOME USERS CONFIDE IN IT\nAS IF SOMEONE WERE THERE.",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
@@ -61,13 +61,25 @@
    }
   },
   {
-   "q": "TODAY: WHO IS READING?",
+   "q": "1968",
+   "a": "DICK'S ANDROIDS LOOK HUMAN.\nA TEST CHECKS THEIR RESPONSE\nTO THE SUFFERING OF OTHERS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-answering.mp4",
+     "flight": true,
+     "from": 1250
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "2022: WHO IS READING?",
    "a": "A MACHINE READS THE I-CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
    "show": {
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 1245
+     "from": 1490
     },
     "hold": 4
    }
@@ -79,7 +91,7 @@
     "clip": {
      "src": "local/structure/timeline-answering.mp4",
      "flight": true,
-     "from": 1495
+     "from": 1739
     },
     "hold": 4
    }
