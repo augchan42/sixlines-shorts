@@ -36,30 +36,24 @@
  "music": {
   "file": "pick13-synthwave-the-mountain.mp3",
   "start": 0.023,
-  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s"
+  "why": "calm, 90 bpm, long enough (197 s); pick14 (22's track) is 146 s. Under the whole video since 2026-10-01 (the user, review board: lesson 'for lessons this long we may need some background music'; teaser 'consider adding appropriate background music'), at the timeline's mix, machine sounds pulled back."
  },
  "look": "flight",
  "mix": {
-  "hum": 1,
-  "beacon": 1,
-  "printer": 1,
-  "ticks": 0.8,
-  "sweep": 0.7,
-  "chatter": 0.7,
-  "warble": 0.5,
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
   "winddown": 0.6,
-  "music": 0,
-  "musicUp": [
-   "end"
-  ]
+  "music": 0.8,
+  "relay": 0.4
  },
  "cues": true,
  "beacon": "level",
  "endcardRate": 0.75,
- "endMusic": {
-  "at": 80.06,
-  "lead": 2.75
- },
  "show_keys": "hex: hexagram number, or 'pair' (one solid, one broken), or small: [a, b] (two small hexagrams); draw: plot draws in bottom line first; log: columns shown (yy, place, centre; place never on L1/L6); lit: lines at full strength, the rest dim; amber: lines amber with ◄; links: answering pairs drawn on the left; brackets, names: trigram brackets and UPPER/LOWER names; ranks: a bracket over L2–L5; big: large text in the drawing area; lesson: white text typed in the drawing area; full: [{n, after}] cut to hexagram n's complete readout after answer line `after`, 5 s; then: [{after: seconds after the answer, ...changes}]",
  "chapters": [
   {
