@@ -1,7 +1,7 @@
 {
  "explainer": "structure-timeline-pages-1-2-5-6",
- "rendered": "2026-10-01T02:43:40.354Z",
- "commit": "2436ff407ea0808cd72ea984665b63cae83cd698",
+ "rendered": "2026-10-01T02:53:22.624Z",
+ "commit": "d3663750521056fe11f0cc44b6eb698aaec7814f",
  "clean": false,
  "seconds": 30.016,
  "shareKbps": 6002,
@@ -90,6 +90,7 @@
    "seconds": 0,
    "rate": 0.5749375
   },
+  "endMusic": null,
   "look": "flight",
   "sfx": {
    "hum": "local/sfx/bed.wav",
@@ -114,7 +115,7 @@
   "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
   "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
   "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
-  "out/explainers/structure-timeline-pages-1-2-5-6/short.mp4": "3231d0c6da52a40f4b7092b569c3edf69f3cd3f531bb6158bf832326ef0e1d88",
-  "out/explainers/structure-timeline-pages-1-2-5-6/share.mp4": "cf0e7e59cbc5084c0e0ea91b3644784093693e015a7d9dba98f59962ac5e74d6"
+  "out/explainers/structure-timeline-pages-1-2-5-6/short.mp4": "882eca9da17a9a88bbb8dd38c9bac48c947a0e25692447a5e21ed5eccefe4cb8",
+  "out/explainers/structure-timeline-pages-1-2-5-6/share.mp4": "ec69691f46ed9129546e10b69d740c5e67e879493731680044215e3d78348a79"
  }
 }

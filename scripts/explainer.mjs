@@ -106,7 +106,10 @@ const lesson = script.chapters && {
   // to the end card, faded in over the `lead` seconds before it as the machine sounds fall away.
   // A tempo-independent card (sp.endcard.rate) plays at its own rate times endcardRate.
   endcard: { ...endcardClip(sp.endcard.clip, script.endcardText), seconds: script.endcard === false || only ? 0 : ((9 + END_HOLD_BEATS) * 60) / sp.bpm / (script.endcardRate ?? 1), rate: (script.endcardRate ?? 1) * (sp.endcard.rate ?? 1) },
-  ...(script.endMusic && !only ? { endMusic: script.endMusic } : {}),
+  // Always written, null when unused: Remotion merges these props over the Lesson composition's
+  // defaults (the Wang Bi lesson's, in src/Root.tsx), so a missing endMusic would bring in that
+  // lesson's and keep the music for the end card alone.
+  endMusic: script.endMusic && !only ? script.endMusic : null,
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
 

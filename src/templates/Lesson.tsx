@@ -72,7 +72,7 @@ export type LessonProps = {
   endcard: { clip: string; seconds: number; rate?: number; text?: EndCardText };
   // The music only for the end card, its `at` second landing on the cut, faded in over `lead`
   // seconds as the machine sounds fall away.
-  endMusic?: { at: number; lead: number };
+  endMusic?: { at: number; lead: number } | null;
   // "flight": the view moves through the hexagram, the screen is a tube pushed in on slowly,
   // and the sound is a machine's: a hum, a relay click per line plotted, a printer while an
   // answer types (docs/research/2026-09-27-nostromo-screens.md).

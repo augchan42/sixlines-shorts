@@ -83,6 +83,7 @@
   "seconds": 0,
   "rate": 0.5749375
  },
+ "endMusic": null,
  "look": "flight",
  "sfx": {
   "hum": "local/sfx/bed.wav",
