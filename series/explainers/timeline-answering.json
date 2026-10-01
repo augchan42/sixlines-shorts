@@ -23,7 +23,7 @@
   "why": "provisional: the track the user heard on the timeline flight; a track per path to choose"
  },
  "endcardRate": 0.75,
- "caption": "Who is answering when a machine reads the I Ching? 8-Bit Oracle reads it with Wang Bi's commentary: 8bitoracle.ai",
+ "caption": "Who is answering when a machine reads the I-Ching? 8-Bit Oracle reads it with Wang Bi's commentary: 8bitoracle.ai",
  "chapters": [
   {
    "pages": [
@@ -40,7 +40,7 @@
     },
     {
      "q": "1949",
-     "a": "JUNG ASKS THE I CHING\nABOUT HIS FOREWORD.\nHE TREATS THE BOOK AS SPEAKING.",
+     "a": "JUNG ASKS THE I-CHING\nABOUT HIS FOREWORD.\nHE TREATS THE BOOK AS SPEAKING.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -51,7 +51,7 @@
     },
     {
      "q": "1950: A MACHINE OR A HUMAN?",
-     "a": "TURING PROPOSES A TEXT TEST.\nWILHELM'S I CHING APPEARS\nIN ENGLISH, VIA CARY BAYNES.",
+     "a": "TURING PROPOSES A TEXT TEST.\nWILHELM'S I-CHING APPEARS\nIN ENGLISH, VIA CARY BAYNES.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -62,7 +62,7 @@
     },
     {
      "q": "1962: PHILIP K. DICK",
-     "a": "IN THE MAN IN THE HIGH CASTLE,\nJULIANA ASKS WHY THE I CHING\nWROTE THE NOVEL INSIDE IT.",
+     "a": "IN THE MAN IN THE HIGH CASTLE,\nJULIANA ASKS WHY THE I-CHING\nWROTE THE NOVEL INSIDE IT.",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
@@ -84,7 +84,7 @@
     },
     {
      "q": "TODAY: WHO IS READING?",
-     "a": "A MACHINE READS THE I CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
+     "a": "A MACHINE READS THE I-CHING.\nOUR QUESTION NOW:\nDOES IT READ THE BOOK WELL?",
      "show": {
       "clip": {
        "src": "local/structure/timeline-answering.mp4",
