@@ -1,0 +1,111 @@
+{
+ "about": "Timeline path 3 of 3, 'Who is answering' (docs/research/2026-10-01-timeline-brainstorm.md): the book as the other side of a test, Jung 1949 to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 1, with Astra (docs/research/2026-10-01-codex-timeline-paths.md).",
+ "path": "answering",
+ "hexagram": 22,
+ "hexagramNote": "the end card and its track come from 22, as in the two lessons, so the terminal pieces end alike",
+ "style": "The header reads 'SIX LINES // READY FOR INQUIRY' throughout. Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "cues": true,
+ "music": {
+  "file": "pick14-lofi-synthwave.mp3",
+  "start": 8,
+  "why": "provisional: the track the user heard on the timeline flight; a track per path to choose"
+ },
+ "endcardRate": 0.75,
+ "caption": "",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "AN OLD BOOK AND A NEW MACHINE",
+     "a": "THREE PATHS JOIN THEM:\nBINARY, CORRESPONDENCE,\nAND WHO IS ANSWERING.\nTHIS ONE: WHO IS ANSWERING.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1949",
+     "a": "JUNG ASKS THE I CHING\nABOUT ITS NEW EDITION\nAND READS THE REPLY\nAS THE BOOK SPEAKING.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1950",
+     "a": "TURING ASKS: CAN A MACHINE\nPASS FOR A PERSON?\nTHAT YEAR THE I CHING\nCOMES OUT IN ENGLISH.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1962",
+     "a": "IN THE MAN IN THE HIGH CASTLE,\nA CHARACTER ASKS THE BOOK\nWHY IT WROTE THE NOVEL.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1968",
+     "a": "DICK'S ANDROIDS FACE A TEST\nBUILT TO CATCH A MACHINE\nPASSING FOR HUMAN.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "TODAY",
+     "a": "A MACHINE READS THE BOOK.\nTHE TEST NOW: DOES IT\nREAD IT WELL?",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "SIX LINES",
+     "a": "HOLDS EACH READING TO\nTHE LINES AND TO WANG BI,\nWHO READ THEM AS POSITIONS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-answering.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    }
+   ]
+  }
+ ]
+}

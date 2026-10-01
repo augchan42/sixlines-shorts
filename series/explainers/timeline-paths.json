@@ -1,0 +1,8 @@
+{
+ "about": "The three paths of the timeline shorts (the user, 2026-10-01: 'three thread shorts, but we should show in the begginning that there are three parallel paths in total and this specific short is going down 1'). From the user's brand timeline (8bitoracle-brand messages/en.json `Timeline`), read as threads in docs/research/2026-10-01-timeline-brainstorm.md. Each short draws all three corridors side by side in blender/timeline.py and flies down its own. `dates[k-1]` is page k's sign (page 1 is the opening over all three); `pictures` by page, from scripts/timeline-images.mjs. Provisional until Astra's check (docs/research/2026-10-01-codex-timeline-paths.md).",
+ "paths": [
+  {"key": "binary", "title": "BINARY", "dates": ["LEGEND", "11TH C. AD", "1701", "1703", "1936", "1948", "1982", "TODAY"], "pictures": {"1": ["fuxi"], "2": ["shao-yong"], "3": ["bouvet"]}},
+  {"key": "correspondence", "title": "CORRESPONDENCE", "dates": ["11TH C. BC", "1907", "1909", "1924", "1951", "1975", "2009", "TODAY"], "pictures": {"1": ["king-wen"], "4": ["wilhelm"]}},
+  {"key": "answering", "title": "WHO IS ANSWERING", "dates": ["1949", "1950", "1962", "1968", "TODAY", "SIX LINES"], "pictures": {"1": ["jung"], "3": ["dick"], "6": ["app"]}}
+ ]
+}

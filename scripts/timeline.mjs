@@ -53,7 +53,10 @@ for (const { label, clip, frames: expected, scene: jobScene } of jobs) {
     console.log(`${label}: ${path.relative(root, target)} is there (--force to render again)`);
     continue;
   }
-  const scene = { ...jobScene, dates: script.dates, pictures: script.pictures ?? {}, pictures_dir: path.join(root, "public/local/timeline") };
+  // A script on one of the three paths (series/explainers/timeline-paths.json) draws all three.
+  const paths = script.path ? JSON.parse(readFileSync(path.join(root, "series/explainers/timeline-paths.json"), "utf8")).paths : null;
+  const lanes = paths ? { lanes: paths.map(({ title, dates, pictures }) => ({ title, dates, pictures: pictures ?? {} })), lane: paths.findIndex((p) => p.key === script.path) } : {};
+  const scene = { ...jobScene, ...lanes, dates: script.dates, pictures: script.pictures ?? {}, pictures_dir: path.join(root, "public/local/timeline") };
   const sceneFile = path.join(root, "out", "timeline", `${path.basename(out, ".mp4")}.json`);
   const partial = path.join(root, "out", "timeline", path.basename(target));
   mkdirSync(path.dirname(sceneFile), { recursive: true });
