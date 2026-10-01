@@ -15,6 +15,7 @@ import path from "node:path";
 import { overrides } from "../src/series/overrides.ts";
 import { seriesProps } from "../src/series/props.ts";
 import { shareBitrate, versionDir } from "./series/render-lib.mjs";
+import { lessonPlan } from "./lesson-plan.mjs";
 import { makeSfx } from "./sfx.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
@@ -112,6 +113,14 @@ const lesson = script.chapters && {
   endMusic: script.endMusic && !only ? script.endMusic : null,
   ...(script.look === "flight" ? { look: "flight", sfx } : {}),
 };
+
+// A fly-through clip (show.clip.flight, scripts/timeline.mjs) runs under the whole lesson: each
+// page plays it from where that page starts in the full lesson, so the pages join up.
+if (lesson && allPages.some((p) => p.show?.clip?.flight)) {
+  const { pages: full } = await lessonPlan({ ...lesson, pages: allPages });
+  const from = new Map(allPages.map((p, i) => [p, full[i].from]));
+  lesson.pages = lesson.pages.map((p) => (p.show?.clip?.flight ? { ...p, show: { ...p.show, clip: { ...p.show.clip, from: from.get(p) } } } : p));
+}
 
 const props = lesson || {
   number: row.number,

@@ -68,12 +68,8 @@
      "a": "A CHINESE BOOK ABOUT CHANGE.\nPARTS MAY BE 3,000 YEARS OLD.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-0.mp4",
-       "scene": {
-        "page": 0,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -83,12 +79,8 @@
      "a": "LEGEND CREDITS FU XI\nWITH EIGHT TRIGRAMS:\nTHREE-LINE PATTERNS.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-1.mp4",
-       "scene": {
-        "page": 1,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -98,12 +90,8 @@
      "a": "TRADITION CREDITS KING WEN\nWITH A TEXT FOR EACH OF THE\n64 SIX-LINE PATTERNS.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-2.mp4",
-       "scene": {
-        "page": 2,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -113,12 +101,8 @@
      "a": "64 PATTERNS, SQUARE AND CIRCLE.\nATTRIBUTED TO SHAO YONG.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-3.mp4",
-       "scene": {
-        "page": 3,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -128,12 +112,8 @@
      "a": "BOUVET SENDS THE DIAGRAM\nTO LEIBNIZ, A MATHEMATICIAN.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-4.mp4",
-       "scene": {
-        "page": 4,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -143,12 +123,8 @@
      "a": "BAYNES'S ENGLISH VERSION\nOF WILHELM'S TRANSLATION\nAPPEARS WITH JUNG'S FOREWORD.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-5.mp4",
-       "scene": {
-        "page": 5,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -158,12 +134,8 @@
      "a": "THE MAN IN THE HIGH CASTLE.\nPHILIP K. DICK USED THE I CHING\nTO HELP PLOT THE NOVEL.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-6.mp4",
-       "scene": {
-        "page": 6,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -173,12 +145,8 @@
      "a": "SIX LINES READS THE BOOK\nTO THINK THROUGH A CHOICE.",
      "show": {
       "clip": {
-       "src": "local/structure/timeline-7.mp4",
-       "scene": {
-        "page": 7,
-        "secs": 9,
-        "at": 2.5
-       }
+       "src": "local/structure/timeline-flight.mp4",
+       "flight": true
       },
       "hold": 4
      }
@@ -186,5 +154,6 @@
    ]
   }
  ],
- "mixNote": "Music up to 0.8 and the machine sounds pulled back (the user, 2026-10-01, on the pictures smoke test: 'maybe some background music')."
+ "mixNote": "Music up to 0.8 and the machine sounds pulled back (the user, 2026-10-01, on the pictures smoke test: 'maybe some background music').",
+ "flightNote": "One fly-through under the whole short (the user, 2026-10-01: 'continuous fly through ... with stops for each timeline entry', 'imagine we are in a video game flying through a landscape'): scripts/timeline.mjs renders it timed to the pages."
 }

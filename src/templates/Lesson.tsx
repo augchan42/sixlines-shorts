@@ -54,7 +54,9 @@ type Show = {
   guqin?: boolean;
   // A Blender clip in the window, from the page's start (the structure shorts; the cube's clips
   // are rendered from `scene` by scripts/hypercube.mjs, and click as their edges light).
-  clip?: { src: string; scene?: CubeScene };
+  // `flight`: one fly-through clip under the whole lesson (the timeline); the page plays it from
+  // `from`, its own start in the full lesson (written by scripts/explainer.mjs), with no fade.
+  clip?: { src: string; scene?: CubeScene; flight?: boolean; from?: number };
 };
 type Page = { chapter?: string; q?: string; a?: string; show?: Show };
 type Full = { number: number; name: string; lines: (0 | 1)[]; trigrams: [Trigram, Trigram]; text: string; mark?: number[]; finding?: string; master?: { zh: string; en: string } };
@@ -189,11 +191,11 @@ const Mark: React.FC<{ h: Hex; at: number; turn: number }> = ({ h, at, turn }) =
 
 // A clip in the terminal's window, fading up over a third of a second; its black drops out
 // against the screen's.
-const ClipWindow: React.FC<{ src: string }> = ({ src }) => {
+const ClipWindow: React.FC<{ src: string; from?: number }> = ({ src, from }) => {
   const f = useCurrentFrame();
   return (
-    <div style={{ position: "absolute", left: WINDOW.x, top: WINDOW.y, width: WINDOW.w, height: WINDOW.h, overflow: "hidden", opacity: interpolate(f, [0, 10], [0, 1], { extrapolateRight: "clamp" }), mixBlendMode: "screen" }}>
-      <OffthreadVideo src={staticFile(src)} muted style={{ width: WINDOW.w, height: WINDOW.h }} />
+    <div style={{ position: "absolute", left: WINDOW.x, top: WINDOW.y, width: WINDOW.w, height: WINDOW.h, overflow: "hidden", opacity: from !== undefined ? 1 : interpolate(f, [0, 10], [0, 1], { extrapolateRight: "clamp" }), mixBlendMode: "screen" }}>
+      <OffthreadVideo src={staticFile(src)} muted trimBefore={from || undefined} style={{ width: WINDOW.w, height: WINDOW.h }} />
     </div>
   );
 };
@@ -358,7 +360,7 @@ const PageView: React.FC<{ t: Timed; hexagrams: Record<string, Hex>; readouts: R
       </div>
       {show.clip && (
         <Sequence from={t.from} durationInFrames={t.frames} layout="none">
-          <ClipWindow src={show.clip.src} />
+          <ClipWindow src={show.clip.src} from={show.clip.flight ? show.clip.from ?? 0 : undefined} />
           {show.mark !== undefined && hexagrams[show.mark] && <Mark h={hexagrams[show.mark]} at={show.clip.scene?.at ?? 1} turn={turn} />}
         </Sequence>
       )}

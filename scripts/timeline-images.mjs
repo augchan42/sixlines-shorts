@@ -17,7 +17,7 @@ import { PLATE } from "./leibniz-plate.mjs";
 const root = path.resolve(import.meta.dirname, "..");
 const C = "https://upload.wikimedia.org/wikipedia/commons";
 export const IMAGES = [
-  { name: "fuxi", page: 1, title: "Ma Lin, Fu Xi (Song dynasty), National Palace Museum, Taipei", url: `${C}/thumb/d/db/Ma-Lin-Fuxi-and-turtle.jpg/1280px-Ma-Lin-Fuxi-and-turtle.jpg`, crop: "1100x1450+90+1150", licence: "public domain" },
+  { name: "fuxi", page: 1, title: "Ma Lin, Fu Xi (Song dynasty), National Palace Museum, Taipei", url: `${C}/thumb/d/db/Ma-Lin-Fuxi-and-turtle.jpg/1280px-Ma-Lin-Fuxi-and-turtle.jpg`, crop: "1150x1790+70+930", licence: "public domain" },
   { name: "king-wen", page: 2, title: "King Wen of Zhou, Portraits of Famous Men (Southern Song?), National Palace Museum", url: `${C}/1/13/Portraits_of_Famous_Men_-_King_Wen_of_Zhou.jpg`, sha1: "040398b0329df4067923065ab5abc2f07f784c37", crop: "2400x2500+100+1350", licence: "public domain" },
   { name: "shao-yong", page: 3, title: "Shao Yong, Portraits of Famous Men, National Palace Museum", url: `${C}/5/5e/Portraits_of_Famous_Men_-_Shao_Yong.jpg`, sha1: "571a7ab3c5f6cfeb048a61527dd461155d824c91", crop: "2400x2450+100+1350", licence: "public domain" },
   { name: "bouvet", page: 4, title: "The diagram Bouvet sent Leibniz, 1701 (Leibniz Bibliothek Hannover)", url: PLATE.url, sha1: PLATE.sha1, licence: "public domain" },

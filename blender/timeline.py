@@ -10,6 +10,11 @@ closer. Calm: every move eased, nothing shakes.
 
 --scene is written by scripts/timeline.mjs from the short's script: {page, secs, at, dates}.
 
+With `flight` in the scene (the lesson's page timings, from scripts/lesson-plan.mjs) it is one
+clip for the whole short instead, a fly-through as in a game: the camera stops at each date while
+its page's answer is on the screen, then speeds up and slows into the next, low over the floor;
+each page plays its stretch of the clip (src/templates/Lesson.tsx, `clip.flight`).
+
   Blender -b --factory-startup --python-exit-code 1 -P blender/timeline.py -- \
     --scene out/timeline/timeline-4.json --out out/timeline-4.mp4 [--still N] [--preview]
 """
@@ -151,14 +156,75 @@ def camera(scene, frames, page, at):
         key(target, "location", frame)
 
 
+# Flight timing, in seconds: the camera stops at a date just before its answer starts to type,
+# and leaves this long before the page ends.
+ARRIVE_EARLY, LEAVE = 0.3, 1.3
+VIEW_BACK, VIEW_Z = 7.5, 2.2  # the stopped camera: how far short of its date, how high
+OPEN = [(0, -3.0, 2.4), (0, -1.8, 2.3)]  # page 0 (the whole span): a slow push, then away
+
+
+def flight_stops(flight):
+    """(arrive, leave) clip frames for each page: page 0 from the start, the others at their
+    answer, each until a little before its page ends (the last one to the end)."""
+    stops = []
+    for k, t in enumerate(flight):
+        arrive = 0 if k == 0 else t["from"] + t["aAt"] - round(ARRIVE_EARLY * FPS)
+        leave = t["from"] + t["frames"] - round(LEAVE * FPS) if k < len(flight) - 1 else t["from"] + t["frames"] - 1
+        stops.append((arrive, leave))
+    return stops
+
+
+def view(k):
+    """The stopped camera at date k and where it looks: from a little across the corridor, at the
+    middle of picture and date."""
+    side = -1 if k % 2 else 1
+    y = k * STEP
+    return (-side * 0.5, y - VIEW_BACK, VIEW_Z), (side * SIDE * 0.7, y, 1.9)
+
+
+def fly(scene, flight):
+    """The fly-through camera: still at each stop, eased between (Blender's auto-clamped
+    handles make every stop and start smooth); low and through the middle in between."""
+    target = bpy.data.objects.new("target", None)
+    scene.collection.objects.link(target)
+    data = bpy.data.cameras.new("camera")
+    data.lens = 32
+    cam = bpy.data.objects.new("camera", data)
+    scene.collection.objects.link(cam)
+    scene.camera = cam
+    track = cam.constraints.new("TRACK_TO")
+    track.target, track.track_axis, track.up_axis = target, "TRACK_NEGATIVE_Z", "UP_Y"
+    stops = flight_stops(flight)
+    for k, (arrive, leave) in enumerate(stops):
+        if k == 0:
+            poses = [(arrive, OPEN[0], (0, 22, 1.2)), (leave, OPEN[1], (0, 22, 1.2))]
+        else:
+            loc, aim = view(k)
+            poses = [(arrive, loc, aim), (leave, loc, aim)]
+        for frame, loc, aim in poses:
+            cam.location = loc
+            key(cam, "location", frame)
+            target.location = aim
+            key(target, "location", frame)
+        if k + 1 < len(stops):
+            # Halfway to the next date: through the middle, a little lower, faster.
+            mid = (leave + stops[k + 1][0]) // 2
+            cam.location = (0, cam.location.y, 1.75)
+            for i in (0, 2):
+                key(cam, "location", mid, index=i)
+    return cam, stops
+
+
 def main():
     args = parse()
     spec = json.load(open(args.scene))
-    page, secs, at, dates = spec["page"], spec["secs"], spec.get("at", 4.0), spec["dates"]
+    flight = spec.get("flight")
+    page, secs, at, dates = spec.get("page", -1), spec.get("secs", 0), spec.get("at", 4.0), spec["dates"]
     scene = bpy.context.scene
     for o in list(bpy.data.objects):
         bpy.data.objects.remove(o)
-    frames = round(secs * FPS)
+    frames = spec["frames"] if flight else round(secs * FPS)
+    stops = flight_stops(flight) if flight else None
     world = bpy.data.worlds.new("black")
     world.use_nodes = True
     world.node_tree.nodes["Background"].inputs["Strength"].default_value = 0
@@ -185,7 +251,15 @@ def main():
                 x += w + gap
         m, b = emission(f"date{k}-glow", GREEN, 3.0)
         o.data.materials.append(m)
-        if k == page:
+        if flight:
+            # Amber while the camera is stopped at it: the date and its frames to look at.
+            arrive, leave = stops[k]
+            for g in [b, *glows]:
+                colour = g.inputs["Emission Color"]
+                for frame, c in [(arrive - 6, GREEN), (arrive + 6, AMBER), (leave, AMBER), (leave + 12, GREEN)]:
+                    colour.default_value = linear(c)
+                    colour.keyframe_insert("default_value", frame=frame + 1)
+        elif k == page:
             # Green until the camera arrives, then amber: the date and its frames to look at.
             for g in [b, *glows]:
                 colour = g.inputs["Emission Color"]
@@ -194,11 +268,33 @@ def main():
                 colour.default_value = linear(AMBER)
                 colour.keyframe_insert("default_value", frame=round(at * FPS) + 6 + 1)
 
-    camera(scene, frames, page, at)
-    haze(scene, density=0.01)
-    y = max(page, 1) * STEP
-    # The beam crosses the floor ahead of the camera, slowly, once each way.
-    searchlight(scene, frames, (0, y + 6, 16), [(0, (-3, y - 2, 0)), (frames // 2, (3, y + 3, 0)), (frames - 1, (-2, y + 6, 0))], energy=60000)
+    if flight:
+        cam, _ = fly(scene, flight)
+        haze(scene, density=0.01)
+        # The beam goes along with the camera, ahead of it, crossing the floor slowly from side
+        # to side, once each way a page.
+        lamp = searchlight(scene, frames, (0, 6, 16), [], energy=60000)
+        aim = bpy.data.objects["searchlight-aim"]
+        for k, t in enumerate(flight):
+            for part, x in ((0, -3), (0.5, 3)):
+                f = t["from"] + round(part * t["frames"])
+                scene.frame_set(f + 1)
+                y = cam.matrix_world.translation.y
+                aim.location = (x, y + 9 + 4 * part, 0)
+                key(aim, "location", f)
+                lamp.location = (0, y + 13, 16)
+                key(lamp, "location", f)
+        scene.frame_set(frames)
+        y = cam.matrix_world.translation.y
+        aim.location, lamp.location = (-3, y + 9, 0), (0, y + 13, 16)
+        key(aim, "location", frames - 1)
+        key(lamp, "location", frames - 1)
+    else:
+        camera(scene, frames, page, at)
+        haze(scene, density=0.01)
+        y = max(page, 1) * STEP
+        # The beam crosses the floor ahead of the camera, slowly, once each way.
+        searchlight(scene, frames, (0, y + 6, 16), [(0, (-3, y - 2, 0)), (frames // 2, (3, y + 3, 0)), (frames - 1, (-2, y + 6, 0))], energy=60000)
     bloom(scene)
     render_settings(scene, frames, args.out, args.preview)
     scene.render.resolution_x, scene.render.resolution_y = (W // 2, H // 2) if args.preview else (W, H)
