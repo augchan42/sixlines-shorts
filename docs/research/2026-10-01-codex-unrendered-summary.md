@@ -1,0 +1,9 @@
+# Unrendered items reviewed with Astra, 2026-10-01
+
+The user: "if they aren't rendered i can't really tell, review with astra". One round each, gpt-6.1-sol, high effort. Prompts and answers: docs/research/2026-10-01-codex-unrendered-<item>-prompt.md and -<item>.md.
+
+- **structure-octagons: render.** Use a Remotion eight-trigram drawing in Diagram.tsx, not Blender; drop the eight-way morph and move only Thunder (lower left to left, 2 s) from Earlier to Later Heaven. Smoke test: 16 s across pages 3-4: Heaven/Earth turn amber with 天 HEAVEN / 地 EARTH and a diameter, then Thunder moves to EAST / SPRING; fixed camera, the 100 bpm track quiet.
+- **painting-lesson: render one revised sample.** Answer to the user's question: a reach if the painting is presented as explaining the hexagram; workable as a labelled app pairing that prompts a judgment. Smoke test: 18 s on 8 with Renoir's Luncheon of the Boating Party: 4 s plain hexagram, cut to the painting with a slow pan and credit, hold with "What would you need to know before joining?"; no punch, glitch or whip.
+- **metal-qian: render one motion test.** Faceted treatment only. Smoke test: 15 s of line 5 in the faceted summer-dusk scene, a slow push about 5% closer, captions "Qian · Line 5 / Flying dragon in the sky", then Shaughnessy's Dragon-constellation reading credited to him; silence. Risk: the dividers hide the stars.
+- **blender-searchlight: drop.** The user's verdict stands; close it as absorbed into the timeline corridor. If the beam distracts in the timeline smoke test, remove it and keep the slow push.
+- **guide-sfx: render a sample in context.** The inventory is usable to pick from but over-supplied; flagged as toy-like or cartoonish: #1, #2, #5, #27, #38, #11, #17, #23, #32. Smoke test: the 11.4 s opening of the trigrams Guide short with three sounds: #4 boot-thunk-hum at 0.07 s, #18 tick-soft per word, #9 blip-lo when the TRIGRAM labels appear, 12-18 dB under the narration.
