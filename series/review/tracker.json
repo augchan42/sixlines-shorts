@@ -370,7 +370,7 @@
    "title": "Structure: heaven before and after",
    "what": "Two octagons of glowing trigrams; the trigrams move from one arrangement to the other.",
    "stage": "drafted",
-   "next": "Build the Blender octagons scene and smoke-test it.",
+   "next": "Astra: render, as a Remotion drawing rather than Blender. Smoke test 16 s, pages 3-4: Heaven and Earth turn amber and are joined, then only Thunder moves to EAST / SPRING.",
    "files": [
     "series/explainers/structure-octagons.json",
     "docs/research/2026-10-01-codex-structure-octagons.md",
@@ -382,7 +382,8 @@
    "userSaid": "",
    "notes": [
     "Copy converged with Astra in round 1; no Blender scene yet."
-   ]
+   ],
+   "astra": "render"
   },
   {
    "id": "wangbi-lesson",
@@ -913,7 +914,7 @@
    "title": "Heavy Metal Qian",
    "what": "A Heavy Metal comic look for hexagram 1: Blake's Ancient of Days sun and dividers over the Dragon constellation.",
    "stage": "parked",
-   "next": "",
+   "next": "Astra: one 15 s motion test of line 5 in the faceted dusk scene, slow 5% push, no sound, Shaughnessy's dragon-constellation reading credited. Captions need a copy review first.",
    "files": [
     "blender/metal.py",
     "out/metal/treat-sheet.png",
@@ -921,13 +922,14 @@
     "docs/notes/2026-09-30-metal-treatments.md"
    ],
    "commit": "0127c6b",
-   "date": "2026-09-30",
+   "date": "2026-10-01",
    "sent": true,
    "userSaid": "the one you had previously was a bit too flat.",
    "notes": [
     "Still treatments: flat, airbrush, ink, print, Cassaday, painted, faceted.",
     "Work moved to the faceted Urizen head and the talking-head short."
-   ]
+   ],
+   "astra": "render a motion test"
   },
   {
    "id": "trigram-60-tests",
@@ -1113,19 +1115,20 @@
    "title": "Painting lesson (8, Renoir)",
    "what": "A lesson that shows the app's painting for the hexagram full-frame on the drop.",
    "stage": "parked",
-   "next": "",
+   "next": "Astra: a reach if the painting claims to explain the hexagram; fine as a labelled pairing that asks the viewer to judge. Proposed 18 s sample on 8 with Renoir's Luncheon of the Boating Party. Its new lines need a copy review first.",
    "files": [
     "out/series/versions/08-bi/",
     "series/paintings.json"
    ],
    "commit": "dffb347",
-   "date": "2026-09-25",
+   "date": "2026-10-01",
    "sent": true,
    "userSaid": "I think the transition is better now, but what do you think about the whole concept of associating artwork to a hexagram? Is it a bit too much of a reach?",
    "notes": [
     "First cut: 'it seems a bit funny. The pacing'.",
     "Blind rating of 62 painting pairings; 18 approved, alternatives searched for 46."
-   ]
+   ],
+   "astra": "render a revised sample"
   },
   {
    "id": "transitions-v2",
@@ -1206,18 +1209,19 @@
    "title": "Blade Runner searchlight",
    "what": "A slow Blender searchlight sweeping the scene in place of the beat punch.",
    "stage": "parked",
-   "next": "",
+   "next": "Astra: drop it as a separate style; it lives on in the timeline corridor. If the beam distracts there, remove it and keep the slow push.",
    "files": [
     "blender/searchlight.py",
     "out/searchlight/strip.png"
    ],
    "commit": "8d83b00",
-   "date": "2026-09-26",
+   "date": "2026-10-01",
    "sent": true,
    "userSaid": "The spotlight as well.",
    "notes": [
     "Called cheesy on the trigram tests; a slow searchlight returns in the timeline corridor."
-   ]
+   ],
+   "astra": "drop"
   },
   {
    "id": "blender-urizen-head",
@@ -1354,19 +1358,20 @@
    "title": "Guide device sound inventory",
    "what": "38 synthesised device sounds (boot, blips, keys, chatter, chimes, whooshes, off) with a numbered audition file.",
    "stage": "sent",
-   "next": "",
+   "next": "Astra: hear it in context. 11.4 s opening of the trigrams Guide with three sounds 12-18 dB under the voice: #4 boot-thunk-hum, #18 tick-soft per word, #9 blip-lo on the labels. Flags #1, #2, #5, #27, #38 as toy-like and #11, #17, #23, #32 as cartoonish.",
    "files": [
     "series/specials/guide-sfx.json",
     "scripts/guide-sfx.mjs",
     "out/sfx/guide/audition.m4a"
    ],
    "commit": "6e228e5",
-   "date": "2026-09-30",
+   "date": "2026-10-01",
    "sent": true,
    "userSaid": "",
    "notes": [
     "Made after the user allowed synthesised sounds if picked from a full inventory."
-   ]
+   ],
+   "astra": "render a sample in context"
   },
   {
    "id": "guide-voice",
