@@ -64,11 +64,19 @@ def emission(name, colour, strength):
 
 
 def date_sign(k, text, font, lx=0.0, tag=""):
-    """Date k (1 on) standing on the floor of the corridor at x `lx`, facing back down it."""
+    """Entry k (1 on) standing on the floor of the corridor at x `lx`, facing back down it: a
+    date, or [name, date], the name standing (two lines if long) and the date flat on the floor
+    in front of it like a road marking. Returns the standing text, its holder, and the floor
+    date (or None)."""
+    name, date = (text, None) if isinstance(text, str) else text
     curve = bpy.data.curves.new(f"{tag}date{k}", "FONT")
-    curve.body = text
+    if date is not None and len(name) > 9 and " " in name:
+        words = name.split(" ")
+        name = " ".join(words[: (len(words) + 1) // 2]) + "\n" + " ".join(words[(len(words) + 1) // 2 :])
+    curve.body = name
     curve.font = font
-    curve.size = 0.9
+    curve.size = 0.9 if date is None else 0.62
+    curve.space_line = 0.9
     curve.extrude = 0.03
     curve.align_x, curve.align_y = "CENTER", "BOTTOM"
     o = bpy.data.objects.new(f"{tag}date{k}", curve)
@@ -83,7 +91,18 @@ def date_sign(k, text, font, lx=0.0, tag=""):
     o.parent = holder
     o.location = (0, 0, 0.05)
     o.rotation_euler = (math.radians(90), 0, 0)
-    return o, holder
+    floor = None
+    if date is not None:
+        fc = bpy.data.curves.new(f"{tag}floor{k}", "FONT")
+        fc.body = date
+        fc.font = font
+        fc.size = 0.85
+        fc.align_x, fc.align_y = "CENTER", "CENTER"
+        floor = bpy.data.objects.new(f"{tag}floor{k}", fc)
+        bpy.context.scene.collection.objects.link(floor)
+        floor.parent = holder
+        floor.location = (0, -1.3, 0.012)
+    return o, holder, floor
 
 
 def picture(name, path, parent, x, height, frame_colour, dim=1.0):
@@ -291,7 +310,7 @@ def main():
         if lane.get("title"):
             gantry(lane["title"], xs[i], font, mine, stops[1][0] if stops and len(stops) > 1 else frames - 1)
         for k, text in enumerate(lane["dates"], start=1):
-            o, holder = date_sign(k, text, font, xs[i], f"{i}-")
+            o, holder, floor = date_sign(k, text, font, xs[i], f"{i}-")
             pics = [os.path.join(spec["pictures_dir"], f"{n}.jpg") for n in lane.get("pictures", {}).get(str(k), [])]
             widths, x = [], 0.0
             if pics:
@@ -302,10 +321,12 @@ def main():
                 x = -(sum(widths) + gap * (len(widths) - 1)) / 2
             glows = []
             for n, (path, w) in enumerate(zip(pics, widths)):
-                glows.append(picture(f"{i}-pic{k}-{n}", path, holder, x + w / 2, PIC_H, GREEN, 1.0 if mine else 0.4))
+                glows.append(picture(f"{i}-pic{k}-{n}", path, holder, x + w / 2, PIC_H, GREEN, 1.0 if mine else 0.3))
                 x += w + gap
-            m, b = emission(f"{i}-date{k}-glow", GREEN, 3.0 if mine else 1.2)
+            m, b = emission(f"{i}-date{k}-glow", GREEN, 3.0 if mine else 0.7)
             o.data.materials.append(m)
+            if floor:
+                floor.data.materials.append(m)
             if not mine:
                 continue
             if flight:
