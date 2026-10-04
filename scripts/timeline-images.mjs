@@ -56,6 +56,9 @@ export const IMAGES = [
   // The cover of Hatcher's Yijing, Word by Word, vol. 1, as on the user's brand timeline. 易經 (Yijing) is
   // "Book of Changes", as the cover says in English.
   { name: "hatcher", page: 0, title: "Bradford Hatcher, The Book of Changes: Yijing, Word by Word, vol. 1 (cover)", file: "../8bitoracle-brand/public/img-timeline/bradford_hatcher_book.png", post: ["-background", "black", "-flatten"], licence: "book cover, Bradford Hatcher", credit: "Cover: Bradford Hatcher, Yijing, Word by Word" },
+  // The website's McKenna picture (the user, 2026-10-04: "for mckenna use the timewave zero mckenna one
+  // from the website page"): a Midjourney image from the brand timeline, used at the user's request.
+  { name: "mckenna", page: 0, title: "Terence McKenna and the timewave (8bitoracle-brand timeline image, Midjourney)", file: "../8bitoracle-brand/public/img-timeline/hosermage_terence_mckenna_contemplating_his_fractal_wave_of_nov_09240299-313c-473b-951a-643b0796c827-800.jpg", licence: "ours (brand timeline)" },
 ];
 
 if (import.meta.url === `file://${process.argv[1]}`) {
