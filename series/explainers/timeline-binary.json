@@ -1,0 +1,140 @@
+{
+ "about": "Timeline path 1 of 3, 'Binary' (docs/research/2026-10-01-timeline-brainstorm.md): the lines read as bits, Fu Xi to today. Opens on all three paths (series/explainers/timeline-paths.json) and flies down this one. Draft 2, Sol's rewrite of pages and caption (docs/research/2026-10-04-codex-timeline-binary-correspondence.md); page 1 keeps Answering's opener so the three paths open alike. Draft 1, from Sol's checked table (docs/research/2026-10-01-codex-timeline-paths.md): structure, not lineage; Fu Xi as legend; Shao Yong's order 'can be read as' binary; Bouvet sends 1701, Leibniz receives 1703 and had binary since 1679; Turing's machine is imagined; Shannon's bit; the C64's 64 is memory.",
+ "path": "binary",
+ "hexagram": 22,
+ "style": "The header reads '8-BIT ORACLE // READY FOR INQUIRY' throughout (brand.header). Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "cues": true,
+ "music": {
+  "file": "pick14-lofi-synthwave.mp3",
+  "start": 8,
+  "why": "provisional, as on Answering: a track per path to choose"
+ },
+ "endcardRate": 0.75,
+ "caption": "The I-Ching's 64 line patterns fit in six bits. Reading them takes more: 8bitoracle.ai",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "AN OLD BOOK AND A NEW MACHINE",
+     "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE FIRST PATH.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "LEGEND: FU XI",
+     "a": "TRADITION CREDITS HIM WITH\nEIGHT THREE-LINE PATTERNS:\nEACH LINE SOLID OR BROKEN.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "11TH C.: SHAO YONG",
+     "a": "64 SIX-LINE PATTERNS\nIN HIS SCHOOL'S ORDER\nCAN BE READ AS 0 TO 63.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1701: BOUVET",
+     "a": "A JESUIT IN CHINA MAILS\nLEIBNIZ THAT DIAGRAM.\nIT ARRIVES IN 1703.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1703: LEIBNIZ",
+     "a": "BINARY COUNTS WITH 0 AND 1.\nHE HAD IT IN 1679; HIS 1703\nPAPER LINKS IT TO FU XI.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1936: TURING",
+     "a": "AN IMAGINED MACHINE READS\nAND WRITES SYMBOLS\nON A TAPE, ONE AT A TIME.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1948: SHANNON",
+     "a": "HE USES BITS FOR INFORMATION.\nONE BIT: 0 OR 1. SIX BITS:\n64 POSSIBLE LINE PATTERNS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1982: COMMODORE 64",
+     "a": "AN 8-BIT HOME COMPUTER.\nITS 64 IS KILOBYTES,\nNOT HEXAGRAMS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "TODAY: 8-BIT ORACLE",
+     "a": "SIX SOLID OR BROKEN LINES\nFIT IN A BYTE: EIGHT BITS.\nREADING THEM TAKES MORE.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-binary.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    }
+   ]
+  }
+ ],
+ "brand": {
+  "header": "8-BIT ORACLE",
+  "name": "8-BIT ORACLE",
+  "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+  "site": "8bitoracle.ai",
+  "seconds": 4.5,
+  "why": "for the 8-Bit Oracle account (the user, 2026-10-01: '8-Bit Oracle please'); name, tagline and site from 8bitoracle-brand messages/en.json HomePage"
+ }
+}

@@ -16,6 +16,8 @@ import path from "node:path";
 import { PLATE } from "./leibniz-plate.mjs";
 
 const root = path.resolve(import.meta.dirname, "..");
+// Sibling repos ("../8bitoracle-brand") sit beside the main checkout, also when this runs in a worktree.
+const main = path.dirname(execFileSync("git", ["rev-parse", "--path-format=absolute", "--git-common-dir"], { cwd: root, encoding: "utf8" }).trim());
 const C = "https://upload.wikimedia.org/wikipedia/commons";
 export const IMAGES = [
   { name: "fuxi", page: 1, title: "Ma Lin, Fu Xi (Song dynasty), National Palace Museum, Taipei", url: `${C}/thumb/d/db/Ma-Lin-Fuxi-and-turtle.jpg/1280px-Ma-Lin-Fuxi-and-turtle.jpg`, crop: "1150x1790+70+930", licence: "public domain" },
@@ -46,6 +48,14 @@ export const IMAGES = [
   { name: "8bo", page: 0, title: "8-Bit Oracle, the reading screen", file: "../8bitoracle-brand/public/img-demo/reading.png", crop: "1440x1800+0+0", licence: "ours" },
   // Ours: the app's reading screen (public/local/tour, from the store listing).
   { name: "app", page: 7, title: "Six Lines, the reading screen", file: "public/local/tour/03_Reading.png", licence: "ours" },
+  // For the Binary and Correspondence paths (2026-10-04). Commons unless noted.
+  { name: "leibniz", page: 0, title: "Gottfried Wilhelm Leibniz, by Christoph Bernhard Francke (c. 1700), Herzog Anton Ulrich-Museum", url: `${C}/c/ce/Gottfried_Wilhelm_Leibniz%2C_Bernhard_Christoph_Francke.jpg`, sha1: "4ddd12528bab497b11a2f596b389adb5454e5b03", crop: "4486x4486+0+300", licence: "public domain" },
+  { name: "c64", page: 0, title: "Commodore 64, photo by Evan-Amos", url: `${C}/e/e9/Commodore-64-Computer-FL.jpg`, sha1: "b3408743ea42eb608b8f1c66f9e860d9ad0798c9", licence: "public domain" },
+  { name: "crowley", page: 0, title: "Aleister Crowley in youth (before 1915)", url: `${C}/c/c7/Aleister_Crowley_in_youth.jpg`, sha1: "f2fec13fbc77923ba1ed193b94cf4a860612c08d", licence: "public domain" },
+  { name: "777", page: 0, title: "Liber 777, title page, photo by Arsliberalis", url: `${C}/e/e5/Sevensevenseven.JPG`, sha1: "141436543dd2a7758b8cea580d419c7c9989a0ec", licence: "CC BY 3.0", credit: "777 title page: Arsliberalis, CC BY 3.0" },
+  // The cover of Hatcher's Yijing, Word by Word, vol. 1, as on the user's brand timeline. 易經 (Yijing) is
+  // "Book of Changes", as the cover says in English.
+  { name: "hatcher", page: 0, title: "Bradford Hatcher, The Book of Changes: Yijing, Word by Word, vol. 1 (cover)", file: "../8bitoracle-brand/public/img-timeline/bradford_hatcher_book.png", post: ["-background", "black", "-flatten"], licence: "book cover, Bradford Hatcher", credit: "Cover: Bradford Hatcher, Yijing, Word by Word" },
 ];
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -53,7 +63,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   mkdirSync(dir, { recursive: true });
   for (const im of IMAGES) {
     const raw = path.join(dir, `${im.name}-raw.jpg`);
-    if (im.file) execFileSync("cp", [path.join(root, im.file), raw]);
+    if (im.file) execFileSync("cp", [path.join(im.file.startsWith("../") ? main : root, im.file), raw]);
     else if (!existsSync(raw) || process.argv.includes("--force")) {
       const res = await fetch(im.url, { headers: { "User-Agent": "sixlines-shorts (https://sixlines.day)" } });
       if (!res.ok) throw new Error(`${res.status} ${im.url}`);

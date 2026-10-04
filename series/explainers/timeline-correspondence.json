@@ -1,0 +1,140 @@
+{
+ "about": "Timeline path 2 of 3, 'Correspondence' (docs/research/2026-10-01-timeline-brainstorm.md): the lines as a lookup table, the Western occult reading, King Wen to today. Opens on all three paths and flies down this one. Draft 2, Sol's rewrite of pages and caption (docs/research/2026-10-04-codex-timeline-binary-correspondence.md); page 1 keeps Answering's opener so the three paths open alike. Draft 1, from Sol's checked table (docs/research/2026-10-01-codex-timeline-paths.md). Wang Bi and Watts left out (the user, 2026-10-04: 'i thought wang bi wasn't really divination at all?'; Wang Bi closes the Answering path instead).",
+ "path": "correspondence",
+ "hexagram": 22,
+ "style": "The header reads '8-BIT ORACLE // READY FOR INQUIRY' throughout (brand.header). Each query clears the screen like a filmbook page. The query is typed after '>' (dim green); the answer types out below it (bright green, 48 px); the part of the readout the answer is about is drawn beside it, alone. Chapter pages: a single word, centred, held 2 s. Own names only, never MU/TH/UR or INTERFACE 2037.",
+ "look": "flight",
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "cues": true,
+ "music": {
+  "file": "pick14-lofi-synthwave.mp3",
+  "start": 8,
+  "why": "provisional, as on Answering: a track per path to choose"
+ },
+ "endcardRate": 0.75,
+ "caption": "Crowley linked I-Ching symbols to other symbols. AI learns its number tables from text: 8bitoracle.ai",
+ "chapters": [
+  {
+   "pages": [
+    {
+     "q": "AN OLD BOOK AND A NEW MACHINE",
+     "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE SECOND PATH.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "TRADITION: KING WEN",
+     "a": "64 HEXAGRAMS: SIX LINES EACH.\nTHEIR ORDER AND SHORT TEXTS\nARE CREDITED TO HIM.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1907: CROWLEY",
+     "a": "HE WRITES LIBER TRIGRAMMATON:\n27 FIGURES, THREE POSITIONS:\nEACH SOLID, BROKEN OR A DOT.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1909: CROWLEY'S 777",
+     "a": "EIGHT THREE-LINE PATTERNS\nLINK TO KABBALAH. HE ALSO\nLISTS THE 64 HEXAGRAM MEANINGS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1924: WILHELM",
+     "a": "HIS GERMAN I-CHING APPEARS,\nWITH HELP FROM THE SCHOLAR\nLAO NAIXUAN.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1951: JUNG AT ERANOS",
+     "a": "HE SEES A MEANINGFUL MATCH\nBETWEEN AN I-CHING ANSWER\nAND A PERSON'S STATE OF MIND.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "1975: THE MCKENNAS",
+     "a": "FROM KING WEN'S ORDER\nOF THE 64 THEY BUILD\nA SPECULATIVE MAP OF TIME.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "2009: HATCHER",
+     "a": "HIS MATRIX TRANSLATION\nLISTS ALTERNATIVE ENGLISH\nMEANINGS FOR CHINESE WORDS.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    },
+    {
+     "q": "TODAY: 8-BIT ORACLE",
+     "a": "A LANGUAGE MODEL USES\nLEARNED TABLES OF NUMBERS\nFOR WORDS AND WORD PIECES.",
+     "show": {
+      "clip": {
+       "src": "local/structure/timeline-correspondence.mp4",
+       "flight": true
+      },
+      "hold": 4
+     }
+    }
+   ]
+  }
+ ],
+ "brand": {
+  "header": "8-BIT ORACLE",
+  "name": "8-BIT ORACLE",
+  "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+  "site": "8bitoracle.ai",
+  "seconds": 4.5,
+  "why": "for the 8-Bit Oracle account (the user, 2026-10-01: '8-Bit Oracle please'); name, tagline and site from 8bitoracle-brand messages/en.json HomePage"
+ }
+}
