@@ -1,0 +1,151 @@
+{
+ "pages": [
+  {
+   "q": "AN OLD BOOK AND A NEW MACHINE",
+   "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE FIRST PATH.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 0
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "LEGEND: FU XI",
+   "a": "TRADITION CREDITS HIM WITH\nEIGHT THREE-LINE PATTERNS:\nEACH LINE SOLID OR BROKEN.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 250
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "11TH C.: SHAO YONG",
+   "a": "64 SIX-LINE PATTERNS\nIN HIS SCHOOL'S ORDER\nCAN BE READ AS 0 TO 63.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 496
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1701: BOUVET",
+   "a": "A JESUIT IN CHINA MAILS\nLEIBNIZ THAT DIAGRAM.\nIT ARRIVES IN 1703.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 736
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1703: LEIBNIZ",
+   "a": "BINARY COUNTS WITH 0 AND 1.\nHE HAD IT IN 1679; HIS 1703\nPAPER LINKS IT TO FU XI.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 968
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1936: TURING",
+   "a": "AN IMAGINED MACHINE READS\nAND WRITES SYMBOLS\nON A TAPE, ONE AT A TIME.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 1215
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1948: SHANNON",
+   "a": "HE USES BITS FOR INFORMATION.\nONE BIT: 0 OR 1. SIX BITS:\n64 POSSIBLE LINE PATTERNS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 1452
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1982: COMMODORE 64",
+   "a": "AN 8-BIT HOME COMPUTER.\nITS 64 IS KILOBYTES,\nNOT HEXAGRAMS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 1701
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "TODAY: 8-BIT ORACLE",
+   "a": "SIX SOLID OR BROKEN LINES\nFIT IN A BYTE: EIGHT BITS.\nREADING THEM TAKES MORE.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-binary.mp4",
+     "flight": true,
+     "from": 1935
+    },
+    "hold": 4
+   }
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick14-lofi-synthwave.mp3",
+ "musicStart": 8,
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "",
+  "seconds": 4.5,
+  "brand": {
+   "name": "8-BIT ORACLE",
+   "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+   "site": "8bitoracle.ai"
+  }
+ },
+ "endMusic": null,
+ "header": "8-BIT ORACLE",
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}
