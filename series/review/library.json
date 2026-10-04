@@ -1,8 +1,8 @@
 {
  "about": "Every finished short with its delivered file and revision history, for the posting schedule (the user, 2026-10-04: 'we need a tracker to keep track of all the shorts we've made along with their revisions so far so we can have a posting schedule after our tik tok and instagram accounts are warmed up'). Written by scripts/library.mjs. A revision is a commit to the render record (or, with no record, to the files in revisionsFrom). kind 'unsure' rows say why; 'excluded' lists what is left out and why. verdict is null: the review board's verdicts live in its artifact database.",
- "generated": "2026-10-01",
+ "generated": "2026-10-04",
  "counts": {
-  "rows": 108,
+  "rows": 110,
   "bySeries": {
    "64 hexagrams": 64,
    "App demo": 3,
@@ -11,17 +11,17 @@
    "Lessons & explainers": 4,
    "Specials": 18,
    "Structure": 5,
-   "Timeline paths": 1
+   "Timeline paths": 3
   },
   "byAccount": {
-   "8-Bit Oracle": 1,
+   "8-Bit Oracle": 3,
    "Six Lines": 107
   },
   "byKind": {
-   "short": 91,
+   "short": 93,
    "unsure": 17
   },
-  "excluded": 46
+  "excluded": 44
  },
  "rows": [
   {
@@ -5549,6 +5549,72 @@
    "notes": []
   },
   {
+   "id": "timeline-binary",
+   "title": "timeline-binary",
+   "series": "Timeline paths",
+   "account": "8-Bit Oracle",
+   "kind": "short",
+   "why": null,
+   "file": "out/timeline/timeline-binary-720p.mp4",
+   "exists": true,
+   "sizeMB": 6.88,
+   "seconds": 77.42,
+   "caption": "The I-Ching's 64 line patterns fit in six bits. Reading them takes more: 8bitoracle.ai",
+   "current": {
+    "commit": "8f5e47270b41ac42efcba6a3bae1d9a996f7ee88",
+    "date": "2026-10-04",
+    "subject": "Render record: timeline Binary (8-Bit Oracle), re-rendered with pictures lifted over two-line names."
+   },
+   "revisions": [
+    {
+     "commit": "8f5e47270b41ac42efcba6a3bae1d9a996f7ee88",
+     "date": "2026-10-04",
+     "subject": "Render record: timeline Binary (8-Bit Oracle), re-rendered with pictures lifted over two-line names."
+    }
+   ],
+   "revisionCount": 1,
+   "revisionsFrom": [
+    "series/renders/explainers/timeline-binary.json"
+   ],
+   "sourceScript": "series/explainers/timeline-binary.json",
+   "tracker": null,
+   "verdict": null,
+   "notes": []
+  },
+  {
+   "id": "timeline-correspondence",
+   "title": "timeline-correspondence",
+   "series": "Timeline paths",
+   "account": "8-Bit Oracle",
+   "kind": "short",
+   "why": null,
+   "file": "out/timeline/timeline-correspondence-720p.mp4",
+   "exists": true,
+   "sizeMB": 7.32,
+   "seconds": 79.13,
+   "caption": "Crowley linked I-Ching symbols to other symbols. AI learns its number tables from text: 8bitoracle.ai",
+   "current": {
+    "commit": "9cba9611334e9155a7715b6dfefb17e19c83b4b3",
+    "date": "2026-10-04",
+    "subject": "Render record: timeline Correspondence (8-Bit Oracle), with pictures lifted over two-line names."
+   },
+   "revisions": [
+    {
+     "commit": "9cba9611334e9155a7715b6dfefb17e19c83b4b3",
+     "date": "2026-10-04",
+     "subject": "Render record: timeline Correspondence (8-Bit Oracle), with pictures lifted over two-line names."
+    }
+   ],
+   "revisionCount": 1,
+   "revisionsFrom": [
+    "series/renders/explainers/timeline-correspondence.json"
+   ],
+   "sourceScript": "series/explainers/timeline-correspondence.json",
+   "tracker": null,
+   "verdict": null,
+   "notes": []
+  },
+  {
    "id": "urizen-qian6",
    "title": "Urizen on Qián line 6",
    "series": "Guides",
@@ -5921,16 +5987,6 @@
    "id": "terminal-godot",
    "source": "out/terminal/7-army-share.mp4",
    "reason": "clip of the dropped Godot terminal"
-  },
-  {
-   "id": "timeline-binary",
-   "source": "series/explainers/timeline-binary.json",
-   "reason": "script only, never rendered as a full short"
-  },
-  {
-   "id": "timeline-correspondence",
-   "source": "series/explainers/timeline-correspondence.json",
-   "reason": "script only, never rendered as a full short"
   },
   {
    "id": "timeline-paths",
