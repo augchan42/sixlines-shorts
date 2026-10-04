@@ -1,0 +1,702 @@
+{
+ "about": "The user's verdicts and comments, copied from the review board (https://claude.ai/artifact/Dms7KJ2SULdsmBhUzsGyym) and the experiments tracker (https://claude.ai/artifact/Gkfv7F8c7vsJqBh15TNFpQ), collection \"reviews\" in each, for the Shorts library page.",
+ "read": "2026-10-04",
+ "board": {
+  "astra-18-cause": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:25.730Z",
+   "verdict": "good"
+  },
+  "astra-18-key": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:19.751Z",
+   "verdict": "good"
+  },
+  "astra-18-modern": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:33.218Z",
+   "verdict": "later"
+  },
+  "astra-18-reveal": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:37.435Z",
+   "verdict": "later"
+  },
+  "astra-22-app": {
+   "comment": "",
+   "updated": "2026-09-28T16:18:05.575Z",
+   "verdict": "change"
+  },
+  "astra-22-readout": {
+   "comment": "",
+   "updated": "2026-09-28T16:17:57.500Z",
+   "verdict": "good"
+  },
+  "astra-22-says": {
+   "comment": "",
+   "updated": "2026-09-28T16:17:36.452Z",
+   "verdict": "good"
+  },
+  "astra-22-takeaways": {
+   "comment": "get rid of polish can't make big decisions",
+   "updated": "2026-09-28T16:17:55.202Z",
+   "verdict": "good"
+  },
+  "astra-30-app": {
+   "comment": "",
+   "updated": "2026-09-28T16:20:22.734Z",
+   "verdict": "change"
+  },
+  "astra-30-cattle": {
+   "comment": "yes i don't like the cattle plate either, find a good alternative",
+   "updated": "2026-09-28T16:20:33.621Z",
+   "verdict": "good"
+  },
+  "astra-30-colour": {
+   "comment": "it's fine.",
+   "updated": "2026-09-28T16:20:20.658Z",
+   "verdict": "change"
+  },
+  "astra-30-fed": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:55.761Z",
+   "verdict": "good"
+  },
+  "astra-30-lesson": {
+   "comment": "",
+   "updated": "2026-09-28T16:19:48.968Z",
+   "verdict": "good"
+  },
+  "copy-01": {
+   "comment": "",
+   "updated": "2026-09-30T00:12:27.244Z",
+   "verdict": "good"
+  },
+  "copy-02": {
+   "comment": "",
+   "updated": "2026-09-29T11:02:05.354Z",
+   "verdict": "opus"
+  },
+  "copy-05": {
+   "comment": "",
+   "updated": "2026-09-30T00:12:52.777Z",
+   "verdict": "good"
+  },
+  "copy-06": {
+   "comment": "",
+   "updated": "2026-09-30T00:13:28.504Z",
+   "verdict": "good"
+  },
+  "copy-07": {
+   "comment": "",
+   "updated": "2026-09-29T11:02:14.565Z",
+   "verdict": "opus"
+  },
+  "copy-08": {
+   "comment": "",
+   "updated": "2026-09-30T00:15:18.226Z",
+   "verdict": "good"
+  },
+  "copy-09": {
+   "comment": "",
+   "updated": "2026-09-29T11:04:30.962Z",
+   "verdict": "astra"
+  },
+  "copy-10": {
+   "comment": "",
+   "updated": "2026-09-30T00:15:36.042Z",
+   "verdict": "good"
+  },
+  "copy-11": {
+   "comment": "",
+   "updated": "2026-09-30T00:15:46.753Z",
+   "verdict": "good"
+  },
+  "copy-12": {
+   "comment": "",
+   "updated": "2026-09-30T00:15:54.534Z",
+   "verdict": "good"
+  },
+  "copy-13": {
+   "comment": "",
+   "updated": "2026-09-29T11:05:02.881Z",
+   "verdict": "opus"
+  },
+  "copy-15": {
+   "comment": "",
+   "updated": "2026-09-29T11:06:26.956Z",
+   "verdict": "astra"
+  },
+  "copy-16": {
+   "comment": "",
+   "updated": "2026-09-30T00:23:48.828Z",
+   "verdict": "good"
+  },
+  "copy-17": {
+   "comment": "",
+   "updated": "2026-09-29T11:09:49.650Z",
+   "verdict": "astra"
+  },
+  "copy-18": {
+   "comment": "",
+   "updated": "2026-09-30T00:24:01.199Z",
+   "verdict": "good"
+  },
+  "copy-19": {
+   "comment": "",
+   "updated": "2026-09-30T00:24:11.137Z",
+   "verdict": "good"
+  },
+  "copy-20": {
+   "comment": "",
+   "updated": "2026-09-29T11:10:00.549Z",
+   "verdict": "opus"
+  },
+  "copy-21": {
+   "comment": "",
+   "updated": "2026-09-30T00:24:30.588Z",
+   "verdict": "good"
+  },
+  "copy-22": {
+   "comment": "",
+   "updated": "2026-09-30T00:24:41.241Z",
+   "verdict": "good"
+  },
+  "copy-24": {
+   "comment": "",
+   "updated": "2026-09-29T11:10:33.079Z",
+   "verdict": "opus"
+  },
+  "copy-25": {
+   "comment": "",
+   "updated": "2026-09-30T00:26:00.902Z",
+   "verdict": "good"
+  },
+  "copy-26": {
+   "comment": "But use Opu's version for the finding \nLINE 5: A GELDED BOAR KEEPS ITS TUSKS.\nTHE FORCE IS HELD, NOT LOST.",
+   "updated": "2026-09-29T11:12:42.271Z",
+   "verdict": "astra"
+  },
+  "copy-27": {
+   "comment": "",
+   "updated": "2026-09-30T00:26:11.245Z",
+   "verdict": "good"
+  },
+  "copy-28": {
+   "comment": "",
+   "updated": "2026-09-30T00:26:31.706Z",
+   "verdict": "good"
+  },
+  "copy-29": {
+   "comment": "",
+   "updated": "2026-09-29T11:13:09.414Z",
+   "verdict": "astra"
+  },
+  "copy-30": {
+   "comment": "",
+   "updated": "2026-09-29T11:13:34.677Z",
+   "verdict": "astra"
+  },
+  "copy-32": {
+   "comment": "",
+   "updated": "2026-09-29T11:14:08.236Z",
+   "verdict": "astra"
+  },
+  "copy-33": {
+   "comment": "",
+   "updated": "2026-09-30T00:49:49.468Z",
+   "verdict": "good"
+  },
+  "copy-34": {
+   "comment": "",
+   "updated": "2026-09-29T11:15:16.229Z",
+   "verdict": "astra"
+  },
+  "copy-35": {
+   "comment": "",
+   "updated": "2026-09-29T11:19:12.753Z",
+   "verdict": "astra"
+  },
+  "copy-36": {
+   "comment": "",
+   "updated": "2026-09-30T00:51:56.618Z",
+   "verdict": "good"
+  },
+  "copy-37": {
+   "comment": "",
+   "updated": "2026-09-30T00:52:07.259Z",
+   "verdict": "good"
+  },
+  "copy-38": {
+   "comment": "",
+   "updated": "2026-09-30T00:52:17.153Z",
+   "verdict": "good"
+  },
+  "copy-39": {
+   "comment": "",
+   "updated": "2026-09-29T11:19:32.690Z",
+   "verdict": "astra"
+  },
+  "copy-40": {
+   "comment": "",
+   "updated": "2026-09-30T00:52:22.030Z",
+   "verdict": "good"
+  },
+  "copy-41": {
+   "comment": "",
+   "updated": "2026-09-29T11:21:15.206Z",
+   "verdict": "opus"
+  },
+  "copy-42": {
+   "comment": "",
+   "updated": "2026-09-30T00:54:28.444Z",
+   "verdict": "good"
+  },
+  "copy-43": {
+   "comment": "",
+   "updated": "2026-09-30T01:08:45.863Z",
+   "verdict": "good"
+  },
+  "copy-44": {
+   "comment": "",
+   "updated": "2026-09-30T01:43:32.380Z",
+   "verdict": "good"
+  },
+  "copy-45": {
+   "comment": "",
+   "updated": "2026-09-30T01:43:40.644Z",
+   "verdict": "good"
+  },
+  "copy-46": {
+   "comment": "",
+   "updated": "2026-09-29T11:21:34.891Z",
+   "verdict": "astra"
+  },
+  "copy-47": {
+   "comment": "",
+   "updated": "2026-09-30T01:43:48.164Z",
+   "verdict": "good"
+  },
+  "copy-48": {
+   "comment": "",
+   "updated": "2026-09-30T01:43:53.798Z",
+   "verdict": "good"
+  },
+  "copy-49": {
+   "comment": "",
+   "updated": "2026-09-30T02:04:27.578Z",
+   "verdict": "good"
+  },
+  "copy-50": {
+   "comment": "",
+   "updated": "2026-09-30T02:04:44.813Z",
+   "verdict": "good"
+  },
+  "copy-53": {
+   "comment": "",
+   "updated": "2026-09-29T23:42:53.139Z",
+   "verdict": "astra"
+  },
+  "copy-54": {
+   "comment": "",
+   "updated": "2026-09-29T23:43:05.622Z",
+   "verdict": "opus"
+  },
+  "copy-55": {
+   "comment": "",
+   "updated": "2026-09-30T02:10:01.295Z",
+   "verdict": "good"
+  },
+  "copy-56": {
+   "comment": "",
+   "updated": "2026-09-30T00:09:04.237Z",
+   "verdict": "opus"
+  },
+  "copy-57": {
+   "comment": "",
+   "updated": "2026-09-30T00:09:22.366Z",
+   "verdict": "astra"
+  },
+  "copy-58": {
+   "comment": "",
+   "updated": "2026-09-30T00:09:43.520Z",
+   "verdict": "astra"
+  },
+  "copy-59": {
+   "comment": "",
+   "updated": "2026-09-30T00:11:22.759Z",
+   "verdict": "opus"
+  },
+  "copy-61": {
+   "comment": "",
+   "updated": "2026-09-30T00:11:57.143Z",
+   "verdict": "opus"
+  },
+  "copy-62": {
+   "comment": "",
+   "updated": "2026-09-30T02:10:15.025Z",
+   "verdict": "good"
+  },
+  "copy-64": {
+   "comment": "",
+   "updated": "2026-09-30T02:10:41.496Z",
+   "verdict": "good"
+  },
+  "decide-chinese-key": {
+   "comment": "",
+   "updated": "2026-09-28T16:21:01.369Z",
+   "verdict": "good"
+  },
+  "decide-endcards-51": {
+   "comment": "i think this was done alrdady",
+   "updated": "2026-09-28T16:21:00.274Z",
+   "verdict": null
+  },
+  "decide-lesson-loop": {
+   "comment": "",
+   "updated": "2026-09-28T16:21:07.779Z",
+   "verdict": "good"
+  },
+  "decide-says": {
+   "comment": "",
+   "updated": "2026-09-28T16:20:53.103Z",
+   "verdict": "change"
+  },
+  "lesson-wangbi": {
+   "comment": "read the amber finding... this sentence shows on the sfcreen way too fast then goes away (around 2:50 mark)\nbut overall looks good,\noh the end credit ends too abruptly",
+   "updated": "2026-09-27T12:32:45.268Z",
+   "verdict": "change"
+  },
+  "short-01": {
+   "comment": "",
+   "updated": "2026-09-29T10:03:28.475Z",
+   "verdict": "good"
+  },
+  "short-02": {
+   "comment": "",
+   "updated": "2026-09-29T10:03:56.922Z",
+   "verdict": "good"
+  },
+  "short-03": {
+   "comment": "",
+   "updated": "2026-09-28T16:13:59.886Z",
+   "verdict": "good"
+  },
+  "short-04": {
+   "comment": "",
+   "updated": "2026-09-29T10:05:04.496Z",
+   "verdict": "good"
+  },
+  "short-05": {
+   "comment": "",
+   "updated": "2026-09-28T16:21:52.901Z",
+   "verdict": "good"
+  },
+  "short-06": {
+   "comment": "",
+   "updated": "2026-09-28T16:15:46.497Z",
+   "verdict": "good"
+  },
+  "short-07": {
+   "comment": "sound is a bit low for some reason? or am i imaginging things",
+   "updated": "2026-09-29T10:07:03.486Z",
+   "verdict": "change"
+  },
+  "short-08": {
+   "comment": "",
+   "updated": "2026-09-28T16:16:46.385Z",
+   "verdict": "good"
+  },
+  "short-09": {
+   "comment": "",
+   "updated": "2026-09-29T10:08:42.304Z",
+   "verdict": "good"
+  },
+  "short-10": {
+   "comment": "",
+   "updated": "2026-09-29T10:09:15.235Z",
+   "verdict": "good"
+  },
+  "short-11": {
+   "comment": "",
+   "updated": "2026-09-29T10:09:48.902Z",
+   "verdict": "good"
+  },
+  "short-12": {
+   "comment": "",
+   "updated": "2026-09-29T10:19:22.097Z",
+   "verdict": "good"
+  },
+  "short-13": {
+   "comment": "",
+   "updated": "2026-09-29T10:20:01.061Z",
+   "verdict": "good"
+  },
+  "short-14": {
+   "comment": "",
+   "updated": "2026-09-28T16:15:08.683Z",
+   "verdict": "good"
+  },
+  "short-15": {
+   "comment": "",
+   "updated": "2026-09-29T10:21:10.162Z",
+   "verdict": "good"
+  },
+  "short-16": {
+   "comment": "",
+   "updated": "2026-09-28T16:16:17.261Z",
+   "verdict": "good"
+  },
+  "short-17": {
+   "comment": "",
+   "updated": "2026-09-29T10:22:18.303Z",
+   "verdict": "good"
+  },
+  "short-18": {
+   "comment": "",
+   "updated": "2026-09-29T10:22:53.924Z",
+   "verdict": "good"
+  },
+  "short-19": {
+   "comment": "",
+   "updated": "2026-09-29T10:23:33.343Z",
+   "verdict": "good"
+  },
+  "short-20": {
+   "comment": "",
+   "updated": "2026-09-29T10:24:09.009Z",
+   "verdict": "good"
+  },
+  "short-21": {
+   "comment": "",
+   "updated": "2026-09-29T10:24:44.404Z",
+   "verdict": "good"
+  },
+  "short-22": {
+   "comment": "",
+   "updated": "2026-09-29T10:25:19.404Z",
+   "verdict": "good"
+  },
+  "short-23": {
+   "comment": "love the music on this",
+   "updated": "2026-09-30T02:14:42.136Z",
+   "verdict": "good"
+  },
+  "short-24": {
+   "comment": "",
+   "updated": "2026-09-30T02:15:14.173Z",
+   "verdict": "good"
+  },
+  "short-25": {
+   "comment": "",
+   "updated": "2026-09-30T02:15:48.876Z",
+   "verdict": "good"
+  },
+  "short-26": {
+   "comment": "",
+   "updated": "2026-09-30T02:34:20.076Z",
+   "verdict": "good"
+  },
+  "short-35": {
+   "comment": "could last a bit longer so the music fades more naturally",
+   "updated": "2026-09-28T16:14:36.536Z",
+   "verdict": "good"
+  }
+ },
+ "tracker": {
+  "bird-62": {
+   "at": "2026-10-01T02:47:38.895Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "bite-21": {
+   "at": "2026-10-01T02:48:02.103Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "blender-hexagram": {
+   "at": "2026-10-01T02:51:41.094Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "bookend-kun": {
+   "at": "2026-10-01T02:42:07.922Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "bookend-launch": {
+   "at": "2026-10-01T02:43:09.590Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "character-drawings": {
+   "at": "2026-10-01T02:40:49.904Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "character-specials": {
+   "at": "2026-10-01T02:40:53.012Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "collapse-3d-23": {
+   "at": "2026-10-01T02:48:40.650Z",
+   "comment": "doesn't really show them collapsing",
+   "verdict": "change"
+  },
+  "demo-walkthrough": {
+   "at": "2026-10-01T02:36:53.338Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "glowline-qian": {
+   "at": "2026-10-01T02:43:43.272Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "guide-64": {
+   "at": "2026-10-01T02:35:59.747Z",
+   "comment": "they are better known as before completion and after completion, change to use this terminology",
+   "verdict": "change"
+  },
+  "guide-cords": {
+   "at": "2026-10-01T02:14:53.589Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "guide-leibniz": {
+   "at": "2026-10-01T02:23:50.771Z",
+   "comment": "the yellow diagram when first shown doesn't have enough time to finish displaying.\nanytime a person is mentioned, draw it.  get the open source images available for fu xi, shao yong, etc then draw simple polygon versions",
+   "verdict": "change"
+  },
+  "guide-trigrams": {
+   "at": "2026-10-01T02:24:55.633Z",
+   "comment": "already across / after completion",
+   "verdict": "change"
+  },
+  "guide-wangbi": {
+   "at": "2026-10-01T02:10:57.496Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "horse-2": {
+   "at": "2026-10-01T02:39:32.308Z",
+   "comment": "overall good, but the images from the app are a bit too western, this indicates some issue with our matrix stipple style, it seems to steer towards western figures and styles",
+   "verdict": "good"
+  },
+  "judgment-3d-10": {
+   "at": "2026-10-01T02:49:08.687Z",
+   "comment": "its a good style",
+   "verdict": "good"
+  },
+  "leibniz-lesson": {
+   "at": "2026-10-01T02:31:58.354Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "neon-forms": {
+   "at": "2026-10-01T02:40:49.790Z",
+   "comment": "we need to show the pinyin and english meaning in the beginning.  overall very good, we need to think abougt how to incorporate these better",
+   "verdict": "change"
+  },
+  "neon-signs": {
+   "at": "2026-10-01T02:38:00.335Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "readout-14": {
+   "at": "2026-10-01T02:49:28.580Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "readout-21": {
+   "at": "2026-10-01T02:50:00.870Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "readout-key": {
+   "at": "2026-10-01T02:36:23.890Z",
+   "comment": "nice use of music",
+   "verdict": "good"
+  },
+  "shannon-short": {
+   "at": "2026-10-01T02:31:44.887Z",
+   "comment": "show an image of claude shannon, use the one i use from 8bitoracle-brand in green tint",
+   "verdict": "change"
+  },
+  "structure-codons": {
+   "at": "2026-10-01T02:26:54.271Z",
+   "comment": "needs more graphics, maybe showing the helix structure or something else graphical about the codon.  all references to I-Ching should have a dash I-Ching",
+   "verdict": "change"
+  },
+  "structure-count": {
+   "at": "2026-10-01T02:27:19.614Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "structure-cube": {
+   "at": "2026-10-01T02:28:55.526Z",
+   "comment": "I-Ching needs a dash.  maybe fly through the hypercube somehow to better show the traversal from heaven to earth",
+   "verdict": "change"
+  },
+  "structure-octagons": {
+   "at": "2026-10-01T02:29:00.317Z",
+   "comment": "try it out",
+   "verdict": "good"
+  },
+  "structure-pairs": {
+   "at": "2026-10-01T02:29:41.668Z",
+   "comment": "love it, keep going",
+   "verdict": "good"
+  },
+  "structure-splits": {
+   "at": "2026-10-01T02:29:57.007Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "structure-timeline": {
+   "at": "2026-10-01T02:30:24.612Z",
+   "comment": "needs more images",
+   "verdict": "change"
+  },
+  "style-reels": {
+   "at": "2026-10-01T02:54:28.571Z",
+   "comment": "abyss hexagram line animation is good, end credit still shows reveal the moment with a period at the end",
+   "verdict": "good"
+  },
+  "terminal-godot": {
+   "at": "2026-10-01T02:52:44.070Z",
+   "comment": "godot is good, but we aren't really taking advantage of it to warrant the 10mb download.",
+   "verdict": "change"
+  },
+  "transitions-v2": {
+   "at": "2026-10-01T02:51:32.511Z",
+   "comment": "no real comment, these are just old attempts and can be parked or dropped.  in general we don't want to shake the screen so much"
+  },
+  "urizen-qian6": {
+   "at": "2026-10-01T02:12:28.978Z",
+   "comment": "adding a card and making the head smaller doean't do too much, maybe transition to not showing urizen after he speaks and focusing on the compass/measuring instrument somehow, or something else about blake",
+   "verdict": "change"
+  },
+  "wangbi-flight-tests": {
+   "at": "2026-10-01T02:36:30.164Z",
+   "comment": "",
+   "verdict": "good"
+  },
+  "wangbi-lesson": {
+   "at": "2026-10-01T02:33:54.239Z",
+   "comment": "it's a bit long, but that's ok, for lessons this long we may need some background music",
+   "verdict": "change"
+  },
+  "wangbi-teaser": {
+   "at": "2026-10-01T02:34:52.348Z",
+   "comment": "consider add ing appropriate background music",
+   "verdict": "change"
+  },
+  "wuyue-video": {
+   "at": "2026-10-01T02:43:12.648Z",
+   "comment": "",
+   "verdict": "good"
+  }
+ }
+}

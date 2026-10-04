@@ -1,0 +1,303 @@
+<title>Shorts Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&family=VT323&display=swap">
+<style>
+/* Layout: the experiments tracker's production-log look. Counts, view tabs and filters, then
+   either the library (one section per series, a row per short) or the schedule (dated posts by
+   day, then shorts marked ready that have no date). Template for scripts/library-page.mjs. */
+:root {
+  --bg: #f4f7f4;
+  --panel: #ffffff;
+  --rule: #cfd9d1;
+  --fg: #142018;
+  --dim: #5b6b5f;
+  --green: #1d8a33;
+  --amber: #a85f00;
+  --cyan: #0a6f8a;
+  --red: #b3392b;
+  --on-accent: #ffffff;
+  --glow: none;
+  --display: "VT323", "IBM Plex Mono", ui-monospace, monospace;
+  --body: "IBM Plex Sans", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0f0c; --panel: #111813; --rule: #233027; --fg: #d9e6dc; --dim: #8a9b8e;
+    --green: #6cff7a; --amber: #ffb347; --cyan: #6fe3ff; --red: #ff7a6c; --on-accent: #0b0f0c;
+    --glow: 0 0 12px #6cff7a40; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b0f0c; --panel: #111813; --rule: #233027; --fg: #d9e6dc; --dim: #8a9b8e;
+  --green: #6cff7a; --amber: #ffb347; --cyan: #6fe3ff; --red: #ff7a6c; --on-accent: #0b0f0c;
+  --glow: 0 0 12px #6cff7a40; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 28px 16px 60px; display: grid; gap: 22px; }
+header { display: grid; gap: 6px; }
+h1 { font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 1; color: var(--green); margin: 0; letter-spacing: 0.02em; text-shadow: var(--glow); }
+.sub { color: var(--dim); margin: 0; max-width: 70ch; }
+.sub a { color: var(--cyan); }
+.counts { display: flex; flex-wrap: wrap; gap: 10px; }
+.count { border: 1px solid var(--rule); background: var(--panel); padding: 10px 14px; min-width: 110px; display: grid; gap: 2px; }
+.count b { font-family: var(--display); font-size: 34px; font-weight: 400; line-height: 1; font-variant-numeric: tabular-nums; }
+.count span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dim); }
+.count.ready b { color: var(--green); } .count.scheduled b { color: var(--cyan); } .count.work b { color: var(--amber); }
+.bar { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.tabs, .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tabs button { font: 600 13px var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 14px; border-radius: 3px; border: 1px solid var(--rule); background: var(--panel); color: var(--dim); cursor: pointer; }
+.tabs button[aria-pressed="true"] { color: var(--on-accent); background: var(--green); border-color: var(--green); }
+.chips button { font: 12px var(--mono); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--rule); background: transparent; color: var(--dim); cursor: pointer; }
+.chips button[aria-pressed="true"] { color: var(--green); border-color: var(--green); }
+input[type="search"] { font: 13px var(--body); padding: 6px 10px; border: 1px solid var(--rule); border-radius: 3px; background: var(--panel); color: var(--fg); min-width: 0; width: 220px; max-width: 100%; }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+section { display: grid; }
+section h2 { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); display: flex; gap: 10px; align-items: baseline; }
+section h2 small { color: var(--dim); font-weight: 400; letter-spacing: 0.04em; }
+.groups { display: grid; gap: 28px; }
+.item { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.item.flag { box-shadow: inset 3px 0 0 var(--amber); padding-left: 12px; }
+.main { min-width: 0; display: grid; gap: 4px; align-content: start; }
+.main h3 { margin: 0; font-size: 16px; font-weight: 600; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.main h3 .acct { font: 11px var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--cyan); }
+.main p { margin: 0; max-width: 70ch; }
+.why { color: var(--amber); font-size: 13px; }
+.meta { font-family: var(--mono); font-size: 12px; color: var(--dim); display: flex; flex-wrap: wrap; gap: 4px 12px; overflow-wrap: anywhere; }
+.verdict { font-size: 13px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.tag { font: 11px var(--mono); letter-spacing: 0.04em; text-transform: uppercase; padding: 1px 6px; border: 1px solid currentColor; border-radius: 3px; white-space: nowrap; }
+.v-good, .v-opus, .v-astra, .v-approved, .v-posted { color: var(--green); }
+.v-change { color: var(--amber); }
+.v-drop, .v-dropped { color: var(--red); }
+.said { color: var(--fg); border-left: 2px solid var(--green); padding-left: 10px; font-style: italic; font-size: 14px; white-space: pre-line; }
+details { font-size: 13px; }
+summary { cursor: pointer; color: var(--cyan); font-family: var(--mono); font-size: 12px; }
+details ol, details ul { margin: 4px 0 0; padding-left: 20px; color: var(--dim); }
+details li code { color: var(--fg); }
+pre.caption { white-space: pre-wrap; margin: 4px 0 0; font: 13px var(--body); background: var(--panel); border: 1px solid var(--rule); padding: 8px 10px; border-radius: 3px; }
+.file { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.file code { font: 12px var(--mono); color: var(--dim); overflow-wrap: anywhere; user-select: all; }
+.copy { font: 11px var(--mono); padding: 2px 8px; border-radius: 3px; border: 1px solid var(--rule); background: var(--panel); color: var(--cyan); cursor: pointer; }
+.plan { display: grid; gap: 8px; align-content: start; min-width: 0; }
+.plan label { display: grid; grid-template-columns: 92px minmax(0, 1fr) auto; gap: 8px; align-items: center; font: 12px var(--mono); color: var(--dim); }
+.plan label.status { grid-template-columns: 92px minmax(0, 1fr); }
+.plan input[type="date"], .plan select, .plan textarea { font: 13px var(--body); padding: 4px 6px; border: 1px solid var(--rule); border-radius: 3px; background: var(--panel); color: var(--fg); min-width: 0; width: 100%; }
+.plan textarea { min-height: 40px; resize: vertical; }
+.plan .posted { display: flex; gap: 4px; align-items: center; font: 11px var(--mono); }
+.saved { font: 11px var(--mono); color: var(--dim); min-height: 1em; }
+.day { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); }
+.day time { font-family: var(--mono); font-size: 13px; color: var(--green); }
+.day ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.day li { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.pf { font: 11px var(--mono); letter-spacing: 0.04em; text-transform: uppercase; color: var(--cyan); min-width: 84px; }
+.done { text-decoration: line-through; color: var(--dim); }
+.empty { border: 1px dashed var(--rule); padding: 20px; color: var(--dim); max-width: 70ch; }
+.notice { font-size: 13px; color: var(--amber); }
+@media (max-width: 760px) {
+  .item { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .day { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>SHORTS LIBRARY</h1>
+    <p class="sub">Every finished short, its current version and revisions, your verdicts from the <a href="https://claude.ai/artifact/Dms7KJ2SULdsmBhUzsGyym" target="_blank" rel="noopener">review board</a> and the <a href="https://claude.ai/artifact/Gkfv7F8c7vsJqBh15TNFpQ" target="_blank" rel="noopener">experiments tracker</a>, and a posting plan for TikTok, Instagram and YouTube Shorts. Set a status and dates here; Claude reads them back. An amber edge means a "change" verdict came after the current version.</p>
+    <p class="sub" id="stamp"></p>
+  </header>
+  <div class="counts" id="counts"></div>
+  <div class="bar">
+    <div class="tabs" id="tabs"></div>
+    <input type="search" id="q" placeholder="Search title, id, caption" aria-label="Search">
+  </div>
+  <div class="bar"><div class="chips" id="accounts"></div><div class="chips" id="statuses"></div></div>
+  <p class="notice" id="notice" hidden></p>
+  <div class="groups" id="out"></div>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const ROOT = "/Users/auchan/projects/sixlines-shorts/";
+const PLATFORMS = [["tiktok", "TikTok"], ["instagram", "Instagram"], ["youtube", "YouTube Shorts"]];
+const STATUSES = [["", "not set"], ["needs-work", "needs work"], ["ready", "ready"], ["scheduled", "scheduled"], ["posted", "posted"], ["skip", "skip"]];
+const SERIES = ["64 hexagrams", "Timeline paths", "Lessons & explainers", "Guides", "Structure", "Specials", "Bookends", "App demo"];
+const state = { view: "library", account: "all", status: "all", q: "", plan: {}, db: undefined, writable: true };
+const rows = new Map();
+
+const el = (tag, attrs = {}, ...kids) => {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k === "class") e.className = v; else if (k.startsWith("on")) e.addEventListener(k.slice(2), v); else e.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== "") e.append(k);
+  return e;
+};
+const fmtDate = (d) => d ? new Date(d + (d.length === 10 ? "T12:00:00" : "")).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" }) : "";
+const mmss = (s) => s == null ? "" : `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
+const statusOf = (id) => (state.plan[id] && state.plan[id].status) || "";
+
+// A "change" verdict newer than the current version means the short still needs work.
+const changePending = (r) => {
+  const latest = r.verdicts.find((v) => v.kind === "short") || r.verdicts[0];
+  return !!latest && latest.verdict === "change" && (latest.at || "").slice(0, 10) >= (r.current?.date || "");
+};
+
+function counts() {
+  const n = (f) => DATA.rows.filter(f).length;
+  const tiles = [
+    ["", "shorts", DATA.rows.length],
+    ["ready", "ready", n((r) => statusOf(r.id) === "ready")],
+    ["scheduled", "scheduled", n((r) => statusOf(r.id) === "scheduled")],
+    ["", "posted", n((r) => statusOf(r.id) === "posted")],
+    ["work", "change asked", n(changePending)],
+  ];
+  document.getElementById("counts").replaceChildren(...tiles.map(([k, label, v]) => el("div", { class: `count ${k}` }, el("b", {}, String(v)), el("span", {}, label))));
+}
+
+function chips(id, opts, key) {
+  document.getElementById(id).replaceChildren(...opts.map(([k, label]) =>
+    el("button", { "aria-pressed": String(state[key] === k), onclick: () => { state[key] = k; remember(); render(); } }, label)));
+}
+
+function remember() {
+  try { localStorage.setItem("library-view", JSON.stringify({ view: state.view, account: state.account, status: state.status })); } catch {}
+}
+
+function matches(r) {
+  if (state.account !== "all" && r.account !== state.account) return false;
+  if (state.status === "change") { if (!changePending(r)) return false; }
+  else if (state.status !== "all" && statusOf(r.id) !== state.status) return false;
+  const q = state.q.trim().toLowerCase();
+  return !q || [r.id, r.title, r.caption, r.series].some((s) => (s || "").toLowerCase().includes(q));
+}
+
+async function save(id, patch) {
+  const next = { ...(state.plan[id] || {}), ...patch, at: new Date().toISOString() };
+  state.plan[id] = next;
+  const row = rows.get(id);
+  if (!state.db) { if (row) row.saved.textContent = "not saved: the database isn't available in this view"; return; }
+  try {
+    await state.db.collection("schedule").doc(id).set(next);
+    if (row) row.saved.textContent = "saved " + new Date(next.at).toLocaleString(undefined, { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
+  } catch (e) {
+    if (row) row.saved.textContent = "not saved: " + (e && e.message ? e.message : "try again");
+  }
+  counts();
+}
+
+function copyPath(text, btn) {
+  const done = () => { btn.textContent = "copied"; setTimeout(() => { btn.textContent = "copy path"; }, 1500); };
+  try { navigator.clipboard.writeText(text).then(done, () => {}); } catch {}
+}
+
+function planBox(r) {
+  const p = state.plan[r.id] || {};
+  const ro = !state.writable || !state.db;
+  const status = el("select", { "aria-label": `Status of ${r.title}`, disabled: ro, onchange: (e) => save(r.id, { status: e.target.value }) },
+    STATUSES.map(([k, label]) => el("option", { value: k, selected: (p.status || "") === k }, label)));
+  const lines = PLATFORMS.map(([k, label]) => {
+    const cur = p[k] || {};
+    const date = el("input", { type: "date", value: cur.date || "", disabled: ro, "aria-label": `${label} date for ${r.title}`,
+      onchange: (e) => save(r.id, { [k]: { ...(state.plan[r.id]?.[k] || {}), date: e.target.value } }) });
+    const done = el("input", { type: "checkbox", disabled: ro, "aria-label": `Posted on ${label}`,
+      onchange: (e) => save(r.id, { [k]: { ...(state.plan[r.id]?.[k] || {}), posted: e.target.checked } }) });
+    done.checked = !!cur.posted;
+    return el("label", {}, label, date, el("span", { class: "posted" }, done, "posted"));
+  });
+  const note = el("textarea", { placeholder: "Posting note", "aria-label": `Posting note for ${r.title}`, readonly: ro,
+    onblur: (e) => { if ((state.plan[r.id]?.note || "") !== e.target.value) save(r.id, { note: e.target.value }); } });
+  note.value = p.note || "";
+  const saved = el("span", { class: "saved" }, p.at ? "saved " + fmtDate(p.at.slice(0, 10)) : "");
+  return { box: el("div", { class: "plan" }, el("label", { class: "status" }, "status", status), lines, note, saved), saved };
+}
+
+function item(r) {
+  const plan = planBox(r);
+  const said = r.verdicts.filter((v) => v.comment);
+  const row = el("div", { class: `item ${changePending(r) ? "flag" : ""}` },
+    el("div", { class: "main" },
+      el("h3", {}, r.title, el("span", { class: "acct" }, r.account), r.stage ? el("span", { class: `tag v-${r.stage}` }, r.stage) : null),
+      r.kind === "unsure" ? el("p", { class: "why" }, "Unsure: " + r.why) : null,
+      el("div", { class: "meta" }, el("span", {}, r.id), el("span", {}, mmss(r.seconds)), r.sizeMB != null ? el("span", {}, r.sizeMB + " MB") : null,
+        r.exists ? null : el("span", { class: "why" }, "file missing")),
+      r.current ? el("p", { class: "meta" }, el("span", {}, `current ${r.current.date}`), el("span", {}, r.current.commit.slice(0, 7)), el("span", {}, r.current.subject.length > 140 ? r.current.subject.slice(0, 140) + "…" : r.current.subject)) : null,
+      r.verdicts.length ? el("div", { class: "verdict" }, r.verdicts.map((v) => el("span", { class: `tag v-${v.verdict || "none"}`, title: `${v.from}, ${v.kind}, ${(v.at || "").slice(0, 10)}` }, `${v.kind === "copy" ? "copy " : ""}${v.verdict || "comment"}`))) : null,
+      said.length ? el("p", { class: "said" }, said.map((v) => `“${v.comment}” (${v.kind === "copy" ? "copy, " : ""}${(v.at || "").slice(0, 10)})`).join("\n")) : (r.userSaid ? el("p", { class: "said" }, `“${r.userSaid}”`) : null),
+      el("div", { class: "file" }, el("code", {}, ROOT + r.file), el("button", { class: "copy", onclick: (e) => copyPath(ROOT + r.file, e.currentTarget) }, "copy path")),
+      r.caption ? el("details", {}, el("summary", {}, "caption"), el("pre", { class: "caption" }, r.caption)) : null,
+      el("details", {}, el("summary", {}, `${r.revisions.length} revision${r.revisions.length === 1 ? "" : "s"}`),
+        el("ol", {}, r.revisions.map((v) => el("li", {}, `${v.date} `, el("code", {}, v.commit.slice(0, 7)), ` ${v.subject}`)))),
+      r.notes && r.notes.length ? el("ul", { class: "meta" }, r.notes.map((n) => el("li", {}, n))) : null),
+    plan.box);
+  rows.set(r.id, { saved: plan.saved });
+  return row;
+}
+
+function library(list) {
+  const order = [...SERIES, ...new Set(list.map((r) => r.series).filter((s) => !SERIES.includes(s)))];
+  return order.map((s) => {
+    const rs = list.filter((r) => r.series === s);
+    return rs.length ? el("section", {}, el("h2", {}, s, el("small", {}, String(rs.length))), rs.map(item)) : null;
+  }).filter(Boolean);
+}
+
+function schedule(list) {
+  const byDay = {};
+  for (const r of list) for (const [k, label] of PLATFORMS) {
+    const p = state.plan[r.id]?.[k];
+    if (p && p.date) (byDay[p.date] ||= []).push({ r, label, posted: !!p.posted });
+  }
+  const days = Object.keys(byDay).sort();
+  const out = [];
+  out.push(el("section", {}, el("h2", {}, "Dated posts", el("small", {}, String(days.reduce((n, d) => n + byDay[d].length, 0)))),
+    days.length ? days.map((d) => el("div", { class: "day" }, el("time", { datetime: d }, fmtDate(d)),
+      el("ul", {}, byDay[d].map(({ r, label, posted }) => el("li", { class: posted ? "done" : "" }, el("span", { class: "pf" }, label), `${r.title}`, el("span", { class: "meta" }, r.account)))))) :
+      el("div", { class: "empty" }, "No dates yet. Pick a date per platform in the library view.")));
+  const waiting = list.filter((r) => statusOf(r.id) === "ready" && !PLATFORMS.some(([k]) => state.plan[r.id]?.[k]?.date));
+  out.push(el("section", {}, el("h2", {}, "Ready, no date", el("small", {}, String(waiting.length))),
+    waiting.length ? waiting.map(item) : el("div", { class: "empty" }, "Nothing marked ready without a date.")));
+  return out;
+}
+
+function render() {
+  chips("tabs", [["library", "library"], ["schedule", "schedule"]], "view");
+  chips("accounts", [["all", "all accounts"], ["Six Lines", "Six Lines"], ["8-Bit Oracle", "8-Bit Oracle"]], "account");
+  chips("statuses", [["all", "any status"], ...STATUSES.map(([k, l]) => [k, l]), ["change", "change asked"]], "status");
+  counts();
+  rows.clear();
+  const list = DATA.rows.filter(matches);
+  const parts = state.view === "schedule" ? schedule(list) : library(list);
+  document.getElementById("out").replaceChildren(...(parts.length ? parts : [el("div", { class: "empty" }, "Nothing matches these filters.")]));
+}
+
+(async () => {
+  document.getElementById("stamp").textContent = `Library built ${DATA.generated}; verdicts read ${DATA.verdictsRead}. ${DATA.excluded.length} files left out (style tests, superseded cuts), listed in series/review/library.json.`;
+  try { Object.assign(state, JSON.parse(localStorage.getItem("library-view") || "{}")); } catch {}
+  let t;
+  document.getElementById("q").addEventListener("input", (e) => { clearTimeout(t); t = setTimeout(() => { state.q = e.target.value; render(); }, 150); });
+  render();
+  const notice = document.getElementById("notice");
+  let db = null;
+  try { db = await (window.claude?.use ? window.claude.use("db") : null); } catch {}
+  state.db = db;
+  if (!db) { notice.hidden = false; notice.textContent = "The posting plan isn't available in this view (open it on claude.ai, signed in). The library below is read-only."; render(); return; }
+  try {
+    const user = await window.claude.use("user");
+    const can = user?.can ? await user.can("data.write") : null;
+    if (can === false) state.writable = false;
+  } catch {}
+  let first = true;
+  db.collection("schedule").onSnapshot((s) => {
+    const next = {};
+    for (const d of s.docs) next[d.id] = d.data();
+    state.plan = next;
+    // Redraw on the first load and when another viewer changes something, but not under a
+    // control that has focus here.
+    if (first || !document.activeElement || document.activeElement === document.body) render(); else counts();
+    first = false;
+  }, () => { notice.hidden = false; notice.textContent = "Couldn't read the posting plan."; });
+})();
+</script>
