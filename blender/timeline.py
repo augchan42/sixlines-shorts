@@ -105,8 +105,8 @@ def date_sign(k, text, font, lx=0.0, tag=""):
     return o, holder, floor
 
 
-def picture(name, path, parent, x, height, frame_colour, dim=1.0):
-    """A picture standing above a date: the image lit by itself, in a thin green frame."""
+def picture(name, path, parent, x, height, frame_colour, dim=1.0, z=PIC_Z):
+    """A picture standing above a date (bottom edge at `z`): the image lit by itself, in a thin green frame."""
     img = bpy.data.images.load(path, check_existing=True)
     w = height * img.size[0] / img.size[1]
     bpy.ops.mesh.primitive_plane_add(size=1)
@@ -114,7 +114,7 @@ def picture(name, path, parent, x, height, frame_colour, dim=1.0):
     o.name = name
     o.scale = (w, height, 1)
     o.rotation_euler = (math.radians(90), 0, 0)
-    o.location = (x, -0.02, PIC_Z + height / 2)
+    o.location = (x, -0.02, z + height / 2)
     m = bpy.data.materials.new(name)
     m.use_nodes = True
     nodes, links = m.node_tree.nodes, m.node_tree.links
@@ -131,7 +131,7 @@ def picture(name, path, parent, x, height, frame_colour, dim=1.0):
     f = bpy.context.object
     f.scale = (w + 0.06, height + 0.06, 1)
     f.rotation_euler = (math.radians(90), 0, 0)
-    f.location = (x, 0.0, PIC_Z + height / 2)
+    f.location = (x, 0.0, z + height / 2)
     f.data.materials.append(frame)
     f.parent = parent
     return glow
@@ -319,9 +319,11 @@ def main():
                 widths = [PIC_H * w / h for w, h in sizes]
                 gap = 0.25
                 x = -(sum(widths) + gap * (len(widths) - 1)) / 2
+            # A name on two lines (COMMODORE / 64) stands taller than PIC_Z: lift its pictures by a line.
+            z = PIC_Z + (0.62 * 0.9 if "\n" in o.data.body else 0)
             glows = []
             for n, (path, w) in enumerate(zip(pics, widths)):
-                glows.append(picture(f"{i}-pic{k}-{n}", path, holder, x + w / 2, PIC_H, GREEN, 1.0 if mine else 0.3))
+                glows.append(picture(f"{i}-pic{k}-{n}", path, holder, x + w / 2, PIC_H, GREEN, 1.0 if mine else 0.3, z))
                 x += w + gap
             m, b = emission(f"{i}-date{k}-glow", GREEN, 3.0 if mine else 0.7)
             o.data.materials.append(m)
