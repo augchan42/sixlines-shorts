@@ -1,0 +1,151 @@
+{
+ "pages": [
+  {
+   "q": "AN OLD BOOK AND A NEW MACHINE",
+   "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE SECOND PATH.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 0
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "TRADITION: KING WEN",
+   "a": "64 HEXAGRAMS: SIX LINES EACH.\nTHEIR ORDER AND SHORT TEXTS\nARE CREDITED TO HIM.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 251
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1907: CROWLEY",
+   "a": "HE WRITES LIBER TRIGRAMMATON:\n27 FIGURES, THREE POSITIONS:\nEACH SOLID, BROKEN OR A DOT.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 502
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1909: CROWLEY'S 777",
+   "a": "EIGHT THREE-LINE PATTERNS\nLINK TO KABBALAH. HE ALSO\nLISTS THE 64 HEXAGRAM MEANINGS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 755
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1924: WILHELM",
+   "a": "HIS GERMAN I-CHING APPEARS,\nWITH HELP FROM THE SCHOLAR\nLAO NAIXUAN.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 1012
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1951: JUNG AT ERANOS",
+   "a": "HE SEES A MEANINGFUL MATCH\nBETWEEN AN I-CHING ANSWER\nAND A PERSON'S STATE OF MIND.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 1247
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "1975: THE MCKENNAS",
+   "a": "FROM KING WEN'S ORDER\nOF THE 64 THEY BUILD\nA SPECULATIVE MAP OF TIME.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 1503
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "2009: HATCHER",
+   "a": "HIS MATRIX TRANSLATION\nLISTS ALTERNATIVE ENGLISH\nMEANINGS FOR CHINESE WORDS.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 1745
+    },
+    "hold": 4
+   }
+  },
+  {
+   "q": "TODAY: 8-BIT ORACLE",
+   "a": "A LANGUAGE MODEL USES\nLEARNED TABLES OF NUMBERS\nFOR WORDS AND WORD PIECES.",
+   "show": {
+    "clip": {
+     "src": "local/structure/timeline-correspondence.mp4",
+     "flight": true,
+     "from": 1989
+    },
+    "hold": 4
+   }
+  }
+ ],
+ "hexagrams": {},
+ "readouts": {},
+ "music": "local/music/pick14-lofi-synthwave.mp3",
+ "musicStart": 8,
+ "mix": {
+  "hum": 0.5,
+  "beacon": 0.6,
+  "printer": 0.6,
+  "ticks": 0.5,
+  "sweep": 0.4,
+  "chatter": 0.35,
+  "warble": 0.3,
+  "winddown": 0.6,
+  "music": 0.8,
+  "relay": 0.4
+ },
+ "ticks": "local/sfx/teletype.wav",
+ "endcard": {
+  "clip": "",
+  "seconds": 4.5,
+  "brand": {
+   "name": "8-BIT ORACLE",
+   "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+   "site": "8bitoracle.ai"
+  }
+ },
+ "endMusic": null,
+ "header": "8-BIT ORACLE",
+ "look": "flight",
+ "sfx": {
+  "hum": "local/sfx/bed.wav",
+  "beacon": "local/sfx/beacon.wav",
+  "relay": "local/sfx/relay.wav",
+  "printer": "local/sfx/printer.wav",
+  "sweep": "local/sfx/sweep.wav",
+  "chatter": "local/sfx/chatter.wav",
+  "warble": "local/sfx/warble.wav",
+  "winddown": "local/sfx/winddown.wav"
+ }
+}

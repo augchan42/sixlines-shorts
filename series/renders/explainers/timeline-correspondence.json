@@ -1,0 +1,173 @@
+{
+ "explainer": "timeline-correspondence",
+ "rendered": "2026-10-04T03:49:08.663Z",
+ "commit": "b85916618d48e23d64a2f6c4fd2c4b6acbbb592d",
+ "clean": false,
+ "seconds": 79.125333,
+ "shareKbps": 2197,
+ "props": {
+  "pages": [
+   {
+    "q": "AN OLD BOOK AND A NEW MACHINE",
+    "a": "BINARY. CORRESPONDENCE.\nWHO IS ANSWERING?\nFOLLOW THE SECOND PATH.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 0
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "TRADITION: KING WEN",
+    "a": "64 HEXAGRAMS: SIX LINES EACH.\nTHEIR ORDER AND SHORT TEXTS\nARE CREDITED TO HIM.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 251
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "1907: CROWLEY",
+    "a": "HE WRITES LIBER TRIGRAMMATON:\n27 FIGURES, THREE POSITIONS:\nEACH SOLID, BROKEN OR A DOT.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 502
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "1909: CROWLEY'S 777",
+    "a": "EIGHT THREE-LINE PATTERNS\nLINK TO KABBALAH. HE ALSO\nLISTS THE 64 HEXAGRAM MEANINGS.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 755
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "1924: WILHELM",
+    "a": "HIS GERMAN I-CHING APPEARS,\nWITH HELP FROM THE SCHOLAR\nLAO NAIXUAN.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 1012
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "1951: JUNG AT ERANOS",
+    "a": "HE SEES A MEANINGFUL MATCH\nBETWEEN AN I-CHING ANSWER\nAND A PERSON'S STATE OF MIND.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 1247
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "1975: THE MCKENNAS",
+    "a": "FROM KING WEN'S ORDER\nOF THE 64 THEY BUILD\nA SPECULATIVE MAP OF TIME.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 1503
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "2009: HATCHER",
+    "a": "HIS MATRIX TRANSLATION\nLISTS ALTERNATIVE ENGLISH\nMEANINGS FOR CHINESE WORDS.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 1745
+     },
+     "hold": 4
+    }
+   },
+   {
+    "q": "TODAY: 8-BIT ORACLE",
+    "a": "A LANGUAGE MODEL USES\nLEARNED TABLES OF NUMBERS\nFOR WORDS AND WORD PIECES.",
+    "show": {
+     "clip": {
+      "src": "local/structure/timeline-correspondence.mp4",
+      "flight": true,
+      "from": 1989
+     },
+     "hold": 4
+    }
+   }
+  ],
+  "hexagrams": {},
+  "readouts": {},
+  "music": "local/music/pick14-lofi-synthwave.mp3",
+  "musicStart": 8,
+  "mix": {
+   "hum": 0.5,
+   "beacon": 0.6,
+   "printer": 0.6,
+   "ticks": 0.5,
+   "sweep": 0.4,
+   "chatter": 0.35,
+   "warble": 0.3,
+   "winddown": 0.6,
+   "music": 0.8,
+   "relay": 0.4
+  },
+  "ticks": "local/sfx/teletype.wav",
+  "endcard": {
+   "clip": "",
+   "seconds": 4.5,
+   "brand": {
+    "name": "8-BIT ORACLE",
+    "tagline": "64 HEXAGRAMS DESCRIBING REALITY",
+    "site": "8bitoracle.ai"
+   }
+  },
+  "endMusic": null,
+  "header": "8-BIT ORACLE",
+  "look": "flight",
+  "sfx": {
+   "hum": "local/sfx/bed.wav",
+   "beacon": "local/sfx/beacon.wav",
+   "relay": "local/sfx/relay.wav",
+   "printer": "local/sfx/printer.wav",
+   "sweep": "local/sfx/sweep.wav",
+   "chatter": "local/sfx/chatter.wav",
+   "warble": "local/sfx/warble.wav",
+   "winddown": "local/sfx/winddown.wav"
+  }
+ },
+ "files": {
+  "local/music/pick14-lofi-synthwave.mp3": "96016a9f812cea1223254cef8eafa93363e1abbe0a3de1a2b705524d8bc271cb",
+  "local/sfx/teletype.wav": "dda6b5667eab586e238afaaf2bffef5d8b0a4a8d17c5cccdf3c47a6619a89fe4",
+  "local/sfx/bed.wav": "e685561f8759960a82fb60de15348317a3c8d3546f17f21c84c43573bb4c3ef3",
+  "local/sfx/beacon.wav": "c32fb7477871dffb3f0fe1d4a4ff575ecb27e3f5ce03da23e50438e9e4c3fc55",
+  "local/sfx/relay.wav": "def762693ffbba69c5e038b0c24b8b54648643ea06f6c3462b4e9aa65f8a82ed",
+  "local/sfx/printer.wav": "67a6b02e63b3c61c609d72b1c703752b3fbb73aa5a61f7464e652fe4f00dbd07",
+  "local/sfx/sweep.wav": "c23e8a20d2273b62eb9308c425c7e1961e8dc61d1541704d3407abf475488988",
+  "local/sfx/chatter.wav": "a6147238ae54a47f323c58c769961f1afc705d062989ed715e14073c7a6c8a7f",
+  "local/sfx/warble.wav": "e1452673ade06b7473ad71e4633c48633c2ce56ea745fa1e2f46364fcc041bf8",
+  "local/sfx/winddown.wav": "86e6309145a4b989a8f27aa669ebfa2a44de9fc8c4dfe81930db3d2a0e3c389e",
+  "out/explainers/timeline-correspondence/short.mp4": "a262e6bb8c8fbe877903817b22555c1fa5e35477f04eafa4668590b5bbcf30bc",
+  "out/explainers/timeline-correspondence/share.mp4": "04d29067742cef9f7c432cf83d8e795679b6df23fd9e23dc8e5306ac37e233c9"
+ }
+}
